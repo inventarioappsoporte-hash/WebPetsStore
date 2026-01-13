@@ -27,6 +27,7 @@
   flex-direction: column;
   justify-content: flex-end;
   padding: var(--spacing-2xl);
+  padding-bottom: var(--spacing-3xl);
 }
 
 .hero__title {
