@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Debug Index</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        .section { margin: 20px 0; padding: 20px; border: 1px solid #ddd; }
+        .card { border: 1px solid #ccc; padding: 10px; margin: 10px; display: inline-block; width: 200px; }
+        .card img { width: 100%; height: 150px; object-fit: cover; }
+        .debug { background: #f0f0f0; padding: 10px; margin: 10px 0; }
+    </style>
+</head>
+<body>
+    <h1>🔍 Debug Index - Solo TOP DESCUENTOS</h1>
+    
+    <div class="debug" id="debug-info">Cargando debug info...</div>
+    
+    <div class="section" data-section="top-discounts">
+        <h2 class="section__title">🔥 TOP DESCUENTOS HOY</h2>
+        <div class="section__content" id="top-discounts-content">
+            Cargando...
+        </div>
+    </div>
+
+    <script>
+        // Versión simplificada del sistema
+        async function debugTopDiscounts() {
+            const debugInfo = document.getElementById('debug-info');
+            const content = document.getElementById('top-discounts-content');
+            
+            try {
+                debugInfo.innerHTML = '📡 Cargando productos...';
+                
+                // Cargar productos
+                const response = await fetch('data/products.json');
+                const products = await response.json();
+                
+                debugInfo.innerHTML += `<br>✅ ${products.length} productos cargados`;
+                
+                // Filtrar topDiscount
+                const topDiscountProducts = products.filter(p => p.topDiscount === true);
+                debugInfo.innerHTML += `<br>🔥 ${topDiscountProducts.length} productos con topDiscount`;
+                
+                // Mostrar lista
+                topDiscountProducts.forEach(p => {
+                    debugInfo.innerHTML += `<br>  - ${p.name} (${p.id})`;
+                });
+                
+                // Buscar CAMA VICTORIA específicamente
+                const cama = products.find(p => p.id === 'prod_222');
+                if (cama) {
+                    debugInfo.innerHTML += `<br><br>🛏️ CAMA VICTORIA:`;
+                    debugInfo.innerHTML += `<br>  topDiscount: ${cama.topDiscount}`;
+                    debugInfo.innerHTML += `<br>  marketing: ${cama.images.marketing}`;
+                    debugInfo.innerHTML += `<br>  cover: ${cama.images.cover}`;
+                    debugInfo.innerHTML += `<br>  thumb: ${cama.images.thumb}`;
+                }
+                
+                // Renderizar tarjetas manualmente
+                if (topDiscountProducts.length > 0) {
+                    content.innerHTML = topDiscountProducts.map(product => {
+                        // Usar imagen de marketing si existe, sino thumb
+                        const imageUrl = product.images.marketing || product.images.thumb;
+                        
+                        return `
+                            <div class="card">
+                                <img src="${imageUrl}" alt="${product.name}" 
+                                     onerror="this.style.border='2px solid red'; this.alt='ERROR: ${imageUrl}'">
+                                <h3>${product.name}</h3>
+                                <p>Precio: $${product.price.toLocaleString()}</p>
+                                <p>Descuento: ${product.discount}%</p>
+                                <p>Imagen: ${imageUrl}</p>
+                            </div>
+                        `;
+                    }).join('');
+                } else {
+                    content.innerHTML = '<p style="color: red;">❌ No hay productos con topDiscount</p>';
+                }
+                
+            } catch (error) {
+                debugInfo.innerHTML = `❌ Error: ${error.message}`;
+                content.innerHTML = `❌ Error cargando productos: ${error.message}`;
+                console.error('Error:', error);
+            }
+        }
+        
+        // Ejecutar al cargar
+        debugTopDiscounts();
+    </script>
+</body>
+</html>

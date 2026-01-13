@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <title>Force Reload Test</title>
+</head>
+<body>
+    <h1>🔄 Force Reload Test</h1>
+    <div id="status">Cargando...</div>
+    
+    <script>
+        // Forzar recarga sin cache
+        const timestamp = Date.now();
+        console.log('🔄 Timestamp:', timestamp);
+        
+        async function forceTest() {
+            try {
+                // Cargar con timestamp único
+                const response = await fetch(`data/products.json?t=${timestamp}`);
+                console.log('📡 Response status:', response.status);
+                
+                const products = await response.json();
+                console.log('📦 Products loaded:', products.length);
+                
+                // Buscar CAMA VICTORIA
+                const cama = products.find(p => p.id === 'prod_222');
+                console.log('🛏️ CAMA VICTORIA:', cama);
+                
+                if (cama) {
+                    console.log('🛏️ CAMA topDiscount:', cama.topDiscount);
+                    console.log('🛏️ CAMA marketing:', cama.images.marketing);
+                }
+                
+                // Filtrar topDiscount
+                const topDiscount = products.filter(p => p.topDiscount === true);
+                console.log('🔥 Products with topDiscount:', topDiscount.length);
+                topDiscount.forEach(p => console.log(`  - ${p.name} (${p.id})`));
+                
+                document.getElementById('status').innerHTML = `
+                    <p>✅ Productos: ${products.length}</p>
+                    <p>🔥 TopDiscount: ${topDiscount.length}</p>
+                    <p>🛏️ CAMA VICTORIA: ${cama ? 'ENCONTRADA' : 'NO ENCONTRADA'}</p>
+                    ${cama ? `<p>🛏️ CAMA topDiscount: ${cama.topDiscount}</p>` : ''}
+                `;
+                
+                // Si CAMA VICTORIA existe y tiene topDiscount, el problema está en el renderer
+                if (cama && cama.topDiscount === true) {
+                    document.getElementById('status').innerHTML += `
+                        <p style="color: green;">✅ CAMA VICTORIA debería aparecer en TOP DESCUENTOS</p>
+                        <p style="color: red;">❌ El problema está en el renderer o en el filtrado</p>
+                    `;
+                }
+                
+            } catch (error) {
+                console.error('❌ Error:', error);
+                document.getElementById('status').innerHTML = `❌ Error: ${error.message}`;
+            }
+        }
+        
+        forceTest();
+    </script>
+</body>
+</html>

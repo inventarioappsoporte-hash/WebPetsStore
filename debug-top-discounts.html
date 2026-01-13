@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Debug TOP DESCUENTOS</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        .debug-section { margin: 20px 0; padding: 20px; border: 1px solid #ddd; }
+        .success { background: #d4edda; color: #155724; padding: 10px; }
+        .error { background: #f8d7da; color: #721c24; padding: 10px; }
+        .info { background: #d1ecf1; color: #0c5460; padding: 10px; }
+        pre { background: #f8f9fa; padding: 10px; overflow-x: auto; }
+    </style>
+</head>
+<body>
+    <h1>🔍 Debug TOP DESCUENTOS HOY</h1>
+    
+    <div class="debug-section">
+        <h2>1. Carga de Productos</h2>
+        <div id="products-status">Cargando...</div>
+    </div>
+
+    <div class="debug-section">
+        <h2>2. Filtro topDiscount</h2>
+        <div id="filter-status">Analizando...</div>
+    </div>
+
+    <div class="debug-section">
+        <h2>3. CAMA VICTORIA Específica</h2>
+        <div id="cama-status">Buscando...</div>
+    </div>
+
+    <div class="debug-section">
+        <h2>4. Configuración Home</h2>
+        <div id="home-status">Cargando...</div>
+    </div>
+
+    <script>
+        async function debugTopDiscounts() {
+            try {
+                // 1. Cargar productos
+                console.log('🔍 Cargando productos...');
+                const productsResponse = await fetch('data/products.json');
+                const products = await productsResponse.json();
+                
+                document.getElementById('products-status').innerHTML = `
+                    <div class="success">✅ Productos cargados: ${products.length}</div>
+                `;
+
+                // 2. Filtrar por topDiscount
+                const topDiscountProducts = products.filter(p => p.topDiscount === true);
+                console.log('🔥 Productos con topDiscount:', topDiscountProducts);
+                
+                document.getElementById('filter-status').innerHTML = `
+                    <div class="info">📊 Productos con topDiscount: ${topDiscountProducts.length}</div>
+                    <pre>${JSON.stringify(topDiscountProducts.map(p => ({
+                        id: p.id,
+                        name: p.name,
+                        topDiscount: p.topDiscount,
+                        discount: p.discount,
+                        hasMarketing: !!p.images.marketing
+                    })), null, 2)}</pre>
+                `;
+
+                // 3. CAMA VICTORIA específica
+                const camaVictoria = products.find(p => p.id === 'prod_222');
+                console.log('🛏️ CAMA VICTORIA:', camaVictoria);
+                
+                if (camaVictoria) {
+                    document.getElementById('cama-status').innerHTML = `
+                        <div class="success">✅ CAMA VICTORIA encontrada</div>
+                        <pre>${JSON.stringify({
+                            id: camaVictoria.id,
+                            name: camaVictoria.name,
+                            topDiscount: camaVictoria.topDiscount,
+                            discount: camaVictoria.discount,
+                            images: camaVictoria.images
+                        }, null, 2)}</pre>
+                    `;
+                } else {
+                    document.getElementById('cama-status').innerHTML = `
+                        <div class="error">❌ CAMA VICTORIA NO encontrada</div>
+                    `;
+                }
+
+                // 4. Configuración Home
+                const homeResponse = await fetch('data/home.json');
+                const homeConfig = await homeResponse.json();
+                
+                const topDiscountsSection = homeConfig.sections.find(s => s.id === 'top-discounts');
+                
+                document.getElementById('home-status').innerHTML = `
+                    <div class="info">📋 Configuración TOP DESCUENTOS:</div>
+                    <pre>${JSON.stringify(topDiscountsSection, null, 2)}</pre>
+                `;
+
+                // 5. Simular filtrado
+                console.log('🧪 Simulando filtrado...');
+                const filtered = products.filter(p => {
+                    return Object.keys(topDiscountsSection.filter).every(key => {
+                        const value = topDiscountsSection.filter[key];
+                        return p[key] === value;
+                    });
+                });
+
+                console.log('🎯 Productos filtrados para TOP DESCUENTOS:', filtered);
+                
+                // Agregar resultado de simulación
+                document.body.innerHTML += `
+                    <div class="debug-section">
+                        <h2>5. Simulación de Filtrado</h2>
+                        <div class="info">🎯 Productos que deberían aparecer: ${filtered.length}</div>
+                        <pre>${JSON.stringify(filtered.map(p => ({
+                            id: p.id,
+                            name: p.name,
+                            topDiscount: p.topDiscount,
+                            discount: p.discount
+                        })), null, 2)}</pre>
+                    </div>
+                `;
+
+            } catch (error) {
+                console.error('❌ Error en debug:', error);
+                document.body.innerHTML += `
+                    <div class="debug-section">
+                        <div class="error">❌ Error: ${error.message}</div>
+                    </div>
+                `;
+            }
+        }
+
+        // Ejecutar debug
+        debugTopDiscounts();
+    </script>
+</body>
+</html>

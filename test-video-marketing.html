@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Video Marketing</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/components.css">
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        .test-section { margin: 20px 0; padding: 20px; border: 1px solid #ddd; }
+        .debug { background: #f8f9fa; padding: 10px; margin: 10px 0; }
+        .card { margin: 10px; max-width: 300px; }
+    </style>
+</head>
+<body>
+    <h1>🎬 Test Sistema de Videos de Marketing</h1>
+    
+    <div class="debug" id="debug-info">
+        🔄 Cargando información de debug...
+    </div>
+    
+    <div class="test-section">
+        <h2>🔥 TOP DESCUENTOS HOY - Con Videos</h2>
+        <div id="video-test-content">
+            🔄 Cargando productos...
+        </div>
+    </div>
+
+    <div class="test-section">
+        <h2>📋 Información del Sistema</h2>
+        <div id="system-info">
+            <p><strong>Estructura actual:</strong></p>
+            <ul>
+                <li>✅ Campo <code>marketing</code> agregado al JSON</li>
+                <li>✅ Soporte para <code>type: "video"</code></li>
+                <li>✅ Fallback a poster image</li>
+                <li>✅ Autoplay muted + loop</li>
+                <li>✅ Badge identificador</li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        async function testVideoMarketing() {
+            const debugInfo = document.getElementById('debug-info');
+            const content = document.getElementById('video-test-content');
+            
+            try {
+                // Cargar productos
+                const response = await fetch('data/products.json');
+                const products = await response.json();
+                
+                debugInfo.innerHTML = `✅ ${products.length} productos cargados`;
+                
+                // Buscar CAMA VICTORIA
+                const cama = products.find(p => p.id === 'prod_222');
+                if (cama) {
+                    debugInfo.innerHTML += `<br>🛏️ CAMA VICTORIA encontrada`;
+                    debugInfo.innerHTML += `<br>🎬 Marketing type: ${cama.marketing?.type || 'NO DEFINIDO'}`;
+                    debugInfo.innerHTML += `<br>🎬 Video URL: ${cama.marketing?.url || 'NO DEFINIDO'}`;
+                    debugInfo.innerHTML += `<br>🖼️ Poster: ${cama.marketing?.poster || 'NO DEFINIDO'}`;
+                } else {
+                    debugInfo.innerHTML += `<br>❌ CAMA VICTORIA no encontrada`;
+                    return;
+                }
+                
+                // Filtrar productos con topDiscount
+                const topDiscountProducts = products.filter(p => p.topDiscount === true);
+                debugInfo.innerHTML += `<br>🔥 ${topDiscountProducts.length} productos con topDiscount`;
+                
+                // Renderizar con sistema de videos
+                const html = topDiscountProducts.map(product => {
+                    let mediaHtml = '';
+                    
+                    if (product.marketing?.type === 'video') {
+                        // Video de marketing
+                        mediaHtml = `
+                            <video 
+                                class="card__image card__marketing-video" 
+                                autoplay muted loop
+                                poster="${product.marketing.poster}"
+                                preload="metadata"
+                                onloadstart="console.log('🎬 Video cargando:', '${product.name}')"
+                                oncanplay="console.log('🎬 Video listo:', '${product.name}')"
+                                onerror="console.error('❌ Error video:', '${product.name}'); this.style.display='none'; this.nextElementSibling.style.display='block';"
+                            >
+                                <source src="${product.marketing.url}" type="video/mp4">
+                                Tu navegador no soporta videos.
+                            </video>
+                            <img 
+                                src="${product.marketing.poster}" 
+                                alt="${product.name}" 
+                                class="card__image card__marketing-fallback" 
+                                style="display: none;"
+                            >
+                            <div class="card__media-badge">🎬 VIDEO</div>
+                        `;
+                    } else if (product.marketing?.type === 'image') {
+                        // Imagen de marketing
+                        mediaHtml = `
+                            <img src="${product.marketing.url}" alt="${product.name}" class="card__image">
+                            <div class="card__media-badge">🖼️ MARKETING</div>
+                        `;
+                    } else {
+                        // Fallback a thumb
+                        mediaHtml = `
+                            <img src="${product.images.thumb}" alt="${product.name}" class="card__image">
+                            <div class="card__media-badge">📷 THUMB</div>
+                        `;
+                    }
+                    
+                    return `
+                        <div class="card" onclick="window.location.href='product.html?id=${product.id}'">
+                            <div class="card__image-wrapper">
+                                ${mediaHtml}
+                                ${product.discount ? `<span class="card__discount">-${product.discount}%</span>` : ''}
+                            </div>
+                            <div class="card__content">
+                                <h3 class="card__title">${product.name}</h3>
+                                <div class="card__price">
+                                    <span class="card__price-current">$${product.price.toLocaleString()}</span>
+                                </div>
+                                <p><small>Marketing: ${product.marketing?.type || 'ninguno'}</small></p>
+                            </div>
+                        </div>
+                    `;
+                }).join('');
+                
+                content.innerHTML = html;
+                
+                debugInfo.innerHTML += `<br><br>✅ SISTEMA DE VIDEOS IMPLEMENTADO`;
+                debugInfo.innerHTML += `<br>🎬 CAMA VICTORIA debería mostrar VIDEO (si existe) o POSTER`;
+                debugInfo.innerHTML += `<br>📷 Otros productos muestran THUMB con badge identificador`;
+                
+            } catch (error) {
+                debugInfo.innerHTML = `❌ Error: ${error.message}`;
+                content.innerHTML = `❌ Error: ${error.message}`;
+                console.error('Error:', error);
+            }
+        }
+        
+        // Ejecutar test
+        testVideoMarketing();
+    </script>
+</body>
+</html>

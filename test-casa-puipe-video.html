@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Casa Puipé Video</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/components.css">
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        .test-section { margin: 20px 0; padding: 20px; border: 1px solid #ddd; }
+        .debug { background: #f8f9fa; padding: 10px; margin: 10px 0; }
+        .card { margin: 10px; max-width: 300px; }
+        .video-test { margin: 20px 0; }
+        video { max-width: 300px; border: 2px solid #007bff; }
+    </style>
+</head>
+<body>
+    <h1>🎬 Test Casa Puipé - Video de Marketing</h1>
+    
+    <div class="debug" id="debug-info">
+        🔄 Cargando información...
+    </div>
+    
+    <div class="test-section">
+        <h2>🎬 Video Directo</h2>
+        <p>Test directo del video EstilodeVerano.mp4:</p>
+        <video controls autoplay muted loop style="max-width: 300px;">
+            <source src="assets/videos/marketing/casa-puipe-demo.mp4" type="video/mp4">
+            Tu navegador no soporta videos.
+        </video>
+    </div>
+    
+    <div class="test-section">
+        <h2>🏠 Casa Puipé con Sistema de Videos</h2>
+        <div id="casa-puipe-content">
+            🔄 Cargando producto...
+        </div>
+    </div>
+
+    <div class="test-section">
+        <h2>🔥 TOP DESCUENTOS HOY - Simulación</h2>
+        <div id="top-discounts-simulation">
+            🔄 Cargando simulación...
+        </div>
+    </div>
+
+    <script>
+        async function testCasaPuipeVideo() {
+            const debugInfo = document.getElementById('debug-info');
+            const casaContent = document.getElementById('casa-puipe-content');
+            const topDiscountsContent = document.getElementById('top-discounts-simulation');
+            
+            try {
+                // Cargar productos
+                const response = await fetch('data/products.json');
+                const products = await response.json();
+                
+                debugInfo.innerHTML = `✅ ${products.length} productos cargados`;
+                
+                // Buscar Casa Puipé
+                const casaPuipe = products.find(p => p.id === 'prod_003');
+                if (casaPuipe) {
+                    debugInfo.innerHTML += `<br>🏠 Casa Puipé encontrada`;
+                    debugInfo.innerHTML += `<br>🎬 Marketing type: ${casaPuipe.marketing?.type || 'NO DEFINIDO'}`;
+                    debugInfo.innerHTML += `<br>🎬 Video URL: ${casaPuipe.marketing?.url || 'NO DEFINIDO'}`;
+                    debugInfo.innerHTML += `<br>🖼️ Poster: ${casaPuipe.marketing?.poster || 'NO DEFINIDO'}`;
+                    debugInfo.innerHTML += `<br>🔥 TopDiscount: ${casaPuipe.topDiscount}`;
+                } else {
+                    debugInfo.innerHTML += `<br>❌ Casa Puipé no encontrada`;
+                    return;
+                }
+                
+                // Renderizar Casa Puipé individual
+                const casaHtml = renderProductWithVideo(casaPuipe);
+                casaContent.innerHTML = casaHtml;
+                
+                // Simular TOP DESCUENTOS HOY
+                const topDiscountProducts = products.filter(p => p.topDiscount === true);
+                debugInfo.innerHTML += `<br>🔥 ${topDiscountProducts.length} productos en TOP DESCUENTOS`;
+                
+                const topDiscountsHtml = topDiscountProducts.map(product => {
+                    return renderProductWithVideo(product);
+                }).join('');
+                
+                topDiscountsContent.innerHTML = topDiscountsHtml;
+                
+                debugInfo.innerHTML += `<br><br>✅ SISTEMA FUNCIONANDO:`;
+                debugInfo.innerHTML += `<br>🎬 Casa Puipé debería mostrar VIDEO EstilodeVerano.mp4`;
+                debugInfo.innerHTML += `<br>🛏️ CAMA VICTORIA debería mostrar VIDEO (si existe) o POSTER`;
+                debugInfo.innerHTML += `<br>📷 Otros productos muestran imágenes THUMB`;
+                
+            } catch (error) {
+                debugInfo.innerHTML = `❌ Error: ${error.message}`;
+                console.error('Error:', error);
+            }
+        }
+        
+        function renderProductWithVideo(product) {
+            let mediaHtml = '';
+            
+            if (product.marketing?.type === 'video') {
+                // Video de marketing
+                mediaHtml = `
+                    <video 
+                        class="card__image card__marketing-video" 
+                        autoplay muted loop
+                        poster="${product.marketing.poster}"
+                        preload="metadata"
+                        onloadstart="console.log('🎬 Video cargando:', '${product.name}')"
+                        oncanplay="console.log('🎬 Video listo:', '${product.name}')"
+                        onerror="console.error('❌ Error video:', '${product.name}'); this.style.display='none'; this.nextElementSibling.style.display='block';"
+                    >
+                        <source src="${product.marketing.url}" type="video/mp4">
+                        Tu navegador no soporta videos.
+                    </video>
+                    <img 
+                        src="${product.marketing.poster}" 
+                        alt="${product.name}" 
+                        class="card__image card__marketing-fallback" 
+                        style="display: none;"
+                    >
+                    <div class="card__media-badge">🎬 VIDEO</div>
+                `;
+            } else if (product.marketing?.type === 'image') {
+                // Imagen de marketing
+                mediaHtml = `
+                    <img src="${product.marketing.url}" alt="${product.name}" class="card__image">
+                    <div class="card__media-badge">🖼️ MARKETING</div>
+                `;
+            } else {
+                // Fallback a thumb
+                mediaHtml = `
+                    <img src="${product.images.thumb}" alt="${product.name}" class="card__image">
+                    <div class="card__media-badge">📷 THUMB</div>
+                `;
+            }
+            
+            return `
+                <div class="card" onclick="window.location.href='product.html?id=${product.id}'">
+                    <div class="card__image-wrapper">
+                        ${mediaHtml}
+                        ${product.discount ? `<span class="card__discount">-${product.discount}%</span>` : ''}
+                    </div>
+                    <div class="card__content">
+                        <h3 class="card__title">${product.name}</h3>
+                        <div class="card__price">
+                            <span class="card__price-current">$${product.price.toLocaleString()}</span>
+                        </div>
+                        <p><small>Marketing: ${product.marketing?.type || 'ninguno'}</small></p>
+                        <p><small>TopDiscount: ${product.topDiscount}</small></p>
+                    </div>
+                </div>
+            `;
+        }
+        
+        // Ejecutar test
+        testCasaPuipeVideo();
+    </script>
+</body>
+</html>

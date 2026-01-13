@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Hero Mobile</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/typography.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/home.css">
+    <style>
+        body { margin: 0; padding: 20px; background: #f5f5f5; }
+        .test-info { background: white; padding: 15px; margin-bottom: 20px; border-radius: 8px; }
+        .viewport-info { background: #e3f2fd; padding: 10px; margin: 10px 0; border-radius: 4px; }
+    </style>
+</head>
+<body>
+    <div class="test-info">
+        <h1>📱 Test Hero Mobile - Botones</h1>
+        <div class="viewport-info" id="viewport-info">
+            Cargando información del viewport...
+        </div>
+        <p><strong>Problema:</strong> Botones "VER PRODUCTO" y "COMPRAR AHORA" se montan uno encima del otro en móvil</p>
+        <p><strong>Solución:</strong> CSS responsive mejorado con flex-direction: column en móvil</p>
+    </div>
+
+    <!-- Hero Section Test -->
+    <section class="hero">
+        <div class="hero__content">
+            <img src="assets/images/ui/hero-placeholder.jpg" alt="Producto destacado" class="hero__image">
+            <div class="hero__overlay">
+                <div class="hero__cta">
+                    <button class="btn btn--secondary" id="hero-view-btn">VER PRODUCTO</button>
+                    <button class="btn btn--primary" id="hero-buy-btn">COMPRAR AHORA</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="test-info">
+        <h2>✅ Verificaciones:</h2>
+        <ul>
+            <li>Los botones deben estar uno debajo del otro en móvil</li>
+            <li>Ambos botones deben ocupar el ancho completo</li>
+            <li>Debe haber espacio suficiente entre los botones</li>
+            <li>Los botones deben ser fáciles de tocar (min-height: 44px)</li>
+        </ul>
+        
+        <h2>📏 Breakpoints:</h2>
+        <ul>
+            <li><strong>Desktop:</strong> > 768px - Botones lado a lado</li>
+            <li><strong>Tablet:</strong> ≤ 768px - Botones en columna</li>
+            <li><strong>Mobile:</strong> ≤ 480px - Botones en columna, ancho completo</li>
+            <li><strong>Small Mobile:</strong> ≤ 375px - Botones optimizados para pantallas pequeñas</li>
+        </ul>
+    </div>
+
+    <script>
+        // Mostrar información del viewport
+        function updateViewportInfo() {
+            const width = window.innerWidth;
+            const height = window.innerHeight;
+            const devicePixelRatio = window.devicePixelRatio || 1;
+            
+            let deviceType = 'Desktop';
+            if (width <= 375) deviceType = 'Small Mobile';
+            else if (width <= 480) deviceType = 'Mobile';
+            else if (width <= 768) deviceType = 'Tablet';
+            
+            document.getElementById('viewport-info').innerHTML = `
+                <strong>Viewport:</strong> ${width}x${height}px<br>
+                <strong>Device Pixel Ratio:</strong> ${devicePixelRatio}<br>
+                <strong>Tipo de dispositivo:</strong> ${deviceType}<br>
+                <strong>Orientación:</strong> ${width > height ? 'Landscape' : 'Portrait'}
+            `;
+        }
+        
+        // Actualizar info al cargar y al redimensionar
+        updateViewportInfo();
+        window.addEventListener('resize', updateViewportInfo);
+        
+        // Test de funcionalidad de botones
+        document.getElementById('hero-view-btn').addEventListener('click', () => {
+            alert('✅ Botón VER PRODUCTO funciona correctamente');
+        });
+        
+        document.getElementById('hero-buy-btn').addEventListener('click', () => {
+            alert('✅ Botón COMPRAR AHORA funciona correctamente');
+        });
+    </script>
+</body>
+</html>

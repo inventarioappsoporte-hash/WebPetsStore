@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test HomeRenderer Only</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        .section { margin: 20px 0; padding: 20px; border: 1px solid #ddd; }
+        .debug { background: #f0f0f0; padding: 10px; margin: 10px 0; }
+    </style>
+</head>
+<body>
+    <h1>🧪 Test HomeRenderer Only</h1>
+    
+    <div class="debug" id="debug-log">Iniciando...</div>
+    
+    <!-- Estructura mínima necesaria -->
+    <div class="section" data-section="top-discounts">
+        <h2 class="section__title">🔥 TOP DESCUENTOS HOY</h2>
+        <div class="section__content carousel">
+            Cargando...
+        </div>
+    </div>
+
+    <!-- Scripts mínimos necesarios -->
+    <script src="js/core/constants.js?v=debug"></script>
+    <script src="js/core/utils.js?v=debug"></script>
+    <script src="js/core/dataLoader.js?v=debug"></script>
+    <script src="js/modules/homeRenderer.js?v=debug"></script>
+    
+    <script>
+        const debugLog = document.getElementById('debug-log');
+        
+        function addLog(message) {
+            console.log(message);
+            debugLog.innerHTML += `<br>${message}`;
+        }
+        
+        async function testHomeRendererOnly() {
+            try {
+                addLog('🔄 Iniciando test del HomeRenderer...');
+                
+                // Crear instancia del HomeRenderer
+                const homeRenderer = new HomeRenderer(dataLoader);
+                addLog('✅ HomeRenderer creado');
+                
+                // Ejecutar render
+                addLog('🔄 Ejecutando render...');
+                await homeRenderer.render();
+                addLog('✅ Render completado');
+                
+                // Verificar si se renderizó algo
+                const topDiscountsSection = document.querySelector('[data-section="top-discounts"] .section__content');
+                if (topDiscountsSection && topDiscountsSection.innerHTML.trim() !== 'Cargando...') {
+                    addLog('✅ Contenido renderizado en TOP DESCUENTOS');
+                    addLog(`📊 Contenido: ${topDiscountsSection.innerHTML.substring(0, 100)}...`);
+                } else {
+                    addLog('❌ NO se renderizó contenido en TOP DESCUENTOS');
+                    addLog(`📊 Contenido actual: "${topDiscountsSection?.innerHTML}"`);
+                }
+                
+            } catch (error) {
+                addLog(`❌ Error: ${error.message}`);
+                console.error('Error completo:', error);
+            }
+        }
+        
+        // Ejecutar cuando todo esté cargado
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', testHomeRendererOnly);
+        } else {
+            testHomeRendererOnly();
+        }
+    </script>
+</body>
+</html>

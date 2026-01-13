@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Imagen</title>
+    <style>
+        img { max-width: 300px; border: 2px solid #ccc; margin: 10px; }
+        .success { color: green; }
+        .error { color: red; }
+    </style>
+</head>
+<body>
+    <h1>🖼️ Test de Imagen CAMA VICTORIA</h1>
+    
+    <div id="status">Cargando...</div>
+    
+    <h2>Imagen de Marketing (TOP DESCUENTOS):</h2>
+    <img id="marketing-img" src="assets/images/ui/cama-victoria.jpeg" alt="Marketing" 
+         onload="document.getElementById('marketing-status').innerHTML='✅ Imagen de marketing cargada'"
+         onerror="document.getElementById('marketing-status').innerHTML='❌ Error cargando imagen de marketing'">
+    <div id="marketing-status">Cargando imagen de marketing...</div>
+    
+    <h2>Imagen Cover (Página Producto):</h2>
+    <img id="cover-img" src="assets/images/products/prod_222/cover.jpg" alt="Cover"
+         onload="document.getElementById('cover-status').innerHTML='✅ Imagen cover cargada'"
+         onerror="document.getElementById('cover-status').innerHTML='❌ Error cargando imagen cover'">
+    <div id="cover-status">Cargando imagen cover...</div>
+    
+    <h2>Imagen Thumb (Búsquedas):</h2>
+    <img id="thumb-img" src="assets/images/products/prod_222/thumb.jpg" alt="Thumb"
+         onload="document.getElementById('thumb-status').innerHTML='✅ Imagen thumb cargada'"
+         onerror="document.getElementById('thumb-status').innerHTML='❌ Error cargando imagen thumb'">
+    <div id="thumb-status">Cargando imagen thumb...</div>
+
+    <script>
+        // Test de carga de datos también
+        async function testData() {
+            try {
+                const response = await fetch('data/products.json');
+                const products = await response.json();
+                const cama = products.find(p => p.id === 'prod_222');
+                
+                document.getElementById('status').innerHTML = `
+                    <div class="success">✅ Datos cargados correctamente</div>
+                    <p>Total productos: ${products.length}</p>
+                    <p>CAMA VICTORIA encontrada: ${cama ? 'SÍ' : 'NO'}</p>
+                    ${cama ? `
+                        <p>topDiscount: ${cama.topDiscount}</p>
+                        <p>Marketing image: ${cama.images.marketing}</p>
+                        <p>Cover image: ${cama.images.cover}</p>
+                        <p>Thumb image: ${cama.images.thumb}</p>
+                    ` : ''}
+                `;
+                
+                // Verificar productos con topDiscount
+                const topDiscount = products.filter(p => p.topDiscount === true);
+                document.getElementById('status').innerHTML += `
+                    <p>Productos con topDiscount: ${topDiscount.length}</p>
+                    ${topDiscount.map(p => `<p>  - ${p.name}</p>`).join('')}
+                `;
+                
+            } catch (error) {
+                document.getElementById('status').innerHTML = `
+                    <div class="error">❌ Error cargando datos: ${error.message}</div>
+                `;
+            }
+        }
+        
+        testData();
+    </script>
+</body>
+</html>

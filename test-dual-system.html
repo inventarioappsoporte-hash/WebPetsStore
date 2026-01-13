@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Sistema Dual de Imágenes</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        .test-section { margin: 20px 0; padding: 20px; border: 1px solid #ddd; }
+        .test-result { margin: 10px 0; padding: 10px; background: #f5f5f5; }
+        .success { background: #d4edda; color: #155724; }
+        .error { background: #f8d7da; color: #721c24; }
+        img { max-width: 200px; height: auto; margin: 10px; border: 1px solid #ccc; }
+    </style>
+</head>
+<body>
+    <h1>🧪 Test Sistema Dual de Imágenes</h1>
+    
+    <div class="test-section">
+        <h2>📦 Carga de Datos</h2>
+        <div id="data-test" class="test-result">Cargando...</div>
+    </div>
+
+    <div class="test-section">
+        <h2>🔥 TOP DESCUENTOS - Imagen de Marketing</h2>
+        <div id="marketing-test" class="test-result">Probando...</div>
+        <div id="marketing-images"></div>
+    </div>
+
+    <div class="test-section">
+        <h2>🔍 Búsquedas - Imagen Thumb</h2>
+        <div id="search-test" class="test-result">Probando...</div>
+        <div id="search-images"></div>
+    </div>
+
+    <div class="test-section">
+        <h2>📄 Página Producto - Imagen Cover</h2>
+        <div id="product-test" class="test-result">Probando...</div>
+        <div id="product-images"></div>
+    </div>
+
+    <script>
+        async function testDualSystem() {
+            try {
+                // Cargar datos
+                const response = await fetch('data/products.json');
+                const products = await response.json();
+                
+                document.getElementById('data-test').innerHTML = `
+                    <span class="success">✅ Datos cargados correctamente</span><br>
+                    Total productos: ${products.length}
+                `;
+
+                // Encontrar CAMA VICTORIA
+                const camaVictoria = products.find(p => p.id === 'prod_222');
+                
+                if (!camaVictoria) {
+                    throw new Error('CAMA VICTORIA no encontrada');
+                }
+
+                // Test 1: Marketing Image (TOP DESCUENTOS)
+                const hasMarketing = camaVictoria.images.marketing;
+                const marketingImage = hasMarketing ? camaVictoria.images.marketing : camaVictoria.images.thumb;
+                
+                document.getElementById('marketing-test').innerHTML = `
+                    <span class="success">✅ Sistema de marketing funcionando</span><br>
+                    Tiene imagen marketing: ${hasMarketing ? 'SÍ' : 'NO'}<br>
+                    Imagen usada: ${marketingImage}
+                `;
+                
+                document.getElementById('marketing-images').innerHTML = `
+                    <div>
+                        <strong>Imagen de Marketing (TOP DESCUENTOS):</strong><br>
+                        <img src="${marketingImage}" alt="Marketing">
+                    </div>
+                `;
+
+                // Test 2: Search Image (Thumb)
+                document.getElementById('search-test').innerHTML = `
+                    <span class="success">✅ Sistema de búsqueda funcionando</span><br>
+                    Imagen thumb: ${camaVictoria.images.thumb}
+                `;
+                
+                document.getElementById('search-images').innerHTML = `
+                    <div>
+                        <strong>Imagen de Búsqueda (Thumb):</strong><br>
+                        <img src="${camaVictoria.images.thumb}" alt="Thumb">
+                    </div>
+                `;
+
+                // Test 3: Product Page Image (Cover)
+                document.getElementById('product-test').innerHTML = `
+                    <span class="success">✅ Sistema de página producto funcionando</span><br>
+                    Imagen cover: ${camaVictoria.images.cover}
+                `;
+                
+                document.getElementById('product-images').innerHTML = `
+                    <div>
+                        <strong>Imagen de Página Producto (Cover):</strong><br>
+                        <img src="${camaVictoria.images.cover}" alt="Cover">
+                    </div>
+                `;
+
+                // Resumen
+                console.log('🧪 Test Sistema Dual - CAMA VICTORIA:', {
+                    marketing: camaVictoria.images.marketing,
+                    thumb: camaVictoria.images.thumb,
+                    cover: camaVictoria.images.cover,
+                    topDiscountImage: marketingImage
+                });
+
+            } catch (error) {
+                document.getElementById('data-test').innerHTML = `
+                    <span class="error">❌ Error: ${error.message}</span>
+                `;
+            }
+        }
+
+        // Ejecutar test al cargar la página
+        testDualSystem();
+    </script>
+</body>
+</html>

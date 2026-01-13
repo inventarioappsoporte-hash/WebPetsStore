@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Directo</title>
+</head>
+<body>
+    <h1>🔍 Test Directo - Sin DataLoader</h1>
+    <div id="result"></div>
+
+    <script>
+        async function testDirect() {
+            const result = document.getElementById('result');
+            
+            try {
+                console.log('🔍 Test directo iniciado...');
+                
+                // Test 1: Cargar productos directamente
+                result.innerHTML += '<p>📡 Cargando productos...</p>';
+                const response = await fetch('data/products.json');
+                console.log('📡 Response:', response.status, response.ok);
+                
+                if (!response.ok) {
+                    throw new Error(`HTTP ${response.status}`);
+                }
+                
+                const products = await response.json();
+                console.log('📦 Products:', products.length);
+                result.innerHTML += `<p>✅ Productos cargados: ${products.length}</p>`;
+                
+                // Test 2: Buscar CAMA VICTORIA
+                const cama = products.find(p => p.id === 'prod_222');
+                console.log('🛏️ CAMA VICTORIA:', cama);
+                
+                if (cama) {
+                    result.innerHTML += `<p>✅ CAMA VICTORIA encontrada</p>`;
+                    result.innerHTML += `<p>🔥 topDiscount: ${cama.topDiscount}</p>`;
+                    result.innerHTML += `<p>🖼️ marketing: ${cama.images.marketing}</p>`;
+                } else {
+                    result.innerHTML += `<p>❌ CAMA VICTORIA NO encontrada</p>`;
+                    return;
+                }
+                
+                // Test 3: Filtrar topDiscount manualmente
+                const topDiscountProducts = products.filter(p => p.topDiscount === true);
+                console.log('🔥 Top discount products:', topDiscountProducts);
+                
+                result.innerHTML += `<p>🔥 Productos con topDiscount: ${topDiscountProducts.length}</p>`;
+                topDiscountProducts.forEach(p => {
+                    result.innerHTML += `<p>  - ${p.name} (${p.id})</p>`;
+                });
+                
+                // Test 4: Verificar si CAMA VICTORIA está en la lista
+                const camaInList = topDiscountProducts.find(p => p.id === 'prod_222');
+                if (camaInList) {
+                    result.innerHTML += `<p style="color: green;">✅ CAMA VICTORIA SÍ está en topDiscount</p>`;
+                    result.innerHTML += `<p style="color: red;">❌ El problema está en el HomeRenderer</p>`;
+                } else {
+                    result.innerHTML += `<p style="color: red;">❌ CAMA VICTORIA NO está en topDiscount</p>`;
+                    result.innerHTML += `<p>🔍 Valor actual topDiscount: ${cama.topDiscount}</p>`;
+                    result.innerHTML += `<p>🔍 Tipo: ${typeof cama.topDiscount}</p>`;
+                }
+                
+                // Test 5: Cargar home.json
+                const homeResponse = await fetch('data/home.json');
+                const homeConfig = await homeResponse.json();
+                const topDiscountsSection = homeConfig.sections.find(s => s.id === 'top-discounts');
+                
+                result.innerHTML += `<p>📋 Filtro TOP DESCUENTOS: ${JSON.stringify(topDiscountsSection.filter)}</p>`;
+                
+                // Test 6: Simular filtrado exacto
+                const criteria = topDiscountsSection.filter;
+                const filtered = products.filter(p => {
+                    return Object.keys(criteria).every(key => {
+                        const value = criteria[key];
+                        const productValue = p[key];
+                        console.log(`Checking ${p.name}: ${key} = ${productValue} === ${value}`, productValue === value);
+                        return productValue === value;
+                    });
+                });
+                
+                result.innerHTML += `<p>🎯 Productos filtrados: ${filtered.length}</p>`;
+                filtered.forEach(p => {
+                    result.innerHTML += `<p>  ✅ ${p.name}</p>`;
+                });
+                
+                if (filtered.length === 0) {
+                    result.innerHTML += `<p style="color: red;">❌ NINGÚN PRODUCTO PASA EL FILTRO</p>`;
+                    
+                    // Debug del filtro con CAMA VICTORIA
+                    result.innerHTML += `<p>🔍 Debug CAMA VICTORIA:</p>`;
+                    Object.keys(criteria).forEach(key => {
+                        const value = criteria[key];
+                        const productValue = cama[key];
+                        const matches = productValue === value;
+                        result.innerHTML += `<p>  ${key}: ${productValue} === ${value} = ${matches}</p>`;
+                    });
+                }
+                
+            } catch (error) {
+                console.error('❌ Error:', error);
+                result.innerHTML += `<p style="color: red;">❌ Error: ${error.message}</p>`;
+            }
+        }
+        
+        testDirect();
+    </script>
+</body>
+</html>

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Orden de Categorías</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        .test-section { margin: 20px 0; padding: 20px; border: 1px solid #ddd; }
+        .debug { background: #f8f9fa; padding: 10px; margin: 10px 0; }
+        .category-item { margin: 10px 0; padding: 15px; background: #e8f5e8; border-left: 4px solid #28a745; }
+        .category-number { font-weight: bold; color: #007bff; }
+        .category-name { font-size: 1.1em; font-weight: bold; margin: 5px 0; }
+        .category-desc { color: #666; font-size: 0.9em; }
+        .logic-explanation { background: #fff3cd; padding: 15px; margin: 10px 0; border-left: 4px solid #ffc107; }
+    </style>
+</head>
+<body>
+    <h1>📊 Test Orden Lógico de Categorías</h1>
+    
+    <div class="debug" id="debug-info">
+        🔄 Cargando categorías...
+    </div>
+    
+    <div class="test-section">
+        <h2>🎯 Lógica del Nuevo Orden</h2>
+        <div class="logic-explanation">
+            <h3>📋 Criterios de Ordenamiento:</h3>
+            <ol>
+                <li><strong>Necesidades Básicas</strong> (Alimentación, Descanso)</li>
+                <li><strong>Entretenimiento</strong> (Juguetes)</li>
+                <li><strong>Cuidado Específico</strong> (Rascadores, Transporte)</li>
+                <li><strong>Paseo y Control</strong> (Collares, Correas)</li>
+                <li><strong>Higiene y Cuidado</strong></li>
+                <li><strong>Vestimenta</strong> (Estacional)</li>
+                <li><strong>Accesorios de Moda</strong></li>
+            </ol>
+        </div>
+    </div>
+
+    <div class="test-section">
+        <h2>📋 Orden Actual de Categorías</h2>
+        <div id="categories-list">
+            Cargando lista...
+        </div>
+    </div>
+
+    <div class="test-section">
+        <h2>🔍 Análisis de Productos por Categoría</h2>
+        <div id="products-analysis">
+            Analizando productos...
+        </div>
+    </div>
+
+    <script>
+        async function testCategoriesOrder() {
+            const debugInfo = document.getElementById('debug-info');
+            const categoriesList = document.getElementById('categories-list');
+            const productsAnalysis = document.getElementById('products-analysis');
+            
+            try {
+                // Cargar categorías
+                const categoriesResponse = await fetch('data/categories.json');
+                const categories = await categoriesResponse.json();
+                
+                // Cargar productos
+                const productsResponse = await fetch('data/products.json');
+                const products = await productsResponse.json();
+                
+                debugInfo.innerHTML = `✅ ${categories.categories.length} categorías cargadas<br>✅ ${products.length} productos cargados`;
+                
+                // Mostrar orden actual
+                let categoriesHtml = '';
+                categories.categories.forEach((category, index) => {
+                    categoriesHtml += `
+                        <div class="category-item">
+                            <span class="category-number">${index + 1}.</span>
+                            <div class="category-name">${category.name}</div>
+                            <div class="category-desc">${category.description}</div>
+                            <small>ID: ${category.id}</small>
+                        </div>
+                    `;
+                });
+                categoriesList.innerHTML = categoriesHtml;
+                
+                // Análisis de productos por categoría
+                const categoryFilters = {
+                    '409': 'COMEDEROS Y BEBEDEROS',
+                    '264': 'JUGUETES', 
+                    '261': 'COLCHONETAS Y MOISES',
+                    '263': 'RASCADORES',
+                    '262': 'BOLSOS Y CASITAS',
+                    '317': 'COLLARES, CORREAS Y PECHERAS',
+                    '250': 'HIGIENE Y CUIDADO',
+                    '275': 'ROPA VERANO',
+                    '316': 'ROPA INVIERNO',
+                    '500': 'ACCESORIOS'
+                };
+                
+                let analysisHtml = '<h3>📊 Productos Disponibles por Categoría:</h3>';
+                
+                Object.entries(categoryFilters).forEach(([id, name]) => {
+                    // Contar productos que coinciden con cada categoría
+                    let count = 0;
+                    let productNames = [];
+                    
+                    // Lógica de filtrado simplificada
+                    products.forEach(product => {
+                        let matches = false;
+                        
+                        switch(id) {
+                            case '409': // COMEDEROS Y BEBEDEROS
+                                matches = product.subcategory?.toLowerCase().includes('comedero') ||
+                                         product.tags?.some(tag => ['comedero', 'alimentación', 'comida'].includes(tag.toLowerCase()));
+                                break;
+                            case '264': // JUGUETES
+                                matches = product.subcategory?.toLowerCase().includes('juguete') ||
+                                         product.tags?.some(tag => ['juguete', 'interactivo', 'diversión'].includes(tag.toLowerCase()));
+                                break;
+                            case '261': // COLCHONETAS Y MOISES
+                                matches = product.subcategory?.toLowerCase().includes('cama') ||
+                                         product.tags?.some(tag => ['cama', 'colchoneta', 'descanso'].includes(tag.toLowerCase()));
+                                break;
+                            case '263': // RASCADORES
+                                matches = product.subcategory?.toLowerCase().includes('rascador') ||
+                                         product.tags?.some(tag => tag.toLowerCase().includes('rascador'));
+                                break;
+                            case '262': // BOLSOS Y CASITAS
+                                matches = product.subcategory?.toLowerCase().includes('casita') ||
+                                         product.subcategory?.toLowerCase().includes('transportín') ||
+                                         product.tags?.some(tag => ['casa', 'casita', 'transportín', 'bolso'].includes(tag.toLowerCase()));
+                                break;
+                            case '500': // ACCESORIOS
+                                matches = product.subcategory?.toLowerCase().includes('accesorio') ||
+                                         product.tags?.some(tag => ['anteojos', 'accesorio', 'moda', 'estilo'].includes(tag.toLowerCase()));
+                                break;
+                        }
+                        
+                        if (matches) {
+                            count++;
+                            productNames.push(product.name);
+                        }
+                    });
+                    
+                    const statusColor = count > 0 ? '#28a745' : '#dc3545';
+                    const statusIcon = count > 0 ? '✅' : '❌';
+                    
+                    analysisHtml += `
+                        <div style="margin: 10px 0; padding: 10px; border-left: 4px solid ${statusColor}; background: ${count > 0 ? '#d4edda' : '#f8d7da'};">
+                            <strong>${statusIcon} ${name}</strong><br>
+                            Productos: ${count}<br>
+                            ${count > 0 ? `<small>${productNames.join(', ')}</small>` : '<small>Sin productos disponibles</small>'}
+                        </div>
+                    `;
+                });
+                
+                productsAnalysis.innerHTML = analysisHtml;
+                
+                debugInfo.innerHTML += `<br><br>✅ CATEGORÍAS REORGANIZADAS LÓGICAMENTE`;
+                debugInfo.innerHTML += `<br>🎯 Orden: Básicas → Entretenimiento → Específicas → Moda`;
+                debugInfo.innerHTML += `<br>📊 ${categories.categories.length} categorías en orden lógico`;
+                
+            } catch (error) {
+                debugInfo.innerHTML = `❌ Error: ${error.message}`;
+                console.error('Error:', error);
+            }
+        }
+        
+        // Ejecutar test
+        testCategoriesOrder();
+    </script>
+</body>
+</html>

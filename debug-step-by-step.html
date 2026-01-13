@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Debug Step by Step</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        .log { background: #f8f9fa; padding: 5px; margin: 2px 0; border-left: 3px solid #007bff; }
+        .error { border-left-color: #dc3545; background: #f8d7da; }
+        .success { border-left-color: #28a745; background: #d4edda; }
+        .warning { border-left-color: #ffc107; background: #fff3cd; }
+        .section { margin: 20px 0; padding: 20px; border: 1px solid #ddd; }
+        pre { background: #f8f9fa; padding: 10px; overflow-x: auto; font-size: 12px; }
+    </style>
+</head>
+<body>
+    <h1>🔍 Debug Step by Step</h1>
+    <div id="logs"></div>
+    
+    <div class="section" data-section="top-discounts">
+        <h2>🔥 TOP DESCUENTOS HOY</h2>
+        <div class="section__content carousel" id="top-discounts-content">
+            Esperando...
+        </div>
+    </div>
+
+    <script>
+        const logsDiv = document.getElementById('logs');
+        
+        function log(message, type = 'log') {
+            console.log(message);
+            const div = document.createElement('div');
+            div.className = `log ${type}`;
+            div.innerHTML = `${new Date().toLocaleTimeString()}: ${message}`;
+            logsDiv.appendChild(div);
+            logsDiv.scrollTop = logsDiv.scrollHeight;
+        }
+        
+        async function debugStepByStep() {
+            try {
+                log('🚀 Iniciando debug paso a paso...', 'success');
+                
+                // Paso 1: Verificar que fetch funciona
+                log('📡 Paso 1: Probando fetch básico...');
+                const response = await fetch('data/products.json');
+                log(`📡 Response status: ${response.status}`, response.ok ? 'success' : 'error');
+                
+                if (!response.ok) {
+                    throw new Error(`HTTP ${response.status}`);
+                }
+                
+                // Paso 2: Parsear JSON
+                log('📋 Paso 2: Parseando JSON...');
+                const products = await response.json();
+                log(`📋 Productos parseados: ${products.length}`, 'success');
+                
+                // Paso 3: Buscar CAMA VICTORIA
+                log('🛏️ Paso 3: Buscando CAMA VICTORIA...');
+                const cama = products.find(p => p.id === 'prod_222');
+                if (cama) {
+                    log('🛏️ CAMA VICTORIA encontrada ✅', 'success');
+                    log(`🛏️ topDiscount: ${cama.topDiscount}`);
+                    log(`🛏️ marketing: ${cama.images.marketing}`);
+                } else {
+                    log('🛏️ CAMA VICTORIA NO encontrada ❌', 'error');
+                    return;
+                }
+                
+                // Paso 4: Filtrar topDiscount
+                log('🔥 Paso 4: Filtrando productos con topDiscount...');
+                const topDiscountProducts = products.filter(p => p.topDiscount === true);
+                log(`🔥 Productos con topDiscount: ${topDiscountProducts.length}`, 'success');
+                
+                topDiscountProducts.forEach(p => {
+                    log(`  - ${p.name} (${p.id})`);
+                });
+                
+                // Paso 5: Verificar que CAMA VICTORIA está en la lista
+                const camaInList = topDiscountProducts.find(p => p.id === 'prod_222');
+                if (camaInList) {
+                    log('✅ CAMA VICTORIA SÍ está en la lista filtrada', 'success');
+                } else {
+                    log('❌ CAMA VICTORIA NO está en la lista filtrada', 'error');
+                    log(`🔍 Debug: cama.topDiscount = ${cama.topDiscount} (tipo: ${typeof cama.topDiscount})`);
+                    return;
+                }
+                
+                // Paso 6: Cargar configuración home
+                log('📋 Paso 6: Cargando configuración home...');
+                const homeResponse = await fetch('data/home.json');
+                const homeConfig = await homeResponse.json();
+                const topDiscountsSection = homeConfig.sections.find(s => s.id === 'top-discounts');
+                log('📋 Configuración TOP DESCUENTOS cargada', 'success');
+                log(`📋 Filtro: ${JSON.stringify(topDiscountsSection.filter)}`);
+                
+                // Paso 7: Simular filtrado exacto del HomeRenderer
+                log('🧪 Paso 7: Simulando filtrado del HomeRenderer...');
+                const criteria = topDiscountsSection.filter;
+                const filtered = products.filter(p => {
+                    const matches = Object.keys(criteria).every(key => {
+                        const value = criteria[key];
+                        const productValue = p[key];
+                        
+                        log(`  Checking ${p.name}: ${key} = ${productValue} === ${value} ? ${productValue === value}`);
+                        
+                        if (typeof value === 'object' && value.$gte) {
+                            return productValue >= value.$gte;
+                        }
+                        
+                        return productValue === value;
+                    });
+                    
+                    return matches;
+                });
+                
+                log(`🧪 Productos que pasan el filtro: ${filtered.length}`, filtered.length > 0 ? 'success' : 'error');
+                
+                if (filtered.length > 0) {
+                    filtered.forEach(p => {
+                        log(`  ✅ ${p.name}`, 'success');
+                    });
+                    
+                    // Paso 8: Renderizar manualmente
+                    log('🎨 Paso 8: Renderizando productos manualmente...');
+                    const content = document.getElementById('top-discounts-content');
+                    
+                    const html = filtered.map(product => {
+                        const imageUrl = product.images.marketing || product.images.thumb;
+                        return `
+                            <div style="border: 1px solid #ccc; padding: 10px; margin: 10px; display: inline-block; width: 200px;">
+                                <img src="${imageUrl}" alt="${product.name}" style="width: 100%; height: 150px; object-fit: cover;"
+                                     onerror="this.style.border='2px solid red';">
+                                <h3>${product.name}</h3>
+                                <p>$${product.price.toLocaleString()}</p>
+                                <p>Descuento: ${product.discount}%</p>
+                                <small>Imagen: ${imageUrl}</small>
+                            </div>
+                        `;
+                    }).join('');
+                    
+                    content.innerHTML = html;
+                    log('🎨 Productos renderizados manualmente ✅', 'success');
+                    
+                } else {
+                    log('❌ NINGÚN PRODUCTO PASA EL FILTRO', 'error');
+                    
+                    // Debug detallado del filtro
+                    log('🔍 Debug detallado del filtro con CAMA VICTORIA:', 'warning');
+                    Object.keys(criteria).forEach(key => {
+                        const value = criteria[key];
+                        const productValue = cama[key];
+                        const matches = productValue === value;
+                        log(`  ${key}: "${productValue}" === "${value}" = ${matches}`, matches ? 'success' : 'error');
+                        log(`  Tipos: ${typeof productValue} vs ${typeof value}`, 'warning');
+                    });
+                }
+                
+            } catch (error) {
+                log(`❌ ERROR: ${error.message}`, 'error');
+                console.error('Error completo:', error);
+            }
+        }
+        
+        // Ejecutar debug
+        debugStepByStep();
+    </script>
+</body>
+</html>

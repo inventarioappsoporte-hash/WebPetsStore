@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test ROPA Primero</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        .category-item { margin: 10px 0; padding: 15px; background: #e8f5e8; border-left: 4px solid #28a745; }
+        .category-number { font-weight: bold; color: #007bff; font-size: 1.2em; }
+        .category-name { font-size: 1.1em; font-weight: bold; margin: 5px 0; }
+        .highlight { background: #fff3cd !important; border-left-color: #ffc107 !important; }
+        .debug { background: #f8f9fa; padding: 10px; margin: 10px 0; }
+    </style>
+</head>
+<body>
+    <h1>👕 Test: ROPA como Primeras Categorías</h1>
+    
+    <div class="debug" id="debug-info">
+        🔄 Cargando categorías...
+    </div>
+    
+    <div id="categories-list">
+        Cargando lista...
+    </div>
+
+    <script>
+        async function testRopaFirst() {
+            const debugInfo = document.getElementById('debug-info');
+            const categoriesList = document.getElementById('categories-list');
+            
+            try {
+                const response = await fetch('data/categories.json');
+                const categories = await response.json();
+                
+                debugInfo.innerHTML = `✅ ${categories.categories.length} categorías cargadas`;
+                
+                let html = '<h2>📋 Nuevo Orden de Categorías:</h2>';
+                
+                categories.categories.forEach((category, index) => {
+                    const isRopa = category.name.includes('ROPA');
+                    const highlightClass = isRopa ? 'highlight' : '';
+                    
+                    html += `
+                        <div class="category-item ${highlightClass}">
+                            <span class="category-number">${index + 1}.</span>
+                            <div class="category-name">${category.name}</div>
+                            <div style="color: #666; font-size: 0.9em;">${category.description}</div>
+                            <small>ID: ${category.id}</small>
+                            ${isRopa ? '<div style="color: #856404; font-weight: bold; margin-top: 5px;">🎯 CATEGORÍA PRIORITARIA</div>' : ''}
+                        </div>
+                    `;
+                });
+                
+                categoriesList.innerHTML = html;
+                
+                // Verificar que ROPA esté primero
+                const firstTwo = categories.categories.slice(0, 2);
+                const ropaFirst = firstTwo.every(cat => cat.name.includes('ROPA'));
+                
+                if (ropaFirst) {
+                    debugInfo.innerHTML += `<br><br>✅ ROPA VERANO y ROPA INVIERNO están en las primeras 2 posiciones`;
+                    debugInfo.innerHTML += `<br>🎯 Orden comercial optimizado para productos de moda`;
+                } else {
+                    debugInfo.innerHTML += `<br><br>❌ ROPA no está en las primeras posiciones`;
+                }
+                
+            } catch (error) {
+                debugInfo.innerHTML = `❌ Error: ${error.message}`;
+                console.error('Error:', error);
+            }
+        }
+        
+        testRopaFirst();
+    </script>
+</body>
+</html>

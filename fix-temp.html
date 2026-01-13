@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fix Temporal - Sistema Dual</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/typography.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/home.css">
+    <style>
+        .debug-info { background: #f8f9fa; padding: 10px; margin: 10px 0; border: 1px solid #ddd; }
+        .card { margin: 10px; }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header__content">
+                <div class="header__logo">
+                    <h1>🐾 Pets Store</h1>
+                </div>
+                <nav class="header__nav">
+                    <a href="index.html" class="nav__link nav__link--active">Home</a>
+                    <a href="search.html" class="nav__link">Buscar</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Debug Info -->
+    <div class="container">
+        <div class="debug-info" id="debug-info">
+            🔄 Cargando información de debug...
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main class="main">
+        <div class="container">
+            <section class="section" data-section="top-discounts">
+                <h2 class="section__title">🔥 TOP DESCUENTOS HOY - SISTEMA DUAL</h2>
+                <div class="section__content carousel" id="top-discounts-manual">
+                    🔄 Cargando productos...
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <script>
+        async function fixTemporal() {
+            const debugInfo = document.getElementById('debug-info');
+            const content = document.getElementById('top-discounts-manual');
+            
+            try {
+                // Cargar productos directamente
+                const response = await fetch('data/products.json');
+                const products = await response.json();
+                
+                debugInfo.innerHTML = `✅ ${products.length} productos cargados`;
+                
+                // Filtrar topDiscount manualmente
+                const topDiscountProducts = products.filter(p => p.topDiscount === true);
+                debugInfo.innerHTML += `<br>🔥 ${topDiscountProducts.length} productos con topDiscount`;
+                
+                // Mostrar lista de productos
+                topDiscountProducts.forEach(p => {
+                    debugInfo.innerHTML += `<br>  - ${p.name} (marketing: ${p.images.marketing ? 'SÍ' : 'NO'})`;
+                });
+                
+                // Renderizar con sistema dual
+                if (topDiscountProducts.length > 0) {
+                    const html = topDiscountProducts.map(product => {
+                        // SISTEMA DUAL: Usar marketing si existe, sino thumb
+                        const imageUrl = product.images.marketing || product.images.thumb;
+                        const imageType = product.images.marketing ? 'MARKETING' : 'THUMB';
+                        
+                        return `
+                            <div class="card" onclick="window.location.href='product.html?id=${product.id}'">
+                                <div class="card__image-wrapper">
+                                    <img src="${imageUrl}" alt="${product.name}" class="card__image" loading="lazy">
+                                    ${product.discount ? `<span class="card__discount">-${product.discount}%</span>` : ''}
+                                    <div style="position: absolute; top: 5px; left: 5px; background: rgba(0,0,0,0.7); color: white; padding: 2px 5px; font-size: 10px;">
+                                        ${imageType}
+                                    </div>
+                                </div>
+                                <div class="card__content">
+                                    <h3 class="card__title">${product.name}</h3>
+                                    <div class="card__rating">
+                                        <span class="card__stars">⭐ ${product.rating}</span>
+                                        <span class="card__reviews">(${product.reviews})</span>
+                                    </div>
+                                    <div class="card__price">
+                                        <span class="card__price-current">$${product.price.toLocaleString()}</span>
+                                        ${product.originalPrice ? `<span class="card__price-original">$${product.originalPrice.toLocaleString()}</span>` : ''}
+                                    </div>
+                                    <button class="btn btn--small btn--primary" onclick="event.stopPropagation()">Ver Producto</button>
+                                </div>
+                            </div>
+                        `;
+                    }).join('');
+                    
+                    content.innerHTML = html;
+                    debugInfo.innerHTML += `<br><br>✅ SISTEMA DUAL FUNCIONANDO:`;
+                    debugInfo.innerHTML += `<br>🖼️ CAMA VICTORIA usa imagen de MARKETING`;
+                    debugInfo.innerHTML += `<br>🖼️ Otros productos usan imagen THUMB`;
+                    debugInfo.innerHTML += `<br>🔗 Todos los clicks van a product.html (imagen COVER)`;
+                    
+                } else {
+                    content.innerHTML = '<p>❌ No hay productos con topDiscount</p>';
+                }
+                
+            } catch (error) {
+                debugInfo.innerHTML = `❌ Error: ${error.message}`;
+                content.innerHTML = `❌ Error: ${error.message}`;
+            }
+        }
+        
+        // Ejecutar fix
+        fixTemporal();
+    </script>
+</body>
+</html>

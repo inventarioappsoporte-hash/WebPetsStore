@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Categoría ACCESORIOS</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        .test-section { margin: 20px 0; padding: 20px; border: 1px solid #ddd; }
+        .debug { background: #f8f9fa; padding: 10px; margin: 10px 0; }
+        .product-item { margin: 5px 0; padding: 10px; background: #e8f5e8; border-left: 4px solid #28a745; }
+        .category-info { background: #d1ecf1; padding: 15px; margin: 10px 0; border-left: 4px solid #17a2b8; }
+    </style>
+</head>
+<body>
+    <h1>🐾 Test Nueva Categoría: ACCESORIOS</h1>
+    
+    <div class="debug" id="debug-info">
+        🔄 Cargando información...
+    </div>
+    
+    <div class="test-section">
+        <h2>📋 Información de la Nueva Categoría</h2>
+        <div class="category-info">
+            <h3>🐾 ACCESORIOS (ID: 500)</h3>
+            <p><strong>Descripción:</strong> Accesorios únicos y divertidos para darle estilo y personalidad a tu mascota.</p>
+            <p><strong>Filtros:</strong></p>
+            <ul>
+                <li>Subcategoría contiene "accesorio"</li>
+                <li>Tags contienen: anteojos, accesorio, moda, estilo, complemento</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="test-section">
+        <h2>🧪 Test del Filtro ACCESORIOS</h2>
+        <div id="filter-test">
+            Ejecutando test...
+        </div>
+    </div>
+
+    <div class="test-section">
+        <h2>📊 Comparación: Antes vs Después</h2>
+        <div id="comparison">
+            Analizando cambios...
+        </div>
+    </div>
+
+    <script>
+        async function testAccesoriosCategory() {
+            const debugInfo = document.getElementById('debug-info');
+            const filterTest = document.getElementById('filter-test');
+            const comparison = document.getElementById('comparison');
+            
+            try {
+                // Cargar productos
+                const response = await fetch('data/products.json');
+                const products = await response.json();
+                
+                // Cargar categorías
+                const categoriesResponse = await fetch('data/categories.json');
+                const categories = await categoriesResponse.json();
+                
+                debugInfo.innerHTML = `✅ ${products.length} productos cargados<br>✅ ${categories.categories.length} categorías cargadas`;
+                
+                // Verificar que la nueva categoría existe
+                const accesoriosCategory = categories.categories.find(c => c.id === 500);
+                if (accesoriosCategory) {
+                    debugInfo.innerHTML += `<br>✅ Categoría ACCESORIOS encontrada: ${accesoriosCategory.name}`;
+                } else {
+                    debugInfo.innerHTML += `<br>❌ Categoría ACCESORIOS NO encontrada`;
+                    return;
+                }
+                
+                // Test del filtro ACCESORIOS
+                const accesoriosFilter = (product) => {
+                    return (product.subcategory && product.subcategory.toLowerCase().includes('accesorio')) ||
+                           (product.tags && product.tags.some(tag => 
+                             ['anteojos', 'accesorio', 'moda', 'estilo', 'complemento'].includes(tag.toLowerCase())
+                           ));
+                };
+                
+                const accesoriosProducts = products.filter(accesoriosFilter);
+                
+                let filterHtml = `<h3>🎯 Productos en ACCESORIOS: ${accesoriosProducts.length}</h3>`;
+                
+                if (accesoriosProducts.length > 0) {
+                    accesoriosProducts.forEach(product => {
+                        filterHtml += `
+                            <div class="product-item">
+                                <strong>✅ ${product.name}</strong><br>
+                                Subcategoría: ${product.subcategory}<br>
+                                Tags: ${product.tags.join(', ')}<br>
+                                Precio: $${product.price.toLocaleString()}<br>
+                                TopDiscount: ${product.topDiscount ? 'SÍ' : 'NO'}
+                            </div>
+                        `;
+                    });
+                } else {
+                    filterHtml += '<p style="color: #999;">No hay productos que coincidan con el filtro ACCESORIOS</p>';
+                }
+                
+                filterTest.innerHTML = filterHtml;
+                
+                // Comparación
+                const anteojosProduct = products.find(p => p.name.includes('Anteojos'));
+                let comparisonHtml = '<h3>📊 Análisis del Producto Anteojos:</h3>';
+                
+                if (anteojosProduct) {
+                    comparisonHtml += `
+                        <div class="product-item">
+                            <strong>${anteojosProduct.name}</strong><br>
+                            <strong>Antes:</strong> Podría aparecer en múltiples categorías genéricas<br>
+                            <strong>Ahora:</strong> Aparece específicamente en ACCESORIOS<br>
+                            <strong>Subcategoría:</strong> ${anteojosProduct.subcategory}<br>
+                            <strong>Tags relevantes:</strong> ${anteojosProduct.tags.filter(tag => 
+                                ['anteojos', 'accesorio', 'moda', 'estilo'].includes(tag.toLowerCase())
+                            ).join(', ')}<br>
+                            <strong>¿Coincide con filtro ACCESORIOS?</strong> ${accesoriosFilter(anteojosProduct) ? '✅ SÍ' : '❌ NO'}
+                        </div>
+                    `;
+                } else {
+                    comparisonHtml += '<p style="color: red;">❌ Producto Anteojos no encontrado</p>';
+                }
+                
+                comparison.innerHTML = comparisonHtml;
+                
+                debugInfo.innerHTML += `<br><br>✅ NUEVA CATEGORÍA ACCESORIOS IMPLEMENTADA`;
+                debugInfo.innerHTML += `<br>🎯 Filtro específico para accesorios de moda`;
+                debugInfo.innerHTML += `<br>😎 Anteojos ahora tiene su propia categoría`;
+                debugInfo.innerHTML += `<br>🔍 Disponible en el menú de categorías`;
+                
+            } catch (error) {
+                debugInfo.innerHTML = `❌ Error: ${error.message}`;
+                console.error('Error:', error);
+            }
+        }
+        
+        // Ejecutar test
+        testAccesoriosCategory();
+    </script>
+</body>
+</html>

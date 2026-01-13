@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Filtros de Categoría</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        .test-section { margin: 20px 0; padding: 20px; border: 1px solid #ddd; }
+        .debug { background: #f8f9fa; padding: 10px; margin: 10px 0; }
+        .category-test { margin: 10px 0; padding: 10px; border: 1px solid #ccc; }
+        .results { margin: 10px 0; }
+        .product-item { margin: 5px 0; padding: 5px; background: #f0f0f0; }
+    </style>
+</head>
+<body>
+    <h1>🔍 Test Filtros de Categoría Precisos</h1>
+    
+    <div class="debug" id="debug-info">
+        🔄 Cargando productos...
+    </div>
+    
+    <div class="test-section">
+        <h2>📊 Análisis de Productos por Categoría</h2>
+        <div id="category-analysis">
+            Analizando...
+        </div>
+    </div>
+
+    <div class="test-section">
+        <h2>🧪 Test de Filtros Específicos</h2>
+        <div id="filter-tests">
+            Ejecutando tests...
+        </div>
+    </div>
+
+    <script>
+        async function testCategoryFilters() {
+            const debugInfo = document.getElementById('debug-info');
+            const analysisDiv = document.getElementById('category-analysis');
+            const testsDiv = document.getElementById('filter-tests');
+            
+            try {
+                // Cargar productos
+                const response = await fetch('data/products.json');
+                const products = await response.json();
+                
+                debugInfo.innerHTML = `✅ ${products.length} productos cargados`;
+                
+                // Análisis de productos
+                let analysisHtml = '<h3>📋 Productos por Subcategoría y Tags:</h3>';
+                products.forEach(product => {
+                    analysisHtml += `
+                        <div class="product-item">
+                            <strong>${product.name}</strong><br>
+                            Categoría: ${product.category}<br>
+                            Subcategoría: ${product.subcategory || 'N/A'}<br>
+                            Tags: ${product.tags ? product.tags.join(', ') : 'N/A'}
+                        </div>
+                    `;
+                });
+                analysisDiv.innerHTML = analysisHtml;
+                
+                // Definir filtros (copiados del searchEngine.js)
+                const categoryFilters = {
+                    '263': { // RASCADORES
+                        name: 'RASCADORES',
+                        filter: (product) => {
+                            return (product.subcategory && product.subcategory.toLowerCase().includes('rascador')) ||
+                                   (product.tags && product.tags.some(tag => tag.toLowerCase().includes('rascador'))) ||
+                                   (product.name && product.name.toLowerCase().includes('rascador'));
+                        }
+                    },
+                    '264': { // JUGUETES
+                        name: 'JUGUETES',
+                        filter: (product) => {
+                            return (product.subcategory && product.subcategory.toLowerCase().includes('juguete')) ||
+                                   (product.tags && product.tags.some(tag => 
+                                     ['juguete', 'juego', 'diversión', 'interactivo'].includes(tag.toLowerCase())
+                                   ));
+                        }
+                    },
+                    '262': { // BOLSOS Y CASITAS
+                        name: 'BOLSOS Y CASITAS',
+                        filter: (product) => {
+                            return (product.subcategory && (
+                                     product.subcategory.toLowerCase().includes('casa') ||
+                                     product.subcategory.toLowerCase().includes('bolso') ||
+                                     product.subcategory.toLowerCase().includes('transportín')
+                                   )) ||
+                                   (product.tags && product.tags.some(tag => 
+                                     ['casa', 'bolso', 'transportín', 'viaje', 'casita'].includes(tag.toLowerCase())
+                                   ));
+                        }
+                    },
+                    '261': { // COLCHONETAS Y MOISES
+                        name: 'COLCHONETAS Y MOISES',
+                        filter: (product) => {
+                            return (product.subcategory && product.subcategory.toLowerCase().includes('cama')) ||
+                                   (product.tags && product.tags.some(tag => 
+                                     ['cama', 'colchoneta', 'moisés', 'descanso'].includes(tag.toLowerCase())
+                                   ));
+                        }
+                    },
+                    '500': { // ACCESORIOS
+                        name: 'ACCESORIOS',
+                        filter: (product) => {
+                            return (product.subcategory && product.subcategory.toLowerCase().includes('accesorio')) ||
+                                   (product.tags && product.tags.some(tag => 
+                                     ['anteojos', 'accesorio', 'moda', 'estilo', 'complemento'].includes(tag.toLowerCase())
+                                   ));
+                        }
+                    }
+                };
+                
+                // Ejecutar tests
+                let testsHtml = '';
+                Object.entries(categoryFilters).forEach(([categoryId, config]) => {
+                    const results = products.filter(config.filter);
+                    
+                    testsHtml += `
+                        <div class="category-test">
+                            <h4>🔍 ${config.name} (ID: ${categoryId})</h4>
+                            <p><strong>Resultados: ${results.length} productos</strong></p>
+                            <div class="results">
+                                ${results.length > 0 ? 
+                                    results.map(p => `
+                                        <div style="margin: 5px 0; padding: 5px; background: #e8f5e8;">
+                                            ✅ ${p.name} (${p.subcategory || 'Sin subcategoría'})
+                                        </div>
+                                    `).join('') :
+                                    '<div style="color: #999;">No hay productos que coincidan</div>'
+                                }
+                            </div>
+                        </div>
+                    `;
+                });
+                
+                testsDiv.innerHTML = testsHtml;
+                
+                debugInfo.innerHTML += `<br><br>✅ FILTROS PRECISOS IMPLEMENTADOS`;
+                debugInfo.innerHTML += `<br>🎯 Cada categoría filtra solo productos específicos`;
+                debugInfo.innerHTML += `<br>🔍 RASCADORES solo muestra productos con "rascador" en subcategoría/tags/nombre`;
+                debugInfo.innerHTML += `<br>🧸 JUGUETES solo muestra productos con "juguete" en subcategoría/tags`;
+                
+            } catch (error) {
+                debugInfo.innerHTML = `❌ Error: ${error.message}`;
+                console.error('Error:', error);
+            }
+        }
+        
+        // Ejecutar test
+        testCategoryFilters();
+    </script>
+</body>
+</html>

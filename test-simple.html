@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Simple</title>
+</head>
+<body>
+    <h1>Test Simple de Carga</h1>
+    <div id="result"></div>
+
+    <script>
+        async function testSimple() {
+            try {
+                console.log('🔍 Probando carga directa...');
+                
+                // Probar carga directa
+                const response = await fetch('data/products.json');
+                console.log('📡 Response status:', response.status);
+                console.log('📡 Response ok:', response.ok);
+                
+                if (!response.ok) {
+                    throw new Error(`HTTP ${response.status}`);
+                }
+                
+                const products = await response.json();
+                console.log('📦 Products loaded:', products.length);
+                
+                // Buscar CAMA VICTORIA
+                const cama = products.find(p => p.id === 'prod_222');
+                console.log('🛏️ CAMA VICTORIA:', cama);
+                
+                // Filtrar topDiscount
+                const topDiscount = products.filter(p => p.topDiscount === true);
+                console.log('🔥 Top discount products:', topDiscount.length);
+                console.log('🔥 Top discount list:', topDiscount.map(p => p.name));
+                
+                document.getElementById('result').innerHTML = `
+                    <p>✅ Productos cargados: ${products.length}</p>
+                    <p>🔥 Con topDiscount: ${topDiscount.length}</p>
+                    <p>🛏️ CAMA VICTORIA encontrada: ${cama ? 'SÍ' : 'NO'}</p>
+                    ${cama ? `<p>🛏️ CAMA topDiscount: ${cama.topDiscount}</p>` : ''}
+                `;
+                
+            } catch (error) {
+                console.error('❌ Error:', error);
+                document.getElementById('result').innerHTML = `❌ Error: ${error.message}`;
+            }
+        }
+        
+        testSimple();
+    </script>
+</body>
+</html>
