@@ -1,48 +1,47 @@
 [
   {
     "id": "prod_001",
-    "name": "Juguete Mordillo Resistente Premium",
-    "category": "Perros",
-    "subcategory": "Juguetes",
-    "price": 5990,
-    "originalPrice": 9990,
-    "discount": 40,
-    "stock": 15,
+    "name": "COLCHON LIVING MARRON",
+    "category": "Perros y Gatos",
+    "subcategory": "Colchonetas",
+    "price": 59500,
+    "originalPrice": 85000,
+    "discount": 30,
+    "stock": 1,
     "rating": 4.8,
-    "reviews": 342,
+    "reviews": 347,
     "featured": true,
-    "topDiscount": false,
-    "hasVideo": true,
-    "tags": ["juguete", "perros", "mordillo", "resistente", "premium"],
-    "description": "Juguete resistente diseñado para perros con mordida fuerte.",
-    "longDescription": "Ideal para perros grandes y medianos. Resiste mordidas intensas. Fácil de limpiar. Material de goma natural, seguro y duradero.",
+    "topDiscount": true,
+    "hasVideo": false,
+    "tags": ["colchon", "cama", "moisés", "living", "marron", "huella", "descanso", "confort", "perros", "gatos"],
+    "description": "🐾 Moisés / Cama para Mascotas Huella – Línea Living",
+    "longDescription": "Dale a tu mascota el descanso que se merece con el Moisés Huella Línea Living, diseñado para brindar máximo confort, abrigo y protección. Su diseño moderno y tonos cálidos lo convierten en el complemento ideal para cualquier espacio del hogar. Cuenta con bordes elevados y acolchados, perfectos para que tu mascota se recueste apoyando la cabeza y se sienta contenida y segura. El interior suave y mullido proporciona una superficie cómoda para el descanso diario, ideal tanto para perros como para gatos. Fabricado con materiales de alta calidad, resistentes y durables, este moisés es 100% hecho a mano, pensado para un uso prolongado y fácil mantenimiento. ✨ Características destacadas: Diseño rectangular con bordes acolchados, Interior suave y confortable, Sensación de abrigo y protección, Material resistente y duradero, Estilo moderno línea living, Ideal para perros y gatos, Hecho a mano. Marca: Huella. Un espacio cómodo, cálido y seguro donde tu mascota va a querer descansar todos los días 🐶🐱",
     "images": {
       "cover": "assets/images/products/prod_001/cover.jpg",
       "thumb": "assets/images/products/prod_001/thumb.jpg",
       "gallery": [
-        "assets/images/products/prod_001/1.jpg",
-        "assets/images/products/prod_001/2.jpg"
+        "assets/images/products/prod_001/marketing.jpg"
       ]
     },
-    "video": {
-      "url": "assets/videos/prod_001.mp4",
-      "duration": 8,
-      "autoplay": true,
-      "muted": true,
-      "loop": true
+    "marketing": {
+      "type": "image",
+      "url": "assets/images/products/prod_001/marketing.jpg"
     },
     "specs": {
-      "material": "Goma natural",
-      "size": "Mediano",
-      "weight": "250g",
-      "colors": ["Azul", "Naranja"]
+      "dimensions": "58 x 56 x 105 cm",
+      "material": "Materiales de alta calidad, resistentes y durables, 100% hecho a mano",
+      "maxWeight": "20kg",
+      "brand": "Huella",
+      "style": "Línea Living",
+      "color": "Marrón",
+      "idealFor": "Perros y gatos"
     },
     "shipping": {
       "free": true,
-      "days": "2-3"
+      "days": "3-5"
     },
-    "badge": "🔥 Lo más vendido",
-    "promoText": "40% OFF"
+    "badge": "🛏️ Confort Premium",
+    "promoText": "30% OFF"
   },
   {
     "id": "prod_002",
