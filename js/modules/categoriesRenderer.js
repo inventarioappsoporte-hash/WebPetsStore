@@ -6,7 +6,8 @@ class CategoriesRenderer {
 
   async init() {
     try {
-      this.categories = await dataLoader.getCategories();
+      const data = await dataLoader.getCategories();
+      this.categories = data.categories || [];
       this.renderHeaderDropdown();
       this.renderFooterCategories();
     } catch (error) {
