@@ -101,8 +101,9 @@ const Utils = {
     const originalPrice = product.originalPrice.toLocaleString('es-AR');
     const discount = product.discount;
     const colors = product.specs?.colors?.join(', ') || 'No especificado';
+    const imageUrl = window.location.origin + '/' + product.images.cover;
     
-    const message = `¡Hola! 👋\n\nMe interesa comprar:\n\n📦 *${productName}*\n💰 Precio: $${price}\n🏷️ Precio original: $${originalPrice}\n📉 Descuento: ${discount}%\n🎨 Colores disponibles: ${colors}\n\n¿Cuál es el siguiente paso para comprar?`;
+    const message = `¡Hola! 👋\n\nMe interesa comprar:\n\n📦 *${productName}*\n💰 Precio: $${price}\n🏷️ Precio original: $${originalPrice}\n📉 Descuento: ${discount}%\n🎨 Colores disponibles: ${colors}\n\n🖼️ Ver imagen: ${imageUrl}\n\n¿Cuál es el siguiente paso para comprar?`;
     
     const whatsappUrl = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
