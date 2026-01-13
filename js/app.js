@@ -1,4 +1,5 @@
 // Aplicación principal
+// Updated: 2026-01-13 - WhatsApp integration
 class App {
   constructor() {
     this.dataLoader = dataLoader;
