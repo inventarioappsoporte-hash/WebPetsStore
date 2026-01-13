@@ -16,12 +16,20 @@ class SearchEngine {
   }
 
   setupSearchListeners() {
+    console.log('🔍 SearchEngine.setupSearchListeners() - Buscando inputs...');
+    console.log('🔍 Todos los inputs en la página:', document.querySelectorAll('input').length);
+    document.querySelectorAll('input').forEach((input, idx) => {
+      console.log(`  Input ${idx}:`, input.className, input.type, input.placeholder);
+    });
+    
     // Intentar encontrar el input en la página de búsqueda primero
     let searchInput = document.querySelector('.search__input');
+    console.log('🔍 Buscando .search__input:', !!searchInput);
     
     // Si no lo encuentra, intentar con el selector del header
     if (!searchInput) {
       searchInput = document.querySelector(CONSTANTS.SELECTORS.SEARCH_INPUT);
+      console.log('🔍 Buscando', CONSTANTS.SELECTORS.SEARCH_INPUT, ':', !!searchInput);
     }
     
     console.log('🔍 SearchEngine.setupSearchListeners() - searchInput encontrado:', !!searchInput);

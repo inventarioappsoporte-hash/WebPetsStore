@@ -12,6 +12,9 @@ class App {
       const homeRenderer = new HomeRenderer(this.dataLoader);
       await homeRenderer.render();
 
+      // Inicializar búsqueda del header
+      new HeaderSearch(this.dataLoader);
+
       // Inicializar búsqueda
       new SearchEngine(this.dataLoader);
 

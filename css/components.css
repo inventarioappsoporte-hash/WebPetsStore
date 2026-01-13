@@ -43,7 +43,17 @@
   padding: var(--spacing-sm);
   border-radius: var(--radius-md);
   width: 250px;
-  transition: border-color var(--transition-base);
+  transition: all var(--transition-base);
+  opacity: 1;
+  visibility: visible;
+}
+
+.header__search-input.collapsed {
+  width: 0;
+  padding: 0;
+  border: none;
+  opacity: 0;
+  visibility: hidden;
 }
 
 .header__search-input:focus {
@@ -53,6 +63,27 @@
 
 .header__search-input::placeholder {
   color: var(--color-text-secondary);
+}
+
+.header__search-btn {
+  background: none;
+  border: none;
+  color: var(--color-text);
+  font-size: var(--font-size-lg);
+  cursor: pointer;
+  padding: var(--spacing-sm);
+  transition: color var(--transition-base);
+  display: none;
+}
+
+.header__search-btn:hover {
+  color: var(--color-primary);
+}
+
+.header__search {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
 }
 
 /* Card */
@@ -290,6 +321,16 @@
 
   .header__search-input {
     width: 100%;
+  }
+
+  .header__search-btn {
+    display: block;
+  }
+
+  .header__search-input.collapsed {
+    width: 0;
+    padding: 0;
+    border: none;
   }
 }
 
