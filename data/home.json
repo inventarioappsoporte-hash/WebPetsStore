@@ -1,6 +1,6 @@
 {
   "hero": {
-    "productId": "prod_009",
+    "productId": null,
     "title": "LO MÁS VENDIDO DE ESTA SEMANA",
     "cta": "COMPRAR AHORA",
     "ctaSecondary": "VER PRODUCTO"
