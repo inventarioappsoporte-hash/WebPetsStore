@@ -49,7 +49,7 @@ class DataLoader {
   }
 
   async getProducts() {
-    return this.load('products.json');
+    return this.load('products.json?v=' + Date.now());
   }
 
   async getHomeConfig() {
