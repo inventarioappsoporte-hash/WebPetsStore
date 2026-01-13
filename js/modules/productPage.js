@@ -26,6 +26,8 @@ class ProductPage {
   render(product) {
     const container = document.getElementById('product-container');
     
+    // Guardar producto en variable global para acceso desde botones
+    window.currentProduct = product;
     const discount = product.discount ? `<span class="product__discount-badge">-${product.discount}%</span>` : '';
     const video = product.hasVideo ? `
       <div class="product__video-section">
@@ -117,8 +119,8 @@ class ProductPage {
           </div>
 
           <div class="product__actions">
-            <button class="btn btn--primary btn--large" ${product.stock === 0 ? 'disabled' : ''}>
-              ${product.stock > 0 ? 'COMPRAR AHORA' : 'AGOTADO'}
+            <button class="btn btn--primary btn--large" onclick="Utils.sendWhatsAppMessage(window.currentProduct)" ${product.stock === 0 ? 'disabled' : ''}>
+              ${product.stock > 0 ? '💬 COMPRAR POR WHATSAPP' : 'AGOTADO'}
             </button>
             <button class="btn btn--secondary btn--large">
               ❤️ AGREGAR A FAVORITOS

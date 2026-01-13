@@ -6,6 +6,12 @@ const CONSTANTS = {
   ANIMATION_DURATION: 300,
   CAROUSEL_SCROLL_AMOUNT: 300,
   
+  // WhatsApp Configuration
+  WHATSAPP: {
+    PHONE: '541150192474', // Número sin + ni espacios
+    COUNTRY_CODE: '+54',
+  },
+  
   SELECTORS: {
     HERO: '.hero',
     PROMOS: '.promos__grid',

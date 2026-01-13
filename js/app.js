@@ -43,8 +43,12 @@ class App {
     }
 
     if (buyBtn) {
-      buyBtn.addEventListener('click', () => {
-        alert('Funcionalidad de compra próximamente');
+      buyBtn.addEventListener('click', async () => {
+        const productId = await this.dataLoader.getHeroProductId();
+        const product = await this.dataLoader.getProductById(productId);
+        if (product) {
+          Utils.sendWhatsAppMessage(product);
+        }
       });
     }
   }
