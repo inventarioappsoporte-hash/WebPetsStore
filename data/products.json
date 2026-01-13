@@ -366,9 +366,8 @@
   {
     "id": "prod_222",
     "name": "CAMA VICTORIA",
-    "category": "🐾 RASCADORES",
-    "categoryId": 263,
-    "subcategory": "Rascadores y descanso",
+    "category": "Gatos",
+    "subcategory": "Rascadores",
     "price": 15725,
     "originalPrice": 18500,
     "discount": 15,
@@ -402,14 +401,6 @@
       "days": "2-3"
     },
     "badge": "🛏️ Rascador",
-    "promoText": "15% OFF",
-    "sku": "CAM001",
-    "discountInfo": {
-      "name": "Summer Sale 😎",
-      "type": "percent",
-      "value": 15,
-      "validUntil": "2026-01-31",
-      "appliedBy": "category"
-    }
+    "promoText": "15% OFF"
   }
 ]
