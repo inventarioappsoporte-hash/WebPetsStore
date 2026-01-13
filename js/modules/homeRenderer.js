@@ -37,6 +37,7 @@ class HomeRenderer {
   renderHero(heroConfig, products) {
     // Hero image is static in HTML, don't modify it
     // Just ensure buttons are available for app.js to handle
+    console.log('🎬 renderHero called - NOT modifying hero');
     return;
   }
 
