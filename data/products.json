@@ -362,5 +362,54 @@
     },
     "badge": "😎 Moda",
     "promoText": "20% OFF"
+  },
+  {
+    "id": "prod_222",
+    "name": "CAMA VICTORIA",
+    "category": "🐾 RASCADORES",
+    "categoryId": 263,
+    "subcategory": "Rascadores y descanso",
+    "price": 15725,
+    "originalPrice": 18500,
+    "discount": 15,
+    "stock": 10,
+    "rating": 4.5,
+    "reviews": 0,
+    "featured": false,
+    "topDiscount": true,
+    "hasVideo": false,
+    "tags": ["cama", "rascador", "gatos", "mascotas", "descanso", "cartón", "madera"],
+    "description": "Cama rascador multifuncional para gatos y mascotas pequeñas a medianas.",
+    "longDescription": "Combina la comodidad de una cama con la funcionalidad de un rascador. Superficie de cartón corrugado de alta densidad sobre base de madera prensada. Ideal para el descanso y cuidado de las uñas de tu mascota.",
+    "images": {
+      "cover": "assets/images/products/prod_222/cover.jpg",
+      "thumb": "assets/images/products/prod_222/thumb.jpg",
+      "gallery": [
+        "assets/images/products/prod_222/1.jpg"
+      ]
+    },
+    "specs": {
+      "dimensions": "49.5 x 21.5 x 14 cm",
+      "material": "Superficie de rascado en cartón corrugado de alta densidad, Estructura y base en madera prensada (MDF)",
+      "maxWeight": "Hasta 12 kg",
+      "idealFor": "Gatos y mascotas pequeñas a medianas",
+      "washable": "❌ No lavable con agua",
+      "cleaning": "✔️ Limpieza recomendada en seco o con cepillo",
+      "color": "Marrón natural (cartón), Base en tono madera clara"
+    },
+    "shipping": {
+      "free": true,
+      "days": "2-3"
+    },
+    "badge": "🛏️ Rascador",
+    "promoText": "15% OFF",
+    "sku": "CAM001",
+    "discountInfo": {
+      "name": "Summer Sale 😎",
+      "type": "percent",
+      "value": 15,
+      "validUntil": "2026-01-31",
+      "appliedBy": "category"
+    }
   }
 ]
