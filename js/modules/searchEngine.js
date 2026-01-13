@@ -15,10 +15,12 @@ class SearchEngine {
 
   setupSearchListeners() {
     const searchInput = document.querySelector(CONSTANTS.SELECTORS.SEARCH_INPUT);
+    console.log('🔍 SearchEngine.setupSearchListeners() - searchInput encontrado:', !!searchInput);
     if (!searchInput) return;
 
     const debouncedSearch = Utils.debounce((e) => {
       const query = e.target.value.toLowerCase().trim();
+      console.log('🔍 SearchEngine - Input event, query:', query, 'length:', query.length);
       if (query.length < 2) {
         this.clearResults();
         return;
@@ -27,6 +29,7 @@ class SearchEngine {
     }, CONSTANTS.DEBOUNCE_DELAY);
 
     searchInput.addEventListener('input', debouncedSearch);
+    console.log('🔍 SearchEngine - Event listener agregado');
   }
 
   search(query) {
