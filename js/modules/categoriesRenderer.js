@@ -7,10 +7,27 @@ class CategoriesRenderer {
   async init() {
     try {
       this.categories = await dataLoader.getCategories();
+      this.renderHeaderDropdown();
       this.renderFooterCategories();
     } catch (error) {
       console.error('Error initializing categories:', error);
     }
+  }
+
+  renderHeaderDropdown() {
+    const dropdown = document.getElementById('categories-dropdown');
+    if (!dropdown) return;
+
+    dropdown.innerHTML = this.categories
+      .map(cat => `
+        <li class="nav__dropdown-item">
+          <a href="search.html?category=${cat.id}">
+            <div class="nav__dropdown-item-name">${cat.name}</div>
+            <div class="nav__dropdown-item-desc">${cat.description}</div>
+          </a>
+        </li>
+      `)
+      .join('');
   }
 
   renderFooterCategories() {
