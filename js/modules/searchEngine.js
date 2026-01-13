@@ -7,7 +7,9 @@ class SearchEngine {
   }
 
   async init() {
+    console.log('🔍 SearchEngine.init() - Cargando productos...');
     this.products = await this.dataLoader.getProducts();
+    console.log('🔍 SearchEngine.init() - Productos cargados:', this.products?.length || 0);
     this.setupSearchListeners();
   }
 
@@ -28,6 +30,7 @@ class SearchEngine {
   }
 
   search(query) {
+    console.log('🔍 SearchEngine.search() - Query:', query, 'Productos disponibles:', this.products?.length || 0);
     const normalizedQuery = Utils.normalizeText(query);
     
     const results = this.products.filter(product => {
@@ -39,6 +42,7 @@ class SearchEngine {
       return matchName || matchCategory || matchTags || matchDescription;
     });
 
+    console.log('🔍 SearchEngine.search() - Resultados encontrados:', results.length);
     this.displayResults(results, query);
   }
 
