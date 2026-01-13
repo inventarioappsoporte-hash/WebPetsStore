@@ -1,36 +1,49 @@
 {
   "categories": [
     {
-      "id": "perros",
-      "name": "Perros",
-      "icon": "🐕",
-      "subcategories": [
-        { "id": "juguetes", "name": "Juguetes" },
-        { "id": "alimentos", "name": "Alimentos" },
-        { "id": "accesorios", "name": "Accesorios" },
-        { "id": "camas", "name": "Camas" }
-      ]
+      "id": 250,
+      "name": "🐾 HIGIENE Y CUIDADO",
+      "description": "Productos de higiene para mascotas que limpian, protegen y perfuman el pelaje, cuidando la piel y el bienestar animal."
     },
     {
-      "id": "gatos",
-      "name": "Gatos",
-      "icon": "🐱",
-      "subcategories": [
-        { "id": "juguetes", "name": "Juguetes" },
-        { "id": "alimentos", "name": "Alimentos" },
-        { "id": "areneros", "name": "Areneros" },
-        { "id": "accesorios", "name": "Accesorios" }
-      ]
+      "id": 261,
+      "name": "🐾 COLCHONETAS Y MOISES",
+      "description": "Colchonetas y moisés cómodos y resistentes para el descanso seguro y confortable de tu mascota."
     },
     {
-      "id": "otros",
-      "name": "Otros Animales",
-      "icon": "🐹",
-      "subcategories": [
-        { "id": "roedores", "name": "Roedores" },
-        { "id": "aves", "name": "Aves" },
-        { "id": "reptiles", "name": "Reptiles" }
-      ]
+      "id": 262,
+      "name": "🐾 BOLSOS Y CASITAS",
+      "description": "Bolsos y casitas cómodos y seguros para el descanso y transporte de tu mascota."
+    },
+    {
+      "id": 263,
+      "name": "🐾 RASCADORES",
+      "description": "Rascadores resistentes que cuidan las uñas de tu mascota y protegen tu hogar."
+    },
+    {
+      "id": 264,
+      "name": "🐾 JUGUETES",
+      "description": "Juguetes para entretener, estimular y mantener activa a tu mascota."
+    },
+    {
+      "id": 275,
+      "name": "🐾 ROPA VERANO",
+      "description": "Prendas livianas y frescas para el confort de tu mascota en días calurosos."
+    },
+    {
+      "id": 316,
+      "name": "🐾 ROPA INVIERNO",
+      "description": "Ropa abrigada y cómoda para proteger a tu mascota del frío."
+    },
+    {
+      "id": 317,
+      "name": "🐾 COLLARES, CORREAS Y PECHERAS",
+      "description": "Accesorios seguros y cómodos para el paseo y control de tu mascota."
+    },
+    {
+      "id": 409,
+      "name": "🐾 COMEDEROS Y BEBEDEROS",
+      "description": "Comederos y bebederos diseñados para una alimentación cómoda, segura y práctica de tu mascota."
     }
   ]
 }

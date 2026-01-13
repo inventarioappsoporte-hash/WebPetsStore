@@ -8,6 +8,9 @@ class App {
 
   async init() {
     try {
+      // Inicializar categorías
+      await categoriesRenderer.init();
+
       // Renderizar home
       const homeRenderer = new HomeRenderer(this.dataLoader);
       await homeRenderer.render();
