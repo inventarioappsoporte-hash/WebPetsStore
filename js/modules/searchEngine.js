@@ -12,7 +12,108 @@ class SearchEngine {
     console.log('🔍 SearchEngine.init() - Productos cargados:', this.products?.length || 0);
     console.log('🔍 SearchEngine.init() - Llamando setupSearchListeners...');
     this.setupSearchListeners();
+    
+    // Verificar si hay parámetros de URL para filtrar
+    this.checkUrlParams();
+    
     console.log('🔍 SearchEngine.init() - setupSearchListeners completado');
+  }
+
+  checkUrlParams() {
+    const urlParams = new URLSearchParams(window.location.search);
+    const category = urlParams.get('category');
+    const query = urlParams.get('q');
+
+    console.log('🔍 SearchEngine - URL params - category:', category, 'query:', query);
+
+    if (category) {
+      this.filterByCategory(category);
+    } else if (query) {
+      this.search(query);
+      // Llenar el input con la query
+      const searchInput = document.querySelector('.search__input') || document.querySelector(CONSTANTS.SELECTORS.SEARCH_INPUT);
+      if (searchInput) {
+        searchInput.value = query;
+      }
+    }
+  }
+
+  filterByCategory(categoryId) {
+    console.log('🔍 SearchEngine.filterByCategory() - Category ID:', categoryId);
+    
+    // Buscar la categoría por ID en nuestro sistema de categorías
+    let categoryName = '';
+    
+    // Mapear IDs de categorías de la BD a nombres del sistema
+    const categoryMap = {
+      '250': 'Gatos', // HIGIENE Y CUIDADO -> Gatos (productos de higiene)
+      '261': 'Gatos', // COLCHONETAS Y MOISES -> Gatos
+      '262': 'Gatos', // BOLSOS Y CASITAS -> Gatos  
+      '263': 'Gatos', // RASCADORES -> Gatos
+      '264': 'Gatos', // JUGUETES -> Gatos (aunque también hay para perros)
+      '275': 'Gatos', // ROPA VERANO -> Gatos
+      '316': 'Gatos', // ROPA INVIERNO -> Gatos
+      '317': 'Perros', // COLLARES, CORREAS Y PECHERAS -> Perros
+      '409': 'Gatos'  // COMEDEROS Y BEBEDEROS -> Gatos (aunque también hay para perros)
+    };
+
+    categoryName = categoryMap[categoryId] || 'Gatos';
+    
+    console.log('🔍 SearchEngine.filterByCategory() - Mapped to:', categoryName);
+
+    const results = this.products.filter(product => {
+      // Filtrar por categoría exacta o por subcategoría que contenga "rascador"
+      const matchCategory = product.category === categoryName;
+      const matchSubcategory = product.subcategory && product.subcategory.toLowerCase().includes('rascador');
+      const matchTags = product.tags && product.tags.some(tag => tag.toLowerCase().includes('rascador'));
+      
+      return matchCategory || matchSubcategory || matchTags;
+    });
+
+    console.log('🔍 SearchEngine.filterByCategory() - Resultados encontrados:', results.length);
+    console.log('🔍 SearchEngine.filterByCategory() - Productos:', results.map(p => p.name));
+
+    this.displayCategoryResults(results, categoryId, categoryName);
+  }
+
+  displayCategoryResults(results, categoryId, categoryName) {
+    const container = document.querySelector(CONSTANTS.SELECTORS.SEARCH_RESULTS);
+    if (!container) return;
+
+    // Obtener el nombre real de la categoría de la BD
+    const categoryNames = {
+      '250': '🐾 HIGIENE Y CUIDADO',
+      '261': '🐾 COLCHONETAS Y MOISES', 
+      '262': '🐾 BOLSOS Y CASITAS',
+      '263': '🐾 RASCADORES',
+      '264': '🐾 JUGUETES',
+      '275': '🐾 ROPA VERANO',
+      '316': '🐾 ROPA INVIERNO', 
+      '317': '🐾 COLLARES, CORREAS Y PECHERAS',
+      '409': '🐾 COMEDEROS Y BEBEDEROS'
+    };
+
+    const displayName = categoryNames[categoryId] || categoryName;
+
+    if (results.length === 0) {
+      container.innerHTML = `
+        <div class="search__no-results">
+          <p>No encontramos productos en la categoría "<strong>${displayName}</strong>"</p>
+          <p>Intenta con otra categoría</p>
+        </div>
+      `;
+      return;
+    }
+
+    container.innerHTML = `
+      <div class="search__count">
+        <p>Categoría: <strong>${displayName}</strong></p>
+        <p>Se encontraron <strong>${results.length}</strong> producto${results.length !== 1 ? 's' : ''}</p>
+      </div>
+      <div class="search__grid">
+        ${results.map(p => this.renderResultCard(p)).join('')}
+      </div>
+    `;
   }
 
   setupSearchListeners() {
