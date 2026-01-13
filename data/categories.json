@@ -1,6 +1,16 @@
 {
   "categories": [
     {
+      "id": 275,
+      "name": "🐾 ROPA VERANO",
+      "description": "Prendas livianas y frescas para el confort de tu mascota en días calurosos."
+    },
+    {
+      "id": 316,
+      "name": "🐾 ROPA INVIERNO",
+      "description": "Ropa abrigada y cómoda para proteger a tu mascota del frío."
+    },
+    {
       "id": 409,
       "name": "🐾 COMEDEROS Y BEBEDEROS",
       "description": "Comederos y bebederos diseñados para una alimentación cómoda, segura y práctica de tu mascota."
@@ -34,16 +44,6 @@
       "id": 250,
       "name": "🐾 HIGIENE Y CUIDADO",
       "description": "Productos de higiene para mascotas que limpian, protegen y perfuman el pelaje, cuidando la piel y el bienestar animal."
-    },
-    {
-      "id": 275,
-      "name": "🐾 ROPA VERANO",
-      "description": "Prendas livianas y frescas para el confort de tu mascota en días calurosos."
-    },
-    {
-      "id": 316,
-      "name": "🐾 ROPA INVIERNO",
-      "description": "Ropa abrigada y cómoda para proteger a tu mascota del frío."
     },
     {
       "id": 500,
