@@ -35,23 +35,9 @@ class HomeRenderer {
   }
 
   renderHero(heroConfig, products) {
-    const product = products.find(p => p.id === heroConfig.productId);
-    if (!product) return;
-
-    const hero = document.querySelector(CONSTANTS.SELECTORS.HERO);
-    if (!hero) return;
-
-    // NO reemplazar el hero, solo actualizar los botones
-    const overlay = hero.querySelector('.hero__overlay');
-    if (!overlay) return;
-
-    // Limpiar overlay y agregar solo los botones
-    overlay.innerHTML = `
-      <div class="hero__cta">
-        <button class="btn btn--secondary" id="hero-view-btn">VER PRODUCTO</button>
-        <button class="btn btn--primary" id="hero-buy-btn">COMPRAR AHORA</button>
-      </div>
-    `;
+    // Hero image is static in HTML, don't modify it
+    // Just ensure buttons are available for app.js to handle
+    return;
   }
 
   renderPromos(promos) {
