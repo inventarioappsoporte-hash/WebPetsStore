@@ -6,15 +6,20 @@ class HomeRenderer {
 
   async render() {
     try {
-      // Limpiar cache para asegurar datos frescos
-      this.dataLoader.clearCache();
-      console.log('🔄 Cache cleared - loading fresh data');
+      console.log('🏠 HomeRenderer.render() - Starting...');
+      
+      // NO limpiar cache por ahora para debug
+      // this.dataLoader.clearCache();
+      console.log('🔄 Skipping cache clear for debug');
       
       const homeConfig = await this.dataLoader.getHomeConfig();
       const products = await this.dataLoader.getProducts();
 
+      console.log('📋 Home config loaded:', !!homeConfig);
+      console.log('📦 Products loaded:', !!products, products?.length);
+
       if (!homeConfig || !products) {
-        console.error('Error loading home data');
+        console.error('❌ Error loading home data - homeConfig:', !!homeConfig, 'products:', !!products);
         return;
       }
 
@@ -27,7 +32,9 @@ class HomeRenderer {
       this.renderPromos(homeConfig.promos);
 
       // Renderizar secciones
+      console.log('🔄 Starting to render sections...');
       for (const section of homeConfig.sections) {
+        console.log(`🔄 Rendering section: ${section.id}`);
         await this.renderSection(section, products);
       }
 
@@ -35,8 +42,10 @@ class HomeRenderer {
       if (homeConfig.testimonials.show) {
         this.renderTestimonials(homeConfig.testimonials);
       }
+      
+      console.log('✅ HomeRenderer.render() - Completed');
     } catch (error) {
-      console.error('Error rendering home:', error);
+      console.error('❌ Error rendering home:', error);
     }
   }
 
@@ -63,7 +72,10 @@ class HomeRenderer {
 
   async renderSection(section, products) {
     const container = document.querySelector(`[data-section="${section.id}"]`);
-    if (!container) return;
+    if (!container) {
+      console.error(`❌ Container not found for section: ${section.id}`);
+      return;
+    }
 
     // Debug: Log para TOP DESCUENTOS
     if (section.id === 'top-discounts') {
@@ -75,7 +87,13 @@ class HomeRenderer {
       console.log('🔥 CAMA VICTORIA found:', camaVictoria);
       if (camaVictoria) {
         console.log('🔥 CAMA VICTORIA topDiscount:', camaVictoria.topDiscount);
+        console.log('🔥 CAMA VICTORIA marketing image:', camaVictoria.images.marketing);
       }
+      
+      // Debug: Mostrar todos los productos con topDiscount
+      const allTopDiscount = products.filter(p => p.topDiscount === true);
+      console.log('🔥 ALL products with topDiscount:', allTopDiscount.length);
+      console.log('🔥 ALL topDiscount names:', allTopDiscount.map(p => p.name));
     }
 
     // Filtrar productos
@@ -85,6 +103,16 @@ class HomeRenderer {
     if (section.id === 'top-discounts') {
       console.log('🔥 TOP DESCUENTOS - Filtered products:', filtered.length);
       console.log('🔥 TOP DESCUENTOS - Filtered list:', filtered.map(p => p.name));
+      
+      if (filtered.length === 0) {
+        console.error('❌ NO PRODUCTS FILTERED FOR TOP DESCUENTOS!');
+        console.log('🔍 Debug filter function with CAMA VICTORIA...');
+        const camaVictoria = products.find(p => p.id === 'prod_222');
+        if (camaVictoria) {
+          const testFilter = this.filterProducts([camaVictoria], section.filter);
+          console.log('🧪 CAMA VICTORIA filter test result:', testFilter);
+        }
+      }
     }
 
     // Ordenar
@@ -96,15 +124,20 @@ class HomeRenderer {
     const limited = filtered.slice(0, section.limit);
 
     if (limited.length === 0) {
+      console.warn(`⚠️ No products found for section: ${section.id}`);
       container.style.display = 'none';
       return;
     }
 
     const contentClass = section.type === 'carousel' ? 'carousel' : 'grid';
+    
+    // Determinar si usar medios de marketing (solo para TOP DESCUENTOS)
+    const useMarketingMedia = section.id === 'top-discounts';
+    
     const html = `
       <h2 class="section__title">${section.title}</h2>
       <div class="section__content ${contentClass}">
-        ${limited.map(p => this.renderProductCard(p, section.showVideo)).join('')}
+        ${limited.map(p => this.renderProductCard(p, section.showVideo, useMarketingMedia)).join('')}
       </div>
     `;
 
@@ -115,7 +148,7 @@ class HomeRenderer {
     this.attachCardListeners(container);
   }
 
-  renderProductCard(product, showVideo = false) {
+  renderProductCard(product, showVideo = false, useMarketingMedia = false) {
     const discount = product.discount ? `<span class="card__discount">-${product.discount}%</span>` : '';
     const video = showVideo && product.hasVideo ? `
       <div class="card__video-overlay">
@@ -123,12 +156,59 @@ class HomeRenderer {
       </div>
     ` : '';
 
+    // Sistema dual de medios (imágenes + videos)
+    let mediaHtml = '';
+    let imageUrl = product.images.thumb; // Por defecto usar thumb
+    
+    if (useMarketingMedia && product.marketing) {
+      if (product.marketing.type === 'video') {
+        // Usar video de marketing
+        mediaHtml = `
+          <video 
+            class="card__image card__marketing-video" 
+            ${product.marketing.autoplay ? 'autoplay' : ''} 
+            ${product.marketing.muted ? 'muted' : ''} 
+            ${product.marketing.loop ? 'loop' : ''}
+            poster="${product.marketing.poster}"
+            preload="metadata"
+            onloadstart="console.log('🎬 Video marketing cargando:', '${product.name}')"
+            oncanplay="console.log('🎬 Video marketing listo:', '${product.name}')"
+            onerror="console.error('❌ Error video marketing:', '${product.name}'); this.style.display='none'; this.nextElementSibling.style.display='block';"
+          >
+            <source src="${product.marketing.url}" type="video/mp4">
+            Tu navegador no soporta videos.
+          </video>
+          <img 
+            src="${product.marketing.poster}" 
+            alt="${product.name}" 
+            class="card__image card__marketing-fallback" 
+            style="display: none;"
+            loading="lazy"
+          >
+        `;
+      } else if (product.marketing.type === 'image') {
+        // Usar imagen de marketing
+        imageUrl = product.marketing.url;
+        mediaHtml = `<img src="${imageUrl}" alt="${product.name}" class="card__image" loading="lazy">`;
+      }
+    }
+    
+    // Fallback a imagen normal si no hay marketing media
+    if (!mediaHtml) {
+      mediaHtml = `<img src="${imageUrl}" alt="${product.name}" class="card__image" loading="lazy">`;
+    }
+
     return `
       <div class="card" data-product-id="${product.id}" onclick="window.location.href='product.html?id=${product.id}'">
         <div class="card__image-wrapper">
-          <img src="${product.images.thumb}" alt="${product.name}" class="card__image" loading="lazy">
+          ${mediaHtml}
           ${video}
           ${discount}
+          ${useMarketingMedia && product.marketing ? `
+            <div class="card__media-badge">
+              ${product.marketing.type === 'video' ? '🎬 VIDEO' : '🖼️ MARKETING'}
+            </div>
+          ` : ''}
         </div>
         <div class="card__content">
           <h3 class="card__title">${product.name}</h3>
@@ -147,17 +227,32 @@ class HomeRenderer {
   }
 
   filterProducts(products, criteria) {
-    return products.filter(p => {
-      return Object.keys(criteria).every(key => {
+    console.log('🔍 filterProducts called with criteria:', criteria);
+    console.log('🔍 filterProducts - products count:', products.length);
+    
+    const result = products.filter(p => {
+      const matches = Object.keys(criteria).every(key => {
         const value = criteria[key];
+        const productValue = p[key];
+        
+        console.log(`🔍 Checking ${p.name} - ${key}: ${productValue} === ${value} ?`, productValue === value);
         
         if (typeof value === 'object' && value.$gte) {
-          return p[key] >= value.$gte;
+          return productValue >= value.$gte;
         }
         
-        return p[key] === value;
+        return productValue === value;
       });
+      
+      if (matches) {
+        console.log(`✅ Product ${p.name} matches criteria`);
+      }
+      
+      return matches;
     });
+    
+    console.log('🔍 filterProducts result count:', result.length);
+    return result;
   }
 
   attachCardListeners(container) {

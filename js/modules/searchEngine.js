@@ -41,64 +41,137 @@ class SearchEngine {
   filterByCategory(categoryId) {
     console.log('🔍 SearchEngine.filterByCategory() - Category ID:', categoryId);
     
-    // Buscar la categoría por ID en nuestro sistema de categorías
-    let categoryName = '';
-    
-    // Mapear IDs de categorías de la BD a nombres del sistema
-    const categoryMap = {
-      '250': 'Gatos', // HIGIENE Y CUIDADO -> Gatos (productos de higiene)
-      '261': 'Gatos', // COLCHONETAS Y MOISES -> Gatos
-      '262': 'Gatos', // BOLSOS Y CASITAS -> Gatos  
-      '263': 'Gatos', // RASCADORES -> Gatos
-      '264': 'Gatos', // JUGUETES -> Gatos (aunque también hay para perros)
-      '275': 'Gatos', // ROPA VERANO -> Gatos
-      '316': 'Gatos', // ROPA INVIERNO -> Gatos
-      '317': 'Perros', // COLLARES, CORREAS Y PECHERAS -> Perros
-      '409': 'Gatos'  // COMEDEROS Y BEBEDEROS -> Gatos (aunque también hay para perros)
+    // Mapear IDs de categorías a filtros específicos
+    const categoryFilters = {
+      '250': { // HIGIENE Y CUIDADO
+        name: 'HIGIENE Y CUIDADO',
+        filter: (product) => {
+          return product.tags && product.tags.some(tag => 
+            ['higiene', 'cuidado', 'limpieza', 'baño'].includes(tag.toLowerCase())
+          );
+        }
+      },
+      '261': { // COLCHONETAS Y MOISES
+        name: 'COLCHONETAS Y MOISES',
+        filter: (product) => {
+          return (product.subcategory && product.subcategory.toLowerCase().includes('cama')) ||
+                 (product.tags && product.tags.some(tag => 
+                   ['cama', 'colchoneta', 'moisés', 'descanso'].includes(tag.toLowerCase())
+                 ));
+        }
+      },
+      '262': { // BOLSOS Y CASITAS
+        name: 'BOLSOS Y CASITAS',
+        filter: (product) => {
+          return (product.subcategory && (
+                   product.subcategory.toLowerCase().includes('casa') ||
+                   product.subcategory.toLowerCase().includes('bolso') ||
+                   product.subcategory.toLowerCase().includes('transportín')
+                 )) ||
+                 (product.tags && product.tags.some(tag => 
+                   ['casa', 'bolso', 'transportín', 'viaje', 'casita'].includes(tag.toLowerCase())
+                 ));
+        }
+      },
+      '263': { // RASCADORES
+        name: 'RASCADORES',
+        filter: (product) => {
+          return (product.subcategory && product.subcategory.toLowerCase().includes('rascador')) ||
+                 (product.tags && product.tags.some(tag => tag.toLowerCase().includes('rascador'))) ||
+                 (product.name && product.name.toLowerCase().includes('rascador'));
+        }
+      },
+      '264': { // JUGUETES
+        name: 'JUGUETES',
+        filter: (product) => {
+          return (product.subcategory && product.subcategory.toLowerCase().includes('juguete')) ||
+                 (product.tags && product.tags.some(tag => 
+                   ['juguete', 'juego', 'diversión', 'interactivo'].includes(tag.toLowerCase())
+                 ));
+        }
+      },
+      '275': { // ROPA VERANO
+        name: 'ROPA VERANO',
+        filter: (product) => {
+          return product.tags && product.tags.some(tag => 
+            ['ropa', 'verano', 'vestimenta', 'accesorio'].includes(tag.toLowerCase())
+          );
+        }
+      },
+      '316': { // ROPA INVIERNO
+        name: 'ROPA INVIERNO',
+        filter: (product) => {
+          return product.tags && product.tags.some(tag => 
+            ['ropa', 'invierno', 'abrigo', 'vestimenta'].includes(tag.toLowerCase())
+          );
+        }
+      },
+      '317': { // COLLARES, CORREAS Y PECHERAS
+        name: 'COLLARES, CORREAS Y PECHERAS',
+        filter: (product) => {
+          return (product.subcategory && (
+                   product.subcategory.toLowerCase().includes('collar') ||
+                   product.subcategory.toLowerCase().includes('correa') ||
+                   product.subcategory.toLowerCase().includes('pechera')
+                 )) ||
+                 (product.tags && product.tags.some(tag => 
+                   ['collar', 'correa', 'pechera', 'paseo'].includes(tag.toLowerCase())
+                 ));
+        }
+      },
+      '409': { // COMEDEROS Y BEBEDEROS
+        name: 'COMEDEROS Y BEBEDEROS',
+        filter: (product) => {
+          return (product.subcategory && (
+                   product.subcategory.toLowerCase().includes('comedero') ||
+                   product.subcategory.toLowerCase().includes('bebedero') ||
+                   product.subcategory.toLowerCase().includes('alimentación')
+                 )) ||
+                 (product.tags && product.tags.some(tag => 
+                   ['comedero', 'bebedero', 'alimentación', 'comida', 'agua'].includes(tag.toLowerCase())
+                 ));
+        }
+      },
+      '500': { // ACCESORIOS
+        name: 'ACCESORIOS',
+        filter: (product) => {
+          return (product.subcategory && product.subcategory.toLowerCase().includes('accesorio')) ||
+                 (product.tags && product.tags.some(tag => 
+                   ['anteojos', 'accesorio', 'moda', 'estilo', 'complemento'].includes(tag.toLowerCase())
+                 ));
+        }
+      }
     };
 
-    categoryName = categoryMap[categoryId] || 'Gatos';
+    const categoryConfig = categoryFilters[categoryId];
     
-    console.log('🔍 SearchEngine.filterByCategory() - Mapped to:', categoryName);
+    if (!categoryConfig) {
+      console.warn('🔍 SearchEngine.filterByCategory() - Category ID not found:', categoryId);
+      this.displayCategoryResults([], categoryId, 'Categoría no encontrada');
+      return;
+    }
+    
+    console.log('🔍 SearchEngine.filterByCategory() - Filtering by:', categoryConfig.name);
 
-    const results = this.products.filter(product => {
-      // Filtrar por categoría exacta o por subcategoría que contenga "rascador"
-      const matchCategory = product.category === categoryName;
-      const matchSubcategory = product.subcategory && product.subcategory.toLowerCase().includes('rascador');
-      const matchTags = product.tags && product.tags.some(tag => tag.toLowerCase().includes('rascador'));
-      
-      return matchCategory || matchSubcategory || matchTags;
-    });
+    const results = this.products.filter(categoryConfig.filter);
 
     console.log('🔍 SearchEngine.filterByCategory() - Resultados encontrados:', results.length);
-    console.log('🔍 SearchEngine.filterByCategory() - Productos:', results.map(p => p.name));
+    console.log('🔍 SearchEngine.filterByCategory() - Productos:', results.map(p => `${p.name} (${p.subcategory})`));
 
-    this.displayCategoryResults(results, categoryId, categoryName);
+    this.displayCategoryResults(results, categoryId, categoryConfig.name);
+    
+    // Mostrar botón de limpiar cuando hay filtro activo
+    this.showClearButton();
   }
 
   displayCategoryResults(results, categoryId, categoryName) {
     const container = document.querySelector(CONSTANTS.SELECTORS.SEARCH_RESULTS);
     if (!container) return;
 
-    // Obtener el nombre real de la categoría de la BD
-    const categoryNames = {
-      '250': '🐾 HIGIENE Y CUIDADO',
-      '261': '🐾 COLCHONETAS Y MOISES', 
-      '262': '🐾 BOLSOS Y CASITAS',
-      '263': '🐾 RASCADORES',
-      '264': '🐾 JUGUETES',
-      '275': '🐾 ROPA VERANO',
-      '316': '🐾 ROPA INVIERNO', 
-      '317': '🐾 COLLARES, CORREAS Y PECHERAS',
-      '409': '🐾 COMEDEROS Y BEBEDEROS'
-    };
-
-    const displayName = categoryNames[categoryId] || categoryName;
-
     if (results.length === 0) {
       container.innerHTML = `
         <div class="search__no-results">
-          <p>No encontramos productos en la categoría "<strong>${displayName}</strong>"</p>
+          <p>No encontramos productos en la categoría "<strong>${categoryName}</strong>"</p>
           <p>Intenta con otra categoría</p>
         </div>
       `;
@@ -107,7 +180,7 @@ class SearchEngine {
 
     container.innerHTML = `
       <div class="search__count">
-        <p>Categoría: <strong>${displayName}</strong></p>
+        <p>Categoría: <strong>🐾 ${categoryName}</strong></p>
         <p>Se encontraron <strong>${results.length}</strong> producto${results.length !== 1 ? 's' : ''}</p>
       </div>
       <div class="search__grid">
@@ -141,13 +214,79 @@ class SearchEngine {
       console.log('🔍 SearchEngine - Input event, query:', query, 'length:', query.length);
       if (query.length < 2) {
         this.clearResults();
+        this.hideClearButton();
         return;
       }
       this.search(query);
+      this.showClearButton();
     }, CONSTANTS.DEBOUNCE_DELAY);
 
     searchInput.addEventListener('input', debouncedSearch);
     console.log('🔍 SearchEngine - Event listener agregado');
+    
+    // Configurar botón de limpiar filtro
+    this.setupClearButton();
+  }
+
+  setupClearButton() {
+    const clearBtn = document.getElementById('clear-filter-btn');
+    if (clearBtn) {
+      clearBtn.addEventListener('click', () => {
+        console.log('🔍 SearchEngine - Limpiando filtros...');
+        this.clearFilters();
+      });
+    }
+  }
+
+  showClearButton() {
+    const clearBtn = document.getElementById('clear-filter-btn');
+    if (clearBtn) {
+      clearBtn.style.display = 'inline-block';
+    }
+  }
+
+  hideClearButton() {
+    const clearBtn = document.getElementById('clear-filter-btn');
+    if (clearBtn) {
+      clearBtn.style.display = 'none';
+    }
+  }
+
+  clearFilters() {
+    // Limpiar input de búsqueda
+    const searchInput = document.querySelector('.search__input') || document.querySelector(CONSTANTS.SELECTORS.SEARCH_INPUT);
+    if (searchInput) {
+      searchInput.value = '';
+    }
+    
+    // Limpiar URL params
+    const url = new URL(window.location);
+    url.searchParams.delete('category');
+    url.searchParams.delete('q');
+    window.history.replaceState({}, '', url);
+    
+    // Mostrar todos los productos
+    this.showAllProducts();
+    
+    // Ocultar botón de limpiar
+    this.hideClearButton();
+  }
+
+  async showAllProducts() {
+    console.log('🔍 SearchEngine.showAllProducts() - Mostrando todos los productos...');
+    
+    const container = document.querySelector(CONSTANTS.SELECTORS.SEARCH_RESULTS);
+    if (!container) return;
+
+    container.innerHTML = `
+      <div class="search__count">
+        <p><strong>Todos los productos</strong></p>
+        <p>Se encontraron <strong>${this.products.length}</strong> producto${this.products.length !== 1 ? 's' : ''}</p>
+      </div>
+      <div class="search__grid">
+        ${this.products.map(p => this.renderResultCard(p)).join('')}
+      </div>
+    `;
   }
 
   search(query) {

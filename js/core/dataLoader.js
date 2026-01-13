@@ -6,13 +6,22 @@ class DataLoader {
     const pathname = window.location.pathname;
     const hostname = window.location.hostname;
     
+    console.log('🔍 DataLoader - hostname:', hostname);
+    console.log('🔍 DataLoader - pathname:', pathname);
+    console.log('🔍 DataLoader - protocol:', window.location.protocol);
+    
     // Si estamos en GitHub Pages (github.io), la ruta incluye el repo name
     const isGitHubPages = hostname.includes('github.io');
+    const isLocalFile = window.location.protocol === 'file:';
     
-    // En GitHub Pages: /WebPetsStore/index.html -> /WebPetsStore/data/
-    // En local: /index.html -> /data/
+    console.log('🔍 DataLoader - isGitHubPages:', isGitHubPages);
+    console.log('🔍 DataLoader - isLocalFile:', isLocalFile);
+    
+    // Para archivos locales, usar ruta relativa
     let baseUrl;
-    if (isGitHubPages) {
+    if (isLocalFile) {
+      baseUrl = 'data/';
+    } else if (isGitHubPages) {
       // Extraer el nombre del repo del pathname
       const pathParts = pathname.split('/').filter(p => p);
       if (pathParts.length > 0 && pathParts[0] !== 'index.html') {
@@ -25,31 +34,46 @@ class DataLoader {
     }
     
     this.baseUrl = baseUrl;
-    console.log('🔍 DataLoader - hostname:', hostname);
-    console.log('🔍 DataLoader - pathname:', pathname);
-    console.log('🔍 DataLoader - isGitHubPages:', isGitHubPages);
-    console.log('🔍 DataLoader - baseUrl:', this.baseUrl);
+    console.log('🔍 DataLoader - Final baseUrl:', this.baseUrl);
   }
 
   async load(filename) {
+    console.log(`🔍 DataLoader.load() - Loading: ${filename}`);
+    console.log(`🔍 DataLoader.load() - Full URL: ${this.baseUrl}${filename}`);
+    
     if (this.cache[filename]) {
+      console.log(`📋 DataLoader.load() - Using cached data for: ${filename}`);
       return this.cache[filename];
     }
 
     try {
-      const response = await fetch(`${this.baseUrl}${filename}`);
-      if (!response.ok) throw new Error(`Error loading ${filename}`);
+      const fullUrl = `${this.baseUrl}${filename}`;
+      console.log(`📡 DataLoader.load() - Fetching: ${fullUrl}`);
+      
+      const response = await fetch(fullUrl);
+      console.log(`📡 DataLoader.load() - Response status: ${response.status} for ${filename}`);
+      
+      if (!response.ok) {
+        throw new Error(`HTTP ${response.status} - ${response.statusText}`);
+      }
+      
       const data = await response.json();
+      console.log(`✅ DataLoader.load() - Data loaded successfully for ${filename}:`, data?.length || 'object');
+      
       this.cache[filename] = data;
       return data;
     } catch (error) {
-      console.error(`Failed to load ${filename}:`, error);
+      console.error(`❌ DataLoader.load() - Failed to load ${filename}:`, error);
+      console.error(`❌ DataLoader.load() - URL attempted: ${this.baseUrl}${filename}`);
       return null;
     }
   }
 
   async getProducts() {
-    return this.load('products.json?v=' + Date.now());
+    // Forzar recarga sin cache para debug
+    const timestamp = Date.now();
+    console.log('🔄 Loading products with timestamp:', timestamp);
+    return this.load(`products.json?v=${timestamp}`);
   }
 
   async getHomeConfig() {

@@ -203,3 +203,43 @@
     height: 150px;
   }
 }
+/* Botón de limpiar filtro */
+.search__clear-btn {
+  background: var(--color-secondary);
+  color: white;
+  border: none;
+  padding: 0.75rem 1rem;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  font-size: 0.9rem;
+  margin-left: 0.5rem;
+  transition: background-color 0.3s ease;
+}
+
+.search__clear-btn:hover {
+  background: #e74c3c;
+}
+
+.search__clear-btn:active {
+  transform: translateY(1px);
+}
+
+/* Ajustar el search box para acomodar el nuevo botón */
+.search__box {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+  .search__box {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  .search__clear-btn {
+    margin-left: 0;
+    margin-top: 0.5rem;
+  }
+}

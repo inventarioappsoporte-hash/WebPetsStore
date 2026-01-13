@@ -1,9 +1,14 @@
 {
   "categories": [
     {
-      "id": 250,
-      "name": "🐾 HIGIENE Y CUIDADO",
-      "description": "Productos de higiene para mascotas que limpian, protegen y perfuman el pelaje, cuidando la piel y el bienestar animal."
+      "id": 409,
+      "name": "🐾 COMEDEROS Y BEBEDEROS",
+      "description": "Comederos y bebederos diseñados para una alimentación cómoda, segura y práctica de tu mascota."
+    },
+    {
+      "id": 264,
+      "name": "🐾 JUGUETES",
+      "description": "Juguetes para entretener, estimular y mantener activa a tu mascota."
     },
     {
       "id": 261,
@@ -11,19 +16,24 @@
       "description": "Colchonetas y moisés cómodos y resistentes para el descanso seguro y confortable de tu mascota."
     },
     {
-      "id": 262,
-      "name": "🐾 BOLSOS Y CASITAS",
-      "description": "Bolsos y casitas cómodos y seguros para el descanso y transporte de tu mascota."
-    },
-    {
       "id": 263,
       "name": "🐾 RASCADORES",
       "description": "Rascadores resistentes que cuidan las uñas de tu mascota y protegen tu hogar."
     },
     {
-      "id": 264,
-      "name": "🐾 JUGUETES",
-      "description": "Juguetes para entretener, estimular y mantener activa a tu mascota."
+      "id": 262,
+      "name": "🐾 BOLSOS Y CASITAS",
+      "description": "Bolsos y casitas cómodos y seguros para el descanso y transporte de tu mascota."
+    },
+    {
+      "id": 317,
+      "name": "🐾 COLLARES, CORREAS Y PECHERAS",
+      "description": "Accesorios seguros y cómodos para el paseo y control de tu mascota."
+    },
+    {
+      "id": 250,
+      "name": "🐾 HIGIENE Y CUIDADO",
+      "description": "Productos de higiene para mascotas que limpian, protegen y perfuman el pelaje, cuidando la piel y el bienestar animal."
     },
     {
       "id": 275,
@@ -36,14 +46,9 @@
       "description": "Ropa abrigada y cómoda para proteger a tu mascota del frío."
     },
     {
-      "id": 317,
-      "name": "🐾 COLLARES, CORREAS Y PECHERAS",
-      "description": "Accesorios seguros y cómodos para el paseo y control de tu mascota."
-    },
-    {
-      "id": 409,
-      "name": "🐾 COMEDEROS Y BEBEDEROS",
-      "description": "Comederos y bebederos diseñados para una alimentación cómoda, segura y práctica de tu mascota."
+      "id": 500,
+      "name": "🐾 ACCESORIOS",
+      "description": "Accesorios únicos y divertidos para darle estilo y personalidad a tu mascota."
     }
   ]
 }

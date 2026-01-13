@@ -91,7 +91,7 @@
     "id": "prod_003",
     "name": "Casa Puipé Feliz para Gatos",
     "category": "Gatos",
-    "subcategory": "Accesorios",
+    "subcategory": "Casitas",
     "price": 17990,
     "originalPrice": 25700,
     "discount": 30,
@@ -101,7 +101,7 @@
     "featured": true,
     "topDiscount": true,
     "hasVideo": false,
-    "tags": ["gatos", "casa", "accesorios", "confort"],
+    "tags": ["gatos", "casa", "casita", "confort", "hogar"],
     "description": "Casa cómoda y acogedora para gatos.",
     "longDescription": "Diseño moderno con múltiples niveles. Material resistente y fácil de limpiar.",
     "images": {
@@ -111,6 +111,15 @@
         "assets/images/products/prod_003/1.jpg",
         "assets/images/products/prod_003/2.jpg"
       ]
+    },
+    "marketing": {
+      "type": "video",
+      "url": "assets/videos/marketing/casa-puipe-demo.mp4",
+      "poster": "assets/images/products/prod_003/thumb.jpg",
+      "autoplay": true,
+      "muted": true,
+      "loop": true,
+      "duration": 10
     },
     "specs": {
       "material": "Madera y tela",
@@ -128,7 +137,7 @@
     "id": "prod_004",
     "name": "Automático Pet Feeder",
     "category": "Perros",
-    "subcategory": "Accesorios",
+    "subcategory": "Comederos",
     "price": 24990,
     "originalPrice": 34990,
     "discount": 28,
@@ -138,7 +147,7 @@
     "featured": true,
     "topDiscount": false,
     "hasVideo": true,
-    "tags": ["automático", "comedero", "perros", "tecnología"],
+    "tags": ["automático", "comedero", "perros", "tecnología", "alimentación", "comida"],
     "description": "Comedero automático inteligente para mascotas.",
     "longDescription": "Programable con temporizador. Mantiene el alimento fresco. Fácil de limpiar.",
     "images": {
@@ -217,7 +226,7 @@
     "featured": true,
     "topDiscount": true,
     "hasVideo": true,
-    "tags": ["cama", "ortopédica", "perros", "confort", "salud"],
+    "tags": ["cama", "ortopédica", "perros", "confort", "salud", "colchoneta", "descanso"],
     "description": "Cama ortopédica con soporte para articulaciones.",
     "longDescription": "Espuma viscoelástica de alta densidad. Funda removible y lavable. Ideal para perros adultos.",
     "images": {
@@ -294,7 +303,7 @@
     "id": "prod_008",
     "name": "Transportín de Viaje Compacto",
     "category": "Gatos",
-    "subcategory": "Accesorios",
+    "subcategory": "Transportín",
     "price": 19990,
     "originalPrice": 28990,
     "discount": 31,
@@ -304,7 +313,7 @@
     "featured": false,
     "topDiscount": false,
     "hasVideo": false,
-    "tags": ["transportín", "viaje", "gatos", "portátil"],
+    "tags": ["transportín", "viaje", "gatos", "portátil", "bolso", "transporte"],
     "description": "Transportín ligero y compacto para viajes.",
     "longDescription": "Fácil de plegar. Ventilación adecuada. Asa cómoda para transportar.",
     "images": {
@@ -382,10 +391,19 @@
     "longDescription": "Combina la comodidad de una cama con la funcionalidad de un rascador. Superficie de cartón corrugado de alta densidad sobre base de madera prensada. Ideal para el descanso y cuidado de las uñas de tu mascota.",
     "images": {
       "cover": "assets/images/products/prod_222/cover.jpg",
-      "thumb": "assets/images/ui/cama-victoria.jpeg",
+      "thumb": "assets/images/products/prod_222/thumb.jpg",
       "gallery": [
         "assets/images/products/prod_222/1.jpg"
       ]
+    },
+    "marketing": {
+      "type": "video",
+      "url": "assets/videos/marketing/cama-victoria-demo.mp4",
+      "poster": "assets/images/ui/cama-victoria.jpeg",
+      "autoplay": true,
+      "muted": true,
+      "loop": true,
+      "duration": 8
     },
     "specs": {
       "dimensions": "49.5 x 21.5 x 14 cm",

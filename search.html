@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="css/typography.css">
   <link rel="stylesheet" href="css/layout.css">
   <link rel="stylesheet" href="css/components.css?v=20260113-dropdown-fix">
-  <link rel="stylesheet" href="css/search.css">
+  <link rel="stylesheet" href="css/search.css?v=20260113-clear-button">
   <link rel="stylesheet" href="css/animations.css">
 </head>
 <body>
@@ -52,6 +52,7 @@
             autofocus
           >
           <button class="search__btn">🔍</button>
+          <button class="search__clear-btn" id="clear-filter-btn" style="display: none;">✖️ Limpiar Filtro</button>
         </div>
 
         <div class="search__results">
@@ -91,8 +92,8 @@
   <script src="js/core/constants.js?v=20260113-fix1"></script>
   <script src="js/core/utils.js?v=20260113-fix1"></script>
   <script src="js/core/dataLoader.js?v=20260113-fix1"></script>
-  <script src="js/modules/categoriesRenderer.js?v=20260113-fix1"></script>
-  <script src="js/modules/searchEngine.js?v=20260113-fix1"></script>
+  <script src="js/modules/categoriesRenderer.js?v=20260113-accesorios-category"></script>
+  <script src="js/modules/searchEngine.js?v=20260113-accesorios-category"></script>
   <script src="js/modules/videoPlayer.js?v=20260113-fix1"></script>
   <script>
     // Inicializar búsqueda en página de búsqueda
