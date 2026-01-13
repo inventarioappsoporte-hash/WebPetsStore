@@ -36,23 +36,8 @@ class HomeRenderer {
 
   renderHero(heroConfig, products) {
     // Hero image is static in HTML, don't modify it
-    // Just ensure buttons are available for app.js to handle
-    console.log('🎬 renderHero called - NOT modifying hero');
-    
-    // Pero asegúrate de que los botones tengan los IDs correctos
-    const overlay = document.querySelector('.hero__overlay');
-    console.log('Overlay found:', !!overlay);
-    if (overlay) {
-      const buttons = overlay.querySelectorAll('button');
-      console.log('Buttons found:', buttons.length);
-      if (buttons.length >= 2) {
-        buttons[0].id = 'hero-view-btn';
-        buttons[1].id = 'hero-buy-btn';
-        console.log('✅ IDs agregados a los botones');
-        console.log('Button 1 ID:', buttons[0].id);
-        console.log('Button 2 ID:', buttons[1].id);
-      }
-    }
+    // Buttons already have IDs in HTML
+    console.log('🎬 renderHero called - hero is static');
     return;
   }
 

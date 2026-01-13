@@ -33,19 +33,13 @@ class App {
   initHeroButtons() {
     console.log('🔍 Buscando botones del hero...');
     
-    // Log del hero completo
-    const hero = document.querySelector('.hero');
-    console.log('Hero element:', hero);
-    console.log('Hero HTML:', hero?.innerHTML);
-    
     const viewBtn = document.getElementById('hero-view-btn');
     const buyBtn = document.getElementById('hero-buy-btn');
 
-    console.log('hero-view-btn:', viewBtn);
-    console.log('hero-buy-btn:', buyBtn);
+    console.log('✅ hero-view-btn found:', !!viewBtn);
+    console.log('✅ hero-buy-btn found:', !!buyBtn);
 
     if (viewBtn) {
-      console.log('✅ Botón VER PRODUCTO encontrado');
       viewBtn.addEventListener('click', async () => {
         console.log('🖱️ Click en VER PRODUCTO');
         const productId = await this.dataLoader.getHeroProductId();
@@ -59,7 +53,6 @@ class App {
     }
 
     if (buyBtn) {
-      console.log('✅ Botón COMPRAR AHORA encontrado');
       buyBtn.addEventListener('click', async () => {
         console.log('🖱️ Click en COMPRAR AHORA');
         const productId = await this.dataLoader.getHeroProductId();
