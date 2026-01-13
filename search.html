@@ -92,8 +92,12 @@
   <script src="js/modules/videoPlayer.js?v=20260113-v6"></script>
   <script>
     // Inicializar búsqueda en página de búsqueda
+    console.log('📄 search.html - Script de inicialización ejecutándose');
+    console.log('📄 search.html - dataLoader disponible:', typeof dataLoader !== 'undefined');
+    
     if (document.readyState === 'loading') {
       document.addEventListener('DOMContentLoaded', async () => {
+        console.log('📄 search.html - DOMContentLoaded disparado');
         const searchEngine = new SearchEngine(dataLoader);
         const input = document.querySelector('.search__input');
         if (input) {
@@ -101,6 +105,7 @@
         }
       });
     } else {
+      console.log('📄 search.html - DOM ya cargado, inicializando SearchEngine');
       const searchEngine = new SearchEngine(dataLoader);
     }
   </script>
