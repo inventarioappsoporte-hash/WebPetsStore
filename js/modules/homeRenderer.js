@@ -41,27 +41,15 @@ class HomeRenderer {
     const hero = document.querySelector(CONSTANTS.SELECTORS.HERO);
     if (!hero) return;
 
-    const finalPrice = product.price;
-    const discount = product.discount || 0;
+    // NO reemplazar el hero, solo actualizar los botones
+    const overlay = hero.querySelector('.hero__overlay');
+    if (!overlay) return;
 
-    hero.innerHTML = `
-      <div class="hero__content">
-        <img src="${product.images.cover}" alt="${product.name}" class="hero__image">
-        <div class="hero__overlay">
-          <h2 class="hero__title">${heroConfig.title}</h2>
-          <div class="hero__price">
-            <span class="hero__discount">${discount}% OFF</span>
-            <span class="hero__price-value">${Utils.formatPrice(finalPrice)}</span>
-          </div>
-          <div class="hero__cta">
-            <button class="btn btn--secondary" onclick="window.location.href='product.html?id=${product.id}'">
-              ${heroConfig.ctaSecondary}
-            </button>
-            <button class="btn btn--primary">
-              ${heroConfig.cta}
-            </button>
-          </div>
-        </div>
+    // Limpiar overlay y agregar solo los botones
+    overlay.innerHTML = `
+      <div class="hero__cta">
+        <button class="btn btn--secondary" id="hero-view-btn">VER PRODUCTO</button>
+        <button class="btn btn--primary" id="hero-buy-btn">COMPRAR AHORA</button>
       </div>
     `;
   }
