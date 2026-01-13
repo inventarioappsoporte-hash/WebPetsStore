@@ -24,7 +24,6 @@ class CategoriesRenderer {
         <li class="nav__dropdown-item">
           <a href="search.html?category=${cat.id}">
             <div class="nav__dropdown-item-name">${cat.name}</div>
-            <div class="nav__dropdown-item-desc">${cat.description}</div>
           </a>
         </li>
       `)
