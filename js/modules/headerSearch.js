@@ -1,4 +1,4 @@
-// Header Search Module - Netflix style search
+// Header Search Module - Netflix style search with dropdown results
 class HeaderSearch {
   constructor(dataLoader) {
     this.dataLoader = dataLoader;
@@ -6,6 +6,7 @@ class HeaderSearch {
     this.searchBtn = document.getElementById('header-search-toggle');
     this.isOpen = false;
     this.products = [];
+    this.resultsDropdown = null;
     this.init();
   }
 
@@ -19,7 +20,15 @@ class HeaderSearch {
       return;
     }
 
+    this.createResultsDropdown();
     this.setupListeners();
+  }
+
+  createResultsDropdown() {
+    this.resultsDropdown = document.createElement('div');
+    this.resultsDropdown.className = 'header__search-results';
+    this.resultsDropdown.style.display = 'none';
+    this.searchInput.parentElement.appendChild(this.resultsDropdown);
   }
 
   setupListeners() {
@@ -32,6 +41,8 @@ class HeaderSearch {
       console.log('🔍 HeaderSearch - Query:', query);
       if (query.length >= 2) {
         this.performSearch(query);
+      } else {
+        this.hideResults();
       }
     }, CONSTANTS.DEBOUNCE_DELAY);
 
@@ -44,9 +55,16 @@ class HeaderSearch {
       }
     });
 
-    // Cerrar búsqueda al perder el foco
+    // Cerrar resultados al perder el foco
     this.searchInput.addEventListener('blur', () => {
-      setTimeout(() => this.closeSearch(), 200);
+      setTimeout(() => this.hideResults(), 200);
+    });
+
+    // Mostrar resultados al hacer focus
+    this.searchInput.addEventListener('focus', () => {
+      if (this.searchInput.value.length >= 2) {
+        this.resultsDropdown.style.display = 'block';
+      }
     });
   }
 
@@ -69,6 +87,7 @@ class HeaderSearch {
     this.isOpen = false;
     this.searchInput.classList.add('collapsed');
     this.searchInput.value = '';
+    this.hideResults();
     console.log('🔍 HeaderSearch - Cerrado');
   }
 
@@ -85,10 +104,45 @@ class HeaderSearch {
     });
 
     console.log('🔍 HeaderSearch - Resultados encontrados:', results.length);
-    
-    if (results.length > 0) {
-      // Redirigir a la página de búsqueda con el query
-      window.location.href = `search.html?q=${encodeURIComponent(query)}`;
+    this.displayResults(results, query);
+  }
+
+  displayResults(results, query) {
+    if (results.length === 0) {
+      this.resultsDropdown.innerHTML = `
+        <div class="header__search-no-results">
+          <p>No encontramos productos para "<strong>${Utils.truncateText(query, 30)}</strong>"</p>
+        </div>
+      `;
+      this.resultsDropdown.style.display = 'block';
+      return;
     }
+
+    this.resultsDropdown.innerHTML = `
+      <div class="header__search-count">
+        <p>Se encontraron <strong>${results.length}</strong> producto${results.length !== 1 ? 's' : ''}</p>
+      </div>
+      <div class="header__search-items">
+        ${results.slice(0, 5).map(p => this.renderResultItem(p)).join('')}
+        ${results.length > 5 ? `<div class="header__search-more"><a href="search.html?q=${encodeURIComponent(query)}">Ver todos (${results.length})</a></div>` : ''}
+      </div>
+    `;
+    this.resultsDropdown.style.display = 'block';
+  }
+
+  renderResultItem(product) {
+    return `
+      <div class="header__search-item" onclick="window.location.href='product.html?id=${product.id}'">
+        <img src="${product.images.thumb}" alt="${product.name}" class="header__search-item-img">
+        <div class="header__search-item-info">
+          <h4>${product.name}</h4>
+          <p>${Utils.formatPrice(product.price)}</p>
+        </div>
+      </div>
+    `;
+  }
+
+  hideResults() {
+    this.resultsDropdown.style.display = 'none';
   }
 }
