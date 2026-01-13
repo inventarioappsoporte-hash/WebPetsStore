@@ -4,10 +4,11 @@ class DataLoader {
     this.cache = {};
     // Detectar la ruta base correcta para GitHub Pages y local
     const pathname = window.location.pathname;
-    // Si estamos en GitHub Pages, pathname será /WebPetsStore/index.html o similar
-    // Si estamos en local, pathname será /index.html
     const isGitHubPages = pathname.includes('/WebPetsStore/');
     this.baseUrl = isGitHubPages ? '/WebPetsStore/data/' : '/data/';
+    console.log('🔍 DataLoader - pathname:', pathname);
+    console.log('🔍 DataLoader - isGitHubPages:', isGitHubPages);
+    console.log('🔍 DataLoader - baseUrl:', this.baseUrl);
   }
 
   async load(filename) {
