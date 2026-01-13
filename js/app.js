@@ -31,26 +31,40 @@ class App {
   }
 
   initHeroButtons() {
+    console.log('🔍 Buscando botones del hero...');
     const viewBtn = document.getElementById('hero-view-btn');
     const buyBtn = document.getElementById('hero-buy-btn');
 
+    console.log('hero-view-btn:', viewBtn);
+    console.log('hero-buy-btn:', buyBtn);
+
     if (viewBtn) {
+      console.log('✅ Botón VER PRODUCTO encontrado');
       viewBtn.addEventListener('click', async () => {
+        console.log('🖱️ Click en VER PRODUCTO');
         const productId = await this.dataLoader.getHeroProductId();
+        console.log('Product ID:', productId);
         if (productId) {
           window.location.href = `product.html?id=${productId}`;
         }
       });
+    } else {
+      console.log('❌ Botón VER PRODUCTO NO encontrado');
     }
 
     if (buyBtn) {
+      console.log('✅ Botón COMPRAR AHORA encontrado');
       buyBtn.addEventListener('click', async () => {
+        console.log('🖱️ Click en COMPRAR AHORA');
         const productId = await this.dataLoader.getHeroProductId();
         const product = await this.dataLoader.getProductById(productId);
+        console.log('Product:', product);
         if (product) {
           Utils.sendWhatsAppMessage(product);
         }
       });
+    } else {
+      console.log('❌ Botón COMPRAR AHORA NO encontrado');
     }
   }
 }
