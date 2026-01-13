@@ -278,9 +278,9 @@
 }
 
 /* Responsive */
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .hero {
-    height: 350px;
+    height: 400px;
   }
 
   .hero__overlay {
@@ -288,18 +288,11 @@
     padding-bottom: var(--spacing-2xl);
   }
 
-  .hero__title {
-    font-size: var(--font-size-2xl);
-  }
-
-  .hero__price-value {
-    font-size: var(--font-size-2xl);
-  }
-
   .hero__cta {
     flex-direction: column;
-    gap: var(--spacing-sm);
+    gap: var(--spacing-md);
     align-items: stretch;
+    max-width: 300px;
   }
 
   .hero__cta .btn {
@@ -308,6 +301,50 @@
     padding: var(--spacing-md);
     font-size: var(--font-size-md);
     font-weight: 600;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    height: 450px; /* Más altura para evitar solapamiento */
+  }
+
+  .hero__overlay {
+    padding: var(--spacing-lg);
+    padding-bottom: var(--spacing-3xl); /* Más espacio abajo */
+    justify-content: center; /* Centrar verticalmente */
+    text-align: center;
+  }
+
+  .hero__title {
+    font-size: var(--font-size-2xl);
+    margin-bottom: var(--spacing-md);
+  }
+
+  .hero__price {
+    justify-content: center;
+    margin-bottom: var(--spacing-lg);
+  }
+
+  .hero__price-value {
+    font-size: var(--font-size-2xl);
+  }
+
+  .hero__cta {
+    flex-direction: column;
+    gap: var(--spacing-md);
+    align-items: stretch;
+    max-width: 280px;
+    margin: 0 auto; /* Centrar los botones */
+  }
+
+  .hero__cta .btn {
+    min-width: auto;
+    width: 100%;
+    padding: var(--spacing-md) var(--spacing-lg);
+    font-size: var(--font-size-md);
+    font-weight: 600;
+    min-height: 48px; /* Touch target mínimo */
   }
 
   .promos__grid {
@@ -321,29 +358,36 @@
 
 @media (max-width: 480px) {
   .hero {
-    height: 280px;
+    height: 400px; /* Altura optimizada para móvil */
     margin-bottom: var(--spacing-lg);
   }
 
   .hero__overlay {
     padding: var(--spacing-md);
-    padding-bottom: var(--spacing-xl);
+    padding-bottom: var(--spacing-2xl);
+    justify-content: center;
+    text-align: center;
   }
 
   .hero__title {
     font-size: var(--font-size-xl);
+    margin-bottom: var(--spacing-sm);
   }
 
   .hero__price {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
+    gap: var(--spacing-sm);
+    margin-bottom: var(--spacing-lg);
   }
 
   .hero__cta {
     flex-direction: column;
-    gap: var(--spacing-sm);
+    gap: var(--spacing-md);
     align-items: stretch;
     width: 100%;
+    max-width: 260px;
+    margin: 0 auto;
   }
 
   .hero__cta .btn {
@@ -354,6 +398,7 @@
     font-weight: 600;
     text-align: center;
     border-radius: var(--radius-md);
+    min-height: 48px;
   }
 
   .promos__grid {
@@ -364,19 +409,32 @@
 /* Extra small devices (phones in portrait) */
 @media (max-width: 375px) {
   .hero {
-    height: 260px;
+    height: 380px; /* Altura ajustada para pantallas muy pequeñas */
   }
 
   .hero__overlay {
     padding: var(--spacing-sm);
-    padding-bottom: var(--spacing-lg);
+    padding-bottom: var(--spacing-xl);
+    justify-content: center;
+    text-align: center;
+  }
+
+  .hero__title {
+    font-size: var(--font-size-lg);
+    margin-bottom: var(--spacing-xs);
+  }
+
+  .hero__price {
+    margin-bottom: var(--spacing-md);
   }
 
   .hero__cta {
     flex-direction: column;
-    gap: var(--spacing-xs);
+    gap: var(--spacing-sm);
     align-items: stretch;
     width: 100%;
+    max-width: 240px;
+    margin: 0 auto;
   }
 
   .hero__cta .btn {
@@ -384,5 +442,27 @@
     padding: var(--spacing-sm) var(--spacing-md);
     font-size: var(--font-size-sm);
     min-height: 44px; /* Mínimo para touch targets */
+    border-radius: var(--radius-sm);
+  }
+}
+
+/* Breakpoint adicional para zoom en laptop */
+@media (max-width: 1200px) and (min-width: 769px) {
+  .hero__overlay {
+    padding: var(--spacing-xl);
+    padding-bottom: var(--spacing-3xl);
+  }
+
+  .hero__cta {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: var(--spacing-md);
+    justify-content: flex-start;
+    max-width: 100%;
+  }
+
+  .hero__cta .btn {
+    min-width: 180px;
+    flex: 0 0 auto;
   }
 }

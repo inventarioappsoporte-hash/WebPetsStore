@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Test Hero Responsive Fix - Pets Store</title>
+  
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/typography.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/home.css">
+  <link rel="stylesheet" href="css/animations.css">
+  
+  <style>
+    /* Debug styles para visualizar mejor */
+    .debug-info {
+      position: fixed;
+      top: 10px;
+      right: 10px;
+      background: rgba(0,0,0,0.8);
+      color: white;
+      padding: 10px;
+      border-radius: 5px;
+      font-size: 12px;
+      z-index: 1000;
+    }
+    
+    .hero__overlay {
+      border: 2px dashed rgba(255,255,255,0.3);
+    }
+    
+    .hero__cta {
+      border: 2px dashed rgba(255,0,0,0.5);
+    }
+  </style>
+</head>
+<body>
+  <div class="debug-info">
+    <div>Viewport: <span id="viewport-size"></span></div>
+    <div>Hero Height: <span id="hero-height"></span></div>
+  </div>
+
+  <!-- Header simplificado -->
+  <header class="header">
+    <div class="container">
+      <div class="header__content">
+        <div class="header__logo">
+          <h1>🐾 Pets Store</h1>
+        </div>
+        <nav class="header__nav">
+          <a href="index.html" class="nav__link nav__link--active">Home</a>
+          <a href="search.html" class="nav__link">Buscar</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section con contenido de prueba -->
+  <section class="hero">
+    <div class="hero__content">
+      <img src="assets/images/ui/hero-placeholder.jpg" alt="Producto destacado" class="hero__image">
+      <div class="hero__overlay">
+        <h2 class="hero__title" style="display: block;">LO MÁS VENDIDO DE ESTA SEMANA</h2>
+        <div class="hero__price" style="display: flex;">
+          <div class="hero__discount">🔥 20% OFF</div>
+          <div class="hero__price-value">$8.500</div>
+        </div>
+        <div class="hero__cta">
+          <button class="btn btn--secondary">VER PRODUCTO</button>
+          <button class="btn btn--primary">COMPRAR AHORA</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contenido adicional para probar scroll -->
+  <main class="main">
+    <div class="container">
+      <section class="section">
+        <h2 class="section__title">Test de Responsive Design</h2>
+        <p>Este es un test para verificar que los botones del hero no se monten sobre el contenido en diferentes tamaños de pantalla.</p>
+        
+        <h3>Instrucciones de prueba:</h3>
+        <ul>
+          <li><strong>Desktop:</strong> Redimensiona la ventana del navegador</li>
+          <li><strong>Móvil:</strong> Abre en dispositivo móvil o usa DevTools</li>
+          <li><strong>Zoom:</strong> Haz zoom in/out para probar diferentes escalas</li>
+        </ul>
+        
+        <h3>Breakpoints a probar:</h3>
+        <ul>
+          <li>1200px+ (Desktop grande)</li>
+          <li>1024px - 1199px (Desktop/Laptop con zoom)</li>
+          <li>769px - 1023px (Tablet)</li>
+          <li>481px - 768px (Móvil grande)</li>
+          <li>376px - 480px (Móvil estándar)</li>
+          <li>375px y menos (Móvil pequeño)</li>
+        </ul>
+      </section>
+    </div>
+  </main>
+
+  <script>
+    // Debug script para mostrar información del viewport
+    function updateDebugInfo() {
+      const viewportWidth = window.innerWidth;
+      const viewportHeight = window.innerHeight;
+      const heroElement = document.querySelector('.hero');
+      const heroHeight = heroElement ? heroElement.offsetHeight : 'N/A';
+      
+      document.getElementById('viewport-size').textContent = `${viewportWidth}x${viewportHeight}`;
+      document.getElementById('hero-height').textContent = `${heroHeight}px`;
+    }
+    
+    // Actualizar info al cargar y redimensionar
+    window.addEventListener('load', updateDebugInfo);
+    window.addEventListener('resize', updateDebugInfo);
+    
+    // Actualizar cada segundo para capturar cambios de zoom
+    setInterval(updateDebugInfo, 1000);
+  </script>
+</body>
+</html>
