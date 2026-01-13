@@ -47,7 +47,11 @@ class DataLoader {
   // Obtener ID del producto del hero
   async getHeroProductId() {
     const homeConfig = await this.getHomeConfig();
-    return homeConfig?.hero?.productId || 'prod_001';
+    const productId = homeConfig?.hero?.productId;
+    if (!productId) {
+      console.warn('⚠️ No hero productId found in home.json');
+    }
+    return productId;
   }
 
   // Filtrar productos
