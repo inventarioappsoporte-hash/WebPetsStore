@@ -55,7 +55,7 @@
 
 .nav__dropdown {
   position: absolute;
-  top: calc(100% + var(--spacing-sm));
+  top: calc(100% + 2px);
   left: 50%;
   transform: translateX(-50%);
   background: var(--color-bg-secondary);
@@ -70,6 +70,17 @@
   z-index: 1000;
   max-height: 350px;
   overflow-y: auto;
+}
+
+/* Crear un "puente" invisible para mantener el hover */
+.nav__dropdown::before {
+  content: '';
+  position: absolute;
+  top: -4px;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: transparent;
 }
 
 .nav__item--dropdown:hover .nav__dropdown {
