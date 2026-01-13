@@ -21,8 +21,8 @@ class App {
       // Inicializar reproductor de videos
       new VideoPlayer();
 
-      // Inicializar botones del hero (DESPUÉS de renderizar)
-      setTimeout(() => this.initHeroButtons(), 100);
+      // Inicializar botones del hero (DESPUÉS de renderizar con delay más largo)
+      setTimeout(() => this.initHeroButtons(), 500);
 
       console.log('✅ Pets Store cargado correctamente');
     } catch (error) {
