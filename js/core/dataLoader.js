@@ -4,8 +4,28 @@ class DataLoader {
     this.cache = {};
     // Detectar la ruta base correcta para GitHub Pages y local
     const pathname = window.location.pathname;
-    const isGitHubPages = pathname.includes('/WebPetsStore/');
-    this.baseUrl = isGitHubPages ? '/WebPetsStore/data/' : '/data/';
+    const hostname = window.location.hostname;
+    
+    // Si estamos en GitHub Pages (github.io), la ruta incluye el repo name
+    const isGitHubPages = hostname.includes('github.io');
+    
+    // En GitHub Pages: /WebPetsStore/index.html -> /WebPetsStore/data/
+    // En local: /index.html -> /data/
+    let baseUrl;
+    if (isGitHubPages) {
+      // Extraer el nombre del repo del pathname
+      const pathParts = pathname.split('/').filter(p => p);
+      if (pathParts.length > 0 && pathParts[0] !== 'index.html') {
+        baseUrl = `/${pathParts[0]}/data/`;
+      } else {
+        baseUrl = '/WebPetsStore/data/';
+      }
+    } else {
+      baseUrl = '/data/';
+    }
+    
+    this.baseUrl = baseUrl;
+    console.log('🔍 DataLoader - hostname:', hostname);
     console.log('🔍 DataLoader - pathname:', pathname);
     console.log('🔍 DataLoader - isGitHubPages:', isGitHubPages);
     console.log('🔍 DataLoader - baseUrl:', this.baseUrl);
