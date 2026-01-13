@@ -16,7 +16,14 @@ class SearchEngine {
   }
 
   setupSearchListeners() {
-    const searchInput = document.querySelector(CONSTANTS.SELECTORS.SEARCH_INPUT);
+    // Intentar encontrar el input en la página de búsqueda primero
+    let searchInput = document.querySelector('.search__input');
+    
+    // Si no lo encuentra, intentar con el selector del header
+    if (!searchInput) {
+      searchInput = document.querySelector(CONSTANTS.SELECTORS.SEARCH_INPUT);
+    }
+    
     console.log('🔍 SearchEngine.setupSearchListeners() - searchInput encontrado:', !!searchInput);
     if (!searchInput) return;
 
