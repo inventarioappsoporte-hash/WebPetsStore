@@ -44,6 +44,12 @@ class DataLoader {
     return products.find(p => p.id === id);
   }
 
+  // Obtener ID del producto del hero
+  async getHeroProductId() {
+    const homeConfig = await this.getHomeConfig();
+    return homeConfig?.hero?.productId || 'prod_001';
+  }
+
   // Filtrar productos
   async filterProducts(criteria) {
     const products = await this.getProducts();

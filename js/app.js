@@ -20,9 +20,32 @@ class App {
       // Inicializar reproductor de videos
       new VideoPlayer();
 
+      // Inicializar botones del hero
+      this.initHeroButtons();
+
       console.log('✅ Pets Store cargado correctamente');
     } catch (error) {
       console.error('❌ Error inicializando la aplicación:', error);
+    }
+  }
+
+  initHeroButtons() {
+    const viewBtn = document.getElementById('hero-view-btn');
+    const buyBtn = document.getElementById('hero-buy-btn');
+
+    if (viewBtn) {
+      viewBtn.addEventListener('click', async () => {
+        const productId = await this.dataLoader.getHeroProductId();
+        if (productId) {
+          window.location.href = `product.html?id=${productId}`;
+        }
+      });
+    }
+
+    if (buyBtn) {
+      buyBtn.addEventListener('click', () => {
+        alert('Funcionalidad de compra próximamente');
+      });
     }
   }
 }

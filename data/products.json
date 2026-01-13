@@ -325,5 +325,42 @@
     },
     "badge": "✈️ Viajes",
     "promoText": "31% OFF"
+  },
+  {
+    "id": "prod_009",
+    "name": "Anteojos para tu Mascota",
+    "category": "Perros",
+    "subcategory": "Accesorios",
+    "price": 15990,
+    "originalPrice": 22990,
+    "discount": 30,
+    "stock": 18,
+    "rating": 4.7,
+    "reviews": 267,
+    "featured": true,
+    "topDiscount": true,
+    "hasVideo": false,
+    "tags": ["anteojos", "accesorios", "perros", "moda", "protección"],
+    "description": "Anteojos de moda y protección para tu mascota.",
+    "longDescription": "Diseño moderno y cómodo. Protege los ojos de rayos UV. Ajuste seguro y resistente.",
+    "images": {
+      "cover": "assets/images/products/prod_009/cover.jpg",
+      "thumb": "assets/images/products/prod_009/cover.jpg",
+      "gallery": [
+        "assets/images/products/prod_009/cover.jpg"
+      ]
+    },
+    "specs": {
+      "material": "Plástico resistente",
+      "size": "Ajustable",
+      "weight": "50g",
+      "colors": ["Negro", "Azul"]
+    },
+    "shipping": {
+      "free": true,
+      "days": "1-2"
+    },
+    "badge": "😎 Moda",
+    "promoText": "30% OFF"
   }
 ]
