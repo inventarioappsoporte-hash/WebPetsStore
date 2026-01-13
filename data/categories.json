@@ -1,0 +1,36 @@
+{
+  "categories": [
+    {
+      "id": "perros",
+      "name": "Perros",
+      "icon": "🐕",
+      "subcategories": [
+        { "id": "juguetes", "name": "Juguetes" },
+        { "id": "alimentos", "name": "Alimentos" },
+        { "id": "accesorios", "name": "Accesorios" },
+        { "id": "camas", "name": "Camas" }
+      ]
+    },
+    {
+      "id": "gatos",
+      "name": "Gatos",
+      "icon": "🐱",
+      "subcategories": [
+        { "id": "juguetes", "name": "Juguetes" },
+        { "id": "alimentos", "name": "Alimentos" },
+        { "id": "areneros", "name": "Areneros" },
+        { "id": "accesorios", "name": "Accesorios" }
+      ]
+    },
+    {
+      "id": "otros",
+      "name": "Otros Animales",
+      "icon": "🐹",
+      "subcategories": [
+        { "id": "roedores", "name": "Roedores" },
+        { "id": "aves", "name": "Aves" },
+        { "id": "reptiles", "name": "Reptiles" }
+      ]
+    }
+  ]
+}

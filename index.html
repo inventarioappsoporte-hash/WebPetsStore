@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pets Store - Tienda Online de Productos para Mascotas</title>
+  <meta name="description" content="Compra productos premium para tu mascota. Juguetes, alimentos, accesorios y más.">
+  
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/typography.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/home.css">
+  <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <div class="header__content">
+        <div class="header__logo">
+          <h1>🐾 Pets Store</h1>
+        </div>
+        <nav class="header__nav">
+          <a href="index.html" class="nav__link nav__link--active">Home</a>
+          <a href="search.html" class="nav__link">Buscar</a>
+          <a href="#" class="nav__link">Categorías</a>
+          <a href="#" class="nav__link">Contacto</a>
+        </nav>
+        <div class="header__search">
+          <input type="text" class="header__search-input" placeholder="Buscar productos...">
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero__content">
+      <img src="assets/images/ui/hero-placeholder.jpg" alt="Producto destacado" class="hero__image">
+      <div class="hero__overlay">
+        <h2 class="hero__title">LO MÁS VENDIDO DE ESTA SEMANA</h2>
+        <div class="hero__price">
+          <span class="hero__discount">40% OFF</span>
+          <span class="hero__price-value">$5.990</span>
+        </div>
+        <div class="hero__cta">
+          <button class="btn btn--secondary">VER PRODUCTO</button>
+          <button class="btn btn--primary">COMPRAR AHORA</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Promos Bar -->
+  <section class="promos">
+    <div class="container">
+      <div class="promos__grid">
+        <!-- Renderizado por JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <main class="main">
+    <div class="container">
+      <!-- Secciones dinámicas -->
+      <section class="section" data-section="top-discounts">
+        <h2 class="section__title">🔥 TOP DESCUENTOS HOY</h2>
+        <div class="section__content carousel">
+          <!-- Renderizado por JS -->
+        </div>
+      </section>
+
+      <section class="section" data-section="with-video">
+        <h2 class="section__title">🎥 CON VIDEO</h2>
+        <div class="section__content carousel">
+          <!-- Renderizado por JS -->
+        </div>
+      </section>
+
+      <section class="section" data-section="best-rated">
+        <h2 class="section__title">⭐ MEJOR VALORADOS</h2>
+        <div class="section__content grid">
+          <!-- Renderizado por JS -->
+        </div>
+      </section>
+
+      <section class="section" data-section="featured">
+        <h2 class="section__title">RECOMENDADO PARA TI</h2>
+        <div class="section__content grid">
+          <!-- Renderizado por JS -->
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- Testimonials -->
+  <section class="testimonials">
+    <div class="container">
+      <h2 class="testimonials__title">MÁS DE 10.000 CLIENTES FELICES</h2>
+      <p class="testimonials__subtitle">Ver historias reales →</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__content">
+        <div class="footer__section">
+          <h3>Sobre Pets Store</h3>
+          <p>Tu tienda online de confianza para productos premium de mascotas.</p>
+        </div>
+        <div class="footer__section">
+          <h3>Categorías</h3>
+          <ul>
+            <li><a href="#">Perros</a></li>
+            <li><a href="#">Gatos</a></li>
+            <li><a href="#">Otros Animales</a></li>
+          </ul>
+        </div>
+        <div class="footer__section">
+          <h3>Contacto</h3>
+          <p>Email: info@petsstore.com</p>
+          <p>Tel: +56 9 XXXX XXXX</p>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2024 Pets Store. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/core/constants.js"></script>
+  <script src="js/core/utils.js"></script>
+  <script src="js/core/dataLoader.js"></script>
+  <script src="js/modules/homeRenderer.js"></script>
+  <script src="js/modules/searchEngine.js"></script>
+  <script src="js/modules/carousel.js"></script>
+  <script src="js/modules/videoPlayer.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

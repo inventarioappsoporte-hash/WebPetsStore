@@ -1,0 +1,329 @@
+[
+  {
+    "id": "prod_001",
+    "name": "Juguete Mordillo Resistente Premium",
+    "category": "Perros",
+    "subcategory": "Juguetes",
+    "price": 5990,
+    "originalPrice": 9990,
+    "discount": 40,
+    "stock": 15,
+    "rating": 4.8,
+    "reviews": 342,
+    "featured": true,
+    "topDiscount": true,
+    "hasVideo": true,
+    "tags": ["juguete", "perros", "mordillo", "resistente", "premium"],
+    "description": "Juguete resistente diseñado para perros con mordida fuerte.",
+    "longDescription": "Ideal para perros grandes y medianos. Resiste mordidas intensas. Fácil de limpiar. Material de goma natural, seguro y duradero.",
+    "images": {
+      "cover": "assets/images/products/prod_001/cover.jpg",
+      "thumb": "assets/images/products/prod_001/thumb.jpg",
+      "gallery": [
+        "assets/images/products/prod_001/1.jpg",
+        "assets/images/products/prod_001/2.jpg"
+      ]
+    },
+    "video": {
+      "url": "assets/videos/prod_001.mp4",
+      "duration": 8,
+      "autoplay": true,
+      "muted": true,
+      "loop": true
+    },
+    "specs": {
+      "material": "Goma natural",
+      "size": "Mediano",
+      "weight": "250g",
+      "colors": ["Azul", "Naranja"]
+    },
+    "shipping": {
+      "free": true,
+      "days": "2-3"
+    },
+    "badge": "🔥 Lo más vendido",
+    "promoText": "40% OFF"
+  },
+  {
+    "id": "prod_002",
+    "name": "Alimento Perros Premium",
+    "category": "Perros",
+    "subcategory": "Alimentos",
+    "price": 9990,
+    "originalPrice": 16650,
+    "discount": 40,
+    "stock": 50,
+    "rating": 4.9,
+    "reviews": 1205,
+    "featured": false,
+    "topDiscount": true,
+    "hasVideo": true,
+    "tags": ["alimento", "perros", "premium", "nutrición"],
+    "description": "Alimento premium con ingredientes naturales.",
+    "longDescription": "Fórmula balanceada con proteínas de calidad, vitaminas y minerales esenciales. Peso: 15kg.",
+    "images": {
+      "cover": "assets/images/products/prod_002/cover.jpg",
+      "thumb": "assets/images/products/prod_002/thumb.jpg",
+      "gallery": [
+        "assets/images/products/prod_002/1.jpg"
+      ]
+    },
+    "video": {
+      "url": "assets/videos/prod_002.mp4",
+      "duration": 6,
+      "autoplay": true,
+      "muted": true,
+      "loop": true
+    },
+    "specs": {
+      "weight": "15kg",
+      "type": "Seco",
+      "age": "Adultos"
+    },
+    "shipping": {
+      "free": true,
+      "days": "1-2"
+    },
+    "badge": "⭐ Mejor valorado",
+    "promoText": "40% OFF"
+  },
+  {
+    "id": "prod_003",
+    "name": "Casa Puipé Feliz para Gatos",
+    "category": "Gatos",
+    "subcategory": "Accesorios",
+    "price": 17990,
+    "originalPrice": 25700,
+    "discount": 30,
+    "stock": 8,
+    "rating": 4.7,
+    "reviews": 156,
+    "featured": true,
+    "topDiscount": true,
+    "hasVideo": false,
+    "tags": ["gatos", "casa", "accesorios", "confort"],
+    "description": "Casa cómoda y acogedora para gatos.",
+    "longDescription": "Diseño moderno con múltiples niveles. Material resistente y fácil de limpiar.",
+    "images": {
+      "cover": "assets/images/products/prod_003/cover.jpg",
+      "thumb": "assets/images/products/prod_003/thumb.jpg",
+      "gallery": [
+        "assets/images/products/prod_003/1.jpg",
+        "assets/images/products/prod_003/2.jpg"
+      ]
+    },
+    "specs": {
+      "material": "Madera y tela",
+      "size": "Grande",
+      "weight": "5kg"
+    },
+    "shipping": {
+      "free": true,
+      "days": "3-5"
+    },
+    "badge": "🏠 Comodidad",
+    "promoText": "30% OFF"
+  },
+  {
+    "id": "prod_004",
+    "name": "Automático Pet Feeder",
+    "category": "Perros",
+    "subcategory": "Accesorios",
+    "price": 24990,
+    "originalPrice": 34990,
+    "discount": 28,
+    "stock": 12,
+    "rating": 4.6,
+    "reviews": 89,
+    "featured": true,
+    "topDiscount": false,
+    "hasVideo": true,
+    "tags": ["automático", "comedero", "perros", "tecnología"],
+    "description": "Comedero automático inteligente para mascotas.",
+    "longDescription": "Programable con temporizador. Mantiene el alimento fresco. Fácil de limpiar.",
+    "images": {
+      "cover": "assets/images/products/prod_004/cover.jpg",
+      "thumb": "assets/images/products/prod_004/thumb.jpg",
+      "gallery": [
+        "assets/images/products/prod_004/1.jpg"
+      ]
+    },
+    "video": {
+      "url": "assets/videos/prod_004.mp4",
+      "duration": 7,
+      "autoplay": true,
+      "muted": true,
+      "loop": true
+    },
+    "specs": {
+      "capacity": "2L",
+      "material": "Plástico resistente",
+      "power": "Batería AA"
+    },
+    "shipping": {
+      "free": true,
+      "days": "2-3"
+    },
+    "badge": "🤖 Inteligente",
+    "promoText": "28% OFF"
+  },
+  {
+    "id": "prod_005",
+    "name": "Correa Extensible Premium",
+    "category": "Perros",
+    "subcategory": "Accesorios",
+    "price": 12990,
+    "originalPrice": 18990,
+    "discount": 31,
+    "stock": 25,
+    "rating": 4.5,
+    "reviews": 234,
+    "featured": false,
+    "topDiscount": true,
+    "hasVideo": false,
+    "tags": ["correa", "paseo", "perros", "accesorios"],
+    "description": "Correa extensible de alta calidad.",
+    "longDescription": "Extensión de hasta 5 metros. Mango ergonómico. Resistente y durable.",
+    "images": {
+      "cover": "assets/images/products/prod_005/cover.jpg",
+      "thumb": "assets/images/products/prod_005/thumb.jpg",
+      "gallery": [
+        "assets/images/products/prod_005/1.jpg"
+      ]
+    },
+    "specs": {
+      "length": "5m",
+      "material": "Nylon reforzado",
+      "weight": "200g"
+    },
+    "shipping": {
+      "free": true,
+      "days": "1-2"
+    },
+    "badge": "🎯 Paseos",
+    "promoText": "31% OFF"
+  },
+  {
+    "id": "prod_006",
+    "name": "Cama Ortopédica para Perros",
+    "category": "Perros",
+    "subcategory": "Camas",
+    "price": 34990,
+    "originalPrice": 49990,
+    "discount": 30,
+    "stock": 6,
+    "rating": 4.9,
+    "reviews": 412,
+    "featured": true,
+    "topDiscount": false,
+    "hasVideo": true,
+    "tags": ["cama", "ortopédica", "perros", "confort", "salud"],
+    "description": "Cama ortopédica con soporte para articulaciones.",
+    "longDescription": "Espuma viscoelástica de alta densidad. Funda removible y lavable. Ideal para perros adultos.",
+    "images": {
+      "cover": "assets/images/products/prod_006/cover.jpg",
+      "thumb": "assets/images/products/prod_006/thumb.jpg",
+      "gallery": [
+        "assets/images/products/prod_006/1.jpg",
+        "assets/images/products/prod_006/2.jpg"
+      ]
+    },
+    "video": {
+      "url": "assets/videos/prod_006.mp4",
+      "duration": 8,
+      "autoplay": true,
+      "muted": true,
+      "loop": true
+    },
+    "specs": {
+      "size": "Grande",
+      "material": "Espuma viscoelástica",
+      "weight": "3kg"
+    },
+    "shipping": {
+      "free": true,
+      "days": "3-5"
+    },
+    "badge": "💤 Descanso",
+    "promoText": "30% OFF"
+  },
+  {
+    "id": "prod_007",
+    "name": "Juguete Interactivo para Gatos",
+    "category": "Gatos",
+    "subcategory": "Juguetes",
+    "price": 8990,
+    "originalPrice": 12990,
+    "discount": 30,
+    "stock": 20,
+    "rating": 4.4,
+    "reviews": 178,
+    "featured": false,
+    "topDiscount": true,
+    "hasVideo": true,
+    "tags": ["juguete", "gatos", "interactivo", "diversión"],
+    "description": "Juguete interactivo que estimula el instinto cazador.",
+    "longDescription": "Con movimiento automático y sonidos. Batería incluida. Seguro para gatos.",
+    "images": {
+      "cover": "assets/images/products/prod_007/cover.jpg",
+      "thumb": "assets/images/products/prod_007/thumb.jpg",
+      "gallery": [
+        "assets/images/products/prod_007/1.jpg"
+      ]
+    },
+    "video": {
+      "url": "assets/videos/prod_007.mp4",
+      "duration": 5,
+      "autoplay": true,
+      "muted": true,
+      "loop": true
+    },
+    "specs": {
+      "material": "Plástico seguro",
+      "power": "Batería AA",
+      "colors": ["Rojo", "Azul"]
+    },
+    "shipping": {
+      "free": true,
+      "days": "1-2"
+    },
+    "badge": "🎮 Diversión",
+    "promoText": "30% OFF"
+  },
+  {
+    "id": "prod_008",
+    "name": "Transportín de Viaje Compacto",
+    "category": "Gatos",
+    "subcategory": "Accesorios",
+    "price": 19990,
+    "originalPrice": 28990,
+    "discount": 31,
+    "stock": 10,
+    "rating": 4.6,
+    "reviews": 145,
+    "featured": false,
+    "topDiscount": false,
+    "hasVideo": false,
+    "tags": ["transportín", "viaje", "gatos", "portátil"],
+    "description": "Transportín ligero y compacto para viajes.",
+    "longDescription": "Fácil de plegar. Ventilación adecuada. Asa cómoda para transportar.",
+    "images": {
+      "cover": "assets/images/products/prod_008/cover.jpg",
+      "thumb": "assets/images/products/prod_008/thumb.jpg",
+      "gallery": [
+        "assets/images/products/prod_008/1.jpg"
+      ]
+    },
+    "specs": {
+      "material": "Tela resistente",
+      "weight": "800g",
+      "capacity": "Hasta 5kg"
+    },
+    "shipping": {
+      "free": true,
+      "days": "2-3"
+    },
+    "badge": "✈️ Viajes",
+    "promoText": "31% OFF"
+  }
+]

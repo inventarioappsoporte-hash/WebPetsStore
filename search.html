@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Buscar - Pets Store</title>
+  
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/typography.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/search.css">
+  <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <div class="header__content">
+        <div class="header__logo">
+          <a href="index.html" style="display: flex; align-items: center; gap: 0.5rem;">
+            <h1>🐾 Pets Store</h1>
+          </a>
+        </div>
+        <nav class="header__nav">
+          <a href="index.html" class="nav__link">Home</a>
+          <a href="search.html" class="nav__link nav__link--active">Buscar</a>
+          <a href="#" class="nav__link">Categorías</a>
+          <a href="#" class="nav__link">Contacto</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- Search Section -->
+  <main class="main">
+    <div class="container">
+      <section class="search">
+        <h1 class="search__title">Buscar Productos</h1>
+        
+        <div class="search__box">
+          <input 
+            type="text" 
+            class="search__input" 
+            placeholder="Busca por nombre, categoría o tags..."
+            autofocus
+          >
+          <button class="search__btn">🔍</button>
+        </div>
+
+        <div class="search__results">
+          <!-- Resultados renderizados por JS -->
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__content">
+        <div class="footer__section">
+          <h3>Sobre Pets Store</h3>
+          <p>Tu tienda online de confianza para productos premium de mascotas.</p>
+        </div>
+        <div class="footer__section">
+          <h3>Categorías</h3>
+          <ul>
+            <li><a href="#">Perros</a></li>
+            <li><a href="#">Gatos</a></li>
+            <li><a href="#">Otros Animales</a></li>
+          </ul>
+        </div>
+        <div class="footer__section">
+          <h3>Contacto</h3>
+          <p>Email: info@petsstore.com</p>
+          <p>Tel: +56 9 XXXX XXXX</p>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2024 Pets Store. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/core/constants.js"></script>
+  <script src="js/core/utils.js"></script>
+  <script src="js/core/dataLoader.js"></script>
+  <script src="js/modules/searchEngine.js"></script>
+  <script src="js/modules/videoPlayer.js"></script>
+  <script>
+    // Inicializar búsqueda en página de búsqueda
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', async () => {
+        const searchEngine = new SearchEngine(dataLoader);
+        const input = document.querySelector('.search__input');
+        if (input) {
+          input.focus();
+        }
+      });
+    } else {
+      const searchEngine = new SearchEngine(dataLoader);
+    }
+  </script>
+</body>
+</html>
