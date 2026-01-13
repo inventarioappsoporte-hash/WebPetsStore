@@ -32,6 +32,12 @@ class App {
 
   initHeroButtons() {
     console.log('🔍 Buscando botones del hero...');
+    
+    // Log del hero completo
+    const hero = document.querySelector('.hero');
+    console.log('Hero element:', hero);
+    console.log('Hero HTML:', hero?.innerHTML);
+    
     const viewBtn = document.getElementById('hero-view-btn');
     const buyBtn = document.getElementById('hero-buy-btn');
 
