@@ -6,6 +6,10 @@ class HomeRenderer {
 
   async render() {
     try {
+      // Limpiar cache para asegurar datos frescos
+      this.dataLoader.clearCache();
+      console.log('🔄 Cache cleared - loading fresh data');
+      
       const homeConfig = await this.dataLoader.getHomeConfig();
       const products = await this.dataLoader.getProducts();
 
@@ -13,6 +17,8 @@ class HomeRenderer {
         console.error('Error loading home data');
         return;
       }
+
+      console.log('📦 Total products loaded:', products.length);
 
       // Renderizar hero
       this.renderHero(homeConfig.hero, products);
@@ -59,8 +65,27 @@ class HomeRenderer {
     const container = document.querySelector(`[data-section="${section.id}"]`);
     if (!container) return;
 
+    // Debug: Log para TOP DESCUENTOS
+    if (section.id === 'top-discounts') {
+      console.log('🔥 TOP DESCUENTOS - Total products:', products.length);
+      console.log('🔥 TOP DESCUENTOS - Filter criteria:', section.filter);
+      
+      // Buscar específicamente nuestro producto
+      const camaVictoria = products.find(p => p.id === 'prod_222');
+      console.log('🔥 CAMA VICTORIA found:', camaVictoria);
+      if (camaVictoria) {
+        console.log('🔥 CAMA VICTORIA topDiscount:', camaVictoria.topDiscount);
+      }
+    }
+
     // Filtrar productos
     let filtered = this.filterProducts(products, section.filter);
+
+    // Debug: Log productos filtrados
+    if (section.id === 'top-discounts') {
+      console.log('🔥 TOP DESCUENTOS - Filtered products:', filtered.length);
+      console.log('🔥 TOP DESCUENTOS - Filtered list:', filtered.map(p => p.name));
+    }
 
     // Ordenar
     if (section.sortBy) {

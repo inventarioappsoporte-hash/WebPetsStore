@@ -7,13 +7,29 @@ class ProductPage {
 
   async init() {
     const productId = Utils.getUrlParam('id');
+    console.log('🔍 ProductPage - Looking for product ID:', productId);
     
     if (!productId) {
       this.showError('Producto no encontrado');
       return;
     }
 
+    // Limpiar cache para asegurar datos frescos
+    this.dataLoader.clearCache();
+    console.log('🔄 ProductPage - Cache cleared');
+
+    const products = await this.dataLoader.getProducts();
+    console.log('📦 ProductPage - Total products loaded:', products?.length);
+    
+    if (products) {
+      const productIds = products.map(p => p.id);
+      console.log('🆔 ProductPage - Available product IDs:', productIds);
+      console.log('🔍 ProductPage - Looking for:', productId);
+      console.log('✅ ProductPage - Product exists:', productIds.includes(productId));
+    }
+
     const product = await this.dataLoader.getProductById(productId);
+    console.log('🎯 ProductPage - Found product:', product);
     
     if (!product) {
       this.showError('Producto no encontrado');
