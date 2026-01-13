@@ -35,10 +35,11 @@
   margin-bottom: var(--spacing-lg);
   text-transform: uppercase;
   letter-spacing: 2px;
+  display: none;
 }
 
 .hero__price {
-  display: flex;
+  display: none;
   align-items: center;
   gap: var(--spacing-lg);
   margin-bottom: var(--spacing-lg);
