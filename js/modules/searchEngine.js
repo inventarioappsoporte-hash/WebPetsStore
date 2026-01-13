@@ -10,7 +10,9 @@ class SearchEngine {
     console.log('🔍 SearchEngine.init() - Cargando productos...');
     this.products = await this.dataLoader.getProducts();
     console.log('🔍 SearchEngine.init() - Productos cargados:', this.products?.length || 0);
+    console.log('🔍 SearchEngine.init() - Llamando setupSearchListeners...');
     this.setupSearchListeners();
+    console.log('🔍 SearchEngine.init() - setupSearchListeners completado');
   }
 
   setupSearchListeners() {
