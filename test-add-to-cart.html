@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Test - Agregar al Carrito</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/typography.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/home.css">
+  <link rel="stylesheet" href="css/cart.css">
+  <style>
+    body {
+      padding: 20px;
+      background: var(--color-bg);
+    }
+    .test-section {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    .test-title {
+      font-size: 24px;
+      margin-bottom: 20px;
+      color: var(--color-text);
+    }
+    .test-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="test-section">
+    <h1 class="test-title">🧪 Test - Botones Agregar al Carrito</h1>
+    <div id="products-container" class="test-grid">
+      <!-- Productos se cargarán aquí -->
+    </div>
+  </div>
+
+  <!-- Carrito flotante -->
+  <div id="cart-panel" class="cart-panel">
+    <div class="cart-panel__header">
+      <h2 class="cart-panel__title">🛒 Carrito</h2>
+      <button class="cart-panel__close" onclick="CartUI.toggle()">✕</button>
+    </div>
+    <div class="cart-panel__content" id="cart-items">
+      <!-- Items del carrito -->
+    </div>
+    <div class="cart-panel__footer">
+      <div class="cart-panel__total">
+        <span>Total:</span>
+        <span id="cart-total">$0</span>
+      </div>
+      <button class="btn btn--primary btn--full" onclick="CartUI.checkout()">
+        Finalizar Compra
+      </button>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/core/constants.js"></script>
+  <script src="js/core/utils.js"></script>
+  <script src="js/core/dataLoader.js"></script>
+  <script src="js/modules/cart.js"></script>
+  <script src="js/modules/whatsappSender.js"></script>
+  <script src="js/modules/cartUI.js"></script>
+  <script src="js/modules/homeRenderer.js"></script>
+
+  <script>
+    // Test script
+    async function testAddToCart() {
+      console.log('🧪 Iniciando test de agregar al carrito...');
+      
+      try {
+        // Cargar productos
+        const products = await dataLoader.getProducts();
+        console.log('📦 Productos cargados:', products.length);
+        
+        // Guardar en HomeRenderer
+        HomeRenderer.allProducts = products;
+        
+        // Tomar los primeros 6 productos sin variantes
+        const testProducts = products.filter(p => !p.hasVariants).slice(0, 6);
+        console.log('🧪 Productos de prueba:', testProducts.length);
+        
+        // Renderizar productos
+        const container = document.getElementById('products-container');
+        container.innerHTML = testProducts.map(product => `
+          <div class="card">
+            <div class="card__image-wrapper">
+              <img src="${product.images.thumb}" alt="${product.name}" class="card__image" loading="lazy">
+              ${product.discount ? `<span class="card__discount">-${product.discount}%</span>` : ''}
+            </div>
+            <div class="card__content">
+              <h3 class="card__title">${product.name}</h3>
+              <div class="card__rating">
+                <span class="card__stars">⭐ ${product.rating}</span>
+                <span class="card__reviews">(${product.reviews})</span>
+              </div>
+              <div class="card__price">
+                <span class="card__price-current">${Utils.formatPrice(product.price)}</span>
+                ${product.originalPrice ? `<span class="card__price-original">${Utils.formatPrice(product.originalPrice)}</span>` : ''}
+              </div>
+              <div class="card__actions">
+                <button class="btn btn--small btn--secondary add-to-cart-btn" data-product-id="${product.id}">
+                  🛒 Agregar
+                </button>
+              </div>
+            </div>
+          </div>
+        `).join('');
+        
+        // Agregar event listeners
+        const buttons = container.querySelectorAll('.add-to-cart-btn');
+        console.log('🔘 Botones encontrados:', buttons.length);
+        
+        buttons.forEach(button => {
+          button.addEventListener('click', async (e) => {
+            e.stopPropagation();
+            const productId = button.getAttribute('data-product-id');
+            console.log('🖱️ Click en botón, productId:', productId);
+            
+            const product = HomeRenderer.allProducts.find(p => p.id === productId);
+            
+            if (!product) {
+              console.error('❌ Producto no encontrado:', productId);
+              alert('Producto no encontrado');
+              return;
+            }
+            
+            console.log('✅ Producto encontrado:', product.name);
+            console.log('➕ Agregando al carrito...');
+            
+            const success = Cart.addItem(product, 1, null);
+            
+            if (success) {
+              console.log('✅ Producto agregado exitosamente');
+              CartUI.showAddedNotification(product.name);
+            } else {
+              console.error('❌ Error al agregar producto');
+              alert('Error al agregar el producto al carrito');
+            }
+          });
+        });
+        
+        console.log('✅ Test configurado correctamente');
+        
+      } catch (error) {
+        console.error('❌ Error en test:', error);
+      }
+    }
+    
+    // Ejecutar test cuando el DOM esté listo
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', testAddToCart);
+    } else {
+      testAddToCart();
+    }
+  </script>
+</body>
+</html>

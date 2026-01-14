@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Test Carrito - Scroll y Formulario</title>
+  <link rel="stylesheet" href="css/cart.css">
+  <style>
+    body {
+      margin: 0;
+      padding: 20px;
+      background: #0a0a0a;
+      color: white;
+      font-family: Arial, sans-serif;
+    }
+    .test-controls {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+      background: #1a1a1a;
+      border-radius: 12px;
+    }
+    .test-btn {
+      padding: 12px 24px;
+      background: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 16px;
+      margin: 10px 5px;
+    }
+    .test-btn:hover {
+      background: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <div class="test-controls">
+    <h1>🧪 Test Carrito - Scroll y Formulario</h1>
+    <p>Este test verifica:</p>
+    <ul>
+      <li>✅ Productos visibles con scroll</li>
+      <li>✅ Formulario siempre visible</li>
+      <li>✅ Botón de enviar siempre visible</li>
+      <li>✅ Scroll independiente en body y footer</li>
+    </ul>
+    
+    <button class="test-btn" onclick="openCartWithFewItems()">
+      Abrir con 2 productos
+    </button>
+    <button class="test-btn" onclick="openCartWithManyItems()">
+      Abrir con 10 productos
+    </button>
+    <button class="test-btn" onclick="openCartWithManyItemsAndLongNotes()">
+      Abrir con 10 productos + notas largas
+    </button>
+  </div>
+
+  <!-- Modal del carrito -->
+  <div id="cart-modal" class="cart-modal">
+    <div class="cart-modal__overlay" onclick="closeCart()"></div>
+    <div class="cart-modal__content">
+      <div class="cart-modal__header">
+        <h2>🛒 Mi Carrito</h2>
+        <button class="cart-modal__close" onclick="closeCart()">✕</button>
+      </div>
+      
+      <div class="cart-modal__body">
+        <div id="cart-items-container"></div>
+      </div>
+      
+      <div class="cart-modal__footer">
+        <div class="cart-modal__total">
+          <span>Total:</span>
+          <span id="cart-total">$0</span>
+        </div>
+        
+        <button class="cart-modal__clear" onclick="alert('Vaciar carrito')">
+          🗑️ Vaciar Carrito
+        </button>
+        
+        <div class="cart-modal__form">
+          <h3>📝 Datos para el pedido</h3>
+          <input 
+            type="text" 
+            id="customer-name" 
+            placeholder="Nombre completo *" 
+            required
+          />
+          <input 
+            type="tel" 
+            id="customer-phone" 
+            placeholder="Teléfono *" 
+            required
+          />
+          <textarea 
+            id="customer-notes" 
+            placeholder="Observaciones (opcional)"
+            rows="3"
+          ></textarea>
+        </div>
+        
+        <button class="cart-modal__checkout" onclick="submitOrder()">
+          📱 Enviar por WhatsApp
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function formatPrice(price) {
+      return '$' + price.toLocaleString('es-AR');
+    }
+
+    function createCartItem(index) {
+      return `
+        <div class="cart-item">
+          <div class="cart-item__image">
+            <img src="https://via.placeholder.com/80" alt="Producto ${index}">
+          </div>
+          
+          <div class="cart-item__details">
+            <h4>Producto de Prueba ${index}</h4>
+            <p class="cart-item__variant">
+              Talla: M, Color: Azul
+            </p>
+            
+            <div class="cart-item__price">
+              <span class="cart-item__original-price">${formatPrice(15000)}</span>
+              <span class="cart-item__current-price">${formatPrice(12000)}</span>
+            </div>
+          </div>
+          
+          <div class="cart-item__controls">
+            <div class="cart-item__quantity">
+              <button>−</button>
+              <span>1</span>
+              <button>+</button>
+            </div>
+            
+            <div class="cart-item__subtotal">
+              ${formatPrice(12000)}
+            </div>
+            
+            <button class="cart-item__remove">
+              🗑️
+            </button>
+          </div>
+        </div>
+      `;
+    }
+
+    function openCartWithFewItems() {
+      const container = document.getElementById('cart-items-container');
+      let html = '';
+      for (let i = 1; i <= 2; i++) {
+        html += createCartItem(i);
+      }
+      container.innerHTML = html;
+      document.getElementById('cart-total').textContent = formatPrice(24000);
+      openCart();
+    }
+
+    function openCartWithManyItems() {
+      const container = document.getElementById('cart-items-container');
+      let html = '';
+      for (let i = 1; i <= 10; i++) {
+        html += createCartItem(i);
+      }
+      container.innerHTML = html;
+      document.getElementById('cart-total').textContent = formatPrice(120000);
+      openCart();
+    }
+
+    function openCartWithManyItemsAndLongNotes() {
+      openCartWithManyItems();
+      document.getElementById('customer-notes').value = 
+        'Esta es una nota muy larga para probar el scroll del footer. ' +
+        'Necesito que el pedido llegue antes del mediodía. ' +
+        'Por favor incluir una tarjeta de regalo. ' +
+        'El color debe ser exactamente como en la foto. ' +
+        'Gracias por su atención.';
+    }
+
+    function openCart() {
+      document.getElementById('cart-modal').classList.add('cart-modal--open');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeCart() {
+      document.getElementById('cart-modal').classList.remove('cart-modal--open');
+      document.body.style.overflow = '';
+    }
+
+    function submitOrder() {
+      const name = document.getElementById('customer-name').value;
+      const phone = document.getElementById('customer-phone').value;
+      const notes = document.getElementById('customer-notes').value;
+      
+      if (!name || !phone) {
+        alert('Por favor completa nombre y teléfono');
+        return;
+      }
+      
+      alert(`✅ Pedido enviado!\n\nNombre: ${name}\nTeléfono: ${phone}\nNotas: ${notes || 'Sin notas'}`);
+      closeCart();
+    }
+
+    // Cerrar con ESC
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        closeCart();
+      }
+    });
+  </script>
+</body>
+</html>

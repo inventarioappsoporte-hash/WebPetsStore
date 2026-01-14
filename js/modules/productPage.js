@@ -80,6 +80,7 @@ class ProductPage {
           alt="Imagen ${idx + 1}" 
           class="product__gallery-img"
           onclick="document.querySelector('.product__main-image').src = this.src"
+          onerror="this.src='assets/images/placeholder.svg'"
         >
       `)
       .join('');
@@ -95,7 +96,7 @@ class ProductPage {
         <div class="product__gallery">
           <div class="product__main">
             ${discount}
-            <img src="${product.images.cover}" alt="${product.name}" class="product__main-image product__image-main">
+            <img src="${product.images.cover}" alt="${product.name}" class="product__main-image product__image-main" onerror="this.src='assets/images/placeholder.svg'">
             ${video}
           </div>
           <div class="product__thumbnails">

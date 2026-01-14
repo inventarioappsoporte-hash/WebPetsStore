@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Test - Icono Carrito Header</title>
+  
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/typography.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/cart.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <div class="header__content">
+        <div class="header__logo">
+          <a href="index.html" style="display: flex; align-items: center; gap: 0.5rem;">
+            <h1>🐾 Pets Store</h1>
+          </a>
+        </div>
+        <nav class="header__nav">
+          <a href="index.html" class="nav__link nav__link--active">Home</a>
+          <a href="search.html" class="nav__link">Buscar</a>
+          <div class="nav__item nav__item--dropdown">
+            <a href="#" class="nav__link">Categorías</a>
+            <ul class="nav__dropdown" id="categories-dropdown">
+              <li class="nav__dropdown-item"><a href="#">Juguetes</a></li>
+              <li class="nav__dropdown-item"><a href="#">Alimentos</a></li>
+              <li class="nav__dropdown-item"><a href="#">Accesorios</a></li>
+            </ul>
+          </div>
+          <a href="#" class="nav__link">Contacto</a>
+        </nav>
+        <div class="header__actions">
+          <div class="header__search">
+            <button class="header__search-btn" id="header-search-toggle">🔍</button>
+            <input type="text" class="header__search-input" placeholder="Buscar productos..." id="header-search-input">
+          </div>
+          <a href="#" class="nav__link nav__link--cart" onclick="alert('Carrito clickeado'); return false;">
+            <div class="cart-icon-wrapper">
+              <svg class="cart-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="9" cy="21" r="1"></circle>
+                <circle cx="20" cy="21" r="1"></circle>
+                <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+              </svg>
+              <span class="cart-badge__count" id="cart-badge-count">3</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="main" style="padding: 2rem;">
+    <div class="container">
+      <h2>Test del Nuevo Icono del Carrito</h2>
+      <p>✅ El icono del carrito ahora es un SVG profesional</p>
+      <p>✅ El carrito está posicionado a la derecha</p>
+      <p>✅ La barra de búsqueda tiene más espacio (250px max-width)</p>
+      <p>✅ El badge contador muestra "3" para visualización</p>
+      
+      <h3 style="margin-top: 2rem;">Características:</h3>
+      <ul style="margin-left: 2rem; line-height: 1.8;">
+        <li>Icono SVG de carrito de compras</li>
+        <li>Fondo oscuro con borde (#2c2c2c)</li>
+        <li>Tamaño: 50x50px</li>
+        <li>Badge contador en la esquina superior derecha</li>
+        <li>Efecto hover con elevación</li>
+        <li>Barra de búsqueda ajustada a 200px de ancho</li>
+      </ul>
+
+      <h3 style="margin-top: 2rem;">Prueba de Hover:</h3>
+      <p>Pasa el mouse sobre el icono del carrito para ver el efecto de elevación y cambio de color.</p>
+    </div>
+  </main>
+
+  <script>
+    // Simular contador del carrito
+    document.getElementById('cart-badge-count').textContent = '3';
+  </script>
+</body>
+</html>

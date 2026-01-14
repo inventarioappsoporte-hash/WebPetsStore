@@ -95,26 +95,13 @@ class CartUI {
    * Crear badge del carrito en el header
    */
   static createCartBadge() {
-    // Buscar el header
-    const header = document.querySelector('.header') || document.querySelector('header');
+    // Buscar el badge que ya existe en el HTML
+    this.badge = document.getElementById('cart-badge-count');
     
-    if (!header) {
-      console.warn('Header not found, creating floating badge');
+    if (!this.badge) {
+      console.warn('Cart badge not found in header, creating floating badge');
       this.createFloatingBadge();
-      return;
     }
-
-    // Crear badge
-    const badge = document.createElement('div');
-    badge.className = 'cart-badge-container';
-    badge.innerHTML = `
-      <button class="cart-badge" onclick="CartUI.toggle()">
-        🛒 <span class="cart-badge__count">0</span>
-      </button>
-    `;
-    
-    header.appendChild(badge);
-    this.badge = badge.querySelector('.cart-badge__count');
   }
 
   /**
@@ -139,7 +126,12 @@ class CartUI {
   static updateBadge(count) {
     if (this.badge) {
       this.badge.textContent = count;
-      this.badge.style.display = count > 0 ? 'inline-block' : 'none';
+      // Mostrar/ocultar badge según la cantidad
+      if (count > 0) {
+        this.badge.style.display = 'inline-flex';
+      } else {
+        this.badge.style.display = 'none';
+      }
     }
   }
 
@@ -165,7 +157,7 @@ class CartUI {
     container.innerHTML = items.map(item => `
       <div class="cart-item" data-item-id="${item.id}">
         <div class="cart-item__image">
-          <img src="${item.image}" alt="${item.name}" onerror="this.src='assets/images/placeholder.jpg'">
+          <img src="${item.image}" alt="${item.name}" onerror="this.src='assets/images/placeholder.svg'">
         </div>
         
         <div class="cart-item__details">

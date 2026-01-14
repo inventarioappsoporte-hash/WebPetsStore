@@ -65,6 +65,18 @@ class Cart {
     const price = product.discountPrice || product.price;
     const originalPrice = product.price;
 
+    // Obtener imagen correcta del producto
+    let image = '';
+    if (product.images) {
+      if (typeof product.images === 'object') {
+        image = product.images.thumb || product.images.main || product.images[0] || '';
+      } else if (Array.isArray(product.images)) {
+        image = product.images[0] || '';
+      }
+    } else if (product.image) {
+      image = product.image;
+    }
+
     return {
       id: this.generateItemId(product.id, variant),
       productId: product.id,
@@ -77,7 +89,7 @@ class Cart {
         attributes: variant.attributes,
         sku: variant.sku
       } : null,
-      image: product.image || product.images?.[0] || '',
+      image: image,
       subtotal: price * quantity,
       addedAt: new Date().toISOString()
     };

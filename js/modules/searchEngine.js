@@ -194,6 +194,9 @@ class SearchEngine {
         ${results.map(p => this.renderResultCard(p)).join('')}
       </div>
     `;
+    
+    // Adjuntar listeners a los botones de agregar
+    this.attachAddToCartListeners();
   }
 
   setupSearchListeners() {
@@ -294,6 +297,9 @@ class SearchEngine {
         ${this.products.map(p => this.renderResultCard(p)).join('')}
       </div>
     `;
+    
+    // Adjuntar listeners a los botones de agregar
+    this.attachAddToCartListeners();
   }
 
   search(query) {
@@ -335,6 +341,9 @@ class SearchEngine {
         ${results.map(p => this.renderResultCard(p)).join('')}
       </div>
     `;
+    
+    // Adjuntar listeners a los botones de agregar
+    this.attachAddToCartListeners();
   }
 
   renderResultCard(product) {
@@ -394,34 +403,57 @@ class SearchEngine {
           <span>${Utils.formatPrice(displayPrice)}</span>
           ${product.discount ? `<span class="search-card__discount">-${product.discount}%</span>` : ''}
         </div>
-        <button class="btn btn--small btn--secondary search-card__add-to-cart" onclick="event.stopPropagation(); SearchEngine.addToCart(${product.id})">🛒 Agregar</button>
+        <button class="btn btn--small btn--secondary search-card__add-to-cart add-to-cart-btn" data-product-id="${product.id}" onclick="event.stopPropagation()">🛒 Agregar</button>
       </div>
     `;
   }
 
   /**
-   * Agregar producto al carrito desde búsqueda
+   * Agregar listeners a los botones de agregar al carrito
    */
-  static addToCart(productId) {
-    const product = window.searchEngineInstance?.products?.find(p => p.id === productId);
-    
-    if (!product) {
-      alert('Producto no encontrado');
-      return;
-    }
+  attachAddToCartListeners() {
+    const buttons = document.querySelectorAll('.search-card__add-to-cart');
+    buttons.forEach(button => {
+      button.addEventListener('click', async (e) => {
+        e.stopPropagation();
+        const productId = button.getAttribute('data-product-id');
+        await this.handleAddToCart(productId);
+      });
+    });
+  }
 
-    // Si tiene variantes, redirigir a página de producto
-    if (product.hasVariants) {
-      window.location.href = `product.html?id=${product.id}`;
-      return;
-    }
+  /**
+   * Manejar agregar producto al carrito
+   */
+  async handleAddToCart(productId) {
+    try {
+      const product = await this.dataLoader.getProductById(productId);
+      
+      if (!product) {
+        alert('Producto no encontrado');
+        return;
+      }
 
-    // Si no tiene variantes, agregar directamente
-    const success = Cart.addItem(product, 1, null);
-    
-    if (success) {
-      CartUI.showAddedNotification(product.name);
-    } else {
+      // Si tiene variantes, redirigir a página de producto
+      if (product.hasVariants) {
+        window.location.href = `product.html?id=${product.id}`;
+        return;
+      }
+
+      // Si no tiene variantes, agregar directamente
+      const success = Cart.addItem(product, 1, null);
+      
+      if (success) {
+        if (typeof CartUI !== 'undefined' && CartUI.showAddedNotification) {
+          CartUI.showAddedNotification(product.name);
+        } else {
+          alert(`✅ ${product.name} agregado al carrito`);
+        }
+      } else {
+        alert('Error al agregar el producto al carrito');
+      }
+    } catch (error) {
+      console.error('Error adding to cart:', error);
       alert('Error al agregar el producto al carrito');
     }
   }

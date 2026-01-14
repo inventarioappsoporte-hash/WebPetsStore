@@ -1,5 +1,7 @@
 // Renderizador de Home
 class HomeRenderer {
+  static allProducts = []; // Guardar productos para acceso desde métodos estáticos
+
   constructor(dataLoader) {
     this.dataLoader = dataLoader;
   }
@@ -24,6 +26,9 @@ class HomeRenderer {
       }
 
       console.log('📦 Total products loaded:', products.length);
+      
+      // Guardar productos para acceso desde métodos estáticos
+      HomeRenderer.allProducts = products;
 
       // Renderizar hero
       this.renderHero(homeConfig.hero, products);
@@ -189,13 +194,13 @@ class HomeRenderer {
       } else if (product.marketing.type === 'image') {
         // Usar imagen de marketing
         imageUrl = product.marketing.url;
-        mediaHtml = `<img src="${imageUrl}" alt="${product.name}" class="card__image" loading="lazy">`;
+        mediaHtml = `<img src="${imageUrl}" alt="${product.name}" class="card__image" loading="lazy" onerror="this.src='assets/images/placeholder.svg'">`;
       }
     }
     
     // Fallback a imagen normal si no hay marketing media
     if (!mediaHtml) {
-      mediaHtml = `<img src="${imageUrl}" alt="${product.name}" class="card__image" loading="lazy">`;
+      mediaHtml = `<img src="${imageUrl}" alt="${product.name}" class="card__image" loading="lazy" onerror="this.src='assets/images/placeholder.svg'">`;
     }
 
     return `
@@ -220,38 +225,11 @@ class HomeRenderer {
           </div>
           <div class="card__actions">
             <button class="btn btn--small btn--primary" onclick="event.stopPropagation()">Ver Producto</button>
-            <button class="btn btn--small btn--secondary" onclick="event.stopPropagation(); HomeRenderer.addToCart(${product.id})">🛒 Agregar</button>
+            <button class="btn btn--small btn--secondary add-to-cart-btn" data-product-id="${product.id}" onclick="event.stopPropagation()">🛒 Agregar</button>
           </div>
         </div>
       </div>
     `;
-  }
-
-  /**
-   * Agregar producto al carrito desde card
-   */
-  static addToCart(productId) {
-    const product = this.allProducts.find(p => p.id === productId);
-    
-    if (!product) {
-      alert('Producto no encontrado');
-      return;
-    }
-
-    // Si tiene variantes, redirigir a página de producto
-    if (product.hasVariants) {
-      window.location.href = `product.html?id=${product.id}`;
-      return;
-    }
-
-    // Si no tiene variantes, agregar directamente
-    const success = Cart.addItem(product, 1, null);
-    
-    if (success) {
-      CartUI.showAddedNotification(product.name);
-    } else {
-      alert('Error al agregar el producto al carrito');
-    }
   }
 
   filterProducts(products, criteria) {
@@ -296,6 +274,63 @@ class HomeRenderer {
         if (video) video.pause();
       });
     });
+
+    // Agregar listeners a los botones de agregar al carrito
+    const addToCartButtons = container.querySelectorAll('.add-to-cart-btn');
+    addToCartButtons.forEach(button => {
+      button.addEventListener('click', async (e) => {
+        e.stopPropagation();
+        const productId = button.getAttribute('data-product-id');
+        await this.handleAddToCart(productId);
+      });
+    });
+  }
+
+  /**
+   * Manejar agregar producto al carrito
+   */
+  async handleAddToCart(productId) {
+    try {
+      console.log('🛒 handleAddToCart called with productId:', productId);
+      
+      // Obtener el producto del array estático
+      const product = HomeRenderer.allProducts.find(p => p.id === productId);
+      
+      if (!product) {
+        console.error('❌ Producto no encontrado:', productId);
+        alert('Producto no encontrado');
+        return;
+      }
+
+      console.log('✅ Producto encontrado:', product.name);
+
+      // Si tiene variantes, redirigir a página de producto
+      if (product.hasVariants) {
+        console.log('📦 Producto con variantes, redirigiendo...');
+        window.location.href = `product.html?id=${product.id}`;
+        return;
+      }
+
+      // Si no tiene variantes, agregar directamente
+      console.log('➕ Agregando producto al carrito...');
+      const success = Cart.addItem(product, 1, null);
+      
+      if (success) {
+        console.log('✅ Producto agregado exitosamente');
+        // Mostrar notificación
+        if (typeof CartUI !== 'undefined' && CartUI.showAddedNotification) {
+          CartUI.showAddedNotification(product.name);
+        } else {
+          alert(`✅ ${product.name} agregado al carrito`);
+        }
+      } else {
+        console.error('❌ Error al agregar producto');
+        alert('Error al agregar el producto al carrito');
+      }
+    } catch (error) {
+      console.error('Error adding to cart:', error);
+      alert('Error al agregar el producto al carrito');
+    }
   }
 
   renderTestimonials(config) {

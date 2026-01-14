@@ -25,6 +25,17 @@
   gap: var(--spacing-lg);
 }
 
+.header__actions {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+  margin-left: auto;
+  flex-shrink: 0;
+  padding-left: var(--spacing-lg);
+}
+
+/* Estilos del carrito movidos a cart.css */
+
 .nav__link {
   color: var(--color-text-secondary);
   transition: color var(--transition-base);
@@ -149,7 +160,7 @@
   color: var(--color-text);
   padding: var(--spacing-sm);
   border-radius: var(--radius-md);
-  width: 250px;
+  width: 200px;
   transition: all var(--transition-base);
   opacity: 1;
   visibility: visible;
@@ -192,6 +203,8 @@
   align-items: center;
   gap: var(--spacing-sm);
   position: relative;
+  max-width: 250px;
+  flex-shrink: 1;
 }
 
 .header__search-results {
@@ -531,6 +544,11 @@
   .header__nav {
     width: 100%;
     justify-content: space-around;
+  }
+
+  .header__actions {
+    width: 100%;
+    justify-content: space-between;
   }
 
   .header__search-input {

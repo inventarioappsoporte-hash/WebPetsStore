@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Carrito Dark Theme - Pets Store</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/cart.css">
+    <style>
+        body {
+            background: #0a0a0a;
+            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding: 2rem;
+        }
+        .test-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .test-header {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        .test-header h1 {
+            color: #4CAF50;
+            margin-bottom: 0.5rem;
+        }
+        .test-header p {
+            color: #888;
+        }
+        .test-button {
+            background: linear-gradient(135deg, #4CAF50 0%, #45a049 100%);
+            color: white;
+            border: none;
+            padding: 1rem 2rem;
+            border-radius: 12px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 16px rgba(76, 175, 80, 0.3);
+        }
+        .test-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(76, 175, 80, 0.4);
+        }
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+        .feature {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 12px;
+            padding: 1.5rem;
+        }
+        .feature h3 {
+            color: #4CAF50;
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+        }
+        .feature p {
+            color: #aaa;
+            font-size: 0.9rem;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+    <div class="test-container">
+        <div class="test-header">
+            <h1>🎨 Carrito Dark Theme Premium</h1>
+            <p>Diseño oscuro inspirado en Netflix + Amazon</p>
+            <button class="test-button" onclick="openCart()">
+                🛒 Abrir Carrito de Prueba
+            </button>
+        </div>
+
+        <div class="features">
+            <div class="feature">
+                <h3>✨ Diseño Dark Premium</h3>
+                <p>Fondos oscuros con efectos glassmorphism y bordes sutiles para un look moderno y profesional.</p>
+            </div>
+            <div class="feature">
+                <h3>🎯 Inputs Mejorados</h3>
+                <p>Campos de formulario con fondo oscuro, texto blanco y placeholders en gris claro con transiciones suaves.</p>
+            </div>
+            <div class="feature">
+                <h3>🟢 Acentos Verdes</h3>
+                <p>Color verde como acento principal sin contraste excesivo, integrado naturalmente al diseño.</p>
+            </div>
+            <div class="feature">
+                <h3>🔴 Botón Secundario</h3>
+                <p>Botón "Vaciar carrito" en rojo con estilo sutil y consistente con el tema oscuro.</p>
+            </div>
+            <div class="feature">
+                <h3>💚 Botón WhatsApp</h3>
+                <p>Botón principal destacado con gradiente verde, sombras y efecto de brillo al hover.</p>
+            </div>
+            <div class="feature">
+                <h3>🎭 Transiciones Suaves</h3>
+                <p>Animaciones y transiciones en todos los elementos para una experiencia fluida y premium.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal del Carrito -->
+    <div id="cart-modal" class="cart-modal">
+        <div class="cart-modal__overlay" onclick="closeCart()"></div>
+        <div class="cart-modal__content">
+            <!-- Header -->
+            <div class="cart-modal__header">
+                <h2>🛒 Mi Carrito</h2>
+                <button class="cart-modal__close" onclick="closeCart()">&times;</button>
+            </div>
+
+            <!-- Body -->
+            <div class="cart-modal__body">
+                <div id="cart-items-container">
+                    <!-- Item de ejemplo 1 -->
+                    <div class="cart-item">
+                        <div class="cart-item__image">
+                            <img src="https://via.placeholder.com/80" alt="Producto">
+                        </div>
+                        <div class="cart-item__details">
+                            <h4>Collar Premium para Perro</h4>
+                            <p class="cart-item__variant">Talla: M | Color: Negro</p>
+                            <div class="cart-item__price">
+                                <span class="cart-item__original-price">$15.000</span>
+                                <span class="cart-item__current-price">$12.000</span>
+                            </div>
+                        </div>
+                        <div class="cart-item__controls">
+                            <div class="cart-item__quantity">
+                                <button>-</button>
+                                <span>2</span>
+                                <button>+</button>
+                            </div>
+                            <div class="cart-item__subtotal">$24.000</div>
+                            <button class="cart-item__remove">🗑️</button>
+                        </div>
+                    </div>
+
+                    <!-- Item de ejemplo 2 -->
+                    <div class="cart-item">
+                        <div class="cart-item__image">
+                            <img src="https://via.placeholder.com/80" alt="Producto">
+                        </div>
+                        <div class="cart-item__details">
+                            <h4>Juguete Interactivo para Gato</h4>
+                            <p class="cart-item__variant">Modelo: Ratón con Plumas</p>
+                            <div class="cart-item__price">
+                                <span class="cart-item__current-price">$8.500</span>
+                            </div>
+                        </div>
+                        <div class="cart-item__controls">
+                            <div class="cart-item__quantity">
+                                <button>-</button>
+                                <span>1</span>
+                                <button>+</button>
+                            </div>
+                            <div class="cart-item__subtotal">$8.500</div>
+                            <button class="cart-item__remove">🗑️</button>
+                        </div>
+                    </div>
+
+                    <!-- Item de ejemplo 3 -->
+                    <div class="cart-item">
+                        <div class="cart-item__image">
+                            <img src="https://via.placeholder.com/80" alt="Producto">
+                        </div>
+                        <div class="cart-item__details">
+                            <h4>Cama Ortopédica para Mascota</h4>
+                            <p class="cart-item__variant">Talla: L | Color: Gris</p>
+                            <div class="cart-item__price">
+                                <span class="cart-item__original-price">$45.000</span>
+                                <span class="cart-item__current-price">$36.000</span>
+                            </div>
+                        </div>
+                        <div class="cart-item__controls">
+                            <div class="cart-item__quantity">
+                                <button>-</button>
+                                <span>1</span>
+                                <button>+</button>
+                            </div>
+                            <div class="cart-item__subtotal">$36.000</div>
+                            <button class="cart-item__remove">🗑️</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer -->
+            <div class="cart-modal__footer">
+                <div class="cart-modal__total">
+                    <span>Total:</span>
+                    <span>$68.500</span>
+                </div>
+
+                <button class="cart-modal__clear">
+                    🗑️ Vaciar Carrito
+                </button>
+
+                <!-- Formulario -->
+                <div class="cart-modal__form">
+                    <h3>📋 Datos para el pedido</h3>
+                    <input type="text" placeholder="Nombre completo *" required>
+                    <input type="tel" placeholder="Teléfono *" required>
+                    <textarea placeholder="Observaciones (opcional)"></textarea>
+                </div>
+
+                <button class="cart-modal__checkout">
+                    📱 Enviar pedido por WhatsApp
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function openCart() {
+            document.getElementById('cart-modal').classList.add('cart-modal--open');
+        }
+
+        function closeCart() {
+            document.getElementById('cart-modal').classList.remove('cart-modal--open');
+        }
+
+        // Cerrar con ESC
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+                closeCart();
+            }
+        });
+    </script>
+</body>
+</html>
