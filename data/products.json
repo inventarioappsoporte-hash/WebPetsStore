@@ -15238,15 +15238,16 @@
   },
   {
     "id": "prod_458",
-    "name": "CAMISAS HAWAIANAS T -0",
+    "name": "Camisas Hawaianas",
     "category": "ropa",
     "subcategory": "Ropa",
-    "price": 5880,
-    "originalPrice": 8400,
+    "hasVariants": true,
+    "basePrice": 5880,
+    "baseOriginalPrice": 8400,
     "discount": 30,
-    "stock": 10,
-    "rating": 4.3,
-    "reviews": 43,
+    "stock": 100,
+    "rating": 4.2,
+    "reviews": 242,
     "featured": false,
     "topDiscount": true,
     "hasVideo": false,
@@ -15256,10 +15257,243 @@
       "ropa",
       "verano",
       "fresco",
-      "ligero"
+      "ligero",
+      "tropical",
+      "playa"
     ],
-    "description": "T-0 => LARGO = 25 cm   ANCHO = 28 cm",
-    "longDescription": "T-0 => LARGO = 25 cm   ANCHO = 28 cm",
+    "description": "Camisas Hawaianas para mascotas. Diseño tropical fresco y colorido, ideal para el verano y paseos en la playa.",
+    "longDescription": "Camisas Hawaianas para mascotas. Descripción: Dale a tu mascota un look veraniego y tropical con estas camisas hawaianas. Diseño colorido con estampados florales, perfectas para paseos, días de playa y sesiones de fotos. Tela liviana y transpirable para máxima comodidad en días calurosos. Características: Tela transpirable. Diseño fresco tropical. Fácil de poner. Cómodo para el verano. Estampados coloridos.",
+    "variants": {
+      "attributes": [
+        {
+          "id": "talle",
+          "name": "Talle",
+          "type": "size"
+        }
+      ],
+      "combinations": [
+        {
+          "id": "var_458_0",
+          "attributes": {
+            "Talle": "0"
+          },
+          "price": 5880,
+          "originalPrice": 8400,
+          "stock": 10,
+          "sku": "CAM029-0",
+          "available": true,
+          "specs": {
+            "Largo": "25 cm",
+            "Ancho": "28 cm"
+          },
+          "images": {
+            "cover": "assets/images/products/prod_458/cover.jpg",
+            "thumb": "assets/images/products/prod_458/thumb.jpg",
+            "gallery": [
+              "assets/images/products/prod_458/1.jpg"
+            ]
+          }
+        },
+        {
+          "id": "var_458_1",
+          "attributes": {
+            "Talle": "1"
+          },
+          "price": 5880,
+          "originalPrice": 8400,
+          "stock": 10,
+          "sku": "CAM029-1",
+          "available": true,
+          "specs": {
+            "Largo": "28 cm",
+            "Ancho": "30 cm"
+          },
+          "images": {
+            "cover": "assets/images/products/prod_459/cover.jpg",
+            "thumb": "assets/images/products/prod_459/thumb.jpg",
+            "gallery": [
+              "assets/images/products/prod_459/1.jpg"
+            ]
+          }
+        },
+        {
+          "id": "var_458_2",
+          "attributes": {
+            "Talle": "2"
+          },
+          "price": 5880,
+          "originalPrice": 8400,
+          "stock": 10,
+          "sku": "CAM029-2",
+          "available": true,
+          "specs": {
+            "Largo": "31 cm",
+            "Ancho": "34 cm"
+          },
+          "images": {
+            "cover": "assets/images/products/prod_460/cover.jpg",
+            "thumb": "assets/images/products/prod_460/thumb.jpg",
+            "gallery": [
+              "assets/images/products/prod_460/1.jpg"
+            ]
+          }
+        },
+        {
+          "id": "var_458_3",
+          "attributes": {
+            "Talle": "3"
+          },
+          "price": 6860,
+          "originalPrice": 9800,
+          "stock": 10,
+          "sku": "CAM029-3",
+          "available": true,
+          "specs": {
+            "Largo": "35 cm",
+            "Ancho": "38 cm"
+          },
+          "images": {
+            "cover": "assets/images/products/prod_461/cover.jpg",
+            "thumb": "assets/images/products/prod_461/thumb.jpg",
+            "gallery": [
+              "assets/images/products/prod_461/1.jpg"
+            ]
+          }
+        },
+        {
+          "id": "var_458_4",
+          "attributes": {
+            "Talle": "4"
+          },
+          "price": 6860,
+          "originalPrice": 9800,
+          "stock": 10,
+          "sku": "CAM029-4",
+          "available": true,
+          "specs": {
+            "Largo": "39 cm",
+            "Ancho": "44 cm"
+          },
+          "images": {
+            "cover": "assets/images/products/prod_462/cover.jpg",
+            "thumb": "assets/images/products/prod_462/thumb.jpg",
+            "gallery": [
+              "assets/images/products/prod_462/1.jpg"
+            ]
+          }
+        },
+        {
+          "id": "var_458_5",
+          "attributes": {
+            "Talle": "5"
+          },
+          "price": 6860,
+          "originalPrice": 9800,
+          "stock": 10,
+          "sku": "CAM029-5",
+          "available": true,
+          "specs": {
+            "Largo": "43 cm",
+            "Ancho": "52 cm"
+          },
+          "images": {
+            "cover": "assets/images/products/prod_463/cover.jpg",
+            "thumb": "assets/images/products/prod_463/thumb.jpg",
+            "gallery": [
+              "assets/images/products/prod_463/1.jpg"
+            ]
+          }
+        },
+        {
+          "id": "var_458_6",
+          "attributes": {
+            "Talle": "6"
+          },
+          "price": 7840,
+          "originalPrice": 11200,
+          "stock": 10,
+          "sku": "CAM029-6",
+          "available": true,
+          "specs": {
+            "Largo": "47 cm",
+            "Ancho": "58 cm"
+          },
+          "images": {
+            "cover": "assets/images/products/prod_464/cover.jpg",
+            "thumb": "assets/images/products/prod_464/thumb.jpg",
+            "gallery": [
+              "assets/images/products/prod_464/1.jpg"
+            ]
+          }
+        },
+        {
+          "id": "var_458_7",
+          "attributes": {
+            "Talle": "7"
+          },
+          "price": 7840,
+          "originalPrice": 11200,
+          "stock": 10,
+          "sku": "CAM029-7",
+          "available": true,
+          "specs": {
+            "Largo": "51 cm",
+            "Ancho": "62 cm"
+          },
+          "images": {
+            "cover": "assets/images/products/prod_465/cover.jpg",
+            "thumb": "assets/images/products/prod_465/thumb.jpg",
+            "gallery": [
+              "assets/images/products/prod_465/1.jpg"
+            ]
+          }
+        },
+        {
+          "id": "var_458_8",
+          "attributes": {
+            "Talle": "8"
+          },
+          "price": 8820,
+          "originalPrice": 12600,
+          "stock": 10,
+          "sku": "CAM029-8",
+          "available": true,
+          "specs": {
+            "Largo": "55 cm",
+            "Ancho": "68 cm"
+          },
+          "images": {
+            "cover": "assets/images/products/prod_466/cover.jpg",
+            "thumb": "assets/images/products/prod_466/thumb.jpg",
+            "gallery": [
+              "assets/images/products/prod_466/1.jpg"
+            ]
+          }
+        },
+        {
+          "id": "var_458_9",
+          "attributes": {
+            "Talle": "9"
+          },
+          "price": 8820,
+          "originalPrice": 12600,
+          "stock": 10,
+          "sku": "CAM029-9",
+          "available": true,
+          "specs": {
+            "Largo": "58 cm",
+            "Ancho": "76 cm"
+          },
+          "images": {
+            "cover": "assets/images/products/prod_467/cover.jpg",
+            "thumb": "assets/images/products/prod_467/thumb.jpg",
+            "gallery": [
+              "assets/images/products/prod_467/1.jpg"
+            ]
+          }
+        }
+      ]
+    },
     "images": {
       "cover": "assets/images/products/prod_458/cover.jpg",
       "thumb": "assets/images/products/prod_458/thumb.jpg",
@@ -15272,461 +15506,31 @@
     },
     "shipping": {
       "free": false,
-      "days": 2
+      "days": 3
     },
     "badge": "👕 Ropa",
     "brand": "Sin marca",
     "sku": "CAM029",
     "features": [
       "Tela transpirable",
-      "Diseño fresco",
+      "Diseño fresco tropical",
       "Fácil de poner",
-      "Cómodo para el verano"
-    ]
-  },
-  {
-    "id": "prod_459",
-    "name": "CAMISAS HAWAIANAS T -1",
-    "category": "ropa",
-    "subcategory": "Ropa",
-    "price": 5880,
-    "originalPrice": 8400,
-    "discount": 30,
-    "stock": 10,
-    "rating": 3.5,
-    "reviews": 21,
-    "featured": false,
-    "topDiscount": true,
-    "hasVideo": false,
-    "tags": [
-      "camisas",
-      "hawaianas",
-      "ropa",
-      "verano",
-      "fresco",
-      "ligero"
-    ],
-    "description": "T-1 => LARGO = 28 cm   ANCHO = 30 cm",
-    "longDescription": "T-1 => LARGO = 28 cm   ANCHO = 30 cm",
-    "images": {
-      "cover": "assets/images/products/prod_459/cover.jpg",
-      "thumb": "assets/images/products/prod_459/thumb.jpg",
-      "gallery": [
-        "assets/images/products/prod_459/1.jpg"
-      ]
-    },
-    "specs": {
-      "SKU": "CAM030"
-    },
-    "shipping": {
-      "free": false,
-      "days": 3
-    },
-    "badge": "👕 Ropa",
-    "brand": "Sin marca",
-    "sku": "CAM030",
-    "features": [
-      "Tela transpirable",
-      "Diseño fresco",
-      "Fácil de poner",
-      "Cómodo para el verano"
-    ]
-  },
-  {
-    "id": "prod_460",
-    "name": "CAMISAS HAWAIANAS T -2",
-    "category": "ropa",
-    "subcategory": "Ropa",
-    "price": 5880,
-    "originalPrice": 8400,
-    "discount": 30,
-    "stock": 10,
-    "rating": 3.7,
-    "reviews": 8,
-    "featured": false,
-    "topDiscount": true,
-    "hasVideo": false,
-    "tags": [
-      "camisas",
-      "hawaianas",
-      "ropa",
-      "verano",
-      "fresco",
-      "ligero"
-    ],
-    "description": "T-2 => LARGO = 31 cm   ANCHO = 34 cm",
-    "longDescription": "T-2 => LARGO = 31 cm   ANCHO = 34 cm",
-    "images": {
-      "cover": "assets/images/products/prod_460/cover.jpg",
-      "thumb": "assets/images/products/prod_460/thumb.jpg",
-      "gallery": [
-        "assets/images/products/prod_460/1.jpg"
-      ]
-    },
-    "specs": {
-      "SKU": "CAM031"
-    },
-    "shipping": {
-      "free": false,
-      "days": 3
-    },
-    "badge": "👕 Ropa",
-    "brand": "Sin marca",
-    "sku": "CAM031",
-    "features": [
-      "Tela transpirable",
-      "Diseño fresco",
-      "Fácil de poner",
-      "Cómodo para el verano"
-    ]
-  },
-  {
-    "id": "prod_461",
-    "name": "CAMISAS HAWAIANAS T -3",
-    "category": "ropa",
-    "subcategory": "Ropa",
-    "price": 6860,
-    "originalPrice": 9800,
-    "discount": 30,
-    "stock": 10,
-    "rating": 4.8,
-    "reviews": 48,
-    "featured": false,
-    "topDiscount": true,
-    "hasVideo": false,
-    "tags": [
-      "camisas",
-      "hawaianas",
-      "ropa",
-      "verano",
-      "fresco",
-      "ligero"
-    ],
-    "description": "T-3 => LARGO = 35 cm   ANCHO = 38 cm",
-    "longDescription": "T-3 => LARGO = 35 cm   ANCHO = 38 cm",
-    "images": {
-      "cover": "assets/images/products/prod_461/cover.jpg",
-      "thumb": "assets/images/products/prod_461/thumb.jpg",
-      "gallery": [
-        "assets/images/products/prod_461/1.jpg"
-      ]
-    },
-    "specs": {
-      "SKU": "CAM032"
-    },
-    "shipping": {
-      "free": false,
-      "days": 3
-    },
-    "badge": "👕 Ropa",
-    "brand": "Sin marca",
-    "sku": "CAM032",
-    "features": [
-      "Tela transpirable",
-      "Diseño fresco",
-      "Fácil de poner",
-      "Cómodo para el verano"
-    ]
-  },
-  {
-    "id": "prod_462",
-    "name": "CAMISAS HAWAIANAS T -4",
-    "category": "ropa",
-    "subcategory": "Ropa",
-    "price": 6860,
-    "originalPrice": 9800,
-    "discount": 30,
-    "stock": 10,
-    "rating": 4.7,
-    "reviews": 16,
-    "featured": false,
-    "topDiscount": true,
-    "hasVideo": false,
-    "tags": [
-      "camisas",
-      "hawaianas",
-      "ropa",
-      "verano",
-      "fresco",
-      "ligero"
-    ],
-    "description": "T-4 => LARGO = 39 cm   ANCHO = 44 cm",
-    "longDescription": "T-4 => LARGO = 39 cm   ANCHO = 44 cm",
-    "images": {
-      "cover": "assets/images/products/prod_462/cover.jpg",
-      "thumb": "assets/images/products/prod_462/thumb.jpg",
-      "gallery": [
-        "assets/images/products/prod_462/1.jpg"
-      ]
-    },
-    "specs": {
-      "SKU": "CAM033"
-    },
-    "shipping": {
-      "free": false,
-      "days": 4
-    },
-    "badge": "👕 Ropa",
-    "brand": "Sin marca",
-    "sku": "CAM033",
-    "features": [
-      "Tela transpirable",
-      "Diseño fresco",
-      "Fácil de poner",
-      "Cómodo para el verano"
-    ]
-  },
-  {
-    "id": "prod_463",
-    "name": "CAMISAS HAWAIANAS T -5",
-    "category": "ropa",
-    "subcategory": "Ropa",
-    "price": 6860,
-    "originalPrice": 9800,
-    "discount": 30,
-    "stock": 10,
-    "rating": 4.3,
-    "reviews": 13,
-    "featured": false,
-    "topDiscount": true,
-    "hasVideo": false,
-    "tags": [
-      "camisas",
-      "hawaianas",
-      "ropa",
-      "verano",
-      "fresco",
-      "ligero"
-    ],
-    "description": "T-5 => LARGO = 43 cm   ANCHO = 52 cm",
-    "longDescription": "T-5 => LARGO = 43 cm   ANCHO = 52 cm",
-    "images": {
-      "cover": "assets/images/products/prod_463/cover.jpg",
-      "thumb": "assets/images/products/prod_463/thumb.jpg",
-      "gallery": [
-        "assets/images/products/prod_463/1.jpg"
-      ]
-    },
-    "specs": {
-      "SKU": "CAM034"
-    },
-    "shipping": {
-      "free": false,
-      "days": 2
-    },
-    "badge": "👕 Ropa",
-    "brand": "Sin marca",
-    "sku": "CAM034",
-    "features": [
-      "Tela transpirable",
-      "Diseño fresco",
-      "Fácil de poner",
-      "Cómodo para el verano"
-    ]
-  },
-  {
-    "id": "prod_464",
-    "name": "CAMISAS HAWAIANAS T -6",
-    "category": "ropa",
-    "subcategory": "Ropa",
-    "price": 7840,
-    "originalPrice": 11200,
-    "discount": 30,
-    "stock": 10,
-    "rating": 4.1,
-    "reviews": 30,
-    "featured": false,
-    "topDiscount": true,
-    "hasVideo": false,
-    "tags": [
-      "camisas",
-      "hawaianas",
-      "ropa",
-      "verano",
-      "fresco",
-      "ligero"
-    ],
-    "description": "T-6 => LARGO = 47 cm   ANCHO = 58 cm",
-    "longDescription": "T-6 => LARGO = 47 cm   ANCHO = 58 cm",
-    "images": {
-      "cover": "assets/images/products/prod_464/cover.jpg",
-      "thumb": "assets/images/products/prod_464/thumb.jpg",
-      "gallery": [
-        "assets/images/products/prod_464/1.jpg"
-      ]
-    },
-    "specs": {
-      "SKU": "CAM035"
-    },
-    "shipping": {
-      "free": false,
-      "days": 4
-    },
-    "badge": "👕 Ropa",
-    "brand": "Sin marca",
-    "sku": "CAM035",
-    "features": [
-      "Tela transpirable",
-      "Diseño fresco",
-      "Fácil de poner",
-      "Cómodo para el verano"
-    ]
-  },
-  {
-    "id": "prod_465",
-    "name": "CAMISAS HAWAIANAS T -7",
-    "category": "ropa",
-    "subcategory": "Ropa",
-    "price": 7840,
-    "originalPrice": 11200,
-    "discount": 30,
-    "stock": 10,
-    "rating": 4.5,
-    "reviews": 14,
-    "featured": false,
-    "topDiscount": true,
-    "hasVideo": false,
-    "tags": [
-      "camisas",
-      "hawaianas",
-      "ropa",
-      "verano",
-      "fresco",
-      "ligero"
-    ],
-    "description": "T-7 => LARGO = 51 cm   ANCHO = 62 cm",
-    "longDescription": "T-7 => LARGO = 51 cm   ANCHO = 62 cm",
-    "images": {
-      "cover": "assets/images/products/prod_465/cover.jpg",
-      "thumb": "assets/images/products/prod_465/thumb.jpg",
-      "gallery": [
-        "assets/images/products/prod_465/1.jpg"
-      ]
-    },
-    "specs": {
-      "SKU": "CAM036"
-    },
-    "shipping": {
-      "free": false,
-      "days": 3
-    },
-    "badge": "👕 Ropa",
-    "brand": "Sin marca",
-    "sku": "CAM036",
-    "features": [
-      "Tela transpirable",
-      "Diseño fresco",
-      "Fácil de poner",
-      "Cómodo para el verano"
-    ]
-  },
-  {
-    "id": "prod_466",
-    "name": "CAMISAS HAWAIANAS T -8",
-    "category": "ropa",
-    "subcategory": "Ropa",
-    "price": 8820,
-    "originalPrice": 12600,
-    "discount": 30,
-    "stock": 10,
-    "rating": 4.6,
-    "reviews": 37,
-    "featured": false,
-    "topDiscount": true,
-    "hasVideo": false,
-    "tags": [
-      "camisas",
-      "hawaianas",
-      "ropa",
-      "verano",
-      "fresco",
-      "ligero"
-    ],
-    "description": "T-8 => LARGO = 55 cm   ANCHO = 68 cm",
-    "longDescription": "T-8 => LARGO = 55 cm   ANCHO = 68 cm",
-    "images": {
-      "cover": "assets/images/products/prod_466/cover.jpg",
-      "thumb": "assets/images/products/prod_466/thumb.jpg",
-      "gallery": [
-        "assets/images/products/prod_466/1.jpg"
-      ]
-    },
-    "specs": {
-      "SKU": "CAM037"
-    },
-    "shipping": {
-      "free": false,
-      "days": 3
-    },
-    "badge": "👕 Ropa",
-    "brand": "Sin marca",
-    "sku": "CAM037",
-    "features": [
-      "Tela transpirable",
-      "Diseño fresco",
-      "Fácil de poner",
-      "Cómodo para el verano"
-    ]
-  },
-  {
-    "id": "prod_467",
-    "name": "CAMISAS HAWAIANAS T -9",
-    "category": "ropa",
-    "subcategory": "Ropa",
-    "price": 8820,
-    "originalPrice": 12600,
-    "discount": 30,
-    "stock": 10,
-    "rating": 3.8,
-    "reviews": 12,
-    "featured": false,
-    "topDiscount": true,
-    "hasVideo": false,
-    "tags": [
-      "camisas",
-      "hawaianas",
-      "ropa",
-      "verano",
-      "fresco",
-      "ligero"
-    ],
-    "description": "T-9 => LARGO = 58 cm   ANCHO = 76 cm",
-    "longDescription": "T-9 => LARGO = 58 cm   ANCHO = 76 cm",
-    "images": {
-      "cover": "assets/images/products/prod_467/cover.jpg",
-      "thumb": "assets/images/products/prod_467/thumb.jpg",
-      "gallery": [
-        "assets/images/products/prod_467/1.jpg"
-      ]
-    },
-    "specs": {
-      "SKU": "CAM038"
-    },
-    "shipping": {
-      "free": false,
-      "days": 4
-    },
-    "badge": "👕 Ropa",
-    "brand": "Sin marca",
-    "sku": "CAM038",
-    "features": [
-      "Tela transpirable",
-      "Diseño fresco",
-      "Fácil de poner",
-      "Cómodo para el verano"
+      "Cómodo para el verano",
+      "Estampados coloridos"
     ]
   },
   {
     "id": "prod_468",
-    "name": "POLAR LISO TALLE 0",
+    "name": "Polar Liso",
     "category": "ropa",
     "subcategory": "Ropa",
-    "price": 1921.85,
-    "originalPrice": null,
+    "hasVariants": true,
+    "basePrice": 1921.85,
+    "baseOriginalPrice": null,
     "discount": null,
-    "stock": 10,
-    "rating": 3.9,
-    "reviews": 19,
+    "stock": 130,
+    "rating": 4.2,
+    "reviews": 306,
     "featured": false,
     "topDiscount": false,
     "hasVideo": false,
@@ -15737,10 +15541,30 @@
       "ropa",
       "invierno",
       "abrigo",
-      "calor"
+      "calor",
+      "perros",
+      "gatos"
     ],
-    "description": "T-0  => LARGO = 26 cm   ANCHO = 28 cm",
-    "longDescription": "T-0  => LARGO = 26 cm   ANCHO = 28 cm",
+    "description": "Polar Liso para Mascotas – Abrigo y comodidad. Mantené a tu mascota abrigada y cómoda con nuestro polar liso de alta calidad, ideal para los días fríos.",
+    "longDescription": "Polar Liso para Mascotas – Abrigo y comodidad. Mantené a tu mascota abrigada y cómoda con nuestro polar liso de alta calidad, ideal para los días fríos. Confeccionado en tela suave y liviana, proporciona un excelente abrigo sin limitar el movimiento, permitiendo que tu mascota se mueva con total libertad. Disponible en varios colores, este polar combina funcionalidad y diseño sencillo, adaptándose cómodamente al cuerpo. Su confección práctica facilita la colocación y el retiro, y su material es resistente para el uso diario. Ideal para perros y gatos que necesitan abrigo diario con comodidad y estilo.",
+    "variants": {
+      "attributes": [{"id": "talle", "name": "Talle", "type": "size"}],
+      "combinations": [
+        {"id": "var_468_0", "attributes": {"Talle": "0"}, "price": 1921.85, "originalPrice": null, "stock": 10, "sku": "POL002-0", "available": true, "specs": {"Largo": "26 cm", "Ancho": "28 cm"}, "images": {"cover": "assets/images/products/prod_468/cover.jpg", "thumb": "assets/images/products/prod_468/thumb.jpg", "gallery": ["assets/images/products/prod_468/1.jpg"]}},
+        {"id": "var_468_1", "attributes": {"Talle": "1"}, "price": 1921.85, "originalPrice": null, "stock": 10, "sku": "POL002-1", "available": true, "specs": {"Largo": "30 cm", "Ancho": "32 cm"}, "images": {"cover": "assets/images/products/prod_469/cover.jpg", "thumb": "assets/images/products/prod_469/thumb.jpg", "gallery": ["assets/images/products/prod_469/1.jpg"]}},
+        {"id": "var_468_2", "attributes": {"Talle": "2"}, "price": 1921.85, "originalPrice": null, "stock": 10, "sku": "POL002-2", "available": true, "specs": {"Largo": "33 cm", "Ancho": "34 cm"}, "images": {"cover": "assets/images/products/prod_470/cover.jpg", "thumb": "assets/images/products/prod_470/thumb.jpg", "gallery": ["assets/images/products/prod_470/1.jpg"]}},
+        {"id": "var_468_3", "attributes": {"Talle": "3"}, "price": 3165.4, "originalPrice": null, "stock": 10, "sku": "POL002-3", "available": true, "specs": {"Largo": "39 cm", "Ancho": "38 cm"}, "images": {"cover": "assets/images/products/prod_471/cover.jpg", "thumb": "assets/images/products/prod_471/thumb.jpg", "gallery": ["assets/images/products/prod_471/1.jpg"]}},
+        {"id": "var_468_4", "attributes": {"Talle": "4"}, "price": 3165.4, "originalPrice": null, "stock": 10, "sku": "POL002-4", "available": true, "specs": {"Largo": "42 cm", "Ancho": "42 cm"}, "images": {"cover": "assets/images/products/prod_472/cover.jpg", "thumb": "assets/images/products/prod_472/thumb.jpg", "gallery": ["assets/images/products/prod_472/1.jpg"]}},
+        {"id": "var_468_5", "attributes": {"Talle": "5"}, "price": 3165.4, "originalPrice": null, "stock": 10, "sku": "POL002-5", "available": true, "specs": {"Largo": "47 cm", "Ancho": "52 cm"}, "images": {"cover": "assets/images/products/prod_473/cover.jpg", "thumb": "assets/images/products/prod_473/thumb.jpg", "gallery": ["assets/images/products/prod_473/1.jpg"]}},
+        {"id": "var_468_6", "attributes": {"Talle": "6"}, "price": 3956.75, "originalPrice": null, "stock": 10, "sku": "POL002-6", "available": true, "specs": {"Largo": "50 cm", "Ancho": "52 cm"}, "images": {"cover": "assets/images/products/prod_474/cover.jpg", "thumb": "assets/images/products/prod_474/thumb.jpg", "gallery": ["assets/images/products/prod_474/1.jpg"]}},
+        {"id": "var_468_7", "attributes": {"Talle": "7"}, "price": 3956.75, "originalPrice": null, "stock": 10, "sku": "POL002-7", "available": true, "specs": {"Largo": "54 cm", "Ancho": "60 cm"}, "images": {"cover": "assets/images/products/prod_475/cover.jpg", "thumb": "assets/images/products/prod_475/thumb.jpg", "gallery": ["assets/images/products/prod_475/1.jpg"]}},
+        {"id": "var_468_8", "attributes": {"Talle": "8"}, "price": 3956.75, "originalPrice": null, "stock": 10, "sku": "POL002-8", "available": true, "specs": {"Largo": "60 cm", "Ancho": "64 cm"}, "images": {"cover": "assets/images/products/prod_476/cover.jpg", "thumb": "assets/images/products/prod_476/thumb.jpg", "gallery": ["assets/images/products/prod_476/1.jpg"]}},
+        {"id": "var_468_9", "attributes": {"Talle": "9"}, "price": 5087.25, "originalPrice": null, "stock": 10, "sku": "POL002-9", "available": true, "specs": {"Largo": "64 cm", "Ancho": "72 cm"}, "images": {"cover": "assets/images/products/prod_477/cover.jpg", "thumb": "assets/images/products/prod_477/thumb.jpg", "gallery": ["assets/images/products/prod_477/1.jpg"]}},
+        {"id": "var_468_10", "attributes": {"Talle": "10"}, "price": 5087.25, "originalPrice": null, "stock": 10, "sku": "POL002-10", "available": true, "specs": {"Largo": "72 cm", "Ancho": "74 cm"}, "images": {"cover": "assets/images/products/prod_478/cover.jpg", "thumb": "assets/images/products/prod_478/thumb.jpg", "gallery": ["assets/images/products/prod_478/1.jpg"]}},
+        {"id": "var_468_11", "attributes": {"Talle": "11"}, "price": 6217.75, "originalPrice": null, "stock": 10, "sku": "POL002-11", "available": true, "specs": {"Largo": "78 cm", "Ancho": "84 cm"}, "images": {"cover": "assets/images/products/prod_479/cover.jpg", "thumb": "assets/images/products/prod_479/thumb.jpg", "gallery": ["assets/images/products/prod_479/1.jpg"]}},
+        {"id": "var_468_12", "attributes": {"Talle": "12"}, "price": 6217.75, "originalPrice": null, "stock": 10, "sku": "POL002-12", "available": true, "specs": {"Largo": "80 cm", "Ancho": "82 cm"}, "images": {"cover": "assets/images/products/prod_480/cover.jpg", "thumb": "assets/images/products/prod_480/thumb.jpg", "gallery": ["assets/images/products/prod_480/1.jpg"]}}
+      ]
+    },
     "images": {
       "cover": "assets/images/products/prod_468/cover.jpg",
       "thumb": "assets/images/products/prod_468/thumb.jpg",
@@ -15759,598 +15583,11 @@
     "brand": "Sin marca",
     "sku": "POL002",
     "features": [
-      "Mantiene el calor",
-      "Material suave",
-      "Resistente al agua",
-      "Perfecto para el frío"
-    ]
-  },
-  {
-    "id": "prod_469",
-    "name": "POLAR LISO TALLE 1",
-    "category": "ropa",
-    "subcategory": "Ropa",
-    "price": 1921.85,
-    "originalPrice": null,
-    "discount": null,
-    "stock": 10,
-    "rating": 3.6,
-    "reviews": 9,
-    "featured": false,
-    "topDiscount": false,
-    "hasVideo": false,
-    "tags": [
-      "polar",
-      "liso",
-      "talle",
-      "ropa",
-      "invierno",
-      "abrigo",
-      "calor"
-    ],
-    "description": "T-1  => LARGO = 30 cm   ANCHO = 32 cm",
-    "longDescription": "T-1  => LARGO = 30 cm   ANCHO = 32 cm",
-    "images": {
-      "cover": "assets/images/products/prod_469/cover.jpg",
-      "thumb": "assets/images/products/prod_469/thumb.jpg",
-      "gallery": [
-        "assets/images/products/prod_469/1.jpg"
-      ]
-    },
-    "specs": {
-      "SKU": "POL003"
-    },
-    "shipping": {
-      "free": false,
-      "days": 4
-    },
-    "badge": "🧥 Ropa",
-    "brand": "Sin marca",
-    "sku": "POL003",
-    "features": [
-      "Mantiene el calor",
-      "Material suave",
-      "Resistente al agua",
-      "Perfecto para el frío"
-    ]
-  },
-  {
-    "id": "prod_470",
-    "name": "POLAR LISO TALLE 2",
-    "category": "ropa",
-    "subcategory": "Ropa",
-    "price": 1921.85,
-    "originalPrice": null,
-    "discount": null,
-    "stock": 10,
-    "rating": 4.2,
-    "reviews": 17,
-    "featured": false,
-    "topDiscount": false,
-    "hasVideo": false,
-    "tags": [
-      "polar",
-      "liso",
-      "talle",
-      "ropa",
-      "invierno",
-      "abrigo",
-      "calor"
-    ],
-    "description": "T-2  => LARGO = 33 cm   ANCHO = 34 cm",
-    "longDescription": "T-2  => LARGO = 33 cm   ANCHO = 34 cm",
-    "images": {
-      "cover": "assets/images/products/prod_470/cover.jpg",
-      "thumb": "assets/images/products/prod_470/thumb.jpg",
-      "gallery": [
-        "assets/images/products/prod_470/1.jpg"
-      ]
-    },
-    "specs": {
-      "SKU": "POL004"
-    },
-    "shipping": {
-      "free": false,
-      "days": 4
-    },
-    "badge": "🧥 Ropa",
-    "brand": "Sin marca",
-    "sku": "POL004",
-    "features": [
-      "Mantiene el calor",
-      "Material suave",
-      "Resistente al agua",
-      "Perfecto para el frío"
-    ]
-  },
-  {
-    "id": "prod_471",
-    "name": "POLAR LISO TALLE 3",
-    "category": "ropa",
-    "subcategory": "Ropa",
-    "price": 3165.4,
-    "originalPrice": null,
-    "discount": null,
-    "stock": 10,
-    "rating": 4.3,
-    "reviews": 9,
-    "featured": false,
-    "topDiscount": false,
-    "hasVideo": false,
-    "tags": [
-      "polar",
-      "liso",
-      "talle",
-      "ropa",
-      "invierno",
-      "abrigo",
-      "calor"
-    ],
-    "description": "T-3  => LARGO = 39 cm   ANCHO = 38 cm",
-    "longDescription": "T-3  => LARGO = 39 cm   ANCHO = 38 cm",
-    "images": {
-      "cover": "assets/images/products/prod_471/cover.jpg",
-      "thumb": "assets/images/products/prod_471/thumb.jpg",
-      "gallery": [
-        "assets/images/products/prod_471/1.jpg"
-      ]
-    },
-    "specs": {
-      "SKU": "POL005"
-    },
-    "shipping": {
-      "free": false,
-      "days": 4
-    },
-    "badge": "🧥 Ropa",
-    "brand": "Sin marca",
-    "sku": "POL005",
-    "features": [
-      "Mantiene el calor",
-      "Material suave",
-      "Resistente al agua",
-      "Perfecto para el frío"
-    ]
-  },
-  {
-    "id": "prod_472",
-    "name": "POLAR LISO TALLE 4",
-    "category": "ropa",
-    "subcategory": "Ropa",
-    "price": 3165.4,
-    "originalPrice": null,
-    "discount": null,
-    "stock": 10,
-    "rating": 4.9,
-    "reviews": 18,
-    "featured": false,
-    "topDiscount": false,
-    "hasVideo": false,
-    "tags": [
-      "polar",
-      "liso",
-      "talle",
-      "ropa",
-      "invierno",
-      "abrigo",
-      "calor"
-    ],
-    "description": "T-4  => LARGO = 42 cm   ANCHO = 42 cm",
-    "longDescription": "T-4  => LARGO = 42 cm   ANCHO = 42 cm",
-    "images": {
-      "cover": "assets/images/products/prod_472/cover.jpg",
-      "thumb": "assets/images/products/prod_472/thumb.jpg",
-      "gallery": [
-        "assets/images/products/prod_472/1.jpg"
-      ]
-    },
-    "specs": {
-      "SKU": "POL006"
-    },
-    "shipping": {
-      "free": false,
-      "days": 2
-    },
-    "badge": "🧥 Ropa",
-    "brand": "Sin marca",
-    "sku": "POL006",
-    "features": [
-      "Mantiene el calor",
-      "Material suave",
-      "Resistente al agua",
-      "Perfecto para el frío"
-    ]
-  },
-  {
-    "id": "prod_473",
-    "name": "POLAR LISO TALLE 5",
-    "category": "ropa",
-    "subcategory": "Ropa",
-    "price": 3165.4,
-    "originalPrice": null,
-    "discount": null,
-    "stock": 10,
-    "rating": 4.9,
-    "reviews": 32,
-    "featured": false,
-    "topDiscount": false,
-    "hasVideo": false,
-    "tags": [
-      "polar",
-      "liso",
-      "talle",
-      "ropa",
-      "invierno",
-      "abrigo",
-      "calor"
-    ],
-    "description": "T-5  => LARGO = 47 cm   ANCHO = 52 cm",
-    "longDescription": "T-5  => LARGO = 47 cm   ANCHO = 52 cm",
-    "images": {
-      "cover": "assets/images/products/prod_473/cover.jpg",
-      "thumb": "assets/images/products/prod_473/thumb.jpg",
-      "gallery": [
-        "assets/images/products/prod_473/1.jpg"
-      ]
-    },
-    "specs": {
-      "SKU": "POL007"
-    },
-    "shipping": {
-      "free": false,
-      "days": 2
-    },
-    "badge": "🧥 Ropa",
-    "brand": "Sin marca",
-    "sku": "POL007",
-    "features": [
-      "Mantiene el calor",
-      "Material suave",
-      "Resistente al agua",
-      "Perfecto para el frío"
-    ]
-  },
-  {
-    "id": "prod_474",
-    "name": "POLAR LISO TALLE 6",
-    "category": "ropa",
-    "subcategory": "Ropa",
-    "price": 3956.75,
-    "originalPrice": null,
-    "discount": null,
-    "stock": 10,
-    "rating": 3.7,
-    "reviews": 41,
-    "featured": false,
-    "topDiscount": false,
-    "hasVideo": false,
-    "tags": [
-      "polar",
-      "liso",
-      "talle",
-      "ropa",
-      "invierno",
-      "abrigo",
-      "calor"
-    ],
-    "description": "T-6  => LARGO = 50 cm   ANCHO = 52 cm",
-    "longDescription": "T-6  => LARGO = 50 cm   ANCHO = 52 cm",
-    "images": {
-      "cover": "assets/images/products/prod_474/cover.jpg",
-      "thumb": "assets/images/products/prod_474/thumb.jpg",
-      "gallery": [
-        "assets/images/products/prod_474/1.jpg"
-      ]
-    },
-    "specs": {
-      "SKU": "POL008"
-    },
-    "shipping": {
-      "free": false,
-      "days": 3
-    },
-    "badge": "🧥 Ropa",
-    "brand": "Sin marca",
-    "sku": "POL008",
-    "features": [
-      "Mantiene el calor",
-      "Material suave",
-      "Resistente al agua",
-      "Perfecto para el frío"
-    ]
-  },
-  {
-    "id": "prod_475",
-    "name": "POLAR LISO TALLE 7",
-    "category": "ropa",
-    "subcategory": "Ropa",
-    "price": 3956.75,
-    "originalPrice": null,
-    "discount": null,
-    "stock": 10,
-    "rating": 4.4,
-    "reviews": 13,
-    "featured": false,
-    "topDiscount": false,
-    "hasVideo": false,
-    "tags": [
-      "polar",
-      "liso",
-      "talle",
-      "ropa",
-      "invierno",
-      "abrigo",
-      "calor"
-    ],
-    "description": "T-7  => LARGO = 54 cm   ANCHO = 60 cm",
-    "longDescription": "T-7  => LARGO = 54 cm   ANCHO = 60 cm",
-    "images": {
-      "cover": "assets/images/products/prod_475/cover.jpg",
-      "thumb": "assets/images/products/prod_475/thumb.jpg",
-      "gallery": [
-        "assets/images/products/prod_475/1.jpg"
-      ]
-    },
-    "specs": {
-      "SKU": "POL009"
-    },
-    "shipping": {
-      "free": false,
-      "days": 3
-    },
-    "badge": "🧥 Ropa",
-    "brand": "Sin marca",
-    "sku": "POL009",
-    "features": [
-      "Mantiene el calor",
-      "Material suave",
-      "Resistente al agua",
-      "Perfecto para el frío"
-    ]
-  },
-  {
-    "id": "prod_476",
-    "name": "POLAR LISO TALLE 8",
-    "category": "ropa",
-    "subcategory": "Ropa",
-    "price": 3956.75,
-    "originalPrice": null,
-    "discount": null,
-    "stock": 10,
-    "rating": 4.8,
-    "reviews": 44,
-    "featured": false,
-    "topDiscount": false,
-    "hasVideo": false,
-    "tags": [
-      "polar",
-      "liso",
-      "talle",
-      "ropa",
-      "invierno",
-      "abrigo",
-      "calor"
-    ],
-    "description": "T-8  => LARGO = 60 cm   ANCHO = 64 cm",
-    "longDescription": "T-8  => LARGO = 60 cm   ANCHO = 64 cm",
-    "images": {
-      "cover": "assets/images/products/prod_476/cover.jpg",
-      "thumb": "assets/images/products/prod_476/thumb.jpg",
-      "gallery": [
-        "assets/images/products/prod_476/1.jpg"
-      ]
-    },
-    "specs": {
-      "SKU": "POL010"
-    },
-    "shipping": {
-      "free": false,
-      "days": 3
-    },
-    "badge": "🧥 Ropa",
-    "brand": "Sin marca",
-    "sku": "POL010",
-    "features": [
-      "Mantiene el calor",
-      "Material suave",
-      "Resistente al agua",
-      "Perfecto para el frío"
-    ]
-  },
-  {
-    "id": "prod_477",
-    "name": "POLAR LISO TALLE 9",
-    "category": "ropa",
-    "subcategory": "Ropa",
-    "price": 5087.25,
-    "originalPrice": null,
-    "discount": null,
-    "stock": 10,
-    "rating": 4.7,
-    "reviews": 11,
-    "featured": false,
-    "topDiscount": false,
-    "hasVideo": false,
-    "tags": [
-      "polar",
-      "liso",
-      "talle",
-      "ropa",
-      "invierno",
-      "abrigo",
-      "calor"
-    ],
-    "description": "T-9  => LARGO = 64 cm   ANCHO = 72 cm",
-    "longDescription": "T-9  => LARGO = 64 cm   ANCHO = 72 cm",
-    "images": {
-      "cover": "assets/images/products/prod_477/cover.jpg",
-      "thumb": "assets/images/products/prod_477/thumb.jpg",
-      "gallery": [
-        "assets/images/products/prod_477/1.jpg"
-      ]
-    },
-    "specs": {
-      "SKU": "POL011"
-    },
-    "shipping": {
-      "free": false,
-      "days": 4
-    },
-    "badge": "🧥 Ropa",
-    "brand": "Sin marca",
-    "sku": "POL011",
-    "features": [
-      "Mantiene el calor",
-      "Material suave",
-      "Resistente al agua",
-      "Perfecto para el frío"
-    ]
-  },
-  {
-    "id": "prod_478",
-    "name": "POLAR LISO TALLE 10",
-    "category": "ropa",
-    "subcategory": "Ropa",
-    "price": 5087.25,
-    "originalPrice": null,
-    "discount": null,
-    "stock": 10,
-    "rating": 3.7,
-    "reviews": 36,
-    "featured": false,
-    "topDiscount": false,
-    "hasVideo": false,
-    "tags": [
-      "polar",
-      "liso",
-      "talle",
-      "ropa",
-      "invierno",
-      "abrigo",
-      "calor"
-    ],
-    "description": "T-10 => LARGO = 72 cm   ANCHO = 74 cm",
-    "longDescription": "T-10 => LARGO = 72 cm   ANCHO = 74 cm",
-    "images": {
-      "cover": "assets/images/products/prod_478/cover.jpg",
-      "thumb": "assets/images/products/prod_478/thumb.jpg",
-      "gallery": [
-        "assets/images/products/prod_478/1.jpg"
-      ]
-    },
-    "specs": {
-      "SKU": "POL012"
-    },
-    "shipping": {
-      "free": false,
-      "days": 3
-    },
-    "badge": "🧥 Ropa",
-    "brand": "Sin marca",
-    "sku": "POL012",
-    "features": [
-      "Mantiene el calor",
-      "Material suave",
-      "Resistente al agua",
-      "Perfecto para el frío"
-    ]
-  },
-  {
-    "id": "prod_479",
-    "name": "POLAR LISO TALLE 11",
-    "category": "ropa",
-    "subcategory": "Ropa",
-    "price": 6217.75,
-    "originalPrice": null,
-    "discount": null,
-    "stock": 10,
-    "rating": 4.5,
-    "reviews": 17,
-    "featured": false,
-    "topDiscount": false,
-    "hasVideo": false,
-    "tags": [
-      "polar",
-      "liso",
-      "talle",
-      "ropa",
-      "invierno",
-      "abrigo",
-      "calor"
-    ],
-    "description": "T-11 => LARGO = 78 cm   ANCHO = 84 cm",
-    "longDescription": "T-11 => LARGO = 78 cm   ANCHO = 84 cm",
-    "images": {
-      "cover": "assets/images/products/prod_479/cover.jpg",
-      "thumb": "assets/images/products/prod_479/thumb.jpg",
-      "gallery": [
-        "assets/images/products/prod_479/1.jpg"
-      ]
-    },
-    "specs": {
-      "SKU": "POL013"
-    },
-    "shipping": {
-      "free": false,
-      "days": 2
-    },
-    "badge": "🧥 Ropa",
-    "brand": "Sin marca",
-    "sku": "POL013",
-    "features": [
-      "Mantiene el calor",
-      "Material suave",
-      "Resistente al agua",
-      "Perfecto para el frío"
-    ]
-  },
-  {
-    "id": "prod_480",
-    "name": "POLAR LISO TALLE 12",
-    "category": "ropa",
-    "subcategory": "Ropa",
-    "price": 6217.75,
-    "originalPrice": null,
-    "discount": null,
-    "stock": 10,
-    "rating": 3.5,
-    "reviews": 40,
-    "featured": false,
-    "topDiscount": false,
-    "hasVideo": false,
-    "tags": [
-      "polar",
-      "liso",
-      "talle",
-      "ropa",
-      "invierno",
-      "abrigo",
-      "calor"
-    ],
-    "description": "T-12 => LARGO = 80 cm   ANCHO = 82 cm",
-    "longDescription": "T-12 => LARGO = 80 cm   ANCHO = 82 cm",
-    "images": {
-      "cover": "assets/images/products/prod_480/cover.jpg",
-      "thumb": "assets/images/products/prod_480/thumb.jpg",
-      "gallery": [
-        "assets/images/products/prod_480/1.jpg"
-      ]
-    },
-    "specs": {
-      "SKU": "POL014"
-    },
-    "shipping": {
-      "free": false,
-      "days": 4
-    },
-    "badge": "🧥 Ropa",
-    "brand": "Sin marca",
-    "sku": "POL014",
-    "features": [
-      "Mantiene el calor",
-      "Material suave",
-      "Resistente al agua",
-      "Perfecto para el frío"
+      "Tela polar suave y abrigada",
+      "Ideal para otoño e invierno",
+      "Colores variados",
+      "Liviano y confortable",
+      "Fácil de lavar y de secado rápido"
     ]
   },
   {
