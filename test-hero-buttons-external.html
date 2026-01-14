@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Test Hero Botones Externos - Pets Store</title>
+  
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/typography.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/home.css">
+  <link rel="stylesheet" href="css/animations.css">
+  
+  <style>
+    /* Debug styles */
+    .debug-info {
+      position: fixed;
+      top: 10px;
+      right: 10px;
+      background: rgba(0,0,0,0.8);
+      color: white;
+      padding: 10px;
+      border-radius: 5px;
+      font-size: 12px;
+      z-index: 1000;
+    }
+    
+    .hero__cta--desktop {
+      border: 2px dashed rgba(255,255,255,0.5);
+    }
+    
+    .hero__cta--mobile {
+      border: 2px dashed rgba(255,0,0,0.5);
+    }
+    
+    .hero__cta-mobile {
+      border: 2px solid rgba(0,255,0,0.5);
+    }
+  </style>
+</head>
+<body>
+  <div class="debug-info">
+    <div>Viewport: <span id="viewport-size"></span></div>
+    <div>Desktop Buttons: <span id="desktop-visible"></span></div>
+    <div>Mobile Buttons: <span id="mobile-visible"></span></div>
+  </div>
+
+  <!-- Header simplificado -->
+  <header class="header">
+    <div class="container">
+      <div class="header__content">
+        <div class="header__logo">
+          <h1>🐾 Pets Store</h1>
+        </div>
+        <nav class="header__nav">
+          <a href="index.html" class="nav__link nav__link--active">Home</a>
+          <a href="search.html" class="nav__link">Buscar</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero__content">
+      <img src="assets/images/ui/hero-placeholder.jpg" alt="Producto destacado" class="hero__image">
+      <div class="hero__overlay">
+        <!-- Botones dentro del hero (solo desktop) -->
+        <div class="hero__cta hero__cta--desktop">
+          <button class="btn btn--secondary">VER PRODUCTO (Desktop)</button>
+          <button class="btn btn--primary">COMPRAR AHORA (Desktop)</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Botones fuera del hero (solo móvil/tablet) -->
+  <div class="hero__cta-mobile">
+    <div class="container">
+      <div class="hero__cta hero__cta--mobile">
+        <button class="btn btn--secondary">VER PRODUCTO (Móvil)</button>
+        <button class="btn btn--primary">COMPRAR AHORA (Móvil)</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contenido adicional -->
+  <main class="main">
+    <div class="container">
+      <section class="section">
+        <h2 class="section__title">✅ Solución: Botones Externos</h2>
+        <p><strong>Desktop (>1024px):</strong> Botones dentro del hero (overlay)</p>
+        <p><strong>Móvil/Tablet (≤1024px):</strong> Botones debajo del hero (externos)</p>
+        
+        <h3>Ventajas de esta solución:</h3>
+        <ul>
+          <li>✅ <strong>Sin solapamiento:</strong> Los botones nunca se montan sobre la imagen</li>
+          <li>✅ <strong>Mejor UX móvil:</strong> Botones fáciles de tocar fuera del hero</li>
+          <li>✅ <strong>Altura fija:</strong> El hero mantiene proporciones correctas</li>
+          <li>✅ <strong>Responsive limpio:</strong> Cambio claro entre desktop y móvil</li>
+          <li>✅ <strong>Accesibilidad:</strong> Touch targets adecuados en móvil</li>
+        </ul>
+        
+        <h3>Breakpoints:</h3>
+        <ul>
+          <li><strong>1025px+:</strong> Botones internos (hero overlay)</li>
+          <li><strong>1024px-:</strong> Botones externos (debajo del hero)</li>
+          <li><strong>768px-:</strong> Botones en columna, más compactos</li>
+          <li><strong>480px-:</strong> Botones más pequeños</li>
+          <li><strong>375px-:</strong> Máxima compactación</li>
+        </ul>
+      </section>
+    </div>
+  </main>
+
+  <script>
+    function updateDebugInfo() {
+      const viewportWidth = window.innerWidth;
+      const viewportHeight = window.innerHeight;
+      
+      const desktopButtons = document.querySelector('.hero__cta--desktop');
+      const mobileContainer = document.querySelector('.hero__cta-mobile');
+      
+      const desktopVisible = window.getComputedStyle(desktopButtons).display !== 'none';
+      const mobileVisible = window.getComputedStyle(mobileContainer).display !== 'none';
+      
+      document.getElementById('viewport-size').textContent = `${viewportWidth}x${viewportHeight}`;
+      document.getElementById('desktop-visible').textContent = desktopVisible ? 'Visible' : 'Oculto';
+      document.getElementById('mobile-visible').textContent = mobileVisible ? 'Visible' : 'Oculto';
+    }
+    
+    window.addEventListener('load', updateDebugInfo);
+    window.addEventListener('resize', updateDebugInfo);
+    setInterval(updateDebugInfo, 1000);
+  </script>
+</body>
+</html>

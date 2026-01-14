@@ -49,13 +49,24 @@
     <div class="hero__content">
       <img src="assets/images/ui/hero-placeholder.jpg" alt="Producto destacado" class="hero__image">
       <div class="hero__overlay">
-        <div class="hero__cta">
+        <!-- Botones dentro del hero (solo desktop) -->
+        <div class="hero__cta hero__cta--desktop">
           <button class="btn btn--secondary" id="hero-view-btn">VER PRODUCTO</button>
           <button class="btn btn--primary" id="hero-buy-btn">COMPRAR AHORA</button>
         </div>
       </div>
     </div>
   </section>
+
+  <!-- Botones fuera del hero (solo móvil/tablet) -->
+  <div class="hero__cta-mobile">
+    <div class="container">
+      <div class="hero__cta hero__cta--mobile">
+        <button class="btn btn--secondary" id="hero-view-btn-mobile">VER PRODUCTO</button>
+        <button class="btn btn--primary" id="hero-buy-btn-mobile">COMPRAR AHORA</button>
+      </div>
+    </div>
+  </div>
 
   <!-- Promos Bar -->
   <section class="promos">

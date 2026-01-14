@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Producto 232</title>
+</head>
+<body>
+    <h1>Test de Carga de Producto</h1>
+    <div id="resultado"></div>
+
+    <script type="module">
+        async function testProducto() {
+            try {
+                const response = await fetch('data/products.json');
+                const products = await response.json();
+                
+                const producto = products.find(p => p.id === 'prod_232');
+                
+                const resultado = document.getElementById('resultado');
+                
+                if (producto) {
+                    resultado.innerHTML = `
+                        <h2>✅ Producto Encontrado</h2>
+                        <p><strong>ID:</strong> ${producto.id}</p>
+                        <p><strong>Nombre:</strong> ${producto.name}</p>
+                        <p><strong>Descripción:</strong> ${producto.description}</p>
+                        <p><strong>Precio:</strong> $${producto.price.toLocaleString()}</p>
+                        <p><strong>Precio Original:</strong> $${producto.originalPrice?.toLocaleString() || 'N/A'}</p>
+                        <p><strong>Descuento:</strong> ${producto.discount}%</p>
+                        <p><strong>Categoría:</strong> ${producto.category}/${producto.subcategory}</p>
+                        <p><strong>Stock:</strong> ${producto.stock}</p>
+                        <p><strong>SKU:</strong> ${producto.sku}</p>
+                        <p><strong>Marca:</strong> ${producto.brand}</p>
+                        <p><strong>Rating:</strong> ${producto.rating}/5 (${producto.reviews} reseñas)</p>
+                        <p><strong>Tags:</strong> ${producto.tags.join(', ')}</p>
+                        <p><strong>Features:</strong></p>
+                        <ul>
+                            ${producto.features.map(f => `<li>${f}</li>`).join('')}
+                        </ul>
+                        <p><strong>Imagen Cover:</strong> ${producto.images.cover}</p>
+                        <img src="${producto.images.cover}" alt="${producto.name}" style="max-width: 300px;">
+                    `;
+                } else {
+                    resultado.innerHTML = '<h2>❌ Producto NO encontrado</h2>';
+                }
+            } catch (error) {
+                document.getElementById('resultado').innerHTML = `
+                    <h2>❌ Error</h2>
+                    <p>${error.message}</p>
+                `;
+            }
+        }
+
+        testProducto();
+    </script>
+</body>
+</html>

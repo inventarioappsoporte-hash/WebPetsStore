@@ -288,6 +288,13 @@ function convertirProductos(categoriaId, limite, tipoProducto) {
         }
 
         const partes = linea.split('|');
+        
+        // Validar que tenemos todos los campos necesarios
+        if (partes.length < 9) {
+            console.log(`⚠️  Producto con datos incompletos (${partes.length} campos): ${partes[1] || 'sin nombre'}`);
+            continue;
+        }
+        
         const id = partes[0];
         const nombre = partes[1].replace(/\{\{PIPE\}\}/g, '|');
         const descripcion = partes[2].replace(/\{\{PIPE\}\}/g, '|');

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Filtro Ropa</title>
+</head>
+<body>
+    <h1>Test de Filtro de Ropa</h1>
+    <div id="results"></div>
+
+    <script>
+        async function testFiltros() {
+            const response = await fetch('data/products.json');
+            const data = await response.json();
+            const products = data.products;
+
+            console.log('Total productos:', products.length);
+
+            // Filtro VERANO
+            const verano = products.filter(product => {
+                return product.tags && product.tags.some(tag => 
+                    ['verano', 'fresco', 'ligero'].includes(tag.toLowerCase())
+                );
+            });
+
+            // Filtro INVIERNO
+            const invierno = products.filter(product => {
+                return product.tags && product.tags.some(tag => 
+                    ['invierno', 'abrigo', 'abrigado', 'caliente'].includes(tag.toLowerCase())
+                );
+            });
+
+            const resultsDiv = document.getElementById('results');
+            resultsDiv.innerHTML = `
+                <h2>Productos de VERANO: ${verano.length}</h2>
+                <ul>
+                    ${verano.slice(0, 10).map(p => `<li>${p.name} - Tags: ${p.tags.join(', ')}</li>`).join('')}
+                </ul>
+
+                <h2>Productos de INVIERNO: ${invierno.length}</h2>
+                <ul>
+                    ${invierno.slice(0, 10).map(p => `<li>${p.name} - Tags: ${p.tags.join(', ')}</li>`).join('')}
+                </ul>
+            `;
+
+            console.log('Productos VERANO:', verano.length);
+            console.log('Productos INVIERNO:', invierno.length);
+            console.log('Primeros 5 de verano:', verano.slice(0, 5).map(p => p.name));
+            console.log('Primeros 5 de invierno:', invierno.slice(0, 5).map(p => p.name));
+        }
+
+        testFiltros();
+    </script>
+</body>
+</html>

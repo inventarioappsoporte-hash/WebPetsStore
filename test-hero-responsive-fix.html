@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Test Hero Responsive Fix - Pets Store</title>
+  <title>Test Hero Botones Externos - Pets Store</title>
   
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/variables.css">
@@ -14,7 +14,7 @@
   <link rel="stylesheet" href="css/animations.css">
   
   <style>
-    /* Debug styles para visualizar mejor */
+    /* Debug styles */
     .debug-info {
       position: fixed;
       top: 10px;
@@ -27,19 +27,20 @@
       z-index: 1000;
     }
     
-    .hero__overlay {
-      border: 2px dashed rgba(255,255,255,0.3);
+    .hero__cta--desktop {
+      border: 2px dashed rgba(255,255,0,0.5);
     }
     
-    .hero__cta {
-      border: 2px dashed rgba(255,0,0,0.5);
+    .hero__cta--mobile {
+      border: 2px dashed rgba(0,255,0,0.5);
     }
   </style>
 </head>
 <body>
   <div class="debug-info">
     <div>Viewport: <span id="viewport-size"></span></div>
-    <div>Hero Height: <span id="hero-height"></span></div>
+    <div>Botones Desktop: <span id="desktop-visible"></span></div>
+    <div>Botones Móvil: <span id="mobile-visible"></span></div>
   </div>
 
   <!-- Header simplificado -->
@@ -57,17 +58,13 @@
     </div>
   </header>
 
-  <!-- Hero Section con contenido de prueba -->
+  <!-- Hero Section con nueva estructura -->
   <section class="hero">
     <div class="hero__content">
       <img src="assets/images/ui/hero-placeholder.jpg" alt="Producto destacado" class="hero__image">
       <div class="hero__overlay">
-        <h2 class="hero__title" style="display: block;">LO MÁS VENDIDO DE ESTA SEMANA</h2>
-        <div class="hero__price" style="display: flex;">
-          <div class="hero__discount">🔥 20% OFF</div>
-          <div class="hero__price-value">$8.500</div>
-        </div>
-        <div class="hero__cta">
+        <!-- Botones dentro del hero (solo desktop) -->
+        <div class="hero__cta hero__cta--desktop">
           <button class="btn btn--secondary">VER PRODUCTO</button>
           <button class="btn btn--primary">COMPRAR AHORA</button>
         </div>
@@ -75,50 +72,63 @@
     </div>
   </section>
 
-  <!-- Contenido adicional para probar scroll -->
+  <!-- Botones fuera del hero (solo móvil/tablet) -->
+  <div class="hero__cta-mobile">
+    <div class="container">
+      <div class="hero__cta hero__cta--mobile">
+        <button class="btn btn--secondary">VER PRODUCTO</button>
+        <button class="btn btn--primary">COMPRAR AHORA</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contenido adicional -->
   <main class="main">
     <div class="container">
       <section class="section">
-        <h2 class="section__title">Test de Responsive Design</h2>
-        <p>Este es un test para verificar que los botones del hero no se monten sobre el contenido en diferentes tamaños de pantalla.</p>
+        <h2 class="section__title">✅ Solución: Botones Externos en Móvil</h2>
+        <p><strong>Desktop (1025px+):</strong> Botones dentro del hero con overlay</p>
+        <p><strong>Tablet/Móvil (1024px-):</strong> Botones debajo del hero, sin solapamiento</p>
         
-        <h3>Instrucciones de prueba:</h3>
+        <h3>Ventajas de esta solución:</h3>
         <ul>
-          <li><strong>Desktop:</strong> Redimensiona la ventana del navegador</li>
-          <li><strong>Móvil:</strong> Abre en dispositivo móvil o usa DevTools</li>
-          <li><strong>Zoom:</strong> Haz zoom in/out para probar diferentes escalas</li>
+          <li>✅ No hay solapamiento en ningún tamaño de pantalla</li>
+          <li>✅ Hero mantiene su altura natural</li>
+          <li>✅ Botones siempre accesibles y visibles</li>
+          <li>✅ Mejor experiencia de usuario en móvil</li>
+          <li>✅ Diseño limpio y profesional</li>
         </ul>
         
-        <h3>Breakpoints a probar:</h3>
+        <h3>Breakpoints implementados:</h3>
         <ul>
-          <li>1200px+ (Desktop grande)</li>
-          <li>1024px - 1199px (Desktop/Laptop con zoom)</li>
-          <li>769px - 1023px (Tablet)</li>
-          <li>481px - 768px (Móvil grande)</li>
-          <li>376px - 480px (Móvil estándar)</li>
-          <li>375px y menos (Móvil pequeño)</li>
+          <li><strong>1025px+:</strong> Botones en overlay (desktop)</li>
+          <li><strong>1024px-:</strong> Botones externos (tablet/móvil)</li>
+          <li><strong>768px-:</strong> Botones en columna</li>
+          <li><strong>480px-:</strong> Botones más compactos</li>
+          <li><strong>375px-:</strong> Botones optimizados para móvil pequeño</li>
         </ul>
       </section>
     </div>
   </main>
 
   <script>
-    // Debug script para mostrar información del viewport
     function updateDebugInfo() {
       const viewportWidth = window.innerWidth;
       const viewportHeight = window.innerHeight;
-      const heroElement = document.querySelector('.hero');
-      const heroHeight = heroElement ? heroElement.offsetHeight : 'N/A';
+      
+      const desktopButtons = document.querySelector('.hero__cta--desktop');
+      const mobileButtons = document.querySelector('.hero__cta-mobile');
+      
+      const desktopVisible = window.getComputedStyle(desktopButtons).display !== 'none';
+      const mobileVisible = window.getComputedStyle(mobileButtons).display !== 'none';
       
       document.getElementById('viewport-size').textContent = `${viewportWidth}x${viewportHeight}`;
-      document.getElementById('hero-height').textContent = `${heroHeight}px`;
+      document.getElementById('desktop-visible').textContent = desktopVisible ? 'SÍ' : 'NO';
+      document.getElementById('mobile-visible').textContent = mobileVisible ? 'SÍ' : 'NO';
     }
     
-    // Actualizar info al cargar y redimensionar
     window.addEventListener('load', updateDebugInfo);
     window.addEventListener('resize', updateDebugInfo);
-    
-    // Actualizar cada segundo para capturar cambios de zoom
     setInterval(updateDebugInfo, 1000);
   </script>
 </body>

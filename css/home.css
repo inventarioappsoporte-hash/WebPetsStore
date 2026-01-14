@@ -2,7 +2,7 @@
 .hero {
   position: relative;
   height: 500px;
-  margin-bottom: var(--spacing-2xl);
+  margin-bottom: 0; /* Sin margen porque los botones móviles van abajo */
   border-radius: var(--radius-lg);
   overflow: hidden;
 }
@@ -17,6 +17,7 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center;
 }
 
 .hero__overlay {
@@ -61,6 +62,7 @@
   color: var(--color-primary);
 }
 
+/* Botones del hero - Desktop */
 .hero__cta {
   display: flex;
   gap: var(--spacing-md);
@@ -72,6 +74,39 @@
 .hero__cta .btn {
   min-width: 200px;
   flex-shrink: 0;
+}
+
+/* Botones móviles - Ocultos por defecto */
+.hero__cta-mobile {
+  display: none;
+  background: var(--color-bg-secondary);
+  padding: var(--spacing-lg) 0;
+  margin-bottom: var(--spacing-2xl);
+  border-radius: 0 0 var(--radius-lg) var(--radius-lg);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.hero__cta--mobile {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.hero__cta--mobile .btn {
+  width: 100%;
+  padding: var(--spacing-md) var(--spacing-lg);
+  font-size: var(--font-size-md);
+  font-weight: 600;
+  min-height: 48px;
+}
+
+/* Botones externos para móvil/tablet */
+.hero__cta-external {
+  display: none; /* Oculto por defecto */
+  margin-top: var(--spacing-lg);
+  padding: 0 var(--spacing-md);
 }
 
 /* Promos Section */
@@ -140,13 +175,13 @@
   height: 200px;
   position: relative;
   overflow: hidden;
-  background: var(--color-bg);
+  background: #ffffff;
 }
 
 .section[data-section="top-discounts"] .carousel .card__image {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
   position: absolute;
   top: 0;
   left: 0;
@@ -279,72 +314,39 @@
 
 /* Responsive */
 @media (max-width: 1024px) {
+  /* Ocultar botones del overlay y mostrar botones móviles */
+  .hero__cta--desktop {
+    display: none;
+  }
+  
+  .hero__cta-mobile {
+    display: block;
+  }
+  
   .hero {
     height: 400px;
-  }
-
-  .hero__overlay {
-    padding: var(--spacing-lg);
-    padding-bottom: var(--spacing-2xl);
-  }
-
-  .hero__cta {
-    flex-direction: column;
-    gap: var(--spacing-md);
-    align-items: stretch;
-    max-width: 300px;
-  }
-
-  .hero__cta .btn {
-    min-width: auto;
-    width: 100%;
-    padding: var(--spacing-md);
-    font-size: var(--font-size-md);
-    font-weight: 600;
+    border-radius: var(--radius-lg) var(--radius-lg) 0 0;
   }
 }
 
 @media (max-width: 768px) {
   .hero {
-    height: 450px; /* Más altura para evitar solapamiento */
+    height: 350px;
   }
 
-  .hero__overlay {
-    padding: var(--spacing-lg);
-    padding-bottom: var(--spacing-3xl); /* Más espacio abajo */
-    justify-content: center; /* Centrar verticalmente */
-    text-align: center;
-  }
-
-  .hero__title {
-    font-size: var(--font-size-2xl);
-    margin-bottom: var(--spacing-md);
-  }
-
-  .hero__price {
-    justify-content: center;
-    margin-bottom: var(--spacing-lg);
-  }
-
-  .hero__price-value {
-    font-size: var(--font-size-2xl);
-  }
-
-  .hero__cta {
+  .hero__cta--mobile {
     flex-direction: column;
     gap: var(--spacing-md);
-    align-items: stretch;
-    max-width: 280px;
-    margin: 0 auto; /* Centrar los botones */
+    max-width: 300px;
   }
 
-  .hero__cta .btn {
-    min-width: auto;
+  .hero__cta--mobile .btn {
     width: 100%;
+    min-width: auto;
     padding: var(--spacing-md) var(--spacing-lg);
     font-size: var(--font-size-md);
     font-weight: 600;
-    min-height: 48px; /* Touch target mínimo */
+    min-height: 48px;
   }
 
   .promos__grid {
@@ -358,46 +360,23 @@
 
 @media (max-width: 480px) {
   .hero {
-    height: 400px; /* Altura optimizada para móvil */
-    margin-bottom: var(--spacing-lg);
+    height: 300px;
   }
 
-  .hero__overlay {
-    padding: var(--spacing-md);
-    padding-bottom: var(--spacing-2xl);
-    justify-content: center;
-    text-align: center;
+  .hero__cta-mobile {
+    padding: var(--spacing-md) 0;
   }
 
-  .hero__title {
-    font-size: var(--font-size-xl);
-    margin-bottom: var(--spacing-sm);
-  }
-
-  .hero__price {
+  .hero__cta--mobile {
     flex-direction: column;
-    align-items: center;
     gap: var(--spacing-sm);
-    margin-bottom: var(--spacing-lg);
+    max-width: 280px;
   }
 
-  .hero__cta {
-    flex-direction: column;
-    gap: var(--spacing-md);
-    align-items: stretch;
+  .hero__cta--mobile .btn {
     width: 100%;
-    max-width: 260px;
-    margin: 0 auto;
-  }
-
-  .hero__cta .btn {
-    min-width: auto;
-    width: 100%;
-    padding: var(--spacing-md) var(--spacing-lg);
+    padding: var(--spacing-md);
     font-size: var(--font-size-md);
-    font-weight: 600;
-    text-align: center;
-    border-radius: var(--radius-md);
     min-height: 48px;
   }
 
@@ -406,63 +385,34 @@
   }
 }
 
-/* Extra small devices (phones in portrait) */
 @media (max-width: 375px) {
   .hero {
-    height: 380px; /* Altura ajustada para pantallas muy pequeñas */
+    height: 280px;
   }
 
-  .hero__overlay {
-    padding: var(--spacing-sm);
-    padding-bottom: var(--spacing-xl);
-    justify-content: center;
-    text-align: center;
-  }
-
-  .hero__title {
-    font-size: var(--font-size-lg);
-    margin-bottom: var(--spacing-xs);
-  }
-
-  .hero__price {
-    margin-bottom: var(--spacing-md);
-  }
-
-  .hero__cta {
-    flex-direction: column;
+  .hero__cta--mobile {
+    max-width: 260px;
     gap: var(--spacing-sm);
-    align-items: stretch;
-    width: 100%;
-    max-width: 240px;
-    margin: 0 auto;
   }
 
-  .hero__cta .btn {
-    width: 100%;
+  .hero__cta--mobile .btn {
     padding: var(--spacing-sm) var(--spacing-md);
     font-size: var(--font-size-sm);
-    min-height: 44px; /* Mínimo para touch targets */
-    border-radius: var(--radius-sm);
+    min-height: 44px;
   }
 }
 
-/* Breakpoint adicional para zoom en laptop */
-@media (max-width: 1200px) and (min-width: 769px) {
-  .hero__overlay {
-    padding: var(--spacing-xl);
-    padding-bottom: var(--spacing-3xl);
+/* Desktop - mantener botones en overlay */
+@media (min-width: 1025px) {
+  .hero__cta--desktop {
+    display: flex;
   }
-
-  .hero__cta {
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: var(--spacing-md);
-    justify-content: flex-start;
-    max-width: 100%;
+  
+  .hero__cta-mobile {
+    display: none;
   }
-
-  .hero__cta .btn {
-    min-width: 180px;
-    flex: 0 0 auto;
+  
+  .hero {
+    margin-bottom: var(--spacing-2xl);
   }
 }

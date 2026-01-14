@@ -84,9 +84,16 @@ class SearchEngine {
       '264': { // JUGUETES
         name: 'JUGUETES',
         filter: (product) => {
+          // Excluir productos que son claramente accesorios
+          const esAccesorio = product.tags && product.tags.some(tag => 
+            ['anteojos', 'accesorio', 'moda', 'estilo'].includes(tag.toLowerCase())
+          );
+          
+          if (esAccesorio) return false;
+          
           return (product.subcategory && product.subcategory.toLowerCase().includes('juguete')) ||
                  (product.tags && product.tags.some(tag => 
-                   ['juguete', 'juego', 'diversión', 'interactivo'].includes(tag.toLowerCase())
+                   ['juguete', 'juego', 'interactivo', 'pelota'].includes(tag.toLowerCase())
                  ));
         }
       },
@@ -94,7 +101,7 @@ class SearchEngine {
         name: 'ROPA VERANO',
         filter: (product) => {
           return product.tags && product.tags.some(tag => 
-            ['ropa', 'verano', 'vestimenta', 'accesorio'].includes(tag.toLowerCase())
+            ['verano', 'fresco', 'ligero'].includes(tag.toLowerCase())
           );
         }
       },
@@ -102,7 +109,7 @@ class SearchEngine {
         name: 'ROPA INVIERNO',
         filter: (product) => {
           return product.tags && product.tags.some(tag => 
-            ['ropa', 'invierno', 'abrigo', 'vestimenta'].includes(tag.toLowerCase())
+            ['invierno', 'abrigo', 'abrigado', 'caliente'].includes(tag.toLowerCase())
           );
         }
       },

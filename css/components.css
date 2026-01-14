@@ -321,7 +321,7 @@
   width: 100%;
   padding-bottom: 100%;
   overflow: hidden;
-  background: var(--color-bg);
+  background: #ffffff;
 }
 
 .card__image {
@@ -330,7 +330,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
   transition: transform var(--transition-base);
 }
 
@@ -664,14 +664,16 @@
 .card__marketing-video {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
+  background: white;
   border-radius: var(--border-radius);
 }
 
 .card__marketing-fallback {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
+  background: white;
   border-radius: var(--border-radius);
 }
 
