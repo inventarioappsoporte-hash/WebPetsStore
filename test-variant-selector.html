@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Test - Selector de Variantes</title>
+  
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/typography.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/variants.css">
+</head>
+<body>
+  <div class="container" style="padding: 2rem;">
+    <h1>Test: Selector de Variantes</h1>
+    
+    <div style="max-width: 800px; margin: 2rem auto;">
+      <!-- Producto con variantes de Color -->
+      <div class="card" style="padding: 2rem; margin-bottom: 2rem;">
+        <h2>Producto 1: SHAMPOO MAXIMO (Variantes de Color)</h2>
+        
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;">
+          <div>
+            <img 
+              src="assets/images/products/prod_106/cover.jpg" 
+              alt="Producto"
+              class="product__image-main"
+              style="width: 100%; border-radius: 8px;">
+          </div>
+          
+          <div>
+            <h3 style="margin-bottom: 1rem;">SHAMPOO MAXIMO 250 cm3</h3>
+            
+            <div style="margin-bottom: 1rem;">
+              <span class="product__price-current" style="font-size: 2rem; font-weight: bold; color: var(--color-primary);">
+                $12,000
+              </span>
+              <span class="product__price-original" style="font-size: 1.2rem; text-decoration: line-through; color: #999; margin-left: 0.5rem;">
+                $15,000
+              </span>
+            </div>
+            
+            <!-- Contenedor del selector de variantes -->
+            <div id="variant-selector-1"></div>
+            
+            <button class="btn btn--primary btn--buy" style="width: 100%; margin-top: 1rem;">
+              Agregar al Carrito
+            </button>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Producto con variantes de Talla -->
+      <div class="card" style="padding: 2rem;">
+        <h2>Producto 2: COLCHON FANTASIA (Variantes de Talla con Precios Diferentes)</h2>
+        
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;">
+          <div>
+            <img 
+              src="assets/images/products/prod_145/cover.jpg" 
+              alt="Producto"
+              class="product__image-main"
+              style="width: 100%; border-radius: 8px;"
+              onerror="this.src='assets/images/placeholder.jpg'">
+          </div>
+          
+          <div>
+            <h3 style="margin-bottom: 1rem;">COLCHON FANTASIA ESPUMA</h3>
+            
+            <div style="margin-bottom: 1rem;">
+              <span class="product__price-current" style="font-size: 2rem; font-weight: bold; color: var(--color-primary);">
+                $20,000
+              </span>
+              <span class="product__price-original" style="font-size: 1.2rem; text-decoration: line-through; color: #999; margin-left: 0.5rem;">
+                $25,000
+              </span>
+            </div>
+            
+            <!-- Contenedor del selector de variantes -->
+            <div id="variant-selector-2"></div>
+            
+            <button class="btn btn--primary btn--buy" style="width: 100%; margin-top: 1rem;">
+              Agregar al Carrito
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Log de eventos -->
+    <div style="max-width: 800px; margin: 2rem auto;">
+      <h3>Log de Eventos:</h3>
+      <div id="event-log" style="background: #f5f5f5; padding: 1rem; border-radius: 8px; font-family: monospace; font-size: 0.9rem; max-height: 300px; overflow-y: auto;">
+        <div>Esperando eventos...</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/core/constants.js"></script>
+  <script src="js/core/utils.js"></script>
+  <script src="js/modules/variantSelector.js"></script>
+  
+  <script>
+    // Datos de prueba - Producto 1 (SHAMPOO con variantes de Color)
+    const product1 = {
+      "id": "prod_106",
+      "name": "SHAMPOO MAXIMO 250 cm3",
+      "hasVariants": true,
+      "basePrice": 12000,
+      "variants": {
+        "attributes": [
+          {
+            "id": "color",
+            "name": "Color",
+            "type": "color"
+          }
+        ],
+        "combinations": [
+          {
+            "id": "var_106_1",
+            "attributes": {
+              "Color": "Blanco"
+            },
+            "price": 12000,
+            "originalPrice": 15000,
+            "stock": 6,
+            "sku": "SHA005-BLA",
+            "available": true,
+            "images": {
+              "cover": "assets/images/products/prod_106/cover.jpg",
+              "thumb": "assets/images/products/prod_106/thumb.jpg",
+              "gallery": ["assets/images/products/prod_106/1.jpg"]
+            }
+          },
+          {
+            "id": "var_106_2",
+            "attributes": {
+              "Color": "Negro"
+            },
+            "price": 12000,
+            "originalPrice": 15000,
+            "stock": 6,
+            "sku": "SHA005-NEG",
+            "available": true,
+            "images": {
+              "cover": "assets/images/products/prod_106/cover.jpg",
+              "thumb": "assets/images/products/prod_106/thumb.jpg",
+              "gallery": ["assets/images/products/prod_106/1.jpg"]
+            }
+          },
+          {
+            "id": "var_106_3",
+            "attributes": {
+              "Color": "Bronce"
+            },
+            "price": 12000,
+            "originalPrice": 15000,
+            "stock": 0,
+            "sku": "SHA005-BRO",
+            "available": false,
+            "images": {
+              "cover": "assets/images/products/prod_106/cover.jpg",
+              "thumb": "assets/images/products/prod_106/thumb.jpg",
+              "gallery": ["assets/images/products/prod_106/1.jpg"]
+            }
+          }
+        ]
+      }
+    };
+    
+    // Datos de prueba - Producto 2 (COLCHON con variantes de Talla)
+    const product2 = {
+      "id": "prod_145",
+      "name": "COLCHON FANTASIA ESPUMA",
+      "hasVariants": true,
+      "basePrice": 20000,
+      "variants": {
+        "attributes": [
+          {
+            "id": "size",
+            "name": "Talla",
+            "type": "size"
+          }
+        ],
+        "combinations": [
+          {
+            "id": "var_145_1",
+            "attributes": {
+              "Talla": "S"
+            },
+            "price": 20000,
+            "originalPrice": 25000,
+            "stock": 10,
+            "sku": "COL005-S",
+            "available": true,
+            "images": {
+              "cover": "assets/images/products/prod_145/cover.jpg",
+              "thumb": "assets/images/products/prod_145/thumb.jpg",
+              "gallery": ["assets/images/products/prod_145/1.jpg"]
+            }
+          },
+          {
+            "id": "var_145_2",
+            "attributes": {
+              "Talla": "M"
+            },
+            "price": 22000,
+            "originalPrice": 27500,
+            "stock": 10,
+            "sku": "COL005-M",
+            "available": true,
+            "images": {
+              "cover": "assets/images/products/prod_145/cover.jpg",
+              "thumb": "assets/images/products/prod_145/thumb.jpg",
+              "gallery": ["assets/images/products/prod_145/1.jpg"]
+            }
+          },
+          {
+            "id": "var_145_3",
+            "attributes": {
+              "Talla": "L"
+            },
+            "price": 24000,
+            "originalPrice": 30000,
+            "stock": 10,
+            "sku": "COL005-L",
+            "available": true,
+            "images": {
+              "cover": "assets/images/products/prod_145/cover.jpg",
+              "thumb": "assets/images/products/prod_145/thumb.jpg",
+              "gallery": ["assets/images/products/prod_145/1.jpg"]
+            }
+          },
+          {
+            "id": "var_145_4",
+            "attributes": {
+              "Talla": "XL"
+            },
+            "price": 26000,
+            "originalPrice": 32500,
+            "stock": 2,
+            "sku": "COL005-XL",
+            "available": true,
+            "images": {
+              "cover": "assets/images/products/prod_145/cover.jpg",
+              "thumb": "assets/images/products/prod_145/thumb.jpg",
+              "gallery": ["assets/images/products/prod_145/1.jpg"]
+            }
+          }
+        ]
+      }
+    };
+    
+    // Inicializar selectores
+    const selector1 = new VariantSelector(product1, 'variant-selector-1');
+    const selector2 = new VariantSelector(product2, 'variant-selector-2');
+    
+    // Log de eventos
+    const eventLog = document.getElementById('event-log');
+    
+    document.addEventListener('variantChanged', (e) => {
+      const { product, variant, attributes } = e.detail;
+      const timestamp = new Date().toLocaleTimeString();
+      const logEntry = document.createElement('div');
+      logEntry.style.marginBottom = '0.5rem';
+      logEntry.style.padding = '0.5rem';
+      logEntry.style.background = 'white';
+      logEntry.style.borderRadius = '4px';
+      logEntry.innerHTML = `
+        <strong>[${timestamp}]</strong> Variante cambiada:<br>
+        Producto: ${product.name}<br>
+        Atributos: ${JSON.stringify(attributes)}<br>
+        Precio: ${Utils.formatPrice(variant.price)}<br>
+        Stock: ${variant.stock}<br>
+        SKU: ${variant.sku}
+      `;
+      eventLog.insertBefore(logEntry, eventLog.firstChild);
+    });
+    
+    console.log('✅ Selectores de variantes inicializados');
+    console.log('Selector 1:', selector1);
+    console.log('Selector 2:', selector2);
+  </script>
+</body>
+</html>

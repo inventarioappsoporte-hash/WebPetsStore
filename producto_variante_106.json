@@ -1,0 +1,115 @@
+{
+  "id": "prod_106",
+  "name": "SHAMPOO MAXIMO 250 cm3",
+  "category": "higiene-cuidado",
+  "subcategory": "Higiene",
+  "hasVariants": true,
+  "basePrice": 12000,
+  "baseOriginalPrice": 15000,
+  "discount": 20,
+  "stock": 18,
+  "rating": 4.1,
+  "reviews": 90,
+  "featured": false,
+  "topDiscount": false,
+  "hasVideo": false,
+  "tags": [
+    "shampoo",
+    "maximo",
+    "250",
+    "cm3",
+    "higiene",
+    "limpieza",
+    "cuidado"
+  ],
+  "description": "SHAMPOO MAXIMO 250 cm3",
+  "longDescription": "SHAMPOO MAXIMO 250 cm3",
+  "variants": {
+    "attributes": [
+      {
+        "id": "color",
+        "name": "Color",
+        "type": "color"
+      }
+    ],
+    "combinations": [
+      {
+        "id": "var_106_1",
+        "attributes": {
+          "Color": "Blanco"
+        },
+        "price": 12000,
+        "stock": 6,
+        "sku": "SHA005-BLA",
+        "available": true,
+        "images": {
+          "cover": "assets/images/products/prod_106/cover.jpg",
+          "thumb": "assets/images/products/prod_106/thumb.jpg",
+          "gallery": [
+            "assets/images/products/prod_106/1.jpg"
+          ]
+        },
+        "originalPrice": 15000
+      },
+      {
+        "id": "var_106_2",
+        "attributes": {
+          "Color": "Negro"
+        },
+        "price": 12000,
+        "stock": 6,
+        "sku": "SHA005-NEG",
+        "available": true,
+        "images": {
+          "cover": "assets/images/products/prod_106/cover.jpg",
+          "thumb": "assets/images/products/prod_106/thumb.jpg",
+          "gallery": [
+            "assets/images/products/prod_106/1.jpg"
+          ]
+        },
+        "originalPrice": 15000
+      },
+      {
+        "id": "var_106_3",
+        "attributes": {
+          "Color": "Bronce"
+        },
+        "price": 12000,
+        "stock": 6,
+        "sku": "SHA005-BRO",
+        "available": true,
+        "images": {
+          "cover": "assets/images/products/prod_106/cover.jpg",
+          "thumb": "assets/images/products/prod_106/thumb.jpg",
+          "gallery": [
+            "assets/images/products/prod_106/1.jpg"
+          ]
+        },
+        "originalPrice": 15000
+      }
+    ]
+  },
+  "images": {
+    "cover": "assets/images/products/prod_106/cover.jpg",
+    "thumb": "assets/images/products/prod_106/thumb.jpg",
+    "gallery": [
+      "assets/images/products/prod_106/1.jpg"
+    ]
+  },
+  "specs": {
+    "SKU": "SHA005"
+  },
+  "shipping": {
+    "free": false,
+    "days": 3
+  },
+  "badge": "🧼 Higiene",
+  "brand": "OSSPRET",
+  "sku": "SHA005",
+  "features": [
+    "Múltiples variantes disponibles",
+    "Calidad garantizada",
+    "Fácil de usar",
+    "Resistente y duradero"
+  ]
+}

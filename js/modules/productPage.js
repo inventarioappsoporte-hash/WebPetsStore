@@ -44,6 +44,14 @@ class ProductPage {
     
     // Guardar producto en variable global para acceso desde botones
     window.currentProduct = product;
+    
+    // Determinar si el producto tiene variantes
+    const hasVariants = product.hasVariants && product.variants;
+    
+    // Si tiene variantes, usar el precio base
+    const displayPrice = hasVariants ? product.basePrice : product.price;
+    const displayOriginalPrice = hasVariants ? product.baseOriginalPrice : product.originalPrice;
+    
     const discount = product.discount ? `<span class="product__discount-badge">-${product.discount}%</span>` : '';
     const video = product.hasVideo ? `
       <div class="product__video-section">
@@ -87,7 +95,7 @@ class ProductPage {
         <div class="product__gallery">
           <div class="product__main">
             ${discount}
-            <img src="${product.images.cover}" alt="${product.name}" class="product__main-image">
+            <img src="${product.images.cover}" alt="${product.name}" class="product__main-image product__image-main">
             ${video}
           </div>
           <div class="product__thumbnails">
@@ -105,15 +113,17 @@ class ProductPage {
 
           <div class="product__price-section">
             <div class="product__price">
-              <span class="product__price-current">${Utils.formatPrice(product.price)}</span>
-              ${product.originalPrice ? `
-                <span class="product__price-original">${Utils.formatPrice(product.originalPrice)}</span>
-                <span class="product__savings">Ahorras ${Utils.formatPrice(product.originalPrice - product.price)}</span>
+              <span class="product__price-current">${Utils.formatPrice(displayPrice)}</span>
+              ${displayOriginalPrice ? `
+                <span class="product__price-original">${Utils.formatPrice(displayOriginalPrice)}</span>
+                <span class="product__savings">Ahorras ${Utils.formatPrice(displayOriginalPrice - displayPrice)}</span>
               ` : ''}
             </div>
           </div>
 
           <p class="product__description">${product.longDescription}</p>
+
+          ${hasVariants ? '<div id="variant-selector-container"></div>' : ''}
 
           <div class="product__specs">
             <h3>Especificaciones</h3>
@@ -128,15 +138,17 @@ class ProductPage {
             </p>
           </div>
 
+          ${!hasVariants ? `
           <div class="product__stock">
             <p class="product__stock-status ${product.stock > 0 ? 'in-stock' : 'out-of-stock'}">
               ${product.stock > 0 ? `✅ ${product.stock} en stock` : '❌ Agotado'}
             </p>
           </div>
+          ` : ''}
 
           <div class="product__actions">
-            <button class="btn btn--primary btn--large" onclick="Utils.sendWhatsAppMessage(window.currentProduct)" ${product.stock === 0 ? 'disabled' : ''}>
-              ${product.stock > 0 ? '💬 COMPRAR POR WHATSAPP' : 'AGOTADO'}
+            <button class="btn btn--primary btn--large btn--buy" onclick="Utils.sendWhatsAppMessage(window.currentProduct, window.currentVariant)" ${!hasVariants && product.stock === 0 ? 'disabled' : ''}>
+              ${!hasVariants && product.stock === 0 ? 'AGOTADO' : '💬 COMPRAR POR WHATSAPP'}
             </button>
             <button class="btn btn--secondary btn--large">
               ❤️ AGREGAR A FAVORITOS
@@ -149,6 +161,11 @@ class ProductPage {
         </div>
       </div>
     `;
+    
+    // Si el producto tiene variantes, inicializar el selector
+    if (hasVariants) {
+      this.initVariantSelector(product);
+    }
   }
 
   formatLabel(key) {
@@ -156,6 +173,26 @@ class ProductPage {
       .replace(/([A-Z])/g, ' $1')
       .replace(/^./, str => str.toUpperCase())
       .trim();
+  }
+  
+  initVariantSelector(product) {
+    // Esperar a que el DOM esté listo
+    setTimeout(() => {
+      if (typeof VariantSelector !== 'undefined') {
+        const selector = new VariantSelector(product, 'variant-selector-container');
+        
+        // Guardar la variante seleccionada globalmente
+        window.currentVariant = selector.getSelectedVariant();
+        
+        // Escuchar cambios de variante
+        document.addEventListener('variantChanged', (e) => {
+          window.currentVariant = e.detail.variant;
+          console.log('Variante seleccionada:', window.currentVariant);
+        });
+      } else {
+        console.error('VariantSelector no está disponible');
+      }
+    }, 100);
   }
 
   showError(message) {

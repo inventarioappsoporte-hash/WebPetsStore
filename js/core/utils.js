@@ -94,20 +94,37 @@ const Utils = {
   },
 
   // Enviar mensaje por WhatsApp
-  sendWhatsAppMessage: (product) => {
+  sendWhatsAppMessage: (product, variant = null) => {
     const phone = CONSTANTS.WHATSAPP.PHONE;
     const productName = product.name;
-    const price = product.price.toLocaleString('es-AR');
-    const originalPrice = product.originalPrice.toLocaleString('es-AR');
+    
+    // Si hay variante, usar sus datos
+    const price = variant ? variant.price : product.price;
+    const originalPrice = variant ? variant.originalPrice : product.originalPrice;
     const discount = product.discount;
+    const sku = variant ? variant.sku : product.sku;
+    
+    // Información de variante
+    let variantInfo = '';
+    if (variant && variant.attributes) {
+      const attrs = Object.entries(variant.attributes)
+        .map(([key, value]) => `${key}: ${value}`)
+        .join(', ');
+      variantInfo = `\n🔄 Variante: ${attrs}`;
+    }
+    
     const colors = product.specs?.colors?.join(', ') || 'No especificado';
     
     // Construir URL de imagen correctamente para GitHub Pages
-    let imageUrl = window.location.origin + window.location.pathname.replace(/\/[^/]*$/, '/') + product.images.cover;
+    let imageUrl = window.location.origin + window.location.pathname.replace(/\/[^/]*$/, '/');
+    imageUrl += variant && variant.images ? variant.images.cover : product.images.cover;
     // Limpiar dobles slashes
     imageUrl = imageUrl.replace(/([^:]\/)\/+/g, '$1');
     
-    const message = `¡Hola! 👋\n\nMe interesa comprar:\n\n📦 *${productName}*\n💰 Precio: ${price}\n🏷️ Precio original: ${originalPrice}\n📉 Descuento: ${discount}%\n🎨 Colores disponibles: ${colors}\n\n🖼️ Ver imagen: ${imageUrl}\n\n¿Cuál es el siguiente paso para comprar?`;
+    const priceFormatted = price.toLocaleString('es-AR');
+    const originalPriceFormatted = originalPrice ? originalPrice.toLocaleString('es-AR') : priceFormatted;
+    
+    const message = `¡Hola! 👋\n\nMe interesa comprar:\n\n📦 *${productName}*${variantInfo}\n💰 Precio: $${priceFormatted}\n🏷️ Precio original: $${originalPriceFormatted}\n📉 Descuento: ${discount}%\n🔖 SKU: ${sku}\n🎨 Colores disponibles: ${colors}\n\n🖼️ Ver imagen: ${imageUrl}\n\n¿Cuál es el siguiente paso para comprar?`;
     
     const whatsappUrl = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
