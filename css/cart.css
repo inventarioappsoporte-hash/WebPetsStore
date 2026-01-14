@@ -639,6 +639,11 @@
   }
 
   /* Asegurar que el icono del carrito se mantenga en su lugar */
+  .nav__link--cart {
+    position: relative;
+    margin-left: auto; /* Forzar a la derecha */
+  }
+
   .cart-icon-wrapper {
     width: 48px;
     height: 48px;
@@ -657,6 +662,14 @@
     top: -6px;
     right: -6px;
     border-width: 2.5px;
+  }
+
+  /* Asegurar que header__actions mantenga el carrito a la derecha */
+  .header__actions {
+    display: flex;
+    justify-content: flex-end !important;
+    align-items: center;
+    gap: var(--spacing-md, 1rem);
   }
 }
 
