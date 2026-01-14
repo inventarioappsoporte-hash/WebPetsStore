@@ -18569,28 +18569,30 @@
   },
   {
     "id": "prod_609",
-    "name": "CORREA RECTRACTIL NE1 3MTS",
+    "name": "Correa Retráctil",
     "category": "accesorios",
     "subcategory": "Accesorios",
     "price": 9350,
     "originalPrice": 11000,
     "discount": 15,
-    "stock": 10,
-    "rating": 4.4,
-    "reviews": 9,
+    "stock": 20,
+    "rating": 4.5,
+    "reviews": 15,
     "featured": false,
     "topDiscount": false,
     "hasVideo": false,
+    "hasVariants": true,
+    "basePrice": 9350,
     "tags": [
       "correa",
-      "rectractil",
-      "3mts",
+      "retractil",
       "collar",
       "paseo",
-      "pechera"
+      "pechera",
+      "variantes"
     ],
-    "description": "CORREA RECTRACTIL NE1 3MTS",
-    "longDescription": "CORREA RECTRACTIL NE1 3MTS",
+    "description": "Correa retráctil para paseos. Disponible en 3 y 5 metros.",
+    "longDescription": "Correa retráctil de alta calidad para paseos cómodos y seguros. Sistema de bloqueo fácil de usar, material resistente y ergonómico. Disponible en 2 largos diferentes.",
     "images": {
       "cover": "assets/images/products/prod_609/cover.jpg",
       "thumb": "assets/images/products/prod_609/thumb.jpg",
@@ -18613,55 +18615,45 @@
       "Material resistente",
       "Fácil de usar",
       "Seguro y confiable"
-    ]
-  },
-  {
-    "id": "prod_610",
-    "name": "CORREA RECTRACTIL NE1 5MTS",
-    "category": "accesorios",
-    "subcategory": "Accesorios",
-    "price": 12750,
-    "originalPrice": 15000,
-    "discount": 15,
-    "stock": 10,
-    "rating": 4.5,
-    "reviews": 6,
-    "featured": false,
-    "topDiscount": false,
-    "hasVideo": false,
-    "tags": [
-      "correa",
-      "rectractil",
-      "5mts",
-      "collar",
-      "paseo",
-      "pechera"
     ],
-    "description": "CORREA RECTRACTIL NE1 5MTS",
-    "longDescription": "CORREA RECTRACTIL NE1 5MTS",
-    "images": {
-      "cover": "assets/images/products/prod_610/cover.jpg",
-      "thumb": "assets/images/products/prod_610/thumb.jpg",
-      "gallery": [
-        "assets/images/products/prod_610/1.jpg"
+    "variants": {
+      "attributes": [
+        {
+          "name": "Largo",
+          "values": ["3 metros", "5 metros"]
+        }
+      ],
+      "combinations": [
+        {
+          "id": "var_609_3m",
+          "attributes": { "Largo": "3 metros" },
+          "price": 9350,
+          "originalPrice": 11000,
+          "stock": 10,
+          "sku": "COR001",
+          "available": true,
+          "images": {
+            "cover": "assets/images/products/prod_609/cover.jpg",
+            "thumb": "assets/images/products/prod_609/thumb.jpg",
+            "gallery": ["assets/images/products/prod_609/1.jpg"]
+          }
+        },
+        {
+          "id": "var_609_5m",
+          "attributes": { "Largo": "5 metros" },
+          "price": 12750,
+          "originalPrice": 15000,
+          "stock": 10,
+          "sku": "COR002",
+          "available": true,
+          "images": {
+            "cover": "assets/images/products/prod_610/cover.jpg",
+            "thumb": "assets/images/products/prod_610/thumb.jpg",
+            "gallery": ["assets/images/products/prod_610/1.jpg"]
+          }
+        }
       ]
-    },
-    "specs": {
-      "SKU": "COR002"
-    },
-    "shipping": {
-      "free": true,
-      "days": 2
-    },
-    "badge": "🦴 Accesorios",
-    "brand": "Sin marca",
-    "sku": "COR002",
-    "features": [
-      "Ajuste cómodo",
-      "Material resistente",
-      "Fácil de usar",
-      "Seguro y confiable"
-    ]
+    }
   },
   {
     "id": "prod_611",
@@ -18919,18 +18911,20 @@
   },
   {
     "id": "prod_631",
-    "name": "COLLAR LONA  50 X 70 DOBLE PITON",
+    "name": "Collar Lona Doble Pitón",
     "category": "accesorios",
     "subcategory": "Accesorios",
     "price": 21845,
     "originalPrice": 25700,
     "discount": 15,
-    "stock": 10,
-    "rating": 3.9,
-    "reviews": 8,
+    "stock": 20,
+    "rating": 4.4,
+    "reviews": 37,
     "featured": false,
     "topDiscount": false,
     "hasVideo": false,
+    "hasVariants": true,
+    "basePrice": 21845,
     "tags": [
       "collar",
       "lona",
@@ -18938,10 +18932,11 @@
       "piton",
       "correa",
       "paseo",
-      "pechera"
+      "pechera",
+      "variantes"
     ],
-    "description": "COLLAR LONA  50 X 70 DOBLE PITON",
-    "longDescription": "COLLAR LONA  50 X 70 DOBLE PITON",
+    "description": "Collar de lona doble pitón. Resistente y seguro para perros grandes.",
+    "longDescription": "Collar de lona con doble pitón de alta resistencia. Ideal para perros de razas grandes y fuertes. Material duradero, ajuste cómodo y seguro. Disponible en 2 tamaños.",
     "images": {
       "cover": "assets/images/products/prod_631/cover.jpg",
       "thumb": "assets/images/products/prod_631/thumb.jpg",
@@ -18964,56 +18959,45 @@
       "Material resistente",
       "Fácil de usar",
       "Seguro y confiable"
-    ]
-  },
-  {
-    "id": "prod_632",
-    "name": "COLLAR LONA  50 X 80 DOBLE PITON",
-    "category": "accesorios",
-    "subcategory": "Accesorios",
-    "price": 28900,
-    "originalPrice": 34000,
-    "discount": 15,
-    "stock": 10,
-    "rating": 4.8,
-    "reviews": 29,
-    "featured": false,
-    "topDiscount": false,
-    "hasVideo": false,
-    "tags": [
-      "collar",
-      "lona",
-      "doble",
-      "piton",
-      "correa",
-      "paseo",
-      "pechera"
     ],
-    "description": "COLLAR LONA  50 X 80 DOBLE PITON",
-    "longDescription": "COLLAR LONA  50 X 80 DOBLE PITON",
-    "images": {
-      "cover": "assets/images/products/prod_632/cover.jpg",
-      "thumb": "assets/images/products/prod_632/thumb.jpg",
-      "gallery": [
-        "assets/images/products/prod_632/1.jpg"
+    "variants": {
+      "attributes": [
+        {
+          "name": "Medida",
+          "values": ["50 x 70", "50 x 80"]
+        }
+      ],
+      "combinations": [
+        {
+          "id": "var_631_70",
+          "attributes": { "Medida": "50 x 70" },
+          "price": 21845,
+          "originalPrice": 25700,
+          "stock": 10,
+          "sku": "COL017",
+          "available": true,
+          "images": {
+            "cover": "assets/images/products/prod_631/cover.jpg",
+            "thumb": "assets/images/products/prod_631/thumb.jpg",
+            "gallery": ["assets/images/products/prod_631/1.jpg"]
+          }
+        },
+        {
+          "id": "var_631_80",
+          "attributes": { "Medida": "50 x 80" },
+          "price": 28900,
+          "originalPrice": 34000,
+          "stock": 10,
+          "sku": "COL018",
+          "available": true,
+          "images": {
+            "cover": "assets/images/products/prod_632/cover.jpg",
+            "thumb": "assets/images/products/prod_632/thumb.jpg",
+            "gallery": ["assets/images/products/prod_632/1.jpg"]
+          }
+        }
       ]
-    },
-    "specs": {
-      "SKU": "COL018"
-    },
-    "shipping": {
-      "free": true,
-      "days": 4
-    },
-    "badge": "🦴 Accesorios",
-    "brand": "Sin marca",
-    "sku": "COL018",
-    "features": [
-      "Ajuste cómodo",
-      "Material resistente",
-      "Fácil de usar",
-      "Seguro y confiable"
-    ]
+    }
   },
   {
     "id": "prod_635",
@@ -24392,29 +24376,32 @@
   },
   {
     "id": "prod_795",
-    "name": "COMEDERO ACERO INOXIDABLE ESTAMPADO-16CM",
+    "name": "Comedero Acero Inoxidable Estampado",
     "category": "accesorios",
     "subcategory": "Comederos",
     "price": 3400,
     "originalPrice": 4000,
     "discount": 15,
-    "stock": 10,
-    "rating": 3.8,
-    "reviews": 18,
+    "stock": 50,
+    "rating": 4.3,
+    "reviews": 185,
     "featured": false,
     "topDiscount": false,
     "hasVideo": false,
+    "hasVariants": true,
+    "basePrice": 3400,
     "tags": [
       "comedero",
       "acero",
       "inoxidable",
-      "estampado-16cm",
+      "estampado",
       "bebedero",
       "alimentación",
-      "agua"
+      "agua",
+      "variantes"
     ],
-    "description": "COMEDERO ACERO INOXIDABLE ESTAMPADO-16CM",
-    "longDescription": "COMEDERO ACERO INOXIDABLE ESTAMPADO-16CM",
+    "description": "Comedero de acero inoxidable estampado. Disponible en varios tamaños para adaptarse a tu mascota.",
+    "longDescription": "Comedero de acero inoxidable con diseño estampado. Material duradero, fácil de limpiar y antideslizante. Ideal para alimento o agua. Disponible en 5 tamaños diferentes.",
     "images": {
       "cover": "assets/images/products/prod_795/cover.jpg",
       "thumb": "assets/images/products/prod_795/thumb.jpg",
@@ -24423,12 +24410,11 @@
       ]
     },
     "specs": {
-      "SKU": "COM015",
-      "Medida": "16CM"
+      "SKU": "COM015"
     },
     "shipping": {
       "free": false,
-      "days": 4
+      "days": 3
     },
     "badge": "🍽️ Comederos",
     "brand": "Sin marca",
@@ -24438,211 +24424,87 @@
       "Antideslizante",
       "Capacidad adecuada",
       "Material duradero"
-    ]
-  },
-  {
-    "id": "prod_796",
-    "name": "COMEDERO ACERO INOXIDABLE ESTAMPADO -18CM",
-    "category": "accesorios",
-    "subcategory": "Comederos",
-    "price": 4760,
-    "originalPrice": 5600,
-    "discount": 15,
-    "stock": 10,
-    "rating": 4,
-    "reviews": 54,
-    "featured": false,
-    "topDiscount": false,
-    "hasVideo": false,
-    "tags": [
-      "comedero",
-      "acero",
-      "inoxidable",
-      "estampado",
-      "-18cm",
-      "bebedero",
-      "alimentación",
-      "agua"
     ],
-    "description": "COMEDERO ACERO INOXIDABLE ESTAMPADO -18CM",
-    "longDescription": "COMEDERO ACERO INOXIDABLE ESTAMPADO -18CM",
-    "images": {
-      "cover": "assets/images/products/prod_796/cover.jpg",
-      "thumb": "assets/images/products/prod_796/thumb.jpg",
-      "gallery": [
-        "assets/images/products/prod_796/1.jpg"
+    "variants": {
+      "attributes": [
+        {
+          "name": "Medida",
+          "values": ["16 cm", "18 cm", "22 cm", "26 cm", "30 cm"]
+        }
+      ],
+      "combinations": [
+        {
+          "id": "var_795_16",
+          "attributes": { "Medida": "16 cm" },
+          "price": 3400,
+          "originalPrice": 4000,
+          "stock": 10,
+          "sku": "COM015",
+          "available": true,
+          "images": {
+            "cover": "assets/images/products/prod_795/cover.jpg",
+            "thumb": "assets/images/products/prod_795/thumb.jpg",
+            "gallery": ["assets/images/products/prod_795/1.jpg"]
+          }
+        },
+        {
+          "id": "var_795_18",
+          "attributes": { "Medida": "18 cm" },
+          "price": 4760,
+          "originalPrice": 5600,
+          "stock": 10,
+          "sku": "COM016",
+          "available": true,
+          "images": {
+            "cover": "assets/images/products/prod_796/cover.jpg",
+            "thumb": "assets/images/products/prod_796/thumb.jpg",
+            "gallery": ["assets/images/products/prod_796/1.jpg"]
+          }
+        },
+        {
+          "id": "var_795_22",
+          "attributes": { "Medida": "22 cm" },
+          "price": 5950,
+          "originalPrice": 7000,
+          "stock": 10,
+          "sku": "COM017",
+          "available": true,
+          "images": {
+            "cover": "assets/images/products/prod_797/cover.jpg",
+            "thumb": "assets/images/products/prod_797/thumb.jpg",
+            "gallery": ["assets/images/products/prod_797/1.jpg"]
+          }
+        },
+        {
+          "id": "var_795_26",
+          "attributes": { "Medida": "26 cm" },
+          "price": 7310,
+          "originalPrice": 8600,
+          "stock": 10,
+          "sku": "COM018",
+          "available": true,
+          "images": {
+            "cover": "assets/images/products/prod_798/cover.jpg",
+            "thumb": "assets/images/products/prod_798/thumb.jpg",
+            "gallery": ["assets/images/products/prod_798/1.jpg"]
+          }
+        },
+        {
+          "id": "var_795_30",
+          "attributes": { "Medida": "30 cm" },
+          "price": 9775,
+          "originalPrice": 11500,
+          "stock": 10,
+          "sku": "COM019",
+          "available": true,
+          "images": {
+            "cover": "assets/images/products/prod_799/cover.jpg",
+            "thumb": "assets/images/products/prod_799/thumb.jpg",
+            "gallery": ["assets/images/products/prod_799/1.jpg"]
+          }
+        }
       ]
-    },
-    "specs": {
-      "SKU": "COM016",
-      "Medida": "18CM"
-    },
-    "shipping": {
-      "free": false,
-      "days": 2
-    },
-    "badge": "🍽️ Comederos",
-    "brand": "Sin marca",
-    "sku": "COM016",
-    "features": [
-      "Fácil de limpiar",
-      "Antideslizante",
-      "Capacidad adecuada",
-      "Material duradero"
-    ]
-  },
-  {
-    "id": "prod_797",
-    "name": "COMEDERO ACERO INOXIDABLE ESTAMPADO -22CM",
-    "category": "accesorios",
-    "subcategory": "Comederos",
-    "price": 5950,
-    "originalPrice": 7000,
-    "discount": 15,
-    "stock": 10,
-    "rating": 5,
-    "reviews": 36,
-    "featured": false,
-    "topDiscount": false,
-    "hasVideo": false,
-    "tags": [
-      "comedero",
-      "acero",
-      "inoxidable",
-      "estampado",
-      "-22cm",
-      "bebedero",
-      "alimentación",
-      "agua"
-    ],
-    "description": "COMEDERO ACERO INOXIDABLE ESTAMPADO -22CM",
-    "longDescription": "COMEDERO ACERO INOXIDABLE ESTAMPADO -22CM",
-    "images": {
-      "cover": "assets/images/products/prod_797/cover.jpg",
-      "thumb": "assets/images/products/prod_797/thumb.jpg",
-      "gallery": [
-        "assets/images/products/prod_797/1.jpg"
-      ]
-    },
-    "specs": {
-      "SKU": "COM017",
-      "Medida": "22CM"
-    },
-    "shipping": {
-      "free": false,
-      "days": 3
-    },
-    "badge": "🍽️ Comederos",
-    "brand": "Sin marca",
-    "sku": "COM017",
-    "features": [
-      "Fácil de limpiar",
-      "Antideslizante",
-      "Capacidad adecuada",
-      "Material duradero"
-    ]
-  },
-  {
-    "id": "prod_798",
-    "name": "COMEDERO ACERO INOXIDABLE ESTAMPADO -26CM",
-    "category": "accesorios",
-    "subcategory": "Comederos",
-    "price": 7310,
-    "originalPrice": 8600,
-    "discount": 15,
-    "stock": 10,
-    "rating": 5,
-    "reviews": 37,
-    "featured": false,
-    "topDiscount": false,
-    "hasVideo": false,
-    "tags": [
-      "comedero",
-      "acero",
-      "inoxidable",
-      "estampado",
-      "-26cm",
-      "bebedero",
-      "alimentación",
-      "agua"
-    ],
-    "description": "COMEDERO ACERO INOXIDABLE ESTAMPADO -26CM",
-    "longDescription": "COMEDERO ACERO INOXIDABLE ESTAMPADO -26CM",
-    "images": {
-      "cover": "assets/images/products/prod_798/cover.jpg",
-      "thumb": "assets/images/products/prod_798/thumb.jpg",
-      "gallery": [
-        "assets/images/products/prod_798/1.jpg"
-      ]
-    },
-    "specs": {
-      "SKU": "COM018",
-      "Medida": "26CM"
-    },
-    "shipping": {
-      "free": false,
-      "days": 3
-    },
-    "badge": "🍽️ Comederos",
-    "brand": "Sin marca",
-    "sku": "COM018",
-    "features": [
-      "Fácil de limpiar",
-      "Antideslizante",
-      "Capacidad adecuada",
-      "Material duradero"
-    ]
-  },
-  {
-    "id": "prod_799",
-    "name": "COMEDERO ACERO INOXIDABLE ESTAMPADO -30CM",
-    "category": "accesorios",
-    "subcategory": "Comederos",
-    "price": 9775,
-    "originalPrice": 11500,
-    "discount": 15,
-    "stock": 10,
-    "rating": 3.6,
-    "reviews": 40,
-    "featured": false,
-    "topDiscount": false,
-    "hasVideo": false,
-    "tags": [
-      "comedero",
-      "acero",
-      "inoxidable",
-      "estampado",
-      "-30cm",
-      "bebedero",
-      "alimentación",
-      "agua"
-    ],
-    "description": "COMEDERO ACERO INOXIDABLE ESTAMPADO -30CM",
-    "longDescription": "COMEDERO ACERO INOXIDABLE ESTAMPADO -30CM",
-    "images": {
-      "cover": "assets/images/products/prod_799/cover.jpg",
-      "thumb": "assets/images/products/prod_799/thumb.jpg",
-      "gallery": [
-        "assets/images/products/prod_799/1.jpg"
-      ]
-    },
-    "specs": {
-      "SKU": "COM019",
-      "Medida": "30CM"
-    },
-    "shipping": {
-      "free": false,
-      "days": 4
-    },
-    "badge": "🍽️ Comederos",
-    "brand": "Sin marca",
-    "sku": "COM019",
-    "features": [
-      "Fácil de limpiar",
-      "Antideslizante",
-      "Capacidad adecuada",
-      "Material duradero"
-    ]
+    }
   },
   {
     "id": "prod_800",
