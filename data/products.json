@@ -19001,29 +19001,31 @@
   },
   {
     "id": "prod_635",
-    "name": "COLLAR LONA 50X60 C/MANIJA",
+    "name": "Collar Lona C/Manija",
     "category": "accesorios",
     "subcategory": "Accesorios",
     "price": 27115,
     "originalPrice": 31900,
     "discount": 15,
-    "stock": 10,
-    "rating": 4.3,
-    "reviews": 31,
+    "stock": 20,
+    "rating": 4.4,
+    "reviews": 46,
     "featured": false,
     "topDiscount": false,
     "hasVideo": false,
+    "hasVariants": true,
+    "basePrice": 27115,
     "tags": [
       "collar",
       "lona",
-      "50x60",
-      "c/manija",
+      "manija",
       "correa",
       "paseo",
-      "pechera"
+      "pechera",
+      "variantes"
     ],
-    "description": "COLLAR LONA 50X60 C/MANIJA",
-    "longDescription": "COLLAR LONA 50X60 C/MANIJA",
+    "description": "Collar de lona con manija. Resistente y cómodo para perros grandes.",
+    "longDescription": "Collar de lona con manija integrada para mayor control. Ideal para perros de razas grandes. Material duradero y resistente. Disponible en 2 tamaños.",
     "images": {
       "cover": "assets/images/products/prod_635/cover.jpg",
       "thumb": "assets/images/products/prod_635/thumb.jpg",
@@ -19046,56 +19048,45 @@
       "Material resistente",
       "Fácil de usar",
       "Seguro y confiable"
-    ]
-  },
-  {
-    "id": "prod_636",
-    "name": "COLLAR LONA 50X70 C/MANIJA",
-    "category": "accesorios",
-    "subcategory": "Accesorios",
-    "price": 29750,
-    "originalPrice": 35000,
-    "discount": 15,
-    "stock": 10,
-    "rating": 4.4,
-    "reviews": 15,
-    "featured": false,
-    "topDiscount": false,
-    "hasVideo": false,
-    "tags": [
-      "collar",
-      "lona",
-      "50x70",
-      "c/manija",
-      "correa",
-      "paseo",
-      "pechera"
     ],
-    "description": "COLLAR LONA 50X70 C/MANIJA",
-    "longDescription": "COLLAR LONA 50X70 C/MANIJA",
-    "images": {
-      "cover": "assets/images/products/prod_636/cover.jpg",
-      "thumb": "assets/images/products/prod_636/thumb.jpg",
-      "gallery": [
-        "assets/images/products/prod_636/1.jpg"
+    "variants": {
+      "attributes": [
+        {
+          "name": "Medida",
+          "values": ["50 x 60", "50 x 70"]
+        }
+      ],
+      "combinations": [
+        {
+          "id": "var_635_60",
+          "attributes": { "Medida": "50 x 60" },
+          "price": 27115,
+          "originalPrice": 31900,
+          "stock": 10,
+          "sku": "COL021",
+          "available": true,
+          "images": {
+            "cover": "assets/images/products/prod_635/cover.jpg",
+            "thumb": "assets/images/products/prod_635/thumb.jpg",
+            "gallery": ["assets/images/products/prod_635/1.jpg"]
+          }
+        },
+        {
+          "id": "var_635_70",
+          "attributes": { "Medida": "50 x 70" },
+          "price": 29750,
+          "originalPrice": 35000,
+          "stock": 10,
+          "sku": "COL022",
+          "available": true,
+          "images": {
+            "cover": "assets/images/products/prod_636/cover.jpg",
+            "thumb": "assets/images/products/prod_636/thumb.jpg",
+            "gallery": ["assets/images/products/prod_636/1.jpg"]
+          }
+        }
       ]
-    },
-    "specs": {
-      "SKU": "COL022"
-    },
-    "shipping": {
-      "free": true,
-      "days": 3
-    },
-    "badge": "🦴 Accesorios",
-    "brand": "Sin marca",
-    "sku": "COL022",
-    "features": [
-      "Ajuste cómodo",
-      "Material resistente",
-      "Fácil de usar",
-      "Seguro y confiable"
-    ]
+    }
   },
   {
     "id": "prod_637",
@@ -21115,28 +21106,30 @@
   },
   {
     "id": "prod_727",
-    "name": "COLLAR LONA 40X50",
+    "name": "Collar Lona",
     "category": "accesorios",
     "subcategory": "Accesorios",
     "price": 8840,
     "originalPrice": 10400,
     "discount": 15,
-    "stock": 10,
-    "rating": 4.2,
-    "reviews": 46,
+    "stock": 40,
+    "rating": 3.8,
+    "reviews": 130,
     "featured": false,
-    "topDiscount": false,
+    "topDiscount": true,
     "hasVideo": false,
+    "hasVariants": true,
+    "basePrice": 8840,
     "tags": [
       "collar",
       "lona",
-      "40x50",
       "correa",
       "paseo",
-      "pechera"
+      "pechera",
+      "variantes"
     ],
-    "description": "COLLAR LONA 40X50",
-    "longDescription": "COLLAR LONA 40X50",
+    "description": "Collar de Lona resistente para mascotas. Disponible en varios tamaños.",
+    "longDescription": "Collar de Lona para mascotas. Descripción: Collar de alta calidad fabricado en lona resistente. Ideal para paseos diarios, con ajuste cómodo y seguro. Material duradero que soporta el uso frecuente. Disponible en 4 tamaños para adaptarse a diferentes razas.",
     "images": {
       "cover": "assets/images/products/prod_727/cover.jpg",
       "thumb": "assets/images/products/prod_727/thumb.jpg",
@@ -21149,7 +21142,7 @@
     },
     "shipping": {
       "free": false,
-      "days": 4
+      "days": 3
     },
     "badge": "🦴 Accesorios",
     "brand": "Sin marca",
@@ -21159,151 +21152,73 @@
       "Material resistente",
       "Fácil de usar",
       "Seguro y confiable"
-    ]
-  },
-  {
-    "id": "prod_728",
-    "name": "COLLAR LONA 40X60",
-    "category": "accesorios",
-    "subcategory": "Accesorios",
-    "price": 9095,
-    "originalPrice": 10700,
-    "discount": 15,
-    "stock": 10,
-    "rating": 3.8,
-    "reviews": 44,
-    "featured": false,
-    "topDiscount": false,
-    "hasVideo": false,
-    "tags": [
-      "collar",
-      "lona",
-      "40x60",
-      "correa",
-      "paseo",
-      "pechera"
     ],
-    "description": "COLLAR LONA 40X60",
-    "longDescription": "COLLAR LONA 40X60",
-    "images": {
-      "cover": "assets/images/products/prod_728/cover.jpg",
-      "thumb": "assets/images/products/prod_728/thumb.jpg",
-      "gallery": [
-        "assets/images/products/prod_728/1.jpg"
+    "variants": {
+      "attributes": [
+        {
+          "name": "Tamaño",
+          "values": ["40x50", "40x60", "40x70", "40x80"]
+        }
+      ],
+      "combinations": [
+        {
+          "id": "var_727_1",
+          "attributes": { "Tamaño": "40x50" },
+          "price": 8840,
+          "originalPrice": 10400,
+          "stock": 10,
+          "sku": "COL020",
+          "available": true,
+          "images": {
+            "cover": "assets/images/products/prod_727/cover.jpg",
+            "thumb": "assets/images/products/prod_727/thumb.jpg",
+            "gallery": ["assets/images/products/prod_727/1.jpg"]
+          }
+        },
+        {
+          "id": "var_727_2",
+          "attributes": { "Tamaño": "40x60" },
+          "price": 9095,
+          "originalPrice": 10700,
+          "stock": 10,
+          "sku": "COL024",
+          "available": true,
+          "images": {
+            "cover": "assets/images/products/prod_728/cover.jpg",
+            "thumb": "assets/images/products/prod_728/thumb.jpg",
+            "gallery": ["assets/images/products/prod_728/1.jpg"]
+          }
+        },
+        {
+          "id": "var_727_3",
+          "attributes": { "Tamaño": "40x70" },
+          "price": 9350,
+          "originalPrice": 11000,
+          "stock": 10,
+          "sku": "COL025",
+          "available": true,
+          "images": {
+            "cover": "assets/images/products/prod_729/cover.jpg",
+            "thumb": "assets/images/products/prod_729/thumb.jpg",
+            "gallery": ["assets/images/products/prod_729/1.jpg"]
+          }
+        },
+        {
+          "id": "var_727_4",
+          "attributes": { "Tamaño": "40x80" },
+          "price": 9690,
+          "originalPrice": 11400,
+          "stock": 10,
+          "sku": "COL026",
+          "available": true,
+          "images": {
+            "cover": "assets/images/products/prod_730/cover.jpg",
+            "thumb": "assets/images/products/prod_730/thumb.jpg",
+            "gallery": ["assets/images/products/prod_730/1.jpg"]
+          }
+        }
       ]
-    },
-    "specs": {
-      "SKU": "COL024"
-    },
-    "shipping": {
-      "free": false,
-      "days": 3
-    },
-    "badge": "🦴 Accesorios",
-    "brand": "Sin marca",
-    "sku": "COL024",
-    "features": [
-      "Ajuste cómodo",
-      "Material resistente",
-      "Fácil de usar",
-      "Seguro y confiable"
-    ]
-  },
-  {
-    "id": "prod_729",
-    "name": "COLLAR LONA 40X70",
-    "category": "accesorios",
-    "subcategory": "Accesorios",
-    "price": 9350,
-    "originalPrice": 11000,
-    "discount": 15,
-    "stock": 10,
-    "rating": 3.5,
-    "reviews": 19,
-    "featured": false,
-    "topDiscount": false,
-    "hasVideo": false,
-    "tags": [
-      "collar",
-      "lona",
-      "40x70",
-      "correa",
-      "paseo",
-      "pechera"
-    ],
-    "description": "COLLAR LONA 40X70",
-    "longDescription": "COLLAR LONA 40X70",
-    "images": {
-      "cover": "assets/images/products/prod_729/cover.jpg",
-      "thumb": "assets/images/products/prod_729/thumb.jpg",
-      "gallery": [
-        "assets/images/products/prod_729/1.jpg"
-      ]
-    },
-    "specs": {
-      "SKU": "COL025"
-    },
-    "shipping": {
-      "free": false,
-      "days": 3
-    },
-    "badge": "🦴 Accesorios",
-    "brand": "Sin marca",
-    "sku": "COL025",
-    "features": [
-      "Ajuste cómodo",
-      "Material resistente",
-      "Fácil de usar",
-      "Seguro y confiable"
-    ]
-  },
-  {
-    "id": "prod_730",
-    "name": "COLLAR LONA 40X80",
-    "category": "accesorios",
-    "subcategory": "Accesorios",
-    "price": 9690,
-    "originalPrice": 11400,
-    "discount": 15,
-    "stock": 10,
-    "rating": 3.8,
-    "reviews": 21,
-    "featured": false,
-    "topDiscount": false,
-    "hasVideo": false,
-    "tags": [
-      "collar",
-      "lona",
-      "40x80",
-      "correa",
-      "paseo",
-      "pechera"
-    ],
-    "description": "COLLAR LONA 40X80",
-    "longDescription": "COLLAR LONA 40X80",
-    "images": {
-      "cover": "assets/images/products/prod_730/cover.jpg",
-      "thumb": "assets/images/products/prod_730/thumb.jpg",
-      "gallery": [
-        "assets/images/products/prod_730/1.jpg"
-      ]
-    },
-    "specs": {
-      "SKU": "COL026"
-    },
-    "shipping": {
-      "free": false,
-      "days": 2
-    },
-    "badge": "🦴 Accesorios",
-    "brand": "Sin marca",
-    "sku": "COL026",
-    "features": [
-      "Ajuste cómodo",
-      "Material resistente",
-      "Fácil de usar",
-      "Seguro y confiable"
-    ]
+    }
   },
   {
     "id": "prod_731",
