@@ -1,0 +1,521 @@
+/**
+ * 🛒 Estilos del Carrito de Compras
+ */
+
+/* ========================================
+   BADGE DEL CARRITO
+   ======================================== */
+
+.cart-badge-container {
+  position: relative;
+  margin-left: auto;
+}
+
+.cart-badge {
+  background: var(--primary-color, #4CAF50);
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 25px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cart-badge:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.cart-badge__count {
+  background: white;
+  color: var(--primary-color, #4CAF50);
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+/* Badge flotante (fallback) */
+.cart-badge-floating {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999;
+}
+
+.cart-badge-floating .cart-badge {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* ========================================
+   MODAL DEL CARRITO
+   ======================================== */
+
+.cart-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  display: none;
+}
+
+.cart-modal--open {
+  display: block;
+}
+
+.cart-modal__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  animation: fadeIn 0.3s ease;
+}
+
+.cart-modal__content {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  max-width: 500px;
+  height: 100%;
+  background: white;
+  box-shadow: -4px 0 16px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  animation: slideInRight 0.3s ease;
+}
+
+/* ========================================
+   HEADER DEL MODAL
+   ======================================== */
+
+.cart-modal__header {
+  padding: 1.5rem;
+  border-bottom: 1px solid #e0e0e0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--primary-color, #4CAF50);
+  color: white;
+}
+
+.cart-modal__header h2 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.cart-modal__close {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 0;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: background 0.3s ease;
+}
+
+.cart-modal__close:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* ========================================
+   BODY DEL MODAL
+   ======================================== */
+
+.cart-modal__body {
+  flex: 1;
+  overflow-y: auto;
+  padding: 1rem;
+}
+
+#cart-items-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* Carrito vacío */
+.cart-empty {
+  text-align: center;
+  padding: 3rem 1rem;
+  color: #666;
+}
+
+.cart-empty p:first-child {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+/* ========================================
+   ITEMS DEL CARRITO
+   ======================================== */
+
+.cart-item {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+  background: #f9f9f9;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+}
+
+.cart-item__image {
+  width: 80px;
+  height: 80px;
+  flex-shrink: 0;
+}
+
+.cart-item__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.cart-item__details {
+  flex: 1;
+  min-width: 0;
+}
+
+.cart-item__details h4 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1rem;
+  color: #333;
+}
+
+.cart-item__variant {
+  font-size: 0.85rem;
+  color: #666;
+  margin: 0 0 0.5rem 0;
+}
+
+.cart-item__price {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.cart-item__original-price {
+  text-decoration: line-through;
+  color: #999;
+  font-size: 0.9rem;
+}
+
+.cart-item__current-price {
+  font-weight: bold;
+  color: var(--primary-color, #4CAF50);
+  font-size: 1.1rem;
+}
+
+.cart-item__controls {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.5rem;
+}
+
+.cart-item__quantity {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 0.25rem;
+}
+
+.cart-item__quantity button {
+  background: none;
+  border: none;
+  color: var(--primary-color, #4CAF50);
+  font-size: 1.2rem;
+  cursor: pointer;
+  padding: 0.25rem 0.5rem;
+  transition: background 0.3s ease;
+  border-radius: 4px;
+}
+
+.cart-item__quantity button:hover {
+  background: #f0f0f0;
+}
+
+.cart-item__quantity span {
+  min-width: 30px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.cart-item__subtotal {
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.cart-item__remove {
+  background: none;
+  border: none;
+  color: #f44336;
+  font-size: 1.2rem;
+  cursor: pointer;
+  padding: 0.25rem 0.5rem;
+  transition: background 0.3s ease;
+  border-radius: 4px;
+}
+
+.cart-item__remove:hover {
+  background: #ffebee;
+}
+
+/* ========================================
+   FOOTER DEL MODAL
+   ======================================== */
+
+.cart-modal__footer {
+  padding: 1.5rem;
+  border-top: 1px solid #e0e0e0;
+  background: #f9f9f9;
+}
+
+.cart-modal__total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  background: white;
+  border-radius: 8px;
+}
+
+.cart-modal__total span:last-child {
+  color: var(--primary-color, #4CAF50);
+}
+
+.cart-modal__clear {
+  width: 100%;
+  padding: 0.75rem;
+  background: #f44336;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-bottom: 1rem;
+  transition: background 0.3s ease;
+}
+
+.cart-modal__clear:hover {
+  background: #d32f2f;
+}
+
+/* ========================================
+   FORMULARIO
+   ======================================== */
+
+.cart-modal__form {
+  margin: 1.5rem 0;
+}
+
+.cart-modal__form h3 {
+  margin: 0 0 1rem 0;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.cart-modal__form input,
+.cart-modal__form textarea {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: inherit;
+  transition: border-color 0.3s ease;
+}
+
+.cart-modal__form input:focus,
+.cart-modal__form textarea:focus {
+  outline: none;
+  border-color: var(--primary-color, #4CAF50);
+}
+
+.cart-modal__form textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.cart-modal__checkout {
+  width: 100%;
+  padding: 1rem;
+  background: var(--primary-color, #4CAF50);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.cart-modal__checkout:hover {
+  background: var(--primary-dark, #45a049);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* ========================================
+   NOTIFICACIÓN
+   ======================================== */
+
+.cart-notification {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: var(--primary-color, #4CAF50);
+  color: white;
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1001;
+  transform: translateX(400px);
+  transition: transform 0.3s ease;
+}
+
+.cart-notification--show {
+  transform: translateX(0);
+}
+
+/* ========================================
+   ANIMACIONES
+   ======================================== */
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+/* ========================================
+   RESPONSIVE
+   ======================================== */
+
+@media (max-width: 768px) {
+  .cart-modal__content {
+    max-width: 100%;
+  }
+
+  .cart-item {
+    flex-direction: column;
+  }
+
+  .cart-item__controls {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .cart-badge {
+    padding: 0.4rem 0.8rem;
+    font-size: 1rem;
+  }
+
+  .cart-badge__count {
+    width: 20px;
+    height: 20px;
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .cart-modal__header {
+    padding: 1rem;
+  }
+
+  .cart-modal__header h2 {
+    font-size: 1.2rem;
+  }
+
+  .cart-modal__footer {
+    padding: 1rem;
+  }
+
+  .cart-modal__total {
+    font-size: 1.2rem;
+  }
+}
+
+
+/* ========================================
+   ESTILOS ADICIONALES PARA CARDS
+   ======================================== */
+
+.card__actions {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.card__actions .btn {
+  flex: 1;
+}
+
+.search-card__add-to-cart {
+  width: 100%;
+  margin-top: 0.5rem;
+}
+
+/* Estilos para botones en product page */
+.product__actions {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.product__actions .btn {
+  flex: 1;
+}
+
+.btn--add-to-cart {
+  background: var(--primary-color, #4CAF50);
+}
+
+.btn--buy-now {
+  background: #FF9800;
+}
+
+.btn--buy-now:hover {
+  background: #F57C00;
+}

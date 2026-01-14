@@ -394,8 +394,36 @@ class SearchEngine {
           <span>${Utils.formatPrice(displayPrice)}</span>
           ${product.discount ? `<span class="search-card__discount">-${product.discount}%</span>` : ''}
         </div>
+        <button class="btn btn--small btn--secondary search-card__add-to-cart" onclick="event.stopPropagation(); SearchEngine.addToCart(${product.id})">🛒 Agregar</button>
       </div>
     `;
+  }
+
+  /**
+   * Agregar producto al carrito desde búsqueda
+   */
+  static addToCart(productId) {
+    const product = window.searchEngineInstance?.products?.find(p => p.id === productId);
+    
+    if (!product) {
+      alert('Producto no encontrado');
+      return;
+    }
+
+    // Si tiene variantes, redirigir a página de producto
+    if (product.hasVariants) {
+      window.location.href = `product.html?id=${product.id}`;
+      return;
+    }
+
+    // Si no tiene variantes, agregar directamente
+    const success = Cart.addItem(product, 1, null);
+    
+    if (success) {
+      CartUI.showAddedNotification(product.name);
+    } else {
+      alert('Error al agregar el producto al carrito');
+    }
   }
 
   clearResults() {

@@ -147,11 +147,11 @@ class ProductPage {
           ` : ''}
 
           <div class="product__actions">
-            <button class="btn btn--primary btn--large btn--buy" onclick="Utils.sendWhatsAppMessage(window.currentProduct, window.currentVariant)" ${!hasVariants && product.stock === 0 ? 'disabled' : ''}>
-              ${!hasVariants && product.stock === 0 ? 'AGOTADO' : '💬 COMPRAR POR WHATSAPP'}
+            <button class="btn btn--primary btn--large btn--add-to-cart" onclick="ProductPage.addToCart()" ${!hasVariants && product.stock === 0 ? 'disabled' : ''}>
+              ${!hasVariants && product.stock === 0 ? 'AGOTADO' : '🛒 AGREGAR AL CARRITO'}
             </button>
-            <button class="btn btn--secondary btn--large">
-              ❤️ AGREGAR A FAVORITOS
+            <button class="btn btn--secondary btn--large btn--buy-now" onclick="Utils.sendWhatsAppMessage(window.currentProduct, window.currentVariant)" ${!hasVariants && product.stock === 0 ? 'disabled' : ''}>
+              ${!hasVariants && product.stock === 0 ? 'AGOTADO' : '⚡ COMPRAR AHORA'}
             </button>
           </div>
 
@@ -204,6 +204,40 @@ class ProductPage {
         <a href="index.html" class="btn btn--primary">Volver al inicio</a>
       </div>
     `;
+  }
+
+  /**
+   * Agregar producto al carrito
+   */
+  static addToCart() {
+    const product = window.currentProduct;
+    const variant = window.currentVariant;
+
+    if (!product) {
+      alert('Error: Producto no encontrado');
+      return;
+    }
+
+    // Validar variante si el producto tiene variantes
+    if (product.hasVariants && !variant) {
+      alert('Por favor selecciona una variante');
+      return;
+    }
+
+    // Validar stock
+    if (!product.hasVariants && product.stock === 0) {
+      alert('Producto agotado');
+      return;
+    }
+
+    // Agregar al carrito
+    const success = Cart.addItem(product, 1, variant);
+    
+    if (success) {
+      CartUI.showAddedNotification(product.name);
+    } else {
+      alert('Error al agregar el producto al carrito');
+    }
   }
 }
 

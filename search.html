@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="css/components.css?v=20260113-dropdown-fix">
   <link rel="stylesheet" href="css/search.css?v=20260113-clear-button">
   <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/cart.css">
 </head>
 <body>
   <!-- Header -->
@@ -96,6 +97,9 @@
   <script src="js/modules/categoriesRenderer.js?v=20260113-accesorios-category"></script>
   <script src="js/modules/searchEngine.js?v=20260114-fix-nan-price-v3"></script>
   <script src="js/modules/videoPlayer.js?v=20260113-fix1"></script>
+  <script src="js/modules/cart.js"></script>
+  <script src="js/modules/whatsappSender.js"></script>
+  <script src="js/modules/cartUI.js"></script>
   <script>
     // Inicializar búsqueda en página de búsqueda
     console.log('📄 search.html - Script de inicialización ejecutándose');
@@ -106,6 +110,7 @@
         console.log('📄 search.html - DOMContentLoaded disparado');
         await categoriesRenderer.init();
         const searchEngine = new SearchEngine(dataLoader);
+        window.searchEngineInstance = searchEngine; // Guardar instancia global
         const input = document.querySelector('.search__input');
         if (input) {
           input.focus();
@@ -115,6 +120,7 @@
       console.log('📄 search.html - DOM ya cargado, inicializando SearchEngine');
       categoriesRenderer.init();
       const searchEngine = new SearchEngine(dataLoader);
+      window.searchEngineInstance = searchEngine; // Guardar instancia global
     }
   </script>
 </body>

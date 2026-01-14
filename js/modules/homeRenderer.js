@@ -218,10 +218,40 @@ class HomeRenderer {
             <span class="card__price-current">${Utils.formatPrice(product.hasVariants ? product.basePrice : product.price)}</span>
             ${(product.hasVariants ? product.baseOriginalPrice : product.originalPrice) ? `<span class="card__price-original">${Utils.formatPrice(product.hasVariants ? product.baseOriginalPrice : product.originalPrice)}</span>` : ''}
           </div>
-          <button class="btn btn--small btn--primary" onclick="event.stopPropagation()">Ver Producto</button>
+          <div class="card__actions">
+            <button class="btn btn--small btn--primary" onclick="event.stopPropagation()">Ver Producto</button>
+            <button class="btn btn--small btn--secondary" onclick="event.stopPropagation(); HomeRenderer.addToCart(${product.id})">🛒 Agregar</button>
+          </div>
         </div>
       </div>
     `;
+  }
+
+  /**
+   * Agregar producto al carrito desde card
+   */
+  static addToCart(productId) {
+    const product = this.allProducts.find(p => p.id === productId);
+    
+    if (!product) {
+      alert('Producto no encontrado');
+      return;
+    }
+
+    // Si tiene variantes, redirigir a página de producto
+    if (product.hasVariants) {
+      window.location.href = `product.html?id=${product.id}`;
+      return;
+    }
+
+    // Si no tiene variantes, agregar directamente
+    const success = Cart.addItem(product, 1, null);
+    
+    if (success) {
+      CartUI.showAddedNotification(product.name);
+    } else {
+      alert('Error al agregar el producto al carrito');
+    }
   }
 
   filterProducts(products, criteria) {
