@@ -287,29 +287,232 @@
   }
 }
 
-/* Testimonials */
-.testimonials {
-  background: var(--color-bg-secondary);
-  padding: var(--spacing-2xl) 0;
-  margin: var(--spacing-2xl) 0;
-  border-radius: var(--radius-lg);
+/* ========================================
+   OFERTAS DE VERANO - Carrusel Compacto
+   ======================================== */
+.summer-offers {
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+  padding: 2rem 0;
+  margin: 2rem 0;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.summer-offers__header {
+  text-align: center;
+  padding: 0 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.summer-offers__title {
+  font-size: clamp(1.3rem, 3.5vw, 1.8rem);
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 0.5rem;
+}
+
+.summer-offers__subtitle {
+  font-size: 0.95rem;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* Wrapper con botones de navegación */
+.summer-offers__wrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0 0.5rem;
+}
+
+/* Botones de navegación */
+.summer-nav {
+  width: 40px;
+  height: 40px;
+  min-width: 40px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #fff;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.summer-nav:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: scale(1.05);
+}
+
+/* Contenedor del track con scroll */
+.summer-offers__track-container {
+  flex: 1;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.summer-offers__track-container::-webkit-scrollbar {
+  display: none;
+}
+
+/* Track con las cards */
+.summer-offers__track {
+  display: flex;
+  gap: 12px;
+  padding: 8px 4px;
+}
+
+/* Cards compactas */
+.summer-card {
+  flex-shrink: 0;
+  width: 200px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+  overflow: hidden;
+  text-decoration: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.summer-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* Imagen */
+.summer-card__img {
+  position: relative;
+  width: 100%;
+  height: 140px;
+  overflow: hidden;
+  background: #2a2a4a;
+}
+
+.summer-card__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.summer-card:hover .summer-card__img img {
+  transform: scale(1.08);
+}
+
+/* Badge de descuento */
+.summer-card__badge {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  background: linear-gradient(135deg, #ff6b35, #f7931e);
+  color: #fff;
+  padding: 4px 10px;
+  border-radius: 15px;
+  font-size: 0.7rem;
+  font-weight: 700;
+  box-shadow: 0 2px 8px rgba(255, 107, 53, 0.4);
+}
+
+/* Info del producto */
+.summer-card__info {
+  padding: 12px;
   text-align: center;
 }
 
-.testimonials__title {
-  font-size: var(--font-size-2xl);
-  margin-bottom: var(--spacing-md);
+.summer-card__name {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #fff;
+  margin: 0 0 8px 0;
+  line-height: 1.3;
+  height: 2.2em;
+  overflow: hidden;
 }
 
-.testimonials__subtitle {
-  color: var(--color-text-secondary);
-  font-size: var(--font-size-lg);
-  cursor: pointer;
-  transition: color var(--transition-base);
+/* Precios */
+.summer-card__prices {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
 }
 
-.testimonials__subtitle:hover {
-  color: var(--color-primary);
+.summer-card__old {
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.4);
+  text-decoration: line-through;
+}
+
+.summer-card__new {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #4ade80;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .summer-offers {
+    padding: 1.5rem 0;
+    margin: 1.5rem 0;
+  }
+  
+  .summer-nav {
+    width: 32px;
+    height: 32px;
+    min-width: 32px;
+    font-size: 1.2rem;
+  }
+  
+  .summer-card {
+    width: 170px;
+  }
+  
+  .summer-card__img {
+    height: 120px;
+  }
+}
+
+@media (max-width: 480px) {
+  .summer-offers__wrapper {
+    padding: 0 0.25rem;
+  }
+  
+  .summer-nav {
+    width: 28px;
+    height: 28px;
+    min-width: 28px;
+    font-size: 1rem;
+  }
+  
+  .summer-card {
+    width: 150px;
+  }
+  
+  .summer-card__img {
+    height: 100px;
+  }
+  
+  .summer-card__info {
+    padding: 10px;
+  }
+  
+  .summer-card__name {
+    font-size: 0.75rem;
+  }
+  
+  .summer-card__new {
+    font-size: 1rem;
+  }
+}
+
+/* Testimonials - LEGACY (oculto) */
+.testimonials {
+  display: none;
 }
 
 /* Responsive */

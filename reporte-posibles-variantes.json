@@ -1,0 +1,2337 @@
+{
+  "fecha": "2026-01-14T18:52:45.653Z",
+  "totalProductos": 600,
+  "productosSinVariantes": 556,
+  "gruposDetectados": 37,
+  "productosAUnificar": 228,
+  "porCategoria": [
+    {
+      "categoria": "ropa",
+      "grupos": 24,
+      "productos": 191
+    },
+    {
+      "categoria": "accesorios",
+      "grupos": 9,
+      "productos": 26
+    },
+    {
+      "categoria": "juguetes",
+      "grupos": 4,
+      "productos": 11
+    }
+  ],
+  "detalle": [
+    {
+      "baseName": "POLAR LISO",
+      "category": "ropa",
+      "subcategory": "Ropa",
+      "products": [
+        {
+          "id": "prod_468",
+          "name": "POLAR LISO TALLE 0",
+          "price": 1921.85,
+          "originalPrice": null,
+          "discount": null,
+          "stock": 10,
+          "image": "assets/images/products/prod_468/cover.jpg"
+        },
+        {
+          "id": "prod_469",
+          "name": "POLAR LISO TALLE 1",
+          "price": 1921.85,
+          "originalPrice": null,
+          "discount": null,
+          "stock": 10,
+          "image": "assets/images/products/prod_469/cover.jpg"
+        },
+        {
+          "id": "prod_470",
+          "name": "POLAR LISO TALLE 2",
+          "price": 1921.85,
+          "originalPrice": null,
+          "discount": null,
+          "stock": 10,
+          "image": "assets/images/products/prod_470/cover.jpg"
+        },
+        {
+          "id": "prod_471",
+          "name": "POLAR LISO TALLE 3",
+          "price": 3165.4,
+          "originalPrice": null,
+          "discount": null,
+          "stock": 10,
+          "image": "assets/images/products/prod_471/cover.jpg"
+        },
+        {
+          "id": "prod_472",
+          "name": "POLAR LISO TALLE 4",
+          "price": 3165.4,
+          "originalPrice": null,
+          "discount": null,
+          "stock": 10,
+          "image": "assets/images/products/prod_472/cover.jpg"
+        },
+        {
+          "id": "prod_473",
+          "name": "POLAR LISO TALLE 5",
+          "price": 3165.4,
+          "originalPrice": null,
+          "discount": null,
+          "stock": 10,
+          "image": "assets/images/products/prod_473/cover.jpg"
+        },
+        {
+          "id": "prod_474",
+          "name": "POLAR LISO TALLE 6",
+          "price": 3956.75,
+          "originalPrice": null,
+          "discount": null,
+          "stock": 10,
+          "image": "assets/images/products/prod_474/cover.jpg"
+        },
+        {
+          "id": "prod_475",
+          "name": "POLAR LISO TALLE 7",
+          "price": 3956.75,
+          "originalPrice": null,
+          "discount": null,
+          "stock": 10,
+          "image": "assets/images/products/prod_475/cover.jpg"
+        },
+        {
+          "id": "prod_476",
+          "name": "POLAR LISO TALLE 8",
+          "price": 3956.75,
+          "originalPrice": null,
+          "discount": null,
+          "stock": 10,
+          "image": "assets/images/products/prod_476/cover.jpg"
+        },
+        {
+          "id": "prod_477",
+          "name": "POLAR LISO TALLE 9",
+          "price": 5087.25,
+          "originalPrice": null,
+          "discount": null,
+          "stock": 10,
+          "image": "assets/images/products/prod_477/cover.jpg"
+        },
+        {
+          "id": "prod_478",
+          "name": "POLAR LISO TALLE 10",
+          "price": 5087.25,
+          "originalPrice": null,
+          "discount": null,
+          "stock": 10,
+          "image": "assets/images/products/prod_478/cover.jpg"
+        },
+        {
+          "id": "prod_479",
+          "name": "POLAR LISO TALLE 11",
+          "price": 6217.75,
+          "originalPrice": null,
+          "discount": null,
+          "stock": 10,
+          "image": "assets/images/products/prod_479/cover.jpg"
+        },
+        {
+          "id": "prod_480",
+          "name": "POLAR LISO TALLE 12",
+          "price": 6217.75,
+          "originalPrice": null,
+          "discount": null,
+          "stock": 10,
+          "image": "assets/images/products/prod_480/cover.jpg"
+        }
+      ]
+    },
+    {
+      "baseName": "POLAR  FANTASIA",
+      "category": "ropa",
+      "subcategory": "Ropa",
+      "products": [
+        {
+          "id": "prod_481",
+          "name": "POLAR  FANTASIA TALLE 0",
+          "price": 2826.25,
+          "originalPrice": null,
+          "discount": null,
+          "stock": 10,
+          "image": "assets/images/products/prod_481/cover.jpg"
+        },
+        {
+          "id": "prod_482",
+          "name": "POLAR  FANTASIA TALLE 1",
+          "price": 2826.25,
+          "originalPrice": null,
+          "discount": null,
+          "stock": 10,
+          "image": "assets/images/products/prod_482/cover.jpg"
+        },
+        {
+          "id": "prod_483",
+          "name": "POLAR  FANTASIA TALLE 2",
+          "price": 2826.25,
+          "originalPrice": null,
+          "discount": null,
+          "stock": 10,
+          "image": "assets/images/products/prod_483/cover.jpg"
+        },
+        {
+          "id": "prod_484",
+          "name": "POLAR  FANTASIA TALLE 3",
+          "price": 4295.9,
+          "originalPrice": null,
+          "discount": null,
+          "stock": 10,
+          "image": "assets/images/products/prod_484/cover.jpg"
+        },
+        {
+          "id": "prod_485",
+          "name": "POLAR  FANTASIA TALLE 4",
+          "price": 4295.9,
+          "originalPrice": null,
+          "discount": null,
+          "stock": 10,
+          "image": "assets/images/products/prod_485/cover.jpg"
+        },
+        {
+          "id": "prod_486",
+          "name": "POLAR  FANTASIA TALLE 5",
+          "price": 4295.9,
+          "originalPrice": null,
+          "discount": null,
+          "stock": 10,
+          "image": "assets/images/products/prod_486/cover.jpg"
+        },
+        {
+          "id": "prod_487",
+          "name": "POLAR  FANTASIA TALLE 6",
+          "price": 5426.4,
+          "originalPrice": null,
+          "discount": null,
+          "stock": 10,
+          "image": "assets/images/products/prod_487/cover.jpg"
+        },
+        {
+          "id": "prod_488",
+          "name": "POLAR  FANTASIA TALLE 7",
+          "price": 5426.4,
+          "originalPrice": null,
+          "discount": null,
+          "stock": 10,
+          "image": "assets/images/products/prod_488/cover.jpg"
+        },
+        {
+          "id": "prod_489",
+          "name": "POLAR  FANTASIA TALLE 8",
+          "price": 5426.4,
+          "originalPrice": null,
+          "discount": null,
+          "stock": 10,
+          "image": "assets/images/products/prod_489/cover.jpg"
+        },
+        {
+          "id": "prod_490",
+          "name": "POLAR  FANTASIA TALLE 9",
+          "price": 6783,
+          "originalPrice": null,
+          "discount": null,
+          "stock": 10,
+          "image": "assets/images/products/prod_490/cover.jpg"
+        },
+        {
+          "id": "prod_491",
+          "name": "POLAR  FANTASIA TALLE 10",
+          "price": 6783,
+          "originalPrice": null,
+          "discount": null,
+          "stock": 10,
+          "image": "assets/images/products/prod_491/cover.jpg"
+        },
+        {
+          "id": "prod_492",
+          "name": "POLAR  FANTASIA TALLE 11",
+          "price": 7913.5,
+          "originalPrice": null,
+          "discount": null,
+          "stock": 10,
+          "image": "assets/images/products/prod_492/cover.jpg"
+        },
+        {
+          "id": "prod_493",
+          "name": "POLAR  FANTASIA TALLE 12",
+          "price": 7913.5,
+          "originalPrice": null,
+          "discount": null,
+          "stock": 10,
+          "image": "assets/images/products/prod_493/cover.jpg"
+        }
+      ]
+    },
+    {
+      "baseName": "POLAR SOFF",
+      "category": "ropa",
+      "subcategory": "Ropa",
+      "products": [
+        {
+          "id": "prod_494",
+          "name": "POLAR SOFF TALLE 0",
+          "price": 3278.45,
+          "originalPrice": null,
+          "discount": null,
+          "stock": 10,
+          "image": "assets/images/products/prod_494/cover.jpg"
+        },
+        {
+          "id": "prod_495",
+          "name": "POLAR SOFF TALLE 1",
+          "price": 3278.45,
+          "originalPrice": null,
+          "discount": null,
+          "stock": 10,
+          "image": "assets/images/products/prod_495/cover.jpg"
+        },
+        {
+          "id": "prod_496",
+          "name": "POLAR SOFF TALLE 2",
+          "price": 3278.45,
+          "originalPrice": null,
+          "discount": null,
+          "stock": 10,
+          "image": "assets/images/products/prod_496/cover.jpg"
+        },
+        {
+          "id": "prod_497",
+          "name": "POLAR SOFF TALLE 3",
+          "price": 4522,
+          "originalPrice": null,
+          "discount": null,
+          "stock": 10,
+          "image": "assets/images/products/prod_497/cover.jpg"
+        },
+        {
+          "id": "prod_498",
+          "name": "POLAR SOFF TALLE 4",
+          "price": 4522,
+          "originalPrice": null,
+          "discount": null,
+          "stock": 10,
+          "image": "assets/images/products/prod_498/cover.jpg"
+        },
+        {
+          "id": "prod_499",
+          "name": "POLAR SOFF TALLE 5",
+          "price": 4522,
+          "originalPrice": null,
+          "discount": null,
+          "stock": 10,
+          "image": "assets/images/products/prod_499/cover.jpg"
+        },
+        {
+          "id": "prod_500",
+          "name": "POLAR SOFF TALLE 6",
+          "price": 5878.6,
+          "originalPrice": null,
+          "discount": null,
+          "stock": 10,
+          "image": "assets/images/products/prod_500/cover.jpg"
+        },
+        {
+          "id": "prod_501",
+          "name": "POLAR SOFF TALLE 7",
+          "price": 5878.6,
+          "originalPrice": null,
+          "discount": null,
+          "stock": 10,
+          "image": "assets/images/products/prod_501/cover.jpg"
+        },
+        {
+          "id": "prod_502",
+          "name": "POLAR SOFF TALLE 8",
+          "price": 5878.6,
+          "originalPrice": null,
+          "discount": null,
+          "stock": 10,
+          "image": "assets/images/products/prod_502/cover.jpg"
+        },
+        {
+          "id": "prod_503",
+          "name": "POLAR SOFF TALLE 9",
+          "price": 7009.1,
+          "originalPrice": null,
+          "discount": null,
+          "stock": 10,
+          "image": "assets/images/products/prod_503/cover.jpg"
+        },
+        {
+          "id": "prod_504",
+          "name": "POLAR SOFF TALLE 10",
+          "price": 7009.1,
+          "originalPrice": null,
+          "discount": null,
+          "stock": 10,
+          "image": "assets/images/products/prod_504/cover.jpg"
+        },
+        {
+          "id": "prod_505",
+          "name": "POLAR SOFF TALLE 11",
+          "price": 8817.9,
+          "originalPrice": null,
+          "discount": null,
+          "stock": 10,
+          "image": "assets/images/products/prod_505/cover.jpg"
+        },
+        {
+          "id": "prod_506",
+          "name": "POLAR SOFF TALLE 12",
+          "price": 8817.9,
+          "originalPrice": null,
+          "discount": null,
+          "stock": 10,
+          "image": "assets/images/products/prod_506/cover.jpg"
+        }
+      ]
+    },
+    {
+      "baseName": "CHOMBAS T-",
+      "category": "ropa",
+      "subcategory": "Ropa",
+      "products": [
+        {
+          "id": "prod_448",
+          "name": "CHOMBAS T- 0",
+          "price": 6860,
+          "originalPrice": 9800,
+          "discount": 30,
+          "stock": 10,
+          "image": "assets/images/products/prod_448/cover.jpg"
+        },
+        {
+          "id": "prod_449",
+          "name": "CHOMBAS T- 1",
+          "price": 6860,
+          "originalPrice": 9800,
+          "discount": 30,
+          "stock": 10,
+          "image": "assets/images/products/prod_449/cover.jpg"
+        },
+        {
+          "id": "prod_450",
+          "name": "CHOMBAS T- 2",
+          "price": 6860,
+          "originalPrice": 9800,
+          "discount": 30,
+          "stock": 10,
+          "image": "assets/images/products/prod_450/cover.jpg"
+        },
+        {
+          "id": "prod_451",
+          "name": "CHOMBAS T- 3",
+          "price": 7840,
+          "originalPrice": 11200,
+          "discount": 30,
+          "stock": 10,
+          "image": "assets/images/products/prod_451/cover.jpg"
+        },
+        {
+          "id": "prod_452",
+          "name": "CHOMBAS T- 4",
+          "price": 7840,
+          "originalPrice": 11200,
+          "discount": 30,
+          "stock": 10,
+          "image": "assets/images/products/prod_452/cover.jpg"
+        },
+        {
+          "id": "prod_453",
+          "name": "CHOMBAS T- 5",
+          "price": 7840,
+          "originalPrice": 11200,
+          "discount": 30,
+          "stock": 10,
+          "image": "assets/images/products/prod_453/cover.jpg"
+        },
+        {
+          "id": "prod_454",
+          "name": "CHOMBAS T- 6",
+          "price": 9800,
+          "originalPrice": 14000,
+          "discount": 30,
+          "stock": 10,
+          "image": "assets/images/products/prod_454/cover.jpg"
+        },
+        {
+          "id": "prod_455",
+          "name": "CHOMBAS T- 7",
+          "price": 9800,
+          "originalPrice": 14000,
+          "discount": 30,
+          "stock": 10,
+          "image": "assets/images/products/prod_455/cover.jpg"
+        },
+        {
+          "id": "prod_456",
+          "name": "CHOMBAS T- 8",
+          "price": 9800,
+          "originalPrice": 14000,
+          "discount": 30,
+          "stock": 10,
+          "image": "assets/images/products/prod_456/cover.jpg"
+        },
+        {
+          "id": "prod_457",
+          "name": "CHOMBAS T- 9",
+          "price": 9800,
+          "originalPrice": 14000,
+          "discount": 30,
+          "stock": 10,
+          "image": "assets/images/products/prod_457/cover.jpg"
+        }
+      ]
+    },
+    {
+      "baseName": "CAMISETA ARGENTINA 3 ESTRELLA",
+      "category": "ropa",
+      "subcategory": "Ropa",
+      "products": [
+        {
+          "id": "prod_400",
+          "name": "CAMISETA ARGENTINA 3 ESTRELLA T-1",
+          "price": 4900,
+          "originalPrice": 7000,
+          "discount": 30,
+          "stock": 10,
+          "image": "assets/images/products/prod_400/cover.jpg"
+        },
+        {
+          "id": "prod_401",
+          "name": "CAMISETA ARGENTINA 3 ESTRELLA T-2",
+          "price": 4900,
+          "originalPrice": 7000,
+          "discount": 30,
+          "stock": 10,
+          "image": "assets/images/products/prod_401/cover.jpg"
+        },
+        {
+          "id": "prod_402",
+          "name": "CAMISETA ARGENTINA 3 ESTRELLA T-3",
+          "price": 4900,
+          "originalPrice": 7000,
+          "discount": 30,
+          "stock": 10,
+          "image": "assets/images/products/prod_402/cover.jpg"
+        },
+        {
+          "id": "prod_403",
+          "name": "CAMISETA ARGENTINA 3 ESTRELLA T-4",
+          "price": 5880,
+          "originalPrice": 8400,
+          "discount": 30,
+          "stock": 10,
+          "image": "assets/images/products/prod_403/cover.jpg"
+        },
+        {
+          "id": "prod_404",
+          "name": "CAMISETA ARGENTINA 3 ESTRELLA T-5",
+          "price": 5880,
+          "originalPrice": 8400,
+          "discount": 30,
+          "stock": 10,
+          "image": "assets/images/products/prod_404/cover.jpg"
+        },
+        {
+          "id": "prod_405",
+          "name": "CAMISETA ARGENTINA 3 ESTRELLA T-6",
+          "price": 5880,
+          "originalPrice": 8400,
+          "discount": 30,
+          "stock": 10,
+          "image": "assets/images/products/prod_405/cover.jpg"
+        },
+        {
+          "id": "prod_406",
+          "name": "CAMISETA ARGENTINA 3 ESTRELLA T-7",
+          "price": 6860,
+          "originalPrice": 9800,
+          "discount": 30,
+          "stock": 10,
+          "image": "assets/images/products/prod_406/cover.jpg"
+        },
+        {
+          "id": "prod_407",
+          "name": "CAMISETA ARGENTINA 3 ESTRELLA T-8",
+          "price": 6860,
+          "originalPrice": 9800,
+          "discount": 30,
+          "stock": 10,
+          "image": "assets/images/products/prod_407/cover.jpg"
+        },
+        {
+          "id": "prod_408",
+          "name": "CAMISETA ARGENTINA 3 ESTRELLA T-9",
+          "price": 6860,
+          "originalPrice": 9800,
+          "discount": 30,
+          "stock": 10,
+          "image": "assets/images/products/prod_408/cover.jpg"
+        }
+      ]
+    },
+    {
+      "baseName": "CAMISETA BÁSQUET",
+      "category": "ropa",
+      "subcategory": "Ropa",
+      "products": [
+        {
+          "id": "prod_409",
+          "name": "CAMISETA BÁSQUET TALLE 1",
+          "price": 4900,
+          "originalPrice": 7000,
+          "discount": 30,
+          "stock": 10,
+          "image": "assets/images/products/prod_409/cover.jpg"
+        },
+        {
+          "id": "prod_410",
+          "name": "CAMISETA BÁSQUET TALLE 2",
+          "price": 4900,
+          "originalPrice": 7000,
+          "discount": 30,
+          "stock": 10,
+          "image": "assets/images/products/prod_410/cover.jpg"
+        },
+        {
+          "id": "prod_411",
+          "name": "CAMISETA BÁSQUET TALLE 3",
+          "price": 4900,
+          "originalPrice": 7000,
+          "discount": 30,
+          "stock": 10,
+          "image": "assets/images/products/prod_411/cover.jpg"
+        },
+        {
+          "id": "prod_412",
+          "name": "CAMISETA BÁSQUET TALLE 4",
+          "price": 5880,
+          "originalPrice": 8400,
+          "discount": 30,
+          "stock": 10,
+          "image": "assets/images/products/prod_412/cover.jpg"
+        },
+        {
+          "id": "prod_413",
+          "name": "CAMISETA BÁSQUET TALLE 5",
+          "price": 5880,
+          "originalPrice": 8400,
+          "discount": 30,
+          "stock": 10,
+          "image": "assets/images/products/prod_413/cover.jpg"
+        },
+        {
+          "id": "prod_414",
+          "name": "CAMISETA BÁSQUET TALLE 6",
+          "price": 5880,
+          "originalPrice": 8400,
+          "discount": 30,
+          "stock": 10,
+          "image": "assets/images/products/prod_414/cover.jpg"
+        },
+        {
+          "id": "prod_415",
+          "name": "CAMISETA BÁSQUET TALLE 7",
+          "price": 6860,
+          "originalPrice": 9800,
+          "discount": 30,
+          "stock": 10,
+          "image": "assets/images/products/prod_415/cover.jpg"
+        },
+        {
+          "id": "prod_416",
+          "name": "CAMISETA BÁSQUET TALLE 8",
+          "price": 6860,
+          "originalPrice": 9800,
+          "discount": 30,
+          "stock": 10,
+          "image": "assets/images/products/prod_416/cover.jpg"
+        },
+        {
+          "id": "prod_417",
+          "name": "CAMISETA BÁSQUET TALLE 9",
+          "price": 6860,
+          "originalPrice": 9800,
+          "discount": 30,
+          "stock": 10,
+          "image": "assets/images/products/prod_417/cover.jpg"
+        }
+      ]
+    },
+    {
+      "baseName": "VESTIDO PRINCESA",
+      "category": "ropa",
+      "subcategory": "Ropa",
+      "products": [
+        {
+          "id": "prod_427",
+          "name": "VESTIDO PRINCESA TALLE 0",
+          "price": 5880,
+          "originalPrice": 8400,
+          "discount": 30,
+          "stock": 10,
+          "image": "assets/images/products/prod_427/cover.jpg"
+        },
+        {
+          "id": "prod_428",
+          "name": "VESTIDO PRINCESA TALLE 1",
+          "price": 5880,
+          "originalPrice": 8400,
+          "discount": 30,
+          "stock": 10,
+          "image": "assets/images/products/prod_428/cover.jpg"
+        },
+        {
+          "id": "prod_429",
+          "name": "VESTIDO PRINCESA TALLE 2",
+          "price": 5880,
+          "originalPrice": 8400,
+          "discount": 30,
+          "stock": 10,
+          "image": "assets/images/products/prod_429/cover.jpg"
+        },
+        {
+          "id": "prod_430",
+          "name": "VESTIDO PRINCESA TALLE 3",
+          "price": 6860,
+          "originalPrice": 9800,
+          "discount": 30,
+          "stock": 10,
+          "image": "assets/images/products/prod_430/cover.jpg"
+        },
+        {
+          "id": "prod_431",
+          "name": "VESTIDO PRINCESA TALLE 4",
+          "price": 6860,
+          "originalPrice": 9800,
+          "discount": 30,
+          "stock": 10,
+          "image": "assets/images/products/prod_431/cover.jpg"
+        },
+        {
+          "id": "prod_432",
+          "name": "VESTIDO PRINCESA TALLE 5",
+          "price": 6860,
+          "originalPrice": 9800,
+          "discount": 30,
+          "stock": 10,
+          "image": "assets/images/products/prod_432/cover.jpg"
+        },
+        {
+          "id": "prod_433",
+          "name": "VESTIDO PRINCESA TALLE 6",
+          "price": 7840,
+          "originalPrice": 11200,
+          "discount": 30,
+          "stock": 10,
+          "image": "assets/images/products/prod_433/cover.jpg"
+        },
+        {
+          "id": "prod_434",
+          "name": "VESTIDO PRINCESA TALLE 7",
+          "price": 7840,
+          "originalPrice": 11200,
+          "discount": 30,
+          "stock": 10,
+          "image": "assets/images/products/prod_434/cover.jpg"
+        },
+        {
+          "id": "prod_435",
+          "name": "VESTIDO PRINCESA TALLE 8",
+          "price": 7840,
+          "originalPrice": 11200,
+          "discount": 30,
+          "stock": 10,
+          "image": "assets/images/products/prod_435/cover.jpg"
+        }
+      ]
+    },
+    {
+      "baseName": "BUZO  SOFT",
+      "category": "ropa",
+      "subcategory": "Ropa",
+      "products": [
+        {
+          "id": "prod_589",
+          "name": "BUZO  SOFT  TALLE1",
+          "price": 5652.5,
+          "originalPrice": null,
+          "discount": null,
+          "stock": 10,
+          "image": "assets/images/products/prod_589/cover.jpg"
+        },
+        {
+          "id": "prod_590",
+          "name": "BUZO  SOFT  TALLE2",
+          "price": 5652.5,
+          "originalPrice": null,
+          "discount": null,
+          "stock": 10,
+          "image": "assets/images/products/prod_590/cover.jpg"
+        },
+        {
+          "id": "prod_591",
+          "name": "BUZO  SOFT  TALLE3",
+          "price": 5652.5,
+          "originalPrice": null,
+          "discount": null,
+          "stock": 10,
+          "image": "assets/images/products/prod_591/cover.jpg"
+        },
+        {
+          "id": "prod_592",
+          "name": "BUZO  SOFT  TALLE4",
+          "price": 6217.75,
+          "originalPrice": null,
+          "discount": null,
+          "stock": 10,
+          "image": "assets/images/products/prod_592/cover.jpg"
+        },
+        {
+          "id": "prod_593",
+          "name": "BUZO  SOFT  TALLE5",
+          "price": 6217.75,
+          "originalPrice": null,
+          "discount": null,
+          "stock": 10,
+          "image": "assets/images/products/prod_593/cover.jpg"
+        },
+        {
+          "id": "prod_594",
+          "name": "BUZO  SOFT  TALLE6",
+          "price": 6783,
+          "originalPrice": null,
+          "discount": null,
+          "stock": 10,
+          "image": "assets/images/products/prod_594/cover.jpg"
+        },
+        {
+          "id": "prod_595",
+          "name": "BUZO  SOFT  TALLE7",
+          "price": 6783,
+          "originalPrice": null,
+          "discount": null,
+          "stock": 10,
+          "image": "assets/images/products/prod_595/cover.jpg"
+        },
+        {
+          "id": "prod_596",
+          "name": "BUZO  SOFT  TALLE8",
+          "price": 7348.25,
+          "originalPrice": null,
+          "discount": null,
+          "stock": 10,
+          "image": "assets/images/products/prod_596/cover.jpg"
+        },
+        {
+          "id": "prod_597",
+          "name": "BUZO  SOFT  TALLE9",
+          "price": 7348.25,
+          "originalPrice": null,
+          "discount": null,
+          "stock": 10,
+          "image": "assets/images/products/prod_597/cover.jpg"
+        }
+      ]
+    },
+    {
+      "baseName": "CAMPERA GAP",
+      "category": "ropa",
+      "subcategory": "Ropa",
+      "products": [
+        {
+          "id": "prod_507",
+          "name": "CAMPERA GAP TALLE 1",
+          "price": 7913.5,
+          "originalPrice": null,
+          "discount": null,
+          "stock": 10,
+          "image": "assets/images/products/prod_507/cover.jpg"
+        },
+        {
+          "id": "prod_508",
+          "name": "CAMPERA GAP TALLE 2",
+          "price": 7913.5,
+          "originalPrice": null,
+          "discount": null,
+          "stock": 10,
+          "image": "assets/images/products/prod_508/cover.jpg"
+        },
+        {
+          "id": "prod_509",
+          "name": "CAMPERA GAP TALLE 3",
+          "price": 9044,
+          "originalPrice": null,
+          "discount": null,
+          "stock": 10,
+          "image": "assets/images/products/prod_509/cover.jpg"
+        },
+        {
+          "id": "prod_510",
+          "name": "CAMPERA GAP TALLE 4",
+          "price": 9044,
+          "originalPrice": null,
+          "discount": null,
+          "stock": 10,
+          "image": "assets/images/products/prod_510/cover.jpg"
+        },
+        {
+          "id": "prod_511",
+          "name": "CAMPERA GAP TALLE 5",
+          "price": 10174.5,
+          "originalPrice": null,
+          "discount": null,
+          "stock": 10,
+          "image": "assets/images/products/prod_511/cover.jpg"
+        },
+        {
+          "id": "prod_512",
+          "name": "CAMPERA GAP TALLE 6",
+          "price": 10174.5,
+          "originalPrice": null,
+          "discount": null,
+          "stock": 10,
+          "image": "assets/images/products/prod_512/cover.jpg"
+        },
+        {
+          "id": "prod_513",
+          "name": "CAMPERA GAP TALLE 7",
+          "price": 11305,
+          "originalPrice": null,
+          "discount": null,
+          "stock": 10,
+          "image": "assets/images/products/prod_513/cover.jpg"
+        },
+        {
+          "id": "prod_514",
+          "name": "CAMPERA GAP TALLE 8",
+          "price": 11305,
+          "originalPrice": null,
+          "discount": null,
+          "stock": 10,
+          "image": "assets/images/products/prod_514/cover.jpg"
+        }
+      ]
+    },
+    {
+      "baseName": "CAMPERA FUTBOL",
+      "category": "ropa",
+      "subcategory": "Ropa",
+      "products": [
+        {
+          "id": "prod_515",
+          "name": "CAMPERA FUTBOL TALLE 1",
+          "price": 7913.5,
+          "originalPrice": null,
+          "discount": null,
+          "stock": 10,
+          "image": "assets/images/products/prod_515/cover.jpg"
+        },
+        {
+          "id": "prod_516",
+          "name": "CAMPERA FUTBOL TALLE 2",
+          "price": 7913.5,
+          "originalPrice": null,
+          "discount": null,
+          "stock": 10,
+          "image": "assets/images/products/prod_516/cover.jpg"
+        },
+        {
+          "id": "prod_517",
+          "name": "CAMPERA FUTBOL TALLE 3",
+          "price": 9044,
+          "originalPrice": null,
+          "discount": null,
+          "stock": 10,
+          "image": "assets/images/products/prod_517/cover.jpg"
+        },
+        {
+          "id": "prod_518",
+          "name": "CAMPERA FUTBOL TALLE 4",
+          "price": 9044,
+          "originalPrice": null,
+          "discount": null,
+          "stock": 10,
+          "image": "assets/images/products/prod_518/cover.jpg"
+        },
+        {
+          "id": "prod_519",
+          "name": "CAMPERA FUTBOL TALLE 5",
+          "price": 10174.5,
+          "originalPrice": null,
+          "discount": null,
+          "stock": 10,
+          "image": "assets/images/products/prod_519/cover.jpg"
+        },
+        {
+          "id": "prod_520",
+          "name": "CAMPERA FUTBOL TALLE 6",
+          "price": 10174.5,
+          "originalPrice": null,
+          "discount": null,
+          "stock": 10,
+          "image": "assets/images/products/prod_520/cover.jpg"
+        },
+        {
+          "id": "prod_521",
+          "name": "CAMPERA FUTBOL TALLE 7",
+          "price": 11305,
+          "originalPrice": null,
+          "discount": null,
+          "stock": 10,
+          "image": "assets/images/products/prod_521/cover.jpg"
+        },
+        {
+          "id": "prod_522",
+          "name": "CAMPERA FUTBOL TALLE 8",
+          "price": 11305,
+          "originalPrice": null,
+          "discount": null,
+          "stock": 10,
+          "image": "assets/images/products/prod_522/cover.jpg"
+        }
+      ]
+    },
+    {
+      "baseName": "CAMPERITA LOVE",
+      "category": "ropa",
+      "subcategory": "Ropa",
+      "products": [
+        {
+          "id": "prod_544",
+          "name": "CAMPERITA LOVE TALLE 1",
+          "price": 7913.5,
+          "originalPrice": null,
+          "discount": null,
+          "stock": 10,
+          "image": "assets/images/products/prod_544/cover.jpg"
+        },
+        {
+          "id": "prod_545",
+          "name": "CAMPERITA LOVE TALLE 2",
+          "price": 7913.5,
+          "originalPrice": null,
+          "discount": null,
+          "stock": 10,
+          "image": "assets/images/products/prod_545/cover.jpg"
+        },
+        {
+          "id": "prod_546",
+          "name": "CAMPERITA LOVE TALLE 3",
+          "price": 9044,
+          "originalPrice": null,
+          "discount": null,
+          "stock": 10,
+          "image": "assets/images/products/prod_546/cover.jpg"
+        },
+        {
+          "id": "prod_547",
+          "name": "CAMPERITA LOVE TALLE 4",
+          "price": 9044,
+          "originalPrice": null,
+          "discount": null,
+          "stock": 10,
+          "image": "assets/images/products/prod_547/cover.jpg"
+        },
+        {
+          "id": "prod_548",
+          "name": "CAMPERITA LOVE TALLE 5",
+          "price": 10174.5,
+          "originalPrice": null,
+          "discount": null,
+          "stock": 10,
+          "image": "assets/images/products/prod_548/cover.jpg"
+        },
+        {
+          "id": "prod_549",
+          "name": "CAMPERITA LOVE TALLE 6",
+          "price": 10174.5,
+          "originalPrice": null,
+          "discount": null,
+          "stock": 10,
+          "image": "assets/images/products/prod_549/cover.jpg"
+        },
+        {
+          "id": "prod_550",
+          "name": "CAMPERITA LOVE TALLE 7",
+          "price": 10174.5,
+          "originalPrice": null,
+          "discount": null,
+          "stock": 10,
+          "image": "assets/images/products/prod_550/cover.jpg"
+        },
+        {
+          "id": "prod_551",
+          "name": "CAMPERITA LOVE TALLE 8",
+          "price": 10174.5,
+          "originalPrice": null,
+          "discount": null,
+          "stock": 10,
+          "image": "assets/images/products/prod_551/cover.jpg"
+        }
+      ]
+    },
+    {
+      "baseName": "ENTERO VERY COOLD",
+      "category": "ropa",
+      "subcategory": "Ropa",
+      "products": [
+        {
+          "id": "prod_573",
+          "name": "ENTERO VERY COOLD TALLE 1",
+          "price": 8478.75,
+          "originalPrice": null,
+          "discount": null,
+          "stock": 10,
+          "image": "assets/images/products/prod_573/cover.jpg"
+        },
+        {
+          "id": "prod_574",
+          "name": "ENTERO VERY COOLD TALLE 2",
+          "price": 8478.75,
+          "originalPrice": null,
+          "discount": null,
+          "stock": 10,
+          "image": "assets/images/products/prod_574/cover.jpg"
+        },
+        {
+          "id": "prod_575",
+          "name": "ENTERO VERY COOLD TALLE 3",
+          "price": 9609.25,
+          "originalPrice": null,
+          "discount": null,
+          "stock": 10,
+          "image": "assets/images/products/prod_575/cover.jpg"
+        },
+        {
+          "id": "prod_576",
+          "name": "ENTERO VERY COOLD TALLE 4",
+          "price": 9609.25,
+          "originalPrice": null,
+          "discount": null,
+          "stock": 10,
+          "image": "assets/images/products/prod_576/cover.jpg"
+        },
+        {
+          "id": "prod_577",
+          "name": "ENTERO VERY COOLD TALLE 5",
+          "price": 10739.75,
+          "originalPrice": null,
+          "discount": null,
+          "stock": 10,
+          "image": "assets/images/products/prod_577/cover.jpg"
+        },
+        {
+          "id": "prod_578",
+          "name": "ENTERO VERY COOLD TALLE 6",
+          "price": 10739.75,
+          "originalPrice": null,
+          "discount": null,
+          "stock": 10,
+          "image": "assets/images/products/prod_578/cover.jpg"
+        },
+        {
+          "id": "prod_579",
+          "name": "ENTERO VERY COOLD TALLE 7",
+          "price": 11870.25,
+          "originalPrice": null,
+          "discount": null,
+          "stock": 10,
+          "image": "assets/images/products/prod_579/cover.jpg"
+        },
+        {
+          "id": "prod_580",
+          "name": "ENTERO VERY COOLD TALLE 8",
+          "price": 11870.25,
+          "originalPrice": null,
+          "discount": null,
+          "stock": 10,
+          "image": "assets/images/products/prod_580/cover.jpg"
+        }
+      ]
+    },
+    {
+      "baseName": "ENTERO BRISA",
+      "category": "ropa",
+      "subcategory": "Ropa",
+      "products": [
+        {
+          "id": "prod_581",
+          "name": "ENTERO BRISA TALLE 1",
+          "price": 9609.25,
+          "originalPrice": null,
+          "discount": null,
+          "stock": 10,
+          "image": "assets/images/products/prod_581/cover.jpg"
+        },
+        {
+          "id": "prod_582",
+          "name": "ENTERO BRISA TALLE 2",
+          "price": 9609.25,
+          "originalPrice": null,
+          "discount": null,
+          "stock": 10,
+          "image": "assets/images/products/prod_582/cover.jpg"
+        },
+        {
+          "id": "prod_583",
+          "name": "ENTERO BRISA TALLE 3",
+          "price": 10739.75,
+          "originalPrice": null,
+          "discount": null,
+          "stock": 10,
+          "image": "assets/images/products/prod_583/cover.jpg"
+        },
+        {
+          "id": "prod_584",
+          "name": "ENTERO BRISA TALLE 4",
+          "price": 10739.75,
+          "originalPrice": null,
+          "discount": null,
+          "stock": 10,
+          "image": "assets/images/products/prod_584/cover.jpg"
+        },
+        {
+          "id": "prod_585",
+          "name": "ENTERO BRISA TALLE 5",
+          "price": 13000.75,
+          "originalPrice": null,
+          "discount": null,
+          "stock": 10,
+          "image": "assets/images/products/prod_585/cover.jpg"
+        },
+        {
+          "id": "prod_586",
+          "name": "ENTERO BRISA TALLE 6",
+          "price": 13000.75,
+          "originalPrice": null,
+          "discount": null,
+          "stock": 10,
+          "image": "assets/images/products/prod_586/cover.jpg"
+        },
+        {
+          "id": "prod_587",
+          "name": "ENTERO BRISA TALLE 7",
+          "price": 13566,
+          "originalPrice": null,
+          "discount": null,
+          "stock": 10,
+          "image": "assets/images/products/prod_587/cover.jpg"
+        },
+        {
+          "id": "prod_588",
+          "name": "ENTERO BRISA TALLE 8",
+          "price": 13566,
+          "originalPrice": null,
+          "discount": null,
+          "stock": 10,
+          "image": "assets/images/products/prod_588/cover.jpg"
+        }
+      ]
+    },
+    {
+      "baseName": "POLERAS",
+      "category": "ropa",
+      "subcategory": "Ropa",
+      "products": [
+        {
+          "id": "prod_598",
+          "name": "POLERAS TALLE  0",
+          "price": 4522,
+          "originalPrice": null,
+          "discount": null,
+          "stock": 10,
+          "image": "assets/images/products/prod_598/cover.jpg"
+        },
+        {
+          "id": "prod_599",
+          "name": "POLERAS TALLE  1",
+          "price": 5652.5,
+          "originalPrice": null,
+          "discount": null,
+          "stock": 10,
+          "image": "assets/images/products/prod_599/cover.jpg"
+        },
+        {
+          "id": "prod_600",
+          "name": "POLERAS TALLE  2",
+          "price": 5652.5,
+          "originalPrice": null,
+          "discount": null,
+          "stock": 10,
+          "image": "assets/images/products/prod_600/cover.jpg"
+        },
+        {
+          "id": "prod_601",
+          "name": "POLERAS TALLE  3",
+          "price": 6783,
+          "originalPrice": null,
+          "discount": null,
+          "stock": 10,
+          "image": "assets/images/products/prod_601/cover.jpg"
+        },
+        {
+          "id": "prod_602",
+          "name": "POLERAS TALLE  4",
+          "price": 6783,
+          "originalPrice": null,
+          "discount": null,
+          "stock": 10,
+          "image": "assets/images/products/prod_602/cover.jpg"
+        },
+        {
+          "id": "prod_603",
+          "name": "POLERAS TALLE  5",
+          "price": 7348.25,
+          "originalPrice": null,
+          "discount": null,
+          "stock": 10,
+          "image": "assets/images/products/prod_603/cover.jpg"
+        },
+        {
+          "id": "prod_604",
+          "name": "POLERAS TALLE  6",
+          "price": 7348.25,
+          "originalPrice": null,
+          "discount": null,
+          "stock": 10,
+          "image": "assets/images/products/prod_604/cover.jpg"
+        },
+        {
+          "id": "prod_605",
+          "name": "POLERAS TALLE  7",
+          "price": 7913.5,
+          "originalPrice": null,
+          "discount": null,
+          "stock": 10,
+          "image": "assets/images/products/prod_605/cover.jpg"
+        }
+      ]
+    },
+    {
+      "baseName": "CAMPERA ABERCROMBIE",
+      "category": "ropa",
+      "subcategory": "Ropa",
+      "products": [
+        {
+          "id": "prod_523",
+          "name": "CAMPERA ABERCROMBIE TALLE 1",
+          "price": 7913.5,
+          "originalPrice": null,
+          "discount": null,
+          "stock": 10,
+          "image": "assets/images/products/prod_523/cover.jpg"
+        },
+        {
+          "id": "prod_524",
+          "name": "CAMPERA ABERCROMBIE TALLE 2",
+          "price": 7913.5,
+          "originalPrice": null,
+          "discount": null,
+          "stock": 10,
+          "image": "assets/images/products/prod_524/cover.jpg"
+        },
+        {
+          "id": "prod_525",
+          "name": "CAMPERA ABERCROMBIE TALLE 3",
+          "price": 7913.5,
+          "originalPrice": null,
+          "discount": null,
+          "stock": 10,
+          "image": "assets/images/products/prod_525/cover.jpg"
+        },
+        {
+          "id": "prod_526",
+          "name": "CAMPERA ABERCROMBIE TALLE 4",
+          "price": 9044,
+          "originalPrice": null,
+          "discount": null,
+          "stock": 10,
+          "image": "assets/images/products/prod_526/cover.jpg"
+        },
+        {
+          "id": "prod_527",
+          "name": "CAMPERA ABERCROMBIE TALLE 5",
+          "price": 9044,
+          "originalPrice": null,
+          "discount": null,
+          "stock": 10,
+          "image": "assets/images/products/prod_527/cover.jpg"
+        },
+        {
+          "id": "prod_528",
+          "name": "CAMPERA ABERCROMBIE TALLE 6",
+          "price": 10174.5,
+          "originalPrice": null,
+          "discount": null,
+          "stock": 10,
+          "image": "assets/images/products/prod_528/cover.jpg"
+        },
+        {
+          "id": "prod_529",
+          "name": "CAMPERA ABERCROMBIE TALLE 7",
+          "price": 10174.5,
+          "originalPrice": null,
+          "discount": null,
+          "stock": 10,
+          "image": "assets/images/products/prod_529/cover.jpg"
+        }
+      ]
+    },
+    {
+      "baseName": "CAMPERA PLUSH",
+      "category": "ropa",
+      "subcategory": "Ropa",
+      "products": [
+        {
+          "id": "prod_530",
+          "name": "CAMPERA PLUSH TALLE 1",
+          "price": 6783,
+          "originalPrice": null,
+          "discount": null,
+          "stock": 10,
+          "image": "assets/images/products/prod_530/cover.jpg"
+        },
+        {
+          "id": "prod_531",
+          "name": "CAMPERA PLUSH TALLE 2",
+          "price": 6783,
+          "originalPrice": null,
+          "discount": null,
+          "stock": 10,
+          "image": "assets/images/products/prod_531/cover.jpg"
+        },
+        {
+          "id": "prod_532",
+          "name": "CAMPERA PLUSH TALLE 3",
+          "price": 7913.5,
+          "originalPrice": null,
+          "discount": null,
+          "stock": 10,
+          "image": "assets/images/products/prod_532/cover.jpg"
+        },
+        {
+          "id": "prod_533",
+          "name": "CAMPERA PLUSH TALLE 4",
+          "price": 7913.5,
+          "originalPrice": null,
+          "discount": null,
+          "stock": 10,
+          "image": "assets/images/products/prod_533/cover.jpg"
+        },
+        {
+          "id": "prod_534",
+          "name": "CAMPERA PLUSH TALLE 5",
+          "price": 9044,
+          "originalPrice": null,
+          "discount": null,
+          "stock": 10,
+          "image": "assets/images/products/prod_534/cover.jpg"
+        },
+        {
+          "id": "prod_535",
+          "name": "CAMPERA PLUSH TALLE 6",
+          "price": 9044,
+          "originalPrice": null,
+          "discount": null,
+          "stock": 10,
+          "image": "assets/images/products/prod_535/cover.jpg"
+        },
+        {
+          "id": "prod_536",
+          "name": "CAMPERA PLUSH TALLE 7",
+          "price": 9044,
+          "originalPrice": null,
+          "discount": null,
+          "stock": 10,
+          "image": "assets/images/products/prod_536/cover.jpg"
+        }
+      ]
+    },
+    {
+      "baseName": "CAMPERA TERMICA",
+      "category": "ropa",
+      "subcategory": "Ropa",
+      "products": [
+        {
+          "id": "prod_537",
+          "name": "CAMPERA TERMICA TALLE 1",
+          "price": 9609.25,
+          "originalPrice": null,
+          "discount": null,
+          "stock": 10,
+          "image": "assets/images/products/prod_537/cover.jpg"
+        },
+        {
+          "id": "prod_538",
+          "name": "CAMPERA TERMICA TALLE 2",
+          "price": 9609.25,
+          "originalPrice": null,
+          "discount": null,
+          "stock": 10,
+          "image": "assets/images/products/prod_538/cover.jpg"
+        },
+        {
+          "id": "prod_539",
+          "name": "CAMPERA TERMICA TALLE 3",
+          "price": 11305,
+          "originalPrice": null,
+          "discount": null,
+          "stock": 10,
+          "image": "assets/images/products/prod_539/cover.jpg"
+        },
+        {
+          "id": "prod_540",
+          "name": "CAMPERA TERMICA TALLE 4",
+          "price": 11305,
+          "originalPrice": null,
+          "discount": null,
+          "stock": 10,
+          "image": "assets/images/products/prod_540/cover.jpg"
+        },
+        {
+          "id": "prod_541",
+          "name": "CAMPERA TERMICA TALLE 5",
+          "price": 12435.5,
+          "originalPrice": null,
+          "discount": null,
+          "stock": 10,
+          "image": "assets/images/products/prod_541/cover.jpg"
+        },
+        {
+          "id": "prod_542",
+          "name": "CAMPERA TERMICA TALLE 6",
+          "price": 12435.5,
+          "originalPrice": null,
+          "discount": null,
+          "stock": 10,
+          "image": "assets/images/products/prod_542/cover.jpg"
+        },
+        {
+          "id": "prod_543",
+          "name": "CAMPERA TERMICA TALLE 7",
+          "price": 12435.5,
+          "originalPrice": null,
+          "discount": null,
+          "stock": 10,
+          "image": "assets/images/products/prod_543/cover.jpg"
+        }
+      ]
+    },
+    {
+      "baseName": "CAMPERA OSITO",
+      "category": "ropa",
+      "subcategory": "Ropa",
+      "products": [
+        {
+          "id": "prod_552",
+          "name": "CAMPERA OSITO TALLE 1",
+          "price": 11305,
+          "originalPrice": null,
+          "discount": null,
+          "stock": 10,
+          "image": "assets/images/products/prod_552/cover.jpg"
+        },
+        {
+          "id": "prod_553",
+          "name": "CAMPERA OSITO TALLE 2",
+          "price": 12435.5,
+          "originalPrice": null,
+          "discount": null,
+          "stock": 10,
+          "image": "assets/images/products/prod_553/cover.jpg"
+        },
+        {
+          "id": "prod_554",
+          "name": "CAMPERA OSITO TALLE 3",
+          "price": 12435.5,
+          "originalPrice": null,
+          "discount": null,
+          "stock": 10,
+          "image": "assets/images/products/prod_554/cover.jpg"
+        },
+        {
+          "id": "prod_555",
+          "name": "CAMPERA OSITO TALLE 4",
+          "price": 13566,
+          "originalPrice": null,
+          "discount": null,
+          "stock": 10,
+          "image": "assets/images/products/prod_555/cover.jpg"
+        },
+        {
+          "id": "prod_556",
+          "name": "CAMPERA OSITO TALLE 5",
+          "price": 13566,
+          "originalPrice": null,
+          "discount": null,
+          "stock": 10,
+          "image": "assets/images/products/prod_556/cover.jpg"
+        },
+        {
+          "id": "prod_557",
+          "name": "CAMPERA OSITO TALLE 6",
+          "price": 15827,
+          "originalPrice": null,
+          "discount": null,
+          "stock": 10,
+          "image": "assets/images/products/prod_557/cover.jpg"
+        },
+        {
+          "id": "prod_558",
+          "name": "CAMPERA OSITO TALLE 7",
+          "price": 15827,
+          "originalPrice": null,
+          "discount": null,
+          "stock": 10,
+          "image": "assets/images/products/prod_558/cover.jpg"
+        }
+      ]
+    },
+    {
+      "baseName": "VESTIDO MODAL FANTASIA",
+      "category": "ropa",
+      "subcategory": "Ropa",
+      "products": [
+        {
+          "id": "prod_442",
+          "name": "VESTIDO MODAL FANTASIA TALLE 1",
+          "price": 4900,
+          "originalPrice": 7000,
+          "discount": 30,
+          "stock": 10,
+          "image": "assets/images/products/prod_442/cover.jpg"
+        },
+        {
+          "id": "prod_443",
+          "name": "VESTIDO MODAL FANTASIA TALLE 2",
+          "price": 4900,
+          "originalPrice": 7000,
+          "discount": 30,
+          "stock": 10,
+          "image": "assets/images/products/prod_443/cover.jpg"
+        },
+        {
+          "id": "prod_444",
+          "name": "VESTIDO MODAL FANTASIA TALLE 3",
+          "price": 5880,
+          "originalPrice": 8400,
+          "discount": 30,
+          "stock": 10,
+          "image": "assets/images/products/prod_444/cover.jpg"
+        },
+        {
+          "id": "prod_445",
+          "name": "VESTIDO MODAL FANTASIA TALLE 4",
+          "price": 5880,
+          "originalPrice": 8400,
+          "discount": 30,
+          "stock": 10,
+          "image": "assets/images/products/prod_445/cover.jpg"
+        },
+        {
+          "id": "prod_446",
+          "name": "VESTIDO MODAL FANTASIA TALLE 5",
+          "price": 6860,
+          "originalPrice": 9800,
+          "discount": 30,
+          "stock": 10,
+          "image": "assets/images/products/prod_446/cover.jpg"
+        },
+        {
+          "id": "prod_447",
+          "name": "VESTIDO MODAL FANTASIA TALLE 6",
+          "price": 6860,
+          "originalPrice": 9800,
+          "discount": 30,
+          "stock": 10,
+          "image": "assets/images/products/prod_447/cover.jpg"
+        }
+      ]
+    },
+    {
+      "baseName": "VESTIDO FANTASIA",
+      "category": "ropa",
+      "subcategory": "Ropa",
+      "products": [
+        {
+          "id": "prod_559",
+          "name": "VESTIDO FANTASIA TALLE 1",
+          "price": 5652.5,
+          "originalPrice": null,
+          "discount": null,
+          "stock": 10,
+          "image": "assets/images/products/prod_559/cover.jpg"
+        },
+        {
+          "id": "prod_560",
+          "name": "VESTIDO FANTASIA TALLE 2",
+          "price": 5652.5,
+          "originalPrice": null,
+          "discount": null,
+          "stock": 10,
+          "image": "assets/images/products/prod_560/cover.jpg"
+        },
+        {
+          "id": "prod_561",
+          "name": "VESTIDO FANTASIA TALLE 3",
+          "price": 6217.75,
+          "originalPrice": null,
+          "discount": null,
+          "stock": 10,
+          "image": "assets/images/products/prod_561/cover.jpg"
+        },
+        {
+          "id": "prod_562",
+          "name": "VESTIDO FANTASIA TALLE 4",
+          "price": 6217.75,
+          "originalPrice": null,
+          "discount": null,
+          "stock": 10,
+          "image": "assets/images/products/prod_562/cover.jpg"
+        },
+        {
+          "id": "prod_563",
+          "name": "VESTIDO FANTASIA TALLE 5",
+          "price": 7348.25,
+          "originalPrice": null,
+          "discount": null,
+          "stock": 10,
+          "image": "assets/images/products/prod_563/cover.jpg"
+        },
+        {
+          "id": "prod_564",
+          "name": "VESTIDO FANTASIA TALLE 6",
+          "price": 7348.25,
+          "originalPrice": null,
+          "discount": null,
+          "stock": 10,
+          "image": "assets/images/products/prod_564/cover.jpg"
+        }
+      ]
+    },
+    {
+      "baseName": "VESTIDO PRINCE",
+      "category": "ropa",
+      "subcategory": "Ropa",
+      "products": [
+        {
+          "id": "prod_566",
+          "name": "VESTIDO PRINCE TALLE 1",
+          "price": 5652.5,
+          "originalPrice": null,
+          "discount": null,
+          "stock": 10,
+          "image": "assets/images/products/prod_566/cover.jpg"
+        },
+        {
+          "id": "prod_567",
+          "name": "VESTIDO PRINCE TALLE 2",
+          "price": 5652.5,
+          "originalPrice": null,
+          "discount": null,
+          "stock": 10,
+          "image": "assets/images/products/prod_567/cover.jpg"
+        },
+        {
+          "id": "prod_568",
+          "name": "VESTIDO PRINCE TALLE 3",
+          "price": 6217.75,
+          "originalPrice": null,
+          "discount": null,
+          "stock": 10,
+          "image": "assets/images/products/prod_568/cover.jpg"
+        },
+        {
+          "id": "prod_569",
+          "name": "VESTIDO PRINCE TALLE 4",
+          "price": 6217.75,
+          "originalPrice": null,
+          "discount": null,
+          "stock": 10,
+          "image": "assets/images/products/prod_569/cover.jpg"
+        },
+        {
+          "id": "prod_570",
+          "name": "VESTIDO PRINCE TALLE 5",
+          "price": 7348.25,
+          "originalPrice": null,
+          "discount": null,
+          "stock": 10,
+          "image": "assets/images/products/prod_570/cover.jpg"
+        },
+        {
+          "id": "prod_571",
+          "name": "VESTIDO PRINCE TALLE 6",
+          "price": 7348.25,
+          "originalPrice": null,
+          "discount": null,
+          "stock": 10,
+          "image": "assets/images/products/prod_571/cover.jpg"
+        }
+      ]
+    },
+    {
+      "baseName": "PECHERAS REGULABLES LISO",
+      "category": "accesorios",
+      "subcategory": "Accesorios",
+      "products": [
+        {
+          "id": "prod_739",
+          "name": "PECHERAS REGULABLES LISO N° 1",
+          "price": 4675,
+          "originalPrice": 5500,
+          "discount": 15,
+          "stock": 10,
+          "image": "assets/images/products/prod_739/cover.jpg"
+        },
+        {
+          "id": "prod_740",
+          "name": "PECHERAS REGULABLES LISO N° 2",
+          "price": 5100,
+          "originalPrice": 6000,
+          "discount": 15,
+          "stock": 10,
+          "image": "assets/images/products/prod_740/cover.jpg"
+        },
+        {
+          "id": "prod_741",
+          "name": "PECHERAS REGULABLES LISO N° 3",
+          "price": 7565,
+          "originalPrice": 8900,
+          "discount": 15,
+          "stock": 10,
+          "image": "assets/images/products/prod_741/cover.jpg"
+        },
+        {
+          "id": "prod_742",
+          "name": "PECHERAS REGULABLES LISO N° 4",
+          "price": 8330,
+          "originalPrice": 9800,
+          "discount": 15,
+          "stock": 10,
+          "image": "assets/images/products/prod_742/cover.jpg"
+        },
+        {
+          "id": "prod_743",
+          "name": "PECHERAS REGULABLES LISO N° 5",
+          "price": 8925,
+          "originalPrice": 10500,
+          "discount": 15,
+          "stock": 10,
+          "image": "assets/images/products/prod_743/cover.jpg"
+        }
+      ]
+    },
+    {
+      "baseName": "PELOTA PULPO",
+      "category": "juguetes",
+      "subcategory": "Juguetes",
+      "products": [
+        {
+          "id": "prod_260",
+          "name": "PELOTA PULPO N°3",
+          "price": 4088,
+          "originalPrice": 4810,
+          "discount": 15,
+          "stock": 5,
+          "image": "assets/images/products/prod_260/cover.jpg"
+        },
+        {
+          "id": "prod_261",
+          "name": "PELOTA PULPO N°4",
+          "price": 5525,
+          "originalPrice": 6500,
+          "discount": 15,
+          "stock": 5,
+          "image": "assets/images/products/prod_261/cover.jpg"
+        },
+        {
+          "id": "prod_262",
+          "name": "PELOTA PULPO N°5",
+          "price": 7514,
+          "originalPrice": 8840,
+          "discount": 15,
+          "stock": 5,
+          "image": "assets/images/products/prod_262/cover.jpg"
+        },
+        {
+          "id": "prod_263",
+          "name": "PELOTA PULPO N°6",
+          "price": 9392,
+          "originalPrice": 11050,
+          "discount": 15,
+          "stock": 5,
+          "image": "assets/images/products/prod_263/cover.jpg"
+        }
+      ]
+    },
+    {
+      "baseName": "CAMISETAS BOCA, RIVER, MESSI.",
+      "category": "ropa",
+      "subcategory": "Ropa",
+      "products": [
+        {
+          "id": "prod_418",
+          "name": "CAMISETAS BOCA, RIVER, MESSI. TALLE 1",
+          "price": 4900,
+          "originalPrice": 7000,
+          "discount": 30,
+          "stock": 10,
+          "image": "assets/images/products/prod_418/cover.jpg"
+        },
+        {
+          "id": "prod_419",
+          "name": "CAMISETAS BOCA, RIVER, MESSI. TALLE 2",
+          "price": 4900,
+          "originalPrice": 7000,
+          "discount": 30,
+          "stock": 10,
+          "image": "assets/images/products/prod_419/cover.jpg"
+        },
+        {
+          "id": "prod_420",
+          "name": "CAMISETAS BOCA, RIVER, MESSI. TALLE 3",
+          "price": 4900,
+          "originalPrice": 7000,
+          "discount": 30,
+          "stock": 10,
+          "image": "assets/images/products/prod_420/cover.jpg"
+        },
+        {
+          "id": "prod_422",
+          "name": "CAMISETAS BOCA, RIVER, MESSI. TALLE 5",
+          "price": 5880,
+          "originalPrice": 8400,
+          "discount": 30,
+          "stock": 10,
+          "image": "assets/images/products/prod_422/cover.jpg"
+        }
+      ]
+    },
+    {
+      "baseName": "CAMISETAS BOCA, RIVER, MESSI",
+      "category": "ropa",
+      "subcategory": "Ropa",
+      "products": [
+        {
+          "id": "prod_423",
+          "name": "CAMISETAS BOCA, RIVER, MESSI TALLE 6",
+          "price": 5880,
+          "originalPrice": 8400,
+          "discount": 30,
+          "stock": 10,
+          "image": "assets/images/products/prod_423/cover.jpg"
+        },
+        {
+          "id": "prod_424",
+          "name": "CAMISETAS BOCA, RIVER, MESSI TALLE 7",
+          "price": 6860,
+          "originalPrice": 9800,
+          "discount": 30,
+          "stock": 10,
+          "image": "assets/images/products/prod_424/cover.jpg"
+        },
+        {
+          "id": "prod_425",
+          "name": "CAMISETAS BOCA, RIVER, MESSI TALLE 8",
+          "price": 6860,
+          "originalPrice": 9800,
+          "discount": 30,
+          "stock": 10,
+          "image": "assets/images/products/prod_425/cover.jpg"
+        },
+        {
+          "id": "prod_426",
+          "name": "CAMISETAS BOCA, RIVER, MESSI TALLE 9",
+          "price": 6860,
+          "originalPrice": 9800,
+          "discount": 30,
+          "stock": 10,
+          "image": "assets/images/products/prod_426/cover.jpg"
+        }
+      ]
+    },
+    {
+      "baseName": "VESTIDO TUTU",
+      "category": "ropa",
+      "subcategory": "Ropa",
+      "products": [
+        {
+          "id": "prod_436",
+          "name": "VESTIDO TUTU TALLE 1",
+          "price": 4900,
+          "originalPrice": 7000,
+          "discount": 30,
+          "stock": 10,
+          "image": "assets/images/products/prod_436/cover.jpg"
+        },
+        {
+          "id": "prod_437",
+          "name": "VESTIDO TUTU TALLE 2",
+          "price": 4900,
+          "originalPrice": 7000,
+          "discount": 30,
+          "stock": 10,
+          "image": "assets/images/products/prod_437/cover.jpg"
+        },
+        {
+          "id": "prod_438",
+          "name": "VESTIDO TUTU TALLE 3",
+          "price": 5880,
+          "originalPrice": 8400,
+          "discount": 30,
+          "stock": 10,
+          "image": "assets/images/products/prod_438/cover.jpg"
+        },
+        {
+          "id": "prod_439",
+          "name": "VESTIDO TUTU TALLE 4",
+          "price": 5880,
+          "originalPrice": 8400,
+          "discount": 30,
+          "stock": 10,
+          "image": "assets/images/products/prod_439/cover.jpg"
+        }
+      ]
+    },
+    {
+      "baseName": "COLLAR LONA",
+      "category": "accesorios",
+      "subcategory": "Accesorios",
+      "products": [
+        {
+          "id": "prod_727",
+          "name": "COLLAR LONA 40X50",
+          "price": 8840,
+          "originalPrice": 10400,
+          "discount": 15,
+          "stock": 10,
+          "image": "assets/images/products/prod_727/cover.jpg"
+        },
+        {
+          "id": "prod_728",
+          "name": "COLLAR LONA 40X60",
+          "price": 9095,
+          "originalPrice": 10700,
+          "discount": 15,
+          "stock": 10,
+          "image": "assets/images/products/prod_728/cover.jpg"
+        },
+        {
+          "id": "prod_729",
+          "name": "COLLAR LONA 40X70",
+          "price": 9350,
+          "originalPrice": 11000,
+          "discount": 15,
+          "stock": 10,
+          "image": "assets/images/products/prod_729/cover.jpg"
+        },
+        {
+          "id": "prod_730",
+          "name": "COLLAR LONA 40X80",
+          "price": 9690,
+          "originalPrice": 11400,
+          "discount": 15,
+          "stock": 10,
+          "image": "assets/images/products/prod_730/cover.jpg"
+        }
+      ]
+    },
+    {
+      "baseName": "GALLINA DE COLORES CON CHIFLE",
+      "category": "juguetes",
+      "subcategory": "Juguetes",
+      "products": [
+        {
+          "id": "prod_287",
+          "name": "GALLINA DE COLORES CON CHIFLE S",
+          "price": 2652,
+          "originalPrice": 3120,
+          "discount": 15,
+          "stock": 5,
+          "image": "assets/images/products/prod_287/cover.jpg"
+        },
+        {
+          "id": "prod_288",
+          "name": "GALLINA DE COLORES CON CHIFLE M",
+          "price": 5525,
+          "originalPrice": 6500,
+          "discount": 15,
+          "stock": 5,
+          "image": "assets/images/products/prod_288/cover.jpg"
+        },
+        {
+          "id": "prod_289",
+          "name": "GALLINA DE COLORES CON CHIFLE L",
+          "price": 7735,
+          "originalPrice": 9100,
+          "discount": 15,
+          "stock": 5,
+          "image": "assets/images/products/prod_289/cover.jpg"
+        }
+      ]
+    },
+    {
+      "baseName": "CONJUNTO FIJO p20",
+      "category": "accesorios",
+      "subcategory": "Accesorios",
+      "products": [
+        {
+          "id": "prod_747",
+          "name": "CONJUNTO FIJO p20 N°2",
+          "price": 7650,
+          "originalPrice": 9000,
+          "discount": 15,
+          "stock": 10,
+          "image": "assets/images/products/prod_747/cover.jpg"
+        },
+        {
+          "id": "prod_748",
+          "name": "CONJUNTO FIJO p20 N°3",
+          "price": 7905,
+          "originalPrice": 9300,
+          "discount": 15,
+          "stock": 10,
+          "image": "assets/images/products/prod_748/cover.jpg"
+        },
+        {
+          "id": "prod_749",
+          "name": "CONJUNTO FIJO p20 N°4",
+          "price": 8330,
+          "originalPrice": 9800,
+          "discount": 15,
+          "stock": 10,
+          "image": "assets/images/products/prod_749/cover.jpg"
+        }
+      ]
+    },
+    {
+      "baseName": "BEBEDERO PARA HAMTER (LAND PET)",
+      "category": "accesorios",
+      "subcategory": "Comederos",
+      "products": [
+        {
+          "id": "prod_861",
+          "name": "BEBEDERO PARA HAMTER (LAND PET) 80ML T-1",
+          "price": 2465,
+          "originalPrice": 2900,
+          "discount": 15,
+          "stock": 10,
+          "image": "assets/images/products/prod_861/cover.jpg"
+        },
+        {
+          "id": "prod_862",
+          "name": "BEBEDERO PARA HAMTER (LAND PET) 125ML T-2",
+          "price": 2805,
+          "originalPrice": 3300,
+          "discount": 15,
+          "stock": 10,
+          "image": "assets/images/products/prod_862/cover.jpg"
+        },
+        {
+          "id": "prod_863",
+          "name": "BEBEDERO PARA HAMTER (LAND PET) 250ML T-3",
+          "price": 3400,
+          "originalPrice": 4000,
+          "discount": 15,
+          "stock": 10,
+          "image": "assets/images/products/prod_863/cover.jpg"
+        }
+      ]
+    },
+    {
+      "baseName": "BEBEDERO CON TORNILLO FIJADOR,",
+      "category": "accesorios",
+      "subcategory": "Comederos",
+      "products": [
+        {
+          "id": "prod_867",
+          "name": "BEBEDERO CON TORNILLO FIJADOR, 125 ML",
+          "price": 6800,
+          "originalPrice": 8000,
+          "discount": 15,
+          "stock": 10,
+          "image": "assets/images/products/prod_867/cover.jpg"
+        },
+        {
+          "id": "prod_868",
+          "name": "BEBEDERO CON TORNILLO FIJADOR, 250 ML",
+          "price": 8075,
+          "originalPrice": 9500,
+          "discount": 15,
+          "stock": 10,
+          "image": "assets/images/products/prod_868/cover.jpg"
+        },
+        {
+          "id": "prod_869",
+          "name": "BEBEDERO CON TORNILLO FIJADOR, 500 ML",
+          "price": 10200,
+          "originalPrice": 12000,
+          "discount": 15,
+          "stock": 10,
+          "image": "assets/images/products/prod_869/cover.jpg"
+        }
+      ]
+    },
+    {
+      "baseName": "RASCADOR INFINITO 55 X 12 X",
+      "category": "accesorios",
+      "subcategory": "Rascadores",
+      "products": [
+        {
+          "id": "prod_195",
+          "name": "RASCADOR INFINITO 55 X 12 X 20 CM",
+          "price": 11900,
+          "originalPrice": 14000,
+          "discount": 15,
+          "stock": 10,
+          "image": "assets/images/products/prod_195/cover.jpg"
+        },
+        {
+          "id": "prod_194",
+          "name": "RASCADOR INFINITO 55 X 12 X 20 CM",
+          "price": 22950,
+          "originalPrice": 27000,
+          "discount": 15,
+          "stock": 10,
+          "image": "assets/images/products/prod_194/cover.jpg"
+        }
+      ]
+    },
+    {
+      "baseName": "PELOTA BLANDA MEDIANA    6,3CM     (24088)",
+      "category": "juguetes",
+      "subcategory": "Juguetes",
+      "products": [
+        {
+          "id": "prod_255",
+          "name": "PELOTA BLANDA MEDIANA    6,3CM     (24088)",
+          "price": 1436,
+          "originalPrice": 1690,
+          "discount": 15,
+          "stock": 5,
+          "image": "assets/images/products/prod_255/cover.jpg"
+        },
+        {
+          "id": "prod_256",
+          "name": "PELOTA BLANDA MEDIANA    6,3CM     (24088)",
+          "price": 1436,
+          "originalPrice": 1690,
+          "discount": 15,
+          "stock": 5,
+          "image": "assets/images/products/prod_256/cover.jpg"
+        }
+      ]
+    },
+    {
+      "baseName": "JUGUETE CHIFLE VERDURAS",
+      "category": "juguetes",
+      "subcategory": "Juguetes",
+      "products": [
+        {
+          "id": "prod_320",
+          "name": "JUGUETE CHIFLE VERDURAS 002",
+          "price": 1547,
+          "originalPrice": 1820,
+          "discount": 15,
+          "stock": 5,
+          "image": "assets/images/products/prod_320/cover.jpg"
+        },
+        {
+          "id": "prod_319",
+          "name": "JUGUETE CHIFLE VERDURAS 001",
+          "price": 2210,
+          "originalPrice": 2600,
+          "discount": 15,
+          "stock": 5,
+          "image": "assets/images/products/prod_319/cover.jpg"
+        }
+      ]
+    },
+    {
+      "baseName": "CADENA CON AMORTIGUADOR MANGO DE CUERO 80CM . T-",
+      "category": "accesorios",
+      "subcategory": "Accesorios",
+      "products": [
+        {
+          "id": "prod_623",
+          "name": "CADENA CON AMORTIGUADOR MANGO DE CUERO 80CM . T- 1",
+          "price": 6375,
+          "originalPrice": 7500,
+          "discount": 15,
+          "stock": 10,
+          "image": "assets/images/products/prod_623/cover.jpg"
+        },
+        {
+          "id": "prod_624",
+          "name": "CADENA CON AMORTIGUADOR MANGO DE CUERO 80CM . T- 2",
+          "price": 7225,
+          "originalPrice": 8500,
+          "discount": 15,
+          "stock": 10,
+          "image": "assets/images/products/prod_624/cover.jpg"
+        }
+      ]
+    },
+    {
+      "baseName": "CONJUNTO FIJO  p25",
+      "category": "accesorios",
+      "subcategory": "Accesorios",
+      "products": [
+        {
+          "id": "prod_750",
+          "name": "CONJUNTO FIJO  p25 N°5",
+          "price": 10625,
+          "originalPrice": 12500,
+          "discount": 15,
+          "stock": 10,
+          "image": "assets/images/products/prod_750/cover.jpg"
+        },
+        {
+          "id": "prod_751",
+          "name": "CONJUNTO FIJO  p25 N°6",
+          "price": 11475,
+          "originalPrice": 13500,
+          "discount": 15,
+          "stock": 10,
+          "image": "assets/images/products/prod_751/cover.jpg"
+        }
+      ]
+    },
+    {
+      "baseName": "CONJUNTO FIJO p30",
+      "category": "accesorios",
+      "subcategory": "Accesorios",
+      "products": [
+        {
+          "id": "prod_752",
+          "name": "CONJUNTO FIJO p30 N°7",
+          "price": 13345,
+          "originalPrice": 15700,
+          "discount": 15,
+          "stock": 10,
+          "image": "assets/images/products/prod_752/cover.jpg"
+        },
+        {
+          "id": "prod_753",
+          "name": "CONJUNTO FIJO p30 N°8",
+          "price": 14110,
+          "originalPrice": 16600,
+          "discount": 15,
+          "stock": 10,
+          "image": "assets/images/products/prod_753/cover.jpg"
+        }
+      ]
+    }
+  ]
+}
