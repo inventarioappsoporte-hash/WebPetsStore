@@ -7516,15 +7516,16 @@
   },
   {
     "id": "prod_260",
-    "name": "PELOTA PULPO N°3",
+    "name": "PELOTA PULPO",
     "category": "juguetes",
     "subcategory": "Juguetes",
-    "price": 4088,
-    "originalPrice": 4810,
+    "hasVariants": true,
+    "basePrice": 4088,
+    "baseOriginalPrice": 4810,
     "discount": 15,
-    "stock": 5,
-    "rating": 3.7,
-    "reviews": 34,
+    "stock": 20,
+    "rating": 3.8,
+    "reviews": 123,
     "featured": false,
     "topDiscount": false,
     "hasVideo": false,
@@ -7534,10 +7535,95 @@
       "juguete",
       "entretenimiento",
       "diversión",
-      "interactivo"
+      "interactivo",
+      "perros",
+      "mascotas"
     ],
-    "description": "PELOTA PULPO N°3",
-    "longDescription": "PELOTA PULPO N°3",
+    "description": "Pelota Pulpo para mascotas. Disponible en múltiples tamaños.",
+    "longDescription": "Pelota Pulpo ideal para el entretenimiento de tu mascota. Diseño divertido con forma de pulpo que estimula el juego y la actividad física. Material seguro y resistente a mordidas. Disponible en varios tamaños para adaptarse a diferentes razas y preferencias.",
+    "variants": {
+      "attributes": [
+        {
+          "id": "size",
+          "name": "Tamaño",
+          "type": "size"
+        }
+      ],
+      "combinations": [
+        {
+          "id": "var_260_1",
+          "attributes": {
+            "Tamaño": "N°3"
+          },
+          "price": 4088,
+          "originalPrice": 4810,
+          "stock": 5,
+          "sku": "PEL020",
+          "available": true,
+          "images": {
+            "cover": "assets/images/products/prod_260/cover.jpg",
+            "thumb": "assets/images/products/prod_260/thumb.jpg",
+            "gallery": [
+              "assets/images/products/prod_260/1.jpg"
+            ]
+          }
+        },
+        {
+          "id": "var_260_2",
+          "attributes": {
+            "Tamaño": "N°4"
+          },
+          "price": 5525,
+          "originalPrice": 6500,
+          "stock": 5,
+          "sku": "PEL021",
+          "available": true,
+          "images": {
+            "cover": "assets/images/products/prod_261/cover.jpg",
+            "thumb": "assets/images/products/prod_261/thumb.jpg",
+            "gallery": [
+              "assets/images/products/prod_261/1.jpg"
+            ]
+          }
+        },
+        {
+          "id": "var_260_3",
+          "attributes": {
+            "Tamaño": "N°5"
+          },
+          "price": 7514,
+          "originalPrice": 8840,
+          "stock": 5,
+          "sku": "PEL022",
+          "available": true,
+          "images": {
+            "cover": "assets/images/products/prod_262/cover.jpg",
+            "thumb": "assets/images/products/prod_262/thumb.jpg",
+            "gallery": [
+              "assets/images/products/prod_262/1.jpg"
+            ]
+          }
+        },
+        {
+          "id": "var_260_4",
+          "attributes": {
+            "Tamaño": "N°6"
+          },
+          "price": 9392,
+          "originalPrice": 11050,
+          "stock": 5,
+          "sku": "PEL023",
+          "available": true,
+          "images": {
+            "cover": "assets/images/products/prod_263/cover.jpg",
+            "thumb": "assets/images/products/prod_263/thumb.jpg",
+            "gallery": [
+              "assets/images/products/prod_263/1.jpg"
+            ]
+          }
+        }
+      ]
+    },
     "images": {
       "cover": "assets/images/products/prod_260/cover.jpg",
       "thumb": "assets/images/products/prod_260/thumb.jpg",
@@ -7546,160 +7632,19 @@
       ]
     },
     "specs": {
-      "SKU": "PEL020"
+      "SKU": "PEL020",
+      "Material": "Resistente a mordidas",
+      "Tamaños disponibles": "N°3, N°4, N°5, N°6"
     },
     "shipping": {
       "free": false,
-      "days": 4
+      "days": 3
     },
     "badge": "🎾 Juguetes",
     "brand": "Sin marca",
     "sku": "PEL020",
     "features": [
-      "Estimula el juego",
-      "Material seguro",
-      "Resistente a mordidas",
-      "Entretenimiento garantizado"
-    ]
-  },
-  {
-    "id": "prod_261",
-    "name": "PELOTA PULPO N°4",
-    "category": "juguetes",
-    "subcategory": "Juguetes",
-    "price": 5525,
-    "originalPrice": 6500,
-    "discount": 15,
-    "stock": 5,
-    "rating": 3.5,
-    "reviews": 33,
-    "featured": false,
-    "topDiscount": false,
-    "hasVideo": false,
-    "tags": [
-      "pelota",
-      "pulpo",
-      "juguete",
-      "entretenimiento",
-      "diversión",
-      "interactivo"
-    ],
-    "description": "PELOTA PULPO N°4",
-    "longDescription": "PELOTA PULPO N°4",
-    "images": {
-      "cover": "assets/images/products/prod_261/cover.jpg",
-      "thumb": "assets/images/products/prod_261/thumb.jpg",
-      "gallery": [
-        "assets/images/products/prod_261/1.jpg"
-      ]
-    },
-    "specs": {
-      "SKU": "PEL021"
-    },
-    "shipping": {
-      "free": false,
-      "days": 4
-    },
-    "badge": "🎾 Juguetes",
-    "brand": "Sin marca",
-    "sku": "PEL021",
-    "features": [
-      "Estimula el juego",
-      "Material seguro",
-      "Resistente a mordidas",
-      "Entretenimiento garantizado"
-    ]
-  },
-  {
-    "id": "prod_262",
-    "name": "PELOTA PULPO N°5",
-    "category": "juguetes",
-    "subcategory": "Juguetes",
-    "price": 7514,
-    "originalPrice": 8840,
-    "discount": 15,
-    "stock": 5,
-    "rating": 4.4,
-    "reviews": 45,
-    "featured": false,
-    "topDiscount": false,
-    "hasVideo": false,
-    "tags": [
-      "pelota",
-      "pulpo",
-      "juguete",
-      "entretenimiento",
-      "diversión",
-      "interactivo"
-    ],
-    "description": "PELOTA PULPO N°5",
-    "longDescription": "PELOTA PULPO N°5",
-    "images": {
-      "cover": "assets/images/products/prod_262/cover.jpg",
-      "thumb": "assets/images/products/prod_262/thumb.jpg",
-      "gallery": [
-        "assets/images/products/prod_262/1.jpg"
-      ]
-    },
-    "specs": {
-      "SKU": "PEL022"
-    },
-    "shipping": {
-      "free": false,
-      "days": 2
-    },
-    "badge": "🎾 Juguetes",
-    "brand": "Sin marca",
-    "sku": "PEL022",
-    "features": [
-      "Estimula el juego",
-      "Material seguro",
-      "Resistente a mordidas",
-      "Entretenimiento garantizado"
-    ]
-  },
-  {
-    "id": "prod_263",
-    "name": "PELOTA PULPO N°6",
-    "category": "juguetes",
-    "subcategory": "Juguetes",
-    "price": 9392,
-    "originalPrice": 11050,
-    "discount": 15,
-    "stock": 5,
-    "rating": 3.6,
-    "reviews": 11,
-    "featured": false,
-    "topDiscount": false,
-    "hasVideo": false,
-    "tags": [
-      "pelota",
-      "pulpo",
-      "juguete",
-      "entretenimiento",
-      "diversión",
-      "interactivo"
-    ],
-    "description": "PELOTA PULPO N°6",
-    "longDescription": "PELOTA PULPO N°6",
-    "images": {
-      "cover": "assets/images/products/prod_263/cover.jpg",
-      "thumb": "assets/images/products/prod_263/thumb.jpg",
-      "gallery": [
-        "assets/images/products/prod_263/1.jpg"
-      ]
-    },
-    "specs": {
-      "SKU": "PEL023"
-    },
-    "shipping": {
-      "free": false,
-      "days": 2
-    },
-    "badge": "🎾 Juguetes",
-    "brand": "Sin marca",
-    "sku": "PEL023",
-    "features": [
+      "Múltiples tamaños disponibles",
       "Estimula el juego",
       "Material seguro",
       "Resistente a mordidas",
@@ -8254,29 +8199,96 @@
   },
   {
     "id": "prod_275",
-    "name": "HUESO DE GOMA GRANDE",
+    "name": "HUESO DE GOMA",
     "category": "juguetes",
     "subcategory": "Juguetes",
-    "price": 5746,
-    "originalPrice": 6760,
+    "hasVariants": true,
+    "basePrice": 2652,
+    "baseOriginalPrice": 3120,
     "discount": 15,
-    "stock": 5,
-    "rating": 3.6,
-    "reviews": 11,
+    "stock": 15,
+    "rating": 4.5,
+    "reviews": 69,
     "featured": false,
     "topDiscount": false,
     "hasVideo": false,
     "tags": [
       "hueso",
       "goma",
-      "grande",
       "juguete",
       "entretenimiento",
       "diversión",
-      "interactivo"
+      "interactivo",
+      "perros",
+      "mordedor"
     ],
-    "description": "HUESO DE GOMA GRANDE",
-    "longDescription": "HUESO DE GOMA GRANDE",
+    "description": "Hueso de goma resistente para perros. Disponible en varios tamaños.",
+    "longDescription": "Hueso de goma de alta calidad, ideal para el entretenimiento y la salud dental de tu mascota. Material seguro y resistente a mordidas. Disponible en tamaños chico, mediano y grande.",
+    "variants": {
+      "attributes": [
+        {
+          "id": "size",
+          "name": "Tamaño",
+          "type": "size"
+        }
+      ],
+      "combinations": [
+        {
+          "id": "var_275_1",
+          "attributes": {
+            "Tamaño": "Chico"
+          },
+          "price": 2652,
+          "originalPrice": 3120,
+          "stock": 5,
+          "sku": "HUE003",
+          "available": true,
+          "images": {
+            "cover": "assets/images/products/prod_277/cover.jpg",
+            "thumb": "assets/images/products/prod_277/thumb.jpg",
+            "gallery": [
+              "assets/images/products/prod_277/1.jpg"
+            ]
+          }
+        },
+        {
+          "id": "var_275_2",
+          "attributes": {
+            "Tamaño": "Mediano"
+          },
+          "price": 3094,
+          "originalPrice": 3640,
+          "stock": 5,
+          "sku": "HUE002",
+          "available": true,
+          "images": {
+            "cover": "assets/images/products/prod_276/cover.jpg",
+            "thumb": "assets/images/products/prod_276/thumb.jpg",
+            "gallery": [
+              "assets/images/products/prod_276/1.jpg"
+            ]
+          }
+        },
+        {
+          "id": "var_275_3",
+          "attributes": {
+            "Tamaño": "Grande"
+          },
+          "price": 5746,
+          "originalPrice": 6760,
+          "stock": 5,
+          "sku": "HUE001",
+          "available": true,
+          "images": {
+            "cover": "assets/images/products/prod_275/cover.jpg",
+            "thumb": "assets/images/products/prod_275/thumb.jpg",
+            "gallery": [
+              "assets/images/products/prod_275/1.jpg"
+            ]
+          }
+        }
+      ]
+    },
     "images": {
       "cover": "assets/images/products/prod_275/cover.jpg",
       "thumb": "assets/images/products/prod_275/thumb.jpg",
@@ -8285,114 +8297,19 @@
       ]
     },
     "specs": {
-      "SKU": "HUE001"
+      "SKU": "HUE001",
+      "Material": "Goma resistente",
+      "Tamaños disponibles": "Chico, Mediano, Grande"
     },
     "shipping": {
       "free": false,
-      "days": 4
+      "days": 3
     },
     "badge": "🎾 Juguetes",
     "brand": "Sin marca",
     "sku": "HUE001",
     "features": [
-      "Estimula el juego",
-      "Material seguro",
-      "Resistente a mordidas",
-      "Entretenimiento garantizado"
-    ]
-  },
-  {
-    "id": "prod_276",
-    "name": "HUESO DE GOMA MEDIANO",
-    "category": "juguetes",
-    "subcategory": "Juguetes",
-    "price": 3094,
-    "originalPrice": 3640,
-    "discount": 15,
-    "stock": 5,
-    "rating": 5,
-    "reviews": 47,
-    "featured": false,
-    "topDiscount": false,
-    "hasVideo": false,
-    "tags": [
-      "hueso",
-      "goma",
-      "mediano",
-      "juguete",
-      "entretenimiento",
-      "diversión",
-      "interactivo"
-    ],
-    "description": "HUESO DE GOMA MEDIANO",
-    "longDescription": "HUESO DE GOMA MEDIANO",
-    "images": {
-      "cover": "assets/images/products/prod_276/cover.jpg",
-      "thumb": "assets/images/products/prod_276/thumb.jpg",
-      "gallery": [
-        "assets/images/products/prod_276/1.jpg"
-      ]
-    },
-    "specs": {
-      "SKU": "HUE002"
-    },
-    "shipping": {
-      "free": false,
-      "days": 2
-    },
-    "badge": "🎾 Juguetes",
-    "brand": "Sin marca",
-    "sku": "HUE002",
-    "features": [
-      "Estimula el juego",
-      "Material seguro",
-      "Resistente a mordidas",
-      "Entretenimiento garantizado"
-    ]
-  },
-  {
-    "id": "prod_277",
-    "name": "HUESO DE GOMA CHICO",
-    "category": "juguetes",
-    "subcategory": "Juguetes",
-    "price": 2652,
-    "originalPrice": 3120,
-    "discount": 15,
-    "stock": 5,
-    "rating": 4.9,
-    "reviews": 11,
-    "featured": false,
-    "topDiscount": false,
-    "hasVideo": false,
-    "tags": [
-      "hueso",
-      "goma",
-      "chico",
-      "juguete",
-      "entretenimiento",
-      "diversión",
-      "interactivo"
-    ],
-    "description": "HUESO DE GOMA CHICO",
-    "longDescription": "HUESO DE GOMA CHICO",
-    "images": {
-      "cover": "assets/images/products/prod_277/cover.jpg",
-      "thumb": "assets/images/products/prod_277/thumb.jpg",
-      "gallery": [
-        "assets/images/products/prod_277/1.jpg"
-      ]
-    },
-    "specs": {
-      "SKU": "HUE003"
-    },
-    "shipping": {
-      "free": false,
-      "days": 2
-    },
-    "badge": "🎾 Juguetes",
-    "brand": "Sin marca",
-    "sku": "HUE003",
-    "features": [
+      "Múltiples tamaños disponibles",
       "Estimula el juego",
       "Material seguro",
       "Resistente a mordidas",
@@ -8545,38 +8462,43 @@
   },
   {
     "id": "prod_281",
-    "name": "CHIFLE GALLINA CON LUZ CHICO",
+    "name": "CHIFLE GALLINA CON LUZ",
     "category": "juguetes",
     "subcategory": "Juguetes",
     "price": 3315,
     "originalPrice": 3900,
     "discount": 15,
-    "stock": 5,
-    "rating": 4.8,
-    "reviews": 40,
+    "stock": 15,
+    "rating": 4.1,
+    "reviews": 79,
     "featured": false,
     "topDiscount": false,
     "hasVideo": false,
     "tags": [
       "chifle",
       "gallina",
-      "chico",
       "juguete",
       "entretenimiento",
       "diversión",
-      "interactivo"
+      "interactivo",
+      "luz",
+      "sonido"
     ],
-    "description": "CHIFLE GALLINA CON LUZ CHICO",
-    "longDescription": "CHIFLE GALLINA CON LUZ CHICO",
+    "description": "Chifle Gallina con Luz - Juguete interactivo para mascotas",
+    "longDescription": "Divertido juguete en forma de gallina con luz y sonido chifle. Ideal para estimular el juego y entretenimiento de tu mascota. Disponible en tres tamaños para adaptarse a diferentes razas y preferencias.",
     "images": {
       "cover": "assets/images/products/prod_281/cover.jpg",
       "thumb": "assets/images/products/prod_281/thumb.jpg",
       "gallery": [
-        "assets/images/products/prod_281/1.jpg"
+        "assets/images/products/prod_281/1.jpg",
+        "assets/images/products/prod_282/cover.jpg",
+        "assets/images/products/prod_283/cover.jpg"
       ]
     },
     "specs": {
-      "SKU": "CHI001"
+      "Material": "Goma resistente",
+      "Tipo": "Juguete interactivo",
+      "Características": "Con luz y sonido"
     },
     "shipping": {
       "free": false,
@@ -8589,105 +8511,61 @@
       "Estimula el juego",
       "Material seguro",
       "Resistente a mordidas",
-      "Entretenimiento garantizado"
-    ]
-  },
-  {
-    "id": "prod_282",
-    "name": "CHIFLE GALLINA CON LUZ MEDIANO",
-    "category": "juguetes",
-    "subcategory": "Juguetes",
-    "price": 7735,
-    "originalPrice": 9100,
-    "discount": 15,
-    "stock": 5,
-    "rating": 3.7,
-    "reviews": 21,
-    "featured": false,
-    "topDiscount": false,
-    "hasVideo": false,
-    "tags": [
-      "chifle",
-      "gallina",
-      "mediano",
-      "juguete",
-      "entretenimiento",
-      "diversión",
-      "interactivo"
+      "Entretenimiento garantizado",
+      "Con luz LED",
+      "Sonido chifle al presionar"
     ],
-    "description": "CHIFLE GALLINA CON LUZ MEDIANO",
-    "longDescription": "CHIFLE GALLINA CON LUZ MEDIANO",
-    "images": {
-      "cover": "assets/images/products/prod_282/cover.jpg",
-      "thumb": "assets/images/products/prod_282/thumb.jpg",
-      "gallery": [
-        "assets/images/products/prod_282/1.jpg"
-      ]
-    },
-    "specs": {
-      "SKU": "CHI002"
-    },
-    "shipping": {
-      "free": false,
-      "days": 4
-    },
-    "badge": "🎾 Juguetes",
-    "brand": "Sin marca",
-    "sku": "CHI002",
-    "features": [
-      "Estimula el juego",
-      "Material seguro",
-      "Resistente a mordidas",
-      "Entretenimiento garantizado"
-    ]
-  },
-  {
-    "id": "prod_283",
-    "name": "CHIFLE GALLINA CON LUZ GRANDE",
-    "category": "juguetes",
-    "subcategory": "Juguetes",
-    "price": 9945,
-    "originalPrice": 11700,
-    "discount": 15,
-    "stock": 5,
-    "rating": 3.9,
-    "reviews": 18,
-    "featured": false,
-    "topDiscount": false,
-    "hasVideo": false,
-    "tags": [
-      "chifle",
-      "gallina",
-      "grande",
-      "juguete",
-      "entretenimiento",
-      "diversión",
-      "interactivo"
-    ],
-    "description": "CHIFLE GALLINA CON LUZ GRANDE",
-    "longDescription": "CHIFLE GALLINA CON LUZ GRANDE",
-    "images": {
-      "cover": "assets/images/products/prod_283/cover.jpg",
-      "thumb": "assets/images/products/prod_283/thumb.jpg",
-      "gallery": [
-        "assets/images/products/prod_283/1.jpg"
-      ]
-    },
-    "specs": {
-      "SKU": "CHI003"
-    },
-    "shipping": {
-      "free": false,
-      "days": 4
-    },
-    "badge": "🎾 Juguetes",
-    "brand": "Sin marca",
-    "sku": "CHI003",
-    "features": [
-      "Estimula el juego",
-      "Material seguro",
-      "Resistente a mordidas",
-      "Entretenimiento garantizado"
+    "hasVariants": true,
+    "variantType": "Tamaño",
+    "variants": [
+      {
+        "id": "var_281_chico",
+        "name": "Chico",
+        "price": 3315,
+        "originalPrice": 3900,
+        "discount": 15,
+        "stock": 5,
+        "sku": "CHI001",
+        "images": {
+          "cover": "assets/images/products/prod_281/cover.jpg",
+          "thumb": "assets/images/products/prod_281/thumb.jpg",
+          "gallery": [
+            "assets/images/products/prod_281/1.jpg"
+          ]
+        }
+      },
+      {
+        "id": "var_282_mediano",
+        "name": "Mediano",
+        "price": 7735,
+        "originalPrice": 9100,
+        "discount": 15,
+        "stock": 5,
+        "sku": "CHI002",
+        "images": {
+          "cover": "assets/images/products/prod_282/cover.jpg",
+          "thumb": "assets/images/products/prod_282/thumb.jpg",
+          "gallery": [
+            "assets/images/products/prod_282/1.jpg"
+          ]
+        }
+      },
+      {
+        "id": "var_283_grande",
+        "name": "Grande",
+        "price": 9945,
+        "originalPrice": 11700,
+        "discount": 15,
+        "stock": 5,
+        "sku": "CHI003",
+        "images": {
+          "cover": "assets/images/products/prod_283/cover.jpg",
+          "thumb": "assets/images/products/prod_283/thumb.jpg",
+          "gallery": [
+            "assets/images/products/prod_283/1.jpg"
+          ]
+        }
+      }
     ]
   },
   {
@@ -15497,21 +15375,300 @@
     "description": "Polar Liso para Mascotas – Abrigo y comodidad. Mantené a tu mascota abrigada y cómoda con nuestro polar liso de alta calidad, ideal para los días fríos.",
     "longDescription": "Polar Liso para Mascotas – Abrigo y comodidad. Mantené a tu mascota abrigada y cómoda con nuestro polar liso de alta calidad, ideal para los días fríos. Confeccionado en tela suave y liviana, proporciona un excelente abrigo sin limitar el movimiento, permitiendo que tu mascota se mueva con total libertad. Disponible en varios colores, este polar combina funcionalidad y diseño sencillo, adaptándose cómodamente al cuerpo. Su confección práctica facilita la colocación y el retiro, y su material es resistente para el uso diario. Ideal para perros y gatos que necesitan abrigo diario con comodidad y estilo.",
     "variants": {
-      "attributes": [{"id": "talle", "name": "Talle", "type": "size"}],
+      "attributes": [
+        {
+          "id": "talle",
+          "name": "Talle",
+          "type": "size"
+        }
+      ],
       "combinations": [
-        {"id": "var_468_0", "attributes": {"Talle": "0"}, "price": 1921.85, "originalPrice": null, "stock": 10, "sku": "POL002-0", "available": true, "specs": {"Largo": "26 cm", "Ancho": "28 cm"}, "images": {"cover": "assets/images/products/prod_468/cover.jpg", "thumb": "assets/images/products/prod_468/thumb.jpg", "gallery": ["assets/images/products/prod_468/1.jpg"]}},
-        {"id": "var_468_1", "attributes": {"Talle": "1"}, "price": 1921.85, "originalPrice": null, "stock": 10, "sku": "POL002-1", "available": true, "specs": {"Largo": "30 cm", "Ancho": "32 cm"}, "images": {"cover": "assets/images/products/prod_469/cover.jpg", "thumb": "assets/images/products/prod_469/thumb.jpg", "gallery": ["assets/images/products/prod_469/1.jpg"]}},
-        {"id": "var_468_2", "attributes": {"Talle": "2"}, "price": 1921.85, "originalPrice": null, "stock": 10, "sku": "POL002-2", "available": true, "specs": {"Largo": "33 cm", "Ancho": "34 cm"}, "images": {"cover": "assets/images/products/prod_470/cover.jpg", "thumb": "assets/images/products/prod_470/thumb.jpg", "gallery": ["assets/images/products/prod_470/1.jpg"]}},
-        {"id": "var_468_3", "attributes": {"Talle": "3"}, "price": 3165.4, "originalPrice": null, "stock": 10, "sku": "POL002-3", "available": true, "specs": {"Largo": "39 cm", "Ancho": "38 cm"}, "images": {"cover": "assets/images/products/prod_471/cover.jpg", "thumb": "assets/images/products/prod_471/thumb.jpg", "gallery": ["assets/images/products/prod_471/1.jpg"]}},
-        {"id": "var_468_4", "attributes": {"Talle": "4"}, "price": 3165.4, "originalPrice": null, "stock": 10, "sku": "POL002-4", "available": true, "specs": {"Largo": "42 cm", "Ancho": "42 cm"}, "images": {"cover": "assets/images/products/prod_472/cover.jpg", "thumb": "assets/images/products/prod_472/thumb.jpg", "gallery": ["assets/images/products/prod_472/1.jpg"]}},
-        {"id": "var_468_5", "attributes": {"Talle": "5"}, "price": 3165.4, "originalPrice": null, "stock": 10, "sku": "POL002-5", "available": true, "specs": {"Largo": "47 cm", "Ancho": "52 cm"}, "images": {"cover": "assets/images/products/prod_473/cover.jpg", "thumb": "assets/images/products/prod_473/thumb.jpg", "gallery": ["assets/images/products/prod_473/1.jpg"]}},
-        {"id": "var_468_6", "attributes": {"Talle": "6"}, "price": 3956.75, "originalPrice": null, "stock": 10, "sku": "POL002-6", "available": true, "specs": {"Largo": "50 cm", "Ancho": "52 cm"}, "images": {"cover": "assets/images/products/prod_474/cover.jpg", "thumb": "assets/images/products/prod_474/thumb.jpg", "gallery": ["assets/images/products/prod_474/1.jpg"]}},
-        {"id": "var_468_7", "attributes": {"Talle": "7"}, "price": 3956.75, "originalPrice": null, "stock": 10, "sku": "POL002-7", "available": true, "specs": {"Largo": "54 cm", "Ancho": "60 cm"}, "images": {"cover": "assets/images/products/prod_475/cover.jpg", "thumb": "assets/images/products/prod_475/thumb.jpg", "gallery": ["assets/images/products/prod_475/1.jpg"]}},
-        {"id": "var_468_8", "attributes": {"Talle": "8"}, "price": 3956.75, "originalPrice": null, "stock": 10, "sku": "POL002-8", "available": true, "specs": {"Largo": "60 cm", "Ancho": "64 cm"}, "images": {"cover": "assets/images/products/prod_476/cover.jpg", "thumb": "assets/images/products/prod_476/thumb.jpg", "gallery": ["assets/images/products/prod_476/1.jpg"]}},
-        {"id": "var_468_9", "attributes": {"Talle": "9"}, "price": 5087.25, "originalPrice": null, "stock": 10, "sku": "POL002-9", "available": true, "specs": {"Largo": "64 cm", "Ancho": "72 cm"}, "images": {"cover": "assets/images/products/prod_477/cover.jpg", "thumb": "assets/images/products/prod_477/thumb.jpg", "gallery": ["assets/images/products/prod_477/1.jpg"]}},
-        {"id": "var_468_10", "attributes": {"Talle": "10"}, "price": 5087.25, "originalPrice": null, "stock": 10, "sku": "POL002-10", "available": true, "specs": {"Largo": "72 cm", "Ancho": "74 cm"}, "images": {"cover": "assets/images/products/prod_478/cover.jpg", "thumb": "assets/images/products/prod_478/thumb.jpg", "gallery": ["assets/images/products/prod_478/1.jpg"]}},
-        {"id": "var_468_11", "attributes": {"Talle": "11"}, "price": 6217.75, "originalPrice": null, "stock": 10, "sku": "POL002-11", "available": true, "specs": {"Largo": "78 cm", "Ancho": "84 cm"}, "images": {"cover": "assets/images/products/prod_479/cover.jpg", "thumb": "assets/images/products/prod_479/thumb.jpg", "gallery": ["assets/images/products/prod_479/1.jpg"]}},
-        {"id": "var_468_12", "attributes": {"Talle": "12"}, "price": 6217.75, "originalPrice": null, "stock": 10, "sku": "POL002-12", "available": true, "specs": {"Largo": "80 cm", "Ancho": "82 cm"}, "images": {"cover": "assets/images/products/prod_480/cover.jpg", "thumb": "assets/images/products/prod_480/thumb.jpg", "gallery": ["assets/images/products/prod_480/1.jpg"]}}
+        {
+          "id": "var_468_0",
+          "attributes": {
+            "Talle": "0"
+          },
+          "price": 1921.85,
+          "originalPrice": null,
+          "stock": 10,
+          "sku": "POL002-0",
+          "available": true,
+          "specs": {
+            "Largo": "26 cm",
+            "Ancho": "28 cm"
+          },
+          "images": {
+            "cover": "assets/images/products/prod_468/cover.jpg",
+            "thumb": "assets/images/products/prod_468/thumb.jpg",
+            "gallery": [
+              "assets/images/products/prod_468/1.jpg"
+            ]
+          }
+        },
+        {
+          "id": "var_468_1",
+          "attributes": {
+            "Talle": "1"
+          },
+          "price": 1921.85,
+          "originalPrice": null,
+          "stock": 10,
+          "sku": "POL002-1",
+          "available": true,
+          "specs": {
+            "Largo": "30 cm",
+            "Ancho": "32 cm"
+          },
+          "images": {
+            "cover": "assets/images/products/prod_469/cover.jpg",
+            "thumb": "assets/images/products/prod_469/thumb.jpg",
+            "gallery": [
+              "assets/images/products/prod_469/1.jpg"
+            ]
+          }
+        },
+        {
+          "id": "var_468_2",
+          "attributes": {
+            "Talle": "2"
+          },
+          "price": 1921.85,
+          "originalPrice": null,
+          "stock": 10,
+          "sku": "POL002-2",
+          "available": true,
+          "specs": {
+            "Largo": "33 cm",
+            "Ancho": "34 cm"
+          },
+          "images": {
+            "cover": "assets/images/products/prod_470/cover.jpg",
+            "thumb": "assets/images/products/prod_470/thumb.jpg",
+            "gallery": [
+              "assets/images/products/prod_470/1.jpg"
+            ]
+          }
+        },
+        {
+          "id": "var_468_3",
+          "attributes": {
+            "Talle": "3"
+          },
+          "price": 3165.4,
+          "originalPrice": null,
+          "stock": 10,
+          "sku": "POL002-3",
+          "available": true,
+          "specs": {
+            "Largo": "39 cm",
+            "Ancho": "38 cm"
+          },
+          "images": {
+            "cover": "assets/images/products/prod_471/cover.jpg",
+            "thumb": "assets/images/products/prod_471/thumb.jpg",
+            "gallery": [
+              "assets/images/products/prod_471/1.jpg"
+            ]
+          }
+        },
+        {
+          "id": "var_468_4",
+          "attributes": {
+            "Talle": "4"
+          },
+          "price": 3165.4,
+          "originalPrice": null,
+          "stock": 10,
+          "sku": "POL002-4",
+          "available": true,
+          "specs": {
+            "Largo": "42 cm",
+            "Ancho": "42 cm"
+          },
+          "images": {
+            "cover": "assets/images/products/prod_472/cover.jpg",
+            "thumb": "assets/images/products/prod_472/thumb.jpg",
+            "gallery": [
+              "assets/images/products/prod_472/1.jpg"
+            ]
+          }
+        },
+        {
+          "id": "var_468_5",
+          "attributes": {
+            "Talle": "5"
+          },
+          "price": 3165.4,
+          "originalPrice": null,
+          "stock": 10,
+          "sku": "POL002-5",
+          "available": true,
+          "specs": {
+            "Largo": "47 cm",
+            "Ancho": "52 cm"
+          },
+          "images": {
+            "cover": "assets/images/products/prod_473/cover.jpg",
+            "thumb": "assets/images/products/prod_473/thumb.jpg",
+            "gallery": [
+              "assets/images/products/prod_473/1.jpg"
+            ]
+          }
+        },
+        {
+          "id": "var_468_6",
+          "attributes": {
+            "Talle": "6"
+          },
+          "price": 3956.75,
+          "originalPrice": null,
+          "stock": 10,
+          "sku": "POL002-6",
+          "available": true,
+          "specs": {
+            "Largo": "50 cm",
+            "Ancho": "52 cm"
+          },
+          "images": {
+            "cover": "assets/images/products/prod_474/cover.jpg",
+            "thumb": "assets/images/products/prod_474/thumb.jpg",
+            "gallery": [
+              "assets/images/products/prod_474/1.jpg"
+            ]
+          }
+        },
+        {
+          "id": "var_468_7",
+          "attributes": {
+            "Talle": "7"
+          },
+          "price": 3956.75,
+          "originalPrice": null,
+          "stock": 10,
+          "sku": "POL002-7",
+          "available": true,
+          "specs": {
+            "Largo": "54 cm",
+            "Ancho": "60 cm"
+          },
+          "images": {
+            "cover": "assets/images/products/prod_475/cover.jpg",
+            "thumb": "assets/images/products/prod_475/thumb.jpg",
+            "gallery": [
+              "assets/images/products/prod_475/1.jpg"
+            ]
+          }
+        },
+        {
+          "id": "var_468_8",
+          "attributes": {
+            "Talle": "8"
+          },
+          "price": 3956.75,
+          "originalPrice": null,
+          "stock": 10,
+          "sku": "POL002-8",
+          "available": true,
+          "specs": {
+            "Largo": "60 cm",
+            "Ancho": "64 cm"
+          },
+          "images": {
+            "cover": "assets/images/products/prod_476/cover.jpg",
+            "thumb": "assets/images/products/prod_476/thumb.jpg",
+            "gallery": [
+              "assets/images/products/prod_476/1.jpg"
+            ]
+          }
+        },
+        {
+          "id": "var_468_9",
+          "attributes": {
+            "Talle": "9"
+          },
+          "price": 5087.25,
+          "originalPrice": null,
+          "stock": 10,
+          "sku": "POL002-9",
+          "available": true,
+          "specs": {
+            "Largo": "64 cm",
+            "Ancho": "72 cm"
+          },
+          "images": {
+            "cover": "assets/images/products/prod_477/cover.jpg",
+            "thumb": "assets/images/products/prod_477/thumb.jpg",
+            "gallery": [
+              "assets/images/products/prod_477/1.jpg"
+            ]
+          }
+        },
+        {
+          "id": "var_468_10",
+          "attributes": {
+            "Talle": "10"
+          },
+          "price": 5087.25,
+          "originalPrice": null,
+          "stock": 10,
+          "sku": "POL002-10",
+          "available": true,
+          "specs": {
+            "Largo": "72 cm",
+            "Ancho": "74 cm"
+          },
+          "images": {
+            "cover": "assets/images/products/prod_478/cover.jpg",
+            "thumb": "assets/images/products/prod_478/thumb.jpg",
+            "gallery": [
+              "assets/images/products/prod_478/1.jpg"
+            ]
+          }
+        },
+        {
+          "id": "var_468_11",
+          "attributes": {
+            "Talle": "11"
+          },
+          "price": 6217.75,
+          "originalPrice": null,
+          "stock": 10,
+          "sku": "POL002-11",
+          "available": true,
+          "specs": {
+            "Largo": "78 cm",
+            "Ancho": "84 cm"
+          },
+          "images": {
+            "cover": "assets/images/products/prod_479/cover.jpg",
+            "thumb": "assets/images/products/prod_479/thumb.jpg",
+            "gallery": [
+              "assets/images/products/prod_479/1.jpg"
+            ]
+          }
+        },
+        {
+          "id": "var_468_12",
+          "attributes": {
+            "Talle": "12"
+          },
+          "price": 6217.75,
+          "originalPrice": null,
+          "stock": 10,
+          "sku": "POL002-12",
+          "available": true,
+          "specs": {
+            "Largo": "80 cm",
+            "Ancho": "82 cm"
+          },
+          "images": {
+            "cover": "assets/images/products/prod_480/cover.jpg",
+            "thumb": "assets/images/products/prod_480/thumb.jpg",
+            "gallery": [
+              "assets/images/products/prod_480/1.jpg"
+            ]
+          }
+        }
       ]
     },
     "images": {
@@ -15554,34 +15711,338 @@
     "featured": false,
     "topDiscount": false,
     "hasVideo": false,
-    "tags": ["polar", "fantasia", "talle", "ropa", "invierno", "abrigo", "calor", "estampado"],
+    "tags": [
+      "polar",
+      "fantasia",
+      "talle",
+      "ropa",
+      "invierno",
+      "abrigo",
+      "calor",
+      "estampado"
+    ],
     "description": "Polar Fantasía para Mascotas – Abrigo con estilo. Mantené a tu mascota abrigada con diseños únicos y coloridos.",
     "longDescription": "Polar Fantasía para Mascotas – Abrigo con estilo. Descripción: Mantené a tu mascota abrigada y con estilo con nuestro polar fantasía de diseños únicos. Confeccionado en tela polar suave y cálida, ideal para los días fríos de otoño e invierno. Características: Mantiene el calor. Material suave y cómodo. Diseños estampados únicos. Perfecto para el frío. Fácil de poner y quitar.",
     "variants": {
-      "attributes": [{"id": "talle", "name": "Talle", "type": "size"}],
+      "attributes": [
+        {
+          "id": "talle",
+          "name": "Talle",
+          "type": "size"
+        }
+      ],
       "combinations": [
-        {"id": "var_481_0", "attributes": {"Talle": "0"}, "price": 2826.25, "originalPrice": null, "stock": 10, "sku": "POL015-0", "available": true, "specs": {"Largo": "26 cm", "Ancho": "28 cm"}, "images": {"cover": "assets/images/products/prod_481/cover.jpg", "thumb": "assets/images/products/prod_481/thumb.jpg", "gallery": ["assets/images/products/prod_481/1.jpg"]}},
-        {"id": "var_481_1", "attributes": {"Talle": "1"}, "price": 2826.25, "originalPrice": null, "stock": 10, "sku": "POL015-1", "available": true, "specs": {"Largo": "30 cm", "Ancho": "32 cm"}, "images": {"cover": "assets/images/products/prod_482/cover.jpg", "thumb": "assets/images/products/prod_482/thumb.jpg", "gallery": ["assets/images/products/prod_482/1.jpg"]}},
-        {"id": "var_481_2", "attributes": {"Talle": "2"}, "price": 2826.25, "originalPrice": null, "stock": 10, "sku": "POL015-2", "available": true, "specs": {"Largo": "33 cm", "Ancho": "34 cm"}, "images": {"cover": "assets/images/products/prod_483/cover.jpg", "thumb": "assets/images/products/prod_483/thumb.jpg", "gallery": ["assets/images/products/prod_483/1.jpg"]}},
-        {"id": "var_481_3", "attributes": {"Talle": "3"}, "price": 4295.9, "originalPrice": null, "stock": 10, "sku": "POL015-3", "available": true, "specs": {"Largo": "39 cm", "Ancho": "38 cm"}, "images": {"cover": "assets/images/products/prod_484/cover.jpg", "thumb": "assets/images/products/prod_484/thumb.jpg", "gallery": ["assets/images/products/prod_484/1.jpg"]}},
-        {"id": "var_481_4", "attributes": {"Talle": "4"}, "price": 4295.9, "originalPrice": null, "stock": 10, "sku": "POL015-4", "available": true, "specs": {"Largo": "42 cm", "Ancho": "42 cm"}, "images": {"cover": "assets/images/products/prod_485/cover.jpg", "thumb": "assets/images/products/prod_485/thumb.jpg", "gallery": ["assets/images/products/prod_485/1.jpg"]}},
-        {"id": "var_481_5", "attributes": {"Talle": "5"}, "price": 4295.9, "originalPrice": null, "stock": 10, "sku": "POL015-5", "available": true, "specs": {"Largo": "47 cm", "Ancho": "52 cm"}, "images": {"cover": "assets/images/products/prod_486/cover.jpg", "thumb": "assets/images/products/prod_486/thumb.jpg", "gallery": ["assets/images/products/prod_486/1.jpg"]}},
-        {"id": "var_481_6", "attributes": {"Talle": "6"}, "price": 5426.4, "originalPrice": null, "stock": 10, "sku": "POL015-6", "available": true, "specs": {"Largo": "50 cm", "Ancho": "52 cm"}, "images": {"cover": "assets/images/products/prod_487/cover.jpg", "thumb": "assets/images/products/prod_487/thumb.jpg", "gallery": ["assets/images/products/prod_487/1.jpg"]}},
-        {"id": "var_481_7", "attributes": {"Talle": "7"}, "price": 5426.4, "originalPrice": null, "stock": 10, "sku": "POL015-7", "available": true, "specs": {"Largo": "54 cm", "Ancho": "60 cm"}, "images": {"cover": "assets/images/products/prod_488/cover.jpg", "thumb": "assets/images/products/prod_488/thumb.jpg", "gallery": ["assets/images/products/prod_488/1.jpg"]}},
-        {"id": "var_481_8", "attributes": {"Talle": "8"}, "price": 5426.4, "originalPrice": null, "stock": 10, "sku": "POL015-8", "available": true, "specs": {"Largo": "60 cm", "Ancho": "64 cm"}, "images": {"cover": "assets/images/products/prod_489/cover.jpg", "thumb": "assets/images/products/prod_489/thumb.jpg", "gallery": ["assets/images/products/prod_489/1.jpg"]}},
-        {"id": "var_481_9", "attributes": {"Talle": "9"}, "price": 6783, "originalPrice": null, "stock": 10, "sku": "POL015-9", "available": true, "specs": {"Largo": "64 cm", "Ancho": "72 cm"}, "images": {"cover": "assets/images/products/prod_490/cover.jpg", "thumb": "assets/images/products/prod_490/thumb.jpg", "gallery": ["assets/images/products/prod_490/1.jpg"]}},
-        {"id": "var_481_10", "attributes": {"Talle": "10"}, "price": 6783, "originalPrice": null, "stock": 10, "sku": "POL015-10", "available": true, "specs": {"Largo": "72 cm", "Ancho": "74 cm"}, "images": {"cover": "assets/images/products/prod_491/cover.jpg", "thumb": "assets/images/products/prod_491/thumb.jpg", "gallery": ["assets/images/products/prod_491/1.jpg"]}},
-        {"id": "var_481_11", "attributes": {"Talle": "11"}, "price": 7913.5, "originalPrice": null, "stock": 10, "sku": "POL015-11", "available": true, "specs": {"Largo": "78 cm", "Ancho": "84 cm"}, "images": {"cover": "assets/images/products/prod_492/cover.jpg", "thumb": "assets/images/products/prod_492/thumb.jpg", "gallery": ["assets/images/products/prod_492/1.jpg"]}},
-        {"id": "var_481_12", "attributes": {"Talle": "12"}, "price": 7913.5, "originalPrice": null, "stock": 10, "sku": "POL015-12", "available": true, "specs": {"Largo": "80 cm", "Ancho": "82 cm"}, "images": {"cover": "assets/images/products/prod_493/cover.jpg", "thumb": "assets/images/products/prod_493/thumb.jpg", "gallery": ["assets/images/products/prod_493/1.jpg"]}}
+        {
+          "id": "var_481_0",
+          "attributes": {
+            "Talle": "0"
+          },
+          "price": 2826.25,
+          "originalPrice": null,
+          "stock": 10,
+          "sku": "POL015-0",
+          "available": true,
+          "specs": {
+            "Largo": "26 cm",
+            "Ancho": "28 cm"
+          },
+          "images": {
+            "cover": "assets/images/products/prod_481/cover.jpg",
+            "thumb": "assets/images/products/prod_481/thumb.jpg",
+            "gallery": [
+              "assets/images/products/prod_481/1.jpg"
+            ]
+          }
+        },
+        {
+          "id": "var_481_1",
+          "attributes": {
+            "Talle": "1"
+          },
+          "price": 2826.25,
+          "originalPrice": null,
+          "stock": 10,
+          "sku": "POL015-1",
+          "available": true,
+          "specs": {
+            "Largo": "30 cm",
+            "Ancho": "32 cm"
+          },
+          "images": {
+            "cover": "assets/images/products/prod_482/cover.jpg",
+            "thumb": "assets/images/products/prod_482/thumb.jpg",
+            "gallery": [
+              "assets/images/products/prod_482/1.jpg"
+            ]
+          }
+        },
+        {
+          "id": "var_481_2",
+          "attributes": {
+            "Talle": "2"
+          },
+          "price": 2826.25,
+          "originalPrice": null,
+          "stock": 10,
+          "sku": "POL015-2",
+          "available": true,
+          "specs": {
+            "Largo": "33 cm",
+            "Ancho": "34 cm"
+          },
+          "images": {
+            "cover": "assets/images/products/prod_483/cover.jpg",
+            "thumb": "assets/images/products/prod_483/thumb.jpg",
+            "gallery": [
+              "assets/images/products/prod_483/1.jpg"
+            ]
+          }
+        },
+        {
+          "id": "var_481_3",
+          "attributes": {
+            "Talle": "3"
+          },
+          "price": 4295.9,
+          "originalPrice": null,
+          "stock": 10,
+          "sku": "POL015-3",
+          "available": true,
+          "specs": {
+            "Largo": "39 cm",
+            "Ancho": "38 cm"
+          },
+          "images": {
+            "cover": "assets/images/products/prod_484/cover.jpg",
+            "thumb": "assets/images/products/prod_484/thumb.jpg",
+            "gallery": [
+              "assets/images/products/prod_484/1.jpg"
+            ]
+          }
+        },
+        {
+          "id": "var_481_4",
+          "attributes": {
+            "Talle": "4"
+          },
+          "price": 4295.9,
+          "originalPrice": null,
+          "stock": 10,
+          "sku": "POL015-4",
+          "available": true,
+          "specs": {
+            "Largo": "42 cm",
+            "Ancho": "42 cm"
+          },
+          "images": {
+            "cover": "assets/images/products/prod_485/cover.jpg",
+            "thumb": "assets/images/products/prod_485/thumb.jpg",
+            "gallery": [
+              "assets/images/products/prod_485/1.jpg"
+            ]
+          }
+        },
+        {
+          "id": "var_481_5",
+          "attributes": {
+            "Talle": "5"
+          },
+          "price": 4295.9,
+          "originalPrice": null,
+          "stock": 10,
+          "sku": "POL015-5",
+          "available": true,
+          "specs": {
+            "Largo": "47 cm",
+            "Ancho": "52 cm"
+          },
+          "images": {
+            "cover": "assets/images/products/prod_486/cover.jpg",
+            "thumb": "assets/images/products/prod_486/thumb.jpg",
+            "gallery": [
+              "assets/images/products/prod_486/1.jpg"
+            ]
+          }
+        },
+        {
+          "id": "var_481_6",
+          "attributes": {
+            "Talle": "6"
+          },
+          "price": 5426.4,
+          "originalPrice": null,
+          "stock": 10,
+          "sku": "POL015-6",
+          "available": true,
+          "specs": {
+            "Largo": "50 cm",
+            "Ancho": "52 cm"
+          },
+          "images": {
+            "cover": "assets/images/products/prod_487/cover.jpg",
+            "thumb": "assets/images/products/prod_487/thumb.jpg",
+            "gallery": [
+              "assets/images/products/prod_487/1.jpg"
+            ]
+          }
+        },
+        {
+          "id": "var_481_7",
+          "attributes": {
+            "Talle": "7"
+          },
+          "price": 5426.4,
+          "originalPrice": null,
+          "stock": 10,
+          "sku": "POL015-7",
+          "available": true,
+          "specs": {
+            "Largo": "54 cm",
+            "Ancho": "60 cm"
+          },
+          "images": {
+            "cover": "assets/images/products/prod_488/cover.jpg",
+            "thumb": "assets/images/products/prod_488/thumb.jpg",
+            "gallery": [
+              "assets/images/products/prod_488/1.jpg"
+            ]
+          }
+        },
+        {
+          "id": "var_481_8",
+          "attributes": {
+            "Talle": "8"
+          },
+          "price": 5426.4,
+          "originalPrice": null,
+          "stock": 10,
+          "sku": "POL015-8",
+          "available": true,
+          "specs": {
+            "Largo": "60 cm",
+            "Ancho": "64 cm"
+          },
+          "images": {
+            "cover": "assets/images/products/prod_489/cover.jpg",
+            "thumb": "assets/images/products/prod_489/thumb.jpg",
+            "gallery": [
+              "assets/images/products/prod_489/1.jpg"
+            ]
+          }
+        },
+        {
+          "id": "var_481_9",
+          "attributes": {
+            "Talle": "9"
+          },
+          "price": 6783,
+          "originalPrice": null,
+          "stock": 10,
+          "sku": "POL015-9",
+          "available": true,
+          "specs": {
+            "Largo": "64 cm",
+            "Ancho": "72 cm"
+          },
+          "images": {
+            "cover": "assets/images/products/prod_490/cover.jpg",
+            "thumb": "assets/images/products/prod_490/thumb.jpg",
+            "gallery": [
+              "assets/images/products/prod_490/1.jpg"
+            ]
+          }
+        },
+        {
+          "id": "var_481_10",
+          "attributes": {
+            "Talle": "10"
+          },
+          "price": 6783,
+          "originalPrice": null,
+          "stock": 10,
+          "sku": "POL015-10",
+          "available": true,
+          "specs": {
+            "Largo": "72 cm",
+            "Ancho": "74 cm"
+          },
+          "images": {
+            "cover": "assets/images/products/prod_491/cover.jpg",
+            "thumb": "assets/images/products/prod_491/thumb.jpg",
+            "gallery": [
+              "assets/images/products/prod_491/1.jpg"
+            ]
+          }
+        },
+        {
+          "id": "var_481_11",
+          "attributes": {
+            "Talle": "11"
+          },
+          "price": 7913.5,
+          "originalPrice": null,
+          "stock": 10,
+          "sku": "POL015-11",
+          "available": true,
+          "specs": {
+            "Largo": "78 cm",
+            "Ancho": "84 cm"
+          },
+          "images": {
+            "cover": "assets/images/products/prod_492/cover.jpg",
+            "thumb": "assets/images/products/prod_492/thumb.jpg",
+            "gallery": [
+              "assets/images/products/prod_492/1.jpg"
+            ]
+          }
+        },
+        {
+          "id": "var_481_12",
+          "attributes": {
+            "Talle": "12"
+          },
+          "price": 7913.5,
+          "originalPrice": null,
+          "stock": 10,
+          "sku": "POL015-12",
+          "available": true,
+          "specs": {
+            "Largo": "80 cm",
+            "Ancho": "82 cm"
+          },
+          "images": {
+            "cover": "assets/images/products/prod_493/cover.jpg",
+            "thumb": "assets/images/products/prod_493/thumb.jpg",
+            "gallery": [
+              "assets/images/products/prod_493/1.jpg"
+            ]
+          }
+        }
       ]
     },
-    "images": {"cover": "assets/images/products/prod_481/cover.jpg", "thumb": "assets/images/products/prod_481/thumb.jpg", "gallery": ["assets/images/products/prod_481/1.jpg"]},
-    "specs": {"SKU": "POL015"},
-    "shipping": {"free": false, "days": 3},
+    "images": {
+      "cover": "assets/images/products/prod_481/cover.jpg",
+      "thumb": "assets/images/products/prod_481/thumb.jpg",
+      "gallery": [
+        "assets/images/products/prod_481/1.jpg"
+      ]
+    },
+    "specs": {
+      "SKU": "POL015"
+    },
+    "shipping": {
+      "free": false,
+      "days": 3
+    },
     "badge": "🧥 Ropa",
     "brand": "Sin marca",
     "sku": "POL015",
-    "features": ["Mantiene el calor", "Material suave", "Diseños estampados únicos", "Perfecto para el frío"]
+    "features": [
+      "Mantiene el calor",
+      "Material suave",
+      "Diseños estampados únicos",
+      "Perfecto para el frío"
+    ]
   },
   {
     "id": "prod_494",
@@ -15598,34 +16059,339 @@
     "featured": false,
     "topDiscount": false,
     "hasVideo": false,
-    "tags": ["polar", "soff", "talle", "ropa", "invierno", "abrigo", "calor", "soft", "suave"],
+    "tags": [
+      "polar",
+      "soff",
+      "talle",
+      "ropa",
+      "invierno",
+      "abrigo",
+      "calor",
+      "soft",
+      "suave"
+    ],
     "description": "Polar Soff para mascotas. Abrigo suave y cálido ideal para el invierno.",
     "longDescription": "Polar Soff para mascotas. Descripción: Abrigo de polar suave y cálido, perfecto para proteger a tu mascota del frío. Material de alta calidad que mantiene el calor corporal sin incomodar. Ideal para paseos en días fríos, noches de invierno o mascotas que sienten mucho el frío. Características: Mantiene el calor. Material suave y confortable. Resistente al agua. Perfecto para el frío. Fácil de poner y quitar.",
     "variants": {
-      "attributes": [{"id": "talle", "name": "Talle", "type": "size"}],
+      "attributes": [
+        {
+          "id": "talle",
+          "name": "Talle",
+          "type": "size"
+        }
+      ],
       "combinations": [
-        {"id": "var_494_0", "attributes": {"Talle": "0"}, "price": 3278.45, "originalPrice": null, "stock": 10, "sku": "POL028-0", "available": true, "specs": {"Largo": "26 cm", "Ancho": "28 cm"}, "images": {"cover": "assets/images/products/prod_494/cover.jpg", "thumb": "assets/images/products/prod_494/thumb.jpg", "gallery": ["assets/images/products/prod_494/1.jpg"]}},
-        {"id": "var_494_1", "attributes": {"Talle": "1"}, "price": 3278.45, "originalPrice": null, "stock": 10, "sku": "POL028-1", "available": true, "specs": {"Largo": "30 cm", "Ancho": "32 cm"}, "images": {"cover": "assets/images/products/prod_495/cover.jpg", "thumb": "assets/images/products/prod_495/thumb.jpg", "gallery": ["assets/images/products/prod_495/1.jpg"]}},
-        {"id": "var_494_2", "attributes": {"Talle": "2"}, "price": 3278.45, "originalPrice": null, "stock": 10, "sku": "POL028-2", "available": true, "specs": {"Largo": "33 cm", "Ancho": "34 cm"}, "images": {"cover": "assets/images/products/prod_496/cover.jpg", "thumb": "assets/images/products/prod_496/thumb.jpg", "gallery": ["assets/images/products/prod_496/1.jpg"]}},
-        {"id": "var_494_3", "attributes": {"Talle": "3"}, "price": 4522, "originalPrice": null, "stock": 10, "sku": "POL028-3", "available": true, "specs": {"Largo": "39 cm", "Ancho": "38 cm"}, "images": {"cover": "assets/images/products/prod_497/cover.jpg", "thumb": "assets/images/products/prod_497/thumb.jpg", "gallery": ["assets/images/products/prod_497/1.jpg"]}},
-        {"id": "var_494_4", "attributes": {"Talle": "4"}, "price": 4522, "originalPrice": null, "stock": 10, "sku": "POL028-4", "available": true, "specs": {"Largo": "42 cm", "Ancho": "42 cm"}, "images": {"cover": "assets/images/products/prod_498/cover.jpg", "thumb": "assets/images/products/prod_498/thumb.jpg", "gallery": ["assets/images/products/prod_498/1.jpg"]}},
-        {"id": "var_494_5", "attributes": {"Talle": "5"}, "price": 4522, "originalPrice": null, "stock": 10, "sku": "POL028-5", "available": true, "specs": {"Largo": "47 cm", "Ancho": "52 cm"}, "images": {"cover": "assets/images/products/prod_499/cover.jpg", "thumb": "assets/images/products/prod_499/thumb.jpg", "gallery": ["assets/images/products/prod_499/1.jpg"]}},
-        {"id": "var_494_6", "attributes": {"Talle": "6"}, "price": 5878.6, "originalPrice": null, "stock": 10, "sku": "POL028-6", "available": true, "specs": {"Largo": "50 cm", "Ancho": "52 cm"}, "images": {"cover": "assets/images/products/prod_500/cover.jpg", "thumb": "assets/images/products/prod_500/thumb.jpg", "gallery": ["assets/images/products/prod_500/1.jpg"]}},
-        {"id": "var_494_7", "attributes": {"Talle": "7"}, "price": 5878.6, "originalPrice": null, "stock": 10, "sku": "POL028-7", "available": true, "specs": {"Largo": "54 cm", "Ancho": "60 cm"}, "images": {"cover": "assets/images/products/prod_501/cover.jpg", "thumb": "assets/images/products/prod_501/thumb.jpg", "gallery": ["assets/images/products/prod_501/1.jpg"]}},
-        {"id": "var_494_8", "attributes": {"Talle": "8"}, "price": 5878.6, "originalPrice": null, "stock": 10, "sku": "POL028-8", "available": true, "specs": {"Largo": "60 cm", "Ancho": "64 cm"}, "images": {"cover": "assets/images/products/prod_502/cover.jpg", "thumb": "assets/images/products/prod_502/thumb.jpg", "gallery": ["assets/images/products/prod_502/1.jpg"]}},
-        {"id": "var_494_9", "attributes": {"Talle": "9"}, "price": 7009.1, "originalPrice": null, "stock": 10, "sku": "POL028-9", "available": true, "specs": {"Largo": "64 cm", "Ancho": "72 cm"}, "images": {"cover": "assets/images/products/prod_503/cover.jpg", "thumb": "assets/images/products/prod_503/thumb.jpg", "gallery": ["assets/images/products/prod_503/1.jpg"]}},
-        {"id": "var_494_10", "attributes": {"Talle": "10"}, "price": 7009.1, "originalPrice": null, "stock": 10, "sku": "POL028-10", "available": true, "specs": {"Largo": "72 cm", "Ancho": "74 cm"}, "images": {"cover": "assets/images/products/prod_504/cover.jpg", "thumb": "assets/images/products/prod_504/thumb.jpg", "gallery": ["assets/images/products/prod_504/1.jpg"]}},
-        {"id": "var_494_11", "attributes": {"Talle": "11"}, "price": 8817.9, "originalPrice": null, "stock": 10, "sku": "POL028-11", "available": true, "specs": {"Largo": "78 cm", "Ancho": "84 cm"}, "images": {"cover": "assets/images/products/prod_505/cover.jpg", "thumb": "assets/images/products/prod_505/thumb.jpg", "gallery": ["assets/images/products/prod_505/1.jpg"]}},
-        {"id": "var_494_12", "attributes": {"Talle": "12"}, "price": 8817.9, "originalPrice": null, "stock": 10, "sku": "POL028-12", "available": true, "specs": {"Largo": "80 cm", "Ancho": "82 cm"}, "images": {"cover": "assets/images/products/prod_506/cover.jpg", "thumb": "assets/images/products/prod_506/thumb.jpg", "gallery": ["assets/images/products/prod_506/1.jpg"]}}
+        {
+          "id": "var_494_0",
+          "attributes": {
+            "Talle": "0"
+          },
+          "price": 3278.45,
+          "originalPrice": null,
+          "stock": 10,
+          "sku": "POL028-0",
+          "available": true,
+          "specs": {
+            "Largo": "26 cm",
+            "Ancho": "28 cm"
+          },
+          "images": {
+            "cover": "assets/images/products/prod_494/cover.jpg",
+            "thumb": "assets/images/products/prod_494/thumb.jpg",
+            "gallery": [
+              "assets/images/products/prod_494/1.jpg"
+            ]
+          }
+        },
+        {
+          "id": "var_494_1",
+          "attributes": {
+            "Talle": "1"
+          },
+          "price": 3278.45,
+          "originalPrice": null,
+          "stock": 10,
+          "sku": "POL028-1",
+          "available": true,
+          "specs": {
+            "Largo": "30 cm",
+            "Ancho": "32 cm"
+          },
+          "images": {
+            "cover": "assets/images/products/prod_495/cover.jpg",
+            "thumb": "assets/images/products/prod_495/thumb.jpg",
+            "gallery": [
+              "assets/images/products/prod_495/1.jpg"
+            ]
+          }
+        },
+        {
+          "id": "var_494_2",
+          "attributes": {
+            "Talle": "2"
+          },
+          "price": 3278.45,
+          "originalPrice": null,
+          "stock": 10,
+          "sku": "POL028-2",
+          "available": true,
+          "specs": {
+            "Largo": "33 cm",
+            "Ancho": "34 cm"
+          },
+          "images": {
+            "cover": "assets/images/products/prod_496/cover.jpg",
+            "thumb": "assets/images/products/prod_496/thumb.jpg",
+            "gallery": [
+              "assets/images/products/prod_496/1.jpg"
+            ]
+          }
+        },
+        {
+          "id": "var_494_3",
+          "attributes": {
+            "Talle": "3"
+          },
+          "price": 4522,
+          "originalPrice": null,
+          "stock": 10,
+          "sku": "POL028-3",
+          "available": true,
+          "specs": {
+            "Largo": "39 cm",
+            "Ancho": "38 cm"
+          },
+          "images": {
+            "cover": "assets/images/products/prod_497/cover.jpg",
+            "thumb": "assets/images/products/prod_497/thumb.jpg",
+            "gallery": [
+              "assets/images/products/prod_497/1.jpg"
+            ]
+          }
+        },
+        {
+          "id": "var_494_4",
+          "attributes": {
+            "Talle": "4"
+          },
+          "price": 4522,
+          "originalPrice": null,
+          "stock": 10,
+          "sku": "POL028-4",
+          "available": true,
+          "specs": {
+            "Largo": "42 cm",
+            "Ancho": "42 cm"
+          },
+          "images": {
+            "cover": "assets/images/products/prod_498/cover.jpg",
+            "thumb": "assets/images/products/prod_498/thumb.jpg",
+            "gallery": [
+              "assets/images/products/prod_498/1.jpg"
+            ]
+          }
+        },
+        {
+          "id": "var_494_5",
+          "attributes": {
+            "Talle": "5"
+          },
+          "price": 4522,
+          "originalPrice": null,
+          "stock": 10,
+          "sku": "POL028-5",
+          "available": true,
+          "specs": {
+            "Largo": "47 cm",
+            "Ancho": "52 cm"
+          },
+          "images": {
+            "cover": "assets/images/products/prod_499/cover.jpg",
+            "thumb": "assets/images/products/prod_499/thumb.jpg",
+            "gallery": [
+              "assets/images/products/prod_499/1.jpg"
+            ]
+          }
+        },
+        {
+          "id": "var_494_6",
+          "attributes": {
+            "Talle": "6"
+          },
+          "price": 5878.6,
+          "originalPrice": null,
+          "stock": 10,
+          "sku": "POL028-6",
+          "available": true,
+          "specs": {
+            "Largo": "50 cm",
+            "Ancho": "52 cm"
+          },
+          "images": {
+            "cover": "assets/images/products/prod_500/cover.jpg",
+            "thumb": "assets/images/products/prod_500/thumb.jpg",
+            "gallery": [
+              "assets/images/products/prod_500/1.jpg"
+            ]
+          }
+        },
+        {
+          "id": "var_494_7",
+          "attributes": {
+            "Talle": "7"
+          },
+          "price": 5878.6,
+          "originalPrice": null,
+          "stock": 10,
+          "sku": "POL028-7",
+          "available": true,
+          "specs": {
+            "Largo": "54 cm",
+            "Ancho": "60 cm"
+          },
+          "images": {
+            "cover": "assets/images/products/prod_501/cover.jpg",
+            "thumb": "assets/images/products/prod_501/thumb.jpg",
+            "gallery": [
+              "assets/images/products/prod_501/1.jpg"
+            ]
+          }
+        },
+        {
+          "id": "var_494_8",
+          "attributes": {
+            "Talle": "8"
+          },
+          "price": 5878.6,
+          "originalPrice": null,
+          "stock": 10,
+          "sku": "POL028-8",
+          "available": true,
+          "specs": {
+            "Largo": "60 cm",
+            "Ancho": "64 cm"
+          },
+          "images": {
+            "cover": "assets/images/products/prod_502/cover.jpg",
+            "thumb": "assets/images/products/prod_502/thumb.jpg",
+            "gallery": [
+              "assets/images/products/prod_502/1.jpg"
+            ]
+          }
+        },
+        {
+          "id": "var_494_9",
+          "attributes": {
+            "Talle": "9"
+          },
+          "price": 7009.1,
+          "originalPrice": null,
+          "stock": 10,
+          "sku": "POL028-9",
+          "available": true,
+          "specs": {
+            "Largo": "64 cm",
+            "Ancho": "72 cm"
+          },
+          "images": {
+            "cover": "assets/images/products/prod_503/cover.jpg",
+            "thumb": "assets/images/products/prod_503/thumb.jpg",
+            "gallery": [
+              "assets/images/products/prod_503/1.jpg"
+            ]
+          }
+        },
+        {
+          "id": "var_494_10",
+          "attributes": {
+            "Talle": "10"
+          },
+          "price": 7009.1,
+          "originalPrice": null,
+          "stock": 10,
+          "sku": "POL028-10",
+          "available": true,
+          "specs": {
+            "Largo": "72 cm",
+            "Ancho": "74 cm"
+          },
+          "images": {
+            "cover": "assets/images/products/prod_504/cover.jpg",
+            "thumb": "assets/images/products/prod_504/thumb.jpg",
+            "gallery": [
+              "assets/images/products/prod_504/1.jpg"
+            ]
+          }
+        },
+        {
+          "id": "var_494_11",
+          "attributes": {
+            "Talle": "11"
+          },
+          "price": 8817.9,
+          "originalPrice": null,
+          "stock": 10,
+          "sku": "POL028-11",
+          "available": true,
+          "specs": {
+            "Largo": "78 cm",
+            "Ancho": "84 cm"
+          },
+          "images": {
+            "cover": "assets/images/products/prod_505/cover.jpg",
+            "thumb": "assets/images/products/prod_505/thumb.jpg",
+            "gallery": [
+              "assets/images/products/prod_505/1.jpg"
+            ]
+          }
+        },
+        {
+          "id": "var_494_12",
+          "attributes": {
+            "Talle": "12"
+          },
+          "price": 8817.9,
+          "originalPrice": null,
+          "stock": 10,
+          "sku": "POL028-12",
+          "available": true,
+          "specs": {
+            "Largo": "80 cm",
+            "Ancho": "82 cm"
+          },
+          "images": {
+            "cover": "assets/images/products/prod_506/cover.jpg",
+            "thumb": "assets/images/products/prod_506/thumb.jpg",
+            "gallery": [
+              "assets/images/products/prod_506/1.jpg"
+            ]
+          }
+        }
       ]
     },
-    "images": {"cover": "assets/images/products/prod_494/cover.jpg", "thumb": "assets/images/products/prod_494/thumb.jpg", "gallery": ["assets/images/products/prod_494/1.jpg"]},
-    "specs": {"SKU": "POL028"},
-    "shipping": {"free": false, "days": 3},
+    "images": {
+      "cover": "assets/images/products/prod_494/cover.jpg",
+      "thumb": "assets/images/products/prod_494/thumb.jpg",
+      "gallery": [
+        "assets/images/products/prod_494/1.jpg"
+      ]
+    },
+    "specs": {
+      "SKU": "POL028"
+    },
+    "shipping": {
+      "free": false,
+      "days": 3
+    },
     "badge": "🧥 Ropa",
     "brand": "Sin marca",
     "sku": "POL028",
-    "features": ["Mantiene el calor", "Material suave", "Resistente al agua", "Perfecto para el frío"]
+    "features": [
+      "Mantiene el calor",
+      "Material suave",
+      "Resistente al agua",
+      "Perfecto para el frío"
+    ]
   },
   {
     "id": "prod_507",
@@ -17687,128 +18453,193 @@
       "attributes": [
         {
           "name": "Talle",
-          "values": ["1", "2", "3", "4", "5", "6", "7", "8"]
+          "values": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8"
+          ]
         }
       ],
       "combinations": [
         {
           "id": "var_573_1",
-          "attributes": { "Talle": "1" },
+          "attributes": {
+            "Talle": "1"
+          },
           "price": 8478.75,
           "originalPrice": null,
           "stock": 10,
           "sku": "ENT001",
           "available": true,
-          "specs": { "Largo": "28 cm", "Ancho": "44 cm" },
+          "specs": {
+            "Largo": "28 cm",
+            "Ancho": "44 cm"
+          },
           "images": {
             "cover": "assets/images/products/prod_573/cover.jpg",
             "thumb": "assets/images/products/prod_573/thumb.jpg",
-            "gallery": ["assets/images/products/prod_573/1.jpg"]
+            "gallery": [
+              "assets/images/products/prod_573/1.jpg"
+            ]
           }
         },
         {
           "id": "var_573_2",
-          "attributes": { "Talle": "2" },
+          "attributes": {
+            "Talle": "2"
+          },
           "price": 8478.75,
           "originalPrice": null,
           "stock": 10,
           "sku": "ENT002",
           "available": true,
-          "specs": { "Largo": "31 cm", "Ancho": "46 cm" },
+          "specs": {
+            "Largo": "31 cm",
+            "Ancho": "46 cm"
+          },
           "images": {
             "cover": "assets/images/products/prod_574/cover.jpg",
             "thumb": "assets/images/products/prod_574/thumb.jpg",
-            "gallery": ["assets/images/products/prod_574/1.jpg"]
+            "gallery": [
+              "assets/images/products/prod_574/1.jpg"
+            ]
           }
         },
         {
           "id": "var_573_3",
-          "attributes": { "Talle": "3" },
+          "attributes": {
+            "Talle": "3"
+          },
           "price": 9609.25,
           "originalPrice": null,
           "stock": 10,
           "sku": "ENT003",
           "available": true,
-          "specs": { "Largo": "32 cm", "Ancho": "52 cm" },
+          "specs": {
+            "Largo": "32 cm",
+            "Ancho": "52 cm"
+          },
           "images": {
             "cover": "assets/images/products/prod_575/cover.jpg",
             "thumb": "assets/images/products/prod_575/thumb.jpg",
-            "gallery": ["assets/images/products/prod_575/1.jpg"]
+            "gallery": [
+              "assets/images/products/prod_575/1.jpg"
+            ]
           }
         },
         {
           "id": "var_573_4",
-          "attributes": { "Talle": "4" },
+          "attributes": {
+            "Talle": "4"
+          },
           "price": 9609.25,
           "originalPrice": null,
           "stock": 10,
           "sku": "ENT004",
           "available": true,
-          "specs": { "Largo": "33 cm", "Ancho": "54 cm" },
+          "specs": {
+            "Largo": "33 cm",
+            "Ancho": "54 cm"
+          },
           "images": {
             "cover": "assets/images/products/prod_576/cover.jpg",
             "thumb": "assets/images/products/prod_576/thumb.jpg",
-            "gallery": ["assets/images/products/prod_576/1.jpg"]
+            "gallery": [
+              "assets/images/products/prod_576/1.jpg"
+            ]
           }
         },
         {
           "id": "var_573_5",
-          "attributes": { "Talle": "5" },
+          "attributes": {
+            "Talle": "5"
+          },
           "price": 10739.75,
           "originalPrice": null,
           "stock": 10,
           "sku": "ENT005",
           "available": true,
-          "specs": { "Largo": "35 cm", "Ancho": "56 cm" },
+          "specs": {
+            "Largo": "35 cm",
+            "Ancho": "56 cm"
+          },
           "images": {
             "cover": "assets/images/products/prod_577/cover.jpg",
             "thumb": "assets/images/products/prod_577/thumb.jpg",
-            "gallery": ["assets/images/products/prod_577/1.jpg"]
+            "gallery": [
+              "assets/images/products/prod_577/1.jpg"
+            ]
           }
         },
         {
           "id": "var_573_6",
-          "attributes": { "Talle": "6" },
+          "attributes": {
+            "Talle": "6"
+          },
           "price": 10739.75,
           "originalPrice": null,
           "stock": 10,
           "sku": "ENT006",
           "available": true,
-          "specs": { "Largo": "37 cm", "Ancho": "60 cm" },
+          "specs": {
+            "Largo": "37 cm",
+            "Ancho": "60 cm"
+          },
           "images": {
             "cover": "assets/images/products/prod_578/cover.jpg",
             "thumb": "assets/images/products/prod_578/thumb.jpg",
-            "gallery": ["assets/images/products/prod_578/1.jpg"]
+            "gallery": [
+              "assets/images/products/prod_578/1.jpg"
+            ]
           }
         },
         {
           "id": "var_573_7",
-          "attributes": { "Talle": "7" },
+          "attributes": {
+            "Talle": "7"
+          },
           "price": 11870.25,
           "originalPrice": null,
           "stock": 10,
           "sku": "ENT007",
           "available": true,
-          "specs": { "Largo": "40 cm", "Ancho": "62 cm" },
+          "specs": {
+            "Largo": "40 cm",
+            "Ancho": "62 cm"
+          },
           "images": {
             "cover": "assets/images/products/prod_579/cover.jpg",
             "thumb": "assets/images/products/prod_579/thumb.jpg",
-            "gallery": ["assets/images/products/prod_579/1.jpg"]
+            "gallery": [
+              "assets/images/products/prod_579/1.jpg"
+            ]
           }
         },
         {
           "id": "var_573_8",
-          "attributes": { "Talle": "8" },
+          "attributes": {
+            "Talle": "8"
+          },
           "price": 11870.25,
           "originalPrice": null,
           "stock": 10,
           "sku": "ENT008",
           "available": true,
-          "specs": { "Largo": "44 cm", "Ancho": "72 cm" },
+          "specs": {
+            "Largo": "44 cm",
+            "Ancho": "72 cm"
+          },
           "images": {
             "cover": "assets/images/products/prod_580/cover.jpg",
             "thumb": "assets/images/products/prod_580/thumb.jpg",
-            "gallery": ["assets/images/products/prod_580/1.jpg"]
+            "gallery": [
+              "assets/images/products/prod_580/1.jpg"
+            ]
           }
         }
       ]
@@ -17868,128 +18699,193 @@
       "attributes": [
         {
           "name": "Talle",
-          "values": ["1", "2", "3", "4", "5", "6", "7", "8"]
+          "values": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8"
+          ]
         }
       ],
       "combinations": [
         {
           "id": "var_581_1",
-          "attributes": { "Talle": "1" },
+          "attributes": {
+            "Talle": "1"
+          },
           "price": 9609.25,
           "originalPrice": null,
           "stock": 10,
           "sku": "ENT009",
           "available": true,
-          "specs": { "Largo": "28 cm", "Ancho": "44 cm" },
+          "specs": {
+            "Largo": "28 cm",
+            "Ancho": "44 cm"
+          },
           "images": {
             "cover": "assets/images/products/prod_581/cover.jpg",
             "thumb": "assets/images/products/prod_581/thumb.jpg",
-            "gallery": ["assets/images/products/prod_581/1.jpg"]
+            "gallery": [
+              "assets/images/products/prod_581/1.jpg"
+            ]
           }
         },
         {
           "id": "var_581_2",
-          "attributes": { "Talle": "2" },
+          "attributes": {
+            "Talle": "2"
+          },
           "price": 9609.25,
           "originalPrice": null,
           "stock": 10,
           "sku": "ENT010",
           "available": true,
-          "specs": { "Largo": "31 cm", "Ancho": "46 cm" },
+          "specs": {
+            "Largo": "31 cm",
+            "Ancho": "46 cm"
+          },
           "images": {
             "cover": "assets/images/products/prod_582/cover.jpg",
             "thumb": "assets/images/products/prod_582/thumb.jpg",
-            "gallery": ["assets/images/products/prod_582/1.jpg"]
+            "gallery": [
+              "assets/images/products/prod_582/1.jpg"
+            ]
           }
         },
         {
           "id": "var_581_3",
-          "attributes": { "Talle": "3" },
+          "attributes": {
+            "Talle": "3"
+          },
           "price": 10739.75,
           "originalPrice": null,
           "stock": 10,
           "sku": "ENT011",
           "available": true,
-          "specs": { "Largo": "32 cm", "Ancho": "52 cm" },
+          "specs": {
+            "Largo": "32 cm",
+            "Ancho": "52 cm"
+          },
           "images": {
             "cover": "assets/images/products/prod_583/cover.jpg",
             "thumb": "assets/images/products/prod_583/thumb.jpg",
-            "gallery": ["assets/images/products/prod_583/1.jpg"]
+            "gallery": [
+              "assets/images/products/prod_583/1.jpg"
+            ]
           }
         },
         {
           "id": "var_581_4",
-          "attributes": { "Talle": "4" },
+          "attributes": {
+            "Talle": "4"
+          },
           "price": 10739.75,
           "originalPrice": null,
           "stock": 10,
           "sku": "ENT012",
           "available": true,
-          "specs": { "Largo": "33 cm", "Ancho": "54 cm" },
+          "specs": {
+            "Largo": "33 cm",
+            "Ancho": "54 cm"
+          },
           "images": {
             "cover": "assets/images/products/prod_584/cover.jpg",
             "thumb": "assets/images/products/prod_584/thumb.jpg",
-            "gallery": ["assets/images/products/prod_584/1.jpg"]
+            "gallery": [
+              "assets/images/products/prod_584/1.jpg"
+            ]
           }
         },
         {
           "id": "var_581_5",
-          "attributes": { "Talle": "5" },
+          "attributes": {
+            "Talle": "5"
+          },
           "price": 13000.75,
           "originalPrice": null,
           "stock": 10,
           "sku": "ENT013",
           "available": true,
-          "specs": { "Largo": "35 cm", "Ancho": "56 cm" },
+          "specs": {
+            "Largo": "35 cm",
+            "Ancho": "56 cm"
+          },
           "images": {
             "cover": "assets/images/products/prod_585/cover.jpg",
             "thumb": "assets/images/products/prod_585/thumb.jpg",
-            "gallery": ["assets/images/products/prod_585/1.jpg"]
+            "gallery": [
+              "assets/images/products/prod_585/1.jpg"
+            ]
           }
         },
         {
           "id": "var_581_6",
-          "attributes": { "Talle": "6" },
+          "attributes": {
+            "Talle": "6"
+          },
           "price": 13000.75,
           "originalPrice": null,
           "stock": 10,
           "sku": "ENT014",
           "available": true,
-          "specs": { "Largo": "37 cm", "Ancho": "60 cm" },
+          "specs": {
+            "Largo": "37 cm",
+            "Ancho": "60 cm"
+          },
           "images": {
             "cover": "assets/images/products/prod_586/cover.jpg",
             "thumb": "assets/images/products/prod_586/thumb.jpg",
-            "gallery": ["assets/images/products/prod_586/1.jpg"]
+            "gallery": [
+              "assets/images/products/prod_586/1.jpg"
+            ]
           }
         },
         {
           "id": "var_581_7",
-          "attributes": { "Talle": "7" },
+          "attributes": {
+            "Talle": "7"
+          },
           "price": 13566,
           "originalPrice": null,
           "stock": 10,
           "sku": "ENT015",
           "available": true,
-          "specs": { "Largo": "40 cm", "Ancho": "62 cm" },
+          "specs": {
+            "Largo": "40 cm",
+            "Ancho": "62 cm"
+          },
           "images": {
             "cover": "assets/images/products/prod_587/cover.jpg",
             "thumb": "assets/images/products/prod_587/thumb.jpg",
-            "gallery": ["assets/images/products/prod_587/1.jpg"]
+            "gallery": [
+              "assets/images/products/prod_587/1.jpg"
+            ]
           }
         },
         {
           "id": "var_581_8",
-          "attributes": { "Talle": "8" },
+          "attributes": {
+            "Talle": "8"
+          },
           "price": 13566,
           "originalPrice": null,
           "stock": 10,
           "sku": "ENT016",
           "available": true,
-          "specs": { "Largo": "44 cm", "Ancho": "72 cm" },
+          "specs": {
+            "Largo": "44 cm",
+            "Ancho": "72 cm"
+          },
           "images": {
             "cover": "assets/images/products/prod_588/cover.jpg",
             "thumb": "assets/images/products/prod_588/thumb.jpg",
-            "gallery": ["assets/images/products/prod_588/1.jpg"]
+            "gallery": [
+              "assets/images/products/prod_588/1.jpg"
+            ]
           }
         }
       ]
@@ -18308,128 +19204,193 @@
       "attributes": [
         {
           "name": "Talle",
-          "values": ["0", "1", "2", "3", "4", "5", "6", "7"]
+          "values": [
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7"
+          ]
         }
       ],
       "combinations": [
         {
           "id": "var_598_0",
-          "attributes": { "Talle": "0" },
+          "attributes": {
+            "Talle": "0"
+          },
           "price": 4522,
           "originalPrice": null,
           "stock": 10,
           "sku": "POL041",
           "available": true,
-          "specs": { "Largo": "26 cm", "Ancho": "28 cm" },
+          "specs": {
+            "Largo": "26 cm",
+            "Ancho": "28 cm"
+          },
           "images": {
             "cover": "assets/images/products/prod_598/cover.jpg",
             "thumb": "assets/images/products/prod_598/thumb.jpg",
-            "gallery": ["assets/images/products/prod_598/1.jpg"]
+            "gallery": [
+              "assets/images/products/prod_598/1.jpg"
+            ]
           }
         },
         {
           "id": "var_598_1",
-          "attributes": { "Talle": "1" },
+          "attributes": {
+            "Talle": "1"
+          },
           "price": 5652.5,
           "originalPrice": null,
           "stock": 10,
           "sku": "POL042",
           "available": true,
-          "specs": { "Largo": "30 cm", "Ancho": "31 cm" },
+          "specs": {
+            "Largo": "30 cm",
+            "Ancho": "31 cm"
+          },
           "images": {
             "cover": "assets/images/products/prod_599/cover.jpg",
             "thumb": "assets/images/products/prod_599/thumb.jpg",
-            "gallery": ["assets/images/products/prod_599/1.jpg"]
+            "gallery": [
+              "assets/images/products/prod_599/1.jpg"
+            ]
           }
         },
         {
           "id": "var_598_2",
-          "attributes": { "Talle": "2" },
+          "attributes": {
+            "Talle": "2"
+          },
           "price": 5652.5,
           "originalPrice": null,
           "stock": 10,
           "sku": "POL043",
           "available": true,
-          "specs": { "Largo": "35 cm", "Ancho": "34 cm" },
+          "specs": {
+            "Largo": "35 cm",
+            "Ancho": "34 cm"
+          },
           "images": {
             "cover": "assets/images/products/prod_600/cover.jpg",
             "thumb": "assets/images/products/prod_600/thumb.jpg",
-            "gallery": ["assets/images/products/prod_600/1.jpg"]
+            "gallery": [
+              "assets/images/products/prod_600/1.jpg"
+            ]
           }
         },
         {
           "id": "var_598_3",
-          "attributes": { "Talle": "3" },
+          "attributes": {
+            "Talle": "3"
+          },
           "price": 6783,
           "originalPrice": null,
           "stock": 10,
           "sku": "POL044",
           "available": true,
-          "specs": { "Largo": "40 cm", "Ancho": "40 cm" },
+          "specs": {
+            "Largo": "40 cm",
+            "Ancho": "40 cm"
+          },
           "images": {
             "cover": "assets/images/products/prod_601/cover.jpg",
             "thumb": "assets/images/products/prod_601/thumb.jpg",
-            "gallery": ["assets/images/products/prod_601/1.jpg"]
+            "gallery": [
+              "assets/images/products/prod_601/1.jpg"
+            ]
           }
         },
         {
           "id": "var_598_4",
-          "attributes": { "Talle": "4" },
+          "attributes": {
+            "Talle": "4"
+          },
           "price": 6783,
           "originalPrice": null,
           "stock": 10,
           "sku": "POL045",
           "available": true,
-          "specs": { "Largo": "45 cm", "Ancho": "42 cm" },
+          "specs": {
+            "Largo": "45 cm",
+            "Ancho": "42 cm"
+          },
           "images": {
             "cover": "assets/images/products/prod_602/cover.jpg",
             "thumb": "assets/images/products/prod_602/thumb.jpg",
-            "gallery": ["assets/images/products/prod_602/1.jpg"]
+            "gallery": [
+              "assets/images/products/prod_602/1.jpg"
+            ]
           }
         },
         {
           "id": "var_598_5",
-          "attributes": { "Talle": "5" },
+          "attributes": {
+            "Talle": "5"
+          },
           "price": 7348.25,
           "originalPrice": null,
           "stock": 10,
           "sku": "POL046",
           "available": true,
-          "specs": { "Largo": "48 cm", "Ancho": "52 cm" },
+          "specs": {
+            "Largo": "48 cm",
+            "Ancho": "52 cm"
+          },
           "images": {
             "cover": "assets/images/products/prod_603/cover.jpg",
             "thumb": "assets/images/products/prod_603/thumb.jpg",
-            "gallery": ["assets/images/products/prod_603/1.jpg"]
+            "gallery": [
+              "assets/images/products/prod_603/1.jpg"
+            ]
           }
         },
         {
           "id": "var_598_6",
-          "attributes": { "Talle": "6" },
+          "attributes": {
+            "Talle": "6"
+          },
           "price": 7348.25,
           "originalPrice": null,
           "stock": 10,
           "sku": "POL047",
           "available": true,
-          "specs": { "Largo": "54 cm", "Ancho": "54 cm" },
+          "specs": {
+            "Largo": "54 cm",
+            "Ancho": "54 cm"
+          },
           "images": {
             "cover": "assets/images/products/prod_604/cover.jpg",
             "thumb": "assets/images/products/prod_604/thumb.jpg",
-            "gallery": ["assets/images/products/prod_604/1.jpg"]
+            "gallery": [
+              "assets/images/products/prod_604/1.jpg"
+            ]
           }
         },
         {
           "id": "var_598_7",
-          "attributes": { "Talle": "7" },
+          "attributes": {
+            "Talle": "7"
+          },
           "price": 7913.5,
           "originalPrice": null,
           "stock": 10,
           "sku": "POL048",
           "available": true,
-          "specs": { "Largo": "60 cm", "Ancho": "64 cm" },
+          "specs": {
+            "Largo": "60 cm",
+            "Ancho": "64 cm"
+          },
           "images": {
             "cover": "assets/images/products/prod_605/cover.jpg",
             "thumb": "assets/images/products/prod_605/thumb.jpg",
-            "gallery": ["assets/images/products/prod_605/1.jpg"]
+            "gallery": [
+              "assets/images/products/prod_605/1.jpg"
+            ]
           }
         }
       ]
@@ -18620,13 +19581,18 @@
       "attributes": [
         {
           "name": "Largo",
-          "values": ["3 metros", "5 metros"]
+          "values": [
+            "3 metros",
+            "5 metros"
+          ]
         }
       ],
       "combinations": [
         {
           "id": "var_609_3m",
-          "attributes": { "Largo": "3 metros" },
+          "attributes": {
+            "Largo": "3 metros"
+          },
           "price": 9350,
           "originalPrice": 11000,
           "stock": 10,
@@ -18635,12 +19601,16 @@
           "images": {
             "cover": "assets/images/products/prod_609/cover.jpg",
             "thumb": "assets/images/products/prod_609/thumb.jpg",
-            "gallery": ["assets/images/products/prod_609/1.jpg"]
+            "gallery": [
+              "assets/images/products/prod_609/1.jpg"
+            ]
           }
         },
         {
           "id": "var_609_5m",
-          "attributes": { "Largo": "5 metros" },
+          "attributes": {
+            "Largo": "5 metros"
+          },
           "price": 12750,
           "originalPrice": 15000,
           "stock": 10,
@@ -18649,7 +19619,9 @@
           "images": {
             "cover": "assets/images/products/prod_610/cover.jpg",
             "thumb": "assets/images/products/prod_610/thumb.jpg",
-            "gallery": ["assets/images/products/prod_610/1.jpg"]
+            "gallery": [
+              "assets/images/products/prod_610/1.jpg"
+            ]
           }
         }
       ]
@@ -18964,13 +19936,18 @@
       "attributes": [
         {
           "name": "Medida",
-          "values": ["50 x 70", "50 x 80"]
+          "values": [
+            "50 x 70",
+            "50 x 80"
+          ]
         }
       ],
       "combinations": [
         {
           "id": "var_631_70",
-          "attributes": { "Medida": "50 x 70" },
+          "attributes": {
+            "Medida": "50 x 70"
+          },
           "price": 21845,
           "originalPrice": 25700,
           "stock": 10,
@@ -18979,12 +19956,16 @@
           "images": {
             "cover": "assets/images/products/prod_631/cover.jpg",
             "thumb": "assets/images/products/prod_631/thumb.jpg",
-            "gallery": ["assets/images/products/prod_631/1.jpg"]
+            "gallery": [
+              "assets/images/products/prod_631/1.jpg"
+            ]
           }
         },
         {
           "id": "var_631_80",
-          "attributes": { "Medida": "50 x 80" },
+          "attributes": {
+            "Medida": "50 x 80"
+          },
           "price": 28900,
           "originalPrice": 34000,
           "stock": 10,
@@ -18993,7 +19974,9 @@
           "images": {
             "cover": "assets/images/products/prod_632/cover.jpg",
             "thumb": "assets/images/products/prod_632/thumb.jpg",
-            "gallery": ["assets/images/products/prod_632/1.jpg"]
+            "gallery": [
+              "assets/images/products/prod_632/1.jpg"
+            ]
           }
         }
       ]
@@ -19053,13 +20036,18 @@
       "attributes": [
         {
           "name": "Medida",
-          "values": ["50 x 60", "50 x 70"]
+          "values": [
+            "50 x 60",
+            "50 x 70"
+          ]
         }
       ],
       "combinations": [
         {
           "id": "var_635_60",
-          "attributes": { "Medida": "50 x 60" },
+          "attributes": {
+            "Medida": "50 x 60"
+          },
           "price": 27115,
           "originalPrice": 31900,
           "stock": 10,
@@ -19068,12 +20056,16 @@
           "images": {
             "cover": "assets/images/products/prod_635/cover.jpg",
             "thumb": "assets/images/products/prod_635/thumb.jpg",
-            "gallery": ["assets/images/products/prod_635/1.jpg"]
+            "gallery": [
+              "assets/images/products/prod_635/1.jpg"
+            ]
           }
         },
         {
           "id": "var_635_70",
-          "attributes": { "Medida": "50 x 70" },
+          "attributes": {
+            "Medida": "50 x 70"
+          },
           "price": 29750,
           "originalPrice": 35000,
           "stock": 10,
@@ -19082,7 +20074,9 @@
           "images": {
             "cover": "assets/images/products/prod_636/cover.jpg",
             "thumb": "assets/images/products/prod_636/thumb.jpg",
-            "gallery": ["assets/images/products/prod_636/1.jpg"]
+            "gallery": [
+              "assets/images/products/prod_636/1.jpg"
+            ]
           }
         }
       ]
@@ -19585,15 +20579,16 @@
   },
   {
     "id": "prod_695",
-    "name": "CONJUNTO CUADRILLE 1,0 CM",
+    "name": "CONJUNTO CUADRILLE",
     "category": "accesorios",
     "subcategory": "Accesorios",
-    "price": 4420,
-    "originalPrice": 5200,
+    "hasVariants": true,
+    "basePrice": 4420,
+    "baseOriginalPrice": 5200,
     "discount": 15,
-    "stock": 10,
-    "rating": 4.1,
-    "reviews": 43,
+    "stock": 20,
+    "rating": 3.9,
+    "reviews": 85,
     "featured": false,
     "topDiscount": false,
     "hasVideo": false,
@@ -19605,8 +20600,55 @@
       "paseo",
       "pechera"
     ],
-    "description": "CONJUNTO CUADRILLE 1,0 CM",
-    "longDescription": "CONJUNTO CUADRILLE 1,0 CM",
+    "description": "Conjunto Cuadrille con collar, correa y pechera. Disponible en anchos de 1,0 CM y 1,5 CM.",
+    "longDescription": "Conjunto Cuadrille de alta calidad con diseño a cuadros. Incluye collar, correa y pechera coordinados. Ideal para paseos con estilo. Disponible en dos anchos para diferentes tamaños de mascota.",
+    "variants": {
+      "attributes": [
+        {
+          "id": "size",
+          "name": "Ancho",
+          "type": "size"
+        }
+      ],
+      "combinations": [
+        {
+          "id": "var_695_1",
+          "attributes": {
+            "Ancho": "1,0 CM"
+          },
+          "price": 4420,
+          "originalPrice": 5200,
+          "stock": 10,
+          "sku": "CON017",
+          "available": true,
+          "images": {
+            "cover": "assets/images/products/prod_695/cover.jpg",
+            "thumb": "assets/images/products/prod_695/thumb.jpg",
+            "gallery": [
+              "assets/images/products/prod_695/1.jpg"
+            ]
+          }
+        },
+        {
+          "id": "var_695_2",
+          "attributes": {
+            "Ancho": "1,5 CM"
+          },
+          "price": 5780,
+          "originalPrice": 6800,
+          "stock": 10,
+          "sku": "CON018",
+          "available": true,
+          "images": {
+            "cover": "assets/images/products/prod_696/cover.jpg",
+            "thumb": "assets/images/products/prod_696/thumb.jpg",
+            "gallery": [
+              "assets/images/products/prod_696/1.jpg"
+            ]
+          }
+        }
+      ]
+    },
     "images": {
       "cover": "assets/images/products/prod_695/cover.jpg",
       "thumb": "assets/images/products/prod_695/thumb.jpg",
@@ -19616,7 +20658,8 @@
     },
     "specs": {
       "SKU": "CON017",
-      "Medida": "0 CM"
+      "Material": "Tela cuadrillé",
+      "Anchos disponibles": "1,0 CM, 1,5 CM"
     },
     "shipping": {
       "free": false,
@@ -19626,59 +20669,11 @@
     "brand": "Sin marca",
     "sku": "CON017",
     "features": [
+      "Múltiples anchos disponibles",
+      "Diseño a cuadros elegante",
       "Ajuste cómodo",
       "Material resistente",
-      "Fácil de usar",
-      "Seguro y confiable"
-    ]
-  },
-  {
-    "id": "prod_696",
-    "name": "CONJUNTO CUADRILLE 1,5 CM",
-    "category": "accesorios",
-    "subcategory": "Accesorios",
-    "price": 5780,
-    "originalPrice": 6800,
-    "discount": 15,
-    "stock": 10,
-    "rating": 3.6,
-    "reviews": 42,
-    "featured": false,
-    "topDiscount": false,
-    "hasVideo": false,
-    "tags": [
-      "conjunto",
-      "cuadrille",
-      "collar",
-      "correa",
-      "paseo",
-      "pechera"
-    ],
-    "description": "CONJUNTO CUADRILLE 1,5 CM",
-    "longDescription": "CONJUNTO CUADRILLE 1,5 CM",
-    "images": {
-      "cover": "assets/images/products/prod_696/cover.jpg",
-      "thumb": "assets/images/products/prod_696/thumb.jpg",
-      "gallery": [
-        "assets/images/products/prod_696/1.jpg"
-      ]
-    },
-    "specs": {
-      "SKU": "CON018",
-      "Medida": "5 CM"
-    },
-    "shipping": {
-      "free": false,
-      "days": 3
-    },
-    "badge": "🦴 Accesorios",
-    "brand": "Sin marca",
-    "sku": "CON018",
-    "features": [
-      "Ajuste cómodo",
-      "Material resistente",
-      "Fácil de usar",
-      "Seguro y confiable"
+      "Fácil de usar"
     ]
   },
   {
@@ -19783,29 +20778,96 @@
   },
   {
     "id": "prod_700",
-    "name": "ARNES REFLECTANTE 1,0CM*120CM*1,0CM",
+    "name": "ARNES REFLECTANTE",
     "category": "accesorios",
     "subcategory": "Accesorios",
-    "price": 8500,
-    "originalPrice": 10000,
+    "hasVariants": true,
+    "basePrice": 8500,
+    "baseOriginalPrice": 10000,
     "discount": 15,
-    "stock": 10,
-    "rating": 4.5,
-    "reviews": 28,
+    "stock": 30,
+    "rating": 4.2,
+    "reviews": 78,
     "featured": false,
     "topDiscount": false,
     "hasVideo": false,
     "tags": [
       "arnes",
       "reflectante",
-      "1,0cm*120cm*1,0cm",
       "collar",
       "correa",
       "paseo",
-      "pechera"
+      "pechera",
+      "perros",
+      "seguridad"
     ],
-    "description": "ARNES REFLECTANTE 1,0CM*120CM*1,0CM",
-    "longDescription": "ARNES REFLECTANTE 1,0CM*120CM*1,0CM",
+    "description": "Arnés reflectante de alta calidad. Disponible en múltiples tamaños.",
+    "longDescription": "Arnés reflectante para perros, ideal para paseos nocturnos. Material resistente y cómodo. Bandas reflectantes para mayor visibilidad y seguridad. Disponible en varios tamaños para adaptarse a tu mascota.",
+    "variants": {
+      "attributes": [
+        {
+          "id": "size",
+          "name": "Tamaño",
+          "type": "size"
+        }
+      ],
+      "combinations": [
+        {
+          "id": "var_700_1",
+          "attributes": {
+            "Tamaño": "1,0cm x 120cm x 1,0cm"
+          },
+          "price": 8500,
+          "originalPrice": 10000,
+          "stock": 10,
+          "sku": "ARN001",
+          "available": true,
+          "images": {
+            "cover": "assets/images/products/prod_700/cover.jpg",
+            "thumb": "assets/images/products/prod_700/thumb.jpg",
+            "gallery": [
+              "assets/images/products/prod_700/1.jpg"
+            ]
+          }
+        },
+        {
+          "id": "var_700_2",
+          "attributes": {
+            "Tamaño": "1,0cm x 120cm x 2,0cm"
+          },
+          "price": 11900,
+          "originalPrice": 14000,
+          "stock": 10,
+          "sku": "ARN002",
+          "available": true,
+          "images": {
+            "cover": "assets/images/products/prod_701/cover.jpg",
+            "thumb": "assets/images/products/prod_701/thumb.jpg",
+            "gallery": [
+              "assets/images/products/prod_701/1.jpg"
+            ]
+          }
+        },
+        {
+          "id": "var_700_3",
+          "attributes": {
+            "Tamaño": "1,2cm x 120cm x 2,5cm"
+          },
+          "price": 15300,
+          "originalPrice": 18000,
+          "stock": 10,
+          "sku": "ARN003",
+          "available": true,
+          "images": {
+            "cover": "assets/images/products/prod_702/cover.jpg",
+            "thumb": "assets/images/products/prod_702/thumb.jpg",
+            "gallery": [
+              "assets/images/products/prod_702/1.jpg"
+            ]
+          }
+        }
+      ]
+    },
     "images": {
       "cover": "assets/images/products/prod_700/cover.jpg",
       "thumb": "assets/images/products/prod_700/thumb.jpg",
@@ -19815,7 +20877,8 @@
     },
     "specs": {
       "SKU": "ARN001",
-      "Medida": "0CM"
+      "Material": "Nylon reflectante",
+      "Tamaños disponibles": "1,0x120x1,0cm, 1,0x120x2,0cm, 1,2x120x2,5cm"
     },
     "shipping": {
       "free": false,
@@ -19825,110 +20888,11 @@
     "brand": "Sin marca",
     "sku": "ARN001",
     "features": [
+      "Múltiples tamaños disponibles",
+      "Bandas reflectantes para seguridad nocturna",
       "Ajuste cómodo",
       "Material resistente",
-      "Fácil de usar",
-      "Seguro y confiable"
-    ]
-  },
-  {
-    "id": "prod_701",
-    "name": "ARNES REFLECTANTE 1,0CM*120CM*2,0CM",
-    "category": "accesorios",
-    "subcategory": "Accesorios",
-    "price": 11900,
-    "originalPrice": 14000,
-    "discount": 15,
-    "stock": 10,
-    "rating": 3.6,
-    "reviews": 5,
-    "featured": false,
-    "topDiscount": false,
-    "hasVideo": false,
-    "tags": [
-      "arnes",
-      "reflectante",
-      "1,0cm*120cm*2,0cm",
-      "collar",
-      "correa",
-      "paseo",
-      "pechera"
-    ],
-    "description": "ARNES REFLECTANTE 1,0CM*120CM*2,0CM",
-    "longDescription": "ARNES REFLECTANTE 1,0CM*120CM*2,0CM",
-    "images": {
-      "cover": "assets/images/products/prod_701/cover.jpg",
-      "thumb": "assets/images/products/prod_701/thumb.jpg",
-      "gallery": [
-        "assets/images/products/prod_701/1.jpg"
-      ]
-    },
-    "specs": {
-      "SKU": "ARN002",
-      "Medida": "0CM"
-    },
-    "shipping": {
-      "free": false,
-      "days": 4
-    },
-    "badge": "🦴 Accesorios",
-    "brand": "Sin marca",
-    "sku": "ARN002",
-    "features": [
-      "Ajuste cómodo",
-      "Material resistente",
-      "Fácil de usar",
-      "Seguro y confiable"
-    ]
-  },
-  {
-    "id": "prod_702",
-    "name": "ARNES REFLECTANTE 1,2CM*120CM*2,5CM",
-    "category": "accesorios",
-    "subcategory": "Accesorios",
-    "price": 15300,
-    "originalPrice": 18000,
-    "discount": 15,
-    "stock": 10,
-    "rating": 4.4,
-    "reviews": 45,
-    "featured": false,
-    "topDiscount": false,
-    "hasVideo": false,
-    "tags": [
-      "arnes",
-      "reflectante",
-      "1,2cm*120cm*2,5cm",
-      "collar",
-      "correa",
-      "paseo",
-      "pechera"
-    ],
-    "description": "ARNES REFLECTANTE 1,2CM*120CM*2,5CM",
-    "longDescription": "ARNES REFLECTANTE 1,2CM*120CM*2,5CM",
-    "images": {
-      "cover": "assets/images/products/prod_702/cover.jpg",
-      "thumb": "assets/images/products/prod_702/thumb.jpg",
-      "gallery": [
-        "assets/images/products/prod_702/1.jpg"
-      ]
-    },
-    "specs": {
-      "SKU": "ARN003",
-      "Medida": "2CM"
-    },
-    "shipping": {
-      "free": true,
-      "days": 4
-    },
-    "badge": "🦴 Accesorios",
-    "brand": "Sin marca",
-    "sku": "ARN003",
-    "features": [
-      "Ajuste cómodo",
-      "Material resistente",
-      "Fácil de usar",
-      "Seguro y confiable"
+      "Fácil de usar"
     ]
   },
   {
@@ -21157,13 +22121,20 @@
       "attributes": [
         {
           "name": "Tamaño",
-          "values": ["40x50", "40x60", "40x70", "40x80"]
+          "values": [
+            "40x50",
+            "40x60",
+            "40x70",
+            "40x80"
+          ]
         }
       ],
       "combinations": [
         {
           "id": "var_727_1",
-          "attributes": { "Tamaño": "40x50" },
+          "attributes": {
+            "Tamaño": "40x50"
+          },
           "price": 8840,
           "originalPrice": 10400,
           "stock": 10,
@@ -21172,12 +22143,16 @@
           "images": {
             "cover": "assets/images/products/prod_727/cover.jpg",
             "thumb": "assets/images/products/prod_727/thumb.jpg",
-            "gallery": ["assets/images/products/prod_727/1.jpg"]
+            "gallery": [
+              "assets/images/products/prod_727/1.jpg"
+            ]
           }
         },
         {
           "id": "var_727_2",
-          "attributes": { "Tamaño": "40x60" },
+          "attributes": {
+            "Tamaño": "40x60"
+          },
           "price": 9095,
           "originalPrice": 10700,
           "stock": 10,
@@ -21186,12 +22161,16 @@
           "images": {
             "cover": "assets/images/products/prod_728/cover.jpg",
             "thumb": "assets/images/products/prod_728/thumb.jpg",
-            "gallery": ["assets/images/products/prod_728/1.jpg"]
+            "gallery": [
+              "assets/images/products/prod_728/1.jpg"
+            ]
           }
         },
         {
           "id": "var_727_3",
-          "attributes": { "Tamaño": "40x70" },
+          "attributes": {
+            "Tamaño": "40x70"
+          },
           "price": 9350,
           "originalPrice": 11000,
           "stock": 10,
@@ -21200,12 +22179,16 @@
           "images": {
             "cover": "assets/images/products/prod_729/cover.jpg",
             "thumb": "assets/images/products/prod_729/thumb.jpg",
-            "gallery": ["assets/images/products/prod_729/1.jpg"]
+            "gallery": [
+              "assets/images/products/prod_729/1.jpg"
+            ]
           }
         },
         {
           "id": "var_727_4",
-          "attributes": { "Tamaño": "40x80" },
+          "attributes": {
+            "Tamaño": "40x80"
+          },
           "price": 9690,
           "originalPrice": 11400,
           "stock": 10,
@@ -21214,7 +22197,9 @@
           "images": {
             "cover": "assets/images/products/prod_730/cover.jpg",
             "thumb": "assets/images/products/prod_730/thumb.jpg",
-            "gallery": ["assets/images/products/prod_730/1.jpg"]
+            "gallery": [
+              "assets/images/products/prod_730/1.jpg"
+            ]
           }
         }
       ]
@@ -23991,15 +24976,16 @@
   },
   {
     "id": "prod_789",
-    "name": "COMEDERO ACERO INOXIDABLE  N°1  15CM",
+    "name": "COMEDERO ACERO INOXIDABLE",
     "category": "accesorios",
     "subcategory": "Comederos",
-    "price": 3655,
-    "originalPrice": 4300,
+    "hasVariants": true,
+    "basePrice": 3655,
+    "baseOriginalPrice": 4300,
     "discount": 15,
-    "stock": 10,
-    "rating": 4.5,
-    "reviews": 21,
+    "stock": 60,
+    "rating": 4.3,
+    "reviews": 170,
     "featured": false,
     "topDiscount": false,
     "hasVideo": false,
@@ -24007,13 +24993,133 @@
       "comedero",
       "acero",
       "inoxidable",
-      "15cm",
       "bebedero",
       "alimentación",
-      "agua"
+      "agua",
+      "perros",
+      "gatos"
     ],
-    "description": "COMEDERO ACERO INOXIDABLE  N°1  15CM",
-    "longDescription": "COMEDERO ACERO INOXIDABLE  N°1  15CM",
+    "description": "Comedero de acero inoxidable de alta calidad. Disponible en múltiples tamaños.",
+    "longDescription": "Comedero de acero inoxidable resistente y duradero. Ideal para perros y gatos. Fácil de limpiar y mantener. Disponible en varios tamaños para adaptarse a las necesidades de tu mascota.",
+    "variants": {
+      "attributes": [
+        {
+          "id": "size",
+          "name": "Tamaño",
+          "type": "size"
+        }
+      ],
+      "combinations": [
+        {
+          "id": "var_789_1",
+          "attributes": {
+            "Tamaño": "N°1 (15cm)"
+          },
+          "price": 3655,
+          "originalPrice": 4300,
+          "stock": 10,
+          "sku": "COM009",
+          "available": true,
+          "images": {
+            "cover": "assets/images/products/prod_789/cover.jpg",
+            "thumb": "assets/images/products/prod_789/thumb.jpg",
+            "gallery": [
+              "assets/images/products/prod_789/1.jpg"
+            ]
+          }
+        },
+        {
+          "id": "var_789_2",
+          "attributes": {
+            "Tamaño": "N°2 (18cm)"
+          },
+          "price": 5525,
+          "originalPrice": 6500,
+          "stock": 10,
+          "sku": "COM010",
+          "available": true,
+          "images": {
+            "cover": "assets/images/products/prod_790/cover.jpg",
+            "thumb": "assets/images/products/prod_790/thumb.jpg",
+            "gallery": [
+              "assets/images/products/prod_790/1.jpg"
+            ]
+          }
+        },
+        {
+          "id": "var_789_3",
+          "attributes": {
+            "Tamaño": "N°3 (22cm)"
+          },
+          "price": 6800,
+          "originalPrice": 8000,
+          "stock": 10,
+          "sku": "COM011",
+          "available": true,
+          "images": {
+            "cover": "assets/images/products/prod_791/cover.jpg",
+            "thumb": "assets/images/products/prod_791/thumb.jpg",
+            "gallery": [
+              "assets/images/products/prod_791/1.jpg"
+            ]
+          }
+        },
+        {
+          "id": "var_789_4",
+          "attributes": {
+            "Tamaño": "N°4 (26cm)"
+          },
+          "price": 7650,
+          "originalPrice": 9000,
+          "stock": 10,
+          "sku": "COM012",
+          "available": true,
+          "images": {
+            "cover": "assets/images/products/prod_792/cover.jpg",
+            "thumb": "assets/images/products/prod_792/thumb.jpg",
+            "gallery": [
+              "assets/images/products/prod_792/1.jpg"
+            ]
+          }
+        },
+        {
+          "id": "var_789_5",
+          "attributes": {
+            "Tamaño": "N°6 (34cm)"
+          },
+          "price": 13430,
+          "originalPrice": 15800,
+          "stock": 10,
+          "sku": "COM013",
+          "available": true,
+          "images": {
+            "cover": "assets/images/products/prod_793/cover.jpg",
+            "thumb": "assets/images/products/prod_793/thumb.jpg",
+            "gallery": [
+              "assets/images/products/prod_793/1.jpg"
+            ]
+          }
+        },
+        {
+          "id": "var_789_6",
+          "attributes": {
+            "Tamaño": "N°7 (38cm)"
+          },
+          "price": 18360,
+          "originalPrice": 21600,
+          "stock": 10,
+          "sku": "COM014",
+          "available": true,
+          "images": {
+            "cover": "assets/images/products/prod_794/cover.jpg",
+            "thumb": "assets/images/products/prod_794/thumb.jpg",
+            "gallery": [
+              "assets/images/products/prod_794/1.jpg"
+            ]
+          }
+        }
+      ]
+    },
     "images": {
       "cover": "assets/images/products/prod_789/cover.jpg",
       "thumb": "assets/images/products/prod_789/thumb.jpg",
@@ -24023,270 +25129,22 @@
     },
     "specs": {
       "SKU": "COM009",
-      "Medida": "15CM"
+      "Material": "Acero Inoxidable",
+      "Tamaños disponibles": "15cm, 18cm, 22cm, 26cm, 34cm, 38cm"
     },
     "shipping": {
       "free": false,
-      "days": 2
+      "days": 3
     },
     "badge": "🍽️ Comederos",
     "brand": "Sin marca",
     "sku": "COM009",
     "features": [
+      "Múltiples tamaños disponibles",
       "Fácil de limpiar",
       "Antideslizante",
-      "Capacidad adecuada",
-      "Material duradero"
-    ]
-  },
-  {
-    "id": "prod_790",
-    "name": "COMEDERO ACERO INOXIDABLE  N°2 18CM",
-    "category": "accesorios",
-    "subcategory": "Comederos",
-    "price": 5525,
-    "originalPrice": 6500,
-    "discount": 15,
-    "stock": 10,
-    "rating": 4.7,
-    "reviews": 28,
-    "featured": false,
-    "topDiscount": false,
-    "hasVideo": false,
-    "tags": [
-      "comedero",
-      "acero",
-      "inoxidable",
-      "18cm",
-      "bebedero",
-      "alimentación",
-      "agua"
-    ],
-    "description": "COMEDERO ACERO INOXIDABLE  N°2 18CM",
-    "longDescription": "COMEDERO ACERO INOXIDABLE  N°2 18CM",
-    "images": {
-      "cover": "assets/images/products/prod_790/cover.jpg",
-      "thumb": "assets/images/products/prod_790/thumb.jpg",
-      "gallery": [
-        "assets/images/products/prod_790/1.jpg"
-      ]
-    },
-    "specs": {
-      "SKU": "COM010",
-      "Medida": "18CM"
-    },
-    "shipping": {
-      "free": false,
-      "days": 4
-    },
-    "badge": "🍽️ Comederos",
-    "brand": "Sin marca",
-    "sku": "COM010",
-    "features": [
-      "Fácil de limpiar",
-      "Antideslizante",
-      "Capacidad adecuada",
-      "Material duradero"
-    ]
-  },
-  {
-    "id": "prod_791",
-    "name": "COMEDERO ACERO INOXIDABLE DE  N°3 22CM",
-    "category": "accesorios",
-    "subcategory": "Comederos",
-    "price": 6800,
-    "originalPrice": 8000,
-    "discount": 15,
-    "stock": 10,
-    "rating": 4.1,
-    "reviews": 53,
-    "featured": false,
-    "topDiscount": false,
-    "hasVideo": false,
-    "tags": [
-      "comedero",
-      "acero",
-      "inoxidable",
-      "22cm",
-      "bebedero",
-      "alimentación",
-      "agua"
-    ],
-    "description": "COMEDERO ACERO INOXIDABLE DE  N°3 22CM",
-    "longDescription": "COMEDERO ACERO INOXIDABLE DE  N°3 22CM",
-    "images": {
-      "cover": "assets/images/products/prod_791/cover.jpg",
-      "thumb": "assets/images/products/prod_791/thumb.jpg",
-      "gallery": [
-        "assets/images/products/prod_791/1.jpg"
-      ]
-    },
-    "specs": {
-      "SKU": "COM011",
-      "Medida": "22CM"
-    },
-    "shipping": {
-      "free": false,
-      "days": 2
-    },
-    "badge": "🍽️ Comederos",
-    "brand": "Sin marca",
-    "sku": "COM011",
-    "features": [
-      "Fácil de limpiar",
-      "Antideslizante",
-      "Capacidad adecuada",
-      "Material duradero"
-    ]
-  },
-  {
-    "id": "prod_792",
-    "name": "COMEDERO ACERO INOXIDABLE   N°4 26CM",
-    "category": "accesorios",
-    "subcategory": "Comederos",
-    "price": 7650,
-    "originalPrice": 9000,
-    "discount": 15,
-    "stock": 10,
-    "rating": 4.2,
-    "reviews": 17,
-    "featured": false,
-    "topDiscount": false,
-    "hasVideo": false,
-    "tags": [
-      "comedero",
-      "acero",
-      "inoxidable",
-      "26cm",
-      "bebedero",
-      "alimentación",
-      "agua"
-    ],
-    "description": "COMEDERO ACERO INOXIDABLE   N°4 26CM",
-    "longDescription": "COMEDERO ACERO INOXIDABLE   N°4 26CM",
-    "images": {
-      "cover": "assets/images/products/prod_792/cover.jpg",
-      "thumb": "assets/images/products/prod_792/thumb.jpg",
-      "gallery": [
-        "assets/images/products/prod_792/1.jpg"
-      ]
-    },
-    "specs": {
-      "SKU": "COM012",
-      "Medida": "26CM"
-    },
-    "shipping": {
-      "free": false,
-      "days": 2
-    },
-    "badge": "🍽️ Comederos",
-    "brand": "Sin marca",
-    "sku": "COM012",
-    "features": [
-      "Fácil de limpiar",
-      "Antideslizante",
-      "Capacidad adecuada",
-      "Material duradero"
-    ]
-  },
-  {
-    "id": "prod_793",
-    "name": "COMEDERO ACERO INOXIDABLE   N°6 34CM",
-    "category": "accesorios",
-    "subcategory": "Comederos",
-    "price": 13430,
-    "originalPrice": 15800,
-    "discount": 15,
-    "stock": 10,
-    "rating": 4.4,
-    "reviews": 27,
-    "featured": false,
-    "topDiscount": false,
-    "hasVideo": false,
-    "tags": [
-      "comedero",
-      "acero",
-      "inoxidable",
-      "34cm",
-      "bebedero",
-      "alimentación",
-      "agua"
-    ],
-    "description": "COMEDERO ACERO INOXIDABLE   N°6 34CM",
-    "longDescription": "COMEDERO ACERO INOXIDABLE   N°6 34CM",
-    "images": {
-      "cover": "assets/images/products/prod_793/cover.jpg",
-      "thumb": "assets/images/products/prod_793/thumb.jpg",
-      "gallery": [
-        "assets/images/products/prod_793/1.jpg"
-      ]
-    },
-    "specs": {
-      "SKU": "COM013",
-      "Medida": "34CM"
-    },
-    "shipping": {
-      "free": true,
-      "days": 4
-    },
-    "badge": "🍽️ Comederos",
-    "brand": "Sin marca",
-    "sku": "COM013",
-    "features": [
-      "Fácil de limpiar",
-      "Antideslizante",
-      "Capacidad adecuada",
-      "Material duradero"
-    ]
-  },
-  {
-    "id": "prod_794",
-    "name": "COMEDERO ACERO INOXIDABLE   N°7 38CM",
-    "category": "accesorios",
-    "subcategory": "Comederos",
-    "price": 18360,
-    "originalPrice": 21600,
-    "discount": 15,
-    "stock": 10,
-    "rating": 3.7,
-    "reviews": 24,
-    "featured": false,
-    "topDiscount": false,
-    "hasVideo": false,
-    "tags": [
-      "comedero",
-      "acero",
-      "inoxidable",
-      "38cm",
-      "bebedero",
-      "alimentación",
-      "agua"
-    ],
-    "description": "COMEDERO ACERO INOXIDABLE   N°7 38CM",
-    "longDescription": "COMEDERO ACERO INOXIDABLE   N°7 38CM",
-    "images": {
-      "cover": "assets/images/products/prod_794/cover.jpg",
-      "thumb": "assets/images/products/prod_794/thumb.jpg",
-      "gallery": [
-        "assets/images/products/prod_794/1.jpg"
-      ]
-    },
-    "specs": {
-      "SKU": "COM014",
-      "Medida": "38CM"
-    },
-    "shipping": {
-      "free": true,
-      "days": 3
-    },
-    "badge": "🍽️ Comederos",
-    "brand": "Sin marca",
-    "sku": "COM014",
-    "features": [
-      "Fácil de limpiar",
-      "Antideslizante",
-      "Capacidad adecuada",
-      "Material duradero"
+      "Material duradero",
+      "Acero inoxidable de alta calidad"
     ]
   },
   {
@@ -24344,13 +25202,21 @@
       "attributes": [
         {
           "name": "Medida",
-          "values": ["16 cm", "18 cm", "22 cm", "26 cm", "30 cm"]
+          "values": [
+            "16 cm",
+            "18 cm",
+            "22 cm",
+            "26 cm",
+            "30 cm"
+          ]
         }
       ],
       "combinations": [
         {
           "id": "var_795_16",
-          "attributes": { "Medida": "16 cm" },
+          "attributes": {
+            "Medida": "16 cm"
+          },
           "price": 3400,
           "originalPrice": 4000,
           "stock": 10,
@@ -24359,12 +25225,16 @@
           "images": {
             "cover": "assets/images/products/prod_795/cover.jpg",
             "thumb": "assets/images/products/prod_795/thumb.jpg",
-            "gallery": ["assets/images/products/prod_795/1.jpg"]
+            "gallery": [
+              "assets/images/products/prod_795/1.jpg"
+            ]
           }
         },
         {
           "id": "var_795_18",
-          "attributes": { "Medida": "18 cm" },
+          "attributes": {
+            "Medida": "18 cm"
+          },
           "price": 4760,
           "originalPrice": 5600,
           "stock": 10,
@@ -24373,12 +25243,16 @@
           "images": {
             "cover": "assets/images/products/prod_796/cover.jpg",
             "thumb": "assets/images/products/prod_796/thumb.jpg",
-            "gallery": ["assets/images/products/prod_796/1.jpg"]
+            "gallery": [
+              "assets/images/products/prod_796/1.jpg"
+            ]
           }
         },
         {
           "id": "var_795_22",
-          "attributes": { "Medida": "22 cm" },
+          "attributes": {
+            "Medida": "22 cm"
+          },
           "price": 5950,
           "originalPrice": 7000,
           "stock": 10,
@@ -24387,12 +25261,16 @@
           "images": {
             "cover": "assets/images/products/prod_797/cover.jpg",
             "thumb": "assets/images/products/prod_797/thumb.jpg",
-            "gallery": ["assets/images/products/prod_797/1.jpg"]
+            "gallery": [
+              "assets/images/products/prod_797/1.jpg"
+            ]
           }
         },
         {
           "id": "var_795_26",
-          "attributes": { "Medida": "26 cm" },
+          "attributes": {
+            "Medida": "26 cm"
+          },
           "price": 7310,
           "originalPrice": 8600,
           "stock": 10,
@@ -24401,12 +25279,16 @@
           "images": {
             "cover": "assets/images/products/prod_798/cover.jpg",
             "thumb": "assets/images/products/prod_798/thumb.jpg",
-            "gallery": ["assets/images/products/prod_798/1.jpg"]
+            "gallery": [
+              "assets/images/products/prod_798/1.jpg"
+            ]
           }
         },
         {
           "id": "var_795_30",
-          "attributes": { "Medida": "30 cm" },
+          "attributes": {
+            "Medida": "30 cm"
+          },
           "price": 9775,
           "originalPrice": 11500,
           "stock": 10,
@@ -24415,7 +25297,9 @@
           "images": {
             "cover": "assets/images/products/prod_799/cover.jpg",
             "thumb": "assets/images/products/prod_799/thumb.jpg",
-            "gallery": ["assets/images/products/prod_799/1.jpg"]
+            "gallery": [
+              "assets/images/products/prod_799/1.jpg"
+            ]
           }
         }
       ]
@@ -25020,28 +25904,95 @@
   },
   {
     "id": "prod_825",
-    "name": "COMEDERO REDONDO CHICO",
+    "name": "COMEDERO REDONDO",
     "category": "accesorios",
     "subcategory": "Comederos",
-    "price": 1530,
-    "originalPrice": 1800,
+    "hasVariants": true,
+    "basePrice": 1530,
+    "baseOriginalPrice": 1800,
     "discount": 15,
-    "stock": 10,
-    "rating": 4.9,
-    "reviews": 44,
+    "stock": 30,
+    "rating": 4.4,
+    "reviews": 80,
     "featured": false,
     "topDiscount": false,
     "hasVideo": false,
     "tags": [
       "comedero",
       "redondo",
-      "chico",
       "bebedero",
       "alimentación",
-      "agua"
+      "agua",
+      "perros",
+      "gatos"
     ],
-    "description": "COMEDERO REDONDO CHICO",
-    "longDescription": "COMEDERO REDONDO CHICO",
+    "description": "Comedero redondo de plástico resistente. Disponible en tamaño Chico, Mediano y Grande.",
+    "longDescription": "Comedero redondo de plástico de alta calidad. Ideal para perros y gatos. Fácil de limpiar y mantener. Disponible en tres tamaños para adaptarse a las necesidades de tu mascota.",
+    "variants": {
+      "attributes": [
+        {
+          "id": "size",
+          "name": "Tamaño",
+          "type": "size"
+        }
+      ],
+      "combinations": [
+        {
+          "id": "var_825_1",
+          "attributes": {
+            "Tamaño": "Chico"
+          },
+          "price": 1530,
+          "originalPrice": 1800,
+          "stock": 10,
+          "sku": "COM041",
+          "available": true,
+          "images": {
+            "cover": "assets/images/products/prod_825/cover.jpg",
+            "thumb": "assets/images/products/prod_825/thumb.jpg",
+            "gallery": [
+              "assets/images/products/prod_825/1.jpg"
+            ]
+          }
+        },
+        {
+          "id": "var_825_2",
+          "attributes": {
+            "Tamaño": "Mediano"
+          },
+          "price": 2125,
+          "originalPrice": 2500,
+          "stock": 10,
+          "sku": "COM042",
+          "available": true,
+          "images": {
+            "cover": "assets/images/products/prod_826/cover.jpg",
+            "thumb": "assets/images/products/prod_826/thumb.jpg",
+            "gallery": [
+              "assets/images/products/prod_826/1.jpg"
+            ]
+          }
+        },
+        {
+          "id": "var_825_3",
+          "attributes": {
+            "Tamaño": "Grande"
+          },
+          "price": 2975,
+          "originalPrice": 3500,
+          "stock": 10,
+          "sku": "COM043",
+          "available": true,
+          "images": {
+            "cover": "assets/images/products/prod_827/cover.jpg",
+            "thumb": "assets/images/products/prod_827/thumb.jpg",
+            "gallery": [
+              "assets/images/products/prod_827/1.jpg"
+            ]
+          }
+        }
+      ]
+    },
     "images": {
       "cover": "assets/images/products/prod_825/cover.jpg",
       "thumb": "assets/images/products/prod_825/thumb.jpg",
@@ -25050,7 +26001,9 @@
       ]
     },
     "specs": {
-      "SKU": "COM041"
+      "SKU": "COM041",
+      "Material": "Plástico resistente",
+      "Tamaños disponibles": "Chico, Mediano, Grande"
     },
     "shipping": {
       "free": false,
@@ -25060,102 +26013,7 @@
     "brand": "Sin marca",
     "sku": "COM041",
     "features": [
-      "Fácil de limpiar",
-      "Antideslizante",
-      "Capacidad adecuada",
-      "Material duradero"
-    ]
-  },
-  {
-    "id": "prod_826",
-    "name": "COMEDERO REDONDO MEDIANO",
-    "category": "accesorios",
-    "subcategory": "Comederos",
-    "price": 2125,
-    "originalPrice": 2500,
-    "discount": 15,
-    "stock": 10,
-    "rating": 3.9,
-    "reviews": 23,
-    "featured": false,
-    "topDiscount": false,
-    "hasVideo": false,
-    "tags": [
-      "comedero",
-      "redondo",
-      "mediano",
-      "bebedero",
-      "alimentación",
-      "agua"
-    ],
-    "description": "COMEDERO REDONDO MEDIANO",
-    "longDescription": "COMEDERO REDONDO MEDIANO",
-    "images": {
-      "cover": "assets/images/products/prod_826/cover.jpg",
-      "thumb": "assets/images/products/prod_826/thumb.jpg",
-      "gallery": [
-        "assets/images/products/prod_826/1.jpg"
-      ]
-    },
-    "specs": {
-      "SKU": "COM042"
-    },
-    "shipping": {
-      "free": false,
-      "days": 4
-    },
-    "badge": "🍽️ Comederos",
-    "brand": "Sin marca",
-    "sku": "COM042",
-    "features": [
-      "Fácil de limpiar",
-      "Antideslizante",
-      "Capacidad adecuada",
-      "Material duradero"
-    ]
-  },
-  {
-    "id": "prod_827",
-    "name": "COMEDERO REDONDO GRANDE",
-    "category": "accesorios",
-    "subcategory": "Comederos",
-    "price": 2975,
-    "originalPrice": 3500,
-    "discount": 15,
-    "stock": 10,
-    "rating": 4.4,
-    "reviews": 13,
-    "featured": false,
-    "topDiscount": false,
-    "hasVideo": false,
-    "tags": [
-      "comedero",
-      "redondo",
-      "grande",
-      "bebedero",
-      "alimentación",
-      "agua"
-    ],
-    "description": "COMEDERO REDONDO GRANDE",
-    "longDescription": "COMEDERO REDONDO GRANDE",
-    "images": {
-      "cover": "assets/images/products/prod_827/cover.jpg",
-      "thumb": "assets/images/products/prod_827/thumb.jpg",
-      "gallery": [
-        "assets/images/products/prod_827/1.jpg"
-      ]
-    },
-    "specs": {
-      "SKU": "COM043"
-    },
-    "shipping": {
-      "free": false,
-      "days": 2
-    },
-    "badge": "🍽️ Comederos",
-    "brand": "Sin marca",
-    "sku": "COM043",
-    "features": [
+      "Múltiples tamaños disponibles",
       "Fácil de limpiar",
       "Antideslizante",
       "Capacidad adecuada",
@@ -25164,30 +26022,96 @@
   },
   {
     "id": "prod_828",
-    "name": "COMEDERO REDONDO CHICO ( PETS PLAST)",
+    "name": "COMEDERO REDONDO PETS PLAST",
     "category": "accesorios",
     "subcategory": "Comederos",
-    "price": 1360,
-    "originalPrice": 1600,
+    "hasVariants": true,
+    "basePrice": 1360,
+    "baseOriginalPrice": 1600,
     "discount": 15,
-    "stock": 10,
+    "stock": 30,
     "rating": 3.7,
-    "reviews": 5,
+    "reviews": 63,
     "featured": false,
     "topDiscount": false,
     "hasVideo": false,
     "tags": [
       "comedero",
       "redondo",
-      "chico",
-      "pets",
-      "plast)",
+      "pets plast",
       "bebedero",
       "alimentación",
-      "agua"
+      "agua",
+      "perros",
+      "gatos"
     ],
-    "description": "COMEDERO REDONDO CHICO ( PETS PLAST)",
-    "longDescription": "COMEDERO REDONDO CHICO ( PETS PLAST)",
+    "description": "Comedero redondo Pets Plast de plástico resistente. Disponible en tamaño Chico, Mediano y Grande.",
+    "longDescription": "Comedero redondo marca Pets Plast de plástico de alta calidad. Ideal para perros y gatos. Fácil de limpiar y mantener. Disponible en tres tamaños para adaptarse a las necesidades de tu mascota.",
+    "variants": {
+      "attributes": [
+        {
+          "id": "size",
+          "name": "Tamaño",
+          "type": "size"
+        }
+      ],
+      "combinations": [
+        {
+          "id": "var_828_1",
+          "attributes": {
+            "Tamaño": "Chico"
+          },
+          "price": 1360,
+          "originalPrice": 1600,
+          "stock": 10,
+          "sku": "COM044",
+          "available": true,
+          "images": {
+            "cover": "assets/images/products/prod_828/cover.jpg",
+            "thumb": "assets/images/products/prod_828/thumb.jpg",
+            "gallery": [
+              "assets/images/products/prod_828/1.jpg"
+            ]
+          }
+        },
+        {
+          "id": "var_828_2",
+          "attributes": {
+            "Tamaño": "Mediano"
+          },
+          "price": 2125,
+          "originalPrice": 2500,
+          "stock": 10,
+          "sku": "COM045",
+          "available": true,
+          "images": {
+            "cover": "assets/images/products/prod_829/cover.jpg",
+            "thumb": "assets/images/products/prod_829/thumb.jpg",
+            "gallery": [
+              "assets/images/products/prod_829/1.jpg"
+            ]
+          }
+        },
+        {
+          "id": "var_828_3",
+          "attributes": {
+            "Tamaño": "Grande"
+          },
+          "price": 2550,
+          "originalPrice": 3000,
+          "stock": 10,
+          "sku": "COM046",
+          "available": true,
+          "images": {
+            "cover": "assets/images/products/prod_830/cover.jpg",
+            "thumb": "assets/images/products/prod_830/thumb.jpg",
+            "gallery": [
+              "assets/images/products/prod_830/1.jpg"
+            ]
+          }
+        }
+      ]
+    },
     "images": {
       "cover": "assets/images/products/prod_828/cover.jpg",
       "thumb": "assets/images/products/prod_828/thumb.jpg",
@@ -25196,116 +26120,20 @@
       ]
     },
     "specs": {
-      "SKU": "COM044"
-    },
-    "shipping": {
-      "free": false,
-      "days": 4
-    },
-    "badge": "🍽️ Comederos",
-    "brand": "Sin marca",
-    "sku": "COM044",
-    "features": [
-      "Fácil de limpiar",
-      "Antideslizante",
-      "Capacidad adecuada",
-      "Material duradero"
-    ]
-  },
-  {
-    "id": "prod_829",
-    "name": "COMEDERO REDONDO MEDIANO ( PETS PLAST)",
-    "category": "accesorios",
-    "subcategory": "Comederos",
-    "price": 2125,
-    "originalPrice": 2500,
-    "discount": 15,
-    "stock": 10,
-    "rating": 3.5,
-    "reviews": 38,
-    "featured": false,
-    "topDiscount": false,
-    "hasVideo": false,
-    "tags": [
-      "comedero",
-      "redondo",
-      "mediano",
-      "pets",
-      "plast)",
-      "bebedero",
-      "alimentación",
-      "agua"
-    ],
-    "description": "COMEDERO REDONDO MEDIANO ( PETS PLAST)",
-    "longDescription": "COMEDERO REDONDO MEDIANO ( PETS PLAST)",
-    "images": {
-      "cover": "assets/images/products/prod_829/cover.jpg",
-      "thumb": "assets/images/products/prod_829/thumb.jpg",
-      "gallery": [
-        "assets/images/products/prod_829/1.jpg"
-      ]
-    },
-    "specs": {
-      "SKU": "COM045"
+      "SKU": "COM044",
+      "Material": "Plástico resistente",
+      "Marca": "Pets Plast",
+      "Tamaños disponibles": "Chico, Mediano, Grande"
     },
     "shipping": {
       "free": false,
       "days": 3
     },
     "badge": "🍽️ Comederos",
-    "brand": "Sin marca",
-    "sku": "COM045",
+    "brand": "Pets Plast",
+    "sku": "COM044",
     "features": [
-      "Fácil de limpiar",
-      "Antideslizante",
-      "Capacidad adecuada",
-      "Material duradero"
-    ]
-  },
-  {
-    "id": "prod_830",
-    "name": "COMEDERO REDONDO GRANDE  ( PETS PLAST )",
-    "category": "accesorios",
-    "subcategory": "Comederos",
-    "price": 2550,
-    "originalPrice": 3000,
-    "discount": 15,
-    "stock": 10,
-    "rating": 3.8,
-    "reviews": 20,
-    "featured": false,
-    "topDiscount": false,
-    "hasVideo": false,
-    "tags": [
-      "comedero",
-      "redondo",
-      "grande",
-      "pets",
-      "plast",
-      "bebedero",
-      "alimentación",
-      "agua"
-    ],
-    "description": "COMEDERO REDONDO GRANDE  ( PETS PLAST )",
-    "longDescription": "COMEDERO REDONDO GRANDE  ( PETS PLAST )",
-    "images": {
-      "cover": "assets/images/products/prod_830/cover.jpg",
-      "thumb": "assets/images/products/prod_830/thumb.jpg",
-      "gallery": [
-        "assets/images/products/prod_830/1.jpg"
-      ]
-    },
-    "specs": {
-      "SKU": "COM046"
-    },
-    "shipping": {
-      "free": false,
-      "days": 4
-    },
-    "badge": "🍽️ Comederos",
-    "brand": "Sin marca",
-    "sku": "COM046",
-    "features": [
+      "Múltiples tamaños disponibles",
       "Fácil de limpiar",
       "Antideslizante",
       "Capacidad adecuada",
@@ -25603,29 +26431,96 @@
   },
   {
     "id": "prod_837",
-    "name": "PLATO CUADRADO CHICO",
+    "name": "PLATO CUADRADO",
     "category": "accesorios",
     "subcategory": "Comederos",
-    "price": 1275,
-    "originalPrice": 1500,
+    "hasVariants": true,
+    "basePrice": 1275,
+    "baseOriginalPrice": 1500,
     "discount": 15,
-    "stock": 10,
-    "rating": 4.6,
-    "reviews": 46,
+    "stock": 30,
+    "rating": 4,
+    "reviews": 102,
     "featured": false,
     "topDiscount": false,
     "hasVideo": false,
     "tags": [
       "plato",
       "cuadrado",
-      "chico",
       "comedero",
       "bebedero",
       "alimentación",
-      "agua"
+      "agua",
+      "perros",
+      "gatos"
     ],
-    "description": "PLATO CUADRADO CHICO",
-    "longDescription": "PLATO CUADRADO CHICO",
+    "description": "Plato cuadrado de plástico resistente. Disponible en tamaño Chico, Mediano y Grande.",
+    "longDescription": "Plato cuadrado de plástico de alta calidad. Ideal para perros y gatos. Fácil de limpiar y mantener. Disponible en tres tamaños para adaptarse a las necesidades de tu mascota.",
+    "variants": {
+      "attributes": [
+        {
+          "id": "size",
+          "name": "Tamaño",
+          "type": "size"
+        }
+      ],
+      "combinations": [
+        {
+          "id": "var_837_1",
+          "attributes": {
+            "Tamaño": "Chico"
+          },
+          "price": 1275,
+          "originalPrice": 1500,
+          "stock": 10,
+          "sku": "PLA001",
+          "available": true,
+          "images": {
+            "cover": "assets/images/products/prod_837/cover.jpg",
+            "thumb": "assets/images/products/prod_837/thumb.jpg",
+            "gallery": [
+              "assets/images/products/prod_837/1.jpg"
+            ]
+          }
+        },
+        {
+          "id": "var_837_2",
+          "attributes": {
+            "Tamaño": "Mediano"
+          },
+          "price": 1785,
+          "originalPrice": 2100,
+          "stock": 10,
+          "sku": "PLA002",
+          "available": true,
+          "images": {
+            "cover": "assets/images/products/prod_838/cover.jpg",
+            "thumb": "assets/images/products/prod_838/thumb.jpg",
+            "gallery": [
+              "assets/images/products/prod_838/1.jpg"
+            ]
+          }
+        },
+        {
+          "id": "var_837_3",
+          "attributes": {
+            "Tamaño": "Grande"
+          },
+          "price": 2210,
+          "originalPrice": 2600,
+          "stock": 10,
+          "sku": "PLA003",
+          "available": true,
+          "images": {
+            "cover": "assets/images/products/prod_839/cover.jpg",
+            "thumb": "assets/images/products/prod_839/thumb.jpg",
+            "gallery": [
+              "assets/images/products/prod_839/1.jpg"
+            ]
+          }
+        }
+      ]
+    },
     "images": {
       "cover": "assets/images/products/prod_837/cover.jpg",
       "thumb": "assets/images/products/prod_837/thumb.jpg",
@@ -25634,7 +26529,9 @@
       ]
     },
     "specs": {
-      "SKU": "PLA001"
+      "SKU": "PLA001",
+      "Material": "Plástico resistente",
+      "Tamaños disponibles": "Chico, Mediano, Grande"
     },
     "shipping": {
       "free": false,
@@ -25644,104 +26541,7 @@
     "brand": "Sin marca",
     "sku": "PLA001",
     "features": [
-      "Fácil de limpiar",
-      "Antideslizante",
-      "Capacidad adecuada",
-      "Material duradero"
-    ]
-  },
-  {
-    "id": "prod_838",
-    "name": "PLATO CUADRADO MEDIANO",
-    "category": "accesorios",
-    "subcategory": "Comederos",
-    "price": 1785,
-    "originalPrice": 2100,
-    "discount": 15,
-    "stock": 10,
-    "rating": 3.5,
-    "reviews": 11,
-    "featured": false,
-    "topDiscount": false,
-    "hasVideo": false,
-    "tags": [
-      "plato",
-      "cuadrado",
-      "mediano",
-      "comedero",
-      "bebedero",
-      "alimentación",
-      "agua"
-    ],
-    "description": "PLATO CUADRADO MEDIANO",
-    "longDescription": "PLATO CUADRADO MEDIANO",
-    "images": {
-      "cover": "assets/images/products/prod_838/cover.jpg",
-      "thumb": "assets/images/products/prod_838/thumb.jpg",
-      "gallery": [
-        "assets/images/products/prod_838/1.jpg"
-      ]
-    },
-    "specs": {
-      "SKU": "PLA002"
-    },
-    "shipping": {
-      "free": false,
-      "days": 2
-    },
-    "badge": "🍽️ Comederos",
-    "brand": "Sin marca",
-    "sku": "PLA002",
-    "features": [
-      "Fácil de limpiar",
-      "Antideslizante",
-      "Capacidad adecuada",
-      "Material duradero"
-    ]
-  },
-  {
-    "id": "prod_839",
-    "name": "PLATO CUADRADO GRANDE",
-    "category": "accesorios",
-    "subcategory": "Comederos",
-    "price": 2210,
-    "originalPrice": 2600,
-    "discount": 15,
-    "stock": 10,
-    "rating": 3.9,
-    "reviews": 45,
-    "featured": false,
-    "topDiscount": false,
-    "hasVideo": false,
-    "tags": [
-      "plato",
-      "cuadrado",
-      "grande",
-      "comedero",
-      "bebedero",
-      "alimentación",
-      "agua"
-    ],
-    "description": "PLATO CUADRADO GRANDE",
-    "longDescription": "PLATO CUADRADO GRANDE",
-    "images": {
-      "cover": "assets/images/products/prod_839/cover.jpg",
-      "thumb": "assets/images/products/prod_839/thumb.jpg",
-      "gallery": [
-        "assets/images/products/prod_839/1.jpg"
-      ]
-    },
-    "specs": {
-      "SKU": "PLA003"
-    },
-    "shipping": {
-      "free": false,
-      "days": 4
-    },
-    "badge": "🍽️ Comederos",
-    "brand": "Sin marca",
-    "sku": "PLA003",
-    "features": [
+      "Múltiples tamaños disponibles",
       "Fácil de limpiar",
       "Antideslizante",
       "Capacidad adecuada",
@@ -25750,28 +26550,96 @@
   },
   {
     "id": "prod_840",
-    "name": "COMEDERO CAZUELA CHICA",
+    "name": "COMEDERO CAZUELA",
     "category": "accesorios",
     "subcategory": "Comederos",
-    "price": 1530,
-    "originalPrice": 1800,
+    "hasVariants": true,
+    "basePrice": 1530,
+    "baseOriginalPrice": 1800,
     "discount": 15,
-    "stock": 10,
+    "stock": 30,
     "rating": 4.6,
-    "reviews": 28,
+    "reviews": 102,
     "featured": false,
     "topDiscount": false,
     "hasVideo": false,
     "tags": [
       "comedero",
       "cazuela",
-      "chica",
       "bebedero",
       "alimentación",
-      "agua"
+      "agua",
+      "perros",
+      "gatos",
+      "plástico"
     ],
-    "description": "COMEDERO CAZUELA CHICA",
-    "longDescription": "COMEDERO CAZUELA CHICA",
+    "description": "Comedero cazuela de plástico. Disponible en múltiples tamaños.",
+    "longDescription": "Comedero tipo cazuela de plástico resistente. Ideal para perros y gatos. Fácil de limpiar y mantener. Disponible en varios tamaños y colores para adaptarse a las necesidades de tu mascota.",
+    "variants": {
+      "attributes": [
+        {
+          "id": "size",
+          "name": "Tamaño",
+          "type": "size"
+        }
+      ],
+      "combinations": [
+        {
+          "id": "var_840_1",
+          "attributes": {
+            "Tamaño": "Chica"
+          },
+          "price": 1530,
+          "originalPrice": 1800,
+          "stock": 10,
+          "sku": "COM053",
+          "available": true,
+          "images": {
+            "cover": "assets/images/products/prod_840/cover.jpg",
+            "thumb": "assets/images/products/prod_840/thumb.jpg",
+            "gallery": [
+              "assets/images/products/prod_840/1.jpg"
+            ]
+          }
+        },
+        {
+          "id": "var_840_2",
+          "attributes": {
+            "Tamaño": "Mediano"
+          },
+          "price": 2380,
+          "originalPrice": 2800,
+          "stock": 10,
+          "sku": "COM054",
+          "available": true,
+          "images": {
+            "cover": "assets/images/products/prod_841/cover.jpg",
+            "thumb": "assets/images/products/prod_841/thumb.jpg",
+            "gallery": [
+              "assets/images/products/prod_841/1.jpg"
+            ]
+          }
+        },
+        {
+          "id": "var_840_3",
+          "attributes": {
+            "Tamaño": "Grande"
+          },
+          "price": 3230,
+          "originalPrice": 3800,
+          "stock": 10,
+          "sku": "COM055",
+          "available": true,
+          "images": {
+            "cover": "assets/images/products/prod_842/cover.jpg",
+            "thumb": "assets/images/products/prod_842/thumb.jpg",
+            "gallery": [
+              "assets/images/products/prod_842/1.jpg"
+            ]
+          }
+        }
+      ]
+    },
     "images": {
       "cover": "assets/images/products/prod_840/cover.jpg",
       "thumb": "assets/images/products/prod_840/thumb.jpg",
@@ -25780,7 +26648,9 @@
       ]
     },
     "specs": {
-      "SKU": "COM053"
+      "SKU": "COM053",
+      "Material": "Plástico resistente",
+      "Tamaños disponibles": "Chica, Mediano, Grande"
     },
     "shipping": {
       "free": false,
@@ -25790,102 +26660,7 @@
     "brand": "Sin marca",
     "sku": "COM053",
     "features": [
-      "Fácil de limpiar",
-      "Antideslizante",
-      "Capacidad adecuada",
-      "Material duradero"
-    ]
-  },
-  {
-    "id": "prod_841",
-    "name": "COMEDERO CAZUELA MEDIANO",
-    "category": "accesorios",
-    "subcategory": "Comederos",
-    "price": 2380,
-    "originalPrice": 2800,
-    "discount": 15,
-    "stock": 10,
-    "rating": 4.7,
-    "reviews": 29,
-    "featured": false,
-    "topDiscount": false,
-    "hasVideo": false,
-    "tags": [
-      "comedero",
-      "cazuela",
-      "mediano",
-      "bebedero",
-      "alimentación",
-      "agua"
-    ],
-    "description": "COMEDERO CAZUELA MEDIANO",
-    "longDescription": "COMEDERO CAZUELA MEDIANO",
-    "images": {
-      "cover": "assets/images/products/prod_841/cover.jpg",
-      "thumb": "assets/images/products/prod_841/thumb.jpg",
-      "gallery": [
-        "assets/images/products/prod_841/1.jpg"
-      ]
-    },
-    "specs": {
-      "SKU": "COM054"
-    },
-    "shipping": {
-      "free": false,
-      "days": 2
-    },
-    "badge": "🍽️ Comederos",
-    "brand": "Sin marca",
-    "sku": "COM054",
-    "features": [
-      "Fácil de limpiar",
-      "Antideslizante",
-      "Capacidad adecuada",
-      "Material duradero"
-    ]
-  },
-  {
-    "id": "prod_842",
-    "name": "COMEDERO CAZUELA GRANDE",
-    "category": "accesorios",
-    "subcategory": "Comederos",
-    "price": 3230,
-    "originalPrice": 3800,
-    "discount": 15,
-    "stock": 10,
-    "rating": 4.6,
-    "reviews": 45,
-    "featured": false,
-    "topDiscount": false,
-    "hasVideo": false,
-    "tags": [
-      "comedero",
-      "cazuela",
-      "grande",
-      "bebedero",
-      "alimentación",
-      "agua"
-    ],
-    "description": "COMEDERO CAZUELA GRANDE",
-    "longDescription": "COMEDERO CAZUELA GRANDE",
-    "images": {
-      "cover": "assets/images/products/prod_842/cover.jpg",
-      "thumb": "assets/images/products/prod_842/thumb.jpg",
-      "gallery": [
-        "assets/images/products/prod_842/1.jpg"
-      ]
-    },
-    "specs": {
-      "SKU": "COM055"
-    },
-    "shipping": {
-      "free": false,
-      "days": 3
-    },
-    "badge": "🍽️ Comederos",
-    "brand": "Sin marca",
-    "sku": "COM055",
-    "features": [
+      "Múltiples tamaños disponibles",
       "Fácil de limpiar",
       "Antideslizante",
       "Capacidad adecuada",
@@ -26748,30 +27523,96 @@
   },
   {
     "id": "prod_864",
-    "name": "BEBEDERO PARA SOPORTE DE ALAMBRE, 100 L, COLORES SURTIDOS",
+    "name": "BEBEDERO PARA SOPORTE DE ALAMBRE",
     "category": "accesorios",
     "subcategory": "Comederos",
-    "price": 4080,
-    "originalPrice": 4800,
+    "hasVariants": true,
+    "basePrice": 4080,
+    "baseOriginalPrice": 4800,
     "discount": 15,
-    "stock": 10,
-    "rating": 4.4,
-    "reviews": 9,
+    "stock": 30,
+    "rating": 4.2,
+    "reviews": 58,
     "featured": false,
     "topDiscount": false,
     "hasVideo": false,
     "tags": [
       "bebedero",
       "soporte",
-      "alambre,",
+      "alambre",
       "colores",
       "surtidos",
       "comedero",
       "alimentación",
       "agua"
     ],
-    "description": "BEBEDERO PARA SOPORTE DE ALAMBRE, 100 L, COLORES SURTIDOS",
-    "longDescription": "BEBEDERO PARA SOPORTE DE ALAMBRE, 100 L, COLORES SURTIDOS",
+    "description": "Bebedero para soporte de alambre, colores surtidos. Disponible en capacidades de 100L, 250L y 450L.",
+    "longDescription": "Bebedero de alta calidad para soporte de alambre. Ideal para jaulas y transportadoras. Fácil de instalar y limpiar. Disponible en tres capacidades para adaptarse a las necesidades de tu mascota.",
+    "variants": {
+      "attributes": [
+        {
+          "id": "capacity",
+          "name": "Capacidad",
+          "type": "size"
+        }
+      ],
+      "combinations": [
+        {
+          "id": "var_864_1",
+          "attributes": {
+            "Capacidad": "100L"
+          },
+          "price": 4080,
+          "originalPrice": 4800,
+          "stock": 10,
+          "sku": "BEB009",
+          "available": true,
+          "images": {
+            "cover": "assets/images/products/prod_864/cover.jpg",
+            "thumb": "assets/images/products/prod_864/thumb.jpg",
+            "gallery": [
+              "assets/images/products/prod_864/1.jpg"
+            ]
+          }
+        },
+        {
+          "id": "var_864_2",
+          "attributes": {
+            "Capacidad": "250L"
+          },
+          "price": 5100,
+          "originalPrice": 6000,
+          "stock": 10,
+          "sku": "BEB010",
+          "available": true,
+          "images": {
+            "cover": "assets/images/products/prod_865/cover.jpg",
+            "thumb": "assets/images/products/prod_865/thumb.jpg",
+            "gallery": [
+              "assets/images/products/prod_865/1.jpg"
+            ]
+          }
+        },
+        {
+          "id": "var_864_3",
+          "attributes": {
+            "Capacidad": "450L"
+          },
+          "price": 5950,
+          "originalPrice": 7000,
+          "stock": 10,
+          "sku": "BEB011",
+          "available": true,
+          "images": {
+            "cover": "assets/images/products/prod_866/cover.jpg",
+            "thumb": "assets/images/products/prod_866/thumb.jpg",
+            "gallery": [
+              "assets/images/products/prod_866/1.jpg"
+            ]
+          }
+        }
+      ]
+    },
     "images": {
       "cover": "assets/images/products/prod_864/cover.jpg",
       "thumb": "assets/images/products/prod_864/thumb.jpg",
@@ -26780,7 +27621,9 @@
       ]
     },
     "specs": {
-      "SKU": "BEB009"
+      "SKU": "BEB009",
+      "Material": "Plástico resistente",
+      "Capacidades disponibles": "100L, 250L, 450L"
     },
     "shipping": {
       "free": false,
@@ -26790,136 +27633,103 @@
     "brand": "Sin marca",
     "sku": "BEB009",
     "features": [
+      "Múltiples capacidades disponibles",
       "Fácil de limpiar",
-      "Antideslizante",
-      "Capacidad adecuada",
-      "Material duradero"
-    ]
-  },
-  {
-    "id": "prod_865",
-    "name": "BEBEDERO PARA SOPORTE DE ALAMBRE, 250 L, COLORES SURTIDOS",
-    "category": "accesorios",
-    "subcategory": "Comederos",
-    "price": 5100,
-    "originalPrice": 6000,
-    "discount": 15,
-    "stock": 10,
-    "rating": 4.3,
-    "reviews": 6,
-    "featured": false,
-    "topDiscount": false,
-    "hasVideo": false,
-    "tags": [
-      "bebedero",
-      "soporte",
-      "alambre,",
-      "colores",
-      "surtidos",
-      "comedero",
-      "alimentación",
-      "agua"
-    ],
-    "description": "BEBEDERO PARA SOPORTE DE ALAMBRE, 250 L, COLORES SURTIDOS",
-    "longDescription": "BEBEDERO PARA SOPORTE DE ALAMBRE, 250 L, COLORES SURTIDOS",
-    "images": {
-      "cover": "assets/images/products/prod_865/cover.jpg",
-      "thumb": "assets/images/products/prod_865/thumb.jpg",
-      "gallery": [
-        "assets/images/products/prod_865/1.jpg"
-      ]
-    },
-    "specs": {
-      "SKU": "BEB010"
-    },
-    "shipping": {
-      "free": false,
-      "days": 4
-    },
-    "badge": "🍽️ Comederos",
-    "brand": "Sin marca",
-    "sku": "BEB010",
-    "features": [
-      "Fácil de limpiar",
-      "Antideslizante",
-      "Capacidad adecuada",
-      "Material duradero"
-    ]
-  },
-  {
-    "id": "prod_866",
-    "name": "BEBEDERO PARA SOPORTE DE ALAMBRE, 450 L, COLORES SURTIDOS",
-    "category": "accesorios",
-    "subcategory": "Comederos",
-    "price": 5950,
-    "originalPrice": 7000,
-    "discount": 15,
-    "stock": 10,
-    "rating": 4,
-    "reviews": 43,
-    "featured": false,
-    "topDiscount": false,
-    "hasVideo": false,
-    "tags": [
-      "bebedero",
-      "soporte",
-      "alambre,",
-      "colores",
-      "surtidos",
-      "comedero",
-      "alimentación",
-      "agua"
-    ],
-    "description": "BEBEDERO PARA SOPORTE DE ALAMBRE, 450 L, COLORES SURTIDOS",
-    "longDescription": "BEBEDERO PARA SOPORTE DE ALAMBRE, 450 L, COLORES SURTIDOS",
-    "images": {
-      "cover": "assets/images/products/prod_866/cover.jpg",
-      "thumb": "assets/images/products/prod_866/thumb.jpg",
-      "gallery": [
-        "assets/images/products/prod_866/1.jpg"
-      ]
-    },
-    "specs": {
-      "SKU": "BEB011"
-    },
-    "shipping": {
-      "free": false,
-      "days": 3
-    },
-    "badge": "🍽️ Comederos",
-    "brand": "Sin marca",
-    "sku": "BEB011",
-    "features": [
-      "Fácil de limpiar",
-      "Antideslizante",
-      "Capacidad adecuada",
+      "Fácil instalación en alambre",
+      "Colores surtidos",
       "Material duradero"
     ]
   },
   {
     "id": "prod_867",
-    "name": "BEBEDERO CON TORNILLO FIJADOR, 125 ML",
+    "name": "BEBEDERO CON TORNILLO FIJADOR",
     "category": "accesorios",
     "subcategory": "Comederos",
-    "price": 6800,
-    "originalPrice": 8000,
+    "hasVariants": true,
+    "basePrice": 6800,
+    "baseOriginalPrice": 8000,
     "discount": 15,
-    "stock": 10,
+    "stock": 30,
     "rating": 4,
-    "reviews": 44,
+    "reviews": 90,
     "featured": false,
     "topDiscount": false,
     "hasVideo": false,
     "tags": [
       "bebedero",
       "tornillo",
-      "fijador,",
+      "fijador",
       "comedero",
       "alimentación",
       "agua"
     ],
-    "description": "BEBEDERO CON TORNILLO FIJADOR, 125 ML",
-    "longDescription": "BEBEDERO CON TORNILLO FIJADOR, 125 ML",
+    "description": "Bebedero con tornillo fijador. Disponible en capacidades de 125ML, 250ML y 500ML.",
+    "longDescription": "Bebedero de alta calidad con sistema de tornillo fijador para una instalación segura. Ideal para jaulas y transportadoras. Fácil de instalar y limpiar. Disponible en tres capacidades.",
+    "variants": {
+      "attributes": [
+        {
+          "id": "capacity",
+          "name": "Capacidad",
+          "type": "size"
+        }
+      ],
+      "combinations": [
+        {
+          "id": "var_867_1",
+          "attributes": {
+            "Capacidad": "125 ML"
+          },
+          "price": 6800,
+          "originalPrice": 8000,
+          "stock": 10,
+          "sku": "BEB012",
+          "available": true,
+          "images": {
+            "cover": "assets/images/products/prod_867/cover.jpg",
+            "thumb": "assets/images/products/prod_867/thumb.jpg",
+            "gallery": [
+              "assets/images/products/prod_867/1.jpg"
+            ]
+          }
+        },
+        {
+          "id": "var_867_2",
+          "attributes": {
+            "Capacidad": "250 ML"
+          },
+          "price": 8075,
+          "originalPrice": 9500,
+          "stock": 10,
+          "sku": "BEB013",
+          "available": true,
+          "images": {
+            "cover": "assets/images/products/prod_868/cover.jpg",
+            "thumb": "assets/images/products/prod_868/thumb.jpg",
+            "gallery": [
+              "assets/images/products/prod_868/1.jpg"
+            ]
+          }
+        },
+        {
+          "id": "var_867_3",
+          "attributes": {
+            "Capacidad": "500 ML"
+          },
+          "price": 10200,
+          "originalPrice": 12000,
+          "stock": 10,
+          "sku": "BEB014",
+          "available": true,
+          "images": {
+            "cover": "assets/images/products/prod_869/cover.jpg",
+            "thumb": "assets/images/products/prod_869/thumb.jpg",
+            "gallery": [
+              "assets/images/products/prod_869/1.jpg"
+            ]
+          }
+        }
+      ]
+    },
     "images": {
       "cover": "assets/images/products/prod_867/cover.jpg",
       "thumb": "assets/images/products/prod_867/thumb.jpg",
@@ -26929,7 +27739,8 @@
     },
     "specs": {
       "SKU": "BEB012",
-      "Medida": "125 ML"
+      "Material": "Plástico resistente",
+      "Capacidades disponibles": "125ML, 250ML, 500ML"
     },
     "shipping": {
       "free": false,
@@ -26939,107 +27750,10 @@
     "brand": "Sin marca",
     "sku": "BEB012",
     "features": [
+      "Múltiples capacidades disponibles",
+      "Sistema de tornillo fijador",
       "Fácil de limpiar",
-      "Antideslizante",
-      "Capacidad adecuada",
-      "Material duradero"
-    ]
-  },
-  {
-    "id": "prod_868",
-    "name": "BEBEDERO CON TORNILLO FIJADOR, 250 ML",
-    "category": "accesorios",
-    "subcategory": "Comederos",
-    "price": 8075,
-    "originalPrice": 9500,
-    "discount": 15,
-    "stock": 10,
-    "rating": 3.7,
-    "reviews": 38,
-    "featured": false,
-    "topDiscount": false,
-    "hasVideo": false,
-    "tags": [
-      "bebedero",
-      "tornillo",
-      "fijador,",
-      "comedero",
-      "alimentación",
-      "agua"
-    ],
-    "description": "BEBEDERO CON TORNILLO FIJADOR, 250 ML",
-    "longDescription": "BEBEDERO CON TORNILLO FIJADOR, 250 ML",
-    "images": {
-      "cover": "assets/images/products/prod_868/cover.jpg",
-      "thumb": "assets/images/products/prod_868/thumb.jpg",
-      "gallery": [
-        "assets/images/products/prod_868/1.jpg"
-      ]
-    },
-    "specs": {
-      "SKU": "BEB013",
-      "Medida": "250 ML"
-    },
-    "shipping": {
-      "free": false,
-      "days": 3
-    },
-    "badge": "🍽️ Comederos",
-    "brand": "Sin marca",
-    "sku": "BEB013",
-    "features": [
-      "Fácil de limpiar",
-      "Antideslizante",
-      "Capacidad adecuada",
-      "Material duradero"
-    ]
-  },
-  {
-    "id": "prod_869",
-    "name": "BEBEDERO CON TORNILLO FIJADOR, 500 ML",
-    "category": "accesorios",
-    "subcategory": "Comederos",
-    "price": 10200,
-    "originalPrice": 12000,
-    "discount": 15,
-    "stock": 10,
-    "rating": 4.2,
-    "reviews": 8,
-    "featured": false,
-    "topDiscount": false,
-    "hasVideo": false,
-    "tags": [
-      "bebedero",
-      "tornillo",
-      "fijador,",
-      "comedero",
-      "alimentación",
-      "agua"
-    ],
-    "description": "BEBEDERO CON TORNILLO FIJADOR, 500 ML",
-    "longDescription": "BEBEDERO CON TORNILLO FIJADOR, 500 ML",
-    "images": {
-      "cover": "assets/images/products/prod_869/cover.jpg",
-      "thumb": "assets/images/products/prod_869/thumb.jpg",
-      "gallery": [
-        "assets/images/products/prod_869/1.jpg"
-      ]
-    },
-    "specs": {
-      "SKU": "BEB014",
-      "Medida": "500 ML"
-    },
-    "shipping": {
-      "free": false,
-      "days": 4
-    },
-    "badge": "🍽️ Comederos",
-    "brand": "Sin marca",
-    "sku": "BEB014",
-    "features": [
-      "Fácil de limpiar",
-      "Antideslizante",
-      "Capacidad adecuada",
+      "Instalación segura",
       "Material duradero"
     ]
   },

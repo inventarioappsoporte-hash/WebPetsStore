@@ -1,0 +1,1104 @@
+{
+  "fecha": "2026-01-14T23:21:28.401Z",
+  "totalProductos": 410,
+  "productosConVariantes": 73,
+  "productosSinVariantes": 337,
+  "gruposCandidatos": [
+    {
+      "nombreBase": "COMEDERO ACERO INOXIDABLE",
+      "cantidad": 5,
+      "productos": [
+        {
+          "id": "prod_789",
+          "name": "COMEDERO ACERO INOXIDABLE  N°1  15CM",
+          "price": 3655,
+          "category": "accesorios",
+          "subcategory": "Comederos"
+        },
+        {
+          "id": "prod_790",
+          "name": "COMEDERO ACERO INOXIDABLE  N°2 18CM",
+          "price": 5525,
+          "category": "accesorios",
+          "subcategory": "Comederos"
+        },
+        {
+          "id": "prod_792",
+          "name": "COMEDERO ACERO INOXIDABLE   N°4 26CM",
+          "price": 7650,
+          "category": "accesorios",
+          "subcategory": "Comederos"
+        },
+        {
+          "id": "prod_793",
+          "name": "COMEDERO ACERO INOXIDABLE   N°6 34CM",
+          "price": 13430,
+          "category": "accesorios",
+          "subcategory": "Comederos"
+        },
+        {
+          "id": "prod_794",
+          "name": "COMEDERO ACERO INOXIDABLE   N°7 38CM",
+          "price": 18360,
+          "category": "accesorios",
+          "subcategory": "Comederos"
+        }
+      ]
+    },
+    {
+      "nombreBase": "PELOTA PULPO",
+      "cantidad": 4,
+      "productos": [
+        {
+          "id": "prod_260",
+          "name": "PELOTA PULPO N°3",
+          "price": 4088,
+          "category": "juguetes",
+          "subcategory": "Juguetes"
+        },
+        {
+          "id": "prod_261",
+          "name": "PELOTA PULPO N°4",
+          "price": 5525,
+          "category": "juguetes",
+          "subcategory": "Juguetes"
+        },
+        {
+          "id": "prod_262",
+          "name": "PELOTA PULPO N°5",
+          "price": 7514,
+          "category": "juguetes",
+          "subcategory": "Juguetes"
+        },
+        {
+          "id": "prod_263",
+          "name": "PELOTA PULPO N°6",
+          "price": 9392,
+          "category": "juguetes",
+          "subcategory": "Juguetes"
+        }
+      ]
+    },
+    {
+      "nombreBase": "HUESO DE GOMA",
+      "cantidad": 3,
+      "productos": [
+        {
+          "id": "prod_275",
+          "name": "HUESO DE GOMA GRANDE",
+          "price": 5746,
+          "category": "juguetes",
+          "subcategory": "Juguetes"
+        },
+        {
+          "id": "prod_276",
+          "name": "HUESO DE GOMA MEDIANO",
+          "price": 3094,
+          "category": "juguetes",
+          "subcategory": "Juguetes"
+        },
+        {
+          "id": "prod_277",
+          "name": "HUESO DE GOMA CHICO",
+          "price": 2652,
+          "category": "juguetes",
+          "subcategory": "Juguetes"
+        }
+      ]
+    },
+    {
+      "nombreBase": "CHIFLE GALLINA CON LUZ",
+      "cantidad": 3,
+      "productos": [
+        {
+          "id": "prod_281",
+          "name": "CHIFLE GALLINA CON LUZ CHICO",
+          "price": 3315,
+          "category": "juguetes",
+          "subcategory": "Juguetes"
+        },
+        {
+          "id": "prod_282",
+          "name": "CHIFLE GALLINA CON LUZ MEDIANO",
+          "price": 7735,
+          "category": "juguetes",
+          "subcategory": "Juguetes"
+        },
+        {
+          "id": "prod_283",
+          "name": "CHIFLE GALLINA CON LUZ GRANDE",
+          "price": 9945,
+          "category": "juguetes",
+          "subcategory": "Juguetes"
+        }
+      ]
+    },
+    {
+      "nombreBase": "COMEDERO REDONDO",
+      "cantidad": 3,
+      "productos": [
+        {
+          "id": "prod_825",
+          "name": "COMEDERO REDONDO CHICO",
+          "price": 1530,
+          "category": "accesorios",
+          "subcategory": "Comederos"
+        },
+        {
+          "id": "prod_826",
+          "name": "COMEDERO REDONDO MEDIANO",
+          "price": 2125,
+          "category": "accesorios",
+          "subcategory": "Comederos"
+        },
+        {
+          "id": "prod_827",
+          "name": "COMEDERO REDONDO GRANDE",
+          "price": 2975,
+          "category": "accesorios",
+          "subcategory": "Comederos"
+        }
+      ]
+    },
+    {
+      "nombreBase": "COMEDERO OVALADO",
+      "cantidad": 3,
+      "productos": [
+        {
+          "id": "prod_831",
+          "name": "COMEDERO OVALADO CHICO",
+          "price": 1530,
+          "category": "accesorios",
+          "subcategory": "Comederos"
+        },
+        {
+          "id": "prod_832",
+          "name": "COMEDERO OVALADO MEDIANO",
+          "price": 1700,
+          "category": "accesorios",
+          "subcategory": "Comederos"
+        },
+        {
+          "id": "prod_833",
+          "name": "COMEDERO OVALADO GRANDE",
+          "price": 4080,
+          "category": "accesorios",
+          "subcategory": "Comederos"
+        }
+      ]
+    },
+    {
+      "nombreBase": "PLATO CUADRADO",
+      "cantidad": 3,
+      "productos": [
+        {
+          "id": "prod_837",
+          "name": "PLATO CUADRADO CHICO",
+          "price": 1275,
+          "category": "accesorios",
+          "subcategory": "Comederos"
+        },
+        {
+          "id": "prod_838",
+          "name": "PLATO CUADRADO MEDIANO",
+          "price": 1785,
+          "category": "accesorios",
+          "subcategory": "Comederos"
+        },
+        {
+          "id": "prod_839",
+          "name": "PLATO CUADRADO GRANDE",
+          "price": 2210,
+          "category": "accesorios",
+          "subcategory": "Comederos"
+        }
+      ]
+    },
+    {
+      "nombreBase": "BEBEDERO PARA SOPORTE DE ALAMBRE, , COLORES SURTIDOS",
+      "cantidad": 3,
+      "productos": [
+        {
+          "id": "prod_864",
+          "name": "BEBEDERO PARA SOPORTE DE ALAMBRE, 100 L, COLORES SURTIDOS",
+          "price": 4080,
+          "category": "accesorios",
+          "subcategory": "Comederos"
+        },
+        {
+          "id": "prod_865",
+          "name": "BEBEDERO PARA SOPORTE DE ALAMBRE, 250 L, COLORES SURTIDOS",
+          "price": 5100,
+          "category": "accesorios",
+          "subcategory": "Comederos"
+        },
+        {
+          "id": "prod_866",
+          "name": "BEBEDERO PARA SOPORTE DE ALAMBRE, 450 L, COLORES SURTIDOS",
+          "price": 5950,
+          "category": "accesorios",
+          "subcategory": "Comederos"
+        }
+      ]
+    },
+    {
+      "nombreBase": "BEBEDERO CON TORNILLO FIJADOR,",
+      "cantidad": 3,
+      "productos": [
+        {
+          "id": "prod_867",
+          "name": "BEBEDERO CON TORNILLO FIJADOR, 125 ML",
+          "price": 6800,
+          "category": "accesorios",
+          "subcategory": "Comederos"
+        },
+        {
+          "id": "prod_868",
+          "name": "BEBEDERO CON TORNILLO FIJADOR, 250 ML",
+          "price": 8075,
+          "category": "accesorios",
+          "subcategory": "Comederos"
+        },
+        {
+          "id": "prod_869",
+          "name": "BEBEDERO CON TORNILLO FIJADOR, 500 ML",
+          "price": 10200,
+          "category": "accesorios",
+          "subcategory": "Comederos"
+        }
+      ]
+    },
+    {
+      "nombreBase": "RASCADOR CARTÓN CORRUGADO ONDA SIMPLE X",
+      "cantidad": 2,
+      "productos": [
+        {
+          "id": "prod_185",
+          "name": "RASCADOR CARTÓN CORRUGADO ONDA SIMPLE 12CM X 50CM",
+          "price": 7225,
+          "category": "accesorios",
+          "subcategory": "Rascadores"
+        },
+        {
+          "id": "prod_187",
+          "name": "RASCADOR CARTÓN CORRUGADO ONDA SIMPLE 20CM X 50CM",
+          "price": 12750,
+          "category": "accesorios",
+          "subcategory": "Rascadores"
+        }
+      ]
+    },
+    {
+      "nombreBase": "RASCADOR INFINITO",
+      "cantidad": 2,
+      "productos": [
+        {
+          "id": "prod_194",
+          "name": "RASCADOR INFINITO 55 X 12 X 20 CM",
+          "price": 22950,
+          "category": "accesorios",
+          "subcategory": "Rascadores"
+        },
+        {
+          "id": "prod_195",
+          "name": "RASCADOR INFINITO 55 X 12 X 20 CM",
+          "price": 11900,
+          "category": "accesorios",
+          "subcategory": "Rascadores"
+        }
+      ]
+    },
+    {
+      "nombreBase": "PELOTA BLANDA MEDIANA 6, (24088)",
+      "cantidad": 2,
+      "productos": [
+        {
+          "id": "prod_255",
+          "name": "PELOTA BLANDA MEDIANA    6,3CM     (24088)",
+          "price": 1436,
+          "category": "juguetes",
+          "subcategory": "Juguetes"
+        },
+        {
+          "id": "prod_256",
+          "name": "PELOTA BLANDA MEDIANA    6,3CM     (24088)",
+          "price": 1436,
+          "category": "juguetes",
+          "subcategory": "Juguetes"
+        }
+      ]
+    },
+    {
+      "nombreBase": "CONJUNTO CUADRILLE 1,",
+      "cantidad": 2,
+      "productos": [
+        {
+          "id": "prod_695",
+          "name": "CONJUNTO CUADRILLE 1,0 CM",
+          "price": 4420,
+          "category": "accesorios",
+          "subcategory": "Accesorios"
+        },
+        {
+          "id": "prod_696",
+          "name": "CONJUNTO CUADRILLE 1,5 CM",
+          "price": 5780,
+          "category": "accesorios",
+          "subcategory": "Accesorios"
+        }
+      ]
+    },
+    {
+      "nombreBase": "ARNES REFLECTANTE 1,**2,",
+      "cantidad": 2,
+      "productos": [
+        {
+          "id": "prod_701",
+          "name": "ARNES REFLECTANTE 1,0CM*120CM*2,0CM",
+          "price": 11900,
+          "category": "accesorios",
+          "subcategory": "Accesorios"
+        },
+        {
+          "id": "prod_702",
+          "name": "ARNES REFLECTANTE 1,2CM*120CM*2,5CM",
+          "price": 15300,
+          "category": "accesorios",
+          "subcategory": "Accesorios"
+        }
+      ]
+    },
+    {
+      "nombreBase": "COMEDERO REDONDO ( PETS PLAST)",
+      "cantidad": 2,
+      "productos": [
+        {
+          "id": "prod_828",
+          "name": "COMEDERO REDONDO CHICO ( PETS PLAST)",
+          "price": 1360,
+          "category": "accesorios",
+          "subcategory": "Comederos"
+        },
+        {
+          "id": "prod_829",
+          "name": "COMEDERO REDONDO MEDIANO ( PETS PLAST)",
+          "price": 2125,
+          "category": "accesorios",
+          "subcategory": "Comederos"
+        }
+      ]
+    },
+    {
+      "nombreBase": "COMEDERO CAZUELA",
+      "cantidad": 2,
+      "productos": [
+        {
+          "id": "prod_841",
+          "name": "COMEDERO CAZUELA MEDIANO",
+          "price": 2380,
+          "category": "accesorios",
+          "subcategory": "Comederos"
+        },
+        {
+          "id": "prod_842",
+          "name": "COMEDERO CAZUELA GRANDE",
+          "price": 3230,
+          "category": "accesorios",
+          "subcategory": "Comederos"
+        }
+      ]
+    },
+    {
+      "nombreBase": "TAZON PARA PERRO Y",
+      "cantidad": 2,
+      "productos": [
+        {
+          "id": "prod_848",
+          "name": "TAZON  PARA  PERRO 300 ML AZUL Y ROSA",
+          "price": 6375,
+          "category": "accesorios",
+          "subcategory": "Comederos"
+        },
+        {
+          "id": "prod_849",
+          "name": "TAZON PARA PERRO 650 ML AZUL Y ROSA",
+          "price": 7225,
+          "category": "accesorios",
+          "subcategory": "Comederos"
+        }
+      ]
+    },
+    {
+      "nombreBase": "COMELENTO REDONDO",
+      "cantidad": 2,
+      "productos": [
+        {
+          "id": "prod_854",
+          "name": "COMELENTO MEDIANO REDONDO",
+          "price": 4675,
+          "category": "accesorios",
+          "subcategory": "Comederos"
+        },
+        {
+          "id": "prod_855",
+          "name": "COMELENTO CHICO REDONDO",
+          "price": 3655,
+          "category": "accesorios",
+          "subcategory": "Comederos"
+        }
+      ]
+    },
+    {
+      "nombreBase": "COMEDERO DOBLE OCHO",
+      "cantidad": 2,
+      "productos": [
+        {
+          "id": "prod_856",
+          "name": "COMEDERO DOBLE  OCHO CHICO 200ML",
+          "price": 2380,
+          "category": "accesorios",
+          "subcategory": "Comederos"
+        },
+        {
+          "id": "prod_857",
+          "name": "COMEDERO DOBLE OCHO GRANDE 350ML",
+          "price": 3230,
+          "category": "accesorios",
+          "subcategory": "Comederos"
+        }
+      ]
+    }
+  ],
+  "productosConPatronesVariantes": [
+    {
+      "id": "prod_190",
+      "name": "RASCADOR MEDIO INFINITO GRANDE 58CM X 9 CM X 20CM",
+      "price": 13600,
+      "category": "accesorios"
+    },
+    {
+      "id": "prod_200",
+      "name": "RASCASDON CUADRADO C/MARCO DE MADERA PARED CHICO",
+      "price": 11050,
+      "category": "accesorios"
+    },
+    {
+      "id": "prod_203",
+      "name": "RASCADOR PEZ MULTI COLOR CHICO PARA COLGAR 12 CM",
+      "price": 3570,
+      "category": "accesorios"
+    },
+    {
+      "id": "prod_219",
+      "name": "MINI INFINITY - AGATAR",
+      "price": 10200,
+      "category": "accesorios"
+    },
+    {
+      "id": "prod_220",
+      "name": "MINI ACUÑA - AGATAR",
+      "price": 7650,
+      "category": "accesorios"
+    },
+    {
+      "id": "prod_221",
+      "name": "MINI SIMON - AGATAR",
+      "price": 9350,
+      "category": "accesorios"
+    },
+    {
+      "id": "prod_228",
+      "name": "RINOCERONTE MINI - AGATAR",
+      "price": 16575,
+      "category": "accesorios"
+    },
+    {
+      "id": "prod_229",
+      "name": "OSO POLAR MINI - AGATAR",
+      "price": 16575,
+      "category": "accesorios"
+    },
+    {
+      "id": "prod_230",
+      "name": "ELEFANTE MINI - AGATAR",
+      "price": 16575,
+      "category": "accesorios"
+    },
+    {
+      "id": "prod_231",
+      "name": "Gorila Mini - AGATAR",
+      "price": 16575,
+      "category": "accesorios"
+    },
+    {
+      "id": "prod_237",
+      "name": "PELOTA TENIS GRANDE X3",
+      "price": 7514,
+      "category": "juguetes"
+    },
+    {
+      "id": "prod_242",
+      "name": "PELOTA ERIZO CON LUZ GRANDE 7*7*7",
+      "price": 4972,
+      "category": "juguetes"
+    },
+    {
+      "id": "prod_259",
+      "name": "PELOTA SPORTING GRANDE 9CM",
+      "price": 7182,
+      "category": "juguetes"
+    },
+    {
+      "id": "prod_260",
+      "name": "PELOTA PULPO N°3",
+      "price": 4088,
+      "category": "juguetes"
+    },
+    {
+      "id": "prod_261",
+      "name": "PELOTA PULPO N°4",
+      "price": 5525,
+      "category": "juguetes"
+    },
+    {
+      "id": "prod_262",
+      "name": "PELOTA PULPO N°5",
+      "price": 7514,
+      "category": "juguetes"
+    },
+    {
+      "id": "prod_263",
+      "name": "PELOTA PULPO N°6",
+      "price": 9392,
+      "category": "juguetes"
+    },
+    {
+      "id": "prod_267",
+      "name": "PELOTA DE CAUCHO 40MM   N°1",
+      "price": 1215,
+      "category": "juguetes"
+    },
+    {
+      "id": "prod_268",
+      "name": "PELOTA DE CAUCHO 48MM   N°2",
+      "price": 1547,
+      "category": "juguetes"
+    },
+    {
+      "id": "prod_269",
+      "name": "PELOTA DE CAUCHO 58MM   N°3",
+      "price": 3425,
+      "category": "juguetes"
+    },
+    {
+      "id": "prod_270",
+      "name": "PELOTA DE CAUCHO 75MM   N°4",
+      "price": 6077,
+      "category": "juguetes"
+    },
+    {
+      "id": "prod_271",
+      "name": "PELOTA DE CAUCHO 90MM   N°5",
+      "price": 9503,
+      "category": "juguetes"
+    },
+    {
+      "id": "prod_274",
+      "name": "MANCUERNA DE GOMA GRANDE",
+      "price": 7182,
+      "category": "juguetes"
+    },
+    {
+      "id": "prod_275",
+      "name": "HUESO DE GOMA GRANDE",
+      "price": 5746,
+      "category": "juguetes"
+    },
+    {
+      "id": "prod_276",
+      "name": "HUESO DE GOMA MEDIANO",
+      "price": 3094,
+      "category": "juguetes"
+    },
+    {
+      "id": "prod_277",
+      "name": "HUESO DE GOMA CHICO",
+      "price": 2652,
+      "category": "juguetes"
+    },
+    {
+      "id": "prod_281",
+      "name": "CHIFLE GALLINA CON LUZ CHICO",
+      "price": 3315,
+      "category": "juguetes"
+    },
+    {
+      "id": "prod_282",
+      "name": "CHIFLE GALLINA CON LUZ MEDIANO",
+      "price": 7735,
+      "category": "juguetes"
+    },
+    {
+      "id": "prod_283",
+      "name": "CHIFLE GALLINA CON LUZ GRANDE",
+      "price": 9945,
+      "category": "juguetes"
+    },
+    {
+      "id": "prod_286",
+      "name": "CHIFLE GALLINA  GRANDE",
+      "price": 4972,
+      "category": "juguetes"
+    },
+    {
+      "id": "prod_298",
+      "name": "CHIFLE PATO COLOR MEDIANO DE 25CM",
+      "price": 3536,
+      "category": "juguetes"
+    },
+    {
+      "id": "prod_300",
+      "name": "PELOTA  FUTBOL CON CHIFLE CHICO  127  ANCHO 6CM / ANCHO 6CM",
+      "price": 3094,
+      "category": "juguetes"
+    },
+    {
+      "id": "prod_304",
+      "name": "PELOTA RUGBY CHICO  0132",
+      "price": 3536,
+      "category": "juguetes"
+    },
+    {
+      "id": "prod_309",
+      "name": "MINI COCODRILO 160 ANCHO 6CM/ ALTO 6CM",
+      "price": 3315,
+      "category": "juguetes"
+    },
+    {
+      "id": "prod_321",
+      "name": "CHIFLE POLLO COLORES MEDIANO 25CM",
+      "price": 3757,
+      "category": "juguetes"
+    },
+    {
+      "id": "prod_322",
+      "name": "PERRO CABESON CHIFLE  GRANDE 133  ANCHO16CM / ALTO 7CM",
+      "price": 6077,
+      "category": "juguetes"
+    },
+    {
+      "id": "prod_323",
+      "name": "HUESO CHIFLE RETORSIDO GRANDE   112  ANCHO 6CM / ALTO 15CM",
+      "price": 4972,
+      "category": "juguetes"
+    },
+    {
+      "id": "prod_324",
+      "name": "FOCA GRANDE CON CHIFLE  139  AMCHO 18CM ALTO11CM",
+      "price": 6630,
+      "category": "juguetes"
+    },
+    {
+      "id": "prod_327",
+      "name": "MUFFINS CHICO  CON CHIFLE 158 ANCHO 7CM/ 9CM",
+      "price": 4420,
+      "category": "juguetes"
+    },
+    {
+      "id": "prod_332",
+      "name": "HUESO  GRANDE CON CHIFLE   110  ANCHO 6CM / ALTO 20CM",
+      "price": 5525,
+      "category": "juguetes"
+    },
+    {
+      "id": "prod_334",
+      "name": "PANCHOS CHICO CHIFLE",
+      "price": 3094,
+      "category": "juguetes"
+    },
+    {
+      "id": "prod_335",
+      "name": "PANCHOS MEDIANO  CHIFLE   118 ANCHO 13CM / ALTO 4CM",
+      "price": 3315,
+      "category": "juguetes"
+    },
+    {
+      "id": "prod_337",
+      "name": "BIFE MEDIANO 163 ANCHO 3CM/ ALTO 13CM",
+      "price": 4199,
+      "category": "juguetes"
+    },
+    {
+      "id": "prod_338",
+      "name": "COSTILLA GRANDE CON CHIFLE",
+      "price": 3094,
+      "category": "juguetes"
+    },
+    {
+      "id": "prod_343",
+      "name": "CANGREJO CHICO CON CHIFLE",
+      "price": 3094,
+      "category": "juguetes"
+    },
+    {
+      "id": "prod_364",
+      "name": "CHIFLE CANGREO MEDIANO",
+      "price": 2652,
+      "category": "juguetes"
+    },
+    {
+      "id": "prod_374",
+      "name": "CHIFLE MINI",
+      "price": 3315,
+      "category": "juguetes"
+    },
+    {
+      "id": "prod_382",
+      "name": "CHIFLE PULPO MINI 8529-5",
+      "price": 3315,
+      "category": "juguetes"
+    },
+    {
+      "id": "prod_383",
+      "name": "MORDILLO PESA CON CASCABEL GRANDE, COLORES PASTEL",
+      "price": 4199,
+      "category": "juguetes"
+    },
+    {
+      "id": "prod_387",
+      "name": "PELOTA LIMPIA DIENTE GRANDE",
+      "price": 6630,
+      "category": "juguetes"
+    },
+    {
+      "id": "prod_705",
+      "name": "CONJUNTO REFORZASDO / RALLADO  GRANDE 8485-3",
+      "price": 21250,
+      "category": "accesorios"
+    },
+    {
+      "id": "prod_739",
+      "name": "PECHERAS REGULABLES LISO N° 1",
+      "price": 4675,
+      "category": "accesorios"
+    },
+    {
+      "id": "prod_740",
+      "name": "PECHERAS REGULABLES LISO N° 2",
+      "price": 5100,
+      "category": "accesorios"
+    },
+    {
+      "id": "prod_741",
+      "name": "PECHERAS REGULABLES LISO N° 3",
+      "price": 7565,
+      "category": "accesorios"
+    },
+    {
+      "id": "prod_742",
+      "name": "PECHERAS REGULABLES LISO N° 4",
+      "price": 8330,
+      "category": "accesorios"
+    },
+    {
+      "id": "prod_743",
+      "name": "PECHERAS REGULABLES LISO N° 5",
+      "price": 8925,
+      "category": "accesorios"
+    },
+    {
+      "id": "prod_745",
+      "name": "CONJUNTO FIJO  N°0",
+      "price": 5780,
+      "category": "accesorios"
+    },
+    {
+      "id": "prod_746",
+      "name": "CONJUNTO FIJO p15 N°1",
+      "price": 6460,
+      "category": "accesorios"
+    },
+    {
+      "id": "prod_747",
+      "name": "CONJUNTO FIJO p20 N°2",
+      "price": 7650,
+      "category": "accesorios"
+    },
+    {
+      "id": "prod_748",
+      "name": "CONJUNTO FIJO p20 N°3",
+      "price": 7905,
+      "category": "accesorios"
+    },
+    {
+      "id": "prod_749",
+      "name": "CONJUNTO FIJO p20 N°4",
+      "price": 8330,
+      "category": "accesorios"
+    },
+    {
+      "id": "prod_750",
+      "name": "CONJUNTO FIJO  p25 N°5",
+      "price": 10625,
+      "category": "accesorios"
+    },
+    {
+      "id": "prod_751",
+      "name": "CONJUNTO FIJO  p25 N°6",
+      "price": 11475,
+      "category": "accesorios"
+    },
+    {
+      "id": "prod_752",
+      "name": "CONJUNTO FIJO p30 N°7",
+      "price": 13345,
+      "category": "accesorios"
+    },
+    {
+      "id": "prod_753",
+      "name": "CONJUNTO FIJO p30 N°8",
+      "price": 14110,
+      "category": "accesorios"
+    },
+    {
+      "id": "prod_757",
+      "name": "CONJUNTO REFORZADO/ CAMUCLADO MEDIANO",
+      "price": 12750,
+      "category": "accesorios"
+    },
+    {
+      "id": "prod_758",
+      "name": "CONJUNTO SOGA REGULABLE CAMUFLADO GRANDE",
+      "price": 12750,
+      "category": "accesorios"
+    },
+    {
+      "id": "prod_759",
+      "name": "CONJUNTO SOGA REGULABLE ( COLOR/ VARIOS) GRANDE",
+      "price": 12750,
+      "category": "accesorios"
+    },
+    {
+      "id": "prod_781",
+      "name": "CAZUELA HUELLA GRANDE",
+      "price": 2975,
+      "category": "accesorios"
+    },
+    {
+      "id": "prod_789",
+      "name": "COMEDERO ACERO INOXIDABLE  N°1  15CM",
+      "price": 3655,
+      "category": "accesorios"
+    },
+    {
+      "id": "prod_790",
+      "name": "COMEDERO ACERO INOXIDABLE  N°2 18CM",
+      "price": 5525,
+      "category": "accesorios"
+    },
+    {
+      "id": "prod_791",
+      "name": "COMEDERO ACERO INOXIDABLE DE  N°3 22CM",
+      "price": 6800,
+      "category": "accesorios"
+    },
+    {
+      "id": "prod_792",
+      "name": "COMEDERO ACERO INOXIDABLE   N°4 26CM",
+      "price": 7650,
+      "category": "accesorios"
+    },
+    {
+      "id": "prod_793",
+      "name": "COMEDERO ACERO INOXIDABLE   N°6 34CM",
+      "price": 13430,
+      "category": "accesorios"
+    },
+    {
+      "id": "prod_794",
+      "name": "COMEDERO ACERO INOXIDABLE   N°7 38CM",
+      "price": 18360,
+      "category": "accesorios"
+    },
+    {
+      "id": "prod_825",
+      "name": "COMEDERO REDONDO CHICO",
+      "price": 1530,
+      "category": "accesorios"
+    },
+    {
+      "id": "prod_826",
+      "name": "COMEDERO REDONDO MEDIANO",
+      "price": 2125,
+      "category": "accesorios"
+    },
+    {
+      "id": "prod_827",
+      "name": "COMEDERO REDONDO GRANDE",
+      "price": 2975,
+      "category": "accesorios"
+    },
+    {
+      "id": "prod_828",
+      "name": "COMEDERO REDONDO CHICO ( PETS PLAST)",
+      "price": 1360,
+      "category": "accesorios"
+    },
+    {
+      "id": "prod_829",
+      "name": "COMEDERO REDONDO MEDIANO ( PETS PLAST)",
+      "price": 2125,
+      "category": "accesorios"
+    },
+    {
+      "id": "prod_830",
+      "name": "COMEDERO REDONDO GRANDE  ( PETS PLAST )",
+      "price": 2550,
+      "category": "accesorios"
+    },
+    {
+      "id": "prod_831",
+      "name": "COMEDERO OVALADO CHICO",
+      "price": 1530,
+      "category": "accesorios"
+    },
+    {
+      "id": "prod_832",
+      "name": "COMEDERO OVALADO MEDIANO",
+      "price": 1700,
+      "category": "accesorios"
+    },
+    {
+      "id": "prod_833",
+      "name": "COMEDERO OVALADO GRANDE",
+      "price": 4080,
+      "category": "accesorios"
+    },
+    {
+      "id": "prod_837",
+      "name": "PLATO CUADRADO CHICO",
+      "price": 1275,
+      "category": "accesorios"
+    },
+    {
+      "id": "prod_838",
+      "name": "PLATO CUADRADO MEDIANO",
+      "price": 1785,
+      "category": "accesorios"
+    },
+    {
+      "id": "prod_839",
+      "name": "PLATO CUADRADO GRANDE",
+      "price": 2210,
+      "category": "accesorios"
+    },
+    {
+      "id": "prod_841",
+      "name": "COMEDERO CAZUELA MEDIANO",
+      "price": 2380,
+      "category": "accesorios"
+    },
+    {
+      "id": "prod_842",
+      "name": "COMEDERO CAZUELA GRANDE",
+      "price": 3230,
+      "category": "accesorios"
+    },
+    {
+      "id": "prod_847",
+      "name": "TAZON PARA GATO 200ML AZUL Y ROSA",
+      "price": 6375,
+      "category": "accesorios"
+    },
+    {
+      "id": "prod_848",
+      "name": "TAZON  PARA  PERRO 300 ML AZUL Y ROSA",
+      "price": 6375,
+      "category": "accesorios"
+    },
+    {
+      "id": "prod_849",
+      "name": "TAZON PARA PERRO 650 ML AZUL Y ROSA",
+      "price": 7225,
+      "category": "accesorios"
+    },
+    {
+      "id": "prod_850",
+      "name": "BEBEDERO AUTAMATICO PARA PERRO 250ML AZUL Y ROSA",
+      "price": 7480,
+      "category": "accesorios"
+    },
+    {
+      "id": "prod_851",
+      "name": "BEBEDERO AUTOMATICO PARA GATO 250ML AZUL Y ROSA",
+      "price": 7480,
+      "category": "accesorios"
+    },
+    {
+      "id": "prod_853",
+      "name": "COMELENTO GRANDE REDONDO CON HUELLA",
+      "price": 5525,
+      "category": "accesorios"
+    },
+    {
+      "id": "prod_854",
+      "name": "COMELENTO MEDIANO REDONDO",
+      "price": 4675,
+      "category": "accesorios"
+    },
+    {
+      "id": "prod_855",
+      "name": "COMELENTO CHICO REDONDO",
+      "price": 3655,
+      "category": "accesorios"
+    },
+    {
+      "id": "prod_856",
+      "name": "COMEDERO DOBLE  OCHO CHICO 200ML",
+      "price": 2380,
+      "category": "accesorios"
+    },
+    {
+      "id": "prod_857",
+      "name": "COMEDERO DOBLE OCHO GRANDE 350ML",
+      "price": 3230,
+      "category": "accesorios"
+    },
+    {
+      "id": "prod_861",
+      "name": "BEBEDERO PARA HAMTER (LAND PET) 80ML T-1",
+      "price": 2465,
+      "category": "accesorios"
+    },
+    {
+      "id": "prod_862",
+      "name": "BEBEDERO PARA HAMTER (LAND PET) 125ML T-2",
+      "price": 2805,
+      "category": "accesorios"
+    },
+    {
+      "id": "prod_863",
+      "name": "BEBEDERO PARA HAMTER (LAND PET) 250ML T-3",
+      "price": 3400,
+      "category": "accesorios"
+    },
+    {
+      "id": "prod_867",
+      "name": "BEBEDERO CON TORNILLO FIJADOR, 125 ML",
+      "price": 6800,
+      "category": "accesorios"
+    },
+    {
+      "id": "prod_868",
+      "name": "BEBEDERO CON TORNILLO FIJADOR, 250 ML",
+      "price": 8075,
+      "category": "accesorios"
+    },
+    {
+      "id": "prod_869",
+      "name": "BEBEDERO CON TORNILLO FIJADOR, 500 ML",
+      "price": 10200,
+      "category": "accesorios"
+    }
+  ]
+}
