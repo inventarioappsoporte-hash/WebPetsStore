@@ -17634,30 +17634,32 @@
   },
   {
     "id": "prod_573",
-    "name": "ENTERO VERY COOLD TALLE 1",
+    "name": "Entero Very Coold",
     "category": "ropa",
     "subcategory": "Ropa",
     "price": 8478.75,
     "originalPrice": null,
     "discount": null,
-    "stock": 10,
+    "stock": 80,
     "rating": 4.1,
-    "reviews": 38,
+    "reviews": 210,
     "featured": false,
     "topDiscount": false,
     "hasVideo": false,
+    "hasVariants": true,
+    "basePrice": 8478.75,
     "tags": [
       "entero",
       "very",
       "coold",
-      "talle",
       "ropa",
       "invierno",
       "abrigo",
-      "calor"
+      "calor",
+      "variantes"
     ],
-    "description": "T-1 => LARGO = 28 cm   ANCHO = 44 cm",
-    "longDescription": "T-1 => LARGO = 28 cm   ANCHO = 44 cm",
+    "description": "Entero Very Coold para mascotas. Prenda de abrigo completa ideal para el invierno, mantiene el calor y es resistente al agua.",
+    "longDescription": "Entero Very Coold para mascotas. Descripción: Prenda de abrigo completa que cubre todo el cuerpo de tu mascota. Ideal para días fríos, mantiene el calor corporal y es resistente al agua. Material suave y cómodo que no limita el movimiento. Disponible en 8 talles para adaptarse a diferentes tamaños de mascotas.",
     "images": {
       "cover": "assets/images/products/prod_573/cover.jpg",
       "thumb": "assets/images/products/prod_573/thumb.jpg",
@@ -17680,383 +17682,165 @@
       "Material suave",
       "Resistente al agua",
       "Perfecto para el frío"
-    ]
-  },
-  {
-    "id": "prod_574",
-    "name": "ENTERO VERY COOLD TALLE 2",
-    "category": "ropa",
-    "subcategory": "Ropa",
-    "price": 8478.75,
-    "originalPrice": null,
-    "discount": null,
-    "stock": 10,
-    "rating": 4.5,
-    "reviews": 13,
-    "featured": false,
-    "topDiscount": false,
-    "hasVideo": false,
-    "tags": [
-      "entero",
-      "very",
-      "coold",
-      "talle",
-      "ropa",
-      "invierno",
-      "abrigo",
-      "calor"
     ],
-    "description": "T-2 => LARGO = 31 cm   ANCHO = 46 cm",
-    "longDescription": "T-2 => LARGO = 31 cm   ANCHO = 46 cm",
-    "images": {
-      "cover": "assets/images/products/prod_574/cover.jpg",
-      "thumb": "assets/images/products/prod_574/thumb.jpg",
-      "gallery": [
-        "assets/images/products/prod_574/1.jpg"
+    "variants": {
+      "attributes": [
+        {
+          "name": "Talle",
+          "values": ["1", "2", "3", "4", "5", "6", "7", "8"]
+        }
+      ],
+      "combinations": [
+        {
+          "id": "var_573_1",
+          "attributes": { "Talle": "1" },
+          "price": 8478.75,
+          "originalPrice": null,
+          "stock": 10,
+          "sku": "ENT001",
+          "available": true,
+          "specs": { "Largo": "28 cm", "Ancho": "44 cm" },
+          "images": {
+            "cover": "assets/images/products/prod_573/cover.jpg",
+            "thumb": "assets/images/products/prod_573/thumb.jpg",
+            "gallery": ["assets/images/products/prod_573/1.jpg"]
+          }
+        },
+        {
+          "id": "var_573_2",
+          "attributes": { "Talle": "2" },
+          "price": 8478.75,
+          "originalPrice": null,
+          "stock": 10,
+          "sku": "ENT002",
+          "available": true,
+          "specs": { "Largo": "31 cm", "Ancho": "46 cm" },
+          "images": {
+            "cover": "assets/images/products/prod_574/cover.jpg",
+            "thumb": "assets/images/products/prod_574/thumb.jpg",
+            "gallery": ["assets/images/products/prod_574/1.jpg"]
+          }
+        },
+        {
+          "id": "var_573_3",
+          "attributes": { "Talle": "3" },
+          "price": 9609.25,
+          "originalPrice": null,
+          "stock": 10,
+          "sku": "ENT003",
+          "available": true,
+          "specs": { "Largo": "32 cm", "Ancho": "52 cm" },
+          "images": {
+            "cover": "assets/images/products/prod_575/cover.jpg",
+            "thumb": "assets/images/products/prod_575/thumb.jpg",
+            "gallery": ["assets/images/products/prod_575/1.jpg"]
+          }
+        },
+        {
+          "id": "var_573_4",
+          "attributes": { "Talle": "4" },
+          "price": 9609.25,
+          "originalPrice": null,
+          "stock": 10,
+          "sku": "ENT004",
+          "available": true,
+          "specs": { "Largo": "33 cm", "Ancho": "54 cm" },
+          "images": {
+            "cover": "assets/images/products/prod_576/cover.jpg",
+            "thumb": "assets/images/products/prod_576/thumb.jpg",
+            "gallery": ["assets/images/products/prod_576/1.jpg"]
+          }
+        },
+        {
+          "id": "var_573_5",
+          "attributes": { "Talle": "5" },
+          "price": 10739.75,
+          "originalPrice": null,
+          "stock": 10,
+          "sku": "ENT005",
+          "available": true,
+          "specs": { "Largo": "35 cm", "Ancho": "56 cm" },
+          "images": {
+            "cover": "assets/images/products/prod_577/cover.jpg",
+            "thumb": "assets/images/products/prod_577/thumb.jpg",
+            "gallery": ["assets/images/products/prod_577/1.jpg"]
+          }
+        },
+        {
+          "id": "var_573_6",
+          "attributes": { "Talle": "6" },
+          "price": 10739.75,
+          "originalPrice": null,
+          "stock": 10,
+          "sku": "ENT006",
+          "available": true,
+          "specs": { "Largo": "37 cm", "Ancho": "60 cm" },
+          "images": {
+            "cover": "assets/images/products/prod_578/cover.jpg",
+            "thumb": "assets/images/products/prod_578/thumb.jpg",
+            "gallery": ["assets/images/products/prod_578/1.jpg"]
+          }
+        },
+        {
+          "id": "var_573_7",
+          "attributes": { "Talle": "7" },
+          "price": 11870.25,
+          "originalPrice": null,
+          "stock": 10,
+          "sku": "ENT007",
+          "available": true,
+          "specs": { "Largo": "40 cm", "Ancho": "62 cm" },
+          "images": {
+            "cover": "assets/images/products/prod_579/cover.jpg",
+            "thumb": "assets/images/products/prod_579/thumb.jpg",
+            "gallery": ["assets/images/products/prod_579/1.jpg"]
+          }
+        },
+        {
+          "id": "var_573_8",
+          "attributes": { "Talle": "8" },
+          "price": 11870.25,
+          "originalPrice": null,
+          "stock": 10,
+          "sku": "ENT008",
+          "available": true,
+          "specs": { "Largo": "44 cm", "Ancho": "72 cm" },
+          "images": {
+            "cover": "assets/images/products/prod_580/cover.jpg",
+            "thumb": "assets/images/products/prod_580/thumb.jpg",
+            "gallery": ["assets/images/products/prod_580/1.jpg"]
+          }
+        }
       ]
-    },
-    "specs": {
-      "SKU": "ENT002"
-    },
-    "shipping": {
-      "free": false,
-      "days": 2
-    },
-    "badge": "🧥 Ropa",
-    "brand": "Sin marca",
-    "sku": "ENT002",
-    "features": [
-      "Mantiene el calor",
-      "Material suave",
-      "Resistente al agua",
-      "Perfecto para el frío"
-    ]
-  },
-  {
-    "id": "prod_575",
-    "name": "ENTERO VERY COOLD TALLE 3",
-    "category": "ropa",
-    "subcategory": "Ropa",
-    "price": 9609.25,
-    "originalPrice": null,
-    "discount": null,
-    "stock": 10,
-    "rating": 4.1,
-    "reviews": 15,
-    "featured": false,
-    "topDiscount": false,
-    "hasVideo": false,
-    "tags": [
-      "entero",
-      "very",
-      "coold",
-      "talle",
-      "ropa",
-      "invierno",
-      "abrigo",
-      "calor"
-    ],
-    "description": "T-3 => LARGO = 32 cm   ANCHO = 52 cm",
-    "longDescription": "T-3 => LARGO = 32 cm   ANCHO = 52 cm",
-    "images": {
-      "cover": "assets/images/products/prod_575/cover.jpg",
-      "thumb": "assets/images/products/prod_575/thumb.jpg",
-      "gallery": [
-        "assets/images/products/prod_575/1.jpg"
-      ]
-    },
-    "specs": {
-      "SKU": "ENT003"
-    },
-    "shipping": {
-      "free": false,
-      "days": 4
-    },
-    "badge": "🧥 Ropa",
-    "brand": "Sin marca",
-    "sku": "ENT003",
-    "features": [
-      "Mantiene el calor",
-      "Material suave",
-      "Resistente al agua",
-      "Perfecto para el frío"
-    ]
-  },
-  {
-    "id": "prod_576",
-    "name": "ENTERO VERY COOLD TALLE 4",
-    "category": "ropa",
-    "subcategory": "Ropa",
-    "price": 9609.25,
-    "originalPrice": null,
-    "discount": null,
-    "stock": 10,
-    "rating": 4.3,
-    "reviews": 15,
-    "featured": false,
-    "topDiscount": false,
-    "hasVideo": false,
-    "tags": [
-      "entero",
-      "very",
-      "coold",
-      "talle",
-      "ropa",
-      "invierno",
-      "abrigo",
-      "calor"
-    ],
-    "description": "T-4 => LARGO = 33 cm   ANCHO = 54 cm",
-    "longDescription": "T-4 => LARGO = 33 cm   ANCHO = 54 cm",
-    "images": {
-      "cover": "assets/images/products/prod_576/cover.jpg",
-      "thumb": "assets/images/products/prod_576/thumb.jpg",
-      "gallery": [
-        "assets/images/products/prod_576/1.jpg"
-      ]
-    },
-    "specs": {
-      "SKU": "ENT004"
-    },
-    "shipping": {
-      "free": false,
-      "days": 4
-    },
-    "badge": "🧥 Ropa",
-    "brand": "Sin marca",
-    "sku": "ENT004",
-    "features": [
-      "Mantiene el calor",
-      "Material suave",
-      "Resistente al agua",
-      "Perfecto para el frío"
-    ]
-  },
-  {
-    "id": "prod_577",
-    "name": "ENTERO VERY COOLD TALLE 5",
-    "category": "ropa",
-    "subcategory": "Ropa",
-    "price": 10739.75,
-    "originalPrice": null,
-    "discount": null,
-    "stock": 10,
-    "rating": 3.9,
-    "reviews": 31,
-    "featured": false,
-    "topDiscount": false,
-    "hasVideo": false,
-    "tags": [
-      "entero",
-      "very",
-      "coold",
-      "talle",
-      "ropa",
-      "invierno",
-      "abrigo",
-      "calor"
-    ],
-    "description": "T-5 => LARGO = 35 cm   ANCHO = 56 cm",
-    "longDescription": "T-5 => LARGO = 35 cm   ANCHO = 56 cm",
-    "images": {
-      "cover": "assets/images/products/prod_577/cover.jpg",
-      "thumb": "assets/images/products/prod_577/thumb.jpg",
-      "gallery": [
-        "assets/images/products/prod_577/1.jpg"
-      ]
-    },
-    "specs": {
-      "SKU": "ENT005"
-    },
-    "shipping": {
-      "free": false,
-      "days": 2
-    },
-    "badge": "🧥 Ropa",
-    "brand": "Sin marca",
-    "sku": "ENT005",
-    "features": [
-      "Mantiene el calor",
-      "Material suave",
-      "Resistente al agua",
-      "Perfecto para el frío"
-    ]
-  },
-  {
-    "id": "prod_578",
-    "name": "ENTERO VERY COOLD TALLE 6",
-    "category": "ropa",
-    "subcategory": "Ropa",
-    "price": 10739.75,
-    "originalPrice": null,
-    "discount": null,
-    "stock": 10,
-    "rating": 4.1,
-    "reviews": 22,
-    "featured": false,
-    "topDiscount": false,
-    "hasVideo": false,
-    "tags": [
-      "entero",
-      "very",
-      "coold",
-      "talle",
-      "ropa",
-      "invierno",
-      "abrigo",
-      "calor"
-    ],
-    "description": "T-6 => LARGO = 37 cm   ANCHO = 60 cm",
-    "longDescription": "T-6 => LARGO = 37 cm   ANCHO = 60 cm",
-    "images": {
-      "cover": "assets/images/products/prod_578/cover.jpg",
-      "thumb": "assets/images/products/prod_578/thumb.jpg",
-      "gallery": [
-        "assets/images/products/prod_578/1.jpg"
-      ]
-    },
-    "specs": {
-      "SKU": "ENT006"
-    },
-    "shipping": {
-      "free": false,
-      "days": 3
-    },
-    "badge": "🧥 Ropa",
-    "brand": "Sin marca",
-    "sku": "ENT006",
-    "features": [
-      "Mantiene el calor",
-      "Material suave",
-      "Resistente al agua",
-      "Perfecto para el frío"
-    ]
-  },
-  {
-    "id": "prod_579",
-    "name": "ENTERO VERY COOLD TALLE 7",
-    "category": "ropa",
-    "subcategory": "Ropa",
-    "price": 11870.25,
-    "originalPrice": null,
-    "discount": null,
-    "stock": 10,
-    "rating": 4.4,
-    "reviews": 43,
-    "featured": false,
-    "topDiscount": false,
-    "hasVideo": false,
-    "tags": [
-      "entero",
-      "very",
-      "coold",
-      "talle",
-      "ropa",
-      "invierno",
-      "abrigo",
-      "calor"
-    ],
-    "description": "T-7 => LARGO = 40 cm   ANCHO = 62 cm",
-    "longDescription": "T-7 => LARGO = 40 cm   ANCHO = 62 cm",
-    "images": {
-      "cover": "assets/images/products/prod_579/cover.jpg",
-      "thumb": "assets/images/products/prod_579/thumb.jpg",
-      "gallery": [
-        "assets/images/products/prod_579/1.jpg"
-      ]
-    },
-    "specs": {
-      "SKU": "ENT007"
-    },
-    "shipping": {
-      "free": false,
-      "days": 4
-    },
-    "badge": "🧥 Ropa",
-    "brand": "Sin marca",
-    "sku": "ENT007",
-    "features": [
-      "Mantiene el calor",
-      "Material suave",
-      "Resistente al agua",
-      "Perfecto para el frío"
-    ]
-  },
-  {
-    "id": "prod_580",
-    "name": "ENTERO VERY COOLD TALLE 8",
-    "category": "ropa",
-    "subcategory": "Ropa",
-    "price": 11870.25,
-    "originalPrice": null,
-    "discount": null,
-    "stock": 10,
-    "rating": 3.7,
-    "reviews": 33,
-    "featured": false,
-    "topDiscount": false,
-    "hasVideo": false,
-    "tags": [
-      "entero",
-      "very",
-      "coold",
-      "talle",
-      "ropa",
-      "invierno",
-      "abrigo",
-      "calor"
-    ],
-    "description": "T-8 => LARGO = 44 cm   ANCHO = 72 cm",
-    "longDescription": "T-8 => LARGO = 44 cm   ANCHO = 72 cm",
-    "images": {
-      "cover": "assets/images/products/prod_580/cover.jpg",
-      "thumb": "assets/images/products/prod_580/thumb.jpg",
-      "gallery": [
-        "assets/images/products/prod_580/1.jpg"
-      ]
-    },
-    "specs": {
-      "SKU": "ENT008"
-    },
-    "shipping": {
-      "free": false,
-      "days": 2
-    },
-    "badge": "🧥 Ropa",
-    "brand": "Sin marca",
-    "sku": "ENT008",
-    "features": [
-      "Mantiene el calor",
-      "Material suave",
-      "Resistente al agua",
-      "Perfecto para el frío"
-    ]
+    }
   },
   {
     "id": "prod_581",
-    "name": "ENTERO BRISA TALLE 1",
+    "name": "Entero Brisa",
     "category": "ropa",
     "subcategory": "Ropa",
     "price": 9609.25,
     "originalPrice": null,
     "discount": null,
-    "stock": 10,
-    "rating": 5,
-    "reviews": 28,
+    "stock": 80,
+    "rating": 4.4,
+    "reviews": 290,
     "featured": false,
     "topDiscount": false,
     "hasVideo": false,
+    "hasVariants": true,
+    "basePrice": 9609.25,
     "tags": [
       "entero",
       "brisa",
-      "talle",
       "ropa",
       "invierno",
       "abrigo",
-      "calor"
+      "calor",
+      "variantes"
     ],
-    "description": "T-1 => LARGO = 28 cm   ANCHO = 44 cm",
-    "longDescription": "T-1 => LARGO = 28 cm   ANCHO = 44 cm",
+    "description": "Entero Brisa para mascotas. Prenda de abrigo completa ideal para el invierno, mantiene el calor y es resistente al agua.",
+    "longDescription": "Entero Brisa para mascotas. Descripción: Prenda de abrigo completa que cubre todo el cuerpo de tu mascota. Ideal para días fríos, mantiene el calor corporal y es resistente al agua. Material suave y cómodo que no limita el movimiento. Disponible en 8 talles para adaptarse a diferentes tamaños de mascotas.",
     "images": {
       "cover": "assets/images/products/prod_581/cover.jpg",
       "thumb": "assets/images/products/prod_581/thumb.jpg",
@@ -18079,350 +17863,137 @@
       "Material suave",
       "Resistente al agua",
       "Perfecto para el frío"
-    ]
-  },
-  {
-    "id": "prod_582",
-    "name": "ENTERO BRISA TALLE 2",
-    "category": "ropa",
-    "subcategory": "Ropa",
-    "price": 9609.25,
-    "originalPrice": null,
-    "discount": null,
-    "stock": 10,
-    "rating": 4,
-    "reviews": 10,
-    "featured": false,
-    "topDiscount": false,
-    "hasVideo": false,
-    "tags": [
-      "entero",
-      "brisa",
-      "talle",
-      "ropa",
-      "invierno",
-      "abrigo",
-      "calor"
     ],
-    "description": "T-2 => LARGO = 31 cm   ANCHO = 46 cm",
-    "longDescription": "T-2 => LARGO = 31 cm   ANCHO = 46 cm",
-    "images": {
-      "cover": "assets/images/products/prod_582/cover.jpg",
-      "thumb": "assets/images/products/prod_582/thumb.jpg",
-      "gallery": [
-        "assets/images/products/prod_582/1.jpg"
+    "variants": {
+      "attributes": [
+        {
+          "name": "Talle",
+          "values": ["1", "2", "3", "4", "5", "6", "7", "8"]
+        }
+      ],
+      "combinations": [
+        {
+          "id": "var_581_1",
+          "attributes": { "Talle": "1" },
+          "price": 9609.25,
+          "originalPrice": null,
+          "stock": 10,
+          "sku": "ENT009",
+          "available": true,
+          "specs": { "Largo": "28 cm", "Ancho": "44 cm" },
+          "images": {
+            "cover": "assets/images/products/prod_581/cover.jpg",
+            "thumb": "assets/images/products/prod_581/thumb.jpg",
+            "gallery": ["assets/images/products/prod_581/1.jpg"]
+          }
+        },
+        {
+          "id": "var_581_2",
+          "attributes": { "Talle": "2" },
+          "price": 9609.25,
+          "originalPrice": null,
+          "stock": 10,
+          "sku": "ENT010",
+          "available": true,
+          "specs": { "Largo": "31 cm", "Ancho": "46 cm" },
+          "images": {
+            "cover": "assets/images/products/prod_582/cover.jpg",
+            "thumb": "assets/images/products/prod_582/thumb.jpg",
+            "gallery": ["assets/images/products/prod_582/1.jpg"]
+          }
+        },
+        {
+          "id": "var_581_3",
+          "attributes": { "Talle": "3" },
+          "price": 10739.75,
+          "originalPrice": null,
+          "stock": 10,
+          "sku": "ENT011",
+          "available": true,
+          "specs": { "Largo": "32 cm", "Ancho": "52 cm" },
+          "images": {
+            "cover": "assets/images/products/prod_583/cover.jpg",
+            "thumb": "assets/images/products/prod_583/thumb.jpg",
+            "gallery": ["assets/images/products/prod_583/1.jpg"]
+          }
+        },
+        {
+          "id": "var_581_4",
+          "attributes": { "Talle": "4" },
+          "price": 10739.75,
+          "originalPrice": null,
+          "stock": 10,
+          "sku": "ENT012",
+          "available": true,
+          "specs": { "Largo": "33 cm", "Ancho": "54 cm" },
+          "images": {
+            "cover": "assets/images/products/prod_584/cover.jpg",
+            "thumb": "assets/images/products/prod_584/thumb.jpg",
+            "gallery": ["assets/images/products/prod_584/1.jpg"]
+          }
+        },
+        {
+          "id": "var_581_5",
+          "attributes": { "Talle": "5" },
+          "price": 13000.75,
+          "originalPrice": null,
+          "stock": 10,
+          "sku": "ENT013",
+          "available": true,
+          "specs": { "Largo": "35 cm", "Ancho": "56 cm" },
+          "images": {
+            "cover": "assets/images/products/prod_585/cover.jpg",
+            "thumb": "assets/images/products/prod_585/thumb.jpg",
+            "gallery": ["assets/images/products/prod_585/1.jpg"]
+          }
+        },
+        {
+          "id": "var_581_6",
+          "attributes": { "Talle": "6" },
+          "price": 13000.75,
+          "originalPrice": null,
+          "stock": 10,
+          "sku": "ENT014",
+          "available": true,
+          "specs": { "Largo": "37 cm", "Ancho": "60 cm" },
+          "images": {
+            "cover": "assets/images/products/prod_586/cover.jpg",
+            "thumb": "assets/images/products/prod_586/thumb.jpg",
+            "gallery": ["assets/images/products/prod_586/1.jpg"]
+          }
+        },
+        {
+          "id": "var_581_7",
+          "attributes": { "Talle": "7" },
+          "price": 13566,
+          "originalPrice": null,
+          "stock": 10,
+          "sku": "ENT015",
+          "available": true,
+          "specs": { "Largo": "40 cm", "Ancho": "62 cm" },
+          "images": {
+            "cover": "assets/images/products/prod_587/cover.jpg",
+            "thumb": "assets/images/products/prod_587/thumb.jpg",
+            "gallery": ["assets/images/products/prod_587/1.jpg"]
+          }
+        },
+        {
+          "id": "var_581_8",
+          "attributes": { "Talle": "8" },
+          "price": 13566,
+          "originalPrice": null,
+          "stock": 10,
+          "sku": "ENT016",
+          "available": true,
+          "specs": { "Largo": "44 cm", "Ancho": "72 cm" },
+          "images": {
+            "cover": "assets/images/products/prod_588/cover.jpg",
+            "thumb": "assets/images/products/prod_588/thumb.jpg",
+            "gallery": ["assets/images/products/prod_588/1.jpg"]
+          }
+        }
       ]
-    },
-    "specs": {
-      "SKU": "ENT010"
-    },
-    "shipping": {
-      "free": false,
-      "days": 4
-    },
-    "badge": "🧥 Ropa",
-    "brand": "Sin marca",
-    "sku": "ENT010",
-    "features": [
-      "Mantiene el calor",
-      "Material suave",
-      "Resistente al agua",
-      "Perfecto para el frío"
-    ]
-  },
-  {
-    "id": "prod_583",
-    "name": "ENTERO BRISA TALLE 3",
-    "category": "ropa",
-    "subcategory": "Ropa",
-    "price": 10739.75,
-    "originalPrice": null,
-    "discount": null,
-    "stock": 10,
-    "rating": 4.4,
-    "reviews": 42,
-    "featured": false,
-    "topDiscount": false,
-    "hasVideo": false,
-    "tags": [
-      "entero",
-      "brisa",
-      "talle",
-      "ropa",
-      "invierno",
-      "abrigo",
-      "calor"
-    ],
-    "description": "T-3 => LARGO = 32 cm   ANCHO = 52 cm",
-    "longDescription": "T-3 => LARGO = 32 cm   ANCHO = 52 cm",
-    "images": {
-      "cover": "assets/images/products/prod_583/cover.jpg",
-      "thumb": "assets/images/products/prod_583/thumb.jpg",
-      "gallery": [
-        "assets/images/products/prod_583/1.jpg"
-      ]
-    },
-    "specs": {
-      "SKU": "ENT011"
-    },
-    "shipping": {
-      "free": false,
-      "days": 2
-    },
-    "badge": "🧥 Ropa",
-    "brand": "Sin marca",
-    "sku": "ENT011",
-    "features": [
-      "Mantiene el calor",
-      "Material suave",
-      "Resistente al agua",
-      "Perfecto para el frío"
-    ]
-  },
-  {
-    "id": "prod_584",
-    "name": "ENTERO BRISA TALLE 4",
-    "category": "ropa",
-    "subcategory": "Ropa",
-    "price": 10739.75,
-    "originalPrice": null,
-    "discount": null,
-    "stock": 10,
-    "rating": 4.4,
-    "reviews": 37,
-    "featured": false,
-    "topDiscount": false,
-    "hasVideo": false,
-    "tags": [
-      "entero",
-      "brisa",
-      "talle",
-      "ropa",
-      "invierno",
-      "abrigo",
-      "calor"
-    ],
-    "description": "T-4 => LARGO = 33 cm   ANCHO = 54 cm",
-    "longDescription": "T-4 => LARGO = 33 cm   ANCHO = 54 cm",
-    "images": {
-      "cover": "assets/images/products/prod_584/cover.jpg",
-      "thumb": "assets/images/products/prod_584/thumb.jpg",
-      "gallery": [
-        "assets/images/products/prod_584/1.jpg"
-      ]
-    },
-    "specs": {
-      "SKU": "ENT012"
-    },
-    "shipping": {
-      "free": false,
-      "days": 3
-    },
-    "badge": "🧥 Ropa",
-    "brand": "Sin marca",
-    "sku": "ENT012",
-    "features": [
-      "Mantiene el calor",
-      "Material suave",
-      "Resistente al agua",
-      "Perfecto para el frío"
-    ]
-  },
-  {
-    "id": "prod_585",
-    "name": "ENTERO BRISA TALLE 5",
-    "category": "ropa",
-    "subcategory": "Ropa",
-    "price": 13000.75,
-    "originalPrice": null,
-    "discount": null,
-    "stock": 10,
-    "rating": 3.5,
-    "reviews": 42,
-    "featured": false,
-    "topDiscount": false,
-    "hasVideo": false,
-    "tags": [
-      "entero",
-      "brisa",
-      "talle",
-      "ropa",
-      "invierno",
-      "abrigo",
-      "calor"
-    ],
-    "description": "T-5 => LARGO = 35 cm   ANCHO = 56 cm",
-    "longDescription": "T-5 => LARGO = 35 cm   ANCHO = 56 cm",
-    "images": {
-      "cover": "assets/images/products/prod_585/cover.jpg",
-      "thumb": "assets/images/products/prod_585/thumb.jpg",
-      "gallery": [
-        "assets/images/products/prod_585/1.jpg"
-      ]
-    },
-    "specs": {
-      "SKU": "ENT013"
-    },
-    "shipping": {
-      "free": false,
-      "days": 3
-    },
-    "badge": "🧥 Ropa",
-    "brand": "Sin marca",
-    "sku": "ENT013",
-    "features": [
-      "Mantiene el calor",
-      "Material suave",
-      "Resistente al agua",
-      "Perfecto para el frío"
-    ]
-  },
-  {
-    "id": "prod_586",
-    "name": "ENTERO BRISA TALLE 6",
-    "category": "ropa",
-    "subcategory": "Ropa",
-    "price": 13000.75,
-    "originalPrice": null,
-    "discount": null,
-    "stock": 10,
-    "rating": 4.8,
-    "reviews": 34,
-    "featured": false,
-    "topDiscount": false,
-    "hasVideo": false,
-    "tags": [
-      "entero",
-      "brisa",
-      "talle",
-      "ropa",
-      "invierno",
-      "abrigo",
-      "calor"
-    ],
-    "description": "T-6 => LARGO = 37 cm   ANCHO = 60 cm",
-    "longDescription": "T-6 => LARGO = 37 cm   ANCHO = 60 cm",
-    "images": {
-      "cover": "assets/images/products/prod_586/cover.jpg",
-      "thumb": "assets/images/products/prod_586/thumb.jpg",
-      "gallery": [
-        "assets/images/products/prod_586/1.jpg"
-      ]
-    },
-    "specs": {
-      "SKU": "ENT014"
-    },
-    "shipping": {
-      "free": false,
-      "days": 2
-    },
-    "badge": "🧥 Ropa",
-    "brand": "Sin marca",
-    "sku": "ENT014",
-    "features": [
-      "Mantiene el calor",
-      "Material suave",
-      "Resistente al agua",
-      "Perfecto para el frío"
-    ]
-  },
-  {
-    "id": "prod_587",
-    "name": "ENTERO BRISA TALLE 7",
-    "category": "ropa",
-    "subcategory": "Ropa",
-    "price": 13566,
-    "originalPrice": null,
-    "discount": null,
-    "stock": 10,
-    "rating": 4.7,
-    "reviews": 53,
-    "featured": false,
-    "topDiscount": false,
-    "hasVideo": false,
-    "tags": [
-      "entero",
-      "brisa",
-      "talle",
-      "ropa",
-      "invierno",
-      "abrigo",
-      "calor"
-    ],
-    "description": "T-7 => LARGO = 40 cm   ANCHO = 62 cm",
-    "longDescription": "T-7 => LARGO = 40 cm   ANCHO = 62 cm",
-    "images": {
-      "cover": "assets/images/products/prod_587/cover.jpg",
-      "thumb": "assets/images/products/prod_587/thumb.jpg",
-      "gallery": [
-        "assets/images/products/prod_587/1.jpg"
-      ]
-    },
-    "specs": {
-      "SKU": "ENT015"
-    },
-    "shipping": {
-      "free": false,
-      "days": 2
-    },
-    "badge": "🧥 Ropa",
-    "brand": "Sin marca",
-    "sku": "ENT015",
-    "features": [
-      "Mantiene el calor",
-      "Material suave",
-      "Resistente al agua",
-      "Perfecto para el frío"
-    ]
-  },
-  {
-    "id": "prod_588",
-    "name": "ENTERO BRISA TALLE 8",
-    "category": "ropa",
-    "subcategory": "Ropa",
-    "price": 13566,
-    "originalPrice": null,
-    "discount": null,
-    "stock": 10,
-    "rating": 4.1,
-    "reviews": 44,
-    "featured": false,
-    "topDiscount": false,
-    "hasVideo": false,
-    "tags": [
-      "entero",
-      "brisa",
-      "talle",
-      "ropa",
-      "invierno",
-      "abrigo",
-      "calor"
-    ],
-    "description": "T-8 => LARGO = 44 cm   ANCHO = 72 cm",
-    "longDescription": "T-8 => LARGO = 44 cm   ANCHO = 72 cm",
-    "images": {
-      "cover": "assets/images/products/prod_588/cover.jpg",
-      "thumb": "assets/images/products/prod_588/thumb.jpg",
-      "gallery": [
-        "assets/images/products/prod_588/1.jpg"
-      ]
-    },
-    "specs": {
-      "SKU": "ENT016"
-    },
-    "shipping": {
-      "free": false,
-      "days": 3
-    },
-    "badge": "🧥 Ropa",
-    "brand": "Sin marca",
-    "sku": "ENT016",
-    "features": [
-      "Mantiene el calor",
-      "Material suave",
-      "Resistente al agua",
-      "Perfecto para el frío"
-    ]
+    }
   },
   {
     "id": "prod_589",
@@ -18686,28 +18257,30 @@
   },
   {
     "id": "prod_598",
-    "name": "POLERAS TALLE  0",
+    "name": "Poleras",
     "category": "ropa",
     "subcategory": "Ropa",
     "price": 4522,
     "originalPrice": null,
     "discount": null,
-    "stock": 10,
-    "rating": 3.8,
-    "reviews": 25,
+    "stock": 80,
+    "rating": 4.5,
+    "reviews": 210,
     "featured": false,
     "topDiscount": false,
     "hasVideo": false,
+    "hasVariants": true,
+    "basePrice": 4522,
     "tags": [
       "poleras",
-      "talle",
       "ropa",
       "invierno",
       "abrigo",
-      "calor"
+      "calor",
+      "variantes"
     ],
-    "description": "T-0 => LARGO = 26 cm   ANCHO = 28 cm",
-    "longDescription": "T-0 => LARGO = 26 cm   ANCHO = 28 cm",
+    "description": "Poleras para mascotas. Prenda cómoda y abrigada ideal para el invierno.",
+    "longDescription": "Poleras para mascotas. Descripción: Prenda de abrigo cómoda y suave que mantiene a tu mascota calentita en días fríos. Material de alta calidad, resistente al agua y perfecto para el frío. Disponible en 8 talles para adaptarse a diferentes tamaños de mascotas.",
     "images": {
       "cover": "assets/images/products/prod_598/cover.jpg",
       "thumb": "assets/images/products/prod_598/thumb.jpg",
@@ -18730,343 +18303,137 @@
       "Material suave",
       "Resistente al agua",
       "Perfecto para el frío"
-    ]
-  },
-  {
-    "id": "prod_599",
-    "name": "POLERAS TALLE  1",
-    "category": "ropa",
-    "subcategory": "Ropa",
-    "price": 5652.5,
-    "originalPrice": null,
-    "discount": null,
-    "stock": 10,
-    "rating": 4,
-    "reviews": 26,
-    "featured": false,
-    "topDiscount": false,
-    "hasVideo": false,
-    "tags": [
-      "poleras",
-      "talle",
-      "ropa",
-      "invierno",
-      "abrigo",
-      "calor"
     ],
-    "description": "T-1 => LARGO = 30 cm   ANCHO = 31 cm",
-    "longDescription": "T-1 => LARGO = 30 cm   ANCHO = 31 cm",
-    "images": {
-      "cover": "assets/images/products/prod_599/cover.jpg",
-      "thumb": "assets/images/products/prod_599/thumb.jpg",
-      "gallery": [
-        "assets/images/products/prod_599/1.jpg"
+    "variants": {
+      "attributes": [
+        {
+          "name": "Talle",
+          "values": ["0", "1", "2", "3", "4", "5", "6", "7"]
+        }
+      ],
+      "combinations": [
+        {
+          "id": "var_598_0",
+          "attributes": { "Talle": "0" },
+          "price": 4522,
+          "originalPrice": null,
+          "stock": 10,
+          "sku": "POL041",
+          "available": true,
+          "specs": { "Largo": "26 cm", "Ancho": "28 cm" },
+          "images": {
+            "cover": "assets/images/products/prod_598/cover.jpg",
+            "thumb": "assets/images/products/prod_598/thumb.jpg",
+            "gallery": ["assets/images/products/prod_598/1.jpg"]
+          }
+        },
+        {
+          "id": "var_598_1",
+          "attributes": { "Talle": "1" },
+          "price": 5652.5,
+          "originalPrice": null,
+          "stock": 10,
+          "sku": "POL042",
+          "available": true,
+          "specs": { "Largo": "30 cm", "Ancho": "31 cm" },
+          "images": {
+            "cover": "assets/images/products/prod_599/cover.jpg",
+            "thumb": "assets/images/products/prod_599/thumb.jpg",
+            "gallery": ["assets/images/products/prod_599/1.jpg"]
+          }
+        },
+        {
+          "id": "var_598_2",
+          "attributes": { "Talle": "2" },
+          "price": 5652.5,
+          "originalPrice": null,
+          "stock": 10,
+          "sku": "POL043",
+          "available": true,
+          "specs": { "Largo": "35 cm", "Ancho": "34 cm" },
+          "images": {
+            "cover": "assets/images/products/prod_600/cover.jpg",
+            "thumb": "assets/images/products/prod_600/thumb.jpg",
+            "gallery": ["assets/images/products/prod_600/1.jpg"]
+          }
+        },
+        {
+          "id": "var_598_3",
+          "attributes": { "Talle": "3" },
+          "price": 6783,
+          "originalPrice": null,
+          "stock": 10,
+          "sku": "POL044",
+          "available": true,
+          "specs": { "Largo": "40 cm", "Ancho": "40 cm" },
+          "images": {
+            "cover": "assets/images/products/prod_601/cover.jpg",
+            "thumb": "assets/images/products/prod_601/thumb.jpg",
+            "gallery": ["assets/images/products/prod_601/1.jpg"]
+          }
+        },
+        {
+          "id": "var_598_4",
+          "attributes": { "Talle": "4" },
+          "price": 6783,
+          "originalPrice": null,
+          "stock": 10,
+          "sku": "POL045",
+          "available": true,
+          "specs": { "Largo": "45 cm", "Ancho": "42 cm" },
+          "images": {
+            "cover": "assets/images/products/prod_602/cover.jpg",
+            "thumb": "assets/images/products/prod_602/thumb.jpg",
+            "gallery": ["assets/images/products/prod_602/1.jpg"]
+          }
+        },
+        {
+          "id": "var_598_5",
+          "attributes": { "Talle": "5" },
+          "price": 7348.25,
+          "originalPrice": null,
+          "stock": 10,
+          "sku": "POL046",
+          "available": true,
+          "specs": { "Largo": "48 cm", "Ancho": "52 cm" },
+          "images": {
+            "cover": "assets/images/products/prod_603/cover.jpg",
+            "thumb": "assets/images/products/prod_603/thumb.jpg",
+            "gallery": ["assets/images/products/prod_603/1.jpg"]
+          }
+        },
+        {
+          "id": "var_598_6",
+          "attributes": { "Talle": "6" },
+          "price": 7348.25,
+          "originalPrice": null,
+          "stock": 10,
+          "sku": "POL047",
+          "available": true,
+          "specs": { "Largo": "54 cm", "Ancho": "54 cm" },
+          "images": {
+            "cover": "assets/images/products/prod_604/cover.jpg",
+            "thumb": "assets/images/products/prod_604/thumb.jpg",
+            "gallery": ["assets/images/products/prod_604/1.jpg"]
+          }
+        },
+        {
+          "id": "var_598_7",
+          "attributes": { "Talle": "7" },
+          "price": 7913.5,
+          "originalPrice": null,
+          "stock": 10,
+          "sku": "POL048",
+          "available": true,
+          "specs": { "Largo": "60 cm", "Ancho": "64 cm" },
+          "images": {
+            "cover": "assets/images/products/prod_605/cover.jpg",
+            "thumb": "assets/images/products/prod_605/thumb.jpg",
+            "gallery": ["assets/images/products/prod_605/1.jpg"]
+          }
+        }
       ]
-    },
-    "specs": {
-      "SKU": "POL042"
-    },
-    "shipping": {
-      "free": false,
-      "days": 4
-    },
-    "badge": "🧥 Ropa",
-    "brand": "Sin marca",
-    "sku": "POL042",
-    "features": [
-      "Mantiene el calor",
-      "Material suave",
-      "Resistente al agua",
-      "Perfecto para el frío"
-    ]
-  },
-  {
-    "id": "prod_600",
-    "name": "POLERAS TALLE  2",
-    "category": "ropa",
-    "subcategory": "Ropa",
-    "price": 5652.5,
-    "originalPrice": null,
-    "discount": null,
-    "stock": 10,
-    "rating": 4.6,
-    "reviews": 17,
-    "featured": false,
-    "topDiscount": false,
-    "hasVideo": false,
-    "tags": [
-      "poleras",
-      "talle",
-      "ropa",
-      "invierno",
-      "abrigo",
-      "calor"
-    ],
-    "description": "T-2 => LARGO = 35 cm   ANCHO = 34 cm",
-    "longDescription": "T-2 => LARGO = 35 cm   ANCHO = 34 cm",
-    "images": {
-      "cover": "assets/images/products/prod_600/cover.jpg",
-      "thumb": "assets/images/products/prod_600/thumb.jpg",
-      "gallery": [
-        "assets/images/products/prod_600/1.jpg"
-      ]
-    },
-    "specs": {
-      "SKU": "POL043"
-    },
-    "shipping": {
-      "free": false,
-      "days": 4
-    },
-    "badge": "🧥 Ropa",
-    "brand": "Sin marca",
-    "sku": "POL043",
-    "features": [
-      "Mantiene el calor",
-      "Material suave",
-      "Resistente al agua",
-      "Perfecto para el frío"
-    ]
-  },
-  {
-    "id": "prod_601",
-    "name": "POLERAS TALLE  3",
-    "category": "ropa",
-    "subcategory": "Ropa",
-    "price": 6783,
-    "originalPrice": null,
-    "discount": null,
-    "stock": 10,
-    "rating": 4.5,
-    "reviews": 35,
-    "featured": false,
-    "topDiscount": false,
-    "hasVideo": false,
-    "tags": [
-      "poleras",
-      "talle",
-      "ropa",
-      "invierno",
-      "abrigo",
-      "calor"
-    ],
-    "description": "T-3 => LARGO = 40 cm   ANCHO = 40 cm",
-    "longDescription": "T-3 => LARGO = 40 cm   ANCHO = 40 cm",
-    "images": {
-      "cover": "assets/images/products/prod_601/cover.jpg",
-      "thumb": "assets/images/products/prod_601/thumb.jpg",
-      "gallery": [
-        "assets/images/products/prod_601/1.jpg"
-      ]
-    },
-    "specs": {
-      "SKU": "POL044"
-    },
-    "shipping": {
-      "free": false,
-      "days": 2
-    },
-    "badge": "🧥 Ropa",
-    "brand": "Sin marca",
-    "sku": "POL044",
-    "features": [
-      "Mantiene el calor",
-      "Material suave",
-      "Resistente al agua",
-      "Perfecto para el frío"
-    ]
-  },
-  {
-    "id": "prod_602",
-    "name": "POLERAS TALLE  4",
-    "category": "ropa",
-    "subcategory": "Ropa",
-    "price": 6783,
-    "originalPrice": null,
-    "discount": null,
-    "stock": 10,
-    "rating": 4.4,
-    "reviews": 18,
-    "featured": false,
-    "topDiscount": false,
-    "hasVideo": false,
-    "tags": [
-      "poleras",
-      "talle",
-      "ropa",
-      "invierno",
-      "abrigo",
-      "calor"
-    ],
-    "description": "T-4 => LARGO = 45 cm   ANCHO = 42 cm",
-    "longDescription": "T-4 => LARGO = 45 cm   ANCHO = 42 cm",
-    "images": {
-      "cover": "assets/images/products/prod_602/cover.jpg",
-      "thumb": "assets/images/products/prod_602/thumb.jpg",
-      "gallery": [
-        "assets/images/products/prod_602/1.jpg"
-      ]
-    },
-    "specs": {
-      "SKU": "POL045"
-    },
-    "shipping": {
-      "free": false,
-      "days": 4
-    },
-    "badge": "🧥 Ropa",
-    "brand": "Sin marca",
-    "sku": "POL045",
-    "features": [
-      "Mantiene el calor",
-      "Material suave",
-      "Resistente al agua",
-      "Perfecto para el frío"
-    ]
-  },
-  {
-    "id": "prod_603",
-    "name": "POLERAS TALLE  5",
-    "category": "ropa",
-    "subcategory": "Ropa",
-    "price": 7348.25,
-    "originalPrice": null,
-    "discount": null,
-    "stock": 10,
-    "rating": 4.9,
-    "reviews": 49,
-    "featured": false,
-    "topDiscount": false,
-    "hasVideo": false,
-    "tags": [
-      "poleras",
-      "talle",
-      "ropa",
-      "invierno",
-      "abrigo",
-      "calor"
-    ],
-    "description": "T-5 => LARGO = 48 cm   ANCHO = 52 cm",
-    "longDescription": "T-5 => LARGO = 48 cm   ANCHO = 52 cm",
-    "images": {
-      "cover": "assets/images/products/prod_603/cover.jpg",
-      "thumb": "assets/images/products/prod_603/thumb.jpg",
-      "gallery": [
-        "assets/images/products/prod_603/1.jpg"
-      ]
-    },
-    "specs": {
-      "SKU": "POL046"
-    },
-    "shipping": {
-      "free": false,
-      "days": 3
-    },
-    "badge": "🧥 Ropa",
-    "brand": "Sin marca",
-    "sku": "POL046",
-    "features": [
-      "Mantiene el calor",
-      "Material suave",
-      "Resistente al agua",
-      "Perfecto para el frío"
-    ]
-  },
-  {
-    "id": "prod_604",
-    "name": "POLERAS TALLE  6",
-    "category": "ropa",
-    "subcategory": "Ropa",
-    "price": 7348.25,
-    "originalPrice": null,
-    "discount": null,
-    "stock": 10,
-    "rating": 4.8,
-    "reviews": 11,
-    "featured": false,
-    "topDiscount": false,
-    "hasVideo": false,
-    "tags": [
-      "poleras",
-      "talle",
-      "ropa",
-      "invierno",
-      "abrigo",
-      "calor"
-    ],
-    "description": "T-6 => LARGO = 54 cm   ANCHO = 54 cm",
-    "longDescription": "T-6 => LARGO = 54 cm   ANCHO = 54 cm",
-    "images": {
-      "cover": "assets/images/products/prod_604/cover.jpg",
-      "thumb": "assets/images/products/prod_604/thumb.jpg",
-      "gallery": [
-        "assets/images/products/prod_604/1.jpg"
-      ]
-    },
-    "specs": {
-      "SKU": "POL047"
-    },
-    "shipping": {
-      "free": false,
-      "days": 3
-    },
-    "badge": "🧥 Ropa",
-    "brand": "Sin marca",
-    "sku": "POL047",
-    "features": [
-      "Mantiene el calor",
-      "Material suave",
-      "Resistente al agua",
-      "Perfecto para el frío"
-    ]
-  },
-  {
-    "id": "prod_605",
-    "name": "POLERAS TALLE  7",
-    "category": "ropa",
-    "subcategory": "Ropa",
-    "price": 7913.5,
-    "originalPrice": null,
-    "discount": null,
-    "stock": 10,
-    "rating": 5,
-    "reviews": 29,
-    "featured": false,
-    "topDiscount": false,
-    "hasVideo": false,
-    "tags": [
-      "poleras",
-      "talle",
-      "ropa",
-      "invierno",
-      "abrigo",
-      "calor"
-    ],
-    "description": "T-7 => LARGO = 60 cm   ANCHO = 64 cm",
-    "longDescription": "T-7 => LARGO = 60 cm   ANCHO = 64 cm",
-    "images": {
-      "cover": "assets/images/products/prod_605/cover.jpg",
-      "thumb": "assets/images/products/prod_605/thumb.jpg",
-      "gallery": [
-        "assets/images/products/prod_605/1.jpg"
-      ]
-    },
-    "specs": {
-      "SKU": "POL048"
-    },
-    "shipping": {
-      "free": false,
-      "days": 3
-    },
-    "badge": "🧥 Ropa",
-    "brand": "Sin marca",
-    "sku": "POL048",
-    "features": [
-      "Mantiene el calor",
-      "Material suave",
-      "Resistente al agua",
-      "Perfecto para el frío"
-    ]
+    }
   },
   {
     "id": "prod_606",
