@@ -204,10 +204,8 @@ class HomeRenderer {
           ${mediaHtml}
           ${video}
           ${discount}
-          ${useMarketingMedia && product.marketing ? `
-            <div class="card__media-badge">
-              ${product.marketing.type === 'video' ? '🎬 VIDEO' : '🖼️ MARKETING'}
-            </div>
+          ${useMarketingMedia && product.marketing && product.marketing.type === 'video' ? `
+            <div class="card__media-badge">🎬 VIDEO</div>
           ` : ''}
         </div>
         <div class="card__content">

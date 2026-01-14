@@ -13,7 +13,18 @@
     "featured": true,
     "topDiscount": true,
     "hasVideo": false,
-    "tags": ["colchon", "cama", "moisés", "living", "marron", "huella", "descanso", "confort", "perros", "gatos"],
+    "tags": [
+      "colchon",
+      "cama",
+      "moisés",
+      "living",
+      "marron",
+      "huella",
+      "descanso",
+      "confort",
+      "perros",
+      "gatos"
+    ],
     "description": "🐾 Moisés / Cama para Mascotas Huella – Línea Living",
     "longDescription": "Dale a tu mascota el descanso que se merece con el Moisés Huella Línea Living, diseñado para brindar máximo confort, abrigo y protección. Su diseño moderno y tonos cálidos lo convierten en el complemento ideal para cualquier espacio del hogar. Cuenta con bordes elevados y acolchados, perfectos para que tu mascota se recueste apoyando la cabeza y se sienta contenida y segura. El interior suave y mullido proporciona una superficie cómoda para el descanso diario, ideal tanto para perros como para gatos. Fabricado con materiales de alta calidad, resistentes y durables, este moisés es 100% hecho a mano, pensado para un uso prolongado y fácil mantenimiento. ✨ Características destacadas: Diseño rectangular con bordes acolchados, Interior suave y confortable, Sensación de abrigo y protección, Material resistente y duradero, Estilo moderno línea living, Ideal para perros y gatos, Hecho a mano. Marca: Huella. Un espacio cómodo, cálido y seguro donde tu mascota va a querer descansar todos los días 🐶🐱",
     "images": {
@@ -57,7 +68,12 @@
     "featured": false,
     "topDiscount": false,
     "hasVideo": true,
-    "tags": ["alimento", "perros", "premium", "nutrición"],
+    "tags": [
+      "alimento",
+      "perros",
+      "premium",
+      "nutrición"
+    ],
     "description": "Alimento premium con ingredientes naturales.",
     "longDescription": "Fórmula balanceada con proteínas de calidad, vitaminas y minerales esenciales. Peso: 15kg.",
     "images": {
@@ -100,7 +116,13 @@
     "featured": true,
     "topDiscount": true,
     "hasVideo": false,
-    "tags": ["gatos", "casa", "casita", "confort", "hogar"],
+    "tags": [
+      "gatos",
+      "casa",
+      "casita",
+      "confort",
+      "hogar"
+    ],
     "description": "Casa cómoda y acogedora para gatos.",
     "longDescription": "Diseño moderno con múltiples niveles. Material resistente y fácil de limpiar.",
     "images": {
@@ -146,7 +168,14 @@
     "featured": true,
     "topDiscount": false,
     "hasVideo": true,
-    "tags": ["automático", "comedero", "perros", "tecnología", "alimentación", "comida"],
+    "tags": [
+      "automático",
+      "comedero",
+      "perros",
+      "tecnología",
+      "alimentación",
+      "comida"
+    ],
     "description": "Comedero automático inteligente para mascotas.",
     "longDescription": "Programable con temporizador. Mantiene el alimento fresco. Fácil de limpiar.",
     "images": {
@@ -189,7 +218,12 @@
     "featured": false,
     "topDiscount": false,
     "hasVideo": false,
-    "tags": ["correa", "paseo", "perros", "accesorios"],
+    "tags": [
+      "correa",
+      "paseo",
+      "perros",
+      "accesorios"
+    ],
     "description": "Correa extensible de alta calidad.",
     "longDescription": "Extensión de hasta 5 metros. Mango ergonómico. Resistente y durable.",
     "images": {
@@ -225,7 +259,15 @@
     "featured": true,
     "topDiscount": true,
     "hasVideo": true,
-    "tags": ["cama", "ortopédica", "perros", "confort", "salud", "colchoneta", "descanso"],
+    "tags": [
+      "cama",
+      "ortopédica",
+      "perros",
+      "confort",
+      "salud",
+      "colchoneta",
+      "descanso"
+    ],
     "description": "Cama ortopédica con soporte para articulaciones.",
     "longDescription": "Espuma viscoelástica de alta densidad. Funda removible y lavable. Ideal para perros adultos.",
     "images": {
@@ -269,7 +311,12 @@
     "featured": false,
     "topDiscount": false,
     "hasVideo": true,
-    "tags": ["juguete", "gatos", "interactivo", "diversión"],
+    "tags": [
+      "juguete",
+      "gatos",
+      "interactivo",
+      "diversión"
+    ],
     "description": "Juguete interactivo que estimula el instinto cazador.",
     "longDescription": "Con movimiento automático y sonidos. Batería incluida. Seguro para gatos.",
     "images": {
@@ -289,7 +336,10 @@
     "specs": {
       "material": "Plástico seguro",
       "power": "Batería AA",
-      "colors": ["Rojo", "Azul"]
+      "colors": [
+        "Rojo",
+        "Azul"
+      ]
     },
     "shipping": {
       "free": true,
@@ -312,7 +362,14 @@
     "featured": false,
     "topDiscount": false,
     "hasVideo": false,
-    "tags": ["transportín", "viaje", "gatos", "portátil", "bolso", "transporte"],
+    "tags": [
+      "transportín",
+      "viaje",
+      "gatos",
+      "portátil",
+      "bolso",
+      "transporte"
+    ],
     "description": "Transportín ligero y compacto para viajes.",
     "longDescription": "Fácil de plegar. Ventilación adecuada. Asa cómoda para transportar.",
     "images": {
@@ -348,7 +405,14 @@
     "featured": true,
     "topDiscount": true,
     "hasVideo": false,
-    "tags": ["anteojos", "accesorios", "perros", "moda", "estilo", "diversión"],
+    "tags": [
+      "anteojos",
+      "accesorios",
+      "perros",
+      "moda",
+      "estilo",
+      "diversión"
+    ],
     "description": "Dale a tu mascota un look único y lleno de estilo.",
     "longDescription": "Dale a tu mascota un look único y lleno de estilo. Livianos, cómodos y con lentes de colores que los hacen destacar en cada foto o paseo. ¡Diversión y actitud en un solo accesorio! ✨",
     "images": {
@@ -362,7 +426,11 @@
       "material": "Plástico resistente",
       "size": "Ajustable",
       "weight": "50g",
-      "colors": ["Azul", "Rosa", "Marrón"]
+      "colors": [
+        "Azul",
+        "Rosa",
+        "Marrón"
+      ]
     },
     "shipping": {
       "free": true,
@@ -385,7 +453,15 @@
     "featured": false,
     "topDiscount": true,
     "hasVideo": false,
-    "tags": ["cama", "rascador", "gatos", "mascotas", "descanso", "cartón", "madera"],
+    "tags": [
+      "cama",
+      "rascador",
+      "gatos",
+      "mascotas",
+      "descanso",
+      "cartón",
+      "madera"
+    ],
     "description": "Cama rascador multifuncional para gatos y mascotas pequeñas a medianas.",
     "longDescription": "Combina la comodidad de una cama con la funcionalidad de un rascador. Superficie de cartón corrugado de alta densidad sobre base de madera prensada. Ideal para el descanso y cuidado de las uñas de tu mascota.",
     "images": {
@@ -419,5 +495,449 @@
     },
     "badge": "🛏️ Rascador",
     "promoText": "15% OFF"
+  },
+  {
+    "id": "prod_232",
+    "name": "CHANCHITO - AGATAR",
+    "description": "CHANCHITO - AGATAR",
+    "price": 16575,
+    "originalPrice": 19500,
+    "discount": 15,
+    "category": "accesorios",
+    "subcategory": "Rascadores",
+    "brand": "AGATAR",
+    "sku": "CHA001",
+    "stock": 10,
+    "rating": 3.7,
+    "reviews": 38,
+    "tags": [
+      "agatar",
+      "chanchito",
+      "rascador",
+      "uñas",
+      "gatos",
+      "sisal"
+    ],
+    "images": {
+      "cover": "assets/images/products/prod_232/cover.jpg",
+      "thumb": "assets/images/products/prod_232/thumb.jpg",
+      "marketing": null,
+      "gallery": [
+        "assets/images/products/prod_232/1.jpg"
+      ]
+    },
+    "specifications": {
+      "SKU": "CHA001",
+      "Marca": "AGATAR"
+    },
+    "features": [
+      "Protege muebles",
+      "Mantiene uñas sanas",
+      "Base estable",
+      "Material duradero"
+    ],
+    "shipping": {
+      "free": true,
+      "days": 3
+    },
+    "hasVideo": false,
+    "topDiscount": false,
+    "longDescription": "CHANCHITO - AGATAR",
+    "badge": "🛏️ Rascadores"
+  },
+  {
+    "id": "prod_223",
+    "name": "COCODRILO - AGATAR",
+    "description": "COCODRILO - AGATAR",
+    "price": 15300,
+    "originalPrice": 18000,
+    "discount": 15,
+    "category": "accesorios",
+    "subcategory": "Rascadores",
+    "brand": "AGATAR",
+    "sku": "COC004",
+    "stock": 10,
+    "rating": 4.9,
+    "reviews": 16,
+    "tags": [
+      "agatar",
+      "cocodrilo",
+      "rascador",
+      "uñas",
+      "gatos",
+      "sisal"
+    ],
+    "images": {
+      "cover": "assets/images/products/prod_223/cover.jpg",
+      "thumb": "assets/images/products/prod_223/thumb.jpg",
+      "marketing": null,
+      "gallery": [
+        "assets/images/products/prod_223/1.jpg"
+      ]
+    },
+    "specifications": {
+      "SKU": "COC004",
+      "Marca": "AGATAR"
+    },
+    "features": [
+      "Protege muebles",
+      "Mantiene uñas sanas",
+      "Base estable",
+      "Material duradero"
+    ],
+    "shipping": {
+      "free": true,
+      "days": 2
+    },
+    "hasVideo": false,
+    "topDiscount": false,
+    "longDescription": "COCODRILO - AGATAR",
+    "badge": "🛏️ Rascadores"
+  },
+  {
+    "id": "prod_230",
+    "name": "ELEFANTE MINI - AGATAR",
+    "description": "ELEFANTE MINI -",
+    "price": 16575,
+    "originalPrice": 19500,
+    "discount": 15,
+    "category": "accesorios",
+    "subcategory": "Rascadores",
+    "brand": "AGATAR",
+    "sku": "ELE001",
+    "stock": 10,
+    "rating": 4.2,
+    "reviews": 44,
+    "tags": [
+      "agatar",
+      "elefante",
+      "mini",
+      "rascador",
+      "uñas",
+      "gatos",
+      "sisal"
+    ],
+    "images": {
+      "cover": "assets/images/products/prod_230/cover.jpg",
+      "thumb": "assets/images/products/prod_230/thumb.jpg",
+      "marketing": null,
+      "gallery": [
+        "assets/images/products/prod_230/1.jpg"
+      ]
+    },
+    "specifications": {
+      "SKU": "ELE001",
+      "Marca": "AGATAR"
+    },
+    "features": [
+      "Protege muebles",
+      "Mantiene uñas sanas",
+      "Base estable",
+      "Material duradero"
+    ],
+    "shipping": {
+      "free": true,
+      "days": 3
+    },
+    "hasVideo": false,
+    "topDiscount": false,
+    "longDescription": "ELEFANTE MINI -",
+    "badge": "🛏️ Rascadores"
+  },
+  {
+    "id": "prod_231",
+    "name": "Gorila Mini - AGATAR",
+    "description": "Gorila Mini - AGATAR",
+    "price": 16575,
+    "originalPrice": 19500,
+    "discount": 15,
+    "category": "accesorios",
+    "subcategory": "Rascadores",
+    "brand": "AGATAR",
+    "sku": "GOR001",
+    "stock": 10,
+    "rating": 4.4,
+    "reviews": 51,
+    "tags": [
+      "agatar",
+      "gorila",
+      "mini",
+      "rascador",
+      "uñas",
+      "gatos",
+      "sisal"
+    ],
+    "images": {
+      "cover": "assets/images/products/prod_231/cover.jpg",
+      "thumb": "assets/images/products/prod_231/thumb.jpg",
+      "marketing": null,
+      "gallery": [
+        "assets/images/products/prod_231/1.jpg"
+      ]
+    },
+    "specifications": {
+      "SKU": "GOR001",
+      "Marca": "AGATAR"
+    },
+    "features": [
+      "Protege muebles",
+      "Mantiene uñas sanas",
+      "Base estable",
+      "Material duradero"
+    ],
+    "shipping": {
+      "free": true,
+      "days": 4
+    },
+    "hasVideo": false,
+    "topDiscount": false,
+    "longDescription": "Gorila Mini - AGATAR",
+    "badge": "🛏️ Rascadores"
+  },
+  {
+    "id": "prod_226",
+    "name": "HIPOPÓTAMO - AGATAR",
+    "category": "accesorios",
+    "subcategory": "Rascadores",
+    "price": 35700,
+    "originalPrice": 42000,
+    "discount": 15,
+    "stock": 10,
+    "rating": 4.7,
+    "reviews": 24,
+    "featured": false,
+    "topDiscount": false,
+    "hasVideo": false,
+    "tags": [
+      "agatar",
+      "hipopótamo",
+      "rascador",
+      "uñas",
+      "gatos",
+      "sisal"
+    ],
+    "description": "HIPOPÓTAMO - AGATAR",
+    "longDescription": "HIPOPÓTAMO - AGATAR",
+    "images": {
+      "cover": "assets/images/products/prod_226/cover.jpg",
+      "thumb": "assets/images/products/prod_226/thumb.jpg",
+      "gallery": [
+        "assets/images/products/prod_226/1.jpg"
+      ]
+    },
+    "specs": {
+      "SKU": "HIP001",
+      "Marca": "AGATAR"
+    },
+    "shipping": {
+      "free": true,
+      "days": 2
+    },
+    "badge": "🛏️ Rascadores",
+    "brand": "AGATAR",
+    "sku": "HIP001",
+    "features": [
+      "Protege muebles",
+      "Mantiene uñas sanas",
+      "Base estable",
+      "Material duradero"
+    ]
+  },
+  {
+    "id": "prod_225",
+    "name": "JIRAFA - AGATAR",
+    "category": "accesorios",
+    "subcategory": "Rascadores",
+    "price": 25500,
+    "originalPrice": 30000,
+    "discount": 15,
+    "stock": 10,
+    "rating": 4.4,
+    "reviews": 25,
+    "featured": false,
+    "topDiscount": false,
+    "hasVideo": false,
+    "tags": [
+      "jirafa",
+      "agatar",
+      "rascador",
+      "uñas",
+      "gatos",
+      "sisal"
+    ],
+    "description": "JIRAFA - AGATAR",
+    "longDescription": "JIRAFA - AGATAR",
+    "images": {
+      "cover": "assets/images/products/prod_225/cover.jpg",
+      "thumb": "assets/images/products/prod_225/thumb.jpg",
+      "gallery": [
+        "assets/images/products/prod_225/1.jpg"
+      ]
+    },
+    "specs": {
+      "SKU": "JIR001"
+    },
+    "shipping": {
+      "free": true,
+      "days": 2
+    },
+    "badge": "🛏️ Rascadores",
+    "brand": "Sin marca",
+    "sku": "JIR001",
+    "features": [
+      "Protege muebles",
+      "Mantiene uñas sanas",
+      "Base estable",
+      "Material duradero"
+    ]
+  },
+  {
+    "id": "prod_220",
+    "name": "MINI ACUÑA - AGATAR",
+    "category": "accesorios",
+    "subcategory": "Rascadores",
+    "price": 7650,
+    "originalPrice": 9000,
+    "discount": 15,
+    "stock": 10,
+    "rating": 4.2,
+    "reviews": 24,
+    "featured": false,
+    "topDiscount": false,
+    "hasVideo": false,
+    "tags": [
+      "mini",
+      "acuña",
+      "agatar",
+      "rascador",
+      "uñas",
+      "gatos",
+      "sisal"
+    ],
+    "description": "MINI ACUÑA - AGATAR",
+    "longDescription": "MINI ACUÑA - AGATAR",
+    "images": {
+      "cover": "assets/images/products/prod_220/cover.jpg",
+      "thumb": "assets/images/products/prod_220/thumb.jpg",
+      "gallery": [
+        "assets/images/products/prod_220/1.jpg"
+      ]
+    },
+    "specs": {
+      "SKU": "MIN002"
+    },
+    "shipping": {
+      "free": false,
+      "days": 3
+    },
+    "badge": "🛏️ Rascadores",
+    "brand": "Sin marca",
+    "sku": "MIN002",
+    "features": [
+      "Protege muebles",
+      "Mantiene uñas sanas",
+      "Base estable",
+      "Material duradero"
+    ]
+  },
+  {
+    "id": "prod_219",
+    "name": "MINI INFINITY - AGATAR",
+    "category": "accesorios",
+    "subcategory": "Rascadores",
+    "price": 10200,
+    "originalPrice": 12000,
+    "discount": 15,
+    "stock": 10,
+    "rating": 4.3,
+    "reviews": 49,
+    "featured": false,
+    "topDiscount": false,
+    "hasVideo": false,
+    "tags": [
+      "agatar",
+      "mini",
+      "infinity",
+      "rascador",
+      "uñas",
+      "gatos",
+      "sisal"
+    ],
+    "description": "MINI INFINITY - AGATAR",
+    "longDescription": "MINI INFINITY - AGATAR",
+    "images": {
+      "cover": "assets/images/products/prod_219/cover.jpg",
+      "thumb": "assets/images/products/prod_219/thumb.jpg",
+      "gallery": [
+        "assets/images/products/prod_219/1.jpg"
+      ]
+    },
+    "specs": {
+      "SKU": "MIN001",
+      "Marca": "AGATAR"
+    },
+    "shipping": {
+      "free": false,
+      "days": 3
+    },
+    "badge": "🛏️ Rascadores",
+    "brand": "AGATAR",
+    "sku": "MIN001",
+    "features": [
+      "Protege muebles",
+      "Mantiene uñas sanas",
+      "Base estable",
+      "Material duradero"
+    ]
+  },
+  {
+    "id": "prod_221",
+    "name": "MINI SIMON - AGATAR",
+    "category": "accesorios",
+    "subcategory": "Rascadores",
+    "price": 9350,
+    "originalPrice": 11000,
+    "discount": 15,
+    "stock": 10,
+    "rating": 3.7,
+    "reviews": 14,
+    "featured": false,
+    "topDiscount": false,
+    "hasVideo": false,
+    "tags": [
+      "agatar",
+      "mini",
+      "simon",
+      "rascador",
+      "uñas",
+      "gatos",
+      "sisal"
+    ],
+    "description": "MINI SIMON - AGATAR",
+    "longDescription": "MINI SIMON - AGATAR",
+    "images": {
+      "cover": "assets/images/products/prod_221/cover.jpg",
+      "thumb": "assets/images/products/prod_221/thumb.jpg",
+      "gallery": [
+        "assets/images/products/prod_221/1.jpg"
+      ]
+    },
+    "specs": {
+      "SKU": "MIN003",
+      "Marca": "AGATAR"
+    },
+    "shipping": {
+      "free": false,
+      "days": 3
+    },
+    "badge": "🛏️ Rascadores",
+    "brand": "AGATAR",
+    "sku": "MIN003",
+    "features": [
+      "Protege muebles",
+      "Mantiene uñas sanas",
+      "Base estable",
+      "Material duradero"
+    ]
   }
 ]
