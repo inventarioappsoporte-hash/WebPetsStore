@@ -1,0 +1,220 @@
+{
+  "id": "prod_726",
+  "name": "COLLAR LONA",
+  "category": "accesorios",
+  "subcategory": "Collares,",
+  "hasVariants": true,
+  "basePrice": 1275,
+  "baseOriginalPrice": 1500,
+  "discount": 15,
+  "stock": 90,
+  "rating": 3.6,
+  "reviews": 80,
+  "featured": false,
+  "topDiscount": false,
+  "hasVideo": false,
+  "tags": [
+    "collar",
+    "lona",
+    "accesorio",
+    "complemento"
+  ],
+  "description": "Medidas\r\np15 N°0 - 27cm , p15 N°1 - 31cm, p20 N°2 - 43cm\r\np25 N°3 - 53cm, p30 nN°4 - 57cm ,p30 nN°5 - 64cm\r\np30 nN°6 - 68cm, p30 nN°7 - 77cm, p30 nN°8 - 82cm",
+  "longDescription": "Medidas\r\np15 N°0 - 27cm , p15 N°1 - 31cm, p20 N°2 - 43cm\r\np25 N°3 - 53cm, p30 nN°4 - 57cm ,p30 nN°5 - 64cm\r\np30 nN°6 - 68cm, p30 nN°7 - 77cm, p30 nN°8 - 82cm",
+  "variants": {
+    "attributes": [
+      {
+        "id": "size",
+        "name": "Tamaño",
+        "type": "size"
+      }
+    ],
+    "combinations": [
+      {
+        "id": "var_726_1",
+        "attributes": {
+          "Tamaño": "N°1"
+        },
+        "price": 1530,
+        "stock": 10,
+        "sku": "COL019-N1",
+        "available": true,
+        "images": {
+          "cover": "assets/images/products/prod_726/cover_n°1.jpg",
+          "thumb": "assets/images/products/prod_726/thumb_n°1.jpg",
+          "gallery": [
+            "assets/images/products/prod_726/1_n°1.jpg"
+          ]
+        },
+        "originalPrice": 1800
+      },
+      {
+        "id": "var_726_2",
+        "attributes": {
+          "Tamaño": "N°2"
+        },
+        "price": 1700,
+        "stock": 10,
+        "sku": "COL019-N2",
+        "available": true,
+        "images": {
+          "cover": "assets/images/products/prod_726/cover_n°2.jpg",
+          "thumb": "assets/images/products/prod_726/thumb_n°2.jpg",
+          "gallery": [
+            "assets/images/products/prod_726/1_n°2.jpg"
+          ]
+        },
+        "originalPrice": 2000
+      },
+      {
+        "id": "var_726_3",
+        "attributes": {
+          "Tamaño": "N°3"
+        },
+        "price": 2040,
+        "stock": 10,
+        "sku": "COL019-N3",
+        "available": true,
+        "images": {
+          "cover": "assets/images/products/prod_726/cover_n°3.jpg",
+          "thumb": "assets/images/products/prod_726/thumb_n°3.jpg",
+          "gallery": [
+            "assets/images/products/prod_726/1_n°3.jpg"
+          ]
+        },
+        "originalPrice": 2400
+      },
+      {
+        "id": "var_726_4",
+        "attributes": {
+          "Tamaño": "N°4"
+        },
+        "price": 2380,
+        "stock": 10,
+        "sku": "COL019-N4",
+        "available": true,
+        "images": {
+          "cover": "assets/images/products/prod_726/cover_n°4.jpg",
+          "thumb": "assets/images/products/prod_726/thumb_n°4.jpg",
+          "gallery": [
+            "assets/images/products/prod_726/1_n°4.jpg"
+          ]
+        },
+        "originalPrice": 2800
+      },
+      {
+        "id": "var_726_5",
+        "attributes": {
+          "Tamaño": "N°5"
+        },
+        "price": 2720,
+        "stock": 10,
+        "sku": "COL019-N5",
+        "available": true,
+        "images": {
+          "cover": "assets/images/products/prod_726/cover_n°5.jpg",
+          "thumb": "assets/images/products/prod_726/thumb_n°5.jpg",
+          "gallery": [
+            "assets/images/products/prod_726/1_n°5.jpg"
+          ]
+        },
+        "originalPrice": 3200
+      },
+      {
+        "id": "var_726_6",
+        "attributes": {
+          "Tamaño": "N°6"
+        },
+        "price": 3230,
+        "stock": 10,
+        "sku": "COL019-N6",
+        "available": true,
+        "images": {
+          "cover": "assets/images/products/prod_726/cover_n°6.jpg",
+          "thumb": "assets/images/products/prod_726/thumb_n°6.jpg",
+          "gallery": [
+            "assets/images/products/prod_726/1_n°6.jpg"
+          ]
+        },
+        "originalPrice": 3800
+      },
+      {
+        "id": "var_726_7",
+        "attributes": {
+          "Tamaño": "N°7"
+        },
+        "price": 3910,
+        "stock": 10,
+        "sku": "COL019-N7",
+        "available": true,
+        "images": {
+          "cover": "assets/images/products/prod_726/cover_n°7.jpg",
+          "thumb": "assets/images/products/prod_726/thumb_n°7.jpg",
+          "gallery": [
+            "assets/images/products/prod_726/1_n°7.jpg"
+          ]
+        },
+        "originalPrice": 4600
+      },
+      {
+        "id": "var_726_8",
+        "attributes": {
+          "Tamaño": "N°8"
+        },
+        "price": 4675,
+        "stock": 10,
+        "sku": "COL019-N8",
+        "available": true,
+        "images": {
+          "cover": "assets/images/products/prod_726/cover_n°8.jpg",
+          "thumb": "assets/images/products/prod_726/thumb_n°8.jpg",
+          "gallery": [
+            "assets/images/products/prod_726/1_n°8.jpg"
+          ]
+        },
+        "originalPrice": 5500
+      },
+      {
+        "id": "var_726_9",
+        "attributes": {
+          "Tamaño": "N°0"
+        },
+        "price": 1275,
+        "stock": 10,
+        "sku": "COL019-N0",
+        "available": true,
+        "images": {
+          "cover": "assets/images/products/prod_726/cover_n°0.jpg",
+          "thumb": "assets/images/products/prod_726/thumb_n°0.jpg",
+          "gallery": [
+            "assets/images/products/prod_726/1_n°0.jpg"
+          ]
+        },
+        "originalPrice": 1500
+      }
+    ]
+  },
+  "images": {
+    "cover": "assets/images/products/prod_726/cover.jpg",
+    "thumb": "assets/images/products/prod_726/thumb.jpg",
+    "gallery": [
+      "assets/images/products/prod_726/1.jpg"
+    ]
+  },
+  "specs": {
+    "SKU": "COL019"
+  },
+  "shipping": {
+    "free": false,
+    "days": 2
+  },
+  "badge": "🦴 Accesorios",
+  "brand": "Sin marca",
+  "sku": "COL019",
+  "features": [
+    "Múltiples variantes disponibles",
+    "Calidad garantizada",
+    "Fácil de usar",
+    "Resistente y duradero"
+  ]
+}

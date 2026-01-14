@@ -1,0 +1,132 @@
+{
+  "id": "prod_606",
+  "name": "COLLAR GATO SURTIDOS X 12 UNIDADES",
+  "category": "accesorios",
+  "subcategory": "Collares,",
+  "hasVariants": true,
+  "basePrice": 13600,
+  "baseOriginalPrice": 16000,
+  "discount": 15,
+  "stock": 40,
+  "rating": 5,
+  "reviews": 88,
+  "featured": false,
+  "topDiscount": false,
+  "hasVideo": false,
+  "tags": [
+    "collar",
+    "gato",
+    "surtidos",
+    "unidades",
+    "accesorio",
+    "complemento"
+  ],
+  "description": "COLLAR GATO SURTI X 12 UNIDADES DIFERENTES MODELOS",
+  "longDescription": "COLLAR GATO SURTI X 12 UNIDADES DIFERENTES MODELOS",
+  "variants": {
+    "attributes": [
+      {
+        "id": "model",
+        "name": "Modelo",
+        "type": "model"
+      }
+    ],
+    "combinations": [
+      {
+        "id": "var_606_1",
+        "attributes": {
+          "Modelo": "1"
+        },
+        "price": 13600,
+        "stock": 10,
+        "sku": "COL016-1X",
+        "available": true,
+        "images": {
+          "cover": "assets/images/products/prod_606/cover_1.jpg",
+          "thumb": "assets/images/products/prod_606/thumb_1.jpg",
+          "gallery": [
+            "assets/images/products/prod_606/1_1.jpg"
+          ]
+        },
+        "originalPrice": 16000
+      },
+      {
+        "id": "var_606_2",
+        "attributes": {
+          "Modelo": "2"
+        },
+        "price": 13600,
+        "stock": 10,
+        "sku": "COL016-2X",
+        "available": true,
+        "images": {
+          "cover": "assets/images/products/prod_606/cover_2.jpg",
+          "thumb": "assets/images/products/prod_606/thumb_2.jpg",
+          "gallery": [
+            "assets/images/products/prod_606/1_2.jpg"
+          ]
+        },
+        "originalPrice": 16000
+      },
+      {
+        "id": "var_606_3",
+        "attributes": {
+          "Modelo": "3"
+        },
+        "price": 13600,
+        "stock": 10,
+        "sku": "COL016-3X",
+        "available": true,
+        "images": {
+          "cover": "assets/images/products/prod_606/cover_3.jpg",
+          "thumb": "assets/images/products/prod_606/thumb_3.jpg",
+          "gallery": [
+            "assets/images/products/prod_606/1_3.jpg"
+          ]
+        },
+        "originalPrice": 16000
+      },
+      {
+        "id": "var_606_4",
+        "attributes": {
+          "Modelo": "9"
+        },
+        "price": 13600,
+        "stock": 10,
+        "sku": "COL016-9X",
+        "available": true,
+        "images": {
+          "cover": "assets/images/products/prod_606/cover_9.jpg",
+          "thumb": "assets/images/products/prod_606/thumb_9.jpg",
+          "gallery": [
+            "assets/images/products/prod_606/1_9.jpg"
+          ]
+        },
+        "originalPrice": 16000
+      }
+    ]
+  },
+  "images": {
+    "cover": "assets/images/products/prod_606/cover.jpg",
+    "thumb": "assets/images/products/prod_606/thumb.jpg",
+    "gallery": [
+      "assets/images/products/prod_606/1.jpg"
+    ]
+  },
+  "specs": {
+    "SKU": "COL016"
+  },
+  "shipping": {
+    "free": false,
+    "days": 2
+  },
+  "badge": "🦴 Accesorios",
+  "brand": "Sin marca",
+  "sku": "COL016",
+  "features": [
+    "Múltiples variantes disponibles",
+    "Calidad garantizada",
+    "Fácil de usar",
+    "Resistente y duradero"
+  ]
+}

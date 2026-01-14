@@ -1,0 +1,131 @@
+{
+  "id": "prod_152",
+  "name": "MOISES ECONOMICO",
+  "category": "casa-descanso",
+  "subcategory": "Colchonetas",
+  "hasVariants": true,
+  "basePrice": 9350,
+  "baseOriginalPrice": 11000,
+  "discount": 15,
+  "stock": 40,
+  "rating": 4.5,
+  "reviews": 88,
+  "featured": false,
+  "topDiscount": false,
+  "hasVideo": false,
+  "tags": [
+    "moises",
+    "economico",
+    "descanso",
+    "cama",
+    "confort"
+  ],
+  "description": "N°1 (35 CM) , N°2 (40 CM)\r\nN°3 (45 CM) , N°4 (50 CM)",
+  "longDescription": "N°1 (35 CM) , N°2 (40 CM)\r\nN°3 (45 CM) , N°4 (50 CM)",
+  "variants": {
+    "attributes": [
+      {
+        "id": "size",
+        "name": "Tamaño",
+        "type": "size"
+      }
+    ],
+    "combinations": [
+      {
+        "id": "var_152_1",
+        "attributes": {
+          "Tamaño": "N°1"
+        },
+        "price": 9350,
+        "stock": 10,
+        "sku": "MOI003-N1",
+        "available": true,
+        "images": {
+          "cover": "assets/images/products/prod_152/cover_n°1.jpg",
+          "thumb": "assets/images/products/prod_152/thumb_n°1.jpg",
+          "gallery": [
+            "assets/images/products/prod_152/1_n°1.jpg"
+          ]
+        },
+        "originalPrice": 11000
+      },
+      {
+        "id": "var_152_2",
+        "attributes": {
+          "Tamaño": "N°2"
+        },
+        "price": 10625,
+        "stock": 10,
+        "sku": "MOI003-N2",
+        "available": true,
+        "images": {
+          "cover": "assets/images/products/prod_152/cover_n°2.jpg",
+          "thumb": "assets/images/products/prod_152/thumb_n°2.jpg",
+          "gallery": [
+            "assets/images/products/prod_152/1_n°2.jpg"
+          ]
+        },
+        "originalPrice": 12500
+      },
+      {
+        "id": "var_152_3",
+        "attributes": {
+          "Tamaño": "N°3"
+        },
+        "price": 11900,
+        "stock": 10,
+        "sku": "MOI003-N3",
+        "available": true,
+        "images": {
+          "cover": "assets/images/products/prod_152/cover_n°3.jpg",
+          "thumb": "assets/images/products/prod_152/thumb_n°3.jpg",
+          "gallery": [
+            "assets/images/products/prod_152/1_n°3.jpg"
+          ]
+        },
+        "originalPrice": 14000
+      },
+      {
+        "id": "var_152_4",
+        "attributes": {
+          "Tamaño": "N°4"
+        },
+        "price": 13175,
+        "stock": 10,
+        "sku": "MOI003-N4",
+        "available": true,
+        "images": {
+          "cover": "assets/images/products/prod_152/cover_n°4.jpg",
+          "thumb": "assets/images/products/prod_152/thumb_n°4.jpg",
+          "gallery": [
+            "assets/images/products/prod_152/1_n°4.jpg"
+          ]
+        },
+        "originalPrice": 15500
+      }
+    ]
+  },
+  "images": {
+    "cover": "assets/images/products/prod_152/cover.jpg",
+    "thumb": "assets/images/products/prod_152/thumb.jpg",
+    "gallery": [
+      "assets/images/products/prod_152/1.jpg"
+    ]
+  },
+  "specs": {
+    "SKU": "MOI003"
+  },
+  "shipping": {
+    "free": false,
+    "days": 3
+  },
+  "badge": "🛏️ Colchonetas",
+  "brand": "Sin marca",
+  "sku": "MOI003",
+  "features": [
+    "Múltiples variantes disponibles",
+    "Calidad garantizada",
+    "Fácil de usar",
+    "Resistente y duradero"
+  ]
+}

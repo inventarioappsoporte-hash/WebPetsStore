@@ -1,0 +1,167 @@
+{
+  "id": "prod_734",
+  "name": "PECHERA ALCOCHONADA POLICE K9",
+  "category": "accesorios",
+  "subcategory": "Collares,",
+  "hasVariants": true,
+  "basePrice": 10200,
+  "baseOriginalPrice": 12000,
+  "discount": 15,
+  "stock": 60,
+  "rating": 4.1,
+  "reviews": 81,
+  "featured": false,
+  "topDiscount": false,
+  "hasVideo": false,
+  "tags": [
+    "pechera",
+    "alcochonada",
+    "police",
+    "accesorio",
+    "complemento"
+  ],
+  "description": "PECHERA ALCOCHONADA POLICE K9",
+  "longDescription": "PECHERA ALCOCHONADA POLICE K9",
+  "variants": {
+    "attributes": [
+      {
+        "id": "size",
+        "name": "Talla",
+        "type": "size"
+      }
+    ],
+    "combinations": [
+      {
+        "id": "var_734_1",
+        "attributes": {
+          "Talla": "XS"
+        },
+        "price": 10200,
+        "stock": 10,
+        "sku": "PEC002-XS",
+        "available": true,
+        "images": {
+          "cover": "assets/images/products/prod_734/cover_xs.jpg",
+          "thumb": "assets/images/products/prod_734/thumb_xs.jpg",
+          "gallery": [
+            "assets/images/products/prod_734/1_xs.jpg"
+          ]
+        },
+        "originalPrice": 12000
+      },
+      {
+        "id": "var_734_2",
+        "attributes": {
+          "Talla": "S"
+        },
+        "price": 12750,
+        "stock": 10,
+        "sku": "PEC002-S",
+        "available": true,
+        "images": {
+          "cover": "assets/images/products/prod_734/cover_s.jpg",
+          "thumb": "assets/images/products/prod_734/thumb_s.jpg",
+          "gallery": [
+            "assets/images/products/prod_734/1_s.jpg"
+          ]
+        },
+        "originalPrice": 15000
+      },
+      {
+        "id": "var_734_3",
+        "attributes": {
+          "Talla": "M"
+        },
+        "price": 15300,
+        "stock": 10,
+        "sku": "PEC002-M",
+        "available": true,
+        "images": {
+          "cover": "assets/images/products/prod_734/cover_m.jpg",
+          "thumb": "assets/images/products/prod_734/thumb_m.jpg",
+          "gallery": [
+            "assets/images/products/prod_734/1_m.jpg"
+          ]
+        },
+        "originalPrice": 18000
+      },
+      {
+        "id": "var_734_4",
+        "attributes": {
+          "Talla": "L"
+        },
+        "price": 17000,
+        "stock": 10,
+        "sku": "PEC002-L",
+        "available": true,
+        "images": {
+          "cover": "assets/images/products/prod_734/cover_l.jpg",
+          "thumb": "assets/images/products/prod_734/thumb_l.jpg",
+          "gallery": [
+            "assets/images/products/prod_734/1_l.jpg"
+          ]
+        },
+        "originalPrice": 20000
+      },
+      {
+        "id": "var_734_5",
+        "attributes": {
+          "Talla": "XL"
+        },
+        "price": 18700,
+        "stock": 10,
+        "sku": "PEC002-XL",
+        "available": true,
+        "images": {
+          "cover": "assets/images/products/prod_734/cover_xl.jpg",
+          "thumb": "assets/images/products/prod_734/thumb_xl.jpg",
+          "gallery": [
+            "assets/images/products/prod_734/1_xl.jpg"
+          ]
+        },
+        "originalPrice": 22000
+      },
+      {
+        "id": "var_734_6",
+        "attributes": {
+          "Talla": "XXL"
+        },
+        "price": 21250,
+        "stock": 10,
+        "sku": "PEC002-XXL",
+        "available": true,
+        "images": {
+          "cover": "assets/images/products/prod_734/cover_xxl.jpg",
+          "thumb": "assets/images/products/prod_734/thumb_xxl.jpg",
+          "gallery": [
+            "assets/images/products/prod_734/1_xxl.jpg"
+          ]
+        },
+        "originalPrice": 25000
+      }
+    ]
+  },
+  "images": {
+    "cover": "assets/images/products/prod_734/cover.jpg",
+    "thumb": "assets/images/products/prod_734/thumb.jpg",
+    "gallery": [
+      "assets/images/products/prod_734/1.jpg"
+    ]
+  },
+  "specs": {
+    "SKU": "PEC002"
+  },
+  "shipping": {
+    "free": false,
+    "days": 2
+  },
+  "badge": "🦴 Accesorios",
+  "brand": "Sin marca",
+  "sku": "PEC002",
+  "features": [
+    "Múltiples variantes disponibles",
+    "Calidad garantizada",
+    "Fácil de usar",
+    "Resistente y duradero"
+  ]
+}

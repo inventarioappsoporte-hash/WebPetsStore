@@ -1,0 +1,113 @@
+{
+  "id": "prod_216",
+  "name": "ALSINA - AGATAR",
+  "category": "casa-descanso",
+  "subcategory": "Rascadores",
+  "hasVariants": true,
+  "basePrice": 3400,
+  "baseOriginalPrice": 4000,
+  "discount": 15,
+  "stock": 30,
+  "rating": 4.5,
+  "reviews": 99,
+  "featured": false,
+  "topDiscount": false,
+  "hasVideo": false,
+  "tags": [
+    "alsina",
+    "agatar",
+    "descanso",
+    "cama",
+    "confort"
+  ],
+  "description": "ALSINA - AGATAR",
+  "longDescription": "ALSINA - AGATAR",
+  "variants": {
+    "attributes": [
+      {
+        "id": "size",
+        "name": "Tamaño",
+        "type": "size"
+      }
+    ],
+    "combinations": [
+      {
+        "id": "var_216_1",
+        "attributes": {
+          "Tamaño": "Pequeño"
+        },
+        "price": 3400,
+        "stock": 10,
+        "sku": "ALS001-PEQ",
+        "available": true,
+        "images": {
+          "cover": "assets/images/products/prod_216/cover_pequeño.jpg",
+          "thumb": "assets/images/products/prod_216/thumb_pequeño.jpg",
+          "gallery": [
+            "assets/images/products/prod_216/1_pequeño.jpg"
+          ]
+        },
+        "originalPrice": 4000
+      },
+      {
+        "id": "var_216_2",
+        "attributes": {
+          "Tamaño": "Mediano"
+        },
+        "price": 4250,
+        "stock": 10,
+        "sku": "ALS001-MED",
+        "available": true,
+        "images": {
+          "cover": "assets/images/products/prod_216/cover_mediano.jpg",
+          "thumb": "assets/images/products/prod_216/thumb_mediano.jpg",
+          "gallery": [
+            "assets/images/products/prod_216/1_mediano.jpg"
+          ]
+        },
+        "originalPrice": 5000
+      },
+      {
+        "id": "var_216_3",
+        "attributes": {
+          "Tamaño": "Grande"
+        },
+        "price": 9350,
+        "stock": 10,
+        "sku": "ALS001-GRA",
+        "available": true,
+        "images": {
+          "cover": "assets/images/products/prod_216/cover_grande.jpg",
+          "thumb": "assets/images/products/prod_216/thumb_grande.jpg",
+          "gallery": [
+            "assets/images/products/prod_216/1_grande.jpg"
+          ]
+        },
+        "originalPrice": 11000
+      }
+    ]
+  },
+  "images": {
+    "cover": "assets/images/products/prod_216/cover.jpg",
+    "thumb": "assets/images/products/prod_216/thumb.jpg",
+    "gallery": [
+      "assets/images/products/prod_216/1.jpg"
+    ]
+  },
+  "specs": {
+    "SKU": "ALS001"
+  },
+  "shipping": {
+    "free": false,
+    "days": 2
+  },
+  "badge": "🐱 Rascadores",
+  "brand": "AGATAR",
+  "sku": "ALS001",
+  "features": [
+    "Múltiples variantes disponibles",
+    "Calidad garantizada",
+    "Fácil de usar",
+    "Resistente y duradero"
+  ]
+}

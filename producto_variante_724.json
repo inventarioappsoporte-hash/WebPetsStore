@@ -1,0 +1,112 @@
+{
+  "id": "prod_724",
+  "name": "CADENA COMUN 1,2M",
+  "category": "accesorios",
+  "subcategory": "Collares,",
+  "hasVariants": true,
+  "basePrice": 2720,
+  "baseOriginalPrice": 3200,
+  "discount": 15,
+  "stock": 30,
+  "rating": 3.7,
+  "reviews": 86,
+  "featured": false,
+  "topDiscount": false,
+  "hasVideo": false,
+  "tags": [
+    "cadena",
+    "comun",
+    "accesorio",
+    "complemento"
+  ],
+  "description": "Medidas\r\nT-1 = 1,20MM ,T-3 = 1,9MM\r\nT-5 = 4,5MM",
+  "longDescription": "Medidas\r\nT-1 = 1,20MM ,T-3 = 1,9MM\r\nT-5 = 4,5MM",
+  "variants": {
+    "attributes": [
+      {
+        "id": "size",
+        "name": "Tamaño",
+        "type": "size"
+      }
+    ],
+    "combinations": [
+      {
+        "id": "var_724_1",
+        "attributes": {
+          "Tamaño": "T1"
+        },
+        "price": 2720,
+        "stock": 10,
+        "sku": "CADENA-T1",
+        "available": true,
+        "images": {
+          "cover": "assets/images/products/prod_724/cover_t1.jpg",
+          "thumb": "assets/images/products/prod_724/thumb_t1.jpg",
+          "gallery": [
+            "assets/images/products/prod_724/1_t1.jpg"
+          ]
+        },
+        "originalPrice": 3200
+      },
+      {
+        "id": "var_724_2",
+        "attributes": {
+          "Tamaño": "T3"
+        },
+        "price": 3230,
+        "stock": 10,
+        "sku": "CADENA-T3",
+        "available": true,
+        "images": {
+          "cover": "assets/images/products/prod_724/cover_t3.jpg",
+          "thumb": "assets/images/products/prod_724/thumb_t3.jpg",
+          "gallery": [
+            "assets/images/products/prod_724/1_t3.jpg"
+          ]
+        },
+        "originalPrice": 3800
+      },
+      {
+        "id": "var_724_3",
+        "attributes": {
+          "Tamaño": "T5"
+        },
+        "price": 8075,
+        "stock": 10,
+        "sku": "CADENA-T5",
+        "available": true,
+        "images": {
+          "cover": "assets/images/products/prod_724/cover_t5.jpg",
+          "thumb": "assets/images/products/prod_724/thumb_t5.jpg",
+          "gallery": [
+            "assets/images/products/prod_724/1_t5.jpg"
+          ]
+        },
+        "originalPrice": 9500
+      }
+    ]
+  },
+  "images": {
+    "cover": "assets/images/products/prod_724/cover.jpg",
+    "thumb": "assets/images/products/prod_724/thumb.jpg",
+    "gallery": [
+      "assets/images/products/prod_724/1.jpg"
+    ]
+  },
+  "specs": {
+    "SKU": "CADENA-BASE"
+  },
+  "shipping": {
+    "free": false,
+    "days": 3
+  },
+  "badge": "🦴 Accesorios",
+  "brand": "Sin marca",
+  "sku": "CADENA-BASE",
+  "features": [
+    "Múltiples variantes disponibles",
+    "Calidad garantizada",
+    "Fácil de usar",
+    "Resistente y duradero"
+  ]
+}

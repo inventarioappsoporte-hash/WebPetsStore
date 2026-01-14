@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Test Fix NaN Price</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 1200px;
+      margin: 20px auto;
+      padding: 20px;
+      background: #f5f5f5;
+    }
+    .test-section {
+      background: white;
+      padding: 20px;
+      margin: 20px 0;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .product-card {
+      border: 1px solid #ddd;
+      padding: 15px;
+      margin: 10px 0;
+      border-radius: 4px;
+      display: flex;
+      gap: 15px;
+      align-items: center;
+    }
+    .product-card img {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      border-radius: 4px;
+    }
+    .product-info {
+      flex: 1;
+    }
+    .price {
+      font-size: 24px;
+      font-weight: bold;
+      color: #2c3e50;
+    }
+    .price.error {
+      color: red;
+    }
+    .price.success {
+      color: green;
+    }
+    .badge {
+      display: inline-block;
+      padding: 4px 8px;
+      border-radius: 4px;
+      font-size: 12px;
+      font-weight: bold;
+      margin-left: 10px;
+    }
+    .badge.variant {
+      background: #3498db;
+      color: white;
+    }
+    .badge.simple {
+      background: #95a5a6;
+      color: white;
+    }
+    h2 {
+      color: #2c3e50;
+      border-bottom: 2px solid #3498db;
+      padding-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>🔍 Test: Corrección de NaN en Precios de Productos con Variantes</h1>
+  
+  <div class="test-section">
+    <h2>Productos Cargados</h2>
+    <div id="products-container"></div>
+  </div>
+
+  <script type="module">
+    import { dataLoader } from './js/core/dataLoader.js';
+    import { Utils } from './js/core/utils.js';
+
+    async function testProducts() {
+      const products = await dataLoader.getProducts();
+      const container = document.getElementById('products-container');
+      
+      console.log('📦 Total productos:', products.length);
+      
+      // Filtrar productos con variantes
+      const variantProducts = products.filter(p => p.hasVariants);
+      const simpleProducts = products.filter(p => !p.hasVariants).slice(0, 3);
+      
+      console.log('🎨 Productos con variantes:', variantProducts.length);
+      console.log('📦 Productos simples:', simpleProducts.length);
+      
+      let html = '<h3>Productos con Variantes (deben mostrar basePrice)</h3>';
+      
+      variantProducts.forEach(product => {
+        const displayPrice = product.hasVariants ? product.basePrice : product.price;
+        const isValid = displayPrice !== undefined && !isNaN(displayPrice);
+        const priceClass = isValid ? 'success' : 'error';
+        const priceText = isValid ? Utils.formatPrice(displayPrice) : '$NaN ❌';
+        
+        html += `
+          <div class="product-card">
+            <img src="${product.images.thumb}" alt="${product.name}">
+            <div class="product-info">
+              <h4>${product.name} <span class="badge variant">CON VARIANTES</span></h4>
+              <p>ID: ${product.id}</p>
+              <p>basePrice: ${product.basePrice} | price: ${product.price}</p>
+              <div class="price ${priceClass}">${priceText}</div>
+            </div>
+          </div>
+        `;
+      });
+      
+      html += '<h3>Productos Simples (deben mostrar price)</h3>';
+      
+      simpleProducts.forEach(product => {
+        const displayPrice = product.hasVariants ? product.basePrice : product.price;
+        const isValid = displayPrice !== undefined && !isNaN(displayPrice);
+        const priceClass = isValid ? 'success' : 'error';
+        const priceText = isValid ? Utils.formatPrice(displayPrice) : '$NaN ❌';
+        
+        html += `
+          <div class="product-card">
+            <img src="${product.images.thumb}" alt="${product.name}">
+            <div class="product-info">
+              <h4>${product.name} <span class="badge simple">SIMPLE</span></h4>
+              <p>ID: ${product.id}</p>
+              <p>basePrice: ${product.basePrice} | price: ${product.price}</p>
+              <div class="price ${priceClass}">${priceText}</div>
+            </div>
+          </div>
+        `;
+      });
+      
+      container.innerHTML = html;
+      
+      // Verificar si hay algún NaN
+      const hasNaN = products.some(p => {
+        const displayPrice = p.hasVariants ? p.basePrice : p.price;
+        return displayPrice === undefined || isNaN(displayPrice);
+      });
+      
+      if (hasNaN) {
+        console.error('❌ Todavía hay productos con NaN');
+      } else {
+        console.log('✅ Todos los productos tienen precios válidos');
+      }
+    }
+
+    testProducts();
+  </script>
+</body>
+</html>

@@ -1,0 +1,97 @@
+{
+  "id": "prod_139",
+  "name": "ZOOTEC PIEDRAS AGLUTINANTES LAVANDA",
+  "category": "higiene-cuidado",
+  "subcategory": "Higiene",
+  "hasVariants": true,
+  "basePrice": 10620,
+  "baseOriginalPrice": 11800,
+  "discount": 10,
+  "stock": 20,
+  "rating": 3.6,
+  "reviews": 54,
+  "featured": false,
+  "topDiscount": false,
+  "hasVideo": false,
+  "tags": [
+    "zootec",
+    "piedras",
+    "aglutinantes",
+    "lavanda",
+    "higiene",
+    "limpieza",
+    "cuidado"
+  ],
+  "description": "ZOOTEC PIEDRAS AGLUTINANTES LAVANDA",
+  "longDescription": "ZOOTEC PIEDRAS AGLUTINANTES LAVANDA",
+  "variants": {
+    "attributes": [
+      {
+        "id": "size",
+        "name": "Tamaño",
+        "type": "size"
+      }
+    ],
+    "combinations": [
+      {
+        "id": "var_139_1",
+        "attributes": {
+          "Tamaño": "4 KG"
+        },
+        "price": 10620,
+        "stock": 10,
+        "sku": "ZOO002-4KG",
+        "available": true,
+        "images": {
+          "cover": "assets/images/products/prod_139/cover_4_kg.jpg",
+          "thumb": "assets/images/products/prod_139/thumb_4_kg.jpg",
+          "gallery": [
+            "assets/images/products/prod_139/1_4_kg.jpg"
+          ]
+        },
+        "originalPrice": 11800
+      },
+      {
+        "id": "var_139_2",
+        "attributes": {
+          "Tamaño": "12 KG"
+        },
+        "price": 25200,
+        "stock": 10,
+        "sku": "ZOO002-12K",
+        "available": true,
+        "images": {
+          "cover": "assets/images/products/prod_139/cover_12_kg.jpg",
+          "thumb": "assets/images/products/prod_139/thumb_12_kg.jpg",
+          "gallery": [
+            "assets/images/products/prod_139/1_12_kg.jpg"
+          ]
+        },
+        "originalPrice": 28000
+      }
+    ]
+  },
+  "images": {
+    "cover": "assets/images/products/prod_139/cover.jpg",
+    "thumb": "assets/images/products/prod_139/thumb.jpg",
+    "gallery": [
+      "assets/images/products/prod_139/1.jpg"
+    ]
+  },
+  "specs": {
+    "SKU": "ZOO002"
+  },
+  "shipping": {
+    "free": false,
+    "days": 4
+  },
+  "badge": "🧼 Higiene",
+  "brand": "ZOOTEC",
+  "sku": "ZOO002",
+  "features": [
+    "Múltiples variantes disponibles",
+    "Calidad garantizada",
+    "Fácil de usar",
+    "Resistente y duradero"
+  ]
+}

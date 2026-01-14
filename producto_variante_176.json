@@ -1,0 +1,152 @@
+{
+  "id": "prod_176",
+  "name": "COLCHONETA PREMIUN DOBLE LONA 4 PATAS",
+  "category": "casa-descanso",
+  "subcategory": "Colchonetas",
+  "hasVariants": true,
+  "basePrice": 18700,
+  "baseOriginalPrice": 22000,
+  "discount": 15,
+  "stock": 50,
+  "rating": 4.1,
+  "reviews": 87,
+  "featured": false,
+  "topDiscount": false,
+  "hasVideo": false,
+  "tags": [
+    "colchoneta",
+    "premiun",
+    "doble",
+    "lona",
+    "patas",
+    "descanso",
+    "cama",
+    "confort"
+  ],
+  "description": "N°1 (50 X 50 CM) , N°2 (50 X 65 CM)\r\nN°3 (60 X 80 CM) , N°4 (70 X 90 CM)\r\nN°5 (80 X 90 CM)",
+  "longDescription": "N°1 (50 X 50 CM) , N°2 (50 X 65 CM)\r\nN°3 (60 X 80 CM) , N°4 (70 X 90 CM)\r\nN°5 (80 X 90 CM)",
+  "variants": {
+    "attributes": [
+      {
+        "id": "size",
+        "name": "Tamaño",
+        "type": "size"
+      }
+    ],
+    "combinations": [
+      {
+        "id": "var_176_1",
+        "attributes": {
+          "Tamaño": "N°2"
+        },
+        "price": 23800,
+        "stock": 10,
+        "sku": "COL012-N2",
+        "available": true,
+        "images": {
+          "cover": "assets/images/products/prod_176/cover_n°2.jpg",
+          "thumb": "assets/images/products/prod_176/thumb_n°2.jpg",
+          "gallery": [
+            "assets/images/products/prod_176/1_n°2.jpg"
+          ]
+        },
+        "originalPrice": 28000
+      },
+      {
+        "id": "var_176_2",
+        "attributes": {
+          "Tamaño": "N°3"
+        },
+        "price": 28900,
+        "stock": 10,
+        "sku": "COL012-N3",
+        "available": true,
+        "images": {
+          "cover": "assets/images/products/prod_176/cover_n°3.jpg",
+          "thumb": "assets/images/products/prod_176/thumb_n°3.jpg",
+          "gallery": [
+            "assets/images/products/prod_176/1_n°3.jpg"
+          ]
+        },
+        "originalPrice": 34000
+      },
+      {
+        "id": "var_176_3",
+        "attributes": {
+          "Tamaño": "N°4"
+        },
+        "price": 39100,
+        "stock": 10,
+        "sku": "COL012-N4",
+        "available": true,
+        "images": {
+          "cover": "assets/images/products/prod_176/cover_n°4.jpg",
+          "thumb": "assets/images/products/prod_176/thumb_n°4.jpg",
+          "gallery": [
+            "assets/images/products/prod_176/1_n°4.jpg"
+          ]
+        },
+        "originalPrice": 46000
+      },
+      {
+        "id": "var_176_4",
+        "attributes": {
+          "Tamaño": "N°5"
+        },
+        "price": 45900,
+        "stock": 10,
+        "sku": "COL012-N5",
+        "available": true,
+        "images": {
+          "cover": "assets/images/products/prod_176/cover_n°5.jpg",
+          "thumb": "assets/images/products/prod_176/thumb_n°5.jpg",
+          "gallery": [
+            "assets/images/products/prod_176/1_n°5.jpg"
+          ]
+        },
+        "originalPrice": 54000
+      },
+      {
+        "id": "var_176_5",
+        "attributes": {
+          "Tamaño": "N°1"
+        },
+        "price": 18700,
+        "stock": 10,
+        "sku": "COL012-N1",
+        "available": true,
+        "images": {
+          "cover": "assets/images/products/prod_176/cover_n°1.jpg",
+          "thumb": "assets/images/products/prod_176/thumb_n°1.jpg",
+          "gallery": [
+            "assets/images/products/prod_176/1_n°1.jpg"
+          ]
+        },
+        "originalPrice": 22000
+      }
+    ]
+  },
+  "images": {
+    "cover": "assets/images/products/prod_176/cover.jpg",
+    "thumb": "assets/images/products/prod_176/thumb.jpg",
+    "gallery": [
+      "assets/images/products/prod_176/1.jpg"
+    ]
+  },
+  "specs": {
+    "SKU": "COL012"
+  },
+  "shipping": {
+    "free": true,
+    "days": 3
+  },
+  "badge": "🛏️ Colchonetas",
+  "brand": "Sin marca",
+  "sku": "COL012",
+  "features": [
+    "Múltiples variantes disponibles",
+    "Calidad garantizada",
+    "Fácil de usar",
+    "Resistente y duradero"
+  ]
+}

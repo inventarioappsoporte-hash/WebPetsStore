@@ -338,13 +338,60 @@ class SearchEngine {
   }
 
   renderResultCard(product) {
+    // Determinar el precio a mostrar con validación robusta
+    let displayPrice = null;
+    
+    console.log('🔍 renderResultCard - Producto:', product.id, product.name);
+    console.log('🔍 renderResultCard - hasVariants:', product.hasVariants);
+    console.log('🔍 renderResultCard - basePrice:', product.basePrice);
+    console.log('🔍 renderResultCard - price:', product.price);
+    
+    // 1. Intentar con basePrice si tiene variantes
+    if (product.hasVariants && product.basePrice) {
+      displayPrice = product.basePrice;
+      console.log('🔍 renderResultCard - Usando basePrice:', displayPrice);
+    }
+    
+    // 2. Si no, intentar con price directo
+    if (!displayPrice && product.price) {
+      displayPrice = product.price;
+      console.log('🔍 renderResultCard - Usando price:', displayPrice);
+    }
+    
+    // 3. Si no, buscar en variants.combinations
+    if (!displayPrice && product.variants?.combinations?.length > 0) {
+      displayPrice = product.variants.combinations[0].price;
+      console.log('🔍 renderResultCard - Usando variants.combinations[0].price:', displayPrice);
+    }
+    
+    // 4. Si no, buscar en variants.options (para productos con variantes simples)
+    if (!displayPrice && product.variants?.options?.length > 0) {
+      const firstOption = product.variants.options[0];
+      if (firstOption.price) {
+        displayPrice = firstOption.price;
+        console.log('🔍 renderResultCard - Usando variants.options[0].price:', displayPrice);
+      }
+    }
+    
+    // 5. Validación final: asegurar que displayPrice es un número válido
+    const originalDisplayPrice = displayPrice;
+    displayPrice = parseFloat(displayPrice);
+    console.log('🔍 renderResultCard - Después de parseFloat:', displayPrice, 'original:', originalDisplayPrice);
+    
+    if (isNaN(displayPrice) || displayPrice <= 0) {
+      console.warn('⚠️ Producto sin precio válido:', product.id, product.name, 'displayPrice:', displayPrice);
+      displayPrice = 0;
+    }
+    
+    console.log('🔍 renderResultCard - Precio final:', displayPrice);
+    
     return `
       <div class="search-card" onclick="window.location.href='product.html?id=${product.id}'">
         <img src="${product.images.thumb}" alt="${product.name}" loading="lazy">
         <h3>${product.name}</h3>
         <p class="search-card__category">${product.category}</p>
         <div class="search-card__price">
-          <span>${Utils.formatPrice(product.price)}</span>
+          <span>${Utils.formatPrice(displayPrice)}</span>
           ${product.discount ? `<span class="search-card__discount">-${product.discount}%</span>` : ''}
         </div>
       </div>

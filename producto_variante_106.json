@@ -4,12 +4,12 @@
   "category": "higiene-cuidado",
   "subcategory": "Higiene",
   "hasVariants": true,
-  "basePrice": 12000,
-  "baseOriginalPrice": 15000,
-  "discount": 20,
+  "basePrice": 10800,
+  "baseOriginalPrice": 12000,
+  "discount": 10,
   "stock": 18,
-  "rating": 4.1,
-  "reviews": 90,
+  "rating": 3.9,
+  "reviews": 70,
   "featured": false,
   "topDiscount": false,
   "hasVideo": false,
@@ -38,54 +38,54 @@
         "attributes": {
           "Color": "Blanco"
         },
-        "price": 12000,
+        "price": 10800,
         "stock": 6,
         "sku": "SHA005-BLA",
         "available": true,
         "images": {
-          "cover": "assets/images/products/prod_106/cover.jpg",
-          "thumb": "assets/images/products/prod_106/thumb.jpg",
+          "cover": "assets/images/products/prod_106/cover_blanco.jpg",
+          "thumb": "assets/images/products/prod_106/thumb_blanco.jpg",
           "gallery": [
-            "assets/images/products/prod_106/1.jpg"
+            "assets/images/products/prod_106/1_blanco.jpg"
           ]
         },
-        "originalPrice": 15000
+        "originalPrice": 12000
       },
       {
         "id": "var_106_2",
         "attributes": {
           "Color": "Negro"
         },
-        "price": 12000,
+        "price": 10800,
         "stock": 6,
         "sku": "SHA005-NEG",
         "available": true,
         "images": {
-          "cover": "assets/images/products/prod_106/cover.jpg",
-          "thumb": "assets/images/products/prod_106/thumb.jpg",
+          "cover": "assets/images/products/prod_106/cover_negro.jpg",
+          "thumb": "assets/images/products/prod_106/thumb_negro.jpg",
           "gallery": [
-            "assets/images/products/prod_106/1.jpg"
+            "assets/images/products/prod_106/1_negro.jpg"
           ]
         },
-        "originalPrice": 15000
+        "originalPrice": 12000
       },
       {
         "id": "var_106_3",
         "attributes": {
           "Color": "Bronce"
         },
-        "price": 12000,
+        "price": 10800,
         "stock": 6,
         "sku": "SHA005-BRO",
         "available": true,
         "images": {
-          "cover": "assets/images/products/prod_106/cover.jpg",
-          "thumb": "assets/images/products/prod_106/thumb.jpg",
+          "cover": "assets/images/products/prod_106/cover_bronce.jpg",
+          "thumb": "assets/images/products/prod_106/thumb_bronce.jpg",
           "gallery": [
-            "assets/images/products/prod_106/1.jpg"
+            "assets/images/products/prod_106/1_bronce.jpg"
           ]
         },
-        "originalPrice": 15000
+        "originalPrice": 12000
       }
     ]
   },

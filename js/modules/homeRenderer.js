@@ -215,8 +215,8 @@ class HomeRenderer {
             <span class="card__reviews">(${product.reviews})</span>
           </div>
           <div class="card__price">
-            <span class="card__price-current">${Utils.formatPrice(product.price)}</span>
-            ${product.originalPrice ? `<span class="card__price-original">${Utils.formatPrice(product.originalPrice)}</span>` : ''}
+            <span class="card__price-current">${Utils.formatPrice(product.hasVariants ? product.basePrice : product.price)}</span>
+            ${(product.hasVariants ? product.baseOriginalPrice : product.originalPrice) ? `<span class="card__price-original">${Utils.formatPrice(product.hasVariants ? product.baseOriginalPrice : product.originalPrice)}</span>` : ''}
           </div>
           <button class="btn btn--small btn--primary" onclick="event.stopPropagation()">Ver Producto</button>
         </div>

@@ -1,0 +1,112 @@
+{
+  "id": "prod_725",
+  "name": "CADENA COMUN 1,7M",
+  "category": "accesorios",
+  "subcategory": "Collares,",
+  "hasVariants": true,
+  "basePrice": 3230,
+  "baseOriginalPrice": 3800,
+  "discount": 15,
+  "stock": 30,
+  "rating": 4.5,
+  "reviews": 47,
+  "featured": false,
+  "topDiscount": false,
+  "hasVideo": false,
+  "tags": [
+    "cadena",
+    "comun",
+    "accesorio",
+    "complemento"
+  ],
+  "description": "Medidas\r\nT-1 = 1,25MM , T-3 = 1,9MM, T-5 = 3,2MM",
+  "longDescription": "Medidas\r\nT-1 = 1,25MM , T-3 = 1,9MM, T-5 = 3,2MM",
+  "variants": {
+    "attributes": [
+      {
+        "id": "size",
+        "name": "Tamaño",
+        "type": "size"
+      }
+    ],
+    "combinations": [
+      {
+        "id": "var_725_1",
+        "attributes": {
+          "Tamaño": "T1"
+        },
+        "price": 3230,
+        "stock": 10,
+        "sku": "CAD001-T1",
+        "available": true,
+        "images": {
+          "cover": "assets/images/products/prod_725/cover_t1.jpg",
+          "thumb": "assets/images/products/prod_725/thumb_t1.jpg",
+          "gallery": [
+            "assets/images/products/prod_725/1_t1.jpg"
+          ]
+        },
+        "originalPrice": 3800
+      },
+      {
+        "id": "var_725_2",
+        "attributes": {
+          "Tamaño": "T3"
+        },
+        "price": 3825,
+        "stock": 10,
+        "sku": "CAD001-T3",
+        "available": true,
+        "images": {
+          "cover": "assets/images/products/prod_725/cover_t3.jpg",
+          "thumb": "assets/images/products/prod_725/thumb_t3.jpg",
+          "gallery": [
+            "assets/images/products/prod_725/1_t3.jpg"
+          ]
+        },
+        "originalPrice": 4500
+      },
+      {
+        "id": "var_725_3",
+        "attributes": {
+          "Tamaño": "T5"
+        },
+        "price": 7225,
+        "stock": 10,
+        "sku": "CAD001-T5",
+        "available": true,
+        "images": {
+          "cover": "assets/images/products/prod_725/cover_t5.jpg",
+          "thumb": "assets/images/products/prod_725/thumb_t5.jpg",
+          "gallery": [
+            "assets/images/products/prod_725/1_t5.jpg"
+          ]
+        },
+        "originalPrice": 8500
+      }
+    ]
+  },
+  "images": {
+    "cover": "assets/images/products/prod_725/cover.jpg",
+    "thumb": "assets/images/products/prod_725/thumb.jpg",
+    "gallery": [
+      "assets/images/products/prod_725/1.jpg"
+    ]
+  },
+  "specs": {
+    "SKU": "CAD001"
+  },
+  "shipping": {
+    "free": false,
+    "days": 4
+  },
+  "badge": "🦴 Accesorios",
+  "brand": "Sin marca",
+  "sku": "CAD001",
+  "features": [
+    "Múltiples variantes disponibles",
+    "Calidad garantizada",
+    "Fácil de usar",
+    "Resistente y duradero"
+  ]
+}

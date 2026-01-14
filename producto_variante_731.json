@@ -1,0 +1,77 @@
+{
+  "id": "prod_731",
+  "name": "COLLAR LONA FANTASIA",
+  "category": "accesorios",
+  "subcategory": "Collares,",
+  "hasVariants": true,
+  "basePrice": 4505,
+  "baseOriginalPrice": 5300,
+  "discount": 15,
+  "stock": 10,
+  "rating": 4.3,
+  "reviews": 20,
+  "featured": false,
+  "topDiscount": false,
+  "hasVideo": false,
+  "tags": [
+    "collar",
+    "lona",
+    "fantasia",
+    "accesorio",
+    "complemento"
+  ],
+  "description": "Medidas\r\np15 N°0 - 27cm, p15 N°1 - 32cm ,p20 N°2 - 41cm\r\np25 N°3 - 52cm,p30 N°4 - 55cm ,p30 N°5 - 63cm\r\np30 N°6 - 67cm",
+  "longDescription": "Medidas\r\np15 N°0 - 27cm, p15 N°1 - 32cm ,p20 N°2 - 41cm\r\np25 N°3 - 52cm,p30 N°4 - 55cm ,p30 N°5 - 63cm\r\np30 N°6 - 67cm",
+  "variants": {
+    "attributes": [
+      {
+        "id": "size",
+        "name": "Tamaño",
+        "type": "size"
+      }
+    ],
+    "combinations": [
+      {
+        "id": "var_731_1",
+        "attributes": {
+          "Tamaño": "N°6"
+        },
+        "price": 4505,
+        "stock": 10,
+        "sku": "COL028-N6",
+        "available": true,
+        "images": {
+          "cover": "assets/images/products/prod_731/cover_n°6.jpg",
+          "thumb": "assets/images/products/prod_731/thumb_n°6.jpg",
+          "gallery": [
+            "assets/images/products/prod_731/1_n°6.jpg"
+          ]
+        },
+        "originalPrice": 5300
+      }
+    ]
+  },
+  "images": {
+    "cover": "assets/images/products/prod_731/cover.jpg",
+    "thumb": "assets/images/products/prod_731/thumb.jpg",
+    "gallery": [
+      "assets/images/products/prod_731/1.jpg"
+    ]
+  },
+  "specs": {
+    "SKU": "COL028"
+  },
+  "shipping": {
+    "free": false,
+    "days": 3
+  },
+  "badge": "🦴 Accesorios",
+  "brand": "Sin marca",
+  "sku": "COL028",
+  "features": [
+    "Múltiples variantes disponibles",
+    "Calidad garantizada",
+    "Fácil de usar",
+    "Resistente y duradero"
+  ]
+}

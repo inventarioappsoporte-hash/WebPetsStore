@@ -131,12 +131,45 @@ class HeaderSearch {
   }
 
   renderResultItem(product) {
+    // Determinar el precio a mostrar con validación robusta
+    let displayPrice = null;
+    
+    // 1. Intentar con basePrice si tiene variantes
+    if (product.hasVariants && product.basePrice) {
+      displayPrice = product.basePrice;
+    }
+    
+    // 2. Si no, intentar con price directo
+    if (!displayPrice && product.price) {
+      displayPrice = product.price;
+    }
+    
+    // 3. Si no, buscar en variants.combinations
+    if (!displayPrice && product.variants?.combinations?.length > 0) {
+      displayPrice = product.variants.combinations[0].price;
+    }
+    
+    // 4. Si no, buscar en variants.options (para productos con variantes simples)
+    if (!displayPrice && product.variants?.options?.length > 0) {
+      const firstOption = product.variants.options[0];
+      if (firstOption.price) {
+        displayPrice = firstOption.price;
+      }
+    }
+    
+    // 5. Validación final: asegurar que displayPrice es un número válido
+    displayPrice = parseFloat(displayPrice);
+    if (isNaN(displayPrice) || displayPrice <= 0) {
+      console.warn('⚠️ HeaderSearch - Producto sin precio válido:', product.id, product.name);
+      displayPrice = 0;
+    }
+    
     return `
       <div class="header__search-item" onclick="window.location.href='product.html?id=${product.id}'">
         <img src="${product.images.thumb}" alt="${product.name}" class="header__search-item-img">
         <div class="header__search-item-info">
           <h4>${product.name}</h4>
-          <p>${Utils.formatPrice(product.price)}</p>
+          <p>${Utils.formatPrice(displayPrice)}</p>
         </div>
       </div>
     `;

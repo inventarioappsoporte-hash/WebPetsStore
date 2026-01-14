@@ -1,0 +1,150 @@
+{
+  "id": "prod_128",
+  "name": "LaPastilla® OSSPRET PERRO",
+  "category": "higiene-cuidado",
+  "subcategory": "Higiene",
+  "hasVariants": true,
+  "basePrice": 9000,
+  "baseOriginalPrice": 10000,
+  "discount": 10,
+  "stock": 50,
+  "rating": 4.4,
+  "reviews": 20,
+  "featured": false,
+  "topDiscount": false,
+  "hasVideo": false,
+  "tags": [
+    "lapastilla",
+    "osspret",
+    "perro",
+    "higiene",
+    "limpieza",
+    "cuidado"
+  ],
+  "description": "LaPastilla® OSSPRET PERRO",
+  "longDescription": "LaPastilla® OSSPRET PERRO",
+  "variants": {
+    "attributes": [
+      {
+        "id": "size",
+        "name": "Tamaño",
+        "type": "size"
+      }
+    ],
+    "combinations": [
+      {
+        "id": "var_128_1",
+        "attributes": {
+          "Tamaño": "2,5 kg a 5 kg"
+        },
+        "price": 9000,
+        "stock": 10,
+        "sku": "LAP002-25K",
+        "available": true,
+        "images": {
+          "cover": "assets/images/products/prod_128/cover_2,5_kg_a_5_kg.jpg",
+          "thumb": "assets/images/products/prod_128/thumb_2,5_kg_a_5_kg.jpg",
+          "gallery": [
+            "assets/images/products/prod_128/1_2,5_kg_a_5_kg.jpg"
+          ]
+        },
+        "originalPrice": 10000
+      },
+      {
+        "id": "var_128_2",
+        "attributes": {
+          "Tamaño": "5,1 kg a 10 kg"
+        },
+        "price": 9900,
+        "stock": 10,
+        "sku": "LAP002-51K",
+        "available": true,
+        "images": {
+          "cover": "assets/images/products/prod_128/cover_5,1_kg_a_10_kg.jpg",
+          "thumb": "assets/images/products/prod_128/thumb_5,1_kg_a_10_kg.jpg",
+          "gallery": [
+            "assets/images/products/prod_128/1_5,1_kg_a_10_kg.jpg"
+          ]
+        },
+        "originalPrice": 11000
+      },
+      {
+        "id": "var_128_3",
+        "attributes": {
+          "Tamaño": "10,1 kg a 20 kg"
+        },
+        "price": 10800,
+        "stock": 10,
+        "sku": "LAP002-101",
+        "available": true,
+        "images": {
+          "cover": "assets/images/products/prod_128/cover_10,1_kg_a_20_kg.jpg",
+          "thumb": "assets/images/products/prod_128/thumb_10,1_kg_a_20_kg.jpg",
+          "gallery": [
+            "assets/images/products/prod_128/1_10,1_kg_a_20_kg.jpg"
+          ]
+        },
+        "originalPrice": 12000
+      },
+      {
+        "id": "var_128_4",
+        "attributes": {
+          "Tamaño": "20,1 kg a 40 kg"
+        },
+        "price": 18900,
+        "stock": 10,
+        "sku": "LAP002-201",
+        "available": true,
+        "images": {
+          "cover": "assets/images/products/prod_128/cover_20,1_kg_a_40_kg.jpg",
+          "thumb": "assets/images/products/prod_128/thumb_20,1_kg_a_40_kg.jpg",
+          "gallery": [
+            "assets/images/products/prod_128/1_20,1_kg_a_40_kg.jpg"
+          ]
+        },
+        "originalPrice": 21000
+      },
+      {
+        "id": "var_128_5",
+        "attributes": {
+          "Tamaño": "40,1 kg a 80 kg"
+        },
+        "price": 33750,
+        "stock": 10,
+        "sku": "LAP002-401",
+        "available": true,
+        "images": {
+          "cover": "assets/images/products/prod_128/cover_40,1_kg_a_80_kg.jpg",
+          "thumb": "assets/images/products/prod_128/thumb_40,1_kg_a_80_kg.jpg",
+          "gallery": [
+            "assets/images/products/prod_128/1_40,1_kg_a_80_kg.jpg"
+          ]
+        },
+        "originalPrice": 37500
+      }
+    ]
+  },
+  "images": {
+    "cover": "assets/images/products/prod_128/cover.jpg",
+    "thumb": "assets/images/products/prod_128/thumb.jpg",
+    "gallery": [
+      "assets/images/products/prod_128/1.jpg"
+    ]
+  },
+  "specs": {
+    "SKU": "LAP002"
+  },
+  "shipping": {
+    "free": false,
+    "days": 3
+  },
+  "badge": "🧼 Higiene",
+  "brand": "OSSPRET",
+  "sku": "LAP002",
+  "features": [
+    "Múltiples variantes disponibles",
+    "Calidad garantizada",
+    "Fácil de usar",
+    "Resistente y duradero"
+  ]
+}

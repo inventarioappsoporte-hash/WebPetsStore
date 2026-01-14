@@ -1,0 +1,97 @@
+{
+  "id": "prod_166",
+  "name": "BOLSO ANTI-DESGARRO PREMIUN",
+  "category": "casa-descanso",
+  "subcategory": "Bolsos",
+  "hasVariants": true,
+  "basePrice": 34000,
+  "baseOriginalPrice": 40000,
+  "discount": 15,
+  "stock": 20,
+  "rating": 4.4,
+  "reviews": 61,
+  "featured": false,
+  "topDiscount": false,
+  "hasVideo": false,
+  "tags": [
+    "bolso",
+    "anti",
+    "desgarro",
+    "premiun",
+    "descanso",
+    "cama",
+    "confort"
+  ],
+  "description": "Medidas Disponibles: \r\nMEDIANO (26x38x30), GRANDE (29X41X33)",
+  "longDescription": "Medidas Disponibles: \r\nMEDIANO (26x38x30), GRANDE (29X41X33)",
+  "variants": {
+    "attributes": [
+      {
+        "id": "size",
+        "name": "Tamaño",
+        "type": "size"
+      }
+    ],
+    "combinations": [
+      {
+        "id": "var_166_1",
+        "attributes": {
+          "Tamaño": "Mediano"
+        },
+        "price": 34000,
+        "stock": 10,
+        "sku": "BOL003-MED",
+        "available": true,
+        "images": {
+          "cover": "assets/images/products/prod_166/cover_mediano.jpg",
+          "thumb": "assets/images/products/prod_166/thumb_mediano.jpg",
+          "gallery": [
+            "assets/images/products/prod_166/1_mediano.jpg"
+          ]
+        },
+        "originalPrice": 40000
+      },
+      {
+        "id": "var_166_2",
+        "attributes": {
+          "Tamaño": "Grande"
+        },
+        "price": 35700,
+        "stock": 10,
+        "sku": "BOL003-GRA",
+        "available": true,
+        "images": {
+          "cover": "assets/images/products/prod_166/cover_grande.jpg",
+          "thumb": "assets/images/products/prod_166/thumb_grande.jpg",
+          "gallery": [
+            "assets/images/products/prod_166/1_grande.jpg"
+          ]
+        },
+        "originalPrice": 42000
+      }
+    ]
+  },
+  "images": {
+    "cover": "assets/images/products/prod_166/cover.jpg",
+    "thumb": "assets/images/products/prod_166/thumb.jpg",
+    "gallery": [
+      "assets/images/products/prod_166/1.jpg"
+    ]
+  },
+  "specs": {
+    "SKU": "BOL003"
+  },
+  "shipping": {
+    "free": true,
+    "days": 4
+  },
+  "badge": "🏠 Casitas",
+  "brand": "Sin marca",
+  "sku": "BOL003",
+  "features": [
+    "Múltiples variantes disponibles",
+    "Calidad garantizada",
+    "Fácil de usar",
+    "Resistente y duradero"
+  ]
+}

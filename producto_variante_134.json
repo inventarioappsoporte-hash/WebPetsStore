@@ -1,0 +1,95 @@
+{
+  "id": "prod_134",
+  "name": "PIEDRAS ABSORSOL",
+  "category": "higiene-cuidado",
+  "subcategory": "Higiene",
+  "hasVariants": true,
+  "basePrice": 2700,
+  "baseOriginalPrice": 3000,
+  "discount": 10,
+  "stock": 0,
+  "rating": 3.8,
+  "reviews": 76,
+  "featured": false,
+  "topDiscount": false,
+  "hasVideo": false,
+  "tags": [
+    "piedras",
+    "absorsol",
+    "higiene",
+    "limpieza",
+    "cuidado"
+  ],
+  "description": "PIEDRAS ABSORSOL",
+  "longDescription": "PIEDRAS ABSORSOL",
+  "variants": {
+    "attributes": [
+      {
+        "id": "size",
+        "name": "Tamaño",
+        "type": "size"
+      }
+    ],
+    "combinations": [
+      {
+        "id": "var_134_1",
+        "attributes": {
+          "Tamaño": "2 KG"
+        },
+        "price": 2700,
+        "stock": 0,
+        "sku": "PIE006-2KG",
+        "available": false,
+        "images": {
+          "cover": "assets/images/products/prod_134/cover_2_kg.jpg",
+          "thumb": "assets/images/products/prod_134/thumb_2_kg.jpg",
+          "gallery": [
+            "assets/images/products/prod_134/1_2_kg.jpg"
+          ]
+        },
+        "originalPrice": 3000
+      },
+      {
+        "id": "var_134_2",
+        "attributes": {
+          "Tamaño": "3,6 KG"
+        },
+        "price": 4500,
+        "stock": 0,
+        "sku": "PIE006-36K",
+        "available": false,
+        "images": {
+          "cover": "assets/images/products/prod_134/cover_3,6_kg.jpg",
+          "thumb": "assets/images/products/prod_134/thumb_3,6_kg.jpg",
+          "gallery": [
+            "assets/images/products/prod_134/1_3,6_kg.jpg"
+          ]
+        },
+        "originalPrice": 5000
+      }
+    ]
+  },
+  "images": {
+    "cover": "assets/images/products/prod_134/cover.jpg",
+    "thumb": "assets/images/products/prod_134/thumb.jpg",
+    "gallery": [
+      "assets/images/products/prod_134/1.jpg"
+    ]
+  },
+  "specs": {
+    "SKU": "PIE006"
+  },
+  "shipping": {
+    "free": false,
+    "days": 4
+  },
+  "badge": "🧼 Higiene",
+  "brand": "ABSORSOL",
+  "sku": "PIE006",
+  "features": [
+    "Múltiples variantes disponibles",
+    "Calidad garantizada",
+    "Fácil de usar",
+    "Resistente y duradero"
+  ]
+}

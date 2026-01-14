@@ -1,0 +1,148 @@
+{
+  "id": "prod_737",
+  "name": "PECHERA ALCOCHONADA  T",
+  "category": "accesorios",
+  "subcategory": "Collares,",
+  "hasVariants": true,
+  "basePrice": 9350,
+  "baseOriginalPrice": 11000,
+  "discount": 15,
+  "stock": 50,
+  "rating": 4.9,
+  "reviews": 81,
+  "featured": false,
+  "topDiscount": false,
+  "hasVideo": false,
+  "tags": [
+    "pechera",
+    "alcochonada",
+    "accesorio",
+    "complemento"
+  ],
+  "description": "PECHERA ALCOCHONADA  T",
+  "longDescription": "PECHERA ALCOCHONADA  T",
+  "variants": {
+    "attributes": [
+      {
+        "id": "size",
+        "name": "Talla",
+        "type": "size"
+      }
+    ],
+    "combinations": [
+      {
+        "id": "var_737_1",
+        "attributes": {
+          "Talla": "XS"
+        },
+        "price": 9350,
+        "stock": 10,
+        "sku": "PEC003-XS",
+        "available": true,
+        "images": {
+          "cover": "assets/images/products/prod_737/cover_xs.jpg",
+          "thumb": "assets/images/products/prod_737/thumb_xs.jpg",
+          "gallery": [
+            "assets/images/products/prod_737/1_xs.jpg"
+          ]
+        },
+        "originalPrice": 11000
+      },
+      {
+        "id": "var_737_2",
+        "attributes": {
+          "Talla": "S"
+        },
+        "price": 10200,
+        "stock": 10,
+        "sku": "PEC003-S",
+        "available": true,
+        "images": {
+          "cover": "assets/images/products/prod_737/cover_s.jpg",
+          "thumb": "assets/images/products/prod_737/thumb_s.jpg",
+          "gallery": [
+            "assets/images/products/prod_737/1_s.jpg"
+          ]
+        },
+        "originalPrice": 12000
+      },
+      {
+        "id": "var_737_3",
+        "attributes": {
+          "Talla": "M"
+        },
+        "price": 11050,
+        "stock": 10,
+        "sku": "PEC003-M",
+        "available": true,
+        "images": {
+          "cover": "assets/images/products/prod_737/cover_m.jpg",
+          "thumb": "assets/images/products/prod_737/thumb_m.jpg",
+          "gallery": [
+            "assets/images/products/prod_737/1_m.jpg"
+          ]
+        },
+        "originalPrice": 13000
+      },
+      {
+        "id": "var_737_4",
+        "attributes": {
+          "Talla": "L"
+        },
+        "price": 11900,
+        "stock": 10,
+        "sku": "PEC003-L",
+        "available": true,
+        "images": {
+          "cover": "assets/images/products/prod_737/cover_l.jpg",
+          "thumb": "assets/images/products/prod_737/thumb_l.jpg",
+          "gallery": [
+            "assets/images/products/prod_737/1_l.jpg"
+          ]
+        },
+        "originalPrice": 14000
+      },
+      {
+        "id": "var_737_5",
+        "attributes": {
+          "Talla": "XL"
+        },
+        "price": 12750,
+        "stock": 10,
+        "sku": "PEC003-XL",
+        "available": true,
+        "images": {
+          "cover": "assets/images/products/prod_737/cover_xl.jpg",
+          "thumb": "assets/images/products/prod_737/thumb_xl.jpg",
+          "gallery": [
+            "assets/images/products/prod_737/1_xl.jpg"
+          ]
+        },
+        "originalPrice": 15000
+      }
+    ]
+  },
+  "images": {
+    "cover": "assets/images/products/prod_737/cover.jpg",
+    "thumb": "assets/images/products/prod_737/thumb.jpg",
+    "gallery": [
+      "assets/images/products/prod_737/1.jpg"
+    ]
+  },
+  "specs": {
+    "SKU": "PEC003"
+  },
+  "shipping": {
+    "free": false,
+    "days": 3
+  },
+  "badge": "🦴 Accesorios",
+  "brand": "Sin marca",
+  "sku": "PEC003",
+  "features": [
+    "Múltiples variantes disponibles",
+    "Calidad garantizada",
+    "Fácil de usar",
+    "Resistente y duradero"
+  ]
+}

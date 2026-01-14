@@ -4,12 +4,12 @@
   "category": "casa-descanso",
   "subcategory": "Colchonetas",
   "hasVariants": true,
-  "basePrice": 20000,
-  "baseOriginalPrice": 25000,
-  "discount": 20,
+  "basePrice": 17000,
+  "baseOriginalPrice": 20000,
+  "discount": 15,
   "stock": 40,
-  "rating": 4,
-  "reviews": 83,
+  "rating": 4.8,
+  "reviews": 40,
   "featured": false,
   "topDiscount": false,
   "hasVideo": false,
@@ -37,72 +37,72 @@
         "attributes": {
           "Talla": "S"
         },
-        "price": 20000,
+        "price": 17000,
         "stock": 10,
         "sku": "COL005-S",
         "available": true,
         "images": {
-          "cover": "assets/images/products/prod_145/cover.jpg",
-          "thumb": "assets/images/products/prod_145/thumb.jpg",
+          "cover": "assets/images/products/prod_145/cover_s.jpg",
+          "thumb": "assets/images/products/prod_145/thumb_s.jpg",
           "gallery": [
-            "assets/images/products/prod_145/1.jpg"
+            "assets/images/products/prod_145/1_s.jpg"
           ]
         },
-        "originalPrice": 25000
+        "originalPrice": 20000
       },
       {
         "id": "var_145_2",
         "attributes": {
           "Talla": "M"
         },
-        "price": 22000,
+        "price": 18700,
         "stock": 10,
         "sku": "COL005-M",
         "available": true,
         "images": {
-          "cover": "assets/images/products/prod_145/cover.jpg",
-          "thumb": "assets/images/products/prod_145/thumb.jpg",
+          "cover": "assets/images/products/prod_145/cover_m.jpg",
+          "thumb": "assets/images/products/prod_145/thumb_m.jpg",
           "gallery": [
-            "assets/images/products/prod_145/1.jpg"
+            "assets/images/products/prod_145/1_m.jpg"
           ]
         },
-        "originalPrice": 27500
+        "originalPrice": 22000
       },
       {
         "id": "var_145_3",
         "attributes": {
           "Talla": "L"
         },
-        "price": 24000,
+        "price": 20400,
         "stock": 10,
         "sku": "COL005-L",
         "available": true,
         "images": {
-          "cover": "assets/images/products/prod_145/cover.jpg",
-          "thumb": "assets/images/products/prod_145/thumb.jpg",
+          "cover": "assets/images/products/prod_145/cover_l.jpg",
+          "thumb": "assets/images/products/prod_145/thumb_l.jpg",
           "gallery": [
-            "assets/images/products/prod_145/1.jpg"
+            "assets/images/products/prod_145/1_l.jpg"
           ]
         },
-        "originalPrice": 30000
+        "originalPrice": 24000
       },
       {
         "id": "var_145_4",
         "attributes": {
           "Talla": "XL"
         },
-        "price": 26000,
+        "price": 22100,
         "stock": 10,
         "sku": "COL005-XL",
         "available": true,
         "images": {
-          "cover": "assets/images/products/prod_145/cover.jpg",
-          "thumb": "assets/images/products/prod_145/thumb.jpg",
+          "cover": "assets/images/products/prod_145/cover_xl.jpg",
+          "thumb": "assets/images/products/prod_145/thumb_xl.jpg",
           "gallery": [
-            "assets/images/products/prod_145/1.jpg"
+            "assets/images/products/prod_145/1_xl.jpg"
           ]
         },
-        "originalPrice": 32500
+        "originalPrice": 26000
       }
     ]
   },

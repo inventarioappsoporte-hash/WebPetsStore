@@ -1,0 +1,148 @@
+{
+  "id": "prod_732",
+  "name": "COLLAR PAÑUELO",
+  "category": "accesorios",
+  "subcategory": "Collares,",
+  "hasVariants": true,
+  "basePrice": 3145,
+  "baseOriginalPrice": 3700,
+  "discount": 15,
+  "stock": 50,
+  "rating": 3.8,
+  "reviews": 22,
+  "featured": false,
+  "topDiscount": false,
+  "hasVideo": false,
+  "tags": [
+    "collar",
+    "pañuelo",
+    "accesorio",
+    "complemento"
+  ],
+  "description": "Medidas\r\nT1 = 37CM , T2 = 42CM , T3 = 50CM\r\nT4 = 55CM , T5 = 65CM",
+  "longDescription": "Medidas\r\nT1 = 37CM , T2 = 42CM , T3 = 50CM\r\nT4 = 55CM , T5 = 65CM",
+  "variants": {
+    "attributes": [
+      {
+        "id": "size",
+        "name": "Tamaño",
+        "type": "size"
+      }
+    ],
+    "combinations": [
+      {
+        "id": "var_732_1",
+        "attributes": {
+          "Tamaño": "T1"
+        },
+        "price": 3145,
+        "stock": 10,
+        "sku": "COL032-T1",
+        "available": true,
+        "images": {
+          "cover": "assets/images/products/prod_732/cover_t1.jpg",
+          "thumb": "assets/images/products/prod_732/thumb_t1.jpg",
+          "gallery": [
+            "assets/images/products/prod_732/1_t1.jpg"
+          ]
+        },
+        "originalPrice": 3700
+      },
+      {
+        "id": "var_732_2",
+        "attributes": {
+          "Tamaño": "T2"
+        },
+        "price": 3315,
+        "stock": 10,
+        "sku": "COL032-T2",
+        "available": true,
+        "images": {
+          "cover": "assets/images/products/prod_732/cover_t2.jpg",
+          "thumb": "assets/images/products/prod_732/thumb_t2.jpg",
+          "gallery": [
+            "assets/images/products/prod_732/1_t2.jpg"
+          ]
+        },
+        "originalPrice": 3900
+      },
+      {
+        "id": "var_732_3",
+        "attributes": {
+          "Tamaño": "T3"
+        },
+        "price": 3570,
+        "stock": 10,
+        "sku": "COL032-T3",
+        "available": true,
+        "images": {
+          "cover": "assets/images/products/prod_732/cover_t3.jpg",
+          "thumb": "assets/images/products/prod_732/thumb_t3.jpg",
+          "gallery": [
+            "assets/images/products/prod_732/1_t3.jpg"
+          ]
+        },
+        "originalPrice": 4200
+      },
+      {
+        "id": "var_732_4",
+        "attributes": {
+          "Tamaño": "T4"
+        },
+        "price": 3825,
+        "stock": 10,
+        "sku": "COL032-T4",
+        "available": true,
+        "images": {
+          "cover": "assets/images/products/prod_732/cover_t4.jpg",
+          "thumb": "assets/images/products/prod_732/thumb_t4.jpg",
+          "gallery": [
+            "assets/images/products/prod_732/1_t4.jpg"
+          ]
+        },
+        "originalPrice": 4500
+      },
+      {
+        "id": "var_732_5",
+        "attributes": {
+          "Tamaño": "T5"
+        },
+        "price": 3995,
+        "stock": 10,
+        "sku": "COL032-T5",
+        "available": true,
+        "images": {
+          "cover": "assets/images/products/prod_732/cover_t5.jpg",
+          "thumb": "assets/images/products/prod_732/thumb_t5.jpg",
+          "gallery": [
+            "assets/images/products/prod_732/1_t5.jpg"
+          ]
+        },
+        "originalPrice": 4700
+      }
+    ]
+  },
+  "images": {
+    "cover": "assets/images/products/prod_732/cover.jpg",
+    "thumb": "assets/images/products/prod_732/thumb.jpg",
+    "gallery": [
+      "assets/images/products/prod_732/1.jpg"
+    ]
+  },
+  "specs": {
+    "SKU": "COL032"
+  },
+  "shipping": {
+    "free": false,
+    "days": 3
+  },
+  "badge": "🦴 Accesorios",
+  "brand": "Sin marca",
+  "sku": "COL032",
+  "features": [
+    "Múltiples variantes disponibles",
+    "Calidad garantizada",
+    "Fácil de usar",
+    "Resistente y duradero"
+  ]
+}

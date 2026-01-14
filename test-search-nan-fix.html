@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Test - Corrección $NaN en Búsqueda</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 1200px;
+      margin: 20px auto;
+      padding: 20px;
+      background: #f5f5f5;
+    }
+    .test-section {
+      background: white;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .product-card {
+      border: 1px solid #ddd;
+      padding: 15px;
+      margin: 10px 0;
+      border-radius: 4px;
+      display: flex;
+      gap: 15px;
+      align-items: center;
+    }
+    .product-card img {
+      width: 80px;
+      height: 80px;
+      object-fit: cover;
+      border-radius: 4px;
+    }
+    .price {
+      font-size: 1.2em;
+      font-weight: bold;
+      color: #2ecc71;
+    }
+    .error {
+      color: #e74c3c;
+      font-weight: bold;
+    }
+    .success {
+      color: #2ecc71;
+      font-weight: bold;
+    }
+    pre {
+      background: #f8f8f8;
+      padding: 10px;
+      border-radius: 4px;
+      overflow-x: auto;
+    }
+  </style>
+</head>
+<body>
+  <h1>🧪 Test - Corrección $NaN en Búsqueda</h1>
+  
+  <div class="test-section">
+    <h2>Productos de Prueba</h2>
+    <div id="test-results"></div>
+  </div>
+
+  <div class="test-section">
+    <h2>Logs de Validación</h2>
+    <div id="validation-logs"></div>
+  </div>
+
+  <script src="js/core/constants.js"></script>
+  <script src="js/core/utils.js"></script>
+  <script src="js/core/dataLoader.js"></script>
+  
+  <script>
+    async function testPriceValidation() {
+      const resultsDiv = document.getElementById('test-results');
+      const logsDiv = document.getElementById('validation-logs');
+      
+      // Cargar productos
+      const products = await dataLoader.getProducts();
+      console.log('📦 Productos cargados:', products.length);
+      
+      let logs = [];
+      let errorsFound = 0;
+      let successCount = 0;
+      
+      // Simular la lógica de renderResultCard
+      products.forEach(product => {
+        let displayPrice = null;
+        
+        // 1. Intentar con basePrice si tiene variantes
+        if (product.hasVariants && product.basePrice) {
+          displayPrice = product.basePrice;
+        }
+        
+        // 2. Si no, intentar con price directo
+        if (!displayPrice && product.price) {
+          displayPrice = product.price;
+        }
+        
+        // 3. Si no, buscar en variants.combinations
+        if (!displayPrice && product.variants?.combinations?.length > 0) {
+          displayPrice = product.variants.combinations[0].price;
+        }
+        
+        // 4. Si no, buscar en variants.options
+        if (!displayPrice && product.variants?.options?.length > 0) {
+          const firstOption = product.variants.options[0];
+          if (firstOption.price) {
+            displayPrice = firstOption.price;
+          }
+        }
+        
+        // 5. Validación final
+        displayPrice = parseFloat(displayPrice);
+        
+        const isValid = !isNaN(displayPrice) && displayPrice > 0;
+        
+        if (!isValid) {
+          errorsFound++;
+          logs.push(`
+            <div class="product-card" style="border-color: #e74c3c;">
+              <img src="${product.images?.thumb || ''}" alt="${product.name}">
+              <div>
+                <strong>${product.name}</strong><br>
+                ID: ${product.id}<br>
+                <span class="error">❌ Precio inválido: ${displayPrice}</span><br>
+                <small>hasVariants: ${product.hasVariants}, basePrice: ${product.basePrice}, price: ${product.price}</small>
+              </div>
+            </div>
+          `);
+        } else {
+          successCount++;
+          // Mostrar solo los primeros 5 productos válidos
+          if (successCount <= 5) {
+            logs.push(`
+              <div class="product-card" style="border-color: #2ecc71;">
+                <img src="${product.images?.thumb || ''}" alt="${product.name}">
+                <div>
+                  <strong>${product.name}</strong><br>
+                  ID: ${product.id}<br>
+                  <span class="success">✅ Precio válido: ${Utils.formatPrice(displayPrice)}</span>
+                </div>
+              </div>
+            `);
+          }
+        }
+      });
+      
+      // Mostrar resumen
+      resultsDiv.innerHTML = `
+        <h3>Resumen de Validación</h3>
+        <p><strong>Total de productos:</strong> ${products.length}</p>
+        <p><strong>Productos con precio válido:</strong> <span class="success">${successCount}</span></p>
+        <p><strong>Productos con precio inválido:</strong> <span class="${errorsFound > 0 ? 'error' : 'success'}">${errorsFound}</span></p>
+        ${errorsFound === 0 ? '<p class="success">🎉 ¡Todos los productos tienen precios válidos!</p>' : '<p class="error">⚠️ Se encontraron productos con precios inválidos</p>'}
+      `;
+      
+      logsDiv.innerHTML = logs.join('');
+    }
+    
+    // Ejecutar test cuando cargue la página
+    testPriceValidation();
+  </script>
+</body>
+</html>

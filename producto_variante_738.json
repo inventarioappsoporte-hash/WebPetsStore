@@ -1,0 +1,133 @@
+{
+  "id": "prod_738",
+  "name": "PECHERA ARNES AJUSTABLE CON CORREA",
+  "category": "accesorios",
+  "subcategory": "Collares,",
+  "hasVariants": true,
+  "basePrice": 17000,
+  "baseOriginalPrice": 20000,
+  "discount": 15,
+  "stock": 40,
+  "rating": 4.2,
+  "reviews": 66,
+  "featured": false,
+  "topDiscount": false,
+  "hasVideo": false,
+  "tags": [
+    "pechera",
+    "arnes",
+    "ajustable",
+    "con",
+    "correa",
+    "accesorio",
+    "complemento"
+  ],
+  "description": "PECHERA ARNES AJUSTABLE CON CORREA",
+  "longDescription": "PECHERA ARNES AJUSTABLE CON CORREA",
+  "variants": {
+    "attributes": [
+      {
+        "id": "size",
+        "name": "Talla",
+        "type": "size"
+      }
+    ],
+    "combinations": [
+      {
+        "id": "var_738_1",
+        "attributes": {
+          "Talla": "S"
+        },
+        "price": 17000,
+        "stock": 10,
+        "sku": "PEC004-S",
+        "available": true,
+        "images": {
+          "cover": "assets/images/products/prod_738/cover_s.jpg",
+          "thumb": "assets/images/products/prod_738/thumb_s.jpg",
+          "gallery": [
+            "assets/images/products/prod_738/1_s.jpg"
+          ]
+        },
+        "originalPrice": 20000
+      },
+      {
+        "id": "var_738_2",
+        "attributes": {
+          "Talla": "M"
+        },
+        "price": 17000,
+        "stock": 10,
+        "sku": "PEC004-M",
+        "available": true,
+        "images": {
+          "cover": "assets/images/products/prod_738/cover_m.jpg",
+          "thumb": "assets/images/products/prod_738/thumb_m.jpg",
+          "gallery": [
+            "assets/images/products/prod_738/1_m.jpg"
+          ]
+        },
+        "originalPrice": 20000
+      },
+      {
+        "id": "var_738_3",
+        "attributes": {
+          "Talla": "L"
+        },
+        "price": 17000,
+        "stock": 10,
+        "sku": "PEC004-L",
+        "available": true,
+        "images": {
+          "cover": "assets/images/products/prod_738/cover_l.jpg",
+          "thumb": "assets/images/products/prod_738/thumb_l.jpg",
+          "gallery": [
+            "assets/images/products/prod_738/1_l.jpg"
+          ]
+        },
+        "originalPrice": 20000
+      },
+      {
+        "id": "var_738_4",
+        "attributes": {
+          "Talla": "XL"
+        },
+        "price": 17000,
+        "stock": 10,
+        "sku": "PEC004-XL",
+        "available": true,
+        "images": {
+          "cover": "assets/images/products/prod_738/cover_xl.jpg",
+          "thumb": "assets/images/products/prod_738/thumb_xl.jpg",
+          "gallery": [
+            "assets/images/products/prod_738/1_xl.jpg"
+          ]
+        },
+        "originalPrice": 20000
+      }
+    ]
+  },
+  "images": {
+    "cover": "assets/images/products/prod_738/cover.jpg",
+    "thumb": "assets/images/products/prod_738/thumb.jpg",
+    "gallery": [
+      "assets/images/products/prod_738/1.jpg"
+    ]
+  },
+  "specs": {
+    "SKU": "PEC004"
+  },
+  "shipping": {
+    "free": true,
+    "days": 2
+  },
+  "badge": "🦴 Accesorios",
+  "brand": "Sin marca",
+  "sku": "PEC004",
+  "features": [
+    "Múltiples variantes disponibles",
+    "Calidad garantizada",
+    "Fácil de usar",
+    "Resistente y duradero"
+  ]
+}

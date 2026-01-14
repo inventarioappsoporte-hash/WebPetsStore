@@ -1,0 +1,96 @@
+{
+  "id": "prod_125",
+  "name": "Pipetas pulguicida Gato",
+  "category": "higiene-cuidado",
+  "subcategory": "Higiene",
+  "hasVariants": true,
+  "basePrice": 4050,
+  "baseOriginalPrice": 4500,
+  "discount": 10,
+  "stock": 20,
+  "rating": 3.7,
+  "reviews": 100,
+  "featured": false,
+  "topDiscount": false,
+  "hasVideo": false,
+  "tags": [
+    "pipetas",
+    "pulguicida",
+    "gato",
+    "higiene",
+    "limpieza",
+    "cuidado"
+  ],
+  "description": "Pipetas pulguicida",
+  "longDescription": "Pipetas pulguicida",
+  "variants": {
+    "attributes": [
+      {
+        "id": "size",
+        "name": "Tamaño",
+        "type": "size"
+      }
+    ],
+    "combinations": [
+      {
+        "id": "var_125_1",
+        "attributes": {
+          "Tamaño": "GATO  4 KG"
+        },
+        "price": 4050,
+        "stock": 10,
+        "sku": "PIP001-GAT",
+        "available": true,
+        "images": {
+          "cover": "assets/images/products/prod_125/cover_gato_4_kg.jpg",
+          "thumb": "assets/images/products/prod_125/thumb_gato_4_kg.jpg",
+          "gallery": [
+            "assets/images/products/prod_125/1_gato_4_kg.jpg"
+          ]
+        },
+        "originalPrice": 4500
+      },
+      {
+        "id": "var_125_2",
+        "attributes": {
+          "Tamaño": "GATO  4 A 8 KG"
+        },
+        "price": 4320,
+        "stock": 10,
+        "sku": "PIP001-GA1",
+        "available": true,
+        "images": {
+          "cover": "assets/images/products/prod_125/cover_gato_4_a_8_kg.jpg",
+          "thumb": "assets/images/products/prod_125/thumb_gato_4_a_8_kg.jpg",
+          "gallery": [
+            "assets/images/products/prod_125/1_gato_4_a_8_kg.jpg"
+          ]
+        },
+        "originalPrice": 4800
+      }
+    ]
+  },
+  "images": {
+    "cover": "assets/images/products/prod_125/cover.jpg",
+    "thumb": "assets/images/products/prod_125/thumb.jpg",
+    "gallery": [
+      "assets/images/products/prod_125/1.jpg"
+    ]
+  },
+  "specs": {
+    "SKU": "PIP001"
+  },
+  "shipping": {
+    "free": false,
+    "days": 4
+  },
+  "badge": "🧼 Higiene",
+  "brand": "OSSPRET",
+  "sku": "PIP001",
+  "features": [
+    "Múltiples variantes disponibles",
+    "Calidad garantizada",
+    "Fácil de usar",
+    "Resistente y duradero"
+  ]
+}

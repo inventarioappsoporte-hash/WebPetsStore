@@ -1,0 +1,185 @@
+{
+  "id": "prod_744",
+  "name": "CONJUNTO REGULABLE LISO",
+  "category": "accesorios",
+  "subcategory": "Collares,",
+  "hasVariants": true,
+  "basePrice": 7650,
+  "baseOriginalPrice": 9000,
+  "discount": 15,
+  "stock": 0,
+  "rating": 4.8,
+  "reviews": 39,
+  "featured": false,
+  "topDiscount": false,
+  "hasVideo": false,
+  "tags": [
+    "conjunto",
+    "regulable",
+    "liso",
+    "accesorio",
+    "complemento"
+  ],
+  "description": "CONJUNTO REGULABLE LISO",
+  "longDescription": "CONJUNTO REGULABLE LISO",
+  "variants": {
+    "attributes": [
+      {
+        "id": "size",
+        "name": "Tamaño",
+        "type": "size"
+      }
+    ],
+    "combinations": [
+      {
+        "id": "var_744_1",
+        "attributes": {
+          "Tamaño": "N°1"
+        },
+        "price": 8160,
+        "stock": 0,
+        "sku": "CON002-N1",
+        "available": false,
+        "images": {
+          "cover": "assets/images/products/prod_744/cover_n°1.jpg",
+          "thumb": "assets/images/products/prod_744/thumb_n°1.jpg",
+          "gallery": [
+            "assets/images/products/prod_744/1_n°1.jpg"
+          ]
+        },
+        "originalPrice": 9600
+      },
+      {
+        "id": "var_744_2",
+        "attributes": {
+          "Tamaño": "N°2"
+        },
+        "price": 8925,
+        "stock": 0,
+        "sku": "CON002-N2",
+        "available": false,
+        "images": {
+          "cover": "assets/images/products/prod_744/cover_n°2.jpg",
+          "thumb": "assets/images/products/prod_744/thumb_n°2.jpg",
+          "gallery": [
+            "assets/images/products/prod_744/1_n°2.jpg"
+          ]
+        },
+        "originalPrice": 10500
+      },
+      {
+        "id": "var_744_3",
+        "attributes": {
+          "Tamaño": "N°3"
+        },
+        "price": 13770,
+        "stock": 0,
+        "sku": "CON002-N3",
+        "available": false,
+        "images": {
+          "cover": "assets/images/products/prod_744/cover_n°3.jpg",
+          "thumb": "assets/images/products/prod_744/thumb_n°3.jpg",
+          "gallery": [
+            "assets/images/products/prod_744/1_n°3.jpg"
+          ]
+        },
+        "originalPrice": 16200
+      },
+      {
+        "id": "var_744_4",
+        "attributes": {
+          "Tamaño": "N°4"
+        },
+        "price": 14620,
+        "stock": 0,
+        "sku": "CON002-N4",
+        "available": false,
+        "images": {
+          "cover": "assets/images/products/prod_744/cover_n°4.jpg",
+          "thumb": "assets/images/products/prod_744/thumb_n°4.jpg",
+          "gallery": [
+            "assets/images/products/prod_744/1_n°4.jpg"
+          ]
+        },
+        "originalPrice": 17200
+      },
+      {
+        "id": "var_744_5",
+        "attributes": {
+          "Tamaño": "N°5"
+        },
+        "price": 15470,
+        "stock": 0,
+        "sku": "CON002-N5",
+        "available": false,
+        "images": {
+          "cover": "assets/images/products/prod_744/cover_n°5.jpg",
+          "thumb": "assets/images/products/prod_744/thumb_n°5.jpg",
+          "gallery": [
+            "assets/images/products/prod_744/1_n°5.jpg"
+          ]
+        },
+        "originalPrice": 18200
+      },
+      {
+        "id": "var_744_6",
+        "attributes": {
+          "Tamaño": "N°6"
+        },
+        "price": 34425,
+        "stock": 0,
+        "sku": "CON002-N6",
+        "available": false,
+        "images": {
+          "cover": "assets/images/products/prod_744/cover_n°6.jpg",
+          "thumb": "assets/images/products/prod_744/thumb_n°6.jpg",
+          "gallery": [
+            "assets/images/products/prod_744/1_n°6.jpg"
+          ]
+        },
+        "originalPrice": 40500
+      },
+      {
+        "id": "var_744_7",
+        "attributes": {
+          "Tamaño": "N°0"
+        },
+        "price": 7650,
+        "stock": 0,
+        "sku": "CON002-N0",
+        "available": false,
+        "images": {
+          "cover": "assets/images/products/prod_744/cover_n°0.jpg",
+          "thumb": "assets/images/products/prod_744/thumb_n°0.jpg",
+          "gallery": [
+            "assets/images/products/prod_744/1_n°0.jpg"
+          ]
+        },
+        "originalPrice": 9000
+      }
+    ]
+  },
+  "images": {
+    "cover": "assets/images/products/prod_744/cover.jpg",
+    "thumb": "assets/images/products/prod_744/thumb.jpg",
+    "gallery": [
+      "assets/images/products/prod_744/1.jpg"
+    ]
+  },
+  "specs": {
+    "SKU": "CON002"
+  },
+  "shipping": {
+    "free": false,
+    "days": 4
+  },
+  "badge": "🦴 Accesorios",
+  "brand": "Sin marca",
+  "sku": "CON002",
+  "features": [
+    "Múltiples variantes disponibles",
+    "Calidad garantizada",
+    "Fácil de usar",
+    "Resistente y duradero"
+  ]
+}

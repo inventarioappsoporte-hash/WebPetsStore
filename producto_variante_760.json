@@ -1,0 +1,114 @@
+{
+  "id": "prod_760",
+  "name": "Royal Puppies Parfum",
+  "category": "higiene-cuidado",
+  "subcategory": "Higiene",
+  "hasVariants": true,
+  "basePrice": 19800,
+  "baseOriginalPrice": 22000,
+  "discount": 10,
+  "stock": 15,
+  "rating": 4.8,
+  "reviews": 29,
+  "featured": false,
+  "topDiscount": false,
+  "hasVideo": false,
+  "tags": [
+    "royal",
+    "puppies",
+    "parfum",
+    "higiene",
+    "limpieza",
+    "cuidado"
+  ],
+  "description": "Perfume premium para mascotas con fragancias suaves y duraderas. \r\n\r\nFragancias disponibles:\r\nMoscú · París · Milano\r\nPresentación: 50 ml",
+  "longDescription": "Perfume premium para mascotas con fragancias suaves y duraderas. \r\n\r\nFragancias disponibles:\r\nMoscú · París · Milano\r\nPresentación: 50 ml",
+  "variants": {
+    "attributes": [
+      {
+        "id": "model",
+        "name": "Modelo",
+        "type": "model"
+      }
+    ],
+    "combinations": [
+      {
+        "id": "var_760_1",
+        "attributes": {
+          "Modelo": "Moscú"
+        },
+        "price": 19800,
+        "stock": 5,
+        "sku": "ROY001-MOS",
+        "available": true,
+        "images": {
+          "cover": "assets/images/products/prod_760/cover_moscú.jpg",
+          "thumb": "assets/images/products/prod_760/thumb_moscú.jpg",
+          "gallery": [
+            "assets/images/products/prod_760/1_moscú.jpg"
+          ]
+        },
+        "originalPrice": 22000
+      },
+      {
+        "id": "var_760_2",
+        "attributes": {
+          "Modelo": "París"
+        },
+        "price": 19800,
+        "stock": 5,
+        "sku": "ROY001-PAR",
+        "available": true,
+        "images": {
+          "cover": "assets/images/products/prod_760/cover_parís.jpg",
+          "thumb": "assets/images/products/prod_760/thumb_parís.jpg",
+          "gallery": [
+            "assets/images/products/prod_760/1_parís.jpg"
+          ]
+        },
+        "originalPrice": 22000
+      },
+      {
+        "id": "var_760_3",
+        "attributes": {
+          "Modelo": "Milano"
+        },
+        "price": 19800,
+        "stock": 5,
+        "sku": "ROY001-MIL",
+        "available": true,
+        "images": {
+          "cover": "assets/images/products/prod_760/cover_milano.jpg",
+          "thumb": "assets/images/products/prod_760/thumb_milano.jpg",
+          "gallery": [
+            "assets/images/products/prod_760/1_milano.jpg"
+          ]
+        },
+        "originalPrice": 22000
+      }
+    ]
+  },
+  "images": {
+    "cover": "assets/images/products/prod_760/cover.jpg",
+    "thumb": "assets/images/products/prod_760/thumb.jpg",
+    "gallery": [
+      "assets/images/products/prod_760/1.jpg"
+    ]
+  },
+  "specs": {
+    "SKU": "ROY001"
+  },
+  "shipping": {
+    "free": true,
+    "days": 3
+  },
+  "badge": "🧼 Higiene",
+  "brand": "Sin marca",
+  "sku": "ROY001",
+  "features": [
+    "Múltiples variantes disponibles",
+    "Calidad garantizada",
+    "Fácil de usar",
+    "Resistente y duradero"
+  ]
+}

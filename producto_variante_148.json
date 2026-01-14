@@ -1,0 +1,132 @@
+{
+  "id": "prod_148",
+  "name": "MOISES TUNEL ECONOMICO",
+  "category": "casa-descanso",
+  "subcategory": "Colchonetas",
+  "hasVariants": true,
+  "basePrice": 12155,
+  "baseOriginalPrice": 14300,
+  "discount": 15,
+  "stock": 40,
+  "rating": 3.8,
+  "reviews": 30,
+  "featured": false,
+  "topDiscount": false,
+  "hasVideo": false,
+  "tags": [
+    "moises",
+    "tunel",
+    "economico",
+    "descanso",
+    "cama",
+    "confort"
+  ],
+  "description": "MOISES TUNEL ECONOMICO",
+  "longDescription": "MOISES TUNEL ECONOMICO",
+  "variants": {
+    "attributes": [
+      {
+        "id": "size",
+        "name": "Tamaño",
+        "type": "size"
+      }
+    ],
+    "combinations": [
+      {
+        "id": "var_148_1",
+        "attributes": {
+          "Tamaño": "T1"
+        },
+        "price": 12155,
+        "stock": 10,
+        "sku": "MOI001-T1",
+        "available": true,
+        "images": {
+          "cover": "assets/images/products/prod_148/cover_t1.jpg",
+          "thumb": "assets/images/products/prod_148/thumb_t1.jpg",
+          "gallery": [
+            "assets/images/products/prod_148/1_t1.jpg"
+          ]
+        },
+        "originalPrice": 14300
+      },
+      {
+        "id": "var_148_2",
+        "attributes": {
+          "Tamaño": "T2"
+        },
+        "price": 14025,
+        "stock": 10,
+        "sku": "MOI001-T2",
+        "available": true,
+        "images": {
+          "cover": "assets/images/products/prod_148/cover_t2.jpg",
+          "thumb": "assets/images/products/prod_148/thumb_t2.jpg",
+          "gallery": [
+            "assets/images/products/prod_148/1_t2.jpg"
+          ]
+        },
+        "originalPrice": 16500
+      },
+      {
+        "id": "var_148_3",
+        "attributes": {
+          "Tamaño": "T3"
+        },
+        "price": 16150,
+        "stock": 10,
+        "sku": "MOI001-T3",
+        "available": true,
+        "images": {
+          "cover": "assets/images/products/prod_148/cover_t3.jpg",
+          "thumb": "assets/images/products/prod_148/thumb_t3.jpg",
+          "gallery": [
+            "assets/images/products/prod_148/1_t3.jpg"
+          ]
+        },
+        "originalPrice": 19000
+      },
+      {
+        "id": "var_148_4",
+        "attributes": {
+          "Tamaño": "T4"
+        },
+        "price": 17510,
+        "stock": 10,
+        "sku": "MOI001-T4",
+        "available": true,
+        "images": {
+          "cover": "assets/images/products/prod_148/cover_t4.jpg",
+          "thumb": "assets/images/products/prod_148/thumb_t4.jpg",
+          "gallery": [
+            "assets/images/products/prod_148/1_t4.jpg"
+          ]
+        },
+        "originalPrice": 20600
+      }
+    ]
+  },
+  "images": {
+    "cover": "assets/images/products/prod_148/cover.jpg",
+    "thumb": "assets/images/products/prod_148/thumb.jpg",
+    "gallery": [
+      "assets/images/products/prod_148/1.jpg"
+    ]
+  },
+  "specs": {
+    "SKU": "MOI001"
+  },
+  "shipping": {
+    "free": false,
+    "days": 3
+  },
+  "badge": "🛏️ Colchonetas",
+  "brand": "Sin marca",
+  "sku": "MOI001",
+  "features": [
+    "Múltiples variantes disponibles",
+    "Calidad garantizada",
+    "Fácil de usar",
+    "Resistente y duradero"
+  ]
+}

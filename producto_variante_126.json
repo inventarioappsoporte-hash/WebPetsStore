@@ -1,0 +1,132 @@
+{
+  "id": "prod_126",
+  "name": "Pipetas pulguicida Perro",
+  "category": "higiene-cuidado",
+  "subcategory": "Higiene",
+  "hasVariants": true,
+  "basePrice": 4140,
+  "baseOriginalPrice": 4600,
+  "discount": 10,
+  "stock": 40,
+  "rating": 4.9,
+  "reviews": 98,
+  "featured": false,
+  "topDiscount": false,
+  "hasVideo": false,
+  "tags": [
+    "pipetas",
+    "pulguicida",
+    "perro",
+    "higiene",
+    "limpieza",
+    "cuidado"
+  ],
+  "description": "Pipetas pulguicida Perro",
+  "longDescription": "Pipetas pulguicida Perro",
+  "variants": {
+    "attributes": [
+      {
+        "id": "size",
+        "name": "Tamaño",
+        "type": "size"
+      }
+    ],
+    "combinations": [
+      {
+        "id": "var_126_1",
+        "attributes": {
+          "Tamaño": "PERRO  11-20 KG"
+        },
+        "price": 4500,
+        "stock": 10,
+        "sku": "PIP002-PER",
+        "available": true,
+        "images": {
+          "cover": "assets/images/products/prod_126/cover_perro_11-20_kg.jpg",
+          "thumb": "assets/images/products/prod_126/thumb_perro_11-20_kg.jpg",
+          "gallery": [
+            "assets/images/products/prod_126/1_perro_11-20_kg.jpg"
+          ]
+        },
+        "originalPrice": 5000
+      },
+      {
+        "id": "var_126_2",
+        "attributes": {
+          "Tamaño": "PERRO  2-10 KG"
+        },
+        "price": 4140,
+        "stock": 10,
+        "sku": "PIP002-PE1",
+        "available": true,
+        "images": {
+          "cover": "assets/images/products/prod_126/cover_perro_2-10_kg.jpg",
+          "thumb": "assets/images/products/prod_126/thumb_perro_2-10_kg.jpg",
+          "gallery": [
+            "assets/images/products/prod_126/1_perro_2-10_kg.jpg"
+          ]
+        },
+        "originalPrice": 4600
+      },
+      {
+        "id": "var_126_3",
+        "attributes": {
+          "Tamaño": "PERRO 21-40 KG"
+        },
+        "price": 5400,
+        "stock": 10,
+        "sku": "PIP002-PE2",
+        "available": true,
+        "images": {
+          "cover": "assets/images/products/prod_126/cover_perro_21-40_kg.jpg",
+          "thumb": "assets/images/products/prod_126/thumb_perro_21-40_kg.jpg",
+          "gallery": [
+            "assets/images/products/prod_126/1_perro_21-40_kg.jpg"
+          ]
+        },
+        "originalPrice": 6000
+      },
+      {
+        "id": "var_126_4",
+        "attributes": {
+          "Tamaño": "PERRO  41 a 60 KG"
+        },
+        "price": 6120,
+        "stock": 10,
+        "sku": "PIP002-PE3",
+        "available": true,
+        "images": {
+          "cover": "assets/images/products/prod_126/cover_perro_41_a_60_kg.jpg",
+          "thumb": "assets/images/products/prod_126/thumb_perro_41_a_60_kg.jpg",
+          "gallery": [
+            "assets/images/products/prod_126/1_perro_41_a_60_kg.jpg"
+          ]
+        },
+        "originalPrice": 6800
+      }
+    ]
+  },
+  "images": {
+    "cover": "assets/images/products/prod_126/cover.jpg",
+    "thumb": "assets/images/products/prod_126/thumb.jpg",
+    "gallery": [
+      "assets/images/products/prod_126/1.jpg"
+    ]
+  },
+  "specs": {
+    "SKU": "PIP002"
+  },
+  "shipping": {
+    "free": false,
+    "days": 2
+  },
+  "badge": "🧼 Higiene",
+  "brand": "OSSPRET",
+  "sku": "PIP002",
+  "features": [
+    "Múltiples variantes disponibles",
+    "Calidad garantizada",
+    "Fácil de usar",
+    "Resistente y duradero"
+  ]
+}

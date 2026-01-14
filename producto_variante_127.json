@@ -1,0 +1,96 @@
+{
+  "id": "prod_127",
+  "name": "LaPastilla® OSSPRET Gato",
+  "category": "higiene-cuidado",
+  "subcategory": "Higiene",
+  "hasVariants": true,
+  "basePrice": 9900,
+  "baseOriginalPrice": 11000,
+  "discount": 10,
+  "stock": 20,
+  "rating": 4.2,
+  "reviews": 63,
+  "featured": false,
+  "topDiscount": false,
+  "hasVideo": false,
+  "tags": [
+    "lapastilla",
+    "osspret",
+    "gato",
+    "higiene",
+    "limpieza",
+    "cuidado"
+  ],
+  "description": "LaPastilla® OSSPRET GATO",
+  "longDescription": "LaPastilla® OSSPRET GATO",
+  "variants": {
+    "attributes": [
+      {
+        "id": "size",
+        "name": "Tamaño",
+        "type": "size"
+      }
+    ],
+    "combinations": [
+      {
+        "id": "var_127_1",
+        "attributes": {
+          "Tamaño": "2kg hasta 3kg"
+        },
+        "price": 9900,
+        "stock": 10,
+        "sku": "LAP001-2KG",
+        "available": true,
+        "images": {
+          "cover": "assets/images/products/prod_127/cover_2kg_hasta_3kg.jpg",
+          "thumb": "assets/images/products/prod_127/thumb_2kg_hasta_3kg.jpg",
+          "gallery": [
+            "assets/images/products/prod_127/1_2kg_hasta_3kg.jpg"
+          ]
+        },
+        "originalPrice": 11000
+      },
+      {
+        "id": "var_127_2",
+        "attributes": {
+          "Tamaño": "3,1kg hasta 6kg"
+        },
+        "price": 11700,
+        "stock": 10,
+        "sku": "LAP001-31K",
+        "available": true,
+        "images": {
+          "cover": "assets/images/products/prod_127/cover_3,1kg_hasta_6kg.jpg",
+          "thumb": "assets/images/products/prod_127/thumb_3,1kg_hasta_6kg.jpg",
+          "gallery": [
+            "assets/images/products/prod_127/1_3,1kg_hasta_6kg.jpg"
+          ]
+        },
+        "originalPrice": 13000
+      }
+    ]
+  },
+  "images": {
+    "cover": "assets/images/products/prod_127/cover.jpg",
+    "thumb": "assets/images/products/prod_127/thumb.jpg",
+    "gallery": [
+      "assets/images/products/prod_127/1.jpg"
+    ]
+  },
+  "specs": {
+    "SKU": "LAP001"
+  },
+  "shipping": {
+    "free": false,
+    "days": 3
+  },
+  "badge": "🧼 Higiene",
+  "brand": "OSSPRET",
+  "sku": "LAP001",
+  "features": [
+    "Múltiples variantes disponibles",
+    "Calidad garantizada",
+    "Fácil de usar",
+    "Resistente y duradero"
+  ]
+}

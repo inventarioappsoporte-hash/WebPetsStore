@@ -1,0 +1,166 @@
+{
+  "id": "prod_723",
+  "name": "TIRA LARGA",
+  "category": "accesorios",
+  "subcategory": "Collares,",
+  "hasVariants": true,
+  "basePrice": 7820,
+  "baseOriginalPrice": 9200,
+  "discount": 15,
+  "stock": 60,
+  "rating": 4,
+  "reviews": 83,
+  "featured": false,
+  "topDiscount": false,
+  "hasVideo": false,
+  "tags": [
+    "tira",
+    "larga",
+    "accesorio",
+    "complemento"
+  ],
+  "description": "N°5 (1,60M)p30 ,N°6(1,6M)p30\r\nN°7 (2M)  p25, N°8(2M) p30\r\nN°9 (DE 3 METROS) ,N°10 (DE 5 METROS)",
+  "longDescription": "N°5 (1,60M)p30 ,N°6(1,6M)p30\r\nN°7 (2M)  p25, N°8(2M) p30\r\nN°9 (DE 3 METROS) ,N°10 (DE 5 METROS)",
+  "variants": {
+    "attributes": [
+      {
+        "id": "size",
+        "name": "Tamaño",
+        "type": "size"
+      }
+    ],
+    "combinations": [
+      {
+        "id": "var_723_1",
+        "attributes": {
+          "Tamaño": "N°5"
+        },
+        "price": 7820,
+        "stock": 10,
+        "sku": "TIR002-N5",
+        "available": true,
+        "images": {
+          "cover": "assets/images/products/prod_723/cover_n°5.jpg",
+          "thumb": "assets/images/products/prod_723/thumb_n°5.jpg",
+          "gallery": [
+            "assets/images/products/prod_723/1_n°5.jpg"
+          ]
+        },
+        "originalPrice": 9200
+      },
+      {
+        "id": "var_723_2",
+        "attributes": {
+          "Tamaño": "N°6"
+        },
+        "price": 11730,
+        "stock": 10,
+        "sku": "TIR002-N6",
+        "available": true,
+        "images": {
+          "cover": "assets/images/products/prod_723/cover_n°6.jpg",
+          "thumb": "assets/images/products/prod_723/thumb_n°6.jpg",
+          "gallery": [
+            "assets/images/products/prod_723/1_n°6.jpg"
+          ]
+        },
+        "originalPrice": 13800
+      },
+      {
+        "id": "var_723_3",
+        "attributes": {
+          "Tamaño": "N°7"
+        },
+        "price": 12325,
+        "stock": 10,
+        "sku": "TIR002-N7",
+        "available": true,
+        "images": {
+          "cover": "assets/images/products/prod_723/cover_n°7.jpg",
+          "thumb": "assets/images/products/prod_723/thumb_n°7.jpg",
+          "gallery": [
+            "assets/images/products/prod_723/1_n°7.jpg"
+          ]
+        },
+        "originalPrice": 14500
+      },
+      {
+        "id": "var_723_4",
+        "attributes": {
+          "Tamaño": "N°8"
+        },
+        "price": 13175,
+        "stock": 10,
+        "sku": "TIR002-N8",
+        "available": true,
+        "images": {
+          "cover": "assets/images/products/prod_723/cover_n°8.jpg",
+          "thumb": "assets/images/products/prod_723/thumb_n°8.jpg",
+          "gallery": [
+            "assets/images/products/prod_723/1_n°8.jpg"
+          ]
+        },
+        "originalPrice": 15500
+      },
+      {
+        "id": "var_723_5",
+        "attributes": {
+          "Tamaño": "N°9"
+        },
+        "price": 13175,
+        "stock": 10,
+        "sku": "TIR002-N9",
+        "available": true,
+        "images": {
+          "cover": "assets/images/products/prod_723/cover_n°9.jpg",
+          "thumb": "assets/images/products/prod_723/thumb_n°9.jpg",
+          "gallery": [
+            "assets/images/products/prod_723/1_n°9.jpg"
+          ]
+        },
+        "originalPrice": 15500
+      },
+      {
+        "id": "var_723_6",
+        "attributes": {
+          "Tamaño": "N°10"
+        },
+        "price": 15215,
+        "stock": 10,
+        "sku": "TIR002-N10",
+        "available": true,
+        "images": {
+          "cover": "assets/images/products/prod_723/cover_n°10.jpg",
+          "thumb": "assets/images/products/prod_723/thumb_n°10.jpg",
+          "gallery": [
+            "assets/images/products/prod_723/1_n°10.jpg"
+          ]
+        },
+        "originalPrice": 17900
+      }
+    ]
+  },
+  "images": {
+    "cover": "assets/images/products/prod_723/cover.jpg",
+    "thumb": "assets/images/products/prod_723/thumb.jpg",
+    "gallery": [
+      "assets/images/products/prod_723/1.jpg"
+    ]
+  },
+  "specs": {
+    "SKU": "TIR002"
+  },
+  "shipping": {
+    "free": false,
+    "days": 3
+  },
+  "badge": "🦴 Accesorios",
+  "brand": "Sin marca",
+  "sku": "TIR002",
+  "features": [
+    "Múltiples variantes disponibles",
+    "Calidad garantizada",
+    "Fácil de usar",
+    "Resistente y duradero"
+  ]
+}

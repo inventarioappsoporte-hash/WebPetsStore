@@ -98,9 +98,9 @@ const Utils = {
     const phone = CONSTANTS.WHATSAPP.PHONE;
     const productName = product.name;
     
-    // Si hay variante, usar sus datos
-    const price = variant ? variant.price : product.price;
-    const originalPrice = variant ? variant.originalPrice : product.originalPrice;
+    // Si hay variante, usar sus datos; si no hay variante pero el producto tiene variantes, usar basePrice
+    const price = variant ? variant.price : (product.hasVariants ? product.basePrice : product.price);
+    const originalPrice = variant ? variant.originalPrice : (product.hasVariants ? product.baseOriginalPrice : product.originalPrice);
     const discount = product.discount;
     const sku = variant ? variant.sku : product.sku;
     

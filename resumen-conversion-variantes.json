@@ -1,0 +1,249 @@
+{
+  "fecha": "2026-01-14T04:29:50.190Z",
+  "total_procesados": 48,
+  "exitosos": 48,
+  "errores": 0,
+  "productos_exitosos": [
+    {
+      "id": "prod_106",
+      "nombre": "SHAMPOO MAXIMO 250 cm3",
+      "variantes": 3
+    },
+    {
+      "id": "prod_125",
+      "nombre": "Pipetas pulguicida Gato",
+      "variantes": 2
+    },
+    {
+      "id": "prod_126",
+      "nombre": "Pipetas pulguicida Perro",
+      "variantes": 4
+    },
+    {
+      "id": "prod_127",
+      "nombre": "LaPastilla® OSSPRET Gato",
+      "variantes": 2
+    },
+    {
+      "id": "prod_128",
+      "nombre": "LaPastilla® OSSPRET PERRO",
+      "variantes": 5
+    },
+    {
+      "id": "prod_134",
+      "nombre": "PIEDRAS ABSORSOL",
+      "variantes": 2
+    },
+    {
+      "id": "prod_139",
+      "nombre": "ZOOTEC PIEDRAS AGLUTINANTES LAVANDA",
+      "variantes": 2
+    },
+    {
+      "id": "prod_140",
+      "nombre": "ZOOTEC PIEDRAS NATURALES",
+      "variantes": 3
+    },
+    {
+      "id": "prod_145",
+      "nombre": "COLCHON FANTASIA ESPUMA",
+      "variantes": 4
+    },
+    {
+      "id": "prod_146",
+      "nombre": "COLCHONETA  FANTASIA PLUSH",
+      "variantes": 4
+    },
+    {
+      "id": "prod_148",
+      "nombre": "MOISES TUNEL ECONOMICO",
+      "variantes": 4
+    },
+    {
+      "id": "prod_149",
+      "nombre": "MOISES IGLU  PREMIUN",
+      "variantes": 3
+    },
+    {
+      "id": "prod_151",
+      "nombre": "COCHONETA ANTI-DESGARRO",
+      "variantes": 4
+    },
+    {
+      "id": "prod_152",
+      "nombre": "MOISES ECONOMICO",
+      "variantes": 4
+    },
+    {
+      "id": "prod_154",
+      "nombre": "SOFT JEAN LUNARES",
+      "variantes": 3
+    },
+    {
+      "id": "prod_156",
+      "nombre": "MOISES LUNARES",
+      "variantes": 3
+    },
+    {
+      "id": "prod_158",
+      "nombre": "MOISES MOÑO PREMIUN",
+      "variantes": 4
+    },
+    {
+      "id": "prod_160",
+      "nombre": "PUFF UNICO TALLE",
+      "variantes": 2
+    },
+    {
+      "id": "prod_164",
+      "nombre": "BOLSO FANTASIA",
+      "variantes": 2
+    },
+    {
+      "id": "prod_166",
+      "nombre": "BOLSO ANTI-DESGARRO PREMIUN",
+      "variantes": 2
+    },
+    {
+      "id": "prod_170",
+      "nombre": "CASITA FELIZ",
+      "variantes": 3
+    },
+    {
+      "id": "prod_171",
+      "nombre": "Colchon liso comun",
+      "variantes": 4
+    },
+    {
+      "id": "prod_172",
+      "nombre": "COLCHON FANTASIA COMUN",
+      "variantes": 4
+    },
+    {
+      "id": "prod_174",
+      "nombre": "MOISES NIDO AJUSTABLEE DE POLAR",
+      "variantes": 3
+    },
+    {
+      "id": "prod_175",
+      "nombre": "ALMOHADON PREMIUM",
+      "variantes": 3
+    },
+    {
+      "id": "prod_176",
+      "nombre": "COLCHONETA PREMIUN DOBLE LONA 4 PATAS",
+      "variantes": 5
+    },
+    {
+      "id": "prod_177",
+      "nombre": "MOISES NIDO CORDERITO 4 PATAS",
+      "variantes": 3
+    },
+    {
+      "id": "prod_178",
+      "nombre": "COLCHONETA CORDERITO",
+      "variantes": 4
+    },
+    {
+      "id": "prod_179",
+      "nombre": "COLCHONETA PREMIUM",
+      "variantes": 4
+    },
+    {
+      "id": "prod_180",
+      "nombre": "COLCHON POLAR",
+      "variantes": 4
+    },
+    {
+      "id": "prod_215",
+      "nombre": "VAINILLA - AGATAR",
+      "variantes": 2
+    },
+    {
+      "id": "prod_216",
+      "nombre": "ALSINA - AGATAR",
+      "variantes": 3
+    },
+    {
+      "id": "prod_217",
+      "nombre": "AGATAR - CARA DE GATO",
+      "variantes": 3
+    },
+    {
+      "id": "prod_606",
+      "nombre": "COLLAR GATO SURTIDOS X 12 UNIDADES",
+      "variantes": 4
+    },
+    {
+      "id": "prod_722",
+      "nombre": "TIRA DE LONA",
+      "variantes": 6
+    },
+    {
+      "id": "prod_723",
+      "nombre": "TIRA LARGA",
+      "variantes": 6
+    },
+    {
+      "id": "prod_724",
+      "nombre": "CADENA COMUN 1,2M",
+      "variantes": 3
+    },
+    {
+      "id": "prod_725",
+      "nombre": "CADENA COMUN 1,7M",
+      "variantes": 3
+    },
+    {
+      "id": "prod_726",
+      "nombre": "COLLAR LONA",
+      "variantes": 9
+    },
+    {
+      "id": "prod_731",
+      "nombre": "COLLAR LONA FANTASIA",
+      "variantes": 1
+    },
+    {
+      "id": "prod_732",
+      "nombre": "COLLAR PAÑUELO",
+      "variantes": 5
+    },
+    {
+      "id": "prod_733",
+      "nombre": "PECHERA SOLA P15",
+      "variantes": 9
+    },
+    {
+      "id": "prod_734",
+      "nombre": "PECHERA ALCOCHONADA POLICE K9",
+      "variantes": 6
+    },
+    {
+      "id": "prod_737",
+      "nombre": "PECHERA ALCOCHONADA  T",
+      "variantes": 5
+    },
+    {
+      "id": "prod_738",
+      "nombre": "PECHERA ARNES AJUSTABLE CON CORREA",
+      "variantes": 4
+    },
+    {
+      "id": "prod_744",
+      "nombre": "CONJUNTO REGULABLE LISO",
+      "variantes": 7
+    },
+    {
+      "id": "prod_754",
+      "nombre": "CONJUNTO ECONOMICO",
+      "variantes": 3
+    },
+    {
+      "id": "prod_760",
+      "nombre": "Royal Puppies Parfum",
+      "variantes": 3
+    }
+  ],
+  "productos_error": []
+}

@@ -1,0 +1,114 @@
+{
+  "id": "prod_140",
+  "name": "ZOOTEC PIEDRAS NATURALES",
+  "category": "higiene-cuidado",
+  "subcategory": "Higiene",
+  "hasVariants": true,
+  "basePrice": 4050,
+  "baseOriginalPrice": 4500,
+  "discount": 10,
+  "stock": 30,
+  "rating": 5,
+  "reviews": 61,
+  "featured": false,
+  "topDiscount": false,
+  "hasVideo": false,
+  "tags": [
+    "zootec",
+    "piedras",
+    "naturales",
+    "higiene",
+    "limpieza",
+    "cuidado"
+  ],
+  "description": "ZOOTEC PIEDRAS NATURALES",
+  "longDescription": "ZOOTEC PIEDRAS NATURALES",
+  "variants": {
+    "attributes": [
+      {
+        "id": "size",
+        "name": "Tamaño",
+        "type": "size"
+      }
+    ],
+    "combinations": [
+      {
+        "id": "var_140_1",
+        "attributes": {
+          "Tamaño": "4 KG"
+        },
+        "price": 6840,
+        "stock": 10,
+        "sku": "ZOO003-4KG",
+        "available": true,
+        "images": {
+          "cover": "assets/images/products/prod_140/cover_4_kg.jpg",
+          "thumb": "assets/images/products/prod_140/thumb_4_kg.jpg",
+          "gallery": [
+            "assets/images/products/prod_140/1_4_kg.jpg"
+          ]
+        },
+        "originalPrice": 7600
+      },
+      {
+        "id": "var_140_2",
+        "attributes": {
+          "Tamaño": "2 KG"
+        },
+        "price": 4050,
+        "stock": 10,
+        "sku": "ZOO003-2KG",
+        "available": true,
+        "images": {
+          "cover": "assets/images/products/prod_140/cover_2_kg.jpg",
+          "thumb": "assets/images/products/prod_140/thumb_2_kg.jpg",
+          "gallery": [
+            "assets/images/products/prod_140/1_2_kg.jpg"
+          ]
+        },
+        "originalPrice": 4500
+      },
+      {
+        "id": "var_140_3",
+        "attributes": {
+          "Tamaño": "15 KG"
+        },
+        "price": 23400,
+        "stock": 10,
+        "sku": "ZOO003-15K",
+        "available": true,
+        "images": {
+          "cover": "assets/images/products/prod_140/cover_15_kg.jpg",
+          "thumb": "assets/images/products/prod_140/thumb_15_kg.jpg",
+          "gallery": [
+            "assets/images/products/prod_140/1_15_kg.jpg"
+          ]
+        },
+        "originalPrice": 26000
+      }
+    ]
+  },
+  "images": {
+    "cover": "assets/images/products/prod_140/cover.jpg",
+    "thumb": "assets/images/products/prod_140/thumb.jpg",
+    "gallery": [
+      "assets/images/products/prod_140/1.jpg"
+    ]
+  },
+  "specs": {
+    "SKU": "ZOO003"
+  },
+  "shipping": {
+    "free": false,
+    "days": 3
+  },
+  "badge": "🧼 Higiene",
+  "brand": "ZOOTEC",
+  "sku": "ZOO003",
+  "features": [
+    "Múltiples variantes disponibles",
+    "Calidad garantizada",
+    "Fácil de usar",
+    "Resistente y duradero"
+  ]
+}

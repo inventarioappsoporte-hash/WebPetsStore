@@ -1,0 +1,132 @@
+{
+  "id": "prod_146",
+  "name": "COLCHONETA  FANTASIA PLUSH",
+  "category": "casa-descanso",
+  "subcategory": "Colchonetas",
+  "hasVariants": true,
+  "basePrice": 17850,
+  "baseOriginalPrice": 21000,
+  "discount": 15,
+  "stock": 40,
+  "rating": 4.8,
+  "reviews": 94,
+  "featured": false,
+  "topDiscount": false,
+  "hasVideo": false,
+  "tags": [
+    "colchoneta",
+    "fantasia",
+    "plush",
+    "descanso",
+    "cama",
+    "confort"
+  ],
+  "description": "Talle S (50 x 65 CM) , Talle M (60 x 75 CM)\r\nTalle L (70 x 85 CM) , Talle XL (80 x 95 CM)",
+  "longDescription": "Talle S (50 x 65 CM) , Talle M (60 x 75 CM)\r\nTalle L (70 x 85 CM) , Talle XL (80 x 95 CM)",
+  "variants": {
+    "attributes": [
+      {
+        "id": "size",
+        "name": "Talla",
+        "type": "size"
+      }
+    ],
+    "combinations": [
+      {
+        "id": "var_146_1",
+        "attributes": {
+          "Talla": "S"
+        },
+        "price": 17850,
+        "stock": 10,
+        "sku": "COL006-S",
+        "available": true,
+        "images": {
+          "cover": "assets/images/products/prod_146/cover_s.jpg",
+          "thumb": "assets/images/products/prod_146/thumb_s.jpg",
+          "gallery": [
+            "assets/images/products/prod_146/1_s.jpg"
+          ]
+        },
+        "originalPrice": 21000
+      },
+      {
+        "id": "var_146_2",
+        "attributes": {
+          "Talla": "M"
+        },
+        "price": 22100,
+        "stock": 10,
+        "sku": "COL006-M",
+        "available": true,
+        "images": {
+          "cover": "assets/images/products/prod_146/cover_m.jpg",
+          "thumb": "assets/images/products/prod_146/thumb_m.jpg",
+          "gallery": [
+            "assets/images/products/prod_146/1_m.jpg"
+          ]
+        },
+        "originalPrice": 26000
+      },
+      {
+        "id": "var_146_3",
+        "attributes": {
+          "Talla": "L"
+        },
+        "price": 24650,
+        "stock": 10,
+        "sku": "COL006-L",
+        "available": true,
+        "images": {
+          "cover": "assets/images/products/prod_146/cover_l.jpg",
+          "thumb": "assets/images/products/prod_146/thumb_l.jpg",
+          "gallery": [
+            "assets/images/products/prod_146/1_l.jpg"
+          ]
+        },
+        "originalPrice": 29000
+      },
+      {
+        "id": "var_146_4",
+        "attributes": {
+          "Talla": "XL"
+        },
+        "price": 35700,
+        "stock": 10,
+        "sku": "COL006-XL",
+        "available": true,
+        "images": {
+          "cover": "assets/images/products/prod_146/cover_xl.jpg",
+          "thumb": "assets/images/products/prod_146/thumb_xl.jpg",
+          "gallery": [
+            "assets/images/products/prod_146/1_xl.jpg"
+          ]
+        },
+        "originalPrice": 42000
+      }
+    ]
+  },
+  "images": {
+    "cover": "assets/images/products/prod_146/cover.jpg",
+    "thumb": "assets/images/products/prod_146/thumb.jpg",
+    "gallery": [
+      "assets/images/products/prod_146/1.jpg"
+    ]
+  },
+  "specs": {
+    "SKU": "COL006"
+  },
+  "shipping": {
+    "free": true,
+    "days": 2
+  },
+  "badge": "🛏️ Colchonetas",
+  "brand": "Sin marca",
+  "sku": "COL006",
+  "features": [
+    "Múltiples variantes disponibles",
+    "Calidad garantizada",
+    "Fácil de usar",
+    "Resistente y duradero"
+  ]
+}

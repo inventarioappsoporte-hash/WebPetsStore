@@ -1,0 +1,221 @@
+{
+  "id": "prod_733",
+  "name": "PECHERA SOLA P15",
+  "category": "accesorios",
+  "subcategory": "Collares,",
+  "hasVariants": true,
+  "basePrice": 2423,
+  "baseOriginalPrice": 2850,
+  "discount": 15,
+  "stock": 90,
+  "rating": 3.9,
+  "reviews": 101,
+  "featured": false,
+  "topDiscount": false,
+  "hasVideo": false,
+  "tags": [
+    "pechera",
+    "sola",
+    "p15",
+    "accesorio",
+    "complemento"
+  ],
+  "description": "PECHERA SOLA P15",
+  "longDescription": "PECHERA SOLA P15",
+  "variants": {
+    "attributes": [
+      {
+        "id": "size",
+        "name": "Tamaño",
+        "type": "size"
+      }
+    ],
+    "combinations": [
+      {
+        "id": "var_733_1",
+        "attributes": {
+          "Tamaño": "T2"
+        },
+        "price": 3655,
+        "stock": 10,
+        "sku": "PEC001-T2",
+        "available": true,
+        "images": {
+          "cover": "assets/images/products/prod_733/cover_t2.jpg",
+          "thumb": "assets/images/products/prod_733/thumb_t2.jpg",
+          "gallery": [
+            "assets/images/products/prod_733/1_t2.jpg"
+          ]
+        },
+        "originalPrice": 4300
+      },
+      {
+        "id": "var_733_2",
+        "attributes": {
+          "Tamaño": "T3"
+        },
+        "price": 4080,
+        "stock": 10,
+        "sku": "PEC001-T3",
+        "available": true,
+        "images": {
+          "cover": "assets/images/products/prod_733/cover_t3.jpg",
+          "thumb": "assets/images/products/prod_733/thumb_t3.jpg",
+          "gallery": [
+            "assets/images/products/prod_733/1_t3.jpg"
+          ]
+        },
+        "originalPrice": 4800
+      },
+      {
+        "id": "var_733_3",
+        "attributes": {
+          "Tamaño": "T4"
+        },
+        "price": 4930,
+        "stock": 10,
+        "sku": "PEC001-T4",
+        "available": true,
+        "images": {
+          "cover": "assets/images/products/prod_733/cover_t4.jpg",
+          "thumb": "assets/images/products/prod_733/thumb_t4.jpg",
+          "gallery": [
+            "assets/images/products/prod_733/1_t4.jpg"
+          ]
+        },
+        "originalPrice": 5800
+      },
+      {
+        "id": "var_733_4",
+        "attributes": {
+          "Tamaño": "T5"
+        },
+        "price": 5780,
+        "stock": 10,
+        "sku": "PEC001-T5",
+        "available": true,
+        "images": {
+          "cover": "assets/images/products/prod_733/cover_t5.jpg",
+          "thumb": "assets/images/products/prod_733/thumb_t5.jpg",
+          "gallery": [
+            "assets/images/products/prod_733/1_t5.jpg"
+          ]
+        },
+        "originalPrice": 6800
+      },
+      {
+        "id": "var_733_5",
+        "attributes": {
+          "Tamaño": "T6"
+        },
+        "price": 6375,
+        "stock": 10,
+        "sku": "PEC001-T6",
+        "available": true,
+        "images": {
+          "cover": "assets/images/products/prod_733/cover_t6.jpg",
+          "thumb": "assets/images/products/prod_733/thumb_t6.jpg",
+          "gallery": [
+            "assets/images/products/prod_733/1_t6.jpg"
+          ]
+        },
+        "originalPrice": 7500
+      },
+      {
+        "id": "var_733_6",
+        "attributes": {
+          "Tamaño": "T7"
+        },
+        "price": 8245,
+        "stock": 10,
+        "sku": "PEC001-T7",
+        "available": true,
+        "images": {
+          "cover": "assets/images/products/prod_733/cover_t7.jpg",
+          "thumb": "assets/images/products/prod_733/thumb_t7.jpg",
+          "gallery": [
+            "assets/images/products/prod_733/1_t7.jpg"
+          ]
+        },
+        "originalPrice": 9700
+      },
+      {
+        "id": "var_733_7",
+        "attributes": {
+          "Tamaño": "T1"
+        },
+        "price": 2933,
+        "stock": 10,
+        "sku": "PEC001-T1",
+        "available": true,
+        "images": {
+          "cover": "assets/images/products/prod_733/cover_t1.jpg",
+          "thumb": "assets/images/products/prod_733/thumb_t1.jpg",
+          "gallery": [
+            "assets/images/products/prod_733/1_t1.jpg"
+          ]
+        },
+        "originalPrice": 3450
+      },
+      {
+        "id": "var_733_8",
+        "attributes": {
+          "Tamaño": "T0"
+        },
+        "price": 2423,
+        "stock": 10,
+        "sku": "PEC001-T0",
+        "available": true,
+        "images": {
+          "cover": "assets/images/products/prod_733/cover_t0.jpg",
+          "thumb": "assets/images/products/prod_733/thumb_t0.jpg",
+          "gallery": [
+            "assets/images/products/prod_733/1_t0.jpg"
+          ]
+        },
+        "originalPrice": 2850
+      },
+      {
+        "id": "var_733_9",
+        "attributes": {
+          "Tamaño": "T8"
+        },
+        "price": 9435,
+        "stock": 10,
+        "sku": "PEC001-T8",
+        "available": true,
+        "images": {
+          "cover": "assets/images/products/prod_733/cover_t8.jpg",
+          "thumb": "assets/images/products/prod_733/thumb_t8.jpg",
+          "gallery": [
+            "assets/images/products/prod_733/1_t8.jpg"
+          ]
+        },
+        "originalPrice": 11100
+      }
+    ]
+  },
+  "images": {
+    "cover": "assets/images/products/prod_733/cover.jpg",
+    "thumb": "assets/images/products/prod_733/thumb.jpg",
+    "gallery": [
+      "assets/images/products/prod_733/1.jpg"
+    ]
+  },
+  "specs": {
+    "SKU": "PEC001"
+  },
+  "shipping": {
+    "free": false,
+    "days": 2
+  },
+  "badge": "🦴 Accesorios",
+  "brand": "Sin marca",
+  "sku": "PEC001",
+  "features": [
+    "Múltiples variantes disponibles",
+    "Calidad garantizada",
+    "Fácil de usar",
+    "Resistente y duradero"
+  ]
+}

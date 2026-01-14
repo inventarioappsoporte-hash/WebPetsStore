@@ -1,0 +1,132 @@
+{
+  "id": "prod_171",
+  "name": "Colchon liso comun",
+  "category": "casa-descanso",
+  "subcategory": "Colchonetas",
+  "hasVariants": true,
+  "basePrice": 11900,
+  "baseOriginalPrice": 14000,
+  "discount": 15,
+  "stock": 40,
+  "rating": 4.3,
+  "reviews": 35,
+  "featured": false,
+  "topDiscount": false,
+  "hasVideo": false,
+  "tags": [
+    "colchon",
+    "liso",
+    "comun",
+    "descanso",
+    "cama",
+    "confort"
+  ],
+  "description": "Colchon liso comun",
+  "longDescription": "Colchon liso comun",
+  "variants": {
+    "attributes": [
+      {
+        "id": "size",
+        "name": "Tamaño",
+        "type": "size"
+      }
+    ],
+    "combinations": [
+      {
+        "id": "var_171_1",
+        "attributes": {
+          "Tamaño": "N°4"
+        },
+        "price": 11900,
+        "stock": 10,
+        "sku": "COL009-N4",
+        "available": true,
+        "images": {
+          "cover": "assets/images/products/prod_171/cover_n°4.jpg",
+          "thumb": "assets/images/products/prod_171/thumb_n°4.jpg",
+          "gallery": [
+            "assets/images/products/prod_171/1_n°4.jpg"
+          ]
+        },
+        "originalPrice": 14000
+      },
+      {
+        "id": "var_171_2",
+        "attributes": {
+          "Tamaño": "N°5"
+        },
+        "price": 13600,
+        "stock": 10,
+        "sku": "COL009-N5",
+        "available": true,
+        "images": {
+          "cover": "assets/images/products/prod_171/cover_n°5.jpg",
+          "thumb": "assets/images/products/prod_171/thumb_n°5.jpg",
+          "gallery": [
+            "assets/images/products/prod_171/1_n°5.jpg"
+          ]
+        },
+        "originalPrice": 16000
+      },
+      {
+        "id": "var_171_3",
+        "attributes": {
+          "Tamaño": "N°6"
+        },
+        "price": 15300,
+        "stock": 10,
+        "sku": "COL009-N6",
+        "available": true,
+        "images": {
+          "cover": "assets/images/products/prod_171/cover_n°6.jpg",
+          "thumb": "assets/images/products/prod_171/thumb_n°6.jpg",
+          "gallery": [
+            "assets/images/products/prod_171/1_n°6.jpg"
+          ]
+        },
+        "originalPrice": 18000
+      },
+      {
+        "id": "var_171_4",
+        "attributes": {
+          "Tamaño": "N°7"
+        },
+        "price": 17000,
+        "stock": 10,
+        "sku": "COL009-N7",
+        "available": true,
+        "images": {
+          "cover": "assets/images/products/prod_171/cover_n°7.jpg",
+          "thumb": "assets/images/products/prod_171/thumb_n°7.jpg",
+          "gallery": [
+            "assets/images/products/prod_171/1_n°7.jpg"
+          ]
+        },
+        "originalPrice": 20000
+      }
+    ]
+  },
+  "images": {
+    "cover": "assets/images/products/prod_171/cover.jpg",
+    "thumb": "assets/images/products/prod_171/thumb.jpg",
+    "gallery": [
+      "assets/images/products/prod_171/1.jpg"
+    ]
+  },
+  "specs": {
+    "SKU": "COL009"
+  },
+  "shipping": {
+    "free": false,
+    "days": 3
+  },
+  "badge": "🛏️ Colchonetas",
+  "brand": "Sin marca",
+  "sku": "COL009",
+  "features": [
+    "Múltiples variantes disponibles",
+    "Calidad garantizada",
+    "Fácil de usar",
+    "Resistente y duradero"
+  ]
+}

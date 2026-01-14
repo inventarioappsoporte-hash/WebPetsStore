@@ -1,0 +1,114 @@
+{
+  "id": "prod_217",
+  "name": "AGATAR - CARA DE GATO",
+  "category": "casa-descanso",
+  "subcategory": "Rascadores",
+  "hasVariants": true,
+  "basePrice": 7650,
+  "baseOriginalPrice": 9000,
+  "discount": 15,
+  "stock": 30,
+  "rating": 4.1,
+  "reviews": 70,
+  "featured": false,
+  "topDiscount": false,
+  "hasVideo": false,
+  "tags": [
+    "agatar",
+    "cara",
+    "gato",
+    "descanso",
+    "cama",
+    "confort"
+  ],
+  "description": "AGATAR - CARA DE GATO",
+  "longDescription": "AGATAR - CARA DE GATO",
+  "variants": {
+    "attributes": [
+      {
+        "id": "size",
+        "name": "Tamaño",
+        "type": "size"
+      }
+    ],
+    "combinations": [
+      {
+        "id": "var_217_1",
+        "attributes": {
+          "Tamaño": "N°1"
+        },
+        "price": 7650,
+        "stock": 10,
+        "sku": "AGA001-N1",
+        "available": true,
+        "images": {
+          "cover": "assets/images/products/prod_217/cover_n°1.jpg",
+          "thumb": "assets/images/products/prod_217/thumb_n°1.jpg",
+          "gallery": [
+            "assets/images/products/prod_217/1_n°1.jpg"
+          ]
+        },
+        "originalPrice": 9000
+      },
+      {
+        "id": "var_217_2",
+        "attributes": {
+          "Tamaño": "N°2"
+        },
+        "price": 10200,
+        "stock": 10,
+        "sku": "AGA001-N2",
+        "available": true,
+        "images": {
+          "cover": "assets/images/products/prod_217/cover_n°2.jpg",
+          "thumb": "assets/images/products/prod_217/thumb_n°2.jpg",
+          "gallery": [
+            "assets/images/products/prod_217/1_n°2.jpg"
+          ]
+        },
+        "originalPrice": 12000
+      },
+      {
+        "id": "var_217_3",
+        "attributes": {
+          "Tamaño": "N°3"
+        },
+        "price": 12325,
+        "stock": 10,
+        "sku": "AGA001-N3",
+        "available": true,
+        "images": {
+          "cover": "assets/images/products/prod_217/cover_n°3.jpg",
+          "thumb": "assets/images/products/prod_217/thumb_n°3.jpg",
+          "gallery": [
+            "assets/images/products/prod_217/1_n°3.jpg"
+          ]
+        },
+        "originalPrice": 14500
+      }
+    ]
+  },
+  "images": {
+    "cover": "assets/images/products/prod_217/cover.jpg",
+    "thumb": "assets/images/products/prod_217/thumb.jpg",
+    "gallery": [
+      "assets/images/products/prod_217/1.jpg"
+    ]
+  },
+  "specs": {
+    "SKU": "AGA001"
+  },
+  "shipping": {
+    "free": false,
+    "days": 4
+  },
+  "badge": "🐱 Rascadores",
+  "brand": "AGATAR",
+  "sku": "AGA001",
+  "features": [
+    "Múltiples variantes disponibles",
+    "Calidad garantizada",
+    "Fácil de usar",
+    "Resistente y duradero"
+  ]
+}

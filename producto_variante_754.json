@@ -1,0 +1,112 @@
+{
+  "id": "prod_754",
+  "name": "CONJUNTO ECONOMICO",
+  "category": "accesorios",
+  "subcategory": "Collares,",
+  "hasVariants": true,
+  "basePrice": 2040,
+  "baseOriginalPrice": 2400,
+  "discount": 15,
+  "stock": 0,
+  "rating": 4.3,
+  "reviews": 96,
+  "featured": false,
+  "topDiscount": false,
+  "hasVideo": false,
+  "tags": [
+    "conjunto",
+    "economico",
+    "accesorio",
+    "complemento"
+  ],
+  "description": "CONJUNTO ECONOMICO",
+  "longDescription": "CONJUNTO ECONOMICO",
+  "variants": {
+    "attributes": [
+      {
+        "id": "size",
+        "name": "Tamaño",
+        "type": "size"
+      }
+    ],
+    "combinations": [
+      {
+        "id": "var_754_1",
+        "attributes": {
+          "Tamaño": "Pequeño"
+        },
+        "price": 2040,
+        "stock": 0,
+        "sku": "CON027-PEQ",
+        "available": false,
+        "images": {
+          "cover": "assets/images/products/prod_754/cover_pequeño.jpg",
+          "thumb": "assets/images/products/prod_754/thumb_pequeño.jpg",
+          "gallery": [
+            "assets/images/products/prod_754/1_pequeño.jpg"
+          ]
+        },
+        "originalPrice": 2400
+      },
+      {
+        "id": "var_754_2",
+        "attributes": {
+          "Tamaño": "Mediano"
+        },
+        "price": 2380,
+        "stock": 0,
+        "sku": "CON027-MED",
+        "available": false,
+        "images": {
+          "cover": "assets/images/products/prod_754/cover_mediano.jpg",
+          "thumb": "assets/images/products/prod_754/thumb_mediano.jpg",
+          "gallery": [
+            "assets/images/products/prod_754/1_mediano.jpg"
+          ]
+        },
+        "originalPrice": 2800
+      },
+      {
+        "id": "var_754_3",
+        "attributes": {
+          "Tamaño": "Grande"
+        },
+        "price": 3060,
+        "stock": 0,
+        "sku": "CON027-GRA",
+        "available": false,
+        "images": {
+          "cover": "assets/images/products/prod_754/cover_grande.jpg",
+          "thumb": "assets/images/products/prod_754/thumb_grande.jpg",
+          "gallery": [
+            "assets/images/products/prod_754/1_grande.jpg"
+          ]
+        },
+        "originalPrice": 3600
+      }
+    ]
+  },
+  "images": {
+    "cover": "assets/images/products/prod_754/cover.jpg",
+    "thumb": "assets/images/products/prod_754/thumb.jpg",
+    "gallery": [
+      "assets/images/products/prod_754/1.jpg"
+    ]
+  },
+  "specs": {
+    "SKU": "CON027"
+  },
+  "shipping": {
+    "free": false,
+    "days": 3
+  },
+  "badge": "🦴 Accesorios",
+  "brand": "Sin marca",
+  "sku": "CON027",
+  "features": [
+    "Múltiples variantes disponibles",
+    "Calidad garantizada",
+    "Fácil de usar",
+    "Resistente y duradero"
+  ]
+}

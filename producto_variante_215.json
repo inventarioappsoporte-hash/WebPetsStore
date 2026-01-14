@@ -1,0 +1,95 @@
+{
+  "id": "prod_215",
+  "name": "VAINILLA - AGATAR",
+  "category": "casa-descanso",
+  "subcategory": "Rascadores",
+  "hasVariants": true,
+  "basePrice": 5950,
+  "baseOriginalPrice": 7000,
+  "discount": 15,
+  "stock": 20,
+  "rating": 4.1,
+  "reviews": 95,
+  "featured": false,
+  "topDiscount": false,
+  "hasVideo": false,
+  "tags": [
+    "vainilla",
+    "agatar",
+    "descanso",
+    "cama",
+    "confort"
+  ],
+  "description": "VAINILLA  - AGATAR",
+  "longDescription": "VAINILLA  - AGATAR",
+  "variants": {
+    "attributes": [
+      {
+        "id": "size",
+        "name": "Tamaño",
+        "type": "size"
+      }
+    ],
+    "combinations": [
+      {
+        "id": "var_215_1",
+        "attributes": {
+          "Tamaño": "Pequeño"
+        },
+        "price": 5950,
+        "stock": 10,
+        "sku": "VAI001-PEQ",
+        "available": true,
+        "images": {
+          "cover": "assets/images/products/prod_215/cover_pequeño.jpg",
+          "thumb": "assets/images/products/prod_215/thumb_pequeño.jpg",
+          "gallery": [
+            "assets/images/products/prod_215/1_pequeño.jpg"
+          ]
+        },
+        "originalPrice": 7000
+      },
+      {
+        "id": "var_215_2",
+        "attributes": {
+          "Tamaño": "Grande"
+        },
+        "price": 8075,
+        "stock": 10,
+        "sku": "VAI001-GRA",
+        "available": true,
+        "images": {
+          "cover": "assets/images/products/prod_215/cover_grande.jpg",
+          "thumb": "assets/images/products/prod_215/thumb_grande.jpg",
+          "gallery": [
+            "assets/images/products/prod_215/1_grande.jpg"
+          ]
+        },
+        "originalPrice": 9500
+      }
+    ]
+  },
+  "images": {
+    "cover": "assets/images/products/prod_215/cover.jpg",
+    "thumb": "assets/images/products/prod_215/thumb.jpg",
+    "gallery": [
+      "assets/images/products/prod_215/1.jpg"
+    ]
+  },
+  "specs": {
+    "SKU": "VAI001"
+  },
+  "shipping": {
+    "free": false,
+    "days": 4
+  },
+  "badge": "🐱 Rascadores",
+  "brand": "AGATAR",
+  "sku": "VAI001",
+  "features": [
+    "Múltiples variantes disponibles",
+    "Calidad garantizada",
+    "Fácil de usar",
+    "Resistente y duradero"
+  ]
+}

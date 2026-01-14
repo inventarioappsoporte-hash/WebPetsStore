@@ -1,0 +1,114 @@
+{
+  "id": "prod_149",
+  "name": "MOISES IGLU  PREMIUN",
+  "category": "casa-descanso",
+  "subcategory": "Colchonetas",
+  "hasVariants": true,
+  "basePrice": 22100,
+  "baseOriginalPrice": 26000,
+  "discount": 15,
+  "stock": 30,
+  "rating": 3.6,
+  "reviews": 33,
+  "featured": false,
+  "topDiscount": false,
+  "hasVideo": false,
+  "tags": [
+    "moises",
+    "iglu",
+    "premiun",
+    "descanso",
+    "cama",
+    "confort"
+  ],
+  "description": "N°1 (45 x 35 x 23 CM) , N°2 (55 x 40 x 27 CM), N°3 (60 x 45 x 33 CM)",
+  "longDescription": "N°1 (45 x 35 x 23 CM) , N°2 (55 x 40 x 27 CM), N°3 (60 x 45 x 33 CM)",
+  "variants": {
+    "attributes": [
+      {
+        "id": "size",
+        "name": "Tamaño",
+        "type": "size"
+      }
+    ],
+    "combinations": [
+      {
+        "id": "var_149_1",
+        "attributes": {
+          "Tamaño": "N°1"
+        },
+        "price": 22100,
+        "stock": 10,
+        "sku": "MOI002-N1",
+        "available": true,
+        "images": {
+          "cover": "assets/images/products/prod_149/cover_n°1.jpg",
+          "thumb": "assets/images/products/prod_149/thumb_n°1.jpg",
+          "gallery": [
+            "assets/images/products/prod_149/1_n°1.jpg"
+          ]
+        },
+        "originalPrice": 26000
+      },
+      {
+        "id": "var_149_2",
+        "attributes": {
+          "Tamaño": "N°2"
+        },
+        "price": 25500,
+        "stock": 10,
+        "sku": "MOI002-N2",
+        "available": true,
+        "images": {
+          "cover": "assets/images/products/prod_149/cover_n°2.jpg",
+          "thumb": "assets/images/products/prod_149/thumb_n°2.jpg",
+          "gallery": [
+            "assets/images/products/prod_149/1_n°2.jpg"
+          ]
+        },
+        "originalPrice": 30000
+      },
+      {
+        "id": "var_149_3",
+        "attributes": {
+          "Tamaño": "N°3"
+        },
+        "price": 28050,
+        "stock": 10,
+        "sku": "MOI002-N3",
+        "available": true,
+        "images": {
+          "cover": "assets/images/products/prod_149/cover_n°3.jpg",
+          "thumb": "assets/images/products/prod_149/thumb_n°3.jpg",
+          "gallery": [
+            "assets/images/products/prod_149/1_n°3.jpg"
+          ]
+        },
+        "originalPrice": 33000
+      }
+    ]
+  },
+  "images": {
+    "cover": "assets/images/products/prod_149/cover.jpg",
+    "thumb": "assets/images/products/prod_149/thumb.jpg",
+    "gallery": [
+      "assets/images/products/prod_149/1.jpg"
+    ]
+  },
+  "specs": {
+    "SKU": "MOI002"
+  },
+  "shipping": {
+    "free": true,
+    "days": 4
+  },
+  "badge": "🛏️ Colchonetas",
+  "brand": "Sin marca",
+  "sku": "MOI002",
+  "features": [
+    "Múltiples variantes disponibles",
+    "Calidad garantizada",
+    "Fácil de usar",
+    "Resistente y duradero"
+  ]
+}
