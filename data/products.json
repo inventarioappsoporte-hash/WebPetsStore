@@ -14294,57 +14294,6 @@
     ]
   },
   {
-    "id": "prod_421",
-    "name": "CAMISETAS BOCA, RIVER MESSI. TALLE 4",
-    "category": "ropa",
-    "subcategory": "Ropa",
-    "price": 5880,
-    "originalPrice": 8400,
-    "discount": 30,
-    "stock": 10,
-    "rating": 4.6,
-    "reviews": 49,
-    "featured": false,
-    "topDiscount": true,
-    "hasVideo": false,
-    "tags": [
-      "camisetas",
-      "boca,",
-      "river",
-      "messi.",
-      "talle",
-      "ropa",
-      "verano",
-      "fresco",
-      "ligero"
-    ],
-    "description": "T-4 => LARGO = 39 cm   ANCHO = 48 cm",
-    "longDescription": "T-4 => LARGO = 39 cm   ANCHO = 48 cm",
-    "images": {
-      "cover": "assets/images/products/prod_421/cover.jpg",
-      "thumb": "assets/images/products/prod_421/thumb.jpg",
-      "gallery": [
-        "assets/images/products/prod_421/1.jpg"
-      ]
-    },
-    "specs": {
-      "SKU": "CAM023"
-    },
-    "shipping": {
-      "free": false,
-      "days": 2
-    },
-    "badge": "👕 Ropa",
-    "brand": "Sin marca",
-    "sku": "CAM023",
-    "features": [
-      "Tela transpirable",
-      "Diseño fresco",
-      "Fácil de poner",
-      "Cómodo para el verano"
-    ]
-  },
-  {
     "id": "prod_427",
     "name": "Vestido Princesa",
     "category": "ropa",
@@ -16155,15 +16104,16 @@
   },
   {
     "id": "prod_523",
-    "name": "CAMPERA ABERCROMBIE TALLE 1",
+    "name": "Campera Abercrombie",
     "category": "ropa",
     "subcategory": "Ropa",
-    "price": 7913.5,
-    "originalPrice": null,
+    "hasVariants": true,
+    "basePrice": 7913.5,
+    "baseOriginalPrice": null,
     "discount": null,
-    "stock": 10,
-    "rating": 4.9,
-    "reviews": 48,
+    "stock": 70,
+    "rating": 4.5,
+    "reviews": 179,
     "featured": false,
     "topDiscount": false,
     "hasVideo": false,
@@ -16176,8 +16126,173 @@
       "abrigo",
       "calor"
     ],
-    "description": "T-1 => LARGO = 26 cm   ANCHO = 34 cm",
-    "longDescription": "T-1 => LARGO = 26 cm   ANCHO = 34 cm",
+    "description": "Campera Abercrombie para mascotas. Diseño moderno y abrigado, ideal para los días fríos.",
+    "longDescription": "Campera Abercrombie para mascotas. Descripción: Campera de alta calidad inspirada en el estilo Abercrombie. Perfecta para mantener a tu mascota abrigada durante el invierno. Material suave y resistente que proporciona confort y protección contra el frío. Características: Mantiene el calor. Material suave y cómodo. Resistente al agua. Perfecto para el frío. Fácil de poner y quitar.",
+    "variants": {
+      "attributes": [
+        {
+          "id": "talle",
+          "name": "Talle",
+          "type": "size"
+        }
+      ],
+      "combinations": [
+        {
+          "id": "var_523_1",
+          "attributes": {
+            "Talle": "1"
+          },
+          "price": 7913.5,
+          "originalPrice": null,
+          "stock": 10,
+          "sku": "CAM055-1",
+          "available": true,
+          "specs": {
+            "Largo": "26 cm",
+            "Ancho": "34 cm"
+          },
+          "images": {
+            "cover": "assets/images/products/prod_523/cover.jpg",
+            "thumb": "assets/images/products/prod_523/thumb.jpg",
+            "gallery": [
+              "assets/images/products/prod_523/1.jpg"
+            ]
+          }
+        },
+        {
+          "id": "var_523_2",
+          "attributes": {
+            "Talle": "2"
+          },
+          "price": 7913.5,
+          "originalPrice": null,
+          "stock": 10,
+          "sku": "CAM055-2",
+          "available": true,
+          "specs": {
+            "Largo": "29 cm",
+            "Ancho": "38 cm"
+          },
+          "images": {
+            "cover": "assets/images/products/prod_524/cover.jpg",
+            "thumb": "assets/images/products/prod_524/thumb.jpg",
+            "gallery": [
+              "assets/images/products/prod_524/1.jpg"
+            ]
+          }
+        },
+        {
+          "id": "var_523_3",
+          "attributes": {
+            "Talle": "3"
+          },
+          "price": 7913.5,
+          "originalPrice": null,
+          "stock": 10,
+          "sku": "CAM055-3",
+          "available": true,
+          "specs": {
+            "Largo": "31 cm",
+            "Ancho": "40 cm"
+          },
+          "images": {
+            "cover": "assets/images/products/prod_525/cover.jpg",
+            "thumb": "assets/images/products/prod_525/thumb.jpg",
+            "gallery": [
+              "assets/images/products/prod_525/1.jpg"
+            ]
+          }
+        },
+        {
+          "id": "var_523_4",
+          "attributes": {
+            "Talle": "4"
+          },
+          "price": 9044,
+          "originalPrice": null,
+          "stock": 10,
+          "sku": "CAM055-4",
+          "available": true,
+          "specs": {
+            "Largo": "35 cm",
+            "Ancho": "44 cm"
+          },
+          "images": {
+            "cover": "assets/images/products/prod_526/cover.jpg",
+            "thumb": "assets/images/products/prod_526/thumb.jpg",
+            "gallery": [
+              "assets/images/products/prod_526/1.jpg"
+            ]
+          }
+        },
+        {
+          "id": "var_523_5",
+          "attributes": {
+            "Talle": "5"
+          },
+          "price": 9044,
+          "originalPrice": null,
+          "stock": 10,
+          "sku": "CAM055-5",
+          "available": true,
+          "specs": {
+            "Largo": "38 cm",
+            "Ancho": "50 cm"
+          },
+          "images": {
+            "cover": "assets/images/products/prod_527/cover.jpg",
+            "thumb": "assets/images/products/prod_527/thumb.jpg",
+            "gallery": [
+              "assets/images/products/prod_527/1.jpg"
+            ]
+          }
+        },
+        {
+          "id": "var_523_6",
+          "attributes": {
+            "Talle": "6"
+          },
+          "price": 10174.5,
+          "originalPrice": null,
+          "stock": 10,
+          "sku": "CAM055-6",
+          "available": true,
+          "specs": {
+            "Largo": "42 cm",
+            "Ancho": "54 cm"
+          },
+          "images": {
+            "cover": "assets/images/products/prod_528/cover.jpg",
+            "thumb": "assets/images/products/prod_528/thumb.jpg",
+            "gallery": [
+              "assets/images/products/prod_528/1.jpg"
+            ]
+          }
+        },
+        {
+          "id": "var_523_7",
+          "attributes": {
+            "Talle": "7"
+          },
+          "price": 10174.5,
+          "originalPrice": null,
+          "stock": 10,
+          "sku": "CAM055-7",
+          "available": true,
+          "specs": {
+            "Largo": "45 cm",
+            "Ancho": "56 cm"
+          },
+          "images": {
+            "cover": "assets/images/products/prod_529/cover.jpg",
+            "thumb": "assets/images/products/prod_529/thumb.jpg",
+            "gallery": [
+              "assets/images/products/prod_529/1.jpg"
+            ]
+          }
+        }
+      ]
+    },
     "images": {
       "cover": "assets/images/products/prod_523/cover.jpg",
       "thumb": "assets/images/products/prod_523/thumb.jpg",
@@ -16190,10 +16305,10 @@
     },
     "shipping": {
       "free": false,
-      "days": 4
+      "days": 3
     },
     "badge": "🧥 Ropa",
-    "brand": "Sin marca",
+    "brand": "Abercrombie",
     "sku": "CAM055",
     "features": [
       "Mantiene el calor",
@@ -16203,310 +16318,17 @@
     ]
   },
   {
-    "id": "prod_524",
-    "name": "CAMPERA ABERCROMBIE TALLE 2",
-    "category": "ropa",
-    "subcategory": "Ropa",
-    "price": 7913.5,
-    "originalPrice": null,
-    "discount": null,
-    "stock": 10,
-    "rating": 4.6,
-    "reviews": 38,
-    "featured": false,
-    "topDiscount": false,
-    "hasVideo": false,
-    "tags": [
-      "campera",
-      "abercrombie",
-      "talle",
-      "ropa",
-      "invierno",
-      "abrigo",
-      "calor"
-    ],
-    "description": "T-2 => LARGO = 29 cm   ANCHO = 38 cm",
-    "longDescription": "T-2 => LARGO = 29 cm   ANCHO = 38 cm",
-    "images": {
-      "cover": "assets/images/products/prod_524/cover.jpg",
-      "thumb": "assets/images/products/prod_524/thumb.jpg",
-      "gallery": [
-        "assets/images/products/prod_524/1.jpg"
-      ]
-    },
-    "specs": {
-      "SKU": "CAM056"
-    },
-    "shipping": {
-      "free": false,
-      "days": 3
-    },
-    "badge": "🧥 Ropa",
-    "brand": "Sin marca",
-    "sku": "CAM056",
-    "features": [
-      "Mantiene el calor",
-      "Material suave",
-      "Resistente al agua",
-      "Perfecto para el frío"
-    ]
-  },
-  {
-    "id": "prod_525",
-    "name": "CAMPERA ABERCROMBIE TALLE 3",
-    "category": "ropa",
-    "subcategory": "Ropa",
-    "price": 7913.5,
-    "originalPrice": null,
-    "discount": null,
-    "stock": 10,
-    "rating": 4.5,
-    "reviews": 24,
-    "featured": false,
-    "topDiscount": false,
-    "hasVideo": false,
-    "tags": [
-      "campera",
-      "abercrombie",
-      "talle",
-      "ropa",
-      "invierno",
-      "abrigo",
-      "calor"
-    ],
-    "description": "T-3 => LARGO = 31 cm   ANCHO = 40 cm",
-    "longDescription": "T-3 => LARGO = 31 cm   ANCHO = 40 cm",
-    "images": {
-      "cover": "assets/images/products/prod_525/cover.jpg",
-      "thumb": "assets/images/products/prod_525/thumb.jpg",
-      "gallery": [
-        "assets/images/products/prod_525/1.jpg"
-      ]
-    },
-    "specs": {
-      "SKU": "CAM057"
-    },
-    "shipping": {
-      "free": false,
-      "days": 3
-    },
-    "badge": "🧥 Ropa",
-    "brand": "Sin marca",
-    "sku": "CAM057",
-    "features": [
-      "Mantiene el calor",
-      "Material suave",
-      "Resistente al agua",
-      "Perfecto para el frío"
-    ]
-  },
-  {
-    "id": "prod_526",
-    "name": "CAMPERA ABERCROMBIE TALLE 4",
-    "category": "ropa",
-    "subcategory": "Ropa",
-    "price": 9044,
-    "originalPrice": null,
-    "discount": null,
-    "stock": 10,
-    "rating": 4.9,
-    "reviews": 22,
-    "featured": false,
-    "topDiscount": false,
-    "hasVideo": false,
-    "tags": [
-      "campera",
-      "abercrombie",
-      "talle",
-      "ropa",
-      "invierno",
-      "abrigo",
-      "calor"
-    ],
-    "description": "T-4 => LARGO = 35 cm   ANCHO = 44 cm",
-    "longDescription": "T-4 => LARGO = 35 cm   ANCHO = 44 cm",
-    "images": {
-      "cover": "assets/images/products/prod_526/cover.jpg",
-      "thumb": "assets/images/products/prod_526/thumb.jpg",
-      "gallery": [
-        "assets/images/products/prod_526/1.jpg"
-      ]
-    },
-    "specs": {
-      "SKU": "CAM058"
-    },
-    "shipping": {
-      "free": false,
-      "days": 4
-    },
-    "badge": "🧥 Ropa",
-    "brand": "Sin marca",
-    "sku": "CAM058",
-    "features": [
-      "Mantiene el calor",
-      "Material suave",
-      "Resistente al agua",
-      "Perfecto para el frío"
-    ]
-  },
-  {
-    "id": "prod_527",
-    "name": "CAMPERA ABERCROMBIE TALLE 5",
-    "category": "ropa",
-    "subcategory": "Ropa",
-    "price": 9044,
-    "originalPrice": null,
-    "discount": null,
-    "stock": 10,
-    "rating": 3.6,
-    "reviews": 16,
-    "featured": false,
-    "topDiscount": false,
-    "hasVideo": false,
-    "tags": [
-      "campera",
-      "abercrombie",
-      "talle",
-      "ropa",
-      "invierno",
-      "abrigo",
-      "calor"
-    ],
-    "description": "T-5 => LARGO = 38 cm   ANCHO = 50 cm",
-    "longDescription": "T-5 => LARGO = 38 cm   ANCHO = 50 cm",
-    "images": {
-      "cover": "assets/images/products/prod_527/cover.jpg",
-      "thumb": "assets/images/products/prod_527/thumb.jpg",
-      "gallery": [
-        "assets/images/products/prod_527/1.jpg"
-      ]
-    },
-    "specs": {
-      "SKU": "CAM059"
-    },
-    "shipping": {
-      "free": false,
-      "days": 3
-    },
-    "badge": "🧥 Ropa",
-    "brand": "Sin marca",
-    "sku": "CAM059",
-    "features": [
-      "Mantiene el calor",
-      "Material suave",
-      "Resistente al agua",
-      "Perfecto para el frío"
-    ]
-  },
-  {
-    "id": "prod_528",
-    "name": "CAMPERA ABERCROMBIE TALLE 6",
-    "category": "ropa",
-    "subcategory": "Ropa",
-    "price": 10174.5,
-    "originalPrice": null,
-    "discount": null,
-    "stock": 10,
-    "rating": 4.6,
-    "reviews": 17,
-    "featured": false,
-    "topDiscount": false,
-    "hasVideo": false,
-    "tags": [
-      "campera",
-      "abercrombie",
-      "talle",
-      "ropa",
-      "invierno",
-      "abrigo",
-      "calor"
-    ],
-    "description": "T-6 => LARGO = 42 cm   ANCHO = 54 cm",
-    "longDescription": "T-6 => LARGO = 42 cm   ANCHO = 54 cm",
-    "images": {
-      "cover": "assets/images/products/prod_528/cover.jpg",
-      "thumb": "assets/images/products/prod_528/thumb.jpg",
-      "gallery": [
-        "assets/images/products/prod_528/1.jpg"
-      ]
-    },
-    "specs": {
-      "SKU": "CAM060"
-    },
-    "shipping": {
-      "free": false,
-      "days": 4
-    },
-    "badge": "🧥 Ropa",
-    "brand": "Sin marca",
-    "sku": "CAM060",
-    "features": [
-      "Mantiene el calor",
-      "Material suave",
-      "Resistente al agua",
-      "Perfecto para el frío"
-    ]
-  },
-  {
-    "id": "prod_529",
-    "name": "CAMPERA ABERCROMBIE TALLE 7",
-    "category": "ropa",
-    "subcategory": "Ropa",
-    "price": 10174.5,
-    "originalPrice": null,
-    "discount": null,
-    "stock": 10,
-    "rating": 4.1,
-    "reviews": 14,
-    "featured": false,
-    "topDiscount": false,
-    "hasVideo": false,
-    "tags": [
-      "campera",
-      "abercrombie",
-      "talle",
-      "ropa",
-      "invierno",
-      "abrigo",
-      "calor"
-    ],
-    "description": "T-7 => LARGO = 45 cm   ANCHO = 56 cm",
-    "longDescription": "T-7 => LARGO = 45 cm   ANCHO = 56 cm",
-    "images": {
-      "cover": "assets/images/products/prod_529/cover.jpg",
-      "thumb": "assets/images/products/prod_529/thumb.jpg",
-      "gallery": [
-        "assets/images/products/prod_529/1.jpg"
-      ]
-    },
-    "specs": {
-      "SKU": "CAM061"
-    },
-    "shipping": {
-      "free": false,
-      "days": 2
-    },
-    "badge": "🧥 Ropa",
-    "brand": "Sin marca",
-    "sku": "CAM061",
-    "features": [
-      "Mantiene el calor",
-      "Material suave",
-      "Resistente al agua",
-      "Perfecto para el frío"
-    ]
-  },
-  {
     "id": "prod_530",
-    "name": "CAMPERA PLUSH TALLE 1",
+    "name": "Campera Plush",
     "category": "ropa",
     "subcategory": "Ropa",
-    "price": 6783,
-    "originalPrice": null,
+    "hasVariants": true,
+    "basePrice": 6783,
+    "baseOriginalPrice": null,
     "discount": null,
-    "stock": 10,
-    "rating": 4.4,
-    "reviews": 47,
+    "stock": 70,
+    "rating": 4.3,
+    "reviews": 243,
     "featured": false,
     "topDiscount": false,
     "hasVideo": false,
@@ -16517,10 +16339,176 @@
       "ropa",
       "invierno",
       "abrigo",
-      "calor"
+      "calor",
+      "suave"
     ],
-    "description": "T-1 => LARGO = 23 cm   ANCHO = 34 cm",
-    "longDescription": "T-1 => LARGO = 23 cm   ANCHO = 34 cm",
+    "description": "Campera Plush para mascotas. Material ultra suave y abrigado, ideal para los días fríos.",
+    "longDescription": "Campera Plush para mascotas. Descripción: Campera de alta calidad con material plush ultra suave. Perfecta para mantener a tu mascota abrigada durante el invierno con máximo confort. Material suave al tacto que proporciona calidez y protección contra el frío. Características: Mantiene el calor. Material plush ultra suave. Resistente al agua. Perfecto para el frío. Fácil de poner y quitar.",
+    "variants": {
+      "attributes": [
+        {
+          "id": "talle",
+          "name": "Talle",
+          "type": "size"
+        }
+      ],
+      "combinations": [
+        {
+          "id": "var_530_1",
+          "attributes": {
+            "Talle": "1"
+          },
+          "price": 6783,
+          "originalPrice": null,
+          "stock": 10,
+          "sku": "CAM062-1",
+          "available": true,
+          "specs": {
+            "Largo": "23 cm",
+            "Ancho": "34 cm"
+          },
+          "images": {
+            "cover": "assets/images/products/prod_530/cover.jpg",
+            "thumb": "assets/images/products/prod_530/thumb.jpg",
+            "gallery": [
+              "assets/images/products/prod_530/1.jpg"
+            ]
+          }
+        },
+        {
+          "id": "var_530_2",
+          "attributes": {
+            "Talle": "2"
+          },
+          "price": 6783,
+          "originalPrice": null,
+          "stock": 10,
+          "sku": "CAM062-2",
+          "available": true,
+          "specs": {
+            "Largo": "27 cm",
+            "Ancho": "36 cm"
+          },
+          "images": {
+            "cover": "assets/images/products/prod_531/cover.jpg",
+            "thumb": "assets/images/products/prod_531/thumb.jpg",
+            "gallery": [
+              "assets/images/products/prod_531/1.jpg"
+            ]
+          }
+        },
+        {
+          "id": "var_530_3",
+          "attributes": {
+            "Talle": "3"
+          },
+          "price": 7913.5,
+          "originalPrice": null,
+          "stock": 10,
+          "sku": "CAM062-3",
+          "available": true,
+          "specs": {
+            "Largo": "29 cm",
+            "Ancho": "38 cm"
+          },
+          "images": {
+            "cover": "assets/images/products/prod_532/cover.jpg",
+            "thumb": "assets/images/products/prod_532/thumb.jpg",
+            "gallery": [
+              "assets/images/products/prod_532/1.jpg"
+            ]
+          }
+        },
+        {
+          "id": "var_530_4",
+          "attributes": {
+            "Talle": "4"
+          },
+          "price": 7913.5,
+          "originalPrice": null,
+          "stock": 10,
+          "sku": "CAM062-4",
+          "available": true,
+          "specs": {
+            "Largo": "33 cm",
+            "Ancho": "42 cm"
+          },
+          "images": {
+            "cover": "assets/images/products/prod_533/cover.jpg",
+            "thumb": "assets/images/products/prod_533/thumb.jpg",
+            "gallery": [
+              "assets/images/products/prod_533/1.jpg"
+            ]
+          }
+        },
+        {
+          "id": "var_530_5",
+          "attributes": {
+            "Talle": "5"
+          },
+          "price": 9044,
+          "originalPrice": null,
+          "stock": 10,
+          "sku": "CAM062-5",
+          "available": true,
+          "specs": {
+            "Largo": "37 cm",
+            "Ancho": "48 cm"
+          },
+          "images": {
+            "cover": "assets/images/products/prod_534/cover.jpg",
+            "thumb": "assets/images/products/prod_534/thumb.jpg",
+            "gallery": [
+              "assets/images/products/prod_534/1.jpg"
+            ]
+          }
+        },
+        {
+          "id": "var_530_6",
+          "attributes": {
+            "Talle": "6"
+          },
+          "price": 9044,
+          "originalPrice": null,
+          "stock": 10,
+          "sku": "CAM062-6",
+          "available": true,
+          "specs": {
+            "Largo": "41 cm",
+            "Ancho": "52 cm"
+          },
+          "images": {
+            "cover": "assets/images/products/prod_535/cover.jpg",
+            "thumb": "assets/images/products/prod_535/thumb.jpg",
+            "gallery": [
+              "assets/images/products/prod_535/1.jpg"
+            ]
+          }
+        },
+        {
+          "id": "var_530_7",
+          "attributes": {
+            "Talle": "7"
+          },
+          "price": 9044,
+          "originalPrice": null,
+          "stock": 10,
+          "sku": "CAM062-7",
+          "available": true,
+          "specs": {
+            "Largo": "44 cm",
+            "Ancho": "58 cm"
+          },
+          "images": {
+            "cover": "assets/images/products/prod_536/cover.jpg",
+            "thumb": "assets/images/products/prod_536/thumb.jpg",
+            "gallery": [
+              "assets/images/products/prod_536/1.jpg"
+            ]
+          }
+        }
+      ]
+    },
     "images": {
       "cover": "assets/images/products/prod_530/cover.jpg",
       "thumb": "assets/images/products/prod_530/thumb.jpg",
@@ -16533,323 +16521,30 @@
     },
     "shipping": {
       "free": false,
-      "days": 2
+      "days": 3
     },
     "badge": "🧥 Ropa",
     "brand": "Sin marca",
     "sku": "CAM062",
     "features": [
       "Mantiene el calor",
-      "Material suave",
-      "Resistente al agua",
-      "Perfecto para el frío"
-    ]
-  },
-  {
-    "id": "prod_531",
-    "name": "CAMPERA PLUSH TALLE 2",
-    "category": "ropa",
-    "subcategory": "Ropa",
-    "price": 6783,
-    "originalPrice": null,
-    "discount": null,
-    "stock": 10,
-    "rating": 4,
-    "reviews": 48,
-    "featured": false,
-    "topDiscount": false,
-    "hasVideo": false,
-    "tags": [
-      "campera",
-      "plush",
-      "talle",
-      "ropa",
-      "invierno",
-      "abrigo",
-      "calor"
-    ],
-    "description": "T-2 => LARGO = 27 cm   ANCHO = 36 cm",
-    "longDescription": "T-2 => LARGO = 27 cm   ANCHO = 36 cm",
-    "images": {
-      "cover": "assets/images/products/prod_531/cover.jpg",
-      "thumb": "assets/images/products/prod_531/thumb.jpg",
-      "gallery": [
-        "assets/images/products/prod_531/1.jpg"
-      ]
-    },
-    "specs": {
-      "SKU": "CAM063"
-    },
-    "shipping": {
-      "free": false,
-      "days": 3
-    },
-    "badge": "🧥 Ropa",
-    "brand": "Sin marca",
-    "sku": "CAM063",
-    "features": [
-      "Mantiene el calor",
-      "Material suave",
-      "Resistente al agua",
-      "Perfecto para el frío"
-    ]
-  },
-  {
-    "id": "prod_532",
-    "name": "CAMPERA PLUSH TALLE 3",
-    "category": "ropa",
-    "subcategory": "Ropa",
-    "price": 7913.5,
-    "originalPrice": null,
-    "discount": null,
-    "stock": 10,
-    "rating": 4.8,
-    "reviews": 21,
-    "featured": false,
-    "topDiscount": false,
-    "hasVideo": false,
-    "tags": [
-      "campera",
-      "plush",
-      "talle",
-      "ropa",
-      "invierno",
-      "abrigo",
-      "calor"
-    ],
-    "description": "T-3 => LARGO = 29 cm   ANCHO = 38 cm",
-    "longDescription": "T-3 => LARGO = 29 cm   ANCHO = 38 cm",
-    "images": {
-      "cover": "assets/images/products/prod_532/cover.jpg",
-      "thumb": "assets/images/products/prod_532/thumb.jpg",
-      "gallery": [
-        "assets/images/products/prod_532/1.jpg"
-      ]
-    },
-    "specs": {
-      "SKU": "CAM064"
-    },
-    "shipping": {
-      "free": false,
-      "days": 2
-    },
-    "badge": "🧥 Ropa",
-    "brand": "Sin marca",
-    "sku": "CAM064",
-    "features": [
-      "Mantiene el calor",
-      "Material suave",
-      "Resistente al agua",
-      "Perfecto para el frío"
-    ]
-  },
-  {
-    "id": "prod_533",
-    "name": "CAMPERA PLUSH TALLE 4",
-    "category": "ropa",
-    "subcategory": "Ropa",
-    "price": 7913.5,
-    "originalPrice": null,
-    "discount": null,
-    "stock": 10,
-    "rating": 4.3,
-    "reviews": 17,
-    "featured": false,
-    "topDiscount": false,
-    "hasVideo": false,
-    "tags": [
-      "campera",
-      "plush",
-      "talle",
-      "ropa",
-      "invierno",
-      "abrigo",
-      "calor"
-    ],
-    "description": "T-4 => LARGO = 33 cm   ANCHO = 42 cm",
-    "longDescription": "T-4 => LARGO = 33 cm   ANCHO = 42 cm",
-    "images": {
-      "cover": "assets/images/products/prod_533/cover.jpg",
-      "thumb": "assets/images/products/prod_533/thumb.jpg",
-      "gallery": [
-        "assets/images/products/prod_533/1.jpg"
-      ]
-    },
-    "specs": {
-      "SKU": "CAM065"
-    },
-    "shipping": {
-      "free": false,
-      "days": 3
-    },
-    "badge": "🧥 Ropa",
-    "brand": "Sin marca",
-    "sku": "CAM065",
-    "features": [
-      "Mantiene el calor",
-      "Material suave",
-      "Resistente al agua",
-      "Perfecto para el frío"
-    ]
-  },
-  {
-    "id": "prod_534",
-    "name": "CAMPERA PLUSH TALLE 5",
-    "category": "ropa",
-    "subcategory": "Ropa",
-    "price": 9044,
-    "originalPrice": null,
-    "discount": null,
-    "stock": 10,
-    "rating": 3.9,
-    "reviews": 29,
-    "featured": false,
-    "topDiscount": false,
-    "hasVideo": false,
-    "tags": [
-      "campera",
-      "plush",
-      "talle",
-      "ropa",
-      "invierno",
-      "abrigo",
-      "calor"
-    ],
-    "description": "T-5 => LARGO = 37 cm   ANCHO = 48 cm",
-    "longDescription": "T-5 => LARGO = 37 cm   ANCHO = 48 cm",
-    "images": {
-      "cover": "assets/images/products/prod_534/cover.jpg",
-      "thumb": "assets/images/products/prod_534/thumb.jpg",
-      "gallery": [
-        "assets/images/products/prod_534/1.jpg"
-      ]
-    },
-    "specs": {
-      "SKU": "CAM066"
-    },
-    "shipping": {
-      "free": false,
-      "days": 4
-    },
-    "badge": "🧥 Ropa",
-    "brand": "Sin marca",
-    "sku": "CAM066",
-    "features": [
-      "Mantiene el calor",
-      "Material suave",
-      "Resistente al agua",
-      "Perfecto para el frío"
-    ]
-  },
-  {
-    "id": "prod_535",
-    "name": "CAMPERA PLUSH TALLE 6",
-    "category": "ropa",
-    "subcategory": "Ropa",
-    "price": 9044,
-    "originalPrice": null,
-    "discount": null,
-    "stock": 10,
-    "rating": 3.9,
-    "reviews": 54,
-    "featured": false,
-    "topDiscount": false,
-    "hasVideo": false,
-    "tags": [
-      "campera",
-      "plush",
-      "talle",
-      "ropa",
-      "invierno",
-      "abrigo",
-      "calor"
-    ],
-    "description": "T-6 => LARGO = 41 cm   ANCHO = 52 cm",
-    "longDescription": "T-6 => LARGO = 41 cm   ANCHO = 52 cm",
-    "images": {
-      "cover": "assets/images/products/prod_535/cover.jpg",
-      "thumb": "assets/images/products/prod_535/thumb.jpg",
-      "gallery": [
-        "assets/images/products/prod_535/1.jpg"
-      ]
-    },
-    "specs": {
-      "SKU": "CAM067"
-    },
-    "shipping": {
-      "free": false,
-      "days": 2
-    },
-    "badge": "🧥 Ropa",
-    "brand": "Sin marca",
-    "sku": "CAM067",
-    "features": [
-      "Mantiene el calor",
-      "Material suave",
-      "Resistente al agua",
-      "Perfecto para el frío"
-    ]
-  },
-  {
-    "id": "prod_536",
-    "name": "CAMPERA PLUSH TALLE 7",
-    "category": "ropa",
-    "subcategory": "Ropa",
-    "price": 9044,
-    "originalPrice": null,
-    "discount": null,
-    "stock": 10,
-    "rating": 5,
-    "reviews": 27,
-    "featured": false,
-    "topDiscount": false,
-    "hasVideo": false,
-    "tags": [
-      "campera",
-      "plush",
-      "talle",
-      "ropa",
-      "invierno",
-      "abrigo",
-      "calor"
-    ],
-    "description": "T-7 => LARGO = 44 cm   ANCHO = 58 cm",
-    "longDescription": "T-7 => LARGO = 44 cm   ANCHO = 58 cm",
-    "images": {
-      "cover": "assets/images/products/prod_536/cover.jpg",
-      "thumb": "assets/images/products/prod_536/thumb.jpg",
-      "gallery": [
-        "assets/images/products/prod_536/1.jpg"
-      ]
-    },
-    "specs": {
-      "SKU": "CAM068"
-    },
-    "shipping": {
-      "free": false,
-      "days": 2
-    },
-    "badge": "🧥 Ropa",
-    "brand": "Sin marca",
-    "sku": "CAM068",
-    "features": [
-      "Mantiene el calor",
-      "Material suave",
+      "Material plush ultra suave",
       "Resistente al agua",
       "Perfecto para el frío"
     ]
   },
   {
     "id": "prod_537",
-    "name": "CAMPERA TERMICA TALLE 1",
+    "name": "Campera Térmica",
     "category": "ropa",
     "subcategory": "Ropa",
-    "price": 9609.25,
-    "originalPrice": null,
+    "hasVariants": true,
+    "basePrice": 9609.25,
+    "baseOriginalPrice": null,
     "discount": null,
-    "stock": 10,
-    "rating": 4.7,
-    "reviews": 49,
+    "stock": 70,
+    "rating": 4.3,
+    "reviews": 295,
     "featured": false,
     "topDiscount": false,
     "hasVideo": false,
@@ -16862,8 +16557,173 @@
       "abrigo",
       "calor"
     ],
-    "description": "T-1 => LARGO = 24 cm   ANCHO = 33 cm",
-    "longDescription": "T-1 => LARGO = 24 cm   ANCHO = 33 cm",
+    "description": "Campera Térmica para mascotas. Máxima protección contra el frío con tecnología térmica.",
+    "longDescription": "Campera Térmica para mascotas. Descripción: Campera de alta calidad con tecnología térmica para máxima protección contra el frío. Perfecta para mantener a tu mascota abrigada durante los días más fríos del invierno. Material térmico que retiene el calor corporal y protege del viento. Características: Tecnología térmica. Mantiene el calor corporal. Resistente al agua y viento. Perfecto para el frío extremo. Fácil de poner y quitar.",
+    "variants": {
+      "attributes": [
+        {
+          "id": "talle",
+          "name": "Talle",
+          "type": "size"
+        }
+      ],
+      "combinations": [
+        {
+          "id": "var_537_1",
+          "attributes": {
+            "Talle": "1"
+          },
+          "price": 9609.25,
+          "originalPrice": null,
+          "stock": 10,
+          "sku": "CAM069-1",
+          "available": true,
+          "specs": {
+            "Largo": "24 cm",
+            "Ancho": "33 cm"
+          },
+          "images": {
+            "cover": "assets/images/products/prod_537/cover.jpg",
+            "thumb": "assets/images/products/prod_537/thumb.jpg",
+            "gallery": [
+              "assets/images/products/prod_537/1.jpg"
+            ]
+          }
+        },
+        {
+          "id": "var_537_2",
+          "attributes": {
+            "Talle": "2"
+          },
+          "price": 9609.25,
+          "originalPrice": null,
+          "stock": 10,
+          "sku": "CAM069-2",
+          "available": true,
+          "specs": {
+            "Largo": "29 cm",
+            "Ancho": "36 cm"
+          },
+          "images": {
+            "cover": "assets/images/products/prod_538/cover.jpg",
+            "thumb": "assets/images/products/prod_538/thumb.jpg",
+            "gallery": [
+              "assets/images/products/prod_538/1.jpg"
+            ]
+          }
+        },
+        {
+          "id": "var_537_3",
+          "attributes": {
+            "Talle": "3"
+          },
+          "price": 11305,
+          "originalPrice": null,
+          "stock": 10,
+          "sku": "CAM069-3",
+          "available": true,
+          "specs": {
+            "Largo": "33 cm",
+            "Ancho": "40 cm"
+          },
+          "images": {
+            "cover": "assets/images/products/prod_539/cover.jpg",
+            "thumb": "assets/images/products/prod_539/thumb.jpg",
+            "gallery": [
+              "assets/images/products/prod_539/1.jpg"
+            ]
+          }
+        },
+        {
+          "id": "var_537_4",
+          "attributes": {
+            "Talle": "4"
+          },
+          "price": 11305,
+          "originalPrice": null,
+          "stock": 10,
+          "sku": "CAM069-4",
+          "available": true,
+          "specs": {
+            "Largo": "38 cm",
+            "Ancho": "46 cm"
+          },
+          "images": {
+            "cover": "assets/images/products/prod_540/cover.jpg",
+            "thumb": "assets/images/products/prod_540/thumb.jpg",
+            "gallery": [
+              "assets/images/products/prod_540/1.jpg"
+            ]
+          }
+        },
+        {
+          "id": "var_537_5",
+          "attributes": {
+            "Talle": "5"
+          },
+          "price": 12435.5,
+          "originalPrice": null,
+          "stock": 10,
+          "sku": "CAM069-5",
+          "available": true,
+          "specs": {
+            "Largo": "44 cm",
+            "Ancho": "50 cm"
+          },
+          "images": {
+            "cover": "assets/images/products/prod_541/cover.jpg",
+            "thumb": "assets/images/products/prod_541/thumb.jpg",
+            "gallery": [
+              "assets/images/products/prod_541/1.jpg"
+            ]
+          }
+        },
+        {
+          "id": "var_537_6",
+          "attributes": {
+            "Talle": "6"
+          },
+          "price": 12435.5,
+          "originalPrice": null,
+          "stock": 10,
+          "sku": "CAM069-6",
+          "available": true,
+          "specs": {
+            "Largo": "50 cm",
+            "Ancho": "57 cm"
+          },
+          "images": {
+            "cover": "assets/images/products/prod_542/cover.jpg",
+            "thumb": "assets/images/products/prod_542/thumb.jpg",
+            "gallery": [
+              "assets/images/products/prod_542/1.jpg"
+            ]
+          }
+        },
+        {
+          "id": "var_537_7",
+          "attributes": {
+            "Talle": "7"
+          },
+          "price": 12435.5,
+          "originalPrice": null,
+          "stock": 10,
+          "sku": "CAM069-7",
+          "available": true,
+          "specs": {
+            "Largo": "54 cm",
+            "Ancho": "62 cm"
+          },
+          "images": {
+            "cover": "assets/images/products/prod_543/cover.jpg",
+            "thumb": "assets/images/products/prod_543/thumb.jpg",
+            "gallery": [
+              "assets/images/products/prod_543/1.jpg"
+            ]
+          }
+        }
+      ]
+    },
     "images": {
       "cover": "assets/images/products/prod_537/cover.jpg",
       "thumb": "assets/images/products/prod_537/thumb.jpg",
@@ -16882,317 +16742,24 @@
     "brand": "Sin marca",
     "sku": "CAM069",
     "features": [
-      "Mantiene el calor",
-      "Material suave",
-      "Resistente al agua",
-      "Perfecto para el frío"
-    ]
-  },
-  {
-    "id": "prod_538",
-    "name": "CAMPERA TERMICA TALLE 2",
-    "category": "ropa",
-    "subcategory": "Ropa",
-    "price": 9609.25,
-    "originalPrice": null,
-    "discount": null,
-    "stock": 10,
-    "rating": 3.9,
-    "reviews": 27,
-    "featured": false,
-    "topDiscount": false,
-    "hasVideo": false,
-    "tags": [
-      "campera",
-      "termica",
-      "talle",
-      "ropa",
-      "invierno",
-      "abrigo",
-      "calor"
-    ],
-    "description": "T-2 => LARGO = 29 cm   ANCHO = 36 cm",
-    "longDescription": "T-2 => LARGO = 29 cm   ANCHO = 36 cm",
-    "images": {
-      "cover": "assets/images/products/prod_538/cover.jpg",
-      "thumb": "assets/images/products/prod_538/thumb.jpg",
-      "gallery": [
-        "assets/images/products/prod_538/1.jpg"
-      ]
-    },
-    "specs": {
-      "SKU": "CAM070"
-    },
-    "shipping": {
-      "free": false,
-      "days": 4
-    },
-    "badge": "🧥 Ropa",
-    "brand": "Sin marca",
-    "sku": "CAM070",
-    "features": [
-      "Mantiene el calor",
-      "Material suave",
-      "Resistente al agua",
-      "Perfecto para el frío"
-    ]
-  },
-  {
-    "id": "prod_539",
-    "name": "CAMPERA TERMICA TALLE 3",
-    "category": "ropa",
-    "subcategory": "Ropa",
-    "price": 11305,
-    "originalPrice": null,
-    "discount": null,
-    "stock": 10,
-    "rating": 5,
-    "reviews": 54,
-    "featured": false,
-    "topDiscount": false,
-    "hasVideo": false,
-    "tags": [
-      "campera",
-      "termica",
-      "talle",
-      "ropa",
-      "invierno",
-      "abrigo",
-      "calor"
-    ],
-    "description": "T-3 => LARGO = 33 cm   ANCHO = 40 cm",
-    "longDescription": "T-3 => LARGO = 33 cm   ANCHO = 40 cm",
-    "images": {
-      "cover": "assets/images/products/prod_539/cover.jpg",
-      "thumb": "assets/images/products/prod_539/thumb.jpg",
-      "gallery": [
-        "assets/images/products/prod_539/1.jpg"
-      ]
-    },
-    "specs": {
-      "SKU": "CAM071"
-    },
-    "shipping": {
-      "free": false,
-      "days": 3
-    },
-    "badge": "🧥 Ropa",
-    "brand": "Sin marca",
-    "sku": "CAM071",
-    "features": [
-      "Mantiene el calor",
-      "Material suave",
-      "Resistente al agua",
-      "Perfecto para el frío"
-    ]
-  },
-  {
-    "id": "prod_540",
-    "name": "CAMPERA TERMICA TALLE 4",
-    "category": "ropa",
-    "subcategory": "Ropa",
-    "price": 11305,
-    "originalPrice": null,
-    "discount": null,
-    "stock": 10,
-    "rating": 4.9,
-    "reviews": 24,
-    "featured": false,
-    "topDiscount": false,
-    "hasVideo": false,
-    "tags": [
-      "campera",
-      "termica",
-      "talle",
-      "ropa",
-      "invierno",
-      "abrigo",
-      "calor"
-    ],
-    "description": "T-4 => LARGO = 38 cm   ANCHO = 46 cm",
-    "longDescription": "T-4 => LARGO = 38 cm   ANCHO = 46 cm",
-    "images": {
-      "cover": "assets/images/products/prod_540/cover.jpg",
-      "thumb": "assets/images/products/prod_540/thumb.jpg",
-      "gallery": [
-        "assets/images/products/prod_540/1.jpg"
-      ]
-    },
-    "specs": {
-      "SKU": "CAM072"
-    },
-    "shipping": {
-      "free": false,
-      "days": 2
-    },
-    "badge": "🧥 Ropa",
-    "brand": "Sin marca",
-    "sku": "CAM072",
-    "features": [
-      "Mantiene el calor",
-      "Material suave",
-      "Resistente al agua",
-      "Perfecto para el frío"
-    ]
-  },
-  {
-    "id": "prod_541",
-    "name": "CAMPERA TERMICA TALLE 5",
-    "category": "ropa",
-    "subcategory": "Ropa",
-    "price": 12435.5,
-    "originalPrice": null,
-    "discount": null,
-    "stock": 10,
-    "rating": 4.3,
-    "reviews": 42,
-    "featured": false,
-    "topDiscount": false,
-    "hasVideo": false,
-    "tags": [
-      "campera",
-      "termica",
-      "talle",
-      "ropa",
-      "invierno",
-      "abrigo",
-      "calor"
-    ],
-    "description": "T-5 => LARGO = 44 cm   ANCHO = 50 cm",
-    "longDescription": "T-5 => LARGO = 44 cm   ANCHO = 50 cm",
-    "images": {
-      "cover": "assets/images/products/prod_541/cover.jpg",
-      "thumb": "assets/images/products/prod_541/thumb.jpg",
-      "gallery": [
-        "assets/images/products/prod_541/1.jpg"
-      ]
-    },
-    "specs": {
-      "SKU": "CAM073"
-    },
-    "shipping": {
-      "free": false,
-      "days": 3
-    },
-    "badge": "🧥 Ropa",
-    "brand": "Sin marca",
-    "sku": "CAM073",
-    "features": [
-      "Mantiene el calor",
-      "Material suave",
-      "Resistente al agua",
-      "Perfecto para el frío"
-    ]
-  },
-  {
-    "id": "prod_542",
-    "name": "CAMPERA TERMICA TALLE 6",
-    "category": "ropa",
-    "subcategory": "Ropa",
-    "price": 12435.5,
-    "originalPrice": null,
-    "discount": null,
-    "stock": 10,
-    "rating": 3.8,
-    "reviews": 54,
-    "featured": false,
-    "topDiscount": false,
-    "hasVideo": false,
-    "tags": [
-      "campera",
-      "termica",
-      "talle",
-      "ropa",
-      "invierno",
-      "abrigo",
-      "calor"
-    ],
-    "description": "T-6 => LARGO = 50 cm   ANCHO = 57 cm",
-    "longDescription": "T-6 => LARGO = 50 cm   ANCHO = 57 cm",
-    "images": {
-      "cover": "assets/images/products/prod_542/cover.jpg",
-      "thumb": "assets/images/products/prod_542/thumb.jpg",
-      "gallery": [
-        "assets/images/products/prod_542/1.jpg"
-      ]
-    },
-    "specs": {
-      "SKU": "CAM074"
-    },
-    "shipping": {
-      "free": false,
-      "days": 2
-    },
-    "badge": "🧥 Ropa",
-    "brand": "Sin marca",
-    "sku": "CAM074",
-    "features": [
-      "Mantiene el calor",
-      "Material suave",
-      "Resistente al agua",
-      "Perfecto para el frío"
-    ]
-  },
-  {
-    "id": "prod_543",
-    "name": "CAMPERA TERMICA TALLE 7",
-    "category": "ropa",
-    "subcategory": "Ropa",
-    "price": 12435.5,
-    "originalPrice": null,
-    "discount": null,
-    "stock": 10,
-    "rating": 3.8,
-    "reviews": 45,
-    "featured": false,
-    "topDiscount": false,
-    "hasVideo": false,
-    "tags": [
-      "campera",
-      "termica",
-      "talle",
-      "ropa",
-      "invierno",
-      "abrigo",
-      "calor"
-    ],
-    "description": "T-7 => LARGO = 54 cm   ANCHO = 62 cm",
-    "longDescription": "T-7 => LARGO = 54 cm   ANCHO = 62 cm",
-    "images": {
-      "cover": "assets/images/products/prod_543/cover.jpg",
-      "thumb": "assets/images/products/prod_543/thumb.jpg",
-      "gallery": [
-        "assets/images/products/prod_543/1.jpg"
-      ]
-    },
-    "specs": {
-      "SKU": "CAM075"
-    },
-    "shipping": {
-      "free": false,
-      "days": 4
-    },
-    "badge": "🧥 Ropa",
-    "brand": "Sin marca",
-    "sku": "CAM075",
-    "features": [
-      "Mantiene el calor",
-      "Material suave",
-      "Resistente al agua",
-      "Perfecto para el frío"
+      "Tecnología térmica",
+      "Mantiene el calor corporal",
+      "Resistente al agua y viento",
+      "Perfecto para el frío extremo"
     ]
   },
   {
     "id": "prod_544",
-    "name": "CAMPERITA LOVE TALLE 1",
+    "name": "Camperita Love",
     "category": "ropa",
     "subcategory": "Ropa",
-    "price": 7913.5,
-    "originalPrice": null,
+    "hasVariants": true,
+    "basePrice": 7913.5,
+    "baseOriginalPrice": null,
     "discount": null,
-    "stock": 10,
-    "rating": 4.8,
-    "reviews": 10,
+    "stock": 80,
+    "rating": 4.2,
+    "reviews": 209,
     "featured": false,
     "topDiscount": false,
     "hasVideo": false,
@@ -17203,10 +16770,198 @@
       "ropa",
       "invierno",
       "abrigo",
-      "calor"
+      "calor",
+      "amor"
     ],
-    "description": "T-1 => LARGO = 24 cm   ANCHO = 40 cm",
-    "longDescription": "T-1 => LARGO = 24 cm   ANCHO = 40 cm",
+    "description": "Camperita Love para mascotas. Diseño tierno y abrigado con estampado de corazones.",
+    "longDescription": "Camperita Love para mascotas. Descripción: Camperita de alta calidad con diseño tierno y romántico. Perfecta para mantener a tu mascota abrigada durante el invierno con un estilo adorable. Material suave y cómodo que proporciona calidez y protección contra el frío. Características: Diseño con corazones. Mantiene el calor. Material suave y cómodo. Resistente al agua. Perfecto para el frío.",
+    "variants": {
+      "attributes": [
+        {
+          "id": "talle",
+          "name": "Talle",
+          "type": "size"
+        }
+      ],
+      "combinations": [
+        {
+          "id": "var_544_1",
+          "attributes": {
+            "Talle": "1"
+          },
+          "price": 7913.5,
+          "originalPrice": null,
+          "stock": 10,
+          "sku": "CAM076-1",
+          "available": true,
+          "specs": {
+            "Largo": "24 cm",
+            "Ancho": "40 cm"
+          },
+          "images": {
+            "cover": "assets/images/products/prod_544/cover.jpg",
+            "thumb": "assets/images/products/prod_544/thumb.jpg",
+            "gallery": [
+              "assets/images/products/prod_544/1.jpg"
+            ]
+          }
+        },
+        {
+          "id": "var_544_2",
+          "attributes": {
+            "Talle": "2"
+          },
+          "price": 7913.5,
+          "originalPrice": null,
+          "stock": 10,
+          "sku": "CAM076-2",
+          "available": true,
+          "specs": {
+            "Largo": "26 cm",
+            "Ancho": "44 cm"
+          },
+          "images": {
+            "cover": "assets/images/products/prod_545/cover.jpg",
+            "thumb": "assets/images/products/prod_545/thumb.jpg",
+            "gallery": [
+              "assets/images/products/prod_545/1.jpg"
+            ]
+          }
+        },
+        {
+          "id": "var_544_3",
+          "attributes": {
+            "Talle": "3"
+          },
+          "price": 9044,
+          "originalPrice": null,
+          "stock": 10,
+          "sku": "CAM076-3",
+          "available": true,
+          "specs": {
+            "Largo": "28 cm",
+            "Ancho": "46 cm"
+          },
+          "images": {
+            "cover": "assets/images/products/prod_546/cover.jpg",
+            "thumb": "assets/images/products/prod_546/thumb.jpg",
+            "gallery": [
+              "assets/images/products/prod_546/1.jpg"
+            ]
+          }
+        },
+        {
+          "id": "var_544_4",
+          "attributes": {
+            "Talle": "4"
+          },
+          "price": 9044,
+          "originalPrice": null,
+          "stock": 10,
+          "sku": "CAM076-4",
+          "available": true,
+          "specs": {
+            "Largo": "34 cm",
+            "Ancho": "52 cm"
+          },
+          "images": {
+            "cover": "assets/images/products/prod_547/cover.jpg",
+            "thumb": "assets/images/products/prod_547/thumb.jpg",
+            "gallery": [
+              "assets/images/products/prod_547/1.jpg"
+            ]
+          }
+        },
+        {
+          "id": "var_544_5",
+          "attributes": {
+            "Talle": "5"
+          },
+          "price": 10174.5,
+          "originalPrice": null,
+          "stock": 10,
+          "sku": "CAM076-5",
+          "available": true,
+          "specs": {
+            "Largo": "37 cm",
+            "Ancho": "56 cm"
+          },
+          "images": {
+            "cover": "assets/images/products/prod_548/cover.jpg",
+            "thumb": "assets/images/products/prod_548/thumb.jpg",
+            "gallery": [
+              "assets/images/products/prod_548/1.jpg"
+            ]
+          }
+        },
+        {
+          "id": "var_544_6",
+          "attributes": {
+            "Talle": "6"
+          },
+          "price": 10174.5,
+          "originalPrice": null,
+          "stock": 10,
+          "sku": "CAM076-6",
+          "available": true,
+          "specs": {
+            "Largo": "40 cm",
+            "Ancho": "62 cm"
+          },
+          "images": {
+            "cover": "assets/images/products/prod_549/cover.jpg",
+            "thumb": "assets/images/products/prod_549/thumb.jpg",
+            "gallery": [
+              "assets/images/products/prod_549/1.jpg"
+            ]
+          }
+        },
+        {
+          "id": "var_544_7",
+          "attributes": {
+            "Talle": "7"
+          },
+          "price": 10174.5,
+          "originalPrice": null,
+          "stock": 10,
+          "sku": "CAM076-7",
+          "available": true,
+          "specs": {
+            "Largo": "45 cm",
+            "Ancho": "68 cm"
+          },
+          "images": {
+            "cover": "assets/images/products/prod_550/cover.jpg",
+            "thumb": "assets/images/products/prod_550/thumb.jpg",
+            "gallery": [
+              "assets/images/products/prod_550/1.jpg"
+            ]
+          }
+        },
+        {
+          "id": "var_544_8",
+          "attributes": {
+            "Talle": "8"
+          },
+          "price": 10174.5,
+          "originalPrice": null,
+          "stock": 10,
+          "sku": "CAM076-8",
+          "available": true,
+          "specs": {
+            "Largo": "48 cm",
+            "Ancho": "72 cm"
+          },
+          "images": {
+            "cover": "assets/images/products/prod_551/cover.jpg",
+            "thumb": "assets/images/products/prod_551/thumb.jpg",
+            "gallery": [
+              "assets/images/products/prod_551/1.jpg"
+            ]
+          }
+        }
+      ]
+    },
     "images": {
       "cover": "assets/images/products/prod_544/cover.jpg",
       "thumb": "assets/images/products/prod_544/thumb.jpg",
@@ -17225,366 +16980,24 @@
     "brand": "Sin marca",
     "sku": "CAM076",
     "features": [
+      "Diseño con corazones",
       "Mantiene el calor",
-      "Material suave",
-      "Resistente al agua",
-      "Perfecto para el frío"
-    ]
-  },
-  {
-    "id": "prod_545",
-    "name": "CAMPERITA LOVE TALLE 2",
-    "category": "ropa",
-    "subcategory": "Ropa",
-    "price": 7913.5,
-    "originalPrice": null,
-    "discount": null,
-    "stock": 10,
-    "rating": 3.8,
-    "reviews": 14,
-    "featured": false,
-    "topDiscount": false,
-    "hasVideo": false,
-    "tags": [
-      "camperita",
-      "love",
-      "talle",
-      "ropa",
-      "invierno",
-      "abrigo",
-      "calor"
-    ],
-    "description": "T-2 => LARGO = 26 cm   ANCHO = 44 cm",
-    "longDescription": "T-2 => LARGO = 26 cm   ANCHO = 44 cm",
-    "images": {
-      "cover": "assets/images/products/prod_545/cover.jpg",
-      "thumb": "assets/images/products/prod_545/thumb.jpg",
-      "gallery": [
-        "assets/images/products/prod_545/1.jpg"
-      ]
-    },
-    "specs": {
-      "SKU": "CAM077"
-    },
-    "shipping": {
-      "free": false,
-      "days": 2
-    },
-    "badge": "🧥 Ropa",
-    "brand": "Sin marca",
-    "sku": "CAM077",
-    "features": [
-      "Mantiene el calor",
-      "Material suave",
-      "Resistente al agua",
-      "Perfecto para el frío"
-    ]
-  },
-  {
-    "id": "prod_546",
-    "name": "CAMPERITA LOVE TALLE 3",
-    "category": "ropa",
-    "subcategory": "Ropa",
-    "price": 9044,
-    "originalPrice": null,
-    "discount": null,
-    "stock": 10,
-    "rating": 4.7,
-    "reviews": 43,
-    "featured": false,
-    "topDiscount": false,
-    "hasVideo": false,
-    "tags": [
-      "camperita",
-      "love",
-      "talle",
-      "ropa",
-      "invierno",
-      "abrigo",
-      "calor"
-    ],
-    "description": "T-3 => LARGO = 28 cm   ANCHO = 46 cm",
-    "longDescription": "T-3 => LARGO = 28 cm   ANCHO = 46 cm",
-    "images": {
-      "cover": "assets/images/products/prod_546/cover.jpg",
-      "thumb": "assets/images/products/prod_546/thumb.jpg",
-      "gallery": [
-        "assets/images/products/prod_546/1.jpg"
-      ]
-    },
-    "specs": {
-      "SKU": "CAM078"
-    },
-    "shipping": {
-      "free": false,
-      "days": 2
-    },
-    "badge": "🧥 Ropa",
-    "brand": "Sin marca",
-    "sku": "CAM078",
-    "features": [
-      "Mantiene el calor",
-      "Material suave",
-      "Resistente al agua",
-      "Perfecto para el frío"
-    ]
-  },
-  {
-    "id": "prod_547",
-    "name": "CAMPERITA LOVE TALLE 4",
-    "category": "ropa",
-    "subcategory": "Ropa",
-    "price": 9044,
-    "originalPrice": null,
-    "discount": null,
-    "stock": 10,
-    "rating": 3.5,
-    "reviews": 39,
-    "featured": false,
-    "topDiscount": false,
-    "hasVideo": false,
-    "tags": [
-      "camperita",
-      "love",
-      "talle",
-      "ropa",
-      "invierno",
-      "abrigo",
-      "calor"
-    ],
-    "description": "T-4 => LARGO = 34 cm   ANCHO = 52 cm",
-    "longDescription": "T-4 => LARGO = 34 cm   ANCHO = 52 cm",
-    "images": {
-      "cover": "assets/images/products/prod_547/cover.jpg",
-      "thumb": "assets/images/products/prod_547/thumb.jpg",
-      "gallery": [
-        "assets/images/products/prod_547/1.jpg"
-      ]
-    },
-    "specs": {
-      "SKU": "CAM079"
-    },
-    "shipping": {
-      "free": false,
-      "days": 2
-    },
-    "badge": "🧥 Ropa",
-    "brand": "Sin marca",
-    "sku": "CAM079",
-    "features": [
-      "Mantiene el calor",
-      "Material suave",
-      "Resistente al agua",
-      "Perfecto para el frío"
-    ]
-  },
-  {
-    "id": "prod_548",
-    "name": "CAMPERITA LOVE TALLE 5",
-    "category": "ropa",
-    "subcategory": "Ropa",
-    "price": 10174.5,
-    "originalPrice": null,
-    "discount": null,
-    "stock": 10,
-    "rating": 3.7,
-    "reviews": 8,
-    "featured": false,
-    "topDiscount": false,
-    "hasVideo": false,
-    "tags": [
-      "camperita",
-      "love",
-      "talle",
-      "ropa",
-      "invierno",
-      "abrigo",
-      "calor"
-    ],
-    "description": "T-5 => LARGO = 37 cm   ANCHO = 56 cm",
-    "longDescription": "T-5 => LARGO = 37 cm   ANCHO = 56 cm",
-    "images": {
-      "cover": "assets/images/products/prod_548/cover.jpg",
-      "thumb": "assets/images/products/prod_548/thumb.jpg",
-      "gallery": [
-        "assets/images/products/prod_548/1.jpg"
-      ]
-    },
-    "specs": {
-      "SKU": "CAM080"
-    },
-    "shipping": {
-      "free": false,
-      "days": 4
-    },
-    "badge": "🧥 Ropa",
-    "brand": "Sin marca",
-    "sku": "CAM080",
-    "features": [
-      "Mantiene el calor",
-      "Material suave",
-      "Resistente al agua",
-      "Perfecto para el frío"
-    ]
-  },
-  {
-    "id": "prod_549",
-    "name": "CAMPERITA LOVE TALLE 6",
-    "category": "ropa",
-    "subcategory": "Ropa",
-    "price": 10174.5,
-    "originalPrice": null,
-    "discount": null,
-    "stock": 10,
-    "rating": 4.2,
-    "reviews": 49,
-    "featured": false,
-    "topDiscount": false,
-    "hasVideo": false,
-    "tags": [
-      "camperita",
-      "love",
-      "talle",
-      "ropa",
-      "invierno",
-      "abrigo",
-      "calor"
-    ],
-    "description": "T-6 => LARGO = 40 cm   ANCHO = 62 cm",
-    "longDescription": "T-6 => LARGO = 40 cm   ANCHO = 62 cm",
-    "images": {
-      "cover": "assets/images/products/prod_549/cover.jpg",
-      "thumb": "assets/images/products/prod_549/thumb.jpg",
-      "gallery": [
-        "assets/images/products/prod_549/1.jpg"
-      ]
-    },
-    "specs": {
-      "SKU": "CAM081"
-    },
-    "shipping": {
-      "free": false,
-      "days": 2
-    },
-    "badge": "🧥 Ropa",
-    "brand": "Sin marca",
-    "sku": "CAM081",
-    "features": [
-      "Mantiene el calor",
-      "Material suave",
-      "Resistente al agua",
-      "Perfecto para el frío"
-    ]
-  },
-  {
-    "id": "prod_550",
-    "name": "CAMPERITA LOVE TALLE 7",
-    "category": "ropa",
-    "subcategory": "Ropa",
-    "price": 10174.5,
-    "originalPrice": null,
-    "discount": null,
-    "stock": 10,
-    "rating": 4.7,
-    "reviews": 7,
-    "featured": false,
-    "topDiscount": false,
-    "hasVideo": false,
-    "tags": [
-      "camperita",
-      "love",
-      "talle",
-      "ropa",
-      "invierno",
-      "abrigo",
-      "calor"
-    ],
-    "description": "T-7 => LARGO = 45 cm   ANCHO = 68 cm",
-    "longDescription": "T-7 => LARGO = 45 cm   ANCHO = 68 cm",
-    "images": {
-      "cover": "assets/images/products/prod_550/cover.jpg",
-      "thumb": "assets/images/products/prod_550/thumb.jpg",
-      "gallery": [
-        "assets/images/products/prod_550/1.jpg"
-      ]
-    },
-    "specs": {
-      "SKU": "CAM082"
-    },
-    "shipping": {
-      "free": false,
-      "days": 2
-    },
-    "badge": "🧥 Ropa",
-    "brand": "Sin marca",
-    "sku": "CAM082",
-    "features": [
-      "Mantiene el calor",
-      "Material suave",
-      "Resistente al agua",
-      "Perfecto para el frío"
-    ]
-  },
-  {
-    "id": "prod_551",
-    "name": "CAMPERITA LOVE TALLE 8",
-    "category": "ropa",
-    "subcategory": "Ropa",
-    "price": 10174.5,
-    "originalPrice": null,
-    "discount": null,
-    "stock": 10,
-    "rating": 4.8,
-    "reviews": 39,
-    "featured": false,
-    "topDiscount": false,
-    "hasVideo": false,
-    "tags": [
-      "camperita",
-      "love",
-      "talle",
-      "ropa",
-      "invierno",
-      "abrigo",
-      "calor"
-    ],
-    "description": "T-8 => LARGO = 48 cm   ANCHO = 72 cm",
-    "longDescription": "T-8 => LARGO = 48 cm   ANCHO = 72 cm",
-    "images": {
-      "cover": "assets/images/products/prod_551/cover.jpg",
-      "thumb": "assets/images/products/prod_551/thumb.jpg",
-      "gallery": [
-        "assets/images/products/prod_551/1.jpg"
-      ]
-    },
-    "specs": {
-      "SKU": "CAM083"
-    },
-    "shipping": {
-      "free": false,
-      "days": 3
-    },
-    "badge": "🧥 Ropa",
-    "brand": "Sin marca",
-    "sku": "CAM083",
-    "features": [
-      "Mantiene el calor",
-      "Material suave",
-      "Resistente al agua",
-      "Perfecto para el frío"
+      "Material suave y cómodo",
+      "Resistente al agua"
     ]
   },
   {
     "id": "prod_552",
-    "name": "CAMPERA OSITO TALLE 1",
+    "name": "Campera Osito",
     "category": "ropa",
     "subcategory": "Ropa",
-    "price": 11305,
-    "originalPrice": null,
+    "hasVariants": true,
+    "basePrice": 11305,
+    "baseOriginalPrice": null,
     "discount": null,
-    "stock": 10,
-    "rating": 4.2,
-    "reviews": 32,
+    "stock": 70,
+    "rating": 4.1,
+    "reviews": 197,
     "featured": false,
     "topDiscount": false,
     "hasVideo": false,
@@ -17595,10 +17008,176 @@
       "ropa",
       "invierno",
       "abrigo",
-      "calor"
+      "calor",
+      "peluche"
     ],
-    "description": "T-1 => LARGO = 25 cm   ANCHO = 38 cm",
-    "longDescription": "T-1 => LARGO = 25 cm   ANCHO = 38 cm",
+    "description": "Campera Osito para mascotas. Diseño tierno con textura de peluche, ultra abrigada.",
+    "longDescription": "Campera Osito para mascotas. Descripción: Campera de alta calidad con diseño tierno estilo osito de peluche. Perfecta para mantener a tu mascota abrigada durante el invierno con un look adorable. Material suave tipo peluche que proporciona máxima calidez y protección contra el frío. Características: Diseño osito de peluche. Mantiene el calor. Material ultra suave. Resistente al agua. Perfecto para el frío extremo.",
+    "variants": {
+      "attributes": [
+        {
+          "id": "talle",
+          "name": "Talle",
+          "type": "size"
+        }
+      ],
+      "combinations": [
+        {
+          "id": "var_552_1",
+          "attributes": {
+            "Talle": "1"
+          },
+          "price": 11305,
+          "originalPrice": null,
+          "stock": 10,
+          "sku": "CAM084-1",
+          "available": true,
+          "specs": {
+            "Largo": "25 cm",
+            "Ancho": "38 cm"
+          },
+          "images": {
+            "cover": "assets/images/products/prod_552/cover.jpg",
+            "thumb": "assets/images/products/prod_552/thumb.jpg",
+            "gallery": [
+              "assets/images/products/prod_552/1.jpg"
+            ]
+          }
+        },
+        {
+          "id": "var_552_2",
+          "attributes": {
+            "Talle": "2"
+          },
+          "price": 12435.5,
+          "originalPrice": null,
+          "stock": 10,
+          "sku": "CAM084-2",
+          "available": true,
+          "specs": {
+            "Largo": "28 cm",
+            "Ancho": "46 cm"
+          },
+          "images": {
+            "cover": "assets/images/products/prod_553/cover.jpg",
+            "thumb": "assets/images/products/prod_553/thumb.jpg",
+            "gallery": [
+              "assets/images/products/prod_553/1.jpg"
+            ]
+          }
+        },
+        {
+          "id": "var_552_3",
+          "attributes": {
+            "Talle": "3"
+          },
+          "price": 12435.5,
+          "originalPrice": null,
+          "stock": 10,
+          "sku": "CAM084-3",
+          "available": true,
+          "specs": {
+            "Largo": "34 cm",
+            "Ancho": "52 cm"
+          },
+          "images": {
+            "cover": "assets/images/products/prod_554/cover.jpg",
+            "thumb": "assets/images/products/prod_554/thumb.jpg",
+            "gallery": [
+              "assets/images/products/prod_554/1.jpg"
+            ]
+          }
+        },
+        {
+          "id": "var_552_4",
+          "attributes": {
+            "Talle": "4"
+          },
+          "price": 13566,
+          "originalPrice": null,
+          "stock": 10,
+          "sku": "CAM084-4",
+          "available": true,
+          "specs": {
+            "Largo": "38 cm",
+            "Ancho": "56 cm"
+          },
+          "images": {
+            "cover": "assets/images/products/prod_555/cover.jpg",
+            "thumb": "assets/images/products/prod_555/thumb.jpg",
+            "gallery": [
+              "assets/images/products/prod_555/1.jpg"
+            ]
+          }
+        },
+        {
+          "id": "var_552_5",
+          "attributes": {
+            "Talle": "5"
+          },
+          "price": 13566,
+          "originalPrice": null,
+          "stock": 10,
+          "sku": "CAM084-5",
+          "available": true,
+          "specs": {
+            "Largo": "42 cm",
+            "Ancho": "62 cm"
+          },
+          "images": {
+            "cover": "assets/images/products/prod_556/cover.jpg",
+            "thumb": "assets/images/products/prod_556/thumb.jpg",
+            "gallery": [
+              "assets/images/products/prod_556/1.jpg"
+            ]
+          }
+        },
+        {
+          "id": "var_552_6",
+          "attributes": {
+            "Talle": "6"
+          },
+          "price": 15827,
+          "originalPrice": null,
+          "stock": 10,
+          "sku": "CAM084-6",
+          "available": true,
+          "specs": {
+            "Largo": "49 cm",
+            "Ancho": "66 cm"
+          },
+          "images": {
+            "cover": "assets/images/products/prod_557/cover.jpg",
+            "thumb": "assets/images/products/prod_557/thumb.jpg",
+            "gallery": [
+              "assets/images/products/prod_557/1.jpg"
+            ]
+          }
+        },
+        {
+          "id": "var_552_7",
+          "attributes": {
+            "Talle": "7"
+          },
+          "price": 15827,
+          "originalPrice": null,
+          "stock": 10,
+          "sku": "CAM084-7",
+          "available": true,
+          "specs": {
+            "Largo": "55 cm",
+            "Ancho": "72 cm"
+          },
+          "images": {
+            "cover": "assets/images/products/prod_558/cover.jpg",
+            "thumb": "assets/images/products/prod_558/thumb.jpg",
+            "gallery": [
+              "assets/images/products/prod_558/1.jpg"
+            ]
+          }
+        }
+      ]
+    },
     "images": {
       "cover": "assets/images/products/prod_552/cover.jpg",
       "thumb": "assets/images/products/prod_552/thumb.jpg",
@@ -17617,317 +17196,24 @@
     "brand": "Sin marca",
     "sku": "CAM084",
     "features": [
+      "Diseño osito de peluche",
       "Mantiene el calor",
-      "Material suave",
-      "Resistente al agua",
-      "Perfecto para el frío"
-    ]
-  },
-  {
-    "id": "prod_553",
-    "name": "CAMPERA OSITO TALLE 2",
-    "category": "ropa",
-    "subcategory": "Ropa",
-    "price": 12435.5,
-    "originalPrice": null,
-    "discount": null,
-    "stock": 10,
-    "rating": 3.7,
-    "reviews": 5,
-    "featured": false,
-    "topDiscount": false,
-    "hasVideo": false,
-    "tags": [
-      "campera",
-      "osito",
-      "talle",
-      "ropa",
-      "invierno",
-      "abrigo",
-      "calor"
-    ],
-    "description": "T-2 => LARGO = 28 cm   ANCHO = 46 cm",
-    "longDescription": "T-2 => LARGO = 28 cm   ANCHO = 46 cm",
-    "images": {
-      "cover": "assets/images/products/prod_553/cover.jpg",
-      "thumb": "assets/images/products/prod_553/thumb.jpg",
-      "gallery": [
-        "assets/images/products/prod_553/1.jpg"
-      ]
-    },
-    "specs": {
-      "SKU": "CAM085"
-    },
-    "shipping": {
-      "free": false,
-      "days": 4
-    },
-    "badge": "🧥 Ropa",
-    "brand": "Sin marca",
-    "sku": "CAM085",
-    "features": [
-      "Mantiene el calor",
-      "Material suave",
-      "Resistente al agua",
-      "Perfecto para el frío"
-    ]
-  },
-  {
-    "id": "prod_554",
-    "name": "CAMPERA OSITO TALLE 3",
-    "category": "ropa",
-    "subcategory": "Ropa",
-    "price": 12435.5,
-    "originalPrice": null,
-    "discount": null,
-    "stock": 10,
-    "rating": 4.3,
-    "reviews": 16,
-    "featured": false,
-    "topDiscount": false,
-    "hasVideo": false,
-    "tags": [
-      "campera",
-      "osito",
-      "talle",
-      "ropa",
-      "invierno",
-      "abrigo",
-      "calor"
-    ],
-    "description": "T-3 => LARGO = 34 cm   ANCHO = 52 cm",
-    "longDescription": "T-3 => LARGO = 34 cm   ANCHO = 52 cm",
-    "images": {
-      "cover": "assets/images/products/prod_554/cover.jpg",
-      "thumb": "assets/images/products/prod_554/thumb.jpg",
-      "gallery": [
-        "assets/images/products/prod_554/1.jpg"
-      ]
-    },
-    "specs": {
-      "SKU": "CAM086"
-    },
-    "shipping": {
-      "free": false,
-      "days": 2
-    },
-    "badge": "🧥 Ropa",
-    "brand": "Sin marca",
-    "sku": "CAM086",
-    "features": [
-      "Mantiene el calor",
-      "Material suave",
-      "Resistente al agua",
-      "Perfecto para el frío"
-    ]
-  },
-  {
-    "id": "prod_555",
-    "name": "CAMPERA OSITO TALLE 4",
-    "category": "ropa",
-    "subcategory": "Ropa",
-    "price": 13566,
-    "originalPrice": null,
-    "discount": null,
-    "stock": 10,
-    "rating": 4.5,
-    "reviews": 36,
-    "featured": false,
-    "topDiscount": false,
-    "hasVideo": false,
-    "tags": [
-      "campera",
-      "osito",
-      "talle",
-      "ropa",
-      "invierno",
-      "abrigo",
-      "calor"
-    ],
-    "description": "T-4 => LARGO = 38 cm   ANCHO = 56 cm",
-    "longDescription": "T-4 => LARGO = 38 cm   ANCHO = 56 cm",
-    "images": {
-      "cover": "assets/images/products/prod_555/cover.jpg",
-      "thumb": "assets/images/products/prod_555/thumb.jpg",
-      "gallery": [
-        "assets/images/products/prod_555/1.jpg"
-      ]
-    },
-    "specs": {
-      "SKU": "CAM087"
-    },
-    "shipping": {
-      "free": false,
-      "days": 2
-    },
-    "badge": "🧥 Ropa",
-    "brand": "Sin marca",
-    "sku": "CAM087",
-    "features": [
-      "Mantiene el calor",
-      "Material suave",
-      "Resistente al agua",
-      "Perfecto para el frío"
-    ]
-  },
-  {
-    "id": "prod_556",
-    "name": "CAMPERA OSITO TALLE 5",
-    "category": "ropa",
-    "subcategory": "Ropa",
-    "price": 13566,
-    "originalPrice": null,
-    "discount": null,
-    "stock": 10,
-    "rating": 3.9,
-    "reviews": 38,
-    "featured": false,
-    "topDiscount": false,
-    "hasVideo": false,
-    "tags": [
-      "campera",
-      "osito",
-      "talle",
-      "ropa",
-      "invierno",
-      "abrigo",
-      "calor"
-    ],
-    "description": "T-5 => LARGO = 42 cm   ANCHO = 62 cm",
-    "longDescription": "T-5 => LARGO = 42 cm   ANCHO = 62 cm",
-    "images": {
-      "cover": "assets/images/products/prod_556/cover.jpg",
-      "thumb": "assets/images/products/prod_556/thumb.jpg",
-      "gallery": [
-        "assets/images/products/prod_556/1.jpg"
-      ]
-    },
-    "specs": {
-      "SKU": "CAM088"
-    },
-    "shipping": {
-      "free": false,
-      "days": 2
-    },
-    "badge": "🧥 Ropa",
-    "brand": "Sin marca",
-    "sku": "CAM088",
-    "features": [
-      "Mantiene el calor",
-      "Material suave",
-      "Resistente al agua",
-      "Perfecto para el frío"
-    ]
-  },
-  {
-    "id": "prod_557",
-    "name": "CAMPERA OSITO TALLE 6",
-    "category": "ropa",
-    "subcategory": "Ropa",
-    "price": 15827,
-    "originalPrice": null,
-    "discount": null,
-    "stock": 10,
-    "rating": 4.6,
-    "reviews": 37,
-    "featured": false,
-    "topDiscount": false,
-    "hasVideo": false,
-    "tags": [
-      "campera",
-      "osito",
-      "talle",
-      "ropa",
-      "invierno",
-      "abrigo",
-      "calor"
-    ],
-    "description": "T-6 => LARGO = 49 cm   ANCHO = 66 cm",
-    "longDescription": "T-6 => LARGO = 49 cm   ANCHO = 66 cm",
-    "images": {
-      "cover": "assets/images/products/prod_557/cover.jpg",
-      "thumb": "assets/images/products/prod_557/thumb.jpg",
-      "gallery": [
-        "assets/images/products/prod_557/1.jpg"
-      ]
-    },
-    "specs": {
-      "SKU": "CAM089"
-    },
-    "shipping": {
-      "free": true,
-      "days": 4
-    },
-    "badge": "🧥 Ropa",
-    "brand": "Sin marca",
-    "sku": "CAM089",
-    "features": [
-      "Mantiene el calor",
-      "Material suave",
-      "Resistente al agua",
-      "Perfecto para el frío"
-    ]
-  },
-  {
-    "id": "prod_558",
-    "name": "CAMPERA OSITO TALLE 7",
-    "category": "ropa",
-    "subcategory": "Ropa",
-    "price": 15827,
-    "originalPrice": null,
-    "discount": null,
-    "stock": 10,
-    "rating": 3.6,
-    "reviews": 33,
-    "featured": false,
-    "topDiscount": false,
-    "hasVideo": false,
-    "tags": [
-      "campera",
-      "osito",
-      "talle",
-      "ropa",
-      "invierno",
-      "abrigo",
-      "calor"
-    ],
-    "description": "T-7 => LARGO = 55 cm   ANCHO = 72 cm",
-    "longDescription": "T-7 => LARGO = 55 cm   ANCHO = 72 cm",
-    "images": {
-      "cover": "assets/images/products/prod_558/cover.jpg",
-      "thumb": "assets/images/products/prod_558/thumb.jpg",
-      "gallery": [
-        "assets/images/products/prod_558/1.jpg"
-      ]
-    },
-    "specs": {
-      "SKU": "CAM090"
-    },
-    "shipping": {
-      "free": true,
-      "days": 3
-    },
-    "badge": "🧥 Ropa",
-    "brand": "Sin marca",
-    "sku": "CAM090",
-    "features": [
-      "Mantiene el calor",
-      "Material suave",
-      "Resistente al agua",
-      "Perfecto para el frío"
+      "Material ultra suave",
+      "Resistente al agua"
     ]
   },
   {
     "id": "prod_559",
-    "name": "VESTIDO FANTASIA TALLE 1",
+    "name": "Vestido Fantasía",
     "category": "ropa",
     "subcategory": "Ropa",
-    "price": 5652.5,
-    "originalPrice": null,
+    "hasVariants": true,
+    "basePrice": 5652.5,
+    "baseOriginalPrice": null,
     "discount": null,
-    "stock": 10,
-    "rating": 4.4,
-    "reviews": 49,
+    "stock": 70,
+    "rating": 4,
+    "reviews": 195,
     "featured": false,
     "topDiscount": false,
     "hasVideo": false,
@@ -17936,12 +17222,177 @@
       "fantasia",
       "talle",
       "ropa",
-      "invierno",
-      "abrigo",
-      "calor"
+      "elegante",
+      "fiesta",
+      "especial"
     ],
-    "description": "T-1 => LARGO = 22 cm   ANCHO = 22 cm",
-    "longDescription": "T-1 => LARGO = 22 cm   ANCHO = 22 cm",
+    "description": "Vestido Fantasía para mascotas. Diseño elegante y mágico para ocasiones especiales.",
+    "longDescription": "Vestido Fantasía para mascotas. Descripción: Vestido de alta calidad con diseño de fantasía. Perfecto para que tu mascota luzca elegante en fiestas, eventos especiales y sesiones de fotos. Material suave y cómodo que permite libertad de movimiento. Características: Diseño de fantasía elegante. Material suave y cómodo. Fácil de poner. Ideal para ocasiones especiales. Perfecto para fotos.",
+    "variants": {
+      "attributes": [
+        {
+          "id": "talle",
+          "name": "Talle",
+          "type": "size"
+        }
+      ],
+      "combinations": [
+        {
+          "id": "var_559_1",
+          "attributes": {
+            "Talle": "1"
+          },
+          "price": 5652.5,
+          "originalPrice": null,
+          "stock": 10,
+          "sku": "VES022-1",
+          "available": true,
+          "specs": {
+            "Largo": "22 cm",
+            "Ancho": "22 cm"
+          },
+          "images": {
+            "cover": "assets/images/products/prod_559/cover.jpg",
+            "thumb": "assets/images/products/prod_559/thumb.jpg",
+            "gallery": [
+              "assets/images/products/prod_559/1.jpg"
+            ]
+          }
+        },
+        {
+          "id": "var_559_2",
+          "attributes": {
+            "Talle": "2"
+          },
+          "price": 5652.5,
+          "originalPrice": null,
+          "stock": 10,
+          "sku": "VES022-2",
+          "available": true,
+          "specs": {
+            "Largo": "27 cm",
+            "Ancho": "24 cm"
+          },
+          "images": {
+            "cover": "assets/images/products/prod_560/cover.jpg",
+            "thumb": "assets/images/products/prod_560/thumb.jpg",
+            "gallery": [
+              "assets/images/products/prod_560/1.jpg"
+            ]
+          }
+        },
+        {
+          "id": "var_559_3",
+          "attributes": {
+            "Talle": "3"
+          },
+          "price": 6217.75,
+          "originalPrice": null,
+          "stock": 10,
+          "sku": "VES022-3",
+          "available": true,
+          "specs": {
+            "Largo": "32 cm",
+            "Ancho": "32 cm"
+          },
+          "images": {
+            "cover": "assets/images/products/prod_561/cover.jpg",
+            "thumb": "assets/images/products/prod_561/thumb.jpg",
+            "gallery": [
+              "assets/images/products/prod_561/1.jpg"
+            ]
+          }
+        },
+        {
+          "id": "var_559_4",
+          "attributes": {
+            "Talle": "4"
+          },
+          "price": 6217.75,
+          "originalPrice": null,
+          "stock": 10,
+          "sku": "VES022-4",
+          "available": true,
+          "specs": {
+            "Largo": "38 cm",
+            "Ancho": "34 cm"
+          },
+          "images": {
+            "cover": "assets/images/products/prod_562/cover.jpg",
+            "thumb": "assets/images/products/prod_562/thumb.jpg",
+            "gallery": [
+              "assets/images/products/prod_562/1.jpg"
+            ]
+          }
+        },
+        {
+          "id": "var_559_5",
+          "attributes": {
+            "Talle": "5"
+          },
+          "price": 7348.25,
+          "originalPrice": null,
+          "stock": 10,
+          "sku": "VES022-5",
+          "available": true,
+          "specs": {
+            "Largo": "44 cm",
+            "Ancho": "36 cm"
+          },
+          "images": {
+            "cover": "assets/images/products/prod_563/cover.jpg",
+            "thumb": "assets/images/products/prod_563/thumb.jpg",
+            "gallery": [
+              "assets/images/products/prod_563/1.jpg"
+            ]
+          }
+        },
+        {
+          "id": "var_559_6",
+          "attributes": {
+            "Talle": "6"
+          },
+          "price": 7348.25,
+          "originalPrice": null,
+          "stock": 10,
+          "sku": "VES022-6",
+          "available": true,
+          "specs": {
+            "Largo": "47 cm",
+            "Ancho": "44 cm"
+          },
+          "images": {
+            "cover": "assets/images/products/prod_564/cover.jpg",
+            "thumb": "assets/images/products/prod_564/thumb.jpg",
+            "gallery": [
+              "assets/images/products/prod_564/1.jpg"
+            ]
+          }
+        },
+        {
+          "id": "var_559_7",
+          "attributes": {
+            "Talle": "7"
+          },
+          "price": 7348.25,
+          "originalPrice": null,
+          "stock": 10,
+          "sku": "VES022-7",
+          "available": true,
+          "specs": {
+            "Largo": "54 cm",
+            "Ancho": "46 cm"
+          },
+          "images": {
+            "cover": "assets/images/products/prod_565/cover.jpg",
+            "thumb": "assets/images/products/prod_565/thumb.jpg",
+            "gallery": [
+              "assets/images/products/prod_565/1.jpg"
+            ]
+          }
+        }
+      ]
+    },
     "images": {
       "cover": "assets/images/products/prod_559/cover.jpg",
       "thumb": "assets/images/products/prod_559/thumb.jpg",
@@ -17956,322 +17407,28 @@
       "free": false,
       "days": 3
     },
-    "badge": "🧥 Ropa",
+    "badge": "👗 Vestido",
     "brand": "Sin marca",
     "sku": "VES022",
     "features": [
-      "Mantiene el calor",
-      "Material suave",
-      "Resistente al agua",
-      "Perfecto para el frío"
-    ]
-  },
-  {
-    "id": "prod_560",
-    "name": "VESTIDO FANTASIA TALLE 2",
-    "category": "ropa",
-    "subcategory": "Ropa",
-    "price": 5652.5,
-    "originalPrice": null,
-    "discount": null,
-    "stock": 10,
-    "rating": 3.9,
-    "reviews": 20,
-    "featured": false,
-    "topDiscount": false,
-    "hasVideo": false,
-    "tags": [
-      "vestido",
-      "fantasia",
-      "talle",
-      "ropa",
-      "invierno",
-      "abrigo",
-      "calor"
-    ],
-    "description": "T-2 => LARGO = 27 cm   ANCHO = 24 cm",
-    "longDescription": "T-2 => LARGO = 27 cm   ANCHO = 24 cm",
-    "images": {
-      "cover": "assets/images/products/prod_560/cover.jpg",
-      "thumb": "assets/images/products/prod_560/thumb.jpg",
-      "gallery": [
-        "assets/images/products/prod_560/1.jpg"
-      ]
-    },
-    "specs": {
-      "SKU": "VES023"
-    },
-    "shipping": {
-      "free": false,
-      "days": 4
-    },
-    "badge": "🧥 Ropa",
-    "brand": "Sin marca",
-    "sku": "VES023",
-    "features": [
-      "Mantiene el calor",
-      "Material suave",
-      "Resistente al agua",
-      "Perfecto para el frío"
-    ]
-  },
-  {
-    "id": "prod_561",
-    "name": "VESTIDO FANTASIA TALLE 3",
-    "category": "ropa",
-    "subcategory": "Ropa",
-    "price": 6217.75,
-    "originalPrice": null,
-    "discount": null,
-    "stock": 10,
-    "rating": 4,
-    "reviews": 20,
-    "featured": false,
-    "topDiscount": false,
-    "hasVideo": false,
-    "tags": [
-      "vestido",
-      "fantasia",
-      "talle",
-      "ropa",
-      "invierno",
-      "abrigo",
-      "calor"
-    ],
-    "description": "T-3 => LARGO = 32 cm   ANCHO = 32 cm",
-    "longDescription": "T-3 => LARGO = 32 cm   ANCHO = 32 cm",
-    "images": {
-      "cover": "assets/images/products/prod_561/cover.jpg",
-      "thumb": "assets/images/products/prod_561/thumb.jpg",
-      "gallery": [
-        "assets/images/products/prod_561/1.jpg"
-      ]
-    },
-    "specs": {
-      "SKU": "VES024"
-    },
-    "shipping": {
-      "free": false,
-      "days": 2
-    },
-    "badge": "🧥 Ropa",
-    "brand": "Sin marca",
-    "sku": "VES024",
-    "features": [
-      "Mantiene el calor",
-      "Material suave",
-      "Resistente al agua",
-      "Perfecto para el frío"
-    ]
-  },
-  {
-    "id": "prod_562",
-    "name": "VESTIDO FANTASIA TALLE 4",
-    "category": "ropa",
-    "subcategory": "Ropa",
-    "price": 6217.75,
-    "originalPrice": null,
-    "discount": null,
-    "stock": 10,
-    "rating": 3.5,
-    "reviews": 9,
-    "featured": false,
-    "topDiscount": false,
-    "hasVideo": false,
-    "tags": [
-      "vestido",
-      "fantasia",
-      "talle",
-      "ropa",
-      "invierno",
-      "abrigo",
-      "calor"
-    ],
-    "description": "T-4 => LARGO = 38 cm   ANCHO = 34 cm",
-    "longDescription": "T-4 => LARGO = 38 cm   ANCHO = 34 cm",
-    "images": {
-      "cover": "assets/images/products/prod_562/cover.jpg",
-      "thumb": "assets/images/products/prod_562/thumb.jpg",
-      "gallery": [
-        "assets/images/products/prod_562/1.jpg"
-      ]
-    },
-    "specs": {
-      "SKU": "VES025"
-    },
-    "shipping": {
-      "free": false,
-      "days": 2
-    },
-    "badge": "🧥 Ropa",
-    "brand": "Sin marca",
-    "sku": "VES025",
-    "features": [
-      "Mantiene el calor",
-      "Material suave",
-      "Resistente al agua",
-      "Perfecto para el frío"
-    ]
-  },
-  {
-    "id": "prod_563",
-    "name": "VESTIDO FANTASIA TALLE 5",
-    "category": "ropa",
-    "subcategory": "Ropa",
-    "price": 7348.25,
-    "originalPrice": null,
-    "discount": null,
-    "stock": 10,
-    "rating": 3.5,
-    "reviews": 35,
-    "featured": false,
-    "topDiscount": false,
-    "hasVideo": false,
-    "tags": [
-      "vestido",
-      "fantasia",
-      "talle",
-      "ropa",
-      "invierno",
-      "abrigo",
-      "calor"
-    ],
-    "description": "T-5 => LARGO = 44 cm   ANCHO = 36 cm",
-    "longDescription": "T-5 => LARGO = 44 cm   ANCHO = 36 cm",
-    "images": {
-      "cover": "assets/images/products/prod_563/cover.jpg",
-      "thumb": "assets/images/products/prod_563/thumb.jpg",
-      "gallery": [
-        "assets/images/products/prod_563/1.jpg"
-      ]
-    },
-    "specs": {
-      "SKU": "VES026"
-    },
-    "shipping": {
-      "free": false,
-      "days": 4
-    },
-    "badge": "🧥 Ropa",
-    "brand": "Sin marca",
-    "sku": "VES026",
-    "features": [
-      "Mantiene el calor",
-      "Material suave",
-      "Resistente al agua",
-      "Perfecto para el frío"
-    ]
-  },
-  {
-    "id": "prod_564",
-    "name": "VESTIDO FANTASIA TALLE 6",
-    "category": "ropa",
-    "subcategory": "Ropa",
-    "price": 7348.25,
-    "originalPrice": null,
-    "discount": null,
-    "stock": 10,
-    "rating": 3.8,
-    "reviews": 54,
-    "featured": false,
-    "topDiscount": false,
-    "hasVideo": false,
-    "tags": [
-      "vestido",
-      "fantasia",
-      "talle",
-      "ropa",
-      "invierno",
-      "abrigo",
-      "calor"
-    ],
-    "description": "T-6 => LARGO = 47 cm   ANCHO = 44 cm",
-    "longDescription": "T-6 => LARGO = 47 cm   ANCHO = 44 cm",
-    "images": {
-      "cover": "assets/images/products/prod_564/cover.jpg",
-      "thumb": "assets/images/products/prod_564/thumb.jpg",
-      "gallery": [
-        "assets/images/products/prod_564/1.jpg"
-      ]
-    },
-    "specs": {
-      "SKU": "VES027"
-    },
-    "shipping": {
-      "free": false,
-      "days": 4
-    },
-    "badge": "🧥 Ropa",
-    "brand": "Sin marca",
-    "sku": "VES027",
-    "features": [
-      "Mantiene el calor",
-      "Material suave",
-      "Resistente al agua",
-      "Perfecto para el frío"
-    ]
-  },
-  {
-    "id": "prod_565",
-    "name": "VESTIDO FANTASIA TALLE 7  NUEVO",
-    "category": "ropa",
-    "subcategory": "Ropa",
-    "price": 7348.25,
-    "originalPrice": null,
-    "discount": null,
-    "stock": 10,
-    "rating": 4.6,
-    "reviews": 8,
-    "featured": false,
-    "topDiscount": false,
-    "hasVideo": false,
-    "tags": [
-      "vestido",
-      "fantasia",
-      "talle",
-      "nuevo",
-      "ropa",
-      "invierno",
-      "abrigo",
-      "calor"
-    ],
-    "description": "T-7 => LARGO = 54 cm   ANCHO = 46 cm",
-    "longDescription": "T-7 => LARGO = 54 cm   ANCHO = 46 cm",
-    "images": {
-      "cover": "assets/images/products/prod_565/cover.jpg",
-      "thumb": "assets/images/products/prod_565/thumb.jpg",
-      "gallery": [
-        "assets/images/products/prod_565/1.jpg"
-      ]
-    },
-    "specs": {
-      "SKU": "VES028"
-    },
-    "shipping": {
-      "free": false,
-      "days": 2
-    },
-    "badge": "🧥 Ropa",
-    "brand": "Sin marca",
-    "sku": "VES028",
-    "features": [
-      "Mantiene el calor",
-      "Material suave",
-      "Resistente al agua",
-      "Perfecto para el frío"
+      "Diseño de fantasía elegante",
+      "Material suave y cómodo",
+      "Fácil de poner",
+      "Ideal para ocasiones especiales"
     ]
   },
   {
     "id": "prod_566",
-    "name": "VESTIDO PRINCE TALLE 1",
+    "name": "Vestido Prince",
     "category": "ropa",
     "subcategory": "Ropa",
-    "price": 5652.5,
-    "originalPrice": null,
+    "hasVariants": true,
+    "basePrice": 5652.5,
+    "baseOriginalPrice": null,
     "discount": null,
-    "stock": 10,
+    "stock": 70,
     "rating": 4,
-    "reviews": 10,
+    "reviews": 162,
     "featured": false,
     "topDiscount": false,
     "hasVideo": false,
@@ -18280,12 +17437,177 @@
       "prince",
       "talle",
       "ropa",
-      "invierno",
-      "abrigo",
-      "calor"
+      "elegante",
+      "fiesta",
+      "especial"
     ],
-    "description": "T-1 => LARGO = 22 cm   ANCHO = 22 cm",
-    "longDescription": "T-1 => LARGO = 22 cm   ANCHO = 22 cm",
+    "description": "Vestido Prince para mascotas. Diseño elegante estilo príncipe para ocasiones especiales.",
+    "longDescription": "Vestido Prince para mascotas. Descripción: Vestido de alta calidad con diseño elegante estilo príncipe. Perfecto para que tu mascota luzca distinguida en fiestas, eventos especiales y sesiones de fotos. Material suave y cómodo que permite libertad de movimiento. Características: Diseño elegante estilo príncipe. Material suave y cómodo. Fácil de poner. Ideal para ocasiones especiales. Perfecto para fotos.",
+    "variants": {
+      "attributes": [
+        {
+          "id": "talle",
+          "name": "Talle",
+          "type": "size"
+        }
+      ],
+      "combinations": [
+        {
+          "id": "var_566_1",
+          "attributes": {
+            "Talle": "1"
+          },
+          "price": 5652.5,
+          "originalPrice": null,
+          "stock": 10,
+          "sku": "VES029-1",
+          "available": true,
+          "specs": {
+            "Largo": "22 cm",
+            "Ancho": "22 cm"
+          },
+          "images": {
+            "cover": "assets/images/products/prod_566/cover.jpg",
+            "thumb": "assets/images/products/prod_566/thumb.jpg",
+            "gallery": [
+              "assets/images/products/prod_566/1.jpg"
+            ]
+          }
+        },
+        {
+          "id": "var_566_2",
+          "attributes": {
+            "Talle": "2"
+          },
+          "price": 5652.5,
+          "originalPrice": null,
+          "stock": 10,
+          "sku": "VES029-2",
+          "available": true,
+          "specs": {
+            "Largo": "27 cm",
+            "Ancho": "24 cm"
+          },
+          "images": {
+            "cover": "assets/images/products/prod_567/cover.jpg",
+            "thumb": "assets/images/products/prod_567/thumb.jpg",
+            "gallery": [
+              "assets/images/products/prod_567/1.jpg"
+            ]
+          }
+        },
+        {
+          "id": "var_566_3",
+          "attributes": {
+            "Talle": "3"
+          },
+          "price": 6217.75,
+          "originalPrice": null,
+          "stock": 10,
+          "sku": "VES029-3",
+          "available": true,
+          "specs": {
+            "Largo": "32 cm",
+            "Ancho": "32 cm"
+          },
+          "images": {
+            "cover": "assets/images/products/prod_568/cover.jpg",
+            "thumb": "assets/images/products/prod_568/thumb.jpg",
+            "gallery": [
+              "assets/images/products/prod_568/1.jpg"
+            ]
+          }
+        },
+        {
+          "id": "var_566_4",
+          "attributes": {
+            "Talle": "4"
+          },
+          "price": 6217.75,
+          "originalPrice": null,
+          "stock": 10,
+          "sku": "VES029-4",
+          "available": true,
+          "specs": {
+            "Largo": "38 cm",
+            "Ancho": "34 cm"
+          },
+          "images": {
+            "cover": "assets/images/products/prod_569/cover.jpg",
+            "thumb": "assets/images/products/prod_569/thumb.jpg",
+            "gallery": [
+              "assets/images/products/prod_569/1.jpg"
+            ]
+          }
+        },
+        {
+          "id": "var_566_5",
+          "attributes": {
+            "Talle": "5"
+          },
+          "price": 7348.25,
+          "originalPrice": null,
+          "stock": 10,
+          "sku": "VES029-5",
+          "available": true,
+          "specs": {
+            "Largo": "44 cm",
+            "Ancho": "36 cm"
+          },
+          "images": {
+            "cover": "assets/images/products/prod_570/cover.jpg",
+            "thumb": "assets/images/products/prod_570/thumb.jpg",
+            "gallery": [
+              "assets/images/products/prod_570/1.jpg"
+            ]
+          }
+        },
+        {
+          "id": "var_566_6",
+          "attributes": {
+            "Talle": "6"
+          },
+          "price": 7348.25,
+          "originalPrice": null,
+          "stock": 10,
+          "sku": "VES029-6",
+          "available": true,
+          "specs": {
+            "Largo": "47 cm",
+            "Ancho": "44 cm"
+          },
+          "images": {
+            "cover": "assets/images/products/prod_571/cover.jpg",
+            "thumb": "assets/images/products/prod_571/thumb.jpg",
+            "gallery": [
+              "assets/images/products/prod_571/1.jpg"
+            ]
+          }
+        },
+        {
+          "id": "var_566_7",
+          "attributes": {
+            "Talle": "7"
+          },
+          "price": 7348.25,
+          "originalPrice": null,
+          "stock": 10,
+          "sku": "VES029-7",
+          "available": true,
+          "specs": {
+            "Largo": "54 cm",
+            "Ancho": "46 cm"
+          },
+          "images": {
+            "cover": "assets/images/products/prod_572/cover.jpg",
+            "thumb": "assets/images/products/prod_572/thumb.jpg",
+            "gallery": [
+              "assets/images/products/prod_572/1.jpg"
+            ]
+          }
+        }
+      ]
+    },
     "images": {
       "cover": "assets/images/products/prod_566/cover.jpg",
       "thumb": "assets/images/products/prod_566/thumb.jpg",
@@ -18300,309 +17622,14 @@
       "free": false,
       "days": 3
     },
-    "badge": "🧥 Ropa",
+    "badge": "👗 Vestido",
     "brand": "Sin marca",
     "sku": "VES029",
     "features": [
-      "Mantiene el calor",
-      "Material suave",
-      "Resistente al agua",
-      "Perfecto para el frío"
-    ]
-  },
-  {
-    "id": "prod_567",
-    "name": "VESTIDO PRINCE TALLE 2",
-    "category": "ropa",
-    "subcategory": "Ropa",
-    "price": 5652.5,
-    "originalPrice": null,
-    "discount": null,
-    "stock": 10,
-    "rating": 3.9,
-    "reviews": 51,
-    "featured": false,
-    "topDiscount": false,
-    "hasVideo": false,
-    "tags": [
-      "vestido",
-      "prince",
-      "talle",
-      "ropa",
-      "invierno",
-      "abrigo",
-      "calor"
-    ],
-    "description": "T-2 => LARGO = 27 cm   ANCHO = 24 cm",
-    "longDescription": "T-2 => LARGO = 27 cm   ANCHO = 24 cm",
-    "images": {
-      "cover": "assets/images/products/prod_567/cover.jpg",
-      "thumb": "assets/images/products/prod_567/thumb.jpg",
-      "gallery": [
-        "assets/images/products/prod_567/1.jpg"
-      ]
-    },
-    "specs": {
-      "SKU": "VES030"
-    },
-    "shipping": {
-      "free": false,
-      "days": 2
-    },
-    "badge": "🧥 Ropa",
-    "brand": "Sin marca",
-    "sku": "VES030",
-    "features": [
-      "Mantiene el calor",
-      "Material suave",
-      "Resistente al agua",
-      "Perfecto para el frío"
-    ]
-  },
-  {
-    "id": "prod_568",
-    "name": "VESTIDO PRINCE TALLE 3",
-    "category": "ropa",
-    "subcategory": "Ropa",
-    "price": 6217.75,
-    "originalPrice": null,
-    "discount": null,
-    "stock": 10,
-    "rating": 3.7,
-    "reviews": 9,
-    "featured": false,
-    "topDiscount": false,
-    "hasVideo": false,
-    "tags": [
-      "vestido",
-      "prince",
-      "talle",
-      "ropa",
-      "invierno",
-      "abrigo",
-      "calor"
-    ],
-    "description": "T-3 => LARGO = 32 cm   ANCHO = 32 cm",
-    "longDescription": "T-3 => LARGO = 32 cm   ANCHO = 32 cm",
-    "images": {
-      "cover": "assets/images/products/prod_568/cover.jpg",
-      "thumb": "assets/images/products/prod_568/thumb.jpg",
-      "gallery": [
-        "assets/images/products/prod_568/1.jpg"
-      ]
-    },
-    "specs": {
-      "SKU": "VES031"
-    },
-    "shipping": {
-      "free": false,
-      "days": 3
-    },
-    "badge": "🧥 Ropa",
-    "brand": "Sin marca",
-    "sku": "VES031",
-    "features": [
-      "Mantiene el calor",
-      "Material suave",
-      "Resistente al agua",
-      "Perfecto para el frío"
-    ]
-  },
-  {
-    "id": "prod_569",
-    "name": "VESTIDO PRINCE TALLE 4",
-    "category": "ropa",
-    "subcategory": "Ropa",
-    "price": 6217.75,
-    "originalPrice": null,
-    "discount": null,
-    "stock": 10,
-    "rating": 3.8,
-    "reviews": 12,
-    "featured": false,
-    "topDiscount": false,
-    "hasVideo": false,
-    "tags": [
-      "vestido",
-      "prince",
-      "talle",
-      "ropa",
-      "invierno",
-      "abrigo",
-      "calor"
-    ],
-    "description": "T-4 => LARGO = 38 cm   ANCHO = 34 cm",
-    "longDescription": "T-4 => LARGO = 38 cm   ANCHO = 34 cm",
-    "images": {
-      "cover": "assets/images/products/prod_569/cover.jpg",
-      "thumb": "assets/images/products/prod_569/thumb.jpg",
-      "gallery": [
-        "assets/images/products/prod_569/1.jpg"
-      ]
-    },
-    "specs": {
-      "SKU": "VES032"
-    },
-    "shipping": {
-      "free": false,
-      "days": 3
-    },
-    "badge": "🧥 Ropa",
-    "brand": "Sin marca",
-    "sku": "VES032",
-    "features": [
-      "Mantiene el calor",
-      "Material suave",
-      "Resistente al agua",
-      "Perfecto para el frío"
-    ]
-  },
-  {
-    "id": "prod_570",
-    "name": "VESTIDO PRINCE TALLE 5",
-    "category": "ropa",
-    "subcategory": "Ropa",
-    "price": 7348.25,
-    "originalPrice": null,
-    "discount": null,
-    "stock": 10,
-    "rating": 4.5,
-    "reviews": 22,
-    "featured": false,
-    "topDiscount": false,
-    "hasVideo": false,
-    "tags": [
-      "vestido",
-      "prince",
-      "talle",
-      "ropa",
-      "invierno",
-      "abrigo",
-      "calor"
-    ],
-    "description": "T-5 => LARGO = 44 cm   ANCHO = 36 cm",
-    "longDescription": "T-5 => LARGO = 44 cm   ANCHO = 36 cm",
-    "images": {
-      "cover": "assets/images/products/prod_570/cover.jpg",
-      "thumb": "assets/images/products/prod_570/thumb.jpg",
-      "gallery": [
-        "assets/images/products/prod_570/1.jpg"
-      ]
-    },
-    "specs": {
-      "SKU": "VES033"
-    },
-    "shipping": {
-      "free": false,
-      "days": 2
-    },
-    "badge": "🧥 Ropa",
-    "brand": "Sin marca",
-    "sku": "VES033",
-    "features": [
-      "Mantiene el calor",
-      "Material suave",
-      "Resistente al agua",
-      "Perfecto para el frío"
-    ]
-  },
-  {
-    "id": "prod_571",
-    "name": "VESTIDO PRINCE TALLE 6",
-    "category": "ropa",
-    "subcategory": "Ropa",
-    "price": 7348.25,
-    "originalPrice": null,
-    "discount": null,
-    "stock": 10,
-    "rating": 3.6,
-    "reviews": 14,
-    "featured": false,
-    "topDiscount": false,
-    "hasVideo": false,
-    "tags": [
-      "vestido",
-      "prince",
-      "talle",
-      "ropa",
-      "invierno",
-      "abrigo",
-      "calor"
-    ],
-    "description": "T-6 => LARGO = 47 cm   ANCHO = 44 cm",
-    "longDescription": "T-6 => LARGO = 47 cm   ANCHO = 44 cm",
-    "images": {
-      "cover": "assets/images/products/prod_571/cover.jpg",
-      "thumb": "assets/images/products/prod_571/thumb.jpg",
-      "gallery": [
-        "assets/images/products/prod_571/1.jpg"
-      ]
-    },
-    "specs": {
-      "SKU": "VES034"
-    },
-    "shipping": {
-      "free": false,
-      "days": 2
-    },
-    "badge": "🧥 Ropa",
-    "brand": "Sin marca",
-    "sku": "VES034",
-    "features": [
-      "Mantiene el calor",
-      "Material suave",
-      "Resistente al agua",
-      "Perfecto para el frío"
-    ]
-  },
-  {
-    "id": "prod_572",
-    "name": "VESTIDO PRINCE TALLE 7   NUEVO",
-    "category": "ropa",
-    "subcategory": "Ropa",
-    "price": 7348.25,
-    "originalPrice": null,
-    "discount": null,
-    "stock": 10,
-    "rating": 4.3,
-    "reviews": 44,
-    "featured": false,
-    "topDiscount": false,
-    "hasVideo": false,
-    "tags": [
-      "vestido",
-      "prince",
-      "talle",
-      "nuevo",
-      "ropa",
-      "invierno",
-      "abrigo",
-      "calor"
-    ],
-    "description": "T-7 => LARGO = 54 cm   ANCHO = 46 cm",
-    "longDescription": "T-7 => LARGO = 54 cm   ANCHO = 46 cm",
-    "images": {
-      "cover": "assets/images/products/prod_572/cover.jpg",
-      "thumb": "assets/images/products/prod_572/thumb.jpg",
-      "gallery": [
-        "assets/images/products/prod_572/1.jpg"
-      ]
-    },
-    "specs": {
-      "SKU": "VES035"
-    },
-    "shipping": {
-      "free": false,
-      "days": 3
-    },
-    "badge": "🧥 Ropa",
-    "brand": "Sin marca",
-    "sku": "VES035",
-    "features": [
-      "Mantiene el calor",
-      "Material suave",
-      "Resistente al agua",
-      "Perfecto para el frío"
+      "Diseño elegante estilo príncipe",
+      "Material suave y cómodo",
+      "Fácil de poner",
+      "Ideal para ocasiones especiales"
     ]
   },
   {
@@ -19399,29 +18426,240 @@
   },
   {
     "id": "prod_589",
-    "name": "BUZO  SOFT  TALLE1",
+    "name": "Buzo Soft",
     "category": "ropa",
     "subcategory": "Ropa",
-    "price": 5652.5,
-    "originalPrice": null,
+    "hasVariants": true,
+    "basePrice": 5652.5,
+    "baseOriginalPrice": null,
     "discount": null,
-    "stock": 10,
+    "stock": 90,
     "rating": 4.3,
-    "reviews": 43,
+    "reviews": 285,
     "featured": false,
     "topDiscount": false,
     "hasVideo": false,
     "tags": [
       "buzo",
       "soft",
-      "talle1",
+      "talle",
       "ropa",
       "invierno",
       "abrigo",
-      "calor"
+      "calor",
+      "suave"
     ],
-    "description": "T-1 => LARGO = 23 cm   ANCHO = 34 cm",
-    "longDescription": "T-1 => LARGO = 23 cm   ANCHO = 34 cm",
+    "description": "Buzo Soft para mascotas. Material ultra suave y abrigado, ideal para los días fríos.",
+    "longDescription": "Buzo Soft para mascotas. Descripción: Buzo de alta calidad con material soft ultra suave. Perfecto para mantener a tu mascota abrigada durante el invierno con máximo confort. Material suave al tacto que proporciona calidez y protección contra el frío. Características: Mantiene el calor. Material soft ultra suave. Resistente al agua. Perfecto para el frío. Fácil de poner y quitar.",
+    "variants": {
+      "attributes": [
+        {
+          "id": "talle",
+          "name": "Talle",
+          "type": "size"
+        }
+      ],
+      "combinations": [
+        {
+          "id": "var_589_1",
+          "attributes": {
+            "Talle": "1"
+          },
+          "price": 5652.5,
+          "originalPrice": null,
+          "stock": 10,
+          "sku": "BUZ001-1",
+          "available": true,
+          "specs": {
+            "Largo": "23 cm",
+            "Ancho": "34 cm"
+          },
+          "images": {
+            "cover": "assets/images/products/prod_589/cover.jpg",
+            "thumb": "assets/images/products/prod_589/thumb.jpg",
+            "gallery": [
+              "assets/images/products/prod_589/1.jpg"
+            ]
+          }
+        },
+        {
+          "id": "var_589_2",
+          "attributes": {
+            "Talle": "2"
+          },
+          "price": 5652.5,
+          "originalPrice": null,
+          "stock": 10,
+          "sku": "BUZ001-2",
+          "available": true,
+          "specs": {
+            "Largo": "25 cm",
+            "Ancho": "42 cm"
+          },
+          "images": {
+            "cover": "assets/images/products/prod_590/cover.jpg",
+            "thumb": "assets/images/products/prod_590/thumb.jpg",
+            "gallery": [
+              "assets/images/products/prod_590/1.jpg"
+            ]
+          }
+        },
+        {
+          "id": "var_589_3",
+          "attributes": {
+            "Talle": "3"
+          },
+          "price": 5652.5,
+          "originalPrice": null,
+          "stock": 10,
+          "sku": "BUZ001-3",
+          "available": true,
+          "specs": {
+            "Largo": "28 cm",
+            "Ancho": "41 cm"
+          },
+          "images": {
+            "cover": "assets/images/products/prod_591/cover.jpg",
+            "thumb": "assets/images/products/prod_591/thumb.jpg",
+            "gallery": [
+              "assets/images/products/prod_591/1.jpg"
+            ]
+          }
+        },
+        {
+          "id": "var_589_4",
+          "attributes": {
+            "Talle": "4"
+          },
+          "price": 6217.75,
+          "originalPrice": null,
+          "stock": 10,
+          "sku": "BUZ001-4",
+          "available": true,
+          "specs": {
+            "Largo": "31 cm",
+            "Ancho": "48 cm"
+          },
+          "images": {
+            "cover": "assets/images/products/prod_592/cover.jpg",
+            "thumb": "assets/images/products/prod_592/thumb.jpg",
+            "gallery": [
+              "assets/images/products/prod_592/1.jpg"
+            ]
+          }
+        },
+        {
+          "id": "var_589_5",
+          "attributes": {
+            "Talle": "5"
+          },
+          "price": 6217.75,
+          "originalPrice": null,
+          "stock": 10,
+          "sku": "BUZ001-5",
+          "available": true,
+          "specs": {
+            "Largo": "36 cm",
+            "Ancho": "52 cm"
+          },
+          "images": {
+            "cover": "assets/images/products/prod_593/cover.jpg",
+            "thumb": "assets/images/products/prod_593/thumb.jpg",
+            "gallery": [
+              "assets/images/products/prod_593/1.jpg"
+            ]
+          }
+        },
+        {
+          "id": "var_589_6",
+          "attributes": {
+            "Talle": "6"
+          },
+          "price": 6783,
+          "originalPrice": null,
+          "stock": 10,
+          "sku": "BUZ001-6",
+          "available": true,
+          "specs": {
+            "Largo": "38 cm",
+            "Ancho": "56 cm"
+          },
+          "images": {
+            "cover": "assets/images/products/prod_594/cover.jpg",
+            "thumb": "assets/images/products/prod_594/thumb.jpg",
+            "gallery": [
+              "assets/images/products/prod_594/1.jpg"
+            ]
+          }
+        },
+        {
+          "id": "var_589_7",
+          "attributes": {
+            "Talle": "7"
+          },
+          "price": 6783,
+          "originalPrice": null,
+          "stock": 10,
+          "sku": "BUZ001-7",
+          "available": true,
+          "specs": {
+            "Largo": "41 cm",
+            "Ancho": "60 cm"
+          },
+          "images": {
+            "cover": "assets/images/products/prod_595/cover.jpg",
+            "thumb": "assets/images/products/prod_595/thumb.jpg",
+            "gallery": [
+              "assets/images/products/prod_595/1.jpg"
+            ]
+          }
+        },
+        {
+          "id": "var_589_8",
+          "attributes": {
+            "Talle": "8"
+          },
+          "price": 7348.25,
+          "originalPrice": null,
+          "stock": 10,
+          "sku": "BUZ001-8",
+          "available": true,
+          "specs": {
+            "Largo": "45 cm",
+            "Ancho": "66 cm"
+          },
+          "images": {
+            "cover": "assets/images/products/prod_596/cover.jpg",
+            "thumb": "assets/images/products/prod_596/thumb.jpg",
+            "gallery": [
+              "assets/images/products/prod_596/1.jpg"
+            ]
+          }
+        },
+        {
+          "id": "var_589_9",
+          "attributes": {
+            "Talle": "9"
+          },
+          "price": 7348.25,
+          "originalPrice": null,
+          "stock": 10,
+          "sku": "BUZ001-9",
+          "available": true,
+          "specs": {
+            "Largo": "50 cm",
+            "Ancho": "76 cm"
+          },
+          "images": {
+            "cover": "assets/images/products/prod_597/cover.jpg",
+            "thumb": "assets/images/products/prod_597/thumb.jpg",
+            "gallery": [
+              "assets/images/products/prod_597/1.jpg"
+            ]
+          }
+        }
+      ]
+    },
     "images": {
       "cover": "assets/images/products/prod_589/cover.jpg",
       "thumb": "assets/images/products/prod_589/thumb.jpg",
@@ -19441,399 +18679,7 @@
     "sku": "BUZ001",
     "features": [
       "Mantiene el calor",
-      "Material suave",
-      "Resistente al agua",
-      "Perfecto para el frío"
-    ]
-  },
-  {
-    "id": "prod_590",
-    "name": "BUZO  SOFT  TALLE2",
-    "category": "ropa",
-    "subcategory": "Ropa",
-    "price": 5652.5,
-    "originalPrice": null,
-    "discount": null,
-    "stock": 10,
-    "rating": 4.3,
-    "reviews": 31,
-    "featured": false,
-    "topDiscount": false,
-    "hasVideo": false,
-    "tags": [
-      "buzo",
-      "soft",
-      "talle2",
-      "ropa",
-      "invierno",
-      "abrigo",
-      "calor"
-    ],
-    "description": "T-2 => LARGO = 25 cm   ANCHO = 42 cm",
-    "longDescription": "T-2 => LARGO = 25 cm   ANCHO = 42 cm",
-    "images": {
-      "cover": "assets/images/products/prod_590/cover.jpg",
-      "thumb": "assets/images/products/prod_590/thumb.jpg",
-      "gallery": [
-        "assets/images/products/prod_590/1.jpg"
-      ]
-    },
-    "specs": {
-      "SKU": "BUZ002"
-    },
-    "shipping": {
-      "free": false,
-      "days": 3
-    },
-    "badge": "🧥 Ropa",
-    "brand": "Sin marca",
-    "sku": "BUZ002",
-    "features": [
-      "Mantiene el calor",
-      "Material suave",
-      "Resistente al agua",
-      "Perfecto para el frío"
-    ]
-  },
-  {
-    "id": "prod_591",
-    "name": "BUZO  SOFT  TALLE3",
-    "category": "ropa",
-    "subcategory": "Ropa",
-    "price": 5652.5,
-    "originalPrice": null,
-    "discount": null,
-    "stock": 10,
-    "rating": 4.9,
-    "reviews": 45,
-    "featured": false,
-    "topDiscount": false,
-    "hasVideo": false,
-    "tags": [
-      "buzo",
-      "soft",
-      "talle3",
-      "ropa",
-      "invierno",
-      "abrigo",
-      "calor"
-    ],
-    "description": "T-3 => LARGO = 28 cm   ANCHO = 41 cm",
-    "longDescription": "T-3 => LARGO = 28 cm   ANCHO = 41 cm",
-    "images": {
-      "cover": "assets/images/products/prod_591/cover.jpg",
-      "thumb": "assets/images/products/prod_591/thumb.jpg",
-      "gallery": [
-        "assets/images/products/prod_591/1.jpg"
-      ]
-    },
-    "specs": {
-      "SKU": "BUZ003"
-    },
-    "shipping": {
-      "free": false,
-      "days": 3
-    },
-    "badge": "🧥 Ropa",
-    "brand": "Sin marca",
-    "sku": "BUZ003",
-    "features": [
-      "Mantiene el calor",
-      "Material suave",
-      "Resistente al agua",
-      "Perfecto para el frío"
-    ]
-  },
-  {
-    "id": "prod_592",
-    "name": "BUZO  SOFT  TALLE4",
-    "category": "ropa",
-    "subcategory": "Ropa",
-    "price": 6217.75,
-    "originalPrice": null,
-    "discount": null,
-    "stock": 10,
-    "rating": 3.7,
-    "reviews": 14,
-    "featured": false,
-    "topDiscount": false,
-    "hasVideo": false,
-    "tags": [
-      "buzo",
-      "soft",
-      "talle4",
-      "ropa",
-      "invierno",
-      "abrigo",
-      "calor"
-    ],
-    "description": "T-4 => LARGO = 31 cm   ANCHO = 48 cm",
-    "longDescription": "T-4 => LARGO = 31 cm   ANCHO = 48 cm",
-    "images": {
-      "cover": "assets/images/products/prod_592/cover.jpg",
-      "thumb": "assets/images/products/prod_592/thumb.jpg",
-      "gallery": [
-        "assets/images/products/prod_592/1.jpg"
-      ]
-    },
-    "specs": {
-      "SKU": "BUZ004"
-    },
-    "shipping": {
-      "free": false,
-      "days": 3
-    },
-    "badge": "🧥 Ropa",
-    "brand": "Sin marca",
-    "sku": "BUZ004",
-    "features": [
-      "Mantiene el calor",
-      "Material suave",
-      "Resistente al agua",
-      "Perfecto para el frío"
-    ]
-  },
-  {
-    "id": "prod_593",
-    "name": "BUZO  SOFT  TALLE5",
-    "category": "ropa",
-    "subcategory": "Ropa",
-    "price": 6217.75,
-    "originalPrice": null,
-    "discount": null,
-    "stock": 10,
-    "rating": 4.1,
-    "reviews": 46,
-    "featured": false,
-    "topDiscount": false,
-    "hasVideo": false,
-    "tags": [
-      "buzo",
-      "soft",
-      "talle5",
-      "ropa",
-      "invierno",
-      "abrigo",
-      "calor"
-    ],
-    "description": "T-5 => LARGO = 36 cm   ANCHO = 52 cm",
-    "longDescription": "T-5 => LARGO = 36 cm   ANCHO = 52 cm",
-    "images": {
-      "cover": "assets/images/products/prod_593/cover.jpg",
-      "thumb": "assets/images/products/prod_593/thumb.jpg",
-      "gallery": [
-        "assets/images/products/prod_593/1.jpg"
-      ]
-    },
-    "specs": {
-      "SKU": "BUZ005"
-    },
-    "shipping": {
-      "free": false,
-      "days": 3
-    },
-    "badge": "🧥 Ropa",
-    "brand": "Sin marca",
-    "sku": "BUZ005",
-    "features": [
-      "Mantiene el calor",
-      "Material suave",
-      "Resistente al agua",
-      "Perfecto para el frío"
-    ]
-  },
-  {
-    "id": "prod_594",
-    "name": "BUZO  SOFT  TALLE6",
-    "category": "ropa",
-    "subcategory": "Ropa",
-    "price": 6783,
-    "originalPrice": null,
-    "discount": null,
-    "stock": 10,
-    "rating": 4.2,
-    "reviews": 16,
-    "featured": false,
-    "topDiscount": false,
-    "hasVideo": false,
-    "tags": [
-      "buzo",
-      "soft",
-      "talle6",
-      "ropa",
-      "invierno",
-      "abrigo",
-      "calor"
-    ],
-    "description": "T-6 => LARGO = 38 cm   ANCHO = 56 cm",
-    "longDescription": "T-6 => LARGO = 38 cm   ANCHO = 56 cm",
-    "images": {
-      "cover": "assets/images/products/prod_594/cover.jpg",
-      "thumb": "assets/images/products/prod_594/thumb.jpg",
-      "gallery": [
-        "assets/images/products/prod_594/1.jpg"
-      ]
-    },
-    "specs": {
-      "SKU": "BUZ006"
-    },
-    "shipping": {
-      "free": false,
-      "days": 3
-    },
-    "badge": "🧥 Ropa",
-    "brand": "Sin marca",
-    "sku": "BUZ006",
-    "features": [
-      "Mantiene el calor",
-      "Material suave",
-      "Resistente al agua",
-      "Perfecto para el frío"
-    ]
-  },
-  {
-    "id": "prod_595",
-    "name": "BUZO  SOFT  TALLE7",
-    "category": "ropa",
-    "subcategory": "Ropa",
-    "price": 6783,
-    "originalPrice": null,
-    "discount": null,
-    "stock": 10,
-    "rating": 3.6,
-    "reviews": 44,
-    "featured": false,
-    "topDiscount": false,
-    "hasVideo": false,
-    "tags": [
-      "buzo",
-      "soft",
-      "talle7",
-      "ropa",
-      "invierno",
-      "abrigo",
-      "calor"
-    ],
-    "description": "T-7 => LARGO = 41 cm   ANCHO = 60 cm",
-    "longDescription": "T-7 => LARGO = 41 cm   ANCHO = 60 cm",
-    "images": {
-      "cover": "assets/images/products/prod_595/cover.jpg",
-      "thumb": "assets/images/products/prod_595/thumb.jpg",
-      "gallery": [
-        "assets/images/products/prod_595/1.jpg"
-      ]
-    },
-    "specs": {
-      "SKU": "BUZ007"
-    },
-    "shipping": {
-      "free": false,
-      "days": 2
-    },
-    "badge": "🧥 Ropa",
-    "brand": "Sin marca",
-    "sku": "BUZ007",
-    "features": [
-      "Mantiene el calor",
-      "Material suave",
-      "Resistente al agua",
-      "Perfecto para el frío"
-    ]
-  },
-  {
-    "id": "prod_596",
-    "name": "BUZO  SOFT  TALLE8",
-    "category": "ropa",
-    "subcategory": "Ropa",
-    "price": 7348.25,
-    "originalPrice": null,
-    "discount": null,
-    "stock": 10,
-    "rating": 4.9,
-    "reviews": 39,
-    "featured": false,
-    "topDiscount": false,
-    "hasVideo": false,
-    "tags": [
-      "buzo",
-      "soft",
-      "talle8",
-      "ropa",
-      "invierno",
-      "abrigo",
-      "calor"
-    ],
-    "description": "T-8 => LARGO = 45 cm   ANCHO = 66 cm",
-    "longDescription": "T-8 => LARGO = 45 cm   ANCHO = 66 cm",
-    "images": {
-      "cover": "assets/images/products/prod_596/cover.jpg",
-      "thumb": "assets/images/products/prod_596/thumb.jpg",
-      "gallery": [
-        "assets/images/products/prod_596/1.jpg"
-      ]
-    },
-    "specs": {
-      "SKU": "BUZ008"
-    },
-    "shipping": {
-      "free": false,
-      "days": 3
-    },
-    "badge": "🧥 Ropa",
-    "brand": "Sin marca",
-    "sku": "BUZ008",
-    "features": [
-      "Mantiene el calor",
-      "Material suave",
-      "Resistente al agua",
-      "Perfecto para el frío"
-    ]
-  },
-  {
-    "id": "prod_597",
-    "name": "BUZO  SOFT  TALLE9",
-    "category": "ropa",
-    "subcategory": "Ropa",
-    "price": 7348.25,
-    "originalPrice": null,
-    "discount": null,
-    "stock": 10,
-    "rating": 4.4,
-    "reviews": 7,
-    "featured": false,
-    "topDiscount": false,
-    "hasVideo": false,
-    "tags": [
-      "buzo",
-      "soft",
-      "talle9",
-      "ropa",
-      "invierno",
-      "abrigo",
-      "calor"
-    ],
-    "description": "T-9 => LARGO = 50 cm   ANCHO = 76 cm",
-    "longDescription": "T-9 => LARGO = 50 cm   ANCHO = 76 cm",
-    "images": {
-      "cover": "assets/images/products/prod_597/cover.jpg",
-      "thumb": "assets/images/products/prod_597/thumb.jpg",
-      "gallery": [
-        "assets/images/products/prod_597/1.jpg"
-      ]
-    },
-    "specs": {
-      "SKU": "BUZ009"
-    },
-    "shipping": {
-      "free": false,
-      "days": 2
-    },
-    "badge": "🧥 Ropa",
-    "brand": "Sin marca",
-    "sku": "BUZ009",
-    "features": [
-      "Mantiene el calor",
-      "Material suave",
+      "Material soft ultra suave",
       "Resistente al agua",
       "Perfecto para el frío"
     ]
@@ -29572,14 +28418,14 @@
   },
   {
     "id": "prod_418",
-    "name": "Camisetas Boca, River, Messi",
+    "name": "Camisetas de Fútbol Clubes Argentinos",
     "category": "ropa",
     "subcategory": "Ropa",
     "hasVariants": true,
     "basePrice": 4900,
     "baseOriginalPrice": 7000,
     "discount": 30,
-    "stock": 80,
+    "stock": 90,
     "rating": 4.5,
     "reviews": 49,
     "featured": false,
@@ -29676,6 +28522,28 @@
         },
         {
           "id": "var_418_4",
+          "attributes": {
+            "Talle": "4"
+          },
+          "price": 5880,
+          "originalPrice": 8400,
+          "stock": 10,
+          "sku": "CAM020-4",
+          "available": true,
+          "specs": {
+            "Largo": "39 cm",
+            "Contorno Pecho": "48 cm"
+          },
+          "images": {
+            "cover": "assets/images/products/prod_421/cover.jpg",
+            "thumb": "assets/images/products/prod_421/thumb.jpg",
+            "gallery": [
+              "assets/images/products/prod_421/1.jpg"
+            ]
+          }
+        },
+        {
+          "id": "var_418_5",
           "attributes": {
             "Talle": "5"
           },
