@@ -62,25 +62,50 @@ class Cart {
    * Crear objeto de item del carrito
    */
   static createCartItem(product, quantity, variant) {
-    const price = product.discountPrice || product.price;
-    const originalPrice = product.price;
-
-    // Obtener imagen correcta del producto
-    let image = '';
-    if (product.images) {
-      if (typeof product.images === 'object') {
-        image = product.images.thumb || product.images.main || product.images[0] || '';
-      } else if (Array.isArray(product.images)) {
-        image = product.images[0] || '';
+    // Si tiene variante, usar precio de la variante
+    let price, originalPrice, image;
+    
+    if (variant) {
+      // Producto con variante seleccionada
+      price = variant.price || product.basePrice || product.price;
+      originalPrice = variant.originalPrice || product.baseOriginalPrice || price;
+      
+      // Imagen de la variante o del producto
+      if (variant.images && variant.images.thumb) {
+        image = variant.images.thumb;
+      } else if (variant.images && variant.images.cover) {
+        image = variant.images.cover;
+      } else if (product.images) {
+        image = product.images.thumb || product.images.cover || '';
       }
-    } else if (product.image) {
-      image = product.image;
+    } else {
+      // Producto sin variantes
+      price = product.discountPrice || product.price || product.basePrice;
+      originalPrice = product.originalPrice || product.baseOriginalPrice || price;
+      
+      // Obtener imagen correcta del producto
+      if (product.images) {
+        if (typeof product.images === 'object') {
+          image = product.images.thumb || product.images.cover || product.images.main || '';
+        } else if (Array.isArray(product.images)) {
+          image = product.images[0] || '';
+        }
+      } else if (product.image) {
+        image = product.image;
+      }
+    }
+
+    // Construir nombre con variante si aplica
+    let itemName = product.name;
+    if (variant && variant.attributes) {
+      const variantDesc = Object.values(variant.attributes).join(' / ');
+      itemName = `${product.name} - ${variantDesc}`;
     }
 
     return {
       id: this.generateItemId(product.id, variant),
       productId: product.id,
-      name: product.name,
+      name: itemName,
       price: price,
       originalPrice: originalPrice,
       quantity: quantity,
@@ -89,7 +114,7 @@ class Cart {
         attributes: variant.attributes,
         sku: variant.sku
       } : null,
-      image: image,
+      image: image || '',
       subtotal: price * quantity,
       addedAt: new Date().toISOString()
     };

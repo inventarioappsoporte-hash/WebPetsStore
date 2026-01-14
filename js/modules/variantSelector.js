@@ -199,6 +199,43 @@ class VariantSelector {
     
     // Actualizar botón de compra
     this.updateBuyButton();
+    
+    // Actualizar especificaciones de la variante
+    this.updateVariantSpecs();
+  }
+  
+  updateVariantSpecs() {
+    if (!this.selectedVariant) return;
+    
+    const specsContainer = document.querySelector('.product__specs');
+    if (!specsContainer) return;
+    
+    // Combinar specs del producto base con specs de la variante
+    const baseSpecs = this.product.specs || {};
+    const variantSpecs = this.selectedVariant.specs || {};
+    const combinedSpecs = { ...baseSpecs, ...variantSpecs };
+    
+    // Generar HTML de especificaciones
+    const specsHtml = Object.entries(combinedSpecs)
+      .map(([key, value]) => `
+        <div class="product__spec">
+          <span class="product__spec-label">${this.formatLabel(key)}:</span>
+          <span class="product__spec-value">${Array.isArray(value) ? value.join(', ') : value}</span>
+        </div>
+      `)
+      .join('');
+    
+    specsContainer.innerHTML = `
+      <h3>Especificaciones</h3>
+      ${specsHtml}
+    `;
+  }
+  
+  formatLabel(key) {
+    return key
+      .replace(/([A-Z])/g, ' $1')
+      .replace(/^./, str => str.toUpperCase())
+      .trim();
   }
   
   updateGallery(galleryImages) {

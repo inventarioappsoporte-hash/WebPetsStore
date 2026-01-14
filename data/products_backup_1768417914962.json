@@ -14294,6 +14294,600 @@
     ]
   },
   {
+    "id": "prod_409",
+    "name": "CAMISETA BÁSQUET TALLE 1",
+    "category": "ropa",
+    "subcategory": "Ropa",
+    "price": 4900,
+    "originalPrice": 7000,
+    "discount": 30,
+    "stock": 10,
+    "rating": 4,
+    "reviews": 35,
+    "featured": false,
+    "topDiscount": true,
+    "hasVideo": false,
+    "tags": [
+      "camiseta",
+      "básquet",
+      "talle",
+      "ropa",
+      "verano",
+      "fresco",
+      "ligero"
+    ],
+    "description": "T-1 => LARGO = 30 cm   ANCHO = 34 cm",
+    "longDescription": "T-1 => LARGO = 30 cm   ANCHO = 34 cm",
+    "images": {
+      "cover": "assets/images/products/prod_409/cover.jpg",
+      "thumb": "assets/images/products/prod_409/thumb.jpg",
+      "gallery": [
+        "assets/images/products/prod_409/1.jpg"
+      ]
+    },
+    "specs": {
+      "SKU": "CAM011"
+    },
+    "shipping": {
+      "free": false,
+      "days": 2
+    },
+    "badge": "👕 Ropa",
+    "brand": "Sin marca",
+    "sku": "CAM011",
+    "features": [
+      "Tela transpirable",
+      "Diseño fresco",
+      "Fácil de poner",
+      "Cómodo para el verano"
+    ]
+  },
+  {
+    "id": "prod_410",
+    "name": "CAMISETA BÁSQUET TALLE 2",
+    "category": "ropa",
+    "subcategory": "Ropa",
+    "price": 4900,
+    "originalPrice": 7000,
+    "discount": 30,
+    "stock": 10,
+    "rating": 3.8,
+    "reviews": 15,
+    "featured": false,
+    "topDiscount": true,
+    "hasVideo": false,
+    "tags": [
+      "camiseta",
+      "básquet",
+      "talle",
+      "ropa",
+      "verano",
+      "fresco",
+      "ligero"
+    ],
+    "description": "T-2 => LARGO = 34 cm   ANCHO = 38 cm",
+    "longDescription": "T-2 => LARGO = 34 cm   ANCHO = 38 cm",
+    "images": {
+      "cover": "assets/images/products/prod_410/cover.jpg",
+      "thumb": "assets/images/products/prod_410/thumb.jpg",
+      "gallery": [
+        "assets/images/products/prod_410/1.jpg"
+      ]
+    },
+    "specs": {
+      "SKU": "CAM012"
+    },
+    "shipping": {
+      "free": false,
+      "days": 3
+    },
+    "badge": "👕 Ropa",
+    "brand": "Sin marca",
+    "sku": "CAM012",
+    "features": [
+      "Tela transpirable",
+      "Diseño fresco",
+      "Fácil de poner",
+      "Cómodo para el verano"
+    ]
+  },
+  {
+    "id": "prod_411",
+    "name": "CAMISETA BÁSQUET TALLE 3",
+    "category": "ropa",
+    "subcategory": "Ropa",
+    "price": 4900,
+    "originalPrice": 7000,
+    "discount": 30,
+    "stock": 10,
+    "rating": 3.7,
+    "reviews": 30,
+    "featured": false,
+    "topDiscount": true,
+    "hasVideo": false,
+    "tags": [
+      "camiseta",
+      "básquet",
+      "talle",
+      "ropa",
+      "verano",
+      "fresco",
+      "ligero"
+    ],
+    "description": "T-3 => LARGO = 36 cm   ANCHO = 42 cm",
+    "longDescription": "T-3 => LARGO = 36 cm   ANCHO = 42 cm",
+    "images": {
+      "cover": "assets/images/products/prod_411/cover.jpg",
+      "thumb": "assets/images/products/prod_411/thumb.jpg",
+      "gallery": [
+        "assets/images/products/prod_411/1.jpg"
+      ]
+    },
+    "specs": {
+      "SKU": "CAM013"
+    },
+    "shipping": {
+      "free": false,
+      "days": 3
+    },
+    "badge": "👕 Ropa",
+    "brand": "Sin marca",
+    "sku": "CAM013",
+    "features": [
+      "Tela transpirable",
+      "Diseño fresco",
+      "Fácil de poner",
+      "Cómodo para el verano"
+    ]
+  },
+  {
+    "id": "prod_412",
+    "name": "CAMISETA BÁSQUET TALLE 4",
+    "category": "ropa",
+    "subcategory": "Ropa",
+    "price": 5880,
+    "originalPrice": 8400,
+    "discount": 30,
+    "stock": 10,
+    "rating": 4.2,
+    "reviews": 26,
+    "featured": false,
+    "topDiscount": true,
+    "hasVideo": false,
+    "tags": [
+      "camiseta",
+      "básquet",
+      "talle",
+      "ropa",
+      "verano",
+      "fresco",
+      "ligero"
+    ],
+    "description": "T-4 => LARGO = 39 cm   ANCHO = 48 cm",
+    "longDescription": "T-4 => LARGO = 39 cm   ANCHO = 48 cm",
+    "images": {
+      "cover": "assets/images/products/prod_412/cover.jpg",
+      "thumb": "assets/images/products/prod_412/thumb.jpg",
+      "gallery": [
+        "assets/images/products/prod_412/1.jpg"
+      ]
+    },
+    "specs": {
+      "SKU": "CAM014"
+    },
+    "shipping": {
+      "free": false,
+      "days": 3
+    },
+    "badge": "👕 Ropa",
+    "brand": "Sin marca",
+    "sku": "CAM014",
+    "features": [
+      "Tela transpirable",
+      "Diseño fresco",
+      "Fácil de poner",
+      "Cómodo para el verano"
+    ]
+  },
+  {
+    "id": "prod_413",
+    "name": "CAMISETA BÁSQUET TALLE 5",
+    "category": "ropa",
+    "subcategory": "Ropa",
+    "price": 5880,
+    "originalPrice": 8400,
+    "discount": 30,
+    "stock": 10,
+    "rating": 4.2,
+    "reviews": 24,
+    "featured": false,
+    "topDiscount": true,
+    "hasVideo": false,
+    "tags": [
+      "camiseta",
+      "básquet",
+      "talle",
+      "ropa",
+      "verano",
+      "fresco",
+      "ligero"
+    ],
+    "description": "T-5 => LARGO = 43 cm   ANCHO = 52 cm",
+    "longDescription": "T-5 => LARGO = 43 cm   ANCHO = 52 cm",
+    "images": {
+      "cover": "assets/images/products/prod_413/cover.jpg",
+      "thumb": "assets/images/products/prod_413/thumb.jpg",
+      "gallery": [
+        "assets/images/products/prod_413/1.jpg"
+      ]
+    },
+    "specs": {
+      "SKU": "CAM015"
+    },
+    "shipping": {
+      "free": false,
+      "days": 2
+    },
+    "badge": "👕 Ropa",
+    "brand": "Sin marca",
+    "sku": "CAM015",
+    "features": [
+      "Tela transpirable",
+      "Diseño fresco",
+      "Fácil de poner",
+      "Cómodo para el verano"
+    ]
+  },
+  {
+    "id": "prod_414",
+    "name": "CAMISETA BÁSQUET TALLE 6",
+    "category": "ropa",
+    "subcategory": "Ropa",
+    "price": 5880,
+    "originalPrice": 8400,
+    "discount": 30,
+    "stock": 10,
+    "rating": 4.3,
+    "reviews": 41,
+    "featured": false,
+    "topDiscount": true,
+    "hasVideo": false,
+    "tags": [
+      "camiseta",
+      "básquet",
+      "talle",
+      "ropa",
+      "verano",
+      "fresco",
+      "ligero"
+    ],
+    "description": "T-6 => LARGO = 47 cm   ANCHO = 56 cm",
+    "longDescription": "T-6 => LARGO = 47 cm   ANCHO = 56 cm",
+    "images": {
+      "cover": "assets/images/products/prod_414/cover.jpg",
+      "thumb": "assets/images/products/prod_414/thumb.jpg",
+      "gallery": [
+        "assets/images/products/prod_414/1.jpg"
+      ]
+    },
+    "specs": {
+      "SKU": "CAM016"
+    },
+    "shipping": {
+      "free": false,
+      "days": 2
+    },
+    "badge": "👕 Ropa",
+    "brand": "Sin marca",
+    "sku": "CAM016",
+    "features": [
+      "Tela transpirable",
+      "Diseño fresco",
+      "Fácil de poner",
+      "Cómodo para el verano"
+    ]
+  },
+  {
+    "id": "prod_415",
+    "name": "CAMISETA BÁSQUET TALLE 7",
+    "category": "ropa",
+    "subcategory": "Ropa",
+    "price": 6860,
+    "originalPrice": 9800,
+    "discount": 30,
+    "stock": 10,
+    "rating": 4.8,
+    "reviews": 14,
+    "featured": false,
+    "topDiscount": true,
+    "hasVideo": false,
+    "tags": [
+      "camiseta",
+      "básquet",
+      "talle",
+      "ropa",
+      "verano",
+      "fresco",
+      "ligero"
+    ],
+    "description": "T-7 => LARGO = 51 cm   ANCHO = 58 cm",
+    "longDescription": "T-7 => LARGO = 51 cm   ANCHO = 58 cm",
+    "images": {
+      "cover": "assets/images/products/prod_415/cover.jpg",
+      "thumb": "assets/images/products/prod_415/thumb.jpg",
+      "gallery": [
+        "assets/images/products/prod_415/1.jpg"
+      ]
+    },
+    "specs": {
+      "SKU": "CAM017"
+    },
+    "shipping": {
+      "free": false,
+      "days": 3
+    },
+    "badge": "👕 Ropa",
+    "brand": "Sin marca",
+    "sku": "CAM017",
+    "features": [
+      "Tela transpirable",
+      "Diseño fresco",
+      "Fácil de poner",
+      "Cómodo para el verano"
+    ]
+  },
+  {
+    "id": "prod_416",
+    "name": "CAMISETA BÁSQUET TALLE 8",
+    "category": "ropa",
+    "subcategory": "Ropa",
+    "price": 6860,
+    "originalPrice": 9800,
+    "discount": 30,
+    "stock": 10,
+    "rating": 4,
+    "reviews": 41,
+    "featured": false,
+    "topDiscount": true,
+    "hasVideo": false,
+    "tags": [
+      "camiseta",
+      "básquet",
+      "talle",
+      "ropa",
+      "verano",
+      "fresco",
+      "ligero"
+    ],
+    "description": "T-8 => LARGO = 57 cm   ANCHO = 62 cm",
+    "longDescription": "T-8 => LARGO = 57 cm   ANCHO = 62 cm",
+    "images": {
+      "cover": "assets/images/products/prod_416/cover.jpg",
+      "thumb": "assets/images/products/prod_416/thumb.jpg",
+      "gallery": [
+        "assets/images/products/prod_416/1.jpg"
+      ]
+    },
+    "specs": {
+      "SKU": "CAM018"
+    },
+    "shipping": {
+      "free": false,
+      "days": 2
+    },
+    "badge": "👕 Ropa",
+    "brand": "Sin marca",
+    "sku": "CAM018",
+    "features": [
+      "Tela transpirable",
+      "Diseño fresco",
+      "Fácil de poner",
+      "Cómodo para el verano"
+    ]
+  },
+  {
+    "id": "prod_417",
+    "name": "CAMISETA BÁSQUET TALLE 9",
+    "category": "ropa",
+    "subcategory": "Ropa",
+    "price": 6860,
+    "originalPrice": 9800,
+    "discount": 30,
+    "stock": 10,
+    "rating": 4.7,
+    "reviews": 20,
+    "featured": false,
+    "topDiscount": true,
+    "hasVideo": false,
+    "tags": [
+      "camiseta",
+      "básquet",
+      "talle",
+      "ropa",
+      "verano",
+      "fresco",
+      "ligero"
+    ],
+    "description": "T-9 => LARGO = 61 cm   ANCHO = 66 cm",
+    "longDescription": "T-9 => LARGO = 61 cm   ANCHO = 66 cm",
+    "images": {
+      "cover": "assets/images/products/prod_417/cover.jpg",
+      "thumb": "assets/images/products/prod_417/thumb.jpg",
+      "gallery": [
+        "assets/images/products/prod_417/1.jpg"
+      ]
+    },
+    "specs": {
+      "SKU": "CAM019"
+    },
+    "shipping": {
+      "free": false,
+      "days": 4
+    },
+    "badge": "👕 Ropa",
+    "brand": "Sin marca",
+    "sku": "CAM019",
+    "features": [
+      "Tela transpirable",
+      "Diseño fresco",
+      "Fácil de poner",
+      "Cómodo para el verano"
+    ]
+  },
+  {
+    "id": "prod_418",
+    "name": "CAMISETAS BOCA, RIVER, MESSI. TALLE 1",
+    "category": "ropa",
+    "subcategory": "Ropa",
+    "price": 4900,
+    "originalPrice": 7000,
+    "discount": 30,
+    "stock": 10,
+    "rating": 4.5,
+    "reviews": 49,
+    "featured": false,
+    "topDiscount": true,
+    "hasVideo": false,
+    "tags": [
+      "camisetas",
+      "boca,",
+      "river,",
+      "messi.",
+      "talle",
+      "ropa",
+      "verano",
+      "fresco",
+      "ligero"
+    ],
+    "description": "T-1 => LARGO = 30 cm   ANCHO = 34 cm",
+    "longDescription": "T-1 => LARGO = 30 cm   ANCHO = 34 cm",
+    "images": {
+      "cover": "assets/images/products/prod_418/cover.jpg",
+      "thumb": "assets/images/products/prod_418/thumb.jpg",
+      "gallery": [
+        "assets/images/products/prod_418/1.jpg"
+      ]
+    },
+    "specs": {
+      "SKU": "CAM020"
+    },
+    "shipping": {
+      "free": false,
+      "days": 3
+    },
+    "badge": "👕 Ropa",
+    "brand": "Sin marca",
+    "sku": "CAM020",
+    "features": [
+      "Tela transpirable",
+      "Diseño fresco",
+      "Fácil de poner",
+      "Cómodo para el verano"
+    ]
+  },
+  {
+    "id": "prod_419",
+    "name": "CAMISETAS BOCA, RIVER, MESSI. TALLE 2",
+    "category": "ropa",
+    "subcategory": "Ropa",
+    "price": 4900,
+    "originalPrice": 7000,
+    "discount": 30,
+    "stock": 10,
+    "rating": 5,
+    "reviews": 40,
+    "featured": false,
+    "topDiscount": true,
+    "hasVideo": false,
+    "tags": [
+      "camisetas",
+      "boca,",
+      "river,",
+      "messi.",
+      "talle",
+      "ropa",
+      "verano",
+      "fresco",
+      "ligero"
+    ],
+    "description": "T-2 => LARGO = 34 cm   ANCHO = 38 cm",
+    "longDescription": "T-2 => LARGO = 34 cm   ANCHO = 38 cm",
+    "images": {
+      "cover": "assets/images/products/prod_419/cover.jpg",
+      "thumb": "assets/images/products/prod_419/thumb.jpg",
+      "gallery": [
+        "assets/images/products/prod_419/1.jpg"
+      ]
+    },
+    "specs": {
+      "SKU": "CAM021"
+    },
+    "shipping": {
+      "free": false,
+      "days": 2
+    },
+    "badge": "👕 Ropa",
+    "brand": "Sin marca",
+    "sku": "CAM021",
+    "features": [
+      "Tela transpirable",
+      "Diseño fresco",
+      "Fácil de poner",
+      "Cómodo para el verano"
+    ]
+  },
+  {
+    "id": "prod_420",
+    "name": "CAMISETAS BOCA, RIVER, MESSI. TALLE 3",
+    "category": "ropa",
+    "subcategory": "Ropa",
+    "price": 4900,
+    "originalPrice": 7000,
+    "discount": 30,
+    "stock": 10,
+    "rating": 4.2,
+    "reviews": 9,
+    "featured": false,
+    "topDiscount": true,
+    "hasVideo": false,
+    "tags": [
+      "camisetas",
+      "boca,",
+      "river,",
+      "messi.",
+      "talle",
+      "ropa",
+      "verano",
+      "fresco",
+      "ligero"
+    ],
+    "description": "T-3 => LARGO = 36 cm   ANCHO = 42 cm",
+    "longDescription": "T-3 => LARGO = 36 cm   ANCHO = 42 cm",
+    "images": {
+      "cover": "assets/images/products/prod_420/cover.jpg",
+      "thumb": "assets/images/products/prod_420/thumb.jpg",
+      "gallery": [
+        "assets/images/products/prod_420/1.jpg"
+      ]
+    },
+    "specs": {
+      "SKU": "CAM022"
+    },
+    "shipping": {
+      "free": false,
+      "days": 2
+    },
+    "badge": "👕 Ropa",
+    "brand": "Sin marca",
+    "sku": "CAM022",
+    "features": [
+      "Tela transpirable",
+      "Diseño fresco",
+      "Fácil de poner",
+      "Cómodo para el verano"
+    ]
+  },
+  {
     "id": "prod_421",
     "name": "CAMISETAS BOCA, RIVER MESSI. TALLE 4",
     "category": "ropa",
@@ -14345,17 +14939,271 @@
     ]
   },
   {
-    "id": "prod_427",
-    "name": "Vestido Princesa",
+    "id": "prod_422",
+    "name": "CAMISETAS BOCA, RIVER, MESSI. TALLE 5",
     "category": "ropa",
     "subcategory": "Ropa",
-    "hasVariants": true,
-    "basePrice": 5880,
-    "baseOriginalPrice": 8400,
+    "price": 5880,
+    "originalPrice": 8400,
     "discount": 30,
-    "stock": 90,
-    "rating": 4.2,
-    "reviews": 240,
+    "stock": 10,
+    "rating": 4.7,
+    "reviews": 43,
+    "featured": false,
+    "topDiscount": true,
+    "hasVideo": false,
+    "tags": [
+      "camisetas",
+      "boca,",
+      "river,",
+      "messi.",
+      "talle",
+      "ropa",
+      "verano",
+      "fresco",
+      "ligero"
+    ],
+    "description": "T-5 => LARGO = 43 cm   ANCHO = 52 cm",
+    "longDescription": "T-5 => LARGO = 43 cm   ANCHO = 52 cm",
+    "images": {
+      "cover": "assets/images/products/prod_422/cover.jpg",
+      "thumb": "assets/images/products/prod_422/thumb.jpg",
+      "gallery": [
+        "assets/images/products/prod_422/1.jpg"
+      ]
+    },
+    "specs": {
+      "SKU": "CAM024"
+    },
+    "shipping": {
+      "free": false,
+      "days": 4
+    },
+    "badge": "👕 Ropa",
+    "brand": "Sin marca",
+    "sku": "CAM024",
+    "features": [
+      "Tela transpirable",
+      "Diseño fresco",
+      "Fácil de poner",
+      "Cómodo para el verano"
+    ]
+  },
+  {
+    "id": "prod_423",
+    "name": "CAMISETAS BOCA, RIVER, MESSI TALLE 6",
+    "category": "ropa",
+    "subcategory": "Ropa",
+    "price": 5880,
+    "originalPrice": 8400,
+    "discount": 30,
+    "stock": 10,
+    "rating": 3.6,
+    "reviews": 23,
+    "featured": false,
+    "topDiscount": true,
+    "hasVideo": false,
+    "tags": [
+      "camisetas",
+      "boca,",
+      "river,",
+      "messi",
+      "talle",
+      "ropa",
+      "verano",
+      "fresco",
+      "ligero"
+    ],
+    "description": "T-6 => LARGO = 47 cm   ANCHO = 56 cm",
+    "longDescription": "T-6 => LARGO = 47 cm   ANCHO = 56 cm",
+    "images": {
+      "cover": "assets/images/products/prod_423/cover.jpg",
+      "thumb": "assets/images/products/prod_423/thumb.jpg",
+      "gallery": [
+        "assets/images/products/prod_423/1.jpg"
+      ]
+    },
+    "specs": {
+      "SKU": "CAM025"
+    },
+    "shipping": {
+      "free": false,
+      "days": 4
+    },
+    "badge": "👕 Ropa",
+    "brand": "Sin marca",
+    "sku": "CAM025",
+    "features": [
+      "Tela transpirable",
+      "Diseño fresco",
+      "Fácil de poner",
+      "Cómodo para el verano"
+    ]
+  },
+  {
+    "id": "prod_424",
+    "name": "CAMISETAS BOCA, RIVER, MESSI TALLE 7",
+    "category": "ropa",
+    "subcategory": "Ropa",
+    "price": 6860,
+    "originalPrice": 9800,
+    "discount": 30,
+    "stock": 10,
+    "rating": 4.7,
+    "reviews": 28,
+    "featured": false,
+    "topDiscount": true,
+    "hasVideo": false,
+    "tags": [
+      "camisetas",
+      "boca,",
+      "river,",
+      "messi",
+      "talle",
+      "ropa",
+      "verano",
+      "fresco",
+      "ligero"
+    ],
+    "description": "T-7 => LARGO = 51 cm   ANCHO = 58 cm",
+    "longDescription": "T-7 => LARGO = 51 cm   ANCHO = 58 cm",
+    "images": {
+      "cover": "assets/images/products/prod_424/cover.jpg",
+      "thumb": "assets/images/products/prod_424/thumb.jpg",
+      "gallery": [
+        "assets/images/products/prod_424/1.jpg"
+      ]
+    },
+    "specs": {
+      "SKU": "CAM026"
+    },
+    "shipping": {
+      "free": false,
+      "days": 2
+    },
+    "badge": "👕 Ropa",
+    "brand": "Sin marca",
+    "sku": "CAM026",
+    "features": [
+      "Tela transpirable",
+      "Diseño fresco",
+      "Fácil de poner",
+      "Cómodo para el verano"
+    ]
+  },
+  {
+    "id": "prod_425",
+    "name": "CAMISETAS BOCA, RIVER, MESSI TALLE 8",
+    "category": "ropa",
+    "subcategory": "Ropa",
+    "price": 6860,
+    "originalPrice": 9800,
+    "discount": 30,
+    "stock": 10,
+    "rating": 3.7,
+    "reviews": 21,
+    "featured": false,
+    "topDiscount": true,
+    "hasVideo": false,
+    "tags": [
+      "camisetas",
+      "boca,",
+      "river,",
+      "messi",
+      "talle",
+      "ropa",
+      "verano",
+      "fresco",
+      "ligero"
+    ],
+    "description": "T-8 => LARGO = 57 cm   ANCHO = 62 cm",
+    "longDescription": "T-8 => LARGO = 57 cm   ANCHO = 62 cm",
+    "images": {
+      "cover": "assets/images/products/prod_425/cover.jpg",
+      "thumb": "assets/images/products/prod_425/thumb.jpg",
+      "gallery": [
+        "assets/images/products/prod_425/1.jpg"
+      ]
+    },
+    "specs": {
+      "SKU": "CAM027"
+    },
+    "shipping": {
+      "free": false,
+      "days": 4
+    },
+    "badge": "👕 Ropa",
+    "brand": "Sin marca",
+    "sku": "CAM027",
+    "features": [
+      "Tela transpirable",
+      "Diseño fresco",
+      "Fácil de poner",
+      "Cómodo para el verano"
+    ]
+  },
+  {
+    "id": "prod_426",
+    "name": "CAMISETAS BOCA, RIVER, MESSI TALLE 9",
+    "category": "ropa",
+    "subcategory": "Ropa",
+    "price": 6860,
+    "originalPrice": 9800,
+    "discount": 30,
+    "stock": 10,
+    "rating": 3.7,
+    "reviews": 53,
+    "featured": false,
+    "topDiscount": true,
+    "hasVideo": false,
+    "tags": [
+      "camisetas",
+      "boca,",
+      "river,",
+      "messi",
+      "talle",
+      "ropa",
+      "verano",
+      "fresco",
+      "ligero"
+    ],
+    "description": "T-9 => LARGO = 61 cm   ANCHO = 66 cm",
+    "longDescription": "T-9 => LARGO = 61 cm   ANCHO = 66 cm",
+    "images": {
+      "cover": "assets/images/products/prod_426/cover.jpg",
+      "thumb": "assets/images/products/prod_426/thumb.jpg",
+      "gallery": [
+        "assets/images/products/prod_426/1.jpg"
+      ]
+    },
+    "specs": {
+      "SKU": "CAM028"
+    },
+    "shipping": {
+      "free": false,
+      "days": 4
+    },
+    "badge": "👕 Ropa",
+    "brand": "Sin marca",
+    "sku": "CAM028",
+    "features": [
+      "Tela transpirable",
+      "Diseño fresco",
+      "Fácil de poner",
+      "Cómodo para el verano"
+    ]
+  },
+  {
+    "id": "prod_427",
+    "name": "VESTIDO PRINCESA TALLE 0",
+    "category": "ropa",
+    "subcategory": "Ropa",
+    "price": 5880,
+    "originalPrice": 8400,
+    "discount": 30,
+    "stock": 10,
+    "rating": 3.9,
+    "reviews": 51,
     "featured": false,
     "topDiscount": true,
     "hasVideo": false,
@@ -14366,221 +15214,10 @@
       "ropa",
       "verano",
       "fresco",
-      "ligero",
-      "elegante",
-      "fiesta"
+      "ligero"
     ],
-    "description": "Vestido Princesa para mascotas. Elegante diseño ideal para ocasiones especiales, fiestas y sesiones de fotos.",
-    "longDescription": "Vestido Princesa para mascotas. Descripción: Elegante vestido diseñado para que tu mascota luzca como una verdadera princesa. Ideal para ocasiones especiales, fiestas, cumpleaños y sesiones de fotos. Confeccionado con tela suave y transpirable para máxima comodidad. Características: Tela transpirable. Diseño fresco y elegante. Fácil de poner. Cómodo para el verano. Perfecto para eventos especiales.",
-    "variants": {
-      "attributes": [
-        {
-          "id": "talle",
-          "name": "Talle",
-          "type": "size"
-        }
-      ],
-      "combinations": [
-        {
-          "id": "var_427_0",
-          "attributes": {
-            "Talle": "0"
-          },
-          "price": 5880,
-          "originalPrice": 8400,
-          "stock": 10,
-          "sku": "VES001-0",
-          "available": true,
-          "specs": {
-            "Largo": "20 cm",
-            "Ancho": "18 cm"
-          },
-          "images": {
-            "cover": "assets/images/products/prod_427/cover.jpg",
-            "thumb": "assets/images/products/prod_427/thumb.jpg",
-            "gallery": [
-              "assets/images/products/prod_427/1.jpg"
-            ]
-          }
-        },
-        {
-          "id": "var_427_1",
-          "attributes": {
-            "Talle": "1"
-          },
-          "price": 5880,
-          "originalPrice": 8400,
-          "stock": 10,
-          "sku": "VES001-1",
-          "available": true,
-          "specs": {
-            "Largo": "22 cm",
-            "Ancho": "22 cm"
-          },
-          "images": {
-            "cover": "assets/images/products/prod_428/cover.jpg",
-            "thumb": "assets/images/products/prod_428/thumb.jpg",
-            "gallery": [
-              "assets/images/products/prod_428/1.jpg"
-            ]
-          }
-        },
-        {
-          "id": "var_427_2",
-          "attributes": {
-            "Talle": "2"
-          },
-          "price": 5880,
-          "originalPrice": 8400,
-          "stock": 10,
-          "sku": "VES001-2",
-          "available": true,
-          "specs": {
-            "Largo": "27 cm",
-            "Ancho": "24 cm"
-          },
-          "images": {
-            "cover": "assets/images/products/prod_429/cover.jpg",
-            "thumb": "assets/images/products/prod_429/thumb.jpg",
-            "gallery": [
-              "assets/images/products/prod_429/1.jpg"
-            ]
-          }
-        },
-        {
-          "id": "var_427_3",
-          "attributes": {
-            "Talle": "3"
-          },
-          "price": 6860,
-          "originalPrice": 9800,
-          "stock": 10,
-          "sku": "VES001-3",
-          "available": true,
-          "specs": {
-            "Largo": "32 cm",
-            "Ancho": "32 cm"
-          },
-          "images": {
-            "cover": "assets/images/products/prod_430/cover.jpg",
-            "thumb": "assets/images/products/prod_430/thumb.jpg",
-            "gallery": [
-              "assets/images/products/prod_430/1.jpg"
-            ]
-          }
-        },
-        {
-          "id": "var_427_4",
-          "attributes": {
-            "Talle": "4"
-          },
-          "price": 6860,
-          "originalPrice": 9800,
-          "stock": 10,
-          "sku": "VES001-4",
-          "available": true,
-          "specs": {
-            "Largo": "38 cm",
-            "Ancho": "34 cm"
-          },
-          "images": {
-            "cover": "assets/images/products/prod_431/cover.jpg",
-            "thumb": "assets/images/products/prod_431/thumb.jpg",
-            "gallery": [
-              "assets/images/products/prod_431/1.jpg"
-            ]
-          }
-        },
-        {
-          "id": "var_427_5",
-          "attributes": {
-            "Talle": "5"
-          },
-          "price": 6860,
-          "originalPrice": 9800,
-          "stock": 10,
-          "sku": "VES001-5",
-          "available": true,
-          "specs": {
-            "Largo": "44 cm",
-            "Ancho": "36 cm"
-          },
-          "images": {
-            "cover": "assets/images/products/prod_432/cover.jpg",
-            "thumb": "assets/images/products/prod_432/thumb.jpg",
-            "gallery": [
-              "assets/images/products/prod_432/1.jpg"
-            ]
-          }
-        },
-        {
-          "id": "var_427_6",
-          "attributes": {
-            "Talle": "6"
-          },
-          "price": 7840,
-          "originalPrice": 11200,
-          "stock": 10,
-          "sku": "VES001-6",
-          "available": true,
-          "specs": {
-            "Largo": "47 cm",
-            "Ancho": "44 cm"
-          },
-          "images": {
-            "cover": "assets/images/products/prod_433/cover.jpg",
-            "thumb": "assets/images/products/prod_433/thumb.jpg",
-            "gallery": [
-              "assets/images/products/prod_433/1.jpg"
-            ]
-          }
-        },
-        {
-          "id": "var_427_7",
-          "attributes": {
-            "Talle": "7"
-          },
-          "price": 7840,
-          "originalPrice": 11200,
-          "stock": 10,
-          "sku": "VES001-7",
-          "available": true,
-          "specs": {
-            "Largo": "54 cm",
-            "Ancho": "46 cm"
-          },
-          "images": {
-            "cover": "assets/images/products/prod_434/cover.jpg",
-            "thumb": "assets/images/products/prod_434/thumb.jpg",
-            "gallery": [
-              "assets/images/products/prod_434/1.jpg"
-            ]
-          }
-        },
-        {
-          "id": "var_427_8",
-          "attributes": {
-            "Talle": "8"
-          },
-          "price": 7840,
-          "originalPrice": 11200,
-          "stock": 10,
-          "sku": "VES001-8",
-          "available": true,
-          "specs": {
-            "Largo": "58 cm",
-            "Ancho": "50 cm"
-          },
-          "images": {
-            "cover": "assets/images/products/prod_435/cover.jpg",
-            "thumb": "assets/images/products/prod_435/thumb.jpg",
-            "gallery": [
-              "assets/images/products/prod_435/1.jpg"
-            ]
-          }
-        }
-      ]
-    },
+    "description": "T-0 => LARGO = 20 cm   ANCHO = 18 cm",
+    "longDescription": "T-0 => LARGO = 20 cm   ANCHO = 18 cm",
     "images": {
       "cover": "assets/images/products/prod_427/cover.jpg",
       "thumb": "assets/images/products/prod_427/thumb.jpg",
@@ -14600,24 +15237,414 @@
     "sku": "VES001",
     "features": [
       "Tela transpirable",
-      "Diseño fresco y elegante",
+      "Diseño fresco",
       "Fácil de poner",
-      "Cómodo para el verano",
-      "Perfecto para eventos especiales"
+      "Cómodo para el verano"
+    ]
+  },
+  {
+    "id": "prod_428",
+    "name": "VESTIDO PRINCESA TALLE 1",
+    "category": "ropa",
+    "subcategory": "Ropa",
+    "price": 5880,
+    "originalPrice": 8400,
+    "discount": 30,
+    "stock": 10,
+    "rating": 4.7,
+    "reviews": 15,
+    "featured": false,
+    "topDiscount": true,
+    "hasVideo": false,
+    "tags": [
+      "vestido",
+      "princesa",
+      "talle",
+      "ropa",
+      "verano",
+      "fresco",
+      "ligero"
+    ],
+    "description": "T-1 => LARGO = 22 cm   ANCHO = 22 cm",
+    "longDescription": "T-1 => LARGO = 22 cm   ANCHO = 22 cm",
+    "images": {
+      "cover": "assets/images/products/prod_428/cover.jpg",
+      "thumb": "assets/images/products/prod_428/thumb.jpg",
+      "gallery": [
+        "assets/images/products/prod_428/1.jpg"
+      ]
+    },
+    "specs": {
+      "SKU": "VES002"
+    },
+    "shipping": {
+      "free": false,
+      "days": 4
+    },
+    "badge": "👕 Ropa",
+    "brand": "Sin marca",
+    "sku": "VES002",
+    "features": [
+      "Tela transpirable",
+      "Diseño fresco",
+      "Fácil de poner",
+      "Cómodo para el verano"
+    ]
+  },
+  {
+    "id": "prod_429",
+    "name": "VESTIDO PRINCESA TALLE 2",
+    "category": "ropa",
+    "subcategory": "Ropa",
+    "price": 5880,
+    "originalPrice": 8400,
+    "discount": 30,
+    "stock": 10,
+    "rating": 4.2,
+    "reviews": 24,
+    "featured": false,
+    "topDiscount": true,
+    "hasVideo": false,
+    "tags": [
+      "vestido",
+      "princesa",
+      "talle",
+      "ropa",
+      "verano",
+      "fresco",
+      "ligero"
+    ],
+    "description": "T-2 => LARGO = 27 cm   ANCHO = 24 cm",
+    "longDescription": "T-2 => LARGO = 27 cm   ANCHO = 24 cm",
+    "images": {
+      "cover": "assets/images/products/prod_429/cover.jpg",
+      "thumb": "assets/images/products/prod_429/thumb.jpg",
+      "gallery": [
+        "assets/images/products/prod_429/1.jpg"
+      ]
+    },
+    "specs": {
+      "SKU": "VES003"
+    },
+    "shipping": {
+      "free": false,
+      "days": 3
+    },
+    "badge": "👕 Ropa",
+    "brand": "Sin marca",
+    "sku": "VES003",
+    "features": [
+      "Tela transpirable",
+      "Diseño fresco",
+      "Fácil de poner",
+      "Cómodo para el verano"
+    ]
+  },
+  {
+    "id": "prod_430",
+    "name": "VESTIDO PRINCESA TALLE 3",
+    "category": "ropa",
+    "subcategory": "Ropa",
+    "price": 6860,
+    "originalPrice": 9800,
+    "discount": 30,
+    "stock": 10,
+    "rating": 4.2,
+    "reviews": 52,
+    "featured": false,
+    "topDiscount": true,
+    "hasVideo": false,
+    "tags": [
+      "vestido",
+      "princesa",
+      "talle",
+      "ropa",
+      "verano",
+      "fresco",
+      "ligero"
+    ],
+    "description": "T-3 => LARGO = 32 cm   ANCHO = 32 cm",
+    "longDescription": "T-3 => LARGO = 32 cm   ANCHO = 32 cm",
+    "images": {
+      "cover": "assets/images/products/prod_430/cover.jpg",
+      "thumb": "assets/images/products/prod_430/thumb.jpg",
+      "gallery": [
+        "assets/images/products/prod_430/1.jpg"
+      ]
+    },
+    "specs": {
+      "SKU": "VES004"
+    },
+    "shipping": {
+      "free": false,
+      "days": 3
+    },
+    "badge": "👕 Ropa",
+    "brand": "Sin marca",
+    "sku": "VES004",
+    "features": [
+      "Tela transpirable",
+      "Diseño fresco",
+      "Fácil de poner",
+      "Cómodo para el verano"
+    ]
+  },
+  {
+    "id": "prod_431",
+    "name": "VESTIDO PRINCESA TALLE 4",
+    "category": "ropa",
+    "subcategory": "Ropa",
+    "price": 6860,
+    "originalPrice": 9800,
+    "discount": 30,
+    "stock": 10,
+    "rating": 4.4,
+    "reviews": 14,
+    "featured": false,
+    "topDiscount": true,
+    "hasVideo": false,
+    "tags": [
+      "vestido",
+      "princesa",
+      "talle",
+      "ropa",
+      "verano",
+      "fresco",
+      "ligero"
+    ],
+    "description": "T-4 => LARGO = 38 cm   ANCHO = 34 cm",
+    "longDescription": "T-4 => LARGO = 38 cm   ANCHO = 34 cm",
+    "images": {
+      "cover": "assets/images/products/prod_431/cover.jpg",
+      "thumb": "assets/images/products/prod_431/thumb.jpg",
+      "gallery": [
+        "assets/images/products/prod_431/1.jpg"
+      ]
+    },
+    "specs": {
+      "SKU": "VES005"
+    },
+    "shipping": {
+      "free": false,
+      "days": 2
+    },
+    "badge": "👕 Ropa",
+    "brand": "Sin marca",
+    "sku": "VES005",
+    "features": [
+      "Tela transpirable",
+      "Diseño fresco",
+      "Fácil de poner",
+      "Cómodo para el verano"
+    ]
+  },
+  {
+    "id": "prod_432",
+    "name": "VESTIDO PRINCESA TALLE 5",
+    "category": "ropa",
+    "subcategory": "Ropa",
+    "price": 6860,
+    "originalPrice": 9800,
+    "discount": 30,
+    "stock": 10,
+    "rating": 3.5,
+    "reviews": 36,
+    "featured": false,
+    "topDiscount": true,
+    "hasVideo": false,
+    "tags": [
+      "vestido",
+      "princesa",
+      "talle",
+      "ropa",
+      "verano",
+      "fresco",
+      "ligero"
+    ],
+    "description": "T-5 => LARGO = 44 cm   ANCHO = 36 cm",
+    "longDescription": "T-5 => LARGO = 44 cm   ANCHO = 36 cm",
+    "images": {
+      "cover": "assets/images/products/prod_432/cover.jpg",
+      "thumb": "assets/images/products/prod_432/thumb.jpg",
+      "gallery": [
+        "assets/images/products/prod_432/1.jpg"
+      ]
+    },
+    "specs": {
+      "SKU": "VES006"
+    },
+    "shipping": {
+      "free": false,
+      "days": 4
+    },
+    "badge": "👕 Ropa",
+    "brand": "Sin marca",
+    "sku": "VES006",
+    "features": [
+      "Tela transpirable",
+      "Diseño fresco",
+      "Fácil de poner",
+      "Cómodo para el verano"
+    ]
+  },
+  {
+    "id": "prod_433",
+    "name": "VESTIDO PRINCESA TALLE 6",
+    "category": "ropa",
+    "subcategory": "Ropa",
+    "price": 7840,
+    "originalPrice": 11200,
+    "discount": 30,
+    "stock": 10,
+    "rating": 4.7,
+    "reviews": 22,
+    "featured": false,
+    "topDiscount": true,
+    "hasVideo": false,
+    "tags": [
+      "vestido",
+      "princesa",
+      "talle",
+      "ropa",
+      "verano",
+      "fresco",
+      "ligero"
+    ],
+    "description": "T-6 => LARGO = 47 cm   ANCHO = 44 cm",
+    "longDescription": "T-6 => LARGO = 47 cm   ANCHO = 44 cm",
+    "images": {
+      "cover": "assets/images/products/prod_433/cover.jpg",
+      "thumb": "assets/images/products/prod_433/thumb.jpg",
+      "gallery": [
+        "assets/images/products/prod_433/1.jpg"
+      ]
+    },
+    "specs": {
+      "SKU": "VES007"
+    },
+    "shipping": {
+      "free": false,
+      "days": 2
+    },
+    "badge": "👕 Ropa",
+    "brand": "Sin marca",
+    "sku": "VES007",
+    "features": [
+      "Tela transpirable",
+      "Diseño fresco",
+      "Fácil de poner",
+      "Cómodo para el verano"
+    ]
+  },
+  {
+    "id": "prod_434",
+    "name": "VESTIDO PRINCESA TALLE 7",
+    "category": "ropa",
+    "subcategory": "Ropa",
+    "price": 7840,
+    "originalPrice": 11200,
+    "discount": 30,
+    "stock": 10,
+    "rating": 4.2,
+    "reviews": 6,
+    "featured": false,
+    "topDiscount": true,
+    "hasVideo": false,
+    "tags": [
+      "vestido",
+      "princesa",
+      "talle",
+      "ropa",
+      "verano",
+      "fresco",
+      "ligero"
+    ],
+    "description": "T-7 => LARGO = 54 cm   ANCHO = 46 cm",
+    "longDescription": "T-7 => LARGO = 54 cm   ANCHO = 46 cm",
+    "images": {
+      "cover": "assets/images/products/prod_434/cover.jpg",
+      "thumb": "assets/images/products/prod_434/thumb.jpg",
+      "gallery": [
+        "assets/images/products/prod_434/1.jpg"
+      ]
+    },
+    "specs": {
+      "SKU": "VES008"
+    },
+    "shipping": {
+      "free": false,
+      "days": 2
+    },
+    "badge": "👕 Ropa",
+    "brand": "Sin marca",
+    "sku": "VES008",
+    "features": [
+      "Tela transpirable",
+      "Diseño fresco",
+      "Fácil de poner",
+      "Cómodo para el verano"
+    ]
+  },
+  {
+    "id": "prod_435",
+    "name": "VESTIDO PRINCESA TALLE 8",
+    "category": "ropa",
+    "subcategory": "Ropa",
+    "price": 7840,
+    "originalPrice": 11200,
+    "discount": 30,
+    "stock": 10,
+    "rating": 4,
+    "reviews": 20,
+    "featured": false,
+    "topDiscount": true,
+    "hasVideo": false,
+    "tags": [
+      "vestido",
+      "princesa",
+      "talle",
+      "ropa",
+      "verano",
+      "fresco",
+      "ligero"
+    ],
+    "description": "T-8 => LARGO = 58 cm   ANCHO = 50 cm",
+    "longDescription": "T-8 => LARGO = 58 cm   ANCHO = 50 cm",
+    "images": {
+      "cover": "assets/images/products/prod_435/cover.jpg",
+      "thumb": "assets/images/products/prod_435/thumb.jpg",
+      "gallery": [
+        "assets/images/products/prod_435/1.jpg"
+      ]
+    },
+    "specs": {
+      "SKU": "VES009"
+    },
+    "shipping": {
+      "free": false,
+      "days": 3
+    },
+    "badge": "👕 Ropa",
+    "brand": "Sin marca",
+    "sku": "VES009",
+    "features": [
+      "Tela transpirable",
+      "Diseño fresco",
+      "Fácil de poner",
+      "Cómodo para el verano"
     ]
   },
   {
     "id": "prod_436",
-    "name": "Vestido Tutu",
+    "name": "VESTIDO TUTU TALLE 1",
     "category": "ropa",
     "subcategory": "Ropa",
-    "hasVariants": true,
-    "basePrice": 4900,
-    "baseOriginalPrice": 7000,
+    "price": 4900,
+    "originalPrice": 7000,
     "discount": 30,
-    "stock": 40,
+    "stock": 10,
     "rating": 3.9,
-    "reviews": 130,
+    "reviews": 11,
     "featured": false,
     "topDiscount": true,
     "hasVideo": false,
@@ -14628,111 +15655,10 @@
       "ropa",
       "verano",
       "fresco",
-      "ligero",
-      "elegante",
-      "fiesta"
+      "ligero"
     ],
-    "description": "Vestido Tutu para mascotas. Diseño elegante con falda de tul, ideal para fiestas y ocasiones especiales.",
-    "longDescription": "Vestido Tutu para mascotas. Descripción: Hermoso vestido con falda estilo tutu que hará lucir a tu mascota como una estrella. Ideal para fiestas, cumpleaños, sesiones de fotos y ocasiones especiales. Confeccionado con materiales suaves y cómodos. Características: Tela transpirable. Diseño fresco con falda de tul. Fácil de poner. Cómodo para el verano. Perfecto para eventos especiales.",
-    "variants": {
-      "attributes": [
-        {
-          "id": "talle",
-          "name": "Talle",
-          "type": "size"
-        }
-      ],
-      "combinations": [
-        {
-          "id": "var_436_1",
-          "attributes": {
-            "Talle": "1"
-          },
-          "price": 4900,
-          "originalPrice": 7000,
-          "stock": 10,
-          "sku": "VES010-1",
-          "available": true,
-          "specs": {
-            "Largo": "22 cm",
-            "Ancho": "22 cm"
-          },
-          "images": {
-            "cover": "assets/images/products/prod_436/cover.jpg",
-            "thumb": "assets/images/products/prod_436/thumb.jpg",
-            "gallery": [
-              "assets/images/products/prod_436/1.jpg"
-            ]
-          }
-        },
-        {
-          "id": "var_436_2",
-          "attributes": {
-            "Talle": "2"
-          },
-          "price": 4900,
-          "originalPrice": 7000,
-          "stock": 10,
-          "sku": "VES010-2",
-          "available": true,
-          "specs": {
-            "Largo": "27 cm",
-            "Ancho": "24 cm"
-          },
-          "images": {
-            "cover": "assets/images/products/prod_437/cover.jpg",
-            "thumb": "assets/images/products/prod_437/thumb.jpg",
-            "gallery": [
-              "assets/images/products/prod_437/1.jpg"
-            ]
-          }
-        },
-        {
-          "id": "var_436_3",
-          "attributes": {
-            "Talle": "3"
-          },
-          "price": 5880,
-          "originalPrice": 8400,
-          "stock": 10,
-          "sku": "VES010-3",
-          "available": true,
-          "specs": {
-            "Largo": "32 cm",
-            "Ancho": "32 cm"
-          },
-          "images": {
-            "cover": "assets/images/products/prod_438/cover.jpg",
-            "thumb": "assets/images/products/prod_438/thumb.jpg",
-            "gallery": [
-              "assets/images/products/prod_438/1.jpg"
-            ]
-          }
-        },
-        {
-          "id": "var_436_4",
-          "attributes": {
-            "Talle": "4"
-          },
-          "price": 5880,
-          "originalPrice": 8400,
-          "stock": 10,
-          "sku": "VES010-4",
-          "available": true,
-          "specs": {
-            "Largo": "38 cm",
-            "Ancho": "34 cm"
-          },
-          "images": {
-            "cover": "assets/images/products/prod_439/cover.jpg",
-            "thumb": "assets/images/products/prod_439/thumb.jpg",
-            "gallery": [
-              "assets/images/products/prod_439/1.jpg"
-            ]
-          }
-        }
-      ]
-    },
+    "description": "T-1 => LARGO = 22 cm   ANCHO = 22 cm",
+    "longDescription": "T-1 => LARGO = 22 cm   ANCHO = 22 cm",
     "images": {
       "cover": "assets/images/products/prod_436/cover.jpg",
       "thumb": "assets/images/products/prod_436/thumb.jpg",
@@ -14752,24 +15678,169 @@
     "sku": "VES010",
     "features": [
       "Tela transpirable",
-      "Diseño fresco con falda de tul",
+      "Diseño fresco",
       "Fácil de poner",
-      "Cómodo para el verano",
-      "Perfecto para eventos especiales"
+      "Cómodo para el verano"
+    ]
+  },
+  {
+    "id": "prod_437",
+    "name": "VESTIDO TUTU TALLE 2",
+    "category": "ropa",
+    "subcategory": "Ropa",
+    "price": 4900,
+    "originalPrice": 7000,
+    "discount": 30,
+    "stock": 10,
+    "rating": 4.2,
+    "reviews": 36,
+    "featured": false,
+    "topDiscount": true,
+    "hasVideo": false,
+    "tags": [
+      "vestido",
+      "tutu",
+      "talle",
+      "ropa",
+      "verano",
+      "fresco",
+      "ligero"
+    ],
+    "description": "T-2 => LARGO = 27 cm   ANCHO = 24 cm",
+    "longDescription": "T-2 => LARGO = 27 cm   ANCHO = 24 cm",
+    "images": {
+      "cover": "assets/images/products/prod_437/cover.jpg",
+      "thumb": "assets/images/products/prod_437/thumb.jpg",
+      "gallery": [
+        "assets/images/products/prod_437/1.jpg"
+      ]
+    },
+    "specs": {
+      "SKU": "VES011"
+    },
+    "shipping": {
+      "free": false,
+      "days": 3
+    },
+    "badge": "👕 Ropa",
+    "brand": "Sin marca",
+    "sku": "VES011",
+    "features": [
+      "Tela transpirable",
+      "Diseño fresco",
+      "Fácil de poner",
+      "Cómodo para el verano"
+    ]
+  },
+  {
+    "id": "prod_438",
+    "name": "VESTIDO TUTU TALLE 3",
+    "category": "ropa",
+    "subcategory": "Ropa",
+    "price": 5880,
+    "originalPrice": 8400,
+    "discount": 30,
+    "stock": 10,
+    "rating": 3.8,
+    "reviews": 32,
+    "featured": false,
+    "topDiscount": true,
+    "hasVideo": false,
+    "tags": [
+      "vestido",
+      "tutu",
+      "talle",
+      "ropa",
+      "verano",
+      "fresco",
+      "ligero"
+    ],
+    "description": "T-3 => LARGO = 32 cm   ANCHO = 32 cm",
+    "longDescription": "T-3 => LARGO = 32 cm   ANCHO = 32 cm",
+    "images": {
+      "cover": "assets/images/products/prod_438/cover.jpg",
+      "thumb": "assets/images/products/prod_438/thumb.jpg",
+      "gallery": [
+        "assets/images/products/prod_438/1.jpg"
+      ]
+    },
+    "specs": {
+      "SKU": "VES012"
+    },
+    "shipping": {
+      "free": false,
+      "days": 2
+    },
+    "badge": "👕 Ropa",
+    "brand": "Sin marca",
+    "sku": "VES012",
+    "features": [
+      "Tela transpirable",
+      "Diseño fresco",
+      "Fácil de poner",
+      "Cómodo para el verano"
+    ]
+  },
+  {
+    "id": "prod_439",
+    "name": "VESTIDO TUTU TALLE 4",
+    "category": "ropa",
+    "subcategory": "Ropa",
+    "price": 5880,
+    "originalPrice": 8400,
+    "discount": 30,
+    "stock": 10,
+    "rating": 3.5,
+    "reviews": 51,
+    "featured": false,
+    "topDiscount": true,
+    "hasVideo": false,
+    "tags": [
+      "vestido",
+      "tutu",
+      "talle",
+      "ropa",
+      "verano",
+      "fresco",
+      "ligero"
+    ],
+    "description": "T-4 => LARGO = 38 cm   ANCHO = 34 cm",
+    "longDescription": "T-4 => LARGO = 38 cm   ANCHO = 34 cm",
+    "images": {
+      "cover": "assets/images/products/prod_439/cover.jpg",
+      "thumb": "assets/images/products/prod_439/thumb.jpg",
+      "gallery": [
+        "assets/images/products/prod_439/1.jpg"
+      ]
+    },
+    "specs": {
+      "SKU": "VES013"
+    },
+    "shipping": {
+      "free": false,
+      "days": 4
+    },
+    "badge": "👕 Ropa",
+    "brand": "Sin marca",
+    "sku": "VES013",
+    "features": [
+      "Tela transpirable",
+      "Diseño fresco",
+      "Fácil de poner",
+      "Cómodo para el verano"
     ]
   },
   {
     "id": "prod_442",
-    "name": "Vestido Modal Fantasía",
+    "name": "VESTIDO MODAL FANTASIA TALLE 1",
     "category": "ropa",
     "subcategory": "Ropa",
-    "hasVariants": true,
-    "basePrice": 4900,
-    "baseOriginalPrice": 7000,
+    "price": 4900,
+    "originalPrice": 7000,
     "discount": 30,
-    "stock": 60,
+    "stock": 10,
     "rating": 4.3,
-    "reviews": 151,
+    "reviews": 32,
     "featured": false,
     "topDiscount": true,
     "hasVideo": false,
@@ -14781,154 +15852,10 @@
       "ropa",
       "verano",
       "fresco",
-      "ligero",
-      "elegante"
+      "ligero"
     ],
-    "description": "Vestido Modal Fantasía para mascotas. Diseño elegante y cómodo en tela modal suave y transpirable.",
-    "longDescription": "Vestido Modal Fantasía para mascotas. Descripción: Hermoso vestido confeccionado en tela modal de alta calidad, suave al tacto y muy cómoda para tu mascota. Diseño fantasía ideal para ocasiones especiales, paseos y sesiones de fotos. Características: Tela modal transpirable. Diseño fresco y elegante. Fácil de poner. Cómodo para el verano. Costuras reforzadas.",
-    "variants": {
-      "attributes": [
-        {
-          "id": "talle",
-          "name": "Talle",
-          "type": "size"
-        }
-      ],
-      "combinations": [
-        {
-          "id": "var_442_1",
-          "attributes": {
-            "Talle": "1"
-          },
-          "price": 4900,
-          "originalPrice": 7000,
-          "stock": 10,
-          "sku": "VES016-1",
-          "available": true,
-          "specs": {
-            "Largo": "22 cm",
-            "Ancho": "22 cm"
-          },
-          "images": {
-            "cover": "assets/images/products/prod_442/cover.jpg",
-            "thumb": "assets/images/products/prod_442/thumb.jpg",
-            "gallery": [
-              "assets/images/products/prod_442/1.jpg"
-            ]
-          }
-        },
-        {
-          "id": "var_442_2",
-          "attributes": {
-            "Talle": "2"
-          },
-          "price": 4900,
-          "originalPrice": 7000,
-          "stock": 10,
-          "sku": "VES016-2",
-          "available": true,
-          "specs": {
-            "Largo": "27 cm",
-            "Ancho": "24 cm"
-          },
-          "images": {
-            "cover": "assets/images/products/prod_443/cover.jpg",
-            "thumb": "assets/images/products/prod_443/thumb.jpg",
-            "gallery": [
-              "assets/images/products/prod_443/1.jpg"
-            ]
-          }
-        },
-        {
-          "id": "var_442_3",
-          "attributes": {
-            "Talle": "3"
-          },
-          "price": 5880,
-          "originalPrice": 8400,
-          "stock": 10,
-          "sku": "VES016-3",
-          "available": true,
-          "specs": {
-            "Largo": "32 cm",
-            "Ancho": "32 cm"
-          },
-          "images": {
-            "cover": "assets/images/products/prod_444/cover.jpg",
-            "thumb": "assets/images/products/prod_444/thumb.jpg",
-            "gallery": [
-              "assets/images/products/prod_444/1.jpg"
-            ]
-          }
-        },
-        {
-          "id": "var_442_4",
-          "attributes": {
-            "Talle": "4"
-          },
-          "price": 5880,
-          "originalPrice": 8400,
-          "stock": 10,
-          "sku": "VES016-4",
-          "available": true,
-          "specs": {
-            "Largo": "38 cm",
-            "Ancho": "34 cm"
-          },
-          "images": {
-            "cover": "assets/images/products/prod_445/cover.jpg",
-            "thumb": "assets/images/products/prod_445/thumb.jpg",
-            "gallery": [
-              "assets/images/products/prod_445/1.jpg"
-            ]
-          }
-        },
-        {
-          "id": "var_442_5",
-          "attributes": {
-            "Talle": "5"
-          },
-          "price": 6860,
-          "originalPrice": 9800,
-          "stock": 10,
-          "sku": "VES016-5",
-          "available": true,
-          "specs": {
-            "Largo": "44 cm",
-            "Ancho": "36 cm"
-          },
-          "images": {
-            "cover": "assets/images/products/prod_446/cover.jpg",
-            "thumb": "assets/images/products/prod_446/thumb.jpg",
-            "gallery": [
-              "assets/images/products/prod_446/1.jpg"
-            ]
-          }
-        },
-        {
-          "id": "var_442_6",
-          "attributes": {
-            "Talle": "6"
-          },
-          "price": 6860,
-          "originalPrice": 9800,
-          "stock": 10,
-          "sku": "VES016-6",
-          "available": true,
-          "specs": {
-            "Largo": "47 cm",
-            "Ancho": "44 cm"
-          },
-          "images": {
-            "cover": "assets/images/products/prod_447/cover.jpg",
-            "thumb": "assets/images/products/prod_447/thumb.jpg",
-            "gallery": [
-              "assets/images/products/prod_447/1.jpg"
-            ]
-          }
-        }
-      ]
-    },
+    "description": "T-1 => LARGO = 22 cm   ANCHO = 22 cm",
+    "longDescription": "T-1 => LARGO = 22 cm   ANCHO = 22 cm",
     "images": {
       "cover": "assets/images/products/prod_442/cover.jpg",
       "thumb": "assets/images/products/prod_442/thumb.jpg",
@@ -14941,31 +15868,279 @@
     },
     "shipping": {
       "free": false,
-      "days": 3
+      "days": 2
     },
     "badge": "👕 Ropa",
     "brand": "Sin marca",
     "sku": "VES016",
     "features": [
-      "Tela modal transpirable",
-      "Diseño fresco y elegante",
+      "Tela transpirable",
+      "Diseño fresco",
       "Fácil de poner",
-      "Cómodo para el verano",
-      "Costuras reforzadas"
+      "Cómodo para el verano"
+    ]
+  },
+  {
+    "id": "prod_443",
+    "name": "VESTIDO MODAL FANTASIA TALLE 2",
+    "category": "ropa",
+    "subcategory": "Ropa",
+    "price": 4900,
+    "originalPrice": 7000,
+    "discount": 30,
+    "stock": 10,
+    "rating": 3.7,
+    "reviews": 5,
+    "featured": false,
+    "topDiscount": true,
+    "hasVideo": false,
+    "tags": [
+      "vestido",
+      "modal",
+      "fantasia",
+      "talle",
+      "ropa",
+      "verano",
+      "fresco",
+      "ligero"
+    ],
+    "description": "T-2 => LARGO = 27 cm   ANCHO = 24 cm",
+    "longDescription": "T-2 => LARGO = 27 cm   ANCHO = 24 cm",
+    "images": {
+      "cover": "assets/images/products/prod_443/cover.jpg",
+      "thumb": "assets/images/products/prod_443/thumb.jpg",
+      "gallery": [
+        "assets/images/products/prod_443/1.jpg"
+      ]
+    },
+    "specs": {
+      "SKU": "VES017"
+    },
+    "shipping": {
+      "free": false,
+      "days": 3
+    },
+    "badge": "👕 Ropa",
+    "brand": "Sin marca",
+    "sku": "VES017",
+    "features": [
+      "Tela transpirable",
+      "Diseño fresco",
+      "Fácil de poner",
+      "Cómodo para el verano"
+    ]
+  },
+  {
+    "id": "prod_444",
+    "name": "VESTIDO MODAL FANTASIA TALLE 3",
+    "category": "ropa",
+    "subcategory": "Ropa",
+    "price": 5880,
+    "originalPrice": 8400,
+    "discount": 30,
+    "stock": 10,
+    "rating": 3.8,
+    "reviews": 23,
+    "featured": false,
+    "topDiscount": true,
+    "hasVideo": false,
+    "tags": [
+      "vestido",
+      "modal",
+      "fantasia",
+      "talle",
+      "ropa",
+      "verano",
+      "fresco",
+      "ligero"
+    ],
+    "description": "T-3 => LARGO = 32 cm   ANCHO = 32 cm",
+    "longDescription": "T-3 => LARGO = 32 cm   ANCHO = 32 cm",
+    "images": {
+      "cover": "assets/images/products/prod_444/cover.jpg",
+      "thumb": "assets/images/products/prod_444/thumb.jpg",
+      "gallery": [
+        "assets/images/products/prod_444/1.jpg"
+      ]
+    },
+    "specs": {
+      "SKU": "VES018"
+    },
+    "shipping": {
+      "free": false,
+      "days": 4
+    },
+    "badge": "👕 Ropa",
+    "brand": "Sin marca",
+    "sku": "VES018",
+    "features": [
+      "Tela transpirable",
+      "Diseño fresco",
+      "Fácil de poner",
+      "Cómodo para el verano"
+    ]
+  },
+  {
+    "id": "prod_445",
+    "name": "VESTIDO MODAL FANTASIA TALLE 4",
+    "category": "ropa",
+    "subcategory": "Ropa",
+    "price": 5880,
+    "originalPrice": 8400,
+    "discount": 30,
+    "stock": 10,
+    "rating": 5,
+    "reviews": 32,
+    "featured": false,
+    "topDiscount": true,
+    "hasVideo": false,
+    "tags": [
+      "vestido",
+      "modal",
+      "fantasia",
+      "talle",
+      "ropa",
+      "verano",
+      "fresco",
+      "ligero"
+    ],
+    "description": "T-4 => LARGO = 38 cm   ANCHO = 34 cm",
+    "longDescription": "T-4 => LARGO = 38 cm   ANCHO = 34 cm",
+    "images": {
+      "cover": "assets/images/products/prod_445/cover.jpg",
+      "thumb": "assets/images/products/prod_445/thumb.jpg",
+      "gallery": [
+        "assets/images/products/prod_445/1.jpg"
+      ]
+    },
+    "specs": {
+      "SKU": "VES019"
+    },
+    "shipping": {
+      "free": false,
+      "days": 3
+    },
+    "badge": "👕 Ropa",
+    "brand": "Sin marca",
+    "sku": "VES019",
+    "features": [
+      "Tela transpirable",
+      "Diseño fresco",
+      "Fácil de poner",
+      "Cómodo para el verano"
+    ]
+  },
+  {
+    "id": "prod_446",
+    "name": "VESTIDO MODAL FANTASIA TALLE 5",
+    "category": "ropa",
+    "subcategory": "Ropa",
+    "price": 6860,
+    "originalPrice": 9800,
+    "discount": 30,
+    "stock": 10,
+    "rating": 4.8,
+    "reviews": 40,
+    "featured": false,
+    "topDiscount": true,
+    "hasVideo": false,
+    "tags": [
+      "vestido",
+      "modal",
+      "fantasia",
+      "talle",
+      "ropa",
+      "verano",
+      "fresco",
+      "ligero"
+    ],
+    "description": "T-5 => LARGO = 44 cm   ANCHO = 36 cm",
+    "longDescription": "T-5 => LARGO = 44 cm   ANCHO = 36 cm",
+    "images": {
+      "cover": "assets/images/products/prod_446/cover.jpg",
+      "thumb": "assets/images/products/prod_446/thumb.jpg",
+      "gallery": [
+        "assets/images/products/prod_446/1.jpg"
+      ]
+    },
+    "specs": {
+      "SKU": "VES020"
+    },
+    "shipping": {
+      "free": false,
+      "days": 4
+    },
+    "badge": "👕 Ropa",
+    "brand": "Sin marca",
+    "sku": "VES020",
+    "features": [
+      "Tela transpirable",
+      "Diseño fresco",
+      "Fácil de poner",
+      "Cómodo para el verano"
+    ]
+  },
+  {
+    "id": "prod_447",
+    "name": "VESTIDO MODAL FANTASIA TALLE 6",
+    "category": "ropa",
+    "subcategory": "Ropa",
+    "price": 6860,
+    "originalPrice": 9800,
+    "discount": 30,
+    "stock": 10,
+    "rating": 4.2,
+    "reviews": 19,
+    "featured": false,
+    "topDiscount": true,
+    "hasVideo": false,
+    "tags": [
+      "vestido",
+      "modal",
+      "fantasia",
+      "talle",
+      "ropa",
+      "verano",
+      "fresco",
+      "ligero"
+    ],
+    "description": "T-6 => LARGO = 47 cm   ANCHO = 44 cm",
+    "longDescription": "T-6 => LARGO = 47 cm   ANCHO = 44 cm",
+    "images": {
+      "cover": "assets/images/products/prod_447/cover.jpg",
+      "thumb": "assets/images/products/prod_447/thumb.jpg",
+      "gallery": [
+        "assets/images/products/prod_447/1.jpg"
+      ]
+    },
+    "specs": {
+      "SKU": "VES021"
+    },
+    "shipping": {
+      "free": false,
+      "days": 2
+    },
+    "badge": "👕 Ropa",
+    "brand": "Sin marca",
+    "sku": "VES021",
+    "features": [
+      "Tela transpirable",
+      "Diseño fresco",
+      "Fácil de poner",
+      "Cómodo para el verano"
     ]
   },
   {
     "id": "prod_448",
-    "name": "Chombas",
+    "name": "CHOMBAS T- 0",
     "category": "ropa",
     "subcategory": "Ropa",
-    "hasVariants": true,
-    "basePrice": 6860,
-    "baseOriginalPrice": 9800,
+    "price": 6860,
+    "originalPrice": 9800,
     "discount": 30,
-    "stock": 100,
-    "rating": 4.2,
-    "reviews": 297,
+    "stock": 10,
+    "rating": 4.4,
+    "reviews": 22,
     "featured": false,
     "topDiscount": true,
     "hasVideo": false,
@@ -14974,243 +16149,10 @@
       "ropa",
       "verano",
       "fresco",
-      "ligero",
-      "polo",
-      "casual"
+      "ligero"
     ],
-    "description": "Chombas para mascotas. Diseño casual y cómodo, ideal para paseos y uso diario.",
-    "longDescription": "Chombas para mascotas. Descripción: Elegantes chombas diseñadas para que tu mascota luzca con estilo casual. Perfectas para paseos, salidas y uso diario. Confeccionadas con tela transpirable y fresca, ideales para el verano. Características: Tela transpirable. Diseño fresco y casual. Fácil de poner. Cómodo para el verano. Costuras reforzadas.",
-    "variants": {
-      "attributes": [
-        {
-          "id": "talle",
-          "name": "Talle",
-          "type": "size"
-        }
-      ],
-      "combinations": [
-        {
-          "id": "var_448_0",
-          "attributes": {
-            "Talle": "0"
-          },
-          "price": 6860,
-          "originalPrice": 9800,
-          "stock": 10,
-          "sku": "CHO001-0",
-          "available": true,
-          "specs": {
-            "Largo": "25 cm",
-            "Ancho": "28 cm"
-          },
-          "images": {
-            "cover": "assets/images/products/prod_448/cover.jpg",
-            "thumb": "assets/images/products/prod_448/thumb.jpg",
-            "gallery": [
-              "assets/images/products/prod_448/1.jpg"
-            ]
-          }
-        },
-        {
-          "id": "var_448_1",
-          "attributes": {
-            "Talle": "1"
-          },
-          "price": 6860,
-          "originalPrice": 9800,
-          "stock": 10,
-          "sku": "CHO001-1",
-          "available": true,
-          "specs": {
-            "Largo": "28 cm",
-            "Ancho": "30 cm"
-          },
-          "images": {
-            "cover": "assets/images/products/prod_449/cover.jpg",
-            "thumb": "assets/images/products/prod_449/thumb.jpg",
-            "gallery": [
-              "assets/images/products/prod_449/1.jpg"
-            ]
-          }
-        },
-        {
-          "id": "var_448_2",
-          "attributes": {
-            "Talle": "2"
-          },
-          "price": 6860,
-          "originalPrice": 9800,
-          "stock": 10,
-          "sku": "CHO001-2",
-          "available": true,
-          "specs": {
-            "Largo": "31 cm",
-            "Ancho": "34 cm"
-          },
-          "images": {
-            "cover": "assets/images/products/prod_450/cover.jpg",
-            "thumb": "assets/images/products/prod_450/thumb.jpg",
-            "gallery": [
-              "assets/images/products/prod_450/1.jpg"
-            ]
-          }
-        },
-        {
-          "id": "var_448_3",
-          "attributes": {
-            "Talle": "3"
-          },
-          "price": 7840,
-          "originalPrice": 11200,
-          "stock": 10,
-          "sku": "CHO001-3",
-          "available": true,
-          "specs": {
-            "Largo": "35 cm",
-            "Ancho": "38 cm"
-          },
-          "images": {
-            "cover": "assets/images/products/prod_451/cover.jpg",
-            "thumb": "assets/images/products/prod_451/thumb.jpg",
-            "gallery": [
-              "assets/images/products/prod_451/1.jpg"
-            ]
-          }
-        },
-        {
-          "id": "var_448_4",
-          "attributes": {
-            "Talle": "4"
-          },
-          "price": 7840,
-          "originalPrice": 11200,
-          "stock": 10,
-          "sku": "CHO001-4",
-          "available": true,
-          "specs": {
-            "Largo": "39 cm",
-            "Ancho": "44 cm"
-          },
-          "images": {
-            "cover": "assets/images/products/prod_452/cover.jpg",
-            "thumb": "assets/images/products/prod_452/thumb.jpg",
-            "gallery": [
-              "assets/images/products/prod_452/1.jpg"
-            ]
-          }
-        },
-        {
-          "id": "var_448_5",
-          "attributes": {
-            "Talle": "5"
-          },
-          "price": 7840,
-          "originalPrice": 11200,
-          "stock": 10,
-          "sku": "CHO001-5",
-          "available": true,
-          "specs": {
-            "Largo": "43 cm",
-            "Ancho": "52 cm"
-          },
-          "images": {
-            "cover": "assets/images/products/prod_453/cover.jpg",
-            "thumb": "assets/images/products/prod_453/thumb.jpg",
-            "gallery": [
-              "assets/images/products/prod_453/1.jpg"
-            ]
-          }
-        },
-        {
-          "id": "var_448_6",
-          "attributes": {
-            "Talle": "6"
-          },
-          "price": 9800,
-          "originalPrice": 14000,
-          "stock": 10,
-          "sku": "CHO001-6",
-          "available": true,
-          "specs": {
-            "Largo": "47 cm",
-            "Ancho": "58 cm"
-          },
-          "images": {
-            "cover": "assets/images/products/prod_454/cover.jpg",
-            "thumb": "assets/images/products/prod_454/thumb.jpg",
-            "gallery": [
-              "assets/images/products/prod_454/1.jpg"
-            ]
-          }
-        },
-        {
-          "id": "var_448_7",
-          "attributes": {
-            "Talle": "7"
-          },
-          "price": 9800,
-          "originalPrice": 14000,
-          "stock": 10,
-          "sku": "CHO001-7",
-          "available": true,
-          "specs": {
-            "Largo": "51 cm",
-            "Ancho": "62 cm"
-          },
-          "images": {
-            "cover": "assets/images/products/prod_455/cover.jpg",
-            "thumb": "assets/images/products/prod_455/thumb.jpg",
-            "gallery": [
-              "assets/images/products/prod_455/1.jpg"
-            ]
-          }
-        },
-        {
-          "id": "var_448_8",
-          "attributes": {
-            "Talle": "8"
-          },
-          "price": 9800,
-          "originalPrice": 14000,
-          "stock": 10,
-          "sku": "CHO001-8",
-          "available": true,
-          "specs": {
-            "Largo": "55 cm",
-            "Ancho": "68 cm"
-          },
-          "images": {
-            "cover": "assets/images/products/prod_456/cover.jpg",
-            "thumb": "assets/images/products/prod_456/thumb.jpg",
-            "gallery": [
-              "assets/images/products/prod_456/1.jpg"
-            ]
-          }
-        },
-        {
-          "id": "var_448_9",
-          "attributes": {
-            "Talle": "9"
-          },
-          "price": 9800,
-          "originalPrice": 14000,
-          "stock": 10,
-          "sku": "CHO001-9",
-          "available": true,
-          "specs": {
-            "Largo": "58 cm",
-            "Ancho": "76 cm"
-          },
-          "images": {
-            "cover": "assets/images/products/prod_457/cover.jpg",
-            "thumb": "assets/images/products/prod_457/thumb.jpg",
-            "gallery": [
-              "assets/images/products/prod_457/1.jpg"
-            ]
-          }
-        }
-      ]
-    },
+    "description": "T-0 => LARGO = 25 cm   ANCHO = 28 cm",
+    "longDescription": "T-0 => LARGO = 25 cm   ANCHO = 28 cm",
     "images": {
       "cover": "assets/images/products/prod_448/cover.jpg",
       "thumb": "assets/images/products/prod_448/thumb.jpg",
@@ -15223,17 +16165,439 @@
     },
     "shipping": {
       "free": false,
-      "days": 3
+      "days": 4
     },
     "badge": "👕 Ropa",
     "brand": "Sin marca",
     "sku": "CHO001",
     "features": [
       "Tela transpirable",
-      "Diseño fresco y casual",
+      "Diseño fresco",
       "Fácil de poner",
-      "Cómodo para el verano",
-      "Costuras reforzadas"
+      "Cómodo para el verano"
+    ]
+  },
+  {
+    "id": "prod_449",
+    "name": "CHOMBAS T- 1",
+    "category": "ropa",
+    "subcategory": "Ropa",
+    "price": 6860,
+    "originalPrice": 9800,
+    "discount": 30,
+    "stock": 10,
+    "rating": 4.7,
+    "reviews": 19,
+    "featured": false,
+    "topDiscount": true,
+    "hasVideo": false,
+    "tags": [
+      "chombas",
+      "ropa",
+      "verano",
+      "fresco",
+      "ligero"
+    ],
+    "description": "T-1 => LARGO = 28 cm   ANCHO = 30 cm",
+    "longDescription": "T-1 => LARGO = 28 cm   ANCHO = 30 cm",
+    "images": {
+      "cover": "assets/images/products/prod_449/cover.jpg",
+      "thumb": "assets/images/products/prod_449/thumb.jpg",
+      "gallery": [
+        "assets/images/products/prod_449/1.jpg"
+      ]
+    },
+    "specs": {
+      "SKU": "CHO002"
+    },
+    "shipping": {
+      "free": false,
+      "days": 3
+    },
+    "badge": "👕 Ropa",
+    "brand": "Sin marca",
+    "sku": "CHO002",
+    "features": [
+      "Tela transpirable",
+      "Diseño fresco",
+      "Fácil de poner",
+      "Cómodo para el verano"
+    ]
+  },
+  {
+    "id": "prod_450",
+    "name": "CHOMBAS T- 2",
+    "category": "ropa",
+    "subcategory": "Ropa",
+    "price": 6860,
+    "originalPrice": 9800,
+    "discount": 30,
+    "stock": 10,
+    "rating": 4.7,
+    "reviews": 8,
+    "featured": false,
+    "topDiscount": true,
+    "hasVideo": false,
+    "tags": [
+      "chombas",
+      "ropa",
+      "verano",
+      "fresco",
+      "ligero"
+    ],
+    "description": "T-2 => LARGO = 31 cm   ANCHO = 34 cm",
+    "longDescription": "T-2 => LARGO = 31 cm   ANCHO = 34 cm",
+    "images": {
+      "cover": "assets/images/products/prod_450/cover.jpg",
+      "thumb": "assets/images/products/prod_450/thumb.jpg",
+      "gallery": [
+        "assets/images/products/prod_450/1.jpg"
+      ]
+    },
+    "specs": {
+      "SKU": "CHO003"
+    },
+    "shipping": {
+      "free": false,
+      "days": 4
+    },
+    "badge": "👕 Ropa",
+    "brand": "Sin marca",
+    "sku": "CHO003",
+    "features": [
+      "Tela transpirable",
+      "Diseño fresco",
+      "Fácil de poner",
+      "Cómodo para el verano"
+    ]
+  },
+  {
+    "id": "prod_451",
+    "name": "CHOMBAS T- 3",
+    "category": "ropa",
+    "subcategory": "Ropa",
+    "price": 7840,
+    "originalPrice": 11200,
+    "discount": 30,
+    "stock": 10,
+    "rating": 4.5,
+    "reviews": 29,
+    "featured": false,
+    "topDiscount": true,
+    "hasVideo": false,
+    "tags": [
+      "chombas",
+      "ropa",
+      "verano",
+      "fresco",
+      "ligero"
+    ],
+    "description": "T-3 => LARGO = 35 cm   ANCHO = 38 cm",
+    "longDescription": "T-3 => LARGO = 35 cm   ANCHO = 38 cm",
+    "images": {
+      "cover": "assets/images/products/prod_451/cover.jpg",
+      "thumb": "assets/images/products/prod_451/thumb.jpg",
+      "gallery": [
+        "assets/images/products/prod_451/1.jpg"
+      ]
+    },
+    "specs": {
+      "SKU": "CHO004"
+    },
+    "shipping": {
+      "free": false,
+      "days": 4
+    },
+    "badge": "👕 Ropa",
+    "brand": "Sin marca",
+    "sku": "CHO004",
+    "features": [
+      "Tela transpirable",
+      "Diseño fresco",
+      "Fácil de poner",
+      "Cómodo para el verano"
+    ]
+  },
+  {
+    "id": "prod_452",
+    "name": "CHOMBAS T- 4",
+    "category": "ropa",
+    "subcategory": "Ropa",
+    "price": 7840,
+    "originalPrice": 11200,
+    "discount": 30,
+    "stock": 10,
+    "rating": 4.3,
+    "reviews": 53,
+    "featured": false,
+    "topDiscount": true,
+    "hasVideo": false,
+    "tags": [
+      "chombas",
+      "ropa",
+      "verano",
+      "fresco",
+      "ligero"
+    ],
+    "description": "T-4 => LARGO = 39 cm   ANCHO = 44 cm",
+    "longDescription": "T-4 => LARGO = 39 cm   ANCHO = 44 cm",
+    "images": {
+      "cover": "assets/images/products/prod_452/cover.jpg",
+      "thumb": "assets/images/products/prod_452/thumb.jpg",
+      "gallery": [
+        "assets/images/products/prod_452/1.jpg"
+      ]
+    },
+    "specs": {
+      "SKU": "CHO005"
+    },
+    "shipping": {
+      "free": false,
+      "days": 4
+    },
+    "badge": "👕 Ropa",
+    "brand": "Sin marca",
+    "sku": "CHO005",
+    "features": [
+      "Tela transpirable",
+      "Diseño fresco",
+      "Fácil de poner",
+      "Cómodo para el verano"
+    ]
+  },
+  {
+    "id": "prod_453",
+    "name": "CHOMBAS T- 5",
+    "category": "ropa",
+    "subcategory": "Ropa",
+    "price": 7840,
+    "originalPrice": 11200,
+    "discount": 30,
+    "stock": 10,
+    "rating": 3.6,
+    "reviews": 33,
+    "featured": false,
+    "topDiscount": true,
+    "hasVideo": false,
+    "tags": [
+      "chombas",
+      "ropa",
+      "verano",
+      "fresco",
+      "ligero"
+    ],
+    "description": "T-5 => LARGO = 43 cm   ANCHO = 52 cm",
+    "longDescription": "T-5 => LARGO = 43 cm   ANCHO = 52 cm",
+    "images": {
+      "cover": "assets/images/products/prod_453/cover.jpg",
+      "thumb": "assets/images/products/prod_453/thumb.jpg",
+      "gallery": [
+        "assets/images/products/prod_453/1.jpg"
+      ]
+    },
+    "specs": {
+      "SKU": "CHO006"
+    },
+    "shipping": {
+      "free": false,
+      "days": 2
+    },
+    "badge": "👕 Ropa",
+    "brand": "Sin marca",
+    "sku": "CHO006",
+    "features": [
+      "Tela transpirable",
+      "Diseño fresco",
+      "Fácil de poner",
+      "Cómodo para el verano"
+    ]
+  },
+  {
+    "id": "prod_454",
+    "name": "CHOMBAS T- 6",
+    "category": "ropa",
+    "subcategory": "Ropa",
+    "price": 9800,
+    "originalPrice": 14000,
+    "discount": 30,
+    "stock": 10,
+    "rating": 4.1,
+    "reviews": 20,
+    "featured": false,
+    "topDiscount": true,
+    "hasVideo": false,
+    "tags": [
+      "chombas",
+      "ropa",
+      "verano",
+      "fresco",
+      "ligero"
+    ],
+    "description": "T-6 => LARGO = 47 cm   ANCHO = 58 cm",
+    "longDescription": "T-6 => LARGO = 47 cm   ANCHO = 58 cm",
+    "images": {
+      "cover": "assets/images/products/prod_454/cover.jpg",
+      "thumb": "assets/images/products/prod_454/thumb.jpg",
+      "gallery": [
+        "assets/images/products/prod_454/1.jpg"
+      ]
+    },
+    "specs": {
+      "SKU": "CHO007"
+    },
+    "shipping": {
+      "free": false,
+      "days": 4
+    },
+    "badge": "👕 Ropa",
+    "brand": "Sin marca",
+    "sku": "CHO007",
+    "features": [
+      "Tela transpirable",
+      "Diseño fresco",
+      "Fácil de poner",
+      "Cómodo para el verano"
+    ]
+  },
+  {
+    "id": "prod_455",
+    "name": "CHOMBAS T- 7",
+    "category": "ropa",
+    "subcategory": "Ropa",
+    "price": 9800,
+    "originalPrice": 14000,
+    "discount": 30,
+    "stock": 10,
+    "rating": 3.7,
+    "reviews": 24,
+    "featured": false,
+    "topDiscount": true,
+    "hasVideo": false,
+    "tags": [
+      "chombas",
+      "ropa",
+      "verano",
+      "fresco",
+      "ligero"
+    ],
+    "description": "T-7 => LARGO = 51 cm   ANCHO = 62 cm",
+    "longDescription": "T-7 => LARGO = 51 cm   ANCHO = 62 cm",
+    "images": {
+      "cover": "assets/images/products/prod_455/cover.jpg",
+      "thumb": "assets/images/products/prod_455/thumb.jpg",
+      "gallery": [
+        "assets/images/products/prod_455/1.jpg"
+      ]
+    },
+    "specs": {
+      "SKU": "CHO008"
+    },
+    "shipping": {
+      "free": false,
+      "days": 2
+    },
+    "badge": "👕 Ropa",
+    "brand": "Sin marca",
+    "sku": "CHO008",
+    "features": [
+      "Tela transpirable",
+      "Diseño fresco",
+      "Fácil de poner",
+      "Cómodo para el verano"
+    ]
+  },
+  {
+    "id": "prod_456",
+    "name": "CHOMBAS T- 8",
+    "category": "ropa",
+    "subcategory": "Ropa",
+    "price": 9800,
+    "originalPrice": 14000,
+    "discount": 30,
+    "stock": 10,
+    "rating": 4.8,
+    "reviews": 38,
+    "featured": false,
+    "topDiscount": true,
+    "hasVideo": false,
+    "tags": [
+      "chombas",
+      "ropa",
+      "verano",
+      "fresco",
+      "ligero"
+    ],
+    "description": "T-8 => LARGO = 55 cm   ANCHO = 68 cm",
+    "longDescription": "T-8 => LARGO = 55 cm   ANCHO = 68 cm",
+    "images": {
+      "cover": "assets/images/products/prod_456/cover.jpg",
+      "thumb": "assets/images/products/prod_456/thumb.jpg",
+      "gallery": [
+        "assets/images/products/prod_456/1.jpg"
+      ]
+    },
+    "specs": {
+      "SKU": "CHO009"
+    },
+    "shipping": {
+      "free": false,
+      "days": 2
+    },
+    "badge": "👕 Ropa",
+    "brand": "Sin marca",
+    "sku": "CHO009",
+    "features": [
+      "Tela transpirable",
+      "Diseño fresco",
+      "Fácil de poner",
+      "Cómodo para el verano"
+    ]
+  },
+  {
+    "id": "prod_457",
+    "name": "CHOMBAS T- 9",
+    "category": "ropa",
+    "subcategory": "Ropa",
+    "price": 9800,
+    "originalPrice": 14000,
+    "discount": 30,
+    "stock": 10,
+    "rating": 3.6,
+    "reviews": 51,
+    "featured": false,
+    "topDiscount": true,
+    "hasVideo": false,
+    "tags": [
+      "chombas",
+      "ropa",
+      "verano",
+      "fresco",
+      "ligero"
+    ],
+    "description": "T-9 => LARGO = 58 cm   ANCHO = 76 cm",
+    "longDescription": "T-9 => LARGO = 58 cm   ANCHO = 76 cm",
+    "images": {
+      "cover": "assets/images/products/prod_457/cover.jpg",
+      "thumb": "assets/images/products/prod_457/thumb.jpg",
+      "gallery": [
+        "assets/images/products/prod_457/1.jpg"
+      ]
+    },
+    "specs": {
+      "SKU": "CHO010"
+    },
+    "shipping": {
+      "free": false,
+      "days": 2
+    },
+    "badge": "👕 Ropa",
+    "brand": "Sin marca",
+    "sku": "CHO010",
+    "features": [
+      "Tela transpirable",
+      "Diseño fresco",
+      "Fácil de poner",
+      "Cómodo para el verano"
     ]
   },
   {
@@ -31325,13 +32689,10 @@
       "ropa",
       "verano",
       "fresco",
-      "ligero",
-      "seleccion",
-      "albiceleste",
-      "campeones"
+      "ligero"
     ],
-    "description": "🇦🇷 CAMISETA ARGENTINA PARA MASCOTAS – SELECCIÓN NACIONAL. La camiseta de la Selección Argentina para mascotas es ideal para los verdaderos campeones.",
-    "longDescription": "🇦🇷 CAMISETA ARGENTINA PARA MASCOTAS – SELECCIÓN NACIONAL. Descripción: La camiseta de la Selección Argentina para mascotas es ideal para los verdaderos campeones. Diseño inspirado en la albiceleste, perfecta para alentar en partidos, fechas patrias o simplemente salir a pasear con estilo. Cómoda, liviana y con excelente terminación. Características: Diseño Argentina clásico. Tela suave y respirable. Costuras reforzadas. No incomoda ni ajusta de más. Ideal para perros de todos los tamaños.",
+    "description": "T-1 => LARGO = 30 cm   ANCHO = 34 cm",
+    "longDescription": "T-1 => LARGO = 30 cm   ANCHO = 34 cm",
     "variants": {
       "attributes": [
         {
@@ -31351,10 +32712,6 @@
           "stock": 10,
           "sku": "CAM002-1",
           "available": true,
-          "specs": {
-            "Largo": "30 cm",
-            "Contorno Pecho": "34 cm"
-          },
           "images": {
             "cover": "assets/images/products/prod_400/cover.jpg",
             "thumb": "assets/images/products/prod_400/thumb.jpg",
@@ -31373,10 +32730,6 @@
           "stock": 10,
           "sku": "CAM002-2",
           "available": true,
-          "specs": {
-            "Largo": "34 cm",
-            "Contorno Pecho": "38 cm"
-          },
           "images": {
             "cover": "assets/images/products/prod_401/cover.jpg",
             "thumb": "assets/images/products/prod_401/thumb.jpg",
@@ -31395,10 +32748,6 @@
           "stock": 10,
           "sku": "CAM002-3",
           "available": true,
-          "specs": {
-            "Largo": "36 cm",
-            "Contorno Pecho": "42 cm"
-          },
           "images": {
             "cover": "assets/images/products/prod_402/cover.jpg",
             "thumb": "assets/images/products/prod_402/thumb.jpg",
@@ -31417,10 +32766,6 @@
           "stock": 10,
           "sku": "CAM002-4",
           "available": true,
-          "specs": {
-            "Largo": "39 cm",
-            "Contorno Pecho": "48 cm"
-          },
           "images": {
             "cover": "assets/images/products/prod_403/cover.jpg",
             "thumb": "assets/images/products/prod_403/thumb.jpg",
@@ -31439,10 +32784,6 @@
           "stock": 10,
           "sku": "CAM002-5",
           "available": true,
-          "specs": {
-            "Largo": "43 cm",
-            "Contorno Pecho": "52 cm"
-          },
           "images": {
             "cover": "assets/images/products/prod_404/cover.jpg",
             "thumb": "assets/images/products/prod_404/thumb.jpg",
@@ -31461,10 +32802,6 @@
           "stock": 10,
           "sku": "CAM002-6",
           "available": true,
-          "specs": {
-            "Largo": "47 cm",
-            "Contorno Pecho": "56 cm"
-          },
           "images": {
             "cover": "assets/images/products/prod_405/cover.jpg",
             "thumb": "assets/images/products/prod_405/thumb.jpg",
@@ -31483,10 +32820,6 @@
           "stock": 10,
           "sku": "CAM002-7",
           "available": true,
-          "specs": {
-            "Largo": "51 cm",
-            "Contorno Pecho": "58 cm"
-          },
           "images": {
             "cover": "assets/images/products/prod_406/cover.jpg",
             "thumb": "assets/images/products/prod_406/thumb.jpg",
@@ -31505,10 +32838,6 @@
           "stock": 10,
           "sku": "CAM002-8",
           "available": true,
-          "specs": {
-            "Largo": "57 cm",
-            "Contorno Pecho": "62 cm"
-          },
           "images": {
             "cover": "assets/images/products/prod_407/cover.jpg",
             "thumb": "assets/images/products/prod_407/thumb.jpg",
@@ -31527,10 +32856,6 @@
           "stock": 10,
           "sku": "CAM002-9",
           "available": true,
-          "specs": {
-            "Largo": "61 cm",
-            "Contorno Pecho": "66 cm"
-          },
           "images": {
             "cover": "assets/images/products/prod_408/cover.jpg",
             "thumb": "assets/images/products/prod_408/thumb.jpg",
@@ -31563,502 +32888,6 @@
       "Diseño fresco",
       "Fácil de poner",
       "Cómodo para el verano"
-    ]
-  },
-  {
-    "id": "prod_409",
-    "name": "Camiseta Básquet",
-    "category": "ropa",
-    "subcategory": "Ropa",
-    "hasVariants": true,
-    "basePrice": 4900,
-    "baseOriginalPrice": 7000,
-    "discount": 30,
-    "stock": 90,
-    "rating": 4,
-    "reviews": 35,
-    "featured": false,
-    "topDiscount": true,
-    "hasVideo": false,
-    "tags": [
-      "camiseta",
-      "básquet",
-      "talle",
-      "ropa",
-      "verano",
-      "fresco",
-      "ligero",
-      "nba",
-      "boston",
-      "bulls",
-      "lakers"
-    ],
-    "description": "CAMISETAS NBA PARA MASCOTAS – BOSTON, BULLS, LAKERS. Las camisetas NBA para mascotas son ideales para los fanáticos del básquet.",
-    "longDescription": "CAMISETAS NBA PARA MASCOTAS – BOSTON, BULLS, LAKERS. Descripción: Las camisetas NBA para mascotas son ideales para los fanáticos del básquet. Diseños modernos inspirados en los equipos más legendarios, con colores vibrantes y números icónicos. Cómodas, livianas y con excelente ajuste para que tu mascota luzca deportiva y única. Características: Tela deportiva respirable. Diseño moderno NBA. No limita el movimiento. Ideal para paseos y sesiones de fotos. Fácil lavado y secado rápido.",
-    "variants": {
-      "attributes": [
-        {
-          "id": "talle",
-          "name": "Talle",
-          "type": "size"
-        }
-      ],
-      "combinations": [
-        {
-          "id": "var_409_1",
-          "attributes": {
-            "Talle": "1"
-          },
-          "price": 4900,
-          "originalPrice": 7000,
-          "stock": 10,
-          "sku": "CAM011-1",
-          "available": true,
-          "specs": {
-            "Largo": "30 cm",
-            "Contorno Pecho": "34 cm"
-          },
-          "images": {
-            "cover": "assets/images/products/prod_409/cover.jpg",
-            "thumb": "assets/images/products/prod_409/thumb.jpg",
-            "gallery": [
-              "assets/images/products/prod_409/1.jpg"
-            ]
-          }
-        },
-        {
-          "id": "var_409_2",
-          "attributes": {
-            "Talle": "2"
-          },
-          "price": 4900,
-          "originalPrice": 7000,
-          "stock": 10,
-          "sku": "CAM011-2",
-          "available": true,
-          "specs": {
-            "Largo": "34 cm",
-            "Contorno Pecho": "38 cm"
-          },
-          "images": {
-            "cover": "assets/images/products/prod_410/cover.jpg",
-            "thumb": "assets/images/products/prod_410/thumb.jpg",
-            "gallery": [
-              "assets/images/products/prod_410/1.jpg"
-            ]
-          }
-        },
-        {
-          "id": "var_409_3",
-          "attributes": {
-            "Talle": "3"
-          },
-          "price": 4900,
-          "originalPrice": 7000,
-          "stock": 10,
-          "sku": "CAM011-3",
-          "available": true,
-          "specs": {
-            "Largo": "36 cm",
-            "Contorno Pecho": "42 cm"
-          },
-          "images": {
-            "cover": "assets/images/products/prod_411/cover.jpg",
-            "thumb": "assets/images/products/prod_411/thumb.jpg",
-            "gallery": [
-              "assets/images/products/prod_411/1.jpg"
-            ]
-          }
-        },
-        {
-          "id": "var_409_4",
-          "attributes": {
-            "Talle": "4"
-          },
-          "price": 5880,
-          "originalPrice": 8400,
-          "stock": 10,
-          "sku": "CAM011-4",
-          "available": true,
-          "specs": {
-            "Largo": "39 cm",
-            "Contorno Pecho": "48 cm"
-          },
-          "images": {
-            "cover": "assets/images/products/prod_412/cover.jpg",
-            "thumb": "assets/images/products/prod_412/thumb.jpg",
-            "gallery": [
-              "assets/images/products/prod_412/1.jpg"
-            ]
-          }
-        },
-        {
-          "id": "var_409_5",
-          "attributes": {
-            "Talle": "5"
-          },
-          "price": 5880,
-          "originalPrice": 8400,
-          "stock": 10,
-          "sku": "CAM011-5",
-          "available": true,
-          "specs": {
-            "Largo": "43 cm",
-            "Contorno Pecho": "52 cm"
-          },
-          "images": {
-            "cover": "assets/images/products/prod_413/cover.jpg",
-            "thumb": "assets/images/products/prod_413/thumb.jpg",
-            "gallery": [
-              "assets/images/products/prod_413/1.jpg"
-            ]
-          }
-        },
-        {
-          "id": "var_409_6",
-          "attributes": {
-            "Talle": "6"
-          },
-          "price": 5880,
-          "originalPrice": 8400,
-          "stock": 10,
-          "sku": "CAM011-6",
-          "available": true,
-          "specs": {
-            "Largo": "47 cm",
-            "Contorno Pecho": "56 cm"
-          },
-          "images": {
-            "cover": "assets/images/products/prod_414/cover.jpg",
-            "thumb": "assets/images/products/prod_414/thumb.jpg",
-            "gallery": [
-              "assets/images/products/prod_414/1.jpg"
-            ]
-          }
-        },
-        {
-          "id": "var_409_7",
-          "attributes": {
-            "Talle": "7"
-          },
-          "price": 6860,
-          "originalPrice": 9800,
-          "stock": 10,
-          "sku": "CAM011-7",
-          "available": true,
-          "specs": {
-            "Largo": "51 cm",
-            "Contorno Pecho": "58 cm"
-          },
-          "images": {
-            "cover": "assets/images/products/prod_415/cover.jpg",
-            "thumb": "assets/images/products/prod_415/thumb.jpg",
-            "gallery": [
-              "assets/images/products/prod_415/1.jpg"
-            ]
-          }
-        },
-        {
-          "id": "var_409_8",
-          "attributes": {
-            "Talle": "8"
-          },
-          "price": 6860,
-          "originalPrice": 9800,
-          "stock": 10,
-          "sku": "CAM011-8",
-          "available": true,
-          "images": {
-            "cover": "assets/images/products/prod_416/cover.jpg",
-            "thumb": "assets/images/products/prod_416/thumb.jpg",
-            "gallery": [
-              "assets/images/products/prod_416/1.jpg"
-            ]
-          }
-        },
-        {
-          "id": "var_409_9",
-          "attributes": {
-            "Talle": "9"
-          },
-          "price": 6860,
-          "originalPrice": 9800,
-          "stock": 10,
-          "sku": "CAM011-9",
-          "available": true,
-          "images": {
-            "cover": "assets/images/products/prod_417/cover.jpg",
-            "thumb": "assets/images/products/prod_417/thumb.jpg",
-            "gallery": [
-              "assets/images/products/prod_417/1.jpg"
-            ]
-          }
-        }
-      ]
-    },
-    "images": {
-      "cover": "assets/images/products/prod_409/cover.jpg",
-      "thumb": "assets/images/products/prod_409/thumb.jpg",
-      "gallery": [
-        "assets/images/products/prod_409/1.jpg"
-      ]
-    },
-    "specs": {
-      "SKU": "CAM011"
-    },
-    "shipping": {
-      "free": false,
-      "days": 2
-    },
-    "badge": "👕 Ropa",
-    "brand": "Sin marca",
-    "sku": "CAM011",
-    "features": [
-      "Tela transpirable",
-      "Diseño fresco",
-      "Fácil de poner",
-      "Cómodo para el verano"
-    ]
-  },
-  {
-    "id": "prod_418",
-    "name": "Camisetas Boca, River, Messi",
-    "category": "ropa",
-    "subcategory": "Ropa",
-    "hasVariants": true,
-    "basePrice": 4900,
-    "baseOriginalPrice": 7000,
-    "discount": 30,
-    "stock": 80,
-    "rating": 4.5,
-    "reviews": 49,
-    "featured": false,
-    "topDiscount": true,
-    "hasVideo": false,
-    "tags": [
-      "camisetas",
-      "futbol",
-      "boca",
-      "river",
-      "messi",
-      "argentina",
-      "ropa",
-      "verano",
-      "mascotas",
-      "perros"
-    ],
-    "description": "CAMISETAS DE FÚTBOL PARA MASCOTAS – CLUBES ARGENTINOS. Vestí a tu mascota con las camisetas más icónicas del fútbol argentino.",
-    "longDescription": "CAMISETAS DE FÚTBOL PARA MASCOTAS – CLUBES ARGENTINOS. Descripción: Vestí a tu mascota con las camisetas más icónicas del fútbol argentino. Diseño deportivo, liviano y cómodo, ideal para paseos, fotos y días de partido. Confeccionadas en tela suave y respirable, pensadas para que tu mascota esté cómoda y con estilo. Perfectas para perros pequeños, medianos y grandes. Características: Tela liviana y fresca. Costuras resistentes. Diseño estampado de alta calidad. Fácil de colocar. Ideal para uso diario o eventos deportivos.",
-    "variants": {
-      "attributes": [
-        {
-          "id": "talle",
-          "name": "Talle",
-          "type": "size"
-        }
-      ],
-      "combinations": [
-        {
-          "id": "var_418_1",
-          "attributes": {
-            "Talle": "1"
-          },
-          "price": 4900,
-          "originalPrice": 7000,
-          "stock": 10,
-          "sku": "CAM020-1",
-          "available": true,
-          "specs": {
-            "Largo": "30 cm",
-            "Contorno Pecho": "34 cm"
-          },
-          "images": {
-            "cover": "assets/images/products/prod_418/cover.jpg",
-            "thumb": "assets/images/products/prod_418/thumb.jpg",
-            "gallery": [
-              "assets/images/products/prod_418/1.jpg"
-            ]
-          }
-        },
-        {
-          "id": "var_418_2",
-          "attributes": {
-            "Talle": "2"
-          },
-          "price": 4900,
-          "originalPrice": 7000,
-          "stock": 10,
-          "sku": "CAM020-2",
-          "available": true,
-          "specs": {
-            "Largo": "34 cm",
-            "Contorno Pecho": "38 cm"
-          },
-          "images": {
-            "cover": "assets/images/products/prod_419/cover.jpg",
-            "thumb": "assets/images/products/prod_419/thumb.jpg",
-            "gallery": [
-              "assets/images/products/prod_419/1.jpg"
-            ]
-          }
-        },
-        {
-          "id": "var_418_3",
-          "attributes": {
-            "Talle": "3"
-          },
-          "price": 4900,
-          "originalPrice": 7000,
-          "stock": 10,
-          "sku": "CAM020-3",
-          "available": true,
-          "specs": {
-            "Largo": "36 cm",
-            "Contorno Pecho": "42 cm"
-          },
-          "images": {
-            "cover": "assets/images/products/prod_420/cover.jpg",
-            "thumb": "assets/images/products/prod_420/thumb.jpg",
-            "gallery": [
-              "assets/images/products/prod_420/1.jpg"
-            ]
-          }
-        },
-        {
-          "id": "var_418_4",
-          "attributes": {
-            "Talle": "5"
-          },
-          "price": 5880,
-          "originalPrice": 8400,
-          "stock": 10,
-          "sku": "CAM020-5",
-          "available": true,
-          "specs": {
-            "Largo": "43 cm",
-            "Contorno Pecho": "52 cm"
-          },
-          "images": {
-            "cover": "assets/images/products/prod_422/cover.jpg",
-            "thumb": "assets/images/products/prod_422/thumb.jpg",
-            "gallery": [
-              "assets/images/products/prod_422/1.jpg"
-            ]
-          }
-        },
-        {
-          "id": "var_418_5",
-          "attributes": {
-            "Talle": "6"
-          },
-          "price": 5880,
-          "originalPrice": 8400,
-          "stock": 10,
-          "sku": "CAM020-6",
-          "available": true,
-          "specs": {
-            "Largo": "47 cm",
-            "Contorno Pecho": "56 cm"
-          },
-          "images": {
-            "cover": "assets/images/products/prod_423/cover.jpg",
-            "thumb": "assets/images/products/prod_423/thumb.jpg",
-            "gallery": [
-              "assets/images/products/prod_423/1.jpg"
-            ]
-          }
-        },
-        {
-          "id": "var_418_6",
-          "attributes": {
-            "Talle": "7"
-          },
-          "price": 6860,
-          "originalPrice": 9800,
-          "stock": 10,
-          "sku": "CAM020-7",
-          "available": true,
-          "specs": {
-            "Largo": "51 cm",
-            "Contorno Pecho": "58 cm"
-          },
-          "images": {
-            "cover": "assets/images/products/prod_424/cover.jpg",
-            "thumb": "assets/images/products/prod_424/thumb.jpg",
-            "gallery": [
-              "assets/images/products/prod_424/1.jpg"
-            ]
-          }
-        },
-        {
-          "id": "var_418_7",
-          "attributes": {
-            "Talle": "8"
-          },
-          "price": 6860,
-          "originalPrice": 9800,
-          "stock": 10,
-          "sku": "CAM020-8",
-          "available": true,
-          "specs": {
-            "Largo": "57 cm",
-            "Contorno Pecho": "62 cm"
-          },
-          "images": {
-            "cover": "assets/images/products/prod_425/cover.jpg",
-            "thumb": "assets/images/products/prod_425/thumb.jpg",
-            "gallery": [
-              "assets/images/products/prod_425/1.jpg"
-            ]
-          }
-        },
-        {
-          "id": "var_418_8",
-          "attributes": {
-            "Talle": "9"
-          },
-          "price": 6860,
-          "originalPrice": 9800,
-          "stock": 10,
-          "sku": "CAM020-9",
-          "available": true,
-          "specs": {
-            "Largo": "61 cm",
-            "Contorno Pecho": "66 cm"
-          },
-          "images": {
-            "cover": "assets/images/products/prod_426/cover.jpg",
-            "thumb": "assets/images/products/prod_426/thumb.jpg",
-            "gallery": [
-              "assets/images/products/prod_426/1.jpg"
-            ]
-          }
-        }
-      ]
-    },
-    "images": {
-      "cover": "assets/images/products/prod_418/cover.jpg",
-      "thumb": "assets/images/products/prod_418/thumb.jpg",
-      "gallery": [
-        "assets/images/products/prod_418/1.jpg"
-      ]
-    },
-    "specs": {
-      "SKU": "CAM020"
-    },
-    "shipping": {
-      "free": false,
-      "days": 3
-    },
-    "badge": "⚽ Fútbol",
-    "brand": "Sin marca",
-    "sku": "CAM020",
-    "features": [
-      "Tela liviana y fresca",
-      "Costuras resistentes",
-      "Diseño estampado de alta calidad",
-      "Fácil de colocar",
-      "Ideal para uso diario o eventos deportivos"
     ]
   }
 ]
