@@ -15592,1302 +15592,305 @@
   },
   {
     "id": "prod_481",
-    "name": "POLAR  FANTASIA TALLE 0",
+    "name": "Polar Fantasía",
     "category": "ropa",
     "subcategory": "Ropa",
-    "price": 2826.25,
-    "originalPrice": null,
+    "hasVariants": true,
+    "basePrice": 2826.25,
+    "baseOriginalPrice": null,
     "discount": null,
-    "stock": 10,
-    "rating": 4.5,
-    "reviews": 22,
+    "stock": 130,
+    "rating": 4.3,
+    "reviews": 324,
     "featured": false,
     "topDiscount": false,
     "hasVideo": false,
-    "tags": [
-      "polar",
-      "fantasia",
-      "talle",
-      "ropa",
-      "invierno",
-      "abrigo",
-      "calor"
-    ],
-    "description": "T-0  => LARGO = 26 cm   ANCHO = 28 cm",
-    "longDescription": "T-0  => LARGO = 26 cm   ANCHO = 28 cm",
-    "images": {
-      "cover": "assets/images/products/prod_481/cover.jpg",
-      "thumb": "assets/images/products/prod_481/thumb.jpg",
-      "gallery": [
-        "assets/images/products/prod_481/1.jpg"
+    "tags": ["polar", "fantasia", "talle", "ropa", "invierno", "abrigo", "calor", "estampado"],
+    "description": "Polar Fantasía para Mascotas – Abrigo con estilo. Mantené a tu mascota abrigada con diseños únicos y coloridos.",
+    "longDescription": "Polar Fantasía para Mascotas – Abrigo con estilo. Descripción: Mantené a tu mascota abrigada y con estilo con nuestro polar fantasía de diseños únicos. Confeccionado en tela polar suave y cálida, ideal para los días fríos de otoño e invierno. Características: Mantiene el calor. Material suave y cómodo. Diseños estampados únicos. Perfecto para el frío. Fácil de poner y quitar.",
+    "variants": {
+      "attributes": [{"id": "talle", "name": "Talle", "type": "size"}],
+      "combinations": [
+        {"id": "var_481_0", "attributes": {"Talle": "0"}, "price": 2826.25, "originalPrice": null, "stock": 10, "sku": "POL015-0", "available": true, "specs": {"Largo": "26 cm", "Ancho": "28 cm"}, "images": {"cover": "assets/images/products/prod_481/cover.jpg", "thumb": "assets/images/products/prod_481/thumb.jpg", "gallery": ["assets/images/products/prod_481/1.jpg"]}},
+        {"id": "var_481_1", "attributes": {"Talle": "1"}, "price": 2826.25, "originalPrice": null, "stock": 10, "sku": "POL015-1", "available": true, "specs": {"Largo": "30 cm", "Ancho": "32 cm"}, "images": {"cover": "assets/images/products/prod_482/cover.jpg", "thumb": "assets/images/products/prod_482/thumb.jpg", "gallery": ["assets/images/products/prod_482/1.jpg"]}},
+        {"id": "var_481_2", "attributes": {"Talle": "2"}, "price": 2826.25, "originalPrice": null, "stock": 10, "sku": "POL015-2", "available": true, "specs": {"Largo": "33 cm", "Ancho": "34 cm"}, "images": {"cover": "assets/images/products/prod_483/cover.jpg", "thumb": "assets/images/products/prod_483/thumb.jpg", "gallery": ["assets/images/products/prod_483/1.jpg"]}},
+        {"id": "var_481_3", "attributes": {"Talle": "3"}, "price": 4295.9, "originalPrice": null, "stock": 10, "sku": "POL015-3", "available": true, "specs": {"Largo": "39 cm", "Ancho": "38 cm"}, "images": {"cover": "assets/images/products/prod_484/cover.jpg", "thumb": "assets/images/products/prod_484/thumb.jpg", "gallery": ["assets/images/products/prod_484/1.jpg"]}},
+        {"id": "var_481_4", "attributes": {"Talle": "4"}, "price": 4295.9, "originalPrice": null, "stock": 10, "sku": "POL015-4", "available": true, "specs": {"Largo": "42 cm", "Ancho": "42 cm"}, "images": {"cover": "assets/images/products/prod_485/cover.jpg", "thumb": "assets/images/products/prod_485/thumb.jpg", "gallery": ["assets/images/products/prod_485/1.jpg"]}},
+        {"id": "var_481_5", "attributes": {"Talle": "5"}, "price": 4295.9, "originalPrice": null, "stock": 10, "sku": "POL015-5", "available": true, "specs": {"Largo": "47 cm", "Ancho": "52 cm"}, "images": {"cover": "assets/images/products/prod_486/cover.jpg", "thumb": "assets/images/products/prod_486/thumb.jpg", "gallery": ["assets/images/products/prod_486/1.jpg"]}},
+        {"id": "var_481_6", "attributes": {"Talle": "6"}, "price": 5426.4, "originalPrice": null, "stock": 10, "sku": "POL015-6", "available": true, "specs": {"Largo": "50 cm", "Ancho": "52 cm"}, "images": {"cover": "assets/images/products/prod_487/cover.jpg", "thumb": "assets/images/products/prod_487/thumb.jpg", "gallery": ["assets/images/products/prod_487/1.jpg"]}},
+        {"id": "var_481_7", "attributes": {"Talle": "7"}, "price": 5426.4, "originalPrice": null, "stock": 10, "sku": "POL015-7", "available": true, "specs": {"Largo": "54 cm", "Ancho": "60 cm"}, "images": {"cover": "assets/images/products/prod_488/cover.jpg", "thumb": "assets/images/products/prod_488/thumb.jpg", "gallery": ["assets/images/products/prod_488/1.jpg"]}},
+        {"id": "var_481_8", "attributes": {"Talle": "8"}, "price": 5426.4, "originalPrice": null, "stock": 10, "sku": "POL015-8", "available": true, "specs": {"Largo": "60 cm", "Ancho": "64 cm"}, "images": {"cover": "assets/images/products/prod_489/cover.jpg", "thumb": "assets/images/products/prod_489/thumb.jpg", "gallery": ["assets/images/products/prod_489/1.jpg"]}},
+        {"id": "var_481_9", "attributes": {"Talle": "9"}, "price": 6783, "originalPrice": null, "stock": 10, "sku": "POL015-9", "available": true, "specs": {"Largo": "64 cm", "Ancho": "72 cm"}, "images": {"cover": "assets/images/products/prod_490/cover.jpg", "thumb": "assets/images/products/prod_490/thumb.jpg", "gallery": ["assets/images/products/prod_490/1.jpg"]}},
+        {"id": "var_481_10", "attributes": {"Talle": "10"}, "price": 6783, "originalPrice": null, "stock": 10, "sku": "POL015-10", "available": true, "specs": {"Largo": "72 cm", "Ancho": "74 cm"}, "images": {"cover": "assets/images/products/prod_491/cover.jpg", "thumb": "assets/images/products/prod_491/thumb.jpg", "gallery": ["assets/images/products/prod_491/1.jpg"]}},
+        {"id": "var_481_11", "attributes": {"Talle": "11"}, "price": 7913.5, "originalPrice": null, "stock": 10, "sku": "POL015-11", "available": true, "specs": {"Largo": "78 cm", "Ancho": "84 cm"}, "images": {"cover": "assets/images/products/prod_492/cover.jpg", "thumb": "assets/images/products/prod_492/thumb.jpg", "gallery": ["assets/images/products/prod_492/1.jpg"]}},
+        {"id": "var_481_12", "attributes": {"Talle": "12"}, "price": 7913.5, "originalPrice": null, "stock": 10, "sku": "POL015-12", "available": true, "specs": {"Largo": "80 cm", "Ancho": "82 cm"}, "images": {"cover": "assets/images/products/prod_493/cover.jpg", "thumb": "assets/images/products/prod_493/thumb.jpg", "gallery": ["assets/images/products/prod_493/1.jpg"]}}
       ]
     },
-    "specs": {
-      "SKU": "POL015"
-    },
-    "shipping": {
-      "free": false,
-      "days": 3
-    },
+    "images": {"cover": "assets/images/products/prod_481/cover.jpg", "thumb": "assets/images/products/prod_481/thumb.jpg", "gallery": ["assets/images/products/prod_481/1.jpg"]},
+    "specs": {"SKU": "POL015"},
+    "shipping": {"free": false, "days": 3},
     "badge": "🧥 Ropa",
     "brand": "Sin marca",
     "sku": "POL015",
-    "features": [
-      "Mantiene el calor",
-      "Material suave",
-      "Resistente al agua",
-      "Perfecto para el frío"
-    ]
-  },
-  {
-    "id": "prod_482",
-    "name": "POLAR  FANTASIA TALLE 1",
-    "category": "ropa",
-    "subcategory": "Ropa",
-    "price": 2826.25,
-    "originalPrice": null,
-    "discount": null,
-    "stock": 10,
-    "rating": 4.6,
-    "reviews": 17,
-    "featured": false,
-    "topDiscount": false,
-    "hasVideo": false,
-    "tags": [
-      "polar",
-      "fantasia",
-      "talle",
-      "ropa",
-      "invierno",
-      "abrigo",
-      "calor"
-    ],
-    "description": "T-1  => LARGO = 30 cm   ANCHO = 32 cm",
-    "longDescription": "T-1  => LARGO = 30 cm   ANCHO = 32 cm",
-    "images": {
-      "cover": "assets/images/products/prod_482/cover.jpg",
-      "thumb": "assets/images/products/prod_482/thumb.jpg",
-      "gallery": [
-        "assets/images/products/prod_482/1.jpg"
-      ]
-    },
-    "specs": {
-      "SKU": "POL016"
-    },
-    "shipping": {
-      "free": false,
-      "days": 4
-    },
-    "badge": "🧥 Ropa",
-    "brand": "Sin marca",
-    "sku": "POL016",
-    "features": [
-      "Mantiene el calor",
-      "Material suave",
-      "Resistente al agua",
-      "Perfecto para el frío"
-    ]
-  },
-  {
-    "id": "prod_483",
-    "name": "POLAR  FANTASIA TALLE 2",
-    "category": "ropa",
-    "subcategory": "Ropa",
-    "price": 2826.25,
-    "originalPrice": null,
-    "discount": null,
-    "stock": 10,
-    "rating": 5,
-    "reviews": 32,
-    "featured": false,
-    "topDiscount": false,
-    "hasVideo": false,
-    "tags": [
-      "polar",
-      "fantasia",
-      "talle",
-      "ropa",
-      "invierno",
-      "abrigo",
-      "calor"
-    ],
-    "description": "T-2  => LARGO = 33 cm   ANCHO = 34 cm",
-    "longDescription": "T-2  => LARGO = 33 cm   ANCHO = 34 cm",
-    "images": {
-      "cover": "assets/images/products/prod_483/cover.jpg",
-      "thumb": "assets/images/products/prod_483/thumb.jpg",
-      "gallery": [
-        "assets/images/products/prod_483/1.jpg"
-      ]
-    },
-    "specs": {
-      "SKU": "POL017"
-    },
-    "shipping": {
-      "free": false,
-      "days": 3
-    },
-    "badge": "🧥 Ropa",
-    "brand": "Sin marca",
-    "sku": "POL017",
-    "features": [
-      "Mantiene el calor",
-      "Material suave",
-      "Resistente al agua",
-      "Perfecto para el frío"
-    ]
-  },
-  {
-    "id": "prod_484",
-    "name": "POLAR  FANTASIA TALLE 3",
-    "category": "ropa",
-    "subcategory": "Ropa",
-    "price": 4295.9,
-    "originalPrice": null,
-    "discount": null,
-    "stock": 10,
-    "rating": 3.6,
-    "reviews": 47,
-    "featured": false,
-    "topDiscount": false,
-    "hasVideo": false,
-    "tags": [
-      "polar",
-      "fantasia",
-      "talle",
-      "ropa",
-      "invierno",
-      "abrigo",
-      "calor"
-    ],
-    "description": "T-3  => LARGO = 39 cm   ANCHO = 38 cm",
-    "longDescription": "T-3  => LARGO = 39 cm   ANCHO = 38 cm",
-    "images": {
-      "cover": "assets/images/products/prod_484/cover.jpg",
-      "thumb": "assets/images/products/prod_484/thumb.jpg",
-      "gallery": [
-        "assets/images/products/prod_484/1.jpg"
-      ]
-    },
-    "specs": {
-      "SKU": "POL018"
-    },
-    "shipping": {
-      "free": false,
-      "days": 2
-    },
-    "badge": "🧥 Ropa",
-    "brand": "Sin marca",
-    "sku": "POL018",
-    "features": [
-      "Mantiene el calor",
-      "Material suave",
-      "Resistente al agua",
-      "Perfecto para el frío"
-    ]
-  },
-  {
-    "id": "prod_485",
-    "name": "POLAR  FANTASIA TALLE 4",
-    "category": "ropa",
-    "subcategory": "Ropa",
-    "price": 4295.9,
-    "originalPrice": null,
-    "discount": null,
-    "stock": 10,
-    "rating": 4.8,
-    "reviews": 6,
-    "featured": false,
-    "topDiscount": false,
-    "hasVideo": false,
-    "tags": [
-      "polar",
-      "fantasia",
-      "talle",
-      "ropa",
-      "invierno",
-      "abrigo",
-      "calor"
-    ],
-    "description": "T-4  => LARGO = 42 cm   ANCHO = 42 cm",
-    "longDescription": "T-4  => LARGO = 42 cm   ANCHO = 42 cm",
-    "images": {
-      "cover": "assets/images/products/prod_485/cover.jpg",
-      "thumb": "assets/images/products/prod_485/thumb.jpg",
-      "gallery": [
-        "assets/images/products/prod_485/1.jpg"
-      ]
-    },
-    "specs": {
-      "SKU": "POL019"
-    },
-    "shipping": {
-      "free": false,
-      "days": 4
-    },
-    "badge": "🧥 Ropa",
-    "brand": "Sin marca",
-    "sku": "POL019",
-    "features": [
-      "Mantiene el calor",
-      "Material suave",
-      "Resistente al agua",
-      "Perfecto para el frío"
-    ]
-  },
-  {
-    "id": "prod_486",
-    "name": "POLAR  FANTASIA TALLE 5",
-    "category": "ropa",
-    "subcategory": "Ropa",
-    "price": 4295.9,
-    "originalPrice": null,
-    "discount": null,
-    "stock": 10,
-    "rating": 5,
-    "reviews": 47,
-    "featured": false,
-    "topDiscount": false,
-    "hasVideo": false,
-    "tags": [
-      "polar",
-      "fantasia",
-      "talle",
-      "ropa",
-      "invierno",
-      "abrigo",
-      "calor"
-    ],
-    "description": "T-5  => LARGO = 47 cm   ANCHO = 52 cm",
-    "longDescription": "T-5  => LARGO = 47 cm   ANCHO = 52 cm",
-    "images": {
-      "cover": "assets/images/products/prod_486/cover.jpg",
-      "thumb": "assets/images/products/prod_486/thumb.jpg",
-      "gallery": [
-        "assets/images/products/prod_486/1.jpg"
-      ]
-    },
-    "specs": {
-      "SKU": "POL020"
-    },
-    "shipping": {
-      "free": false,
-      "days": 3
-    },
-    "badge": "🧥 Ropa",
-    "brand": "Sin marca",
-    "sku": "POL020",
-    "features": [
-      "Mantiene el calor",
-      "Material suave",
-      "Resistente al agua",
-      "Perfecto para el frío"
-    ]
-  },
-  {
-    "id": "prod_487",
-    "name": "POLAR  FANTASIA TALLE 6",
-    "category": "ropa",
-    "subcategory": "Ropa",
-    "price": 5426.4,
-    "originalPrice": null,
-    "discount": null,
-    "stock": 10,
-    "rating": 3.9,
-    "reviews": 32,
-    "featured": false,
-    "topDiscount": false,
-    "hasVideo": false,
-    "tags": [
-      "polar",
-      "fantasia",
-      "talle",
-      "ropa",
-      "invierno",
-      "abrigo",
-      "calor"
-    ],
-    "description": "T-6  => LARGO = 50 cm   ANCHO = 52 cm",
-    "longDescription": "T-6  => LARGO = 50 cm   ANCHO = 52 cm",
-    "images": {
-      "cover": "assets/images/products/prod_487/cover.jpg",
-      "thumb": "assets/images/products/prod_487/thumb.jpg",
-      "gallery": [
-        "assets/images/products/prod_487/1.jpg"
-      ]
-    },
-    "specs": {
-      "SKU": "POL021"
-    },
-    "shipping": {
-      "free": false,
-      "days": 2
-    },
-    "badge": "🧥 Ropa",
-    "brand": "Sin marca",
-    "sku": "POL021",
-    "features": [
-      "Mantiene el calor",
-      "Material suave",
-      "Resistente al agua",
-      "Perfecto para el frío"
-    ]
-  },
-  {
-    "id": "prod_488",
-    "name": "POLAR  FANTASIA TALLE 7",
-    "category": "ropa",
-    "subcategory": "Ropa",
-    "price": 5426.4,
-    "originalPrice": null,
-    "discount": null,
-    "stock": 10,
-    "rating": 4,
-    "reviews": 36,
-    "featured": false,
-    "topDiscount": false,
-    "hasVideo": false,
-    "tags": [
-      "polar",
-      "fantasia",
-      "talle",
-      "ropa",
-      "invierno",
-      "abrigo",
-      "calor"
-    ],
-    "description": "T-7  => LARGO = 54 cm   ANCHO = 60 cm",
-    "longDescription": "T-7  => LARGO = 54 cm   ANCHO = 60 cm",
-    "images": {
-      "cover": "assets/images/products/prod_488/cover.jpg",
-      "thumb": "assets/images/products/prod_488/thumb.jpg",
-      "gallery": [
-        "assets/images/products/prod_488/1.jpg"
-      ]
-    },
-    "specs": {
-      "SKU": "POL022"
-    },
-    "shipping": {
-      "free": false,
-      "days": 2
-    },
-    "badge": "🧥 Ropa",
-    "brand": "Sin marca",
-    "sku": "POL022",
-    "features": [
-      "Mantiene el calor",
-      "Material suave",
-      "Resistente al agua",
-      "Perfecto para el frío"
-    ]
-  },
-  {
-    "id": "prod_489",
-    "name": "POLAR  FANTASIA TALLE 8",
-    "category": "ropa",
-    "subcategory": "Ropa",
-    "price": 5426.4,
-    "originalPrice": null,
-    "discount": null,
-    "stock": 10,
-    "rating": 4.4,
-    "reviews": 12,
-    "featured": false,
-    "topDiscount": false,
-    "hasVideo": false,
-    "tags": [
-      "polar",
-      "fantasia",
-      "talle",
-      "ropa",
-      "invierno",
-      "abrigo",
-      "calor"
-    ],
-    "description": "T-8  => LARGO = 60 cm   ANCHO = 64 cm",
-    "longDescription": "T-8  => LARGO = 60 cm   ANCHO = 64 cm",
-    "images": {
-      "cover": "assets/images/products/prod_489/cover.jpg",
-      "thumb": "assets/images/products/prod_489/thumb.jpg",
-      "gallery": [
-        "assets/images/products/prod_489/1.jpg"
-      ]
-    },
-    "specs": {
-      "SKU": "POL023"
-    },
-    "shipping": {
-      "free": false,
-      "days": 2
-    },
-    "badge": "🧥 Ropa",
-    "brand": "Sin marca",
-    "sku": "POL023",
-    "features": [
-      "Mantiene el calor",
-      "Material suave",
-      "Resistente al agua",
-      "Perfecto para el frío"
-    ]
-  },
-  {
-    "id": "prod_490",
-    "name": "POLAR  FANTASIA TALLE 9",
-    "category": "ropa",
-    "subcategory": "Ropa",
-    "price": 6783,
-    "originalPrice": null,
-    "discount": null,
-    "stock": 10,
-    "rating": 4.6,
-    "reviews": 14,
-    "featured": false,
-    "topDiscount": false,
-    "hasVideo": false,
-    "tags": [
-      "polar",
-      "fantasia",
-      "talle",
-      "ropa",
-      "invierno",
-      "abrigo",
-      "calor"
-    ],
-    "description": "T-9  => LARGO = 64 cm   ANCHO = 72 cm",
-    "longDescription": "T-9  => LARGO = 64 cm   ANCHO = 72 cm",
-    "images": {
-      "cover": "assets/images/products/prod_490/cover.jpg",
-      "thumb": "assets/images/products/prod_490/thumb.jpg",
-      "gallery": [
-        "assets/images/products/prod_490/1.jpg"
-      ]
-    },
-    "specs": {
-      "SKU": "POL024"
-    },
-    "shipping": {
-      "free": false,
-      "days": 3
-    },
-    "badge": "🧥 Ropa",
-    "brand": "Sin marca",
-    "sku": "POL024",
-    "features": [
-      "Mantiene el calor",
-      "Material suave",
-      "Resistente al agua",
-      "Perfecto para el frío"
-    ]
-  },
-  {
-    "id": "prod_491",
-    "name": "POLAR  FANTASIA TALLE 10",
-    "category": "ropa",
-    "subcategory": "Ropa",
-    "price": 6783,
-    "originalPrice": null,
-    "discount": null,
-    "stock": 10,
-    "rating": 4,
-    "reviews": 32,
-    "featured": false,
-    "topDiscount": false,
-    "hasVideo": false,
-    "tags": [
-      "polar",
-      "fantasia",
-      "talle",
-      "ropa",
-      "invierno",
-      "abrigo",
-      "calor"
-    ],
-    "description": "T-10 => LARGO = 72 cm   ANCHO = 74 cm",
-    "longDescription": "T-10 => LARGO = 72 cm   ANCHO = 74 cm",
-    "images": {
-      "cover": "assets/images/products/prod_491/cover.jpg",
-      "thumb": "assets/images/products/prod_491/thumb.jpg",
-      "gallery": [
-        "assets/images/products/prod_491/1.jpg"
-      ]
-    },
-    "specs": {
-      "SKU": "POL025"
-    },
-    "shipping": {
-      "free": false,
-      "days": 2
-    },
-    "badge": "🧥 Ropa",
-    "brand": "Sin marca",
-    "sku": "POL025",
-    "features": [
-      "Mantiene el calor",
-      "Material suave",
-      "Resistente al agua",
-      "Perfecto para el frío"
-    ]
-  },
-  {
-    "id": "prod_492",
-    "name": "POLAR  FANTASIA TALLE 11",
-    "category": "ropa",
-    "subcategory": "Ropa",
-    "price": 7913.5,
-    "originalPrice": null,
-    "discount": null,
-    "stock": 10,
-    "rating": 3.8,
-    "reviews": 8,
-    "featured": false,
-    "topDiscount": false,
-    "hasVideo": false,
-    "tags": [
-      "polar",
-      "fantasia",
-      "talle",
-      "ropa",
-      "invierno",
-      "abrigo",
-      "calor"
-    ],
-    "description": "T-11 => LARGO = 78 cm   ANCHO = 84 cm",
-    "longDescription": "T-11 => LARGO = 78 cm   ANCHO = 84 cm",
-    "images": {
-      "cover": "assets/images/products/prod_492/cover.jpg",
-      "thumb": "assets/images/products/prod_492/thumb.jpg",
-      "gallery": [
-        "assets/images/products/prod_492/1.jpg"
-      ]
-    },
-    "specs": {
-      "SKU": "POL026"
-    },
-    "shipping": {
-      "free": false,
-      "days": 3
-    },
-    "badge": "🧥 Ropa",
-    "brand": "Sin marca",
-    "sku": "POL026",
-    "features": [
-      "Mantiene el calor",
-      "Material suave",
-      "Resistente al agua",
-      "Perfecto para el frío"
-    ]
-  },
-  {
-    "id": "prod_493",
-    "name": "POLAR  FANTASIA TALLE 12",
-    "category": "ropa",
-    "subcategory": "Ropa",
-    "price": 7913.5,
-    "originalPrice": null,
-    "discount": null,
-    "stock": 10,
-    "rating": 4.2,
-    "reviews": 19,
-    "featured": false,
-    "topDiscount": false,
-    "hasVideo": false,
-    "tags": [
-      "polar",
-      "fantasia",
-      "talle",
-      "ropa",
-      "invierno",
-      "abrigo",
-      "calor"
-    ],
-    "description": "T-12 => LARGO = 80 cm   ANCHO = 82 cm",
-    "longDescription": "T-12 => LARGO = 80 cm   ANCHO = 82 cm",
-    "images": {
-      "cover": "assets/images/products/prod_493/cover.jpg",
-      "thumb": "assets/images/products/prod_493/thumb.jpg",
-      "gallery": [
-        "assets/images/products/prod_493/1.jpg"
-      ]
-    },
-    "specs": {
-      "SKU": "POL027"
-    },
-    "shipping": {
-      "free": false,
-      "days": 2
-    },
-    "badge": "🧥 Ropa",
-    "brand": "Sin marca",
-    "sku": "POL027",
-    "features": [
-      "Mantiene el calor",
-      "Material suave",
-      "Resistente al agua",
-      "Perfecto para el frío"
-    ]
+    "features": ["Mantiene el calor", "Material suave", "Diseños estampados únicos", "Perfecto para el frío"]
   },
   {
     "id": "prod_494",
-    "name": "POLAR SOFF TALLE 0",
+    "name": "Polar Soff",
     "category": "ropa",
     "subcategory": "Ropa",
-    "price": 3278.45,
-    "originalPrice": null,
+    "hasVariants": true,
+    "basePrice": 3278.45,
+    "baseOriginalPrice": null,
     "discount": null,
-    "stock": 10,
-    "rating": 3.8,
-    "reviews": 13,
+    "stock": 130,
+    "rating": 4.3,
+    "reviews": 372,
     "featured": false,
     "topDiscount": false,
     "hasVideo": false,
-    "tags": [
-      "polar",
-      "soff",
-      "talle",
-      "ropa",
-      "invierno",
-      "abrigo",
-      "calor"
-    ],
-    "description": "T-0  => LARGO = 26 cm   ANCHO = 28 cm",
-    "longDescription": "T-0  => LARGO = 26 cm   ANCHO = 28 cm",
-    "images": {
-      "cover": "assets/images/products/prod_494/cover.jpg",
-      "thumb": "assets/images/products/prod_494/thumb.jpg",
-      "gallery": [
-        "assets/images/products/prod_494/1.jpg"
+    "tags": ["polar", "soff", "talle", "ropa", "invierno", "abrigo", "calor", "soft", "suave"],
+    "description": "Polar Soff para mascotas. Abrigo suave y cálido ideal para el invierno.",
+    "longDescription": "Polar Soff para mascotas. Descripción: Abrigo de polar suave y cálido, perfecto para proteger a tu mascota del frío. Material de alta calidad que mantiene el calor corporal sin incomodar. Ideal para paseos en días fríos, noches de invierno o mascotas que sienten mucho el frío. Características: Mantiene el calor. Material suave y confortable. Resistente al agua. Perfecto para el frío. Fácil de poner y quitar.",
+    "variants": {
+      "attributes": [{"id": "talle", "name": "Talle", "type": "size"}],
+      "combinations": [
+        {"id": "var_494_0", "attributes": {"Talle": "0"}, "price": 3278.45, "originalPrice": null, "stock": 10, "sku": "POL028-0", "available": true, "specs": {"Largo": "26 cm", "Ancho": "28 cm"}, "images": {"cover": "assets/images/products/prod_494/cover.jpg", "thumb": "assets/images/products/prod_494/thumb.jpg", "gallery": ["assets/images/products/prod_494/1.jpg"]}},
+        {"id": "var_494_1", "attributes": {"Talle": "1"}, "price": 3278.45, "originalPrice": null, "stock": 10, "sku": "POL028-1", "available": true, "specs": {"Largo": "30 cm", "Ancho": "32 cm"}, "images": {"cover": "assets/images/products/prod_495/cover.jpg", "thumb": "assets/images/products/prod_495/thumb.jpg", "gallery": ["assets/images/products/prod_495/1.jpg"]}},
+        {"id": "var_494_2", "attributes": {"Talle": "2"}, "price": 3278.45, "originalPrice": null, "stock": 10, "sku": "POL028-2", "available": true, "specs": {"Largo": "33 cm", "Ancho": "34 cm"}, "images": {"cover": "assets/images/products/prod_496/cover.jpg", "thumb": "assets/images/products/prod_496/thumb.jpg", "gallery": ["assets/images/products/prod_496/1.jpg"]}},
+        {"id": "var_494_3", "attributes": {"Talle": "3"}, "price": 4522, "originalPrice": null, "stock": 10, "sku": "POL028-3", "available": true, "specs": {"Largo": "39 cm", "Ancho": "38 cm"}, "images": {"cover": "assets/images/products/prod_497/cover.jpg", "thumb": "assets/images/products/prod_497/thumb.jpg", "gallery": ["assets/images/products/prod_497/1.jpg"]}},
+        {"id": "var_494_4", "attributes": {"Talle": "4"}, "price": 4522, "originalPrice": null, "stock": 10, "sku": "POL028-4", "available": true, "specs": {"Largo": "42 cm", "Ancho": "42 cm"}, "images": {"cover": "assets/images/products/prod_498/cover.jpg", "thumb": "assets/images/products/prod_498/thumb.jpg", "gallery": ["assets/images/products/prod_498/1.jpg"]}},
+        {"id": "var_494_5", "attributes": {"Talle": "5"}, "price": 4522, "originalPrice": null, "stock": 10, "sku": "POL028-5", "available": true, "specs": {"Largo": "47 cm", "Ancho": "52 cm"}, "images": {"cover": "assets/images/products/prod_499/cover.jpg", "thumb": "assets/images/products/prod_499/thumb.jpg", "gallery": ["assets/images/products/prod_499/1.jpg"]}},
+        {"id": "var_494_6", "attributes": {"Talle": "6"}, "price": 5878.6, "originalPrice": null, "stock": 10, "sku": "POL028-6", "available": true, "specs": {"Largo": "50 cm", "Ancho": "52 cm"}, "images": {"cover": "assets/images/products/prod_500/cover.jpg", "thumb": "assets/images/products/prod_500/thumb.jpg", "gallery": ["assets/images/products/prod_500/1.jpg"]}},
+        {"id": "var_494_7", "attributes": {"Talle": "7"}, "price": 5878.6, "originalPrice": null, "stock": 10, "sku": "POL028-7", "available": true, "specs": {"Largo": "54 cm", "Ancho": "60 cm"}, "images": {"cover": "assets/images/products/prod_501/cover.jpg", "thumb": "assets/images/products/prod_501/thumb.jpg", "gallery": ["assets/images/products/prod_501/1.jpg"]}},
+        {"id": "var_494_8", "attributes": {"Talle": "8"}, "price": 5878.6, "originalPrice": null, "stock": 10, "sku": "POL028-8", "available": true, "specs": {"Largo": "60 cm", "Ancho": "64 cm"}, "images": {"cover": "assets/images/products/prod_502/cover.jpg", "thumb": "assets/images/products/prod_502/thumb.jpg", "gallery": ["assets/images/products/prod_502/1.jpg"]}},
+        {"id": "var_494_9", "attributes": {"Talle": "9"}, "price": 7009.1, "originalPrice": null, "stock": 10, "sku": "POL028-9", "available": true, "specs": {"Largo": "64 cm", "Ancho": "72 cm"}, "images": {"cover": "assets/images/products/prod_503/cover.jpg", "thumb": "assets/images/products/prod_503/thumb.jpg", "gallery": ["assets/images/products/prod_503/1.jpg"]}},
+        {"id": "var_494_10", "attributes": {"Talle": "10"}, "price": 7009.1, "originalPrice": null, "stock": 10, "sku": "POL028-10", "available": true, "specs": {"Largo": "72 cm", "Ancho": "74 cm"}, "images": {"cover": "assets/images/products/prod_504/cover.jpg", "thumb": "assets/images/products/prod_504/thumb.jpg", "gallery": ["assets/images/products/prod_504/1.jpg"]}},
+        {"id": "var_494_11", "attributes": {"Talle": "11"}, "price": 8817.9, "originalPrice": null, "stock": 10, "sku": "POL028-11", "available": true, "specs": {"Largo": "78 cm", "Ancho": "84 cm"}, "images": {"cover": "assets/images/products/prod_505/cover.jpg", "thumb": "assets/images/products/prod_505/thumb.jpg", "gallery": ["assets/images/products/prod_505/1.jpg"]}},
+        {"id": "var_494_12", "attributes": {"Talle": "12"}, "price": 8817.9, "originalPrice": null, "stock": 10, "sku": "POL028-12", "available": true, "specs": {"Largo": "80 cm", "Ancho": "82 cm"}, "images": {"cover": "assets/images/products/prod_506/cover.jpg", "thumb": "assets/images/products/prod_506/thumb.jpg", "gallery": ["assets/images/products/prod_506/1.jpg"]}}
       ]
     },
-    "specs": {
-      "SKU": "POL028"
-    },
-    "shipping": {
-      "free": false,
-      "days": 4
-    },
+    "images": {"cover": "assets/images/products/prod_494/cover.jpg", "thumb": "assets/images/products/prod_494/thumb.jpg", "gallery": ["assets/images/products/prod_494/1.jpg"]},
+    "specs": {"SKU": "POL028"},
+    "shipping": {"free": false, "days": 3},
     "badge": "🧥 Ropa",
     "brand": "Sin marca",
     "sku": "POL028",
-    "features": [
-      "Mantiene el calor",
-      "Material suave",
-      "Resistente al agua",
-      "Perfecto para el frío"
-    ]
-  },
-  {
-    "id": "prod_495",
-    "name": "POLAR SOFF TALLE 1",
-    "category": "ropa",
-    "subcategory": "Ropa",
-    "price": 3278.45,
-    "originalPrice": null,
-    "discount": null,
-    "stock": 10,
-    "rating": 4,
-    "reviews": 19,
-    "featured": false,
-    "topDiscount": false,
-    "hasVideo": false,
-    "tags": [
-      "polar",
-      "soff",
-      "talle",
-      "ropa",
-      "invierno",
-      "abrigo",
-      "calor"
-    ],
-    "description": "T-1  => LARGO = 30 cm   ANCHO = 32 cm",
-    "longDescription": "T-1  => LARGO = 30 cm   ANCHO = 32 cm",
-    "images": {
-      "cover": "assets/images/products/prod_495/cover.jpg",
-      "thumb": "assets/images/products/prod_495/thumb.jpg",
-      "gallery": [
-        "assets/images/products/prod_495/1.jpg"
-      ]
-    },
-    "specs": {
-      "SKU": "POL029"
-    },
-    "shipping": {
-      "free": false,
-      "days": 3
-    },
-    "badge": "🧥 Ropa",
-    "brand": "Sin marca",
-    "sku": "POL029",
-    "features": [
-      "Mantiene el calor",
-      "Material suave",
-      "Resistente al agua",
-      "Perfecto para el frío"
-    ]
-  },
-  {
-    "id": "prod_496",
-    "name": "POLAR SOFF TALLE 2",
-    "category": "ropa",
-    "subcategory": "Ropa",
-    "price": 3278.45,
-    "originalPrice": null,
-    "discount": null,
-    "stock": 10,
-    "rating": 4.8,
-    "reviews": 39,
-    "featured": false,
-    "topDiscount": false,
-    "hasVideo": false,
-    "tags": [
-      "polar",
-      "soff",
-      "talle",
-      "ropa",
-      "invierno",
-      "abrigo",
-      "calor"
-    ],
-    "description": "T-2  => LARGO = 33 cm   ANCHO = 34 cm",
-    "longDescription": "T-2  => LARGO = 33 cm   ANCHO = 34 cm",
-    "images": {
-      "cover": "assets/images/products/prod_496/cover.jpg",
-      "thumb": "assets/images/products/prod_496/thumb.jpg",
-      "gallery": [
-        "assets/images/products/prod_496/1.jpg"
-      ]
-    },
-    "specs": {
-      "SKU": "POL030"
-    },
-    "shipping": {
-      "free": false,
-      "days": 4
-    },
-    "badge": "🧥 Ropa",
-    "brand": "Sin marca",
-    "sku": "POL030",
-    "features": [
-      "Mantiene el calor",
-      "Material suave",
-      "Resistente al agua",
-      "Perfecto para el frío"
-    ]
-  },
-  {
-    "id": "prod_497",
-    "name": "POLAR SOFF TALLE 3",
-    "category": "ropa",
-    "subcategory": "Ropa",
-    "price": 4522,
-    "originalPrice": null,
-    "discount": null,
-    "stock": 10,
-    "rating": 4.6,
-    "reviews": 19,
-    "featured": false,
-    "topDiscount": false,
-    "hasVideo": false,
-    "tags": [
-      "polar",
-      "soff",
-      "talle",
-      "ropa",
-      "invierno",
-      "abrigo",
-      "calor"
-    ],
-    "description": "T-3  => LARGO = 39 cm   ANCHO = 38 cm",
-    "longDescription": "T-3  => LARGO = 39 cm   ANCHO = 38 cm",
-    "images": {
-      "cover": "assets/images/products/prod_497/cover.jpg",
-      "thumb": "assets/images/products/prod_497/thumb.jpg",
-      "gallery": [
-        "assets/images/products/prod_497/1.jpg"
-      ]
-    },
-    "specs": {
-      "SKU": "POL031"
-    },
-    "shipping": {
-      "free": false,
-      "days": 4
-    },
-    "badge": "🧥 Ropa",
-    "brand": "Sin marca",
-    "sku": "POL031",
-    "features": [
-      "Mantiene el calor",
-      "Material suave",
-      "Resistente al agua",
-      "Perfecto para el frío"
-    ]
-  },
-  {
-    "id": "prod_498",
-    "name": "POLAR SOFF TALLE 4",
-    "category": "ropa",
-    "subcategory": "Ropa",
-    "price": 4522,
-    "originalPrice": null,
-    "discount": null,
-    "stock": 10,
-    "rating": 4.1,
-    "reviews": 44,
-    "featured": false,
-    "topDiscount": false,
-    "hasVideo": false,
-    "tags": [
-      "polar",
-      "soff",
-      "talle",
-      "ropa",
-      "invierno",
-      "abrigo",
-      "calor"
-    ],
-    "description": "T-4  => LARGO = 42 cm   ANCHO = 42 cm",
-    "longDescription": "T-4  => LARGO = 42 cm   ANCHO = 42 cm",
-    "images": {
-      "cover": "assets/images/products/prod_498/cover.jpg",
-      "thumb": "assets/images/products/prod_498/thumb.jpg",
-      "gallery": [
-        "assets/images/products/prod_498/1.jpg"
-      ]
-    },
-    "specs": {
-      "SKU": "POL032"
-    },
-    "shipping": {
-      "free": false,
-      "days": 4
-    },
-    "badge": "🧥 Ropa",
-    "brand": "Sin marca",
-    "sku": "POL032",
-    "features": [
-      "Mantiene el calor",
-      "Material suave",
-      "Resistente al agua",
-      "Perfecto para el frío"
-    ]
-  },
-  {
-    "id": "prod_499",
-    "name": "POLAR SOFF TALLE 5",
-    "category": "ropa",
-    "subcategory": "Ropa",
-    "price": 4522,
-    "originalPrice": null,
-    "discount": null,
-    "stock": 10,
-    "rating": 4.9,
-    "reviews": 6,
-    "featured": false,
-    "topDiscount": false,
-    "hasVideo": false,
-    "tags": [
-      "polar",
-      "soff",
-      "talle",
-      "ropa",
-      "invierno",
-      "abrigo",
-      "calor"
-    ],
-    "description": "T-5  => LARGO = 47 cm   ANCHO = 52 cm",
-    "longDescription": "T-5  => LARGO = 47 cm   ANCHO = 52 cm",
-    "images": {
-      "cover": "assets/images/products/prod_499/cover.jpg",
-      "thumb": "assets/images/products/prod_499/thumb.jpg",
-      "gallery": [
-        "assets/images/products/prod_499/1.jpg"
-      ]
-    },
-    "specs": {
-      "SKU": "POL033"
-    },
-    "shipping": {
-      "free": false,
-      "days": 2
-    },
-    "badge": "🧥 Ropa",
-    "brand": "Sin marca",
-    "sku": "POL033",
-    "features": [
-      "Mantiene el calor",
-      "Material suave",
-      "Resistente al agua",
-      "Perfecto para el frío"
-    ]
-  },
-  {
-    "id": "prod_500",
-    "name": "POLAR SOFF TALLE 6",
-    "category": "ropa",
-    "subcategory": "Ropa",
-    "price": 5878.6,
-    "originalPrice": null,
-    "discount": null,
-    "stock": 10,
-    "rating": 5,
-    "reviews": 52,
-    "featured": false,
-    "topDiscount": false,
-    "hasVideo": false,
-    "tags": [
-      "polar",
-      "soff",
-      "talle",
-      "ropa",
-      "invierno",
-      "abrigo",
-      "calor"
-    ],
-    "description": "T-6  => LARGO = 50 cm   ANCHO = 52 cm",
-    "longDescription": "T-6  => LARGO = 50 cm   ANCHO = 52 cm",
-    "images": {
-      "cover": "assets/images/products/prod_500/cover.jpg",
-      "thumb": "assets/images/products/prod_500/thumb.jpg",
-      "gallery": [
-        "assets/images/products/prod_500/1.jpg"
-      ]
-    },
-    "specs": {
-      "SKU": "POL034"
-    },
-    "shipping": {
-      "free": false,
-      "days": 4
-    },
-    "badge": "🧥 Ropa",
-    "brand": "Sin marca",
-    "sku": "POL034",
-    "features": [
-      "Mantiene el calor",
-      "Material suave",
-      "Resistente al agua",
-      "Perfecto para el frío"
-    ]
-  },
-  {
-    "id": "prod_501",
-    "name": "POLAR SOFF TALLE 7",
-    "category": "ropa",
-    "subcategory": "Ropa",
-    "price": 5878.6,
-    "originalPrice": null,
-    "discount": null,
-    "stock": 10,
-    "rating": 4.1,
-    "reviews": 47,
-    "featured": false,
-    "topDiscount": false,
-    "hasVideo": false,
-    "tags": [
-      "polar",
-      "soff",
-      "talle",
-      "ropa",
-      "invierno",
-      "abrigo",
-      "calor"
-    ],
-    "description": "T-7  => LARGO = 54 cm   ANCHO = 60 cm",
-    "longDescription": "T-7  => LARGO = 54 cm   ANCHO = 60 cm",
-    "images": {
-      "cover": "assets/images/products/prod_501/cover.jpg",
-      "thumb": "assets/images/products/prod_501/thumb.jpg",
-      "gallery": [
-        "assets/images/products/prod_501/1.jpg"
-      ]
-    },
-    "specs": {
-      "SKU": "POL035"
-    },
-    "shipping": {
-      "free": false,
-      "days": 3
-    },
-    "badge": "🧥 Ropa",
-    "brand": "Sin marca",
-    "sku": "POL035",
-    "features": [
-      "Mantiene el calor",
-      "Material suave",
-      "Resistente al agua",
-      "Perfecto para el frío"
-    ]
-  },
-  {
-    "id": "prod_502",
-    "name": "POLAR SOFF TALLE 8",
-    "category": "ropa",
-    "subcategory": "Ropa",
-    "price": 5878.6,
-    "originalPrice": null,
-    "discount": null,
-    "stock": 10,
-    "rating": 3.9,
-    "reviews": 8,
-    "featured": false,
-    "topDiscount": false,
-    "hasVideo": false,
-    "tags": [
-      "polar",
-      "soff",
-      "talle",
-      "ropa",
-      "invierno",
-      "abrigo",
-      "calor"
-    ],
-    "description": "T-8  => LARGO = 60 cm   ANCHO = 64 cm",
-    "longDescription": "T-8  => LARGO = 60 cm   ANCHO = 64 cm",
-    "images": {
-      "cover": "assets/images/products/prod_502/cover.jpg",
-      "thumb": "assets/images/products/prod_502/thumb.jpg",
-      "gallery": [
-        "assets/images/products/prod_502/1.jpg"
-      ]
-    },
-    "specs": {
-      "SKU": "POL036"
-    },
-    "shipping": {
-      "free": false,
-      "days": 3
-    },
-    "badge": "🧥 Ropa",
-    "brand": "Sin marca",
-    "sku": "POL036",
-    "features": [
-      "Mantiene el calor",
-      "Material suave",
-      "Resistente al agua",
-      "Perfecto para el frío"
-    ]
-  },
-  {
-    "id": "prod_503",
-    "name": "POLAR SOFF TALLE 9",
-    "category": "ropa",
-    "subcategory": "Ropa",
-    "price": 7009.1,
-    "originalPrice": null,
-    "discount": null,
-    "stock": 10,
-    "rating": 4.1,
-    "reviews": 48,
-    "featured": false,
-    "topDiscount": false,
-    "hasVideo": false,
-    "tags": [
-      "polar",
-      "soff",
-      "talle",
-      "ropa",
-      "invierno",
-      "abrigo",
-      "calor"
-    ],
-    "description": "T-9  => LARGO = 64 cm   ANCHO = 72 cm",
-    "longDescription": "T-9  => LARGO = 64 cm   ANCHO = 72 cm",
-    "images": {
-      "cover": "assets/images/products/prod_503/cover.jpg",
-      "thumb": "assets/images/products/prod_503/thumb.jpg",
-      "gallery": [
-        "assets/images/products/prod_503/1.jpg"
-      ]
-    },
-    "specs": {
-      "SKU": "POL037"
-    },
-    "shipping": {
-      "free": false,
-      "days": 3
-    },
-    "badge": "🧥 Ropa",
-    "brand": "Sin marca",
-    "sku": "POL037",
-    "features": [
-      "Mantiene el calor",
-      "Material suave",
-      "Resistente al agua",
-      "Perfecto para el frío"
-    ]
-  },
-  {
-    "id": "prod_504",
-    "name": "POLAR SOFF TALLE 10",
-    "category": "ropa",
-    "subcategory": "Ropa",
-    "price": 7009.1,
-    "originalPrice": null,
-    "discount": null,
-    "stock": 10,
-    "rating": 4.2,
-    "reviews": 18,
-    "featured": false,
-    "topDiscount": false,
-    "hasVideo": false,
-    "tags": [
-      "polar",
-      "soff",
-      "talle",
-      "ropa",
-      "invierno",
-      "abrigo",
-      "calor"
-    ],
-    "description": "T-10 => LARGO = 72 cm   ANCHO = 74 cm",
-    "longDescription": "T-10 => LARGO = 72 cm   ANCHO = 74 cm",
-    "images": {
-      "cover": "assets/images/products/prod_504/cover.jpg",
-      "thumb": "assets/images/products/prod_504/thumb.jpg",
-      "gallery": [
-        "assets/images/products/prod_504/1.jpg"
-      ]
-    },
-    "specs": {
-      "SKU": "POL038"
-    },
-    "shipping": {
-      "free": false,
-      "days": 3
-    },
-    "badge": "🧥 Ropa",
-    "brand": "Sin marca",
-    "sku": "POL038",
-    "features": [
-      "Mantiene el calor",
-      "Material suave",
-      "Resistente al agua",
-      "Perfecto para el frío"
-    ]
-  },
-  {
-    "id": "prod_505",
-    "name": "POLAR SOFF TALLE 11",
-    "category": "ropa",
-    "subcategory": "Ropa",
-    "price": 8817.9,
-    "originalPrice": null,
-    "discount": null,
-    "stock": 10,
-    "rating": 4.9,
-    "reviews": 12,
-    "featured": false,
-    "topDiscount": false,
-    "hasVideo": false,
-    "tags": [
-      "polar",
-      "soff",
-      "talle",
-      "ropa",
-      "invierno",
-      "abrigo",
-      "calor"
-    ],
-    "description": "T-11 => LARGO = 78 cm   ANCHO = 84 cm",
-    "longDescription": "T-11 => LARGO = 78 cm   ANCHO = 84 cm",
-    "images": {
-      "cover": "assets/images/products/prod_505/cover.jpg",
-      "thumb": "assets/images/products/prod_505/thumb.jpg",
-      "gallery": [
-        "assets/images/products/prod_505/1.jpg"
-      ]
-    },
-    "specs": {
-      "SKU": "POL039"
-    },
-    "shipping": {
-      "free": false,
-      "days": 4
-    },
-    "badge": "🧥 Ropa",
-    "brand": "Sin marca",
-    "sku": "POL039",
-    "features": [
-      "Mantiene el calor",
-      "Material suave",
-      "Resistente al agua",
-      "Perfecto para el frío"
-    ]
-  },
-  {
-    "id": "prod_506",
-    "name": "POLAR SOFF TALLE 12",
-    "category": "ropa",
-    "subcategory": "Ropa",
-    "price": 8817.9,
-    "originalPrice": null,
-    "discount": null,
-    "stock": 10,
-    "rating": 3.5,
-    "reviews": 47,
-    "featured": false,
-    "topDiscount": false,
-    "hasVideo": false,
-    "tags": [
-      "polar",
-      "soff",
-      "talle",
-      "ropa",
-      "invierno",
-      "abrigo",
-      "calor"
-    ],
-    "description": "T-12 => LARGO = 80 cm   ANCHO = 82 cm",
-    "longDescription": "T-12 => LARGO = 80 cm   ANCHO = 82 cm",
-    "images": {
-      "cover": "assets/images/products/prod_506/cover.jpg",
-      "thumb": "assets/images/products/prod_506/thumb.jpg",
-      "gallery": [
-        "assets/images/products/prod_506/1.jpg"
-      ]
-    },
-    "specs": {
-      "SKU": "POL040"
-    },
-    "shipping": {
-      "free": false,
-      "days": 2
-    },
-    "badge": "🧥 Ropa",
-    "brand": "Sin marca",
-    "sku": "POL040",
-    "features": [
-      "Mantiene el calor",
-      "Material suave",
-      "Resistente al agua",
-      "Perfecto para el frío"
-    ]
+    "features": ["Mantiene el calor", "Material suave", "Resistente al agua", "Perfecto para el frío"]
   },
   {
     "id": "prod_507",
-    "name": "CAMPERA GAP TALLE 1",
+    "name": "Campera GAP",
     "category": "ropa",
     "subcategory": "Ropa",
-    "price": 7913.5,
-    "originalPrice": null,
+    "hasVariants": true,
+    "basePrice": 7913.5,
+    "baseOriginalPrice": null,
     "discount": null,
-    "stock": 10,
-    "rating": 4.2,
-    "reviews": 28,
+    "stock": 80,
+    "rating": 4.1,
+    "reviews": 258,
     "featured": false,
     "topDiscount": false,
     "hasVideo": false,
     "tags": [
       "campera",
+      "gap",
       "talle",
       "ropa",
       "invierno",
       "abrigo",
       "calor"
     ],
-    "description": "T-1 => LARGO = 26 cm   ANCHO = 38 cm",
-    "longDescription": "T-1 => LARGO = 26 cm   ANCHO = 38 cm",
+    "description": "Campera GAP para mascotas. Diseño moderno y abrigado, ideal para los días fríos.",
+    "longDescription": "Campera GAP para mascotas. Descripción: Campera de alta calidad inspirada en el estilo GAP. Perfecta para mantener a tu mascota abrigada durante el invierno. Material suave y resistente que proporciona confort y protección contra el frío. Características: Mantiene el calor. Material suave y cómodo. Resistente al agua. Perfecto para el frío. Fácil de poner y quitar.",
+    "variants": {
+      "attributes": [
+        {
+          "id": "talle",
+          "name": "Talle",
+          "type": "size"
+        }
+      ],
+      "combinations": [
+        {
+          "id": "var_507_1",
+          "attributes": {
+            "Talle": "1"
+          },
+          "price": 7913.5,
+          "originalPrice": null,
+          "stock": 10,
+          "sku": "CAM039-1",
+          "available": true,
+          "specs": {
+            "Largo": "26 cm",
+            "Ancho": "38 cm"
+          },
+          "images": {
+            "cover": "assets/images/products/prod_507/cover.jpg",
+            "thumb": "assets/images/products/prod_507/thumb.jpg",
+            "gallery": [
+              "assets/images/products/prod_507/1.jpg"
+            ]
+          }
+        },
+        {
+          "id": "var_507_2",
+          "attributes": {
+            "Talle": "2"
+          },
+          "price": 7913.5,
+          "originalPrice": null,
+          "stock": 10,
+          "sku": "CAM039-2",
+          "available": true,
+          "specs": {
+            "Largo": "28 cm",
+            "Ancho": "40 cm"
+          },
+          "images": {
+            "cover": "assets/images/products/prod_508/cover.jpg",
+            "thumb": "assets/images/products/prod_508/thumb.jpg",
+            "gallery": [
+              "assets/images/products/prod_508/1.jpg"
+            ]
+          }
+        },
+        {
+          "id": "var_507_3",
+          "attributes": {
+            "Talle": "3"
+          },
+          "price": 9044,
+          "originalPrice": null,
+          "stock": 10,
+          "sku": "CAM039-3",
+          "available": true,
+          "specs": {
+            "Largo": "30 cm",
+            "Ancho": "44 cm"
+          },
+          "images": {
+            "cover": "assets/images/products/prod_509/cover.jpg",
+            "thumb": "assets/images/products/prod_509/thumb.jpg",
+            "gallery": [
+              "assets/images/products/prod_509/1.jpg"
+            ]
+          }
+        },
+        {
+          "id": "var_507_4",
+          "attributes": {
+            "Talle": "4"
+          },
+          "price": 9044,
+          "originalPrice": null,
+          "stock": 10,
+          "sku": "CAM039-4",
+          "available": true,
+          "specs": {
+            "Largo": "34 cm",
+            "Ancho": "46 cm"
+          },
+          "images": {
+            "cover": "assets/images/products/prod_510/cover.jpg",
+            "thumb": "assets/images/products/prod_510/thumb.jpg",
+            "gallery": [
+              "assets/images/products/prod_510/1.jpg"
+            ]
+          }
+        },
+        {
+          "id": "var_507_5",
+          "attributes": {
+            "Talle": "5"
+          },
+          "price": 10174.5,
+          "originalPrice": null,
+          "stock": 10,
+          "sku": "CAM039-5",
+          "available": true,
+          "specs": {
+            "Largo": "38 cm",
+            "Ancho": "50 cm"
+          },
+          "images": {
+            "cover": "assets/images/products/prod_511/cover.jpg",
+            "thumb": "assets/images/products/prod_511/thumb.jpg",
+            "gallery": [
+              "assets/images/products/prod_511/1.jpg"
+            ]
+          }
+        },
+        {
+          "id": "var_507_6",
+          "attributes": {
+            "Talle": "6"
+          },
+          "price": 10174.5,
+          "originalPrice": null,
+          "stock": 10,
+          "sku": "CAM039-6",
+          "available": true,
+          "specs": {
+            "Largo": "42 cm",
+            "Ancho": "56 cm"
+          },
+          "images": {
+            "cover": "assets/images/products/prod_512/cover.jpg",
+            "thumb": "assets/images/products/prod_512/thumb.jpg",
+            "gallery": [
+              "assets/images/products/prod_512/1.jpg"
+            ]
+          }
+        },
+        {
+          "id": "var_507_7",
+          "attributes": {
+            "Talle": "7"
+          },
+          "price": 11305,
+          "originalPrice": null,
+          "stock": 10,
+          "sku": "CAM039-7",
+          "available": true,
+          "specs": {
+            "Largo": "45 cm",
+            "Ancho": "64 cm"
+          },
+          "images": {
+            "cover": "assets/images/products/prod_513/cover.jpg",
+            "thumb": "assets/images/products/prod_513/thumb.jpg",
+            "gallery": [
+              "assets/images/products/prod_513/1.jpg"
+            ]
+          }
+        },
+        {
+          "id": "var_507_8",
+          "attributes": {
+            "Talle": "8"
+          },
+          "price": 11305,
+          "originalPrice": null,
+          "stock": 10,
+          "sku": "CAM039-8",
+          "available": true,
+          "specs": {
+            "Largo": "50 cm",
+            "Ancho": "68 cm"
+          },
+          "images": {
+            "cover": "assets/images/products/prod_514/cover.jpg",
+            "thumb": "assets/images/products/prod_514/thumb.jpg",
+            "gallery": [
+              "assets/images/products/prod_514/1.jpg"
+            ]
+          }
+        }
+      ]
+    },
     "images": {
       "cover": "assets/images/products/prod_507/cover.jpg",
       "thumb": "assets/images/products/prod_507/thumb.jpg",
@@ -16900,10 +15903,10 @@
     },
     "shipping": {
       "free": false,
-      "days": 4
+      "days": 3
     },
     "badge": "🧥 Ropa",
-    "brand": "Sin marca",
+    "brand": "GAP",
     "sku": "CAM039",
     "features": [
       "Mantiene el calor",
@@ -16913,352 +15916,17 @@
     ]
   },
   {
-    "id": "prod_508",
-    "name": "CAMPERA GAP TALLE 2",
-    "category": "ropa",
-    "subcategory": "Ropa",
-    "price": 7913.5,
-    "originalPrice": null,
-    "discount": null,
-    "stock": 10,
-    "rating": 4.3,
-    "reviews": 50,
-    "featured": false,
-    "topDiscount": false,
-    "hasVideo": false,
-    "tags": [
-      "campera",
-      "talle",
-      "ropa",
-      "invierno",
-      "abrigo",
-      "calor"
-    ],
-    "description": "T-2 => LARGO = 28 cm   ANCHO = 40 cm",
-    "longDescription": "T-2 => LARGO = 28 cm   ANCHO = 40 cm",
-    "images": {
-      "cover": "assets/images/products/prod_508/cover.jpg",
-      "thumb": "assets/images/products/prod_508/thumb.jpg",
-      "gallery": [
-        "assets/images/products/prod_508/1.jpg"
-      ]
-    },
-    "specs": {
-      "SKU": "CAM040"
-    },
-    "shipping": {
-      "free": false,
-      "days": 4
-    },
-    "badge": "🧥 Ropa",
-    "brand": "Sin marca",
-    "sku": "CAM040",
-    "features": [
-      "Mantiene el calor",
-      "Material suave",
-      "Resistente al agua",
-      "Perfecto para el frío"
-    ]
-  },
-  {
-    "id": "prod_509",
-    "name": "CAMPERA GAP TALLE 3",
-    "category": "ropa",
-    "subcategory": "Ropa",
-    "price": 9044,
-    "originalPrice": null,
-    "discount": null,
-    "stock": 10,
-    "rating": 4.1,
-    "reviews": 45,
-    "featured": false,
-    "topDiscount": false,
-    "hasVideo": false,
-    "tags": [
-      "campera",
-      "talle",
-      "ropa",
-      "invierno",
-      "abrigo",
-      "calor"
-    ],
-    "description": "T-3 => LARGO = 30 cm   ANCHO = 44 cm",
-    "longDescription": "T-3 => LARGO = 30 cm   ANCHO = 44 cm",
-    "images": {
-      "cover": "assets/images/products/prod_509/cover.jpg",
-      "thumb": "assets/images/products/prod_509/thumb.jpg",
-      "gallery": [
-        "assets/images/products/prod_509/1.jpg"
-      ]
-    },
-    "specs": {
-      "SKU": "CAM041"
-    },
-    "shipping": {
-      "free": false,
-      "days": 2
-    },
-    "badge": "🧥 Ropa",
-    "brand": "Sin marca",
-    "sku": "CAM041",
-    "features": [
-      "Mantiene el calor",
-      "Material suave",
-      "Resistente al agua",
-      "Perfecto para el frío"
-    ]
-  },
-  {
-    "id": "prod_510",
-    "name": "CAMPERA GAP TALLE 4",
-    "category": "ropa",
-    "subcategory": "Ropa",
-    "price": 9044,
-    "originalPrice": null,
-    "discount": null,
-    "stock": 10,
-    "rating": 3.9,
-    "reviews": 52,
-    "featured": false,
-    "topDiscount": false,
-    "hasVideo": false,
-    "tags": [
-      "campera",
-      "talle",
-      "ropa",
-      "invierno",
-      "abrigo",
-      "calor"
-    ],
-    "description": "T-4 => LARGO = 34 cm   ANCHO = 46 cm",
-    "longDescription": "T-4 => LARGO = 34 cm   ANCHO = 46 cm",
-    "images": {
-      "cover": "assets/images/products/prod_510/cover.jpg",
-      "thumb": "assets/images/products/prod_510/thumb.jpg",
-      "gallery": [
-        "assets/images/products/prod_510/1.jpg"
-      ]
-    },
-    "specs": {
-      "SKU": "CAM042"
-    },
-    "shipping": {
-      "free": false,
-      "days": 2
-    },
-    "badge": "🧥 Ropa",
-    "brand": "Sin marca",
-    "sku": "CAM042",
-    "features": [
-      "Mantiene el calor",
-      "Material suave",
-      "Resistente al agua",
-      "Perfecto para el frío"
-    ]
-  },
-  {
-    "id": "prod_511",
-    "name": "CAMPERA GAP TALLE 5",
-    "category": "ropa",
-    "subcategory": "Ropa",
-    "price": 10174.5,
-    "originalPrice": null,
-    "discount": null,
-    "stock": 10,
-    "rating": 4.3,
-    "reviews": 7,
-    "featured": false,
-    "topDiscount": false,
-    "hasVideo": false,
-    "tags": [
-      "campera",
-      "talle",
-      "ropa",
-      "invierno",
-      "abrigo",
-      "calor"
-    ],
-    "description": "T-5 => LARGO = 38 cm   ANCHO = 50 cm",
-    "longDescription": "T-5 => LARGO = 38 cm   ANCHO = 50 cm",
-    "images": {
-      "cover": "assets/images/products/prod_511/cover.jpg",
-      "thumb": "assets/images/products/prod_511/thumb.jpg",
-      "gallery": [
-        "assets/images/products/prod_511/1.jpg"
-      ]
-    },
-    "specs": {
-      "SKU": "CAM043"
-    },
-    "shipping": {
-      "free": false,
-      "days": 2
-    },
-    "badge": "🧥 Ropa",
-    "brand": "Sin marca",
-    "sku": "CAM043",
-    "features": [
-      "Mantiene el calor",
-      "Material suave",
-      "Resistente al agua",
-      "Perfecto para el frío"
-    ]
-  },
-  {
-    "id": "prod_512",
-    "name": "CAMPERA GAP TALLE 6",
-    "category": "ropa",
-    "subcategory": "Ropa",
-    "price": 10174.5,
-    "originalPrice": null,
-    "discount": null,
-    "stock": 10,
-    "rating": 5,
-    "reviews": 22,
-    "featured": false,
-    "topDiscount": false,
-    "hasVideo": false,
-    "tags": [
-      "campera",
-      "talle",
-      "ropa",
-      "invierno",
-      "abrigo",
-      "calor"
-    ],
-    "description": "T-6 => LARGO = 42 cm   ANCHO = 56 cm",
-    "longDescription": "T-6 => LARGO = 42 cm   ANCHO = 56 cm",
-    "images": {
-      "cover": "assets/images/products/prod_512/cover.jpg",
-      "thumb": "assets/images/products/prod_512/thumb.jpg",
-      "gallery": [
-        "assets/images/products/prod_512/1.jpg"
-      ]
-    },
-    "specs": {
-      "SKU": "CAM044"
-    },
-    "shipping": {
-      "free": false,
-      "days": 2
-    },
-    "badge": "🧥 Ropa",
-    "brand": "Sin marca",
-    "sku": "CAM044",
-    "features": [
-      "Mantiene el calor",
-      "Material suave",
-      "Resistente al agua",
-      "Perfecto para el frío"
-    ]
-  },
-  {
-    "id": "prod_513",
-    "name": "CAMPERA GAP TALLE 7",
-    "category": "ropa",
-    "subcategory": "Ropa",
-    "price": 11305,
-    "originalPrice": null,
-    "discount": null,
-    "stock": 10,
-    "rating": 3.5,
-    "reviews": 44,
-    "featured": false,
-    "topDiscount": false,
-    "hasVideo": false,
-    "tags": [
-      "campera",
-      "talle",
-      "ropa",
-      "invierno",
-      "abrigo",
-      "calor"
-    ],
-    "description": "T-7 => LARGO = 45 cm   ANCHO = 64 cm",
-    "longDescription": "T-7 => LARGO = 45 cm   ANCHO = 64 cm",
-    "images": {
-      "cover": "assets/images/products/prod_513/cover.jpg",
-      "thumb": "assets/images/products/prod_513/thumb.jpg",
-      "gallery": [
-        "assets/images/products/prod_513/1.jpg"
-      ]
-    },
-    "specs": {
-      "SKU": "CAM045"
-    },
-    "shipping": {
-      "free": false,
-      "days": 2
-    },
-    "badge": "🧥 Ropa",
-    "brand": "Sin marca",
-    "sku": "CAM045",
-    "features": [
-      "Mantiene el calor",
-      "Material suave",
-      "Resistente al agua",
-      "Perfecto para el frío"
-    ]
-  },
-  {
-    "id": "prod_514",
-    "name": "CAMPERA GAP TALLE 8",
-    "category": "ropa",
-    "subcategory": "Ropa",
-    "price": 11305,
-    "originalPrice": null,
-    "discount": null,
-    "stock": 10,
-    "rating": 3.8,
-    "reviews": 10,
-    "featured": false,
-    "topDiscount": false,
-    "hasVideo": false,
-    "tags": [
-      "campera",
-      "talle",
-      "ropa",
-      "invierno",
-      "abrigo",
-      "calor"
-    ],
-    "description": "T-8 => LARGO = 50 cm   ANCHO = 68 cm",
-    "longDescription": "T-8 => LARGO = 50 cm   ANCHO = 68 cm",
-    "images": {
-      "cover": "assets/images/products/prod_514/cover.jpg",
-      "thumb": "assets/images/products/prod_514/thumb.jpg",
-      "gallery": [
-        "assets/images/products/prod_514/1.jpg"
-      ]
-    },
-    "specs": {
-      "SKU": "CAM046"
-    },
-    "shipping": {
-      "free": false,
-      "days": 2
-    },
-    "badge": "🧥 Ropa",
-    "brand": "Sin marca",
-    "sku": "CAM046",
-    "features": [
-      "Mantiene el calor",
-      "Material suave",
-      "Resistente al agua",
-      "Perfecto para el frío"
-    ]
-  },
-  {
     "id": "prod_515",
-    "name": "CAMPERA FUTBOL TALLE 1",
+    "name": "Campera Fútbol",
     "category": "ropa",
     "subcategory": "Ropa",
-    "price": 7913.5,
-    "originalPrice": null,
+    "hasVariants": true,
+    "basePrice": 7913.5,
+    "baseOriginalPrice": null,
     "discount": null,
-    "stock": 10,
-    "rating": 3.7,
-    "reviews": 36,
+    "stock": 80,
+    "rating": 3.9,
+    "reviews": 264,
     "featured": false,
     "topDiscount": false,
     "hasVideo": false,
@@ -17269,10 +15937,198 @@
       "ropa",
       "invierno",
       "abrigo",
-      "calor"
+      "calor",
+      "deportiva"
     ],
-    "description": "T-1 => LARGO = 26 cm   ANCHO = 38 cm",
-    "longDescription": "T-1 => LARGO = 26 cm   ANCHO = 38 cm",
+    "description": "Campera Fútbol para mascotas. Diseño deportivo inspirado en el fútbol, ideal para los días fríos.",
+    "longDescription": "Campera Fútbol para mascotas. Descripción: Campera deportiva de alta calidad con diseño futbolero. Perfecta para mantener a tu mascota abrigada durante el invierno mientras luce un estilo deportivo. Material suave y resistente que proporciona confort y protección contra el frío. Características: Mantiene el calor. Material suave y cómodo. Resistente al agua. Perfecto para el frío. Diseño deportivo.",
+    "variants": {
+      "attributes": [
+        {
+          "id": "talle",
+          "name": "Talle",
+          "type": "size"
+        }
+      ],
+      "combinations": [
+        {
+          "id": "var_515_1",
+          "attributes": {
+            "Talle": "1"
+          },
+          "price": 7913.5,
+          "originalPrice": null,
+          "stock": 10,
+          "sku": "CAM047-1",
+          "available": true,
+          "specs": {
+            "Largo": "26 cm",
+            "Ancho": "38 cm"
+          },
+          "images": {
+            "cover": "assets/images/products/prod_515/cover.jpg",
+            "thumb": "assets/images/products/prod_515/thumb.jpg",
+            "gallery": [
+              "assets/images/products/prod_515/1.jpg"
+            ]
+          }
+        },
+        {
+          "id": "var_515_2",
+          "attributes": {
+            "Talle": "2"
+          },
+          "price": 7913.5,
+          "originalPrice": null,
+          "stock": 10,
+          "sku": "CAM047-2",
+          "available": true,
+          "specs": {
+            "Largo": "28 cm",
+            "Ancho": "40 cm"
+          },
+          "images": {
+            "cover": "assets/images/products/prod_516/cover.jpg",
+            "thumb": "assets/images/products/prod_516/thumb.jpg",
+            "gallery": [
+              "assets/images/products/prod_516/1.jpg"
+            ]
+          }
+        },
+        {
+          "id": "var_515_3",
+          "attributes": {
+            "Talle": "3"
+          },
+          "price": 9044,
+          "originalPrice": null,
+          "stock": 10,
+          "sku": "CAM047-3",
+          "available": true,
+          "specs": {
+            "Largo": "30 cm",
+            "Ancho": "44 cm"
+          },
+          "images": {
+            "cover": "assets/images/products/prod_517/cover.jpg",
+            "thumb": "assets/images/products/prod_517/thumb.jpg",
+            "gallery": [
+              "assets/images/products/prod_517/1.jpg"
+            ]
+          }
+        },
+        {
+          "id": "var_515_4",
+          "attributes": {
+            "Talle": "4"
+          },
+          "price": 9044,
+          "originalPrice": null,
+          "stock": 10,
+          "sku": "CAM047-4",
+          "available": true,
+          "specs": {
+            "Largo": "34 cm",
+            "Ancho": "46 cm"
+          },
+          "images": {
+            "cover": "assets/images/products/prod_518/cover.jpg",
+            "thumb": "assets/images/products/prod_518/thumb.jpg",
+            "gallery": [
+              "assets/images/products/prod_518/1.jpg"
+            ]
+          }
+        },
+        {
+          "id": "var_515_5",
+          "attributes": {
+            "Talle": "5"
+          },
+          "price": 10174.5,
+          "originalPrice": null,
+          "stock": 10,
+          "sku": "CAM047-5",
+          "available": true,
+          "specs": {
+            "Largo": "38 cm",
+            "Ancho": "50 cm"
+          },
+          "images": {
+            "cover": "assets/images/products/prod_519/cover.jpg",
+            "thumb": "assets/images/products/prod_519/thumb.jpg",
+            "gallery": [
+              "assets/images/products/prod_519/1.jpg"
+            ]
+          }
+        },
+        {
+          "id": "var_515_6",
+          "attributes": {
+            "Talle": "6"
+          },
+          "price": 10174.5,
+          "originalPrice": null,
+          "stock": 10,
+          "sku": "CAM047-6",
+          "available": true,
+          "specs": {
+            "Largo": "41 cm",
+            "Ancho": "56 cm"
+          },
+          "images": {
+            "cover": "assets/images/products/prod_520/cover.jpg",
+            "thumb": "assets/images/products/prod_520/thumb.jpg",
+            "gallery": [
+              "assets/images/products/prod_520/1.jpg"
+            ]
+          }
+        },
+        {
+          "id": "var_515_7",
+          "attributes": {
+            "Talle": "7"
+          },
+          "price": 11305,
+          "originalPrice": null,
+          "stock": 10,
+          "sku": "CAM047-7",
+          "available": true,
+          "specs": {
+            "Largo": "45 cm",
+            "Ancho": "64 cm"
+          },
+          "images": {
+            "cover": "assets/images/products/prod_521/cover.jpg",
+            "thumb": "assets/images/products/prod_521/thumb.jpg",
+            "gallery": [
+              "assets/images/products/prod_521/1.jpg"
+            ]
+          }
+        },
+        {
+          "id": "var_515_8",
+          "attributes": {
+            "Talle": "8"
+          },
+          "price": 11305,
+          "originalPrice": null,
+          "stock": 10,
+          "sku": "CAM047-8",
+          "available": true,
+          "specs": {
+            "Largo": "50 cm",
+            "Ancho": "68 cm"
+          },
+          "images": {
+            "cover": "assets/images/products/prod_522/cover.jpg",
+            "thumb": "assets/images/products/prod_522/thumb.jpg",
+            "gallery": [
+              "assets/images/products/prod_522/1.jpg"
+            ]
+          }
+        }
+      ]
+    },
     "images": {
       "cover": "assets/images/products/prod_515/cover.jpg",
       "thumb": "assets/images/products/prod_515/thumb.jpg",
@@ -17285,354 +16141,11 @@
     },
     "shipping": {
       "free": false,
-      "days": 2
+      "days": 3
     },
     "badge": "🧥 Ropa",
     "brand": "Sin marca",
     "sku": "CAM047",
-    "features": [
-      "Mantiene el calor",
-      "Material suave",
-      "Resistente al agua",
-      "Perfecto para el frío"
-    ]
-  },
-  {
-    "id": "prod_516",
-    "name": "CAMPERA FUTBOL TALLE 2",
-    "category": "ropa",
-    "subcategory": "Ropa",
-    "price": 7913.5,
-    "originalPrice": null,
-    "discount": null,
-    "stock": 10,
-    "rating": 4.2,
-    "reviews": 14,
-    "featured": false,
-    "topDiscount": false,
-    "hasVideo": false,
-    "tags": [
-      "campera",
-      "futbol",
-      "talle",
-      "ropa",
-      "invierno",
-      "abrigo",
-      "calor"
-    ],
-    "description": "T-2 => LARGO = 28 cm   ANCHO = 40 cm",
-    "longDescription": "T-2 => LARGO = 28 cm   ANCHO = 40 cm",
-    "images": {
-      "cover": "assets/images/products/prod_516/cover.jpg",
-      "thumb": "assets/images/products/prod_516/thumb.jpg",
-      "gallery": [
-        "assets/images/products/prod_516/1.jpg"
-      ]
-    },
-    "specs": {
-      "SKU": "CAM048"
-    },
-    "shipping": {
-      "free": false,
-      "days": 4
-    },
-    "badge": "🧥 Ropa",
-    "brand": "Sin marca",
-    "sku": "CAM048",
-    "features": [
-      "Mantiene el calor",
-      "Material suave",
-      "Resistente al agua",
-      "Perfecto para el frío"
-    ]
-  },
-  {
-    "id": "prod_517",
-    "name": "CAMPERA FUTBOL TALLE 3",
-    "category": "ropa",
-    "subcategory": "Ropa",
-    "price": 9044,
-    "originalPrice": null,
-    "discount": null,
-    "stock": 10,
-    "rating": 4.5,
-    "reviews": 27,
-    "featured": false,
-    "topDiscount": false,
-    "hasVideo": false,
-    "tags": [
-      "campera",
-      "futbol",
-      "talle",
-      "ropa",
-      "invierno",
-      "abrigo",
-      "calor"
-    ],
-    "description": "T-3 => LARGO = 30 cm   ANCHO = 44 cm",
-    "longDescription": "T-3 => LARGO = 30 cm   ANCHO = 44 cm",
-    "images": {
-      "cover": "assets/images/products/prod_517/cover.jpg",
-      "thumb": "assets/images/products/prod_517/thumb.jpg",
-      "gallery": [
-        "assets/images/products/prod_517/1.jpg"
-      ]
-    },
-    "specs": {
-      "SKU": "CAM049"
-    },
-    "shipping": {
-      "free": false,
-      "days": 3
-    },
-    "badge": "🧥 Ropa",
-    "brand": "Sin marca",
-    "sku": "CAM049",
-    "features": [
-      "Mantiene el calor",
-      "Material suave",
-      "Resistente al agua",
-      "Perfecto para el frío"
-    ]
-  },
-  {
-    "id": "prod_518",
-    "name": "CAMPERA FUTBOL TALLE 4",
-    "category": "ropa",
-    "subcategory": "Ropa",
-    "price": 9044,
-    "originalPrice": null,
-    "discount": null,
-    "stock": 10,
-    "rating": 3.5,
-    "reviews": 42,
-    "featured": false,
-    "topDiscount": false,
-    "hasVideo": false,
-    "tags": [
-      "campera",
-      "futbol",
-      "talle",
-      "ropa",
-      "invierno",
-      "abrigo",
-      "calor"
-    ],
-    "description": "T-4 => LARGO = 34 cm   ANCHO = 46 cm",
-    "longDescription": "T-4 => LARGO = 34 cm   ANCHO = 46 cm",
-    "images": {
-      "cover": "assets/images/products/prod_518/cover.jpg",
-      "thumb": "assets/images/products/prod_518/thumb.jpg",
-      "gallery": [
-        "assets/images/products/prod_518/1.jpg"
-      ]
-    },
-    "specs": {
-      "SKU": "CAM050"
-    },
-    "shipping": {
-      "free": false,
-      "days": 2
-    },
-    "badge": "🧥 Ropa",
-    "brand": "Sin marca",
-    "sku": "CAM050",
-    "features": [
-      "Mantiene el calor",
-      "Material suave",
-      "Resistente al agua",
-      "Perfecto para el frío"
-    ]
-  },
-  {
-    "id": "prod_519",
-    "name": "CAMPERA FUTBOL TALLE 5",
-    "category": "ropa",
-    "subcategory": "Ropa",
-    "price": 10174.5,
-    "originalPrice": null,
-    "discount": null,
-    "stock": 10,
-    "rating": 4.2,
-    "reviews": 53,
-    "featured": false,
-    "topDiscount": false,
-    "hasVideo": false,
-    "tags": [
-      "campera",
-      "futbol",
-      "talle",
-      "ropa",
-      "invierno",
-      "abrigo",
-      "calor"
-    ],
-    "description": "T-5 => LARGO = 38 cm   ANCHO = 50 cm",
-    "longDescription": "T-5 => LARGO = 38 cm   ANCHO = 50 cm",
-    "images": {
-      "cover": "assets/images/products/prod_519/cover.jpg",
-      "thumb": "assets/images/products/prod_519/thumb.jpg",
-      "gallery": [
-        "assets/images/products/prod_519/1.jpg"
-      ]
-    },
-    "specs": {
-      "SKU": "CAM051"
-    },
-    "shipping": {
-      "free": false,
-      "days": 3
-    },
-    "badge": "🧥 Ropa",
-    "brand": "Sin marca",
-    "sku": "CAM051",
-    "features": [
-      "Mantiene el calor",
-      "Material suave",
-      "Resistente al agua",
-      "Perfecto para el frío"
-    ]
-  },
-  {
-    "id": "prod_520",
-    "name": "CAMPERA FUTBOL TALLE 6",
-    "category": "ropa",
-    "subcategory": "Ropa",
-    "price": 10174.5,
-    "originalPrice": null,
-    "discount": null,
-    "stock": 10,
-    "rating": 3.6,
-    "reviews": 47,
-    "featured": false,
-    "topDiscount": false,
-    "hasVideo": false,
-    "tags": [
-      "campera",
-      "futbol",
-      "talle",
-      "ropa",
-      "invierno",
-      "abrigo",
-      "calor"
-    ],
-    "description": "T-6 => LARGO = 41 cm   ANCHO = 56 cm",
-    "longDescription": "T-6 => LARGO = 41 cm   ANCHO = 56 cm",
-    "images": {
-      "cover": "assets/images/products/prod_520/cover.jpg",
-      "thumb": "assets/images/products/prod_520/thumb.jpg",
-      "gallery": [
-        "assets/images/products/prod_520/1.jpg"
-      ]
-    },
-    "specs": {
-      "SKU": "CAM052"
-    },
-    "shipping": {
-      "free": false,
-      "days": 3
-    },
-    "badge": "🧥 Ropa",
-    "brand": "Sin marca",
-    "sku": "CAM052",
-    "features": [
-      "Mantiene el calor",
-      "Material suave",
-      "Resistente al agua",
-      "Perfecto para el frío"
-    ]
-  },
-  {
-    "id": "prod_521",
-    "name": "CAMPERA FUTBOL TALLE 7",
-    "category": "ropa",
-    "subcategory": "Ropa",
-    "price": 11305,
-    "originalPrice": null,
-    "discount": null,
-    "stock": 10,
-    "rating": 3.6,
-    "reviews": 23,
-    "featured": false,
-    "topDiscount": false,
-    "hasVideo": false,
-    "tags": [
-      "campera",
-      "futbol",
-      "talle",
-      "ropa",
-      "invierno",
-      "abrigo",
-      "calor"
-    ],
-    "description": "T-7 => LARGO = 45 cm   ANCHO = 64 cm",
-    "longDescription": "T-7 => LARGO = 45 cm   ANCHO = 64 cm",
-    "images": {
-      "cover": "assets/images/products/prod_521/cover.jpg",
-      "thumb": "assets/images/products/prod_521/thumb.jpg",
-      "gallery": [
-        "assets/images/products/prod_521/1.jpg"
-      ]
-    },
-    "specs": {
-      "SKU": "CAM053"
-    },
-    "shipping": {
-      "free": false,
-      "days": 3
-    },
-    "badge": "🧥 Ropa",
-    "brand": "Sin marca",
-    "sku": "CAM053",
-    "features": [
-      "Mantiene el calor",
-      "Material suave",
-      "Resistente al agua",
-      "Perfecto para el frío"
-    ]
-  },
-  {
-    "id": "prod_522",
-    "name": "CAMPERA FUTBOL TALLE 8",
-    "category": "ropa",
-    "subcategory": "Ropa",
-    "price": 11305,
-    "originalPrice": null,
-    "discount": null,
-    "stock": 10,
-    "rating": 3.8,
-    "reviews": 22,
-    "featured": false,
-    "topDiscount": false,
-    "hasVideo": false,
-    "tags": [
-      "campera",
-      "futbol",
-      "talle",
-      "ropa",
-      "invierno",
-      "abrigo",
-      "calor"
-    ],
-    "description": "T-8 => LARGO = 50 cm   ANCHO = 68 cm",
-    "longDescription": "T-8 => LARGO = 50 cm   ANCHO = 68 cm",
-    "images": {
-      "cover": "assets/images/products/prod_522/cover.jpg",
-      "thumb": "assets/images/products/prod_522/thumb.jpg",
-      "gallery": [
-        "assets/images/products/prod_522/1.jpg"
-      ]
-    },
-    "specs": {
-      "SKU": "CAM054"
-    },
-    "shipping": {
-      "free": false,
-      "days": 3
-    },
-    "badge": "🧥 Ropa",
-    "brand": "Sin marca",
-    "sku": "CAM054",
     "features": [
       "Mantiene el calor",
       "Material suave",
