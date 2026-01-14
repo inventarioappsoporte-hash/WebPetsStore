@@ -39,37 +39,54 @@ class App {
   initHeroButtons() {
     console.log('🔍 Buscando botones del hero...');
     
+    // Botones desktop
     const viewBtn = document.getElementById('hero-view-btn');
     const buyBtn = document.getElementById('hero-buy-btn');
+    
+    // Botones móvil
+    const viewBtnMobile = document.getElementById('hero-view-btn-mobile');
+    const buyBtnMobile = document.getElementById('hero-buy-btn-mobile');
 
     console.log('✅ hero-view-btn found:', !!viewBtn);
     console.log('✅ hero-buy-btn found:', !!buyBtn);
+    console.log('✅ hero-view-btn-mobile found:', !!viewBtnMobile);
+    console.log('✅ hero-buy-btn-mobile found:', !!buyBtnMobile);
 
+    // Handler para VER PRODUCTO
+    const handleViewProduct = async () => {
+      console.log('🖱️ Click en VER PRODUCTO');
+      const productId = await this.dataLoader.getHeroProductId();
+      console.log('Product ID:', productId);
+      if (productId) {
+        window.location.href = `product.html?id=${productId}`;
+      }
+    };
+
+    // Handler para COMPRAR AHORA
+    const handleBuyNow = async () => {
+      console.log('🖱️ Click en COMPRAR AHORA');
+      const productId = await this.dataLoader.getHeroProductId();
+      const product = await this.dataLoader.getProductById(productId);
+      console.log('Product:', product);
+      if (product) {
+        Utils.sendWhatsAppMessage(product);
+      }
+    };
+
+    // Asignar eventos a botones desktop
     if (viewBtn) {
-      viewBtn.addEventListener('click', async () => {
-        console.log('🖱️ Click en VER PRODUCTO');
-        const productId = await this.dataLoader.getHeroProductId();
-        console.log('Product ID:', productId);
-        if (productId) {
-          window.location.href = `product.html?id=${productId}`;
-        }
-      });
-    } else {
-      console.log('❌ Botón VER PRODUCTO NO encontrado');
+      viewBtn.addEventListener('click', handleViewProduct);
+    }
+    if (buyBtn) {
+      buyBtn.addEventListener('click', handleBuyNow);
     }
 
-    if (buyBtn) {
-      buyBtn.addEventListener('click', async () => {
-        console.log('🖱️ Click en COMPRAR AHORA');
-        const productId = await this.dataLoader.getHeroProductId();
-        const product = await this.dataLoader.getProductById(productId);
-        console.log('Product:', product);
-        if (product) {
-          Utils.sendWhatsAppMessage(product);
-        }
-      });
-    } else {
-      console.log('❌ Botón COMPRAR AHORA NO encontrado');
+    // Asignar eventos a botones móvil
+    if (viewBtnMobile) {
+      viewBtnMobile.addEventListener('click', handleViewProduct);
+    }
+    if (buyBtnMobile) {
+      buyBtnMobile.addEventListener('click', handleBuyNow);
     }
   }
 }
