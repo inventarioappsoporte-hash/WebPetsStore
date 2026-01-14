@@ -111,6 +111,11 @@ class ContactForm {
 }
 
 // Inicializar cuando el DOM esté listo
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', async () => {
   ContactForm.init();
+  
+  // Inicializar categorías en header y footer (para páginas sin app.js)
+  if (typeof categoriesRenderer !== 'undefined') {
+    await categoriesRenderer.init();
+  }
 });
