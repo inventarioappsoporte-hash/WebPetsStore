@@ -939,5 +939,1843 @@
       "Base estable",
       "Material duradero"
     ]
+  },
+  {
+    "id": "prod_229",
+    "name": "OSO POLAR MINI - AGATAR",
+    "category": "accesorios",
+    "subcategory": "Rascadores",
+    "price": 16575,
+    "originalPrice": 19500,
+    "discount": 15,
+    "stock": 10,
+    "rating": 4,
+    "reviews": 46,
+    "featured": false,
+    "topDiscount": false,
+    "hasVideo": false,
+    "tags": [
+      "agatar",
+      "polar",
+      "mini",
+      "rascador",
+      "uñas",
+      "gatos",
+      "sisal"
+    ],
+    "description": "OSO POLAR MINI - AGATAR",
+    "longDescription": "OSO POLAR MINI - AGATAR",
+    "images": {
+      "cover": "assets/images/products/prod_229/cover.jpg",
+      "thumb": "assets/images/products/prod_229/thumb.jpg",
+      "gallery": [
+        "assets/images/products/prod_229/1.jpg"
+      ]
+    },
+    "specs": {
+      "SKU": "OSO001",
+      "Marca": "AGATAR"
+    },
+    "shipping": {
+      "free": true,
+      "days": 3
+    },
+    "badge": "🛏️ Rascadores",
+    "brand": "AGATAR",
+    "sku": "OSO001",
+    "features": [
+      "Protege muebles",
+      "Mantiene uñas sanas",
+      "Base estable",
+      "Material duradero"
+    ]
+  },
+  {
+    "id": "prod_208",
+    "name": "RASACADOR C/ CAJA KIMEY",
+    "category": "accesorios",
+    "subcategory": "Rascadores",
+    "price": 4675,
+    "originalPrice": 5500,
+    "discount": 15,
+    "stock": 10,
+    "rating": 4,
+    "reviews": 18,
+    "featured": false,
+    "topDiscount": false,
+    "hasVideo": false,
+    "tags": [
+      "rasacador",
+      "caja",
+      "kimey",
+      "rascador",
+      "uñas",
+      "gatos",
+      "sisal"
+    ],
+    "description": "RASACADOR C/ CAJA KIMEY",
+    "longDescription": "RASACADOR C/ CAJA KIMEY",
+    "images": {
+      "cover": "assets/images/products/prod_208/cover.jpg",
+      "thumb": "assets/images/products/prod_208/thumb.jpg",
+      "gallery": [
+        "assets/images/products/prod_208/1.jpg"
+      ]
+    },
+    "specs": {
+      "SKU": "RAS026"
+    },
+    "shipping": {
+      "free": false,
+      "days": 4
+    },
+    "badge": "🛏️ Rascadores",
+    "brand": "Sin marca",
+    "sku": "RAS026",
+    "features": [
+      "Protege muebles",
+      "Mantiene uñas sanas",
+      "Base estable",
+      "Material duradero"
+    ]
+  },
+  {
+    "id": "prod_209",
+    "name": "RASACADOR PLANO N1 KIMEY",
+    "category": "accesorios",
+    "subcategory": "Rascadores",
+    "price": 12410,
+    "originalPrice": 14600,
+    "discount": 15,
+    "stock": 10,
+    "rating": 4.1,
+    "reviews": 53,
+    "featured": false,
+    "topDiscount": false,
+    "hasVideo": false,
+    "tags": [
+      "rasacador",
+      "plano",
+      "kimey",
+      "rascador",
+      "uñas",
+      "gatos",
+      "sisal"
+    ],
+    "description": "RASACADOR PLANO N1 KIMEY",
+    "longDescription": "RASACADOR PLANO N1 KIMEY",
+    "images": {
+      "cover": "assets/images/products/prod_209/cover.jpg",
+      "thumb": "assets/images/products/prod_209/thumb.jpg",
+      "gallery": [
+        "assets/images/products/prod_209/1.jpg"
+      ]
+    },
+    "specs": {
+      "SKU": "RAS027"
+    },
+    "shipping": {
+      "free": false,
+      "days": 3
+    },
+    "badge": "🛏️ Rascadores",
+    "brand": "Sin marca",
+    "sku": "RAS027",
+    "features": [
+      "Protege muebles",
+      "Mantiene uñas sanas",
+      "Base estable",
+      "Material duradero"
+    ]
+  },
+  {
+    "id": "prod_213",
+    "name": "RASACDOR MESA N2 KIMEY",
+    "category": "accesorios",
+    "subcategory": "Rascadores",
+    "price": 11985,
+    "originalPrice": 14100,
+    "discount": 15,
+    "stock": 10,
+    "rating": 3.8,
+    "reviews": 6,
+    "featured": false,
+    "topDiscount": false,
+    "hasVideo": false,
+    "tags": [
+      "kimey",
+      "rasacdor",
+      "mesa",
+      "rascador",
+      "uñas",
+      "gatos",
+      "sisal"
+    ],
+    "description": "RASACDOR MESA N2 KIMEY",
+    "longDescription": "RASACDOR MESA N2 KIMEY",
+    "images": {
+      "cover": "assets/images/products/prod_213/cover.jpg",
+      "thumb": "assets/images/products/prod_213/thumb.jpg",
+      "gallery": [
+        "assets/images/products/prod_213/1.jpg"
+      ]
+    },
+    "specs": {
+      "SKU": "RAS031",
+      "Marca": "KIMEY"
+    },
+    "shipping": {
+      "free": false,
+      "days": 3
+    },
+    "badge": "🛏️ Rascadores",
+    "brand": "KIMEY",
+    "sku": "RAS031",
+    "features": [
+      "Protege muebles",
+      "Mantiene uñas sanas",
+      "Base estable",
+      "Material duradero"
+    ]
+  },
+  {
+    "id": "prod_181",
+    "name": "RASCADO TABLA CARTON Y ALFOMBRA",
+    "category": "accesorios",
+    "subcategory": "Rascadores",
+    "price": 7650,
+    "originalPrice": 9000,
+    "discount": 15,
+    "stock": 10,
+    "rating": 3.6,
+    "reviews": 24,
+    "featured": false,
+    "topDiscount": false,
+    "hasVideo": false,
+    "tags": [
+      "rascado",
+      "tabla",
+      "carton",
+      "alfombra",
+      "rascador",
+      "uñas",
+      "gatos",
+      "sisal"
+    ],
+    "description": "RASCADO TABLA CARTON Y ALFOMBRA",
+    "longDescription": "RASCADO TABLA CARTON Y ALFOMBRA",
+    "images": {
+      "cover": "assets/images/products/prod_181/cover.jpg",
+      "thumb": "assets/images/products/prod_181/thumb.jpg",
+      "gallery": [
+        "assets/images/products/prod_181/1.jpg"
+      ]
+    },
+    "specs": {
+      "SKU": "RAS001"
+    },
+    "shipping": {
+      "free": false,
+      "days": 3
+    },
+    "badge": "🛏️ Rascadores",
+    "brand": "Sin marca",
+    "sku": "RAS001",
+    "features": [
+      "Protege muebles",
+      "Mantiene uñas sanas",
+      "Base estable",
+      "Material duradero"
+    ]
+  },
+  {
+    "id": "prod_218",
+    "name": "RASCADOR 2 EN 1 CON TÚNEL",
+    "category": "accesorios",
+    "subcategory": "Rascadores",
+    "price": 9350,
+    "originalPrice": 11000,
+    "discount": 15,
+    "stock": 10,
+    "rating": 4.2,
+    "reviews": 15,
+    "featured": false,
+    "topDiscount": false,
+    "hasVideo": false,
+    "tags": [
+      "agatar",
+      "rascador",
+      "túnel",
+      "uñas",
+      "gatos",
+      "sisal"
+    ],
+    "description": "RASCADOR 2 EN 1 CON TÚNEL",
+    "longDescription": "RASCADOR 2 EN 1 CON TÚNEL",
+    "images": {
+      "cover": "assets/images/products/prod_218/cover.jpg",
+      "thumb": "assets/images/products/prod_218/thumb.jpg",
+      "gallery": [
+        "assets/images/products/prod_218/1.jpg"
+      ]
+    },
+    "specs": {
+      "SKU": "RAS032",
+      "Marca": "AGATAR"
+    },
+    "shipping": {
+      "free": false,
+      "days": 2
+    },
+    "badge": "🛏️ Rascadores",
+    "brand": "AGATAR",
+    "sku": "RAS032",
+    "features": [
+      "Protege muebles",
+      "Mantiene uñas sanas",
+      "Base estable",
+      "Material duradero"
+    ]
+  },
+  {
+    "id": "prod_201",
+    "name": "RASCADOR BANDEJA 34.5cm x 51cm",
+    "category": "accesorios",
+    "subcategory": "Rascadores",
+    "price": 18700,
+    "originalPrice": 22000,
+    "discount": 15,
+    "stock": 10,
+    "rating": 4.5,
+    "reviews": 25,
+    "featured": false,
+    "topDiscount": false,
+    "hasVideo": false,
+    "tags": [
+      "rascador",
+      "bandeja",
+      "34.5cm",
+      "51cm",
+      "uñas",
+      "gatos",
+      "sisal"
+    ],
+    "description": "RASCADOR BANDEJA 34.5cm x 51cm",
+    "longDescription": "RASCADOR BANDEJA 34.5cm x 51cm",
+    "images": {
+      "cover": "assets/images/products/prod_201/cover.jpg",
+      "thumb": "assets/images/products/prod_201/thumb.jpg",
+      "gallery": [
+        "assets/images/products/prod_201/1.jpg"
+      ]
+    },
+    "specs": {
+      "SKU": "RAS021",
+      "Medida": "5cm"
+    },
+    "shipping": {
+      "free": true,
+      "days": 4
+    },
+    "badge": "🛏️ Rascadores",
+    "brand": "Sin marca",
+    "sku": "RAS021",
+    "features": [
+      "Protege muebles",
+      "Mantiene uñas sanas",
+      "Base estable",
+      "Material duradero"
+    ]
+  },
+  {
+    "id": "prod_186",
+    "name": "RASCADOR CARTÓN CORRUGADO \"PEZ\" 20CM X 50CM",
+    "category": "accesorios",
+    "subcategory": "Rascadores",
+    "price": 15300,
+    "originalPrice": 18000,
+    "discount": 15,
+    "stock": 10,
+    "rating": 3.6,
+    "reviews": 23,
+    "featured": false,
+    "topDiscount": false,
+    "hasVideo": false,
+    "tags": [
+      "rascador",
+      "cartón",
+      "corrugado",
+      "\"pez\"",
+      "20cm",
+      "50cm",
+      "uñas",
+      "gatos",
+      "sisal"
+    ],
+    "description": "RASCADOR CARTÓN CORRUGADO \"PEZ\" 20CM X 50CM",
+    "longDescription": "RASCADOR CARTÓN CORRUGADO \"PEZ\" 20CM X 50CM",
+    "images": {
+      "cover": "assets/images/products/prod_186/cover.jpg",
+      "thumb": "assets/images/products/prod_186/thumb.jpg",
+      "gallery": [
+        "assets/images/products/prod_186/1.jpg"
+      ]
+    },
+    "specs": {
+      "SKU": "RAS006",
+      "Medida": "20CM"
+    },
+    "shipping": {
+      "free": true,
+      "days": 3
+    },
+    "badge": "🛏️ Rascadores",
+    "brand": "Sin marca",
+    "sku": "RAS006",
+    "features": [
+      "Protege muebles",
+      "Mantiene uñas sanas",
+      "Base estable",
+      "Material duradero"
+    ]
+  },
+  {
+    "id": "prod_185",
+    "name": "RASCADOR CARTÓN CORRUGADO ONDA SIMPLE 12CM X 50CM",
+    "category": "accesorios",
+    "subcategory": "Rascadores",
+    "price": 7225,
+    "originalPrice": 8500,
+    "discount": 15,
+    "stock": 10,
+    "rating": 4,
+    "reviews": 21,
+    "featured": false,
+    "topDiscount": false,
+    "hasVideo": false,
+    "tags": [
+      "rascador",
+      "cartón",
+      "corrugado",
+      "onda",
+      "simple",
+      "12cm",
+      "50cm",
+      "uñas",
+      "gatos",
+      "sisal"
+    ],
+    "description": "RASCADOR CARTÓN CORRUGADO ONDA SIMPLE 12CM X 50CM",
+    "longDescription": "RASCADOR CARTÓN CORRUGADO ONDA SIMPLE 12CM X 50CM",
+    "images": {
+      "cover": "assets/images/products/prod_185/cover.jpg",
+      "thumb": "assets/images/products/prod_185/thumb.jpg",
+      "gallery": [
+        "assets/images/products/prod_185/1.jpg"
+      ]
+    },
+    "specs": {
+      "SKU": "RAS005",
+      "Medida": "12CM"
+    },
+    "shipping": {
+      "free": false,
+      "days": 4
+    },
+    "badge": "🛏️ Rascadores",
+    "brand": "Sin marca",
+    "sku": "RAS005",
+    "features": [
+      "Protege muebles",
+      "Mantiene uñas sanas",
+      "Base estable",
+      "Material duradero"
+    ]
+  },
+  {
+    "id": "prod_187",
+    "name": "RASCADOR CARTÓN CORRUGADO ONDA SIMPLE 20CM X 50CM",
+    "category": "accesorios",
+    "subcategory": "Rascadores",
+    "price": 12750,
+    "originalPrice": 15000,
+    "discount": 15,
+    "stock": 10,
+    "rating": 3.7,
+    "reviews": 40,
+    "featured": false,
+    "topDiscount": false,
+    "hasVideo": false,
+    "tags": [
+      "rascador",
+      "cartón",
+      "corrugado",
+      "onda",
+      "simple",
+      "20cm",
+      "50cm",
+      "uñas",
+      "gatos",
+      "sisal"
+    ],
+    "description": "RASCADOR CARTÓN CORRUGADO ONDA SIMPLE 20CM X 50CM",
+    "longDescription": "RASCADOR CARTÓN CORRUGADO ONDA SIMPLE 20CM X 50CM",
+    "images": {
+      "cover": "assets/images/products/prod_187/cover.jpg",
+      "thumb": "assets/images/products/prod_187/thumb.jpg",
+      "gallery": [
+        "assets/images/products/prod_187/1.jpg"
+      ]
+    },
+    "specs": {
+      "SKU": "RAS007",
+      "Medida": "20CM"
+    },
+    "shipping": {
+      "free": true,
+      "days": 2
+    },
+    "badge": "🛏️ Rascadores",
+    "brand": "Sin marca",
+    "sku": "RAS007",
+    "features": [
+      "Protege muebles",
+      "Mantiene uñas sanas",
+      "Base estable",
+      "Material duradero"
+    ]
+  },
+  {
+    "id": "prod_198",
+    "name": "RASCADOR CILINDRO PARA PARED",
+    "category": "accesorios",
+    "subcategory": "Rascadores",
+    "price": 23800,
+    "originalPrice": 28000,
+    "discount": 15,
+    "stock": 10,
+    "rating": 4.2,
+    "reviews": 28,
+    "featured": false,
+    "topDiscount": false,
+    "hasVideo": false,
+    "tags": [
+      "rascador",
+      "cilindro",
+      "pared",
+      "uñas",
+      "gatos",
+      "sisal"
+    ],
+    "description": "RASCADOR CILINDRO PARA PARED",
+    "longDescription": "RASCADOR CILINDRO PARA PARED",
+    "images": {
+      "cover": "assets/images/products/prod_198/cover.jpg",
+      "thumb": "assets/images/products/prod_198/thumb.jpg",
+      "gallery": [
+        "assets/images/products/prod_198/1.jpg"
+      ]
+    },
+    "specs": {
+      "SKU": "RAS018"
+    },
+    "shipping": {
+      "free": true,
+      "days": 3
+    },
+    "badge": "🛏️ Rascadores",
+    "brand": "Sin marca",
+    "sku": "RAS018",
+    "features": [
+      "Protege muebles",
+      "Mantiene uñas sanas",
+      "Base estable",
+      "Material duradero"
+    ]
+  },
+  {
+    "id": "prod_188",
+    "name": "RASCADOR CON CAJA 11.5CM X 50CM X 4CM",
+    "category": "accesorios",
+    "subcategory": "Rascadores",
+    "price": 8925,
+    "originalPrice": 10500,
+    "discount": 15,
+    "stock": 10,
+    "rating": 4.1,
+    "reviews": 33,
+    "featured": false,
+    "topDiscount": false,
+    "hasVideo": false,
+    "tags": [
+      "rascador",
+      "caja",
+      "11.5cm",
+      "50cm",
+      "uñas",
+      "gatos",
+      "sisal"
+    ],
+    "description": "RASCADOR CON CAJA 11.5CM X 50CM X 4CM",
+    "longDescription": "RASCADOR CON CAJA 11.5CM X 50CM X 4CM",
+    "images": {
+      "cover": "assets/images/products/prod_188/cover.jpg",
+      "thumb": "assets/images/products/prod_188/thumb.jpg",
+      "gallery": [
+        "assets/images/products/prod_188/1.jpg"
+      ]
+    },
+    "specs": {
+      "SKU": "RAS008",
+      "Medida": "5CM"
+    },
+    "shipping": {
+      "free": false,
+      "days": 4
+    },
+    "badge": "🛏️ Rascadores",
+    "brand": "Sin marca",
+    "sku": "RAS008",
+    "features": [
+      "Protege muebles",
+      "Mantiene uñas sanas",
+      "Base estable",
+      "Material duradero"
+    ]
+  },
+  {
+    "id": "prod_207",
+    "name": "RASCADOR CON CARTON SIMPLE",
+    "category": "accesorios",
+    "subcategory": "Rascadores",
+    "price": 4250,
+    "originalPrice": 5000,
+    "discount": 15,
+    "stock": 10,
+    "rating": 4.5,
+    "reviews": 17,
+    "featured": false,
+    "topDiscount": false,
+    "hasVideo": false,
+    "tags": [
+      "rascador",
+      "carton",
+      "simple",
+      "uñas",
+      "gatos",
+      "sisal"
+    ],
+    "description": "RASCADOR CON CARTON SIMPLE",
+    "longDescription": "RASCADOR CON CARTON SIMPLE",
+    "images": {
+      "cover": "assets/images/products/prod_207/cover.jpg",
+      "thumb": "assets/images/products/prod_207/thumb.jpg",
+      "gallery": [
+        "assets/images/products/prod_207/1.jpg"
+      ]
+    },
+    "specs": {
+      "SKU": "RAS025"
+    },
+    "shipping": {
+      "free": false,
+      "days": 3
+    },
+    "badge": "🛏️ Rascadores",
+    "brand": "Sin marca",
+    "sku": "RAS025",
+    "features": [
+      "Protege muebles",
+      "Mantiene uñas sanas",
+      "Base estable",
+      "Material duradero"
+    ]
+  },
+  {
+    "id": "prod_199",
+    "name": "RASCADOR CUADRADO C/ MARCO DE MADERA PARED",
+    "category": "accesorios",
+    "subcategory": "Rascadores",
+    "price": 18700,
+    "originalPrice": 22000,
+    "discount": 15,
+    "stock": 10,
+    "rating": 3.6,
+    "reviews": 14,
+    "featured": false,
+    "topDiscount": false,
+    "hasVideo": false,
+    "tags": [
+      "rascador",
+      "cuadrado",
+      "marco",
+      "madera",
+      "pared",
+      "uñas",
+      "gatos",
+      "sisal"
+    ],
+    "description": "RASCADOR CUADRADO C/ MARCO DE MADERA PARED",
+    "longDescription": "RASCADOR CUADRADO C/ MARCO DE MADERA PARED",
+    "images": {
+      "cover": "assets/images/products/prod_199/cover.jpg",
+      "thumb": "assets/images/products/prod_199/thumb.jpg",
+      "gallery": [
+        "assets/images/products/prod_199/1.jpg"
+      ]
+    },
+    "specs": {
+      "SKU": "RAS019"
+    },
+    "shipping": {
+      "free": true,
+      "days": 3
+    },
+    "badge": "🛏️ Rascadores",
+    "brand": "Sin marca",
+    "sku": "RAS019",
+    "features": [
+      "Protege muebles",
+      "Mantiene uñas sanas",
+      "Base estable",
+      "Material duradero"
+    ]
+  },
+  {
+    "id": "prod_184",
+    "name": "RASCADOR DE MADERA EN 2 POSICIONES",
+    "category": "accesorios",
+    "subcategory": "Rascadores",
+    "price": 15300,
+    "originalPrice": 18000,
+    "discount": 15,
+    "stock": 10,
+    "rating": 4.4,
+    "reviews": 25,
+    "featured": false,
+    "topDiscount": false,
+    "hasVideo": false,
+    "tags": [
+      "rascador",
+      "madera",
+      "posiciones",
+      "uñas",
+      "gatos",
+      "sisal"
+    ],
+    "description": "RASCADOR DE MADERA EN 2 POSICIONES",
+    "longDescription": "RASCADOR DE MADERA EN 2 POSICIONES",
+    "images": {
+      "cover": "assets/images/products/prod_184/cover.jpg",
+      "thumb": "assets/images/products/prod_184/thumb.jpg",
+      "gallery": [
+        "assets/images/products/prod_184/1.jpg"
+      ]
+    },
+    "specs": {
+      "SKU": "RAS004"
+    },
+    "shipping": {
+      "free": true,
+      "days": 2
+    },
+    "badge": "🛏️ Rascadores",
+    "brand": "Sin marca",
+    "sku": "RAS004",
+    "features": [
+      "Protege muebles",
+      "Mantiene uñas sanas",
+      "Base estable",
+      "Material duradero"
+    ]
+  },
+  {
+    "id": "prod_189",
+    "name": "RASCADOR DOBLE T 58CM X 16CM X 20 CM",
+    "category": "accesorios",
+    "subcategory": "Rascadores",
+    "price": 13600,
+    "originalPrice": 16000,
+    "discount": 15,
+    "stock": 10,
+    "rating": 4.1,
+    "reviews": 12,
+    "featured": false,
+    "topDiscount": false,
+    "hasVideo": false,
+    "tags": [
+      "rascador",
+      "doble",
+      "58cm",
+      "16cm",
+      "uñas",
+      "gatos",
+      "sisal"
+    ],
+    "description": "RASCADOR DOBLE T 58CM X 16CM X 20 CM",
+    "longDescription": "RASCADOR DOBLE T 58CM X 16CM X 20 CM",
+    "images": {
+      "cover": "assets/images/products/prod_189/cover.jpg",
+      "thumb": "assets/images/products/prod_189/thumb.jpg",
+      "gallery": [
+        "assets/images/products/prod_189/1.jpg"
+      ]
+    },
+    "specs": {
+      "SKU": "RAS009",
+      "Medida": "58CM"
+    },
+    "shipping": {
+      "free": true,
+      "days": 4
+    },
+    "badge": "🛏️ Rascadores",
+    "brand": "Sin marca",
+    "sku": "RAS009",
+    "features": [
+      "Protege muebles",
+      "Mantiene uñas sanas",
+      "Base estable",
+      "Material duradero"
+    ]
+  },
+  {
+    "id": "prod_202",
+    "name": "RASCADOR ESQUINERO YUTE SILLON 60cm x 9,5cm x 11cm",
+    "category": "accesorios",
+    "subcategory": "Rascadores",
+    "price": 27200,
+    "originalPrice": 32000,
+    "discount": 15,
+    "stock": 10,
+    "rating": 3.8,
+    "reviews": 31,
+    "featured": false,
+    "topDiscount": false,
+    "hasVideo": false,
+    "tags": [
+      "rascador",
+      "esquinero",
+      "yute",
+      "sillon",
+      "60cm",
+      "9,5cm",
+      "11cm",
+      "uñas",
+      "gatos",
+      "sisal"
+    ],
+    "description": "RASCADOR ESQUINERO YUTE SILLON 60cm x 9,5cm x 11cm",
+    "longDescription": "RASCADOR ESQUINERO YUTE SILLON 60cm x 9,5cm x 11cm",
+    "images": {
+      "cover": "assets/images/products/prod_202/cover.jpg",
+      "thumb": "assets/images/products/prod_202/thumb.jpg",
+      "gallery": [
+        "assets/images/products/prod_202/1.jpg"
+      ]
+    },
+    "specs": {
+      "SKU": "RAS022",
+      "Medida": "60cm"
+    },
+    "shipping": {
+      "free": true,
+      "days": 2
+    },
+    "badge": "🛏️ Rascadores",
+    "brand": "Sin marca",
+    "sku": "RAS022",
+    "features": [
+      "Protege muebles",
+      "Mantiene uñas sanas",
+      "Base estable",
+      "Material duradero"
+    ]
+  },
+  {
+    "id": "prod_211",
+    "name": "RASCADOR HELICE N7 KIMEY",
+    "category": "accesorios",
+    "subcategory": "Rascadores",
+    "price": 8500,
+    "originalPrice": 10000,
+    "discount": 15,
+    "stock": 10,
+    "rating": 4.4,
+    "reviews": 48,
+    "featured": false,
+    "topDiscount": false,
+    "hasVideo": false,
+    "tags": [
+      "kimey",
+      "rascador",
+      "helice",
+      "uñas",
+      "gatos",
+      "sisal"
+    ],
+    "description": "RASCADOR HELICE N7 KIMEY",
+    "longDescription": "RASCADOR HELICE N7 KIMEY",
+    "images": {
+      "cover": "assets/images/products/prod_211/cover.jpg",
+      "thumb": "assets/images/products/prod_211/thumb.jpg",
+      "gallery": [
+        "assets/images/products/prod_211/1.jpg"
+      ]
+    },
+    "specs": {
+      "SKU": "RAS029",
+      "Marca": "KIMEY"
+    },
+    "shipping": {
+      "free": false,
+      "days": 2
+    },
+    "badge": "🛏️ Rascadores",
+    "brand": "KIMEY",
+    "sku": "RAS029",
+    "features": [
+      "Protege muebles",
+      "Mantiene uñas sanas",
+      "Base estable",
+      "Material duradero"
+    ]
+  },
+  {
+    "id": "prod_194",
+    "name": "RASCADOR INFINITO 55 X 12 X 20 CM",
+    "category": "accesorios",
+    "subcategory": "Rascadores",
+    "price": 22950,
+    "originalPrice": 27000,
+    "discount": 15,
+    "stock": 10,
+    "rating": 4.1,
+    "reviews": 45,
+    "featured": false,
+    "topDiscount": false,
+    "hasVideo": false,
+    "tags": [
+      "rascador",
+      "infinito",
+      "uñas",
+      "gatos",
+      "sisal"
+    ],
+    "description": "RASCADOR INFINITO 55 X 12 X 20 CM",
+    "longDescription": "RASCADOR INFINITO 55 X 12 X 20 CM",
+    "images": {
+      "cover": "assets/images/products/prod_194/cover.jpg",
+      "thumb": "assets/images/products/prod_194/thumb.jpg",
+      "gallery": [
+        "assets/images/products/prod_194/1.jpg"
+      ]
+    },
+    "specs": {
+      "SKU": "RAS014",
+      "Medida": "20 CM"
+    },
+    "shipping": {
+      "free": true,
+      "days": 4
+    },
+    "badge": "🛏️ Rascadores",
+    "brand": "Sin marca",
+    "sku": "RAS014",
+    "features": [
+      "Protege muebles",
+      "Mantiene uñas sanas",
+      "Base estable",
+      "Material duradero"
+    ]
+  },
+  {
+    "id": "prod_195",
+    "name": "RASCADOR INFINITO 55 X 12 X 20 CM",
+    "category": "accesorios",
+    "subcategory": "Rascadores",
+    "price": 11900,
+    "originalPrice": 14000,
+    "discount": 15,
+    "stock": 10,
+    "rating": 4.7,
+    "reviews": 43,
+    "featured": false,
+    "topDiscount": false,
+    "hasVideo": false,
+    "tags": [
+      "rascador",
+      "infinito",
+      "uñas",
+      "gatos",
+      "sisal"
+    ],
+    "description": "RASCADOR INFINITO 55 X 12 X 20 CM",
+    "longDescription": "RASCADOR INFINITO 55 X 12 X 20 CM",
+    "images": {
+      "cover": "assets/images/products/prod_195/cover.jpg",
+      "thumb": "assets/images/products/prod_195/thumb.jpg",
+      "gallery": [
+        "assets/images/products/prod_195/1.jpg"
+      ]
+    },
+    "specs": {
+      "SKU": "RAS015",
+      "Medida": "20 CM"
+    },
+    "shipping": {
+      "free": false,
+      "days": 3
+    },
+    "badge": "🛏️ Rascadores",
+    "brand": "Sin marca",
+    "sku": "RAS015",
+    "features": [
+      "Protege muebles",
+      "Mantiene uñas sanas",
+      "Base estable",
+      "Material duradero"
+    ]
+  },
+  {
+    "id": "prod_183",
+    "name": "RASCADOR MADERA CARTÓN Y ALFOMBRA DOS POSICIONES 50X20",
+    "category": "accesorios",
+    "subcategory": "Rascadores",
+    "price": 17000,
+    "originalPrice": 20000,
+    "discount": 15,
+    "stock": 10,
+    "rating": 4,
+    "reviews": 52,
+    "featured": false,
+    "topDiscount": false,
+    "hasVideo": false,
+    "tags": [
+      "rascador",
+      "madera",
+      "cartón",
+      "alfombra",
+      "posiciones",
+      "50x20",
+      "uñas",
+      "gatos",
+      "sisal"
+    ],
+    "description": "RASCADOR MADERA CARTÓN Y ALFOMBRA DOS POSICIONES 50X20",
+    "longDescription": "RASCADOR MADERA CARTÓN Y ALFOMBRA DOS POSICIONES 50X20",
+    "images": {
+      "cover": "assets/images/products/prod_183/cover.jpg",
+      "thumb": "assets/images/products/prod_183/thumb.jpg",
+      "gallery": [
+        "assets/images/products/prod_183/1.jpg"
+      ]
+    },
+    "specs": {
+      "SKU": "RAS003"
+    },
+    "shipping": {
+      "free": true,
+      "days": 3
+    },
+    "badge": "🛏️ Rascadores",
+    "brand": "Sin marca",
+    "sku": "RAS003",
+    "features": [
+      "Protege muebles",
+      "Mantiene uñas sanas",
+      "Base estable",
+      "Material duradero"
+    ]
+  },
+  {
+    "id": "prod_196",
+    "name": "RASCADOR MEDIO CIRCULO",
+    "category": "accesorios",
+    "subcategory": "Rascadores",
+    "price": 5525,
+    "originalPrice": 6500,
+    "discount": 15,
+    "stock": 10,
+    "rating": 4.8,
+    "reviews": 18,
+    "featured": false,
+    "topDiscount": false,
+    "hasVideo": false,
+    "tags": [
+      "rascador",
+      "medio",
+      "circulo",
+      "uñas",
+      "gatos",
+      "sisal"
+    ],
+    "description": "RASCADOR MEDIO CIRCULO",
+    "longDescription": "RASCADOR MEDIO CIRCULO",
+    "images": {
+      "cover": "assets/images/products/prod_196/cover.jpg",
+      "thumb": "assets/images/products/prod_196/thumb.jpg",
+      "gallery": [
+        "assets/images/products/prod_196/1.jpg"
+      ]
+    },
+    "specs": {
+      "SKU": "RAS016"
+    },
+    "shipping": {
+      "free": false,
+      "days": 4
+    },
+    "badge": "🛏️ Rascadores",
+    "brand": "Sin marca",
+    "sku": "RAS016",
+    "features": [
+      "Protege muebles",
+      "Mantiene uñas sanas",
+      "Base estable",
+      "Material duradero"
+    ]
+  },
+  {
+    "id": "prod_191",
+    "name": "RASCADOR MEDIO INFINITO 55 X  20 X 6,5 CM",
+    "category": "accesorios",
+    "subcategory": "Rascadores",
+    "price": 11900,
+    "originalPrice": 14000,
+    "discount": 15,
+    "stock": 10,
+    "rating": 4.1,
+    "reviews": 23,
+    "featured": false,
+    "topDiscount": false,
+    "hasVideo": false,
+    "tags": [
+      "rascador",
+      "medio",
+      "infinito",
+      "uñas",
+      "gatos",
+      "sisal"
+    ],
+    "description": "RASCADOR MEDIO INFINITO 55 X  20 X 6,5 CM",
+    "longDescription": "RASCADOR MEDIO INFINITO 55 X  20 X 6,5 CM",
+    "images": {
+      "cover": "assets/images/products/prod_191/cover.jpg",
+      "thumb": "assets/images/products/prod_191/thumb.jpg",
+      "gallery": [
+        "assets/images/products/prod_191/1.jpg"
+      ]
+    },
+    "specs": {
+      "SKU": "RAS011",
+      "Medida": "5 CM"
+    },
+    "shipping": {
+      "free": false,
+      "days": 4
+    },
+    "badge": "🛏️ Rascadores",
+    "brand": "Sin marca",
+    "sku": "RAS011",
+    "features": [
+      "Protege muebles",
+      "Mantiene uñas sanas",
+      "Base estable",
+      "Material duradero"
+    ]
+  },
+  {
+    "id": "prod_190",
+    "name": "RASCADOR MEDIO INFINITO GRANDE 58CM X 9 CM X 20CM",
+    "category": "accesorios",
+    "subcategory": "Rascadores",
+    "price": 13600,
+    "originalPrice": 16000,
+    "discount": 15,
+    "stock": 10,
+    "rating": 3.6,
+    "reviews": 19,
+    "featured": false,
+    "topDiscount": false,
+    "hasVideo": false,
+    "tags": [
+      "rascador",
+      "medio",
+      "infinito",
+      "grande",
+      "58cm",
+      "20cm",
+      "uñas",
+      "gatos",
+      "sisal"
+    ],
+    "description": "RASCADOR MEDIO INFINITO GRANDE 58CM X 9 CM X 20CM",
+    "longDescription": "RASCADOR MEDIO INFINITO GRANDE 58CM X 9 CM X 20CM",
+    "images": {
+      "cover": "assets/images/products/prod_190/cover.jpg",
+      "thumb": "assets/images/products/prod_190/thumb.jpg",
+      "gallery": [
+        "assets/images/products/prod_190/1.jpg"
+      ]
+    },
+    "specs": {
+      "SKU": "RAS010",
+      "Medida": "58CM"
+    },
+    "shipping": {
+      "free": true,
+      "days": 2
+    },
+    "badge": "🛏️ Rascadores",
+    "brand": "Sin marca",
+    "sku": "RAS010",
+    "features": [
+      "Protege muebles",
+      "Mantiene uñas sanas",
+      "Base estable",
+      "Material duradero"
+    ]
+  },
+  {
+    "id": "prod_212",
+    "name": "RASCADOR ONDA KEMEY",
+    "category": "accesorios",
+    "subcategory": "Rascadores",
+    "price": 8925,
+    "originalPrice": 10500,
+    "discount": 15,
+    "stock": 10,
+    "rating": 3.8,
+    "reviews": 5,
+    "featured": false,
+    "topDiscount": false,
+    "hasVideo": false,
+    "tags": [
+      "kemey",
+      "rascador",
+      "onda",
+      "uñas",
+      "gatos",
+      "sisal"
+    ],
+    "description": "RASACDOR ONDA KEMEY",
+    "longDescription": "RASACDOR ONDA KEMEY",
+    "images": {
+      "cover": "assets/images/products/prod_212/cover.jpg",
+      "thumb": "assets/images/products/prod_212/thumb.jpg",
+      "gallery": [
+        "assets/images/products/prod_212/1.jpg"
+      ]
+    },
+    "specs": {
+      "SKU": "RAS030",
+      "Marca": "KEMEY"
+    },
+    "shipping": {
+      "free": false,
+      "days": 2
+    },
+    "badge": "🛏️ Rascadores",
+    "brand": "KEMEY",
+    "sku": "RAS030",
+    "features": [
+      "Protege muebles",
+      "Mantiene uñas sanas",
+      "Base estable",
+      "Material duradero"
+    ]
+  },
+  {
+    "id": "prod_182",
+    "name": "RASCADOR PANEL ESQUINERO CON ALFOMBRA 60 X 9,5 X 11CM",
+    "category": "accesorios",
+    "subcategory": "Rascadores",
+    "price": 17000,
+    "originalPrice": 20000,
+    "discount": 15,
+    "stock": 10,
+    "rating": 3.7,
+    "reviews": 52,
+    "featured": false,
+    "topDiscount": false,
+    "hasVideo": false,
+    "tags": [
+      "rascador",
+      "panel",
+      "esquinero",
+      "alfombra",
+      "11cm",
+      "uñas",
+      "gatos",
+      "sisal"
+    ],
+    "description": "RASCADOR PANEL ESQUINERO CON ALFOMBRA 60 X 9,5 X 11CM",
+    "longDescription": "RASCADOR PANEL ESQUINERO CON ALFOMBRA 60 X 9,5 X 11CM",
+    "images": {
+      "cover": "assets/images/products/prod_182/cover.jpg",
+      "thumb": "assets/images/products/prod_182/thumb.jpg",
+      "gallery": [
+        "assets/images/products/prod_182/1.jpg"
+      ]
+    },
+    "specs": {
+      "SKU": "RAS002",
+      "Medida": "11CM"
+    },
+    "shipping": {
+      "free": true,
+      "days": 2
+    },
+    "badge": "🛏️ Rascadores",
+    "brand": "Sin marca",
+    "sku": "RAS002",
+    "features": [
+      "Protege muebles",
+      "Mantiene uñas sanas",
+      "Base estable",
+      "Material duradero"
+    ]
+  },
+  {
+    "id": "prod_203",
+    "name": "RASCADOR PEZ MULTI COLOR CHICO PARA COLGAR 12 CM",
+    "category": "accesorios",
+    "subcategory": "Rascadores",
+    "price": 3570,
+    "originalPrice": 4200,
+    "discount": 15,
+    "stock": 10,
+    "rating": 4.3,
+    "reviews": 25,
+    "featured": false,
+    "topDiscount": false,
+    "hasVideo": false,
+    "tags": [
+      "rascador",
+      "multi",
+      "color",
+      "chico",
+      "colgar",
+      "uñas",
+      "gatos",
+      "sisal"
+    ],
+    "description": "RASCADOR PEZ MULTI COLOR CHICO PARA COLGAR 12 CM",
+    "longDescription": "RASCADOR PEZ MULTI COLOR CHICO PARA COLGAR 12 CM",
+    "images": {
+      "cover": "assets/images/products/prod_203/cover.jpg",
+      "thumb": "assets/images/products/prod_203/thumb.jpg",
+      "gallery": [
+        "assets/images/products/prod_203/1.jpg"
+      ]
+    },
+    "specs": {
+      "SKU": "RAS023",
+      "Medida": "12 CM"
+    },
+    "shipping": {
+      "free": false,
+      "days": 2
+    },
+    "badge": "🛏️ Rascadores",
+    "brand": "Sin marca",
+    "sku": "RAS023",
+    "features": [
+      "Protege muebles",
+      "Mantiene uñas sanas",
+      "Base estable",
+      "Material duradero"
+    ]
+  },
+  {
+    "id": "prod_206",
+    "name": "RASCADOR POSTE ZOOTEC N 1",
+    "category": "accesorios",
+    "subcategory": "Rascadores",
+    "price": 17425,
+    "originalPrice": 20500,
+    "discount": 15,
+    "stock": 10,
+    "rating": 4.3,
+    "reviews": 15,
+    "featured": false,
+    "topDiscount": false,
+    "hasVideo": false,
+    "tags": [
+      "rascador",
+      "poste",
+      "zootec",
+      "uñas",
+      "gatos",
+      "sisal"
+    ],
+    "description": "RASCADOR POSTE ZOOTEC N 1",
+    "longDescription": "RASCADOR POSTE ZOOTEC N 1",
+    "images": {
+      "cover": "assets/images/products/prod_206/cover.jpg",
+      "thumb": "assets/images/products/prod_206/thumb.jpg",
+      "gallery": [
+        "assets/images/products/prod_206/1.jpg"
+      ]
+    },
+    "specs": {
+      "SKU": "RAS024"
+    },
+    "shipping": {
+      "free": true,
+      "days": 4
+    },
+    "badge": "🛏️ Rascadores",
+    "brand": "Sin marca",
+    "sku": "RAS024",
+    "features": [
+      "Protege muebles",
+      "Mantiene uñas sanas",
+      "Base estable",
+      "Material duradero"
+    ]
+  },
+  {
+    "id": "prod_197",
+    "name": "RASCADOR PUENTE",
+    "category": "accesorios",
+    "subcategory": "Rascadores",
+    "price": 32300,
+    "originalPrice": 38000,
+    "discount": 15,
+    "stock": 10,
+    "rating": 4.1,
+    "reviews": 47,
+    "featured": false,
+    "topDiscount": false,
+    "hasVideo": false,
+    "tags": [
+      "rascador",
+      "puente",
+      "uñas",
+      "gatos",
+      "sisal"
+    ],
+    "description": "RASCADOR PUENTE",
+    "longDescription": "RASCADOR PUENTE",
+    "images": {
+      "cover": "assets/images/products/prod_197/cover.jpg",
+      "thumb": "assets/images/products/prod_197/thumb.jpg",
+      "gallery": [
+        "assets/images/products/prod_197/1.jpg"
+      ]
+    },
+    "specs": {
+      "SKU": "RAS017"
+    },
+    "shipping": {
+      "free": true,
+      "days": 4
+    },
+    "badge": "🛏️ Rascadores",
+    "brand": "Sin marca",
+    "sku": "RAS017",
+    "features": [
+      "Protege muebles",
+      "Mantiene uñas sanas",
+      "Base estable",
+      "Material duradero"
+    ]
+  },
+  {
+    "id": "prod_192",
+    "name": "RASCADOR RECTO 50 X 12 X 2 CM",
+    "category": "accesorios",
+    "subcategory": "Rascadores",
+    "price": 3400,
+    "originalPrice": 4000,
+    "discount": 15,
+    "stock": 10,
+    "rating": 4.6,
+    "reviews": 43,
+    "featured": false,
+    "topDiscount": false,
+    "hasVideo": false,
+    "tags": [
+      "rascador",
+      "recto",
+      "uñas",
+      "gatos",
+      "sisal"
+    ],
+    "description": "RASCADOR RECTO 50CM X 12CM X 2CM",
+    "longDescription": "RASCADOR RECTO 50CM X 12CM X 2CM",
+    "images": {
+      "cover": "assets/images/products/prod_192/cover.jpg",
+      "thumb": "assets/images/products/prod_192/thumb.jpg",
+      "gallery": [
+        "assets/images/products/prod_192/1.jpg"
+      ]
+    },
+    "specs": {
+      "SKU": "RAS012",
+      "Medida": "2 CM"
+    },
+    "shipping": {
+      "free": false,
+      "days": 2
+    },
+    "badge": "🛏️ Rascadores",
+    "brand": "Sin marca",
+    "sku": "RAS012",
+    "features": [
+      "Protege muebles",
+      "Mantiene uñas sanas",
+      "Base estable",
+      "Material duradero"
+    ]
+  },
+  {
+    "id": "prod_193",
+    "name": "RASCADOR RECTO SIN CAJA 11,5 X 50 X 4 CM",
+    "category": "accesorios",
+    "subcategory": "Rascadores",
+    "price": 5525,
+    "originalPrice": 6500,
+    "discount": 15,
+    "stock": 10,
+    "rating": 3.6,
+    "reviews": 52,
+    "featured": false,
+    "topDiscount": false,
+    "hasVideo": false,
+    "tags": [
+      "rascador",
+      "recto",
+      "caja",
+      "11,5",
+      "uñas",
+      "gatos",
+      "sisal"
+    ],
+    "description": "RASCADOR RECTO SIN CAJA 11,5 X 50 X 4 CM",
+    "longDescription": "RASCADOR RECTO SIN CAJA 11,5 X 50 X 4 CM",
+    "images": {
+      "cover": "assets/images/products/prod_193/cover.jpg",
+      "thumb": "assets/images/products/prod_193/thumb.jpg",
+      "gallery": [
+        "assets/images/products/prod_193/1.jpg"
+      ]
+    },
+    "specs": {
+      "SKU": "RAS013",
+      "Medida": "4 CM"
+    },
+    "shipping": {
+      "free": false,
+      "days": 3
+    },
+    "badge": "🛏️ Rascadores",
+    "brand": "Sin marca",
+    "sku": "RAS013",
+    "features": [
+      "Protege muebles",
+      "Mantiene uñas sanas",
+      "Base estable",
+      "Material duradero"
+    ]
+  },
+  {
+    "id": "prod_210",
+    "name": "RASCADOR SILLON CON PATAS KIMEY",
+    "category": "accesorios",
+    "subcategory": "Rascadores",
+    "price": 16320,
+    "originalPrice": 19200,
+    "discount": 15,
+    "stock": 10,
+    "rating": 4.7,
+    "reviews": 11,
+    "featured": false,
+    "topDiscount": false,
+    "hasVideo": false,
+    "tags": [
+      "rascador",
+      "sillon",
+      "patas",
+      "kimey",
+      "uñas",
+      "gatos",
+      "sisal"
+    ],
+    "description": "RASCADOR SILLON CON PATAS KIMEY",
+    "longDescription": "RASCADOR SILLON CON PATAS KIMEY",
+    "images": {
+      "cover": "assets/images/products/prod_210/cover.jpg",
+      "thumb": "assets/images/products/prod_210/thumb.jpg",
+      "gallery": [
+        "assets/images/products/prod_210/1.jpg"
+      ]
+    },
+    "specs": {
+      "SKU": "RAS028"
+    },
+    "shipping": {
+      "free": true,
+      "days": 4
+    },
+    "badge": "🛏️ Rascadores",
+    "brand": "Sin marca",
+    "sku": "RAS028",
+    "features": [
+      "Protege muebles",
+      "Mantiene uñas sanas",
+      "Base estable",
+      "Material duradero"
+    ]
+  },
+  {
+    "id": "prod_200",
+    "name": "RASCASDON CUADRADO C/MARCO DE MADERA PARED CHICO",
+    "category": "accesorios",
+    "subcategory": "Rascadores",
+    "price": 11050,
+    "originalPrice": 13000,
+    "discount": 15,
+    "stock": 10,
+    "rating": 4.8,
+    "reviews": 41,
+    "featured": false,
+    "topDiscount": false,
+    "hasVideo": false,
+    "tags": [
+      "rascasdon",
+      "cuadrado",
+      "c/marco",
+      "madera",
+      "pared",
+      "chico",
+      "rascador",
+      "uñas",
+      "gatos",
+      "sisal"
+    ],
+    "description": "RASCASDON CUADRADO C/MARCO DE MADERA PARED CHICO",
+    "longDescription": "RASCASDON CUADRADO C/MARCO DE MADERA PARED CHICO",
+    "images": {
+      "cover": "assets/images/products/prod_200/cover.jpg",
+      "thumb": "assets/images/products/prod_200/thumb.jpg",
+      "gallery": [
+        "assets/images/products/prod_200/1.jpg"
+      ]
+    },
+    "specs": {
+      "SKU": "RAS020"
+    },
+    "shipping": {
+      "free": false,
+      "days": 2
+    },
+    "badge": "🛏️ Rascadores",
+    "brand": "Sin marca",
+    "sku": "RAS020",
+    "features": [
+      "Protege muebles",
+      "Mantiene uñas sanas",
+      "Base estable",
+      "Material duradero"
+    ]
+  },
+  {
+    "id": "prod_228",
+    "name": "RINOCERONTE MINI - AGATAR",
+    "category": "accesorios",
+    "subcategory": "Rascadores",
+    "price": 16575,
+    "originalPrice": 19500,
+    "discount": 15,
+    "stock": 10,
+    "rating": 3.6,
+    "reviews": 49,
+    "featured": false,
+    "topDiscount": false,
+    "hasVideo": false,
+    "tags": [
+      "agatar",
+      "rinoceronte",
+      "mini",
+      "rascador",
+      "uñas",
+      "gatos",
+      "sisal"
+    ],
+    "description": "RINOCERONTE MINI - AGATAR",
+    "longDescription": "RINOCERONTE MINI - AGATAR",
+    "images": {
+      "cover": "assets/images/products/prod_228/cover.jpg",
+      "thumb": "assets/images/products/prod_228/thumb.jpg",
+      "gallery": [
+        "assets/images/products/prod_228/1.jpg"
+      ]
+    },
+    "specs": {
+      "SKU": "RIN001",
+      "Marca": "AGATAR"
+    },
+    "shipping": {
+      "free": true,
+      "days": 4
+    },
+    "badge": "🛏️ Rascadores",
+    "brand": "AGATAR",
+    "sku": "RIN001",
+    "features": [
+      "Protege muebles",
+      "Mantiene uñas sanas",
+      "Base estable",
+      "Material duradero"
+    ]
+  },
+  {
+    "id": "prod_227",
+    "name": "Ratón - AGATAR",
+    "category": "accesorios",
+    "subcategory": "Rascadores",
+    "price": 5950,
+    "originalPrice": 7000,
+    "discount": 15,
+    "stock": 10,
+    "rating": 4.5,
+    "reviews": 36,
+    "featured": false,
+    "topDiscount": false,
+    "hasVideo": false,
+    "tags": [
+      "agatar",
+      "ratón",
+      "rascador",
+      "uñas",
+      "gatos",
+      "sisal"
+    ],
+    "description": "Ratón - AGATAR",
+    "longDescription": "Ratón - AGATAR",
+    "images": {
+      "cover": "assets/images/products/prod_227/cover.jpg",
+      "thumb": "assets/images/products/prod_227/thumb.jpg",
+      "gallery": [
+        "assets/images/products/prod_227/1.jpg"
+      ]
+    },
+    "specs": {
+      "SKU": "RAT001",
+      "Marca": "AGATAR"
+    },
+    "shipping": {
+      "free": false,
+      "days": 3
+    },
+    "badge": "🛏️ Rascadores",
+    "brand": "AGATAR",
+    "sku": "RAT001",
+    "features": [
+      "Protege muebles",
+      "Mantiene uñas sanas",
+      "Base estable",
+      "Material duradero"
+    ]
+  },
+  {
+    "id": "prod_224",
+    "name": "TIBURÓN - AGATAR",
+    "category": "accesorios",
+    "subcategory": "Rascadores",
+    "price": 27200,
+    "originalPrice": 32000,
+    "discount": 15,
+    "stock": 10,
+    "rating": 3.7,
+    "reviews": 34,
+    "featured": false,
+    "topDiscount": false,
+    "hasVideo": false,
+    "tags": [
+      "tiburón",
+      "agatar",
+      "rascador",
+      "uñas",
+      "gatos",
+      "sisal"
+    ],
+    "description": "TIBURÓN - AGATAR",
+    "longDescription": "TIBURÓN - AGATAR",
+    "images": {
+      "cover": "assets/images/products/prod_224/cover.jpg",
+      "thumb": "assets/images/products/prod_224/thumb.jpg",
+      "gallery": [
+        "assets/images/products/prod_224/1.jpg"
+      ]
+    },
+    "specs": {
+      "SKU": "TIB001"
+    },
+    "shipping": {
+      "free": true,
+      "days": 2
+    },
+    "badge": "🛏️ Rascadores",
+    "brand": "Sin marca",
+    "sku": "TIB001",
+    "features": [
+      "Protege muebles",
+      "Mantiene uñas sanas",
+      "Base estable",
+      "Material duradero"
+    ]
+  },
+  {
+    "id": "prod_214",
+    "name": "TITO'S - AGATAR",
+    "category": "accesorios",
+    "subcategory": "Rascadores",
+    "price": 11900,
+    "originalPrice": 14000,
+    "discount": 15,
+    "stock": 10,
+    "rating": 4,
+    "reviews": 23,
+    "featured": false,
+    "topDiscount": false,
+    "hasVideo": false,
+    "tags": [
+      "agatar",
+      "tito's",
+      "rascador",
+      "uñas",
+      "gatos",
+      "sisal"
+    ],
+    "description": "TITO'S - AGATAR",
+    "longDescription": "TITO'S - AGATAR",
+    "images": {
+      "cover": "assets/images/products/prod_214/cover.jpg",
+      "thumb": "assets/images/products/prod_214/thumb.jpg",
+      "gallery": [
+        "assets/images/products/prod_214/1.jpg"
+      ]
+    },
+    "specs": {
+      "SKU": "TIT001",
+      "Marca": "AGATAR"
+    },
+    "shipping": {
+      "free": false,
+      "days": 3
+    },
+    "badge": "🛏️ Rascadores",
+    "brand": "AGATAR",
+    "sku": "TIT001",
+    "features": [
+      "Protege muebles",
+      "Mantiene uñas sanas",
+      "Base estable",
+      "Material duradero"
+    ]
   }
 ]
