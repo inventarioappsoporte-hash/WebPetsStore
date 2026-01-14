@@ -1,0 +1,98 @@
+/**
+ * 💬 WhatsApp Float Button - Estilos
+ * Botón flotante para consultas por WhatsApp
+ */
+
+/* Contenedor del botón flotante */
+.whatsapp-float {
+  position: fixed;
+  bottom: 24px;
+  left: 24px;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 20px;
+  background: #1a1a1a;
+  border: 1px solid #25D366;
+  border-radius: 50px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(37, 211, 102, 0.2);
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(37, 211, 102, 0.35);
+  background: #222;
+}
+
+.whatsapp-float:active {
+  transform: scale(0.98);
+}
+
+/* Ícono de WhatsApp */
+.whatsapp-float__icon {
+  width: 24px;
+  height: 24px;
+  fill: #25D366;
+  flex-shrink: 0;
+}
+
+/* Texto del botón */
+.whatsapp-float__text {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+/* Responsive: Mobile - solo ícono */
+@media (max-width: 768px) {
+  .whatsapp-float {
+    padding: 14px;
+    border-radius: 50%;
+    bottom: 20px;
+    left: 20px;
+  }
+
+  .whatsapp-float__text {
+    display: none;
+  }
+
+  .whatsapp-float__icon {
+    width: 28px;
+    height: 28px;
+  }
+}
+
+/* Animación de entrada */
+@keyframes whatsapp-float-in {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.whatsapp-float {
+  animation: whatsapp-float-in 0.5s ease-out;
+}
+
+/* Pulse sutil para llamar atención (opcional) */
+@keyframes whatsapp-pulse {
+  0%, 100% {
+    box-shadow: 0 4px 15px rgba(37, 211, 102, 0.2);
+  }
+  50% {
+    box-shadow: 0 4px 25px rgba(37, 211, 102, 0.4);
+  }
+}
+
+.whatsapp-float--pulse {
+  animation: whatsapp-pulse 2s ease-in-out infinite;
+}
