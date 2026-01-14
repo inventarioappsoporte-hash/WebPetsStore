@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
+  <title>Contacto - Pets Store</title>
+  <meta name="description" content="Contactanos para consultas sobre productos para mascotas. Te respondemos por WhatsApp.">
+  
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/typography.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/contact.css">
+  <link rel="stylesheet" href="css/cart.css">
+  <link rel="stylesheet" href="css/whatsapp-float.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <div class="header__content">
+        <div class="header__logo">
+          <a href="index.html" style="text-decoration: none; color: inherit;">
+            <h1>🐾 Pets Store</h1>
+          </a>
+        </div>
+        <nav class="header__nav">
+          <a href="index.html" class="nav__link">Home</a>
+          <a href="search.html" class="nav__link">Buscar</a>
+          <div class="nav__item nav__item--dropdown">
+            <a href="#" class="nav__link">Categorías</a>
+            <ul class="nav__dropdown" id="categories-dropdown">
+              <!-- Renderizado por JS -->
+            </ul>
+          </div>
+          <a href="contact.html" class="nav__link nav__link--active">Contacto</a>
+        </nav>
+        <div class="header__actions">
+          <div class="header__search">
+            <button class="header__search-btn" id="header-search-toggle">🔍</button>
+            <input type="text" class="header__search-input" placeholder="Buscar productos..." id="header-search-input">
+          </div>
+          <a href="#" class="nav__link nav__link--cart" onclick="CartUI.toggle(); return false;">
+            <div class="cart-icon-wrapper">
+              <svg class="cart-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="9" cy="21" r="1"></circle>
+                <circle cx="20" cy="21" r="1"></circle>
+                <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+              </svg>
+              <span class="cart-badge__count" id="cart-badge-count">0</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="main contact-page">
+    <!-- Sección de Contacto -->
+    <section class="contact-section contact-section--page" id="contacto">
+      <div class="container">
+        <h2 class="contact-section__title">📬 Contacto</h2>
+        <p class="contact-section__subtitle">¿Tenés alguna consulta? Escribinos y te respondemos por WhatsApp</p>
+        
+        <form class="contact-form" id="contact-form">
+          <div class="contact-form__group">
+            <label for="contact-name" class="contact-form__label contact-form__label--required">Nombre completo</label>
+            <input 
+              type="text" 
+              id="contact-name" 
+              class="contact-form__input" 
+              placeholder="Ej: Juan Pérez"
+            >
+            <span class="contact-form__error"></span>
+          </div>
+          
+          <div class="contact-form__group">
+            <label for="contact-phone" class="contact-form__label contact-form__label--required">Teléfono</label>
+            <input 
+              type="tel" 
+              id="contact-phone" 
+              class="contact-form__input" 
+              placeholder="Ej: 11 5019 2474"
+            >
+            <span class="contact-form__error"></span>
+          </div>
+          
+          <div class="contact-form__group">
+            <label for="contact-message" class="contact-form__label contact-form__label--required">Mensaje / Consulta</label>
+            <textarea 
+              id="contact-message" 
+              class="contact-form__textarea" 
+              placeholder="Escribí tu consulta aquí..."
+              rows="4"
+            ></textarea>
+            <span class="contact-form__error"></span>
+          </div>
+          
+          <button type="submit" class="contact-form__submit">
+            <svg class="contact-form__submit-icon" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+            </svg>
+            Enviar por WhatsApp
+          </button>
+          
+          <p class="contact-form__trust">
+            <span class="contact-form__trust-icon">✅</span>
+            Te respondemos a la brevedad por WhatsApp
+          </p>
+        </form>
+
+        <!-- Info de contacto adicional -->
+        <div class="contact-info">
+          <div class="contact-info__item">
+            <span class="contact-info__icon">📧</span>
+            <span class="contact-info__text">pets.store.2026@gmail.com</span>
+          </div>
+          <div class="contact-info__item">
+            <span class="contact-info__icon">📱</span>
+            <span class="contact-info__text">+54 9 11 5019 2474</span>
+          </div>
+          <div class="contact-info__item">
+            <span class="contact-info__icon">📸</span>
+            <span class="contact-info__text">@petsstore2026</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__content">
+        <div class="footer__section">
+          <h3>Sobre Pets Store</h3>
+          <p>Tu tienda online de confianza para productos premium de mascotas.</p>
+        </div>
+        <div class="footer__section">
+          <h3>Categorías</h3>
+          <ul id="footer-categories">
+            <!-- Renderizado por JS -->
+          </ul>
+        </div>
+        <div class="footer__section">
+          <h3>Contacto</h3>
+          <p>Email: pets.store.2026@gmail.com</p>
+          <p>Tel: +54 9 11 5019 2474</p>
+          <p>Instagram: @petsstore2026</p>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2026 Pets Store. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/core/constants.js"></script>
+  <script src="js/core/utils.js"></script>
+  <script src="js/core/dataLoader.js"></script>
+  <script src="js/modules/categoriesRenderer.js"></script>
+  <script src="js/modules/cart.js"></script>
+  <script src="js/modules/whatsappSender.js"></script>
+  <script src="js/modules/cartUI.js"></script>
+  <script src="js/modules/whatsappFloat.js"></script>
+  <script src="js/modules/contactForm.js"></script>
+</body>
+</html>
