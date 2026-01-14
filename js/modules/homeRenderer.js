@@ -224,8 +224,8 @@ class HomeRenderer {
             ${(product.hasVariants ? product.baseOriginalPrice : product.originalPrice) ? `<span class="card__price-original">${Utils.formatPrice(product.hasVariants ? product.baseOriginalPrice : product.originalPrice)}</span>` : ''}
           </div>
           <div class="card__actions">
-            <button class="btn btn--small btn--primary" onclick="event.stopPropagation()">Ver Producto</button>
-            <button class="btn btn--small btn--secondary add-to-cart-btn" data-product-id="${product.id}" onclick="event.stopPropagation()">🛒 Agregar</button>
+            <button class="btn btn--small btn--primary" onclick="event.stopPropagation(); window.location.href='product.html?id=${product.id}'">VER PRODUCTO</button>
+            <button class="btn btn--small btn--secondary add-to-cart-btn" data-product-id="${product.id}" onclick="event.stopPropagation()">🛒 AGREGAR</button>
           </div>
         </div>
       </div>
