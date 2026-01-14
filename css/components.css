@@ -474,9 +474,29 @@
 }
 
 .btn--small {
-  padding: var(--spacing-xs) var(--spacing-sm);
-  font-size: var(--font-size-xs);
-  width: 100%;
+  padding: 8px 6px;
+  font-size: 10px;
+  width: auto;
+  flex: 1;
+  min-width: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  letter-spacing: 0;
+}
+
+/* Contenedor de botones en cards */
+.card__actions {
+  display: flex;
+  gap: 4px;
+  margin-top: var(--spacing-sm);
+}
+
+.card__actions .btn--small {
+  flex: 1;
+  text-align: center;
+  padding: 8px 4px;
+  font-size: 9px;
 }
 
 /* Promo Badge */
