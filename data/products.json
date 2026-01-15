@@ -226,7 +226,7 @@
     "basePrice": 2700,
     "baseOriginalPrice": 3000,
     "discount": 10,
-    "stock": 0,
+    "stock": 20,
     "rating": 3.8,
     "reviews": 76,
     "featured": false,
@@ -256,9 +256,9 @@
             "Tamaño": "2 KG"
           },
           "price": 2700,
-          "stock": 0,
+          "stock": 10,
           "sku": "PIE006-2KG",
-          "available": false,
+          "available": true,
           "images": {
             "cover": "assets/images/products/prod_134/cover_2_kg.jpg",
             "thumb": "assets/images/products/prod_134/thumb_2_kg.jpg",
@@ -274,9 +274,9 @@
             "Tamaño": "3,6 KG"
           },
           "price": 4500,
-          "stock": 0,
+          "stock": 10,
           "sku": "PIE006-36K",
-          "available": false,
+          "available": true,
           "images": {
             "cover": "assets/images/products/prod_134/cover_3,6_kg.jpg",
             "thumb": "assets/images/products/prod_134/thumb_3,6_kg.jpg",
