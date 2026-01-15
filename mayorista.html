@@ -6,15 +6,15 @@
   <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
   <meta http-equiv="Pragma" content="no-cache">
   <meta http-equiv="Expires" content="0">
-  <title>Contacto - Pets Store</title>
-  <meta name="description" content="Contactanos para consultas sobre productos para mascotas. Te respondemos por WhatsApp.">
+  <title>Venta Mayorista - Pets Store</title>
+  <meta name="description" content="Venta mayorista de productos para mascotas. Precios especiales para comercios, veterinarias y emprendimientos.">
   
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/variables.css">
   <link rel="stylesheet" href="css/typography.css">
   <link rel="stylesheet" href="css/layout.css">
   <link rel="stylesheet" href="css/components.css">
-  <link rel="stylesheet" href="css/contact.css">
+  <link rel="stylesheet" href="css/mayorista.css">
   <link rel="stylesheet" href="css/cart.css">
   <link rel="stylesheet" href="css/whatsapp-float.css">
 </head>
@@ -37,8 +37,8 @@
               <!-- Renderizado por JS -->
             </ul>
           </div>
-          <a href="contact.html" class="nav__link nav__link--active">Contacto</a>
-          <a href="mayorista.html" class="nav__link">Mayorista</a>
+          <a href="contact.html" class="nav__link">Contacto</a>
+          <a href="mayorista.html" class="nav__link nav__link--active">Mayorista</a>
         </nav>
         <div class="header__actions">
           <div class="header__search">
@@ -61,73 +61,125 @@
   </header>
 
   <!-- Main Content -->
-  <main class="main contact-page">
-    <!-- Sección de Contacto -->
-    <section class="contact-section contact-section--page" id="contacto">
+  <main class="main mayorista-page">
+    <!-- Hero Mayorista -->
+    <section class="mayorista-hero">
       <div class="container">
-        <h2 class="contact-section__title">📬 Contacto</h2>
-        <p class="contact-section__subtitle">¿Tenés alguna consulta? Escribinos y te respondemos por WhatsApp</p>
-        
-        <form class="contact-form" id="contact-form">
-          <div class="contact-form__group">
-            <label for="contact-name" class="contact-form__label contact-form__label--required">Nombre completo</label>
+        <span class="mayorista-hero__icon">🏪</span>
+        <h1 class="mayorista-hero__title">Venta Mayorista para Comercios</h1>
+        <p class="mayorista-hero__subtitle">
+          Si tenés una tienda, veterinaria o emprendimiento, accedé a precios especiales por volumen.
+        </p>
+      </div>
+    </section>
+
+    <!-- Formulario Mayorista -->
+    <section class="mayorista-section">
+      <div class="container">
+        <form class="mayorista-form" id="mayorista-form">
+          <div class="mayorista-form__group">
+            <label for="mayorista-nombre" class="mayorista-form__label mayorista-form__label--required">Nombre completo</label>
             <input 
               type="text" 
-              id="contact-name" 
-              class="contact-form__input" 
+              id="mayorista-nombre" 
+              class="mayorista-form__input" 
               placeholder="Ej: Juan Pérez"
             >
-            <span class="contact-form__error"></span>
+            <span class="mayorista-form__error"></span>
           </div>
-          
-          <div class="contact-form__group">
-            <label for="contact-phone" class="contact-form__label contact-form__label--required">Teléfono</label>
+
+          <div class="mayorista-form__group">
+            <label for="mayorista-comercio" class="mayorista-form__label mayorista-form__label--required">Nombre del comercio</label>
+            <input 
+              type="text" 
+              id="mayorista-comercio" 
+              class="mayorista-form__input" 
+              placeholder="Ej: Pet Shop San Martín"
+            >
+            <span class="mayorista-form__error"></span>
+          </div>
+
+          <div class="mayorista-form__group">
+            <label for="mayorista-ciudad" class="mayorista-form__label mayorista-form__label--required">Ciudad / Provincia</label>
+            <input 
+              type="text" 
+              id="mayorista-ciudad" 
+              class="mayorista-form__input" 
+              placeholder="Ej: Córdoba, Córdoba"
+            >
+            <span class="mayorista-form__error"></span>
+          </div>
+
+          <div class="mayorista-form__group">
+            <label for="mayorista-telefono" class="mayorista-form__label mayorista-form__label--required">Teléfono</label>
             <input 
               type="tel" 
-              id="contact-phone" 
-              class="contact-form__input" 
-              placeholder="Ej: 11 5019 2474"
+              id="mayorista-telefono" 
+              class="mayorista-form__input" 
+              placeholder="Ej: 351 555 1234"
             >
-            <span class="contact-form__error"></span>
+            <span class="mayorista-form__error"></span>
           </div>
-          
-          <div class="contact-form__group">
-            <label for="contact-message" class="contact-form__label contact-form__label--required">Mensaje / Consulta</label>
+
+          <div class="mayorista-form__group">
+            <label for="mayorista-email" class="mayorista-form__label">Email (opcional)</label>
+            <input 
+              type="email" 
+              id="mayorista-email" 
+              class="mayorista-form__input" 
+              placeholder="Ej: comercio@email.com"
+            >
+            <span class="mayorista-form__error"></span>
+          </div>
+
+          <div class="mayorista-form__group">
+            <label for="mayorista-volumen" class="mayorista-form__label mayorista-form__label--required">Volumen o inversión estimada</label>
+            <select id="mayorista-volumen" class="mayorista-form__select">
+              <option value="">Seleccioná una opción</option>
+              <option value="Menos de $150.000">Menos de $150.000</option>
+              <option value="$150.000 – $350.000">$150.000 – $350.000</option>
+              <option value="$350.000 – $700.000">$350.000 – $700.000</option>
+              <option value="Más de $700.000">Más de $700.000</option>
+            </select>
+            <span class="mayorista-form__error"></span>
+          </div>
+
+          <div class="mayorista-form__group">
+            <label for="mayorista-mensaje" class="mayorista-form__label">Mensaje / Productos de interés (opcional)</label>
             <textarea 
-              id="contact-message" 
-              class="contact-form__textarea" 
-              placeholder="Escribí tu consulta aquí..."
+              id="mayorista-mensaje" 
+              class="mayorista-form__textarea" 
+              placeholder="Contanos qué productos te interesan o cualquier consulta..."
               rows="4"
             ></textarea>
-            <span class="contact-form__error"></span>
+            <span class="mayorista-form__error"></span>
           </div>
-          
-          <button type="submit" class="contact-form__submit">
-            <svg class="contact-form__submit-icon" viewBox="0 0 24 24" fill="currentColor">
+
+          <button type="submit" class="mayorista-form__submit">
+            <svg class="mayorista-form__submit-icon" viewBox="0 0 24 24" fill="currentColor">
               <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
             </svg>
-            Enviar por WhatsApp
+            Consultar por WhatsApp
           </button>
-          
-          <p class="contact-form__trust">
-            <span class="contact-form__trust-icon">✅</span>
-            Te respondemos a la brevedad por WhatsApp
-          </p>
         </form>
 
-        <!-- Info de contacto adicional -->
-        <div class="contact-info">
-          <div class="contact-info__item">
-            <span class="contact-info__icon">📧</span>
-            <span class="contact-info__text">pets.store.2026@gmail.com</span>
+        <!-- Elementos de confianza -->
+        <div class="mayorista-trust">
+          <div class="mayorista-trust__item">
+            <span class="mayorista-trust__icon">⚡</span>
+            <span>Respondemos en el día</span>
           </div>
-          <div class="contact-info__item">
-            <span class="contact-info__icon">📱</span>
-            <span class="contact-info__text">+54 9 11 5019 2474</span>
+          <div class="mayorista-trust__item">
+            <span class="mayorista-trust__icon">🤝</span>
+            <span>Atención personalizada</span>
           </div>
-          <div class="contact-info__item">
-            <span class="contact-info__icon">📸</span>
-            <span class="contact-info__text">@petsstore2026</span>
+          <div class="mayorista-trust__item">
+            <span class="mayorista-trust__icon">💰</span>
+            <span>Precios especiales por volumen</span>
+          </div>
+          <div class="mayorista-trust__item">
+            <span class="mayorista-trust__icon">🚚</span>
+            <span>Envíos a todo el país</span>
           </div>
         </div>
       </div>
@@ -170,9 +222,8 @@
   <script src="js/modules/whatsappSender.js"></script>
   <script src="js/modules/cartUI.js"></script>
   <script src="js/modules/whatsappFloat.js"></script>
-  <script src="js/modules/contactForm.js"></script>
+  <script src="js/modules/mayoristaForm.js"></script>
   <script>
-    // Inicializar categorías del header y footer
     document.addEventListener('DOMContentLoaded', () => {
       categoriesRenderer.init();
     });
