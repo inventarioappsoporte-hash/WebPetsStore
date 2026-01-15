@@ -1,0 +1,1472 @@
+[
+  {
+    "id": "prod_106",
+    "nombre": "Shampoo Maximo 250 Cm3",
+    "totalVariantes": 3,
+    "imagenesUnicas": 1,
+    "duplicados": [
+      {
+        "cantidad": 3,
+        "variantes": [
+          "var_106_1",
+          "var_106_2",
+          "var_106_3"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "prod_134",
+    "nombre": "Piedras Absorsol",
+    "totalVariantes": 2,
+    "imagenesUnicas": 1,
+    "duplicados": [
+      {
+        "cantidad": 2,
+        "variantes": [
+          "var_134_1",
+          "var_134_2"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "prod_139",
+    "nombre": "Zootec Piedras Aglutinantes Lavanda",
+    "totalVariantes": 2,
+    "imagenesUnicas": 1,
+    "duplicados": [
+      {
+        "cantidad": 2,
+        "variantes": [
+          "var_139_1",
+          "var_139_2"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "prod_140",
+    "nombre": "Zootec Piedras Naturales",
+    "totalVariantes": 3,
+    "imagenesUnicas": 1,
+    "duplicados": [
+      {
+        "cantidad": 3,
+        "variantes": [
+          "var_140_1",
+          "var_140_2",
+          "var_140_3"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "prod_145",
+    "nombre": "COLCHON FANTASIA ESPUMA",
+    "totalVariantes": 4,
+    "imagenesUnicas": 1,
+    "duplicados": [
+      {
+        "cantidad": 4,
+        "variantes": [
+          "var_145_1",
+          "var_145_2",
+          "var_145_3",
+          "var_145_4"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "prod_146",
+    "nombre": "COLCHONETA  FANTASIA PLUSH",
+    "totalVariantes": 4,
+    "imagenesUnicas": 1,
+    "duplicados": [
+      {
+        "cantidad": 4,
+        "variantes": [
+          "var_146_1",
+          "var_146_2",
+          "var_146_3",
+          "var_146_4"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "prod_148",
+    "nombre": "Moises Tunel Economico",
+    "totalVariantes": 4,
+    "imagenesUnicas": 1,
+    "duplicados": [
+      {
+        "cantidad": 4,
+        "variantes": [
+          "var_148_1",
+          "var_148_2",
+          "var_148_3",
+          "var_148_4"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "prod_149",
+    "nombre": "MOISES IGLU  PREMIUN",
+    "totalVariantes": 3,
+    "imagenesUnicas": 1,
+    "duplicados": [
+      {
+        "cantidad": 3,
+        "variantes": [
+          "var_149_1",
+          "var_149_2",
+          "var_149_3"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "prod_151",
+    "nombre": "COCHONETA ANTI-DESGARRO",
+    "totalVariantes": 4,
+    "imagenesUnicas": 1,
+    "duplicados": [
+      {
+        "cantidad": 4,
+        "variantes": [
+          "var_151_1",
+          "var_151_2",
+          "var_151_3",
+          "var_151_4"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "prod_152",
+    "nombre": "Moises Economico",
+    "totalVariantes": 4,
+    "imagenesUnicas": 1,
+    "duplicados": [
+      {
+        "cantidad": 4,
+        "variantes": [
+          "var_152_1",
+          "var_152_2",
+          "var_152_3",
+          "var_152_4"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "prod_154",
+    "nombre": "SOFT JEAN LUNARES",
+    "totalVariantes": 3,
+    "imagenesUnicas": 1,
+    "duplicados": [
+      {
+        "cantidad": 3,
+        "variantes": [
+          "var_154_1",
+          "var_154_2",
+          "var_154_3"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "prod_156",
+    "nombre": "Moises Lunares",
+    "totalVariantes": 3,
+    "imagenesUnicas": 1,
+    "duplicados": [
+      {
+        "cantidad": 3,
+        "variantes": [
+          "var_156_1",
+          "var_156_2",
+          "var_156_3"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "prod_158",
+    "nombre": "Moises Moño Premiun",
+    "totalVariantes": 4,
+    "imagenesUnicas": 1,
+    "duplicados": [
+      {
+        "cantidad": 4,
+        "variantes": [
+          "var_158_1",
+          "var_158_2",
+          "var_158_3",
+          "var_158_4"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "prod_160",
+    "nombre": "Puff Unico Talle",
+    "totalVariantes": 2,
+    "imagenesUnicas": 1,
+    "duplicados": [
+      {
+        "cantidad": 2,
+        "variantes": [
+          "var_160_1",
+          "var_160_2"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "prod_164",
+    "nombre": "Bolso Fantasia",
+    "totalVariantes": 2,
+    "imagenesUnicas": 1,
+    "duplicados": [
+      {
+        "cantidad": 2,
+        "variantes": [
+          "var_164_1",
+          "var_164_2"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "prod_166",
+    "nombre": "BOLSO ANTI-DESGARRO PREMIUN",
+    "totalVariantes": 2,
+    "imagenesUnicas": 1,
+    "duplicados": [
+      {
+        "cantidad": 2,
+        "variantes": [
+          "var_166_1",
+          "var_166_2"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "prod_170",
+    "nombre": "Casita Feliz",
+    "totalVariantes": 3,
+    "imagenesUnicas": 1,
+    "duplicados": [
+      {
+        "cantidad": 3,
+        "variantes": [
+          "var_170_1",
+          "var_170_2",
+          "var_170_3"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "prod_174",
+    "nombre": "MOISES NIDO AJUSTABLEE DE POLAR",
+    "totalVariantes": 3,
+    "imagenesUnicas": 1,
+    "duplicados": [
+      {
+        "cantidad": 3,
+        "variantes": [
+          "var_174_1",
+          "var_174_2",
+          "var_174_3"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "prod_175",
+    "nombre": "ALMOHADON PREMIUM",
+    "totalVariantes": 3,
+    "imagenesUnicas": 1,
+    "duplicados": [
+      {
+        "cantidad": 3,
+        "variantes": [
+          "var_175_1",
+          "var_175_2",
+          "var_175_3"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "prod_176",
+    "nombre": "Colchoneta Premiun Doble Lona 4 Patas",
+    "totalVariantes": 5,
+    "imagenesUnicas": 1,
+    "duplicados": [
+      {
+        "cantidad": 5,
+        "variantes": [
+          "var_176_1",
+          "var_176_2",
+          "var_176_3",
+          "var_176_4",
+          "var_176_5"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "prod_177",
+    "nombre": "MOISES NIDO CORDERITO 4 PATAS",
+    "totalVariantes": 3,
+    "imagenesUnicas": 1,
+    "duplicados": [
+      {
+        "cantidad": 3,
+        "variantes": [
+          "var_177_1",
+          "var_177_2",
+          "var_177_3"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "prod_178",
+    "nombre": "COLCHONETA CORDERITO",
+    "totalVariantes": 4,
+    "imagenesUnicas": 1,
+    "duplicados": [
+      {
+        "cantidad": 4,
+        "variantes": [
+          "var_178_1",
+          "var_178_2",
+          "var_178_3",
+          "var_178_4"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "prod_179",
+    "nombre": "COLCHONETA PREMIUM",
+    "totalVariantes": 4,
+    "imagenesUnicas": 1,
+    "duplicados": [
+      {
+        "cantidad": 4,
+        "variantes": [
+          "var_179_1",
+          "var_179_2",
+          "var_179_3",
+          "var_179_4"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "prod_180",
+    "nombre": "COLCHON POLAR",
+    "totalVariantes": 4,
+    "imagenesUnicas": 1,
+    "duplicados": [
+      {
+        "cantidad": 4,
+        "variantes": [
+          "var_180_1",
+          "var_180_2",
+          "var_180_3",
+          "var_180_4"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "prod_215",
+    "nombre": "Vainilla - Agatar",
+    "totalVariantes": 2,
+    "imagenesUnicas": 1,
+    "duplicados": [
+      {
+        "cantidad": 2,
+        "variantes": [
+          "var_215_1",
+          "var_215_2"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "prod_216",
+    "nombre": "Alsina - Agatar",
+    "totalVariantes": 3,
+    "imagenesUnicas": 1,
+    "duplicados": [
+      {
+        "cantidad": 3,
+        "variantes": [
+          "var_216_1",
+          "var_216_2",
+          "var_216_3"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "prod_217",
+    "nombre": "Agatar - Cara De Gato",
+    "totalVariantes": 3,
+    "imagenesUnicas": 1,
+    "duplicados": [
+      {
+        "cantidad": 3,
+        "variantes": [
+          "var_217_1",
+          "var_217_2",
+          "var_217_3"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "prod_260",
+    "nombre": "PELOTA PULPO",
+    "totalVariantes": 4,
+    "imagenesUnicas": 1,
+    "duplicados": [
+      {
+        "cantidad": 4,
+        "variantes": [
+          "var_260_1",
+          "var_260_2",
+          "var_260_3",
+          "var_260_4"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "prod_267",
+    "nombre": "PELOTA DE CAUCHO",
+    "totalVariantes": 5,
+    "imagenesUnicas": 1,
+    "duplicados": [
+      {
+        "cantidad": 5,
+        "variantes": [
+          "var_267_1",
+          "var_267_2",
+          "var_267_3",
+          "var_267_4",
+          "var_267_5"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "prod_275",
+    "nombre": "HUESO DE GOMA",
+    "totalVariantes": 3,
+    "imagenesUnicas": 1,
+    "duplicados": [
+      {
+        "cantidad": 3,
+        "variantes": [
+          "var_275_1",
+          "var_275_2",
+          "var_275_3"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "prod_427",
+    "nombre": "Vestido Princesa",
+    "totalVariantes": 9,
+    "imagenesUnicas": 1,
+    "duplicados": [
+      {
+        "cantidad": 9,
+        "variantes": [
+          "var_427_0",
+          "var_427_1",
+          "var_427_2",
+          "var_427_3",
+          "var_427_4",
+          "var_427_5",
+          "var_427_6",
+          "var_427_7",
+          "var_427_8"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "prod_436",
+    "nombre": "Vestido Tutu",
+    "totalVariantes": 4,
+    "imagenesUnicas": 1,
+    "duplicados": [
+      {
+        "cantidad": 4,
+        "variantes": [
+          "var_436_1",
+          "var_436_2",
+          "var_436_3",
+          "var_436_4"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "prod_442",
+    "nombre": "Vestido Modal Fantasía",
+    "totalVariantes": 6,
+    "imagenesUnicas": 1,
+    "duplicados": [
+      {
+        "cantidad": 6,
+        "variantes": [
+          "var_442_1",
+          "var_442_2",
+          "var_442_3",
+          "var_442_4",
+          "var_442_5",
+          "var_442_6"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "prod_448",
+    "nombre": "Chombas",
+    "totalVariantes": 10,
+    "imagenesUnicas": 1,
+    "duplicados": [
+      {
+        "cantidad": 10,
+        "variantes": [
+          "var_448_0",
+          "var_448_1",
+          "var_448_2",
+          "var_448_3",
+          "var_448_4",
+          "var_448_5",
+          "var_448_6",
+          "var_448_7",
+          "var_448_8",
+          "var_448_9"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "prod_458",
+    "nombre": "Camisas Hawaianas",
+    "totalVariantes": 10,
+    "imagenesUnicas": 1,
+    "duplicados": [
+      {
+        "cantidad": 10,
+        "variantes": [
+          "var_458_0",
+          "var_458_1",
+          "var_458_2",
+          "var_458_3",
+          "var_458_4",
+          "var_458_5",
+          "var_458_6",
+          "var_458_7",
+          "var_458_8",
+          "var_458_9"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "prod_468",
+    "nombre": "Polar Liso",
+    "totalVariantes": 13,
+    "imagenesUnicas": 1,
+    "duplicados": [
+      {
+        "cantidad": 13,
+        "variantes": [
+          "var_468_0",
+          "var_468_1",
+          "var_468_2",
+          "var_468_3",
+          "var_468_4",
+          "var_468_5",
+          "var_468_6",
+          "var_468_7",
+          "var_468_8",
+          "var_468_9",
+          "var_468_10",
+          "var_468_11",
+          "var_468_12"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "prod_481",
+    "nombre": "Polar Fantasía",
+    "totalVariantes": 13,
+    "imagenesUnicas": 1,
+    "duplicados": [
+      {
+        "cantidad": 13,
+        "variantes": [
+          "var_481_0",
+          "var_481_1",
+          "var_481_2",
+          "var_481_3",
+          "var_481_4",
+          "var_481_5",
+          "var_481_6",
+          "var_481_7",
+          "var_481_8",
+          "var_481_9",
+          "var_481_10",
+          "var_481_11",
+          "var_481_12"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "prod_494",
+    "nombre": "Polar Soff",
+    "totalVariantes": 13,
+    "imagenesUnicas": 1,
+    "duplicados": [
+      {
+        "cantidad": 13,
+        "variantes": [
+          "var_494_0",
+          "var_494_1",
+          "var_494_2",
+          "var_494_3",
+          "var_494_4",
+          "var_494_5",
+          "var_494_6",
+          "var_494_7",
+          "var_494_8",
+          "var_494_9",
+          "var_494_10",
+          "var_494_11",
+          "var_494_12"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "prod_507",
+    "nombre": "Campera GAP",
+    "totalVariantes": 8,
+    "imagenesUnicas": 1,
+    "duplicados": [
+      {
+        "cantidad": 8,
+        "variantes": [
+          "var_507_1",
+          "var_507_2",
+          "var_507_3",
+          "var_507_4",
+          "var_507_5",
+          "var_507_6",
+          "var_507_7",
+          "var_507_8"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "prod_515",
+    "nombre": "Campera Fútbol",
+    "totalVariantes": 8,
+    "imagenesUnicas": 1,
+    "duplicados": [
+      {
+        "cantidad": 8,
+        "variantes": [
+          "var_515_1",
+          "var_515_2",
+          "var_515_3",
+          "var_515_4",
+          "var_515_5",
+          "var_515_6",
+          "var_515_7",
+          "var_515_8"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "prod_523",
+    "nombre": "Campera Abercrombie",
+    "totalVariantes": 7,
+    "imagenesUnicas": 1,
+    "duplicados": [
+      {
+        "cantidad": 7,
+        "variantes": [
+          "var_523_1",
+          "var_523_2",
+          "var_523_3",
+          "var_523_4",
+          "var_523_5",
+          "var_523_6",
+          "var_523_7"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "prod_530",
+    "nombre": "Campera Plush",
+    "totalVariantes": 7,
+    "imagenesUnicas": 1,
+    "duplicados": [
+      {
+        "cantidad": 7,
+        "variantes": [
+          "var_530_1",
+          "var_530_2",
+          "var_530_3",
+          "var_530_4",
+          "var_530_5",
+          "var_530_6",
+          "var_530_7"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "prod_537",
+    "nombre": "Campera Térmica",
+    "totalVariantes": 7,
+    "imagenesUnicas": 1,
+    "duplicados": [
+      {
+        "cantidad": 7,
+        "variantes": [
+          "var_537_1",
+          "var_537_2",
+          "var_537_3",
+          "var_537_4",
+          "var_537_5",
+          "var_537_6",
+          "var_537_7"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "prod_544",
+    "nombre": "Camperita Love",
+    "totalVariantes": 8,
+    "imagenesUnicas": 1,
+    "duplicados": [
+      {
+        "cantidad": 8,
+        "variantes": [
+          "var_544_1",
+          "var_544_2",
+          "var_544_3",
+          "var_544_4",
+          "var_544_5",
+          "var_544_6",
+          "var_544_7",
+          "var_544_8"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "prod_552",
+    "nombre": "Campera Osito",
+    "totalVariantes": 7,
+    "imagenesUnicas": 1,
+    "duplicados": [
+      {
+        "cantidad": 7,
+        "variantes": [
+          "var_552_1",
+          "var_552_2",
+          "var_552_3",
+          "var_552_4",
+          "var_552_5",
+          "var_552_6",
+          "var_552_7"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "prod_559",
+    "nombre": "Vestido Fantasía",
+    "totalVariantes": 7,
+    "imagenesUnicas": 1,
+    "duplicados": [
+      {
+        "cantidad": 7,
+        "variantes": [
+          "var_559_1",
+          "var_559_2",
+          "var_559_3",
+          "var_559_4",
+          "var_559_5",
+          "var_559_6",
+          "var_559_7"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "prod_566",
+    "nombre": "Vestido Prince",
+    "totalVariantes": 7,
+    "imagenesUnicas": 1,
+    "duplicados": [
+      {
+        "cantidad": 7,
+        "variantes": [
+          "var_566_1",
+          "var_566_2",
+          "var_566_3",
+          "var_566_4",
+          "var_566_5",
+          "var_566_6",
+          "var_566_7"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "prod_573",
+    "nombre": "Entero Very Coold",
+    "totalVariantes": 8,
+    "imagenesUnicas": 1,
+    "duplicados": [
+      {
+        "cantidad": 8,
+        "variantes": [
+          "var_573_1",
+          "var_573_2",
+          "var_573_3",
+          "var_573_4",
+          "var_573_5",
+          "var_573_6",
+          "var_573_7",
+          "var_573_8"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "prod_581",
+    "nombre": "Entero Brisa",
+    "totalVariantes": 8,
+    "imagenesUnicas": 1,
+    "duplicados": [
+      {
+        "cantidad": 8,
+        "variantes": [
+          "var_581_1",
+          "var_581_2",
+          "var_581_3",
+          "var_581_4",
+          "var_581_5",
+          "var_581_6",
+          "var_581_7",
+          "var_581_8"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "prod_589",
+    "nombre": "Buzo Soft",
+    "totalVariantes": 9,
+    "imagenesUnicas": 1,
+    "duplicados": [
+      {
+        "cantidad": 9,
+        "variantes": [
+          "var_589_1",
+          "var_589_2",
+          "var_589_3",
+          "var_589_4",
+          "var_589_5",
+          "var_589_6",
+          "var_589_7",
+          "var_589_8",
+          "var_589_9"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "prod_598",
+    "nombre": "Poleras",
+    "totalVariantes": 8,
+    "imagenesUnicas": 1,
+    "duplicados": [
+      {
+        "cantidad": 8,
+        "variantes": [
+          "var_598_0",
+          "var_598_1",
+          "var_598_2",
+          "var_598_3",
+          "var_598_4",
+          "var_598_5",
+          "var_598_6",
+          "var_598_7"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "prod_631",
+    "nombre": "Collar Lona Doble Pitón",
+    "totalVariantes": 2,
+    "imagenesUnicas": 1,
+    "duplicados": [
+      {
+        "cantidad": 2,
+        "variantes": [
+          "var_631_70",
+          "var_631_80"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "prod_635",
+    "nombre": "Collar Lona C/Manija",
+    "totalVariantes": 2,
+    "imagenesUnicas": 1,
+    "duplicados": [
+      {
+        "cantidad": 2,
+        "variantes": [
+          "var_635_60",
+          "var_635_70"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "prod_695",
+    "nombre": "CONJUNTO CUADRILLE",
+    "totalVariantes": 2,
+    "imagenesUnicas": 1,
+    "duplicados": [
+      {
+        "cantidad": 2,
+        "variantes": [
+          "var_695_1",
+          "var_695_2"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "prod_700",
+    "nombre": "ARNES REFLECTANTE",
+    "totalVariantes": 3,
+    "imagenesUnicas": 1,
+    "duplicados": [
+      {
+        "cantidad": 3,
+        "variantes": [
+          "var_700_1",
+          "var_700_2",
+          "var_700_3"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "prod_722",
+    "nombre": "TIRA DE LONA",
+    "totalVariantes": 6,
+    "imagenesUnicas": 1,
+    "duplicados": [
+      {
+        "cantidad": 6,
+        "variantes": [
+          "var_722_1",
+          "var_722_2",
+          "var_722_3",
+          "var_722_4",
+          "var_722_5",
+          "var_722_6"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "prod_723",
+    "nombre": "TIRA LARGA",
+    "totalVariantes": 6,
+    "imagenesUnicas": 1,
+    "duplicados": [
+      {
+        "cantidad": 6,
+        "variantes": [
+          "var_723_1",
+          "var_723_2",
+          "var_723_3",
+          "var_723_4",
+          "var_723_5",
+          "var_723_6"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "prod_724",
+    "nombre": "Cadena Comun 1,2m",
+    "totalVariantes": 3,
+    "imagenesUnicas": 1,
+    "duplicados": [
+      {
+        "cantidad": 3,
+        "variantes": [
+          "var_724_1",
+          "var_724_2",
+          "var_724_3"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "prod_725",
+    "nombre": "Cadena Comun 1,7m",
+    "totalVariantes": 3,
+    "imagenesUnicas": 1,
+    "duplicados": [
+      {
+        "cantidad": 3,
+        "variantes": [
+          "var_725_1",
+          "var_725_2",
+          "var_725_3"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "prod_732",
+    "nombre": "COLLAR PAÑUELO",
+    "totalVariantes": 5,
+    "imagenesUnicas": 1,
+    "duplicados": [
+      {
+        "cantidad": 5,
+        "variantes": [
+          "var_732_1",
+          "var_732_2",
+          "var_732_3",
+          "var_732_4",
+          "var_732_5"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "prod_733",
+    "nombre": "Pechera Sola P15",
+    "totalVariantes": 9,
+    "imagenesUnicas": 1,
+    "duplicados": [
+      {
+        "cantidad": 9,
+        "variantes": [
+          "var_733_1",
+          "var_733_2",
+          "var_733_3",
+          "var_733_4",
+          "var_733_5",
+          "var_733_6",
+          "var_733_7",
+          "var_733_8",
+          "var_733_9"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "prod_734",
+    "nombre": "Pechera Alcochonada Police K9",
+    "totalVariantes": 6,
+    "imagenesUnicas": 1,
+    "duplicados": [
+      {
+        "cantidad": 6,
+        "variantes": [
+          "var_734_1",
+          "var_734_2",
+          "var_734_3",
+          "var_734_4",
+          "var_734_5",
+          "var_734_6"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "prod_737",
+    "nombre": "Pechera Alcochonada T",
+    "totalVariantes": 5,
+    "imagenesUnicas": 1,
+    "duplicados": [
+      {
+        "cantidad": 5,
+        "variantes": [
+          "var_737_1",
+          "var_737_2",
+          "var_737_3",
+          "var_737_4",
+          "var_737_5"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "prod_738",
+    "nombre": "Pechera Arnes Ajustable Con Correa",
+    "totalVariantes": 4,
+    "imagenesUnicas": 1,
+    "duplicados": [
+      {
+        "cantidad": 4,
+        "variantes": [
+          "var_738_1",
+          "var_738_2",
+          "var_738_3",
+          "var_738_4"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "prod_739",
+    "nombre": "PECHERAS REGULABLES LISO",
+    "totalVariantes": 5,
+    "imagenesUnicas": 1,
+    "duplicados": [
+      {
+        "cantidad": 5,
+        "variantes": [
+          "var_739_1",
+          "var_739_2",
+          "var_739_3",
+          "var_739_4",
+          "var_739_5"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "prod_744",
+    "nombre": "Conjunto Regulable Liso",
+    "totalVariantes": 7,
+    "imagenesUnicas": 1,
+    "duplicados": [
+      {
+        "cantidad": 7,
+        "variantes": [
+          "var_744_1",
+          "var_744_2",
+          "var_744_3",
+          "var_744_4",
+          "var_744_5",
+          "var_744_6",
+          "var_744_7"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "prod_745",
+    "nombre": "CONJUNTO FIJO",
+    "totalVariantes": 9,
+    "imagenesUnicas": 1,
+    "duplicados": [
+      {
+        "cantidad": 9,
+        "variantes": [
+          "var_745_1",
+          "var_745_2",
+          "var_745_3",
+          "var_745_4",
+          "var_745_5",
+          "var_745_6",
+          "var_745_7",
+          "var_745_8",
+          "var_745_9"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "prod_754",
+    "nombre": "Conjunto Economico",
+    "totalVariantes": 3,
+    "imagenesUnicas": 1,
+    "duplicados": [
+      {
+        "cantidad": 3,
+        "variantes": [
+          "var_754_1",
+          "var_754_2",
+          "var_754_3"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "prod_760",
+    "nombre": "Royal Puppies Parfum",
+    "totalVariantes": 3,
+    "imagenesUnicas": 1,
+    "duplicados": [
+      {
+        "cantidad": 3,
+        "variantes": [
+          "var_760_1",
+          "var_760_2",
+          "var_760_3"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "prod_789",
+    "nombre": "COMEDERO ACERO INOXIDABLE",
+    "totalVariantes": 6,
+    "imagenesUnicas": 1,
+    "duplicados": [
+      {
+        "cantidad": 6,
+        "variantes": [
+          "var_789_1",
+          "var_789_2",
+          "var_789_3",
+          "var_789_4",
+          "var_789_5",
+          "var_789_6"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "prod_795",
+    "nombre": "Comedero Acero Inoxidable Estampado",
+    "totalVariantes": 5,
+    "imagenesUnicas": 1,
+    "duplicados": [
+      {
+        "cantidad": 5,
+        "variantes": [
+          "var_795_16",
+          "var_795_18",
+          "var_795_22",
+          "var_795_26",
+          "var_795_30"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "prod_825",
+    "nombre": "COMEDERO REDONDO",
+    "totalVariantes": 3,
+    "imagenesUnicas": 1,
+    "duplicados": [
+      {
+        "cantidad": 3,
+        "variantes": [
+          "var_825_1",
+          "var_825_2",
+          "var_825_3"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "prod_828",
+    "nombre": "COMEDERO REDONDO PETS PLAST",
+    "totalVariantes": 3,
+    "imagenesUnicas": 1,
+    "duplicados": [
+      {
+        "cantidad": 3,
+        "variantes": [
+          "var_828_1",
+          "var_828_2",
+          "var_828_3"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "prod_837",
+    "nombre": "PLATO CUADRADO",
+    "totalVariantes": 3,
+    "imagenesUnicas": 1,
+    "duplicados": [
+      {
+        "cantidad": 3,
+        "variantes": [
+          "var_837_1",
+          "var_837_2",
+          "var_837_3"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "prod_840",
+    "nombre": "COMEDERO CAZUELA",
+    "totalVariantes": 3,
+    "imagenesUnicas": 1,
+    "duplicados": [
+      {
+        "cantidad": 3,
+        "variantes": [
+          "var_840_1",
+          "var_840_2",
+          "var_840_3"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "prod_861",
+    "nombre": "BEBEDERO PARA HAMSTER (LAND PET)",
+    "totalVariantes": 3,
+    "imagenesUnicas": 1,
+    "duplicados": [
+      {
+        "cantidad": 3,
+        "variantes": [
+          "var_861_1",
+          "var_861_2",
+          "var_861_3"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "prod_864",
+    "nombre": "BEBEDERO PARA SOPORTE DE ALAMBRE",
+    "totalVariantes": 3,
+    "imagenesUnicas": 1,
+    "duplicados": [
+      {
+        "cantidad": 3,
+        "variantes": [
+          "var_864_1",
+          "var_864_2",
+          "var_864_3"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "prod_867",
+    "nombre": "BEBEDERO CON TORNILLO FIJADOR",
+    "totalVariantes": 3,
+    "imagenesUnicas": 1,
+    "duplicados": [
+      {
+        "cantidad": 3,
+        "variantes": [
+          "var_867_1",
+          "var_867_2",
+          "var_867_3"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "prod_400",
+    "nombre": "Camiseta Argentina 3 Estrella",
+    "totalVariantes": 9,
+    "imagenesUnicas": 1,
+    "duplicados": [
+      {
+        "cantidad": 9,
+        "variantes": [
+          "var_400_1",
+          "var_400_2",
+          "var_400_3",
+          "var_400_4",
+          "var_400_5",
+          "var_400_6",
+          "var_400_7",
+          "var_400_8",
+          "var_400_9"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "prod_409",
+    "nombre": "Camiseta Básquet",
+    "totalVariantes": 9,
+    "imagenesUnicas": 1,
+    "duplicados": [
+      {
+        "cantidad": 9,
+        "variantes": [
+          "var_409_1",
+          "var_409_2",
+          "var_409_3",
+          "var_409_4",
+          "var_409_5",
+          "var_409_6",
+          "var_409_7",
+          "var_409_8",
+          "var_409_9"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "prod_418",
+    "nombre": "Camisetas de Fútbol Clubes Argentinos",
+    "totalVariantes": 9,
+    "imagenesUnicas": 1,
+    "duplicados": [
+      {
+        "cantidad": 9,
+        "variantes": [
+          "var_418_1",
+          "var_418_2",
+          "var_418_3",
+          "var_418_4",
+          "var_418_5",
+          "var_418_5",
+          "var_418_6",
+          "var_418_7",
+          "var_418_8"
+        ]
+      }
+    ]
+  }
+]
