@@ -14991,7 +14991,7 @@
     "reviews": 242,
     "featured": false,
     "topDiscount": true,
-    "hasVideo": false,
+    "hasVideo": true,
     "tags": [
       "camisas",
       "hawaianas",
@@ -15241,6 +15241,15 @@
       "gallery": [
         "assets/images/products/prod_458/1.jpg"
       ]
+    },
+    "marketing": {
+      "type": "video",
+      "url": "assets/videos/marketing/hawaianas-clic.mp4",
+      "poster": "assets/images/products/prod_458/cover.jpg",
+      "autoplay": true,
+      "muted": true,
+      "loop": true,
+      "duration": 10
     },
     "specs": {
       "SKU": "CAM029"
@@ -27615,7 +27624,7 @@
     "reviews": 35,
     "featured": false,
     "topDiscount": true,
-    "hasVideo": false,
+    "hasVideo": true,
     "tags": [
       "camiseta",
       "básquet",
@@ -27838,6 +27847,15 @@
       "gallery": [
         "assets/images/products/prod_409/1.jpg"
       ]
+    },
+    "marketing": {
+      "type": "video",
+      "url": "assets/videos/marketing/nba-clic.mp4",
+      "poster": "assets/images/products/prod_409/cover.jpg",
+      "autoplay": true,
+      "muted": true,
+      "loop": true,
+      "duration": 10
     },
     "specs": {
       "SKU": "CAM011"
