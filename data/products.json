@@ -27362,7 +27362,7 @@
     "reviews": 46,
     "featured": false,
     "topDiscount": true,
-    "hasVideo": false,
+    "hasVideo": true,
     "tags": [
       "camiseta",
       "argentina",
@@ -27592,6 +27592,15 @@
       "gallery": [
         "assets/images/products/prod_400/1.jpg"
       ]
+    },
+    "marketing": {
+      "type": "video",
+      "url": "assets/videos/marketing/camiseta-messi-clic.mp4",
+      "poster": "assets/images/products/prod_400/cover.jpg",
+      "autoplay": true,
+      "muted": true,
+      "loop": true,
+      "duration": 10
     },
     "specs": {
       "SKU": "CAM002"
