@@ -15023,7 +15023,9 @@
       "cover": "assets/images/products/prod_442/cover.jpg",
       "thumb": "assets/images/products/prod_442/thumb.jpg",
       "gallery": [
-        "assets/images/products/prod_442/1.jpg"
+        "assets/images/products/prod_442/1.jpg",
+        "assets/images/products/prod_442/2.png",
+        "assets/images/products/prod_442/3.png"
       ]
     },
     "specs": {
