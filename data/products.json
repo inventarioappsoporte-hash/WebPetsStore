@@ -4144,7 +4144,7 @@
   },
   {
     "id": "prod_204",
-    "name": "JUEGO PARA GATO CON RESORTE CON RATA Y TRIPLE  BACE",
+    "name": "Juego Para Gato Con Resorte Con Rata Y Triple Bace",
     "category": "juguetes",
     "subcategory": "Juguetes",
     "price": 9945,
@@ -4168,8 +4168,8 @@
       "diversión",
       "interactivo"
     ],
-    "description": "JUEGO PARA GATO CON RESORTE CON RATA Y TRIPLE  BACE",
-    "longDescription": "JUEGO PARA GATO CON RESORTE CON RATA Y TRIPLE  BACE",
+    "description": "🐱 Juguete interactivo para gatos. Estimula el instinto de caza y mantiene a tu felino entretenido.",
+    "longDescription": "Juguete interactivo diseñado especialmente para gatos. Estimula el instinto natural de caza y proporciona horas de entretenimiento. Perfecto para mantener a tu felino activo y feliz. Material seguro y duradero.",
     "images": {
       "cover": "assets/images/products/prod_204/cover.jpg",
       "thumb": "assets/images/products/prod_204/thumb.jpg",
@@ -4178,7 +4178,9 @@
       ]
     },
     "specs": {
-      "SKU": "JUE001"
+      "SKU": "JUE001",
+      "material": "Material resistente",
+      "idealFor": "Perros de todos los tamaños"
     },
     "shipping": {
       "free": false,
@@ -4196,7 +4198,7 @@
   },
   {
     "id": "prod_205",
-    "name": "JUGUETE CON RESORTE Y PES",
+    "name": "Juguete Con Resorte Y Pes",
     "category": "juguetes",
     "subcategory": "Juguetes",
     "price": 16575,
@@ -4215,8 +4217,8 @@
       "diversión",
       "interactivo"
     ],
-    "description": "JUGUETE CON RESORTE Y PES",
-    "longDescription": "JUGUETE CON RESORTE Y PES",
+    "description": "🐕 Juguete con resorte y pes para mascotas. Diversión garantizada para tu compañero peludo.",
+    "longDescription": "Juguete con resorte y pes diseñado para brindar horas de entretenimiento a tu mascota. Material resistente y seguro. Estimula el juego activo y ayuda a mantener a tu perro feliz y saludable.",
     "images": {
       "cover": "assets/images/products/prod_205/cover.jpg",
       "thumb": "assets/images/products/prod_205/thumb.jpg",
@@ -4225,7 +4227,9 @@
       ]
     },
     "specs": {
-      "SKU": "JUG001"
+      "SKU": "JUG001",
+      "material": "Material resistente",
+      "idealFor": "Perros de todos los tamaños"
     },
     "shipping": {
       "free": true,
@@ -5802,7 +5806,7 @@
   },
   {
     "id": "prod_234",
-    "name": "JUGUETE ATOMO 10 CM",
+    "name": "Juguete Atomo",
     "category": "juguetes",
     "subcategory": "Juguetes",
     "price": 8840,
@@ -5821,8 +5825,8 @@
       "diversión",
       "interactivo"
     ],
-    "description": "JUGUETE ATOMO 10 CM",
-    "longDescription": "JUGUETE ATOMO 10 CM",
+    "description": "🐕 Juguete átomo para mascotas. Diversión garantizada para tu compañero peludo.",
+    "longDescription": "Juguete átomo diseñado para brindar horas de entretenimiento a tu mascota. Material resistente y seguro. Estimula el juego activo y ayuda a mantener a tu perro feliz y saludable.",
     "images": {
       "cover": "assets/images/products/prod_234/cover.jpg",
       "thumb": "assets/images/products/prod_234/thumb.jpg",
@@ -5832,7 +5836,10 @@
     },
     "specs": {
       "SKU": "JUG002",
-      "Medida": "10 CM"
+      "Medida": "10 CM",
+      "dimensions": "10 cm",
+      "material": "Material resistente",
+      "idealFor": "Perros de todos los tamaños"
     },
     "shipping": {
       "free": false,
@@ -5850,7 +5857,7 @@
   },
   {
     "id": "prod_235",
-    "name": "ATOMO CON CHIFLE 15X6CM",
+    "name": "Atomo Con Chifle",
     "category": "juguetes",
     "subcategory": "Juguetes",
     "price": 5359,
@@ -5865,14 +5872,13 @@
     "tags": [
       "atomo",
       "chifle",
-      "15x6cm",
       "juguete",
       "entretenimiento",
       "diversión",
       "interactivo"
     ],
-    "description": "ATOMO CON CHIFLE 15X6CM",
-    "longDescription": "ATOMO CON CHIFLE 15X6CM",
+    "description": "🐕 Juguete con sonido chifle en forma de átomo. Perfecto para juegos de morder y estimular a tu mascota.",
+    "longDescription": "Divertido juguete con sonido chifle en forma de átomo para perros. El sonido estimula el instinto de juego y mantiene a tu mascota entretenida por horas. Fabricado con material resistente a mordidas y seguro. Ideal para perros de todos los tamaños.",
     "images": {
       "cover": "assets/images/products/prod_235/cover.jpg",
       "thumb": "assets/images/products/prod_235/thumb.jpg",
@@ -5882,7 +5888,10 @@
     },
     "specs": {
       "SKU": "ATO001",
-      "Medida": "6CM"
+      "Medida": "6CM",
+      "dimensions": "15X6cm x 6cm",
+      "material": "Vinilo con chifle",
+      "idealFor": "Perros de todos los tamaños"
     },
     "shipping": {
       "free": false,
@@ -5900,7 +5909,7 @@
   },
   {
     "id": "prod_236",
-    "name": "PELOTA DE TELA X 4 CHICA",
+    "name": "Pelota De Tela X 4 Chica",
     "category": "juguetes",
     "subcategory": "Juguetes",
     "price": 5525,
@@ -5921,8 +5930,8 @@
       "diversión",
       "interactivo"
     ],
-    "description": "PELOTA DE TELA X 4 CHICA",
-    "longDescription": "PELOTA DE TELA X 4 CHICA",
+    "description": "🎾 Pelota para perros. Ideal para juegos de buscar y morder.",
+    "longDescription": "Pelota diseñada para horas de diversión con tu mascota. Perfecta para juegos de buscar, lanzar y morder. Material resistente y duradero que soporta el juego intenso. Estimula el ejercicio y la actividad física de tu perro.",
     "images": {
       "cover": "assets/images/products/prod_236/cover.jpg",
       "thumb": "assets/images/products/prod_236/thumb.jpg",
@@ -5931,7 +5940,9 @@
       ]
     },
     "specs": {
-      "SKU": "PEL001"
+      "SKU": "PEL001",
+      "material": "Tela resistente",
+      "idealFor": "Perros de todos los tamaños"
     },
     "shipping": {
       "free": false,
@@ -5949,7 +5960,7 @@
   },
   {
     "id": "prod_237",
-    "name": "PELOTA TENIS GRANDE X3",
+    "name": "Pelota Tenis Grande X3",
     "category": "juguetes",
     "subcategory": "Juguetes",
     "price": 7514,
@@ -5970,8 +5981,8 @@
       "diversión",
       "interactivo"
     ],
-    "description": "PELOTA TENIS GRANDE X3",
-    "longDescription": "PELOTA TENIS GRANDE X3",
+    "description": "🎾 Pelota para perros. Ideal para juegos de buscar y morder.",
+    "longDescription": "Pelota diseñada para horas de diversión con tu mascota. Perfecta para juegos de buscar, lanzar y morder. Material resistente y duradero que soporta el juego intenso. Estimula el ejercicio y la actividad física de tu perro.",
     "images": {
       "cover": "assets/images/products/prod_237/cover.jpg",
       "thumb": "assets/images/products/prod_237/thumb.jpg",
@@ -5980,7 +5991,9 @@
       ]
     },
     "specs": {
-      "SKU": "PEL002"
+      "SKU": "PEL002",
+      "material": "Material resistente",
+      "idealFor": "Perros de todos los tamaños"
     },
     "shipping": {
       "free": false,
@@ -5998,7 +6011,7 @@
   },
   {
     "id": "prod_238",
-    "name": "JUGUETE MORRON  SILICONADO 6* 10CM",
+    "name": "Juguete Morron Siliconado",
     "category": "juguetes",
     "subcategory": "Juguetes",
     "price": 7182,
@@ -6014,13 +6027,12 @@
       "juguete",
       "morron",
       "siliconado",
-      "10cm",
       "entretenimiento",
       "diversión",
       "interactivo"
     ],
-    "description": "JUGUETE MORRON  SILICONADO 6* 10CM",
-    "longDescription": "JUGUETE MORRON  SILICONADO 6* 10CM",
+    "description": "🐕 Juguete morron  siliconado 6* 10cm para mascotas. Diversión garantizada para tu compañero peludo.",
+    "longDescription": "Juguete morron  siliconado 6* 10cm diseñado para brindar horas de entretenimiento a tu mascota. Material resistente y seguro. Estimula el juego activo y ayuda a mantener a tu perro feliz y saludable.",
     "images": {
       "cover": "assets/images/products/prod_238/cover.jpg",
       "thumb": "assets/images/products/prod_238/thumb.jpg",
@@ -6030,7 +6042,10 @@
     },
     "specs": {
       "SKU": "JUG003",
-      "Medida": "10CM"
+      "Medida": "10CM",
+      "dimensions": "6* 10cm x 10cm",
+      "material": "Material resistente",
+      "idealFor": "Perros de todos los tamaños"
     },
     "shipping": {
       "free": false,
@@ -6048,7 +6063,7 @@
   },
   {
     "id": "prod_239",
-    "name": "PELOTA FRUTA SILICONADA C/LUZ 10CM",
+    "name": "Pelota Fruta Siliconada C/luz",
     "category": "juguetes",
     "subcategory": "Juguetes",
     "price": 7182,
@@ -6065,14 +6080,13 @@
       "fruta",
       "siliconada",
       "c/luz",
-      "10cm",
       "juguete",
       "entretenimiento",
       "diversión",
       "interactivo"
     ],
-    "description": "PELOTA FRUTA SILICONADA C/LUZ 10CM",
-    "longDescription": "PELOTA FRUTA SILICONADA C/LUZ 10CM",
+    "description": "🎾 Pelota con luz LED. Perfecta para juegos diurnos y nocturnos.",
+    "longDescription": "Pelota con luz LED incorporada que se activa al rebotar. Ideal para juegos tanto de día como de noche. Estimula la curiosidad y el instinto de caza de tu mascota. Material resistente y seguro.",
     "images": {
       "cover": "assets/images/products/prod_239/cover.jpg",
       "thumb": "assets/images/products/prod_239/thumb.jpg",
@@ -6082,7 +6096,10 @@
     },
     "specs": {
       "SKU": "PEL003",
-      "Medida": "10CM"
+      "Medida": "10CM",
+      "dimensions": "10cm",
+      "material": "Material resistente",
+      "idealFor": "Perros de todos los tamaños"
     },
     "shipping": {
       "free": false,
@@ -6100,7 +6117,7 @@
   },
   {
     "id": "prod_240",
-    "name": "JUGUETE PELOTA CON LUZ 8CM",
+    "name": "Juguete Pelota Con Luz",
     "category": "juguetes",
     "subcategory": "Juguetes",
     "price": 7514,
@@ -6119,8 +6136,8 @@
       "diversión",
       "interactivo"
     ],
-    "description": "JUGUETE PELOTA CON LUZ 8CM",
-    "longDescription": "JUGUETE PELOTA CON LUZ 8CM",
+    "description": "🎾 Pelota con luz LED. Perfecta para juegos diurnos y nocturnos.",
+    "longDescription": "Pelota con luz LED incorporada que se activa al rebotar. Ideal para juegos tanto de día como de noche. Estimula la curiosidad y el instinto de caza de tu mascota. Material resistente y seguro.",
     "images": {
       "cover": "assets/images/products/prod_240/cover.jpg",
       "thumb": "assets/images/products/prod_240/thumb.jpg",
@@ -6130,7 +6147,10 @@
     },
     "specs": {
       "SKU": "JUG004",
-      "Medida": "8CM"
+      "Medida": "8CM",
+      "dimensions": "8cm",
+      "material": "Material resistente",
+      "idealFor": "Perros de todos los tamaños"
     },
     "shipping": {
       "free": false,
@@ -6148,7 +6168,7 @@
   },
   {
     "id": "prod_241",
-    "name": "PELOTA ERIZO CON LUZ CHICA 6*6*6*",
+    "name": "Pelota Erizo Con Luz Chica 6*6*6*",
     "category": "juguetes",
     "subcategory": "Juguetes",
     "price": 3536,
@@ -6170,8 +6190,8 @@
       "diversión",
       "interactivo"
     ],
-    "description": "PELOTA ERIZO CON LUZ CHICA 6*6*6*",
-    "longDescription": "PELOTA ERIZO CON LUZ CHICA 6*6*6*",
+    "description": "🎾 Pelota erizo con luz LED. Perfecta para juegos diurnos y nocturnos.",
+    "longDescription": "Pelota erizo con luz LED incorporada que se activa al rebotar. Ideal para juegos tanto de día como de noche. Estimula la curiosidad y el instinto de caza de tu mascota. Material resistente y seguro.",
     "images": {
       "cover": "assets/images/products/prod_241/cover.jpg",
       "thumb": "assets/images/products/prod_241/thumb.jpg",
@@ -6180,7 +6200,9 @@
       ]
     },
     "specs": {
-      "SKU": "PEL004"
+      "SKU": "PEL004",
+      "material": "Material resistente",
+      "idealFor": "Perros de todos los tamaños"
     },
     "shipping": {
       "free": false,
@@ -6198,7 +6220,7 @@
   },
   {
     "id": "prod_242",
-    "name": "PELOTA ERIZO CON LUZ GRANDE 7*7*7",
+    "name": "Pelota Erizo Con Luz Grande 7*7*7",
     "category": "juguetes",
     "subcategory": "Juguetes",
     "price": 4972,
@@ -6220,8 +6242,8 @@
       "diversión",
       "interactivo"
     ],
-    "description": "PELOTA ERIZO CON LUZ GRANDE 7*7*7",
-    "longDescription": "PELOTA ERIZO CON LUZ GRANDE 7*7*7",
+    "description": "🎾 Pelota erizo con luz LED. Perfecta para juegos diurnos y nocturnos.",
+    "longDescription": "Pelota erizo con luz LED incorporada que se activa al rebotar. Ideal para juegos tanto de día como de noche. Estimula la curiosidad y el instinto de caza de tu mascota. Material resistente y seguro.",
     "images": {
       "cover": "assets/images/products/prod_242/cover.jpg",
       "thumb": "assets/images/products/prod_242/thumb.jpg",
@@ -6230,7 +6252,9 @@
       ]
     },
     "specs": {
-      "SKU": "PEL005"
+      "SKU": "PEL005",
+      "material": "Material resistente",
+      "idealFor": "Perros de todos los tamaños"
     },
     "shipping": {
       "free": false,
@@ -6248,7 +6272,7 @@
   },
   {
     "id": "prod_243",
-    "name": "JUGUETE PESA PINCHES CHIFLE  17*7",
+    "name": "Juguete Pesa Pinches Chifle 17*7",
     "category": "juguetes",
     "subcategory": "Juguetes",
     "price": 7182,
@@ -6270,8 +6294,8 @@
       "diversión",
       "interactivo"
     ],
-    "description": "JUGUETE PESA PINCHES CHIFLE  17*7",
-    "longDescription": "JUGUETE PESA PINCHES CHIFLE  17*7",
+    "description": "🐕 Juguete con sonido chifle en forma de pesa. Perfecto para juegos de morder y estimular a tu mascota.",
+    "longDescription": "Divertido juguete con sonido chifle en forma de pesa para perros. El sonido estimula el instinto de juego y mantiene a tu mascota entretenida por horas. Fabricado con material resistente a mordidas y seguro. Ideal para perros de todos los tamaños.",
     "images": {
       "cover": "assets/images/products/prod_243/cover.jpg",
       "thumb": "assets/images/products/prod_243/thumb.jpg",
@@ -6280,7 +6304,9 @@
       ]
     },
     "specs": {
-      "SKU": "JUG005"
+      "SKU": "JUG005",
+      "material": "Vinilo con chifle",
+      "idealFor": "Perros de todos los tamaños"
     },
     "shipping": {
       "free": false,
@@ -6298,7 +6324,7 @@
   },
   {
     "id": "prod_244",
-    "name": "PELOTA PINCHO MULTICOLOR CON LUZ",
+    "name": "Pelota Pincho Multicolor Con Luz",
     "category": "juguetes",
     "subcategory": "Juguetes",
     "price": 3867,
@@ -6319,8 +6345,8 @@
       "diversión",
       "interactivo"
     ],
-    "description": "PELOTA PINCHO MULTICOLOR CON LUZ",
-    "longDescription": "PELOTA PINCHO MULTICOLOR CON LUZ",
+    "description": "🎾 Pelota con luz LED. Perfecta para juegos diurnos y nocturnos.",
+    "longDescription": "Pelota con luz LED incorporada que se activa al rebotar. Ideal para juegos tanto de día como de noche. Estimula la curiosidad y el instinto de caza de tu mascota. Material resistente y seguro.",
     "images": {
       "cover": "assets/images/products/prod_244/cover.jpg",
       "thumb": "assets/images/products/prod_244/thumb.jpg",
@@ -6329,7 +6355,9 @@
       ]
     },
     "specs": {
-      "SKU": "PEL006"
+      "SKU": "PEL006",
+      "material": "Material resistente",
+      "idealFor": "Perros de todos los tamaños"
     },
     "shipping": {
       "free": false,
@@ -6347,7 +6375,7 @@
   },
   {
     "id": "prod_245",
-    "name": "PELOTA BASCULANTE CON LUZ",
+    "name": "Pelota Basculante Con Luz",
     "category": "juguetes",
     "subcategory": "Juguetes",
     "price": 3867,
@@ -6367,8 +6395,8 @@
       "diversión",
       "interactivo"
     ],
-    "description": "PELOTA BASCULANTE CON LUZ",
-    "longDescription": "PELOTA BASCULANTE CON LUZ",
+    "description": "🎾 Pelota con luz LED. Perfecta para juegos diurnos y nocturnos.",
+    "longDescription": "Pelota con luz LED incorporada que se activa al rebotar. Ideal para juegos tanto de día como de noche. Estimula la curiosidad y el instinto de caza de tu mascota. Material resistente y seguro.",
     "images": {
       "cover": "assets/images/products/prod_245/cover.jpg",
       "thumb": "assets/images/products/prod_245/thumb.jpg",
@@ -6377,7 +6405,9 @@
       ]
     },
     "specs": {
-      "SKU": "PEL007"
+      "SKU": "PEL007",
+      "material": "Material resistente",
+      "idealFor": "Perros de todos los tamaños"
     },
     "shipping": {
       "free": false,
@@ -6395,7 +6425,7 @@
   },
   {
     "id": "prod_246",
-    "name": "PELOTA ASTEROIDE CON LUZ",
+    "name": "Pelota Asteroide Con Luz",
     "category": "juguetes",
     "subcategory": "Juguetes",
     "price": 5525,
@@ -6415,8 +6445,8 @@
       "diversión",
       "interactivo"
     ],
-    "description": "PELOTA ASTEROIDE CON LUZ",
-    "longDescription": "PELOTA ASTEROIDE CON LUZ",
+    "description": "🎾 Pelota con luz LED. Perfecta para juegos diurnos y nocturnos.",
+    "longDescription": "Pelota con luz LED incorporada que se activa al rebotar. Ideal para juegos tanto de día como de noche. Estimula la curiosidad y el instinto de caza de tu mascota. Material resistente y seguro.",
     "images": {
       "cover": "assets/images/products/prod_246/cover.jpg",
       "thumb": "assets/images/products/prod_246/thumb.jpg",
@@ -6425,7 +6455,9 @@
       ]
     },
     "specs": {
-      "SKU": "PEL008"
+      "SKU": "PEL008",
+      "material": "Material resistente",
+      "idealFor": "Perros de todos los tamaños"
     },
     "shipping": {
       "free": false,
@@ -6443,7 +6475,7 @@
   },
   {
     "id": "prod_247",
-    "name": "PELOTA DE RUGBY CON LUZ Y CHIFLE  S0465",
+    "name": "Pelota De Rugby Con Luz Y Chifle S",
     "category": "juguetes",
     "subcategory": "Juguetes",
     "price": 8840,
@@ -6465,8 +6497,8 @@
       "diversión",
       "interactivo"
     ],
-    "description": "PELOTA DE RUGBY CON LUZ Y CHIFLE  S0465",
-    "longDescription": "PELOTA DE RUGBY CON LUZ Y CHIFLE  S0465",
+    "description": "🐕 Juguete con sonido chifle en forma de pelota. Perfecto para juegos de morder y estimular a tu mascota.",
+    "longDescription": "Divertido juguete con sonido chifle en forma de pelota para perros. El sonido estimula el instinto de juego y mantiene a tu mascota entretenida por horas. Fabricado con material resistente a mordidas y seguro. Ideal para perros de todos los tamaños.",
     "images": {
       "cover": "assets/images/products/prod_247/cover.jpg",
       "thumb": "assets/images/products/prod_247/thumb.jpg",
@@ -6475,7 +6507,9 @@
       ]
     },
     "specs": {
-      "SKU": "PEL009"
+      "SKU": "PEL009",
+      "material": "Vinilo con chifle",
+      "idealFor": "Perros de todos los tamaños"
     },
     "shipping": {
       "free": false,
@@ -6493,7 +6527,7 @@
   },
   {
     "id": "prod_248",
-    "name": "PELOTA DIAMANTE  8CM  PE0091",
+    "name": "Pelota Diamante 8cm Pe",
     "category": "juguetes",
     "subcategory": "Juguetes",
     "price": 12155,
@@ -6514,8 +6548,8 @@
       "diversión",
       "interactivo"
     ],
-    "description": "PELOTA DIAMANTE  8CM  PE0091",
-    "longDescription": "PELOTA DIAMANTE  8CM  PE0091",
+    "description": "🎾 Pelota para perros. Ideal para juegos de buscar y morder.",
+    "longDescription": "Pelota diseñada para horas de diversión con tu mascota. Perfecta para juegos de buscar, lanzar y morder. Material resistente y duradero que soporta el juego intenso. Estimula el ejercicio y la actividad física de tu perro.",
     "images": {
       "cover": "assets/images/products/prod_248/cover.jpg",
       "thumb": "assets/images/products/prod_248/thumb.jpg",
@@ -6525,7 +6559,10 @@
     },
     "specs": {
       "SKU": "PEL010",
-      "Medida": "8CM"
+      "Medida": "8CM",
+      "dimensions": "8cm",
+      "material": "Material resistente",
+      "idealFor": "Perros de todos los tamaños"
     },
     "shipping": {
       "free": false,
@@ -6543,7 +6580,7 @@
   },
   {
     "id": "prod_249",
-    "name": "JUGUETE PELOTA SILICONADO CON FORMAS  8CM  S0599",
+    "name": "Juguete Pelota Siliconado Con Formas 8cm S",
     "category": "juguetes",
     "subcategory": "Juguetes",
     "price": 12155,
@@ -6565,8 +6602,8 @@
       "diversión",
       "interactivo"
     ],
-    "description": "JUGUETE PELOTA SILICONADO CON FORMAS  8CM  S0599",
-    "longDescription": "JUGUETE PELOTA SILICONADO CON FORMAS  8CM  S0599",
+    "description": "🎾 Pelota para perros. Ideal para juegos de buscar y morder.",
+    "longDescription": "Pelota diseñada para horas de diversión con tu mascota. Perfecta para juegos de buscar, lanzar y morder. Material resistente y duradero que soporta el juego intenso. Estimula el ejercicio y la actividad física de tu perro.",
     "images": {
       "cover": "assets/images/products/prod_249/cover.jpg",
       "thumb": "assets/images/products/prod_249/thumb.jpg",
@@ -6576,7 +6613,10 @@
     },
     "specs": {
       "SKU": "JUG006",
-      "Medida": "8CM"
+      "Medida": "8CM",
+      "dimensions": "8cm",
+      "material": "Material resistente",
+      "idealFor": "Perros de todos los tamaños"
     },
     "shipping": {
       "free": false,
@@ -6594,7 +6634,7 @@
   },
   {
     "id": "prod_250",
-    "name": "JUGUETE PELOTA CON ESTRELLAS  LUZ Y CHIFLE 10CM S0486",
+    "name": "Juguete Pelota Con Estrellas Luz Y Chifle 10cm S",
     "category": "juguetes",
     "subcategory": "Juguetes",
     "price": 7182,
@@ -6611,14 +6651,13 @@
       "pelota",
       "estrellas",
       "chifle",
-      "10cm",
       "s0486",
       "entretenimiento",
       "diversión",
       "interactivo"
     ],
-    "description": "JUGUETE PELOTA CON ESTRELLAS  LUZ Y CHIFLE 10CM S0486",
-    "longDescription": "JUGUETE PELOTA CON ESTRELLAS  LUZ Y CHIFLE 10CM S0486",
+    "description": "🐕 Juguete con sonido chifle en forma de pelota. Perfecto para juegos de morder y estimular a tu mascota.",
+    "longDescription": "Divertido juguete con sonido chifle en forma de pelota para perros. El sonido estimula el instinto de juego y mantiene a tu mascota entretenida por horas. Fabricado con material resistente a mordidas y seguro. Ideal para perros de todos los tamaños.",
     "images": {
       "cover": "assets/images/products/prod_250/cover.jpg",
       "thumb": "assets/images/products/prod_250/thumb.jpg",
@@ -6628,7 +6667,10 @@
     },
     "specs": {
       "SKU": "JUG007",
-      "Medida": "10CM"
+      "Medida": "10CM",
+      "dimensions": "10cm",
+      "material": "Vinilo con chifle",
+      "idealFor": "Perros de todos los tamaños"
     },
     "shipping": {
       "free": false,
@@ -6646,7 +6688,7 @@
   },
   {
     "id": "prod_251",
-    "name": "PELOTA ROTATIVA  E INTERACTIVA CON SOGA 25442",
+    "name": "Pelota Rotativa E Interactiva Con Soga",
     "category": "juguetes",
     "subcategory": "Juguetes",
     "price": 13260,
@@ -6663,14 +6705,13 @@
       "rotativa",
       "interactiva",
       "soga",
-      "25442",
       "juguete",
       "entretenimiento",
       "diversión",
       "interactivo"
     ],
-    "description": "PELOTA ROTATIVA  E INTERACTIVA CON SOGA 25442",
-    "longDescription": "PELOTA ROTATIVA  E INTERACTIVA CON SOGA 25442",
+    "description": "🎾 Pelota para perros. Ideal para juegos de buscar y morder.",
+    "longDescription": "Pelota diseñada para horas de diversión con tu mascota. Perfecta para juegos de buscar, lanzar y morder. Material resistente y duradero que soporta el juego intenso. Estimula el ejercicio y la actividad física de tu perro.",
     "images": {
       "cover": "assets/images/products/prod_251/cover.jpg",
       "thumb": "assets/images/products/prod_251/thumb.jpg",
@@ -6679,7 +6720,9 @@
       ]
     },
     "specs": {
-      "SKU": "PEL011"
+      "SKU": "PEL011",
+      "material": "Material resistente",
+      "idealFor": "Perros de todos los tamaños"
     },
     "shipping": {
       "free": true,
@@ -6697,7 +6740,7 @@
   },
   {
     "id": "prod_252",
-    "name": "PELOTA RECARGABLE USB 5CM  PE0423",
+    "name": "Pelota Recargable Usb 5cm Pe",
     "category": "juguetes",
     "subcategory": "Juguetes",
     "price": 15470,
@@ -6718,8 +6761,8 @@
       "diversión",
       "interactivo"
     ],
-    "description": "PELOTA RECARGABLE USB 5CM  PE0423",
-    "longDescription": "PELOTA RECARGABLE USB 5CM  PE0423",
+    "description": "🎾 Pelota para perros. Ideal para juegos de buscar y morder.",
+    "longDescription": "Pelota diseñada para horas de diversión con tu mascota. Perfecta para juegos de buscar, lanzar y morder. Material resistente y duradero que soporta el juego intenso. Estimula el ejercicio y la actividad física de tu perro.",
     "images": {
       "cover": "assets/images/products/prod_252/cover.jpg",
       "thumb": "assets/images/products/prod_252/thumb.jpg",
@@ -6729,7 +6772,10 @@
     },
     "specs": {
       "SKU": "PEL012",
-      "Medida": "5CM"
+      "Medida": "5CM",
+      "dimensions": "5cm",
+      "material": "Material resistente",
+      "idealFor": "Perros de todos los tamaños"
     },
     "shipping": {
       "free": true,
@@ -6747,7 +6793,7 @@
   },
   {
     "id": "prod_253",
-    "name": "PELOTA P/MAS 4,2 REC USB BATERIA 100MA  PE0422",
+    "name": "Pelota P/mas 4,2 Rec Usb Bateria 100ma Pe",
     "category": "juguetes",
     "subcategory": "Juguetes",
     "price": 11050,
@@ -6770,8 +6816,8 @@
       "diversión",
       "interactivo"
     ],
-    "description": "PELOTA P/MAS 4,2 REC USB BATERIA 100MA  PE0422",
-    "longDescription": "PELOTA P/MAS 4,2 REC USB BATERIA 100MA  PE0422",
+    "description": "🎾 Pelota para perros. Ideal para juegos de buscar y morder.",
+    "longDescription": "Pelota diseñada para horas de diversión con tu mascota. Perfecta para juegos de buscar, lanzar y morder. Material resistente y duradero que soporta el juego intenso. Estimula el ejercicio y la actividad física de tu perro.",
     "images": {
       "cover": "assets/images/products/prod_253/cover.jpg",
       "thumb": "assets/images/products/prod_253/thumb.jpg",
@@ -6780,7 +6826,9 @@
       ]
     },
     "specs": {
-      "SKU": "PEL013"
+      "SKU": "PEL013",
+      "material": "Material resistente",
+      "idealFor": "Perros de todos los tamaños"
     },
     "shipping": {
       "free": false,
@@ -6798,7 +6846,7 @@
   },
   {
     "id": "prod_254",
-    "name": "PELOTA LISA 4,5CM",
+    "name": "Pelota Lisa 4,",
     "category": "juguetes",
     "subcategory": "Juguetes",
     "price": 2762,
@@ -6813,14 +6861,13 @@
     "tags": [
       "pelota",
       "lisa",
-      "4,5cm",
       "juguete",
       "entretenimiento",
       "diversión",
       "interactivo"
     ],
-    "description": "PELOTA LISA 4,5CM",
-    "longDescription": "PELOTA LISA 4,5CM",
+    "description": "🎾 Pelota para perros. Ideal para juegos de buscar y morder.",
+    "longDescription": "Pelota diseñada para horas de diversión con tu mascota. Perfecta para juegos de buscar, lanzar y morder. Material resistente y duradero que soporta el juego intenso. Estimula el ejercicio y la actividad física de tu perro.",
     "images": {
       "cover": "assets/images/products/prod_254/cover.jpg",
       "thumb": "assets/images/products/prod_254/thumb.jpg",
@@ -6830,7 +6877,10 @@
     },
     "specs": {
       "SKU": "PEL014",
-      "Medida": "5CM"
+      "Medida": "5CM",
+      "dimensions": "4,5cm",
+      "material": "Material resistente",
+      "idealFor": "Perros de todos los tamaños"
     },
     "shipping": {
       "free": false,
@@ -6848,7 +6898,7 @@
   },
   {
     "id": "prod_255",
-    "name": "PELOTA BLANDA MEDIANA    6,3CM     (24088)",
+    "name": "Pelota Blanda Mediana 6,3cm (",
     "category": "juguetes",
     "subcategory": "Juguetes",
     "price": 1436,
@@ -6864,15 +6914,14 @@
       "pelota",
       "blanda",
       "mediana",
-      "6,3cm",
       "(24088)",
       "juguete",
       "entretenimiento",
       "diversión",
       "interactivo"
     ],
-    "description": "PELOTA BLANDA MEDIANA    6,3CM     (24088)",
-    "longDescription": "PELOTA BLANDA MEDIANA    6,3CM     (24088)",
+    "description": "🎾 Pelota para perros. Ideal para juegos de buscar y morder.",
+    "longDescription": "Pelota diseñada para horas de diversión con tu mascota. Perfecta para juegos de buscar, lanzar y morder. Material resistente y duradero que soporta el juego intenso. Estimula el ejercicio y la actividad física de tu perro.",
     "images": {
       "cover": "assets/images/products/prod_255/cover.jpg",
       "thumb": "assets/images/products/prod_255/thumb.jpg",
@@ -6882,7 +6931,10 @@
     },
     "specs": {
       "SKU": "PEL015",
-      "Medida": "3CM"
+      "Medida": "3CM",
+      "dimensions": "6,3cm",
+      "material": "Material resistente",
+      "idealFor": "Perros de todos los tamaños"
     },
     "shipping": {
       "free": false,
@@ -6900,7 +6952,7 @@
   },
   {
     "id": "prod_256",
-    "name": "PELOTA BLANDA MEDIANA    6,3CM     (24088)",
+    "name": "Pelota Blanda Mediana 6,3cm (",
     "category": "juguetes",
     "subcategory": "Juguetes",
     "price": 1436,
@@ -6916,15 +6968,14 @@
       "pelota",
       "blanda",
       "mediana",
-      "6,3cm",
       "(24088)",
       "juguete",
       "entretenimiento",
       "diversión",
       "interactivo"
     ],
-    "description": "PELOTA BLANDA MEDIANA    6,3CM     (24088)",
-    "longDescription": "PELOTA BLANDA MEDIANA    6,3CM     (24088)",
+    "description": "🎾 Pelota para perros. Ideal para juegos de buscar y morder.",
+    "longDescription": "Pelota diseñada para horas de diversión con tu mascota. Perfecta para juegos de buscar, lanzar y morder. Material resistente y duradero que soporta el juego intenso. Estimula el ejercicio y la actividad física de tu perro.",
     "images": {
       "cover": "assets/images/products/prod_256/cover.jpg",
       "thumb": "assets/images/products/prod_256/thumb.jpg",
@@ -6934,7 +6985,10 @@
     },
     "specs": {
       "SKU": "PEL016",
-      "Medida": "3CM"
+      "Medida": "3CM",
+      "dimensions": "6,3cm",
+      "material": "Material resistente",
+      "idealFor": "Perros de todos los tamaños"
     },
     "shipping": {
       "free": false,
@@ -6952,7 +7006,7 @@
   },
   {
     "id": "prod_257",
-    "name": "PELOTA SPORTING CHICA 4CM",
+    "name": "Pelota Sporting Chica",
     "category": "juguetes",
     "subcategory": "Juguetes",
     "price": 1215,
@@ -6973,8 +7027,8 @@
       "diversión",
       "interactivo"
     ],
-    "description": "PELOTA SPORTING CHICA 4CM",
-    "longDescription": "PELOTA SPORTING CHICA 4CM",
+    "description": "🎾 Pelota para perros. Ideal para juegos de buscar y morder.",
+    "longDescription": "Pelota diseñada para horas de diversión con tu mascota. Perfecta para juegos de buscar, lanzar y morder. Material resistente y duradero que soporta el juego intenso. Estimula el ejercicio y la actividad física de tu perro.",
     "images": {
       "cover": "assets/images/products/prod_257/cover.jpg",
       "thumb": "assets/images/products/prod_257/thumb.jpg",
@@ -6984,7 +7038,10 @@
     },
     "specs": {
       "SKU": "PEL017",
-      "Medida": "4CM"
+      "Medida": "4CM",
+      "dimensions": "4cm",
+      "material": "Material resistente",
+      "idealFor": "Perros de todos los tamaños"
     },
     "shipping": {
       "free": false,
@@ -7002,7 +7059,7 @@
   },
   {
     "id": "prod_258",
-    "name": "PELOTA SPORTING MEDIANA 7CM",
+    "name": "Pelota Sporting Mediana",
     "category": "juguetes",
     "subcategory": "Juguetes",
     "price": 3094,
@@ -7023,8 +7080,8 @@
       "diversión",
       "interactivo"
     ],
-    "description": "PELOTA SPORTING MEDIANA 7CM",
-    "longDescription": "PELOTA SPORTING MEDIANA 7CM",
+    "description": "🎾 Pelota para perros. Ideal para juegos de buscar y morder.",
+    "longDescription": "Pelota diseñada para horas de diversión con tu mascota. Perfecta para juegos de buscar, lanzar y morder. Material resistente y duradero que soporta el juego intenso. Estimula el ejercicio y la actividad física de tu perro.",
     "images": {
       "cover": "assets/images/products/prod_258/cover.jpg",
       "thumb": "assets/images/products/prod_258/thumb.jpg",
@@ -7034,7 +7091,10 @@
     },
     "specs": {
       "SKU": "PEL018",
-      "Medida": "7CM"
+      "Medida": "7CM",
+      "dimensions": "7cm",
+      "material": "Material resistente",
+      "idealFor": "Perros de todos los tamaños"
     },
     "shipping": {
       "free": false,
@@ -7052,7 +7112,7 @@
   },
   {
     "id": "prod_259",
-    "name": "PELOTA SPORTING GRANDE 9CM",
+    "name": "Pelota Sporting Grande",
     "category": "juguetes",
     "subcategory": "Juguetes",
     "price": 7182,
@@ -7073,8 +7133,8 @@
       "diversión",
       "interactivo"
     ],
-    "description": "PELOTA SPORTING GRANDE 9CM",
-    "longDescription": "PELOTA SPORTING GRANDE 9CM",
+    "description": "🎾 Pelota para perros. Ideal para juegos de buscar y morder.",
+    "longDescription": "Pelota diseñada para horas de diversión con tu mascota. Perfecta para juegos de buscar, lanzar y morder. Material resistente y duradero que soporta el juego intenso. Estimula el ejercicio y la actividad física de tu perro.",
     "images": {
       "cover": "assets/images/products/prod_259/cover.jpg",
       "thumb": "assets/images/products/prod_259/thumb.jpg",
@@ -7084,7 +7144,10 @@
     },
     "specs": {
       "SKU": "PEL019",
-      "Medida": "9CM"
+      "Medida": "9CM",
+      "dimensions": "9cm",
+      "material": "Material resistente",
+      "idealFor": "Perros de todos los tamaños"
     },
     "shipping": {
       "free": false,
@@ -7239,7 +7302,7 @@
   },
   {
     "id": "prod_264",
-    "name": "PELOTA DE RUGBY GRAN (  27 CM)",
+    "name": "Pelota De Rugby Gran",
     "category": "juguetes",
     "subcategory": "Juguetes",
     "price": 17459,
@@ -7260,8 +7323,8 @@
       "diversión",
       "interactivo"
     ],
-    "description": "PELOTA DE RUGBY GRAN (  27 CM)",
-    "longDescription": "PELOTA DE RUGBY GRAN (  27 CM)",
+    "description": "🎾 Pelota para perros. Ideal para juegos de buscar y morder.",
+    "longDescription": "Pelota diseñada para horas de diversión con tu mascota. Perfecta para juegos de buscar, lanzar y morder. Material resistente y duradero que soporta el juego intenso. Estimula el ejercicio y la actividad física de tu perro.",
     "images": {
       "cover": "assets/images/products/prod_264/cover.jpg",
       "thumb": "assets/images/products/prod_264/thumb.jpg",
@@ -7271,7 +7334,10 @@
     },
     "specs": {
       "SKU": "PEL024",
-      "Medida": "27 CM"
+      "Medida": "27 CM",
+      "dimensions": "27 cm",
+      "material": "Material resistente",
+      "idealFor": "Perros de todos los tamaños"
     },
     "shipping": {
       "free": true,
@@ -7289,7 +7355,7 @@
   },
   {
     "id": "prod_265",
-    "name": "PELOTA DE FUTBOOL (17 CM)",
+    "name": "Pelota De Futbool",
     "category": "juguetes",
     "subcategory": "Juguetes",
     "price": 13260,
@@ -7309,8 +7375,8 @@
       "diversión",
       "interactivo"
     ],
-    "description": "PELOTA DE FUTBOOL (17 CM)",
-    "longDescription": "PELOTA DE FUTBOOL (17 CM)",
+    "description": "🎾 Pelota para perros. Ideal para juegos de buscar y morder.",
+    "longDescription": "Pelota diseñada para horas de diversión con tu mascota. Perfecta para juegos de buscar, lanzar y morder. Material resistente y duradero que soporta el juego intenso. Estimula el ejercicio y la actividad física de tu perro.",
     "images": {
       "cover": "assets/images/products/prod_265/cover.jpg",
       "thumb": "assets/images/products/prod_265/thumb.jpg",
@@ -7320,7 +7386,10 @@
     },
     "specs": {
       "SKU": "PEL025",
-      "Medida": "17 CM"
+      "Medida": "17 CM",
+      "dimensions": "17 cm",
+      "material": "Material resistente",
+      "idealFor": "Perros de todos los tamaños"
     },
     "shipping": {
       "free": true,
@@ -7338,7 +7407,7 @@
   },
   {
     "id": "prod_266",
-    "name": "PELOTA LISA TRAININ  (12 CM)",
+    "name": "Pelota Lisa Trainin",
     "category": "juguetes",
     "subcategory": "Juguetes",
     "price": 12155,
@@ -7359,8 +7428,8 @@
       "diversión",
       "interactivo"
     ],
-    "description": "PELOTA LISA TRAININ  (12 CM)",
-    "longDescription": "PELOTA LISA TRAININ  (12 CM)",
+    "description": "🎾 Pelota para perros. Ideal para juegos de buscar y morder.",
+    "longDescription": "Pelota diseñada para horas de diversión con tu mascota. Perfecta para juegos de buscar, lanzar y morder. Material resistente y duradero que soporta el juego intenso. Estimula el ejercicio y la actividad física de tu perro.",
     "images": {
       "cover": "assets/images/products/prod_266/cover.jpg",
       "thumb": "assets/images/products/prod_266/thumb.jpg",
@@ -7370,7 +7439,10 @@
     },
     "specs": {
       "SKU": "PEL026",
-      "Medida": "12 CM"
+      "Medida": "12 CM",
+      "dimensions": "12 cm",
+      "material": "Material resistente",
+      "idealFor": "Perros de todos los tamaños"
     },
     "shipping": {
       "free": false,
@@ -7543,7 +7615,7 @@
   },
   {
     "id": "prod_272",
-    "name": "MANCUERNA DE GOMA CHICA",
+    "name": "Mancuerna De Goma Chica",
     "category": "juguetes",
     "subcategory": "Juguetes",
     "price": 2431,
@@ -7564,8 +7636,8 @@
       "diversión",
       "interactivo"
     ],
-    "description": "MANCUERNA DE GOMA CHICA",
-    "longDescription": "MANCUERNA DE GOMA CHICA",
+    "description": "🐕 Juguete de goma pesa. Resistente a mordidas y perfecto para juegos interactivos.",
+    "longDescription": "Juguete de goma pesa de alta resistencia para perros. Material flexible y duradero que soporta mordidas intensas. Ideal para juegos de buscar y morder. Seguro y no tóxico para tu mascota.",
     "images": {
       "cover": "assets/images/products/prod_272/cover.jpg",
       "thumb": "assets/images/products/prod_272/thumb.jpg",
@@ -7574,7 +7646,9 @@
       ]
     },
     "specs": {
-      "SKU": "MAN001"
+      "SKU": "MAN001",
+      "material": "Goma resistente",
+      "idealFor": "Perros de todos los tamaños"
     },
     "shipping": {
       "free": false,
@@ -7592,7 +7666,7 @@
   },
   {
     "id": "prod_273",
-    "name": "MANCUERNA DE GOMA MEDIANA",
+    "name": "Mancuerna De Goma Mediana",
     "category": "juguetes",
     "subcategory": "Juguetes",
     "price": 4420,
@@ -7613,8 +7687,8 @@
       "diversión",
       "interactivo"
     ],
-    "description": "MANCUERNA DE GOMA MEDIANA",
-    "longDescription": "MANCUERNA DE GOMA MEDIANA",
+    "description": "🐕 Juguete de goma pesa. Resistente a mordidas y perfecto para juegos interactivos.",
+    "longDescription": "Juguete de goma pesa de alta resistencia para perros. Material flexible y duradero que soporta mordidas intensas. Ideal para juegos de buscar y morder. Seguro y no tóxico para tu mascota.",
     "images": {
       "cover": "assets/images/products/prod_273/cover.jpg",
       "thumb": "assets/images/products/prod_273/thumb.jpg",
@@ -7623,7 +7697,9 @@
       ]
     },
     "specs": {
-      "SKU": "MAN002"
+      "SKU": "MAN002",
+      "material": "Goma resistente",
+      "idealFor": "Perros de todos los tamaños"
     },
     "shipping": {
       "free": false,
@@ -7641,7 +7717,7 @@
   },
   {
     "id": "prod_274",
-    "name": "MANCUERNA DE GOMA GRANDE",
+    "name": "Mancuerna De Goma Grande",
     "category": "juguetes",
     "subcategory": "Juguetes",
     "price": 7182,
@@ -7662,8 +7738,8 @@
       "diversión",
       "interactivo"
     ],
-    "description": "MANCUERNA DE GOMA GRANDE",
-    "longDescription": "MANCUERNA DE GOMA GRANDE",
+    "description": "🐕 Juguete de goma pesa. Resistente a mordidas y perfecto para juegos interactivos.",
+    "longDescription": "Juguete de goma pesa de alta resistencia para perros. Material flexible y duradero que soporta mordidas intensas. Ideal para juegos de buscar y morder. Seguro y no tóxico para tu mascota.",
     "images": {
       "cover": "assets/images/products/prod_274/cover.jpg",
       "thumb": "assets/images/products/prod_274/thumb.jpg",
@@ -7672,7 +7748,9 @@
       ]
     },
     "specs": {
-      "SKU": "MAN003"
+      "SKU": "MAN003",
+      "material": "Goma resistente",
+      "idealFor": "Perros de todos los tamaños"
     },
     "shipping": {
       "free": false,
@@ -7809,7 +7887,7 @@
   },
   {
     "id": "prod_278",
-    "name": "ARANDELA DE GOMA CHI",
+    "name": "Arandela De Goma Chi",
     "category": "juguetes",
     "subcategory": "Juguetes",
     "price": 1878,
@@ -7829,8 +7907,8 @@
       "diversión",
       "interactivo"
     ],
-    "description": "ARANDELA DE GOMA CHI",
-    "longDescription": "ARANDELA DE GOMA CHI",
+    "description": "🐕 Juguete de goma arandela. Resistente a mordidas y perfecto para juegos interactivos.",
+    "longDescription": "Juguete de goma arandela de alta resistencia para perros. Material flexible y duradero que soporta mordidas intensas. Ideal para juegos de buscar y morder. Seguro y no tóxico para tu mascota.",
     "images": {
       "cover": "assets/images/products/prod_278/cover.jpg",
       "thumb": "assets/images/products/prod_278/thumb.jpg",
@@ -7839,7 +7917,9 @@
       ]
     },
     "specs": {
-      "SKU": "ARA001"
+      "SKU": "ARA001",
+      "material": "Goma resistente",
+      "idealFor": "Perros de todos los tamaños"
     },
     "shipping": {
       "free": false,
@@ -7857,7 +7937,7 @@
   },
   {
     "id": "prod_279",
-    "name": "ARANDELA GOMA MED",
+    "name": "Arandela Goma Med",
     "category": "juguetes",
     "subcategory": "Juguetes",
     "price": 2983,
@@ -7877,8 +7957,8 @@
       "diversión",
       "interactivo"
     ],
-    "description": "ARANDELA GOMA MED",
-    "longDescription": "ARANDELA GOMA MED",
+    "description": "🐕 Juguete de goma arandela. Resistente a mordidas y perfecto para juegos interactivos.",
+    "longDescription": "Juguete de goma arandela de alta resistencia para perros. Material flexible y duradero que soporta mordidas intensas. Ideal para juegos de buscar y morder. Seguro y no tóxico para tu mascota.",
     "images": {
       "cover": "assets/images/products/prod_279/cover.jpg",
       "thumb": "assets/images/products/prod_279/thumb.jpg",
@@ -7887,7 +7967,9 @@
       ]
     },
     "specs": {
-      "SKU": "ARA002"
+      "SKU": "ARA002",
+      "material": "Goma resistente",
+      "idealFor": "Perros de todos los tamaños"
     },
     "shipping": {
       "free": false,
@@ -7905,7 +7987,7 @@
   },
   {
     "id": "prod_280",
-    "name": "ARANDELA GOMA GRA",
+    "name": "Arandela Goma Gra",
     "category": "juguetes",
     "subcategory": "Juguetes",
     "price": 5746,
@@ -7925,8 +8007,8 @@
       "diversión",
       "interactivo"
     ],
-    "description": "ARANDELA GOMA GRA",
-    "longDescription": "ARANDELA GOMA GRA",
+    "description": "🐕 Juguete de goma arandela. Resistente a mordidas y perfecto para juegos interactivos.",
+    "longDescription": "Juguete de goma arandela de alta resistencia para perros. Material flexible y duradero que soporta mordidas intensas. Ideal para juegos de buscar y morder. Seguro y no tóxico para tu mascota.",
     "images": {
       "cover": "assets/images/products/prod_280/cover.jpg",
       "thumb": "assets/images/products/prod_280/thumb.jpg",
@@ -7935,7 +8017,9 @@
       ]
     },
     "specs": {
-      "SKU": "ARA003"
+      "SKU": "ARA003",
+      "material": "Goma resistente",
+      "idealFor": "Perros de todos los tamaños"
     },
     "shipping": {
       "free": false,
@@ -8061,7 +8145,7 @@
   },
   {
     "id": "prod_284",
-    "name": "CHIFLE GALLINA CHICA",
+    "name": "Chifle Gallina Chica",
     "category": "juguetes",
     "subcategory": "Juguetes",
     "price": 1657,
@@ -8082,8 +8166,8 @@
       "diversión",
       "interactivo"
     ],
-    "description": "CHIFLE GALLINA CHICA",
-    "longDescription": "CHIFLE GALLINA CHICA",
+    "description": "🐕 Juguete con sonido chifle en forma de pollo. Perfecto para juegos de morder y estimular a tu mascota.",
+    "longDescription": "Divertido juguete con sonido chifle en forma de pollo para perros. El sonido estimula el instinto de juego y mantiene a tu mascota entretenida por horas. Fabricado con material resistente a mordidas y seguro. Ideal para perros de todos los tamaños.",
     "images": {
       "cover": "assets/images/products/prod_284/cover.jpg",
       "thumb": "assets/images/products/prod_284/thumb.jpg",
@@ -8092,7 +8176,9 @@
       ]
     },
     "specs": {
-      "SKU": "CHI004"
+      "SKU": "CHI004",
+      "material": "Vinilo con chifle",
+      "idealFor": "Perros de todos los tamaños"
     },
     "shipping": {
       "free": false,
@@ -8110,7 +8196,7 @@
   },
   {
     "id": "prod_285",
-    "name": "CHIFLE GALLINA MEDIANA",
+    "name": "Chifle Gallina Mediana",
     "category": "juguetes",
     "subcategory": "Juguetes",
     "price": 3315,
@@ -8131,8 +8217,8 @@
       "diversión",
       "interactivo"
     ],
-    "description": "CHIFLE  GALLINA MEDIANA",
-    "longDescription": "CHIFLE  GALLINA MEDIANA",
+    "description": "🐕 Juguete con sonido chifle en forma de pollo. Perfecto para juegos de morder y estimular a tu mascota.",
+    "longDescription": "Divertido juguete con sonido chifle en forma de pollo para perros. El sonido estimula el instinto de juego y mantiene a tu mascota entretenida por horas. Fabricado con material resistente a mordidas y seguro. Ideal para perros de todos los tamaños.",
     "images": {
       "cover": "assets/images/products/prod_285/cover.jpg",
       "thumb": "assets/images/products/prod_285/thumb.jpg",
@@ -8141,7 +8227,9 @@
       ]
     },
     "specs": {
-      "SKU": "CHI005"
+      "SKU": "CHI005",
+      "material": "Vinilo con chifle",
+      "idealFor": "Perros de todos los tamaños"
     },
     "shipping": {
       "free": false,
@@ -8159,7 +8247,7 @@
   },
   {
     "id": "prod_286",
-    "name": "CHIFLE GALLINA  GRANDE",
+    "name": "Chifle Gallina Grande",
     "category": "juguetes",
     "subcategory": "Juguetes",
     "price": 4972,
@@ -8180,8 +8268,8 @@
       "diversión",
       "interactivo"
     ],
-    "description": "CHIFLE GALLINA  GRANDE",
-    "longDescription": "CHIFLE GALLINA  GRANDE",
+    "description": "🐕 Juguete con sonido chifle en forma de pollo. Perfecto para juegos de morder y estimular a tu mascota.",
+    "longDescription": "Divertido juguete con sonido chifle en forma de pollo para perros. El sonido estimula el instinto de juego y mantiene a tu mascota entretenida por horas. Fabricado con material resistente a mordidas y seguro. Ideal para perros de todos los tamaños.",
     "images": {
       "cover": "assets/images/products/prod_286/cover.jpg",
       "thumb": "assets/images/products/prod_286/thumb.jpg",
@@ -8190,7 +8278,9 @@
       ]
     },
     "specs": {
-      "SKU": "CHI006"
+      "SKU": "CHI006",
+      "material": "Vinilo con chifle",
+      "idealFor": "Perros de todos los tamaños"
     },
     "shipping": {
       "free": false,
@@ -8208,7 +8298,7 @@
   },
   {
     "id": "prod_287",
-    "name": "GALLINA DE COLORES CON CHIFLE S",
+    "name": "Gallina De Colores Con Chifle S",
     "category": "juguetes",
     "subcategory": "Juguetes",
     "price": 2652,
@@ -8229,8 +8319,8 @@
       "diversión",
       "interactivo"
     ],
-    "description": "GALLINA DE COLORES CON CHIFLE S",
-    "longDescription": "GALLINA DE COLORES CON CHIFLE S",
+    "description": "🐕 Juguete con sonido chifle en forma de pollo. Perfecto para juegos de morder y estimular a tu mascota.",
+    "longDescription": "Divertido juguete con sonido chifle en forma de pollo para perros. El sonido estimula el instinto de juego y mantiene a tu mascota entretenida por horas. Fabricado con material resistente a mordidas y seguro. Ideal para perros de todos los tamaños.",
     "images": {
       "cover": "assets/images/products/prod_287/cover.jpg",
       "thumb": "assets/images/products/prod_287/thumb.jpg",
@@ -8239,7 +8329,9 @@
       ]
     },
     "specs": {
-      "SKU": "GAL001"
+      "SKU": "GAL001",
+      "material": "Vinilo con chifle",
+      "idealFor": "Perros de todos los tamaños"
     },
     "shipping": {
       "free": false,
@@ -8257,7 +8349,7 @@
   },
   {
     "id": "prod_288",
-    "name": "GALLINA DE COLORES CON CHIFLE M",
+    "name": "Gallina De Colores Con Chifle M",
     "category": "juguetes",
     "subcategory": "Juguetes",
     "price": 5525,
@@ -8278,8 +8370,8 @@
       "diversión",
       "interactivo"
     ],
-    "description": "GALLINA DE COLORES CON CHIFLE M",
-    "longDescription": "GALLINA DE COLORES CON CHIFLE M",
+    "description": "🐕 Juguete con sonido chifle en forma de pollo. Perfecto para juegos de morder y estimular a tu mascota.",
+    "longDescription": "Divertido juguete con sonido chifle en forma de pollo para perros. El sonido estimula el instinto de juego y mantiene a tu mascota entretenida por horas. Fabricado con material resistente a mordidas y seguro. Ideal para perros de todos los tamaños.",
     "images": {
       "cover": "assets/images/products/prod_288/cover.jpg",
       "thumb": "assets/images/products/prod_288/thumb.jpg",
@@ -8288,7 +8380,9 @@
       ]
     },
     "specs": {
-      "SKU": "GAL002"
+      "SKU": "GAL002",
+      "material": "Vinilo con chifle",
+      "idealFor": "Perros de todos los tamaños"
     },
     "shipping": {
       "free": false,
@@ -8306,7 +8400,7 @@
   },
   {
     "id": "prod_289",
-    "name": "GALLINA DE COLORES CON CHIFLE L",
+    "name": "Gallina De Colores Con Chifle L",
     "category": "juguetes",
     "subcategory": "Juguetes",
     "price": 7735,
@@ -8327,8 +8421,8 @@
       "diversión",
       "interactivo"
     ],
-    "description": "GALLINA DE COLORES CON CHIFLE L",
-    "longDescription": "GALLINA DE COLORES CON CHIFLE L",
+    "description": "🐕 Juguete con sonido chifle en forma de pollo. Perfecto para juegos de morder y estimular a tu mascota.",
+    "longDescription": "Divertido juguete con sonido chifle en forma de pollo para perros. El sonido estimula el instinto de juego y mantiene a tu mascota entretenida por horas. Fabricado con material resistente a mordidas y seguro. Ideal para perros de todos los tamaños.",
     "images": {
       "cover": "assets/images/products/prod_289/cover.jpg",
       "thumb": "assets/images/products/prod_289/thumb.jpg",
@@ -8337,7 +8431,9 @@
       ]
     },
     "specs": {
-      "SKU": "GAL003"
+      "SKU": "GAL003",
+      "material": "Vinilo con chifle",
+      "idealFor": "Perros de todos los tamaños"
     },
     "shipping": {
       "free": false,
@@ -8355,7 +8451,7 @@
   },
   {
     "id": "prod_290",
-    "name": "PELOTA FUDBOOL AMERICANO  10,5*5",
+    "name": "Pelota Fudbool Americano 10,5*5",
     "category": "juguetes",
     "subcategory": "Juguetes",
     "price": 2541,
@@ -8377,8 +8473,8 @@
       "diversión",
       "interactivo"
     ],
-    "description": "PELOTA FUDBOOL AMERICANO  10,5*5",
-    "longDescription": "PELOTA FUDBOOL AMERICANO  10,5*5",
+    "description": "🎾 Pelota para perros. Ideal para juegos de buscar y morder.",
+    "longDescription": "Pelota diseñada para horas de diversión con tu mascota. Perfecta para juegos de buscar, lanzar y morder. Material resistente y duradero que soporta el juego intenso. Estimula el ejercicio y la actividad física de tu perro.",
     "images": {
       "cover": "assets/images/products/prod_290/cover.jpg",
       "thumb": "assets/images/products/prod_290/thumb.jpg",
@@ -8387,7 +8483,9 @@
       ]
     },
     "specs": {
-      "SKU": "PEL032"
+      "SKU": "PEL032",
+      "material": "Material resistente",
+      "idealFor": "Perros de todos los tamaños"
     },
     "shipping": {
       "free": false,
@@ -8405,7 +8503,7 @@
   },
   {
     "id": "prod_291",
-    "name": "PELOTA DE FOTBOOL CON CHIFLE  024859",
+    "name": "Pelota De Fotbool Con Chifle 0",
     "category": "juguetes",
     "subcategory": "Juguetes",
     "price": 2762,
@@ -8427,8 +8525,8 @@
       "diversión",
       "interactivo"
     ],
-    "description": "PELOTA DE FOTBOOL CON CHIFLE  024859",
-    "longDescription": "PELOTA DE FOTBOOL CON CHIFLE  024859",
+    "description": "🐕 Juguete con sonido chifle en forma de pelota. Perfecto para juegos de morder y estimular a tu mascota.",
+    "longDescription": "Divertido juguete con sonido chifle en forma de pelota para perros. El sonido estimula el instinto de juego y mantiene a tu mascota entretenida por horas. Fabricado con material resistente a mordidas y seguro. Ideal para perros de todos los tamaños.",
     "images": {
       "cover": "assets/images/products/prod_291/cover.jpg",
       "thumb": "assets/images/products/prod_291/thumb.jpg",
@@ -8437,7 +8535,9 @@
       ]
     },
     "specs": {
-      "SKU": "PEL033"
+      "SKU": "PEL033",
+      "material": "Vinilo con chifle",
+      "idealFor": "Perros de todos los tamaños"
     },
     "shipping": {
       "free": false,
@@ -8455,7 +8555,7 @@
   },
   {
     "id": "prod_293",
-    "name": "JUGUETE LATEX MONSTER DE  12CM",
+    "name": "Juguete Latex Monster De",
     "category": "juguetes",
     "subcategory": "Juguetes",
     "price": 5746,
@@ -8471,13 +8571,12 @@
       "juguete",
       "latex",
       "monster",
-      "12cm",
       "entretenimiento",
       "diversión",
       "interactivo"
     ],
-    "description": "JUGUETE LATEX MONSTER DE  12CM",
-    "longDescription": "JUGUETE LATEX MONSTER DE  12CM",
+    "description": "🐕 Juguete de látex juguete latex monster de  12cm con sonido. Suave y seguro para tu mascota.",
+    "longDescription": "Juguete de látex juguete latex monster de  12cm con sonido incorporado. Material suave y flexible, ideal para perros que les gusta morder. El sonido estimula el juego y mantiene a tu mascota entretenida. Seguro y no tóxico.",
     "images": {
       "cover": "assets/images/products/prod_293/cover.jpg",
       "thumb": "assets/images/products/prod_293/thumb.jpg",
@@ -8487,7 +8586,10 @@
     },
     "specs": {
       "SKU": "JUG008",
-      "Medida": "12CM"
+      "Medida": "12CM",
+      "dimensions": "12cm",
+      "material": "Látex suave",
+      "idealFor": "Perros de todos los tamaños"
     },
     "shipping": {
       "free": false,
@@ -8505,7 +8607,7 @@
   },
   {
     "id": "prod_294",
-    "name": "JUGUETE CERDO LATEX CON SONIDO  18CM",
+    "name": "Juguete Cerdo Latex Con Sonido",
     "category": "juguetes",
     "subcategory": "Juguetes",
     "price": 9724,
@@ -8522,13 +8624,12 @@
       "cerdo",
       "latex",
       "sonido",
-      "18cm",
       "entretenimiento",
       "diversión",
       "interactivo"
     ],
-    "description": "JUGUETE CERDO LATEX CON SONIDO  18CM",
-    "longDescription": "JUGUETE CERDO LATEX CON SONIDO  18CM",
+    "description": "🐕 Juguete de látex cerdo con sonido. Suave y seguro para tu mascota.",
+    "longDescription": "Juguete de látex cerdo con sonido incorporado. Material suave y flexible, ideal para perros que les gusta morder. El sonido estimula el juego y mantiene a tu mascota entretenida. Seguro y no tóxico.",
     "images": {
       "cover": "assets/images/products/prod_294/cover.jpg",
       "thumb": "assets/images/products/prod_294/thumb.jpg",
@@ -8538,7 +8639,10 @@
     },
     "specs": {
       "SKU": "JUG009",
-      "Medida": "18CM"
+      "Medida": "18CM",
+      "dimensions": "18cm",
+      "material": "Látex suave",
+      "idealFor": "Perros de todos los tamaños"
     },
     "shipping": {
       "free": false,
@@ -8556,7 +8660,7 @@
   },
   {
     "id": "prod_296",
-    "name": "PELOTA CARITA - PERRIRO BOMBITA CHIFLR",
+    "name": "Pelota Carita - Perriro Bombita Chiflr",
     "category": "juguetes",
     "subcategory": "Juguetes",
     "price": 3315,
@@ -8579,8 +8683,8 @@
       "diversión",
       "interactivo"
     ],
-    "description": "PELOTA CARITA - PERRIRO BOMBITA CHIFLR",
-    "longDescription": "PELOTA CARITA - PERRIRO BOMBITA CHIFLR",
+    "description": "🎾 Pelota para perros. Ideal para juegos de buscar y morder.",
+    "longDescription": "Pelota diseñada para horas de diversión con tu mascota. Perfecta para juegos de buscar, lanzar y morder. Material resistente y duradero que soporta el juego intenso. Estimula el ejercicio y la actividad física de tu perro.",
     "images": {
       "cover": "assets/images/products/prod_296/cover.jpg",
       "thumb": "assets/images/products/prod_296/thumb.jpg",
@@ -8589,7 +8693,9 @@
       ]
     },
     "specs": {
-      "SKU": "PEL034"
+      "SKU": "PEL034",
+      "material": "Material resistente",
+      "idealFor": "Perros de todos los tamaños"
     },
     "shipping": {
       "free": false,
@@ -8607,7 +8713,7 @@
   },
   {
     "id": "prod_297",
-    "name": "JUGUETE DINOSAURIO LATEX 12CM",
+    "name": "Juguete Dinosaurio Latex",
     "category": "juguetes",
     "subcategory": "Juguetes",
     "price": 3536,
@@ -8623,13 +8729,12 @@
       "juguete",
       "dinosaurio",
       "latex",
-      "12cm",
       "entretenimiento",
       "diversión",
       "interactivo"
     ],
-    "description": "JUGUETE DINOSAURIO LATEX 12CM",
-    "longDescription": "JUGUETE DINOSAURIO LATEX 12CM",
+    "description": "🐕 Juguete de látex dinosaurio con sonido. Suave y seguro para tu mascota.",
+    "longDescription": "Juguete de látex dinosaurio con sonido incorporado. Material suave y flexible, ideal para perros que les gusta morder. El sonido estimula el juego y mantiene a tu mascota entretenida. Seguro y no tóxico.",
     "images": {
       "cover": "assets/images/products/prod_297/cover.jpg",
       "thumb": "assets/images/products/prod_297/thumb.jpg",
@@ -8639,7 +8744,10 @@
     },
     "specs": {
       "SKU": "JUG010",
-      "Medida": "12CM"
+      "Medida": "12CM",
+      "dimensions": "12cm",
+      "material": "Látex suave",
+      "idealFor": "Perros de todos los tamaños"
     },
     "shipping": {
       "free": false,
@@ -8657,7 +8765,7 @@
   },
   {
     "id": "prod_298",
-    "name": "CHIFLE PATO COLOR MEDIANO DE 25CM",
+    "name": "Chifle Pato Color Mediano De",
     "category": "juguetes",
     "subcategory": "Juguetes",
     "price": 3536,
@@ -8674,14 +8782,13 @@
       "pato",
       "color",
       "mediano",
-      "25cm",
       "juguete",
       "entretenimiento",
       "diversión",
       "interactivo"
     ],
-    "description": "CHIFLE PATO COLOR MEDIANO DE 25CM",
-    "longDescription": "CHIFLE PATO COLOR MEDIANO DE 25CM",
+    "description": "🐕 Juguete con sonido chifle en forma de pato. Perfecto para juegos de morder y estimular a tu mascota.",
+    "longDescription": "Divertido juguete con sonido chifle en forma de pato para perros. El sonido estimula el instinto de juego y mantiene a tu mascota entretenida por horas. Fabricado con material resistente a mordidas y seguro. Ideal para perros de todos los tamaños.",
     "images": {
       "cover": "assets/images/products/prod_298/cover.jpg",
       "thumb": "assets/images/products/prod_298/thumb.jpg",
@@ -8691,7 +8798,10 @@
     },
     "specs": {
       "SKU": "CHI008",
-      "Medida": "25CM"
+      "Medida": "25CM",
+      "dimensions": "25cm",
+      "material": "Vinilo con chifle",
+      "idealFor": "Perros de todos los tamaños"
     },
     "shipping": {
       "free": false,
@@ -8709,7 +8819,7 @@
   },
   {
     "id": "prod_299",
-    "name": "CHIFLE CUERPO ESPIN",
+    "name": "Chifle Cuerpo Espin",
     "category": "juguetes",
     "subcategory": "Juguetes",
     "price": 4530,
@@ -8730,8 +8840,8 @@
       "diversión",
       "interactivo"
     ],
-    "description": "CHIFLE CUERPO ESPIN",
-    "longDescription": "CHIFLE CUERPO ESPIN",
+    "description": "🐕 Juguete con sonido chifle en forma de erizo. Perfecto para juegos de morder y estimular a tu mascota.",
+    "longDescription": "Divertido juguete con sonido chifle en forma de erizo para perros. El sonido estimula el instinto de juego y mantiene a tu mascota entretenida por horas. Fabricado con material resistente a mordidas y seguro. Ideal para perros de todos los tamaños.",
     "images": {
       "cover": "assets/images/products/prod_299/cover.jpg",
       "thumb": "assets/images/products/prod_299/thumb.jpg",
@@ -8740,7 +8850,9 @@
       ]
     },
     "specs": {
-      "SKU": "CHI009"
+      "SKU": "CHI009",
+      "material": "Vinilo con chifle",
+      "idealFor": "Perros de todos los tamaños"
     },
     "shipping": {
       "free": false,
@@ -8758,7 +8870,7 @@
   },
   {
     "id": "prod_300",
-    "name": "PELOTA  FUTBOL CON CHIFLE CHICO  127  ANCHO 6CM / ANCHO 6CM",
+    "name": "Pelota Futbol Con Chifle Chico 127/",
     "category": "juguetes",
     "subcategory": "Juguetes",
     "price": 3094,
@@ -8781,8 +8893,8 @@
       "diversión",
       "interactivo"
     ],
-    "description": "PELOTA  FUTBOL CON CHIFLE CHICO  127  ANCHO 6CM / ANCHO 6CM",
-    "longDescription": "PELOTA  FUTBOL CON CHIFLE CHICO  127  ANCHO 6CM / ANCHO 6CM",
+    "description": "🐕 Juguete con sonido chifle en forma de pelota. Perfecto para juegos de morder y estimular a tu mascota.",
+    "longDescription": "Divertido juguete con sonido chifle en forma de pelota para perros. El sonido estimula el instinto de juego y mantiene a tu mascota entretenida por horas. Fabricado con material resistente a mordidas y seguro. Ideal para perros de todos los tamaños.",
     "images": {
       "cover": "assets/images/products/prod_300/cover.jpg",
       "thumb": "assets/images/products/prod_300/thumb.jpg",
@@ -8792,7 +8904,10 @@
     },
     "specs": {
       "SKU": "PEL035",
-      "Medida": "6CM"
+      "Medida": "6CM",
+      "dimensions": "ANCHO 6cm x ANCHO 6cm x 6cm x 6cm",
+      "material": "Vinilo con chifle",
+      "idealFor": "Perros de todos los tamaños"
     },
     "shipping": {
       "free": false,
@@ -8810,7 +8925,7 @@
   },
   {
     "id": "prod_301",
-    "name": "PELOTA  ESPIRAL CON CHIFLE   129 ANCHO 6CM / ANCHO 6CM",
+    "name": "Pelota Espiral Con Chifle 129/",
     "category": "juguetes",
     "subcategory": "Juguetes",
     "price": 3094,
@@ -8832,8 +8947,8 @@
       "diversión",
       "interactivo"
     ],
-    "description": "PELOTA  ESPIRAL CON CHIFLE   129 ANCHO 6CM / ANCHO 6CM",
-    "longDescription": "PELOTA  ESPIRAL CON CHIFLE   129 ANCHO 6CM / ANCHO 6CM",
+    "description": "🐕 Juguete con sonido chifle en forma de pelota. Perfecto para juegos de morder y estimular a tu mascota.",
+    "longDescription": "Divertido juguete con sonido chifle en forma de pelota para perros. El sonido estimula el instinto de juego y mantiene a tu mascota entretenida por horas. Fabricado con material resistente a mordidas y seguro. Ideal para perros de todos los tamaños.",
     "images": {
       "cover": "assets/images/products/prod_301/cover.jpg",
       "thumb": "assets/images/products/prod_301/thumb.jpg",
@@ -8843,7 +8958,10 @@
     },
     "specs": {
       "SKU": "PEL036",
-      "Medida": "6CM"
+      "Medida": "6CM",
+      "dimensions": "ANCHO 6cm x ANCHO 6cm x 6cm x 6cm",
+      "material": "Vinilo con chifle",
+      "idealFor": "Perros de todos los tamaños"
     },
     "shipping": {
       "free": false,
@@ -8861,7 +8979,7 @@
   },
   {
     "id": "prod_302",
-    "name": "PELOTA DE AROS CON CHIFLE    126  ANCHO 6CM / ALTO  6CM",
+    "name": "Pelota De Aros Con Chifle 126/",
     "category": "juguetes",
     "subcategory": "Juguetes",
     "price": 3094,
@@ -8884,8 +9002,8 @@
       "diversión",
       "interactivo"
     ],
-    "description": "PELOTA DE AROS CON CHIFLE    126  ANCHO 6CM / ALTO  6CM",
-    "longDescription": "PELOTA DE AROS CON CHIFLE    126  ANCHO 6CM / ALTO  6CM",
+    "description": "🐕 Juguete con sonido chifle en forma de pelota. Perfecto para juegos de morder y estimular a tu mascota.",
+    "longDescription": "Divertido juguete con sonido chifle en forma de pelota para perros. El sonido estimula el instinto de juego y mantiene a tu mascota entretenida por horas. Fabricado con material resistente a mordidas y seguro. Ideal para perros de todos los tamaños.",
     "images": {
       "cover": "assets/images/products/prod_302/cover.jpg",
       "thumb": "assets/images/products/prod_302/thumb.jpg",
@@ -8895,7 +9013,10 @@
     },
     "specs": {
       "SKU": "PEL037",
-      "Medida": "6CM"
+      "Medida": "6CM",
+      "dimensions": "ANCHO 6cm x ALTO  6cm x 6cm x 6cm",
+      "material": "Vinilo con chifle",
+      "idealFor": "Perros de todos los tamaños"
     },
     "shipping": {
       "free": false,
@@ -8913,7 +9034,7 @@
   },
   {
     "id": "prod_303",
-    "name": "PELOTA DE GOLF CHIFLE    130   ANCHO 6CM / ANTO 6CM",
+    "name": "Pelota De Golf Chifle 130/ Anto",
     "category": "juguetes",
     "subcategory": "Juguetes",
     "price": 3094,
@@ -8936,8 +9057,8 @@
       "diversión",
       "interactivo"
     ],
-    "description": "PELOTA DE GOLF CHIFLE    130   ANCHO 6CM / ANTO 6CM",
-    "longDescription": "PELOTA DE GOLF CHIFLE    130   ANCHO 6CM / ANTO 6CM",
+    "description": "🐕 Juguete con sonido chifle en forma de pelota. Perfecto para juegos de morder y estimular a tu mascota.",
+    "longDescription": "Divertido juguete con sonido chifle en forma de pelota para perros. El sonido estimula el instinto de juego y mantiene a tu mascota entretenida por horas. Fabricado con material resistente a mordidas y seguro. Ideal para perros de todos los tamaños.",
     "images": {
       "cover": "assets/images/products/prod_303/cover.jpg",
       "thumb": "assets/images/products/prod_303/thumb.jpg",
@@ -8947,7 +9068,10 @@
     },
     "specs": {
       "SKU": "PEL038",
-      "Medida": "6CM"
+      "Medida": "6CM",
+      "dimensions": "ANCHO 6cm x 6cm x 6cm",
+      "material": "Vinilo con chifle",
+      "idealFor": "Perros de todos los tamaños"
     },
     "shipping": {
       "free": false,
@@ -8965,7 +9089,7 @@
   },
   {
     "id": "prod_304",
-    "name": "PELOTA RUGBY CHICO  0132",
+    "name": "Pelota Rugby Chico",
     "category": "juguetes",
     "subcategory": "Juguetes",
     "price": 3536,
@@ -8981,14 +9105,13 @@
       "pelota",
       "rugby",
       "chico",
-      "0132",
       "juguete",
       "entretenimiento",
       "diversión",
       "interactivo"
     ],
-    "description": "PELOTA RUGBY CHICO  0132",
-    "longDescription": "PELOTA RUGBY CHICO  0132",
+    "description": "🎾 Pelota para perros. Ideal para juegos de buscar y morder.",
+    "longDescription": "Pelota diseñada para horas de diversión con tu mascota. Perfecta para juegos de buscar, lanzar y morder. Material resistente y duradero que soporta el juego intenso. Estimula el ejercicio y la actividad física de tu perro.",
     "images": {
       "cover": "assets/images/products/prod_304/cover.jpg",
       "thumb": "assets/images/products/prod_304/thumb.jpg",
@@ -8997,7 +9120,9 @@
       ]
     },
     "specs": {
-      "SKU": "PEL039"
+      "SKU": "PEL039",
+      "material": "Material resistente",
+      "idealFor": "Perros de todos los tamaños"
     },
     "shipping": {
       "free": false,
@@ -9015,7 +9140,7 @@
   },
   {
     "id": "prod_305",
-    "name": "PELOTA DE LUNA  CHICA   0166",
+    "name": "Pelota De Luna Chica",
     "category": "juguetes",
     "subcategory": "Juguetes",
     "price": 3536,
@@ -9031,14 +9156,13 @@
       "pelota",
       "luna",
       "chica",
-      "0166",
       "juguete",
       "entretenimiento",
       "diversión",
       "interactivo"
     ],
-    "description": "PELOTA DE LUNA  CHICA   0166",
-    "longDescription": "PELOTA DE LUNA  CHICA   0166",
+    "description": "🎾 Pelota para perros. Ideal para juegos de buscar y morder.",
+    "longDescription": "Pelota diseñada para horas de diversión con tu mascota. Perfecta para juegos de buscar, lanzar y morder. Material resistente y duradero que soporta el juego intenso. Estimula el ejercicio y la actividad física de tu perro.",
     "images": {
       "cover": "assets/images/products/prod_305/cover.jpg",
       "thumb": "assets/images/products/prod_305/thumb.jpg",
@@ -9047,7 +9171,9 @@
       ]
     },
     "specs": {
-      "SKU": "PEL040"
+      "SKU": "PEL040",
+      "material": "Material resistente",
+      "idealFor": "Perros de todos los tamaños"
     },
     "shipping": {
       "free": false,
@@ -9065,7 +9191,7 @@
   },
   {
     "id": "prod_306",
-    "name": "PELOTA CON BOLITAS  0164",
+    "name": "Pelota Con Bolitas",
     "category": "juguetes",
     "subcategory": "Juguetes",
     "price": 3536,
@@ -9080,14 +9206,13 @@
     "tags": [
       "pelota",
       "bolitas",
-      "0164",
       "juguete",
       "entretenimiento",
       "diversión",
       "interactivo"
     ],
-    "description": "PELOTA CON BOLITAS  0164",
-    "longDescription": "PELOTA CON BOLITAS  0164",
+    "description": "🎾 Pelota para perros. Ideal para juegos de buscar y morder.",
+    "longDescription": "Pelota diseñada para horas de diversión con tu mascota. Perfecta para juegos de buscar, lanzar y morder. Material resistente y duradero que soporta el juego intenso. Estimula el ejercicio y la actividad física de tu perro.",
     "images": {
       "cover": "assets/images/products/prod_306/cover.jpg",
       "thumb": "assets/images/products/prod_306/thumb.jpg",
@@ -9096,7 +9221,9 @@
       ]
     },
     "specs": {
-      "SKU": "PEL041"
+      "SKU": "PEL041",
+      "material": "Material resistente",
+      "idealFor": "Perros de todos los tamaños"
     },
     "shipping": {
       "free": false,
@@ -9114,7 +9241,7 @@
   },
   {
     "id": "prod_307",
-    "name": "PELOTA CON LINEAS VERTICAL  0165",
+    "name": "Pelota Con Lineas Vertical",
     "category": "juguetes",
     "subcategory": "Juguetes",
     "price": 3536,
@@ -9130,14 +9257,13 @@
       "pelota",
       "lineas",
       "vertical",
-      "0165",
       "juguete",
       "entretenimiento",
       "diversión",
       "interactivo"
     ],
-    "description": "PELOTA CON LINEAS VERTICAL  0165",
-    "longDescription": "PELOTA CON LINEAS VERTICAL  0165",
+    "description": "🎾 Pelota para perros. Ideal para juegos de buscar y morder.",
+    "longDescription": "Pelota diseñada para horas de diversión con tu mascota. Perfecta para juegos de buscar, lanzar y morder. Material resistente y duradero que soporta el juego intenso. Estimula el ejercicio y la actividad física de tu perro.",
     "images": {
       "cover": "assets/images/products/prod_307/cover.jpg",
       "thumb": "assets/images/products/prod_307/thumb.jpg",
@@ -9146,7 +9272,9 @@
       ]
     },
     "specs": {
-      "SKU": "PEL042"
+      "SKU": "PEL042",
+      "material": "Material resistente",
+      "idealFor": "Perros de todos los tamaños"
     },
     "shipping": {
       "free": false,
@@ -9164,7 +9292,7 @@
   },
   {
     "id": "prod_308",
-    "name": "PELOTA LINEAS NEGRA Y INFINITO",
+    "name": "Pelota Lineas Negra Y Infinito",
     "category": "juguetes",
     "subcategory": "Juguetes",
     "price": 3978,
@@ -9186,8 +9314,8 @@
       "diversión",
       "interactivo"
     ],
-    "description": "PELOTA LINEAS NEGRA Y INFINITO",
-    "longDescription": "PELOTA LINEAS NEGRA Y INFINITO",
+    "description": "🎾 Pelota para perros. Ideal para juegos de buscar y morder.",
+    "longDescription": "Pelota diseñada para horas de diversión con tu mascota. Perfecta para juegos de buscar, lanzar y morder. Material resistente y duradero que soporta el juego intenso. Estimula el ejercicio y la actividad física de tu perro.",
     "images": {
       "cover": "assets/images/products/prod_308/cover.jpg",
       "thumb": "assets/images/products/prod_308/thumb.jpg",
@@ -9196,7 +9324,9 @@
       ]
     },
     "specs": {
-      "SKU": "PEL043"
+      "SKU": "PEL043",
+      "material": "Material resistente",
+      "idealFor": "Perros de todos los tamaños"
     },
     "shipping": {
       "free": false,
@@ -9214,7 +9344,7 @@
   },
   {
     "id": "prod_309",
-    "name": "MINI COCODRILO 160 ANCHO 6CM/ ALTO 6CM",
+    "name": "Mini Cocodrilo 160/",
     "category": "juguetes",
     "subcategory": "Juguetes",
     "price": 3315,
@@ -9237,8 +9367,8 @@
       "diversión",
       "interactivo"
     ],
-    "description": "MINI COCODRILO 160 ANCHO 6CM/ ALTO 6CM",
-    "longDescription": "MINI COCODRILO 160 ANCHO 6CM/ ALTO 6CM",
+    "description": "🐕 Juguete cocodrilo para mascotas. Diversión garantizada para tu compañero peludo.",
+    "longDescription": "Juguete cocodrilo diseñado para brindar horas de entretenimiento a tu mascota. Material resistente y seguro. Estimula el juego activo y ayuda a mantener a tu perro feliz y saludable.",
     "images": {
       "cover": "assets/images/products/prod_309/cover.jpg",
       "thumb": "assets/images/products/prod_309/thumb.jpg",
@@ -9248,7 +9378,10 @@
     },
     "specs": {
       "SKU": "MIN004",
-      "Medida": "6CM"
+      "Medida": "6CM",
+      "dimensions": "ANCHO 6cm x ALTO 6cm x 6cm x 6cm",
+      "material": "Material resistente",
+      "idealFor": "Perros de todos los tamaños"
     },
     "shipping": {
       "free": false,
@@ -9266,7 +9399,7 @@
   },
   {
     "id": "prod_310",
-    "name": "TACO CHIFLE  137  ANCHO12CM /ALTO5CM",
+    "name": "Taco Chifle 137/",
     "category": "juguetes",
     "subcategory": "Juguetes",
     "price": 4199,
@@ -9288,8 +9421,8 @@
       "diversión",
       "interactivo"
     ],
-    "description": "TACO CHIFLE  137  ANCHO12CM /ALTO5CM",
-    "longDescription": "TACO CHIFLE  137  ANCHO12CM /ALTO5CM",
+    "description": "🐕 Juguete con sonido chifle en forma de taco. Perfecto para juegos de morder y estimular a tu mascota.",
+    "longDescription": "Divertido juguete con sonido chifle en forma de taco para perros. El sonido estimula el instinto de juego y mantiene a tu mascota entretenida por horas. Fabricado con material resistente a mordidas y seguro. Ideal para perros de todos los tamaños.",
     "images": {
       "cover": "assets/images/products/prod_310/cover.jpg",
       "thumb": "assets/images/products/prod_310/thumb.jpg",
@@ -9299,7 +9432,10 @@
     },
     "specs": {
       "SKU": "TAC001",
-      "Medida": "12CM"
+      "Medida": "12CM",
+      "dimensions": "ANCHO12cm x ALTO5cm x 12cm x 5cm",
+      "material": "Vinilo con chifle",
+      "idealFor": "Perros de todos los tamaños"
     },
     "shipping": {
       "free": false,
@@ -9317,7 +9453,7 @@
   },
   {
     "id": "prod_311",
-    "name": "VAQUITA DE SAN ANTONIO CON  CHIFLE  138  ANCHO9CM/ ALTO 5CM",
+    "name": "Vaquita De San Antonio Con Chifle 138/",
     "category": "juguetes",
     "subcategory": "Juguetes",
     "price": 4199,
@@ -9340,8 +9476,8 @@
       "diversión",
       "interactivo"
     ],
-    "description": "VAQUITA DE SAN ANTONIO CON  CHIFLE  138  ANCHO9CM/ ALTO 5CM",
-    "longDescription": "VAQUITA DE SAN ANTONIO CON  CHIFLE  138  ANCHO9CM/ ALTO 5CM",
+    "description": "🐕 Juguete con sonido chifle en forma de vaquita. Perfecto para juegos de morder y estimular a tu mascota.",
+    "longDescription": "Divertido juguete con sonido chifle en forma de vaquita para perros. El sonido estimula el instinto de juego y mantiene a tu mascota entretenida por horas. Fabricado con material resistente a mordidas y seguro. Ideal para perros de todos los tamaños.",
     "images": {
       "cover": "assets/images/products/prod_311/cover.jpg",
       "thumb": "assets/images/products/prod_311/thumb.jpg",
@@ -9351,7 +9487,10 @@
     },
     "specs": {
       "SKU": "VAQ001",
-      "Medida": "9CM"
+      "Medida": "9CM",
+      "dimensions": "ANCHO9cm x ALTO 5cm x 9cm x 5cm",
+      "material": "Vinilo con chifle",
+      "idealFor": "Perros de todos los tamaños"
     },
     "shipping": {
       "free": false,
@@ -9369,7 +9508,7 @@
   },
   {
     "id": "prod_313",
-    "name": "COSTILLITA DE CARNE  CHICA CON CHIFLE  100   ANCHO 12CM / ALTO 2 CM",
+    "name": "Costillita De Carne Chica Con Chifle 100/",
     "category": "juguetes",
     "subcategory": "Juguetes",
     "price": 3315,
@@ -9387,14 +9526,13 @@
       "chica",
       "chifle",
       "ancho",
-      "12cm",
       "alto",
       "juguete",
       "entretenimiento",
       "diversión"
     ],
-    "description": "COSTILLITA DE CARNE  CHICA CON CHIFLE  100   ANCHO 12CM / ALTO 2 CM",
-    "longDescription": "COSTILLITA DE CARNE  CHICA CON CHIFLE  100   ANCHO 12CM / ALTO 2 CM",
+    "description": "🐕 Juguete con sonido chifle en forma de costillita de carne  chica con chifle  100   ancho 12cm / alto 2 cm. Perfecto para juegos de morder y estimular a tu mascota.",
+    "longDescription": "Divertido juguete con sonido chifle en forma de costillita de carne  chica con chifle  100   ancho 12cm / alto 2 cm para perros. El sonido estimula el instinto de juego y mantiene a tu mascota entretenida por horas. Fabricado con material resistente a mordidas y seguro. Ideal para perros de todos los tamaños.",
     "images": {
       "cover": "assets/images/products/prod_313/cover.jpg",
       "thumb": "assets/images/products/prod_313/thumb.jpg",
@@ -9404,7 +9542,10 @@
     },
     "specs": {
       "SKU": "COS001",
-      "Medida": "12CM"
+      "Medida": "12CM",
+      "dimensions": "ANCHO 12cm x ALTO 2 cm x 12cm x 2 cm",
+      "material": "Vinilo con chifle",
+      "idealFor": "Perros de todos los tamaños"
     },
     "shipping": {
       "free": false,
@@ -9422,7 +9563,7 @@
   },
   {
     "id": "prod_314",
-    "name": "HUESO PUNTOS CON CHIFLE  109  ANCHO 5CM / ALTO 16CM",
+    "name": "Hueso Puntos Con Chifle 109/",
     "category": "juguetes",
     "subcategory": "Juguetes",
     "price": 4199,
@@ -9440,14 +9581,13 @@
       "chifle",
       "ancho",
       "alto",
-      "16cm",
       "juguete",
       "entretenimiento",
       "diversión",
       "interactivo"
     ],
-    "description": "HUESO PUNTOS CON CHIFLE  109  ANCHO 5CM / ALTO 16CM",
-    "longDescription": "HUESO PUNTOS CON CHIFLE  109  ANCHO 5CM / ALTO 16CM",
+    "description": "🐕 Juguete con sonido chifle en forma de hueso. Perfecto para juegos de morder y estimular a tu mascota.",
+    "longDescription": "Divertido juguete con sonido chifle en forma de hueso para perros. El sonido estimula el instinto de juego y mantiene a tu mascota entretenida por horas. Fabricado con material resistente a mordidas y seguro. Ideal para perros de todos los tamaños.",
     "images": {
       "cover": "assets/images/products/prod_314/cover.jpg",
       "thumb": "assets/images/products/prod_314/thumb.jpg",
@@ -9457,7 +9597,10 @@
     },
     "specs": {
       "SKU": "HUE004",
-      "Medida": "5CM"
+      "Medida": "5CM",
+      "dimensions": "ANCHO 5cm x ALTO 16cm x 5cm x 16cm",
+      "material": "Vinilo con chifle",
+      "idealFor": "Perros de todos los tamaños"
     },
     "shipping": {
       "free": false,
@@ -9475,7 +9618,7 @@
   },
   {
     "id": "prod_315",
-    "name": "BOTELLA DE CERVEZA  0161",
+    "name": "Botella De Cerveza",
     "category": "juguetes",
     "subcategory": "Juguetes",
     "price": 7735,
@@ -9490,14 +9633,13 @@
     "tags": [
       "botella",
       "cerveza",
-      "0161",
       "juguete",
       "entretenimiento",
       "diversión",
       "interactivo"
     ],
-    "description": "BOTELLA DE CERVEZA  0161",
-    "longDescription": "BOTELLA DE CERVEZA  0161",
+    "description": "🐕 Juguete botella para mascotas. Diversión garantizada para tu compañero peludo.",
+    "longDescription": "Juguete botella diseñado para brindar horas de entretenimiento a tu mascota. Material resistente y seguro. Estimula el juego activo y ayuda a mantener a tu perro feliz y saludable.",
     "images": {
       "cover": "assets/images/products/prod_315/cover.jpg",
       "thumb": "assets/images/products/prod_315/thumb.jpg",
@@ -9506,7 +9648,9 @@
       ]
     },
     "specs": {
-      "SKU": "BOT001"
+      "SKU": "BOT001",
+      "material": "Material resistente",
+      "idealFor": "Perros de todos los tamaños"
     },
     "shipping": {
       "free": false,
@@ -9524,7 +9668,7 @@
   },
   {
     "id": "prod_316",
-    "name": "SANDIA  CHIFLE 135  ANCHO 5 CM/ ALTO4CM",
+    "name": "Sandia Chifle 135/",
     "category": "juguetes",
     "subcategory": "Juguetes",
     "price": 5525,
@@ -9546,8 +9690,8 @@
       "diversión",
       "interactivo"
     ],
-    "description": "SANDIA  CHIFLE 135  ANCHO 5 CM/ ALTO4CM",
-    "longDescription": "SANDIA  CHIFLE 135  ANCHO 5 CM/ ALTO4CM",
+    "description": "🐕 Juguete con sonido chifle en forma de sandía. Perfecto para juegos de morder y estimular a tu mascota.",
+    "longDescription": "Divertido juguete con sonido chifle en forma de sandía para perros. El sonido estimula el instinto de juego y mantiene a tu mascota entretenida por horas. Fabricado con material resistente a mordidas y seguro. Ideal para perros de todos los tamaños.",
     "images": {
       "cover": "assets/images/products/prod_316/cover.jpg",
       "thumb": "assets/images/products/prod_316/thumb.jpg",
@@ -9557,7 +9701,10 @@
     },
     "specs": {
       "SKU": "SAN001",
-      "Medida": "5 CM"
+      "Medida": "5 CM",
+      "dimensions": "ANCHO 5 cm x ALTO4cm x 5 cm x 4cm",
+      "material": "Vinilo con chifle",
+      "idealFor": "Perros de todos los tamaños"
     },
     "shipping": {
       "free": false,
@@ -9575,7 +9722,7 @@
   },
   {
     "id": "prod_317",
-    "name": "CUPCAKE CON CHIFLE",
+    "name": "Cupcake Con Chifle",
     "category": "juguetes",
     "subcategory": "Juguetes",
     "price": 4199,
@@ -9595,8 +9742,8 @@
       "diversión",
       "interactivo"
     ],
-    "description": "CUPCAKE CON CHIFLE",
-    "longDescription": "CUPCAKE CON CHIFLE",
+    "description": "🐕 Juguete con sonido chifle en forma de muffin. Perfecto para juegos de morder y estimular a tu mascota.",
+    "longDescription": "Divertido juguete con sonido chifle en forma de muffin para perros. El sonido estimula el instinto de juego y mantiene a tu mascota entretenida por horas. Fabricado con material resistente a mordidas y seguro. Ideal para perros de todos los tamaños.",
     "images": {
       "cover": "assets/images/products/prod_317/cover.jpg",
       "thumb": "assets/images/products/prod_317/thumb.jpg",
@@ -9605,7 +9752,9 @@
       ]
     },
     "specs": {
-      "SKU": "CUP001"
+      "SKU": "CUP001",
+      "material": "Vinilo con chifle",
+      "idealFor": "Perros de todos los tamaños"
     },
     "shipping": {
       "free": false,
@@ -9623,7 +9772,7 @@
   },
   {
     "id": "prod_318",
-    "name": "ZANAORIA CON CHIFLE",
+    "name": "Zanaoria Con Chifle",
     "category": "juguetes",
     "subcategory": "Juguetes",
     "price": 3867,
@@ -9643,8 +9792,8 @@
       "diversión",
       "interactivo"
     ],
-    "description": "ZANAORIA CON CHIFLE",
-    "longDescription": "ZANAORIA CON CHIFLE",
+    "description": "🐕 Juguete con sonido chifle en forma de zanahoria. Perfecto para juegos de morder y estimular a tu mascota.",
+    "longDescription": "Divertido juguete con sonido chifle en forma de zanahoria para perros. El sonido estimula el instinto de juego y mantiene a tu mascota entretenida por horas. Fabricado con material resistente a mordidas y seguro. Ideal para perros de todos los tamaños.",
     "images": {
       "cover": "assets/images/products/prod_318/cover.jpg",
       "thumb": "assets/images/products/prod_318/thumb.jpg",
@@ -9653,7 +9802,9 @@
       ]
     },
     "specs": {
-      "SKU": "ZAN001"
+      "SKU": "ZAN001",
+      "material": "Vinilo con chifle",
+      "idealFor": "Perros de todos los tamaños"
     },
     "shipping": {
       "free": false,
@@ -9671,7 +9822,7 @@
   },
   {
     "id": "prod_319",
-    "name": "JUGUETE CHIFLE VERDURAS 001",
+    "name": "Juguete Chifle Verduras 001",
     "category": "juguetes",
     "subcategory": "Juguetes",
     "price": 2210,
@@ -9691,8 +9842,8 @@
       "diversión",
       "interactivo"
     ],
-    "description": "JUGUETE CHIFLE VERDURAS 001",
-    "longDescription": "JUGUETE CHIFLE VERDURAS 001",
+    "description": "🐕 Juguete con sonido chifle en forma de juguete chifle verduras 001. Perfecto para juegos de morder y estimular a tu mascota.",
+    "longDescription": "Divertido juguete con sonido chifle en forma de juguete chifle verduras 001 para perros. El sonido estimula el instinto de juego y mantiene a tu mascota entretenida por horas. Fabricado con material resistente a mordidas y seguro. Ideal para perros de todos los tamaños.",
     "images": {
       "cover": "assets/images/products/prod_319/cover.jpg",
       "thumb": "assets/images/products/prod_319/thumb.jpg",
@@ -9701,7 +9852,9 @@
       ]
     },
     "specs": {
-      "SKU": "JUG011"
+      "SKU": "JUG011",
+      "material": "Vinilo con chifle",
+      "idealFor": "Perros de todos los tamaños"
     },
     "shipping": {
       "free": false,
@@ -9719,7 +9872,7 @@
   },
   {
     "id": "prod_320",
-    "name": "JUGUETE CHIFLE VERDURAS 002",
+    "name": "Juguete Chifle Verduras 002",
     "category": "juguetes",
     "subcategory": "Juguetes",
     "price": 1547,
@@ -9739,8 +9892,8 @@
       "diversión",
       "interactivo"
     ],
-    "description": "JUGUETE CHIFLE VERDURAS 002",
-    "longDescription": "JUGUETE CHIFLE VERDURAS 002",
+    "description": "🐕 Juguete con sonido chifle en forma de juguete chifle verduras 002. Perfecto para juegos de morder y estimular a tu mascota.",
+    "longDescription": "Divertido juguete con sonido chifle en forma de juguete chifle verduras 002 para perros. El sonido estimula el instinto de juego y mantiene a tu mascota entretenida por horas. Fabricado con material resistente a mordidas y seguro. Ideal para perros de todos los tamaños.",
     "images": {
       "cover": "assets/images/products/prod_320/cover.jpg",
       "thumb": "assets/images/products/prod_320/thumb.jpg",
@@ -9749,7 +9902,9 @@
       ]
     },
     "specs": {
-      "SKU": "JUG012"
+      "SKU": "JUG012",
+      "material": "Vinilo con chifle",
+      "idealFor": "Perros de todos los tamaños"
     },
     "shipping": {
       "free": false,
@@ -9767,7 +9922,7 @@
   },
   {
     "id": "prod_321",
-    "name": "CHIFLE POLLO COLORES MEDIANO 25CM",
+    "name": "Chifle Pollo Colores Mediano",
     "category": "juguetes",
     "subcategory": "Juguetes",
     "price": 3757,
@@ -9784,14 +9939,13 @@
       "pollo",
       "colores",
       "mediano",
-      "25cm",
       "juguete",
       "entretenimiento",
       "diversión",
       "interactivo"
     ],
-    "description": "CHIFLE POLLO COLORES MEDIANO 25CM",
-    "longDescription": "CHIFLE POLLO COLORES MEDIANO 25CM",
+    "description": "🐕 Juguete con sonido chifle en forma de pollo. Perfecto para juegos de morder y estimular a tu mascota.",
+    "longDescription": "Divertido juguete con sonido chifle en forma de pollo para perros. El sonido estimula el instinto de juego y mantiene a tu mascota entretenida por horas. Fabricado con material resistente a mordidas y seguro. Ideal para perros de todos los tamaños.",
     "images": {
       "cover": "assets/images/products/prod_321/cover.jpg",
       "thumb": "assets/images/products/prod_321/thumb.jpg",
@@ -9801,7 +9955,10 @@
     },
     "specs": {
       "SKU": "CHI010",
-      "Medida": "25CM"
+      "Medida": "25CM",
+      "dimensions": "25cm",
+      "material": "Vinilo con chifle",
+      "idealFor": "Perros de todos los tamaños"
     },
     "shipping": {
       "free": false,
@@ -9819,7 +9976,7 @@
   },
   {
     "id": "prod_322",
-    "name": "PERRO CABESON CHIFLE  GRANDE 133  ANCHO16CM / ALTO 7CM",
+    "name": "Perro Cabeson Chifle Grande 133/",
     "category": "juguetes",
     "subcategory": "Juguetes",
     "price": 6077,
@@ -9843,8 +10000,8 @@
       "diversión",
       "interactivo"
     ],
-    "description": "PERRO CABESON CHIFLE  GRANDE 133  ANCHO16CM / ALTO 7CM",
-    "longDescription": "PERRO CABESON CHIFLE  GRANDE 133  ANCHO16CM / ALTO 7CM",
+    "description": "🐕 Juguete con sonido chifle en forma de perrito. Perfecto para juegos de morder y estimular a tu mascota.",
+    "longDescription": "Divertido juguete con sonido chifle en forma de perrito para perros. El sonido estimula el instinto de juego y mantiene a tu mascota entretenida por horas. Fabricado con material resistente a mordidas y seguro. Ideal para perros de todos los tamaños.",
     "images": {
       "cover": "assets/images/products/prod_322/cover.jpg",
       "thumb": "assets/images/products/prod_322/thumb.jpg",
@@ -9854,7 +10011,10 @@
     },
     "specs": {
       "SKU": "PER002",
-      "Medida": "16CM"
+      "Medida": "16CM",
+      "dimensions": "ANCHO16cm x ALTO 7cm x 16cm x 7cm",
+      "material": "Vinilo con chifle",
+      "idealFor": "Perros de todos los tamaños"
     },
     "shipping": {
       "free": false,
@@ -9872,7 +10032,7 @@
   },
   {
     "id": "prod_323",
-    "name": "HUESO CHIFLE RETORSIDO GRANDE   112  ANCHO 6CM / ALTO 15CM",
+    "name": "Hueso Chifle Retorsido Grande 112/",
     "category": "juguetes",
     "subcategory": "Juguetes",
     "price": 4972,
@@ -9891,13 +10051,12 @@
       "grande",
       "ancho",
       "alto",
-      "15cm",
       "juguete",
       "entretenimiento",
       "diversión"
     ],
-    "description": "HUESO CHIFLE RETORSIDO GRANDE   112  ANCHO 6CM / ALTO 15CM",
-    "longDescription": "HUESO CHIFLE RETORSIDO GRANDE   112  ANCHO 6CM / ALTO 15CM",
+    "description": "🐕 Juguete con sonido chifle en forma de hueso. Perfecto para juegos de morder y estimular a tu mascota.",
+    "longDescription": "Divertido juguete con sonido chifle en forma de hueso para perros. El sonido estimula el instinto de juego y mantiene a tu mascota entretenida por horas. Fabricado con material resistente a mordidas y seguro. Ideal para perros de todos los tamaños.",
     "images": {
       "cover": "assets/images/products/prod_323/cover.jpg",
       "thumb": "assets/images/products/prod_323/thumb.jpg",
@@ -9907,7 +10066,10 @@
     },
     "specs": {
       "SKU": "HUE005",
-      "Medida": "6CM"
+      "Medida": "6CM",
+      "dimensions": "ANCHO 6cm x ALTO 15cm x 6cm x 15cm",
+      "material": "Vinilo con chifle",
+      "idealFor": "Perros de todos los tamaños"
     },
     "shipping": {
       "free": false,
@@ -9925,7 +10087,7 @@
   },
   {
     "id": "prod_324",
-    "name": "FOCA GRANDE CON CHIFLE  139  AMCHO 18CM ALTO11CM",
+    "name": "Foca Grande Con Chifle 139 Amcho",
     "category": "juguetes",
     "subcategory": "Juguetes",
     "price": 6630,
@@ -9942,15 +10104,14 @@
       "grande",
       "chifle",
       "amcho",
-      "18cm",
       "alto11cm",
       "juguete",
       "entretenimiento",
       "diversión",
       "interactivo"
     ],
-    "description": "FOCA GRANDE CON CHIFLE  139  AMCHO 18CM ALTO11CM",
-    "longDescription": "FOCA GRANDE CON CHIFLE  139  AMCHO 18CM ALTO11CM",
+    "description": "🐕 Juguete con sonido chifle en forma de foca. Perfecto para juegos de morder y estimular a tu mascota.",
+    "longDescription": "Divertido juguete con sonido chifle en forma de foca para perros. El sonido estimula el instinto de juego y mantiene a tu mascota entretenida por horas. Fabricado con material resistente a mordidas y seguro. Ideal para perros de todos los tamaños.",
     "images": {
       "cover": "assets/images/products/prod_324/cover.jpg",
       "thumb": "assets/images/products/prod_324/thumb.jpg",
@@ -9960,7 +10121,10 @@
     },
     "specs": {
       "SKU": "FOC001",
-      "Medida": "18CM"
+      "Medida": "18CM",
+      "dimensions": "ALTO11cm x 18cm x 11cm",
+      "material": "Vinilo con chifle",
+      "idealFor": "Perros de todos los tamaños"
     },
     "shipping": {
       "free": false,
@@ -9978,7 +10142,7 @@
   },
   {
     "id": "prod_325",
-    "name": "DONA CHIFLE",
+    "name": "Dona Chifle",
     "category": "juguetes",
     "subcategory": "Juguetes",
     "price": 4420,
@@ -9998,8 +10162,8 @@
       "diversión",
       "interactivo"
     ],
-    "description": "DONA CHIFLE",
-    "longDescription": "DONA CHIFLE",
+    "description": "🐕 Juguete con sonido chifle en forma de dona. Perfecto para juegos de morder y estimular a tu mascota.",
+    "longDescription": "Divertido juguete con sonido chifle en forma de dona para perros. El sonido estimula el instinto de juego y mantiene a tu mascota entretenida por horas. Fabricado con material resistente a mordidas y seguro. Ideal para perros de todos los tamaños.",
     "images": {
       "cover": "assets/images/products/prod_325/cover.jpg",
       "thumb": "assets/images/products/prod_325/thumb.jpg",
@@ -10008,7 +10172,9 @@
       ]
     },
     "specs": {
-      "SKU": "DON001"
+      "SKU": "DON001",
+      "material": "Vinilo con chifle",
+      "idealFor": "Perros de todos los tamaños"
     },
     "shipping": {
       "free": false,
@@ -10026,7 +10192,7 @@
   },
   {
     "id": "prod_326",
-    "name": "MUFFINS GIGANTE 149   ANCHO 11CM / ALTO 10CM",
+    "name": "Muffins Gigante 149/",
     "category": "juguetes",
     "subcategory": "Juguetes",
     "price": 6409,
@@ -10042,16 +10208,14 @@
       "muffins",
       "gigante",
       "ancho",
-      "11cm",
       "alto",
-      "10cm",
       "juguete",
       "entretenimiento",
       "diversión",
       "interactivo"
     ],
-    "description": "MUFFINS GIGANTE 149   ANCHO 11CM / ALTO 10CM",
-    "longDescription": "MUFFINS GIGANTE 149   ANCHO 11CM / ALTO 10CM",
+    "description": "🐕 Juguete muffin para mascotas. Diversión garantizada para tu compañero peludo.",
+    "longDescription": "Juguete muffin diseñado para brindar horas de entretenimiento a tu mascota. Material resistente y seguro. Estimula el juego activo y ayuda a mantener a tu perro feliz y saludable.",
     "images": {
       "cover": "assets/images/products/prod_326/cover.jpg",
       "thumb": "assets/images/products/prod_326/thumb.jpg",
@@ -10061,7 +10225,10 @@
     },
     "specs": {
       "SKU": "MUF001",
-      "Medida": "11CM"
+      "Medida": "11CM",
+      "dimensions": "ANCHO 11cm x ALTO 10cm x 11cm x 10cm",
+      "material": "Material resistente",
+      "idealFor": "Perros de todos los tamaños"
     },
     "shipping": {
       "free": false,
@@ -10079,7 +10246,7 @@
   },
   {
     "id": "prod_327",
-    "name": "MUFFINS CHICO  CON CHIFLE 158 ANCHO 7CM/ 9CM",
+    "name": "Muffins Chico Con Chifle 158/",
     "category": "juguetes",
     "subcategory": "Juguetes",
     "price": 4420,
@@ -10102,8 +10269,8 @@
       "diversión",
       "interactivo"
     ],
-    "description": "MUFFINS CHICO  CON CHIFLE 158 ANCHO 7CM/ 9CM",
-    "longDescription": "MUFFINS CHICO  CON CHIFLE 158 ANCHO 7CM/ 9CM",
+    "description": "🐕 Juguete con sonido chifle en forma de muffin. Perfecto para juegos de morder y estimular a tu mascota.",
+    "longDescription": "Divertido juguete con sonido chifle en forma de muffin para perros. El sonido estimula el instinto de juego y mantiene a tu mascota entretenida por horas. Fabricado con material resistente a mordidas y seguro. Ideal para perros de todos los tamaños.",
     "images": {
       "cover": "assets/images/products/prod_327/cover.jpg",
       "thumb": "assets/images/products/prod_327/thumb.jpg",
@@ -10113,7 +10280,10 @@
     },
     "specs": {
       "SKU": "MUF002",
-      "Medida": "7CM"
+      "Medida": "7CM",
+      "dimensions": "ANCHO 7cm x 7cm x 9cm",
+      "material": "Vinilo con chifle",
+      "idealFor": "Perros de todos los tamaños"
     },
     "shipping": {
       "free": false,
@@ -10131,7 +10301,7 @@
   },
   {
     "id": "prod_328",
-    "name": "HUESO CON BANANAS   CHIFLE 159   ANCHO 5CM ALTO 15CM",
+    "name": "Hueso Con Bananas Chifle 159",
     "category": "juguetes",
     "subcategory": "Juguetes",
     "price": 6630,
@@ -10149,14 +10319,13 @@
       "chifle",
       "ancho",
       "alto",
-      "15cm",
       "juguete",
       "entretenimiento",
       "diversión",
       "interactivo"
     ],
-    "description": "HUESO CON BANANAS   CHIFLE 159   ANCHO 5CM ALTO 15CM",
-    "longDescription": "HUESO CON BANANAS   CHIFLE 159   ANCHO 5CM ALTO 15CM",
+    "description": "🐕 Juguete con sonido chifle en forma de hueso. Perfecto para juegos de morder y estimular a tu mascota.",
+    "longDescription": "Divertido juguete con sonido chifle en forma de hueso para perros. El sonido estimula el instinto de juego y mantiene a tu mascota entretenida por horas. Fabricado con material resistente a mordidas y seguro. Ideal para perros de todos los tamaños.",
     "images": {
       "cover": "assets/images/products/prod_328/cover.jpg",
       "thumb": "assets/images/products/prod_328/thumb.jpg",
@@ -10166,7 +10335,10 @@
     },
     "specs": {
       "SKU": "HUE006",
-      "Medida": "5CM"
+      "Medida": "5CM",
+      "dimensions": "ANCHO 5cm x ALTO 15cm x 5cm x 15cm",
+      "material": "Vinilo con chifle",
+      "idealFor": "Perros de todos los tamaños"
     },
     "shipping": {
       "free": false,
@@ -10184,7 +10356,7 @@
   },
   {
     "id": "prod_329",
-    "name": "GALLETITAS CUADRADA CON CHIFLE 151   ANCHO 11CM/ALTO 3CM",
+    "name": "Galletitas Cuadrada Con Chifle 151/",
     "category": "juguetes",
     "subcategory": "Juguetes",
     "price": 4972,
@@ -10207,8 +10379,8 @@
       "diversión",
       "interactivo"
     ],
-    "description": "GALLETITAS CUADRADA CON CHIFLE 151   ANCHO 11CM/ALTO 3CM",
-    "longDescription": "GALLETITAS CUADRADA CON CHIFLE 151   ANCHO 11CM/ALTO 3CM",
+    "description": "🐕 Juguete con sonido chifle en forma de galletita. Perfecto para juegos de morder y estimular a tu mascota.",
+    "longDescription": "Divertido juguete con sonido chifle en forma de galletita para perros. El sonido estimula el instinto de juego y mantiene a tu mascota entretenida por horas. Fabricado con material resistente a mordidas y seguro. Ideal para perros de todos los tamaños.",
     "images": {
       "cover": "assets/images/products/prod_329/cover.jpg",
       "thumb": "assets/images/products/prod_329/thumb.jpg",
@@ -10218,7 +10390,10 @@
     },
     "specs": {
       "SKU": "GAL004",
-      "Medida": "11CM"
+      "Medida": "11CM",
+      "dimensions": "ANCHO 11cm x ALTO 3cm x 11cm x 3cm",
+      "material": "Vinilo con chifle",
+      "idealFor": "Perros de todos los tamaños"
     },
     "shipping": {
       "free": false,
@@ -10236,7 +10411,7 @@
   },
   {
     "id": "prod_330",
-    "name": "GALLETITAS REDONDA  CON CHIFLE 156 ANCHO 10CM ALTO3CM",
+    "name": "Galletitas Redonda Con Chifle 156",
     "category": "juguetes",
     "subcategory": "Juguetes",
     "price": 4420,
@@ -10253,15 +10428,14 @@
       "redonda",
       "chifle",
       "ancho",
-      "10cm",
       "alto3cm",
       "juguete",
       "entretenimiento",
       "diversión",
       "interactivo"
     ],
-    "description": "GALLETITAS REDONDA  CON CHIFLE 156 ANCHO 10CM ALTO3CM",
-    "longDescription": "GALLETITAS REDONDA  CON CHIFLE 156 ANCHO 10CM ALTO3CM",
+    "description": "🐕 Juguete con sonido chifle en forma de galletita. Perfecto para juegos de morder y estimular a tu mascota.",
+    "longDescription": "Divertido juguete con sonido chifle en forma de galletita para perros. El sonido estimula el instinto de juego y mantiene a tu mascota entretenida por horas. Fabricado con material resistente a mordidas y seguro. Ideal para perros de todos los tamaños.",
     "images": {
       "cover": "assets/images/products/prod_330/cover.jpg",
       "thumb": "assets/images/products/prod_330/thumb.jpg",
@@ -10271,7 +10445,10 @@
     },
     "specs": {
       "SKU": "GAL005",
-      "Medida": "10CM"
+      "Medida": "10CM",
+      "dimensions": "ANCHO 10cm x ALTO3cm x 10cm x 3cm",
+      "material": "Vinilo con chifle",
+      "idealFor": "Perros de todos los tamaños"
     },
     "shipping": {
       "free": false,
@@ -10289,7 +10466,7 @@
   },
   {
     "id": "prod_331",
-    "name": "PALETA DE HELADO 157   ANCHO 5CM /ALTO 14CM",
+    "name": "Paleta De Helado 157/",
     "category": "juguetes",
     "subcategory": "Juguetes",
     "price": 5525,
@@ -10306,14 +10483,13 @@
       "helado",
       "ancho",
       "/alto",
-      "14cm",
       "juguete",
       "entretenimiento",
       "diversión",
       "interactivo"
     ],
-    "description": "PALETA DE HELADO 157   ANCHO 5CM /ALTO 14CM",
-    "longDescription": "PALETA DE HELADO 157   ANCHO 5CM /ALTO 14CM",
+    "description": "🐕 Juguete helado para mascotas. Diversión garantizada para tu compañero peludo.",
+    "longDescription": "Juguete helado diseñado para brindar horas de entretenimiento a tu mascota. Material resistente y seguro. Estimula el juego activo y ayuda a mantener a tu perro feliz y saludable.",
     "images": {
       "cover": "assets/images/products/prod_331/cover.jpg",
       "thumb": "assets/images/products/prod_331/thumb.jpg",
@@ -10323,7 +10499,10 @@
     },
     "specs": {
       "SKU": "PAL001",
-      "Medida": "5CM"
+      "Medida": "5CM",
+      "dimensions": "ANCHO 5cm x ALTO 14cm x 5cm x 14cm",
+      "material": "Material resistente",
+      "idealFor": "Perros de todos los tamaños"
     },
     "shipping": {
       "free": false,
@@ -10341,7 +10520,7 @@
   },
   {
     "id": "prod_332",
-    "name": "HUESO  GRANDE CON CHIFLE   110  ANCHO 6CM / ALTO 20CM",
+    "name": "Hueso Grande Con Chifle 110/",
     "category": "juguetes",
     "subcategory": "Juguetes",
     "price": 5525,
@@ -10359,14 +10538,13 @@
       "chifle",
       "ancho",
       "alto",
-      "20cm",
       "juguete",
       "entretenimiento",
       "diversión",
       "interactivo"
     ],
-    "description": "HUESO  GRANDE CON CHIFLE   110  ANCHO 6CM / ALTO 20CM",
-    "longDescription": "HUESO  GRANDE CON CHIFLE   110  ANCHO 6CM / ALTO 20CM",
+    "description": "🐕 Juguete con sonido chifle en forma de hueso. Perfecto para juegos de morder y estimular a tu mascota.",
+    "longDescription": "Divertido juguete con sonido chifle en forma de hueso para perros. El sonido estimula el instinto de juego y mantiene a tu mascota entretenida por horas. Fabricado con material resistente a mordidas y seguro. Ideal para perros de todos los tamaños.",
     "images": {
       "cover": "assets/images/products/prod_332/cover.jpg",
       "thumb": "assets/images/products/prod_332/thumb.jpg",
@@ -10376,7 +10554,10 @@
     },
     "specs": {
       "SKU": "HUE007",
-      "Medida": "6CM"
+      "Medida": "6CM",
+      "dimensions": "ANCHO 6cm x ALTO 20cm x 6cm x 20cm",
+      "material": "Vinilo con chifle",
+      "idealFor": "Perros de todos los tamaños"
     },
     "shipping": {
       "free": false,
@@ -10394,7 +10575,7 @@
   },
   {
     "id": "prod_333",
-    "name": "PATY HAMBURGUESA CON CHIFLE   121 ANCHO 3CM / ALTO 9CM",
+    "name": "Paty Hamburguesa Con Chifle 121/",
     "category": "juguetes",
     "subcategory": "Juguetes",
     "price": 4420,
@@ -10417,8 +10598,8 @@
       "diversión",
       "interactivo"
     ],
-    "description": "PATY HAMBURGUESA CON CHIFLE   121 ANCHO 3CM / ALTO 9CM",
-    "longDescription": "PATY HAMBURGUESA CON CHIFLE   121 ANCHO 3CM / ALTO 9CM",
+    "description": "🐕 Juguete con sonido chifle en forma de hamburguesa. Perfecto para juegos de morder y estimular a tu mascota.",
+    "longDescription": "Divertido juguete con sonido chifle en forma de hamburguesa para perros. El sonido estimula el instinto de juego y mantiene a tu mascota entretenida por horas. Fabricado con material resistente a mordidas y seguro. Ideal para perros de todos los tamaños.",
     "images": {
       "cover": "assets/images/products/prod_333/cover.jpg",
       "thumb": "assets/images/products/prod_333/thumb.jpg",
@@ -10428,7 +10609,10 @@
     },
     "specs": {
       "SKU": "PAT001",
-      "Medida": "3CM"
+      "Medida": "3CM",
+      "dimensions": "ANCHO 3cm x ALTO 9cm x 3cm x 9cm",
+      "material": "Vinilo con chifle",
+      "idealFor": "Perros de todos los tamaños"
     },
     "shipping": {
       "free": false,
@@ -10446,7 +10630,7 @@
   },
   {
     "id": "prod_334",
-    "name": "PANCHOS CHICO CHIFLE",
+    "name": "Panchos Chico Chifle",
     "category": "juguetes",
     "subcategory": "Juguetes",
     "price": 3094,
@@ -10467,8 +10651,8 @@
       "diversión",
       "interactivo"
     ],
-    "description": "PANCHOS CHICO CHIFLE",
-    "longDescription": "PANCHOS CHICO CHIFLE",
+    "description": "🐕 Juguete con sonido chifle en forma de pancho. Perfecto para juegos de morder y estimular a tu mascota.",
+    "longDescription": "Divertido juguete con sonido chifle en forma de pancho para perros. El sonido estimula el instinto de juego y mantiene a tu mascota entretenida por horas. Fabricado con material resistente a mordidas y seguro. Ideal para perros de todos los tamaños.",
     "images": {
       "cover": "assets/images/products/prod_334/cover.jpg",
       "thumb": "assets/images/products/prod_334/thumb.jpg",
@@ -10477,7 +10661,9 @@
       ]
     },
     "specs": {
-      "SKU": "PAN001"
+      "SKU": "PAN001",
+      "material": "Vinilo con chifle",
+      "idealFor": "Perros de todos los tamaños"
     },
     "shipping": {
       "free": false,
@@ -10495,7 +10681,7 @@
   },
   {
     "id": "prod_335",
-    "name": "PANCHOS MEDIANO  CHIFLE   118 ANCHO 13CM / ALTO 4CM",
+    "name": "Panchos Mediano Chifle 118/",
     "category": "juguetes",
     "subcategory": "Juguetes",
     "price": 3315,
@@ -10512,15 +10698,14 @@
       "mediano",
       "chifle",
       "ancho",
-      "13cm",
       "alto",
       "juguete",
       "entretenimiento",
       "diversión",
       "interactivo"
     ],
-    "description": "PANCHOS MEDIANO  CHIFLE   118 ANCHO 13CM / ALTO 4CM",
-    "longDescription": "PANCHOS MEDIANO  CHIFLE   118 ANCHO 13CM / ALTO 4CM",
+    "description": "🐕 Juguete con sonido chifle en forma de pancho. Perfecto para juegos de morder y estimular a tu mascota.",
+    "longDescription": "Divertido juguete con sonido chifle en forma de pancho para perros. El sonido estimula el instinto de juego y mantiene a tu mascota entretenida por horas. Fabricado con material resistente a mordidas y seguro. Ideal para perros de todos los tamaños.",
     "images": {
       "cover": "assets/images/products/prod_335/cover.jpg",
       "thumb": "assets/images/products/prod_335/thumb.jpg",
@@ -10530,7 +10715,10 @@
     },
     "specs": {
       "SKU": "PAN002",
-      "Medida": "13CM"
+      "Medida": "13CM",
+      "dimensions": "ANCHO 13cm x ALTO 4cm x 13cm x 4cm",
+      "material": "Vinilo con chifle",
+      "idealFor": "Perros de todos los tamaños"
     },
     "shipping": {
       "free": false,
@@ -10548,7 +10736,7 @@
   },
   {
     "id": "prod_336",
-    "name": "PATA DE POLLO CON HUESO  DE CHIFLE   119 ANCHO18CM / ALTO 3CM",
+    "name": "Pata De Pollo Con Hueso De Chifle 119/",
     "category": "juguetes",
     "subcategory": "Juguetes",
     "price": 4199,
@@ -10572,8 +10760,8 @@
       "diversión",
       "interactivo"
     ],
-    "description": "PATA DE POLLO CON HUESO  DE CHIFLE   119 ANCHO18CM / ALTO 3CM",
-    "longDescription": "PATA DE POLLO CON HUESO  DE CHIFLE   119 ANCHO18CM / ALTO 3CM",
+    "description": "🐕 Juguete con sonido chifle en forma de pollo. Perfecto para juegos de morder y estimular a tu mascota.",
+    "longDescription": "Divertido juguete con sonido chifle en forma de pollo para perros. El sonido estimula el instinto de juego y mantiene a tu mascota entretenida por horas. Fabricado con material resistente a mordidas y seguro. Ideal para perros de todos los tamaños.",
     "images": {
       "cover": "assets/images/products/prod_336/cover.jpg",
       "thumb": "assets/images/products/prod_336/thumb.jpg",
@@ -10583,7 +10771,10 @@
     },
     "specs": {
       "SKU": "PAT002",
-      "Medida": "18CM"
+      "Medida": "18CM",
+      "dimensions": "ANCHO18cm x ALTO 3cm x 18cm x 3cm",
+      "material": "Vinilo con chifle",
+      "idealFor": "Perros de todos los tamaños"
     },
     "shipping": {
       "free": false,
@@ -10601,7 +10792,7 @@
   },
   {
     "id": "prod_337",
-    "name": "BIFE MEDIANO 163 ANCHO 3CM/ ALTO 13CM",
+    "name": "Bife Mediano 163/",
     "category": "juguetes",
     "subcategory": "Juguetes",
     "price": 4199,
@@ -10619,14 +10810,13 @@
       "ancho",
       "3cm/",
       "alto",
-      "13cm",
       "juguete",
       "entretenimiento",
       "diversión",
       "interactivo"
     ],
-    "description": "BIFE MEDIANO 163 ANCHO 3CM/ ALTO 13CM",
-    "longDescription": "BIFE MEDIANO 163 ANCHO 3CM/ ALTO 13CM",
+    "description": "🐕 Juguete bife para mascotas. Diversión garantizada para tu compañero peludo.",
+    "longDescription": "Juguete bife diseñado para brindar horas de entretenimiento a tu mascota. Material resistente y seguro. Estimula el juego activo y ayuda a mantener a tu perro feliz y saludable.",
     "images": {
       "cover": "assets/images/products/prod_337/cover.jpg",
       "thumb": "assets/images/products/prod_337/thumb.jpg",
@@ -10636,7 +10826,10 @@
     },
     "specs": {
       "SKU": "BIF001",
-      "Medida": "3CM"
+      "Medida": "3CM",
+      "dimensions": "ANCHO 3cm x ALTO 13cm x 3cm x 13cm",
+      "material": "Material resistente",
+      "idealFor": "Perros de todos los tamaños"
     },
     "shipping": {
       "free": false,
@@ -10654,7 +10847,7 @@
   },
   {
     "id": "prod_338",
-    "name": "COSTILLA GRANDE CON CHIFLE",
+    "name": "Costilla Grande Con Chifle",
     "category": "juguetes",
     "subcategory": "Juguetes",
     "price": 3094,
@@ -10675,8 +10868,8 @@
       "diversión",
       "interactivo"
     ],
-    "description": "COSTILLA GRANDE CON CHIFLE",
-    "longDescription": "COSTILLA GRANDE CON CHIFLE",
+    "description": "🐕 Juguete con sonido chifle en forma de costilla. Perfecto para juegos de morder y estimular a tu mascota.",
+    "longDescription": "Divertido juguete con sonido chifle en forma de costilla para perros. El sonido estimula el instinto de juego y mantiene a tu mascota entretenida por horas. Fabricado con material resistente a mordidas y seguro. Ideal para perros de todos los tamaños.",
     "images": {
       "cover": "assets/images/products/prod_338/cover.jpg",
       "thumb": "assets/images/products/prod_338/thumb.jpg",
@@ -10685,7 +10878,9 @@
       ]
     },
     "specs": {
-      "SKU": "COS002"
+      "SKU": "COS002",
+      "material": "Vinilo con chifle",
+      "idealFor": "Perros de todos los tamaños"
     },
     "shipping": {
       "free": false,
@@ -10703,7 +10898,7 @@
   },
   {
     "id": "prod_339",
-    "name": "BIFE CON CHIFLE 14,5*8CM - 24095",
+    "name": "Bife con Chifle",
     "category": "juguetes",
     "subcategory": "Juguetes",
     "price": 3867,
@@ -10718,15 +10913,15 @@
     "tags": [
       "bife",
       "chifle",
-      "14,5*8cm",
-      "24095",
       "juguete",
       "entretenimiento",
       "diversión",
-      "interactivo"
+      "interactivo",
+      "sonido",
+      "perros"
     ],
-    "description": "BIFE CON CHIFLE 14,5*8CM - 24095",
-    "longDescription": "BIFE CON CHIFLE 14,5*8CM - 24095",
+    "description": "🐕 Juguete con sonido chifle en forma de bife. Perfecto para juegos de morder y buscar.",
+    "longDescription": "Divertido juguete con sonido chifle en forma de bife para perros. El sonido estimula el instinto de juego y mantiene a tu mascota entretenida por horas. Fabricado con material resistente a mordidas y seguro para tu compañero peludo. Ideal para perros de todos los tamaños.",
     "images": {
       "cover": "assets/images/products/prod_339/cover.jpg",
       "thumb": "assets/images/products/prod_339/thumb.jpg",
@@ -10736,7 +10931,9 @@
     },
     "specs": {
       "SKU": "BIF002",
-      "Medida": "8CM"
+      "dimensions": "14,5 x 8 cm",
+      "material": "Vinilo con chifle",
+      "idealFor": "Perros de todos los tamaños"
     },
     "shipping": {
       "free": false,
@@ -10754,7 +10951,7 @@
   },
   {
     "id": "prod_340",
-    "name": "PANTUFLAS 148  ANCHO 15CM/ ALTO 6CM",
+    "name": "Pantuflas 148/",
     "category": "juguetes",
     "subcategory": "Juguetes",
     "price": 4972,
@@ -10776,8 +10973,8 @@
       "diversión",
       "interactivo"
     ],
-    "description": "PANTUFLAS 148  ANCHO 15CM/ ALTO 6CM",
-    "longDescription": "PANTUFLAS 148  ANCHO 15CM/ ALTO 6CM",
+    "description": "🐕 Juguete calzado para mascotas. Diversión garantizada para tu compañero peludo.",
+    "longDescription": "Juguete calzado diseñado para brindar horas de entretenimiento a tu mascota. Material resistente y seguro. Estimula el juego activo y ayuda a mantener a tu perro feliz y saludable.",
     "images": {
       "cover": "assets/images/products/prod_340/cover.jpg",
       "thumb": "assets/images/products/prod_340/thumb.jpg",
@@ -10787,7 +10984,10 @@
     },
     "specs": {
       "SKU": "PAN003",
-      "Medida": "15CM"
+      "Medida": "15CM",
+      "dimensions": "ANCHO 15cm x ALTO 6cm x 15cm x 6cm",
+      "material": "Material resistente",
+      "idealFor": "Perros de todos los tamaños"
     },
     "shipping": {
       "free": false,
@@ -10805,7 +11005,7 @@
   },
   {
     "id": "prod_341",
-    "name": "OJOTA CON CHIFLE    115  ANCHO 15CM / ALTO 2CM",
+    "name": "Ojota Con Chifle 115/",
     "category": "juguetes",
     "subcategory": "Juguetes",
     "price": 4972,
@@ -10821,15 +11021,14 @@
       "ojota",
       "chifle",
       "ancho",
-      "15cm",
       "alto",
       "juguete",
       "entretenimiento",
       "diversión",
       "interactivo"
     ],
-    "description": "OJOTA CON CHIFLE    115  ANCHO 15CM / ALTO 2CM",
-    "longDescription": "OJOTA CON CHIFLE    115  ANCHO 15CM / ALTO 2CM",
+    "description": "🐕 Juguete con sonido chifle en forma de calzado. Perfecto para juegos de morder y estimular a tu mascota.",
+    "longDescription": "Divertido juguete con sonido chifle en forma de calzado para perros. El sonido estimula el instinto de juego y mantiene a tu mascota entretenida por horas. Fabricado con material resistente a mordidas y seguro. Ideal para perros de todos los tamaños.",
     "images": {
       "cover": "assets/images/products/prod_341/cover.jpg",
       "thumb": "assets/images/products/prod_341/thumb.jpg",
@@ -10839,7 +11038,10 @@
     },
     "specs": {
       "SKU": "OJO001",
-      "Medida": "15CM"
+      "Medida": "15CM",
+      "dimensions": "ANCHO 15cm x ALTO 2cm x 15cm x 2cm",
+      "material": "Vinilo con chifle",
+      "idealFor": "Perros de todos los tamaños"
     },
     "shipping": {
       "free": false,
@@ -10857,7 +11059,7 @@
   },
   {
     "id": "prod_342",
-    "name": "PALO DE BOWLING CON CHIFLE   117   ANCHO 5CM/ ALTO 13CM",
+    "name": "Palo De Bowling Con Chifle 117/",
     "category": "juguetes",
     "subcategory": "Juguetes",
     "price": 4420,
@@ -10876,13 +11078,12 @@
       "ancho",
       "5cm/",
       "alto",
-      "13cm",
       "juguete",
       "entretenimiento",
       "diversión"
     ],
-    "description": "PALO DE BOWLING CON CHIFLE   117   ANCHO 5CM/ ALTO 13CM",
-    "longDescription": "PALO DE BOWLING CON CHIFLE   117   ANCHO 5CM/ ALTO 13CM",
+    "description": "🐕 Juguete con sonido chifle en forma de palo de bowling. Perfecto para juegos de morder y estimular a tu mascota.",
+    "longDescription": "Divertido juguete con sonido chifle en forma de palo de bowling para perros. El sonido estimula el instinto de juego y mantiene a tu mascota entretenida por horas. Fabricado con material resistente a mordidas y seguro. Ideal para perros de todos los tamaños.",
     "images": {
       "cover": "assets/images/products/prod_342/cover.jpg",
       "thumb": "assets/images/products/prod_342/thumb.jpg",
@@ -10892,7 +11093,10 @@
     },
     "specs": {
       "SKU": "PAL002",
-      "Medida": "5CM"
+      "Medida": "5CM",
+      "dimensions": "ANCHO 5cm x ALTO 13cm x 5cm x 13cm",
+      "material": "Vinilo con chifle",
+      "idealFor": "Perros de todos los tamaños"
     },
     "shipping": {
       "free": false,
@@ -10910,7 +11114,7 @@
   },
   {
     "id": "prod_343",
-    "name": "CANGREJO CHICO CON CHIFLE",
+    "name": "Cangrejo Chico Con Chifle",
     "category": "juguetes",
     "subcategory": "Juguetes",
     "price": 3094,
@@ -10931,8 +11135,8 @@
       "diversión",
       "interactivo"
     ],
-    "description": "CANGREJO CHICO CON CHIFLE",
-    "longDescription": "CANGREJO CHICO CON CHIFLE",
+    "description": "🐕 Juguete con sonido chifle en forma de cangrejo. Perfecto para juegos de morder y estimular a tu mascota.",
+    "longDescription": "Divertido juguete con sonido chifle en forma de cangrejo para perros. El sonido estimula el instinto de juego y mantiene a tu mascota entretenida por horas. Fabricado con material resistente a mordidas y seguro. Ideal para perros de todos los tamaños.",
     "images": {
       "cover": "assets/images/products/prod_343/cover.jpg",
       "thumb": "assets/images/products/prod_343/thumb.jpg",
@@ -10941,7 +11145,9 @@
       ]
     },
     "specs": {
-      "SKU": "CAN002"
+      "SKU": "CAN002",
+      "material": "Vinilo con chifle",
+      "idealFor": "Perros de todos los tamaños"
     },
     "shipping": {
       "free": false,
@@ -10959,7 +11165,7 @@
   },
   {
     "id": "prod_344",
-    "name": "ESTRELLA CHICA CON CHIFLE   142  ANCHO9CM/ ALTO2CM",
+    "name": "Estrella Chica Con Chifle 142/",
     "category": "juguetes",
     "subcategory": "Juguetes",
     "price": 3094,
@@ -10982,8 +11188,8 @@
       "diversión",
       "interactivo"
     ],
-    "description": "ESTRELLA CHICA CON CHIFLE   142  ANCHO9CM/ ALTO2CM",
-    "longDescription": "ESTRELLA CHICA CON CHIFLE   142  ANCHO9CM/ ALTO2CM",
+    "description": "🐕 Juguete con sonido chifle en forma de estrella. Perfecto para juegos de morder y estimular a tu mascota.",
+    "longDescription": "Divertido juguete con sonido chifle en forma de estrella para perros. El sonido estimula el instinto de juego y mantiene a tu mascota entretenida por horas. Fabricado con material resistente a mordidas y seguro. Ideal para perros de todos los tamaños.",
     "images": {
       "cover": "assets/images/products/prod_344/cover.jpg",
       "thumb": "assets/images/products/prod_344/thumb.jpg",
@@ -10993,7 +11199,10 @@
     },
     "specs": {
       "SKU": "EST001",
-      "Medida": "9CM"
+      "Medida": "9CM",
+      "dimensions": "ANCHO9cm x ALTO2cm x 9cm x 2cm",
+      "material": "Vinilo con chifle",
+      "idealFor": "Perros de todos los tamaños"
     },
     "shipping": {
       "free": false,
@@ -11011,7 +11220,7 @@
   },
   {
     "id": "prod_345",
-    "name": "PERRITO CHIFLE",
+    "name": "Perrito Chifle",
     "category": "juguetes",
     "subcategory": "Juguetes",
     "price": 2541,
@@ -11031,8 +11240,8 @@
       "diversión",
       "interactivo"
     ],
-    "description": "PERRITO CHIFLE",
-    "longDescription": "PERRITO CHIFLE",
+    "description": "🐕 Juguete con sonido chifle en forma de perrito. Perfecto para juegos de morder y estimular a tu mascota.",
+    "longDescription": "Divertido juguete con sonido chifle en forma de perrito para perros. El sonido estimula el instinto de juego y mantiene a tu mascota entretenida por horas. Fabricado con material resistente a mordidas y seguro. Ideal para perros de todos los tamaños.",
     "images": {
       "cover": "assets/images/products/prod_345/cover.jpg",
       "thumb": "assets/images/products/prod_345/thumb.jpg",
@@ -11041,7 +11250,9 @@
       ]
     },
     "specs": {
-      "SKU": "PER003"
+      "SKU": "PER003",
+      "material": "Vinilo con chifle",
+      "idealFor": "Perros de todos los tamaños"
     },
     "shipping": {
       "free": false,
@@ -11059,7 +11270,7 @@
   },
   {
     "id": "prod_347",
-    "name": "PERRITO DALMATA",
+    "name": "Perrito Dalmata",
     "category": "juguetes",
     "subcategory": "Juguetes",
     "price": 6077,
@@ -11079,8 +11290,8 @@
       "diversión",
       "interactivo"
     ],
-    "description": "PERRITO DALMATA",
-    "longDescription": "PERRITO DALMATA",
+    "description": "🐕 Juguete perrito para mascotas. Diversión garantizada para tu compañero peludo.",
+    "longDescription": "Juguete perrito diseñado para brindar horas de entretenimiento a tu mascota. Material resistente y seguro. Estimula el juego activo y ayuda a mantener a tu perro feliz y saludable.",
     "images": {
       "cover": "assets/images/products/prod_347/cover.jpg",
       "thumb": "assets/images/products/prod_347/thumb.jpg",
@@ -11089,7 +11300,9 @@
       ]
     },
     "specs": {
-      "SKU": "PER004"
+      "SKU": "PER004",
+      "material": "Material resistente",
+      "idealFor": "Perros de todos los tamaños"
     },
     "shipping": {
       "free": false,
@@ -11107,7 +11320,7 @@
   },
   {
     "id": "prod_348",
-    "name": "HUESO CHIFLE MARRON",
+    "name": "Hueso Chifle Marron",
     "category": "juguetes",
     "subcategory": "Juguetes",
     "price": 3094,
@@ -11128,8 +11341,8 @@
       "diversión",
       "interactivo"
     ],
-    "description": "HUESO CHIFLE MARRON",
-    "longDescription": "HUESO CHIFLE MARRON",
+    "description": "🐕 Juguete con sonido chifle en forma de hueso. Perfecto para juegos de morder y estimular a tu mascota.",
+    "longDescription": "Divertido juguete con sonido chifle en forma de hueso para perros. El sonido estimula el instinto de juego y mantiene a tu mascota entretenida por horas. Fabricado con material resistente a mordidas y seguro. Ideal para perros de todos los tamaños.",
     "images": {
       "cover": "assets/images/products/prod_348/cover.jpg",
       "thumb": "assets/images/products/prod_348/thumb.jpg",
@@ -11138,7 +11351,9 @@
       ]
     },
     "specs": {
-      "SKU": "HUE008"
+      "SKU": "HUE008",
+      "material": "Vinilo con chifle",
+      "idealFor": "Perros de todos los tamaños"
     },
     "shipping": {
       "free": false,
@@ -11156,7 +11371,7 @@
   },
   {
     "id": "prod_349",
-    "name": "HUESITO COLOR FLUOR",
+    "name": "Huesito Color Fluor",
     "category": "juguetes",
     "subcategory": "Juguetes",
     "price": 2762,
@@ -11177,8 +11392,8 @@
       "diversión",
       "interactivo"
     ],
-    "description": "HUESITO COLOR FLUOR",
-    "longDescription": "HUESITO COLOR FLUOR",
+    "description": "🐕 Juguete huesito color fluor para mascotas. Diversión garantizada para tu compañero peludo.",
+    "longDescription": "Juguete huesito color fluor diseñado para brindar horas de entretenimiento a tu mascota. Material resistente y seguro. Estimula el juego activo y ayuda a mantener a tu perro feliz y saludable.",
     "images": {
       "cover": "assets/images/products/prod_349/cover.jpg",
       "thumb": "assets/images/products/prod_349/thumb.jpg",
@@ -11187,7 +11402,9 @@
       ]
     },
     "specs": {
-      "SKU": "HUE009"
+      "SKU": "HUE009",
+      "material": "Material resistente",
+      "idealFor": "Perros de todos los tamaños"
     },
     "shipping": {
       "free": false,
@@ -11205,7 +11422,7 @@
   },
   {
     "id": "prod_351",
-    "name": "COCODRILO CHIFLE  DE 20 CM",
+    "name": "Cocodrilo Chifle De",
     "category": "juguetes",
     "subcategory": "Juguetes",
     "price": 6630,
@@ -11225,8 +11442,8 @@
       "diversión",
       "interactivo"
     ],
-    "description": "COCODRILO CHIFLE  DE 20 CM",
-    "longDescription": "COCODRILO CHIFLE  DE 20 CM",
+    "description": "🐕 Juguete con sonido chifle en forma de cocodrilo. Perfecto para juegos de morder y estimular a tu mascota.",
+    "longDescription": "Divertido juguete con sonido chifle en forma de cocodrilo para perros. El sonido estimula el instinto de juego y mantiene a tu mascota entretenida por horas. Fabricado con material resistente a mordidas y seguro. Ideal para perros de todos los tamaños.",
     "images": {
       "cover": "assets/images/products/prod_351/cover.jpg",
       "thumb": "assets/images/products/prod_351/thumb.jpg",
@@ -11236,7 +11453,10 @@
     },
     "specs": {
       "SKU": "COC005",
-      "Medida": "20 CM"
+      "Medida": "20 CM",
+      "dimensions": "20 cm",
+      "material": "Vinilo con chifle",
+      "idealFor": "Perros de todos los tamaños"
     },
     "shipping": {
       "free": false,
@@ -11254,7 +11474,7 @@
   },
   {
     "id": "prod_352",
-    "name": "TARTA HUELLA",
+    "name": "Tarta Huella",
     "category": "juguetes",
     "subcategory": "Juguetes",
     "price": 3757,
@@ -11274,8 +11494,8 @@
       "diversión",
       "interactivo"
     ],
-    "description": "TARTA HUELLA",
-    "longDescription": "TARTA HUELLA",
+    "description": "🐕 Juguete tarta huella para mascotas. Diversión garantizada para tu compañero peludo.",
+    "longDescription": "Juguete tarta huella diseñado para brindar horas de entretenimiento a tu mascota. Material resistente y seguro. Estimula el juego activo y ayuda a mantener a tu perro feliz y saludable.",
     "images": {
       "cover": "assets/images/products/prod_352/cover.jpg",
       "thumb": "assets/images/products/prod_352/thumb.jpg",
@@ -11284,7 +11504,9 @@
       ]
     },
     "specs": {
-      "SKU": "TAR001"
+      "SKU": "TAR001",
+      "material": "Material resistente",
+      "idealFor": "Perros de todos los tamaños"
     },
     "shipping": {
       "free": false,
@@ -11302,7 +11524,7 @@
   },
   {
     "id": "prod_353",
-    "name": "HAMBURGUESA VEGANA  LIFE",
+    "name": "Hamburguesa Vegana Life",
     "category": "juguetes",
     "subcategory": "Juguetes",
     "price": 3757,
@@ -11323,8 +11545,8 @@
       "diversión",
       "interactivo"
     ],
-    "description": "HAMBURGUESA VEGANA  LIFE",
-    "longDescription": "HAMBURGUESA VEGANA  LIFE",
+    "description": "🐕 Juguete hamburguesa para mascotas. Diversión garantizada para tu compañero peludo.",
+    "longDescription": "Juguete hamburguesa diseñado para brindar horas de entretenimiento a tu mascota. Material resistente y seguro. Estimula el juego activo y ayuda a mantener a tu perro feliz y saludable.",
     "images": {
       "cover": "assets/images/products/prod_353/cover.jpg",
       "thumb": "assets/images/products/prod_353/thumb.jpg",
@@ -11333,7 +11555,9 @@
       ]
     },
     "specs": {
-      "SKU": "HAM001"
+      "SKU": "HAM001",
+      "material": "Material resistente",
+      "idealFor": "Perros de todos los tamaños"
     },
     "shipping": {
       "free": false,
@@ -11351,7 +11575,7 @@
   },
   {
     "id": "prod_354",
-    "name": "HAMBURGUESA CUARTO DE LIBRA",
+    "name": "Hamburguesa Cuarto De Libra",
     "category": "juguetes",
     "subcategory": "Juguetes",
     "price": 3757,
@@ -11372,8 +11596,8 @@
       "diversión",
       "interactivo"
     ],
-    "description": "HAMBURGUESA CUARTO DE LIBRA",
-    "longDescription": "HAMBURGUESA CUARTO DE LIBRA",
+    "description": "🐕 Juguete hamburguesa para mascotas. Diversión garantizada para tu compañero peludo.",
+    "longDescription": "Juguete hamburguesa diseñado para brindar horas de entretenimiento a tu mascota. Material resistente y seguro. Estimula el juego activo y ayuda a mantener a tu perro feliz y saludable.",
     "images": {
       "cover": "assets/images/products/prod_354/cover.jpg",
       "thumb": "assets/images/products/prod_354/thumb.jpg",
@@ -11382,7 +11606,9 @@
       ]
     },
     "specs": {
-      "SKU": "HAM002"
+      "SKU": "HAM002",
+      "material": "Material resistente",
+      "idealFor": "Perros de todos los tamaños"
     },
     "shipping": {
       "free": false,
@@ -11400,7 +11626,7 @@
   },
   {
     "id": "prod_355",
-    "name": "POLLO HORNEADO",
+    "name": "Pollo Horneado",
     "category": "juguetes",
     "subcategory": "Juguetes",
     "price": 3757,
@@ -11420,8 +11646,8 @@
       "diversión",
       "interactivo"
     ],
-    "description": "POLLO HORNEADO",
-    "longDescription": "POLLO HORNEADO",
+    "description": "🐕 Juguete pollo para mascotas. Diversión garantizada para tu compañero peludo.",
+    "longDescription": "Juguete pollo diseñado para brindar horas de entretenimiento a tu mascota. Material resistente y seguro. Estimula el juego activo y ayuda a mantener a tu perro feliz y saludable.",
     "images": {
       "cover": "assets/images/products/prod_355/cover.jpg",
       "thumb": "assets/images/products/prod_355/thumb.jpg",
@@ -11430,7 +11656,9 @@
       ]
     },
     "specs": {
-      "SKU": "POL001"
+      "SKU": "POL001",
+      "material": "Material resistente",
+      "idealFor": "Perros de todos los tamaños"
     },
     "shipping": {
       "free": false,
@@ -11448,7 +11676,7 @@
   },
   {
     "id": "prod_356",
-    "name": "MUSLO DE POLLO - 24807, 24070",
+    "name": "Muslo De Pollo - 24807,",
     "category": "juguetes",
     "subcategory": "Juguetes",
     "price": 3094,
@@ -11464,14 +11692,13 @@
       "muslo",
       "pollo",
       "24807,",
-      "24070",
       "juguete",
       "entretenimiento",
       "diversión",
       "interactivo"
     ],
-    "description": "MUSLO DE POLLO - 24807, 24070",
-    "longDescription": "MUSLO DE POLLO - 24807, 24070",
+    "description": "🐕 Juguete pollo para mascotas. Diversión garantizada para tu compañero peludo.",
+    "longDescription": "Juguete pollo diseñado para brindar horas de entretenimiento a tu mascota. Material resistente y seguro. Estimula el juego activo y ayuda a mantener a tu perro feliz y saludable.",
     "images": {
       "cover": "assets/images/products/prod_356/cover.jpg",
       "thumb": "assets/images/products/prod_356/thumb.jpg",
@@ -11480,7 +11707,9 @@
       ]
     },
     "specs": {
-      "SKU": "MUS001"
+      "SKU": "MUS001",
+      "material": "Material resistente",
+      "idealFor": "Perros de todos los tamaños"
     },
     "shipping": {
       "free": false,
@@ -11498,7 +11727,7 @@
   },
   {
     "id": "prod_357",
-    "name": "MAZORCA CHOCLO CHIFLE - 24077",
+    "name": "Mazorca Choclo Chifle",
     "category": "juguetes",
     "subcategory": "Juguetes",
     "price": 3094,
@@ -11514,14 +11743,13 @@
       "mazorca",
       "choclo",
       "chifle",
-      "24077",
       "juguete",
       "entretenimiento",
       "diversión",
       "interactivo"
     ],
-    "description": "MAZORCA CHOCLO CHIFLE - 24077",
-    "longDescription": "MAZORCA CHOCLO CHIFLE - 24077",
+    "description": "🐕 Juguete con sonido chifle en forma de choclo. Perfecto para juegos de morder y estimular a tu mascota.",
+    "longDescription": "Divertido juguete con sonido chifle en forma de choclo para perros. El sonido estimula el instinto de juego y mantiene a tu mascota entretenida por horas. Fabricado con material resistente a mordidas y seguro. Ideal para perros de todos los tamaños.",
     "images": {
       "cover": "assets/images/products/prod_357/cover.jpg",
       "thumb": "assets/images/products/prod_357/thumb.jpg",
@@ -11530,7 +11758,9 @@
       ]
     },
     "specs": {
-      "SKU": "MAZ001"
+      "SKU": "MAZ001",
+      "material": "Vinilo con chifle",
+      "idealFor": "Perros de todos los tamaños"
     },
     "shipping": {
       "free": false,
@@ -11548,7 +11778,7 @@
   },
   {
     "id": "prod_358",
-    "name": "DONAS CHIFLES - 24094",
+    "name": "Donas Chifles",
     "category": "juguetes",
     "subcategory": "Juguetes",
     "price": 3646,
@@ -11563,14 +11793,13 @@
     "tags": [
       "donas",
       "chifles",
-      "24094",
       "juguete",
       "entretenimiento",
       "diversión",
       "interactivo"
     ],
-    "description": "DONAS CHIFLES - 24094",
-    "longDescription": "DONAS CHIFLES - 24094",
+    "description": "🐕 Juguete con sonido chifle en forma de dona. Perfecto para juegos de morder y estimular a tu mascota.",
+    "longDescription": "Divertido juguete con sonido chifle en forma de dona para perros. El sonido estimula el instinto de juego y mantiene a tu mascota entretenida por horas. Fabricado con material resistente a mordidas y seguro. Ideal para perros de todos los tamaños.",
     "images": {
       "cover": "assets/images/products/prod_358/cover.jpg",
       "thumb": "assets/images/products/prod_358/thumb.jpg",
@@ -11579,7 +11808,9 @@
       ]
     },
     "specs": {
-      "SKU": "DON002"
+      "SKU": "DON002",
+      "material": "Vinilo con chifle",
+      "idealFor": "Perros de todos los tamaños"
     },
     "shipping": {
       "free": false,
@@ -11597,7 +11828,7 @@
   },
   {
     "id": "prod_360",
-    "name": "PELOTA ESPINA  CHIFLE",
+    "name": "Pelota Espina Chifle",
     "category": "juguetes",
     "subcategory": "Juguetes",
     "price": 2983,
@@ -11618,8 +11849,8 @@
       "diversión",
       "interactivo"
     ],
-    "description": "PELOTA ESPINA  CHIFLE",
-    "longDescription": "PELOTA ESPINA  CHIFLE",
+    "description": "🐕 Juguete con sonido chifle en forma de pelota. Perfecto para juegos de morder y estimular a tu mascota.",
+    "longDescription": "Divertido juguete con sonido chifle en forma de pelota para perros. El sonido estimula el instinto de juego y mantiene a tu mascota entretenida por horas. Fabricado con material resistente a mordidas y seguro. Ideal para perros de todos los tamaños.",
     "images": {
       "cover": "assets/images/products/prod_360/cover.jpg",
       "thumb": "assets/images/products/prod_360/thumb.jpg",
@@ -11628,7 +11859,9 @@
       ]
     },
     "specs": {
-      "SKU": "PEL045"
+      "SKU": "PEL045",
+      "material": "Vinilo con chifle",
+      "idealFor": "Perros de todos los tamaños"
     },
     "shipping": {
       "free": false,
@@ -11646,7 +11879,7 @@
   },
   {
     "id": "prod_361",
-    "name": "PELOTA RUGBY CON HUESO",
+    "name": "Pelota Rugby Con Hueso",
     "category": "juguetes",
     "subcategory": "Juguetes",
     "price": 4641,
@@ -11667,8 +11900,8 @@
       "diversión",
       "interactivo"
     ],
-    "description": "PELOTA RUGBY CON HUESO",
-    "longDescription": "PELOTA RUGBY CON HUESO",
+    "description": "🎾 Pelota hueso para perros. Ideal para juegos de buscar y morder.",
+    "longDescription": "Pelota hueso diseñada para horas de diversión con tu mascota. Perfecta para juegos de buscar, lanzar y morder. Material resistente y duradero que soporta el juego intenso. Estimula el ejercicio y la actividad física de tu perro.",
     "images": {
       "cover": "assets/images/products/prod_361/cover.jpg",
       "thumb": "assets/images/products/prod_361/thumb.jpg",
@@ -11677,7 +11910,9 @@
       ]
     },
     "specs": {
-      "SKU": "PEL046"
+      "SKU": "PEL046",
+      "material": "Material resistente",
+      "idealFor": "Perros de todos los tamaños"
     },
     "shipping": {
       "free": false,
@@ -11695,7 +11930,7 @@
   },
   {
     "id": "prod_362",
-    "name": "PESA / PINCHO",
+    "name": "Pesa / Pincho",
     "category": "juguetes",
     "subcategory": "Juguetes",
     "price": 5304,
@@ -11715,8 +11950,8 @@
       "diversión",
       "interactivo"
     ],
-    "description": "PESA / PINCHO",
-    "longDescription": "PESA / PINCHO",
+    "description": "🐕 Juguete pesa para mascotas. Diversión garantizada para tu compañero peludo.",
+    "longDescription": "Juguete pesa diseñado para brindar horas de entretenimiento a tu mascota. Material resistente y seguro. Estimula el juego activo y ayuda a mantener a tu perro feliz y saludable.",
     "images": {
       "cover": "assets/images/products/prod_362/cover.jpg",
       "thumb": "assets/images/products/prod_362/thumb.jpg",
@@ -11725,7 +11960,9 @@
       ]
     },
     "specs": {
-      "SKU": "PES001"
+      "SKU": "PES001",
+      "material": "Material resistente",
+      "idealFor": "Perros de todos los tamaños"
     },
     "shipping": {
       "free": false,
@@ -11743,7 +11980,7 @@
   },
   {
     "id": "prod_363",
-    "name": "CHIFLE PESA  CON PATITAS - 24111",
+    "name": "Chifle Pesa Con Patitas",
     "category": "juguetes",
     "subcategory": "Juguetes",
     "price": 3315,
@@ -11759,14 +11996,13 @@
       "chifle",
       "pesa",
       "patitas",
-      "24111",
       "juguete",
       "entretenimiento",
       "diversión",
       "interactivo"
     ],
-    "description": "CHIFLE PESA  CON PATITAS - 24111",
-    "longDescription": "CHIFLE PESA  CON PATITAS - 24111",
+    "description": "🐕 Juguete con sonido chifle en forma de pesa. Perfecto para juegos de morder y estimular a tu mascota.",
+    "longDescription": "Divertido juguete con sonido chifle en forma de pesa para perros. El sonido estimula el instinto de juego y mantiene a tu mascota entretenida por horas. Fabricado con material resistente a mordidas y seguro. Ideal para perros de todos los tamaños.",
     "images": {
       "cover": "assets/images/products/prod_363/cover.jpg",
       "thumb": "assets/images/products/prod_363/thumb.jpg",
@@ -11775,7 +12011,9 @@
       ]
     },
     "specs": {
-      "SKU": "CHI011"
+      "SKU": "CHI011",
+      "material": "Vinilo con chifle",
+      "idealFor": "Perros de todos los tamaños"
     },
     "shipping": {
       "free": false,
@@ -11793,7 +12031,7 @@
   },
   {
     "id": "prod_366",
-    "name": "PELOTA  CHIFLE METEORITO   6CM    824099)",
+    "name": "Pelota Chifle Meteorito 6cm 8",
     "category": "juguetes",
     "subcategory": "Juguetes",
     "price": 3094,
@@ -11815,8 +12053,8 @@
       "diversión",
       "interactivo"
     ],
-    "description": "PELOTA  CHIFLE METEORITO   6CM    824099)",
-    "longDescription": "PELOTA  CHIFLE METEORITO   6CM    824099)",
+    "description": "🐕 Juguete con sonido chifle en forma de pelota. Perfecto para juegos de morder y estimular a tu mascota.",
+    "longDescription": "Divertido juguete con sonido chifle en forma de pelota para perros. El sonido estimula el instinto de juego y mantiene a tu mascota entretenida por horas. Fabricado con material resistente a mordidas y seguro. Ideal para perros de todos los tamaños.",
     "images": {
       "cover": "assets/images/products/prod_366/cover.jpg",
       "thumb": "assets/images/products/prod_366/thumb.jpg",
@@ -11826,7 +12064,10 @@
     },
     "specs": {
       "SKU": "PEL047",
-      "Medida": "6CM"
+      "Medida": "6CM",
+      "dimensions": "6cm",
+      "material": "Vinilo con chifle",
+      "idealFor": "Perros de todos los tamaños"
     },
     "shipping": {
       "free": false,
@@ -11844,7 +12085,7 @@
   },
   {
     "id": "prod_367",
-    "name": "HUESO CHIFLE  C/ CARA DE PERRITO",
+    "name": "Hueso Chifle C/ Cara De Perrito",
     "category": "juguetes",
     "subcategory": "Juguetes",
     "price": 3867,
@@ -11866,8 +12107,8 @@
       "diversión",
       "interactivo"
     ],
-    "description": "HUESO CHIFLE  C/ CARA DE PERRITO",
-    "longDescription": "HUESO CHIFLE  C/ CARA DE PERRITO",
+    "description": "🐕 Juguete con sonido chifle en forma de hueso. Perfecto para juegos de morder y estimular a tu mascota.",
+    "longDescription": "Divertido juguete con sonido chifle en forma de hueso para perros. El sonido estimula el instinto de juego y mantiene a tu mascota entretenida por horas. Fabricado con material resistente a mordidas y seguro. Ideal para perros de todos los tamaños.",
     "images": {
       "cover": "assets/images/products/prod_367/cover.jpg",
       "thumb": "assets/images/products/prod_367/thumb.jpg",
@@ -11876,7 +12117,9 @@
       ]
     },
     "specs": {
-      "SKU": "HUE010"
+      "SKU": "HUE010",
+      "material": "Vinilo con chifle",
+      "idealFor": "Perros de todos los tamaños"
     },
     "shipping": {
       "free": false,
@@ -11894,7 +12137,7 @@
   },
   {
     "id": "prod_368",
-    "name": "HUESO CON HUESITO",
+    "name": "Hueso Con Huesito",
     "category": "juguetes",
     "subcategory": "Juguetes",
     "price": 3536,
@@ -11914,8 +12157,8 @@
       "diversión",
       "interactivo"
     ],
-    "description": "HUESO CON HUESITO",
-    "longDescription": "HUESO CON HUESITO",
+    "description": "🦴 Juguete en forma de hueso hueso. Resistente y duradero para horas de diversión.",
+    "longDescription": "Juguete en forma de hueso hueso para perros. Diseñado para satisfacer el instinto natural de morder. Material resistente que soporta mordidas intensas. Perfecto para mantener a tu mascota entretenida y activa.",
     "images": {
       "cover": "assets/images/products/prod_368/cover.jpg",
       "thumb": "assets/images/products/prod_368/thumb.jpg",
@@ -11924,7 +12167,9 @@
       ]
     },
     "specs": {
-      "SKU": "HUE011"
+      "SKU": "HUE011",
+      "material": "Material resistente",
+      "idealFor": "Perros de todos los tamaños"
     },
     "shipping": {
       "free": false,
@@ -11942,7 +12187,7 @@
   },
   {
     "id": "prod_369",
-    "name": "HUESO CON HUELLA",
+    "name": "Hueso Con Huella",
     "category": "juguetes",
     "subcategory": "Juguetes",
     "price": 3425,
@@ -11962,8 +12207,8 @@
       "diversión",
       "interactivo"
     ],
-    "description": "HUESO CON HUELLA",
-    "longDescription": "HUESO CON HUELLA",
+    "description": "🦴 Juguete en forma de hueso hueso. Resistente y duradero para horas de diversión.",
+    "longDescription": "Juguete en forma de hueso hueso para perros. Diseñado para satisfacer el instinto natural de morder. Material resistente que soporta mordidas intensas. Perfecto para mantener a tu mascota entretenida y activa.",
     "images": {
       "cover": "assets/images/products/prod_369/cover.jpg",
       "thumb": "assets/images/products/prod_369/thumb.jpg",
@@ -11972,7 +12217,9 @@
       ]
     },
     "specs": {
-      "SKU": "HUE012"
+      "SKU": "HUE012",
+      "material": "Material resistente",
+      "idealFor": "Perros de todos los tamaños"
     },
     "shipping": {
       "free": false,
@@ -11990,7 +12237,7 @@
   },
   {
     "id": "prod_370",
-    "name": "PAPAS MCDONA",
+    "name": "Papas Mcdona",
     "category": "juguetes",
     "subcategory": "Juguetes",
     "price": 3315,
@@ -12010,8 +12257,8 @@
       "diversión",
       "interactivo"
     ],
-    "description": "PAPAS MC,DONA",
-    "longDescription": "PAPAS MC,DONA",
+    "description": "🐕 Juguete dona para mascotas. Diversión garantizada para tu compañero peludo.",
+    "longDescription": "Juguete dona diseñado para brindar horas de entretenimiento a tu mascota. Material resistente y seguro. Estimula el juego activo y ayuda a mantener a tu perro feliz y saludable.",
     "images": {
       "cover": "assets/images/products/prod_370/cover.jpg",
       "thumb": "assets/images/products/prod_370/thumb.jpg",
@@ -12020,7 +12267,9 @@
       ]
     },
     "specs": {
-      "SKU": "PAP001"
+      "SKU": "PAP001",
+      "material": "Material resistente",
+      "idealFor": "Perros de todos los tamaños"
     },
     "shipping": {
       "free": false,
@@ -12038,7 +12287,7 @@
   },
   {
     "id": "prod_371",
-    "name": "CHIFLE CORAZON",
+    "name": "Chifle Corazon",
     "category": "juguetes",
     "subcategory": "Juguetes",
     "price": 5525,
@@ -12058,8 +12307,8 @@
       "diversión",
       "interactivo"
     ],
-    "description": "CHIFLE CORAZON",
-    "longDescription": "CHIFLE CORAZON",
+    "description": "🐕 Juguete con sonido chifle en forma de corazón. Perfecto para juegos de morder y estimular a tu mascota.",
+    "longDescription": "Divertido juguete con sonido chifle en forma de corazón para perros. El sonido estimula el instinto de juego y mantiene a tu mascota entretenida por horas. Fabricado con material resistente a mordidas y seguro. Ideal para perros de todos los tamaños.",
     "images": {
       "cover": "assets/images/products/prod_371/cover.jpg",
       "thumb": "assets/images/products/prod_371/thumb.jpg",
@@ -12068,7 +12317,9 @@
       ]
     },
     "specs": {
-      "SKU": "CHI014"
+      "SKU": "CHI014",
+      "material": "Vinilo con chifle",
+      "idealFor": "Perros de todos los tamaños"
     },
     "shipping": {
       "free": false,
@@ -12086,7 +12337,7 @@
   },
   {
     "id": "prod_372",
-    "name": "MAGDALENA ROSA",
+    "name": "Magdalena Rosa",
     "category": "juguetes",
     "subcategory": "Juguetes",
     "price": 3425,
@@ -12106,8 +12357,8 @@
       "diversión",
       "interactivo"
     ],
-    "description": "MAGDALENA ROSA",
-    "longDescription": "MAGDALENA ROSA",
+    "description": "🐕 Juguete muffin para mascotas. Diversión garantizada para tu compañero peludo.",
+    "longDescription": "Juguete muffin diseñado para brindar horas de entretenimiento a tu mascota. Material resistente y seguro. Estimula el juego activo y ayuda a mantener a tu perro feliz y saludable.",
     "images": {
       "cover": "assets/images/products/prod_372/cover.jpg",
       "thumb": "assets/images/products/prod_372/thumb.jpg",
@@ -12116,7 +12367,9 @@
       ]
     },
     "specs": {
-      "SKU": "MAG001"
+      "SKU": "MAG001",
+      "material": "Material resistente",
+      "idealFor": "Perros de todos los tamaños"
     },
     "shipping": {
       "free": false,
@@ -12134,7 +12387,7 @@
   },
   {
     "id": "prod_373",
-    "name": "ROSQUILLAS",
+    "name": "Rosquillas",
     "category": "juguetes",
     "subcategory": "Juguetes",
     "price": 3315,
@@ -12153,8 +12406,8 @@
       "diversión",
       "interactivo"
     ],
-    "description": "ROSQUILLAS",
-    "longDescription": "ROSQUILLAS",
+    "description": "🐕 Juguete dona para mascotas. Diversión garantizada para tu compañero peludo.",
+    "longDescription": "Juguete dona diseñado para brindar horas de entretenimiento a tu mascota. Material resistente y seguro. Estimula el juego activo y ayuda a mantener a tu perro feliz y saludable.",
     "images": {
       "cover": "assets/images/products/prod_373/cover.jpg",
       "thumb": "assets/images/products/prod_373/thumb.jpg",
@@ -12163,7 +12416,9 @@
       ]
     },
     "specs": {
-      "SKU": "ROS001"
+      "SKU": "ROS001",
+      "material": "Material resistente",
+      "idealFor": "Perros de todos los tamaños"
     },
     "shipping": {
       "free": false,
@@ -12181,7 +12436,7 @@
   },
   {
     "id": "prod_374",
-    "name": "CHIFLE MINI",
+    "name": "Chifle Mini",
     "category": "juguetes",
     "subcategory": "Juguetes",
     "price": 3315,
@@ -12201,8 +12456,8 @@
       "diversión",
       "interactivo"
     ],
-    "description": "CHIFLE MINI",
-    "longDescription": "CHIFLE MINI",
+    "description": "🐕 Juguete con sonido chifle en forma de chifle mini. Perfecto para juegos de morder y estimular a tu mascota.",
+    "longDescription": "Divertido juguete con sonido chifle en forma de chifle mini para perros. El sonido estimula el instinto de juego y mantiene a tu mascota entretenida por horas. Fabricado con material resistente a mordidas y seguro. Ideal para perros de todos los tamaños.",
     "images": {
       "cover": "assets/images/products/prod_374/cover.jpg",
       "thumb": "assets/images/products/prod_374/thumb.jpg",
@@ -12211,7 +12466,9 @@
       ]
     },
     "specs": {
-      "SKU": "CHI015"
+      "SKU": "CHI015",
+      "material": "Vinilo con chifle",
+      "idealFor": "Perros de todos los tamaños"
     },
     "shipping": {
       "free": false,
@@ -12229,7 +12486,7 @@
   },
   {
     "id": "prod_375",
-    "name": "CHIFLE PESA  11*4CM",
+    "name": "Chifle Pesa",
     "category": "juguetes",
     "subcategory": "Juguetes",
     "price": 3315,
@@ -12244,14 +12501,13 @@
     "tags": [
       "chifle",
       "pesa",
-      "11*4cm",
       "juguete",
       "entretenimiento",
       "diversión",
       "interactivo"
     ],
-    "description": "CHIFLE PESA  11*4CM",
-    "longDescription": "CHIFLE PESA  11*4CM",
+    "description": "🐕 Juguete con sonido chifle en forma de pesa. Perfecto para juegos de morder y estimular a tu mascota.",
+    "longDescription": "Divertido juguete con sonido chifle en forma de pesa para perros. El sonido estimula el instinto de juego y mantiene a tu mascota entretenida por horas. Fabricado con material resistente a mordidas y seguro. Ideal para perros de todos los tamaños.",
     "images": {
       "cover": "assets/images/products/prod_375/cover.jpg",
       "thumb": "assets/images/products/prod_375/thumb.jpg",
@@ -12261,7 +12517,10 @@
     },
     "specs": {
       "SKU": "CHI016",
-      "Medida": "4CM"
+      "Medida": "4CM",
+      "dimensions": "11*4cm x 4cm",
+      "material": "Vinilo con chifle",
+      "idealFor": "Perros de todos los tamaños"
     },
     "shipping": {
       "free": false,
@@ -12279,7 +12538,7 @@
   },
   {
     "id": "prod_377",
-    "name": "CONO DE HELADO / 8020-5",
+    "name": "Cono De Helado / 8020-5",
     "category": "juguetes",
     "subcategory": "Juguetes",
     "price": 3315,
@@ -12300,8 +12559,8 @@
       "diversión",
       "interactivo"
     ],
-    "description": "CONO DE HELADO / 8020-5",
-    "longDescription": "CONO DE HELADO / 8020-5",
+    "description": "🐕 Juguete helado para mascotas. Diversión garantizada para tu compañero peludo.",
+    "longDescription": "Juguete helado diseñado para brindar horas de entretenimiento a tu mascota. Material resistente y seguro. Estimula el juego activo y ayuda a mantener a tu perro feliz y saludable.",
     "images": {
       "cover": "assets/images/products/prod_377/cover.jpg",
       "thumb": "assets/images/products/prod_377/thumb.jpg",
@@ -12310,7 +12569,9 @@
       ]
     },
     "specs": {
-      "SKU": "CON001"
+      "SKU": "CON001",
+      "material": "Material resistente",
+      "idealFor": "Perros de todos los tamaños"
     },
     "shipping": {
       "free": false,
@@ -12328,7 +12589,7 @@
   },
   {
     "id": "prod_378",
-    "name": "PAPAS FRITAS / 5882-5",
+    "name": "Papas Fritas / 5882-5",
     "category": "juguetes",
     "subcategory": "Juguetes",
     "price": 2320,
@@ -12349,8 +12610,8 @@
       "diversión",
       "interactivo"
     ],
-    "description": "PAPAS FRITAS / 5882-5",
-    "longDescription": "PAPAS FRITAS / 5882-5",
+    "description": "🐕 Juguete papas fritas para mascotas. Diversión garantizada para tu compañero peludo.",
+    "longDescription": "Juguete papas fritas diseñado para brindar horas de entretenimiento a tu mascota. Material resistente y seguro. Estimula el juego activo y ayuda a mantener a tu perro feliz y saludable.",
     "images": {
       "cover": "assets/images/products/prod_378/cover.jpg",
       "thumb": "assets/images/products/prod_378/thumb.jpg",
@@ -12359,7 +12620,9 @@
       ]
     },
     "specs": {
-      "SKU": "PAP002"
+      "SKU": "PAP002",
+      "material": "Material resistente",
+      "idealFor": "Perros de todos los tamaños"
     },
     "shipping": {
       "free": false,
@@ -12377,7 +12640,7 @@
   },
   {
     "id": "prod_379",
-    "name": "CHIFLE POPO",
+    "name": "Chifle Popo",
     "category": "juguetes",
     "subcategory": "Juguetes",
     "price": 3867,
@@ -12397,8 +12660,8 @@
       "diversión",
       "interactivo"
     ],
-    "description": "CHIFLE POPO",
-    "longDescription": "CHIFLE POPO",
+    "description": "🐕 Juguete con sonido chifle en forma de chifle popo. Perfecto para juegos de morder y estimular a tu mascota.",
+    "longDescription": "Divertido juguete con sonido chifle en forma de chifle popo para perros. El sonido estimula el instinto de juego y mantiene a tu mascota entretenida por horas. Fabricado con material resistente a mordidas y seguro. Ideal para perros de todos los tamaños.",
     "images": {
       "cover": "assets/images/products/prod_379/cover.jpg",
       "thumb": "assets/images/products/prod_379/thumb.jpg",
@@ -12407,7 +12670,9 @@
       ]
     },
     "specs": {
-      "SKU": "CHI018"
+      "SKU": "CHI018",
+      "material": "Vinilo con chifle",
+      "idealFor": "Perros de todos los tamaños"
     },
     "shipping": {
       "free": false,
@@ -12425,7 +12690,7 @@
   },
   {
     "id": "prod_380",
-    "name": "CHIFLE HELADO 8528-5",
+    "name": "Chifle Helado 8528-5",
     "category": "juguetes",
     "subcategory": "Juguetes",
     "price": 3315,
@@ -12446,8 +12711,8 @@
       "diversión",
       "interactivo"
     ],
-    "description": "CHIFLE HELADO 8528-5",
-    "longDescription": "CHIFLE HELADO 8528-5",
+    "description": "🐕 Juguete con sonido chifle en forma de helado. Perfecto para juegos de morder y estimular a tu mascota.",
+    "longDescription": "Divertido juguete con sonido chifle en forma de helado para perros. El sonido estimula el instinto de juego y mantiene a tu mascota entretenida por horas. Fabricado con material resistente a mordidas y seguro. Ideal para perros de todos los tamaños.",
     "images": {
       "cover": "assets/images/products/prod_380/cover.jpg",
       "thumb": "assets/images/products/prod_380/thumb.jpg",
@@ -12456,7 +12721,9 @@
       ]
     },
     "specs": {
-      "SKU": "CHI019"
+      "SKU": "CHI019",
+      "material": "Vinilo con chifle",
+      "idealFor": "Perros de todos los tamaños"
     },
     "shipping": {
       "free": false,
@@ -12474,7 +12741,7 @@
   },
   {
     "id": "prod_381",
-    "name": "CHIFLE PAVO 8400-5",
+    "name": "Chifle Pavo 8400-5",
     "category": "juguetes",
     "subcategory": "Juguetes",
     "price": 3867,
@@ -12495,8 +12762,8 @@
       "diversión",
       "interactivo"
     ],
-    "description": "CHIFLE PAVO 8400-5",
-    "longDescription": "CHIFLE PAVO 8400-5",
+    "description": "🐕 Juguete con sonido chifle en forma de chifle pavo 8400-5. Perfecto para juegos de morder y estimular a tu mascota.",
+    "longDescription": "Divertido juguete con sonido chifle en forma de chifle pavo 8400-5 para perros. El sonido estimula el instinto de juego y mantiene a tu mascota entretenida por horas. Fabricado con material resistente a mordidas y seguro. Ideal para perros de todos los tamaños.",
     "images": {
       "cover": "assets/images/products/prod_381/cover.jpg",
       "thumb": "assets/images/products/prod_381/thumb.jpg",
@@ -12505,7 +12772,9 @@
       ]
     },
     "specs": {
-      "SKU": "CHI020"
+      "SKU": "CHI020",
+      "material": "Vinilo con chifle",
+      "idealFor": "Perros de todos los tamaños"
     },
     "shipping": {
       "free": false,
@@ -12523,7 +12792,7 @@
   },
   {
     "id": "prod_382",
-    "name": "CHIFLE PULPO MINI 8529-5",
+    "name": "Chifle Pulpo Mini 8529-5",
     "category": "juguetes",
     "subcategory": "Juguetes",
     "price": 3315,
@@ -12545,8 +12814,8 @@
       "diversión",
       "interactivo"
     ],
-    "description": "CHIFLE PULPO MINI 8529-5",
-    "longDescription": "CHIFLE PULPO MINI 8529-5",
+    "description": "🐕 Juguete con sonido chifle en forma de pulpo. Perfecto para juegos de morder y estimular a tu mascota.",
+    "longDescription": "Divertido juguete con sonido chifle en forma de pulpo para perros. El sonido estimula el instinto de juego y mantiene a tu mascota entretenida por horas. Fabricado con material resistente a mordidas y seguro. Ideal para perros de todos los tamaños.",
     "images": {
       "cover": "assets/images/products/prod_382/cover.jpg",
       "thumb": "assets/images/products/prod_382/thumb.jpg",
@@ -12555,7 +12824,9 @@
       ]
     },
     "specs": {
-      "SKU": "CHI021"
+      "SKU": "CHI021",
+      "material": "Vinilo con chifle",
+      "idealFor": "Perros de todos los tamaños"
     },
     "shipping": {
       "free": false,
@@ -12573,7 +12844,7 @@
   },
   {
     "id": "prod_385",
-    "name": "JUGUET PELOTA DENTAL GOMA P/ALIMENTO 5 CM",
+    "name": "Juguet Pelota Dental Goma P/alimento",
     "category": "juguetes",
     "subcategory": "Juguetes",
     "price": 4972,
@@ -12596,8 +12867,8 @@
       "diversión",
       "interactivo"
     ],
-    "description": "JUGUET PELOTA DENTAL GOMA P/ALIMENTO 5 CM",
-    "longDescription": "JUGUET PELOTA DENTAL GOMA P/ALIMENTO 5 CM",
+    "description": "🎾 Pelota para perros. Ideal para juegos de buscar y morder.",
+    "longDescription": "Pelota diseñada para horas de diversión con tu mascota. Perfecta para juegos de buscar, lanzar y morder. Material resistente y duradero que soporta el juego intenso. Estimula el ejercicio y la actividad física de tu perro.",
     "images": {
       "cover": "assets/images/products/prod_385/cover.jpg",
       "thumb": "assets/images/products/prod_385/thumb.jpg",
@@ -12607,7 +12878,10 @@
     },
     "specs": {
       "SKU": "JUG013",
-      "Medida": "5 CM"
+      "Medida": "5 CM",
+      "dimensions": "5 cm",
+      "material": "Goma resistente",
+      "idealFor": "Perros de todos los tamaños"
     },
     "shipping": {
       "free": false,
@@ -12625,7 +12899,7 @@
   },
   {
     "id": "prod_386",
-    "name": "PELOTA LIMPIA DIENTES DE GOMA P/ ALIMENTO 6CM",
+    "name": "Pelota Limpia Dientes De Goma P/ Alimento",
     "category": "juguetes",
     "subcategory": "Juguetes",
     "price": 5525,
@@ -12648,8 +12922,8 @@
       "diversión",
       "interactivo"
     ],
-    "description": "PELOTA LIMPIA DIENTES DE GOMA P/ ALIMENTO 6CM",
-    "longDescription": "PELOTA LIMPIA DIENTES DE GOMA P/ ALIMENTO 6CM",
+    "description": "🎾 Pelota para perros. Ideal para juegos de buscar y morder.",
+    "longDescription": "Pelota diseñada para horas de diversión con tu mascota. Perfecta para juegos de buscar, lanzar y morder. Material resistente y duradero que soporta el juego intenso. Estimula el ejercicio y la actividad física de tu perro.",
     "images": {
       "cover": "assets/images/products/prod_386/cover.jpg",
       "thumb": "assets/images/products/prod_386/thumb.jpg",
@@ -12659,7 +12933,10 @@
     },
     "specs": {
       "SKU": "PEL048",
-      "Medida": "6CM"
+      "Medida": "6CM",
+      "dimensions": "6cm",
+      "material": "Goma resistente",
+      "idealFor": "Perros de todos los tamaños"
     },
     "shipping": {
       "free": false,
@@ -12677,7 +12954,7 @@
   },
   {
     "id": "prod_387",
-    "name": "PELOTA LIMPIA DIENTE GRANDE",
+    "name": "Pelota Limpia Diente Grande",
     "category": "juguetes",
     "subcategory": "Juguetes",
     "price": 6630,
@@ -12699,8 +12976,8 @@
       "diversión",
       "interactivo"
     ],
-    "description": "PELOTA LIMPIA DIENTE GRANDE",
-    "longDescription": "PELOTA LIMPIA DIENTE GRANDE",
+    "description": "🎾 Pelota para perros. Ideal para juegos de buscar y morder.",
+    "longDescription": "Pelota diseñada para horas de diversión con tu mascota. Perfecta para juegos de buscar, lanzar y morder. Material resistente y duradero que soporta el juego intenso. Estimula el ejercicio y la actividad física de tu perro.",
     "images": {
       "cover": "assets/images/products/prod_387/cover.jpg",
       "thumb": "assets/images/products/prod_387/thumb.jpg",
@@ -12709,7 +12986,9 @@
       ]
     },
     "specs": {
-      "SKU": "PEL049"
+      "SKU": "PEL049",
+      "material": "Material resistente",
+      "idealFor": "Perros de todos los tamaños"
     },
     "shipping": {
       "free": false,
@@ -12727,7 +13006,7 @@
   },
   {
     "id": "prod_388",
-    "name": "MORDILLO TUERCA MULTI COLOR",
+    "name": "Mordillo Tuerca Multi Color",
     "category": "juguetes",
     "subcategory": "Juguetes",
     "price": 3536,
@@ -12749,8 +13028,8 @@
       "diversión",
       "interactivo"
     ],
-    "description": "MORDILLO TUERCA MULTI COLOR",
-    "longDescription": "MORDILLO TUERCA MULTI COLOR",
+    "description": "🦴 Mordillo para perros. Ayuda a la salud dental y alivia el estrés.",
+    "longDescription": "Mordillo diseñado para satisfacer el instinto natural de morder de tu perro. Ayuda a mantener los dientes limpios y las encías sanas. Alivia el estrés y la ansiedad. Material resistente y duradero.",
     "images": {
       "cover": "assets/images/products/prod_388/cover.jpg",
       "thumb": "assets/images/products/prod_388/thumb.jpg",
@@ -12759,7 +13038,9 @@
       ]
     },
     "specs": {
-      "SKU": "MOR003"
+      "SKU": "MOR003",
+      "material": "Material resistente",
+      "idealFor": "Perros de todos los tamaños"
     },
     "shipping": {
       "free": false,
@@ -12777,7 +13058,7 @@
   },
   {
     "id": "prod_389",
-    "name": "PELOTA CHIFLE RUGBY",
+    "name": "Pelota Chifle Rugby",
     "category": "juguetes",
     "subcategory": "Juguetes",
     "price": 4420,
@@ -12798,8 +13079,8 @@
       "diversión",
       "interactivo"
     ],
-    "description": "PELOTA CHIFLE RUGBY",
-    "longDescription": "PELOTA CHIFLE RUGBY",
+    "description": "🐕 Juguete con sonido chifle en forma de pelota. Perfecto para juegos de morder y estimular a tu mascota.",
+    "longDescription": "Divertido juguete con sonido chifle en forma de pelota para perros. El sonido estimula el instinto de juego y mantiene a tu mascota entretenida por horas. Fabricado con material resistente a mordidas y seguro. Ideal para perros de todos los tamaños.",
     "images": {
       "cover": "assets/images/products/prod_389/cover.jpg",
       "thumb": "assets/images/products/prod_389/thumb.jpg",
@@ -12808,7 +13089,9 @@
       ]
     },
     "specs": {
-      "SKU": "PEL050"
+      "SKU": "PEL050",
+      "material": "Vinilo con chifle",
+      "idealFor": "Perros de todos los tamaños"
     },
     "shipping": {
       "free": false,
@@ -12826,7 +13109,7 @@
   },
   {
     "id": "prod_390",
-    "name": "MORDILLO HUESO DOBLE LARGO",
+    "name": "Mordillo Hueso Doble Largo",
     "category": "juguetes",
     "subcategory": "Juguetes",
     "price": 5525,
@@ -12848,8 +13131,8 @@
       "diversión",
       "interactivo"
     ],
-    "description": "MORDILLO HUESO DOBLE LARGO",
-    "longDescription": "MORDILLO HUESO DOBLE LARGO",
+    "description": "🦴 Mordillo hueso para perros. Ayuda a la salud dental y alivia el estrés.",
+    "longDescription": "Mordillo hueso diseñado para satisfacer el instinto natural de morder de tu perro. Ayuda a mantener los dientes limpios y las encías sanas. Alivia el estrés y la ansiedad. Material resistente y duradero.",
     "images": {
       "cover": "assets/images/products/prod_390/cover.jpg",
       "thumb": "assets/images/products/prod_390/thumb.jpg",
@@ -12858,7 +13141,9 @@
       ]
     },
     "specs": {
-      "SKU": "MOR004"
+      "SKU": "MOR004",
+      "material": "Material resistente",
+      "idealFor": "Perros de todos los tamaños"
     },
     "shipping": {
       "free": false,
@@ -12876,7 +13161,7 @@
   },
   {
     "id": "prod_391",
-    "name": "MORDILLO HUESO O 001",
+    "name": "Mordillo Hueso O 001",
     "category": "juguetes",
     "subcategory": "Juguetes",
     "price": 6630,
@@ -12896,8 +13181,8 @@
       "diversión",
       "interactivo"
     ],
-    "description": "MORDILLO HUESO O 001",
-    "longDescription": "MORDILLO HUESO O 001",
+    "description": "🦴 Mordillo hueso para perros. Ayuda a la salud dental y alivia el estrés.",
+    "longDescription": "Mordillo hueso diseñado para satisfacer el instinto natural de morder de tu perro. Ayuda a mantener los dientes limpios y las encías sanas. Alivia el estrés y la ansiedad. Material resistente y duradero.",
     "images": {
       "cover": "assets/images/products/prod_391/cover.jpg",
       "thumb": "assets/images/products/prod_391/thumb.jpg",
@@ -12906,7 +13191,9 @@
       ]
     },
     "specs": {
-      "SKU": "MOR005"
+      "SKU": "MOR005",
+      "material": "Material resistente",
+      "idealFor": "Perros de todos los tamaños"
     },
     "shipping": {
       "free": false,
@@ -12924,7 +13211,7 @@
   },
   {
     "id": "prod_392",
-    "name": "MORDILLOHUESO ( Y ) 002",
+    "name": "Mordillohueso ( Y ) 002",
     "category": "juguetes",
     "subcategory": "Juguetes",
     "price": 6630,
@@ -12943,8 +13230,8 @@
       "diversión",
       "interactivo"
     ],
-    "description": "MORDILLOHUESO ( Y ) 002",
-    "longDescription": "MORDILLOHUESO ( Y ) 002",
+    "description": "🦴 Mordillo hueso para perros. Ayuda a la salud dental y alivia el estrés.",
+    "longDescription": "Mordillo hueso diseñado para satisfacer el instinto natural de morder de tu perro. Ayuda a mantener los dientes limpios y las encías sanas. Alivia el estrés y la ansiedad. Material resistente y duradero.",
     "images": {
       "cover": "assets/images/products/prod_392/cover.jpg",
       "thumb": "assets/images/products/prod_392/thumb.jpg",
@@ -12953,7 +13240,9 @@
       ]
     },
     "specs": {
-      "SKU": "MOR006"
+      "SKU": "MOR006",
+      "material": "Material resistente",
+      "idealFor": "Perros de todos los tamaños"
     },
     "shipping": {
       "free": false,
@@ -12971,7 +13260,7 @@
   },
   {
     "id": "prod_393",
-    "name": "MORDILLO CIRCULO ( DONA ) 003",
+    "name": "Mordillo Circulo ( Dona ) 003",
     "category": "juguetes",
     "subcategory": "Juguetes",
     "price": 6630,
@@ -12992,8 +13281,8 @@
       "diversión",
       "interactivo"
     ],
-    "description": "MORDILLO CIRCULO ( DONA ) 003",
-    "longDescription": "MORDILLO CIRCULO ( DONA ) 003",
+    "description": "🦴 Mordillo dona para perros. Ayuda a la salud dental y alivia el estrés.",
+    "longDescription": "Mordillo dona diseñado para satisfacer el instinto natural de morder de tu perro. Ayuda a mantener los dientes limpios y las encías sanas. Alivia el estrés y la ansiedad. Material resistente y duradero.",
     "images": {
       "cover": "assets/images/products/prod_393/cover.jpg",
       "thumb": "assets/images/products/prod_393/thumb.jpg",
@@ -13002,7 +13291,9 @@
       ]
     },
     "specs": {
-      "SKU": "MOR007"
+      "SKU": "MOR007",
+      "material": "Material resistente",
+      "idealFor": "Perros de todos los tamaños"
     },
     "shipping": {
       "free": false,
@@ -13020,7 +13311,7 @@
   },
   {
     "id": "prod_394",
-    "name": "MORDILLO PATA DE POLLO 004",
+    "name": "Mordillo Pata De Pollo 004",
     "category": "juguetes",
     "subcategory": "Juguetes",
     "price": 5525,
@@ -13041,8 +13332,8 @@
       "diversión",
       "interactivo"
     ],
-    "description": "MORDILLO PATA DE POLLO 004",
-    "longDescription": "MORDILLO PATA DE POLLO 004",
+    "description": "🦴 Mordillo pollo para perros. Ayuda a la salud dental y alivia el estrés.",
+    "longDescription": "Mordillo pollo diseñado para satisfacer el instinto natural de morder de tu perro. Ayuda a mantener los dientes limpios y las encías sanas. Alivia el estrés y la ansiedad. Material resistente y duradero.",
     "images": {
       "cover": "assets/images/products/prod_394/cover.jpg",
       "thumb": "assets/images/products/prod_394/thumb.jpg",
@@ -13051,7 +13342,9 @@
       ]
     },
     "specs": {
-      "SKU": "MOR008"
+      "SKU": "MOR008",
+      "material": "Material resistente",
+      "idealFor": "Perros de todos los tamaños"
     },
     "shipping": {
       "free": false,
@@ -13069,7 +13362,7 @@
   },
   {
     "id": "prod_395",
-    "name": "PELOTA VOLADORA MAGICA CON LUZ 7 CM PE0399",
+    "name": "Pelota Voladora Magica Con Luz 7 Cm Pe",
     "category": "juguetes",
     "subcategory": "Juguetes",
     "price": 5525,
@@ -13091,8 +13384,8 @@
       "diversión",
       "interactivo"
     ],
-    "description": "PELOTA VOLADORA MAGICA CON LUZ 7 CM PE0399",
-    "longDescription": "PELOTA VOLADORA MAGICA CON LUZ 7 CM PE0399",
+    "description": "🎾 Pelota con luz LED. Perfecta para juegos diurnos y nocturnos.",
+    "longDescription": "Pelota con luz LED incorporada que se activa al rebotar. Ideal para juegos tanto de día como de noche. Estimula la curiosidad y el instinto de caza de tu mascota. Material resistente y seguro.",
     "images": {
       "cover": "assets/images/products/prod_395/cover.jpg",
       "thumb": "assets/images/products/prod_395/thumb.jpg",
@@ -13102,7 +13395,10 @@
     },
     "specs": {
       "SKU": "PEL051",
-      "Medida": "7 CM"
+      "Medida": "7 CM",
+      "dimensions": "7 cm",
+      "material": "Material resistente",
+      "idealFor": "Perros de todos los tamaños"
     },
     "shipping": {
       "free": false,
@@ -13120,7 +13416,7 @@
   },
   {
     "id": "prod_396",
-    "name": "PELOTA MAGICA VOLADORA PEGABLE",
+    "name": "Pelota Magica Voladora Pegable",
     "category": "juguetes",
     "subcategory": "Juguetes",
     "price": 17680,
@@ -13142,8 +13438,8 @@
       "diversión",
       "interactivo"
     ],
-    "description": "PELOTA MAGICA VOLADORA PEGABLE",
-    "longDescription": "PELOTA MAGICA VOLADORA PEGABLE",
+    "description": "🎾 Pelota para perros. Ideal para juegos de buscar y morder.",
+    "longDescription": "Pelota diseñada para horas de diversión con tu mascota. Perfecta para juegos de buscar, lanzar y morder. Material resistente y duradero que soporta el juego intenso. Estimula el ejercicio y la actividad física de tu perro.",
     "images": {
       "cover": "assets/images/products/prod_396/cover.jpg",
       "thumb": "assets/images/products/prod_396/thumb.jpg",
@@ -13152,7 +13448,9 @@
       ]
     },
     "specs": {
-      "SKU": "PEL052"
+      "SKU": "PEL052",
+      "material": "Material resistente",
+      "idealFor": "Perros de todos los tamaños"
     },
     "shipping": {
       "free": true,
@@ -13170,7 +13468,7 @@
   },
   {
     "id": "prod_397",
-    "name": "HUESO CON TEXTURA - ONEBER PET 01",
+    "name": "Hueso Con Textura - Oneber Pet 01",
     "category": "juguetes",
     "subcategory": "Juguetes",
     "price": 5856,
@@ -13191,8 +13489,8 @@
       "diversión",
       "interactivo"
     ],
-    "description": "HUESO CON TEXTURA - ONEBER PET 01",
-    "longDescription": "HUESO CON TEXTURA - ONEBER PET 01",
+    "description": "🦴 Juguete en forma de hueso hueso. Resistente y duradero para horas de diversión.",
+    "longDescription": "Juguete en forma de hueso hueso para perros. Diseñado para satisfacer el instinto natural de morder. Material resistente que soporta mordidas intensas. Perfecto para mantener a tu mascota entretenida y activa.",
     "images": {
       "cover": "assets/images/products/prod_397/cover.jpg",
       "thumb": "assets/images/products/prod_397/thumb.jpg",
@@ -13201,7 +13499,9 @@
       ]
     },
     "specs": {
-      "SKU": "HUE013"
+      "SKU": "HUE013",
+      "material": "Material resistente",
+      "idealFor": "Perros de todos los tamaños"
     },
     "shipping": {
       "free": false,
@@ -13219,7 +13519,7 @@
   },
   {
     "id": "prod_398",
-    "name": "HUESO CON TEXTURA - ONEBER PET02",
+    "name": "Hueso Con Textura - Oneber Pet02",
     "category": "juguetes",
     "subcategory": "Juguetes",
     "price": 5856,
@@ -13241,8 +13541,8 @@
       "diversión",
       "interactivo"
     ],
-    "description": "HUESO CON TEXTURA - ONEBER PET02",
-    "longDescription": "HUESO CON TEXTURA - ONEBER PET02",
+    "description": "🦴 Juguete en forma de hueso hueso. Resistente y duradero para horas de diversión.",
+    "longDescription": "Juguete en forma de hueso hueso para perros. Diseñado para satisfacer el instinto natural de morder. Material resistente que soporta mordidas intensas. Perfecto para mantener a tu mascota entretenida y activa.",
     "images": {
       "cover": "assets/images/products/prod_398/cover.jpg",
       "thumb": "assets/images/products/prod_398/thumb.jpg",
@@ -13251,7 +13551,9 @@
       ]
     },
     "specs": {
-      "SKU": "HUE014"
+      "SKU": "HUE014",
+      "material": "Material resistente",
+      "idealFor": "Perros de todos los tamaños"
     },
     "shipping": {
       "free": false,
