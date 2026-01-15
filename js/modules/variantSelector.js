@@ -239,10 +239,18 @@ class VariantSelector {
   }
   
   updateGallery(galleryImages) {
-    // No actualizar la galería para productos con variantes
-    // La galería del producto principal se mantiene fija
-    // Solo se actualiza la imagen principal (cover)
-    return;
+    const thumbnailsContainer = document.querySelector('.product__thumbnails');
+    if (!thumbnailsContainer) return;
+    
+    // Actualizar miniaturas con las imágenes de la variante
+    thumbnailsContainer.innerHTML = galleryImages.map((img, index) => `
+      <img 
+        src="${img}" 
+        alt="Imagen ${index + 1}"
+        class="product__gallery-img"
+        onclick="document.querySelector('.product__main-image').src = this.src"
+        onerror="this.src='assets/images/placeholder.svg'">
+    `).join('');
   }
   
   updateBuyButton() {
