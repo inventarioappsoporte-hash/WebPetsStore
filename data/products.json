@@ -7802,29 +7802,132 @@
   },
   {
     "id": "prod_267",
-    "name": "PELOTA DE CAUCHO 40MM   N°1",
+    "name": "PELOTA DE CAUCHO",
     "category": "juguetes",
     "subcategory": "Juguetes",
-    "price": 1215,
-    "originalPrice": 1430,
+    "hasVariants": true,
+    "basePrice": 1215,
+    "baseOriginalPrice": 1430,
     "discount": 15,
-    "stock": 5,
-    "rating": 3.8,
-    "reviews": 54,
+    "stock": 25,
+    "rating": 4.3,
+    "reviews": 192,
     "featured": false,
     "topDiscount": false,
     "hasVideo": false,
     "tags": [
       "pelota",
       "caucho",
-      "40mm",
       "juguete",
       "entretenimiento",
       "diversión",
-      "interactivo"
+      "interactivo",
+      "perros",
+      "resistente"
     ],
-    "description": "PELOTA DE CAUCHO 40MM   N°1",
-    "longDescription": "PELOTA DE CAUCHO 40MM   N°1",
+    "description": "Pelota de caucho resistente. Disponible en múltiples tamaños.",
+    "longDescription": "Pelota de caucho de alta calidad para perros. Material resistente a mordidas. Ideal para juegos de lanzar y buscar. Disponible en varios tamaños para adaptarse al tamaño de tu mascota.",
+    "variants": {
+      "attributes": [
+        {
+          "id": "size",
+          "name": "Tamaño",
+          "type": "size"
+        }
+      ],
+      "combinations": [
+        {
+          "id": "var_267_1",
+          "attributes": {
+            "Tamaño": "N°1 (40mm)"
+          },
+          "price": 1215,
+          "originalPrice": 1430,
+          "stock": 5,
+          "sku": "PEL027",
+          "available": true,
+          "images": {
+            "cover": "assets/images/products/prod_267/cover.jpg",
+            "thumb": "assets/images/products/prod_267/thumb.jpg",
+            "gallery": [
+              "assets/images/products/prod_267/1.jpg"
+            ]
+          }
+        },
+        {
+          "id": "var_267_2",
+          "attributes": {
+            "Tamaño": "N°2 (48mm)"
+          },
+          "price": 1547,
+          "originalPrice": 1820,
+          "stock": 5,
+          "sku": "PEL028",
+          "available": true,
+          "images": {
+            "cover": "assets/images/products/prod_268/cover.jpg",
+            "thumb": "assets/images/products/prod_268/thumb.jpg",
+            "gallery": [
+              "assets/images/products/prod_268/1.jpg"
+            ]
+          }
+        },
+        {
+          "id": "var_267_3",
+          "attributes": {
+            "Tamaño": "N°3 (58mm)"
+          },
+          "price": 3425,
+          "originalPrice": 4030,
+          "stock": 5,
+          "sku": "PEL029",
+          "available": true,
+          "images": {
+            "cover": "assets/images/products/prod_269/cover.jpg",
+            "thumb": "assets/images/products/prod_269/thumb.jpg",
+            "gallery": [
+              "assets/images/products/prod_269/1.jpg"
+            ]
+          }
+        },
+        {
+          "id": "var_267_4",
+          "attributes": {
+            "Tamaño": "N°4 (75mm)"
+          },
+          "price": 6077,
+          "originalPrice": 7150,
+          "stock": 5,
+          "sku": "PEL030",
+          "available": true,
+          "images": {
+            "cover": "assets/images/products/prod_270/cover.jpg",
+            "thumb": "assets/images/products/prod_270/thumb.jpg",
+            "gallery": [
+              "assets/images/products/prod_270/1.jpg"
+            ]
+          }
+        },
+        {
+          "id": "var_267_5",
+          "attributes": {
+            "Tamaño": "N°5 (90mm)"
+          },
+          "price": 9503,
+          "originalPrice": 11180,
+          "stock": 5,
+          "sku": "PEL031",
+          "available": true,
+          "images": {
+            "cover": "assets/images/products/prod_271/cover.jpg",
+            "thumb": "assets/images/products/prod_271/thumb.jpg",
+            "gallery": [
+              "assets/images/products/prod_271/1.jpg"
+            ]
+          }
+        }
+      ]
+    },
     "images": {
       "cover": "assets/images/products/prod_267/cover.jpg",
       "thumb": "assets/images/products/prod_267/thumb.jpg",
@@ -7834,7 +7937,8 @@
     },
     "specs": {
       "SKU": "PEL027",
-      "Medida": "40MM"
+      "Material": "Caucho resistente",
+      "Tamaños disponibles": "40mm, 48mm, 58mm, 75mm, 90mm"
     },
     "shipping": {
       "free": false,
@@ -7844,206 +7948,7 @@
     "brand": "Sin marca",
     "sku": "PEL027",
     "features": [
-      "Estimula el juego",
-      "Material seguro",
-      "Resistente a mordidas",
-      "Entretenimiento garantizado"
-    ]
-  },
-  {
-    "id": "prod_268",
-    "name": "PELOTA DE CAUCHO 48MM   N°2",
-    "category": "juguetes",
-    "subcategory": "Juguetes",
-    "price": 1547,
-    "originalPrice": 1820,
-    "discount": 15,
-    "stock": 5,
-    "rating": 4.9,
-    "reviews": 39,
-    "featured": false,
-    "topDiscount": false,
-    "hasVideo": false,
-    "tags": [
-      "pelota",
-      "caucho",
-      "48mm",
-      "juguete",
-      "entretenimiento",
-      "diversión",
-      "interactivo"
-    ],
-    "description": "PELOTA DE CAUCHO 48MM   N°2",
-    "longDescription": "PELOTA DE CAUCHO 48MM   N°2",
-    "images": {
-      "cover": "assets/images/products/prod_268/cover.jpg",
-      "thumb": "assets/images/products/prod_268/thumb.jpg",
-      "gallery": [
-        "assets/images/products/prod_268/1.jpg"
-      ]
-    },
-    "specs": {
-      "SKU": "PEL028",
-      "Medida": "48MM"
-    },
-    "shipping": {
-      "free": false,
-      "days": 3
-    },
-    "badge": "🎾 Juguetes",
-    "brand": "Sin marca",
-    "sku": "PEL028",
-    "features": [
-      "Estimula el juego",
-      "Material seguro",
-      "Resistente a mordidas",
-      "Entretenimiento garantizado"
-    ]
-  },
-  {
-    "id": "prod_269",
-    "name": "PELOTA DE CAUCHO 58MM   N°3",
-    "category": "juguetes",
-    "subcategory": "Juguetes",
-    "price": 3425,
-    "originalPrice": 4030,
-    "discount": 15,
-    "stock": 5,
-    "rating": 4,
-    "reviews": 14,
-    "featured": false,
-    "topDiscount": false,
-    "hasVideo": false,
-    "tags": [
-      "pelota",
-      "caucho",
-      "58mm",
-      "juguete",
-      "entretenimiento",
-      "diversión",
-      "interactivo"
-    ],
-    "description": "PELOTA DE CAUCHO 58MM   N°3",
-    "longDescription": "PELOTA DE CAUCHO 58MM   N°3",
-    "images": {
-      "cover": "assets/images/products/prod_269/cover.jpg",
-      "thumb": "assets/images/products/prod_269/thumb.jpg",
-      "gallery": [
-        "assets/images/products/prod_269/1.jpg"
-      ]
-    },
-    "specs": {
-      "SKU": "PEL029",
-      "Medida": "58MM"
-    },
-    "shipping": {
-      "free": false,
-      "days": 4
-    },
-    "badge": "🎾 Juguetes",
-    "brand": "Sin marca",
-    "sku": "PEL029",
-    "features": [
-      "Estimula el juego",
-      "Material seguro",
-      "Resistente a mordidas",
-      "Entretenimiento garantizado"
-    ]
-  },
-  {
-    "id": "prod_270",
-    "name": "PELOTA DE CAUCHO 75MM   N°4",
-    "category": "juguetes",
-    "subcategory": "Juguetes",
-    "price": 6077,
-    "originalPrice": 7150,
-    "discount": 15,
-    "stock": 5,
-    "rating": 4.3,
-    "reviews": 35,
-    "featured": false,
-    "topDiscount": false,
-    "hasVideo": false,
-    "tags": [
-      "pelota",
-      "caucho",
-      "75mm",
-      "juguete",
-      "entretenimiento",
-      "diversión",
-      "interactivo"
-    ],
-    "description": "PELOTA DE CAUCHO 75MM   N°4",
-    "longDescription": "PELOTA DE CAUCHO 75MM   N°4",
-    "images": {
-      "cover": "assets/images/products/prod_270/cover.jpg",
-      "thumb": "assets/images/products/prod_270/thumb.jpg",
-      "gallery": [
-        "assets/images/products/prod_270/1.jpg"
-      ]
-    },
-    "specs": {
-      "SKU": "PEL030",
-      "Medida": "75MM"
-    },
-    "shipping": {
-      "free": false,
-      "days": 3
-    },
-    "badge": "🎾 Juguetes",
-    "brand": "Sin marca",
-    "sku": "PEL030",
-    "features": [
-      "Estimula el juego",
-      "Material seguro",
-      "Resistente a mordidas",
-      "Entretenimiento garantizado"
-    ]
-  },
-  {
-    "id": "prod_271",
-    "name": "PELOTA DE CAUCHO 90MM   N°5",
-    "category": "juguetes",
-    "subcategory": "Juguetes",
-    "price": 9503,
-    "originalPrice": 11180,
-    "discount": 15,
-    "stock": 5,
-    "rating": 4.6,
-    "reviews": 50,
-    "featured": false,
-    "topDiscount": false,
-    "hasVideo": false,
-    "tags": [
-      "pelota",
-      "caucho",
-      "90mm",
-      "juguete",
-      "entretenimiento",
-      "diversión",
-      "interactivo"
-    ],
-    "description": "PELOTA DE CAUCHO 90MM   N°5",
-    "longDescription": "PELOTA DE CAUCHO 90MM   N°5",
-    "images": {
-      "cover": "assets/images/products/prod_271/cover.jpg",
-      "thumb": "assets/images/products/prod_271/thumb.jpg",
-      "gallery": [
-        "assets/images/products/prod_271/1.jpg"
-      ]
-    },
-    "specs": {
-      "SKU": "PEL031",
-      "Medida": "90MM"
-    },
-    "shipping": {
-      "free": false,
-      "days": 2
-    },
-    "badge": "🎾 Juguetes",
-    "brand": "Sin marca",
-    "sku": "PEL031",
-    "features": [
+      "Múltiples tamaños disponibles",
       "Estimula el juego",
       "Material seguro",
       "Resistente a mordidas",
@@ -23151,15 +23056,16 @@
   },
   {
     "id": "prod_739",
-    "name": "PECHERAS REGULABLES LISO N° 1",
+    "name": "PECHERAS REGULABLES LISO",
     "category": "accesorios",
     "subcategory": "Accesorios",
-    "price": 4675,
-    "originalPrice": 5500,
+    "hasVariants": true,
+    "basePrice": 4675,
+    "baseOriginalPrice": 5500,
     "discount": 15,
-    "stock": 10,
-    "rating": 3.6,
-    "reviews": 51,
+    "stock": 50,
+    "rating": 4.4,
+    "reviews": 201,
     "featured": false,
     "topDiscount": false,
     "hasVideo": false,
@@ -23170,10 +23076,112 @@
       "collar",
       "correa",
       "paseo",
-      "pechera"
+      "pechera",
+      "perros"
     ],
-    "description": "PECHERAS REGULABLES LISO N° 1",
-    "longDescription": "PECHERAS REGULABLES LISO N° 1",
+    "description": "Pechera regulable lisa. Disponible en múltiples tamaños.",
+    "longDescription": "Pechera regulable lisa de alta calidad para perros. Ajuste cómodo y seguro. Material resistente y duradero. Disponible en varios tamaños y colores para adaptarse a tu mascota.",
+    "variants": {
+      "attributes": [
+        {
+          "id": "size",
+          "name": "Tamaño",
+          "type": "size"
+        }
+      ],
+      "combinations": [
+        {
+          "id": "var_739_1",
+          "attributes": {
+            "Tamaño": "N° 1"
+          },
+          "price": 4675,
+          "originalPrice": 5500,
+          "stock": 10,
+          "sku": "PEC005",
+          "available": true,
+          "images": {
+            "cover": "assets/images/products/prod_739/cover.jpg",
+            "thumb": "assets/images/products/prod_739/thumb.jpg",
+            "gallery": [
+              "assets/images/products/prod_739/1.jpg"
+            ]
+          }
+        },
+        {
+          "id": "var_739_2",
+          "attributes": {
+            "Tamaño": "N° 2"
+          },
+          "price": 5100,
+          "originalPrice": 6000,
+          "stock": 10,
+          "sku": "PEC006",
+          "available": true,
+          "images": {
+            "cover": "assets/images/products/prod_740/cover.jpg",
+            "thumb": "assets/images/products/prod_740/thumb.jpg",
+            "gallery": [
+              "assets/images/products/prod_740/1.jpg"
+            ]
+          }
+        },
+        {
+          "id": "var_739_3",
+          "attributes": {
+            "Tamaño": "N° 3"
+          },
+          "price": 7565,
+          "originalPrice": 8900,
+          "stock": 10,
+          "sku": "PEC007",
+          "available": true,
+          "images": {
+            "cover": "assets/images/products/prod_741/cover.jpg",
+            "thumb": "assets/images/products/prod_741/thumb.jpg",
+            "gallery": [
+              "assets/images/products/prod_741/1.jpg"
+            ]
+          }
+        },
+        {
+          "id": "var_739_4",
+          "attributes": {
+            "Tamaño": "N° 4"
+          },
+          "price": 8330,
+          "originalPrice": 9800,
+          "stock": 10,
+          "sku": "PEC008",
+          "available": true,
+          "images": {
+            "cover": "assets/images/products/prod_742/cover.jpg",
+            "thumb": "assets/images/products/prod_742/thumb.jpg",
+            "gallery": [
+              "assets/images/products/prod_742/1.jpg"
+            ]
+          }
+        },
+        {
+          "id": "var_739_5",
+          "attributes": {
+            "Tamaño": "N° 5"
+          },
+          "price": 8925,
+          "originalPrice": 10500,
+          "stock": 10,
+          "sku": "PEC009",
+          "available": true,
+          "images": {
+            "cover": "assets/images/products/prod_743/cover.jpg",
+            "thumb": "assets/images/products/prod_743/thumb.jpg",
+            "gallery": [
+              "assets/images/products/prod_743/1.jpg"
+            ]
+          }
+        }
+      ]
+    },
     "images": {
       "cover": "assets/images/products/prod_739/cover.jpg",
       "thumb": "assets/images/products/prod_739/thumb.jpg",
@@ -23182,7 +23190,9 @@
       ]
     },
     "specs": {
-      "SKU": "PEC005"
+      "SKU": "PEC005",
+      "Material": "Nylon resistente",
+      "Tamaños disponibles": "N°1, N°2, N°3, N°4, N°5"
     },
     "shipping": {
       "free": false,
@@ -23192,202 +23202,7 @@
     "brand": "Sin marca",
     "sku": "PEC005",
     "features": [
-      "Ajuste cómodo",
-      "Material resistente",
-      "Fácil de usar",
-      "Seguro y confiable"
-    ]
-  },
-  {
-    "id": "prod_740",
-    "name": "PECHERAS REGULABLES LISO N° 2",
-    "category": "accesorios",
-    "subcategory": "Accesorios",
-    "price": 5100,
-    "originalPrice": 6000,
-    "discount": 15,
-    "stock": 10,
-    "rating": 4.6,
-    "reviews": 51,
-    "featured": false,
-    "topDiscount": false,
-    "hasVideo": false,
-    "tags": [
-      "pecheras",
-      "regulables",
-      "liso",
-      "collar",
-      "correa",
-      "paseo",
-      "pechera"
-    ],
-    "description": "PECHERAS REGULABLES LISO N° 2",
-    "longDescription": "PECHERAS REGULABLES LISO N° 2",
-    "images": {
-      "cover": "assets/images/products/prod_740/cover.jpg",
-      "thumb": "assets/images/products/prod_740/thumb.jpg",
-      "gallery": [
-        "assets/images/products/prod_740/1.jpg"
-      ]
-    },
-    "specs": {
-      "SKU": "PEC006"
-    },
-    "shipping": {
-      "free": false,
-      "days": 2
-    },
-    "badge": "🦴 Accesorios",
-    "brand": "Sin marca",
-    "sku": "PEC006",
-    "features": [
-      "Ajuste cómodo",
-      "Material resistente",
-      "Fácil de usar",
-      "Seguro y confiable"
-    ]
-  },
-  {
-    "id": "prod_741",
-    "name": "PECHERAS REGULABLES LISO N° 3",
-    "category": "accesorios",
-    "subcategory": "Accesorios",
-    "price": 7565,
-    "originalPrice": 8900,
-    "discount": 15,
-    "stock": 10,
-    "rating": 4.7,
-    "reviews": 36,
-    "featured": false,
-    "topDiscount": false,
-    "hasVideo": false,
-    "tags": [
-      "pecheras",
-      "regulables",
-      "liso",
-      "collar",
-      "correa",
-      "paseo",
-      "pechera"
-    ],
-    "description": "PECHERAS REGULABLES LISO N° 3",
-    "longDescription": "PECHERAS REGULABLES LISO N° 3",
-    "images": {
-      "cover": "assets/images/products/prod_741/cover.jpg",
-      "thumb": "assets/images/products/prod_741/thumb.jpg",
-      "gallery": [
-        "assets/images/products/prod_741/1.jpg"
-      ]
-    },
-    "specs": {
-      "SKU": "PEC007"
-    },
-    "shipping": {
-      "free": false,
-      "days": 4
-    },
-    "badge": "🦴 Accesorios",
-    "brand": "Sin marca",
-    "sku": "PEC007",
-    "features": [
-      "Ajuste cómodo",
-      "Material resistente",
-      "Fácil de usar",
-      "Seguro y confiable"
-    ]
-  },
-  {
-    "id": "prod_742",
-    "name": "PECHERAS REGULABLES LISO N° 4",
-    "category": "accesorios",
-    "subcategory": "Accesorios",
-    "price": 8330,
-    "originalPrice": 9800,
-    "discount": 15,
-    "stock": 10,
-    "rating": 4.7,
-    "reviews": 38,
-    "featured": false,
-    "topDiscount": false,
-    "hasVideo": false,
-    "tags": [
-      "pecheras",
-      "regulables",
-      "liso",
-      "collar",
-      "correa",
-      "paseo",
-      "pechera"
-    ],
-    "description": "PECHERAS REGULABLES LISO N° 4",
-    "longDescription": "PECHERAS REGULABLES LISO N° 4",
-    "images": {
-      "cover": "assets/images/products/prod_742/cover.jpg",
-      "thumb": "assets/images/products/prod_742/thumb.jpg",
-      "gallery": [
-        "assets/images/products/prod_742/1.jpg"
-      ]
-    },
-    "specs": {
-      "SKU": "PEC008"
-    },
-    "shipping": {
-      "free": false,
-      "days": 3
-    },
-    "badge": "🦴 Accesorios",
-    "brand": "Sin marca",
-    "sku": "PEC008",
-    "features": [
-      "Ajuste cómodo",
-      "Material resistente",
-      "Fácil de usar",
-      "Seguro y confiable"
-    ]
-  },
-  {
-    "id": "prod_743",
-    "name": "PECHERAS REGULABLES LISO N° 5",
-    "category": "accesorios",
-    "subcategory": "Accesorios",
-    "price": 8925,
-    "originalPrice": 10500,
-    "discount": 15,
-    "stock": 10,
-    "rating": 4.5,
-    "reviews": 25,
-    "featured": false,
-    "topDiscount": false,
-    "hasVideo": false,
-    "tags": [
-      "pecheras",
-      "regulables",
-      "liso",
-      "collar",
-      "correa",
-      "paseo",
-      "pechera"
-    ],
-    "description": "PECHERAS REGULABLES LISO N° 5",
-    "longDescription": "PECHERAS REGULABLES LISO N° 5",
-    "images": {
-      "cover": "assets/images/products/prod_743/cover.jpg",
-      "thumb": "assets/images/products/prod_743/thumb.jpg",
-      "gallery": [
-        "assets/images/products/prod_743/1.jpg"
-      ]
-    },
-    "specs": {
-      "SKU": "PEC009"
-    },
-    "shipping": {
-      "free": false,
-      "days": 4
-    },
-    "badge": "🦴 Accesorios",
-    "brand": "Sin marca",
-    "sku": "PEC009",
-    "features": [
+      "Múltiples tamaños disponibles",
       "Ajuste cómodo",
       "Material resistente",
       "Fácil de usar",
@@ -23581,15 +23396,16 @@
   },
   {
     "id": "prod_745",
-    "name": "CONJUNTO FIJO  N°0",
+    "name": "CONJUNTO FIJO",
     "category": "accesorios",
     "subcategory": "Accesorios",
-    "price": 5780,
-    "originalPrice": 6800,
+    "hasVariants": true,
+    "basePrice": 5780,
+    "baseOriginalPrice": 6800,
     "discount": 15,
-    "stock": 10,
+    "stock": 90,
     "rating": 4.2,
-    "reviews": 44,
+    "reviews": 301,
     "featured": false,
     "topDiscount": false,
     "hasVideo": false,
@@ -23599,10 +23415,184 @@
       "collar",
       "correa",
       "paseo",
-      "pechera"
+      "pechera",
+      "perros"
     ],
-    "description": "CONJUNTO FIJO  N°0",
-    "longDescription": "CONJUNTO FIJO  N°0",
+    "description": "Conjunto fijo collar y correa. Disponible en múltiples tamaños.",
+    "longDescription": "Conjunto fijo de collar y correa para perros. Material resistente y duradero. Ajuste cómodo y seguro. Disponible en varios tamaños para adaptarse a tu mascota.",
+    "variants": {
+      "attributes": [
+        {
+          "id": "size",
+          "name": "Tamaño",
+          "type": "size"
+        }
+      ],
+      "combinations": [
+        {
+          "id": "var_745_1",
+          "attributes": {
+            "Tamaño": "N°0"
+          },
+          "price": 5780,
+          "originalPrice": 6800,
+          "stock": 10,
+          "sku": "CON003",
+          "available": true,
+          "images": {
+            "cover": "assets/images/products/prod_745/cover.jpg",
+            "thumb": "assets/images/products/prod_745/thumb.jpg",
+            "gallery": [
+              "assets/images/products/prod_745/1.jpg"
+            ]
+          }
+        },
+        {
+          "id": "var_745_2",
+          "attributes": {
+            "Tamaño": "N°1 (p15)"
+          },
+          "price": 6460,
+          "originalPrice": 7600,
+          "stock": 10,
+          "sku": "CON004",
+          "available": true,
+          "images": {
+            "cover": "assets/images/products/prod_746/cover.jpg",
+            "thumb": "assets/images/products/prod_746/thumb.jpg",
+            "gallery": [
+              "assets/images/products/prod_746/1.jpg"
+            ]
+          }
+        },
+        {
+          "id": "var_745_3",
+          "attributes": {
+            "Tamaño": "N°2 (p20)"
+          },
+          "price": 7650,
+          "originalPrice": 9000,
+          "stock": 10,
+          "sku": "CON007",
+          "available": true,
+          "images": {
+            "cover": "assets/images/products/prod_747/cover.jpg",
+            "thumb": "assets/images/products/prod_747/thumb.jpg",
+            "gallery": [
+              "assets/images/products/prod_747/1.jpg"
+            ]
+          }
+        },
+        {
+          "id": "var_745_4",
+          "attributes": {
+            "Tamaño": "N°3 (p20)"
+          },
+          "price": 7905,
+          "originalPrice": 9300,
+          "stock": 10,
+          "sku": "CON008",
+          "available": true,
+          "images": {
+            "cover": "assets/images/products/prod_748/cover.jpg",
+            "thumb": "assets/images/products/prod_748/thumb.jpg",
+            "gallery": [
+              "assets/images/products/prod_748/1.jpg"
+            ]
+          }
+        },
+        {
+          "id": "var_745_5",
+          "attributes": {
+            "Tamaño": "N°4 (p20)"
+          },
+          "price": 8330,
+          "originalPrice": 9800,
+          "stock": 10,
+          "sku": "CON009",
+          "available": true,
+          "images": {
+            "cover": "assets/images/products/prod_749/cover.jpg",
+            "thumb": "assets/images/products/prod_749/thumb.jpg",
+            "gallery": [
+              "assets/images/products/prod_749/1.jpg"
+            ]
+          }
+        },
+        {
+          "id": "var_745_6",
+          "attributes": {
+            "Tamaño": "N°5 (p25)"
+          },
+          "price": 10625,
+          "originalPrice": 12500,
+          "stock": 10,
+          "sku": "CON010",
+          "available": true,
+          "images": {
+            "cover": "assets/images/products/prod_750/cover.jpg",
+            "thumb": "assets/images/products/prod_750/thumb.jpg",
+            "gallery": [
+              "assets/images/products/prod_750/1.jpg"
+            ]
+          }
+        },
+        {
+          "id": "var_745_7",
+          "attributes": {
+            "Tamaño": "N°6 (p25)"
+          },
+          "price": 11475,
+          "originalPrice": 13500,
+          "stock": 10,
+          "sku": "CON011",
+          "available": true,
+          "images": {
+            "cover": "assets/images/products/prod_751/cover.jpg",
+            "thumb": "assets/images/products/prod_751/thumb.jpg",
+            "gallery": [
+              "assets/images/products/prod_751/1.jpg"
+            ]
+          }
+        },
+        {
+          "id": "var_745_8",
+          "attributes": {
+            "Tamaño": "N°7 (p30)"
+          },
+          "price": 13345,
+          "originalPrice": 15700,
+          "stock": 10,
+          "sku": "CON012",
+          "available": true,
+          "images": {
+            "cover": "assets/images/products/prod_752/cover.jpg",
+            "thumb": "assets/images/products/prod_752/thumb.jpg",
+            "gallery": [
+              "assets/images/products/prod_752/1.jpg"
+            ]
+          }
+        },
+        {
+          "id": "var_745_9",
+          "attributes": {
+            "Tamaño": "N°8 (p30)"
+          },
+          "price": 14110,
+          "originalPrice": 16600,
+          "stock": 10,
+          "sku": "CON021",
+          "available": true,
+          "images": {
+            "cover": "assets/images/products/prod_753/cover.jpg",
+            "thumb": "assets/images/products/prod_753/thumb.jpg",
+            "gallery": [
+              "assets/images/products/prod_753/1.jpg"
+            ]
+          }
+        }
+      ]
+    },
     "images": {
       "cover": "assets/images/products/prod_745/cover.jpg",
       "thumb": "assets/images/products/prod_745/thumb.jpg",
@@ -23611,7 +23601,9 @@
       ]
     },
     "specs": {
-      "SKU": "CON003"
+      "SKU": "CON003",
+      "Material": "Nylon resistente",
+      "Tamaños disponibles": "N°0, N°1, N°2, N°3, N°4, N°5, N°6, N°7, N°8"
     },
     "shipping": {
       "free": false,
@@ -23621,390 +23613,7 @@
     "brand": "Sin marca",
     "sku": "CON003",
     "features": [
-      "Ajuste cómodo",
-      "Material resistente",
-      "Fácil de usar",
-      "Seguro y confiable"
-    ]
-  },
-  {
-    "id": "prod_746",
-    "name": "CONJUNTO FIJO p15 N°1",
-    "category": "accesorios",
-    "subcategory": "Accesorios",
-    "price": 6460,
-    "originalPrice": 7600,
-    "discount": 15,
-    "stock": 10,
-    "rating": 3.8,
-    "reviews": 25,
-    "featured": false,
-    "topDiscount": false,
-    "hasVideo": false,
-    "tags": [
-      "conjunto",
-      "fijo",
-      "collar",
-      "correa",
-      "paseo",
-      "pechera"
-    ],
-    "description": "CONJUNTO FIJO p15 N°1",
-    "longDescription": "CONJUNTO FIJO p15 N°1",
-    "images": {
-      "cover": "assets/images/products/prod_746/cover.jpg",
-      "thumb": "assets/images/products/prod_746/thumb.jpg",
-      "gallery": [
-        "assets/images/products/prod_746/1.jpg"
-      ]
-    },
-    "specs": {
-      "SKU": "CON004"
-    },
-    "shipping": {
-      "free": false,
-      "days": 4
-    },
-    "badge": "🦴 Accesorios",
-    "brand": "Sin marca",
-    "sku": "CON004",
-    "features": [
-      "Ajuste cómodo",
-      "Material resistente",
-      "Fácil de usar",
-      "Seguro y confiable"
-    ]
-  },
-  {
-    "id": "prod_747",
-    "name": "CONJUNTO FIJO p20 N°2",
-    "category": "accesorios",
-    "subcategory": "Accesorios",
-    "price": 7650,
-    "originalPrice": 9000,
-    "discount": 15,
-    "stock": 10,
-    "rating": 3.7,
-    "reviews": 26,
-    "featured": false,
-    "topDiscount": false,
-    "hasVideo": false,
-    "tags": [
-      "conjunto",
-      "fijo",
-      "collar",
-      "correa",
-      "paseo",
-      "pechera"
-    ],
-    "description": "CONJUNTO FIJO p20 N°2",
-    "longDescription": "CONJUNTO FIJO p20 N°2",
-    "images": {
-      "cover": "assets/images/products/prod_747/cover.jpg",
-      "thumb": "assets/images/products/prod_747/thumb.jpg",
-      "gallery": [
-        "assets/images/products/prod_747/1.jpg"
-      ]
-    },
-    "specs": {
-      "SKU": "CON007"
-    },
-    "shipping": {
-      "free": false,
-      "days": 4
-    },
-    "badge": "🦴 Accesorios",
-    "brand": "Sin marca",
-    "sku": "CON007",
-    "features": [
-      "Ajuste cómodo",
-      "Material resistente",
-      "Fácil de usar",
-      "Seguro y confiable"
-    ]
-  },
-  {
-    "id": "prod_748",
-    "name": "CONJUNTO FIJO p20 N°3",
-    "category": "accesorios",
-    "subcategory": "Accesorios",
-    "price": 7905,
-    "originalPrice": 9300,
-    "discount": 15,
-    "stock": 10,
-    "rating": 4.9,
-    "reviews": 41,
-    "featured": false,
-    "topDiscount": false,
-    "hasVideo": false,
-    "tags": [
-      "conjunto",
-      "fijo",
-      "collar",
-      "correa",
-      "paseo",
-      "pechera"
-    ],
-    "description": "CONJUNTO FIJO p20 N°3",
-    "longDescription": "CONJUNTO FIJO p20 N°3",
-    "images": {
-      "cover": "assets/images/products/prod_748/cover.jpg",
-      "thumb": "assets/images/products/prod_748/thumb.jpg",
-      "gallery": [
-        "assets/images/products/prod_748/1.jpg"
-      ]
-    },
-    "specs": {
-      "SKU": "CON008"
-    },
-    "shipping": {
-      "free": false,
-      "days": 3
-    },
-    "badge": "🦴 Accesorios",
-    "brand": "Sin marca",
-    "sku": "CON008",
-    "features": [
-      "Ajuste cómodo",
-      "Material resistente",
-      "Fácil de usar",
-      "Seguro y confiable"
-    ]
-  },
-  {
-    "id": "prod_749",
-    "name": "CONJUNTO FIJO p20 N°4",
-    "category": "accesorios",
-    "subcategory": "Accesorios",
-    "price": 8330,
-    "originalPrice": 9800,
-    "discount": 15,
-    "stock": 10,
-    "rating": 4.5,
-    "reviews": 9,
-    "featured": false,
-    "topDiscount": false,
-    "hasVideo": false,
-    "tags": [
-      "conjunto",
-      "fijo",
-      "collar",
-      "correa",
-      "paseo",
-      "pechera"
-    ],
-    "description": "CONJUNTO FIJO p20 N°4",
-    "longDescription": "CONJUNTO FIJO p20 N°4",
-    "images": {
-      "cover": "assets/images/products/prod_749/cover.jpg",
-      "thumb": "assets/images/products/prod_749/thumb.jpg",
-      "gallery": [
-        "assets/images/products/prod_749/1.jpg"
-      ]
-    },
-    "specs": {
-      "SKU": "CON009"
-    },
-    "shipping": {
-      "free": false,
-      "days": 2
-    },
-    "badge": "🦴 Accesorios",
-    "brand": "Sin marca",
-    "sku": "CON009",
-    "features": [
-      "Ajuste cómodo",
-      "Material resistente",
-      "Fácil de usar",
-      "Seguro y confiable"
-    ]
-  },
-  {
-    "id": "prod_750",
-    "name": "CONJUNTO FIJO  p25 N°5",
-    "category": "accesorios",
-    "subcategory": "Accesorios",
-    "price": 10625,
-    "originalPrice": 12500,
-    "discount": 15,
-    "stock": 10,
-    "rating": 3.7,
-    "reviews": 39,
-    "featured": false,
-    "topDiscount": false,
-    "hasVideo": false,
-    "tags": [
-      "conjunto",
-      "fijo",
-      "collar",
-      "correa",
-      "paseo",
-      "pechera"
-    ],
-    "description": "CONJUNTO FIJO  p25 N°5",
-    "longDescription": "CONJUNTO FIJO  p25 N°5",
-    "images": {
-      "cover": "assets/images/products/prod_750/cover.jpg",
-      "thumb": "assets/images/products/prod_750/thumb.jpg",
-      "gallery": [
-        "assets/images/products/prod_750/1.jpg"
-      ]
-    },
-    "specs": {
-      "SKU": "CON010"
-    },
-    "shipping": {
-      "free": false,
-      "days": 2
-    },
-    "badge": "🦴 Accesorios",
-    "brand": "Sin marca",
-    "sku": "CON010",
-    "features": [
-      "Ajuste cómodo",
-      "Material resistente",
-      "Fácil de usar",
-      "Seguro y confiable"
-    ]
-  },
-  {
-    "id": "prod_751",
-    "name": "CONJUNTO FIJO  p25 N°6",
-    "category": "accesorios",
-    "subcategory": "Accesorios",
-    "price": 11475,
-    "originalPrice": 13500,
-    "discount": 15,
-    "stock": 10,
-    "rating": 4.2,
-    "reviews": 51,
-    "featured": false,
-    "topDiscount": false,
-    "hasVideo": false,
-    "tags": [
-      "conjunto",
-      "fijo",
-      "collar",
-      "correa",
-      "paseo",
-      "pechera"
-    ],
-    "description": "CONJUNTO FIJO  p25 N°6",
-    "longDescription": "CONJUNTO FIJO  p25 N°6",
-    "images": {
-      "cover": "assets/images/products/prod_751/cover.jpg",
-      "thumb": "assets/images/products/prod_751/thumb.jpg",
-      "gallery": [
-        "assets/images/products/prod_751/1.jpg"
-      ]
-    },
-    "specs": {
-      "SKU": "CON011"
-    },
-    "shipping": {
-      "free": false,
-      "days": 2
-    },
-    "badge": "🦴 Accesorios",
-    "brand": "Sin marca",
-    "sku": "CON011",
-    "features": [
-      "Ajuste cómodo",
-      "Material resistente",
-      "Fácil de usar",
-      "Seguro y confiable"
-    ]
-  },
-  {
-    "id": "prod_752",
-    "name": "CONJUNTO FIJO p30 N°7",
-    "category": "accesorios",
-    "subcategory": "Accesorios",
-    "price": 13345,
-    "originalPrice": 15700,
-    "discount": 15,
-    "stock": 10,
-    "rating": 4.7,
-    "reviews": 14,
-    "featured": false,
-    "topDiscount": false,
-    "hasVideo": false,
-    "tags": [
-      "conjunto",
-      "fijo",
-      "collar",
-      "correa",
-      "paseo",
-      "pechera"
-    ],
-    "description": "CONJUNTO FIJO p30 N°7",
-    "longDescription": "CONJUNTO FIJO p30 N°7",
-    "images": {
-      "cover": "assets/images/products/prod_752/cover.jpg",
-      "thumb": "assets/images/products/prod_752/thumb.jpg",
-      "gallery": [
-        "assets/images/products/prod_752/1.jpg"
-      ]
-    },
-    "specs": {
-      "SKU": "CON012"
-    },
-    "shipping": {
-      "free": true,
-      "days": 2
-    },
-    "badge": "🦴 Accesorios",
-    "brand": "Sin marca",
-    "sku": "CON012",
-    "features": [
-      "Ajuste cómodo",
-      "Material resistente",
-      "Fácil de usar",
-      "Seguro y confiable"
-    ]
-  },
-  {
-    "id": "prod_753",
-    "name": "CONJUNTO FIJO p30 N°8",
-    "category": "accesorios",
-    "subcategory": "Accesorios",
-    "price": 14110,
-    "originalPrice": 16600,
-    "discount": 15,
-    "stock": 10,
-    "rating": 4.4,
-    "reviews": 52,
-    "featured": false,
-    "topDiscount": false,
-    "hasVideo": false,
-    "tags": [
-      "conjunto",
-      "fijo",
-      "collar",
-      "correa",
-      "paseo",
-      "pechera"
-    ],
-    "description": "CONJUNTO FIJO p30 N°8",
-    "longDescription": "CONJUNTO FIJO p30 N°8",
-    "images": {
-      "cover": "assets/images/products/prod_753/cover.jpg",
-      "thumb": "assets/images/products/prod_753/thumb.jpg",
-      "gallery": [
-        "assets/images/products/prod_753/1.jpg"
-      ]
-    },
-    "specs": {
-      "SKU": "CON021"
-    },
-    "shipping": {
-      "free": true,
-      "days": 4
-    },
-    "badge": "🦴 Accesorios",
-    "brand": "Sin marca",
-    "sku": "CON021",
-    "features": [
+      "Múltiples tamaños disponibles",
       "Ajuste cómodo",
       "Material resistente",
       "Fácil de usar",
@@ -27370,30 +26979,94 @@
   },
   {
     "id": "prod_861",
-    "name": "BEBEDERO PARA HAMTER (LAND PET) 80ML T-1",
+    "name": "BEBEDERO PARA HAMSTER (LAND PET)",
     "category": "accesorios",
     "subcategory": "Comederos",
-    "price": 2465,
-    "originalPrice": 2900,
+    "hasVariants": true,
+    "basePrice": 2465,
+    "baseOriginalPrice": 2900,
     "discount": 15,
-    "stock": 10,
-    "rating": 4,
-    "reviews": 48,
+    "stock": 30,
+    "rating": 4.3,
+    "reviews": 127,
     "featured": false,
     "topDiscount": false,
     "hasVideo": false,
     "tags": [
       "bebedero",
-      "hamter",
-      "(land",
-      "pet)",
-      "80ml",
-      "comedero",
-      "alimentación",
-      "agua"
+      "hamster",
+      "land pet",
+      "roedores",
+      "agua",
+      "pequeños animales"
     ],
-    "description": "BEBEDERO PARA HAMTER (LAND PET) 80ML T-1",
-    "longDescription": "BEBEDERO PARA HAMTER (LAND PET) 80ML T-1",
+    "description": "Bebedero para hamster Land Pet. Disponible en múltiples capacidades.",
+    "longDescription": "Bebedero para hamster marca Land Pet. Ideal para roedores y pequeños animales. Fácil de instalar y limpiar. Disponible en varias capacidades para adaptarse a las necesidades de tu mascota.",
+    "variants": {
+      "attributes": [
+        {
+          "id": "size",
+          "name": "Capacidad",
+          "type": "size"
+        }
+      ],
+      "combinations": [
+        {
+          "id": "var_861_1",
+          "attributes": {
+            "Capacidad": "T-1 (80ml)"
+          },
+          "price": 2465,
+          "originalPrice": 2900,
+          "stock": 10,
+          "sku": "BEB006",
+          "available": true,
+          "images": {
+            "cover": "assets/images/products/prod_861/cover.jpg",
+            "thumb": "assets/images/products/prod_861/thumb.jpg",
+            "gallery": [
+              "assets/images/products/prod_861/1.jpg"
+            ]
+          }
+        },
+        {
+          "id": "var_861_2",
+          "attributes": {
+            "Capacidad": "T-2 (125ml)"
+          },
+          "price": 2805,
+          "originalPrice": 3300,
+          "stock": 10,
+          "sku": "BEB007",
+          "available": true,
+          "images": {
+            "cover": "assets/images/products/prod_862/cover.jpg",
+            "thumb": "assets/images/products/prod_862/thumb.jpg",
+            "gallery": [
+              "assets/images/products/prod_862/1.jpg"
+            ]
+          }
+        },
+        {
+          "id": "var_861_3",
+          "attributes": {
+            "Capacidad": "T-3 (250ml)"
+          },
+          "price": 3400,
+          "originalPrice": 4000,
+          "stock": 10,
+          "sku": "BEB008",
+          "available": true,
+          "images": {
+            "cover": "assets/images/products/prod_863/cover.jpg",
+            "thumb": "assets/images/products/prod_863/thumb.jpg",
+            "gallery": [
+              "assets/images/products/prod_863/1.jpg"
+            ]
+          }
+        }
+      ]
+    },
     "images": {
       "cover": "assets/images/products/prod_861/cover.jpg",
       "thumb": "assets/images/products/prod_861/thumb.jpg",
@@ -27403,120 +27076,20 @@
     },
     "specs": {
       "SKU": "BEB006",
-      "Medida": "80ML"
+      "Marca": "Land Pet",
+      "Capacidades disponibles": "80ml, 125ml, 250ml"
     },
     "shipping": {
       "free": false,
-      "days": 4
+      "days": 2
     },
     "badge": "🍽️ Comederos",
-    "brand": "Sin marca",
+    "brand": "Land Pet",
     "sku": "BEB006",
     "features": [
+      "Múltiples capacidades disponibles",
       "Fácil de limpiar",
-      "Antideslizante",
-      "Capacidad adecuada",
-      "Material duradero"
-    ]
-  },
-  {
-    "id": "prod_862",
-    "name": "BEBEDERO PARA HAMTER (LAND PET) 125ML T-2",
-    "category": "accesorios",
-    "subcategory": "Comederos",
-    "price": 2805,
-    "originalPrice": 3300,
-    "discount": 15,
-    "stock": 10,
-    "rating": 4.7,
-    "reviews": 30,
-    "featured": false,
-    "topDiscount": false,
-    "hasVideo": false,
-    "tags": [
-      "bebedero",
-      "hamter",
-      "(land",
-      "pet)",
-      "125ml",
-      "comedero",
-      "alimentación",
-      "agua"
-    ],
-    "description": "BEBEDERO PARA HAMTER (LAND PET) 125ML T-2",
-    "longDescription": "BEBEDERO PARA HAMTER (LAND PET) 125ML T-2",
-    "images": {
-      "cover": "assets/images/products/prod_862/cover.jpg",
-      "thumb": "assets/images/products/prod_862/thumb.jpg",
-      "gallery": [
-        "assets/images/products/prod_862/1.jpg"
-      ]
-    },
-    "specs": {
-      "SKU": "BEB007",
-      "Medida": "125ML"
-    },
-    "shipping": {
-      "free": false,
-      "days": 2
-    },
-    "badge": "🍽️ Comederos",
-    "brand": "Sin marca",
-    "sku": "BEB007",
-    "features": [
-      "Fácil de limpiar",
-      "Antideslizante",
-      "Capacidad adecuada",
-      "Material duradero"
-    ]
-  },
-  {
-    "id": "prod_863",
-    "name": "BEBEDERO PARA HAMTER (LAND PET) 250ML T-3",
-    "category": "accesorios",
-    "subcategory": "Comederos",
-    "price": 3400,
-    "originalPrice": 4000,
-    "discount": 15,
-    "stock": 10,
-    "rating": 4.2,
-    "reviews": 49,
-    "featured": false,
-    "topDiscount": false,
-    "hasVideo": false,
-    "tags": [
-      "bebedero",
-      "hamter",
-      "(land",
-      "pet)",
-      "250ml",
-      "comedero",
-      "alimentación",
-      "agua"
-    ],
-    "description": "BEBEDERO PARA HAMTER (LAND PET) 250ML T-3",
-    "longDescription": "BEBEDERO PARA HAMTER (LAND PET) 250ML T-3",
-    "images": {
-      "cover": "assets/images/products/prod_863/cover.jpg",
-      "thumb": "assets/images/products/prod_863/thumb.jpg",
-      "gallery": [
-        "assets/images/products/prod_863/1.jpg"
-      ]
-    },
-    "specs": {
-      "SKU": "BEB008",
-      "Medida": "250ML"
-    },
-    "shipping": {
-      "free": false,
-      "days": 2
-    },
-    "badge": "🍽️ Comederos",
-    "brand": "Sin marca",
-    "sku": "BEB008",
-    "features": [
-      "Fácil de limpiar",
-      "Antideslizante",
+      "Fácil instalación",
       "Capacidad adecuada",
       "Material duradero"
     ]
