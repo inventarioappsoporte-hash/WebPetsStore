@@ -1,0 +1,3785 @@
+{
+  "fecha": "2026-01-15T12:44:33.410Z",
+  "totalProductos": 349,
+  "productosConProblemas": 302,
+  "resumenProblemas": {
+    "Descripción IDÉNTICA al título": 267,
+    "Descripción MUY CORTA (22 chars)": 12,
+    "longDescription IGUAL a description": 302,
+    "Descripción MUY CORTA (16 chars)": 6,
+    "Descripción MUY CORTA (24 chars)": 17,
+    "Descripción MUY CORTA (21 chars)": 6,
+    "Descripción MUY CORTA (14 chars)": 8,
+    "Descripción MUY CORTA (29 chars)": 7,
+    "Descripción MUY CORTA (12 chars)": 2,
+    "Descripción MUY CORTA (15 chars)": 6,
+    "Descripción MUY CORTA (28 chars)": 8,
+    "Descripción MUY CORTA (25 chars)": 10,
+    "Descripción MUY CORTA (26 chars)": 7,
+    "Descripción MUY CORTA (23 chars)": 13,
+    "Descripción MUY SIMILAR al título": 4,
+    "Descripción MUY CORTA (18 chars)": 7,
+    "Descripción MUY CORTA (19 chars)": 13,
+    "Descripción MUY CORTA (20 chars)": 9,
+    "Descripción MUY CORTA (17 chars)": 4,
+    "Descripción MUY CORTA (27 chars)": 7,
+    "Descripción MUY CORTA (11 chars)": 4,
+    "Descripción MUY CORTA (13 chars)": 2,
+    "Descripción MUY CORTA (10 chars)": 1,
+    "Descripción solo tiene MEDIDAS/TALLAS": 10
+  },
+  "productos": [
+    {
+      "id": "prod_106",
+      "name": "SHAMPOO MAXIMO 250 cm3",
+      "category": "higiene-cuidado",
+      "subcategory": "Higiene",
+      "descriptionActual": "SHAMPOO MAXIMO 250 cm3",
+      "longDescriptionActual": "SHAMPOO MAXIMO 250 cm3",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ Descripción MUY CORTA (22 chars)",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_134",
+      "name": "PIEDRAS ABSORSOL",
+      "category": "higiene-cuidado",
+      "subcategory": "Higiene",
+      "descriptionActual": "PIEDRAS ABSORSOL",
+      "longDescriptionActual": "PIEDRAS ABSORSOL",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ Descripción MUY CORTA (16 chars)",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_140",
+      "name": "ZOOTEC PIEDRAS NATURALES",
+      "category": "higiene-cuidado",
+      "subcategory": "Higiene",
+      "descriptionActual": "ZOOTEC PIEDRAS NATURALES",
+      "longDescriptionActual": "ZOOTEC PIEDRAS NATURALES",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ Descripción MUY CORTA (24 chars)",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_148",
+      "name": "MOISES TUNEL ECONOMICO",
+      "category": "casa-descanso",
+      "subcategory": "Colchonetas",
+      "descriptionActual": "MOISES TUNEL ECONOMICO",
+      "longDescriptionActual": "MOISES TUNEL ECONOMICO",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ Descripción MUY CORTA (22 chars)",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_160",
+      "name": "PUFF UNICO TALLE",
+      "category": "casa-descanso",
+      "subcategory": "Colchonetas",
+      "descriptionActual": "PUFF UNICO TALLE",
+      "longDescriptionActual": "PUFF UNICO TALLE",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ Descripción MUY CORTA (16 chars)",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_161",
+      "name": "PUFF UNICO TALLE SOFF",
+      "category": "casa-descanso",
+      "subcategory": "Colchonetas",
+      "descriptionActual": "PUFF UNICO TALLE SOFF",
+      "longDescriptionActual": "PUFF UNICO TALLE SOFF",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ Descripción MUY CORTA (21 chars)",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_162",
+      "name": "ALMOHADON DONA",
+      "category": "casa-descanso",
+      "subcategory": "Colchonetas",
+      "descriptionActual": "ALMOHADON DONA",
+      "longDescriptionActual": "ALMOHADON DONA",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ Descripción MUY CORTA (14 chars)",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_164",
+      "name": "BOLSO FANTASIA",
+      "category": "casa-descanso",
+      "subcategory": "Bolsos",
+      "descriptionActual": "BOLSO FANTASIA",
+      "longDescriptionActual": "BOLSO FANTASIA",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ Descripción MUY CORTA (14 chars)",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_168",
+      "name": "COLCHONETA MALETIN MOVIL",
+      "category": "casa-descanso",
+      "subcategory": "Casitas",
+      "descriptionActual": "COLCHONETA MALETIN MOVIL",
+      "longDescriptionActual": "COLCHONETA MALETIN MOVIL",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ Descripción MUY CORTA (24 chars)",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_169",
+      "name": "CANASTO TRASPORTADOR FANTASIA",
+      "category": "casa-descanso",
+      "subcategory": "Casitas",
+      "descriptionActual": "CANASTO TRASPORTADOR FANTASIA",
+      "longDescriptionActual": "CANASTO TRASPORTADOR FANTASIA",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ Descripción MUY CORTA (29 chars)",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_170",
+      "name": "CASITA FELIZ",
+      "category": "casa-descanso",
+      "subcategory": "Bolsos",
+      "descriptionActual": "CASITA FELIZ",
+      "longDescriptionActual": "CASITA FELIZ",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ Descripción MUY CORTA (12 chars)",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_197",
+      "name": "RASCADOR PUENTE",
+      "category": "accesorios",
+      "subcategory": "Rascadores",
+      "descriptionActual": "RASCADOR PUENTE",
+      "longDescriptionActual": "RASCADOR PUENTE",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ Descripción MUY CORTA (15 chars)",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_198",
+      "name": "RASCADOR CILINDRO PARA PARED",
+      "category": "accesorios",
+      "subcategory": "Rascadores",
+      "descriptionActual": "RASCADOR CILINDRO PARA PARED",
+      "longDescriptionActual": "RASCADOR CILINDRO PARA PARED",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ Descripción MUY CORTA (28 chars)",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_205",
+      "name": "JUGUETE CON RESORTE Y PES",
+      "category": "juguetes",
+      "subcategory": "Juguetes",
+      "descriptionActual": "JUGUETE CON RESORTE Y PES",
+      "longDescriptionActual": "JUGUETE CON RESORTE Y PES",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ Descripción MUY CORTA (25 chars)",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_206",
+      "name": "RASCADOR POSTE ZOOTEC N 1",
+      "category": "accesorios",
+      "subcategory": "Rascadores",
+      "descriptionActual": "RASCADOR POSTE ZOOTEC N 1",
+      "longDescriptionActual": "RASCADOR POSTE ZOOTEC N 1",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ Descripción MUY CORTA (25 chars)",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_207",
+      "name": "RASCADOR CON CARTON SIMPLE",
+      "category": "accesorios",
+      "subcategory": "Rascadores",
+      "descriptionActual": "RASCADOR CON CARTON SIMPLE",
+      "longDescriptionActual": "RASCADOR CON CARTON SIMPLE",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ Descripción MUY CORTA (26 chars)",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_208",
+      "name": "RASACADOR C/ CAJA KIMEY",
+      "category": "accesorios",
+      "subcategory": "Rascadores",
+      "descriptionActual": "RASACADOR C/ CAJA KIMEY",
+      "longDescriptionActual": "RASACADOR C/ CAJA KIMEY",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ Descripción MUY CORTA (23 chars)",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_209",
+      "name": "RASACADOR PLANO N1 KIMEY",
+      "category": "accesorios",
+      "subcategory": "Rascadores",
+      "descriptionActual": "RASACADOR PLANO N1 KIMEY",
+      "longDescriptionActual": "RASACADOR PLANO N1 KIMEY",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ Descripción MUY CORTA (24 chars)",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_211",
+      "name": "RASCADOR HELICE N7 KIMEY",
+      "category": "accesorios",
+      "subcategory": "Rascadores",
+      "descriptionActual": "RASCADOR HELICE N7 KIMEY",
+      "longDescriptionActual": "RASCADOR HELICE N7 KIMEY",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ Descripción MUY CORTA (24 chars)",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_213",
+      "name": "RASACDOR MESA N2 KIMEY",
+      "category": "accesorios",
+      "subcategory": "Rascadores",
+      "descriptionActual": "RASACDOR MESA N2 KIMEY",
+      "longDescriptionActual": "RASACDOR MESA N2 KIMEY",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ Descripción MUY CORTA (22 chars)",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_214",
+      "name": "TITO'S - AGATAR",
+      "category": "accesorios",
+      "subcategory": "Rascadores",
+      "descriptionActual": "TITO'S - AGATAR",
+      "longDescriptionActual": "TITO'S - AGATAR",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ Descripción MUY CORTA (15 chars)",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_215",
+      "name": "VAINILLA - AGATAR",
+      "category": "casa-descanso",
+      "subcategory": "Rascadores",
+      "descriptionActual": "VAINILLA  - AGATAR",
+      "longDescriptionActual": "VAINILLA  - AGATAR",
+      "problemas": [
+        "⚠️ Descripción MUY SIMILAR al título",
+        "⚠️ Descripción MUY CORTA (18 chars)",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_216",
+      "name": "ALSINA - AGATAR",
+      "category": "casa-descanso",
+      "subcategory": "Rascadores",
+      "descriptionActual": "ALSINA - AGATAR",
+      "longDescriptionActual": "ALSINA - AGATAR",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ Descripción MUY CORTA (15 chars)",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_217",
+      "name": "AGATAR - CARA DE GATO",
+      "category": "casa-descanso",
+      "subcategory": "Rascadores",
+      "descriptionActual": "AGATAR - CARA DE GATO",
+      "longDescriptionActual": "AGATAR - CARA DE GATO",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ Descripción MUY CORTA (21 chars)",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_218",
+      "name": "RASCADOR 2 EN 1 CON TÚNEL",
+      "category": "accesorios",
+      "subcategory": "Rascadores",
+      "descriptionActual": "RASCADOR 2 EN 1 CON TÚNEL",
+      "longDescriptionActual": "RASCADOR 2 EN 1 CON TÚNEL",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ Descripción MUY CORTA (25 chars)",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_219",
+      "name": "MINI INFINITY - AGATAR",
+      "category": "accesorios",
+      "subcategory": "Rascadores",
+      "descriptionActual": "MINI INFINITY - AGATAR",
+      "longDescriptionActual": "MINI INFINITY - AGATAR",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ Descripción MUY CORTA (22 chars)",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_220",
+      "name": "MINI ACUÑA - AGATAR",
+      "category": "accesorios",
+      "subcategory": "Rascadores",
+      "descriptionActual": "MINI ACUÑA - AGATAR",
+      "longDescriptionActual": "MINI ACUÑA - AGATAR",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ Descripción MUY CORTA (19 chars)",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_221",
+      "name": "MINI SIMON - AGATAR",
+      "category": "accesorios",
+      "subcategory": "Rascadores",
+      "descriptionActual": "MINI SIMON - AGATAR",
+      "longDescriptionActual": "MINI SIMON - AGATAR",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ Descripción MUY CORTA (19 chars)",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_223",
+      "name": "COCODRILO - AGATAR",
+      "category": "accesorios",
+      "subcategory": "Rascadores",
+      "descriptionActual": "COCODRILO - AGATAR",
+      "longDescriptionActual": "COCODRILO - AGATAR",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ Descripción MUY CORTA (18 chars)",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_224",
+      "name": "TIBURÓN - AGATAR",
+      "category": "accesorios",
+      "subcategory": "Rascadores",
+      "descriptionActual": "TIBURÓN - AGATAR",
+      "longDescriptionActual": "TIBURÓN - AGATAR",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ Descripción MUY CORTA (16 chars)",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_225",
+      "name": "JIRAFA - AGATAR",
+      "category": "accesorios",
+      "subcategory": "Rascadores",
+      "descriptionActual": "JIRAFA - AGATAR",
+      "longDescriptionActual": "JIRAFA - AGATAR",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ Descripción MUY CORTA (15 chars)",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_226",
+      "name": "HIPOPÓTAMO - AGATAR",
+      "category": "accesorios",
+      "subcategory": "Rascadores",
+      "descriptionActual": "HIPOPÓTAMO - AGATAR",
+      "longDescriptionActual": "HIPOPÓTAMO - AGATAR",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ Descripción MUY CORTA (19 chars)",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_227",
+      "name": "Ratón - AGATAR",
+      "category": "accesorios",
+      "subcategory": "Rascadores",
+      "descriptionActual": "Ratón - AGATAR",
+      "longDescriptionActual": "Ratón - AGATAR",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ Descripción MUY CORTA (14 chars)",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_228",
+      "name": "RINOCERONTE MINI - AGATAR",
+      "category": "accesorios",
+      "subcategory": "Rascadores",
+      "descriptionActual": "RINOCERONTE MINI - AGATAR",
+      "longDescriptionActual": "RINOCERONTE MINI - AGATAR",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ Descripción MUY CORTA (25 chars)",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_229",
+      "name": "OSO POLAR MINI - AGATAR",
+      "category": "accesorios",
+      "subcategory": "Rascadores",
+      "descriptionActual": "OSO POLAR MINI - AGATAR",
+      "longDescriptionActual": "OSO POLAR MINI - AGATAR",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ Descripción MUY CORTA (23 chars)",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_231",
+      "name": "Gorila Mini - AGATAR",
+      "category": "accesorios",
+      "subcategory": "Rascadores",
+      "descriptionActual": "Gorila Mini - AGATAR",
+      "longDescriptionActual": "Gorila Mini - AGATAR",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ Descripción MUY CORTA (20 chars)",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_232",
+      "name": "CHANCHITO - AGATAR",
+      "category": "accesorios",
+      "subcategory": "Rascadores",
+      "descriptionActual": "CHANCHITO - AGATAR",
+      "longDescriptionActual": "CHANCHITO - AGATAR",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ Descripción MUY CORTA (18 chars)",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_233",
+      "name": "CAJA TRANSPORTADORA - AGATAR",
+      "category": "casa-descanso",
+      "subcategory": "Casitas",
+      "descriptionActual": "CAJA TRANSPORTADORA - AGATAR",
+      "longDescriptionActual": "CAJA TRANSPORTADORA - AGATAR",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ Descripción MUY CORTA (28 chars)",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_234",
+      "name": "JUGUETE ATOMO 10 CM",
+      "category": "juguetes",
+      "subcategory": "Juguetes",
+      "descriptionActual": "JUGUETE ATOMO 10 CM",
+      "longDescriptionActual": "JUGUETE ATOMO 10 CM",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ Descripción MUY CORTA (19 chars)",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_235",
+      "name": "ATOMO CON CHIFLE 15X6CM",
+      "category": "juguetes",
+      "subcategory": "Juguetes",
+      "descriptionActual": "ATOMO CON CHIFLE 15X6CM",
+      "longDescriptionActual": "ATOMO CON CHIFLE 15X6CM",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ Descripción MUY CORTA (23 chars)",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_236",
+      "name": "PELOTA DE TELA X 4 CHICA",
+      "category": "juguetes",
+      "subcategory": "Juguetes",
+      "descriptionActual": "PELOTA DE TELA X 4 CHICA",
+      "longDescriptionActual": "PELOTA DE TELA X 4 CHICA",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ Descripción MUY CORTA (24 chars)",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_237",
+      "name": "PELOTA TENIS GRANDE X3",
+      "category": "juguetes",
+      "subcategory": "Juguetes",
+      "descriptionActual": "PELOTA TENIS GRANDE X3",
+      "longDescriptionActual": "PELOTA TENIS GRANDE X3",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ Descripción MUY CORTA (22 chars)",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_240",
+      "name": "JUGUETE PELOTA CON LUZ 8CM",
+      "category": "juguetes",
+      "subcategory": "Juguetes",
+      "descriptionActual": "JUGUETE PELOTA CON LUZ 8CM",
+      "longDescriptionActual": "JUGUETE PELOTA CON LUZ 8CM",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ Descripción MUY CORTA (26 chars)",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_245",
+      "name": "PELOTA BASCULANTE CON LUZ",
+      "category": "juguetes",
+      "subcategory": "Juguetes",
+      "descriptionActual": "PELOTA BASCULANTE CON LUZ",
+      "longDescriptionActual": "PELOTA BASCULANTE CON LUZ",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ Descripción MUY CORTA (25 chars)",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_246",
+      "name": "PELOTA ASTEROIDE CON LUZ",
+      "category": "juguetes",
+      "subcategory": "Juguetes",
+      "descriptionActual": "PELOTA ASTEROIDE CON LUZ",
+      "longDescriptionActual": "PELOTA ASTEROIDE CON LUZ",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ Descripción MUY CORTA (24 chars)",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_248",
+      "name": "PELOTA DIAMANTE  8CM  PE0091",
+      "category": "juguetes",
+      "subcategory": "Juguetes",
+      "descriptionActual": "PELOTA DIAMANTE  8CM  PE0091",
+      "longDescriptionActual": "PELOTA DIAMANTE  8CM  PE0091",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ Descripción MUY CORTA (28 chars)",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_254",
+      "name": "PELOTA LISA 4,5CM",
+      "category": "juguetes",
+      "subcategory": "Juguetes",
+      "descriptionActual": "PELOTA LISA 4,5CM",
+      "longDescriptionActual": "PELOTA LISA 4,5CM",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ Descripción MUY CORTA (17 chars)",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_257",
+      "name": "PELOTA SPORTING CHICA 4CM",
+      "category": "juguetes",
+      "subcategory": "Juguetes",
+      "descriptionActual": "PELOTA SPORTING CHICA 4CM",
+      "longDescriptionActual": "PELOTA SPORTING CHICA 4CM",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ Descripción MUY CORTA (25 chars)",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_258",
+      "name": "PELOTA SPORTING MEDIANA 7CM",
+      "category": "juguetes",
+      "subcategory": "Juguetes",
+      "descriptionActual": "PELOTA SPORTING MEDIANA 7CM",
+      "longDescriptionActual": "PELOTA SPORTING MEDIANA 7CM",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ Descripción MUY CORTA (27 chars)",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_259",
+      "name": "PELOTA SPORTING GRANDE 9CM",
+      "category": "juguetes",
+      "subcategory": "Juguetes",
+      "descriptionActual": "PELOTA SPORTING GRANDE 9CM",
+      "longDescriptionActual": "PELOTA SPORTING GRANDE 9CM",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ Descripción MUY CORTA (26 chars)",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_265",
+      "name": "PELOTA DE FUTBOOL (17 CM)",
+      "category": "juguetes",
+      "subcategory": "Juguetes",
+      "descriptionActual": "PELOTA DE FUTBOOL (17 CM)",
+      "longDescriptionActual": "PELOTA DE FUTBOOL (17 CM)",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ Descripción MUY CORTA (25 chars)",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_266",
+      "name": "PELOTA LISA TRAININ  (12 CM)",
+      "category": "juguetes",
+      "subcategory": "Juguetes",
+      "descriptionActual": "PELOTA LISA TRAININ  (12 CM)",
+      "longDescriptionActual": "PELOTA LISA TRAININ  (12 CM)",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ Descripción MUY CORTA (28 chars)",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_272",
+      "name": "MANCUERNA DE GOMA CHICA",
+      "category": "juguetes",
+      "subcategory": "Juguetes",
+      "descriptionActual": "MANCUERNA DE GOMA CHICA",
+      "longDescriptionActual": "MANCUERNA DE GOMA CHICA",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ Descripción MUY CORTA (23 chars)",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_273",
+      "name": "MANCUERNA DE GOMA MEDIANA",
+      "category": "juguetes",
+      "subcategory": "Juguetes",
+      "descriptionActual": "MANCUERNA DE GOMA MEDIANA",
+      "longDescriptionActual": "MANCUERNA DE GOMA MEDIANA",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ Descripción MUY CORTA (25 chars)",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_274",
+      "name": "MANCUERNA DE GOMA GRANDE",
+      "category": "juguetes",
+      "subcategory": "Juguetes",
+      "descriptionActual": "MANCUERNA DE GOMA GRANDE",
+      "longDescriptionActual": "MANCUERNA DE GOMA GRANDE",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ Descripción MUY CORTA (24 chars)",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_278",
+      "name": "ARANDELA DE GOMA CHI",
+      "category": "juguetes",
+      "subcategory": "Juguetes",
+      "descriptionActual": "ARANDELA DE GOMA CHI",
+      "longDescriptionActual": "ARANDELA DE GOMA CHI",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ Descripción MUY CORTA (20 chars)",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_279",
+      "name": "ARANDELA GOMA MED",
+      "category": "juguetes",
+      "subcategory": "Juguetes",
+      "descriptionActual": "ARANDELA GOMA MED",
+      "longDescriptionActual": "ARANDELA GOMA MED",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ Descripción MUY CORTA (17 chars)",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_280",
+      "name": "ARANDELA GOMA GRA",
+      "category": "juguetes",
+      "subcategory": "Juguetes",
+      "descriptionActual": "ARANDELA GOMA GRA",
+      "longDescriptionActual": "ARANDELA GOMA GRA",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ Descripción MUY CORTA (17 chars)",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_284",
+      "name": "CHIFLE GALLINA CHICA",
+      "category": "juguetes",
+      "subcategory": "Juguetes",
+      "descriptionActual": "CHIFLE GALLINA CHICA",
+      "longDescriptionActual": "CHIFLE GALLINA CHICA",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ Descripción MUY CORTA (20 chars)",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_285",
+      "name": "CHIFLE GALLINA MEDIANA",
+      "category": "juguetes",
+      "subcategory": "Juguetes",
+      "descriptionActual": "CHIFLE  GALLINA MEDIANA",
+      "longDescriptionActual": "CHIFLE  GALLINA MEDIANA",
+      "problemas": [
+        "⚠️ Descripción MUY SIMILAR al título",
+        "⚠️ Descripción MUY CORTA (23 chars)",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_286",
+      "name": "CHIFLE GALLINA  GRANDE",
+      "category": "juguetes",
+      "subcategory": "Juguetes",
+      "descriptionActual": "CHIFLE GALLINA  GRANDE",
+      "longDescriptionActual": "CHIFLE GALLINA  GRANDE",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ Descripción MUY CORTA (22 chars)",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_297",
+      "name": "JUGUETE DINOSAURIO LATEX 12CM",
+      "category": "juguetes",
+      "subcategory": "Juguetes",
+      "descriptionActual": "JUGUETE DINOSAURIO LATEX 12CM",
+      "longDescriptionActual": "JUGUETE DINOSAURIO LATEX 12CM",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ Descripción MUY CORTA (29 chars)",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_299",
+      "name": "CHIFLE CUERPO ESPIN",
+      "category": "juguetes",
+      "subcategory": "Juguetes",
+      "descriptionActual": "CHIFLE CUERPO ESPIN",
+      "longDescriptionActual": "CHIFLE CUERPO ESPIN",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ Descripción MUY CORTA (19 chars)",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_304",
+      "name": "PELOTA RUGBY CHICO  0132",
+      "category": "juguetes",
+      "subcategory": "Juguetes",
+      "descriptionActual": "PELOTA RUGBY CHICO  0132",
+      "longDescriptionActual": "PELOTA RUGBY CHICO  0132",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ Descripción MUY CORTA (24 chars)",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_305",
+      "name": "PELOTA DE LUNA  CHICA   0166",
+      "category": "juguetes",
+      "subcategory": "Juguetes",
+      "descriptionActual": "PELOTA DE LUNA  CHICA   0166",
+      "longDescriptionActual": "PELOTA DE LUNA  CHICA   0166",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ Descripción MUY CORTA (28 chars)",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_306",
+      "name": "PELOTA CON BOLITAS  0164",
+      "category": "juguetes",
+      "subcategory": "Juguetes",
+      "descriptionActual": "PELOTA CON BOLITAS  0164",
+      "longDescriptionActual": "PELOTA CON BOLITAS  0164",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ Descripción MUY CORTA (24 chars)",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_315",
+      "name": "BOTELLA DE CERVEZA  0161",
+      "category": "juguetes",
+      "subcategory": "Juguetes",
+      "descriptionActual": "BOTELLA DE CERVEZA  0161",
+      "longDescriptionActual": "BOTELLA DE CERVEZA  0161",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ Descripción MUY CORTA (24 chars)",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_317",
+      "name": "CUPCAKE CON CHIFLE",
+      "category": "juguetes",
+      "subcategory": "Juguetes",
+      "descriptionActual": "CUPCAKE CON CHIFLE",
+      "longDescriptionActual": "CUPCAKE CON CHIFLE",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ Descripción MUY CORTA (18 chars)",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_318",
+      "name": "ZANAORIA CON CHIFLE",
+      "category": "juguetes",
+      "subcategory": "Juguetes",
+      "descriptionActual": "ZANAORIA CON CHIFLE",
+      "longDescriptionActual": "ZANAORIA CON CHIFLE",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ Descripción MUY CORTA (19 chars)",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_319",
+      "name": "JUGUETE CHIFLE VERDURAS 001",
+      "category": "juguetes",
+      "subcategory": "Juguetes",
+      "descriptionActual": "JUGUETE CHIFLE VERDURAS 001",
+      "longDescriptionActual": "JUGUETE CHIFLE VERDURAS 001",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ Descripción MUY CORTA (27 chars)",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_320",
+      "name": "JUGUETE CHIFLE VERDURAS 002",
+      "category": "juguetes",
+      "subcategory": "Juguetes",
+      "descriptionActual": "JUGUETE CHIFLE VERDURAS 002",
+      "longDescriptionActual": "JUGUETE CHIFLE VERDURAS 002",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ Descripción MUY CORTA (27 chars)",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_325",
+      "name": "DONA CHIFLE",
+      "category": "juguetes",
+      "subcategory": "Juguetes",
+      "descriptionActual": "DONA CHIFLE",
+      "longDescriptionActual": "DONA CHIFLE",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ Descripción MUY CORTA (11 chars)",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_334",
+      "name": "PANCHOS CHICO CHIFLE",
+      "category": "juguetes",
+      "subcategory": "Juguetes",
+      "descriptionActual": "PANCHOS CHICO CHIFLE",
+      "longDescriptionActual": "PANCHOS CHICO CHIFLE",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ Descripción MUY CORTA (20 chars)",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_338",
+      "name": "COSTILLA GRANDE CON CHIFLE",
+      "category": "juguetes",
+      "subcategory": "Juguetes",
+      "descriptionActual": "COSTILLA GRANDE CON CHIFLE",
+      "longDescriptionActual": "COSTILLA GRANDE CON CHIFLE",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ Descripción MUY CORTA (26 chars)",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_343",
+      "name": "CANGREJO CHICO CON CHIFLE",
+      "category": "juguetes",
+      "subcategory": "Juguetes",
+      "descriptionActual": "CANGREJO CHICO CON CHIFLE",
+      "longDescriptionActual": "CANGREJO CHICO CON CHIFLE",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ Descripción MUY CORTA (25 chars)",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_345",
+      "name": "PERRITO CHIFLE",
+      "category": "juguetes",
+      "subcategory": "Juguetes",
+      "descriptionActual": "PERRITO CHIFLE",
+      "longDescriptionActual": "PERRITO CHIFLE",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ Descripción MUY CORTA (14 chars)",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_347",
+      "name": "PERRITO DALMATA",
+      "category": "juguetes",
+      "subcategory": "Juguetes",
+      "descriptionActual": "PERRITO DALMATA",
+      "longDescriptionActual": "PERRITO DALMATA",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ Descripción MUY CORTA (15 chars)",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_348",
+      "name": "HUESO CHIFLE MARRON",
+      "category": "juguetes",
+      "subcategory": "Juguetes",
+      "descriptionActual": "HUESO CHIFLE MARRON",
+      "longDescriptionActual": "HUESO CHIFLE MARRON",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ Descripción MUY CORTA (19 chars)",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_349",
+      "name": "HUESITO COLOR FLUOR",
+      "category": "juguetes",
+      "subcategory": "Juguetes",
+      "descriptionActual": "HUESITO COLOR FLUOR",
+      "longDescriptionActual": "HUESITO COLOR FLUOR",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ Descripción MUY CORTA (19 chars)",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_351",
+      "name": "COCODRILO CHIFLE  DE 20 CM",
+      "category": "juguetes",
+      "subcategory": "Juguetes",
+      "descriptionActual": "COCODRILO CHIFLE  DE 20 CM",
+      "longDescriptionActual": "COCODRILO CHIFLE  DE 20 CM",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ Descripción MUY CORTA (26 chars)",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_352",
+      "name": "TARTA HUELLA",
+      "category": "juguetes",
+      "subcategory": "Juguetes",
+      "descriptionActual": "TARTA HUELLA",
+      "longDescriptionActual": "TARTA HUELLA",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ Descripción MUY CORTA (12 chars)",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_353",
+      "name": "HAMBURGUESA VEGANA  LIFE",
+      "category": "juguetes",
+      "subcategory": "Juguetes",
+      "descriptionActual": "HAMBURGUESA VEGANA  LIFE",
+      "longDescriptionActual": "HAMBURGUESA VEGANA  LIFE",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ Descripción MUY CORTA (24 chars)",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_354",
+      "name": "HAMBURGUESA CUARTO DE LIBRA",
+      "category": "juguetes",
+      "subcategory": "Juguetes",
+      "descriptionActual": "HAMBURGUESA CUARTO DE LIBRA",
+      "longDescriptionActual": "HAMBURGUESA CUARTO DE LIBRA",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ Descripción MUY CORTA (27 chars)",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_355",
+      "name": "POLLO HORNEADO",
+      "category": "juguetes",
+      "subcategory": "Juguetes",
+      "descriptionActual": "POLLO HORNEADO",
+      "longDescriptionActual": "POLLO HORNEADO",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ Descripción MUY CORTA (14 chars)",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_356",
+      "name": "MUSLO DE POLLO - 24807, 24070",
+      "category": "juguetes",
+      "subcategory": "Juguetes",
+      "descriptionActual": "MUSLO DE POLLO - 24807, 24070",
+      "longDescriptionActual": "MUSLO DE POLLO - 24807, 24070",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ Descripción MUY CORTA (29 chars)",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_357",
+      "name": "MAZORCA CHOCLO CHIFLE - 24077",
+      "category": "juguetes",
+      "subcategory": "Juguetes",
+      "descriptionActual": "MAZORCA CHOCLO CHIFLE - 24077",
+      "longDescriptionActual": "MAZORCA CHOCLO CHIFLE - 24077",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ Descripción MUY CORTA (29 chars)",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_358",
+      "name": "DONAS CHIFLES - 24094",
+      "category": "juguetes",
+      "subcategory": "Juguetes",
+      "descriptionActual": "DONAS CHIFLES - 24094",
+      "longDescriptionActual": "DONAS CHIFLES - 24094",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ Descripción MUY CORTA (21 chars)",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_360",
+      "name": "PELOTA ESPINA  CHIFLE",
+      "category": "juguetes",
+      "subcategory": "Juguetes",
+      "descriptionActual": "PELOTA ESPINA  CHIFLE",
+      "longDescriptionActual": "PELOTA ESPINA  CHIFLE",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ Descripción MUY CORTA (21 chars)",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_361",
+      "name": "PELOTA RUGBY CON HUESO",
+      "category": "juguetes",
+      "subcategory": "Juguetes",
+      "descriptionActual": "PELOTA RUGBY CON HUESO",
+      "longDescriptionActual": "PELOTA RUGBY CON HUESO",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ Descripción MUY CORTA (22 chars)",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_362",
+      "name": "PESA / PINCHO",
+      "category": "juguetes",
+      "subcategory": "Juguetes",
+      "descriptionActual": "PESA / PINCHO",
+      "longDescriptionActual": "PESA / PINCHO",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ Descripción MUY CORTA (13 chars)",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_368",
+      "name": "HUESO CON HUESITO",
+      "category": "juguetes",
+      "subcategory": "Juguetes",
+      "descriptionActual": "HUESO CON HUESITO",
+      "longDescriptionActual": "HUESO CON HUESITO",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ Descripción MUY CORTA (17 chars)",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_369",
+      "name": "HUESO CON HUELLA",
+      "category": "juguetes",
+      "subcategory": "Juguetes",
+      "descriptionActual": "HUESO CON HUELLA",
+      "longDescriptionActual": "HUESO CON HUELLA",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ Descripción MUY CORTA (16 chars)",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_371",
+      "name": "CHIFLE CORAZON",
+      "category": "juguetes",
+      "subcategory": "Juguetes",
+      "descriptionActual": "CHIFLE CORAZON",
+      "longDescriptionActual": "CHIFLE CORAZON",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ Descripción MUY CORTA (14 chars)",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_372",
+      "name": "MAGDALENA ROSA",
+      "category": "juguetes",
+      "subcategory": "Juguetes",
+      "descriptionActual": "MAGDALENA ROSA",
+      "longDescriptionActual": "MAGDALENA ROSA",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ Descripción MUY CORTA (14 chars)",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_373",
+      "name": "ROSQUILLAS",
+      "category": "juguetes",
+      "subcategory": "Juguetes",
+      "descriptionActual": "ROSQUILLAS",
+      "longDescriptionActual": "ROSQUILLAS",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ Descripción MUY CORTA (10 chars)",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_374",
+      "name": "CHIFLE MINI",
+      "category": "juguetes",
+      "subcategory": "Juguetes",
+      "descriptionActual": "CHIFLE MINI",
+      "longDescriptionActual": "CHIFLE MINI",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ Descripción MUY CORTA (11 chars)",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_375",
+      "name": "CHIFLE PESA  11*4CM",
+      "category": "juguetes",
+      "subcategory": "Juguetes",
+      "descriptionActual": "CHIFLE PESA  11*4CM",
+      "longDescriptionActual": "CHIFLE PESA  11*4CM",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ Descripción MUY CORTA (19 chars)",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_377",
+      "name": "CONO DE HELADO / 8020-5",
+      "category": "juguetes",
+      "subcategory": "Juguetes",
+      "descriptionActual": "CONO DE HELADO / 8020-5",
+      "longDescriptionActual": "CONO DE HELADO / 8020-5",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ Descripción MUY CORTA (23 chars)",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_378",
+      "name": "PAPAS FRITAS / 5882-5",
+      "category": "juguetes",
+      "subcategory": "Juguetes",
+      "descriptionActual": "PAPAS FRITAS / 5882-5",
+      "longDescriptionActual": "PAPAS FRITAS / 5882-5",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ Descripción MUY CORTA (21 chars)",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_379",
+      "name": "CHIFLE POPO",
+      "category": "juguetes",
+      "subcategory": "Juguetes",
+      "descriptionActual": "CHIFLE POPO",
+      "longDescriptionActual": "CHIFLE POPO",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ Descripción MUY CORTA (11 chars)",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_380",
+      "name": "CHIFLE HELADO 8528-5",
+      "category": "juguetes",
+      "subcategory": "Juguetes",
+      "descriptionActual": "CHIFLE HELADO 8528-5",
+      "longDescriptionActual": "CHIFLE HELADO 8528-5",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ Descripción MUY CORTA (20 chars)",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_381",
+      "name": "CHIFLE PAVO 8400-5",
+      "category": "juguetes",
+      "subcategory": "Juguetes",
+      "descriptionActual": "CHIFLE PAVO 8400-5",
+      "longDescriptionActual": "CHIFLE PAVO 8400-5",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ Descripción MUY CORTA (18 chars)",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_382",
+      "name": "CHIFLE PULPO MINI 8529-5",
+      "category": "juguetes",
+      "subcategory": "Juguetes",
+      "descriptionActual": "CHIFLE PULPO MINI 8529-5",
+      "longDescriptionActual": "CHIFLE PULPO MINI 8529-5",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ Descripción MUY CORTA (24 chars)",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_387",
+      "name": "PELOTA LIMPIA DIENTE GRANDE",
+      "category": "juguetes",
+      "subcategory": "Juguetes",
+      "descriptionActual": "PELOTA LIMPIA DIENTE GRANDE",
+      "longDescriptionActual": "PELOTA LIMPIA DIENTE GRANDE",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ Descripción MUY CORTA (27 chars)",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_388",
+      "name": "MORDILLO TUERCA MULTI COLOR",
+      "category": "juguetes",
+      "subcategory": "Juguetes",
+      "descriptionActual": "MORDILLO TUERCA MULTI COLOR",
+      "longDescriptionActual": "MORDILLO TUERCA MULTI COLOR",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ Descripción MUY CORTA (27 chars)",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_389",
+      "name": "PELOTA CHIFLE RUGBY",
+      "category": "juguetes",
+      "subcategory": "Juguetes",
+      "descriptionActual": "PELOTA CHIFLE RUGBY",
+      "longDescriptionActual": "PELOTA CHIFLE RUGBY",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ Descripción MUY CORTA (19 chars)",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_390",
+      "name": "MORDILLO HUESO DOBLE LARGO",
+      "category": "juguetes",
+      "subcategory": "Juguetes",
+      "descriptionActual": "MORDILLO HUESO DOBLE LARGO",
+      "longDescriptionActual": "MORDILLO HUESO DOBLE LARGO",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ Descripción MUY CORTA (26 chars)",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_391",
+      "name": "MORDILLO HUESO O 001",
+      "category": "juguetes",
+      "subcategory": "Juguetes",
+      "descriptionActual": "MORDILLO HUESO O 001",
+      "longDescriptionActual": "MORDILLO HUESO O 001",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ Descripción MUY CORTA (20 chars)",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_392",
+      "name": "MORDILLOHUESO ( Y ) 002",
+      "category": "juguetes",
+      "subcategory": "Juguetes",
+      "descriptionActual": "MORDILLOHUESO ( Y ) 002",
+      "longDescriptionActual": "MORDILLOHUESO ( Y ) 002",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ Descripción MUY CORTA (23 chars)",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_393",
+      "name": "MORDILLO CIRCULO ( DONA ) 003",
+      "category": "juguetes",
+      "subcategory": "Juguetes",
+      "descriptionActual": "MORDILLO CIRCULO ( DONA ) 003",
+      "longDescriptionActual": "MORDILLO CIRCULO ( DONA ) 003",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ Descripción MUY CORTA (29 chars)",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_394",
+      "name": "MORDILLO PATA DE POLLO 004",
+      "category": "juguetes",
+      "subcategory": "Juguetes",
+      "descriptionActual": "MORDILLO PATA DE POLLO 004",
+      "longDescriptionActual": "MORDILLO PATA DE POLLO 004",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ Descripción MUY CORTA (26 chars)",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_611",
+      "name": "CINTURON DE SEGURIDAD SIMPLE",
+      "category": "accesorios",
+      "subcategory": "Accesorios",
+      "descriptionActual": "CINTURON DE SEGURIDAD SIMPLE",
+      "longDescriptionActual": "CINTURON DE SEGURIDAD SIMPLE",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ Descripción MUY CORTA (28 chars)",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_615",
+      "name": "CADENA REFORZADO TADEO  1,2M",
+      "category": "accesorios",
+      "subcategory": "Accesorios",
+      "descriptionActual": "CADENA REFORZADO TADEO  1,2M",
+      "longDescriptionActual": "CADENA REFORZADO TADEO  1,2M",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ Descripción MUY CORTA (28 chars)",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_637",
+      "name": "COLLAR  TIFANI T4 PERLAS",
+      "category": "accesorios",
+      "subcategory": "Accesorios",
+      "descriptionActual": "COLLAR  TIFANI T4 PERLAS",
+      "longDescriptionActual": "COLLAR  TIFANI T4 PERLAS",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ Descripción MUY CORTA (24 chars)",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_654",
+      "name": "COLLAR ELASTICO X12",
+      "category": "accesorios",
+      "subcategory": "Accesorios",
+      "descriptionActual": "COLLAR ELASTICO X12",
+      "longDescriptionActual": "COLLAR ELASTICO X12",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ Descripción MUY CORTA (19 chars)",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_680",
+      "name": "COLLAR CON BLONDAS Y ENCAJE",
+      "category": "accesorios",
+      "subcategory": "Accesorios",
+      "descriptionActual": "COLLAR CON BLONDAS Y ENCAJE",
+      "longDescriptionActual": "COLLAR CON BLONDAS Y ENCAJE",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ Descripción MUY CORTA (27 chars)",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_697",
+      "name": "CONJUNTO REFLECTOR 1,5CM",
+      "category": "accesorios",
+      "subcategory": "Accesorios",
+      "descriptionActual": "CONJUNTO REFLECTOR 1,5CM",
+      "longDescriptionActual": "CONJUNTO REFLECTOR 1,5CM",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ Descripción MUY CORTA (24 chars)",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_698",
+      "name": "CONJUNTO REFLECTOR 2,5CM",
+      "category": "accesorios",
+      "subcategory": "Accesorios",
+      "descriptionActual": "CONJUNTO REFLECTOR 2,5CM",
+      "longDescriptionActual": "CONJUNTO REFLECTOR 2,5CM",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ Descripción MUY CORTA (24 chars)",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_706",
+      "name": "CONJUNTO PECHERA  8393-5",
+      "category": "accesorios",
+      "subcategory": "Accesorios",
+      "descriptionActual": "CONJUNTO PECHERA  8393-5",
+      "longDescriptionActual": "CONJUNTO PECHERA  8393-5",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ Descripción MUY CORTA (24 chars)",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_733",
+      "name": "PECHERA SOLA P15",
+      "category": "accesorios",
+      "subcategory": "Collares,",
+      "descriptionActual": "PECHERA SOLA P15",
+      "longDescriptionActual": "PECHERA SOLA P15",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ Descripción MUY CORTA (16 chars)",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_734",
+      "name": "PECHERA ALCOCHONADA POLICE K9",
+      "category": "accesorios",
+      "subcategory": "Collares,",
+      "descriptionActual": "PECHERA ALCOCHONADA POLICE K9",
+      "longDescriptionActual": "PECHERA ALCOCHONADA POLICE K9",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ Descripción MUY CORTA (29 chars)",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_737",
+      "name": "PECHERA ALCOCHONADA  T",
+      "category": "accesorios",
+      "subcategory": "Collares,",
+      "descriptionActual": "PECHERA ALCOCHONADA  T",
+      "longDescriptionActual": "PECHERA ALCOCHONADA  T",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ Descripción MUY CORTA (22 chars)",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_744",
+      "name": "CONJUNTO REGULABLE LISO",
+      "category": "accesorios",
+      "subcategory": "Collares,",
+      "descriptionActual": "CONJUNTO REGULABLE LISO",
+      "longDescriptionActual": "CONJUNTO REGULABLE LISO",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ Descripción MUY CORTA (23 chars)",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_754",
+      "name": "CONJUNTO ECONOMICO",
+      "category": "accesorios",
+      "subcategory": "Collares,",
+      "descriptionActual": "CONJUNTO ECONOMICO",
+      "longDescriptionActual": "CONJUNTO ECONOMICO",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ Descripción MUY CORTA (18 chars)",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_763",
+      "name": "PALITAS \"S\" COLORES SURTIDOS",
+      "category": "higiene-cuidado",
+      "subcategory": "Higiene",
+      "descriptionActual": "PALITAS \"S\" COLORES SURTIDOS",
+      "longDescriptionActual": "PALITAS \"S\" COLORES SURTIDOS",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ Descripción MUY CORTA (28 chars)",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_778",
+      "name": "COMEDERO COME LENTO",
+      "category": "accesorios",
+      "subcategory": "Comederos",
+      "descriptionActual": "COMEDERO COME LENTO",
+      "longDescriptionActual": "COMEDERO COME LENTO",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ Descripción MUY CORTA (19 chars)",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_779",
+      "name": "CAZUELA HUELLA CHICA",
+      "category": "accesorios",
+      "subcategory": "Comederos",
+      "descriptionActual": "CAZUELA HUELLA CHICA",
+      "longDescriptionActual": "CAZUELA HUELLA CHICA",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ Descripción MUY CORTA (20 chars)",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_780",
+      "name": "CAZUELA HUELLA MEDIANA",
+      "category": "accesorios",
+      "subcategory": "Comederos",
+      "descriptionActual": "CAZUELA HUELLA MEDIANA",
+      "longDescriptionActual": "CAZUELA HUELLA MEDIANA",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ Descripción MUY CORTA (22 chars)",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_781",
+      "name": "CAZUELA HUELLA GRANDE",
+      "category": "accesorios",
+      "subcategory": "Comederos",
+      "descriptionActual": "CAZUELA HUELLA GRANDE",
+      "longDescriptionActual": "CAZUELA HUELLA GRANDE",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ Descripción MUY CORTA (21 chars)",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_782",
+      "name": "COMEDERO TOLVA  AGUA",
+      "category": "accesorios",
+      "subcategory": "Comederos",
+      "descriptionActual": "COMEDERO TOLVA  AGUA",
+      "longDescriptionActual": "COMEDERO TOLVA  AGUA",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ Descripción MUY CORTA (20 chars)",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_785",
+      "name": "COMEDERO CUADRADO DOBLE",
+      "category": "accesorios",
+      "subcategory": "Comederos",
+      "descriptionActual": "COMEDERO CUADRADO DOBLE",
+      "longDescriptionActual": "COMEDERO CUADRADO DOBLE",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ Descripción MUY CORTA (23 chars)",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_808",
+      "name": "COMEDERO CON BASE DOBLE",
+      "category": "accesorios",
+      "subcategory": "Comederos",
+      "descriptionActual": "COMEDERO CON BASE DOBLE",
+      "longDescriptionActual": "COMEDERO CON BASE DOBLE",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ Descripción MUY CORTA (23 chars)",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_809",
+      "name": "COMEDERO CON CARITA Y PATITAS",
+      "category": "accesorios",
+      "subcategory": "Comederos",
+      "descriptionActual": "COMEDERO CON CARITA Y PATITAS",
+      "longDescriptionActual": "COMEDERO CON CARITA Y PATITAS",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ Descripción MUY CORTA (29 chars)",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_824",
+      "name": "COMEDERO DE GATO",
+      "category": "accesorios",
+      "subcategory": "Comederos",
+      "descriptionActual": "COMEDERO DE GATO",
+      "longDescriptionActual": "COMEDERO DE GATO",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ Descripción MUY CORTA (16 chars)",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_831",
+      "name": "COMEDERO OVALADO CHICO",
+      "category": "accesorios",
+      "subcategory": "Comederos",
+      "descriptionActual": "COMEDERO OVALADO CHICO",
+      "longDescriptionActual": "COMEDERO OVALADO CHICO",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ Descripción MUY CORTA (22 chars)",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_832",
+      "name": "COMEDERO OVALADO MEDIANO",
+      "category": "accesorios",
+      "subcategory": "Comederos",
+      "descriptionActual": "COMEDERO OVALADO MEDIANO",
+      "longDescriptionActual": "COMEDERO OVALADO MEDIANO",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ Descripción MUY CORTA (24 chars)",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_833",
+      "name": "COMEDERO OVALADO GRANDE",
+      "category": "accesorios",
+      "subcategory": "Comederos",
+      "descriptionActual": "COMEDERO OVALADO GRANDE",
+      "longDescriptionActual": "COMEDERO OVALADO GRANDE",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ Descripción MUY CORTA (23 chars)",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_834",
+      "name": "COMEDERO OVALADO COKER",
+      "category": "accesorios",
+      "subcategory": "Comederos",
+      "descriptionActual": "COMEDERO OVALADO COKER",
+      "longDescriptionActual": "COMEDERO OVALADO COKER",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ Descripción MUY CORTA (22 chars)",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_835",
+      "name": "COMEDERO OVALADO DOBLE",
+      "category": "accesorios",
+      "subcategory": "Comederos",
+      "descriptionActual": "COMEDERO OVALADO DOBLE",
+      "longDescriptionActual": "COMEDERO OVALADO DOBLE",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ Descripción MUY CORTA (22 chars)",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_836",
+      "name": "COMERERO DOBLE HUESO",
+      "category": "accesorios",
+      "subcategory": "Comederos",
+      "descriptionActual": "COMERERO DOBLE HUESO",
+      "longDescriptionActual": "COMERERO DOBLE HUESO",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ Descripción MUY CORTA (20 chars)",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_843",
+      "name": "PLATO CARA DE GATO",
+      "category": "accesorios",
+      "subcategory": "Comederos",
+      "descriptionActual": "PLATO CARA DE GATO",
+      "longDescriptionActual": "PLATO CARA DE GATO",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ Descripción MUY CORTA (18 chars)",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_844",
+      "name": "COMEDERO PECECITO DOBLE",
+      "category": "accesorios",
+      "subcategory": "Comederos",
+      "descriptionActual": "COMEDERO PECECITO DOBLE",
+      "longDescriptionActual": "COMEDERO PECECITO DOBLE",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ Descripción MUY CORTA (23 chars)",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_845",
+      "name": "BEBEDEROS AVES",
+      "category": "accesorios",
+      "subcategory": "Comederos",
+      "descriptionActual": "BEBEDEROS AVES",
+      "longDescriptionActual": "BEBEDEROS AVES",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ Descripción MUY CORTA (14 chars)",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_854",
+      "name": "COMELENTO MEDIANO REDONDO",
+      "category": "accesorios",
+      "subcategory": "Comederos",
+      "descriptionActual": "COMELENTO MEDIANO REDONDO",
+      "longDescriptionActual": "COMELENTO MEDIANO REDONDO",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ Descripción MUY CORTA (25 chars)",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_855",
+      "name": "COMELENTO CHICO REDONDO",
+      "category": "accesorios",
+      "subcategory": "Comederos",
+      "descriptionActual": "COMELENTO CHICO REDONDO",
+      "longDescriptionActual": "COMELENTO CHICO REDONDO",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ Descripción MUY CORTA (23 chars)",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_139",
+      "name": "ZOOTEC PIEDRAS AGLUTINANTES LAVANDA",
+      "category": "higiene-cuidado",
+      "subcategory": "Higiene",
+      "descriptionActual": "ZOOTEC PIEDRAS AGLUTINANTES LAVANDA",
+      "longDescriptionActual": "ZOOTEC PIEDRAS AGLUTINANTES LAVANDA",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_145",
+      "name": "COLCHON FANTASIA ESPUMA",
+      "category": "casa-descanso",
+      "subcategory": "Colchonetas",
+      "descriptionActual": "Talle S (50 x 70 CM) , Talle M (60 x 80 CM)\r\nTalle L (70 x 90 CM) , Talle XL (80 x 100 CM)",
+      "longDescriptionActual": "Talle S (50 x 70 CM) , Talle M (60 x 80 CM)\r\nTalle L (70 x 90 CM) , Talle XL (80 x 100 CM)",
+      "problemas": [
+        "⚠️ longDescription IGUAL a description",
+        "⚠️ Descripción solo tiene MEDIDAS/TALLAS"
+      ]
+    },
+    {
+      "id": "prod_146",
+      "name": "COLCHONETA  FANTASIA PLUSH",
+      "category": "casa-descanso",
+      "subcategory": "Colchonetas",
+      "descriptionActual": "Talle S (50 x 65 CM) , Talle M (60 x 75 CM)\r\nTalle L (70 x 85 CM) , Talle XL (80 x 95 CM)",
+      "longDescriptionActual": "Talle S (50 x 65 CM) , Talle M (60 x 75 CM)\r\nTalle L (70 x 85 CM) , Talle XL (80 x 95 CM)",
+      "problemas": [
+        "⚠️ longDescription IGUAL a description",
+        "⚠️ Descripción solo tiene MEDIDAS/TALLAS"
+      ]
+    },
+    {
+      "id": "prod_149",
+      "name": "MOISES IGLU  PREMIUN",
+      "category": "casa-descanso",
+      "subcategory": "Colchonetas",
+      "descriptionActual": "N°1 (45 x 35 x 23 CM) , N°2 (55 x 40 x 27 CM), N°3 (60 x 45 x 33 CM)",
+      "longDescriptionActual": "N°1 (45 x 35 x 23 CM) , N°2 (55 x 40 x 27 CM), N°3 (60 x 45 x 33 CM)",
+      "problemas": [
+        "⚠️ longDescription IGUAL a description",
+        "⚠️ Descripción solo tiene MEDIDAS/TALLAS"
+      ]
+    },
+    {
+      "id": "prod_151",
+      "name": "COCHONETA ANTI-DESGARRO",
+      "category": "casa-descanso",
+      "subcategory": "Colchonetas",
+      "descriptionActual": "N°1 (60 x 60 CM) , N°2 (70 X 70 CM)\r\nN°3 (80 X 80 CM) , N°4 (90 X 90 CM)",
+      "longDescriptionActual": "N°1 (60 x 60 CM) , N°2 (70 X 70 CM)\r\nN°3 (80 X 80 CM) , N°4 (90 X 90 CM)",
+      "problemas": [
+        "⚠️ longDescription IGUAL a description",
+        "⚠️ Descripción solo tiene MEDIDAS/TALLAS"
+      ]
+    },
+    {
+      "id": "prod_152",
+      "name": "MOISES ECONOMICO",
+      "category": "casa-descanso",
+      "subcategory": "Colchonetas",
+      "descriptionActual": "N°1 (35 CM) , N°2 (40 CM)\r\nN°3 (45 CM) , N°4 (50 CM)",
+      "longDescriptionActual": "N°1 (35 CM) , N°2 (40 CM)\r\nN°3 (45 CM) , N°4 (50 CM)",
+      "problemas": [
+        "⚠️ longDescription IGUAL a description",
+        "⚠️ Descripción solo tiene MEDIDAS/TALLAS"
+      ]
+    },
+    {
+      "id": "prod_154",
+      "name": "SOFT JEAN LUNARES",
+      "category": "casa-descanso",
+      "subcategory": "Colchonetas",
+      "descriptionActual": "N°1 (40 x 40 CM) , N°2 (50 x 50 CM), N°3 (60 x 60 CM)",
+      "longDescriptionActual": "N°1 (40 x 40 CM) , N°2 (50 x 50 CM), N°3 (60 x 60 CM)",
+      "problemas": [
+        "⚠️ longDescription IGUAL a description",
+        "⚠️ Descripción solo tiene MEDIDAS/TALLAS"
+      ]
+    },
+    {
+      "id": "prod_156",
+      "name": "MOISES LUNARES",
+      "category": "casa-descanso",
+      "subcategory": "Colchonetas",
+      "descriptionActual": "N°1 (40 CM), N°2 (45 CM) , N°2 (50 CM)",
+      "longDescriptionActual": "N°1 (40 CM), N°2 (45 CM) , N°2 (50 CM)",
+      "problemas": [
+        "⚠️ longDescription IGUAL a description",
+        "⚠️ Descripción solo tiene MEDIDAS/TALLAS"
+      ]
+    },
+    {
+      "id": "prod_158",
+      "name": "MOISES MOÑO PREMIUN",
+      "category": "casa-descanso",
+      "subcategory": "Colchonetas",
+      "descriptionActual": "N°1 (35 CM) , N°2 (40 CM)\r\nN°3 (45 CM) , N°4 (50 CM)",
+      "longDescriptionActual": "N°1 (35 CM) , N°2 (40 CM)\r\nN°3 (45 CM) , N°4 (50 CM)",
+      "problemas": [
+        "⚠️ longDescription IGUAL a description",
+        "⚠️ Descripción solo tiene MEDIDAS/TALLAS"
+      ]
+    },
+    {
+      "id": "prod_176",
+      "name": "COLCHONETA PREMIUN DOBLE LONA 4 PATAS",
+      "category": "casa-descanso",
+      "subcategory": "Colchonetas",
+      "descriptionActual": "N°1 (50 X 50 CM) , N°2 (50 X 65 CM)\r\nN°3 (60 X 80 CM) , N°4 (70 X 90 CM)\r\nN°5 (80 X 90 CM)",
+      "longDescriptionActual": "N°1 (50 X 50 CM) , N°2 (50 X 65 CM)\r\nN°3 (60 X 80 CM) , N°4 (70 X 90 CM)\r\nN°5 (80 X 90 CM)",
+      "problemas": [
+        "⚠️ longDescription IGUAL a description",
+        "⚠️ Descripción solo tiene MEDIDAS/TALLAS"
+      ]
+    },
+    {
+      "id": "prod_181",
+      "name": "RASCADO TABLA CARTON Y ALFOMBRA",
+      "category": "accesorios",
+      "subcategory": "Rascadores",
+      "descriptionActual": "RASCADO TABLA CARTON Y ALFOMBRA",
+      "longDescriptionActual": "RASCADO TABLA CARTON Y ALFOMBRA",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_184",
+      "name": "RASCADOR DE MADERA EN 2 POSICIONES",
+      "category": "accesorios",
+      "subcategory": "Rascadores",
+      "descriptionActual": "RASCADOR DE MADERA EN 2 POSICIONES",
+      "longDescriptionActual": "RASCADOR DE MADERA EN 2 POSICIONES",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_185",
+      "name": "RASCADOR CARTÓN CORRUGADO ONDA SIMPLE 12CM X 50CM",
+      "category": "accesorios",
+      "subcategory": "Rascadores",
+      "descriptionActual": "RASCADOR CARTÓN CORRUGADO ONDA SIMPLE 12CM X 50CM",
+      "longDescriptionActual": "RASCADOR CARTÓN CORRUGADO ONDA SIMPLE 12CM X 50CM",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_186",
+      "name": "RASCADOR CARTÓN CORRUGADO \"PEZ\" 20CM X 50CM",
+      "category": "accesorios",
+      "subcategory": "Rascadores",
+      "descriptionActual": "RASCADOR CARTÓN CORRUGADO \"PEZ\" 20CM X 50CM",
+      "longDescriptionActual": "RASCADOR CARTÓN CORRUGADO \"PEZ\" 20CM X 50CM",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_187",
+      "name": "RASCADOR CARTÓN CORRUGADO ONDA SIMPLE 20CM X 50CM",
+      "category": "accesorios",
+      "subcategory": "Rascadores",
+      "descriptionActual": "RASCADOR CARTÓN CORRUGADO ONDA SIMPLE 20CM X 50CM",
+      "longDescriptionActual": "RASCADOR CARTÓN CORRUGADO ONDA SIMPLE 20CM X 50CM",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_188",
+      "name": "RASCADOR CON CAJA 11.5CM X 50CM X 4CM",
+      "category": "accesorios",
+      "subcategory": "Rascadores",
+      "descriptionActual": "RASCADOR CON CAJA 11.5CM X 50CM X 4CM",
+      "longDescriptionActual": "RASCADOR CON CAJA 11.5CM X 50CM X 4CM",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_189",
+      "name": "RASCADOR DOBLE T 58CM X 16CM X 20 CM",
+      "category": "accesorios",
+      "subcategory": "Rascadores",
+      "descriptionActual": "RASCADOR DOBLE T 58CM X 16CM X 20 CM",
+      "longDescriptionActual": "RASCADOR DOBLE T 58CM X 16CM X 20 CM",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_190",
+      "name": "RASCADOR MEDIO INFINITO GRANDE 58CM X 9 CM X 20CM",
+      "category": "accesorios",
+      "subcategory": "Rascadores",
+      "descriptionActual": "RASCADOR MEDIO INFINITO GRANDE 58CM X 9 CM X 20CM",
+      "longDescriptionActual": "RASCADOR MEDIO INFINITO GRANDE 58CM X 9 CM X 20CM",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_191",
+      "name": "RASCADOR MEDIO INFINITO 55 X  20 X 6,5 CM",
+      "category": "accesorios",
+      "subcategory": "Rascadores",
+      "descriptionActual": "RASCADOR MEDIO INFINITO 55 X  20 X 6,5 CM",
+      "longDescriptionActual": "RASCADOR MEDIO INFINITO 55 X  20 X 6,5 CM",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_193",
+      "name": "RASCADOR RECTO SIN CAJA 11,5 X 50 X 4 CM",
+      "category": "accesorios",
+      "subcategory": "Rascadores",
+      "descriptionActual": "RASCADOR RECTO SIN CAJA 11,5 X 50 X 4 CM",
+      "longDescriptionActual": "RASCADOR RECTO SIN CAJA 11,5 X 50 X 4 CM",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_194",
+      "name": "RASCADOR INFINITO 55 X 12 X 20 CM",
+      "category": "accesorios",
+      "subcategory": "Rascadores",
+      "descriptionActual": "RASCADOR INFINITO 55 X 12 X 20 CM",
+      "longDescriptionActual": "RASCADOR INFINITO 55 X 12 X 20 CM",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_195",
+      "name": "RASCADOR INFINITO 55 X 12 X 20 CM",
+      "category": "accesorios",
+      "subcategory": "Rascadores",
+      "descriptionActual": "RASCADOR INFINITO 55 X 12 X 20 CM",
+      "longDescriptionActual": "RASCADOR INFINITO 55 X 12 X 20 CM",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_199",
+      "name": "RASCADOR CUADRADO C/ MARCO DE MADERA PARED",
+      "category": "accesorios",
+      "subcategory": "Rascadores",
+      "descriptionActual": "RASCADOR CUADRADO C/ MARCO DE MADERA PARED",
+      "longDescriptionActual": "RASCADOR CUADRADO C/ MARCO DE MADERA PARED",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_200",
+      "name": "RASCASDON CUADRADO C/MARCO DE MADERA PARED CHICO",
+      "category": "accesorios",
+      "subcategory": "Rascadores",
+      "descriptionActual": "RASCASDON CUADRADO C/MARCO DE MADERA PARED CHICO",
+      "longDescriptionActual": "RASCASDON CUADRADO C/MARCO DE MADERA PARED CHICO",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_201",
+      "name": "RASCADOR BANDEJA 34.5cm x 51cm",
+      "category": "accesorios",
+      "subcategory": "Rascadores",
+      "descriptionActual": "RASCADOR BANDEJA 34.5cm x 51cm",
+      "longDescriptionActual": "RASCADOR BANDEJA 34.5cm x 51cm",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_202",
+      "name": "RASCADOR ESQUINERO YUTE SILLON 60cm x 9,5cm x 11cm",
+      "category": "accesorios",
+      "subcategory": "Rascadores",
+      "descriptionActual": "RASCADOR ESQUINERO YUTE SILLON 60cm x 9,5cm x 11cm",
+      "longDescriptionActual": "RASCADOR ESQUINERO YUTE SILLON 60cm x 9,5cm x 11cm",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_203",
+      "name": "RASCADOR PEZ MULTI COLOR CHICO PARA COLGAR 12 CM",
+      "category": "accesorios",
+      "subcategory": "Rascadores",
+      "descriptionActual": "RASCADOR PEZ MULTI COLOR CHICO PARA COLGAR 12 CM",
+      "longDescriptionActual": "RASCADOR PEZ MULTI COLOR CHICO PARA COLGAR 12 CM",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_204",
+      "name": "JUEGO PARA GATO CON RESORTE CON RATA Y TRIPLE  BACE",
+      "category": "juguetes",
+      "subcategory": "Juguetes",
+      "descriptionActual": "JUEGO PARA GATO CON RESORTE CON RATA Y TRIPLE  BACE",
+      "longDescriptionActual": "JUEGO PARA GATO CON RESORTE CON RATA Y TRIPLE  BACE",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_210",
+      "name": "RASCADOR SILLON CON PATAS KIMEY",
+      "category": "accesorios",
+      "subcategory": "Rascadores",
+      "descriptionActual": "RASCADOR SILLON CON PATAS KIMEY",
+      "longDescriptionActual": "RASCADOR SILLON CON PATAS KIMEY",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_212",
+      "name": "RASCADOR ONDA KEMEY",
+      "category": "accesorios",
+      "subcategory": "Rascadores",
+      "descriptionActual": "RASACDOR ONDA KEMEY",
+      "longDescriptionActual": "RASACDOR ONDA KEMEY",
+      "problemas": [
+        "⚠️ Descripción MUY CORTA (19 chars)",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_230",
+      "name": "ELEFANTE MINI - AGATAR",
+      "category": "accesorios",
+      "subcategory": "Rascadores",
+      "descriptionActual": "ELEFANTE MINI -",
+      "longDescriptionActual": "ELEFANTE MINI -",
+      "problemas": [
+        "⚠️ Descripción MUY CORTA (15 chars)",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_238",
+      "name": "JUGUETE MORRON  SILICONADO 6* 10CM",
+      "category": "juguetes",
+      "subcategory": "Juguetes",
+      "descriptionActual": "JUGUETE MORRON  SILICONADO 6* 10CM",
+      "longDescriptionActual": "JUGUETE MORRON  SILICONADO 6* 10CM",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_239",
+      "name": "PELOTA FRUTA SILICONADA C/LUZ 10CM",
+      "category": "juguetes",
+      "subcategory": "Juguetes",
+      "descriptionActual": "PELOTA FRUTA SILICONADA C/LUZ 10CM",
+      "longDescriptionActual": "PELOTA FRUTA SILICONADA C/LUZ 10CM",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_241",
+      "name": "PELOTA ERIZO CON LUZ CHICA 6*6*6*",
+      "category": "juguetes",
+      "subcategory": "Juguetes",
+      "descriptionActual": "PELOTA ERIZO CON LUZ CHICA 6*6*6*",
+      "longDescriptionActual": "PELOTA ERIZO CON LUZ CHICA 6*6*6*",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_242",
+      "name": "PELOTA ERIZO CON LUZ GRANDE 7*7*7",
+      "category": "juguetes",
+      "subcategory": "Juguetes",
+      "descriptionActual": "PELOTA ERIZO CON LUZ GRANDE 7*7*7",
+      "longDescriptionActual": "PELOTA ERIZO CON LUZ GRANDE 7*7*7",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_243",
+      "name": "JUGUETE PESA PINCHES CHIFLE  17*7",
+      "category": "juguetes",
+      "subcategory": "Juguetes",
+      "descriptionActual": "JUGUETE PESA PINCHES CHIFLE  17*7",
+      "longDescriptionActual": "JUGUETE PESA PINCHES CHIFLE  17*7",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_244",
+      "name": "PELOTA PINCHO MULTICOLOR CON LUZ",
+      "category": "juguetes",
+      "subcategory": "Juguetes",
+      "descriptionActual": "PELOTA PINCHO MULTICOLOR CON LUZ",
+      "longDescriptionActual": "PELOTA PINCHO MULTICOLOR CON LUZ",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_247",
+      "name": "PELOTA DE RUGBY CON LUZ Y CHIFLE  S0465",
+      "category": "juguetes",
+      "subcategory": "Juguetes",
+      "descriptionActual": "PELOTA DE RUGBY CON LUZ Y CHIFLE  S0465",
+      "longDescriptionActual": "PELOTA DE RUGBY CON LUZ Y CHIFLE  S0465",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_249",
+      "name": "JUGUETE PELOTA SILICONADO CON FORMAS  8CM  S0599",
+      "category": "juguetes",
+      "subcategory": "Juguetes",
+      "descriptionActual": "JUGUETE PELOTA SILICONADO CON FORMAS  8CM  S0599",
+      "longDescriptionActual": "JUGUETE PELOTA SILICONADO CON FORMAS  8CM  S0599",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_250",
+      "name": "JUGUETE PELOTA CON ESTRELLAS  LUZ Y CHIFLE 10CM S0486",
+      "category": "juguetes",
+      "subcategory": "Juguetes",
+      "descriptionActual": "JUGUETE PELOTA CON ESTRELLAS  LUZ Y CHIFLE 10CM S0486",
+      "longDescriptionActual": "JUGUETE PELOTA CON ESTRELLAS  LUZ Y CHIFLE 10CM S0486",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_251",
+      "name": "PELOTA ROTATIVA  E INTERACTIVA CON SOGA 25442",
+      "category": "juguetes",
+      "subcategory": "Juguetes",
+      "descriptionActual": "PELOTA ROTATIVA  E INTERACTIVA CON SOGA 25442",
+      "longDescriptionActual": "PELOTA ROTATIVA  E INTERACTIVA CON SOGA 25442",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_252",
+      "name": "PELOTA RECARGABLE USB 5CM  PE0423",
+      "category": "juguetes",
+      "subcategory": "Juguetes",
+      "descriptionActual": "PELOTA RECARGABLE USB 5CM  PE0423",
+      "longDescriptionActual": "PELOTA RECARGABLE USB 5CM  PE0423",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_253",
+      "name": "PELOTA P/MAS 4,2 REC USB BATERIA 100MA  PE0422",
+      "category": "juguetes",
+      "subcategory": "Juguetes",
+      "descriptionActual": "PELOTA P/MAS 4,2 REC USB BATERIA 100MA  PE0422",
+      "longDescriptionActual": "PELOTA P/MAS 4,2 REC USB BATERIA 100MA  PE0422",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_255",
+      "name": "PELOTA BLANDA MEDIANA    6,3CM     (24088)",
+      "category": "juguetes",
+      "subcategory": "Juguetes",
+      "descriptionActual": "PELOTA BLANDA MEDIANA    6,3CM     (24088)",
+      "longDescriptionActual": "PELOTA BLANDA MEDIANA    6,3CM     (24088)",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_256",
+      "name": "PELOTA BLANDA MEDIANA    6,3CM     (24088)",
+      "category": "juguetes",
+      "subcategory": "Juguetes",
+      "descriptionActual": "PELOTA BLANDA MEDIANA    6,3CM     (24088)",
+      "longDescriptionActual": "PELOTA BLANDA MEDIANA    6,3CM     (24088)",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_264",
+      "name": "PELOTA DE RUGBY GRAN (  27 CM)",
+      "category": "juguetes",
+      "subcategory": "Juguetes",
+      "descriptionActual": "PELOTA DE RUGBY GRAN (  27 CM)",
+      "longDescriptionActual": "PELOTA DE RUGBY GRAN (  27 CM)",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_287",
+      "name": "GALLINA DE COLORES CON CHIFLE S",
+      "category": "juguetes",
+      "subcategory": "Juguetes",
+      "descriptionActual": "GALLINA DE COLORES CON CHIFLE S",
+      "longDescriptionActual": "GALLINA DE COLORES CON CHIFLE S",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_288",
+      "name": "GALLINA DE COLORES CON CHIFLE M",
+      "category": "juguetes",
+      "subcategory": "Juguetes",
+      "descriptionActual": "GALLINA DE COLORES CON CHIFLE M",
+      "longDescriptionActual": "GALLINA DE COLORES CON CHIFLE M",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_289",
+      "name": "GALLINA DE COLORES CON CHIFLE L",
+      "category": "juguetes",
+      "subcategory": "Juguetes",
+      "descriptionActual": "GALLINA DE COLORES CON CHIFLE L",
+      "longDescriptionActual": "GALLINA DE COLORES CON CHIFLE L",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_290",
+      "name": "PELOTA FUDBOOL AMERICANO  10,5*5",
+      "category": "juguetes",
+      "subcategory": "Juguetes",
+      "descriptionActual": "PELOTA FUDBOOL AMERICANO  10,5*5",
+      "longDescriptionActual": "PELOTA FUDBOOL AMERICANO  10,5*5",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_291",
+      "name": "PELOTA DE FOTBOOL CON CHIFLE  024859",
+      "category": "juguetes",
+      "subcategory": "Juguetes",
+      "descriptionActual": "PELOTA DE FOTBOOL CON CHIFLE  024859",
+      "longDescriptionActual": "PELOTA DE FOTBOOL CON CHIFLE  024859",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_293",
+      "name": "JUGUETE LATEX MONSTER DE  12CM",
+      "category": "juguetes",
+      "subcategory": "Juguetes",
+      "descriptionActual": "JUGUETE LATEX MONSTER DE  12CM",
+      "longDescriptionActual": "JUGUETE LATEX MONSTER DE  12CM",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_294",
+      "name": "JUGUETE CERDO LATEX CON SONIDO  18CM",
+      "category": "juguetes",
+      "subcategory": "Juguetes",
+      "descriptionActual": "JUGUETE CERDO LATEX CON SONIDO  18CM",
+      "longDescriptionActual": "JUGUETE CERDO LATEX CON SONIDO  18CM",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_296",
+      "name": "PELOTA CARITA - PERRIRO BOMBITA CHIFLR",
+      "category": "juguetes",
+      "subcategory": "Juguetes",
+      "descriptionActual": "PELOTA CARITA - PERRIRO BOMBITA CHIFLR",
+      "longDescriptionActual": "PELOTA CARITA - PERRIRO BOMBITA CHIFLR",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_298",
+      "name": "CHIFLE PATO COLOR MEDIANO DE 25CM",
+      "category": "juguetes",
+      "subcategory": "Juguetes",
+      "descriptionActual": "CHIFLE PATO COLOR MEDIANO DE 25CM",
+      "longDescriptionActual": "CHIFLE PATO COLOR MEDIANO DE 25CM",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_300",
+      "name": "PELOTA  FUTBOL CON CHIFLE CHICO  127  ANCHO 6CM / ANCHO 6CM",
+      "category": "juguetes",
+      "subcategory": "Juguetes",
+      "descriptionActual": "PELOTA  FUTBOL CON CHIFLE CHICO  127  ANCHO 6CM / ANCHO 6CM",
+      "longDescriptionActual": "PELOTA  FUTBOL CON CHIFLE CHICO  127  ANCHO 6CM / ANCHO 6CM",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_301",
+      "name": "PELOTA  ESPIRAL CON CHIFLE   129 ANCHO 6CM / ANCHO 6CM",
+      "category": "juguetes",
+      "subcategory": "Juguetes",
+      "descriptionActual": "PELOTA  ESPIRAL CON CHIFLE   129 ANCHO 6CM / ANCHO 6CM",
+      "longDescriptionActual": "PELOTA  ESPIRAL CON CHIFLE   129 ANCHO 6CM / ANCHO 6CM",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_302",
+      "name": "PELOTA DE AROS CON CHIFLE    126  ANCHO 6CM / ALTO  6CM",
+      "category": "juguetes",
+      "subcategory": "Juguetes",
+      "descriptionActual": "PELOTA DE AROS CON CHIFLE    126  ANCHO 6CM / ALTO  6CM",
+      "longDescriptionActual": "PELOTA DE AROS CON CHIFLE    126  ANCHO 6CM / ALTO  6CM",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_303",
+      "name": "PELOTA DE GOLF CHIFLE    130   ANCHO 6CM / ANTO 6CM",
+      "category": "juguetes",
+      "subcategory": "Juguetes",
+      "descriptionActual": "PELOTA DE GOLF CHIFLE    130   ANCHO 6CM / ANTO 6CM",
+      "longDescriptionActual": "PELOTA DE GOLF CHIFLE    130   ANCHO 6CM / ANTO 6CM",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_307",
+      "name": "PELOTA CON LINEAS VERTICAL  0165",
+      "category": "juguetes",
+      "subcategory": "Juguetes",
+      "descriptionActual": "PELOTA CON LINEAS VERTICAL  0165",
+      "longDescriptionActual": "PELOTA CON LINEAS VERTICAL  0165",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_308",
+      "name": "PELOTA LINEAS NEGRA Y INFINITO",
+      "category": "juguetes",
+      "subcategory": "Juguetes",
+      "descriptionActual": "PELOTA LINEAS NEGRA Y INFINITO",
+      "longDescriptionActual": "PELOTA LINEAS NEGRA Y INFINITO",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_309",
+      "name": "MINI COCODRILO 160 ANCHO 6CM/ ALTO 6CM",
+      "category": "juguetes",
+      "subcategory": "Juguetes",
+      "descriptionActual": "MINI COCODRILO 160 ANCHO 6CM/ ALTO 6CM",
+      "longDescriptionActual": "MINI COCODRILO 160 ANCHO 6CM/ ALTO 6CM",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_310",
+      "name": "TACO CHIFLE  137  ANCHO12CM /ALTO5CM",
+      "category": "juguetes",
+      "subcategory": "Juguetes",
+      "descriptionActual": "TACO CHIFLE  137  ANCHO12CM /ALTO5CM",
+      "longDescriptionActual": "TACO CHIFLE  137  ANCHO12CM /ALTO5CM",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_311",
+      "name": "VAQUITA DE SAN ANTONIO CON  CHIFLE  138  ANCHO9CM/ ALTO 5CM",
+      "category": "juguetes",
+      "subcategory": "Juguetes",
+      "descriptionActual": "VAQUITA DE SAN ANTONIO CON  CHIFLE  138  ANCHO9CM/ ALTO 5CM",
+      "longDescriptionActual": "VAQUITA DE SAN ANTONIO CON  CHIFLE  138  ANCHO9CM/ ALTO 5CM",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_313",
+      "name": "COSTILLITA DE CARNE  CHICA CON CHIFLE  100   ANCHO 12CM / ALTO 2 CM",
+      "category": "juguetes",
+      "subcategory": "Juguetes",
+      "descriptionActual": "COSTILLITA DE CARNE  CHICA CON CHIFLE  100   ANCHO 12CM / ALTO 2 CM",
+      "longDescriptionActual": "COSTILLITA DE CARNE  CHICA CON CHIFLE  100   ANCHO 12CM / ALTO 2 CM",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_314",
+      "name": "HUESO PUNTOS CON CHIFLE  109  ANCHO 5CM / ALTO 16CM",
+      "category": "juguetes",
+      "subcategory": "Juguetes",
+      "descriptionActual": "HUESO PUNTOS CON CHIFLE  109  ANCHO 5CM / ALTO 16CM",
+      "longDescriptionActual": "HUESO PUNTOS CON CHIFLE  109  ANCHO 5CM / ALTO 16CM",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_316",
+      "name": "SANDIA  CHIFLE 135  ANCHO 5 CM/ ALTO4CM",
+      "category": "juguetes",
+      "subcategory": "Juguetes",
+      "descriptionActual": "SANDIA  CHIFLE 135  ANCHO 5 CM/ ALTO4CM",
+      "longDescriptionActual": "SANDIA  CHIFLE 135  ANCHO 5 CM/ ALTO4CM",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_321",
+      "name": "CHIFLE POLLO COLORES MEDIANO 25CM",
+      "category": "juguetes",
+      "subcategory": "Juguetes",
+      "descriptionActual": "CHIFLE POLLO COLORES MEDIANO 25CM",
+      "longDescriptionActual": "CHIFLE POLLO COLORES MEDIANO 25CM",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_322",
+      "name": "PERRO CABESON CHIFLE  GRANDE 133  ANCHO16CM / ALTO 7CM",
+      "category": "juguetes",
+      "subcategory": "Juguetes",
+      "descriptionActual": "PERRO CABESON CHIFLE  GRANDE 133  ANCHO16CM / ALTO 7CM",
+      "longDescriptionActual": "PERRO CABESON CHIFLE  GRANDE 133  ANCHO16CM / ALTO 7CM",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_323",
+      "name": "HUESO CHIFLE RETORSIDO GRANDE   112  ANCHO 6CM / ALTO 15CM",
+      "category": "juguetes",
+      "subcategory": "Juguetes",
+      "descriptionActual": "HUESO CHIFLE RETORSIDO GRANDE   112  ANCHO 6CM / ALTO 15CM",
+      "longDescriptionActual": "HUESO CHIFLE RETORSIDO GRANDE   112  ANCHO 6CM / ALTO 15CM",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_324",
+      "name": "FOCA GRANDE CON CHIFLE  139  AMCHO 18CM ALTO11CM",
+      "category": "juguetes",
+      "subcategory": "Juguetes",
+      "descriptionActual": "FOCA GRANDE CON CHIFLE  139  AMCHO 18CM ALTO11CM",
+      "longDescriptionActual": "FOCA GRANDE CON CHIFLE  139  AMCHO 18CM ALTO11CM",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_326",
+      "name": "MUFFINS GIGANTE 149   ANCHO 11CM / ALTO 10CM",
+      "category": "juguetes",
+      "subcategory": "Juguetes",
+      "descriptionActual": "MUFFINS GIGANTE 149   ANCHO 11CM / ALTO 10CM",
+      "longDescriptionActual": "MUFFINS GIGANTE 149   ANCHO 11CM / ALTO 10CM",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_327",
+      "name": "MUFFINS CHICO  CON CHIFLE 158 ANCHO 7CM/ 9CM",
+      "category": "juguetes",
+      "subcategory": "Juguetes",
+      "descriptionActual": "MUFFINS CHICO  CON CHIFLE 158 ANCHO 7CM/ 9CM",
+      "longDescriptionActual": "MUFFINS CHICO  CON CHIFLE 158 ANCHO 7CM/ 9CM",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_328",
+      "name": "HUESO CON BANANAS   CHIFLE 159   ANCHO 5CM ALTO 15CM",
+      "category": "juguetes",
+      "subcategory": "Juguetes",
+      "descriptionActual": "HUESO CON BANANAS   CHIFLE 159   ANCHO 5CM ALTO 15CM",
+      "longDescriptionActual": "HUESO CON BANANAS   CHIFLE 159   ANCHO 5CM ALTO 15CM",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_329",
+      "name": "GALLETITAS CUADRADA CON CHIFLE 151   ANCHO 11CM/ALTO 3CM",
+      "category": "juguetes",
+      "subcategory": "Juguetes",
+      "descriptionActual": "GALLETITAS CUADRADA CON CHIFLE 151   ANCHO 11CM/ALTO 3CM",
+      "longDescriptionActual": "GALLETITAS CUADRADA CON CHIFLE 151   ANCHO 11CM/ALTO 3CM",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_330",
+      "name": "GALLETITAS REDONDA  CON CHIFLE 156 ANCHO 10CM ALTO3CM",
+      "category": "juguetes",
+      "subcategory": "Juguetes",
+      "descriptionActual": "GALLETITAS REDONDA  CON CHIFLE 156 ANCHO 10CM ALTO3CM",
+      "longDescriptionActual": "GALLETITAS REDONDA  CON CHIFLE 156 ANCHO 10CM ALTO3CM",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_331",
+      "name": "PALETA DE HELADO 157   ANCHO 5CM /ALTO 14CM",
+      "category": "juguetes",
+      "subcategory": "Juguetes",
+      "descriptionActual": "PALETA DE HELADO 157   ANCHO 5CM /ALTO 14CM",
+      "longDescriptionActual": "PALETA DE HELADO 157   ANCHO 5CM /ALTO 14CM",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_332",
+      "name": "HUESO  GRANDE CON CHIFLE   110  ANCHO 6CM / ALTO 20CM",
+      "category": "juguetes",
+      "subcategory": "Juguetes",
+      "descriptionActual": "HUESO  GRANDE CON CHIFLE   110  ANCHO 6CM / ALTO 20CM",
+      "longDescriptionActual": "HUESO  GRANDE CON CHIFLE   110  ANCHO 6CM / ALTO 20CM",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_333",
+      "name": "PATY HAMBURGUESA CON CHIFLE   121 ANCHO 3CM / ALTO 9CM",
+      "category": "juguetes",
+      "subcategory": "Juguetes",
+      "descriptionActual": "PATY HAMBURGUESA CON CHIFLE   121 ANCHO 3CM / ALTO 9CM",
+      "longDescriptionActual": "PATY HAMBURGUESA CON CHIFLE   121 ANCHO 3CM / ALTO 9CM",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_335",
+      "name": "PANCHOS MEDIANO  CHIFLE   118 ANCHO 13CM / ALTO 4CM",
+      "category": "juguetes",
+      "subcategory": "Juguetes",
+      "descriptionActual": "PANCHOS MEDIANO  CHIFLE   118 ANCHO 13CM / ALTO 4CM",
+      "longDescriptionActual": "PANCHOS MEDIANO  CHIFLE   118 ANCHO 13CM / ALTO 4CM",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_336",
+      "name": "PATA DE POLLO CON HUESO  DE CHIFLE   119 ANCHO18CM / ALTO 3CM",
+      "category": "juguetes",
+      "subcategory": "Juguetes",
+      "descriptionActual": "PATA DE POLLO CON HUESO  DE CHIFLE   119 ANCHO18CM / ALTO 3CM",
+      "longDescriptionActual": "PATA DE POLLO CON HUESO  DE CHIFLE   119 ANCHO18CM / ALTO 3CM",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_337",
+      "name": "BIFE MEDIANO 163 ANCHO 3CM/ ALTO 13CM",
+      "category": "juguetes",
+      "subcategory": "Juguetes",
+      "descriptionActual": "BIFE MEDIANO 163 ANCHO 3CM/ ALTO 13CM",
+      "longDescriptionActual": "BIFE MEDIANO 163 ANCHO 3CM/ ALTO 13CM",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_339",
+      "name": "BIFE CON CHIFLE 14,5*8CM - 24095",
+      "category": "juguetes",
+      "subcategory": "Juguetes",
+      "descriptionActual": "BIFE CON CHIFLE 14,5*8CM - 24095",
+      "longDescriptionActual": "BIFE CON CHIFLE 14,5*8CM - 24095",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_340",
+      "name": "PANTUFLAS 148  ANCHO 15CM/ ALTO 6CM",
+      "category": "juguetes",
+      "subcategory": "Juguetes",
+      "descriptionActual": "PANTUFLAS 148  ANCHO 15CM/ ALTO 6CM",
+      "longDescriptionActual": "PANTUFLAS 148  ANCHO 15CM/ ALTO 6CM",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_341",
+      "name": "OJOTA CON CHIFLE    115  ANCHO 15CM / ALTO 2CM",
+      "category": "juguetes",
+      "subcategory": "Juguetes",
+      "descriptionActual": "OJOTA CON CHIFLE    115  ANCHO 15CM / ALTO 2CM",
+      "longDescriptionActual": "OJOTA CON CHIFLE    115  ANCHO 15CM / ALTO 2CM",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_342",
+      "name": "PALO DE BOWLING CON CHIFLE   117   ANCHO 5CM/ ALTO 13CM",
+      "category": "juguetes",
+      "subcategory": "Juguetes",
+      "descriptionActual": "PALO DE BOWLING CON CHIFLE   117   ANCHO 5CM/ ALTO 13CM",
+      "longDescriptionActual": "PALO DE BOWLING CON CHIFLE   117   ANCHO 5CM/ ALTO 13CM",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_344",
+      "name": "ESTRELLA CHICA CON CHIFLE   142  ANCHO9CM/ ALTO2CM",
+      "category": "juguetes",
+      "subcategory": "Juguetes",
+      "descriptionActual": "ESTRELLA CHICA CON CHIFLE   142  ANCHO9CM/ ALTO2CM",
+      "longDescriptionActual": "ESTRELLA CHICA CON CHIFLE   142  ANCHO9CM/ ALTO2CM",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_363",
+      "name": "CHIFLE PESA  CON PATITAS - 24111",
+      "category": "juguetes",
+      "subcategory": "Juguetes",
+      "descriptionActual": "CHIFLE PESA  CON PATITAS - 24111",
+      "longDescriptionActual": "CHIFLE PESA  CON PATITAS - 24111",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_366",
+      "name": "PELOTA  CHIFLE METEORITO   6CM    824099)",
+      "category": "juguetes",
+      "subcategory": "Juguetes",
+      "descriptionActual": "PELOTA  CHIFLE METEORITO   6CM    824099)",
+      "longDescriptionActual": "PELOTA  CHIFLE METEORITO   6CM    824099)",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_367",
+      "name": "HUESO CHIFLE  C/ CARA DE PERRITO",
+      "category": "juguetes",
+      "subcategory": "Juguetes",
+      "descriptionActual": "HUESO CHIFLE  C/ CARA DE PERRITO",
+      "longDescriptionActual": "HUESO CHIFLE  C/ CARA DE PERRITO",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_370",
+      "name": "PAPAS MCDONA",
+      "category": "juguetes",
+      "subcategory": "Juguetes",
+      "descriptionActual": "PAPAS MC,DONA",
+      "longDescriptionActual": "PAPAS MC,DONA",
+      "problemas": [
+        "⚠️ Descripción MUY CORTA (13 chars)",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_385",
+      "name": "JUGUET PELOTA DENTAL GOMA P/ALIMENTO 5 CM",
+      "category": "juguetes",
+      "subcategory": "Juguetes",
+      "descriptionActual": "JUGUET PELOTA DENTAL GOMA P/ALIMENTO 5 CM",
+      "longDescriptionActual": "JUGUET PELOTA DENTAL GOMA P/ALIMENTO 5 CM",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_386",
+      "name": "PELOTA LIMPIA DIENTES DE GOMA P/ ALIMENTO 6CM",
+      "category": "juguetes",
+      "subcategory": "Juguetes",
+      "descriptionActual": "PELOTA LIMPIA DIENTES DE GOMA P/ ALIMENTO 6CM",
+      "longDescriptionActual": "PELOTA LIMPIA DIENTES DE GOMA P/ ALIMENTO 6CM",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_395",
+      "name": "PELOTA VOLADORA MAGICA CON LUZ 7 CM PE0399",
+      "category": "juguetes",
+      "subcategory": "Juguetes",
+      "descriptionActual": "PELOTA VOLADORA MAGICA CON LUZ 7 CM PE0399",
+      "longDescriptionActual": "PELOTA VOLADORA MAGICA CON LUZ 7 CM PE0399",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_396",
+      "name": "PELOTA MAGICA VOLADORA PEGABLE",
+      "category": "juguetes",
+      "subcategory": "Juguetes",
+      "descriptionActual": "PELOTA MAGICA VOLADORA PEGABLE",
+      "longDescriptionActual": "PELOTA MAGICA VOLADORA PEGABLE",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_397",
+      "name": "HUESO CON TEXTURA - ONEBER PET 01",
+      "category": "juguetes",
+      "subcategory": "Juguetes",
+      "descriptionActual": "HUESO CON TEXTURA - ONEBER PET 01",
+      "longDescriptionActual": "HUESO CON TEXTURA - ONEBER PET 01",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_398",
+      "name": "HUESO CON TEXTURA - ONEBER PET02",
+      "category": "juguetes",
+      "subcategory": "Juguetes",
+      "descriptionActual": "HUESO CON TEXTURA - ONEBER PET02",
+      "longDescriptionActual": "HUESO CON TEXTURA - ONEBER PET02",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_623",
+      "name": "CADENA CON AMORTIGUADOR MANGO DE CUERO 80CM . T- 1",
+      "category": "accesorios",
+      "subcategory": "Accesorios",
+      "descriptionActual": "CADENA CON AMORTIGUADOR MANGO DE CUERO 80CM . T- 1",
+      "longDescriptionActual": "CADENA CON AMORTIGUADOR MANGO DE CUERO 80CM . T- 1",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_624",
+      "name": "CADENA CON AMORTIGUADOR MANGO DE CUERO 80CM . T- 2",
+      "category": "accesorios",
+      "subcategory": "Accesorios",
+      "descriptionActual": "CADENA CON AMORTIGUADOR MANGO DE CUERO 80CM . T- 2",
+      "longDescriptionActual": "CADENA CON AMORTIGUADOR MANGO DE CUERO 80CM . T- 2",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_626",
+      "name": "CONJUNTO DE CADENA CON COLLAR REGULABLE, 1,20CM",
+      "category": "accesorios",
+      "subcategory": "Accesorios",
+      "descriptionActual": "CONJUNTO DE CADENA CON COLLAR REGULABLE, 1,20CM",
+      "longDescriptionActual": "CONJUNTO DE CADENA CON COLLAR REGULABLE, 1,20CM",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_661",
+      "name": "COLLAR CUERO C/ OJALILLOS T4  P40X65CM",
+      "category": "accesorios",
+      "subcategory": "Accesorios",
+      "descriptionActual": "COLLAR CUERO C/ OJALILLOS T4  P40X65CM",
+      "longDescriptionActual": "COLLAR CUERO C/ OJALILLOS T4  P40X65CM",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_662",
+      "name": "COLLAR CUERO LISO  T1  PASE 15X30CM",
+      "category": "accesorios",
+      "subcategory": "Accesorios",
+      "descriptionActual": "COLLAR CUERO LISO  T1  PASE 15X30CM",
+      "longDescriptionActual": "COLLAR CUERO LISO  T1  PASE 15X30CM",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_676",
+      "name": "COLLAR- XHL MODELO 3",
+      "category": "accesorios",
+      "subcategory": "Accesorios",
+      "descriptionActual": "COLLAR- XHL",
+      "longDescriptionActual": "COLLAR- XHL",
+      "problemas": [
+        "⚠️ Descripción MUY CORTA (11 chars)",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_683",
+      "name": "PRETAL NATO PARA PITBULL REGULABLE T-50",
+      "category": "accesorios",
+      "subcategory": "Accesorios",
+      "descriptionActual": "PRETAL NATO PARA PITBULL REGULABLE T-50",
+      "longDescriptionActual": "PRETAL NATO PARA PITBULL REGULABLE T-50",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_684",
+      "name": "CONJUNTO PRETAL NATO PARA PITBULL REGULABLE T-50",
+      "category": "accesorios",
+      "subcategory": "Accesorios",
+      "descriptionActual": "CONJUNTO PRETAL NATO PARA PITBULL REGULABLE T-50",
+      "longDescriptionActual": "CONJUNTO PRETAL NATO PARA PITBULL REGULABLE T-50",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_691",
+      "name": "CONJUNTO PECHERA Y TIRA TIPO JEANS  T2     1,5",
+      "category": "accesorios",
+      "subcategory": "Accesorios",
+      "descriptionActual": "CONJUNTO PECHERA Y TIRA TIPO JEANS  T2     1,5",
+      "longDescriptionActual": "CONJUNTO PECHERA Y TIRA TIPO JEANS  T2     1,5",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_694",
+      "name": "CONJUNTO FANTASIA IMP.3 CM T-3",
+      "category": "accesorios",
+      "subcategory": "Accesorios",
+      "descriptionActual": "CONJUNTO FANTASIA IMP.3 CM T-3",
+      "longDescriptionActual": "CONJUNTO FANTASIA IMP.3 CM T-3",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_703",
+      "name": "CONJUNTO CORREA PASADORA 1,0CM*120CM*2,0CM",
+      "category": "accesorios",
+      "subcategory": "Accesorios",
+      "descriptionActual": "CONJUNTO   CORREA PASADORA 1,0CM*120CM*2,0CM",
+      "longDescriptionActual": "CONJUNTO   CORREA PASADORA 1,0CM*120CM*2,0CM",
+      "problemas": [
+        "⚠️ Descripción MUY SIMILAR al título",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_705",
+      "name": "CONJUNTO REFORZASDO / RALLADO  GRANDE 8485-3",
+      "category": "accesorios",
+      "subcategory": "Accesorios",
+      "descriptionActual": "CONJUNTO REFORZASDO / RALLADO  GRANDE 8485-3",
+      "longDescriptionActual": "CONJUNTO REFORZASDO / RALLADO  GRANDE 8485-3",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_707",
+      "name": "CONJUNTO PECHERA COLORES PASTEL C/ LUNARES",
+      "category": "accesorios",
+      "subcategory": "Accesorios",
+      "descriptionActual": "CONJUNTO PECHERA COLORES PASTEL C/ LUNARES",
+      "longDescriptionActual": "CONJUNTO PECHERA COLORES PASTEL C/ LUNARES",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_710",
+      "name": "CONJUNTO REGULABLE RALLADO T -1     1,5",
+      "category": "accesorios",
+      "subcategory": "Accesorios",
+      "descriptionActual": "CONJUNTO REGULABLE RALLADO T -1     1,5",
+      "longDescriptionActual": "CONJUNTO REGULABLE RALLADO T -1     1,5",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_711",
+      "name": "CONJUNTO REGULABLE RALLADO T -2   2,0",
+      "category": "accesorios",
+      "subcategory": "Accesorios",
+      "descriptionActual": "CONJUNTO REGULABLE RALLADO T -2   2,0",
+      "longDescriptionActual": "CONJUNTO REGULABLE RALLADO T -2   2,0",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_712",
+      "name": "CONJUNTO REGULABLE RALLADO T -3     2,5",
+      "category": "accesorios",
+      "subcategory": "Accesorios",
+      "descriptionActual": "CONJUNTO REGULABLE RALLADO T -3     2,5",
+      "longDescriptionActual": "CONJUNTO REGULABLE RALLADO T -3     2,5",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_720",
+      "name": "Mochila Astronauta para Mascotas – Diseño Pingüino",
+      "category": "casa-descanso",
+      "subcategory": "Casitas",
+      "descriptionActual": "🐾 Mochila Astronauta para Mascotas – Diseño Pingüino 🐧",
+      "longDescriptionActual": "🐾 Mochila Astronauta para Mascotas – Diseño Pingüino 🐧",
+      "problemas": [
+        "⚠️ Descripción MUY SIMILAR al título",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_723",
+      "name": "TIRA LARGA",
+      "category": "accesorios",
+      "subcategory": "Collares,",
+      "descriptionActual": "N°5 (1,60M)p30 ,N°6(1,6M)p30\r\nN°7 (2M)  p25, N°8(2M) p30\r\nN°9 (DE 3 METROS) ,N°10 (DE 5 METROS)",
+      "longDescriptionActual": "N°5 (1,60M)p30 ,N°6(1,6M)p30\r\nN°7 (2M)  p25, N°8(2M) p30\r\nN°9 (DE 3 METROS) ,N°10 (DE 5 METROS)",
+      "problemas": [
+        "⚠️ longDescription IGUAL a description",
+        "⚠️ Descripción solo tiene MEDIDAS/TALLAS"
+      ]
+    },
+    {
+      "id": "prod_735",
+      "name": "COLLAR MOÑO ANIMAL PRINS  8314-2",
+      "category": "accesorios",
+      "subcategory": "Accesorios",
+      "descriptionActual": "COLLAR MOÑO ANIMAL PRINS  8314-2",
+      "longDescriptionActual": "COLLAR MOÑO ANIMAL PRINS  8314-2",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_738",
+      "name": "PECHERA ARNES AJUSTABLE CON CORREA",
+      "category": "accesorios",
+      "subcategory": "Collares,",
+      "descriptionActual": "PECHERA ARNES AJUSTABLE CON CORREA",
+      "longDescriptionActual": "PECHERA ARNES AJUSTABLE CON CORREA",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_755",
+      "name": "conjunto pechera y tira tipo jeans  t1    1,0",
+      "category": "accesorios",
+      "subcategory": "Accesorios",
+      "descriptionActual": "conjunto pechera y tira tipo jeans  t1    1,0",
+      "longDescriptionActual": "conjunto pechera y tira tipo jeans  t1    1,0",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_757",
+      "name": "CONJUNTO REFORZADO/ CAMUCLADO MEDIANO",
+      "category": "accesorios",
+      "subcategory": "Accesorios",
+      "descriptionActual": "CONJUNTO REFORZADO/ CAMUCLADO MEDIANO",
+      "longDescriptionActual": "CONJUNTO REFORZADO/ CAMUCLADO MEDIANO",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_758",
+      "name": "CONJUNTO SOGA REGULABLE CAMUFLADO GRANDE",
+      "category": "accesorios",
+      "subcategory": "Accesorios",
+      "descriptionActual": "CONJUNTO SOGA REGULABLE CAMUFLADO GRANDE",
+      "longDescriptionActual": "CONJUNTO SOGA REGULABLE CAMUFLADO GRANDE",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_759",
+      "name": "CONJUNTO SOGA REGULABLE ( COLOR/ VARIOS) GRANDE",
+      "category": "accesorios",
+      "subcategory": "Accesorios",
+      "descriptionActual": "CONJUNTO SOGA REGULABLE ( COLOR/ VARIOS) GRANDE",
+      "longDescriptionActual": "CONJUNTO SOGA REGULABLE ( COLOR/ VARIOS) GRANDE",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_784",
+      "name": "COMEDERO DOBLE CON BEBEDERO A ROSCA",
+      "category": "accesorios",
+      "subcategory": "Comederos",
+      "descriptionActual": "COMEDERO DOBLE CON BEBEDERO A ROSCA",
+      "longDescriptionActual": "COMEDERO DOBLE CON BEBEDERO A ROSCA",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_786",
+      "name": "COMEDERO  MELAMINA  ESTAMPADA  6,5\"",
+      "category": "accesorios",
+      "subcategory": "Comederos",
+      "descriptionActual": "COMEDERO  MELAMINA  ESTAMPADA  6,5\"",
+      "longDescriptionActual": "COMEDERO  MELAMINA  ESTAMPADA  6,5\"",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_787",
+      "name": "COMEDERO  MELAMINA  ESTAMPADA  7,5\"",
+      "category": "accesorios",
+      "subcategory": "Comederos",
+      "descriptionActual": "COMEDERO  MELAMINA  ESTAMPADA  7,5\"",
+      "longDescriptionActual": "COMEDERO  MELAMINA  ESTAMPADA  7,5\"",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_788",
+      "name": "COMEDERO MELAMINA  ESTAMPADA 8,5\"",
+      "category": "accesorios",
+      "subcategory": "Comederos",
+      "descriptionActual": "COMEDERO MELAMINA  ESTAMPADA 8,5\"",
+      "longDescriptionActual": "COMEDERO MELAMINA  ESTAMPADA 8,5\"",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_800",
+      "name": "CAZUELA ACERO INOXIDABLE CON BASE ANTIDESLIZANTE S-11CM T-1",
+      "category": "accesorios",
+      "subcategory": "Comederos",
+      "descriptionActual": "CAZUELA ACERO INOXIDABLE CON BASE ANTIDESLIZANTE S-11CM T-1",
+      "longDescriptionActual": "CAZUELA ACERO INOXIDABLE CON BASE ANTIDESLIZANTE S-11CM T-1",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_801",
+      "name": "CAZUELA ACERO INOXIDABLE CON BASE ANTIDESLIZANTE L-18CM T-3",
+      "category": "accesorios",
+      "subcategory": "Comederos",
+      "descriptionActual": "CAZUELA ACERO INOXIDABLE CON BASE ANTIDESLIZANTE L-18CM T-3",
+      "longDescriptionActual": "CAZUELA ACERO INOXIDABLE CON BASE ANTIDESLIZANTE L-18CM T-3",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_810",
+      "name": "COMEDERO DE PLÁSTICO CON ANTIDESLIZANTE, TRANSLÚCIDO, 0,25L, Ø12CM",
+      "category": "accesorios",
+      "subcategory": "Comederos",
+      "descriptionActual": "COMEDERO DE PLÁSTICO CON ANTIDESLIZANTE, TRANSLÚCIDO, 0,25L, Ø12CM",
+      "longDescriptionActual": "COMEDERO DE PLÁSTICO CON ANTIDESLIZANTE, TRANSLÚCIDO, 0,25L, Ø12CM",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_813",
+      "name": "COMEDERO REGU-DIET CON ANTIDESLIZANTE 22CM  JK-4450",
+      "category": "accesorios",
+      "subcategory": "Comederos",
+      "descriptionActual": "COMEDERO REGU-DIET CON ANTIDESLIZANTE 22CM  JK-4450",
+      "longDescriptionActual": "COMEDERO REGU-DIET CON ANTIDESLIZANTE 22CM  JK-4450",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_814",
+      "name": "COMEDEROS DOBLE (MDP) GATO / PERRO",
+      "category": "accesorios",
+      "subcategory": "Comederos",
+      "descriptionActual": "COMEDEROS DOBLE (MDP) GATO / PERRO",
+      "longDescriptionActual": "COMEDEROS DOBLE (MDP) GATO / PERRO",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_823",
+      "name": "DISPENSER DE AGUA PARA MASCOTAS 3L  JK-4159",
+      "category": "accesorios",
+      "subcategory": "Comederos",
+      "descriptionActual": "DISPENSER DE AGUA PARA MASCOTAS 3L  JK-4159",
+      "longDescriptionActual": "DISPENSER DE AGUA PARA MASCOTAS 3L  JK-4159",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_847",
+      "name": "TAZON PARA GATO 200ML AZUL Y ROSA",
+      "category": "accesorios",
+      "subcategory": "Comederos",
+      "descriptionActual": "TAZON PARA GATO 200ML AZUL Y ROSA",
+      "longDescriptionActual": "TAZON PARA GATO 200ML AZUL Y ROSA",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_848",
+      "name": "TAZON  PARA  PERRO 300 ML AZUL Y ROSA",
+      "category": "accesorios",
+      "subcategory": "Comederos",
+      "descriptionActual": "TAZON  PARA  PERRO 300 ML AZUL Y ROSA",
+      "longDescriptionActual": "TAZON  PARA  PERRO 300 ML AZUL Y ROSA",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_849",
+      "name": "TAZON PARA PERRO 650 ML AZUL Y ROSA",
+      "category": "accesorios",
+      "subcategory": "Comederos",
+      "descriptionActual": "TAZON PARA PERRO 650 ML AZUL Y ROSA",
+      "longDescriptionActual": "TAZON PARA PERRO 650 ML AZUL Y ROSA",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_850",
+      "name": "BEBEDERO AUTAMATICO PARA PERRO 250ML AZUL Y ROSA",
+      "category": "accesorios",
+      "subcategory": "Comederos",
+      "descriptionActual": "BEBEDERO AUTAMATICO PARA PERRO 250ML AZUL Y ROSA",
+      "longDescriptionActual": "BEBEDERO AUTAMATICO PARA PERRO 250ML AZUL Y ROSA",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_851",
+      "name": "BEBEDERO AUTOMATICO PARA GATO 250ML AZUL Y ROSA",
+      "category": "accesorios",
+      "subcategory": "Comederos",
+      "descriptionActual": "BEBEDERO AUTOMATICO PARA GATO 250ML AZUL Y ROSA",
+      "longDescriptionActual": "BEBEDERO AUTOMATICO PARA GATO 250ML AZUL Y ROSA",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_853",
+      "name": "COMELENTO GRANDE REDONDO CON HUELLA",
+      "category": "accesorios",
+      "subcategory": "Comederos",
+      "descriptionActual": "COMELENTO GRANDE REDONDO CON HUELLA",
+      "longDescriptionActual": "COMELENTO GRANDE REDONDO CON HUELLA",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_856",
+      "name": "COMEDERO DOBLE  OCHO CHICO 200ML",
+      "category": "accesorios",
+      "subcategory": "Comederos",
+      "descriptionActual": "COMEDERO DOBLE  OCHO CHICO 200ML",
+      "longDescriptionActual": "COMEDERO DOBLE  OCHO CHICO 200ML",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_857",
+      "name": "COMEDERO DOBLE OCHO GRANDE 350ML",
+      "category": "accesorios",
+      "subcategory": "Comederos",
+      "descriptionActual": "COMEDERO DOBLE OCHO GRANDE 350ML",
+      "longDescriptionActual": "COMEDERO DOBLE OCHO GRANDE 350ML",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_858",
+      "name": "COMEDERO Y BEBEDERO MASCOTA TRIANGULAR",
+      "category": "accesorios",
+      "subcategory": "Comederos",
+      "descriptionActual": "COMEDERO Y BEBEDERO MASCOTA TRIANGULAR",
+      "longDescriptionActual": "COMEDERO Y BEBEDERO MASCOTA TRIANGULAR",
+      "problemas": [
+        "⚠️ Descripción IDÉNTICA al título",
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_166",
+      "name": "BOLSO ANTI-DESGARRO PREMIUN",
+      "category": "casa-descanso",
+      "subcategory": "Bolsos",
+      "descriptionActual": "Medidas Disponibles: \r\nMEDIANO (26x38x30), GRANDE (29X41X33)",
+      "longDescriptionActual": "Medidas Disponibles: \r\nMEDIANO (26x38x30), GRANDE (29X41X33)",
+      "problemas": [
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_174",
+      "name": "MOISES NIDO AJUSTABLEE DE POLAR",
+      "category": "casa-descanso",
+      "subcategory": "Colchonetas",
+      "descriptionActual": "Medidas Disponibles: \r\nN°1 (55 CM), N°2 (65 CM) , N°3 (75 CM)",
+      "longDescriptionActual": "Medidas Disponibles: \r\nN°1 (55 CM), N°2 (65 CM) , N°3 (75 CM)",
+      "problemas": [
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_175",
+      "name": "ALMOHADON PREMIUM",
+      "category": "casa-descanso",
+      "subcategory": "Colchonetas",
+      "descriptionActual": "Medidas Disponibles: \r\nN°2 (50 X 65 CM), N°3 (60 X 80 CM) , N°4 (80 X 90 CM)",
+      "longDescriptionActual": "Medidas Disponibles: \r\nN°2 (50 X 65 CM), N°3 (60 X 80 CM) , N°4 (80 X 90 CM)",
+      "problemas": [
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_177",
+      "name": "MOISES NIDO CORDERITO 4 PATAS",
+      "category": "casa-descanso",
+      "subcategory": "Colchonetas",
+      "descriptionActual": "Medidas Disponibles: \r\nN°1 (55 CM) , N°2 (65 CM), N°3 (75 CM)",
+      "longDescriptionActual": "Medidas Disponibles: \r\nN°1 (55 CM) , N°2 (65 CM), N°3 (75 CM)",
+      "problemas": [
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_178",
+      "name": "COLCHONETA CORDERITO",
+      "category": "casa-descanso",
+      "subcategory": "Colchonetas",
+      "descriptionActual": "Medidas Disponibles: \r\nN°1 (50 X 50 CM) , N°2 (50 X 65 CM)\r\nN°3 (50 X 80 CM) , N°4 (50 X 90 CM)",
+      "longDescriptionActual": "Medidas Disponibles: \r\nN°1 (50 X 50 CM) , N°2 (50 X 65 CM)\r\nN°3 (50 X 80 CM) , N°4 (50 X 90 CM)",
+      "problemas": [
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_179",
+      "name": "COLCHONETA PREMIUM",
+      "category": "casa-descanso",
+      "subcategory": "Colchonetas",
+      "descriptionActual": "Medidas Disponibles: \r\nN°1 (50 X 50 CM) , N°2 (50 X 65 CM)\r\nN°3 (60 X 80 CM) , N°4 (80 X 90 CM)",
+      "longDescriptionActual": "Medidas Disponibles: \r\nN°1 (50 X 50 CM) , N°2 (50 X 65 CM)\r\nN°3 (60 X 80 CM) , N°4 (80 X 90 CM)",
+      "problemas": [
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_180",
+      "name": "COLCHON POLAR",
+      "category": "casa-descanso",
+      "subcategory": "Colchonetas",
+      "descriptionActual": "Medidas Disponibles: \r\nN°1 (50 X 50 CM) , N°2 (50 X 65 CM)\r\nN°3 (60 X 80 CM) , N°4 (80 X 90 CM)",
+      "longDescriptionActual": "Medidas Disponibles: \r\nN°1 (50 X 50 CM) , N°2 (50 X 65 CM)\r\nN°3 (60 X 80 CM) , N°4 (80 X 90 CM)",
+      "problemas": [
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_192",
+      "name": "RASCADOR RECTO 50 X 12 X 2 CM",
+      "category": "accesorios",
+      "subcategory": "Rascadores",
+      "descriptionActual": "RASCADOR RECTO 50CM X 12CM X 2CM",
+      "longDescriptionActual": "RASCADOR RECTO 50CM X 12CM X 2CM",
+      "problemas": [
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_606",
+      "name": "COLLAR GATO SURTIDOS X 12 UNIDADES",
+      "category": "accesorios",
+      "subcategory": "Collares,",
+      "descriptionActual": "COLLAR GATO SURTI X 12 UNIDADES DIFERENTES MODELOS",
+      "longDescriptionActual": "COLLAR GATO SURTI X 12 UNIDADES DIFERENTES MODELOS",
+      "problemas": [
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_722",
+      "name": "TIRA DE LONA",
+      "category": "accesorios",
+      "subcategory": "Collares,",
+      "descriptionActual": "Medidas\r\nN*1 (1,20M)p15 ,N*2 (1,20M)p20\r\nN*3 (1,20M)p25 ,N*4 (1,20M)p30\r\nN*5 (2M)p30 , N*6(3M)p30",
+      "longDescriptionActual": "Medidas\r\nN*1 (1,20M)p15 ,N*2 (1,20M)p20\r\nN*3 (1,20M)p25 ,N*4 (1,20M)p30\r\nN*5 (2M)p30 , N*6(3M)p30",
+      "problemas": [
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_724",
+      "name": "CADENA COMUN 1,2M",
+      "category": "accesorios",
+      "subcategory": "Collares,",
+      "descriptionActual": "Medidas\r\nT-1 = 1,20MM ,T-3 = 1,9MM\r\nT-5 = 4,5MM",
+      "longDescriptionActual": "Medidas\r\nT-1 = 1,20MM ,T-3 = 1,9MM\r\nT-5 = 4,5MM",
+      "problemas": [
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_725",
+      "name": "CADENA COMUN 1,7M",
+      "category": "accesorios",
+      "subcategory": "Collares,",
+      "descriptionActual": "Medidas\r\nT-1 = 1,25MM , T-3 = 1,9MM, T-5 = 3,2MM",
+      "longDescriptionActual": "Medidas\r\nT-1 = 1,25MM , T-3 = 1,9MM, T-5 = 3,2MM",
+      "problemas": [
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_732",
+      "name": "COLLAR PAÑUELO",
+      "category": "accesorios",
+      "subcategory": "Collares,",
+      "descriptionActual": "Medidas\r\nT1 = 37CM , T2 = 42CM , T3 = 50CM\r\nT4 = 55CM , T5 = 65CM",
+      "longDescriptionActual": "Medidas\r\nT1 = 37CM , T2 = 42CM , T3 = 50CM\r\nT4 = 55CM , T5 = 65CM",
+      "problemas": [
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_760",
+      "name": "Royal Puppies Parfum",
+      "category": "higiene-cuidado",
+      "subcategory": "Higiene",
+      "descriptionActual": "Perfume premium para mascotas con fragancias suaves y duraderas. \r\n\r\nFragancias disponibles:\r\nMoscú · París · Milano\r\nPresentación: 50 ml",
+      "longDescriptionActual": "Perfume premium para mascotas con fragancias suaves y duraderas. \r\n\r\nFragancias disponibles:\r\nMoscú · París · Milano\r\nPresentación: 50 ml",
+      "problemas": [
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_807",
+      "name": "COMEDERO DE ALTURA REGULABLE N2",
+      "category": "accesorios",
+      "subcategory": "Comederos",
+      "descriptionActual": "COMEDERO DE ALTURA REGULABLE CON SUJECIÓN PARA COMEDEROS ANTIVIBRACIÓN Y PIES DE CAUCHO ANTIDESLIZANTES, 1,8 L, 20 CM. ALTURA REGULABLE: 40 CM.",
+      "longDescriptionActual": "COMEDERO DE ALTURA REGULABLE CON SUJECIÓN PARA COMEDEROS ANTIVIBRACIÓN Y PIES DE CAUCHO ANTIDESLIZANTES, 1,8 L, 20 CM. ALTURA REGULABLE: 40 CM.",
+      "problemas": [
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_811",
+      "name": "COMEDERO DE CERÁMICA CATS",
+      "category": "accesorios",
+      "subcategory": "Comederos",
+      "descriptionActual": "COMEDERO DE CERÁMICA, GATO, 0,3L, Ø12 CM (SOLO POR MENOR)",
+      "longDescriptionActual": "COMEDERO DE CERÁMICA, GATO, 0,3L, Ø12 CM (SOLO POR MENOR)",
+      "problemas": [
+        "⚠️ longDescription IGUAL a description"
+      ]
+    },
+    {
+      "id": "prod_812",
+      "name": "COMEDERO ADVENTURE DE ACERO VERDE",
+      "category": "accesorios",
+      "subcategory": "Comederos",
+      "descriptionActual": "COMEDERO \"ADVENTURE\" DE ACERO INOXIDABLE/ESMALTE, ANTIDESLIZANTE, CHATO, 0,2 L/Ø 12 CM, VERDE",
+      "longDescriptionActual": "COMEDERO \"ADVENTURE\" DE ACERO INOXIDABLE/ESMALTE, ANTIDESLIZANTE, CHATO, 0,2 L/Ø 12 CM, VERDE",
+      "problemas": [
+        "⚠️ longDescription IGUAL a description"
+      ]
+    }
+  ]
+}
