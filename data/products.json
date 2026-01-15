@@ -15315,7 +15315,9 @@
       "cover": "assets/images/products/prod_448/cover.jpg",
       "thumb": "assets/images/products/prod_448/thumb.jpg",
       "gallery": [
-        "assets/images/products/prod_448/1.jpg"
+        "assets/images/products/prod_448/1.jpg",
+        "assets/images/products/prod_448/2.png",
+        "assets/images/products/prod_448/3.png"
       ]
     },
     "marketing": {
