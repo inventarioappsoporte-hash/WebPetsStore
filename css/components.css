@@ -20,6 +20,13 @@
   margin: 0;
 }
 
+.header__logo-img {
+  height: 80px;
+  width: auto;
+  object-fit: contain;
+  display: block;
+}
+
 .header__nav {
   display: flex;
   gap: var(--spacing-lg);
