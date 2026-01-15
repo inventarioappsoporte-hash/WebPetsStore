@@ -3142,7 +3142,7 @@
   },
   {
     "id": "prod_181",
-    "name": "RASCADO TABLA CARTON Y ALFOMBRA",
+    "name": "Rascado Tabla Carton Y Alfombra",
     "category": "accesorios",
     "subcategory": "Rascadores",
     "price": 7650,
@@ -3164,8 +3164,8 @@
       "gatos",
       "sisal"
     ],
-    "description": "RASCADO TABLA CARTON Y ALFOMBRA",
-    "longDescription": "RASCADO TABLA CARTON Y ALFOMBRA",
+    "description": "🐕 Accesorio de calidad para tu mascota. Diseño funcional y duradero.",
+    "longDescription": "Accesorio de alta calidad diseñado para tu mascota. Materiales resistentes y duraderos. Diseño funcional que combina comodidad y estilo.",
     "images": {
       "cover": "assets/images/products/prod_181/cover.jpg",
       "thumb": "assets/images/products/prod_181/thumb.jpg",
@@ -3174,7 +3174,8 @@
       ]
     },
     "specs": {
-      "SKU": "RAS001"
+      "SKU": "RAS001",
+      "material": "Material resistente"
     },
     "shipping": {
       "free": false,
@@ -3192,7 +3193,7 @@
   },
   {
     "id": "prod_184",
-    "name": "RASCADOR DE MADERA EN 2 POSICIONES",
+    "name": "Rascador De Madera En 2 Posiciones",
     "category": "accesorios",
     "subcategory": "Rascadores",
     "price": 15300,
@@ -3212,8 +3213,8 @@
       "gatos",
       "sisal"
     ],
-    "description": "RASCADOR DE MADERA EN 2 POSICIONES",
-    "longDescription": "RASCADOR DE MADERA EN 2 POSICIONES",
+    "description": "🐱 Rascador para gatos. Ayuda a mantener las uñas sanas y protege tus muebles.",
+    "longDescription": "Rascador diseñado especialmente para gatos. Permite que tu felino afile sus uñas de forma natural, manteniendo sus garras sanas y protegiendo tus muebles. Material resistente y duradero. Estimula el ejercicio y reduce el estrés.",
     "images": {
       "cover": "assets/images/products/prod_184/cover.jpg",
       "thumb": "assets/images/products/prod_184/thumb.jpg",
@@ -3222,7 +3223,8 @@
       ]
     },
     "specs": {
-      "SKU": "RAS004"
+      "SKU": "RAS004",
+      "material": "Material resistente"
     },
     "shipping": {
       "free": true,
@@ -3240,7 +3242,7 @@
   },
   {
     "id": "prod_185",
-    "name": "RASCADOR CARTÓN CORRUGADO ONDA SIMPLE 12CM X 50CM",
+    "name": "Rascador Cartón Corrugado Onda Simple",
     "category": "accesorios",
     "subcategory": "Rascadores",
     "price": 7225,
@@ -3264,8 +3266,8 @@
       "gatos",
       "sisal"
     ],
-    "description": "RASCADOR CARTÓN CORRUGADO ONDA SIMPLE 12CM X 50CM",
-    "longDescription": "RASCADOR CARTÓN CORRUGADO ONDA SIMPLE 12CM X 50CM",
+    "description": "🐱 Rascador para gatos. Ayuda a mantener las uñas sanas y protege tus muebles.",
+    "longDescription": "Rascador diseñado especialmente para gatos. Permite que tu felino afile sus uñas de forma natural, manteniendo sus garras sanas y protegiendo tus muebles. Material resistente y duradero. Estimula el ejercicio y reduce el estrés.",
     "images": {
       "cover": "assets/images/products/prod_185/cover.jpg",
       "thumb": "assets/images/products/prod_185/thumb.jpg",
@@ -3275,7 +3277,9 @@
     },
     "specs": {
       "SKU": "RAS005",
-      "Medida": "12CM"
+      "Medida": "12CM",
+      "dimensions": "12 cm",
+      "material": "Material resistente"
     },
     "shipping": {
       "free": false,
@@ -3293,7 +3297,7 @@
   },
   {
     "id": "prod_186",
-    "name": "RASCADOR CARTÓN CORRUGADO \"PEZ\" 20CM X 50CM",
+    "name": "Rascador Cartón Corrugado \"pez\"",
     "category": "accesorios",
     "subcategory": "Rascadores",
     "price": 15300,
@@ -3316,8 +3320,8 @@
       "gatos",
       "sisal"
     ],
-    "description": "RASCADOR CARTÓN CORRUGADO \"PEZ\" 20CM X 50CM",
-    "longDescription": "RASCADOR CARTÓN CORRUGADO \"PEZ\" 20CM X 50CM",
+    "description": "🐱 Rascador para gatos. Ayuda a mantener las uñas sanas y protege tus muebles.",
+    "longDescription": "Rascador diseñado especialmente para gatos. Permite que tu felino afile sus uñas de forma natural, manteniendo sus garras sanas y protegiendo tus muebles. Material resistente y duradero. Estimula el ejercicio y reduce el estrés.",
     "images": {
       "cover": "assets/images/products/prod_186/cover.jpg",
       "thumb": "assets/images/products/prod_186/thumb.jpg",
@@ -3327,7 +3331,9 @@
     },
     "specs": {
       "SKU": "RAS006",
-      "Medida": "20CM"
+      "Medida": "20CM",
+      "dimensions": "20 cm",
+      "material": "Material resistente"
     },
     "shipping": {
       "free": true,
@@ -3345,7 +3351,7 @@
   },
   {
     "id": "prod_187",
-    "name": "RASCADOR CARTÓN CORRUGADO ONDA SIMPLE 20CM X 50CM",
+    "name": "Rascador Cartón Corrugado Onda Simple",
     "category": "accesorios",
     "subcategory": "Rascadores",
     "price": 12750,
@@ -3369,8 +3375,8 @@
       "gatos",
       "sisal"
     ],
-    "description": "RASCADOR CARTÓN CORRUGADO ONDA SIMPLE 20CM X 50CM",
-    "longDescription": "RASCADOR CARTÓN CORRUGADO ONDA SIMPLE 20CM X 50CM",
+    "description": "🐱 Rascador para gatos. Ayuda a mantener las uñas sanas y protege tus muebles.",
+    "longDescription": "Rascador diseñado especialmente para gatos. Permite que tu felino afile sus uñas de forma natural, manteniendo sus garras sanas y protegiendo tus muebles. Material resistente y duradero. Estimula el ejercicio y reduce el estrés.",
     "images": {
       "cover": "assets/images/products/prod_187/cover.jpg",
       "thumb": "assets/images/products/prod_187/thumb.jpg",
@@ -3380,7 +3386,9 @@
     },
     "specs": {
       "SKU": "RAS007",
-      "Medida": "20CM"
+      "Medida": "20CM",
+      "dimensions": "20 cm",
+      "material": "Material resistente"
     },
     "shipping": {
       "free": true,
@@ -3398,7 +3406,7 @@
   },
   {
     "id": "prod_188",
-    "name": "RASCADOR CON CAJA 11.5CM X 50CM X 4CM",
+    "name": "Rascador Con Caja X",
     "category": "accesorios",
     "subcategory": "Rascadores",
     "price": 8925,
@@ -3419,8 +3427,8 @@
       "gatos",
       "sisal"
     ],
-    "description": "RASCADOR CON CAJA 11.5CM X 50CM X 4CM",
-    "longDescription": "RASCADOR CON CAJA 11.5CM X 50CM X 4CM",
+    "description": "🐱 Rascador para gatos. Ayuda a mantener las uñas sanas y protege tus muebles.",
+    "longDescription": "Rascador diseñado especialmente para gatos. Permite que tu felino afile sus uñas de forma natural, manteniendo sus garras sanas y protegiendo tus muebles. Material resistente y duradero. Estimula el ejercicio y reduce el estrés.",
     "images": {
       "cover": "assets/images/products/prod_188/cover.jpg",
       "thumb": "assets/images/products/prod_188/thumb.jpg",
@@ -3430,7 +3438,9 @@
     },
     "specs": {
       "SKU": "RAS008",
-      "Medida": "5CM"
+      "Medida": "5CM",
+      "dimensions": "11.5 cm",
+      "material": "Material resistente"
     },
     "shipping": {
       "free": false,
@@ -3448,7 +3458,7 @@
   },
   {
     "id": "prod_189",
-    "name": "RASCADOR DOBLE T 58CM X 16CM X 20 CM",
+    "name": "Rascador Doble T X",
     "category": "accesorios",
     "subcategory": "Rascadores",
     "price": 13600,
@@ -3469,8 +3479,8 @@
       "gatos",
       "sisal"
     ],
-    "description": "RASCADOR DOBLE T 58CM X 16CM X 20 CM",
-    "longDescription": "RASCADOR DOBLE T 58CM X 16CM X 20 CM",
+    "description": "🐱 Rascador para gatos. Ayuda a mantener las uñas sanas y protege tus muebles.",
+    "longDescription": "Rascador diseñado especialmente para gatos. Permite que tu felino afile sus uñas de forma natural, manteniendo sus garras sanas y protegiendo tus muebles. Material resistente y duradero. Estimula el ejercicio y reduce el estrés.",
     "images": {
       "cover": "assets/images/products/prod_189/cover.jpg",
       "thumb": "assets/images/products/prod_189/thumb.jpg",
@@ -3480,7 +3490,9 @@
     },
     "specs": {
       "SKU": "RAS009",
-      "Medida": "58CM"
+      "Medida": "58CM",
+      "dimensions": "58 cm",
+      "material": "Material resistente"
     },
     "shipping": {
       "free": true,
@@ -3498,7 +3510,7 @@
   },
   {
     "id": "prod_190",
-    "name": "RASCADOR MEDIO INFINITO GRANDE 58CM X 9 CM X 20CM",
+    "name": "Rascador Medio Infinito Grande X",
     "category": "accesorios",
     "subcategory": "Rascadores",
     "price": 13600,
@@ -3521,8 +3533,8 @@
       "gatos",
       "sisal"
     ],
-    "description": "RASCADOR MEDIO INFINITO GRANDE 58CM X 9 CM X 20CM",
-    "longDescription": "RASCADOR MEDIO INFINITO GRANDE 58CM X 9 CM X 20CM",
+    "description": "🐱 Rascador para gatos. Ayuda a mantener las uñas sanas y protege tus muebles.",
+    "longDescription": "Rascador diseñado especialmente para gatos. Permite que tu felino afile sus uñas de forma natural, manteniendo sus garras sanas y protegiendo tus muebles. Material resistente y duradero. Estimula el ejercicio y reduce el estrés.",
     "images": {
       "cover": "assets/images/products/prod_190/cover.jpg",
       "thumb": "assets/images/products/prod_190/thumb.jpg",
@@ -3532,7 +3544,9 @@
     },
     "specs": {
       "SKU": "RAS010",
-      "Medida": "58CM"
+      "Medida": "58CM",
+      "dimensions": "58 cm",
+      "material": "Material resistente"
     },
     "shipping": {
       "free": true,
@@ -3550,7 +3564,7 @@
   },
   {
     "id": "prod_191",
-    "name": "RASCADOR MEDIO INFINITO 55 X  20 X 6,5 CM",
+    "name": "Rascador Medio Infinito 55 X",
     "category": "accesorios",
     "subcategory": "Rascadores",
     "price": 11900,
@@ -3570,8 +3584,8 @@
       "gatos",
       "sisal"
     ],
-    "description": "RASCADOR MEDIO INFINITO 55 X  20 X 6,5 CM",
-    "longDescription": "RASCADOR MEDIO INFINITO 55 X  20 X 6,5 CM",
+    "description": "🐱 Rascador para gatos. Ayuda a mantener las uñas sanas y protege tus muebles.",
+    "longDescription": "Rascador diseñado especialmente para gatos. Permite que tu felino afile sus uñas de forma natural, manteniendo sus garras sanas y protegiendo tus muebles. Material resistente y duradero. Estimula el ejercicio y reduce el estrés.",
     "images": {
       "cover": "assets/images/products/prod_191/cover.jpg",
       "thumb": "assets/images/products/prod_191/thumb.jpg",
@@ -3581,7 +3595,9 @@
     },
     "specs": {
       "SKU": "RAS011",
-      "Medida": "5 CM"
+      "Medida": "5 CM",
+      "dimensions": "20 X 6,5  cm",
+      "material": "Material resistente"
     },
     "shipping": {
       "free": false,
@@ -3599,7 +3615,7 @@
   },
   {
     "id": "prod_192",
-    "name": "RASCADOR RECTO 50 X 12 X 2 CM",
+    "name": "Rascador Recto 50 X",
     "category": "accesorios",
     "subcategory": "Rascadores",
     "price": 3400,
@@ -3618,8 +3634,8 @@
       "gatos",
       "sisal"
     ],
-    "description": "RASCADOR RECTO 50CM X 12CM X 2CM",
-    "longDescription": "RASCADOR RECTO 50CM X 12CM X 2CM",
+    "description": "🐱 Rascador para gatos. Ayuda a mantener las uñas sanas y protege tus muebles.",
+    "longDescription": "Rascador diseñado especialmente para gatos. Permite que tu felino afile sus uñas de forma natural, manteniendo sus garras sanas y protegiendo tus muebles. Material resistente y duradero. Estimula el ejercicio y reduce el estrés.",
     "images": {
       "cover": "assets/images/products/prod_192/cover.jpg",
       "thumb": "assets/images/products/prod_192/thumb.jpg",
@@ -3629,7 +3645,9 @@
     },
     "specs": {
       "SKU": "RAS012",
-      "Medida": "2 CM"
+      "Medida": "2 CM",
+      "dimensions": "12 X 2  cm",
+      "material": "Material resistente"
     },
     "shipping": {
       "free": false,
@@ -3647,7 +3665,7 @@
   },
   {
     "id": "prod_193",
-    "name": "RASCADOR RECTO SIN CAJA 11,5 X 50 X 4 CM",
+    "name": "Rascador Recto Sin Caja 11,5 X",
     "category": "accesorios",
     "subcategory": "Rascadores",
     "price": 5525,
@@ -3668,8 +3686,8 @@
       "gatos",
       "sisal"
     ],
-    "description": "RASCADOR RECTO SIN CAJA 11,5 X 50 X 4 CM",
-    "longDescription": "RASCADOR RECTO SIN CAJA 11,5 X 50 X 4 CM",
+    "description": "🐱 Rascador para gatos. Ayuda a mantener las uñas sanas y protege tus muebles.",
+    "longDescription": "Rascador diseñado especialmente para gatos. Permite que tu felino afile sus uñas de forma natural, manteniendo sus garras sanas y protegiendo tus muebles. Material resistente y duradero. Estimula el ejercicio y reduce el estrés.",
     "images": {
       "cover": "assets/images/products/prod_193/cover.jpg",
       "thumb": "assets/images/products/prod_193/thumb.jpg",
@@ -3679,7 +3697,9 @@
     },
     "specs": {
       "SKU": "RAS013",
-      "Medida": "4 CM"
+      "Medida": "4 CM",
+      "dimensions": "50 X 4  cm",
+      "material": "Material resistente"
     },
     "shipping": {
       "free": false,
@@ -3697,7 +3717,7 @@
   },
   {
     "id": "prod_194",
-    "name": "RASCADOR INFINITO 55 X 12 X 20 CM",
+    "name": "Rascador Infinito 55 X",
     "category": "accesorios",
     "subcategory": "Rascadores",
     "price": 22950,
@@ -3716,8 +3736,8 @@
       "gatos",
       "sisal"
     ],
-    "description": "RASCADOR INFINITO 55 X 12 X 20 CM",
-    "longDescription": "RASCADOR INFINITO 55 X 12 X 20 CM",
+    "description": "🐱 Rascador para gatos. Ayuda a mantener las uñas sanas y protege tus muebles.",
+    "longDescription": "Rascador diseñado especialmente para gatos. Permite que tu felino afile sus uñas de forma natural, manteniendo sus garras sanas y protegiendo tus muebles. Material resistente y duradero. Estimula el ejercicio y reduce el estrés.",
     "images": {
       "cover": "assets/images/products/prod_194/cover.jpg",
       "thumb": "assets/images/products/prod_194/thumb.jpg",
@@ -3727,7 +3747,9 @@
     },
     "specs": {
       "SKU": "RAS014",
-      "Medida": "20 CM"
+      "Medida": "20 CM",
+      "dimensions": "12 X 20  cm",
+      "material": "Material resistente"
     },
     "shipping": {
       "free": true,
@@ -3745,7 +3767,7 @@
   },
   {
     "id": "prod_195",
-    "name": "RASCADOR INFINITO 55 X 12 X 20 CM",
+    "name": "Rascador Infinito 55 X",
     "category": "accesorios",
     "subcategory": "Rascadores",
     "price": 11900,
@@ -3764,8 +3786,8 @@
       "gatos",
       "sisal"
     ],
-    "description": "RASCADOR INFINITO 55 X 12 X 20 CM",
-    "longDescription": "RASCADOR INFINITO 55 X 12 X 20 CM",
+    "description": "🐱 Rascador para gatos. Ayuda a mantener las uñas sanas y protege tus muebles.",
+    "longDescription": "Rascador diseñado especialmente para gatos. Permite que tu felino afile sus uñas de forma natural, manteniendo sus garras sanas y protegiendo tus muebles. Material resistente y duradero. Estimula el ejercicio y reduce el estrés.",
     "images": {
       "cover": "assets/images/products/prod_195/cover.jpg",
       "thumb": "assets/images/products/prod_195/thumb.jpg",
@@ -3775,7 +3797,9 @@
     },
     "specs": {
       "SKU": "RAS015",
-      "Medida": "20 CM"
+      "Medida": "20 CM",
+      "dimensions": "12 X 20  cm",
+      "material": "Material resistente"
     },
     "shipping": {
       "free": false,
@@ -3793,7 +3817,7 @@
   },
   {
     "id": "prod_197",
-    "name": "RASCADOR PUENTE",
+    "name": "Rascador Puente",
     "category": "accesorios",
     "subcategory": "Rascadores",
     "price": 32300,
@@ -3812,8 +3836,8 @@
       "gatos",
       "sisal"
     ],
-    "description": "RASCADOR PUENTE",
-    "longDescription": "RASCADOR PUENTE",
+    "description": "🐱 Rascador para gatos. Ayuda a mantener las uñas sanas y protege tus muebles.",
+    "longDescription": "Rascador diseñado especialmente para gatos. Permite que tu felino afile sus uñas de forma natural, manteniendo sus garras sanas y protegiendo tus muebles. Material resistente y duradero. Estimula el ejercicio y reduce el estrés.",
     "images": {
       "cover": "assets/images/products/prod_197/cover.jpg",
       "thumb": "assets/images/products/prod_197/thumb.jpg",
@@ -3822,7 +3846,8 @@
       ]
     },
     "specs": {
-      "SKU": "RAS017"
+      "SKU": "RAS017",
+      "material": "Material resistente"
     },
     "shipping": {
       "free": true,
@@ -3840,7 +3865,7 @@
   },
   {
     "id": "prod_198",
-    "name": "RASCADOR CILINDRO PARA PARED",
+    "name": "Rascador Cilindro Para Pared",
     "category": "accesorios",
     "subcategory": "Rascadores",
     "price": 23800,
@@ -3860,8 +3885,8 @@
       "gatos",
       "sisal"
     ],
-    "description": "RASCADOR CILINDRO PARA PARED",
-    "longDescription": "RASCADOR CILINDRO PARA PARED",
+    "description": "🐱 Rascador para gatos. Ayuda a mantener las uñas sanas y protege tus muebles.",
+    "longDescription": "Rascador diseñado especialmente para gatos. Permite que tu felino afile sus uñas de forma natural, manteniendo sus garras sanas y protegiendo tus muebles. Material resistente y duradero. Estimula el ejercicio y reduce el estrés.",
     "images": {
       "cover": "assets/images/products/prod_198/cover.jpg",
       "thumb": "assets/images/products/prod_198/thumb.jpg",
@@ -3870,7 +3895,8 @@
       ]
     },
     "specs": {
-      "SKU": "RAS018"
+      "SKU": "RAS018",
+      "material": "Material resistente"
     },
     "shipping": {
       "free": true,
@@ -3888,7 +3914,7 @@
   },
   {
     "id": "prod_199",
-    "name": "RASCADOR CUADRADO C/ MARCO DE MADERA PARED",
+    "name": "Rascador Cuadrado C/ Marco De Madera Pared",
     "category": "accesorios",
     "subcategory": "Rascadores",
     "price": 18700,
@@ -3910,8 +3936,8 @@
       "gatos",
       "sisal"
     ],
-    "description": "RASCADOR CUADRADO C/ MARCO DE MADERA PARED",
-    "longDescription": "RASCADOR CUADRADO C/ MARCO DE MADERA PARED",
+    "description": "🐱 Rascador para gatos. Ayuda a mantener las uñas sanas y protege tus muebles.",
+    "longDescription": "Rascador diseñado especialmente para gatos. Permite que tu felino afile sus uñas de forma natural, manteniendo sus garras sanas y protegiendo tus muebles. Material resistente y duradero. Estimula el ejercicio y reduce el estrés.",
     "images": {
       "cover": "assets/images/products/prod_199/cover.jpg",
       "thumb": "assets/images/products/prod_199/thumb.jpg",
@@ -3920,7 +3946,8 @@
       ]
     },
     "specs": {
-      "SKU": "RAS019"
+      "SKU": "RAS019",
+      "material": "Material resistente"
     },
     "shipping": {
       "free": true,
@@ -3938,7 +3965,7 @@
   },
   {
     "id": "prod_200",
-    "name": "RASCASDON CUADRADO C/MARCO DE MADERA PARED CHICO",
+    "name": "Rascasdon Cuadrado C/marco De Madera Pared Chico",
     "category": "accesorios",
     "subcategory": "Rascadores",
     "price": 11050,
@@ -3962,8 +3989,8 @@
       "gatos",
       "sisal"
     ],
-    "description": "RASCASDON CUADRADO C/MARCO DE MADERA PARED CHICO",
-    "longDescription": "RASCASDON CUADRADO C/MARCO DE MADERA PARED CHICO",
+    "description": "🐕 Accesorio de calidad para tu mascota. Diseño funcional y duradero.",
+    "longDescription": "Accesorio de alta calidad diseñado para tu mascota. Materiales resistentes y duraderos. Diseño funcional que combina comodidad y estilo.",
     "images": {
       "cover": "assets/images/products/prod_200/cover.jpg",
       "thumb": "assets/images/products/prod_200/thumb.jpg",
@@ -3972,7 +3999,8 @@
       ]
     },
     "specs": {
-      "SKU": "RAS020"
+      "SKU": "RAS020",
+      "material": "Material resistente"
     },
     "shipping": {
       "free": false,
@@ -3990,7 +4018,7 @@
   },
   {
     "id": "prod_201",
-    "name": "RASCADOR BANDEJA 34.5cm x 51cm",
+    "name": "Rascador Bandeja",
     "category": "accesorios",
     "subcategory": "Rascadores",
     "price": 18700,
@@ -4011,8 +4039,8 @@
       "gatos",
       "sisal"
     ],
-    "description": "RASCADOR BANDEJA 34.5cm x 51cm",
-    "longDescription": "RASCADOR BANDEJA 34.5cm x 51cm",
+    "description": "🐱 Rascador para gatos. Ayuda a mantener las uñas sanas y protege tus muebles.",
+    "longDescription": "Rascador diseñado especialmente para gatos. Permite que tu felino afile sus uñas de forma natural, manteniendo sus garras sanas y protegiendo tus muebles. Material resistente y duradero. Estimula el ejercicio y reduce el estrés.",
     "images": {
       "cover": "assets/images/products/prod_201/cover.jpg",
       "thumb": "assets/images/products/prod_201/thumb.jpg",
@@ -4022,7 +4050,9 @@
     },
     "specs": {
       "SKU": "RAS021",
-      "Medida": "5cm"
+      "Medida": "5cm",
+      "dimensions": "34.5 cm",
+      "material": "Material resistente"
     },
     "shipping": {
       "free": true,
@@ -4040,7 +4070,7 @@
   },
   {
     "id": "prod_202",
-    "name": "RASCADOR ESQUINERO YUTE SILLON 60cm x 9,5cm x 11cm",
+    "name": "Rascador Esquinero Yute Sillon X",
     "category": "accesorios",
     "subcategory": "Rascadores",
     "price": 27200,
@@ -4064,8 +4094,8 @@
       "gatos",
       "sisal"
     ],
-    "description": "RASCADOR ESQUINERO YUTE SILLON 60cm x 9,5cm x 11cm",
-    "longDescription": "RASCADOR ESQUINERO YUTE SILLON 60cm x 9,5cm x 11cm",
+    "description": "🐱 Rascador para gatos. Ayuda a mantener las uñas sanas y protege tus muebles.",
+    "longDescription": "Rascador diseñado especialmente para gatos. Permite que tu felino afile sus uñas de forma natural, manteniendo sus garras sanas y protegiendo tus muebles. Material resistente y duradero. Estimula el ejercicio y reduce el estrés.",
     "images": {
       "cover": "assets/images/products/prod_202/cover.jpg",
       "thumb": "assets/images/products/prod_202/thumb.jpg",
@@ -4075,7 +4105,9 @@
     },
     "specs": {
       "SKU": "RAS022",
-      "Medida": "60cm"
+      "Medida": "60cm",
+      "dimensions": "60 cm",
+      "material": "Material resistente"
     },
     "shipping": {
       "free": true,
@@ -4093,7 +4125,7 @@
   },
   {
     "id": "prod_203",
-    "name": "RASCADOR PEZ MULTI COLOR CHICO PARA COLGAR 12 CM",
+    "name": "Rascador Pez Multi Color Chico Para Colgar",
     "category": "accesorios",
     "subcategory": "Rascadores",
     "price": 3570,
@@ -4115,8 +4147,8 @@
       "gatos",
       "sisal"
     ],
-    "description": "RASCADOR PEZ MULTI COLOR CHICO PARA COLGAR 12 CM",
-    "longDescription": "RASCADOR PEZ MULTI COLOR CHICO PARA COLGAR 12 CM",
+    "description": "🐱 Rascador para gatos. Ayuda a mantener las uñas sanas y protege tus muebles.",
+    "longDescription": "Rascador diseñado especialmente para gatos. Permite que tu felino afile sus uñas de forma natural, manteniendo sus garras sanas y protegiendo tus muebles. Material resistente y duradero. Estimula el ejercicio y reduce el estrés.",
     "images": {
       "cover": "assets/images/products/prod_203/cover.jpg",
       "thumb": "assets/images/products/prod_203/thumb.jpg",
@@ -4126,7 +4158,9 @@
     },
     "specs": {
       "SKU": "RAS023",
-      "Medida": "12 CM"
+      "Medida": "12 CM",
+      "dimensions": "12  cm",
+      "material": "Material resistente"
     },
     "shipping": {
       "free": false,
@@ -4247,7 +4281,7 @@
   },
   {
     "id": "prod_206",
-    "name": "RASCADOR POSTE ZOOTEC N 1",
+    "name": "Rascador Poste Zootec N 1",
     "category": "accesorios",
     "subcategory": "Rascadores",
     "price": 17425,
@@ -4267,8 +4301,8 @@
       "gatos",
       "sisal"
     ],
-    "description": "RASCADOR POSTE ZOOTEC N 1",
-    "longDescription": "RASCADOR POSTE ZOOTEC N 1",
+    "description": "🐱 Rascador para gatos. Ayuda a mantener las uñas sanas y protege tus muebles.",
+    "longDescription": "Rascador diseñado especialmente para gatos. Permite que tu felino afile sus uñas de forma natural, manteniendo sus garras sanas y protegiendo tus muebles. Material resistente y duradero. Estimula el ejercicio y reduce el estrés.",
     "images": {
       "cover": "assets/images/products/prod_206/cover.jpg",
       "thumb": "assets/images/products/prod_206/thumb.jpg",
@@ -4277,7 +4311,8 @@
       ]
     },
     "specs": {
-      "SKU": "RAS024"
+      "SKU": "RAS024",
+      "material": "Material resistente"
     },
     "shipping": {
       "free": true,
@@ -4295,7 +4330,7 @@
   },
   {
     "id": "prod_207",
-    "name": "RASCADOR CON CARTON SIMPLE",
+    "name": "Rascador Con Carton Simple",
     "category": "accesorios",
     "subcategory": "Rascadores",
     "price": 4250,
@@ -4315,8 +4350,8 @@
       "gatos",
       "sisal"
     ],
-    "description": "RASCADOR CON CARTON SIMPLE",
-    "longDescription": "RASCADOR CON CARTON SIMPLE",
+    "description": "🐱 Rascador para gatos. Ayuda a mantener las uñas sanas y protege tus muebles.",
+    "longDescription": "Rascador diseñado especialmente para gatos. Permite que tu felino afile sus uñas de forma natural, manteniendo sus garras sanas y protegiendo tus muebles. Material resistente y duradero. Estimula el ejercicio y reduce el estrés.",
     "images": {
       "cover": "assets/images/products/prod_207/cover.jpg",
       "thumb": "assets/images/products/prod_207/thumb.jpg",
@@ -4325,7 +4360,8 @@
       ]
     },
     "specs": {
-      "SKU": "RAS025"
+      "SKU": "RAS025",
+      "material": "Material resistente"
     },
     "shipping": {
       "free": false,
@@ -4343,7 +4379,7 @@
   },
   {
     "id": "prod_208",
-    "name": "RASACADOR C/ CAJA KIMEY",
+    "name": "Rasacador C/ Caja Kimey",
     "category": "accesorios",
     "subcategory": "Rascadores",
     "price": 4675,
@@ -4364,8 +4400,8 @@
       "gatos",
       "sisal"
     ],
-    "description": "RASACADOR C/ CAJA KIMEY",
-    "longDescription": "RASACADOR C/ CAJA KIMEY",
+    "description": "🐱 Rascador para gatos. Ayuda a mantener las uñas sanas y protege tus muebles.",
+    "longDescription": "Rascador diseñado especialmente para gatos. Permite que tu felino afile sus uñas de forma natural, manteniendo sus garras sanas y protegiendo tus muebles. Material resistente y duradero. Estimula el ejercicio y reduce el estrés.",
     "images": {
       "cover": "assets/images/products/prod_208/cover.jpg",
       "thumb": "assets/images/products/prod_208/thumb.jpg",
@@ -4374,7 +4410,8 @@
       ]
     },
     "specs": {
-      "SKU": "RAS026"
+      "SKU": "RAS026",
+      "material": "Material resistente"
     },
     "shipping": {
       "free": false,
@@ -4392,7 +4429,7 @@
   },
   {
     "id": "prod_209",
-    "name": "RASACADOR PLANO N1 KIMEY",
+    "name": "Rasacador Plano N1 Kimey",
     "category": "accesorios",
     "subcategory": "Rascadores",
     "price": 12410,
@@ -4413,8 +4450,8 @@
       "gatos",
       "sisal"
     ],
-    "description": "RASACADOR PLANO N1 KIMEY",
-    "longDescription": "RASACADOR PLANO N1 KIMEY",
+    "description": "🐱 Rascador para gatos. Ayuda a mantener las uñas sanas y protege tus muebles.",
+    "longDescription": "Rascador diseñado especialmente para gatos. Permite que tu felino afile sus uñas de forma natural, manteniendo sus garras sanas y protegiendo tus muebles. Material resistente y duradero. Estimula el ejercicio y reduce el estrés.",
     "images": {
       "cover": "assets/images/products/prod_209/cover.jpg",
       "thumb": "assets/images/products/prod_209/thumb.jpg",
@@ -4423,7 +4460,8 @@
       ]
     },
     "specs": {
-      "SKU": "RAS027"
+      "SKU": "RAS027",
+      "material": "Material resistente"
     },
     "shipping": {
       "free": false,
@@ -4441,7 +4479,7 @@
   },
   {
     "id": "prod_210",
-    "name": "RASCADOR SILLON CON PATAS KIMEY",
+    "name": "Rascador Sillon Con Patas Kimey",
     "category": "accesorios",
     "subcategory": "Rascadores",
     "price": 16320,
@@ -4462,8 +4500,8 @@
       "gatos",
       "sisal"
     ],
-    "description": "RASCADOR SILLON CON PATAS KIMEY",
-    "longDescription": "RASCADOR SILLON CON PATAS KIMEY",
+    "description": "🐱 Rascador para gatos. Ayuda a mantener las uñas sanas y protege tus muebles.",
+    "longDescription": "Rascador diseñado especialmente para gatos. Permite que tu felino afile sus uñas de forma natural, manteniendo sus garras sanas y protegiendo tus muebles. Material resistente y duradero. Estimula el ejercicio y reduce el estrés.",
     "images": {
       "cover": "assets/images/products/prod_210/cover.jpg",
       "thumb": "assets/images/products/prod_210/thumb.jpg",
@@ -4472,7 +4510,8 @@
       ]
     },
     "specs": {
-      "SKU": "RAS028"
+      "SKU": "RAS028",
+      "material": "Material resistente"
     },
     "shipping": {
       "free": true,
@@ -4490,7 +4529,7 @@
   },
   {
     "id": "prod_211",
-    "name": "RASCADOR HELICE N7 KIMEY",
+    "name": "Rascador Helice N7 Kimey",
     "category": "accesorios",
     "subcategory": "Rascadores",
     "price": 8500,
@@ -4510,8 +4549,8 @@
       "gatos",
       "sisal"
     ],
-    "description": "RASCADOR HELICE N7 KIMEY",
-    "longDescription": "RASCADOR HELICE N7 KIMEY",
+    "description": "🐱 Rascador para gatos. Ayuda a mantener las uñas sanas y protege tus muebles.",
+    "longDescription": "Rascador diseñado especialmente para gatos. Permite que tu felino afile sus uñas de forma natural, manteniendo sus garras sanas y protegiendo tus muebles. Material resistente y duradero. Estimula el ejercicio y reduce el estrés.",
     "images": {
       "cover": "assets/images/products/prod_211/cover.jpg",
       "thumb": "assets/images/products/prod_211/thumb.jpg",
@@ -4521,7 +4560,8 @@
     },
     "specs": {
       "SKU": "RAS029",
-      "Marca": "KIMEY"
+      "Marca": "KIMEY",
+      "material": "Material resistente"
     },
     "shipping": {
       "free": false,
@@ -4539,7 +4579,7 @@
   },
   {
     "id": "prod_212",
-    "name": "RASCADOR ONDA KEMEY",
+    "name": "Rascador Onda Kemey",
     "category": "accesorios",
     "subcategory": "Rascadores",
     "price": 8925,
@@ -4559,8 +4599,8 @@
       "gatos",
       "sisal"
     ],
-    "description": "RASACDOR ONDA KEMEY",
-    "longDescription": "RASACDOR ONDA KEMEY",
+    "description": "🐱 Rascador para gatos. Ayuda a mantener las uñas sanas y protege tus muebles.",
+    "longDescription": "Rascador diseñado especialmente para gatos. Permite que tu felino afile sus uñas de forma natural, manteniendo sus garras sanas y protegiendo tus muebles. Material resistente y duradero. Estimula el ejercicio y reduce el estrés.",
     "images": {
       "cover": "assets/images/products/prod_212/cover.jpg",
       "thumb": "assets/images/products/prod_212/thumb.jpg",
@@ -4570,7 +4610,8 @@
     },
     "specs": {
       "SKU": "RAS030",
-      "Marca": "KEMEY"
+      "Marca": "KEMEY",
+      "material": "Material resistente"
     },
     "shipping": {
       "free": false,
@@ -4588,7 +4629,7 @@
   },
   {
     "id": "prod_213",
-    "name": "RASACDOR MESA N2 KIMEY",
+    "name": "Rasacdor Mesa N2 Kimey",
     "category": "accesorios",
     "subcategory": "Rascadores",
     "price": 11985,
@@ -4609,8 +4650,8 @@
       "gatos",
       "sisal"
     ],
-    "description": "RASACDOR MESA N2 KIMEY",
-    "longDescription": "RASACDOR MESA N2 KIMEY",
+    "description": "🐕 Accesorio de calidad para tu mascota. Diseño funcional y duradero.",
+    "longDescription": "Accesorio de alta calidad diseñado para tu mascota. Materiales resistentes y duraderos. Diseño funcional que combina comodidad y estilo.",
     "images": {
       "cover": "assets/images/products/prod_213/cover.jpg",
       "thumb": "assets/images/products/prod_213/thumb.jpg",
@@ -4620,7 +4661,8 @@
     },
     "specs": {
       "SKU": "RAS031",
-      "Marca": "KIMEY"
+      "Marca": "KIMEY",
+      "material": "Material resistente"
     },
     "shipping": {
       "free": false,
@@ -4638,7 +4680,7 @@
   },
   {
     "id": "prod_214",
-    "name": "TITO'S - AGATAR",
+    "name": "Tito's - Agatar",
     "category": "accesorios",
     "subcategory": "Rascadores",
     "price": 11900,
@@ -4658,8 +4700,8 @@
       "gatos",
       "sisal"
     ],
-    "description": "TITO'S - AGATAR",
-    "longDescription": "TITO'S - AGATAR",
+    "description": "🐱 Rascador para gatos. Ayuda a mantener las uñas sanas y protege tus muebles.",
+    "longDescription": "Rascador diseñado especialmente para gatos. Permite que tu felino afile sus uñas de forma natural, manteniendo sus garras sanas y protegiendo tus muebles. Material resistente y duradero. Estimula el ejercicio y reduce el estrés.",
     "images": {
       "cover": "assets/images/products/prod_214/cover.jpg",
       "thumb": "assets/images/products/prod_214/thumb.jpg",
@@ -4669,7 +4711,8 @@
     },
     "specs": {
       "SKU": "TIT001",
-      "Marca": "AGATAR"
+      "Marca": "AGATAR",
+      "material": "Material resistente"
     },
     "shipping": {
       "free": false,
@@ -5009,7 +5052,7 @@
   },
   {
     "id": "prod_218",
-    "name": "RASCADOR 2 EN 1 CON TÚNEL",
+    "name": "Rascador 2 En 1 Con Túnel",
     "category": "accesorios",
     "subcategory": "Rascadores",
     "price": 9350,
@@ -5029,8 +5072,8 @@
       "gatos",
       "sisal"
     ],
-    "description": "RASCADOR 2 EN 1 CON TÚNEL",
-    "longDescription": "RASCADOR 2 EN 1 CON TÚNEL",
+    "description": "🐱 Rascador para gatos. Ayuda a mantener las uñas sanas y protege tus muebles.",
+    "longDescription": "Rascador diseñado especialmente para gatos. Permite que tu felino afile sus uñas de forma natural, manteniendo sus garras sanas y protegiendo tus muebles. Material resistente y duradero. Estimula el ejercicio y reduce el estrés.",
     "images": {
       "cover": "assets/images/products/prod_218/cover.jpg",
       "thumb": "assets/images/products/prod_218/thumb.jpg",
@@ -5040,7 +5083,8 @@
     },
     "specs": {
       "SKU": "RAS032",
-      "Marca": "AGATAR"
+      "Marca": "AGATAR",
+      "material": "Material resistente"
     },
     "shipping": {
       "free": false,
@@ -5058,7 +5102,7 @@
   },
   {
     "id": "prod_219",
-    "name": "MINI INFINITY - AGATAR",
+    "name": "Mini Infinity - Agatar",
     "category": "accesorios",
     "subcategory": "Rascadores",
     "price": 10200,
@@ -5079,8 +5123,8 @@
       "gatos",
       "sisal"
     ],
-    "description": "MINI INFINITY - AGATAR",
-    "longDescription": "MINI INFINITY - AGATAR",
+    "description": "🐱 Rascador para gatos. Ayuda a mantener las uñas sanas y protege tus muebles.",
+    "longDescription": "Rascador diseñado especialmente para gatos. Permite que tu felino afile sus uñas de forma natural, manteniendo sus garras sanas y protegiendo tus muebles. Material resistente y duradero. Estimula el ejercicio y reduce el estrés.",
     "images": {
       "cover": "assets/images/products/prod_219/cover.jpg",
       "thumb": "assets/images/products/prod_219/thumb.jpg",
@@ -5090,7 +5134,8 @@
     },
     "specs": {
       "SKU": "MIN001",
-      "Marca": "AGATAR"
+      "Marca": "AGATAR",
+      "material": "Material resistente"
     },
     "shipping": {
       "free": false,
@@ -5108,7 +5153,7 @@
   },
   {
     "id": "prod_220",
-    "name": "MINI ACUÑA - AGATAR",
+    "name": "Mini Acuña - Agatar",
     "category": "accesorios",
     "subcategory": "Rascadores",
     "price": 7650,
@@ -5129,8 +5174,8 @@
       "gatos",
       "sisal"
     ],
-    "description": "MINI ACUÑA - AGATAR",
-    "longDescription": "MINI ACUÑA - AGATAR",
+    "description": "🐱 Rascador para gatos. Ayuda a mantener las uñas sanas y protege tus muebles.",
+    "longDescription": "Rascador diseñado especialmente para gatos. Permite que tu felino afile sus uñas de forma natural, manteniendo sus garras sanas y protegiendo tus muebles. Material resistente y duradero. Estimula el ejercicio y reduce el estrés.",
     "images": {
       "cover": "assets/images/products/prod_220/cover.jpg",
       "thumb": "assets/images/products/prod_220/thumb.jpg",
@@ -5139,7 +5184,8 @@
       ]
     },
     "specs": {
-      "SKU": "MIN002"
+      "SKU": "MIN002",
+      "material": "Material resistente"
     },
     "shipping": {
       "free": false,
@@ -5157,7 +5203,7 @@
   },
   {
     "id": "prod_221",
-    "name": "MINI SIMON - AGATAR",
+    "name": "Mini Simon - Agatar",
     "category": "accesorios",
     "subcategory": "Rascadores",
     "price": 9350,
@@ -5178,8 +5224,8 @@
       "gatos",
       "sisal"
     ],
-    "description": "MINI SIMON - AGATAR",
-    "longDescription": "MINI SIMON - AGATAR",
+    "description": "🐱 Rascador para gatos. Ayuda a mantener las uñas sanas y protege tus muebles.",
+    "longDescription": "Rascador diseñado especialmente para gatos. Permite que tu felino afile sus uñas de forma natural, manteniendo sus garras sanas y protegiendo tus muebles. Material resistente y duradero. Estimula el ejercicio y reduce el estrés.",
     "images": {
       "cover": "assets/images/products/prod_221/cover.jpg",
       "thumb": "assets/images/products/prod_221/thumb.jpg",
@@ -5189,7 +5235,8 @@
     },
     "specs": {
       "SKU": "MIN003",
-      "Marca": "AGATAR"
+      "Marca": "AGATAR",
+      "material": "Material resistente"
     },
     "shipping": {
       "free": false,
@@ -5264,8 +5311,8 @@
   },
   {
     "id": "prod_223",
-    "name": "COCODRILO - AGATAR",
-    "description": "COCODRILO - AGATAR",
+    "name": "Cocodrilo - Agatar",
+    "description": "🐱 Rascador para gatos. Ayuda a mantener las uñas sanas y protege tus muebles.",
     "price": 15300,
     "originalPrice": 18000,
     "discount": 15,
@@ -5308,12 +5355,15 @@
     },
     "hasVideo": false,
     "topDiscount": false,
-    "longDescription": "COCODRILO - AGATAR",
-    "badge": "🛏️ Rascadores"
+    "longDescription": "Rascador diseñado especialmente para gatos. Permite que tu felino afile sus uñas de forma natural, manteniendo sus garras sanas y protegiendo tus muebles. Material resistente y duradero. Estimula el ejercicio y reduce el estrés.",
+    "badge": "🛏️ Rascadores",
+    "specs": {
+      "material": "Material resistente"
+    }
   },
   {
     "id": "prod_224",
-    "name": "TIBURÓN - AGATAR",
+    "name": "Tiburón - Agatar",
     "category": "accesorios",
     "subcategory": "Rascadores",
     "price": 27200,
@@ -5333,8 +5383,8 @@
       "gatos",
       "sisal"
     ],
-    "description": "TIBURÓN - AGATAR",
-    "longDescription": "TIBURÓN - AGATAR",
+    "description": "🐱 Rascador para gatos. Ayuda a mantener las uñas sanas y protege tus muebles.",
+    "longDescription": "Rascador diseñado especialmente para gatos. Permite que tu felino afile sus uñas de forma natural, manteniendo sus garras sanas y protegiendo tus muebles. Material resistente y duradero. Estimula el ejercicio y reduce el estrés.",
     "images": {
       "cover": "assets/images/products/prod_224/cover.jpg",
       "thumb": "assets/images/products/prod_224/thumb.jpg",
@@ -5343,7 +5393,8 @@
       ]
     },
     "specs": {
-      "SKU": "TIB001"
+      "SKU": "TIB001",
+      "material": "Material resistente"
     },
     "shipping": {
       "free": true,
@@ -5361,7 +5412,7 @@
   },
   {
     "id": "prod_225",
-    "name": "JIRAFA - AGATAR",
+    "name": "Jirafa - Agatar",
     "category": "accesorios",
     "subcategory": "Rascadores",
     "price": 25500,
@@ -5381,8 +5432,8 @@
       "gatos",
       "sisal"
     ],
-    "description": "JIRAFA - AGATAR",
-    "longDescription": "JIRAFA - AGATAR",
+    "description": "🐱 Rascador para gatos. Ayuda a mantener las uñas sanas y protege tus muebles.",
+    "longDescription": "Rascador diseñado especialmente para gatos. Permite que tu felino afile sus uñas de forma natural, manteniendo sus garras sanas y protegiendo tus muebles. Material resistente y duradero. Estimula el ejercicio y reduce el estrés.",
     "images": {
       "cover": "assets/images/products/prod_225/cover.jpg",
       "thumb": "assets/images/products/prod_225/thumb.jpg",
@@ -5391,7 +5442,8 @@
       ]
     },
     "specs": {
-      "SKU": "JIR001"
+      "SKU": "JIR001",
+      "material": "Material resistente"
     },
     "shipping": {
       "free": true,
@@ -5409,7 +5461,7 @@
   },
   {
     "id": "prod_226",
-    "name": "HIPOPÓTAMO - AGATAR",
+    "name": "Hipopótamo - Agatar",
     "category": "accesorios",
     "subcategory": "Rascadores",
     "price": 35700,
@@ -5429,8 +5481,8 @@
       "gatos",
       "sisal"
     ],
-    "description": "HIPOPÓTAMO - AGATAR",
-    "longDescription": "HIPOPÓTAMO - AGATAR",
+    "description": "🐱 Rascador para gatos. Ayuda a mantener las uñas sanas y protege tus muebles.",
+    "longDescription": "Rascador diseñado especialmente para gatos. Permite que tu felino afile sus uñas de forma natural, manteniendo sus garras sanas y protegiendo tus muebles. Material resistente y duradero. Estimula el ejercicio y reduce el estrés.",
     "images": {
       "cover": "assets/images/products/prod_226/cover.jpg",
       "thumb": "assets/images/products/prod_226/thumb.jpg",
@@ -5440,7 +5492,8 @@
     },
     "specs": {
       "SKU": "HIP001",
-      "Marca": "AGATAR"
+      "Marca": "AGATAR",
+      "material": "Material resistente"
     },
     "shipping": {
       "free": true,
@@ -5458,7 +5511,7 @@
   },
   {
     "id": "prod_227",
-    "name": "Ratón - AGATAR",
+    "name": "Ratón - Agatar",
     "category": "accesorios",
     "subcategory": "Rascadores",
     "price": 5950,
@@ -5478,8 +5531,8 @@
       "gatos",
       "sisal"
     ],
-    "description": "Ratón - AGATAR",
-    "longDescription": "Ratón - AGATAR",
+    "description": "🐱 Rascador para gatos. Ayuda a mantener las uñas sanas y protege tus muebles.",
+    "longDescription": "Rascador diseñado especialmente para gatos. Permite que tu felino afile sus uñas de forma natural, manteniendo sus garras sanas y protegiendo tus muebles. Material resistente y duradero. Estimula el ejercicio y reduce el estrés.",
     "images": {
       "cover": "assets/images/products/prod_227/cover.jpg",
       "thumb": "assets/images/products/prod_227/thumb.jpg",
@@ -5489,7 +5542,8 @@
     },
     "specs": {
       "SKU": "RAT001",
-      "Marca": "AGATAR"
+      "Marca": "AGATAR",
+      "material": "Material resistente"
     },
     "shipping": {
       "free": false,
@@ -5507,7 +5561,7 @@
   },
   {
     "id": "prod_228",
-    "name": "RINOCERONTE MINI - AGATAR",
+    "name": "Rinoceronte Mini - Agatar",
     "category": "accesorios",
     "subcategory": "Rascadores",
     "price": 16575,
@@ -5528,8 +5582,8 @@
       "gatos",
       "sisal"
     ],
-    "description": "RINOCERONTE MINI - AGATAR",
-    "longDescription": "RINOCERONTE MINI - AGATAR",
+    "description": "🐱 Rascador para gatos. Ayuda a mantener las uñas sanas y protege tus muebles.",
+    "longDescription": "Rascador diseñado especialmente para gatos. Permite que tu felino afile sus uñas de forma natural, manteniendo sus garras sanas y protegiendo tus muebles. Material resistente y duradero. Estimula el ejercicio y reduce el estrés.",
     "images": {
       "cover": "assets/images/products/prod_228/cover.jpg",
       "thumb": "assets/images/products/prod_228/thumb.jpg",
@@ -5539,7 +5593,8 @@
     },
     "specs": {
       "SKU": "RIN001",
-      "Marca": "AGATAR"
+      "Marca": "AGATAR",
+      "material": "Material resistente"
     },
     "shipping": {
       "free": true,
@@ -5557,7 +5612,7 @@
   },
   {
     "id": "prod_229",
-    "name": "OSO POLAR MINI - AGATAR",
+    "name": "Oso Polar Mini - Agatar",
     "category": "accesorios",
     "subcategory": "Rascadores",
     "price": 16575,
@@ -5578,8 +5633,8 @@
       "gatos",
       "sisal"
     ],
-    "description": "OSO POLAR MINI - AGATAR",
-    "longDescription": "OSO POLAR MINI - AGATAR",
+    "description": "🐱 Rascador para gatos. Ayuda a mantener las uñas sanas y protege tus muebles.",
+    "longDescription": "Rascador diseñado especialmente para gatos. Permite que tu felino afile sus uñas de forma natural, manteniendo sus garras sanas y protegiendo tus muebles. Material resistente y duradero. Estimula el ejercicio y reduce el estrés.",
     "images": {
       "cover": "assets/images/products/prod_229/cover.jpg",
       "thumb": "assets/images/products/prod_229/thumb.jpg",
@@ -5589,7 +5644,8 @@
     },
     "specs": {
       "SKU": "OSO001",
-      "Marca": "AGATAR"
+      "Marca": "AGATAR",
+      "material": "Material resistente"
     },
     "shipping": {
       "free": true,
@@ -5607,8 +5663,8 @@
   },
   {
     "id": "prod_230",
-    "name": "ELEFANTE MINI - AGATAR",
-    "description": "ELEFANTE MINI -",
+    "name": "Elefante Mini - Agatar",
+    "description": "🐱 Rascador para gatos. Ayuda a mantener las uñas sanas y protege tus muebles.",
     "price": 16575,
     "originalPrice": 19500,
     "discount": 15,
@@ -5652,13 +5708,16 @@
     },
     "hasVideo": false,
     "topDiscount": false,
-    "longDescription": "ELEFANTE MINI -",
-    "badge": "🛏️ Rascadores"
+    "longDescription": "Rascador diseñado especialmente para gatos. Permite que tu felino afile sus uñas de forma natural, manteniendo sus garras sanas y protegiendo tus muebles. Material resistente y duradero. Estimula el ejercicio y reduce el estrés.",
+    "badge": "🛏️ Rascadores",
+    "specs": {
+      "material": "Material resistente"
+    }
   },
   {
     "id": "prod_231",
-    "name": "Gorila Mini - AGATAR",
-    "description": "Gorila Mini - AGATAR",
+    "name": "Gorila Mini - Agatar",
+    "description": "🐱 Rascador para gatos. Ayuda a mantener las uñas sanas y protege tus muebles.",
     "price": 16575,
     "originalPrice": 19500,
     "discount": 15,
@@ -5702,13 +5761,16 @@
     },
     "hasVideo": false,
     "topDiscount": false,
-    "longDescription": "Gorila Mini - AGATAR",
-    "badge": "🛏️ Rascadores"
+    "longDescription": "Rascador diseñado especialmente para gatos. Permite que tu felino afile sus uñas de forma natural, manteniendo sus garras sanas y protegiendo tus muebles. Material resistente y duradero. Estimula el ejercicio y reduce el estrés.",
+    "badge": "🛏️ Rascadores",
+    "specs": {
+      "material": "Material resistente"
+    }
   },
   {
     "id": "prod_232",
-    "name": "CHANCHITO - AGATAR",
-    "description": "CHANCHITO - AGATAR",
+    "name": "Chanchito - Agatar",
+    "description": "🐱 Rascador para gatos. Ayuda a mantener las uñas sanas y protege tus muebles.",
     "price": 16575,
     "originalPrice": 19500,
     "discount": 15,
@@ -5751,8 +5813,11 @@
     },
     "hasVideo": false,
     "topDiscount": false,
-    "longDescription": "CHANCHITO - AGATAR",
-    "badge": "🛏️ Rascadores"
+    "longDescription": "Rascador diseñado especialmente para gatos. Permite que tu felino afile sus uñas de forma natural, manteniendo sus garras sanas y protegiendo tus muebles. Material resistente y duradero. Estimula el ejercicio y reduce el estrés.",
+    "badge": "🛏️ Rascadores",
+    "specs": {
+      "material": "Material resistente"
+    }
   },
   {
     "id": "prod_233",
@@ -18814,7 +18879,7 @@
   },
   {
     "id": "prod_606",
-    "name": "COLLAR GATO SURTIDOS X 12 UNIDADES",
+    "name": "Collar Gato Surtidos X 12 Unidades",
     "category": "accesorios",
     "subcategory": "Collares,",
     "hasVariants": true,
@@ -18835,8 +18900,8 @@
       "accesorio",
       "complemento"
     ],
-    "description": "COLLAR GATO SURTI X 12 UNIDADES DIFERENTES MODELOS",
-    "longDescription": "COLLAR GATO SURTI X 12 UNIDADES DIFERENTES MODELOS",
+    "description": "🐕 Collar para mascotas. Cómodo, resistente y con diseño atractivo.",
+    "longDescription": "Collar de alta calidad para tu mascota. Fabricado con materiales resistentes y cómodos. Diseño atractivo que combina estilo y funcionalidad. Ajustable para un calce perfecto.",
     "variants": {
       "attributes": [
         {
@@ -18928,7 +18993,8 @@
       ]
     },
     "specs": {
-      "SKU": "COL016"
+      "SKU": "COL016",
+      "material": "Material resistente"
     },
     "shipping": {
       "free": false,
@@ -19045,7 +19111,7 @@
   },
   {
     "id": "prod_611",
-    "name": "CINTURON DE SEGURIDAD SIMPLE",
+    "name": "Cinturon De Seguridad Simple",
     "category": "accesorios",
     "subcategory": "Accesorios",
     "price": 6800,
@@ -19066,8 +19132,8 @@
       "paseo",
       "pechera"
     ],
-    "description": "CINTURON DE SEGURIDAD SIMPLE",
-    "longDescription": "CINTURON DE SEGURIDAD SIMPLE",
+    "description": "🚗 Cinturón de seguridad para mascotas. Viajes seguros en auto.",
+    "longDescription": "Cinturón de seguridad diseñado para proteger a tu mascota durante los viajes en auto. Fácil de instalar y ajustar. Compatible con la mayoría de los vehículos. Brinda tranquilidad en cada viaje.",
     "images": {
       "cover": "assets/images/products/prod_611/cover.jpg",
       "thumb": "assets/images/products/prod_611/thumb.jpg",
@@ -19076,7 +19142,8 @@
       ]
     },
     "specs": {
-      "SKU": "CIN001"
+      "SKU": "CIN001",
+      "material": "Material resistente"
     },
     "shipping": {
       "free": false,
@@ -19094,7 +19161,7 @@
   },
   {
     "id": "prod_615",
-    "name": "CADENA REFORZADO TADEO  1,2M",
+    "name": "Cadena Reforzado Tadeo 1,2m",
     "category": "accesorios",
     "subcategory": "Accesorios",
     "price": 33150,
@@ -19116,8 +19183,8 @@
       "paseo",
       "pechera"
     ],
-    "description": "CADENA REFORZADO TADEO  1,2M",
-    "longDescription": "CADENA REFORZADO TADEO  1,2M",
+    "description": "🐕 Cadena resistente para paseos. Máxima durabilidad y seguridad.",
+    "longDescription": "Cadena de alta resistencia para paseos con tu mascota. Fabricada con materiales de primera calidad que garantizan durabilidad. Ideal para perros de todos los tamaños. Mango cómodo y seguro.",
     "images": {
       "cover": "assets/images/products/prod_615/cover.jpg",
       "thumb": "assets/images/products/prod_615/thumb.jpg",
@@ -19126,7 +19193,9 @@
       ]
     },
     "specs": {
-      "SKU": "CAD002"
+      "SKU": "CAD002",
+      "dimensions": "1,2M",
+      "material": "Metal cromado"
     },
     "shipping": {
       "free": true,
@@ -19144,7 +19213,7 @@
   },
   {
     "id": "prod_623",
-    "name": "CADENA CON AMORTIGUADOR MANGO DE CUERO 80CM . T- 1",
+    "name": "Cadena Con Amortiguador Mango De Cuero . T- 1",
     "category": "accesorios",
     "subcategory": "Accesorios",
     "price": 6375,
@@ -19167,8 +19236,8 @@
       "paseo",
       "pechera"
     ],
-    "description": "CADENA CON AMORTIGUADOR MANGO DE CUERO 80CM . T- 1",
-    "longDescription": "CADENA CON AMORTIGUADOR MANGO DE CUERO 80CM . T- 1",
+    "description": "🐕 Cadena resistente para paseos. Máxima durabilidad y seguridad.",
+    "longDescription": "Cadena de alta resistencia para paseos con tu mascota. Fabricada con materiales de primera calidad que garantizan durabilidad. Ideal para perros de todos los tamaños. Mango cómodo y seguro.",
     "images": {
       "cover": "assets/images/products/prod_623/cover.jpg",
       "thumb": "assets/images/products/prod_623/thumb.jpg",
@@ -19178,7 +19247,9 @@
     },
     "specs": {
       "SKU": "CAD006",
-      "Medida": "80CM"
+      "Medida": "80CM",
+      "dimensions": "80 cm",
+      "material": "Cuero"
     },
     "shipping": {
       "free": false,
@@ -19196,7 +19267,7 @@
   },
   {
     "id": "prod_624",
-    "name": "CADENA CON AMORTIGUADOR MANGO DE CUERO 80CM . T- 2",
+    "name": "Cadena Con Amortiguador Mango De Cuero . T- 2",
     "category": "accesorios",
     "subcategory": "Accesorios",
     "price": 7225,
@@ -19219,8 +19290,8 @@
       "paseo",
       "pechera"
     ],
-    "description": "CADENA CON AMORTIGUADOR MANGO DE CUERO 80CM . T- 2",
-    "longDescription": "CADENA CON AMORTIGUADOR MANGO DE CUERO 80CM . T- 2",
+    "description": "🐕 Cadena resistente para paseos. Máxima durabilidad y seguridad.",
+    "longDescription": "Cadena de alta resistencia para paseos con tu mascota. Fabricada con materiales de primera calidad que garantizan durabilidad. Ideal para perros de todos los tamaños. Mango cómodo y seguro.",
     "images": {
       "cover": "assets/images/products/prod_624/cover.jpg",
       "thumb": "assets/images/products/prod_624/thumb.jpg",
@@ -19230,7 +19301,9 @@
     },
     "specs": {
       "SKU": "CAD007",
-      "Medida": "80CM"
+      "Medida": "80CM",
+      "dimensions": "80 cm",
+      "material": "Cuero"
     },
     "shipping": {
       "free": false,
@@ -19248,7 +19321,7 @@
   },
   {
     "id": "prod_626",
-    "name": "CONJUNTO DE CADENA CON COLLAR REGULABLE, 1,20CM",
+    "name": "Conjunto De Cadena Con Collar Regulable,",
     "category": "accesorios",
     "subcategory": "Accesorios",
     "price": 12750,
@@ -19270,8 +19343,8 @@
       "paseo",
       "pechera"
     ],
-    "description": "CONJUNTO DE CADENA CON COLLAR REGULABLE, 1,20CM",
-    "longDescription": "CONJUNTO DE CADENA CON COLLAR REGULABLE, 1,20CM",
+    "description": "🐕 Collar para mascotas. Cómodo, resistente y con diseño atractivo.",
+    "longDescription": "Collar de alta calidad para tu mascota. Fabricado con materiales resistentes y cómodos. Diseño atractivo que combina estilo y funcionalidad. Ajustable para un calce perfecto.",
     "images": {
       "cover": "assets/images/products/prod_626/cover.jpg",
       "thumb": "assets/images/products/prod_626/thumb.jpg",
@@ -19281,7 +19354,9 @@
     },
     "specs": {
       "SKU": "CON005",
-      "Medida": "20CM"
+      "Medida": "20CM",
+      "dimensions": "1,20 cm",
+      "material": "Metal cromado"
     },
     "shipping": {
       "free": true,
@@ -19500,7 +19575,7 @@
   },
   {
     "id": "prod_637",
-    "name": "COLLAR  TIFANI T4 PERLAS",
+    "name": "Collar Tifani Perlas",
     "category": "accesorios",
     "subcategory": "Accesorios",
     "price": 5950,
@@ -19520,8 +19595,8 @@
       "paseo",
       "pechera"
     ],
-    "description": "COLLAR  TIFANI T4 PERLAS",
-    "longDescription": "COLLAR  TIFANI T4 PERLAS",
+    "description": "🐕 Collar para mascotas. Cómodo, resistente y con diseño atractivo.",
+    "longDescription": "Collar de alta calidad para tu mascota. Fabricado con materiales resistentes y cómodos. Diseño atractivo que combina estilo y funcionalidad. Ajustable para un calce perfecto.",
     "images": {
       "cover": "assets/images/products/prod_637/cover.jpg",
       "thumb": "assets/images/products/prod_637/thumb.jpg",
@@ -19530,7 +19605,8 @@
       ]
     },
     "specs": {
-      "SKU": "COL023"
+      "SKU": "COL023",
+      "material": "Material resistente"
     },
     "shipping": {
       "free": false,
@@ -19548,7 +19624,7 @@
   },
   {
     "id": "prod_654",
-    "name": "COLLAR ELASTICO X12",
+    "name": "Collar Elastico X12",
     "category": "accesorios",
     "subcategory": "Accesorios",
     "price": 13600,
@@ -19567,8 +19643,8 @@
       "paseo",
       "pechera"
     ],
-    "description": "COLLAR ELASTICO X12",
-    "longDescription": "COLLAR ELASTICO X12",
+    "description": "🐕 Collar para mascotas. Cómodo, resistente y con diseño atractivo.",
+    "longDescription": "Collar de alta calidad para tu mascota. Fabricado con materiales resistentes y cómodos. Diseño atractivo que combina estilo y funcionalidad. Ajustable para un calce perfecto.",
     "images": {
       "cover": "assets/images/products/prod_654/cover.jpg",
       "thumb": "assets/images/products/prod_654/thumb.jpg",
@@ -19577,7 +19653,8 @@
       ]
     },
     "specs": {
-      "SKU": "COL040"
+      "SKU": "COL040",
+      "material": "Material resistente"
     },
     "shipping": {
       "free": true,
@@ -19595,7 +19672,7 @@
   },
   {
     "id": "prod_661",
-    "name": "COLLAR CUERO C/ OJALILLOS T4  P40X65CM",
+    "name": "Collar Cuero C/ Ojalillos P",
     "category": "accesorios",
     "subcategory": "Accesorios",
     "price": 17000,
@@ -19616,8 +19693,8 @@
       "paseo",
       "pechera"
     ],
-    "description": "COLLAR CUERO C/ OJALILLOS T4  P40X65CM",
-    "longDescription": "COLLAR CUERO C/ OJALILLOS T4  P40X65CM",
+    "description": "🐕 Collar para mascotas. Cómodo, resistente y con diseño atractivo.",
+    "longDescription": "Collar de alta calidad para tu mascota. Fabricado con materiales resistentes y cómodos. Diseño atractivo que combina estilo y funcionalidad. Ajustable para un calce perfecto.",
     "images": {
       "cover": "assets/images/products/prod_661/cover.jpg",
       "thumb": "assets/images/products/prod_661/thumb.jpg",
@@ -19627,7 +19704,9 @@
     },
     "specs": {
       "SKU": "COL047",
-      "Medida": "65CM"
+      "Medida": "65CM",
+      "dimensions": "40X65 cm",
+      "material": "Cuero"
     },
     "shipping": {
       "free": true,
@@ -19645,7 +19724,7 @@
   },
   {
     "id": "prod_662",
-    "name": "COLLAR CUERO LISO  T1  PASE 15X30CM",
+    "name": "Collar Cuero Liso Pase",
     "category": "accesorios",
     "subcategory": "Accesorios",
     "price": 5100,
@@ -19667,8 +19746,8 @@
       "paseo",
       "pechera"
     ],
-    "description": "COLLAR CUERO LISO  T1  PASE 15X30CM",
-    "longDescription": "COLLAR CUERO LISO  T1  PASE 15X30CM",
+    "description": "🐕 Collar para mascotas. Cómodo, resistente y con diseño atractivo.",
+    "longDescription": "Collar de alta calidad para tu mascota. Fabricado con materiales resistentes y cómodos. Diseño atractivo que combina estilo y funcionalidad. Ajustable para un calce perfecto.",
     "images": {
       "cover": "assets/images/products/prod_662/cover.jpg",
       "thumb": "assets/images/products/prod_662/thumb.jpg",
@@ -19678,7 +19757,9 @@
     },
     "specs": {
       "SKU": "COL048",
-      "Medida": "30CM"
+      "Medida": "30CM",
+      "dimensions": "15X30 cm",
+      "material": "Cuero"
     },
     "shipping": {
       "free": false,
@@ -19696,7 +19777,7 @@
   },
   {
     "id": "prod_676",
-    "name": "COLLAR- XHL MODELO 3",
+    "name": "Collar- Xhl Modelo 3",
     "category": "accesorios",
     "subcategory": "Accesorios",
     "price": 2380,
@@ -19716,8 +19797,8 @@
       "paseo",
       "pechera"
     ],
-    "description": "COLLAR- XHL",
-    "longDescription": "COLLAR- XHL",
+    "description": "🐕 Collar para mascotas. Cómodo, resistente y con diseño atractivo.",
+    "longDescription": "Collar de alta calidad para tu mascota. Fabricado con materiales resistentes y cómodos. Diseño atractivo que combina estilo y funcionalidad. Ajustable para un calce perfecto.",
     "images": {
       "cover": "assets/images/products/prod_676/cover.jpg",
       "thumb": "assets/images/products/prod_676/thumb.jpg",
@@ -19726,7 +19807,8 @@
       ]
     },
     "specs": {
-      "SKU": "COL061"
+      "SKU": "COL061",
+      "material": "Material resistente"
     },
     "shipping": {
       "free": false,
@@ -19744,7 +19826,7 @@
   },
   {
     "id": "prod_680",
-    "name": "COLLAR CON BLONDAS Y ENCAJE",
+    "name": "Collar Con Blondas Y Encaje",
     "category": "accesorios",
     "subcategory": "Accesorios",
     "price": 5100,
@@ -19764,8 +19846,8 @@
       "paseo",
       "pechera"
     ],
-    "description": "COLLAR CON BLONDAS Y ENCAJE",
-    "longDescription": "COLLAR CON BLONDAS Y ENCAJE",
+    "description": "🐕 Collar para mascotas. Cómodo, resistente y con diseño atractivo.",
+    "longDescription": "Collar de alta calidad para tu mascota. Fabricado con materiales resistentes y cómodos. Diseño atractivo que combina estilo y funcionalidad. Ajustable para un calce perfecto.",
     "images": {
       "cover": "assets/images/products/prod_680/cover.jpg",
       "thumb": "assets/images/products/prod_680/thumb.jpg",
@@ -19774,7 +19856,8 @@
       ]
     },
     "specs": {
-      "SKU": "COL064"
+      "SKU": "COL064",
+      "material": "Material resistente"
     },
     "shipping": {
       "free": false,
@@ -19792,7 +19875,7 @@
   },
   {
     "id": "prod_683",
-    "name": "PRETAL NATO PARA PITBULL REGULABLE T-50",
+    "name": "Pretal Nato Para Pitbull Regulable",
     "category": "accesorios",
     "subcategory": "Accesorios",
     "price": 67150,
@@ -19815,8 +19898,8 @@
       "paseo",
       "pechera"
     ],
-    "description": "PRETAL NATO PARA PITBULL REGULABLE T-50",
-    "longDescription": "PRETAL NATO PARA PITBULL REGULABLE T-50",
+    "description": "🐕 Pretal resistente para perros grandes. Máximo control y seguridad.",
+    "longDescription": "Pretal de alta resistencia diseñado para perros grandes y fuertes. Proporciona control total durante los paseos. Materiales reforzados para máxima durabilidad. Ajustable y cómodo.",
     "images": {
       "cover": "assets/images/products/prod_683/cover.jpg",
       "thumb": "assets/images/products/prod_683/thumb.jpg",
@@ -19825,7 +19908,8 @@
       ]
     },
     "specs": {
-      "SKU": "PRE002"
+      "SKU": "PRE002",
+      "material": "Material resistente"
     },
     "shipping": {
       "free": true,
@@ -19843,7 +19927,7 @@
   },
   {
     "id": "prod_684",
-    "name": "CONJUNTO PRETAL NATO PARA PITBULL REGULABLE T-50",
+    "name": "Conjunto Pretal Nato Para Pitbull Regulable",
     "category": "accesorios",
     "subcategory": "Accesorios",
     "price": 90950,
@@ -19867,8 +19951,8 @@
       "paseo",
       "pechera"
     ],
-    "description": "CONJUNTO PRETAL NATO PARA PITBULL REGULABLE T-50",
-    "longDescription": "CONJUNTO PRETAL NATO PARA PITBULL REGULABLE T-50",
+    "description": "🐕 Conjunto completo de collar y correa. Todo lo que necesitas para pasear.",
+    "longDescription": "Conjunto completo que incluye collar y correa a juego. Diseño coordinado y atractivo. Materiales de alta calidad, resistentes y duraderos. Perfecto para paseos diarios con tu mascota.",
     "images": {
       "cover": "assets/images/products/prod_684/cover.jpg",
       "thumb": "assets/images/products/prod_684/thumb.jpg",
@@ -19877,7 +19961,8 @@
       ]
     },
     "specs": {
-      "SKU": "CON006"
+      "SKU": "CON006",
+      "material": "Material resistente"
     },
     "shipping": {
       "free": true,
@@ -19895,7 +19980,7 @@
   },
   {
     "id": "prod_691",
-    "name": "CONJUNTO PECHERA Y TIRA TIPO JEANS  T2     1,5",
+    "name": "Conjunto Pechera Y Tira Tipo Jeans 1,5",
     "category": "accesorios",
     "subcategory": "Accesorios",
     "price": 7650,
@@ -19917,8 +20002,8 @@
       "correa",
       "paseo"
     ],
-    "description": "CONJUNTO PECHERA Y TIRA TIPO JEANS  T2     1,5",
-    "longDescription": "CONJUNTO PECHERA Y TIRA TIPO JEANS  T2     1,5",
+    "description": "🐕 Correa para paseos. Resistente y cómoda para ti y tu mascota.",
+    "longDescription": "Correa de paseo de alta calidad. Fabricada con materiales resistentes para soportar tirones. Mango ergonómico para mayor comodidad. Perfecta para paseos diarios con tu mascota.",
     "images": {
       "cover": "assets/images/products/prod_691/cover.jpg",
       "thumb": "assets/images/products/prod_691/thumb.jpg",
@@ -19927,7 +20012,8 @@
       ]
     },
     "specs": {
-      "SKU": "CON013"
+      "SKU": "CON013",
+      "material": "Material resistente"
     },
     "shipping": {
       "free": false,
@@ -19945,7 +20031,7 @@
   },
   {
     "id": "prod_694",
-    "name": "CONJUNTO FANTASIA IMP.3 CM T-3",
+    "name": "Conjunto Fantasia Imp.",
     "category": "accesorios",
     "subcategory": "Accesorios",
     "price": 9095,
@@ -19966,8 +20052,8 @@
       "paseo",
       "pechera"
     ],
-    "description": "CONJUNTO FANTASIA IMP.3 CM T-3",
-    "longDescription": "CONJUNTO FANTASIA IMP.3 CM T-3",
+    "description": "🐕 Conjunto completo de collar y correa. Todo lo que necesitas para pasear.",
+    "longDescription": "Conjunto completo que incluye collar y correa a juego. Diseño coordinado y atractivo. Materiales de alta calidad, resistentes y duraderos. Perfecto para paseos diarios con tu mascota.",
     "images": {
       "cover": "assets/images/products/prod_694/cover.jpg",
       "thumb": "assets/images/products/prod_694/thumb.jpg",
@@ -19977,7 +20063,9 @@
     },
     "specs": {
       "SKU": "CON016",
-      "Medida": "3 CM"
+      "Medida": "3 CM",
+      "dimensions": "3  cm",
+      "material": "Material resistente"
     },
     "shipping": {
       "free": false,
@@ -20094,7 +20182,7 @@
   },
   {
     "id": "prod_697",
-    "name": "CONJUNTO REFLECTOR 1,5CM",
+    "name": "Conjunto Reflector",
     "category": "accesorios",
     "subcategory": "Accesorios",
     "price": 4420,
@@ -20115,8 +20203,8 @@
       "paseo",
       "pechera"
     ],
-    "description": "CONJUNTO REFLECTOR 1,5CM",
-    "longDescription": "CONJUNTO REFLECTOR 1,5CM",
+    "description": "🐕 Conjunto completo de collar y correa. Todo lo que necesitas para pasear.",
+    "longDescription": "Conjunto completo que incluye collar y correa a juego. Diseño coordinado y atractivo. Materiales de alta calidad, resistentes y duraderos. Perfecto para paseos diarios con tu mascota.",
     "images": {
       "cover": "assets/images/products/prod_697/cover.jpg",
       "thumb": "assets/images/products/prod_697/thumb.jpg",
@@ -20126,7 +20214,9 @@
     },
     "specs": {
       "SKU": "CON019",
-      "Medida": "5CM"
+      "Medida": "5CM",
+      "dimensions": "1,5 cm",
+      "material": "Material resistente"
     },
     "shipping": {
       "free": false,
@@ -20144,7 +20234,7 @@
   },
   {
     "id": "prod_698",
-    "name": "CONJUNTO REFLECTOR 2,5CM",
+    "name": "Conjunto Reflector",
     "category": "accesorios",
     "subcategory": "Accesorios",
     "price": 7820,
@@ -20165,8 +20255,8 @@
       "paseo",
       "pechera"
     ],
-    "description": "CONJUNTO REFLECTOR 2,5CM",
-    "longDescription": "CONJUNTO REFLECTOR 2,5CM",
+    "description": "🐕 Conjunto completo de collar y correa. Todo lo que necesitas para pasear.",
+    "longDescription": "Conjunto completo que incluye collar y correa a juego. Diseño coordinado y atractivo. Materiales de alta calidad, resistentes y duraderos. Perfecto para paseos diarios con tu mascota.",
     "images": {
       "cover": "assets/images/products/prod_698/cover.jpg",
       "thumb": "assets/images/products/prod_698/thumb.jpg",
@@ -20176,7 +20266,9 @@
     },
     "specs": {
       "SKU": "CON020",
-      "Medida": "5CM"
+      "Medida": "5CM",
+      "dimensions": "2,5 cm",
+      "material": "Material resistente"
     },
     "shipping": {
       "free": false,
@@ -20313,7 +20405,7 @@
   },
   {
     "id": "prod_703",
-    "name": "CONJUNTO CORREA PASADORA 1,0CM*120CM*2,0CM",
+    "name": "Conjunto Correa Pasadora * *",
     "category": "accesorios",
     "subcategory": "Accesorios",
     "price": 12750,
@@ -20334,8 +20426,8 @@
       "paseo",
       "pechera"
     ],
-    "description": "CONJUNTO   CORREA PASADORA 1,0CM*120CM*2,0CM",
-    "longDescription": "CONJUNTO   CORREA PASADORA 1,0CM*120CM*2,0CM",
+    "description": "🐕 Correa para paseos. Resistente y cómoda para ti y tu mascota.",
+    "longDescription": "Correa de paseo de alta calidad. Fabricada con materiales resistentes para soportar tirones. Mango ergonómico para mayor comodidad. Perfecta para paseos diarios con tu mascota.",
     "images": {
       "cover": "assets/images/products/prod_703/cover.jpg",
       "thumb": "assets/images/products/prod_703/thumb.jpg",
@@ -20345,7 +20437,9 @@
     },
     "specs": {
       "SKU": "CON022",
-      "Medida": "0CM"
+      "Medida": "0CM",
+      "dimensions": "1,0 cm",
+      "material": "Material resistente"
     },
     "shipping": {
       "free": true,
@@ -20363,7 +20457,7 @@
   },
   {
     "id": "prod_705",
-    "name": "CONJUNTO REFORZASDO / RALLADO  GRANDE 8485-3",
+    "name": "Conjunto Reforzasdo / Rallado Grande 8485-3",
     "category": "accesorios",
     "subcategory": "Accesorios",
     "price": 21250,
@@ -20386,8 +20480,8 @@
       "paseo",
       "pechera"
     ],
-    "description": "CONJUNTO REFORZASDO / RALLADO  GRANDE 8485-3",
-    "longDescription": "CONJUNTO REFORZASDO / RALLADO  GRANDE 8485-3",
+    "description": "🐕 Conjunto completo de collar y correa. Todo lo que necesitas para pasear.",
+    "longDescription": "Conjunto completo que incluye collar y correa a juego. Diseño coordinado y atractivo. Materiales de alta calidad, resistentes y duraderos. Perfecto para paseos diarios con tu mascota.",
     "images": {
       "cover": "assets/images/products/prod_705/cover.jpg",
       "thumb": "assets/images/products/prod_705/thumb.jpg",
@@ -20396,7 +20490,8 @@
       ]
     },
     "specs": {
-      "SKU": "CON024"
+      "SKU": "CON024",
+      "material": "Material resistente"
     },
     "shipping": {
       "free": true,
@@ -20414,7 +20509,7 @@
   },
   {
     "id": "prod_706",
-    "name": "CONJUNTO PECHERA  8393-5",
+    "name": "Conjunto Pechera 8393-5",
     "category": "accesorios",
     "subcategory": "Accesorios",
     "price": 21250,
@@ -20434,8 +20529,8 @@
       "correa",
       "paseo"
     ],
-    "description": "CONJUNTO PECHERA  8393-5",
-    "longDescription": "CONJUNTO PECHERA  8393-5",
+    "description": "🐕 Pechera cómoda y segura. Distribuye la presión uniformemente.",
+    "longDescription": "Pechera diseñada para brindar comodidad y seguridad a tu mascota. Distribuye la presión uniformemente evitando molestias en el cuello. Ajustable y fácil de colocar. Ideal para paseos y entrenamiento.",
     "images": {
       "cover": "assets/images/products/prod_706/cover.jpg",
       "thumb": "assets/images/products/prod_706/thumb.jpg",
@@ -20444,7 +20539,8 @@
       ]
     },
     "specs": {
-      "SKU": "CON025"
+      "SKU": "CON025",
+      "material": "Material resistente"
     },
     "shipping": {
       "free": true,
@@ -20462,7 +20558,7 @@
   },
   {
     "id": "prod_707",
-    "name": "CONJUNTO PECHERA COLORES PASTEL C/ LUNARES",
+    "name": "Conjunto Pechera Colores Pastel C/ Lunares",
     "category": "accesorios",
     "subcategory": "Accesorios",
     "price": 10200,
@@ -20484,8 +20580,8 @@
       "correa",
       "paseo"
     ],
-    "description": "CONJUNTO PECHERA COLORES PASTEL C/ LUNARES",
-    "longDescription": "CONJUNTO PECHERA COLORES PASTEL C/ LUNARES",
+    "description": "🐕 Pechera cómoda y segura. Distribuye la presión uniformemente.",
+    "longDescription": "Pechera diseñada para brindar comodidad y seguridad a tu mascota. Distribuye la presión uniformemente evitando molestias en el cuello. Ajustable y fácil de colocar. Ideal para paseos y entrenamiento.",
     "images": {
       "cover": "assets/images/products/prod_707/cover.jpg",
       "thumb": "assets/images/products/prod_707/thumb.jpg",
@@ -20494,7 +20590,8 @@
       ]
     },
     "specs": {
-      "SKU": "CON026"
+      "SKU": "CON026",
+      "material": "Material resistente"
     },
     "shipping": {
       "free": false,
@@ -20512,7 +20609,7 @@
   },
   {
     "id": "prod_710",
-    "name": "CONJUNTO REGULABLE RALLADO T -1     1,5",
+    "name": "Conjunto Regulable Rallado T -1 1,5",
     "category": "accesorios",
     "subcategory": "Accesorios",
     "price": 5100,
@@ -20533,8 +20630,8 @@
       "paseo",
       "pechera"
     ],
-    "description": "CONJUNTO REGULABLE RALLADO T -1     1,5",
-    "longDescription": "CONJUNTO REGULABLE RALLADO T -1     1,5",
+    "description": "🐕 Conjunto completo de collar y correa. Todo lo que necesitas para pasear.",
+    "longDescription": "Conjunto completo que incluye collar y correa a juego. Diseño coordinado y atractivo. Materiales de alta calidad, resistentes y duraderos. Perfecto para paseos diarios con tu mascota.",
     "images": {
       "cover": "assets/images/products/prod_710/cover.jpg",
       "thumb": "assets/images/products/prod_710/thumb.jpg",
@@ -20543,7 +20640,8 @@
       ]
     },
     "specs": {
-      "SKU": "CON029"
+      "SKU": "CON029",
+      "material": "Material resistente"
     },
     "shipping": {
       "free": false,
@@ -20561,7 +20659,7 @@
   },
   {
     "id": "prod_711",
-    "name": "CONJUNTO REGULABLE RALLADO T -2   2,0",
+    "name": "Conjunto Regulable Rallado T -2 2,0",
     "category": "accesorios",
     "subcategory": "Accesorios",
     "price": 5950,
@@ -20582,8 +20680,8 @@
       "paseo",
       "pechera"
     ],
-    "description": "CONJUNTO REGULABLE RALLADO T -2   2,0",
-    "longDescription": "CONJUNTO REGULABLE RALLADO T -2   2,0",
+    "description": "🐕 Conjunto completo de collar y correa. Todo lo que necesitas para pasear.",
+    "longDescription": "Conjunto completo que incluye collar y correa a juego. Diseño coordinado y atractivo. Materiales de alta calidad, resistentes y duraderos. Perfecto para paseos diarios con tu mascota.",
     "images": {
       "cover": "assets/images/products/prod_711/cover.jpg",
       "thumb": "assets/images/products/prod_711/thumb.jpg",
@@ -20592,7 +20690,8 @@
       ]
     },
     "specs": {
-      "SKU": "CON030"
+      "SKU": "CON030",
+      "material": "Material resistente"
     },
     "shipping": {
       "free": false,
@@ -20610,7 +20709,7 @@
   },
   {
     "id": "prod_712",
-    "name": "CONJUNTO REGULABLE RALLADO T -3     2,5",
+    "name": "Conjunto Regulable Rallado T -3 2,5",
     "category": "accesorios",
     "subcategory": "Accesorios",
     "price": 7650,
@@ -20631,8 +20730,8 @@
       "paseo",
       "pechera"
     ],
-    "description": "CONJUNTO REGULABLE RALLADO T -3     2,5",
-    "longDescription": "CONJUNTO REGULABLE RALLADO T -3     2,5",
+    "description": "🐕 Conjunto completo de collar y correa. Todo lo que necesitas para pasear.",
+    "longDescription": "Conjunto completo que incluye collar y correa a juego. Diseño coordinado y atractivo. Materiales de alta calidad, resistentes y duraderos. Perfecto para paseos diarios con tu mascota.",
     "images": {
       "cover": "assets/images/products/prod_712/cover.jpg",
       "thumb": "assets/images/products/prod_712/thumb.jpg",
@@ -20641,7 +20740,8 @@
       ]
     },
     "specs": {
-      "SKU": "CON031"
+      "SKU": "CON031",
+      "material": "Material resistente"
     },
     "shipping": {
       "free": false,
@@ -21042,7 +21142,7 @@
   },
   {
     "id": "prod_724",
-    "name": "CADENA COMUN 1,2M",
+    "name": "Cadena Comun 1,2m",
     "category": "accesorios",
     "subcategory": "Collares,",
     "hasVariants": true,
@@ -21061,8 +21161,8 @@
       "accesorio",
       "complemento"
     ],
-    "description": "Medidas\r\nT-1 = 1,20MM ,T-3 = 1,9MM\r\nT-5 = 4,5MM",
-    "longDescription": "Medidas\r\nT-1 = 1,20MM ,T-3 = 1,9MM\r\nT-5 = 4,5MM",
+    "description": "🐕 Cadena resistente para paseos. Máxima durabilidad y seguridad.",
+    "longDescription": "Cadena de alta resistencia para paseos con tu mascota. Fabricada con materiales de primera calidad que garantizan durabilidad. Ideal para perros de todos los tamaños. Mango cómodo y seguro.",
     "variants": {
       "attributes": [
         {
@@ -21136,7 +21236,9 @@
       ]
     },
     "specs": {
-      "SKU": "CADENA-BASE"
+      "SKU": "CADENA-BASE",
+      "dimensions": "1,2M",
+      "material": "Metal cromado"
     },
     "shipping": {
       "free": false,
@@ -21154,7 +21256,7 @@
   },
   {
     "id": "prod_725",
-    "name": "CADENA COMUN 1,7M",
+    "name": "Cadena Comun 1,7m",
     "category": "accesorios",
     "subcategory": "Collares,",
     "hasVariants": true,
@@ -21173,8 +21275,8 @@
       "accesorio",
       "complemento"
     ],
-    "description": "Medidas\r\nT-1 = 1,25MM , T-3 = 1,9MM, T-5 = 3,2MM",
-    "longDescription": "Medidas\r\nT-1 = 1,25MM , T-3 = 1,9MM, T-5 = 3,2MM",
+    "description": "🐕 Cadena resistente para paseos. Máxima durabilidad y seguridad.",
+    "longDescription": "Cadena de alta resistencia para paseos con tu mascota. Fabricada con materiales de primera calidad que garantizan durabilidad. Ideal para perros de todos los tamaños. Mango cómodo y seguro.",
     "variants": {
       "attributes": [
         {
@@ -21248,7 +21350,9 @@
       ]
     },
     "specs": {
-      "SKU": "CAD001"
+      "SKU": "CAD001",
+      "dimensions": "1,7M",
+      "material": "Metal cromado"
     },
     "shipping": {
       "free": false,
@@ -21414,7 +21518,7 @@
   },
   {
     "id": "prod_733",
-    "name": "PECHERA SOLA P15",
+    "name": "Pechera Sola P15",
     "category": "accesorios",
     "subcategory": "Collares,",
     "hasVariants": true,
@@ -21434,8 +21538,8 @@
       "accesorio",
       "complemento"
     ],
-    "description": "PECHERA SOLA P15",
-    "longDescription": "PECHERA SOLA P15",
+    "description": "🐕 Pechera cómoda y segura. Distribuye la presión uniformemente.",
+    "longDescription": "Pechera diseñada para brindar comodidad y seguridad a tu mascota. Distribuye la presión uniformemente evitando molestias en el cuello. Ajustable y fácil de colocar. Ideal para paseos y entrenamiento.",
     "variants": {
       "attributes": [
         {
@@ -21617,7 +21721,8 @@
       ]
     },
     "specs": {
-      "SKU": "PEC001"
+      "SKU": "PEC001",
+      "material": "Material resistente"
     },
     "shipping": {
       "free": false,
@@ -21635,7 +21740,7 @@
   },
   {
     "id": "prod_734",
-    "name": "PECHERA ALCOCHONADA POLICE K9",
+    "name": "Pechera Alcochonada Police K9",
     "category": "accesorios",
     "subcategory": "Collares,",
     "hasVariants": true,
@@ -21655,8 +21760,8 @@
       "accesorio",
       "complemento"
     ],
-    "description": "PECHERA ALCOCHONADA POLICE K9",
-    "longDescription": "PECHERA ALCOCHONADA POLICE K9",
+    "description": "🐕 Pechera cómoda y segura. Distribuye la presión uniformemente.",
+    "longDescription": "Pechera diseñada para brindar comodidad y seguridad a tu mascota. Distribuye la presión uniformemente evitando molestias en el cuello. Ajustable y fácil de colocar. Ideal para paseos y entrenamiento.",
     "variants": {
       "attributes": [
         {
@@ -21784,7 +21889,8 @@
       ]
     },
     "specs": {
-      "SKU": "PEC002"
+      "SKU": "PEC002",
+      "material": "Material resistente"
     },
     "shipping": {
       "free": false,
@@ -21802,7 +21908,7 @@
   },
   {
     "id": "prod_735",
-    "name": "COLLAR MOÑO ANIMAL PRINS  8314-2",
+    "name": "Collar Moño Animal Prins 8314-2",
     "category": "accesorios",
     "subcategory": "Accesorios",
     "price": 2125,
@@ -21824,8 +21930,8 @@
       "paseo",
       "pechera"
     ],
-    "description": "COLLAR MOÑO ANIMAL PRINS  8314-2",
-    "longDescription": "COLLAR MOÑO ANIMAL PRINS  8314-2",
+    "description": "🐕 Collar para mascotas. Cómodo, resistente y con diseño atractivo.",
+    "longDescription": "Collar de alta calidad para tu mascota. Fabricado con materiales resistentes y cómodos. Diseño atractivo que combina estilo y funcionalidad. Ajustable para un calce perfecto.",
     "images": {
       "cover": "assets/images/products/prod_735/cover.jpg",
       "thumb": "assets/images/products/prod_735/thumb.jpg",
@@ -21834,7 +21940,8 @@
       ]
     },
     "specs": {
-      "SKU": "COL033"
+      "SKU": "COL033",
+      "material": "Material resistente"
     },
     "shipping": {
       "free": false,
@@ -21852,7 +21959,7 @@
   },
   {
     "id": "prod_737",
-    "name": "PECHERA ALCOCHONADA  T",
+    "name": "Pechera Alcochonada T",
     "category": "accesorios",
     "subcategory": "Collares,",
     "hasVariants": true,
@@ -21871,8 +21978,8 @@
       "accesorio",
       "complemento"
     ],
-    "description": "PECHERA ALCOCHONADA  T",
-    "longDescription": "PECHERA ALCOCHONADA  T",
+    "description": "🐕 Pechera cómoda y segura. Distribuye la presión uniformemente.",
+    "longDescription": "Pechera diseñada para brindar comodidad y seguridad a tu mascota. Distribuye la presión uniformemente evitando molestias en el cuello. Ajustable y fácil de colocar. Ideal para paseos y entrenamiento.",
     "variants": {
       "attributes": [
         {
@@ -21982,7 +22089,8 @@
       ]
     },
     "specs": {
-      "SKU": "PEC003"
+      "SKU": "PEC003",
+      "material": "Material resistente"
     },
     "shipping": {
       "free": false,
@@ -22000,7 +22108,7 @@
   },
   {
     "id": "prod_738",
-    "name": "PECHERA ARNES AJUSTABLE CON CORREA",
+    "name": "Pechera Arnes Ajustable Con Correa",
     "category": "accesorios",
     "subcategory": "Collares,",
     "hasVariants": true,
@@ -22022,8 +22130,8 @@
       "accesorio",
       "complemento"
     ],
-    "description": "PECHERA ARNES AJUSTABLE CON CORREA",
-    "longDescription": "PECHERA ARNES AJUSTABLE CON CORREA",
+    "description": "🐕 Correa para paseos. Resistente y cómoda para ti y tu mascota.",
+    "longDescription": "Correa de paseo de alta calidad. Fabricada con materiales resistentes para soportar tirones. Mango ergonómico para mayor comodidad. Perfecta para paseos diarios con tu mascota.",
     "variants": {
       "attributes": [
         {
@@ -22115,7 +22223,8 @@
       ]
     },
     "specs": {
-      "SKU": "PEC004"
+      "SKU": "PEC004",
+      "material": "Material resistente"
     },
     "shipping": {
       "free": true,
@@ -22288,7 +22397,7 @@
   },
   {
     "id": "prod_744",
-    "name": "CONJUNTO REGULABLE LISO",
+    "name": "Conjunto Regulable Liso",
     "category": "accesorios",
     "subcategory": "Collares,",
     "hasVariants": true,
@@ -22308,8 +22417,8 @@
       "accesorio",
       "complemento"
     ],
-    "description": "CONJUNTO REGULABLE LISO",
-    "longDescription": "CONJUNTO REGULABLE LISO",
+    "description": "🐕 Conjunto completo de collar y correa. Todo lo que necesitas para pasear.",
+    "longDescription": "Conjunto completo que incluye collar y correa a juego. Diseño coordinado y atractivo. Materiales de alta calidad, resistentes y duraderos. Perfecto para paseos diarios con tu mascota.",
     "variants": {
       "attributes": [
         {
@@ -22455,7 +22564,8 @@
       ]
     },
     "specs": {
-      "SKU": "CON002"
+      "SKU": "CON002",
+      "material": "Material resistente"
     },
     "shipping": {
       "free": false,
@@ -22699,7 +22809,7 @@
   },
   {
     "id": "prod_754",
-    "name": "CONJUNTO ECONOMICO",
+    "name": "Conjunto Economico",
     "category": "accesorios",
     "subcategory": "Collares,",
     "hasVariants": true,
@@ -22718,8 +22828,8 @@
       "accesorio",
       "complemento"
     ],
-    "description": "CONJUNTO ECONOMICO",
-    "longDescription": "CONJUNTO ECONOMICO",
+    "description": "🐕 Conjunto completo de collar y correa. Todo lo que necesitas para pasear.",
+    "longDescription": "Conjunto completo que incluye collar y correa a juego. Diseño coordinado y atractivo. Materiales de alta calidad, resistentes y duraderos. Perfecto para paseos diarios con tu mascota.",
     "variants": {
       "attributes": [
         {
@@ -22793,7 +22903,8 @@
       ]
     },
     "specs": {
-      "SKU": "CON027"
+      "SKU": "CON027",
+      "material": "Material resistente"
     },
     "shipping": {
       "free": false,
@@ -22811,7 +22922,7 @@
   },
   {
     "id": "prod_755",
-    "name": "conjunto pechera y tira tipo jeans  t1    1,0",
+    "name": "Conjunto Pechera Y Tira Tipo Jeans 1,0",
     "category": "accesorios",
     "subcategory": "Accesorios",
     "price": 6800,
@@ -22833,8 +22944,8 @@
       "correa",
       "paseo"
     ],
-    "description": "conjunto pechera y tira tipo jeans  t1    1,0",
-    "longDescription": "conjunto pechera y tira tipo jeans  t1    1,0",
+    "description": "🐕 Correa para paseos. Resistente y cómoda para ti y tu mascota.",
+    "longDescription": "Correa de paseo de alta calidad. Fabricada con materiales resistentes para soportar tirones. Mango ergonómico para mayor comodidad. Perfecta para paseos diarios con tu mascota.",
     "images": {
       "cover": "assets/images/products/prod_755/cover.jpg",
       "thumb": "assets/images/products/prod_755/thumb.jpg",
@@ -22843,7 +22954,8 @@
       ]
     },
     "specs": {
-      "SKU": "CON028"
+      "SKU": "CON028",
+      "material": "Material resistente"
     },
     "shipping": {
       "free": false,
@@ -22861,7 +22973,7 @@
   },
   {
     "id": "prod_757",
-    "name": "CONJUNTO REFORZADO/ CAMUCLADO MEDIANO",
+    "name": "Conjunto Reforzado/ Camuclado Mediano",
     "category": "accesorios",
     "subcategory": "Accesorios",
     "price": 12750,
@@ -22883,8 +22995,8 @@
       "paseo",
       "pechera"
     ],
-    "description": "CONJUNTO REFORZADO/ CAMUCLADO MEDIANO",
-    "longDescription": "CONJUNTO REFORZADO/ CAMUCLADO MEDIANO",
+    "description": "🐕 Conjunto completo de collar y correa. Todo lo que necesitas para pasear.",
+    "longDescription": "Conjunto completo que incluye collar y correa a juego. Diseño coordinado y atractivo. Materiales de alta calidad, resistentes y duraderos. Perfecto para paseos diarios con tu mascota.",
     "images": {
       "cover": "assets/images/products/prod_757/cover.jpg",
       "thumb": "assets/images/products/prod_757/thumb.jpg",
@@ -22893,7 +23005,8 @@
       ]
     },
     "specs": {
-      "SKU": "CON032"
+      "SKU": "CON032",
+      "material": "Material resistente"
     },
     "shipping": {
       "free": true,
@@ -22911,7 +23024,7 @@
   },
   {
     "id": "prod_758",
-    "name": "CONJUNTO SOGA REGULABLE CAMUFLADO GRANDE",
+    "name": "Conjunto Soga Regulable Camuflado Grande",
     "category": "accesorios",
     "subcategory": "Accesorios",
     "price": 12750,
@@ -22934,8 +23047,8 @@
       "paseo",
       "pechera"
     ],
-    "description": "CONJUNTO SOGA REGULABLE CAMUFLADO GRANDE",
-    "longDescription": "CONJUNTO SOGA REGULABLE CAMUFLADO GRANDE",
+    "description": "🐕 Conjunto completo de collar y correa. Todo lo que necesitas para pasear.",
+    "longDescription": "Conjunto completo que incluye collar y correa a juego. Diseño coordinado y atractivo. Materiales de alta calidad, resistentes y duraderos. Perfecto para paseos diarios con tu mascota.",
     "images": {
       "cover": "assets/images/products/prod_758/cover.jpg",
       "thumb": "assets/images/products/prod_758/thumb.jpg",
@@ -22944,7 +23057,8 @@
       ]
     },
     "specs": {
-      "SKU": "CON034"
+      "SKU": "CON034",
+      "material": "Soga resistente"
     },
     "shipping": {
       "free": true,
@@ -22962,7 +23076,7 @@
   },
   {
     "id": "prod_759",
-    "name": "CONJUNTO SOGA REGULABLE ( COLOR/ VARIOS) GRANDE",
+    "name": "Conjunto Soga Regulable ( Color/ Varios) Grande",
     "category": "accesorios",
     "subcategory": "Accesorios",
     "price": 12750,
@@ -22986,8 +23100,8 @@
       "paseo",
       "pechera"
     ],
-    "description": "CONJUNTO SOGA REGULABLE ( COLOR/ VARIOS) GRANDE",
-    "longDescription": "CONJUNTO SOGA REGULABLE ( COLOR/ VARIOS) GRANDE",
+    "description": "🐕 Conjunto completo de collar y correa. Todo lo que necesitas para pasear.",
+    "longDescription": "Conjunto completo que incluye collar y correa a juego. Diseño coordinado y atractivo. Materiales de alta calidad, resistentes y duraderos. Perfecto para paseos diarios con tu mascota.",
     "images": {
       "cover": "assets/images/products/prod_759/cover.jpg",
       "thumb": "assets/images/products/prod_759/thumb.jpg",
@@ -22996,7 +23110,8 @@
       ]
     },
     "specs": {
-      "SKU": "CON035"
+      "SKU": "CON035",
+      "material": "Soga resistente"
     },
     "shipping": {
       "free": true,
@@ -23177,7 +23292,7 @@
   },
   {
     "id": "prod_778",
-    "name": "COMEDERO COME LENTO",
+    "name": "Comedero Come Lento",
     "category": "accesorios",
     "subcategory": "Comederos",
     "price": 5525,
@@ -23197,8 +23312,8 @@
       "alimentación",
       "agua"
     ],
-    "description": "COMEDERO COME LENTO",
-    "longDescription": "COMEDERO COME LENTO",
+    "description": "🐕 Accesorio de calidad para tu mascota. Diseño funcional y duradero.",
+    "longDescription": "Accesorio de alta calidad diseñado para tu mascota. Materiales resistentes y duraderos. Diseño funcional que combina comodidad y estilo.",
     "images": {
       "cover": "assets/images/products/prod_778/cover.jpg",
       "thumb": "assets/images/products/prod_778/thumb.jpg",
@@ -23207,7 +23322,8 @@
       ]
     },
     "specs": {
-      "SKU": "COM001"
+      "SKU": "COM001",
+      "material": "Material resistente"
     },
     "shipping": {
       "free": false,
@@ -23225,7 +23341,7 @@
   },
   {
     "id": "prod_779",
-    "name": "CAZUELA HUELLA CHICA",
+    "name": "Cazuela Huella Chica",
     "category": "accesorios",
     "subcategory": "Comederos",
     "price": 1445,
@@ -23246,8 +23362,8 @@
       "alimentación",
       "agua"
     ],
-    "description": "CAZUELA HUELLA CHICA",
-    "longDescription": "CAZUELA HUELLA CHICA",
+    "description": "🐕 Accesorio de calidad para tu mascota. Diseño funcional y duradero.",
+    "longDescription": "Accesorio de alta calidad diseñado para tu mascota. Materiales resistentes y duraderos. Diseño funcional que combina comodidad y estilo.",
     "images": {
       "cover": "assets/images/products/prod_779/cover.jpg",
       "thumb": "assets/images/products/prod_779/thumb.jpg",
@@ -23256,7 +23372,8 @@
       ]
     },
     "specs": {
-      "SKU": "CAZ001"
+      "SKU": "CAZ001",
+      "material": "Material resistente"
     },
     "shipping": {
       "free": false,
@@ -23274,7 +23391,7 @@
   },
   {
     "id": "prod_780",
-    "name": "CAZUELA HUELLA MEDIANA",
+    "name": "Cazuela Huella Mediana",
     "category": "accesorios",
     "subcategory": "Comederos",
     "price": 2125,
@@ -23295,8 +23412,8 @@
       "alimentación",
       "agua"
     ],
-    "description": "CAZUELA HUELLA MEDIANA",
-    "longDescription": "CAZUELA HUELLA MEDIANA",
+    "description": "🐕 Accesorio de calidad para tu mascota. Diseño funcional y duradero.",
+    "longDescription": "Accesorio de alta calidad diseñado para tu mascota. Materiales resistentes y duraderos. Diseño funcional que combina comodidad y estilo.",
     "images": {
       "cover": "assets/images/products/prod_780/cover.jpg",
       "thumb": "assets/images/products/prod_780/thumb.jpg",
@@ -23305,7 +23422,8 @@
       ]
     },
     "specs": {
-      "SKU": "CAZ002"
+      "SKU": "CAZ002",
+      "material": "Material resistente"
     },
     "shipping": {
       "free": false,
@@ -23323,7 +23441,7 @@
   },
   {
     "id": "prod_781",
-    "name": "CAZUELA HUELLA GRANDE",
+    "name": "Cazuela Huella Grande",
     "category": "accesorios",
     "subcategory": "Comederos",
     "price": 2975,
@@ -23344,8 +23462,8 @@
       "alimentación",
       "agua"
     ],
-    "description": "CAZUELA HUELLA GRANDE",
-    "longDescription": "CAZUELA HUELLA GRANDE",
+    "description": "🐕 Accesorio de calidad para tu mascota. Diseño funcional y duradero.",
+    "longDescription": "Accesorio de alta calidad diseñado para tu mascota. Materiales resistentes y duraderos. Diseño funcional que combina comodidad y estilo.",
     "images": {
       "cover": "assets/images/products/prod_781/cover.jpg",
       "thumb": "assets/images/products/prod_781/thumb.jpg",
@@ -23354,7 +23472,8 @@
       ]
     },
     "specs": {
-      "SKU": "CAZ003"
+      "SKU": "CAZ003",
+      "material": "Material resistente"
     },
     "shipping": {
       "free": false,
@@ -23372,7 +23491,7 @@
   },
   {
     "id": "prod_782",
-    "name": "COMEDERO TOLVA  AGUA",
+    "name": "Comedero Tolva Agua",
     "category": "accesorios",
     "subcategory": "Comederos",
     "price": 10200,
@@ -23391,8 +23510,8 @@
       "bebedero",
       "alimentación"
     ],
-    "description": "COMEDERO TOLVA  AGUA",
-    "longDescription": "COMEDERO TOLVA  AGUA",
+    "description": "🐕 Accesorio de calidad para tu mascota. Diseño funcional y duradero.",
+    "longDescription": "Accesorio de alta calidad diseñado para tu mascota. Materiales resistentes y duraderos. Diseño funcional que combina comodidad y estilo.",
     "images": {
       "cover": "assets/images/products/prod_782/cover.jpg",
       "thumb": "assets/images/products/prod_782/thumb.jpg",
@@ -23401,7 +23520,8 @@
       ]
     },
     "specs": {
-      "SKU": "COM002"
+      "SKU": "COM002",
+      "material": "Material resistente"
     },
     "shipping": {
       "free": false,
@@ -23419,7 +23539,7 @@
   },
   {
     "id": "prod_784",
-    "name": "COMEDERO DOBLE CON BEBEDERO A ROSCA",
+    "name": "Comedero Doble Con Bebedero A Rosca",
     "category": "accesorios",
     "subcategory": "Comederos",
     "price": 9350,
@@ -23439,8 +23559,8 @@
       "alimentación",
       "agua"
     ],
-    "description": "COMEDERO DOBLE CON BEBEDERO A ROSCA",
-    "longDescription": "COMEDERO DOBLE CON BEBEDERO A ROSCA",
+    "description": "🐕 Accesorio de calidad para tu mascota. Diseño funcional y duradero.",
+    "longDescription": "Accesorio de alta calidad diseñado para tu mascota. Materiales resistentes y duraderos. Diseño funcional que combina comodidad y estilo.",
     "images": {
       "cover": "assets/images/products/prod_784/cover.jpg",
       "thumb": "assets/images/products/prod_784/thumb.jpg",
@@ -23449,7 +23569,8 @@
       ]
     },
     "specs": {
-      "SKU": "COM004"
+      "SKU": "COM004",
+      "material": "Material resistente"
     },
     "shipping": {
       "free": false,
@@ -23467,7 +23588,7 @@
   },
   {
     "id": "prod_785",
-    "name": "COMEDERO CUADRADO DOBLE",
+    "name": "Comedero Cuadrado Doble",
     "category": "accesorios",
     "subcategory": "Comederos",
     "price": 3400,
@@ -23487,8 +23608,8 @@
       "alimentación",
       "agua"
     ],
-    "description": "COMEDERO CUADRADO DOBLE",
-    "longDescription": "COMEDERO CUADRADO DOBLE",
+    "description": "🐕 Accesorio de calidad para tu mascota. Diseño funcional y duradero.",
+    "longDescription": "Accesorio de alta calidad diseñado para tu mascota. Materiales resistentes y duraderos. Diseño funcional que combina comodidad y estilo.",
     "images": {
       "cover": "assets/images/products/prod_785/cover.jpg",
       "thumb": "assets/images/products/prod_785/thumb.jpg",
@@ -23497,7 +23618,8 @@
       ]
     },
     "specs": {
-      "SKU": "COM005"
+      "SKU": "COM005",
+      "material": "Material resistente"
     },
     "shipping": {
       "free": false,
@@ -23515,7 +23637,7 @@
   },
   {
     "id": "prod_786",
-    "name": "COMEDERO  MELAMINA  ESTAMPADA  6,5\"",
+    "name": "Comedero Melamina Estampada 6,5\"",
     "category": "accesorios",
     "subcategory": "Comederos",
     "price": 3230,
@@ -23536,8 +23658,8 @@
       "alimentación",
       "agua"
     ],
-    "description": "COMEDERO  MELAMINA  ESTAMPADA  6,5\"",
-    "longDescription": "COMEDERO  MELAMINA  ESTAMPADA  6,5\"",
+    "description": "🐕 Accesorio de calidad para tu mascota. Diseño funcional y duradero.",
+    "longDescription": "Accesorio de alta calidad diseñado para tu mascota. Materiales resistentes y duraderos. Diseño funcional que combina comodidad y estilo.",
     "images": {
       "cover": "assets/images/products/prod_786/cover.jpg",
       "thumb": "assets/images/products/prod_786/thumb.jpg",
@@ -23546,7 +23668,8 @@
       ]
     },
     "specs": {
-      "SKU": "COM006"
+      "SKU": "COM006",
+      "material": "Material resistente"
     },
     "shipping": {
       "free": false,
@@ -23564,7 +23687,7 @@
   },
   {
     "id": "prod_787",
-    "name": "COMEDERO  MELAMINA  ESTAMPADA  7,5\"",
+    "name": "Comedero Melamina Estampada 7,5\"",
     "category": "accesorios",
     "subcategory": "Comederos",
     "price": 3740,
@@ -23585,8 +23708,8 @@
       "alimentación",
       "agua"
     ],
-    "description": "COMEDERO  MELAMINA  ESTAMPADA  7,5\"",
-    "longDescription": "COMEDERO  MELAMINA  ESTAMPADA  7,5\"",
+    "description": "🐕 Accesorio de calidad para tu mascota. Diseño funcional y duradero.",
+    "longDescription": "Accesorio de alta calidad diseñado para tu mascota. Materiales resistentes y duraderos. Diseño funcional que combina comodidad y estilo.",
     "images": {
       "cover": "assets/images/products/prod_787/cover.jpg",
       "thumb": "assets/images/products/prod_787/thumb.jpg",
@@ -23595,7 +23718,8 @@
       ]
     },
     "specs": {
-      "SKU": "COM007"
+      "SKU": "COM007",
+      "material": "Material resistente"
     },
     "shipping": {
       "free": false,
@@ -23613,7 +23737,7 @@
   },
   {
     "id": "prod_788",
-    "name": "COMEDERO MELAMINA  ESTAMPADA 8,5\"",
+    "name": "Comedero Melamina Estampada 8,5\"",
     "category": "accesorios",
     "subcategory": "Comederos",
     "price": 4250,
@@ -23634,8 +23758,8 @@
       "alimentación",
       "agua"
     ],
-    "description": "COMEDERO MELAMINA  ESTAMPADA 8,5\"",
-    "longDescription": "COMEDERO MELAMINA  ESTAMPADA 8,5\"",
+    "description": "🐕 Accesorio de calidad para tu mascota. Diseño funcional y duradero.",
+    "longDescription": "Accesorio de alta calidad diseñado para tu mascota. Materiales resistentes y duraderos. Diseño funcional que combina comodidad y estilo.",
     "images": {
       "cover": "assets/images/products/prod_788/cover.jpg",
       "thumb": "assets/images/products/prod_788/thumb.jpg",
@@ -23644,7 +23768,8 @@
       ]
     },
     "specs": {
-      "SKU": "COM008"
+      "SKU": "COM008",
+      "material": "Material resistente"
     },
     "shipping": {
       "free": false,
@@ -23993,7 +24118,7 @@
   },
   {
     "id": "prod_800",
-    "name": "CAZUELA ACERO INOXIDABLE CON BASE ANTIDESLIZANTE S-11CM T-1",
+    "name": "Cazuela Acero Inoxidable Con Base Antideslizante S-",
     "category": "accesorios",
     "subcategory": "Comederos",
     "price": 4250,
@@ -24017,8 +24142,8 @@
       "alimentación",
       "agua"
     ],
-    "description": "CAZUELA ACERO INOXIDABLE CON BASE ANTIDESLIZANTE S-11CM T-1",
-    "longDescription": "CAZUELA ACERO INOXIDABLE CON BASE ANTIDESLIZANTE S-11CM T-1",
+    "description": "🐕 Accesorio de calidad para tu mascota. Diseño funcional y duradero.",
+    "longDescription": "Accesorio de alta calidad diseñado para tu mascota. Materiales resistentes y duraderos. Diseño funcional que combina comodidad y estilo.",
     "images": {
       "cover": "assets/images/products/prod_800/cover.jpg",
       "thumb": "assets/images/products/prod_800/thumb.jpg",
@@ -24028,7 +24153,9 @@
     },
     "specs": {
       "SKU": "CAZ004",
-      "Medida": "11CM"
+      "Medida": "11CM",
+      "dimensions": "11 cm",
+      "material": "Material resistente"
     },
     "shipping": {
       "free": false,
@@ -24046,7 +24173,7 @@
   },
   {
     "id": "prod_801",
-    "name": "CAZUELA ACERO INOXIDABLE CON BASE ANTIDESLIZANTE L-18CM T-3",
+    "name": "Cazuela Acero Inoxidable Con Base Antideslizante L-",
     "category": "accesorios",
     "subcategory": "Comederos",
     "price": 7650,
@@ -24070,8 +24197,8 @@
       "alimentación",
       "agua"
     ],
-    "description": "CAZUELA ACERO INOXIDABLE CON BASE ANTIDESLIZANTE L-18CM T-3",
-    "longDescription": "CAZUELA ACERO INOXIDABLE CON BASE ANTIDESLIZANTE L-18CM T-3",
+    "description": "🐕 Accesorio de calidad para tu mascota. Diseño funcional y duradero.",
+    "longDescription": "Accesorio de alta calidad diseñado para tu mascota. Materiales resistentes y duraderos. Diseño funcional que combina comodidad y estilo.",
     "images": {
       "cover": "assets/images/products/prod_801/cover.jpg",
       "thumb": "assets/images/products/prod_801/thumb.jpg",
@@ -24081,7 +24208,9 @@
     },
     "specs": {
       "SKU": "CAZ005",
-      "Medida": "18CM"
+      "Medida": "18CM",
+      "dimensions": "18 cm",
+      "material": "Material resistente"
     },
     "shipping": {
       "free": false,
@@ -24099,7 +24228,7 @@
   },
   {
     "id": "prod_807",
-    "name": "COMEDERO DE ALTURA REGULABLE N2",
+    "name": "Comedero De Altura Regulable N2",
     "category": "accesorios",
     "subcategory": "Comederos",
     "price": 79050,
@@ -24119,8 +24248,8 @@
       "alimentación",
       "agua"
     ],
-    "description": "COMEDERO DE ALTURA REGULABLE CON SUJECIÓN PARA COMEDEROS ANTIVIBRACIÓN Y PIES DE CAUCHO ANTIDESLIZANTES, 1,8 L, 20 CM. ALTURA REGULABLE: 40 CM.",
-    "longDescription": "COMEDERO DE ALTURA REGULABLE CON SUJECIÓN PARA COMEDEROS ANTIVIBRACIÓN Y PIES DE CAUCHO ANTIDESLIZANTES, 1,8 L, 20 CM. ALTURA REGULABLE: 40 CM.",
+    "description": "🐕 Accesorio de calidad para tu mascota. Diseño funcional y duradero.",
+    "longDescription": "Accesorio de alta calidad diseñado para tu mascota. Materiales resistentes y duraderos. Diseño funcional que combina comodidad y estilo.",
     "images": {
       "cover": "assets/images/products/prod_807/cover.jpg",
       "thumb": "assets/images/products/prod_807/thumb.jpg",
@@ -24129,7 +24258,8 @@
       ]
     },
     "specs": {
-      "SKU": "COM025"
+      "SKU": "COM025",
+      "material": "Material resistente"
     },
     "shipping": {
       "free": true,
@@ -24147,7 +24277,7 @@
   },
   {
     "id": "prod_808",
-    "name": "COMEDERO CON BASE DOBLE",
+    "name": "Comedero Con Base Doble",
     "category": "accesorios",
     "subcategory": "Comederos",
     "price": 55250,
@@ -24167,8 +24297,8 @@
       "alimentación",
       "agua"
     ],
-    "description": "COMEDERO CON BASE DOBLE",
-    "longDescription": "COMEDERO CON BASE DOBLE",
+    "description": "🐕 Accesorio de calidad para tu mascota. Diseño funcional y duradero.",
+    "longDescription": "Accesorio de alta calidad diseñado para tu mascota. Materiales resistentes y duraderos. Diseño funcional que combina comodidad y estilo.",
     "images": {
       "cover": "assets/images/products/prod_808/cover.jpg",
       "thumb": "assets/images/products/prod_808/thumb.jpg",
@@ -24177,7 +24307,8 @@
       ]
     },
     "specs": {
-      "SKU": "COM026"
+      "SKU": "COM026",
+      "material": "Material resistente"
     },
     "shipping": {
       "free": true,
@@ -24195,7 +24326,7 @@
   },
   {
     "id": "prod_809",
-    "name": "COMEDERO CON CARITA Y PATITAS",
+    "name": "Comedero Con Carita Y Patitas",
     "category": "accesorios",
     "subcategory": "Comederos",
     "price": 14450,
@@ -24215,8 +24346,8 @@
       "alimentación",
       "agua"
     ],
-    "description": "COMEDERO CON CARITA Y PATITAS",
-    "longDescription": "COMEDERO CON CARITA Y PATITAS",
+    "description": "🐕 Accesorio de calidad para tu mascota. Diseño funcional y duradero.",
+    "longDescription": "Accesorio de alta calidad diseñado para tu mascota. Materiales resistentes y duraderos. Diseño funcional que combina comodidad y estilo.",
     "images": {
       "cover": "assets/images/products/prod_809/cover.jpg",
       "thumb": "assets/images/products/prod_809/thumb.jpg",
@@ -24225,7 +24356,8 @@
       ]
     },
     "specs": {
-      "SKU": "COM027"
+      "SKU": "COM027",
+      "material": "Material resistente"
     },
     "shipping": {
       "free": true,
@@ -24243,7 +24375,7 @@
   },
   {
     "id": "prod_810",
-    "name": "COMEDERO DE PLÁSTICO CON ANTIDESLIZANTE, TRANSLÚCIDO, 0,25L, Ø12CM",
+    "name": "Comedero De Plástico Con Antideslizante, Translúcido, 0,25l, Ø",
     "category": "accesorios",
     "subcategory": "Comederos",
     "price": 4250,
@@ -24266,8 +24398,8 @@
       "alimentación",
       "agua"
     ],
-    "description": "COMEDERO DE PLÁSTICO CON ANTIDESLIZANTE, TRANSLÚCIDO, 0,25L, Ø12CM",
-    "longDescription": "COMEDERO DE PLÁSTICO CON ANTIDESLIZANTE, TRANSLÚCIDO, 0,25L, Ø12CM",
+    "description": "🐕 Accesorio de calidad para tu mascota. Diseño funcional y duradero.",
+    "longDescription": "Accesorio de alta calidad diseñado para tu mascota. Materiales resistentes y duraderos. Diseño funcional que combina comodidad y estilo.",
     "images": {
       "cover": "assets/images/products/prod_810/cover.jpg",
       "thumb": "assets/images/products/prod_810/thumb.jpg",
@@ -24277,7 +24409,9 @@
     },
     "specs": {
       "SKU": "COM028",
-      "Medida": "12CM"
+      "Medida": "12CM",
+      "dimensions": "12 cm",
+      "material": "Material resistente"
     },
     "shipping": {
       "free": false,
@@ -24295,7 +24429,7 @@
   },
   {
     "id": "prod_811",
-    "name": "COMEDERO DE CERÁMICA CATS",
+    "name": "Comedero De Cerámica Cats",
     "category": "accesorios",
     "subcategory": "Comederos",
     "price": 11050,
@@ -24315,8 +24449,8 @@
       "alimentación",
       "agua"
     ],
-    "description": "COMEDERO DE CERÁMICA, GATO, 0,3L, Ø12 CM (SOLO POR MENOR)",
-    "longDescription": "COMEDERO DE CERÁMICA, GATO, 0,3L, Ø12 CM (SOLO POR MENOR)",
+    "description": "🐕 Accesorio de calidad para tu mascota. Diseño funcional y duradero.",
+    "longDescription": "Accesorio de alta calidad diseñado para tu mascota. Materiales resistentes y duraderos. Diseño funcional que combina comodidad y estilo.",
     "images": {
       "cover": "assets/images/products/prod_811/cover.jpg",
       "thumb": "assets/images/products/prod_811/thumb.jpg",
@@ -24325,7 +24459,8 @@
       ]
     },
     "specs": {
-      "SKU": "COM029"
+      "SKU": "COM029",
+      "material": "Material resistente"
     },
     "shipping": {
       "free": false,
@@ -24343,7 +24478,7 @@
   },
   {
     "id": "prod_812",
-    "name": "COMEDERO ADVENTURE DE ACERO VERDE",
+    "name": "Comedero Adventure De Acero Verde",
     "category": "accesorios",
     "subcategory": "Comederos",
     "price": 10200,
@@ -24364,8 +24499,8 @@
       "alimentación",
       "agua"
     ],
-    "description": "COMEDERO \"ADVENTURE\" DE ACERO INOXIDABLE/ESMALTE, ANTIDESLIZANTE, CHATO, 0,2 L/Ø 12 CM, VERDE",
-    "longDescription": "COMEDERO \"ADVENTURE\" DE ACERO INOXIDABLE/ESMALTE, ANTIDESLIZANTE, CHATO, 0,2 L/Ø 12 CM, VERDE",
+    "description": "🐕 Accesorio de calidad para tu mascota. Diseño funcional y duradero.",
+    "longDescription": "Accesorio de alta calidad diseñado para tu mascota. Materiales resistentes y duraderos. Diseño funcional que combina comodidad y estilo.",
     "images": {
       "cover": "assets/images/products/prod_812/cover.jpg",
       "thumb": "assets/images/products/prod_812/thumb.jpg",
@@ -24374,7 +24509,8 @@
       ]
     },
     "specs": {
-      "SKU": "COM030"
+      "SKU": "COM030",
+      "material": "Material resistente"
     },
     "shipping": {
       "free": false,
@@ -24392,7 +24528,7 @@
   },
   {
     "id": "prod_813",
-    "name": "COMEDERO REGU-DIET CON ANTIDESLIZANTE 22CM  JK-4450",
+    "name": "Comedero Regu-diet Con Antideslizante Jk",
     "category": "accesorios",
     "subcategory": "Comederos",
     "price": 11900,
@@ -24414,8 +24550,8 @@
       "alimentación",
       "agua"
     ],
-    "description": "COMEDERO REGU-DIET CON ANTIDESLIZANTE 22CM  JK-4450",
-    "longDescription": "COMEDERO REGU-DIET CON ANTIDESLIZANTE 22CM  JK-4450",
+    "description": "🐕 Accesorio de calidad para tu mascota. Diseño funcional y duradero.",
+    "longDescription": "Accesorio de alta calidad diseñado para tu mascota. Materiales resistentes y duraderos. Diseño funcional que combina comodidad y estilo.",
     "images": {
       "cover": "assets/images/products/prod_813/cover.jpg",
       "thumb": "assets/images/products/prod_813/thumb.jpg",
@@ -24425,7 +24561,9 @@
     },
     "specs": {
       "SKU": "COM031",
-      "Medida": "22CM"
+      "Medida": "22CM",
+      "dimensions": "22 cm",
+      "material": "Material resistente"
     },
     "shipping": {
       "free": false,
@@ -24443,7 +24581,7 @@
   },
   {
     "id": "prod_814",
-    "name": "COMEDEROS DOBLE (MDP) GATO / PERRO",
+    "name": "Comederos Doble (mdp) Gato / Perro",
     "category": "accesorios",
     "subcategory": "Comederos",
     "price": 17000,
@@ -24466,8 +24604,8 @@
       "alimentación",
       "agua"
     ],
-    "description": "COMEDEROS DOBLE (MDP) GATO / PERRO",
-    "longDescription": "COMEDEROS DOBLE (MDP) GATO / PERRO",
+    "description": "🐕 Accesorio de calidad para tu mascota. Diseño funcional y duradero.",
+    "longDescription": "Accesorio de alta calidad diseñado para tu mascota. Materiales resistentes y duraderos. Diseño funcional que combina comodidad y estilo.",
     "images": {
       "cover": "assets/images/products/prod_814/cover.jpg",
       "thumb": "assets/images/products/prod_814/thumb.jpg",
@@ -24476,7 +24614,8 @@
       ]
     },
     "specs": {
-      "SKU": "COM032"
+      "SKU": "COM032",
+      "material": "Material resistente"
     },
     "shipping": {
       "free": true,
@@ -24494,7 +24633,7 @@
   },
   {
     "id": "prod_823",
-    "name": "DISPENSER DE AGUA PARA MASCOTAS 3L  JK-4159",
+    "name": "Dispenser De Agua Para Mascotas 3l Jk",
     "category": "accesorios",
     "subcategory": "Comederos",
     "price": 51000,
@@ -24515,8 +24654,8 @@
       "bebedero",
       "alimentación"
     ],
-    "description": "DISPENSER DE AGUA PARA MASCOTAS 3L  JK-4159",
-    "longDescription": "DISPENSER DE AGUA PARA MASCOTAS 3L  JK-4159",
+    "description": "🐕 Accesorio de calidad para tu mascota. Diseño funcional y duradero.",
+    "longDescription": "Accesorio de alta calidad diseñado para tu mascota. Materiales resistentes y duraderos. Diseño funcional que combina comodidad y estilo.",
     "images": {
       "cover": "assets/images/products/prod_823/cover.jpg",
       "thumb": "assets/images/products/prod_823/thumb.jpg",
@@ -24525,7 +24664,8 @@
       ]
     },
     "specs": {
-      "SKU": "DIS001"
+      "SKU": "DIS001",
+      "material": "Material resistente"
     },
     "shipping": {
       "free": true,
@@ -24543,7 +24683,7 @@
   },
   {
     "id": "prod_824",
-    "name": "COMEDERO DE GATO",
+    "name": "Comedero De Gato",
     "category": "accesorios",
     "subcategory": "Comederos",
     "price": 1020,
@@ -24562,8 +24702,8 @@
       "alimentación",
       "agua"
     ],
-    "description": "COMEDERO DE GATO",
-    "longDescription": "COMEDERO DE GATO",
+    "description": "🐕 Accesorio de calidad para tu mascota. Diseño funcional y duradero.",
+    "longDescription": "Accesorio de alta calidad diseñado para tu mascota. Materiales resistentes y duraderos. Diseño funcional que combina comodidad y estilo.",
     "images": {
       "cover": "assets/images/products/prod_824/cover.jpg",
       "thumb": "assets/images/products/prod_824/thumb.jpg",
@@ -24572,7 +24712,8 @@
       ]
     },
     "specs": {
-      "SKU": "COM040"
+      "SKU": "COM040",
+      "material": "Material resistente"
     },
     "shipping": {
       "free": false,
@@ -24828,7 +24969,7 @@
   },
   {
     "id": "prod_831",
-    "name": "COMEDERO OVALADO CHICO",
+    "name": "Comedero Ovalado Chico",
     "category": "accesorios",
     "subcategory": "Comederos",
     "price": 1530,
@@ -24848,8 +24989,8 @@
       "alimentación",
       "agua"
     ],
-    "description": "COMEDERO OVALADO CHICO",
-    "longDescription": "COMEDERO OVALADO CHICO",
+    "description": "🐕 Accesorio de calidad para tu mascota. Diseño funcional y duradero.",
+    "longDescription": "Accesorio de alta calidad diseñado para tu mascota. Materiales resistentes y duraderos. Diseño funcional que combina comodidad y estilo.",
     "images": {
       "cover": "assets/images/products/prod_831/cover.jpg",
       "thumb": "assets/images/products/prod_831/thumb.jpg",
@@ -24858,7 +24999,8 @@
       ]
     },
     "specs": {
-      "SKU": "COM047"
+      "SKU": "COM047",
+      "material": "Material resistente"
     },
     "shipping": {
       "free": false,
@@ -24876,7 +25018,7 @@
   },
   {
     "id": "prod_832",
-    "name": "COMEDERO OVALADO MEDIANO",
+    "name": "Comedero Ovalado Mediano",
     "category": "accesorios",
     "subcategory": "Comederos",
     "price": 1700,
@@ -24896,8 +25038,8 @@
       "alimentación",
       "agua"
     ],
-    "description": "COMEDERO OVALADO MEDIANO",
-    "longDescription": "COMEDERO OVALADO MEDIANO",
+    "description": "🐕 Accesorio de calidad para tu mascota. Diseño funcional y duradero.",
+    "longDescription": "Accesorio de alta calidad diseñado para tu mascota. Materiales resistentes y duraderos. Diseño funcional que combina comodidad y estilo.",
     "images": {
       "cover": "assets/images/products/prod_832/cover.jpg",
       "thumb": "assets/images/products/prod_832/thumb.jpg",
@@ -24906,7 +25048,8 @@
       ]
     },
     "specs": {
-      "SKU": "COM048"
+      "SKU": "COM048",
+      "material": "Material resistente"
     },
     "shipping": {
       "free": false,
@@ -24924,7 +25067,7 @@
   },
   {
     "id": "prod_833",
-    "name": "COMEDERO OVALADO GRANDE",
+    "name": "Comedero Ovalado Grande",
     "category": "accesorios",
     "subcategory": "Comederos",
     "price": 4080,
@@ -24944,8 +25087,8 @@
       "alimentación",
       "agua"
     ],
-    "description": "COMEDERO OVALADO GRANDE",
-    "longDescription": "COMEDERO OVALADO GRANDE",
+    "description": "🐕 Accesorio de calidad para tu mascota. Diseño funcional y duradero.",
+    "longDescription": "Accesorio de alta calidad diseñado para tu mascota. Materiales resistentes y duraderos. Diseño funcional que combina comodidad y estilo.",
     "images": {
       "cover": "assets/images/products/prod_833/cover.jpg",
       "thumb": "assets/images/products/prod_833/thumb.jpg",
@@ -24954,7 +25097,8 @@
       ]
     },
     "specs": {
-      "SKU": "COM049"
+      "SKU": "COM049",
+      "material": "Material resistente"
     },
     "shipping": {
       "free": false,
@@ -24972,7 +25116,7 @@
   },
   {
     "id": "prod_834",
-    "name": "COMEDERO OVALADO COKER",
+    "name": "Comedero Ovalado Coker",
     "category": "accesorios",
     "subcategory": "Comederos",
     "price": 1955,
@@ -24992,8 +25136,8 @@
       "alimentación",
       "agua"
     ],
-    "description": "COMEDERO OVALADO COKER",
-    "longDescription": "COMEDERO OVALADO COKER",
+    "description": "🐕 Accesorio de calidad para tu mascota. Diseño funcional y duradero.",
+    "longDescription": "Accesorio de alta calidad diseñado para tu mascota. Materiales resistentes y duraderos. Diseño funcional que combina comodidad y estilo.",
     "images": {
       "cover": "assets/images/products/prod_834/cover.jpg",
       "thumb": "assets/images/products/prod_834/thumb.jpg",
@@ -25002,7 +25146,8 @@
       ]
     },
     "specs": {
-      "SKU": "COM050"
+      "SKU": "COM050",
+      "material": "Material resistente"
     },
     "shipping": {
       "free": false,
@@ -25020,7 +25165,7 @@
   },
   {
     "id": "prod_835",
-    "name": "COMEDERO OVALADO DOBLE",
+    "name": "Comedero Ovalado Doble",
     "category": "accesorios",
     "subcategory": "Comederos",
     "price": 2125,
@@ -25040,8 +25185,8 @@
       "alimentación",
       "agua"
     ],
-    "description": "COMEDERO OVALADO DOBLE",
-    "longDescription": "COMEDERO OVALADO DOBLE",
+    "description": "🐕 Accesorio de calidad para tu mascota. Diseño funcional y duradero.",
+    "longDescription": "Accesorio de alta calidad diseñado para tu mascota. Materiales resistentes y duraderos. Diseño funcional que combina comodidad y estilo.",
     "images": {
       "cover": "assets/images/products/prod_835/cover.jpg",
       "thumb": "assets/images/products/prod_835/thumb.jpg",
@@ -25050,7 +25195,8 @@
       ]
     },
     "specs": {
-      "SKU": "COM051"
+      "SKU": "COM051",
+      "material": "Material resistente"
     },
     "shipping": {
       "free": false,
@@ -25068,7 +25214,7 @@
   },
   {
     "id": "prod_836",
-    "name": "COMERERO DOBLE HUESO",
+    "name": "Comerero Doble Hueso",
     "category": "accesorios",
     "subcategory": "Comederos",
     "price": 4675,
@@ -25089,8 +25235,8 @@
       "alimentación",
       "agua"
     ],
-    "description": "COMERERO DOBLE HUESO",
-    "longDescription": "COMERERO DOBLE HUESO",
+    "description": "🐕 Accesorio de calidad para tu mascota. Diseño funcional y duradero.",
+    "longDescription": "Accesorio de alta calidad diseñado para tu mascota. Materiales resistentes y duraderos. Diseño funcional que combina comodidad y estilo.",
     "images": {
       "cover": "assets/images/products/prod_836/cover.jpg",
       "thumb": "assets/images/products/prod_836/thumb.jpg",
@@ -25099,7 +25245,8 @@
       ]
     },
     "specs": {
-      "SKU": "COM052"
+      "SKU": "COM052",
+      "material": "Material resistente"
     },
     "shipping": {
       "free": false,
@@ -25355,7 +25502,7 @@
   },
   {
     "id": "prod_843",
-    "name": "PLATO CARA DE GATO",
+    "name": "Plato Cara De Gato",
     "category": "accesorios",
     "subcategory": "Comederos",
     "price": 1700,
@@ -25376,8 +25523,8 @@
       "alimentación",
       "agua"
     ],
-    "description": "PLATO CARA DE GATO",
-    "longDescription": "PLATO CARA DE GATO",
+    "description": "🐕 Accesorio de calidad para tu mascota. Diseño funcional y duradero.",
+    "longDescription": "Accesorio de alta calidad diseñado para tu mascota. Materiales resistentes y duraderos. Diseño funcional que combina comodidad y estilo.",
     "images": {
       "cover": "assets/images/products/prod_843/cover.jpg",
       "thumb": "assets/images/products/prod_843/thumb.jpg",
@@ -25386,7 +25533,8 @@
       ]
     },
     "specs": {
-      "SKU": "PLA004"
+      "SKU": "PLA004",
+      "material": "Material resistente"
     },
     "shipping": {
       "free": false,
@@ -25404,7 +25552,7 @@
   },
   {
     "id": "prod_844",
-    "name": "COMEDERO PECECITO DOBLE",
+    "name": "Comedero Pececito Doble",
     "category": "accesorios",
     "subcategory": "Comederos",
     "price": 1870,
@@ -25424,8 +25572,8 @@
       "alimentación",
       "agua"
     ],
-    "description": "COMEDERO PECECITO DOBLE",
-    "longDescription": "COMEDERO PECECITO DOBLE",
+    "description": "🐕 Accesorio de calidad para tu mascota. Diseño funcional y duradero.",
+    "longDescription": "Accesorio de alta calidad diseñado para tu mascota. Materiales resistentes y duraderos. Diseño funcional que combina comodidad y estilo.",
     "images": {
       "cover": "assets/images/products/prod_844/cover.jpg",
       "thumb": "assets/images/products/prod_844/thumb.jpg",
@@ -25434,7 +25582,8 @@
       ]
     },
     "specs": {
-      "SKU": "COM056"
+      "SKU": "COM056",
+      "material": "Material resistente"
     },
     "shipping": {
       "free": false,
@@ -25452,7 +25601,7 @@
   },
   {
     "id": "prod_845",
-    "name": "BEBEDEROS AVES",
+    "name": "Bebederos Aves",
     "category": "accesorios",
     "subcategory": "Comederos",
     "price": 2125,
@@ -25472,8 +25621,8 @@
       "alimentación",
       "agua"
     ],
-    "description": "BEBEDEROS AVES",
-    "longDescription": "BEBEDEROS AVES",
+    "description": "🐕 Accesorio de calidad para tu mascota. Diseño funcional y duradero.",
+    "longDescription": "Accesorio de alta calidad diseñado para tu mascota. Materiales resistentes y duraderos. Diseño funcional que combina comodidad y estilo.",
     "images": {
       "cover": "assets/images/products/prod_845/cover.jpg",
       "thumb": "assets/images/products/prod_845/thumb.jpg",
@@ -25482,7 +25631,8 @@
       ]
     },
     "specs": {
-      "SKU": "BEB002"
+      "SKU": "BEB002",
+      "material": "Material resistente"
     },
     "shipping": {
       "free": false,
@@ -25500,7 +25650,7 @@
   },
   {
     "id": "prod_847",
-    "name": "TAZON PARA GATO 200ML AZUL Y ROSA",
+    "name": "Tazon Para Gato 200ml Azul Y Rosa",
     "category": "accesorios",
     "subcategory": "Comederos",
     "price": 6375,
@@ -25523,8 +25673,8 @@
       "alimentación",
       "agua"
     ],
-    "description": "TAZON PARA GATO 200ML AZUL Y ROSA",
-    "longDescription": "TAZON PARA GATO 200ML AZUL Y ROSA",
+    "description": "🐕 Accesorio de calidad para tu mascota. Diseño funcional y duradero.",
+    "longDescription": "Accesorio de alta calidad diseñado para tu mascota. Materiales resistentes y duraderos. Diseño funcional que combina comodidad y estilo.",
     "images": {
       "cover": "assets/images/products/prod_847/cover.jpg",
       "thumb": "assets/images/products/prod_847/thumb.jpg",
@@ -25534,7 +25684,8 @@
     },
     "specs": {
       "SKU": "TAZ001",
-      "Medida": "200ML"
+      "Medida": "200ML",
+      "material": "Material resistente"
     },
     "shipping": {
       "free": false,
@@ -25552,7 +25703,7 @@
   },
   {
     "id": "prod_848",
-    "name": "TAZON  PARA  PERRO 300 ML AZUL Y ROSA",
+    "name": "Tazon Para Perro 300 Ml Azul Y Rosa",
     "category": "accesorios",
     "subcategory": "Comederos",
     "price": 6375,
@@ -25574,8 +25725,8 @@
       "alimentación",
       "agua"
     ],
-    "description": "TAZON  PARA  PERRO 300 ML AZUL Y ROSA",
-    "longDescription": "TAZON  PARA  PERRO 300 ML AZUL Y ROSA",
+    "description": "🐕 Accesorio de calidad para tu mascota. Diseño funcional y duradero.",
+    "longDescription": "Accesorio de alta calidad diseñado para tu mascota. Materiales resistentes y duraderos. Diseño funcional que combina comodidad y estilo.",
     "images": {
       "cover": "assets/images/products/prod_848/cover.jpg",
       "thumb": "assets/images/products/prod_848/thumb.jpg",
@@ -25585,7 +25736,8 @@
     },
     "specs": {
       "SKU": "TAZ002",
-      "Medida": "300 ML"
+      "Medida": "300 ML",
+      "material": "Material resistente"
     },
     "shipping": {
       "free": false,
@@ -25603,7 +25755,7 @@
   },
   {
     "id": "prod_849",
-    "name": "TAZON PARA PERRO 650 ML AZUL Y ROSA",
+    "name": "Tazon Para Perro 650 Ml Azul Y Rosa",
     "category": "accesorios",
     "subcategory": "Comederos",
     "price": 7225,
@@ -25625,8 +25777,8 @@
       "alimentación",
       "agua"
     ],
-    "description": "TAZON PARA PERRO 650 ML AZUL Y ROSA",
-    "longDescription": "TAZON PARA PERRO 650 ML AZUL Y ROSA",
+    "description": "🐕 Accesorio de calidad para tu mascota. Diseño funcional y duradero.",
+    "longDescription": "Accesorio de alta calidad diseñado para tu mascota. Materiales resistentes y duraderos. Diseño funcional que combina comodidad y estilo.",
     "images": {
       "cover": "assets/images/products/prod_849/cover.jpg",
       "thumb": "assets/images/products/prod_849/thumb.jpg",
@@ -25636,7 +25788,8 @@
     },
     "specs": {
       "SKU": "TAZ003",
-      "Medida": "650 ML"
+      "Medida": "650 ML",
+      "material": "Material resistente"
     },
     "shipping": {
       "free": false,
@@ -25654,7 +25807,7 @@
   },
   {
     "id": "prod_850",
-    "name": "BEBEDERO AUTAMATICO PARA PERRO 250ML AZUL Y ROSA",
+    "name": "Bebedero Autamatico Para Perro 250ml Azul Y Rosa",
     "category": "accesorios",
     "subcategory": "Comederos",
     "price": 7480,
@@ -25677,8 +25830,8 @@
       "alimentación",
       "agua"
     ],
-    "description": "BEBEDERO AUTAMATICO PARA PERRO 250ML AZUL Y ROSA",
-    "longDescription": "BEBEDERO AUTAMATICO PARA PERRO 250ML AZUL Y ROSA",
+    "description": "🐕 Accesorio de calidad para tu mascota. Diseño funcional y duradero.",
+    "longDescription": "Accesorio de alta calidad diseñado para tu mascota. Materiales resistentes y duraderos. Diseño funcional que combina comodidad y estilo.",
     "images": {
       "cover": "assets/images/products/prod_850/cover.jpg",
       "thumb": "assets/images/products/prod_850/thumb.jpg",
@@ -25688,7 +25841,8 @@
     },
     "specs": {
       "SKU": "BEB003",
-      "Medida": "250ML"
+      "Medida": "250ML",
+      "material": "Material resistente"
     },
     "shipping": {
       "free": false,
@@ -25706,7 +25860,7 @@
   },
   {
     "id": "prod_851",
-    "name": "BEBEDERO AUTOMATICO PARA GATO 250ML AZUL Y ROSA",
+    "name": "Bebedero Automatico Para Gato 250ml Azul Y Rosa",
     "category": "accesorios",
     "subcategory": "Comederos",
     "price": 7480,
@@ -25729,8 +25883,8 @@
       "alimentación",
       "agua"
     ],
-    "description": "BEBEDERO AUTOMATICO PARA GATO 250ML AZUL Y ROSA",
-    "longDescription": "BEBEDERO AUTOMATICO PARA GATO 250ML AZUL Y ROSA",
+    "description": "🐕 Accesorio de calidad para tu mascota. Diseño funcional y duradero.",
+    "longDescription": "Accesorio de alta calidad diseñado para tu mascota. Materiales resistentes y duraderos. Diseño funcional que combina comodidad y estilo.",
     "images": {
       "cover": "assets/images/products/prod_851/cover.jpg",
       "thumb": "assets/images/products/prod_851/thumb.jpg",
@@ -25740,7 +25894,8 @@
     },
     "specs": {
       "SKU": "BEB004",
-      "Medida": "250ML"
+      "Medida": "250ML",
+      "material": "Material resistente"
     },
     "shipping": {
       "free": false,
@@ -25758,7 +25913,7 @@
   },
   {
     "id": "prod_853",
-    "name": "COMELENTO GRANDE REDONDO CON HUELLA",
+    "name": "Comelento Grande Redondo Con Huella",
     "category": "accesorios",
     "subcategory": "Comederos",
     "price": 5525,
@@ -25780,8 +25935,8 @@
       "alimentación",
       "agua"
     ],
-    "description": "COMELENTO GRANDE REDONDO CON HUELLA",
-    "longDescription": "COMELENTO GRANDE REDONDO CON HUELLA",
+    "description": "🐕 Accesorio de calidad para tu mascota. Diseño funcional y duradero.",
+    "longDescription": "Accesorio de alta calidad diseñado para tu mascota. Materiales resistentes y duraderos. Diseño funcional que combina comodidad y estilo.",
     "images": {
       "cover": "assets/images/products/prod_853/cover.jpg",
       "thumb": "assets/images/products/prod_853/thumb.jpg",
@@ -25790,7 +25945,8 @@
       ]
     },
     "specs": {
-      "SKU": "COM057"
+      "SKU": "COM057",
+      "material": "Material resistente"
     },
     "shipping": {
       "free": false,
@@ -25808,7 +25964,7 @@
   },
   {
     "id": "prod_854",
-    "name": "COMELENTO MEDIANO REDONDO",
+    "name": "Comelento Mediano Redondo",
     "category": "accesorios",
     "subcategory": "Comederos",
     "price": 4675,
@@ -25829,8 +25985,8 @@
       "alimentación",
       "agua"
     ],
-    "description": "COMELENTO MEDIANO REDONDO",
-    "longDescription": "COMELENTO MEDIANO REDONDO",
+    "description": "🐕 Accesorio de calidad para tu mascota. Diseño funcional y duradero.",
+    "longDescription": "Accesorio de alta calidad diseñado para tu mascota. Materiales resistentes y duraderos. Diseño funcional que combina comodidad y estilo.",
     "images": {
       "cover": "assets/images/products/prod_854/cover.jpg",
       "thumb": "assets/images/products/prod_854/thumb.jpg",
@@ -25839,7 +25995,8 @@
       ]
     },
     "specs": {
-      "SKU": "COM058"
+      "SKU": "COM058",
+      "material": "Material resistente"
     },
     "shipping": {
       "free": false,
@@ -25857,7 +26014,7 @@
   },
   {
     "id": "prod_855",
-    "name": "COMELENTO CHICO REDONDO",
+    "name": "Comelento Chico Redondo",
     "category": "accesorios",
     "subcategory": "Comederos",
     "price": 3655,
@@ -25878,8 +26035,8 @@
       "alimentación",
       "agua"
     ],
-    "description": "COMELENTO CHICO REDONDO",
-    "longDescription": "COMELENTO CHICO REDONDO",
+    "description": "🐕 Accesorio de calidad para tu mascota. Diseño funcional y duradero.",
+    "longDescription": "Accesorio de alta calidad diseñado para tu mascota. Materiales resistentes y duraderos. Diseño funcional que combina comodidad y estilo.",
     "images": {
       "cover": "assets/images/products/prod_855/cover.jpg",
       "thumb": "assets/images/products/prod_855/thumb.jpg",
@@ -25888,7 +26045,8 @@
       ]
     },
     "specs": {
-      "SKU": "COM059"
+      "SKU": "COM059",
+      "material": "Material resistente"
     },
     "shipping": {
       "free": false,
@@ -25906,7 +26064,7 @@
   },
   {
     "id": "prod_856",
-    "name": "COMEDERO DOBLE  OCHO CHICO 200ML",
+    "name": "Comedero Doble Ocho Chico 200ml",
     "category": "accesorios",
     "subcategory": "Comederos",
     "price": 2380,
@@ -25928,8 +26086,8 @@
       "alimentación",
       "agua"
     ],
-    "description": "COMEDERO DOBLE  OCHO CHICO 200ML",
-    "longDescription": "COMEDERO DOBLE  OCHO CHICO 200ML",
+    "description": "🐕 Accesorio de calidad para tu mascota. Diseño funcional y duradero.",
+    "longDescription": "Accesorio de alta calidad diseñado para tu mascota. Materiales resistentes y duraderos. Diseño funcional que combina comodidad y estilo.",
     "images": {
       "cover": "assets/images/products/prod_856/cover.jpg",
       "thumb": "assets/images/products/prod_856/thumb.jpg",
@@ -25939,7 +26097,8 @@
     },
     "specs": {
       "SKU": "COM060",
-      "Medida": "200ML"
+      "Medida": "200ML",
+      "material": "Material resistente"
     },
     "shipping": {
       "free": false,
@@ -25957,7 +26116,7 @@
   },
   {
     "id": "prod_857",
-    "name": "COMEDERO DOBLE OCHO GRANDE 350ML",
+    "name": "Comedero Doble Ocho Grande 350ml",
     "category": "accesorios",
     "subcategory": "Comederos",
     "price": 3230,
@@ -25979,8 +26138,8 @@
       "alimentación",
       "agua"
     ],
-    "description": "COMEDERO DOBLE OCHO GRANDE 350ML",
-    "longDescription": "COMEDERO DOBLE OCHO GRANDE 350ML",
+    "description": "🐕 Accesorio de calidad para tu mascota. Diseño funcional y duradero.",
+    "longDescription": "Accesorio de alta calidad diseñado para tu mascota. Materiales resistentes y duraderos. Diseño funcional que combina comodidad y estilo.",
     "images": {
       "cover": "assets/images/products/prod_857/cover.jpg",
       "thumb": "assets/images/products/prod_857/thumb.jpg",
@@ -25990,7 +26149,8 @@
     },
     "specs": {
       "SKU": "COM061",
-      "Medida": "350ML"
+      "Medida": "350ML",
+      "material": "Material resistente"
     },
     "shipping": {
       "free": false,
@@ -26008,7 +26168,7 @@
   },
   {
     "id": "prod_858",
-    "name": "COMEDERO Y BEBEDERO MASCOTA TRIANGULAR",
+    "name": "Comedero Y Bebedero Mascota Triangular",
     "category": "accesorios",
     "subcategory": "Comederos",
     "price": 8075,
@@ -26028,8 +26188,8 @@
       "alimentación",
       "agua"
     ],
-    "description": "COMEDERO Y BEBEDERO MASCOTA TRIANGULAR",
-    "longDescription": "COMEDERO Y BEBEDERO MASCOTA TRIANGULAR",
+    "description": "🐕 Accesorio de calidad para tu mascota. Diseño funcional y duradero.",
+    "longDescription": "Accesorio de alta calidad diseñado para tu mascota. Materiales resistentes y duraderos. Diseño funcional que combina comodidad y estilo.",
     "images": {
       "cover": "assets/images/products/prod_858/cover.jpg",
       "thumb": "assets/images/products/prod_858/thumb.jpg",
@@ -26038,7 +26198,8 @@
       ]
     },
     "specs": {
-      "SKU": "COM062"
+      "SKU": "COM062",
+      "material": "Material resistente"
     },
     "shipping": {
       "free": false,
