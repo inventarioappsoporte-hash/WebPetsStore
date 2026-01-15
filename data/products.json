@@ -14700,7 +14700,7 @@
     "reviews": 297,
     "featured": false,
     "topDiscount": true,
-    "hasVideo": false,
+    "hasVideo": true,
     "tags": [
       "chombas",
       "ropa",
@@ -14949,6 +14949,15 @@
       "gallery": [
         "assets/images/products/prod_448/1.jpg"
       ]
+    },
+    "marketing": {
+      "type": "video",
+      "url": "assets/videos/marketing/chomba-clic.mp4",
+      "poster": "assets/images/products/prod_448/cover.jpg",
+      "autoplay": true,
+      "muted": true,
+      "loop": true,
+      "duration": 10
     },
     "specs": {
       "SKU": "CHO001"

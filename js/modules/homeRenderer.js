@@ -136,8 +136,8 @@ class HomeRenderer {
 
     const contentClass = section.type === 'carousel' ? 'carousel' : 'grid';
     
-    // Determinar si usar medios de marketing (solo para TOP DESCUENTOS)
-    const useMarketingMedia = section.id === 'top-discounts';
+    // Determinar si usar medios de marketing (para TOP DESCUENTOS y CON VIDEO)
+    const useMarketingMedia = section.id === 'top-discounts' || section.id === 'with-video';
     
     const html = `
       <h2 class="section__title">${section.title}</h2>

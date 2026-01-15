@@ -53,16 +53,24 @@ class ProductPage {
     const displayOriginalPrice = hasVariants ? product.baseOriginalPrice : product.originalPrice;
     
     const discount = product.discount ? `<span class="product__discount-badge">-${product.discount}%</span>` : '';
-    const video = product.hasVideo ? `
-      <div class="product__video-section">
-        <video 
-          class="product__video" 
-          controls 
-          muted
-          src="${product.video.url}">
-        </video>
-      </div>
-    ` : '';
+    
+    // Video: soportar tanto product.video como product.marketing
+    let video = '';
+    if (product.hasVideo) {
+      const videoUrl = product.video?.url || product.marketing?.url;
+      if (videoUrl) {
+        video = `
+          <div class="product__video-section">
+            <video 
+              class="product__video" 
+              controls 
+              muted
+              src="${videoUrl}">
+            </video>
+          </div>
+        `;
+      }
+    }
 
     const specsHtml = Object.entries(product.specs || {})
       .map(([key, value]) => `

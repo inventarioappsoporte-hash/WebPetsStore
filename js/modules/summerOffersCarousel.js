@@ -63,6 +63,18 @@ class SummerOffersCarousel {
         <h2 class="summer-offers__title">OFERTAS DE VERANO ☀️ PARA TU MASCOTA</h2>
         <p class="summer-offers__subtitle">Ropa fresca y cómoda con descuentos por tiempo limitado</p>
       </div>
+      <div class="summer-offers__video-container">
+        <video 
+          class="summer-offers__video" 
+          autoplay 
+          muted 
+          loop 
+          playsinline
+          poster="assets/images/products/prod_448/cover.jpg"
+        >
+          <source src="assets/videos/marketing/verano.mp4" type="video/mp4">
+        </video>
+      </div>
       <div class="summer-offers__wrapper">
         <button class="summer-nav summer-nav--prev">‹</button>
         <div class="summer-offers__track-container">
