@@ -14862,7 +14862,7 @@
     "reviews": 151,
     "featured": false,
     "topDiscount": true,
-    "hasVideo": false,
+    "hasVideo": true,
     "tags": [
       "vestido",
       "modal",
@@ -15042,7 +15042,15 @@
       "Fácil de poner",
       "Cómodo para el verano",
       "Costuras reforzadas"
-    ]
+    ],
+    "marketing": {
+      "type": "video",
+      "url": "assets/videos/marketing/vestido-modal-fantasia.mp4",
+      "poster": "assets/images/products/prod_442/cover.jpg",
+      "autoplay": true,
+      "muted": true,
+      "loop": true
+    }
   },
   {
     "id": "prod_448",
