@@ -9572,61 +9572,6 @@
     ]
   },
   {
-    "id": "prod_313",
-    "name": "Costillita De Carne Chica Con Chifle 100/",
-    "category": "juguetes",
-    "subcategory": "Juguetes",
-    "price": 3315,
-    "originalPrice": 3900,
-    "discount": 15,
-    "stock": 5,
-    "rating": 4.3,
-    "reviews": 46,
-    "featured": false,
-    "topDiscount": false,
-    "hasVideo": false,
-    "tags": [
-      "costillita",
-      "carne",
-      "chica",
-      "chifle",
-      "ancho",
-      "alto",
-      "juguete",
-      "entretenimiento",
-      "diversión"
-    ],
-    "description": "🐕 Juguete con sonido chifle en forma de costillita de carne  chica con chifle  100   ancho 12cm / alto 2 cm. Perfecto para juegos de morder y estimular a tu mascota.",
-    "longDescription": "Divertido juguete con sonido chifle en forma de costillita de carne  chica con chifle  100   ancho 12cm / alto 2 cm para perros. El sonido estimula el instinto de juego y mantiene a tu mascota entretenida por horas. Fabricado con material resistente a mordidas y seguro. Ideal para perros de todos los tamaños.",
-    "images": {
-      "cover": "assets/images/products/prod_313/cover.jpg",
-      "thumb": "assets/images/products/prod_313/thumb.jpg",
-      "gallery": [
-        "assets/images/products/prod_313/1.jpg"
-      ]
-    },
-    "specs": {
-      "SKU": "COS001",
-      "Medida": "12CM",
-      "dimensions": "ANCHO 12cm x ALTO 2 cm x 12cm x 2 cm",
-      "material": "Vinilo con chifle",
-      "idealFor": "Perros de todos los tamaños"
-    },
-    "shipping": {
-      "free": false,
-      "days": 3
-    },
-    "badge": "🎾 Juguetes",
-    "brand": "Sin marca",
-    "sku": "COS001",
-    "features": [
-      "Estimula el juego",
-      "Material seguro",
-      "Resistente a mordidas",
-      "Entretenimiento garantizado"
-    ]
-  },
-  {
     "id": "prod_314",
     "name": "Hueso Puntos Con Chifle 109/",
     "category": "juguetes",
@@ -10912,38 +10857,86 @@
   },
   {
     "id": "prod_338",
-    "name": "Costilla Grande Con Chifle",
+    "name": "Costilla Con Chifle",
     "category": "juguetes",
     "subcategory": "Juguetes",
-    "price": 3094,
-    "originalPrice": 3640,
+    "hasVariants": true,
+    "basePrice": 3094,
+    "baseOriginalPrice": 3640,
     "discount": 15,
-    "stock": 5,
-    "rating": 5,
-    "reviews": 11,
+    "stock": 10,
+    "rating": 4.6,
+    "reviews": 57,
     "featured": false,
     "topDiscount": false,
     "hasVideo": false,
     "tags": [
       "costilla",
-      "grande",
       "chifle",
       "juguete",
       "entretenimiento",
       "diversión",
-      "interactivo"
+      "interactivo",
+      "perros"
     ],
     "description": "🐕 Juguete con sonido chifle en forma de costilla. Perfecto para juegos de morder y estimular a tu mascota.",
-    "longDescription": "Divertido juguete con sonido chifle en forma de costilla para perros. El sonido estimula el instinto de juego y mantiene a tu mascota entretenida por horas. Fabricado con material resistente a mordidas y seguro. Ideal para perros de todos los tamaños.",
-    "images": {
-      "cover": "assets/images/products/prod_338/cover.jpg",
-      "thumb": "assets/images/products/prod_338/thumb.jpg",
-      "gallery": [
-        "assets/images/products/prod_338/1.jpg"
+    "longDescription": "Divertido juguete con sonido chifle en forma de costilla para perros. El sonido estimula el instinto de juego y mantiene a tu mascota entretenida por horas. Fabricado con material resistente a mordidas y seguro. Ideal para perros de todos los tamaños. Disponible en tamaño Chica y Grande.",
+    "variants": {
+      "attributes": [
+        {
+          "id": "tamano",
+          "name": "Tamaño",
+          "type": "size"
+        }
+      ],
+      "combinations": [
+        {
+          "id": "var_338_chica",
+          "attributes": {
+            "Tamaño": "Chica"
+          },
+          "price": 3315,
+          "originalPrice": 3900,
+          "stock": 5,
+          "sku": "COS001",
+          "available": true,
+          "specs": {
+            "Medida": "12cm x 2cm"
+          },
+          "images": {
+            "cover": "assets/images/products/prod_338/cover.png",
+            "thumb": "assets/images/products/prod_338/thumb.png",
+            "gallery": []
+          }
+        },
+        {
+          "id": "var_338_grande",
+          "attributes": {
+            "Tamaño": "Grande"
+          },
+          "price": 3713,
+          "originalPrice": 4368,
+          "stock": 5,
+          "sku": "COS002",
+          "available": true,
+          "specs": {
+            "Medida": "Grande"
+          },
+          "images": {
+            "cover": "assets/images/products/prod_338/cover.png",
+            "thumb": "assets/images/products/prod_338/thumb.png",
+            "gallery": []
+          }
+        }
       ]
     },
+    "images": {
+      "cover": "assets/images/products/prod_338/cover.png",
+      "thumb": "assets/images/products/prod_338/thumb.png",
+      "gallery": []
+    },
     "specs": {
-      "SKU": "COS002",
+      "SKU": "COS001-002",
       "material": "Vinilo con chifle",
       "idealFor": "Perros de todos los tamaños"
     },
@@ -10953,7 +10946,7 @@
     },
     "badge": "🎾 Juguetes",
     "brand": "Sin marca",
-    "sku": "COS002",
+    "sku": "COS001-002",
     "features": [
       "Estimula el juego",
       "Material seguro",

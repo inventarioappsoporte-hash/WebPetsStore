@@ -185,6 +185,13 @@ class VariantSelector {
       originalPriceElement.textContent = Utils.formatPrice(originalPrice);
     }
     
+    // Actualizar ahorro
+    const savingsElement = document.querySelector('.product__savings');
+    if (savingsElement && originalPrice && price) {
+      const savings = originalPrice - price;
+      savingsElement.textContent = `Ahorras ${Utils.formatPrice(savings)}`;
+    }
+    
     // Actualizar imagen principal
     const mainImage = document.querySelector('.product__image-main');
     if (mainImage && images && images.cover) {
