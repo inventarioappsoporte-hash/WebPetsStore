@@ -239,16 +239,10 @@ class VariantSelector {
   }
   
   updateGallery(galleryImages) {
-    const galleryContainer = document.querySelector('.product__gallery');
-    if (!galleryContainer) return;
-    
-    galleryContainer.innerHTML = galleryImages.map((img, index) => `
-      <img 
-        src="${img}" 
-        alt="${this.product.name} - imagen ${index + 1}"
-        class="product__gallery-item"
-        onclick="document.querySelector('.product__image-main').src = this.src">
-    `).join('');
+    // No actualizar la galería para productos con variantes
+    // La galería del producto principal se mantiene fija
+    // Solo se actualiza la imagen principal (cover)
+    return;
   }
   
   updateBuyButton() {

@@ -85,13 +85,24 @@ class ProductPage {
       .map((img, idx) => `
         <img 
           src="${img}" 
-          alt="Imagen ${idx + 1}" 
+          alt="${product.name} - Imagen ${idx + 1}" 
           class="product__gallery-img"
           onclick="document.querySelector('.product__main-image').src = this.src"
           onerror="this.src='assets/images/placeholder.svg'"
         >
       `)
       .join('');
+
+    // Agregar imagen cover al inicio de la galería para que también sea clickeable
+    const coverThumbHtml = `
+      <img 
+        src="${product.images.cover}" 
+        alt="${product.name} - Principal" 
+        class="product__gallery-img product__gallery-img--active"
+        onclick="document.querySelector('.product__main-image').src = this.src"
+        onerror="this.src='assets/images/placeholder.svg'"
+      >
+    `;
 
     container.innerHTML = `
       <div class="product__breadcrumb">
@@ -108,6 +119,7 @@ class ProductPage {
             ${video}
           </div>
           <div class="product__thumbnails">
+            ${coverThumbHtml}
             ${galleryHtml}
           </div>
         </div>
