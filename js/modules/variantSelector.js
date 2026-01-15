@@ -242,30 +242,46 @@ class VariantSelector {
     const thumbnailsContainer = document.querySelector('.product__thumbnails');
     if (!thumbnailsContainer) return;
     
-    // Combinar imágenes: cover de variante + galería del producto principal + galería de variante
+    // Usar Set para evitar duplicados (comparando por nombre de archivo sin extensión)
+    const addedImages = new Set();
     const allImages = [];
+    
+    // Función para extraer nombre base del archivo (sin extensión y sin path)
+    const getBaseName = (path) => {
+      const fileName = path.split('/').pop().toLowerCase();
+      // Remover extensión
+      return fileName.replace(/\.(jpg|jpeg|png|gif|webp|svg)$/i, '');
+    };
+    
+    // Función para agregar imagen si no es duplicada
+    const addImage = (img) => {
+      if (!img) return;
+      const baseName = getBaseName(img);
+      // Considerar "cover", "thumb", "1" como potencialmente la misma imagen
+      // Si ya tenemos cover o 1, no agregar el otro
+      const normalizedName = (baseName === 'cover' || baseName === '1' || baseName === 'thumb') 
+        ? 'main_image' 
+        : baseName;
+      
+      if (!addedImages.has(normalizedName)) {
+        addedImages.add(normalizedName);
+        allImages.push(img);
+      }
+    };
     
     // 1. Cover de la variante seleccionada (primera imagen)
     if (this.selectedVariant?.images?.cover) {
-      allImages.push(this.selectedVariant.images.cover);
+      addImage(this.selectedVariant.images.cover);
     }
     
     // 2. Galería del producto principal (las imágenes adicionales del producto)
     if (this.product.images?.gallery && this.product.images.gallery.length > 0) {
-      this.product.images.gallery.forEach(img => {
-        if (!allImages.includes(img)) {
-          allImages.push(img);
-        }
-      });
+      this.product.images.gallery.forEach(img => addImage(img));
     }
     
     // 3. Galería de la variante (si tiene imágenes adicionales diferentes)
     if (variantImages && variantImages.length > 0) {
-      variantImages.forEach(img => {
-        if (!allImages.includes(img)) {
-          allImages.push(img);
-        }
-      });
+      variantImages.forEach(img => addImage(img));
     }
     
     // Renderizar todas las miniaturas

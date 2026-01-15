@@ -81,28 +81,36 @@ class ProductPage {
       `)
       .join('');
 
-    const galleryHtml = product.images.gallery
-      .map((img, idx) => `
+    // Para productos con variantes, no renderizar miniaturas aquí
+    // El VariantSelector se encargará de eso
+    let thumbnailsHtml = '';
+    
+    if (!hasVariants) {
+      const galleryHtml = product.images.gallery
+        .map((img, idx) => `
+          <img 
+            src="${img}" 
+            alt="${product.name} - Imagen ${idx + 1}" 
+            class="product__gallery-img"
+            onclick="document.querySelector('.product__main-image').src = this.src"
+            onerror="this.src='assets/images/placeholder.svg'"
+          >
+        `)
+        .join('');
+
+      // Agregar imagen cover al inicio de la galería para que también sea clickeable
+      const coverThumbHtml = `
         <img 
-          src="${img}" 
-          alt="${product.name} - Imagen ${idx + 1}" 
-          class="product__gallery-img"
+          src="${product.images.cover}" 
+          alt="${product.name} - Principal" 
+          class="product__gallery-img product__gallery-img--active"
           onclick="document.querySelector('.product__main-image').src = this.src"
           onerror="this.src='assets/images/placeholder.svg'"
         >
-      `)
-      .join('');
-
-    // Agregar imagen cover al inicio de la galería para que también sea clickeable
-    const coverThumbHtml = `
-      <img 
-        src="${product.images.cover}" 
-        alt="${product.name} - Principal" 
-        class="product__gallery-img product__gallery-img--active"
-        onclick="document.querySelector('.product__main-image').src = this.src"
-        onerror="this.src='assets/images/placeholder.svg'"
-      >
-    `;
+      `;
+      
+      thumbnailsHtml = coverThumbHtml + galleryHtml;
+    }
 
     container.innerHTML = `
       <div class="product__breadcrumb">
@@ -119,8 +127,7 @@ class ProductPage {
             ${video}
           </div>
           <div class="product__thumbnails">
-            ${coverThumbHtml}
-            ${galleryHtml}
+            ${thumbnailsHtml}
           </div>
         </div>
 
