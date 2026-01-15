@@ -238,16 +238,42 @@ class VariantSelector {
       .trim();
   }
   
-  updateGallery(galleryImages) {
+  updateGallery(variantImages) {
     const thumbnailsContainer = document.querySelector('.product__thumbnails');
     if (!thumbnailsContainer) return;
     
-    // Actualizar miniaturas con las imágenes de la variante
-    thumbnailsContainer.innerHTML = galleryImages.map((img, index) => `
+    // Combinar imágenes: cover de variante + galería del producto principal + galería de variante
+    const allImages = [];
+    
+    // 1. Cover de la variante seleccionada (primera imagen)
+    if (this.selectedVariant?.images?.cover) {
+      allImages.push(this.selectedVariant.images.cover);
+    }
+    
+    // 2. Galería del producto principal (las imágenes adicionales del producto)
+    if (this.product.images?.gallery && this.product.images.gallery.length > 0) {
+      this.product.images.gallery.forEach(img => {
+        if (!allImages.includes(img)) {
+          allImages.push(img);
+        }
+      });
+    }
+    
+    // 3. Galería de la variante (si tiene imágenes adicionales diferentes)
+    if (variantImages && variantImages.length > 0) {
+      variantImages.forEach(img => {
+        if (!allImages.includes(img)) {
+          allImages.push(img);
+        }
+      });
+    }
+    
+    // Renderizar todas las miniaturas
+    thumbnailsContainer.innerHTML = allImages.map((img, index) => `
       <img 
         src="${img}" 
         alt="Imagen ${index + 1}"
-        class="product__gallery-img"
+        class="product__gallery-img ${index === 0 ? 'product__gallery-img--active' : ''}"
         onclick="document.querySelector('.product__main-image').src = this.src"
         onerror="this.src='assets/images/placeholder.svg'">
     `).join('');

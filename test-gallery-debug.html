@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Debug Galería - Producto 409</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; background: #1a1a1a; color: white; }
+        .gallery { display: flex; gap: 10px; flex-wrap: wrap; margin: 20px 0; }
+        .gallery img { width: 100px; height: 100px; object-fit: cover; border: 2px solid #333; }
+        .gallery img.loaded { border-color: green; }
+        .gallery img.error { border-color: red; }
+        pre { background: #333; padding: 15px; overflow: auto; max-height: 400px; }
+        h2 { color: #ff6b35; }
+    </style>
+</head>
+<body>
+    <h1>Debug Galería - Camiseta Básquet (prod_409)</h1>
+    
+    <h2>1. Datos del producto:</h2>
+    <pre id="product-data">Cargando...</pre>
+    
+    <h2>2. Imágenes del producto:</h2>
+    <pre id="images-data">Cargando...</pre>
+    
+    <h2>3. Test de carga de imágenes:</h2>
+    <div id="gallery" class="gallery"></div>
+    
+    <h2>4. Resultado:</h2>
+    <pre id="result">Esperando...</pre>
+
+    <script>
+        async function debug() {
+            const resultEl = document.getElementById('result');
+            const results = [];
+            
+            try {
+                // Cargar productos
+                const response = await fetch('data/products.json');
+                const products = await response.json();
+                
+                // Buscar producto 409
+                const product = products.find(p => p.id === 'prod_409');
+                
+                if (!product) {
+                    document.getElementById('product-data').textContent = 'Producto no encontrado!';
+                    return;
+                }
+                
+                // Mostrar datos del producto
+                document.getElementById('product-data').textContent = JSON.stringify({
+                    id: product.id,
+                    name: product.name,
+                    hasVariants: product.hasVariants
+                }, null, 2);
+                
+                // Mostrar estructura de imágenes
+                document.getElementById('images-data').textContent = JSON.stringify(product.images, null, 2);
+                
+                // Probar carga de imágenes
+                const galleryEl = document.getElementById('gallery');
+                const allImages = [
+                    { type: 'cover', url: product.images.cover },
+                    { type: 'thumb', url: product.images.thumb },
+                    ...product.images.gallery.map((url, i) => ({ type: `gallery[${i}]`, url }))
+                ];
+                
+                for (const imgData of allImages) {
+                    const img = document.createElement('img');
+                    img.src = imgData.url;
+                    img.title = `${imgData.type}: ${imgData.url}`;
+                    
+                    img.onload = () => {
+                        img.classList.add('loaded');
+                        results.push(`✅ ${imgData.type}: ${imgData.url}`);
+                        updateResults();
+                    };
+                    
+                    img.onerror = () => {
+                        img.classList.add('error');
+                        results.push(`❌ ${imgData.type}: ${imgData.url}`);
+                        updateResults();
+                    };
+                    
+                    galleryEl.appendChild(img);
+                }
+                
+                function updateResults() {
+                    resultEl.textContent = results.join('\n');
+                }
+                
+            } catch (error) {
+                document.getElementById('product-data').textContent = 'Error: ' + error.message;
+            }
+        }
+        
+        debug();
+    </script>
+</body>
+</html>
