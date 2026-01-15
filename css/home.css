@@ -286,6 +286,21 @@
   .section[data-section="top-discounts"] .carousel .card__image-wrapper {
     height: 160px;
   }
+  
+  .section[data-section="top-discounts"] .carousel .btn {
+    padding: var(--spacing-xs) var(--spacing-sm);
+    font-size: 10px;
+  }
+  
+  .section[data-section="top-discounts"] .carousel .card__actions {
+    gap: 6px;
+  }
+  
+  .section[data-section="top-discounts"] .carousel .card__actions .btn {
+    font-size: 9px;
+    padding: 6px 4px;
+    letter-spacing: 0;
+  }
 }
 
 /* ========================================

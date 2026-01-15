@@ -499,6 +499,19 @@
   font-size: 9px;
 }
 
+/* Botones más pequeños en móviles */
+@media (max-width: 480px) {
+  .card__actions {
+    gap: 6px;
+  }
+  
+  .card__actions .btn--small {
+    padding: 7px 3px;
+    font-size: 8px;
+    letter-spacing: -0.3px;
+  }
+}
+
 /* Promo Badge */
 .promo-badge {
   display: flex;
