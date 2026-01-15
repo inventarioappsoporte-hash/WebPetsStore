@@ -104,7 +104,7 @@
   },
   {
     "id": "prod_106",
-    "name": "SHAMPOO MAXIMO 250 cm3",
+    "name": "Shampoo Maximo 250 Cm3",
     "category": "higiene-cuidado",
     "subcategory": "Higiene",
     "hasVariants": true,
@@ -126,8 +126,8 @@
       "limpieza",
       "cuidado"
     ],
-    "description": "SHAMPOO MAXIMO 250 cm3",
-    "longDescription": "SHAMPOO MAXIMO 250 cm3",
+    "description": " Shampoo para mascotas. Limpieza suave y pelaje brillante.",
+    "longDescription": "Shampoo especialmente formulado para mascotas. Limpia suavemente sin irritar la piel. Deja el pelaje suave, brillante y con aroma agradable.",
     "variants": {
       "attributes": [
         {
@@ -219,7 +219,7 @@
   },
   {
     "id": "prod_134",
-    "name": "PIEDRAS ABSORSOL",
+    "name": "Piedras Absorsol",
     "category": "higiene-cuidado",
     "subcategory": "Higiene",
     "hasVariants": true,
@@ -239,8 +239,8 @@
       "limpieza",
       "cuidado"
     ],
-    "description": "PIEDRAS ABSORSOL",
-    "longDescription": "PIEDRAS ABSORSOL",
+    "description": " Piedras sanitarias para gatos. Alta absorción y control de olores.",
+    "longDescription": "Piedras sanitarias de alta calidad para gatos. Excelente capacidad de absorción y control efectivo de olores. Fáciles de limpiar y duraderas.",
     "variants": {
       "attributes": [
         {
@@ -314,7 +314,7 @@
   },
   {
     "id": "prod_139",
-    "name": "ZOOTEC PIEDRAS AGLUTINANTES LAVANDA",
+    "name": "Zootec Piedras Aglutinantes Lavanda",
     "category": "higiene-cuidado",
     "subcategory": "Higiene",
     "hasVariants": true,
@@ -336,8 +336,8 @@
       "limpieza",
       "cuidado"
     ],
-    "description": "ZOOTEC PIEDRAS AGLUTINANTES LAVANDA",
-    "longDescription": "ZOOTEC PIEDRAS AGLUTINANTES LAVANDA",
+    "description": " Piedras sanitarias para gatos. Alta absorción y control de olores.",
+    "longDescription": "Piedras sanitarias de alta calidad para gatos. Excelente capacidad de absorción y control efectivo de olores. Fáciles de limpiar y duraderas.",
     "variants": {
       "attributes": [
         {
@@ -411,7 +411,7 @@
   },
   {
     "id": "prod_140",
-    "name": "ZOOTEC PIEDRAS NATURALES",
+    "name": "Zootec Piedras Naturales",
     "category": "higiene-cuidado",
     "subcategory": "Higiene",
     "hasVariants": true,
@@ -432,8 +432,8 @@
       "limpieza",
       "cuidado"
     ],
-    "description": "ZOOTEC PIEDRAS NATURALES",
-    "longDescription": "ZOOTEC PIEDRAS NATURALES",
+    "description": " Piedras sanitarias para gatos. Alta absorción y control de olores.",
+    "longDescription": "Piedras sanitarias de alta calidad para gatos. Excelente capacidad de absorción y control efectivo de olores. Fáciles de limpiar y duraderas.",
     "variants": {
       "attributes": [
         {
@@ -789,7 +789,7 @@
   },
   {
     "id": "prod_148",
-    "name": "MOISES TUNEL ECONOMICO",
+    "name": "Moises Tunel Economico",
     "category": "casa-descanso",
     "subcategory": "Colchonetas",
     "hasVariants": true,
@@ -810,8 +810,8 @@
       "cama",
       "confort"
     ],
-    "description": "MOISES TUNEL ECONOMICO",
-    "longDescription": "MOISES TUNEL ECONOMICO",
+    "description": " Moisés acogedor para mascotas. Bordes elevados para mayor seguridad.",
+    "longDescription": "Moisés con diseño acogedor y bordes elevados que brindan sensación de seguridad. Interior suave y cómodo para el descanso de tu mascota. Perfecto para perros y gatos que buscan un lugar protegido.",
     "variants": {
       "attributes": [
         {
@@ -1167,7 +1167,7 @@
   },
   {
     "id": "prod_152",
-    "name": "MOISES ECONOMICO",
+    "name": "Moises Economico",
     "category": "casa-descanso",
     "subcategory": "Colchonetas",
     "hasVariants": true,
@@ -1187,8 +1187,8 @@
       "cama",
       "confort"
     ],
-    "description": "N°1 (35 CM) , N°2 (40 CM)\r\nN°3 (45 CM) , N°4 (50 CM)",
-    "longDescription": "N°1 (35 CM) , N°2 (40 CM)\r\nN°3 (45 CM) , N°4 (50 CM)",
+    "description": " Moisés acogedor para mascotas. Bordes elevados para mayor seguridad.",
+    "longDescription": "Moisés con diseño acogedor y bordes elevados que brindan sensación de seguridad. Interior suave y cómodo para el descanso de tu mascota. Perfecto para perros y gatos que buscan un lugar protegido.",
     "variants": {
       "attributes": [
         {
@@ -1412,7 +1412,7 @@
   },
   {
     "id": "prod_156",
-    "name": "MOISES LUNARES",
+    "name": "Moises Lunares",
     "category": "casa-descanso",
     "subcategory": "Colchonetas",
     "hasVariants": true,
@@ -1432,8 +1432,8 @@
       "cama",
       "confort"
     ],
-    "description": "N°1 (40 CM), N°2 (45 CM) , N°2 (50 CM)",
-    "longDescription": "N°1 (40 CM), N°2 (45 CM) , N°2 (50 CM)",
+    "description": " Moisés acogedor para mascotas. Bordes elevados para mayor seguridad.",
+    "longDescription": "Moisés con diseño acogedor y bordes elevados que brindan sensación de seguridad. Interior suave y cómodo para el descanso de tu mascota. Perfecto para perros y gatos que buscan un lugar protegido.",
     "variants": {
       "attributes": [
         {
@@ -1525,7 +1525,7 @@
   },
   {
     "id": "prod_158",
-    "name": "MOISES MOÑO PREMIUN",
+    "name": "Moises Moño Premiun",
     "category": "casa-descanso",
     "subcategory": "Colchonetas",
     "hasVariants": true,
@@ -1546,8 +1546,8 @@
       "cama",
       "confort"
     ],
-    "description": "N°1 (35 CM) , N°2 (40 CM)\r\nN°3 (45 CM) , N°4 (50 CM)",
-    "longDescription": "N°1 (35 CM) , N°2 (40 CM)\r\nN°3 (45 CM) , N°4 (50 CM)",
+    "description": " Moisés acogedor para mascotas. Bordes elevados para mayor seguridad.",
+    "longDescription": "Moisés con diseño acogedor y bordes elevados que brindan sensación de seguridad. Interior suave y cómodo para el descanso de tu mascota. Perfecto para perros y gatos que buscan un lugar protegido.",
     "variants": {
       "attributes": [
         {
@@ -1657,7 +1657,7 @@
   },
   {
     "id": "prod_160",
-    "name": "PUFF UNICO TALLE",
+    "name": "Puff Unico Talle",
     "category": "casa-descanso",
     "subcategory": "Colchonetas",
     "hasVariants": true,
@@ -1678,8 +1678,8 @@
       "cama",
       "confort"
     ],
-    "description": "PUFF UNICO TALLE",
-    "longDescription": "PUFF UNICO TALLE",
+    "description": " Colchón cómodo para tu mascota. Descanso de calidad garantizado.",
+    "longDescription": "Colchón de alta calidad diseñado para brindar el máximo confort a tu mascota. Relleno suave y acolchado que proporciona soporte óptimo. Fácil de limpiar y mantener. Ideal para el descanso diario.",
     "variants": {
       "attributes": [
         {
@@ -1753,7 +1753,7 @@
   },
   {
     "id": "prod_161",
-    "name": "PUFF UNICO TALLE SOFF",
+    "name": "Puff Unico Talle Soff",
     "category": "casa-descanso",
     "subcategory": "Colchonetas",
     "price": 29750,
@@ -1775,8 +1775,8 @@
       "cama",
       "moises"
     ],
-    "description": "PUFF UNICO TALLE SOFF",
-    "longDescription": "PUFF UNICO TALLE SOFF",
+    "description": " Colchón cómodo para tu mascota. Descanso de calidad garantizado.",
+    "longDescription": "Colchón de alta calidad diseñado para brindar el máximo confort a tu mascota. Relleno suave y acolchado que proporciona soporte óptimo. Fácil de limpiar y mantener. Ideal para el descanso diario.",
     "images": {
       "cover": "assets/images/products/prod_161/cover.jpg",
       "thumb": "assets/images/products/prod_161/thumb.jpg",
@@ -1803,7 +1803,7 @@
   },
   {
     "id": "prod_162",
-    "name": "ALMOHADON DONA",
+    "name": "Almohadon Dona",
     "category": "casa-descanso",
     "subcategory": "Colchonetas",
     "price": 9605,
@@ -1823,8 +1823,8 @@
       "cama",
       "moises"
     ],
-    "description": "ALMOHADON DONA",
-    "longDescription": "ALMOHADON DONA",
+    "description": " Colchón cómodo para tu mascota. Descanso de calidad garantizado.",
+    "longDescription": "Colchón de alta calidad diseñado para brindar el máximo confort a tu mascota. Relleno suave y acolchado que proporciona soporte óptimo. Fácil de limpiar y mantener. Ideal para el descanso diario.",
     "images": {
       "cover": "assets/images/products/prod_162/cover.jpg",
       "thumb": "assets/images/products/prod_162/thumb.jpg",
@@ -1851,7 +1851,7 @@
   },
   {
     "id": "prod_164",
-    "name": "BOLSO FANTASIA",
+    "name": "Bolso Fantasia",
     "category": "casa-descanso",
     "subcategory": "Bolsos",
     "hasVariants": true,
@@ -1871,8 +1871,8 @@
       "cama",
       "confort"
     ],
-    "description": "BOLSO FANTASIA",
-    "longDescription": "BOLSO FANTASIA",
+    "description": " Bolso transportador para mascotas. Cómodo y seguro para viajes.",
+    "longDescription": "Bolso transportador diseñado para llevar a tu mascota con comodidad y seguridad. Ventilación adecuada y espacio confortable. Ideal para viajes y visitas al veterinario.",
     "variants": {
       "attributes": [
         {
@@ -2043,7 +2043,7 @@
   },
   {
     "id": "prod_168",
-    "name": "COLCHONETA MALETIN MOVIL",
+    "name": "Colchoneta Maletin Movil",
     "category": "casa-descanso",
     "subcategory": "Casitas",
     "price": 34000,
@@ -2064,8 +2064,8 @@
       "refugio",
       "bolso"
     ],
-    "description": "COLCHONETA MALETIN MOVIL",
-    "longDescription": "COLCHONETA MALETIN MOVIL",
+    "description": " Colchón cómodo para tu mascota. Descanso de calidad garantizado.",
+    "longDescription": "Colchón de alta calidad diseñado para brindar el máximo confort a tu mascota. Relleno suave y acolchado que proporciona soporte óptimo. Fácil de limpiar y mantener. Ideal para el descanso diario.",
     "images": {
       "cover": "assets/images/products/prod_168/cover.jpg",
       "thumb": "assets/images/products/prod_168/thumb.jpg",
@@ -2092,7 +2092,7 @@
   },
   {
     "id": "prod_169",
-    "name": "CANASTO TRASPORTADOR FANTASIA",
+    "name": "Canasto Trasportador Fantasia",
     "category": "casa-descanso",
     "subcategory": "Casitas",
     "price": 42500,
@@ -2113,8 +2113,8 @@
       "refugio",
       "bolso"
     ],
-    "description": "CANASTO TRASPORTADOR FANTASIA",
-    "longDescription": "CANASTO TRASPORTADOR FANTASIA",
+    "description": " Bolso transportador para mascotas. Cómodo y seguro para viajes.",
+    "longDescription": "Bolso transportador diseñado para llevar a tu mascota con comodidad y seguridad. Ventilación adecuada y espacio confortable. Ideal para viajes y visitas al veterinario.",
     "images": {
       "cover": "assets/images/products/prod_169/cover.jpg",
       "thumb": "assets/images/products/prod_169/thumb.jpg",
@@ -2141,7 +2141,7 @@
   },
   {
     "id": "prod_170",
-    "name": "CASITA FELIZ",
+    "name": "Casita Feliz",
     "category": "casa-descanso",
     "subcategory": "Bolsos",
     "hasVariants": true,
@@ -2161,8 +2161,8 @@
       "cama",
       "confort"
     ],
-    "description": "CASITA FELIZ",
-    "longDescription": "CASITA FELIZ",
+    "description": " Casita acogedora para tu mascota. Su propio espacio de descanso.",
+    "longDescription": "Casita diseñada para brindar a tu mascota su propio espacio privado y acogedor. Interior suave y cómodo. Perfecta para gatos y perros pequeños que buscan un refugio.",
     "variants": {
       "attributes": [
         {
@@ -2482,7 +2482,7 @@
   },
   {
     "id": "prod_176",
-    "name": "COLCHONETA PREMIUN DOBLE LONA 4 PATAS",
+    "name": "Colchoneta Premiun Doble Lona 4 Patas",
     "category": "casa-descanso",
     "subcategory": "Colchonetas",
     "hasVariants": true,
@@ -2505,8 +2505,8 @@
       "cama",
       "confort"
     ],
-    "description": "N°1 (50 X 50 CM) , N°2 (50 X 65 CM)\r\nN°3 (60 X 80 CM) , N°4 (70 X 90 CM)\r\nN°5 (80 X 90 CM)",
-    "longDescription": "N°1 (50 X 50 CM) , N°2 (50 X 65 CM)\r\nN°3 (60 X 80 CM) , N°4 (70 X 90 CM)\r\nN°5 (80 X 90 CM)",
+    "description": " Colchón cómodo para tu mascota. Descanso de calidad garantizado.",
+    "longDescription": "Colchón de alta calidad diseñado para brindar el máximo confort a tu mascota. Relleno suave y acolchado que proporciona soporte óptimo. Fácil de limpiar y mantener. Ideal para el descanso diario.",
     "variants": {
       "attributes": [
         {
@@ -4730,7 +4730,7 @@
   },
   {
     "id": "prod_215",
-    "name": "VAINILLA - AGATAR",
+    "name": "Vainilla - Agatar",
     "category": "casa-descanso",
     "subcategory": "Rascadores",
     "hasVariants": true,
@@ -4750,8 +4750,8 @@
       "cama",
       "confort"
     ],
-    "description": "VAINILLA  - AGATAR",
-    "longDescription": "VAINILLA  - AGATAR",
+    "description": " Rascador para gatos. Mantiene las uñas sanas y protege tus muebles.",
+    "longDescription": "Rascador de alta calidad para gatos. Permite que tu felino afile sus uñas naturalmente. Protege tus muebles y estimula el ejercicio.",
     "variants": {
       "attributes": [
         {
@@ -4825,7 +4825,7 @@
   },
   {
     "id": "prod_216",
-    "name": "ALSINA - AGATAR",
+    "name": "Alsina - Agatar",
     "category": "casa-descanso",
     "subcategory": "Rascadores",
     "hasVariants": true,
@@ -4845,8 +4845,8 @@
       "cama",
       "confort"
     ],
-    "description": "ALSINA - AGATAR",
-    "longDescription": "ALSINA - AGATAR",
+    "description": " Rascador para gatos. Mantiene las uñas sanas y protege tus muebles.",
+    "longDescription": "Rascador de alta calidad para gatos. Permite que tu felino afile sus uñas naturalmente. Protege tus muebles y estimula el ejercicio.",
     "variants": {
       "attributes": [
         {
@@ -4938,7 +4938,7 @@
   },
   {
     "id": "prod_217",
-    "name": "AGATAR - CARA DE GATO",
+    "name": "Agatar - Cara De Gato",
     "category": "casa-descanso",
     "subcategory": "Rascadores",
     "hasVariants": true,
@@ -4959,8 +4959,8 @@
       "cama",
       "confort"
     ],
-    "description": "AGATAR - CARA DE GATO",
-    "longDescription": "AGATAR - CARA DE GATO",
+    "description": " Rascador para gatos. Mantiene las uñas sanas y protege tus muebles.",
+    "longDescription": "Rascador de alta calidad para gatos. Permite que tu felino afile sus uñas naturalmente. Protege tus muebles y estimula el ejercicio.",
     "variants": {
       "attributes": [
         {
@@ -5821,7 +5821,7 @@
   },
   {
     "id": "prod_233",
-    "name": "CAJA TRANSPORTADORA - AGATAR",
+    "name": "Caja Transportadora - Agatar",
     "category": "casa-descanso",
     "subcategory": "Casitas",
     "price": 7225,
@@ -5842,8 +5842,8 @@
       "refugio",
       "bolso"
     ],
-    "description": "CAJA TRANSPORTADORA - AGATAR",
-    "longDescription": "CAJA TRANSPORTADORA - AGATAR",
+    "description": " Rascador para gatos. Mantiene las uñas sanas y protege tus muebles.",
+    "longDescription": "Rascador de alta calidad para gatos. Permite que tu felino afile sus uñas naturalmente. Protege tus muebles y estimula el ejercicio.",
     "images": {
       "cover": "assets/images/products/prod_233/cover.jpg",
       "thumb": "assets/images/products/prod_233/thumb.jpg",
@@ -23243,7 +23243,7 @@
   },
   {
     "id": "prod_763",
-    "name": "PALITAS \"S\" COLORES SURTIDOS",
+    "name": "Palitas \"s\" Colores Surtidos",
     "category": "higiene-cuidado",
     "subcategory": "Higiene",
     "price": 2125,
@@ -23264,8 +23264,8 @@
       "cuidado",
       "aseo"
     ],
-    "description": "PALITAS \"S\" COLORES SURTIDOS",
-    "longDescription": "PALITAS \"S\" COLORES SURTIDOS",
+    "description": " Producto de higiene para mascotas. Cuidado y limpieza garantizada.",
+    "longDescription": "Producto de higiene diseñado para el cuidado de tu mascota. Fórmula segura y efectiva.",
     "images": {
       "cover": "assets/images/products/prod_763/cover.jpg",
       "thumb": "assets/images/products/prod_763/thumb.jpg",
