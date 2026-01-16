@@ -27365,15 +27365,18 @@
       "con",
       "rascador"
     ],
-    "description": "Dimensiones: 50X28X42",
-    "longDescription": "CASITA PARA GATO CON RASCADOR. Dimensiones: 50X28X42. Producto de alta calidad para tu mascota.",
+    "description": "Casita para gato con rascador integrado. Espacio acogedor y zona de juego en un solo mueble.",
+    "longDescription": "Casita para gato con rascador integrado. Ofrece un refugio cómodo y privado para tu felino, con área de rascado incorporada para mantener sus uñas saludables. Fabricada con materiales resistentes y duraderos. Ideal para gatos que buscan su propio espacio de descanso y entretenimiento.",
     "images": {
       "cover": "assets/images/products/prod_868/cover.jpg",
       "thumb": "assets/images/products/prod_868/thumb.jpg",
       "gallery": []
     },
     "specs": {
-      "SKU": "CAS002"
+      "SKU": "CAS002",
+      "Largo": "50 cm",
+      "Ancho": "28 cm",
+      "Alto": "42 cm"
     },
     "shipping": {
       "free": true,
@@ -27381,7 +27384,14 @@
     },
     "badge": "🐾 Bolsos y Casitas",
     "brand": "Sin marca",
-    "sku": "CAS002"
+    "sku": "CAS002",
+    "features": [
+      "Rascador integrado",
+      "Espacio amplio interior",
+      "Materiales resistentes",
+      "Fácil de armar",
+      "Base estable"
+    ]
   },
   {
     "id": "prod_869",
@@ -27404,15 +27414,18 @@
       "con",
       "pompones"
     ],
-    "description": "Dimensiones: 30*36*38",
-    "longDescription": "RASCADOR DOBLE POSTE CON POMPONES. Dimensiones: 30*36*38. Producto de alta calidad para tu mascota.",
+    "description": "Rascador doble poste con pompones colgantes. Diversión y cuidado de uñas para tu gato.",
+    "longDescription": "Rascador de doble poste con pompones colgantes para gatos. Diseño atractivo que combina el cuidado de las uñas con el entretenimiento. Los pompones estimulan el instinto de caza mientras tu gato ejercita sus garras. Estructura estable con base firme.",
     "images": {
       "cover": "assets/images/products/prod_869/cover.jpg",
       "thumb": "assets/images/products/prod_869/thumb.jpg",
       "gallery": []
     },
     "specs": {
-      "SKU": "RAS002"
+      "SKU": "RAS002",
+      "Largo": "30 cm",
+      "Ancho": "36 cm",
+      "Alto": "38 cm"
     },
     "shipping": {
       "free": true,
@@ -27420,7 +27433,14 @@
     },
     "badge": "🐾 Rascadores",
     "brand": "Sin marca",
-    "sku": "RAS002"
+    "sku": "RAS002",
+    "features": [
+      "Doble poste de rascado",
+      "Pompones colgantes",
+      "Base estable",
+      "Sisal natural",
+      "Estimula el juego"
+    ]
   },
   {
     "id": "prod_870",
@@ -27445,15 +27465,18 @@
       "tres",
       "niveles"
     ],
-    "description": "Dimensiones: 40*34*47",
-    "longDescription": "RASCADOR CAMA TRES POSTES CON TRES NIVELES. Dimensiones: 40*34*47. Producto de alta calidad para tu mascota.",
+    "description": "Rascador cama de tres postes con tres niveles. Centro de actividades completo para gatos.",
+    "longDescription": "Rascador cama de tres postes con tres niveles para gatos. Torre de actividades que ofrece múltiples zonas de rascado, descanso y observación. Perfecto para hogares con uno o más gatos. Estructura robusta con plataformas acolchadas para mayor comodidad.",
     "images": {
       "cover": "assets/images/products/prod_870/cover.jpg",
       "thumb": "assets/images/products/prod_870/thumb.jpg",
       "gallery": []
     },
     "specs": {
-      "SKU": "RAS003"
+      "SKU": "RAS003",
+      "Largo": "40 cm",
+      "Ancho": "34 cm",
+      "Alto": "47 cm"
     },
     "shipping": {
       "free": true,
@@ -27461,7 +27484,14 @@
     },
     "badge": "🐾 Rascadores",
     "brand": "Sin marca",
-    "sku": "RAS003"
+    "sku": "RAS003",
+    "features": [
+      "Tres niveles",
+      "Tres postes de rascado",
+      "Plataformas acolchadas",
+      "Estructura robusta",
+      "Ideal para múltiples gatos"
+    ]
   },
   {
     "id": "prod_871",
@@ -27481,8 +27511,8 @@
       "juego",
       "diamante"
     ],
-    "description": "Juego interactivo para gatos diseño diamante",
-    "longDescription": "JUEGO DIAMANTE. Juego interactivo para gatos diseño diamante. Producto de alta calidad para tu mascota.",
+    "description": "Juego Diamante interactivo para gatos. Diseño único que estimula la curiosidad felina.",
+    "longDescription": "Juego Diamante interactivo para gatos. Juguete con diseño geométrico único que captura la atención de tu mascota. Estimula el instinto de caza y mantiene a tu gato entretenido por horas. Fabricado con materiales seguros y duraderos.",
     "images": {
       "cover": "assets/images/products/prod_871/cover.jpg",
       "thumb": "assets/images/products/prod_871/thumb.jpg",
@@ -27497,7 +27527,14 @@
     },
     "badge": "🐾 Juguetes",
     "brand": "Sin marca",
-    "sku": "JUE002"
+    "sku": "JUE002",
+    "features": [
+      "Diseño diamante único",
+      "Estimula la curiosidad",
+      "Materiales seguros",
+      "Duradero",
+      "Entretenimiento prolongado"
+    ]
   },
   {
     "id": "prod_872",
@@ -27517,8 +27554,8 @@
       "juego",
       "infinito"
     ],
-    "description": "Juego interactivo para gatos diseño infinito",
-    "longDescription": "JUEGO INFINITO. Juego interactivo para gatos diseño infinito. Producto de alta calidad para tu mascota.",
+    "description": "Juego Infinito interactivo para gatos. Circuito sin fin para horas de diversión.",
+    "longDescription": "Juego Infinito interactivo para gatos. Diseño de circuito continuo que mantiene a tu gato activo y entretenido. La forma infinita permite que las pelotas rueden sin parar, estimulando el instinto de caza. Ideal para gatos de todas las edades.",
     "images": {
       "cover": "assets/images/products/prod_872/cover.jpg",
       "thumb": "assets/images/products/prod_872/thumb.jpg",
@@ -27533,7 +27570,14 @@
     },
     "badge": "🐾 Juguetes",
     "brand": "Sin marca",
-    "sku": "JUE003"
+    "sku": "JUE003",
+    "features": [
+      "Diseño circuito infinito",
+      "Pelotas incluidas",
+      "Estimula el ejercicio",
+      "Para todas las edades",
+      "Fácil de limpiar"
+    ]
   },
   {
     "id": "prod_873",
@@ -27555,8 +27599,8 @@
       "con",
       "pluma"
     ],
-    "description": "Rascador de madera con pluma para gatos",
-    "longDescription": "RASCADOR DE MADERA CON PLUMA. Rascador de madera con pluma para gatos. Producto de alta calidad para tu mascota.",
+    "description": "Rascador de madera con pluma. Combinación perfecta de rascado y juego.",
+    "longDescription": "Rascador de madera con pluma para gatos. Elegante diseño en madera natural con pluma colgante que atrae la atención de tu mascota. Permite el cuidado de las uñas mientras estimula el juego activo. Acabado de calidad que complementa cualquier decoración.",
     "images": {
       "cover": "assets/images/products/prod_873/cover.jpg",
       "thumb": "assets/images/products/prod_873/thumb.jpg",
@@ -27571,7 +27615,14 @@
     },
     "badge": "🐾 Juguetes",
     "brand": "Sin marca",
-    "sku": "RAS016"
+    "sku": "RAS016",
+    "features": [
+      "Madera natural",
+      "Pluma colgante",
+      "Diseño elegante",
+      "Doble función",
+      "Acabado de calidad"
+    ]
   },
   {
     "id": "prod_874",
@@ -27592,15 +27643,16 @@
       "hilo",
       "sisal"
     ],
-    "description": "Dimensiones: 25 cm",
-    "longDescription": "RATA HILO SISAL. Dimensiones: 25 cm. Producto de alta calidad para tu mascota.",
+    "description": "Rata de hilo sisal de 25cm. Juguete natural que despierta el instinto cazador.",
+    "longDescription": "Rata de hilo sisal de 25cm para gatos. Juguete artesanal elaborado con sisal natural que atrae a los felinos por su textura y forma realista. Estimula el instinto de caza y proporciona entretenimiento seguro. Tamaño ideal para atrapar y morder.",
     "images": {
       "cover": "assets/images/products/prod_874/cover.jpg",
       "thumb": "assets/images/products/prod_874/thumb.jpg",
       "gallery": []
     },
     "specs": {
-      "SKU": "RAT002"
+      "SKU": "RAT002",
+      "Largo": "25 cm"
     },
     "shipping": {
       "free": false,
@@ -27608,7 +27660,14 @@
     },
     "badge": "🐾 Juguetes",
     "brand": "Sin marca",
-    "sku": "RAT002"
+    "sku": "RAT002",
+    "features": [
+      "Sisal 100% natural",
+      "Forma realista",
+      "Estimula instinto de caza",
+      "Seguro para morder",
+      "Artesanal"
+    ]
   },
   {
     "id": "prod_875",
@@ -27628,15 +27687,18 @@
       "cubo",
       "interactivo"
     ],
-    "description": "Dimensiones: Largo 40cm, Ancho 40cm, Alto 40cm",
-    "longDescription": "Cubo interactivo. Dimensiones: Largo 40cm, Ancho 40cm, Alto 40cm. Producto de alta calidad para tu mascota.",
+    "description": "Cubo interactivo 40x40x40cm. Espacio de juego y escondite para tu gato.",
+    "longDescription": "Cubo interactivo de 40x40x40cm para gatos. Estructura versátil que funciona como zona de juego, escondite y área de descanso. Múltiples aberturas para entrar, salir y acechar. Estimula la actividad física y mental de tu mascota.",
     "images": {
       "cover": "assets/images/products/prod_875/cover.jpg",
       "thumb": "assets/images/products/prod_875/thumb.jpg",
       "gallery": []
     },
     "specs": {
-      "SKU": "CUB001"
+      "SKU": "CUB001",
+      "Largo": "40 cm",
+      "Ancho": "40 cm",
+      "Alto": "40 cm"
     },
     "shipping": {
       "free": true,
@@ -27644,7 +27706,14 @@
     },
     "badge": "🐾 Juguetes",
     "brand": "Sin marca",
-    "sku": "CUB001"
+    "sku": "CUB001",
+    "features": [
+      "Múltiples aberturas",
+      "Espacio amplio",
+      "Plegable",
+      "Estimula el juego",
+      "Fácil de guardar"
+    ]
   },
   {
     "id": "prod_876",
@@ -27669,15 +27738,17 @@
       "pelotas",
       "pluma"
     ],
-    "description": "Dimensiones: 23,5*9,4",
-    "longDescription": "JUGUETE INTERACTIVO Y COMEDERO REGULADOR CON PELOTAS Y PLUMA. Dimensiones: 23,5*9,4. Producto de alta calidad para tu mascota.",
+    "description": "Juguete interactivo y comedero regulador con pelotas y pluma. Alimentación divertida.",
+    "longDescription": "Juguete interactivo y comedero regulador con pelotas y pluma para gatos. Innovador diseño que combina la alimentación con el juego. Regula la cantidad de comida mientras tu gato se divierte. Incluye pelotas y pluma para mayor entretenimiento.",
     "images": {
       "cover": "assets/images/products/prod_876/cover.jpg",
       "thumb": "assets/images/products/prod_876/thumb.jpg",
       "gallery": []
     },
     "specs": {
-      "SKU": "JUG014"
+      "SKU": "JUG014",
+      "Largo": "23.5 cm",
+      "Ancho": "9.4 cm"
     },
     "shipping": {
       "free": false,
@@ -27685,7 +27756,14 @@
     },
     "badge": "🐾 Juguetes",
     "brand": "Sin marca",
-    "sku": "JUG014"
+    "sku": "JUG014",
+    "features": [
+      "Comedero regulador",
+      "Pelotas incluidas",
+      "Pluma incluida",
+      "Alimentación lenta",
+      "Reduce ansiedad"
+    ]
   },
   {
     "id": "prod_877",
@@ -27706,15 +27784,16 @@
       "interactivo",
       "piso"
     ],
-    "description": "Juguete interactivo de 4 pisos para gatos",
-    "longDescription": "JUGUETE INTERACTIVO 4 PISO. Juguete interactivo de 4 pisos para gatos. Producto de alta calidad para tu mascota.",
+    "description": "Juguete interactivo de 4 pisos. Torre de diversión con múltiples niveles de juego.",
+    "longDescription": "Juguete interactivo de 4 pisos para gatos. Torre de entretenimiento con cuatro niveles de juego que mantienen a tu gato activo y estimulado. Las pelotas se mueven entre los pisos creando un juego dinámico e impredecible.",
     "images": {
       "cover": "assets/images/products/prod_877/cover.jpg",
       "thumb": "assets/images/products/prod_877/thumb.jpg",
       "gallery": []
     },
     "specs": {
-      "SKU": "JUG015"
+      "SKU": "JUG015",
+      "Niveles": "4 pisos"
     },
     "shipping": {
       "free": true,
@@ -27722,7 +27801,14 @@
     },
     "badge": "🐾 Juguetes",
     "brand": "Sin marca",
-    "sku": "JUG015"
+    "sku": "JUG015",
+    "features": [
+      "4 niveles de juego",
+      "Pelotas móviles",
+      "Estimula reflejos",
+      "Base antideslizante",
+      "Diseño compacto"
+    ]
   },
   {
     "id": "prod_878",
@@ -27746,15 +27832,18 @@
       "pelotas",
       "plumas"
     ],
-    "description": "Juego didáctico de 4 pisos con 6 pelotas y 2 plumas",
-    "longDescription": "JUEGO DIDACTICO 4 PISOS C/6 PELOTAS 2 PLUMAS. Juego didáctico de 4 pisos con 6 pelotas y 2 plumas. Producto de alta calidad para tu mascota.",
+    "description": "Juego didáctico 4 pisos con 6 pelotas y 2 plumas. Máxima diversión garantizada.",
+    "longDescription": "Juego didáctico de 4 pisos con 6 pelotas y 2 plumas para gatos. Set completo de entretenimiento que ofrece múltiples formas de juego. Los 4 niveles con pelotas estimulan la persecución mientras las plumas despiertan el instinto cazador.",
     "images": {
       "cover": "assets/images/products/prod_878/cover.jpg",
       "thumb": "assets/images/products/prod_878/thumb.jpg",
       "gallery": []
     },
     "specs": {
-      "SKU": "JUE004"
+      "SKU": "JUE004",
+      "Niveles": "4 pisos",
+      "Pelotas": "6 unidades",
+      "Plumas": "2 unidades"
     },
     "shipping": {
       "free": true,
@@ -27762,7 +27851,14 @@
     },
     "badge": "🐾 Juguetes",
     "brand": "Sin marca",
-    "sku": "JUE004"
+    "sku": "JUE004",
+    "features": [
+      "4 pisos interactivos",
+      "6 pelotas incluidas",
+      "2 plumas incluidas",
+      "Estimulación completa",
+      "Horas de diversión"
+    ]
   },
   {
     "id": "prod_879",
@@ -27783,15 +27879,17 @@
       "gato",
       "15cm"
     ],
-    "description": "Dimensiones: 6,5*15CM",
-    "longDescription": "JUGUETE GATO 15CM. Dimensiones: 6,5*15CM. Producto de alta calidad para tu mascota.",
+    "description": "Juguete para gato de 15cm. Tamaño perfecto para atrapar y jugar.",
+    "longDescription": "Juguete para gato de 15cm. Diseño compacto ideal para que tu gato lo atrape, muerda y lance. Tamaño perfecto para el juego activo. Materiales seguros y resistentes para uso prolongado.",
     "images": {
       "cover": "assets/images/products/prod_879/cover.jpg",
       "thumb": "assets/images/products/prod_879/thumb.jpg",
       "gallery": []
     },
     "specs": {
-      "SKU": "JUG016"
+      "SKU": "JUG016",
+      "Diámetro": "6.5 cm",
+      "Largo": "15 cm"
     },
     "shipping": {
       "free": false,
@@ -27799,7 +27897,14 @@
     },
     "badge": "🐾 Juguetes",
     "brand": "Sin marca",
-    "sku": "JUG016"
+    "sku": "JUG016",
+    "features": [
+      "Tamaño ideal",
+      "Fácil de atrapar",
+      "Materiales seguros",
+      "Resistente",
+      "Estimula el juego"
+    ]
   },
   {
     "id": "prod_880",
@@ -27820,15 +27925,17 @@
       "gato",
       "18cm"
     ],
-    "description": "Dimensiones: 6,5*18CM",
-    "longDescription": "JUGUETE GATO 18CM. Dimensiones: 6,5*18CM. Producto de alta calidad para tu mascota.",
+    "description": "Juguete para gato de 18cm. Mayor tamaño para más diversión.",
+    "longDescription": "Juguete para gato de 18cm. Versión más grande para gatos que prefieren juguetes de mayor tamaño. Perfecto para abrazar, morder y patear. Materiales de calidad que resisten el juego intenso.",
     "images": {
       "cover": "assets/images/products/prod_880/cover.jpg",
       "thumb": "assets/images/products/prod_880/thumb.jpg",
       "gallery": []
     },
     "specs": {
-      "SKU": "JUG019"
+      "SKU": "JUG019",
+      "Diámetro": "6.5 cm",
+      "Largo": "18 cm"
     },
     "shipping": {
       "free": false,
@@ -27836,7 +27943,14 @@
     },
     "badge": "🐾 Juguetes",
     "brand": "Sin marca",
-    "sku": "JUG019"
+    "sku": "JUG019",
+    "features": [
+      "Tamaño grande",
+      "Ideal para abrazar",
+      "Resistente al juego",
+      "Materiales de calidad",
+      "Duradero"
+    ]
   },
   {
     "id": "prod_881",
@@ -27859,15 +27973,18 @@
       "para",
       "gato"
     ],
-    "description": "Dimensiones: 10*10*13CM",
-    "longDescription": "JUGUETE Y PORTA ALIMENTO PARA GATO. Dimensiones: 10*10*13CM. Producto de alta calidad para tu mascota.",
+    "description": "Juguete y porta alimento para gato. Dispensador interactivo que estimula la mente.",
+    "longDescription": "Juguete y porta alimento para gato. Dispensador interactivo que libera premios mientras tu gato juega. Estimula la actividad mental y física, reduciendo el aburrimiento. Ideal para alimentación lenta y enriquecimiento ambiental.",
     "images": {
       "cover": "assets/images/products/prod_881/cover.jpg",
       "thumb": "assets/images/products/prod_881/thumb.jpg",
       "gallery": []
     },
     "specs": {
-      "SKU": "JUG017"
+      "SKU": "JUG017",
+      "Largo": "10 cm",
+      "Ancho": "10 cm",
+      "Alto": "13 cm"
     },
     "shipping": {
       "free": false,
@@ -27875,7 +27992,14 @@
     },
     "badge": "🐾 Juguetes",
     "brand": "Sin marca",
-    "sku": "JUG017"
+    "sku": "JUG017",
+    "features": [
+      "Dispensador de premios",
+      "Alimentación lenta",
+      "Estimulación mental",
+      "Reduce aburrimiento",
+      "Fácil de rellenar"
+    ]
   },
   {
     "id": "prod_882",
@@ -27901,15 +28025,17 @@
       "forma",
       "gato"
     ],
-    "description": "Dimensiones: 7*9cm",
-    "longDescription": "Juguete vaivén con varita y pluma base forma de gato. Dimensiones: 7*9cm. Producto de alta calidad para tu mascota.",
+    "description": "Juguete vaivén con varita y pluma, base forma de gato. Movimiento hipnótico.",
+    "longDescription": "Juguete vaivén con varita y pluma con base en forma de gato. El movimiento oscilante de la pluma captura la atención de tu mascota creando un juego hipnótico. Base con diseño decorativo de gato que complementa cualquier espacio.",
     "images": {
       "cover": "assets/images/products/prod_882/cover.jpg",
       "thumb": "assets/images/products/prod_882/thumb.jpg",
       "gallery": []
     },
     "specs": {
-      "SKU": "JUG018"
+      "SKU": "JUG018",
+      "Diámetro": "7 cm",
+      "Alto": "9 cm"
     },
     "shipping": {
       "free": false,
@@ -27917,7 +28043,14 @@
     },
     "badge": "🐾 Juguetes",
     "brand": "Sin marca",
-    "sku": "JUG018"
+    "sku": "JUG018",
+    "features": [
+      "Movimiento vaivén",
+      "Pluma atractiva",
+      "Base decorativa",
+      "Juego autónomo",
+      "Diseño elegante"
+    ]
   },
   {
     "id": "prod_883",
@@ -27938,8 +28071,8 @@
       "volador",
       "flappy"
     ],
-    "description": "Pájaro volador interactivo para gatos",
-    "longDescription": "PAJARO VOLADOR FLAPPY. Pájaro volador interactivo para gatos. Producto de alta calidad para tu mascota.",
+    "description": "Pájaro volador Flappy. Simula vuelo real para despertar el instinto cazador.",
+    "longDescription": "Pájaro volador Flappy para gatos. Juguete interactivo que simula el vuelo de un pájaro real. El movimiento de las alas despierta el instinto cazador de tu felino proporcionando ejercicio y entretenimiento. Ideal para gatos de interior.",
     "images": {
       "cover": "assets/images/products/prod_883/cover.jpg",
       "thumb": "assets/images/products/prod_883/thumb.jpg",
@@ -27954,7 +28087,14 @@
     },
     "badge": "🐾 Juguetes",
     "brand": "Sin marca",
-    "sku": "PAJ001"
+    "sku": "PAJ001",
+    "features": [
+      "Simula vuelo real",
+      "Alas móviles",
+      "Estimula la caza",
+      "Ejercicio activo",
+      "Ideal para interior"
+    ]
   },
   {
     "id": "prod_884",
@@ -27976,8 +28116,8 @@
       "plumas",
       "cara"
     ],
-    "description": "Pelota de sisal con plumas y cara decorativa",
-    "longDescription": "Pelota sisal c/ plumas y cara. Pelota de sisal con plumas y cara decorativa. Producto de alta calidad para tu mascota.",
+    "description": "Pelota de sisal con plumas y cara decorativa. Textura natural irresistible.",
+    "longDescription": "Pelota de sisal con plumas y cara decorativa para gatos. Juguete artesanal con textura natural de sisal que atrae a los felinos. Las plumas añaden movimiento y la cara decorativa le da un toque divertido. Perfecta para rodar, atrapar y morder.",
     "images": {
       "cover": "assets/images/products/prod_884/cover.jpg",
       "thumb": "assets/images/products/prod_884/thumb.jpg",
@@ -27992,7 +28132,14 @@
     },
     "badge": "🐾 Juguetes",
     "brand": "Sin marca",
-    "sku": "PEL044"
+    "sku": "PEL044",
+    "features": [
+      "Sisal natural",
+      "Plumas decorativas",
+      "Cara divertida",
+      "Textura atractiva",
+      "Artesanal"
+    ]
   },
   {
     "id": "prod_885",
@@ -28015,8 +28162,8 @@
       "con",
       "pluma"
     ],
-    "description": "Rueda de sisal con pluma para gatos",
-    "longDescription": "JUGUETE RUEDA SISAL CON PLUMA. Rueda de sisal con pluma para gatos. Producto de alta calidad para tu mascota.",
+    "description": "Rueda de sisal con pluma. Juguete rodante que estimula la persecución.",
+    "longDescription": "Rueda de sisal con pluma para gatos. Juguete rodante elaborado con sisal natural y pluma decorativa. El diseño de rueda permite que ruede de forma impredecible estimulando la persecución. La pluma añade un elemento extra de atracción.",
     "images": {
       "cover": "assets/images/products/prod_885/cover.jpg",
       "thumb": "assets/images/products/prod_885/thumb.jpg",
@@ -28031,7 +28178,14 @@
     },
     "badge": "🐾 Juguetes",
     "brand": "Sin marca",
-    "sku": "JUG020"
+    "sku": "JUG020",
+    "features": [
+      "Sisal natural",
+      "Pluma incluida",
+      "Rueda rodante",
+      "Movimiento impredecible",
+      "Estimula persecución"
+    ]
   },
   {
     "id": "prod_886",
@@ -28052,15 +28206,16 @@
       "pelota",
       "color"
     ],
-    "description": "Dimensiones: 4,5CM",
-    "longDescription": "JUGUETE PELOTA COLOR. Dimensiones: 4,5CM. Producto de alta calidad para tu mascota.",
+    "description": "Pelota de colores de 4.5cm. Tamaño perfecto para patear y perseguir.",
+    "longDescription": "Pelota de colores de 4.5cm para gatos. Juguete clásico en tamaño ideal para que tu gato la patee, persiga y atrape. Colores llamativos que capturan la atención. Ligera y fácil de mover para horas de entretenimiento.",
     "images": {
       "cover": "assets/images/products/prod_886/cover.jpg",
       "thumb": "assets/images/products/prod_886/thumb.jpg",
       "gallery": []
     },
     "specs": {
-      "SKU": "JUG021"
+      "SKU": "JUG021",
+      "Diámetro": "4.5 cm"
     },
     "shipping": {
       "free": false,
@@ -28068,6 +28223,13 @@
     },
     "badge": "🐾 Juguetes",
     "brand": "Sin marca",
-    "sku": "JUG021"
+    "sku": "JUG021",
+    "features": [
+      "Colores llamativos",
+      "Tamaño ideal",
+      "Ligera",
+      "Fácil de patear",
+      "Entretenimiento clásico"
+    ]
   }
 ]
