@@ -27343,5 +27343,769 @@
       "Instalación segura",
       "Material duradero"
     ]
+  },
+  {
+    "id": "prod_868",
+    "name": "CASITA PARA GATO CON RASCADOR",
+    "category": "accesorios",
+    "subcategory": "Bolsos y Casitas",
+    "hasVariants": false,
+    "price": 69700,
+    "originalPrice": 82000,
+    "discount": 15,
+    "stock": 2,
+    "rating": 4.5,
+    "reviews": 33,
+    "featured": false,
+    "topDiscount": true,
+    "tags": [
+      "casita",
+      "para",
+      "gato",
+      "con",
+      "rascador"
+    ],
+    "description": "Dimensiones: 50X28X42",
+    "longDescription": "CASITA PARA GATO CON RASCADOR. Dimensiones: 50X28X42. Producto de alta calidad para tu mascota.",
+    "images": {
+      "cover": "assets/images/products/prod_868/cover.jpg",
+      "thumb": "assets/images/products/prod_868/thumb.jpg",
+      "gallery": [
+        "assets/images/products/prod_868/1.jpg"
+      ]
+    },
+    "specs": {
+      "SKU": "CAS002"
+    },
+    "shipping": {
+      "free": true,
+      "days": 3
+    },
+    "badge": "🐾 Bolsos y Casitas",
+    "brand": "Sin marca",
+    "sku": "CAS002"
+  },
+  {
+    "id": "prod_869",
+    "name": "RASCADOR DOBLE POSTE CON POMPONES",
+    "category": "accesorios",
+    "subcategory": "Rascadores",
+    "hasVariants": false,
+    "price": 54825,
+    "originalPrice": 64500,
+    "discount": 15,
+    "stock": 2,
+    "rating": 4.5,
+    "reviews": 16,
+    "featured": false,
+    "topDiscount": true,
+    "tags": [
+      "rascador",
+      "doble",
+      "poste",
+      "con",
+      "pompones"
+    ],
+    "description": "Dimensiones: 30*36*38",
+    "longDescription": "RASCADOR DOBLE POSTE CON POMPONES. Dimensiones: 30*36*38. Producto de alta calidad para tu mascota.",
+    "images": {
+      "cover": "assets/images/products/prod_869/cover.jpg",
+      "thumb": "assets/images/products/prod_869/thumb.jpg",
+      "gallery": [
+        "assets/images/products/prod_869/1.jpg"
+      ]
+    },
+    "specs": {
+      "SKU": "RAS002"
+    },
+    "shipping": {
+      "free": true,
+      "days": 3
+    },
+    "badge": "🐾 Rascadores",
+    "brand": "Sin marca",
+    "sku": "RAS002"
+  },
+  {
+    "id": "prod_870",
+    "name": "RASCADOR CAMA TRES POSTES CON TRES NIVELES",
+    "category": "accesorios",
+    "subcategory": "Rascadores",
+    "hasVariants": false,
+    "price": 77350,
+    "originalPrice": 91000,
+    "discount": 15,
+    "stock": 2,
+    "rating": 4.5,
+    "reviews": 14,
+    "featured": false,
+    "topDiscount": true,
+    "tags": [
+      "rascador",
+      "cama",
+      "tres",
+      "postes",
+      "con",
+      "tres",
+      "niveles"
+    ],
+    "description": "Dimensiones: 40*34*47",
+    "longDescription": "RASCADOR CAMA TRES POSTES CON TRES NIVELES. Dimensiones: 40*34*47. Producto de alta calidad para tu mascota.",
+    "images": {
+      "cover": "assets/images/products/prod_870/cover.jpg",
+      "thumb": "assets/images/products/prod_870/thumb.jpg",
+      "gallery": [
+        "assets/images/products/prod_870/1.jpg"
+      ]
+    },
+    "specs": {
+      "SKU": "RAS003"
+    },
+    "shipping": {
+      "free": true,
+      "days": 3
+    },
+    "badge": "🐾 Rascadores",
+    "brand": "Sin marca",
+    "sku": "RAS003"
+  },
+  {
+    "id": "prod_871",
+    "name": "JUEGO DIAMANTE",
+    "category": "juguetes",
+    "subcategory": "Juguetes",
+    "hasVariants": false,
+    "price": 55250,
+    "originalPrice": 65000,
+    "discount": 15,
+    "stock": 2,
+    "rating": 4.5,
+    "reviews": 59,
+    "featured": false,
+    "topDiscount": true,
+    "tags": [
+      "juego",
+      "diamante"
+    ],
+    "description": "Juego interactivo para gatos diseño diamante",
+    "longDescription": "JUEGO DIAMANTE. Juego interactivo para gatos diseño diamante. Producto de alta calidad para tu mascota.",
+    "images": {
+      "cover": "assets/images/products/prod_871/cover.jpg",
+      "thumb": "assets/images/products/prod_871/thumb.jpg",
+      "gallery": [
+        "assets/images/products/prod_871/1.jpg"
+      ]
+    },
+    "specs": {
+      "SKU": "JUE002"
+    },
+    "shipping": {
+      "free": true,
+      "days": 3
+    },
+    "badge": "🐾 Juguetes",
+    "brand": "Sin marca",
+    "sku": "JUE002"
+  },
+  {
+    "id": "prod_872",
+    "name": "JUEGO INFINITO",
+    "category": "juguetes",
+    "subcategory": "Juguetes",
+    "hasVariants": false,
+    "price": 55250,
+    "originalPrice": 65000,
+    "discount": 15,
+    "stock": 2,
+    "rating": 4.5,
+    "reviews": 26,
+    "featured": false,
+    "topDiscount": true,
+    "tags": [
+      "juego",
+      "infinito"
+    ],
+    "description": "Juego interactivo para gatos diseño infinito",
+    "longDescription": "JUEGO INFINITO. Juego interactivo para gatos diseño infinito. Producto de alta calidad para tu mascota.",
+    "images": {
+      "cover": "assets/images/products/prod_872/cover.jpg",
+      "thumb": "assets/images/products/prod_872/thumb.jpg",
+      "gallery": [
+        "assets/images/products/prod_872/1.jpg"
+      ]
+    },
+    "specs": {
+      "SKU": "JUE003"
+    },
+    "shipping": {
+      "free": true,
+      "days": 3
+    },
+    "badge": "🐾 Juguetes",
+    "brand": "Sin marca",
+    "sku": "JUE003"
+  },
+  {
+    "id": "prod_873",
+    "name": "RASCADOR DE MADERA CON PLUMA",
+    "category": "juguetes",
+    "subcategory": "Juguetes",
+    "hasVariants": false,
+    "price": 57800,
+    "originalPrice": 68000,
+    "discount": 15,
+    "stock": 1,
+    "rating": 4.5,
+    "reviews": 28,
+    "featured": false,
+    "topDiscount": true,
+    "tags": [
+      "rascador",
+      "madera",
+      "con",
+      "pluma"
+    ],
+    "description": "Rascador de madera con pluma para gatos",
+    "longDescription": "RASCADOR DE MADERA CON PLUMA. Rascador de madera con pluma para gatos. Producto de alta calidad para tu mascota.",
+    "images": {
+      "cover": "assets/images/products/prod_873/cover.jpg",
+      "thumb": "assets/images/products/prod_873/thumb.jpg",
+      "gallery": [
+        "assets/images/products/prod_873/1.jpg"
+      ]
+    },
+    "specs": {
+      "SKU": "RAS016"
+    },
+    "shipping": {
+      "free": true,
+      "days": 3
+    },
+    "badge": "🐾 Juguetes",
+    "brand": "Sin marca",
+    "sku": "RAS016"
+  },
+  {
+    "id": "prod_874",
+    "name": "RATA HILO SISAL",
+    "category": "juguetes",
+    "subcategory": "Juguetes",
+    "hasVariants": false,
+    "price": 8670,
+    "originalPrice": 10200,
+    "discount": 15,
+    "stock": 6,
+    "rating": 4.5,
+    "reviews": 24,
+    "featured": false,
+    "topDiscount": true,
+    "tags": [
+      "rata",
+      "hilo",
+      "sisal"
+    ],
+    "description": "Dimensiones: 25 cm",
+    "longDescription": "RATA HILO SISAL. Dimensiones: 25 cm. Producto de alta calidad para tu mascota.",
+    "images": {
+      "cover": "assets/images/products/prod_874/cover.jpg",
+      "thumb": "assets/images/products/prod_874/thumb.jpg",
+      "gallery": [
+        "assets/images/products/prod_874/1.jpg"
+      ]
+    },
+    "specs": {
+      "SKU": "RAT002"
+    },
+    "shipping": {
+      "free": false,
+      "days": 3
+    },
+    "badge": "🐾 Juguetes",
+    "brand": "Sin marca",
+    "sku": "RAT002"
+  },
+  {
+    "id": "prod_875",
+    "name": "Cubo interactivo",
+    "category": "juguetes",
+    "subcategory": "Juguetes",
+    "hasVariants": false,
+    "price": 48450,
+    "originalPrice": 57000,
+    "discount": 15,
+    "stock": 2,
+    "rating": 4.5,
+    "reviews": 18,
+    "featured": false,
+    "topDiscount": true,
+    "tags": [
+      "cubo",
+      "interactivo"
+    ],
+    "description": "Dimensiones: Largo 40cm, Ancho 40cm, Alto 40cm",
+    "longDescription": "Cubo interactivo. Dimensiones: Largo 40cm, Ancho 40cm, Alto 40cm. Producto de alta calidad para tu mascota.",
+    "images": {
+      "cover": "assets/images/products/prod_875/cover.jpg",
+      "thumb": "assets/images/products/prod_875/thumb.jpg",
+      "gallery": [
+        "assets/images/products/prod_875/1.jpg"
+      ]
+    },
+    "specs": {
+      "SKU": "CUB001"
+    },
+    "shipping": {
+      "free": true,
+      "days": 3
+    },
+    "badge": "🐾 Juguetes",
+    "brand": "Sin marca",
+    "sku": "CUB001"
+  },
+  {
+    "id": "prod_876",
+    "name": "JUGUETE INTERACTIVO Y COMEDERO REGULADOR CON PELOTAS Y PLUMA",
+    "category": "juguetes",
+    "subcategory": "Juguetes",
+    "hasVariants": false,
+    "price": 14450,
+    "originalPrice": 17000,
+    "discount": 15,
+    "stock": 3,
+    "rating": 4.5,
+    "reviews": 20,
+    "featured": false,
+    "topDiscount": true,
+    "tags": [
+      "juguete",
+      "interactivo",
+      "comedero",
+      "regulador",
+      "con",
+      "pelotas",
+      "pluma"
+    ],
+    "description": "Dimensiones: 23,5*9,4",
+    "longDescription": "JUGUETE INTERACTIVO Y COMEDERO REGULADOR CON PELOTAS Y PLUMA. Dimensiones: 23,5*9,4. Producto de alta calidad para tu mascota.",
+    "images": {
+      "cover": "assets/images/products/prod_876/cover.jpg",
+      "thumb": "assets/images/products/prod_876/thumb.jpg",
+      "gallery": [
+        "assets/images/products/prod_876/1.jpg"
+      ]
+    },
+    "specs": {
+      "SKU": "JUG014"
+    },
+    "shipping": {
+      "free": false,
+      "days": 3
+    },
+    "badge": "🐾 Juguetes",
+    "brand": "Sin marca",
+    "sku": "JUG014"
+  },
+  {
+    "id": "prod_877",
+    "name": "JUGUETE INTERACTIVO 4 PISO",
+    "category": "juguetes",
+    "subcategory": "Juguetes",
+    "hasVariants": false,
+    "price": 17000,
+    "originalPrice": 20000,
+    "discount": 15,
+    "stock": 3,
+    "rating": 4.5,
+    "reviews": 47,
+    "featured": false,
+    "topDiscount": true,
+    "tags": [
+      "juguete",
+      "interactivo",
+      "piso"
+    ],
+    "description": "Juguete interactivo de 4 pisos para gatos",
+    "longDescription": "JUGUETE INTERACTIVO 4 PISO. Juguete interactivo de 4 pisos para gatos. Producto de alta calidad para tu mascota.",
+    "images": {
+      "cover": "assets/images/products/prod_877/cover.jpg",
+      "thumb": "assets/images/products/prod_877/thumb.jpg",
+      "gallery": [
+        "assets/images/products/prod_877/1.jpg"
+      ]
+    },
+    "specs": {
+      "SKU": "JUG015"
+    },
+    "shipping": {
+      "free": true,
+      "days": 3
+    },
+    "badge": "🐾 Juguetes",
+    "brand": "Sin marca",
+    "sku": "JUG015"
+  },
+  {
+    "id": "prod_878",
+    "name": "JUEGO DIDACTICO 4 PISOS C/6 PELOTAS 2 PLUMAS",
+    "category": "juguetes",
+    "subcategory": "Juguetes",
+    "hasVariants": false,
+    "price": 28475,
+    "originalPrice": 33500,
+    "discount": 15,
+    "stock": 3,
+    "rating": 4.5,
+    "reviews": 41,
+    "featured": false,
+    "topDiscount": true,
+    "tags": [
+      "juego",
+      "didactico",
+      "pisos",
+      "c/6",
+      "pelotas",
+      "plumas"
+    ],
+    "description": "Juego didáctico de 4 pisos con 6 pelotas y 2 plumas",
+    "longDescription": "JUEGO DIDACTICO 4 PISOS C/6 PELOTAS 2 PLUMAS. Juego didáctico de 4 pisos con 6 pelotas y 2 plumas. Producto de alta calidad para tu mascota.",
+    "images": {
+      "cover": "assets/images/products/prod_878/cover.jpg",
+      "thumb": "assets/images/products/prod_878/thumb.jpg",
+      "gallery": [
+        "assets/images/products/prod_878/1.jpg"
+      ]
+    },
+    "specs": {
+      "SKU": "JUE004"
+    },
+    "shipping": {
+      "free": true,
+      "days": 3
+    },
+    "badge": "🐾 Juguetes",
+    "brand": "Sin marca",
+    "sku": "JUE004"
+  },
+  {
+    "id": "prod_879",
+    "name": "JUGUETE GATO 15CM",
+    "category": "juguetes",
+    "subcategory": "Juguetes",
+    "hasVariants": false,
+    "price": 7140,
+    "originalPrice": 8400,
+    "discount": 15,
+    "stock": 5,
+    "rating": 4.5,
+    "reviews": 28,
+    "featured": false,
+    "topDiscount": true,
+    "tags": [
+      "juguete",
+      "gato",
+      "15cm"
+    ],
+    "description": "Dimensiones: 6,5*15CM",
+    "longDescription": "JUGUETE GATO 15CM. Dimensiones: 6,5*15CM. Producto de alta calidad para tu mascota.",
+    "images": {
+      "cover": "assets/images/products/prod_879/cover.jpg",
+      "thumb": "assets/images/products/prod_879/thumb.jpg",
+      "gallery": [
+        "assets/images/products/prod_879/1.jpg"
+      ]
+    },
+    "specs": {
+      "SKU": "JUG016"
+    },
+    "shipping": {
+      "free": false,
+      "days": 3
+    },
+    "badge": "🐾 Juguetes",
+    "brand": "Sin marca",
+    "sku": "JUG016"
+  },
+  {
+    "id": "prod_880",
+    "name": "JUGUETE GATO 18CM",
+    "category": "juguetes",
+    "subcategory": "Juguetes",
+    "hasVariants": false,
+    "price": 8500,
+    "originalPrice": 10000,
+    "discount": 15,
+    "stock": 7,
+    "rating": 4.5,
+    "reviews": 46,
+    "featured": false,
+    "topDiscount": true,
+    "tags": [
+      "juguete",
+      "gato",
+      "18cm"
+    ],
+    "description": "Dimensiones: 6,5*18CM",
+    "longDescription": "JUGUETE GATO 18CM. Dimensiones: 6,5*18CM. Producto de alta calidad para tu mascota.",
+    "images": {
+      "cover": "assets/images/products/prod_880/cover.jpg",
+      "thumb": "assets/images/products/prod_880/thumb.jpg",
+      "gallery": [
+        "assets/images/products/prod_880/1.jpg"
+      ]
+    },
+    "specs": {
+      "SKU": "JUG019"
+    },
+    "shipping": {
+      "free": false,
+      "days": 3
+    },
+    "badge": "🐾 Juguetes",
+    "brand": "Sin marca",
+    "sku": "JUG019"
+  },
+  {
+    "id": "prod_881",
+    "name": "JUGUETE Y PORTA ALIMENTO PARA GATO",
+    "category": "juguetes",
+    "subcategory": "Juguetes",
+    "hasVariants": false,
+    "price": 7650,
+    "originalPrice": 9000,
+    "discount": 15,
+    "stock": 6,
+    "rating": 4.5,
+    "reviews": 27,
+    "featured": false,
+    "topDiscount": true,
+    "tags": [
+      "juguete",
+      "porta",
+      "alimento",
+      "para",
+      "gato"
+    ],
+    "description": "Dimensiones: 10*10*13CM",
+    "longDescription": "JUGUETE Y PORTA ALIMENTO PARA GATO. Dimensiones: 10*10*13CM. Producto de alta calidad para tu mascota.",
+    "images": {
+      "cover": "assets/images/products/prod_881/cover.jpg",
+      "thumb": "assets/images/products/prod_881/thumb.jpg",
+      "gallery": [
+        "assets/images/products/prod_881/1.jpg"
+      ]
+    },
+    "specs": {
+      "SKU": "JUG017"
+    },
+    "shipping": {
+      "free": false,
+      "days": 3
+    },
+    "badge": "🐾 Juguetes",
+    "brand": "Sin marca",
+    "sku": "JUG017"
+  },
+  {
+    "id": "prod_882",
+    "name": "Juguete vaivén con varita y pluma base forma de gato",
+    "category": "juguetes",
+    "subcategory": "Juguetes",
+    "hasVariants": false,
+    "price": 7650,
+    "originalPrice": 9000,
+    "discount": 15,
+    "stock": 6,
+    "rating": 4.5,
+    "reviews": 52,
+    "featured": false,
+    "topDiscount": true,
+    "tags": [
+      "juguete",
+      "vaivén",
+      "con",
+      "varita",
+      "pluma",
+      "base",
+      "forma",
+      "gato"
+    ],
+    "description": "Dimensiones: 7*9cm",
+    "longDescription": "Juguete vaivén con varita y pluma base forma de gato. Dimensiones: 7*9cm. Producto de alta calidad para tu mascota.",
+    "images": {
+      "cover": "assets/images/products/prod_882/cover.jpg",
+      "thumb": "assets/images/products/prod_882/thumb.jpg",
+      "gallery": [
+        "assets/images/products/prod_882/1.jpg"
+      ]
+    },
+    "specs": {
+      "SKU": "JUG018"
+    },
+    "shipping": {
+      "free": false,
+      "days": 3
+    },
+    "badge": "🐾 Juguetes",
+    "brand": "Sin marca",
+    "sku": "JUG018"
+  },
+  {
+    "id": "prod_883",
+    "name": "PAJARO VOLADOR FLAPPY",
+    "category": "juguetes",
+    "subcategory": "Juguetes",
+    "hasVariants": false,
+    "price": 34000,
+    "originalPrice": 40000,
+    "discount": 15,
+    "stock": 3,
+    "rating": 4.5,
+    "reviews": 23,
+    "featured": false,
+    "topDiscount": true,
+    "tags": [
+      "pajaro",
+      "volador",
+      "flappy"
+    ],
+    "description": "Pájaro volador interactivo para gatos",
+    "longDescription": "PAJARO VOLADOR FLAPPY. Pájaro volador interactivo para gatos. Producto de alta calidad para tu mascota.",
+    "images": {
+      "cover": "assets/images/products/prod_883/cover.jpg",
+      "thumb": "assets/images/products/prod_883/thumb.jpg",
+      "gallery": [
+        "assets/images/products/prod_883/1.jpg"
+      ]
+    },
+    "specs": {
+      "SKU": "PAJ001"
+    },
+    "shipping": {
+      "free": true,
+      "days": 3
+    },
+    "badge": "🐾 Juguetes",
+    "brand": "Sin marca",
+    "sku": "PAJ001"
+  },
+  {
+    "id": "prod_884",
+    "name": "Pelota sisal c/ plumas y cara",
+    "category": "juguetes",
+    "subcategory": "Juguetes",
+    "hasVariants": false,
+    "price": 2720,
+    "originalPrice": 3200,
+    "discount": 15,
+    "stock": 10,
+    "rating": 4.5,
+    "reviews": 41,
+    "featured": false,
+    "topDiscount": true,
+    "tags": [
+      "pelota",
+      "sisal",
+      "plumas",
+      "cara"
+    ],
+    "description": "Pelota de sisal con plumas y cara decorativa",
+    "longDescription": "Pelota sisal c/ plumas y cara. Pelota de sisal con plumas y cara decorativa. Producto de alta calidad para tu mascota.",
+    "images": {
+      "cover": "assets/images/products/prod_884/cover.jpg",
+      "thumb": "assets/images/products/prod_884/thumb.jpg",
+      "gallery": [
+        "assets/images/products/prod_884/1.jpg"
+      ]
+    },
+    "specs": {
+      "SKU": "PEL044"
+    },
+    "shipping": {
+      "free": false,
+      "days": 3
+    },
+    "badge": "🐾 Juguetes",
+    "brand": "Sin marca",
+    "sku": "PEL044"
+  },
+  {
+    "id": "prod_885",
+    "name": "JUGUETE RUEDA SISAL CON PLUMA",
+    "category": "juguetes",
+    "subcategory": "Juguetes",
+    "hasVariants": false,
+    "price": 2720,
+    "originalPrice": 3200,
+    "discount": 15,
+    "stock": 10,
+    "rating": 4.5,
+    "reviews": 51,
+    "featured": false,
+    "topDiscount": true,
+    "tags": [
+      "juguete",
+      "rueda",
+      "sisal",
+      "con",
+      "pluma"
+    ],
+    "description": "Rueda de sisal con pluma para gatos",
+    "longDescription": "JUGUETE RUEDA SISAL CON PLUMA. Rueda de sisal con pluma para gatos. Producto de alta calidad para tu mascota.",
+    "images": {
+      "cover": "assets/images/products/prod_885/cover.jpg",
+      "thumb": "assets/images/products/prod_885/thumb.jpg",
+      "gallery": [
+        "assets/images/products/prod_885/1.jpg"
+      ]
+    },
+    "specs": {
+      "SKU": "JUG020"
+    },
+    "shipping": {
+      "free": false,
+      "days": 3
+    },
+    "badge": "🐾 Juguetes",
+    "brand": "Sin marca",
+    "sku": "JUG020"
+  },
+  {
+    "id": "prod_886",
+    "name": "JUGUETE PELOTA COLOR",
+    "category": "juguetes",
+    "subcategory": "Juguetes",
+    "hasVariants": false,
+    "price": 2635,
+    "originalPrice": 3100,
+    "discount": 15,
+    "stock": 7,
+    "rating": 4.5,
+    "reviews": 33,
+    "featured": false,
+    "topDiscount": true,
+    "tags": [
+      "juguete",
+      "pelota",
+      "color"
+    ],
+    "description": "Dimensiones: 4,5CM",
+    "longDescription": "JUGUETE PELOTA COLOR. Dimensiones: 4,5CM. Producto de alta calidad para tu mascota.",
+    "images": {
+      "cover": "assets/images/products/prod_886/cover.jpg",
+      "thumb": "assets/images/products/prod_886/thumb.jpg",
+      "gallery": [
+        "assets/images/products/prod_886/1.jpg"
+      ]
+    },
+    "specs": {
+      "SKU": "JUG021"
+    },
+    "shipping": {
+      "free": false,
+      "days": 3
+    },
+    "badge": "🐾 Juguetes",
+    "brand": "Sin marca",
+    "sku": "JUG021"
   }
 ]
