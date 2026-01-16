@@ -125,7 +125,7 @@ class ProductPage {
           <div class="product__price-section">
             <div class="product__price">
               <span class="product__price-current">${Utils.formatPrice(displayPrice)}</span>
-              ${displayOriginalPrice ? `
+              ${displayOriginalPrice && displayOriginalPrice > displayPrice ? `
                 <span class="product__price-original">${Utils.formatPrice(displayOriginalPrice)}</span>
                 <span class="product__savings">Ahorras ${Utils.formatPrice(displayOriginalPrice - displayPrice)}</span>
               ` : ''}

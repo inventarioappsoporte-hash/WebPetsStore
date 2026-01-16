@@ -28473,5 +28473,231 @@
       "9 talles disponibles",
       "Ideal para días fríos"
     ]
+  },
+  {
+    "id": "prod_888",
+    "name": "DISFRAZ MODELO",
+    "category": "ropa",
+    "subcategory": "Ropa Invierno",
+    "hasVariants": true,
+    "basePrice": 9000,
+    "baseOriginalPrice": 9000,
+    "discount": 0,
+    "stock": 35,
+    "rating": 4.7,
+    "reviews": 19,
+    "featured": false,
+    "topDiscount": false,
+    "hasVideo": false,
+    "tags": [
+      "disfraz",
+      "modelo",
+      "ropa",
+      "invierno",
+      "mascota",
+      "perro",
+      "divertido"
+    ],
+    "description": "Disfraz Modelo para mascotas. Diseño original y divertido para que tu mascota luzca única.",
+    "longDescription": "Disfraz Modelo para mascotas. Prenda con diseño creativo y original que hará que tu mascota sea el centro de atención. Confeccionado con materiales cómodos y seguros. Ideal para sesiones de fotos, eventos especiales o simplemente para divertirse. Disponible en 7 talles para adaptarse a diferentes tamaños.",
+    "variants": {
+      "attributes": [
+        {
+          "id": "talle",
+          "name": "Talle",
+          "type": "size"
+        }
+      ],
+      "combinations": [
+        {
+          "id": "var_888_1",
+          "attributes": {
+            "Talle": "T1"
+          },
+          "price": 9000,
+          "originalPrice": 9000,
+          "stock": 5,
+          "sku": "DIS002-T1",
+          "available": true,
+          "specs": {
+            "Largo": "23 cm",
+            "Contorno": "34 cm"
+          },
+          "images": {
+            "cover": "assets/images/products/prod_888/cover.jpg",
+            "thumb": "assets/images/products/prod_888/thumb.jpg",
+            "gallery": [
+              "assets/images/products/prod_888/1.jpg",
+              "assets/images/products/prod_888/2.jpg"
+            ]
+          }
+        },
+        {
+          "id": "var_888_2",
+          "attributes": {
+            "Talle": "T2"
+          },
+          "price": 9000,
+          "originalPrice": 9000,
+          "stock": 5,
+          "sku": "DIS002-T2",
+          "available": true,
+          "specs": {
+            "Largo": "25 cm",
+            "Contorno": "42 cm"
+          },
+          "images": {
+            "cover": "assets/images/products/prod_888/cover.jpg",
+            "thumb": "assets/images/products/prod_888/thumb.jpg",
+            "gallery": [
+              "assets/images/products/prod_888/1.jpg",
+              "assets/images/products/prod_888/2.jpg"
+            ]
+          }
+        },
+        {
+          "id": "var_888_3",
+          "attributes": {
+            "Talle": "T3"
+          },
+          "price": 10000,
+          "originalPrice": 10000,
+          "stock": 5,
+          "sku": "DIS002-T3",
+          "available": true,
+          "specs": {
+            "Largo": "28 cm",
+            "Contorno": "41 cm"
+          },
+          "images": {
+            "cover": "assets/images/products/prod_888/cover.jpg",
+            "thumb": "assets/images/products/prod_888/thumb.jpg",
+            "gallery": [
+              "assets/images/products/prod_888/1.jpg",
+              "assets/images/products/prod_888/2.jpg"
+            ]
+          }
+        },
+        {
+          "id": "var_888_4",
+          "attributes": {
+            "Talle": "T4"
+          },
+          "price": 10000,
+          "originalPrice": 10000,
+          "stock": 5,
+          "sku": "DIS002-T4",
+          "available": true,
+          "specs": {
+            "Largo": "31 cm",
+            "Contorno": "48 cm"
+          },
+          "images": {
+            "cover": "assets/images/products/prod_888/cover.jpg",
+            "thumb": "assets/images/products/prod_888/thumb.jpg",
+            "gallery": [
+              "assets/images/products/prod_888/1.jpg",
+              "assets/images/products/prod_888/2.jpg"
+            ]
+          }
+        },
+        {
+          "id": "var_888_5",
+          "attributes": {
+            "Talle": "T5"
+          },
+          "price": 10000,
+          "originalPrice": 10000,
+          "stock": 5,
+          "sku": "DIS002-T5",
+          "available": true,
+          "specs": {
+            "Largo": "36 cm",
+            "Contorno": "52 cm"
+          },
+          "images": {
+            "cover": "assets/images/products/prod_888/cover.jpg",
+            "thumb": "assets/images/products/prod_888/thumb.jpg",
+            "gallery": [
+              "assets/images/products/prod_888/1.jpg",
+              "assets/images/products/prod_888/2.jpg"
+            ]
+          }
+        },
+        {
+          "id": "var_888_6",
+          "attributes": {
+            "Talle": "T6"
+          },
+          "price": 11000,
+          "originalPrice": 11000,
+          "stock": 5,
+          "sku": "DIS002-T6",
+          "available": true,
+          "specs": {
+            "Largo": "38 cm",
+            "Contorno": "56 cm"
+          },
+          "images": {
+            "cover": "assets/images/products/prod_888/cover.jpg",
+            "thumb": "assets/images/products/prod_888/thumb.jpg",
+            "gallery": [
+              "assets/images/products/prod_888/1.jpg",
+              "assets/images/products/prod_888/2.jpg"
+            ]
+          }
+        },
+        {
+          "id": "var_888_7",
+          "attributes": {
+            "Talle": "T7"
+          },
+          "price": 11000,
+          "originalPrice": 11000,
+          "stock": 5,
+          "sku": "DIS002-T7",
+          "available": true,
+          "specs": {
+            "Largo": "41 cm",
+            "Contorno": "60 cm"
+          },
+          "images": {
+            "cover": "assets/images/products/prod_888/cover.jpg",
+            "thumb": "assets/images/products/prod_888/thumb.jpg",
+            "gallery": [
+              "assets/images/products/prod_888/1.jpg",
+              "assets/images/products/prod_888/2.jpg"
+            ]
+          }
+        }
+      ]
+    },
+    "images": {
+      "cover": "assets/images/products/prod_888/cover.jpg",
+      "thumb": "assets/images/products/prod_888/thumb.jpg",
+      "gallery": [
+        "assets/images/products/prod_888/1.jpg",
+        "assets/images/products/prod_888/2.jpg"
+      ]
+    },
+    "specs": {
+      "SKU": "DIS002",
+      "Material": "Tela suave y cómoda",
+      "Temporada": "Invierno"
+    },
+    "shipping": {
+      "free": false,
+      "days": 3
+    },
+    "badge": " Ropa Invierno",
+    "brand": "Sin marca",
+    "sku": "DIS002",
+    "features": [
+      "Diseño original y divertido",
+      "Materiales cómodos y seguros",
+      "Fácil de poner y quitar",
+      "7 talles disponibles",
+      "Ideal para fotos y eventos"
+    ]
   }
 ]

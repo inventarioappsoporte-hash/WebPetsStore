@@ -181,15 +181,27 @@ class VariantSelector {
     }
     
     const originalPriceElement = document.querySelector('.product__price-original');
-    if (originalPriceElement && originalPrice) {
-      originalPriceElement.textContent = Utils.formatPrice(originalPrice);
-    }
-    
-    // Actualizar ahorro
     const savingsElement = document.querySelector('.product__savings');
-    if (savingsElement && originalPrice && price) {
-      const savings = originalPrice - price;
-      savingsElement.textContent = `Ahorras ${Utils.formatPrice(savings)}`;
+    
+    // Solo mostrar precio original y ahorro si hay descuento real
+    if (originalPrice && originalPrice > price) {
+      if (originalPriceElement) {
+        originalPriceElement.textContent = Utils.formatPrice(originalPrice);
+        originalPriceElement.style.display = '';
+      }
+      if (savingsElement) {
+        const savings = originalPrice - price;
+        savingsElement.textContent = `Ahorras ${Utils.formatPrice(savings)}`;
+        savingsElement.style.display = '';
+      }
+    } else {
+      // Ocultar si no hay descuento
+      if (originalPriceElement) {
+        originalPriceElement.style.display = 'none';
+      }
+      if (savingsElement) {
+        savingsElement.style.display = 'none';
+      }
     }
     
     // Actualizar imagen principal
