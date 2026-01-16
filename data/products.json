@@ -29283,5 +29283,145 @@
       "Ideal para paseos cortos",
       "2 colores disponibles"
     ]
+  },
+  {
+    "id": "prod_894",
+    "name": "Fantasía espuma diseño de navidad",
+    "category": "accesorios",
+    "subcategory": "Colchonetas y Moisés",
+    "hasVariants": true,
+    "basePrice": 17000,
+    "baseOriginalPrice": 20000,
+    "discount": 15,
+    "stock": 20,
+    "rating": 4.8,
+    "reviews": 18,
+    "featured": false,
+    "topDiscount": true,
+    "hasVideo": false,
+    "tags": [
+      "fantasia",
+      "espuma",
+      "navidad",
+      "colchoneta",
+      "moises",
+      "cama",
+      "mascota",
+      "perro",
+      "gato"
+    ],
+    "description": "Colchoneta Fantasía de espuma con diseño navideño. Cómoda y acogedora para tu mascota.",
+    "longDescription": "Colchoneta Fantasía de espuma con hermoso diseño navideño. Perfecta para que tu mascota descanse con comodidad y estilo durante las fiestas. Fabricada con espuma de alta densidad que brinda soporte y confort. Diseño festivo que decora cualquier espacio. Disponible en 4 tamaños.",
+    "variants": {
+      "attributes": [
+        {
+          "id": "talle",
+          "name": "Talle",
+          "type": "size"
+        }
+      ],
+      "combinations": [
+        {
+          "id": "var_894_1",
+          "attributes": {
+            "Talle": "T1"
+          },
+          "price": 17000,
+          "originalPrice": 20000,
+          "stock": 5,
+          "sku": "FAN001-T1",
+          "available": true,
+          "specs": {
+            "Medidas": "50x70 cm"
+          },
+          "images": {
+            "cover": "assets/images/products/prod_894/cover.jpg",
+            "thumb": "assets/images/products/prod_894/thumb.jpg",
+            "gallery": []
+          }
+        },
+        {
+          "id": "var_894_2",
+          "attributes": {
+            "Talle": "T2"
+          },
+          "price": 18700,
+          "originalPrice": 22000,
+          "stock": 5,
+          "sku": "FAN001-T2",
+          "available": true,
+          "specs": {
+            "Medidas": "60x80 cm"
+          },
+          "images": {
+            "cover": "assets/images/products/prod_894/cover.jpg",
+            "thumb": "assets/images/products/prod_894/thumb.jpg",
+            "gallery": []
+          }
+        },
+        {
+          "id": "var_894_3",
+          "attributes": {
+            "Talle": "T3"
+          },
+          "price": 20400,
+          "originalPrice": 24000,
+          "stock": 5,
+          "sku": "FAN001-T3",
+          "available": true,
+          "specs": {
+            "Medidas": "70x90 cm"
+          },
+          "images": {
+            "cover": "assets/images/products/prod_894/cover.jpg",
+            "thumb": "assets/images/products/prod_894/thumb.jpg",
+            "gallery": []
+          }
+        },
+        {
+          "id": "var_894_4",
+          "attributes": {
+            "Talle": "T4"
+          },
+          "price": 22100,
+          "originalPrice": 26000,
+          "stock": 5,
+          "sku": "FAN001-T4",
+          "available": true,
+          "specs": {
+            "Medidas": "80x90 cm"
+          },
+          "images": {
+            "cover": "assets/images/products/prod_894/cover.jpg",
+            "thumb": "assets/images/products/prod_894/thumb.jpg",
+            "gallery": []
+          }
+        }
+      ]
+    },
+    "images": {
+      "cover": "assets/images/products/prod_894/cover.jpg",
+      "thumb": "assets/images/products/prod_894/thumb.jpg",
+      "gallery": []
+    },
+    "specs": {
+      "SKU": "FAN001",
+      "Material": "Espuma de alta densidad",
+      "Diseño": "Navideño"
+    },
+    "shipping": {
+      "free": true,
+      "days": 3
+    },
+    "badge": " Colchonetas y Moisés",
+    "brand": "Sin marca",
+    "sku": "FAN001",
+    "features": [
+      "Diseño navideño festivo",
+      "Espuma de alta densidad",
+      "Cómoda y acogedora",
+      "4 tamaños disponibles",
+      "Fácil de limpiar"
+    ]
   }
 ]
