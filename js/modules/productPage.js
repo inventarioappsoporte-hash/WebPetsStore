@@ -54,23 +54,7 @@ class ProductPage {
     
     const discount = product.discount ? `<span class="product__discount-badge">-${product.discount}%</span>` : '';
     
-    // Video: soportar tanto product.video como product.marketing
-    let video = '';
-    if (product.hasVideo) {
-      const videoUrl = product.video?.url || product.marketing?.url;
-      if (videoUrl) {
-        video = `
-          <div class="product__video-section">
-            <video 
-              class="product__video" 
-              controls 
-              muted
-              src="${videoUrl}">
-            </video>
-          </div>
-        `;
-      }
-    }
+    // Video de marketing solo se muestra en la portada, no en la página de producto
 
     const specsHtml = Object.entries(product.specs || {})
       .map(([key, value]) => `
@@ -124,7 +108,6 @@ class ProductPage {
           <div class="product__main">
             ${discount}
             <img src="${product.images.cover}" alt="${product.name}" class="product__main-image product__image-main" onerror="this.src='assets/images/placeholder.svg'">
-            ${video}
           </div>
           <div class="product__thumbnails">
             ${thumbnailsHtml}
