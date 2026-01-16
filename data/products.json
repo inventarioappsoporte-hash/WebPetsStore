@@ -28922,5 +28922,228 @@
       "8 talles disponibles",
       "Ideal para días fríos"
     ]
+  },
+  {
+    "id": "prod_890",
+    "name": "Campera Love",
+    "category": "ropa",
+    "subcategory": "Ropa Invierno",
+    "hasVariants": true,
+    "basePrice": 7000,
+    "baseOriginalPrice": 7000,
+    "discount": 0,
+    "stock": 40,
+    "rating": 4.7,
+    "reviews": 25,
+    "featured": false,
+    "topDiscount": false,
+    "hasVideo": false,
+    "tags": [
+      "campera",
+      "love",
+      "amor",
+      "ropa",
+      "invierno",
+      "abrigo",
+      "mascota",
+      "perro"
+    ],
+    "description": "Campera Love para mascotas. Diseño romántico y abrigado con estampado de corazones.",
+    "longDescription": "Campera Love para mascotas. Prenda de abrigo con diseño romántico ideal para los amantes de las mascotas. Confeccionada con materiales de calidad que mantienen a tu compañero calentito. El estampado de corazones le da un toque tierno y especial. Disponible en 8 talles.",
+    "variants": {
+      "attributes": [
+        {
+          "id": "talle",
+          "name": "Talle",
+          "type": "size"
+        }
+      ],
+      "combinations": [
+        {
+          "id": "var_890_1",
+          "attributes": {
+            "Talle": "T1"
+          },
+          "price": 7000,
+          "originalPrice": 7000,
+          "stock": 5,
+          "sku": "CAM091-T1",
+          "available": true,
+          "specs": {
+            "Largo": "26 cm",
+            "Ancho": "38 cm"
+          },
+          "images": {
+            "cover": "assets/images/products/prod_890/cover.jpg",
+            "thumb": "assets/images/products/prod_890/thumb.jpg",
+            "gallery": []
+          }
+        },
+        {
+          "id": "var_890_2",
+          "attributes": {
+            "Talle": "T2"
+          },
+          "price": 7000,
+          "originalPrice": 7000,
+          "stock": 5,
+          "sku": "CAM091-T2",
+          "available": true,
+          "specs": {
+            "Largo": "28 cm",
+            "Ancho": "40 cm"
+          },
+          "images": {
+            "cover": "assets/images/products/prod_890/cover.jpg",
+            "thumb": "assets/images/products/prod_890/thumb.jpg",
+            "gallery": []
+          }
+        },
+        {
+          "id": "var_890_3",
+          "attributes": {
+            "Talle": "T3"
+          },
+          "price": 8000,
+          "originalPrice": 8000,
+          "stock": 5,
+          "sku": "CAM091-T3",
+          "available": true,
+          "specs": {
+            "Largo": "30 cm",
+            "Ancho": "44 cm"
+          },
+          "images": {
+            "cover": "assets/images/products/prod_890/cover.jpg",
+            "thumb": "assets/images/products/prod_890/thumb.jpg",
+            "gallery": []
+          }
+        },
+        {
+          "id": "var_890_4",
+          "attributes": {
+            "Talle": "T4"
+          },
+          "price": 8000,
+          "originalPrice": 8000,
+          "stock": 5,
+          "sku": "CAM091-T4",
+          "available": true,
+          "specs": {
+            "Largo": "34 cm",
+            "Ancho": "46 cm"
+          },
+          "images": {
+            "cover": "assets/images/products/prod_890/cover.jpg",
+            "thumb": "assets/images/products/prod_890/thumb.jpg",
+            "gallery": []
+          }
+        },
+        {
+          "id": "var_890_5",
+          "attributes": {
+            "Talle": "T5"
+          },
+          "price": 9000,
+          "originalPrice": 9000,
+          "stock": 5,
+          "sku": "CAM091-T5",
+          "available": true,
+          "specs": {
+            "Largo": "38 cm",
+            "Ancho": "50 cm"
+          },
+          "images": {
+            "cover": "assets/images/products/prod_890/cover.jpg",
+            "thumb": "assets/images/products/prod_890/thumb.jpg",
+            "gallery": []
+          }
+        },
+        {
+          "id": "var_890_6",
+          "attributes": {
+            "Talle": "T6"
+          },
+          "price": 9000,
+          "originalPrice": 9000,
+          "stock": 5,
+          "sku": "CAM091-T6",
+          "available": true,
+          "specs": {
+            "Largo": "42 cm",
+            "Ancho": "56 cm"
+          },
+          "images": {
+            "cover": "assets/images/products/prod_890/cover.jpg",
+            "thumb": "assets/images/products/prod_890/thumb.jpg",
+            "gallery": []
+          }
+        },
+        {
+          "id": "var_890_7",
+          "attributes": {
+            "Talle": "T7"
+          },
+          "price": 9000,
+          "originalPrice": 9000,
+          "stock": 5,
+          "sku": "CAM091-T7",
+          "available": true,
+          "specs": {
+            "Largo": "45 cm",
+            "Ancho": "64 cm"
+          },
+          "images": {
+            "cover": "assets/images/products/prod_890/cover.jpg",
+            "thumb": "assets/images/products/prod_890/thumb.jpg",
+            "gallery": []
+          }
+        },
+        {
+          "id": "var_890_8",
+          "attributes": {
+            "Talle": "T8"
+          },
+          "price": 9000,
+          "originalPrice": 9000,
+          "stock": 5,
+          "sku": "CAM091-T8",
+          "available": true,
+          "specs": {
+            "Largo": "50 cm",
+            "Ancho": "68 cm"
+          },
+          "images": {
+            "cover": "assets/images/products/prod_890/cover.jpg",
+            "thumb": "assets/images/products/prod_890/thumb.jpg",
+            "gallery": []
+          }
+        }
+      ]
+    },
+    "images": {
+      "cover": "assets/images/products/prod_890/cover.jpg",
+      "thumb": "assets/images/products/prod_890/thumb.jpg",
+      "gallery": []
+    },
+    "specs": {
+      "SKU": "CAM091",
+      "Material": "Tela abrigada",
+      "Temporada": "Invierno"
+    },
+    "shipping": {
+      "free": false,
+      "days": 3
+    },
+    "badge": " Ropa Invierno",
+    "brand": "Sin marca",
+    "sku": "CAM091",
+    "features": [
+      "Diseño romántico con corazones",
+      "Tela abrigada y suave",
+      "Fácil de poner",
+      "8 talles disponibles",
+      "Ideal para días fríos"
+    ]
   }
 ]
