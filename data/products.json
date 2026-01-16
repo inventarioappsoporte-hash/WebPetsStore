@@ -29145,5 +29145,143 @@
       "8 talles disponibles",
       "Ideal para días fríos"
     ]
+  },
+  {
+    "id": "prod_891",
+    "name": "Bebedero portátil 715ml",
+    "category": "accesorios",
+    "subcategory": "Comederos y Bebederos",
+    "hasVariants": false,
+    "price": 16150,
+    "originalPrice": 19000,
+    "discount": 15,
+    "stock": 5,
+    "rating": 4.5,
+    "reviews": 10,
+    "featured": false,
+    "topDiscount": true,
+    "tags": [
+      "bebedero",
+      "portátil",
+      "715ml"
+    ],
+    "description": "Bebedero portátil de 715ml para mascotas. Colores disponibles: Azul, Rosa y Verde.",
+    "longDescription": "Bebedero portátil de 715ml para mascotas. Ideal para paseos y viajes. Diseño práctico y fácil de usar que permite hidratar a tu mascota en cualquier lugar. Capacidad generosa de 715ml. Disponible en colores Azul, Rosa y Verde.",
+    "images": {
+      "cover": "assets/images/products/prod_891/cover.jpg",
+      "thumb": "assets/images/products/prod_891/thumb.jpg",
+      "gallery": []
+    },
+    "specs": {
+      "SKU": "BEB001",
+      "Capacidad": "715 ml",
+      "Colores": "Azul, Rosa, Verde"
+    },
+    "shipping": {
+      "free": true,
+      "days": 3
+    },
+    "badge": " Comederos y Bebederos",
+    "brand": "Sin marca",
+    "sku": "BEB001",
+    "features": [
+      "Capacidad 715ml",
+      "Portátil y liviano",
+      "Fácil de usar",
+      "Ideal para paseos",
+      "3 colores disponibles"
+    ]
+  },
+  {
+    "id": "prod_892",
+    "name": "Botella 350ml + 180ml",
+    "category": "accesorios",
+    "subcategory": "Comederos y Bebederos",
+    "hasVariants": false,
+    "price": 14450,
+    "originalPrice": 17000,
+    "discount": 15,
+    "stock": 5,
+    "rating": 4.5,
+    "reviews": 13,
+    "featured": false,
+    "topDiscount": true,
+    "tags": [
+      "botella",
+      "350ml",
+      "180ml"
+    ],
+    "description": "Botella doble compartimento 350ml + 180ml para mascotas. Color disponible: Azul.",
+    "longDescription": "Botella con doble compartimento de 350ml y 180ml para mascotas. Perfecta para llevar agua y comida en un solo recipiente. Diseño compacto y práctico para paseos largos. Disponible en color Azul.",
+    "images": {
+      "cover": "assets/images/products/prod_892/cover.jpg",
+      "thumb": "assets/images/products/prod_892/thumb.jpg",
+      "gallery": []
+    },
+    "specs": {
+      "SKU": "BOT002",
+      "Capacidad": "350ml + 180ml",
+      "Color": "Azul"
+    },
+    "shipping": {
+      "free": false,
+      "days": 3
+    },
+    "badge": " Comederos y Bebederos",
+    "brand": "Sin marca",
+    "sku": "BOT002",
+    "features": [
+      "Doble compartimento",
+      "350ml para agua",
+      "180ml para comida",
+      "Diseño compacto",
+      "Ideal para viajes"
+    ]
+  },
+  {
+    "id": "prod_893",
+    "name": "Bebedero portátil 350ml",
+    "category": "accesorios",
+    "subcategory": "Comederos y Bebederos",
+    "hasVariants": false,
+    "price": 13600,
+    "originalPrice": 16000,
+    "discount": 15,
+    "stock": 5,
+    "rating": 4.5,
+    "reviews": 10,
+    "featured": false,
+    "topDiscount": true,
+    "tags": [
+      "bebedero",
+      "portátil",
+      "350ml"
+    ],
+    "description": "Bebedero portátil de 350ml para mascotas. Colores disponibles: Azul y Verde.",
+    "longDescription": "Bebedero portátil de 350ml para mascotas. Tamaño compacto ideal para paseos cortos. Fácil de transportar y usar. Mantiene el agua fresca para tu mascota. Disponible en colores Azul y Verde.",
+    "images": {
+      "cover": "assets/images/products/prod_893/cover.jpg",
+      "thumb": "assets/images/products/prod_893/thumb.jpg",
+      "gallery": []
+    },
+    "specs": {
+      "SKU": "BEB005",
+      "Capacidad": "350 ml",
+      "Colores": "Azul, Verde"
+    },
+    "shipping": {
+      "free": false,
+      "days": 3
+    },
+    "badge": " Comederos y Bebederos",
+    "brand": "Sin marca",
+    "sku": "BEB005",
+    "features": [
+      "Capacidad 350ml",
+      "Tamaño compacto",
+      "Fácil de transportar",
+      "Ideal para paseos cortos",
+      "2 colores disponibles"
+    ]
   }
 ]
