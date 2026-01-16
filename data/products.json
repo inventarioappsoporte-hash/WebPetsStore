@@ -28699,5 +28699,228 @@
       "7 talles disponibles",
       "Ideal para fotos y eventos"
     ]
+  },
+  {
+    "id": "prod_889",
+    "name": "BUZO HARVARD",
+    "category": "ropa",
+    "subcategory": "Ropa Invierno",
+    "hasVariants": true,
+    "basePrice": 7000,
+    "baseOriginalPrice": 7000,
+    "discount": 0,
+    "stock": 40,
+    "rating": 4.8,
+    "reviews": 32,
+    "featured": false,
+    "topDiscount": false,
+    "hasVideo": false,
+    "tags": [
+      "buzo",
+      "harvard",
+      "ropa",
+      "invierno",
+      "abrigo",
+      "mascota",
+      "perro",
+      "universitario"
+    ],
+    "description": "Buzo Harvard para mascotas. Estilo universitario clásico para que tu mascota luzca elegante y abrigada.",
+    "longDescription": "Buzo Harvard para mascotas. Prenda de abrigo con el icónico estilo universitario que combina elegancia y comodidad. Confeccionado con tela polar suave que mantiene a tu mascota calentita en los días fríos. Diseño clásico que nunca pasa de moda. Disponible en 8 talles para adaptarse a diferentes tamaños.",
+    "variants": {
+      "attributes": [
+        {
+          "id": "talle",
+          "name": "Talle",
+          "type": "size"
+        }
+      ],
+      "combinations": [
+        {
+          "id": "var_889_1",
+          "attributes": {
+            "Talle": "T1"
+          },
+          "price": 7000,
+          "originalPrice": 7000,
+          "stock": 5,
+          "sku": "BUZ011-T1",
+          "available": true,
+          "specs": {
+            "Largo": "22 cm",
+            "Contorno": "32 cm"
+          },
+          "images": {
+            "cover": "assets/images/products/prod_889/cover.jpg",
+            "thumb": "assets/images/products/prod_889/thumb.jpg",
+            "gallery": []
+          }
+        },
+        {
+          "id": "var_889_2",
+          "attributes": {
+            "Talle": "T2"
+          },
+          "price": 7000,
+          "originalPrice": 7000,
+          "stock": 5,
+          "sku": "BUZ011-T2",
+          "available": true,
+          "specs": {
+            "Largo": "29 cm",
+            "Contorno": "38 cm"
+          },
+          "images": {
+            "cover": "assets/images/products/prod_889/cover.jpg",
+            "thumb": "assets/images/products/prod_889/thumb.jpg",
+            "gallery": []
+          }
+        },
+        {
+          "id": "var_889_3",
+          "attributes": {
+            "Talle": "T3"
+          },
+          "price": 7000,
+          "originalPrice": 7000,
+          "stock": 5,
+          "sku": "BUZ011-T3",
+          "available": true,
+          "specs": {
+            "Largo": "31 cm",
+            "Contorno": "40 cm"
+          },
+          "images": {
+            "cover": "assets/images/products/prod_889/cover.jpg",
+            "thumb": "assets/images/products/prod_889/thumb.jpg",
+            "gallery": []
+          }
+        },
+        {
+          "id": "var_889_4",
+          "attributes": {
+            "Talle": "T4"
+          },
+          "price": 8000,
+          "originalPrice": 8000,
+          "stock": 5,
+          "sku": "BUZ011-T4",
+          "available": true,
+          "specs": {
+            "Largo": "35 cm",
+            "Contorno": "42 cm"
+          },
+          "images": {
+            "cover": "assets/images/products/prod_889/cover.jpg",
+            "thumb": "assets/images/products/prod_889/thumb.jpg",
+            "gallery": []
+          }
+        },
+        {
+          "id": "var_889_5",
+          "attributes": {
+            "Talle": "T5"
+          },
+          "price": 8000,
+          "originalPrice": 8000,
+          "stock": 5,
+          "sku": "BUZ011-T5",
+          "available": true,
+          "specs": {
+            "Largo": "39 cm",
+            "Contorno": "48 cm"
+          },
+          "images": {
+            "cover": "assets/images/products/prod_889/cover.jpg",
+            "thumb": "assets/images/products/prod_889/thumb.jpg",
+            "gallery": []
+          }
+        },
+        {
+          "id": "var_889_6",
+          "attributes": {
+            "Talle": "T6"
+          },
+          "price": 8000,
+          "originalPrice": 8000,
+          "stock": 5,
+          "sku": "BUZ011-T6",
+          "available": true,
+          "specs": {
+            "Largo": "45 cm",
+            "Contorno": "54 cm"
+          },
+          "images": {
+            "cover": "assets/images/products/prod_889/cover.jpg",
+            "thumb": "assets/images/products/prod_889/thumb.jpg",
+            "gallery": []
+          }
+        },
+        {
+          "id": "var_889_7",
+          "attributes": {
+            "Talle": "T7"
+          },
+          "price": 9000,
+          "originalPrice": 9000,
+          "stock": 5,
+          "sku": "BUZ011-T7",
+          "available": true,
+          "specs": {
+            "Largo": "48 cm",
+            "Contorno": "64 cm"
+          },
+          "images": {
+            "cover": "assets/images/products/prod_889/cover.jpg",
+            "thumb": "assets/images/products/prod_889/thumb.jpg",
+            "gallery": []
+          }
+        },
+        {
+          "id": "var_889_8",
+          "attributes": {
+            "Talle": "T8"
+          },
+          "price": 9000,
+          "originalPrice": 9000,
+          "stock": 5,
+          "sku": "BUZ011-T8",
+          "available": true,
+          "specs": {
+            "Largo": "52 cm",
+            "Contorno": "70 cm"
+          },
+          "images": {
+            "cover": "assets/images/products/prod_889/cover.jpg",
+            "thumb": "assets/images/products/prod_889/thumb.jpg",
+            "gallery": []
+          }
+        }
+      ]
+    },
+    "images": {
+      "cover": "assets/images/products/prod_889/cover.jpg",
+      "thumb": "assets/images/products/prod_889/thumb.jpg",
+      "gallery": []
+    },
+    "specs": {
+      "SKU": "BUZ011",
+      "Material": "Tela polar suave",
+      "Temporada": "Invierno"
+    },
+    "shipping": {
+      "free": false,
+      "days": 3
+    },
+    "badge": " Ropa Invierno",
+    "brand": "Sin marca",
+    "sku": "BUZ011",
+    "features": [
+      "Estilo universitario Harvard",
+      "Tela polar suave y abrigada",
+      "Diseño clásico elegante",
+      "8 talles disponibles",
+      "Ideal para días fríos"
+    ]
   }
 ]
