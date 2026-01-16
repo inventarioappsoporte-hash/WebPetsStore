@@ -680,6 +680,10 @@
     justify-content: space-around;
   }
 
+  .header__nav .nav__link {
+    font-size: 0.85rem;
+  }
+
   .header__actions {
     width: 100%;
     justify-content: flex-end;
