@@ -1,6 +1,7 @@
 /* Product Page */
 .product {
   padding: var(--spacing-2xl) 0;
+  overflow-x: hidden;
 }
 
 .product__breadcrumb {
@@ -300,6 +301,24 @@
 @media (max-width: 480px) {
   .product {
     padding: var(--spacing-lg) 0;
+  }
+
+  .product__gallery {
+    max-width: 100%;
+  }
+
+  .product__main {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .product__main-image {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .product__thumbnails {
+    grid-template-columns: repeat(4, 60px);
   }
 
   .product__gallery-img {
