@@ -2182,11 +2182,9 @@
           "sku": "CAS001-N1",
           "available": true,
           "images": {
-            "cover": "assets/images/products/prod_170/cover_n°1.jpg",
-            "thumb": "assets/images/products/prod_170/thumb_n°1.jpg",
-            "gallery": [
-              "assets/images/products/prod_170/1_n°1.jpg"
-            ]
+            "cover": "assets/images/products/prod_170/cover.jpg",
+            "thumb": "assets/images/products/prod_170/thumb.jpg",
+            "gallery": []
           },
           "originalPrice": 26000
         },
@@ -2200,11 +2198,9 @@
           "sku": "CAS001-N2",
           "available": true,
           "images": {
-            "cover": "assets/images/products/prod_170/cover_n°2.jpg",
-            "thumb": "assets/images/products/prod_170/thumb_n°2.jpg",
-            "gallery": [
-              "assets/images/products/prod_170/1_n°2.jpg"
-            ]
+            "cover": "assets/images/products/prod_170/cover.jpg",
+            "thumb": "assets/images/products/prod_170/thumb.jpg",
+            "gallery": []
           },
           "originalPrice": 30000
         },
@@ -2218,11 +2214,9 @@
           "sku": "CAS001-N3",
           "available": true,
           "images": {
-            "cover": "assets/images/products/prod_170/cover_n°3.jpg",
-            "thumb": "assets/images/products/prod_170/thumb_n°3.jpg",
-            "gallery": [
-              "assets/images/products/prod_170/1_n°3.jpg"
-            ]
+            "cover": "assets/images/products/prod_170/cover.jpg",
+            "thumb": "assets/images/products/prod_170/thumb.jpg",
+            "gallery": []
           },
           "originalPrice": 35000
         }
@@ -2231,9 +2225,7 @@
     "images": {
       "cover": "assets/images/products/prod_170/cover.jpg",
       "thumb": "assets/images/products/prod_170/thumb.jpg",
-      "gallery": [
-        "assets/images/products/prod_170/1.jpg"
-      ]
+      "gallery": []
     },
     "specs": {
       "SKU": "CAS001"
