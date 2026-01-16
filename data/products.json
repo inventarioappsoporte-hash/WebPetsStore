@@ -27370,9 +27370,7 @@
     "images": {
       "cover": "assets/images/products/prod_868/cover.jpg",
       "thumb": "assets/images/products/prod_868/thumb.jpg",
-      "gallery": [
-        "assets/images/products/prod_868/1.jpg"
-      ]
+      "gallery": []
     },
     "specs": {
       "SKU": "CAS002"
@@ -27411,9 +27409,7 @@
     "images": {
       "cover": "assets/images/products/prod_869/cover.jpg",
       "thumb": "assets/images/products/prod_869/thumb.jpg",
-      "gallery": [
-        "assets/images/products/prod_869/1.jpg"
-      ]
+      "gallery": []
     },
     "specs": {
       "SKU": "RAS002"
@@ -27454,9 +27450,7 @@
     "images": {
       "cover": "assets/images/products/prod_870/cover.jpg",
       "thumb": "assets/images/products/prod_870/thumb.jpg",
-      "gallery": [
-        "assets/images/products/prod_870/1.jpg"
-      ]
+      "gallery": []
     },
     "specs": {
       "SKU": "RAS003"
@@ -27492,9 +27486,7 @@
     "images": {
       "cover": "assets/images/products/prod_871/cover.jpg",
       "thumb": "assets/images/products/prod_871/thumb.jpg",
-      "gallery": [
-        "assets/images/products/prod_871/1.jpg"
-      ]
+      "gallery": []
     },
     "specs": {
       "SKU": "JUE002"
@@ -27530,9 +27522,7 @@
     "images": {
       "cover": "assets/images/products/prod_872/cover.jpg",
       "thumb": "assets/images/products/prod_872/thumb.jpg",
-      "gallery": [
-        "assets/images/products/prod_872/1.jpg"
-      ]
+      "gallery": []
     },
     "specs": {
       "SKU": "JUE003"
@@ -27570,9 +27560,7 @@
     "images": {
       "cover": "assets/images/products/prod_873/cover.jpg",
       "thumb": "assets/images/products/prod_873/thumb.jpg",
-      "gallery": [
-        "assets/images/products/prod_873/1.jpg"
-      ]
+      "gallery": []
     },
     "specs": {
       "SKU": "RAS016"
@@ -27609,9 +27597,7 @@
     "images": {
       "cover": "assets/images/products/prod_874/cover.jpg",
       "thumb": "assets/images/products/prod_874/thumb.jpg",
-      "gallery": [
-        "assets/images/products/prod_874/1.jpg"
-      ]
+      "gallery": []
     },
     "specs": {
       "SKU": "RAT002"
@@ -27647,9 +27633,7 @@
     "images": {
       "cover": "assets/images/products/prod_875/cover.jpg",
       "thumb": "assets/images/products/prod_875/thumb.jpg",
-      "gallery": [
-        "assets/images/products/prod_875/1.jpg"
-      ]
+      "gallery": []
     },
     "specs": {
       "SKU": "CUB001"
@@ -27690,9 +27674,7 @@
     "images": {
       "cover": "assets/images/products/prod_876/cover.jpg",
       "thumb": "assets/images/products/prod_876/thumb.jpg",
-      "gallery": [
-        "assets/images/products/prod_876/1.jpg"
-      ]
+      "gallery": []
     },
     "specs": {
       "SKU": "JUG014"
@@ -27729,9 +27711,7 @@
     "images": {
       "cover": "assets/images/products/prod_877/cover.jpg",
       "thumb": "assets/images/products/prod_877/thumb.jpg",
-      "gallery": [
-        "assets/images/products/prod_877/1.jpg"
-      ]
+      "gallery": []
     },
     "specs": {
       "SKU": "JUG015"
@@ -27771,9 +27751,7 @@
     "images": {
       "cover": "assets/images/products/prod_878/cover.jpg",
       "thumb": "assets/images/products/prod_878/thumb.jpg",
-      "gallery": [
-        "assets/images/products/prod_878/1.jpg"
-      ]
+      "gallery": []
     },
     "specs": {
       "SKU": "JUE004"
@@ -27810,9 +27788,7 @@
     "images": {
       "cover": "assets/images/products/prod_879/cover.jpg",
       "thumb": "assets/images/products/prod_879/thumb.jpg",
-      "gallery": [
-        "assets/images/products/prod_879/1.jpg"
-      ]
+      "gallery": []
     },
     "specs": {
       "SKU": "JUG016"
@@ -27849,9 +27825,7 @@
     "images": {
       "cover": "assets/images/products/prod_880/cover.jpg",
       "thumb": "assets/images/products/prod_880/thumb.jpg",
-      "gallery": [
-        "assets/images/products/prod_880/1.jpg"
-      ]
+      "gallery": []
     },
     "specs": {
       "SKU": "JUG019"
@@ -27890,9 +27864,7 @@
     "images": {
       "cover": "assets/images/products/prod_881/cover.jpg",
       "thumb": "assets/images/products/prod_881/thumb.jpg",
-      "gallery": [
-        "assets/images/products/prod_881/1.jpg"
-      ]
+      "gallery": []
     },
     "specs": {
       "SKU": "JUG017"
@@ -27934,9 +27906,7 @@
     "images": {
       "cover": "assets/images/products/prod_882/cover.jpg",
       "thumb": "assets/images/products/prod_882/thumb.jpg",
-      "gallery": [
-        "assets/images/products/prod_882/1.jpg"
-      ]
+      "gallery": []
     },
     "specs": {
       "SKU": "JUG018"
@@ -27973,9 +27943,7 @@
     "images": {
       "cover": "assets/images/products/prod_883/cover.jpg",
       "thumb": "assets/images/products/prod_883/thumb.jpg",
-      "gallery": [
-        "assets/images/products/prod_883/1.jpg"
-      ]
+      "gallery": []
     },
     "specs": {
       "SKU": "PAJ001"
@@ -28013,9 +27981,7 @@
     "images": {
       "cover": "assets/images/products/prod_884/cover.jpg",
       "thumb": "assets/images/products/prod_884/thumb.jpg",
-      "gallery": [
-        "assets/images/products/prod_884/1.jpg"
-      ]
+      "gallery": []
     },
     "specs": {
       "SKU": "PEL044"
@@ -28054,9 +28020,7 @@
     "images": {
       "cover": "assets/images/products/prod_885/cover.jpg",
       "thumb": "assets/images/products/prod_885/thumb.jpg",
-      "gallery": [
-        "assets/images/products/prod_885/1.jpg"
-      ]
+      "gallery": []
     },
     "specs": {
       "SKU": "JUG020"
@@ -28093,9 +28057,7 @@
     "images": {
       "cover": "assets/images/products/prod_886/cover.jpg",
       "thumb": "assets/images/products/prod_886/thumb.jpg",
-      "gallery": [
-        "assets/images/products/prod_886/1.jpg"
-      ]
+      "gallery": []
     },
     "specs": {
       "SKU": "JUG021"
