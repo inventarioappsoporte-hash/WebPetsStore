@@ -28231,5 +28231,247 @@
       "Fácil de patear",
       "Entretenimiento clásico"
     ]
+  },
+  {
+    "id": "prod_887",
+    "name": "BUZO ANIMADO",
+    "category": "ropa",
+    "subcategory": "Ropa Invierno",
+    "hasVariants": true,
+    "basePrice": 6000,
+    "baseOriginalPrice": 6000,
+    "discount": 0,
+    "stock": 45,
+    "rating": 4.6,
+    "reviews": 28,
+    "featured": false,
+    "topDiscount": false,
+    "hasVideo": false,
+    "tags": [
+      "buzo",
+      "animado",
+      "ropa",
+      "invierno",
+      "abrigo",
+      "mascota",
+      "perro"
+    ],
+    "description": "Buzo Animado para mascotas. Diseño divertido y abrigado ideal para los días fríos de invierno.",
+    "longDescription": "Buzo Animado para mascotas. Prenda de abrigo con diseño divertido y colorido que mantendrá a tu mascota calentita durante el invierno. Confeccionado con tela suave y cómoda que permite libertad de movimiento. Fácil de poner y quitar gracias a su diseño práctico. Disponible en 9 talles para adaptarse a diferentes tamaños de mascotas.",
+    "variants": {
+      "attributes": [
+        {
+          "id": "talle",
+          "name": "Talle",
+          "type": "size"
+        }
+      ],
+      "combinations": [
+        {
+          "id": "var_887_1",
+          "attributes": {
+            "Talle": "T1"
+          },
+          "price": 6000,
+          "originalPrice": 6000,
+          "stock": 5,
+          "sku": "BUZ010-T1",
+          "available": true,
+          "specs": {
+            "Largo": "23 cm",
+            "Contorno": "34 cm"
+          },
+          "images": {
+            "cover": "assets/images/products/prod_887/cover.jpg",
+            "thumb": "assets/images/products/prod_887/thumb.jpg",
+            "gallery": []
+          }
+        },
+        {
+          "id": "var_887_2",
+          "attributes": {
+            "Talle": "T2"
+          },
+          "price": 6000,
+          "originalPrice": 6000,
+          "stock": 5,
+          "sku": "BUZ010-T2",
+          "available": true,
+          "specs": {
+            "Largo": "25 cm",
+            "Contorno": "42 cm"
+          },
+          "images": {
+            "cover": "assets/images/products/prod_887/cover.jpg",
+            "thumb": "assets/images/products/prod_887/thumb.jpg",
+            "gallery": []
+          }
+        },
+        {
+          "id": "var_887_3",
+          "attributes": {
+            "Talle": "T3"
+          },
+          "price": 7000,
+          "originalPrice": 7000,
+          "stock": 5,
+          "sku": "BUZ010-T3",
+          "available": true,
+          "specs": {
+            "Largo": "28 cm",
+            "Contorno": "41 cm"
+          },
+          "images": {
+            "cover": "assets/images/products/prod_887/cover.jpg",
+            "thumb": "assets/images/products/prod_887/thumb.jpg",
+            "gallery": []
+          }
+        },
+        {
+          "id": "var_887_4",
+          "attributes": {
+            "Talle": "T4"
+          },
+          "price": 7000,
+          "originalPrice": 7000,
+          "stock": 5,
+          "sku": "BUZ010-T4",
+          "available": true,
+          "specs": {
+            "Largo": "31 cm",
+            "Contorno": "48 cm"
+          },
+          "images": {
+            "cover": "assets/images/products/prod_887/cover.jpg",
+            "thumb": "assets/images/products/prod_887/thumb.jpg",
+            "gallery": []
+          }
+        },
+        {
+          "id": "var_887_5",
+          "attributes": {
+            "Talle": "T5"
+          },
+          "price": 8000,
+          "originalPrice": 8000,
+          "stock": 5,
+          "sku": "BUZ010-T5",
+          "available": true,
+          "specs": {
+            "Largo": "36 cm",
+            "Contorno": "52 cm"
+          },
+          "images": {
+            "cover": "assets/images/products/prod_887/cover.jpg",
+            "thumb": "assets/images/products/prod_887/thumb.jpg",
+            "gallery": []
+          }
+        },
+        {
+          "id": "var_887_6",
+          "attributes": {
+            "Talle": "T6"
+          },
+          "price": 8000,
+          "originalPrice": 8000,
+          "stock": 5,
+          "sku": "BUZ010-T6",
+          "available": true,
+          "specs": {
+            "Largo": "38 cm",
+            "Contorno": "56 cm"
+          },
+          "images": {
+            "cover": "assets/images/products/prod_887/cover.jpg",
+            "thumb": "assets/images/products/prod_887/thumb.jpg",
+            "gallery": []
+          }
+        },
+        {
+          "id": "var_887_7",
+          "attributes": {
+            "Talle": "T7"
+          },
+          "price": 9000,
+          "originalPrice": 9000,
+          "stock": 5,
+          "sku": "BUZ010-T7",
+          "available": true,
+          "specs": {
+            "Largo": "41 cm",
+            "Contorno": "60 cm"
+          },
+          "images": {
+            "cover": "assets/images/products/prod_887/cover.jpg",
+            "thumb": "assets/images/products/prod_887/thumb.jpg",
+            "gallery": []
+          }
+        },
+        {
+          "id": "var_887_8",
+          "attributes": {
+            "Talle": "T8"
+          },
+          "price": 9000,
+          "originalPrice": 9000,
+          "stock": 5,
+          "sku": "BUZ010-T8",
+          "available": true,
+          "specs": {
+            "Largo": "45 cm",
+            "Contorno": "66 cm"
+          },
+          "images": {
+            "cover": "assets/images/products/prod_887/cover.jpg",
+            "thumb": "assets/images/products/prod_887/thumb.jpg",
+            "gallery": []
+          }
+        },
+        {
+          "id": "var_887_9",
+          "attributes": {
+            "Talle": "T9"
+          },
+          "price": 9000,
+          "originalPrice": 9000,
+          "stock": 5,
+          "sku": "BUZ010-T9",
+          "available": true,
+          "specs": {
+            "Largo": "50 cm",
+            "Contorno": "76 cm"
+          },
+          "images": {
+            "cover": "assets/images/products/prod_887/cover.jpg",
+            "thumb": "assets/images/products/prod_887/thumb.jpg",
+            "gallery": []
+          }
+        }
+      ]
+    },
+    "images": {
+      "cover": "assets/images/products/prod_887/cover.jpg",
+      "thumb": "assets/images/products/prod_887/thumb.jpg",
+      "gallery": []
+    },
+    "specs": {
+      "SKU": "BUZ010",
+      "Material": "Tela polar suave",
+      "Temporada": "Invierno"
+    },
+    "shipping": {
+      "free": false,
+      "days": 3
+    },
+    "badge": " Ropa Invierno",
+    "brand": "Sin marca",
+    "sku": "BUZ010",
+    "features": [
+      "Diseño animado divertido",
+      "Tela polar suave y abrigada",
+      "Fácil de poner y quitar",
+      "9 talles disponibles",
+      "Ideal para días fríos"
+    ]
   }
 ]
