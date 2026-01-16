@@ -74,9 +74,9 @@
 }
 
 .product__thumbnails {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(5, 80px);
   gap: var(--spacing-md);
-  overflow-x: auto;
   padding: var(--spacing-md) 0;
 }
 
