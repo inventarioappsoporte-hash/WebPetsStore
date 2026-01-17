@@ -29323,5 +29323,155 @@
       "Reduce estrés y ansiedad",
       "6 tamaños disponibles"
     ]
+  },
+  {
+    "id": "prod_892",
+    "name": "Oreja común comestible para perro",
+    "category": "alimentos",
+    "subcategory": "Alimentos y Snacks",
+    "hasVariants": false,
+    "price": 1105,
+    "originalPrice": 1300,
+    "discount": 15,
+    "stock": 10,
+    "rating": 4.8,
+    "reviews": 45,
+    "featured": false,
+    "topDiscount": true,
+    "hasVideo": false,
+    "tags": [
+      "oreja",
+      "comestible",
+      "natural",
+      "perro",
+      "snack",
+      "dental",
+      "masticable"
+    ],
+    "description": "Oreja común comestible para perro. Snack natural deshidratado 100% sin aditivos, ideal para la higiene dental.",
+    "longDescription": "Oreja común comestible para perro. La oreja común comestible para perro es un snack natural deshidratado, elaborado 100% a partir de oreja animal, sin aditivos, colorantes ni conservantes. Es una excelente opción para premiar a tu mascota mientras contribuye a su higiene dental, ayudando a reducir el sarro y fortalecer la mandíbula gracias a su textura firme. Este snack es altamente palatable, ideal para mantener a tu perro entretenido y satisfacer su instinto natural de masticación. Aporta proteínas de origen animal y es apto para perros de tamaño mediano y grande, o para perros pequeños bajo supervisión.",
+    "images": {
+      "cover": "assets/images/products/prod_892/cover.jpg",
+      "thumb": "assets/images/products/prod_892/thumb.jpg",
+      "gallery": []
+    },
+    "specs": {
+      "SKU": "ORE001",
+      "Tipo": "Snack natural deshidratado"
+    },
+    "shipping": {
+      "free": false,
+      "days": 3
+    },
+    "badge": " Alimentos y Snacks",
+    "brand": "Sin marca",
+    "sku": "ORE001",
+    "features": [
+      "Producto natural y comestible",
+      "Favorece la limpieza dental",
+      "Ayuda a reducir el estrés y la ansiedad",
+      "Alta durabilidad al masticar",
+      "Sin agregados artificiales"
+    ]
+  },
+  {
+    "id": "prod_893",
+    "name": "Trenza Natural Comestible para Perros",
+    "category": "alimentos",
+    "subcategory": "Alimentos y Snacks",
+    "hasVariants": false,
+    "price": 2550,
+    "originalPrice": 3000,
+    "discount": 15,
+    "stock": 10,
+    "rating": 4.7,
+    "reviews": 38,
+    "featured": false,
+    "topDiscount": true,
+    "hasVideo": false,
+    "tags": [
+      "trenza",
+      "comestible",
+      "natural",
+      "perro",
+      "snack",
+      "dental",
+      "cuero"
+    ],
+    "description": "Trenza Natural Comestible para Perros. Snack de cuero crudo trenzado ideal para la masticación y limpieza dental.",
+    "longDescription": "Trenza Natural Comestible para Perros. Snack natural elaborado a base de cuero crudo trenzado, ideal para mantener a tu perro entretenido por más tiempo. Ayuda a satisfacer el instinto de masticación y contribuye a la limpieza dental, reduciendo la acumulación de sarro y placa. Sin aditivos ni conservantes, es una opción saludable y duradera para perros de todas las razas.",
+    "images": {
+      "cover": "assets/images/products/prod_893/cover.jpg",
+      "thumb": "assets/images/products/prod_893/thumb.jpg",
+      "gallery": []
+    },
+    "specs": {
+      "SKU": "TRE001",
+      "Tipo": "Snack de cuero trenzado"
+    },
+    "shipping": {
+      "free": false,
+      "days": 3
+    },
+    "badge": " Alimentos y Snacks",
+    "brand": "Sin marca",
+    "sku": "TRE001",
+    "features": [
+      "Cuero crudo natural",
+      "Limpieza dental",
+      "Reduce sarro y placa",
+      "Sin aditivos ni conservantes",
+      "Para todas las razas"
+    ]
+  },
+  {
+    "id": "prod_894",
+    "name": "Donas Naturales Comestibles para Perros",
+    "category": "alimentos",
+    "subcategory": "Alimentos y Snacks",
+    "hasVariants": false,
+    "price": 5525,
+    "originalPrice": 6500,
+    "discount": 15,
+    "stock": 10,
+    "rating": 4.9,
+    "reviews": 52,
+    "featured": true,
+    "topDiscount": true,
+    "hasVideo": false,
+    "tags": [
+      "dona",
+      "donut",
+      "comestible",
+      "natural",
+      "perro",
+      "snack",
+      "premio"
+    ],
+    "description": "Donas Naturales Comestibles para Perros. Deliciosas donas ideales para premiar y consentir a tu mascota.",
+    "longDescription": "Donas Naturales Comestibles para Perros. Deliciosas donas elaboradas especialmente para perros, ideales para premiarlos y consentirlos de forma segura. Están hechas con ingredientes aptos para su consumo y pensadas para satisfacer su instinto natural de masticación. Su forma y textura las convierten en un snack atractivo que ayuda a mantenerlos entretenidos, reduciendo el estrés y el aburrimiento. Aptas para perros de todas las razas y tamaños. Ideales como premio, snack o entretenimiento diario. Producto 100% comestible.",
+    "images": {
+      "cover": "assets/images/products/prod_894/cover.jpg",
+      "thumb": "assets/images/products/prod_894/thumb.jpg",
+      "gallery": []
+    },
+    "specs": {
+      "SKU": "DON004",
+      "Tipo": "Snack comestible"
+    },
+    "shipping": {
+      "free": false,
+      "days": 3
+    },
+    "badge": " Alimentos y Snacks",
+    "brand": "Sin marca",
+    "sku": "DON004",
+    "features": [
+      "100% comestible",
+      "Para todas las razas y tamaños",
+      "Reduce estrés y aburrimiento",
+      "Ideal como premio",
+      "Satisface instinto de masticación"
+    ]
   }
 ]
