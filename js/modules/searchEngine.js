@@ -147,6 +147,13 @@ class SearchEngine {
                    ['anteojos', 'accesorio', 'moda', 'estilo', 'complemento'].includes(tag.toLowerCase())
                  ));
         }
+      },
+      '501': { // ALIMENTOS Y SNACKS
+        name: 'ALIMENTOS Y SNACKS',
+        filter: (product) => {
+          return (product.subcategory && product.subcategory.toLowerCase().includes('alimentos y snacks')) ||
+                 (product.badge && product.badge.toLowerCase().includes('alimentos y snacks'));
+        }
       }
     };
 

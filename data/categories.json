@@ -49,6 +49,11 @@
       "id": 500,
       "name": "🐾 ACCESORIOS",
       "description": "Accesorios únicos y divertidos para darle estilo y personalidad a tu mascota."
+    },
+    {
+      "id": 501,
+      "name": "🐾 ALIMENTOS Y SNACKS",
+      "description": "Alimentos y snacks nutritivos y deliciosos para consentir y alimentar a tu mascota."
     }
   ]
 }

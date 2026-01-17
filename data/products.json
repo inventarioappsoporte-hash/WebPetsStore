@@ -29145,5 +29145,183 @@
       "8 talles disponibles",
       "Ideal para días fríos"
     ]
+  },
+  {
+    "id": "prod_891",
+    "name": "Huesos Comestibles Naturales para Perros",
+    "category": "alimentos",
+    "subcategory": "Alimentos y Snacks",
+    "hasVariants": true,
+    "basePrice": 1020,
+    "baseOriginalPrice": 1200,
+    "discount": 15,
+    "stock": 25,
+    "rating": 4.9,
+    "reviews": 87,
+    "featured": true,
+    "topDiscount": true,
+    "hasVideo": false,
+    "tags": [
+      "hueso",
+      "comestible",
+      "natural",
+      "perro",
+      "snack",
+      "dental",
+      "masticable",
+      "cuero"
+    ],
+    "description": "Huesos comestibles elaborados con cuero natural, ideales para entretener a tu perro y contribuir a su salud dental.",
+    "longDescription": "Huesos Comestibles Naturales para Perros. Huesos comestibles elaborados con cuero natural, ideales para entretener a tu perro y contribuir a su salud dental. Su textura resistente ayuda a reducir el sarro y fortalecer las encías, promoviendo una masticación prolongada y segura. Producto 100% comestible. Ayuda a disminuir el estrés y la ansiedad, manteniendo a tu mascota ocupada por más tiempo. No contiene colorantes ni conservantes artificiales. Recomendado para perros de tamaño pequeño a mediano. Se aconseja ofrecer siempre bajo supervisión y con agua fresca disponible.",
+    "variants": {
+      "attributes": [
+        {
+          "id": "tamano",
+          "name": "Tamaño",
+          "type": "size"
+        }
+      ],
+      "combinations": [
+        {
+          "id": "var_891_1",
+          "attributes": {
+            "Tamaño": "T1"
+          },
+          "price": 1020,
+          "originalPrice": 1200,
+          "stock": 5,
+          "sku": "HUE015-T1",
+          "available": true,
+          "specs": {
+            "Medida": "2/3 - 7 cm"
+          },
+          "images": {
+            "cover": "assets/images/products/prod_891/t1.jpg",
+            "thumb": "assets/images/products/prod_891/t1.jpg",
+            "gallery": []
+          }
+        },
+        {
+          "id": "var_891_2",
+          "attributes": {
+            "Tamaño": "T2"
+          },
+          "price": 1190,
+          "originalPrice": 1400,
+          "stock": 5,
+          "sku": "HUE015-T2",
+          "available": true,
+          "specs": {
+            "Medida": "3/4 - 9 cm"
+          },
+          "images": {
+            "cover": "assets/images/products/prod_891/t2.jpg",
+            "thumb": "assets/images/products/prod_891/t2.jpg",
+            "gallery": []
+          }
+        },
+        {
+          "id": "var_891_3",
+          "attributes": {
+            "Tamaño": "T3"
+          },
+          "price": 1530,
+          "originalPrice": 1800,
+          "stock": 5,
+          "sku": "HUE015-T3",
+          "available": true,
+          "specs": {
+            "Medida": "4/5 - 13 cm"
+          },
+          "images": {
+            "cover": "assets/images/products/prod_891/t3.jpg",
+            "thumb": "assets/images/products/prod_891/t3.jpg",
+            "gallery": []
+          }
+        },
+        {
+          "id": "var_891_4",
+          "attributes": {
+            "Tamaño": "T4"
+          },
+          "price": 5525,
+          "originalPrice": 6500,
+          "stock": 5,
+          "sku": "HUE015-T4",
+          "available": true,
+          "specs": {
+            "Medida": "9/10 - 13 cm"
+          },
+          "images": {
+            "cover": "assets/images/products/prod_891/t4.jpg",
+            "thumb": "assets/images/products/prod_891/t4.jpg",
+            "gallery": []
+          }
+        },
+        {
+          "id": "var_891_5",
+          "attributes": {
+            "Tamaño": "T5"
+          },
+          "price": 12750,
+          "originalPrice": 15000,
+          "stock": 5,
+          "sku": "HUE015-T5",
+          "available": true,
+          "specs": {
+            "Medida": "13/14 - 28 cm"
+          },
+          "images": {
+            "cover": "assets/images/products/prod_891/t5.jpg",
+            "thumb": "assets/images/products/prod_891/t5.jpg",
+            "gallery": []
+          }
+        },
+        {
+          "id": "var_891_6",
+          "attributes": {
+            "Tamaño": "T6"
+          },
+          "price": 17000,
+          "originalPrice": 20000,
+          "stock": 5,
+          "sku": "HUE015-T6",
+          "available": true,
+          "specs": {
+            "Medida": "15/16 - 34 cm"
+          },
+          "images": {
+            "cover": "assets/images/products/prod_891/t6.jpg",
+            "thumb": "assets/images/products/prod_891/t6.jpg",
+            "gallery": []
+          }
+        }
+      ]
+    },
+    "images": {
+      "cover": "assets/images/products/prod_891/cover.jpg",
+      "thumb": "assets/images/products/prod_891/thumb.jpg",
+      "gallery": []
+    },
+    "specs": {
+      "SKU": "HUE015",
+      "Material": "Cuero natural 100%",
+      "Tipo": "Snack masticable"
+    },
+    "shipping": {
+      "free": false,
+      "days": 3
+    },
+    "badge": " Alimentos y Snacks",
+    "brand": "Sin marca",
+    "sku": "HUE015",
+    "features": [
+      "100% cuero natural",
+      "Ayuda a la salud dental",
+      "Reduce sarro y fortalece encías",
+      "Sin colorantes ni conservantes",
+      "Reduce estrés y ansiedad",
+      "6 tamaños disponibles"
+    ]
   }
 ]
