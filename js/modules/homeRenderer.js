@@ -55,10 +55,50 @@ class HomeRenderer {
   }
 
   renderHero(heroConfig, products) {
-    // Hero image is static in HTML, don't modify it
-    // Buttons already have IDs in HTML
-    console.log('🎬 renderHero called - hero is static');
-    return;
+    // Actualizar imagen del hero si está configurada
+    const heroImage = document.querySelector('.hero__image');
+    if (heroImage && heroConfig.image) {
+      heroImage.src = heroConfig.image;
+      heroImage.alt = heroConfig.title || 'Producto destacado';
+    }
+    
+    // Actualizar título si existe el elemento
+    const heroTitle = document.querySelector('.hero__title');
+    if (heroTitle && heroConfig.title) {
+      heroTitle.textContent = heroConfig.title;
+    }
+    
+    // Configurar botones del hero
+    const productId = heroConfig.productId;
+    if (productId) {
+      const productUrl = `product.html?id=${productId}`;
+      
+      // Botones desktop
+      const viewBtn = document.getElementById('hero-view-btn');
+      const buyBtn = document.getElementById('hero-buy-btn');
+      // Botones mobile
+      const viewBtnMobile = document.getElementById('hero-view-btn-mobile');
+      const buyBtnMobile = document.getElementById('hero-buy-btn-mobile');
+      
+      if (viewBtn) {
+        viewBtn.textContent = heroConfig.ctaSecondary || 'VER PRODUCTO';
+        viewBtn.onclick = () => window.location.href = productUrl;
+      }
+      if (buyBtn) {
+        buyBtn.textContent = heroConfig.cta || 'COMPRAR AHORA';
+        buyBtn.onclick = () => window.location.href = productUrl;
+      }
+      if (viewBtnMobile) {
+        viewBtnMobile.textContent = heroConfig.ctaSecondary || 'VER PRODUCTO';
+        viewBtnMobile.onclick = () => window.location.href = productUrl;
+      }
+      if (buyBtnMobile) {
+        buyBtnMobile.textContent = heroConfig.cta || 'COMPRAR AHORA';
+        buyBtnMobile.onclick = () => window.location.href = productUrl;
+      }
+    }
+    
+    console.log('🎬 renderHero - image:', heroConfig.image, 'productId:', heroConfig.productId);
   }
 
   renderPromos(promos) {
@@ -236,12 +276,25 @@ class HomeRenderer {
     console.log('🔍 filterProducts called with criteria:', criteria);
     console.log('🔍 filterProducts - products count:', products.length);
     
+    // Si criteria es un string, convertirlo a objeto de filtro
+    if (typeof criteria === 'string') {
+      const filterMap = {
+        'featured': { featured: true },
+        'topDiscount': { topDiscount: true },
+        'hasVideo': { hasVideo: true },
+        'recent': {} // Sin filtro específico, solo ordenar por fecha
+      };
+      criteria = filterMap[criteria] || { featured: true };
+      console.log('🔍 Converted string filter to:', criteria);
+    }
+    
     const result = products.filter(p => {
+      // Si no hay criterios (ej: "recent"), incluir todos
+      if (Object.keys(criteria).length === 0) return true;
+      
       const matches = Object.keys(criteria).every(key => {
         const value = criteria[key];
         const productValue = p[key];
-        
-        console.log(`🔍 Checking ${p.name} - ${key}: ${productValue} === ${value} ?`, productValue === value);
         
         if (typeof value === 'object' && value.$gte) {
           return productValue >= value.$gte;
@@ -249,10 +302,6 @@ class HomeRenderer {
         
         return productValue === value;
       });
-      
-      if (matches) {
-        console.log(`✅ Product ${p.name} matches criteria`);
-      }
       
       return matches;
     });
