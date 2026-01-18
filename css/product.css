@@ -255,6 +255,26 @@
   font-weight: 600;
 }
 
+.product__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 16px;
+  padding: 16px;
+  background: #1a1a2e;
+  border-radius: 12px;
+}
+
+.product__tag {
+  display: inline-block;
+  padding: 6px 12px;
+  background: #4CAF50;
+  color: white;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
 .product__error {
   text-align: center;
   padding: var(--spacing-2xl);

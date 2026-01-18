@@ -2,7 +2,7 @@
 class DataLoader {
   constructor() {
     this.cache = {};
-    // Detectar la ruta base correcta para GitHub Pages y local
+    // Detectar la ruta base correcta para GitHub Pages, local y admin
     const pathname = window.location.pathname;
     const hostname = window.location.hostname;
     
@@ -13,14 +13,20 @@ class DataLoader {
     // Si estamos en GitHub Pages (github.io), la ruta incluye el repo name
     const isGitHubPages = hostname.includes('github.io');
     const isLocalFile = window.location.protocol === 'file:';
+    // Detectar si estamos siendo servidos desde /pets-store/ (admin server)
+    const isFromAdmin = pathname.startsWith('/pets-store/');
     
     console.log('🔍 DataLoader - isGitHubPages:', isGitHubPages);
     console.log('🔍 DataLoader - isLocalFile:', isLocalFile);
+    console.log('🔍 DataLoader - isFromAdmin:', isFromAdmin);
     
     // Para archivos locales, usar ruta relativa
     let baseUrl;
     if (isLocalFile) {
       baseUrl = 'data/';
+    } else if (isFromAdmin) {
+      // Servido desde el admin en /pets-store/
+      baseUrl = '/pets-store/data/';
     } else if (isGitHubPages) {
       // Extraer el nombre del repo del pathname
       const pathParts = pathname.split('/').filter(p => p);

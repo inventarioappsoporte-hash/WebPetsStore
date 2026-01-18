@@ -2,7 +2,7 @@
   {
     "id": "prod_001",
     "name": "COLCHON LIVING MARRON",
-    "category": null,
+    "category": "casa-descanso",
     "subcategory": "Colchonetas",
     "price": 59500,
     "stock": 2,
@@ -61,7 +61,7 @@
   {
     "id": "prod_009",
     "name": "Anteojos para tu Mascota",
-    "category": "Perros",
+    "category": "🐾 ACCESORIOS",
     "subcategory": "Accesorios",
     "price": 6800,
     "stock": 18,
@@ -84,19 +84,13 @@
     "images": {
       "cover": "assets/images/products/prod_009/cover.jpg",
       "thumb": "assets/images/products/prod_009/cover.jpg",
-      "gallery": [
-        "assets/images/products/prod_009/cover.jpg"
-      ]
+      "gallery": []
     },
     "specs": {
       "material": "Plástico resistente",
       "size": "Ajustable",
       "weight": "50g",
-      "colors": [
-        "Azul",
-        "Rosa",
-        "Marrón"
-      ]
+      "colors": "Azul,Rosa,Marrón"
     },
     "shipping": {
       "free": true,

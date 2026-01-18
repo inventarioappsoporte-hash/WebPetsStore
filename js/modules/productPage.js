@@ -99,7 +99,7 @@ class ProductPage {
     container.innerHTML = `
       <div class="product__breadcrumb">
         <a href="index.html">Home</a> / 
-        <a href="search.html?q=${product.category}">${product.category}</a> / 
+        ${product.category ? `<a href="search.html?q=${product.category}">${product.category}</a> / ` : ''}
         <span>${product.name}</span>
       </div>
 
@@ -166,9 +166,7 @@ class ProductPage {
             </button>
           </div>
 
-          <div class="product__badge">
-            ${product.badge}
-          </div>
+          ${product.badge ? `<div class="product__badge">${product.badge}</div>` : ''}
         </div>
       </div>
     `;
