@@ -28616,5 +28616,148 @@
     ],
     "originalPrice": 6500,
     "discount": 15
+  },
+  {
+    "id": "prod_895",
+    "name": "Botella 350ml + 180ml",
+    "category": "🐾 COMEDEROS Y BEBEDEROS",
+    "subcategory": "Comederos y Bebederos",
+    "price": 14450,
+    "originalPrice": 17000,
+    "discount": 15,
+    "stock": 10,
+    "rating": 5,
+    "reviews": 313,
+    "featured": false,
+    "topDiscount": true,
+    "hasVideo": false,
+    "hasVariants": false,
+    "tags": [
+      "bebedero",
+      "portátil",
+      "paseo",
+      "viaje",
+      "mascota",
+      "azul",
+      "2 en 1"
+    ],
+    "description": "Bebedero portátil 2 en 1 con capacidades de 350ml y 180ml. Ideal para paseos y viajes con tu mascota.",
+    "longDescription": "Bebedero portátil con diseño innovador 2 en 1 que combina dos capacidades: 350ml para hidratación principal y 180ml como reserva. Perfecto para mantener a tu mascota hidratada durante paseos, viajes o actividades al aire libre. Su diseño ergonómico facilita el transporte y uso con una sola mano. El sistema de dispensación controlada evita derrames y desperdicio de agua. Fabricado con plástico ABS libre de BPA, seguro para tu mascota.",
+    "images": {
+      "cover": "assets/images/products/prod_895/cover.jpeg",
+      "thumb": "assets/images/products/prod_895/cover.jpeg",
+      "gallery": []
+    },
+    "specs": {
+      "Capacidad": "350ml + 180ml",
+      "Material": "Plástico ABS libre de BPA",
+      "Tipo": "Portátil 2 en 1",
+      "Uso": "Paseos y viajes",
+      "Colores disponibles": "Azul"
+    },
+    "shipping": {
+      "free": false,
+      "days": "1-2"
+    },
+    "badge": "💧Bebedero",
+    "brand": null,
+    "sku": "BOT002"
+  },
+  {
+    "id": "prod_896",
+    "name": "Bebedero portátil 715ml",
+    "category": "🐾 COMEDEROS Y BEBEDEROS",
+    "subcategory": "Comederos y Bebederos",
+    "price": 16150,
+    "originalPrice": 19000,
+    "discount": 15,
+    "stock": 10,
+    "rating": 5,
+    "reviews": 246,
+    "featured": false,
+    "topDiscount": true,
+    "hasVideo": false,
+    "hasVariants": false,
+    "tags": [
+      "bebedero",
+      "portátil",
+      "paseo",
+      "viaje",
+      "mascota",
+      "azul",
+      "rosa",
+      "verde",
+      "715ml"
+    ],
+    "description": "Bebedero portátil de gran capacidad 715ml. Perfecto para perros grandes y paseos largos.",
+    "longDescription": "Bebedero portátil de alta capacidad diseñado para perros medianos y grandes. Con sus 715ml de capacidad, es ideal para caminatas largas, excursiones o días de playa. Su diseño innovador permite que tu mascota beba cómodamente mientras controlas el flujo de agua. El recipiente plegable se adapta al hocico del perro y el sistema antigoteo mantiene todo limpio y seco. Disponible en varios colores para elegir el que más te guste.",
+    "images": {
+      "cover": "assets/images/products/prod_896/cover.jpeg",
+      "thumb": "assets/images/products/prod_896/cover.jpeg",
+      "gallery": []
+    },
+    "specs": {
+      "Capacidad": "715ml",
+      "Material": "Plástico ABS libre de BPA",
+      "Tipo": "Portátil gran capacidad",
+      "Ideal para": "Perros medianos y grandes",
+      "Características": "Sistema antigoteo",
+      "Colores disponibles": "Azul, Rosa, Verde"
+    },
+    "shipping": {
+      "free": false,
+      "days": "1-2"
+    },
+    "badge": " 💧Bebedero",
+    "brand": null,
+    "sku": "BEB001"
+  },
+  {
+    "id": "prod_897",
+    "name": "Bebedero portátil 350ml",
+    "category": "🐾 COMEDEROS Y BEBEDEROS",
+    "subcategory": "Comederos y Bebederos",
+    "price": 13600,
+    "originalPrice": 16000,
+    "discount": 15,
+    "stock": 10,
+    "rating": 4.8,
+    "reviews": 146,
+    "featured": false,
+    "topDiscount": true,
+    "hasVideo": false,
+    "hasVariants": false,
+    "tags": [
+      "bebedero",
+      "portátil",
+      "paseo",
+      "viaje",
+      "mascota",
+      "azul",
+      "verde",
+      "350ml"
+    ],
+    "description": "Bebedero portátil compacto de 350ml. Ligero y fácil de transportar para paseos diarios.",
+    "longDescription": "Bebedero portátil compacto perfecto para los paseos diarios con tu mascota. Su capacidad de 350ml es ideal para perros pequeños y medianos. El diseño liviano y ergonómico permite llevarlo cómodamente en la mano, bolso o enganchado a la correa. El sistema de dispensación con un solo botón facilita dar agua a tu mascota sin derrames. Fácil de limpiar y rellenar. Disponible en colores azul y verde.",
+    "images": {
+      "cover": "assets/images/products/prod_897/cover.jpeg",
+      "thumb": "assets/images/products/prod_897/cover.jpeg",
+      "gallery": []
+    },
+    "specs": {
+      "Capacidad": "350ml",
+      "Material": "Plástico ABS libre de BPA",
+      "Tipo": "Portátil compacto",
+      "Ideal para": "Perros pequeños y medianos",
+      "Características": "Ligero y ergonómico",
+      "Colores disponibles": "Azul, Verde"
+    },
+    "shipping": {
+      "free": false,
+      "days": "1-2"
+    },
+    "badge": " 💧Bebedero",
+    "brand": null,
+    "sku": "BEB005"
   }
 ]
