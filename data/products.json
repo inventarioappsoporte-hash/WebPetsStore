@@ -2,17 +2,16 @@
   {
     "id": "prod_001",
     "name": "COLCHON LIVING MARRON",
-    "category": "Perros y Gatos",
+    "category": null,
     "subcategory": "Colchonetas",
     "price": 59500,
-    "originalPrice": 85000,
-    "discount": 30,
-    "stock": 1,
-    "rating": 4.8,
-    "reviews": 347,
+    "stock": 2,
+    "rating": 0,
+    "reviews": 0,
     "featured": true,
     "topDiscount": true,
     "hasVideo": false,
+    "hasVariants": false,
     "tags": [
       "colchon",
       "cama",
@@ -34,10 +33,6 @@
         "assets/images/products/prod_001/marketing.jpg"
       ]
     },
-    "marketing": {
-      "type": "image",
-      "url": "assets/images/products/prod_001/marketing.jpg"
-    },
     "specs": {
       "dimensions": "58 x 56 x 105 cm",
       "material": "Materiales de alta calidad, resistentes y durables, 100% hecho a mano",
@@ -52,7 +47,16 @@
       "days": "3-5"
     },
     "badge": "🛏️ Confort Premium",
-    "promoText": "30% OFF"
+    "brand": null,
+    "sku": null,
+    "features": [],
+    "originalPrice": 85000,
+    "discount": 30,
+    "promoText": "30% OFF",
+    "marketing": {
+      "type": "image",
+      "url": "assets/images/products/prod_001/marketing.jpg"
+    }
   },
   {
     "id": "prod_009",
