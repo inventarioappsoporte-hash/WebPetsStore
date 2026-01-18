@@ -95,12 +95,14 @@ class HeaderSearch {
     const normalizedQuery = Utils.normalizeText(query);
     
     const results = this.products.filter(product => {
-      const matchName = Utils.normalizeText(product.name).includes(normalizedQuery);
-      const matchCategory = Utils.normalizeText(product.category).includes(normalizedQuery);
-      const matchTags = product.tags.some(tag => Utils.normalizeText(tag).includes(normalizedQuery));
-      const matchDescription = Utils.normalizeText(product.description).includes(normalizedQuery);
+      // Manejar campos que pueden ser null o undefined
+      const matchName = product.name ? Utils.normalizeText(product.name).includes(normalizedQuery) : false;
+      const matchCategory = product.category ? Utils.normalizeText(product.category).includes(normalizedQuery) : false;
+      const matchSubcategory = product.subcategory ? Utils.normalizeText(product.subcategory).includes(normalizedQuery) : false;
+      const matchTags = product.tags && Array.isArray(product.tags) ? product.tags.some(tag => Utils.normalizeText(tag).includes(normalizedQuery)) : false;
+      const matchDescription = product.description ? Utils.normalizeText(product.description).includes(normalizedQuery) : false;
 
-      return matchName || matchCategory || matchTags || matchDescription;
+      return matchName || matchCategory || matchSubcategory || matchTags || matchDescription;
     });
 
     console.log('🔍 HeaderSearch - Resultados encontrados:', results.length);
