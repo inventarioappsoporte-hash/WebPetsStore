@@ -282,6 +282,7 @@ class HomeRenderer {
         'featured': { featured: true },
         'topDiscount': { topDiscount: true },
         'hasVideo': { hasVideo: true },
+        'bestRated': { rating: { $gte: 4.5 } },
         'recent': {} // Sin filtro específico, solo ordenar por fecha
       };
       criteria = filterMap[criteria] || { featured: true };

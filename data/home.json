@@ -47,7 +47,7 @@
       "id": "best-rated",
       "title": "⭐ MEJOR VALORADOS",
       "type": "grid",
-      "filter": "featured",
+      "filter": "bestRated",
       "sortBy": "rating",
       "limit": 12
     },
