@@ -2,12 +2,12 @@
   {
     "id": "prod_001",
     "name": "COLCHON LIVING MARRON",
-    "category": "casa-descanso",
+    "category": "🐾 COLCHONETAS Y MOISES",
     "subcategory": "Colchonetas",
     "price": 59500,
     "stock": 2,
-    "rating": 0,
-    "reviews": 0,
+    "rating": 5,
+    "reviews": 347,
     "featured": true,
     "topDiscount": true,
     "hasVideo": false,
@@ -44,10 +44,10 @@
     },
     "shipping": {
       "free": true,
-      "days": "3-5"
+      "days": "1-2"
     },
     "badge": "🛏️ Confort Premium",
-    "brand": null,
+    "brand": "Huella",
     "sku": null,
     "features": [],
     "originalPrice": 85000,
@@ -93,7 +93,7 @@
       "colors": "Azul,Rosa,Marrón"
     },
     "shipping": {
-      "free": true,
+      "free": false,
       "days": "1-2"
     },
     "badge": "😎 Moda",
@@ -567,8 +567,8 @@
       "SKU": "COL005"
     },
     "shipping": {
-      "free": true,
-      "days": 3
+      "free": false,
+      "days": "1-2"
     },
     "badge": "🛏️ Colchonetas",
     "brand": "Sin marca",
@@ -701,8 +701,8 @@
       "SKU": "COL006"
     },
     "shipping": {
-      "free": true,
-      "days": 2
+      "free": false,
+      "days": "1-2"
     },
     "badge": "🛏️ Colchonetas",
     "brand": "Sin marca",
@@ -969,8 +969,8 @@
       "SKU": "MOI002"
     },
     "shipping": {
-      "free": true,
-      "days": 4
+      "free": false,
+      "days": "1-2"
     },
     "badge": "🛏️ Colchonetas",
     "brand": "Sin marca",
@@ -1085,8 +1085,8 @@
       "SKU": "COC002"
     },
     "shipping": {
-      "free": true,
-      "days": 2
+      "free": false,
+      "days": "1-2"
     },
     "badge": "🛏️ Colchonetas",
     "brand": "Sin marca",
@@ -1352,8 +1352,8 @@
       "SKU": "SOF001"
     },
     "shipping": {
-      "free": true,
-      "days": 4
+      "free": false,
+      "days": "1-2"
     },
     "badge": "🛏️ Colchonetas",
     "brand": "Sin marca",
@@ -1467,8 +1467,8 @@
       "SKU": "MOI005"
     },
     "shipping": {
-      "free": true,
-      "days": 4
+      "free": false,
+      "days": "1-2"
     },
     "badge": "🛏️ Colchonetas",
     "brand": "Sin marca",
@@ -1583,8 +1583,8 @@
       "SKU": "MOI007"
     },
     "shipping": {
-      "free": true,
-      "days": 2
+      "free": false,
+      "days": "1-2"
     },
     "badge": "🛏️ Colchonetas",
     "brand": "Sin marca",
@@ -1717,8 +1717,8 @@
       "SKU": "PUF001"
     },
     "shipping": {
-      "free": true,
-      "days": 3
+      "free": false,
+      "days": "1-2"
     },
     "badge": "🛏️ Colchonetas",
     "brand": "Sin marca",
@@ -1817,8 +1817,8 @@
       "SKU": "PUF002"
     },
     "shipping": {
-      "free": true,
-      "days": 3
+      "free": false,
+      "days": "1-2"
     },
     "badge": "🛏️ Colchonetas",
     "brand": "Sin marca",
@@ -1914,8 +1914,8 @@
       "SKU": "BOL001"
     },
     "shipping": {
-      "free": true,
-      "days": 4
+      "free": false,
+      "days": "1-2"
     },
     "badge": "🏠 Casitas",
     "brand": "Sin marca",
@@ -2014,7 +2014,7 @@
     },
     "shipping": {
       "free": true,
-      "days": 4
+      "days": "1-2"
     },
     "badge": "🏠 Casitas",
     "brand": "Sin marca",
@@ -2113,7 +2113,7 @@
     },
     "shipping": {
       "free": true,
-      "days": 4
+      "days": "1-2"
     },
     "badge": "🏠 Casitas",
     "brand": "Sin marca",
@@ -2163,7 +2163,7 @@
     },
     "shipping": {
       "free": true,
-      "days": 2
+      "days": "1-2"
     },
     "badge": "🏠 Casitas",
     "brand": "Sin marca",
@@ -2210,8 +2210,8 @@
       "SKU": "CAS001"
     },
     "shipping": {
-      "free": true,
-      "days": 2
+      "free": false,
+      "days": "1-2"
     },
     "badge": "🏠 Casitas",
     "brand": "Sin marca",
@@ -2327,8 +2327,8 @@
       "SKU": "MOI008"
     },
     "shipping": {
-      "free": true,
-      "days": 3
+      "free": false,
+      "days": "1-2"
     },
     "badge": "🛏️ Colchonetas",
     "brand": "Sin marca",
@@ -2442,8 +2442,8 @@
       "SKU": "ALM002"
     },
     "shipping": {
-      "free": true,
-      "days": 2
+      "free": false,
+      "days": "1-2"
     },
     "badge": "🛏️ Colchonetas",
     "brand": "Sin marca",
@@ -2560,8 +2560,8 @@
       "SKU": "COL012"
     },
     "shipping": {
-      "free": true,
-      "days": 3
+      "free": false,
+      "days": "1-2"
     },
     "badge": "🛏️ Colchonetas",
     "brand": "Sin marca",
@@ -2713,8 +2713,8 @@
       "SKU": "MOI009"
     },
     "shipping": {
-      "free": true,
-      "days": 4
+      "free": false,
+      "days": "1-2"
     },
     "badge": "🛏️ Colchonetas",
     "brand": "Sin marca",
@@ -2828,8 +2828,8 @@
       "SKU": "COL013"
     },
     "shipping": {
-      "free": true,
-      "days": 4
+      "free": false,
+      "days": "1-2"
     },
     "badge": "🛏️ Colchonetas",
     "brand": "Sin marca",
@@ -3094,8 +3094,8 @@
       "SKU": "COL015"
     },
     "shipping": {
-      "free": true,
-      "days": 4
+      "free": false,
+      "days": "1-2"
     },
     "badge": "🛏️ Colchonetas",
     "brand": "Sin marca",
@@ -3281,8 +3281,8 @@
       "material": "Material resistente"
     },
     "shipping": {
-      "free": true,
-      "days": 2
+      "free": false,
+      "days": "1-2"
     },
     "badge": "🛏️ Rascadores",
     "brand": "Sin marca",
@@ -3392,8 +3392,8 @@
       "material": "Material resistente"
     },
     "shipping": {
-      "free": true,
-      "days": 3
+      "free": false,
+      "days": "1-2"
     },
     "badge": "🛏️ Rascadores",
     "brand": "Sin marca",
@@ -3448,8 +3448,8 @@
       "material": "Material resistente"
     },
     "shipping": {
-      "free": true,
-      "days": 2
+      "free": false,
+      "days": "1-2"
     },
     "badge": "🛏️ Rascadores",
     "brand": "Sin marca",
@@ -3554,8 +3554,8 @@
       "material": "Material resistente"
     },
     "shipping": {
-      "free": true,
-      "days": 4
+      "free": false,
+      "days": "1-2"
     },
     "badge": "🛏️ Rascadores",
     "brand": "Sin marca",
@@ -3609,8 +3609,8 @@
       "material": "Material resistente"
     },
     "shipping": {
-      "free": true,
-      "days": 2
+      "free": false,
+      "days": "1-2"
     },
     "badge": "🛏️ Rascadores",
     "brand": "Sin marca",
@@ -3816,8 +3816,8 @@
       "material": "Material resistente"
     },
     "shipping": {
-      "free": true,
-      "days": 4
+      "free": false,
+      "days": "1-2"
     },
     "badge": "🛏️ Rascadores",
     "brand": "Sin marca",
@@ -3917,7 +3917,7 @@
     },
     "shipping": {
       "free": true,
-      "days": 4
+      "days": "1-2"
     },
     "badge": "🛏️ Rascadores",
     "brand": "Sin marca",
@@ -3966,8 +3966,8 @@
       "material": "Material resistente"
     },
     "shipping": {
-      "free": true,
-      "days": 3
+      "free": false,
+      "days": "1-2"
     },
     "badge": "🛏️ Rascadores",
     "brand": "Sin marca",
@@ -4018,8 +4018,8 @@
       "material": "Material resistente"
     },
     "shipping": {
-      "free": true,
-      "days": 3
+      "free": false,
+      "days": "1-2"
     },
     "badge": "🛏️ Rascadores",
     "brand": "Sin marca",
@@ -4125,8 +4125,8 @@
       "material": "Material resistente"
     },
     "shipping": {
-      "free": true,
-      "days": 4
+      "free": false,
+      "days": "1-2"
     },
     "badge": "🛏️ Rascadores",
     "brand": "Sin marca",
@@ -4181,8 +4181,8 @@
       "material": "Material resistente"
     },
     "shipping": {
-      "free": true,
-      "days": 2
+      "free": false,
+      "days": "1-2"
     },
     "badge": "🛏️ Rascadores",
     "brand": "Sin marca",
@@ -4340,8 +4340,8 @@
       "idealFor": "Perros de todos los tamaños"
     },
     "shipping": {
-      "free": true,
-      "days": 2
+      "free": false,
+      "days": "1-2"
     },
     "badge": "🎾 Juguetes",
     "brand": "Sin marca",
@@ -4390,8 +4390,8 @@
       "material": "Material resistente"
     },
     "shipping": {
-      "free": true,
-      "days": 4
+      "free": false,
+      "days": "1-2"
     },
     "badge": "🛏️ Rascadores",
     "brand": "Sin marca",
@@ -4593,8 +4593,8 @@
       "material": "Material resistente"
     },
     "shipping": {
-      "free": true,
-      "days": 4
+      "free": false,
+      "days": "1-2"
     },
     "badge": "🛏️ Rascadores",
     "brand": "Sin marca",
@@ -5388,8 +5388,8 @@
       "color": "Marrón natural (cartón), Base en tono madera clara"
     },
     "shipping": {
-      "free": true,
-      "days": "2-3"
+      "free": false,
+      "days": "1-2"
     },
     "badge": "🛏️ Rascador",
     "brand": null,
@@ -5399,7 +5399,7 @@
     "discount": 15,
     "promoText": "15% OFF",
     "marketing": {
-      "type": "video",
+      "type": "image",
       "url": "assets/videos/marketing/cama-victoria-demo.mp4",
       "poster": "assets/images/ui/cama-victoria.jpeg",
       "autoplay": true,
@@ -5443,8 +5443,8 @@
       "material": "Material resistente"
     },
     "shipping": {
-      "free": true,
-      "days": 2
+      "free": false,
+      "days": "1-2"
     },
     "badge": "🛏️ Rascadores",
     "brand": "AGATAR",
@@ -5493,8 +5493,8 @@
       "material": "Material resistente"
     },
     "shipping": {
-      "free": true,
-      "days": 2
+      "free": false,
+      "days": "1-2"
     },
     "badge": "🛏️ Rascadores",
     "brand": "Sin marca",
@@ -5543,8 +5543,8 @@
       "material": "Material resistente"
     },
     "shipping": {
-      "free": true,
-      "days": 2
+      "free": false,
+      "days": "1-2"
     },
     "badge": "🛏️ Rascadores",
     "brand": "Sin marca",
@@ -5595,7 +5595,7 @@
     },
     "shipping": {
       "free": true,
-      "days": 2
+      "days": "1-2"
     },
     "badge": "🛏️ Rascadores",
     "brand": "AGATAR",
@@ -5697,8 +5697,8 @@
       "material": "Material resistente"
     },
     "shipping": {
-      "free": true,
-      "days": 4
+      "free": false,
+      "days": "1-2"
     },
     "badge": "🛏️ Rascadores",
     "brand": "AGATAR",
@@ -5749,8 +5749,8 @@
       "material": "Material resistente"
     },
     "shipping": {
-      "free": true,
-      "days": 3
+      "free": false,
+      "days": "1-2"
     },
     "badge": "🛏️ Rascadores",
     "brand": "AGATAR",
@@ -5800,8 +5800,8 @@
       "material": "Material resistente"
     },
     "shipping": {
-      "free": true,
-      "days": 3
+      "free": false,
+      "days": "1-2"
     },
     "badge": "🛏️ Rascadores",
     "brand": "AGATAR",
@@ -5851,8 +5851,8 @@
       "material": "Material resistente"
     },
     "shipping": {
-      "free": true,
-      "days": 4
+      "free": false,
+      "days": "1-2"
     },
     "badge": "🛏️ Rascadores",
     "brand": "AGATAR",
@@ -5901,8 +5901,8 @@
       "material": "Material resistente"
     },
     "shipping": {
-      "free": true,
-      "days": 3
+      "free": false,
+      "days": "1-2"
     },
     "badge": "🛏️ Rascadores",
     "brand": "AGATAR",
@@ -6904,8 +6904,8 @@
       "idealFor": "Perros de todos los tamaños"
     },
     "shipping": {
-      "free": true,
-      "days": 4
+      "free": false,
+      "days": "1-2"
     },
     "badge": "🎾 Juguetes",
     "brand": "Sin marca",
@@ -6958,8 +6958,8 @@
       "idealFor": "Perros de todos los tamaños"
     },
     "shipping": {
-      "free": true,
-      "days": 2
+      "free": false,
+      "days": "1-2"
     },
     "badge": "🎾 Juguetes",
     "brand": "Sin marca",
@@ -7530,8 +7530,8 @@
       "idealFor": "Perros de todos los tamaños"
     },
     "shipping": {
-      "free": true,
-      "days": 2
+      "free": false,
+      "days": "1-2"
     },
     "badge": "🎾 Juguetes",
     "brand": "Sin marca",
@@ -7583,8 +7583,8 @@
       "idealFor": "Perros de todos los tamaños"
     },
     "shipping": {
-      "free": true,
-      "days": 3
+      "free": false,
+      "days": "1-2"
     },
     "badge": "🎾 Juguetes",
     "brand": "Sin marca",
@@ -13693,8 +13693,8 @@
       "idealFor": "Perros de todos los tamaños"
     },
     "shipping": {
-      "free": true,
-      "days": 2
+      "free": false,
+      "days": "1-2"
     },
     "badge": "🎾 Juguetes",
     "brand": "Sin marca",
@@ -19179,7 +19179,7 @@
     },
     "shipping": {
       "free": true,
-      "days": 3
+      "days": "1-2"
     },
     "badge": "🦴 Accesorios",
     "brand": "Sin marca",
@@ -19342,8 +19342,8 @@
       "material": "Metal cromado"
     },
     "shipping": {
-      "free": true,
-      "days": 2
+      "free": false,
+      "days": "1-2"
     },
     "badge": "🦴 Accesorios",
     "brand": "Sin marca",
@@ -19393,8 +19393,8 @@
       "SKU": "COL017"
     },
     "shipping": {
-      "free": true,
-      "days": 2
+      "free": false,
+      "days": "1-2"
     },
     "badge": "🦴 Accesorios",
     "brand": "Sin marca",
@@ -19485,8 +19485,8 @@
       "SKU": "COL021"
     },
     "shipping": {
-      "free": true,
-      "days": 3
+      "free": false,
+      "days": "1-2"
     },
     "badge": "🦴 Accesorios",
     "brand": "Sin marca",
@@ -19626,8 +19626,8 @@
       "material": "Material resistente"
     },
     "shipping": {
-      "free": true,
-      "days": 2
+      "free": false,
+      "days": "1-2"
     },
     "badge": "🦴 Accesorios",
     "brand": "Sin marca",
@@ -19679,8 +19679,8 @@
       "material": "Cuero"
     },
     "shipping": {
-      "free": true,
-      "days": 3
+      "free": false,
+      "days": "1-2"
     },
     "badge": "🦴 Accesorios",
     "brand": "Sin marca",
@@ -19887,7 +19887,7 @@
     },
     "shipping": {
       "free": true,
-      "days": 3
+      "days": "1-2"
     },
     "badge": "🦴 Accesorios",
     "brand": "Sin marca",
@@ -19941,7 +19941,7 @@
     },
     "shipping": {
       "free": true,
-      "days": 3
+      "days": "1-2"
     },
     "badge": "🦴 Accesorios",
     "brand": "Sin marca",
@@ -20426,8 +20426,8 @@
       "material": "Material resistente"
     },
     "shipping": {
-      "free": true,
-      "days": 3
+      "free": false,
+      "days": "1-2"
     },
     "badge": "🦴 Accesorios",
     "brand": "Sin marca",
@@ -20479,8 +20479,8 @@
       "material": "Material resistente"
     },
     "shipping": {
-      "free": true,
-      "days": 3
+      "free": false,
+      "days": "1-2"
     },
     "badge": "🦴 Accesorios",
     "brand": "Sin marca",
@@ -20529,8 +20529,8 @@
       "material": "Material resistente"
     },
     "shipping": {
-      "free": true,
-      "days": 4
+      "free": false,
+      "days": "1-2"
     },
     "badge": "🦴 Accesorios",
     "brand": "Sin marca",
@@ -20787,7 +20787,7 @@
     },
     "shipping": {
       "free": true,
-      "days": 2
+      "days": "1-2"
     },
     "badge": "🏠 Casitas",
     "brand": "Sin marca",
@@ -22152,8 +22152,8 @@
       "material": "Material resistente"
     },
     "shipping": {
-      "free": true,
-      "days": 2
+      "free": false,
+      "days": "1-2"
     },
     "badge": "🦴 Accesorios",
     "brand": "Sin marca",
@@ -23029,8 +23029,8 @@
       "material": "Material resistente"
     },
     "shipping": {
-      "free": true,
-      "days": 4
+      "free": false,
+      "days": "1-2"
     },
     "badge": "🦴 Accesorios",
     "brand": "Sin marca",
@@ -23082,8 +23082,8 @@
       "material": "Soga resistente"
     },
     "shipping": {
-      "free": true,
-      "days": 2
+      "free": false,
+      "days": "1-2"
     },
     "badge": "🦴 Accesorios",
     "brand": "Sin marca",
@@ -23136,8 +23136,8 @@
       "material": "Soga resistente"
     },
     "shipping": {
-      "free": true,
-      "days": 2
+      "free": false,
+      "days": "1-2"
     },
     "badge": "🦴 Accesorios",
     "brand": "Sin marca",
@@ -23185,8 +23185,8 @@
       "SKU": "ROY001"
     },
     "shipping": {
-      "free": true,
-      "days": 3
+      "free": false,
+      "days": "1-2"
     },
     "badge": "🧼 Higiene",
     "brand": "Sin marca",
@@ -24292,7 +24292,7 @@
     },
     "shipping": {
       "free": true,
-      "days": 2
+      "days": "1-2"
     },
     "badge": "🍽️ Comederos",
     "brand": "Sin marca",
@@ -24342,7 +24342,7 @@
     },
     "shipping": {
       "free": true,
-      "days": 3
+      "days": "1-2"
     },
     "badge": "🍽️ Comederos",
     "brand": "Sin marca",
@@ -24391,8 +24391,8 @@
       "material": "Material resistente"
     },
     "shipping": {
-      "free": true,
-      "days": 4
+      "free": false,
+      "days": "1-2"
     },
     "badge": "🍽️ Comederos",
     "brand": "Sin marca",
@@ -24654,8 +24654,8 @@
       "material": "Material resistente"
     },
     "shipping": {
-      "free": true,
-      "days": 2
+      "free": false,
+      "days": "1-2"
     },
     "badge": "🍽️ Comederos",
     "brand": "Sin marca",
@@ -24706,7 +24706,7 @@
     },
     "shipping": {
       "free": true,
-      "days": 4
+      "days": "1-2"
     },
     "badge": "🍽️ Comederos",
     "brand": "Sin marca",
@@ -26643,7 +26643,7 @@
     },
     "shipping": {
       "free": true,
-      "days": 3
+      "days": "1-2"
     },
     "badge": "🐾 Bolsos y Casitas",
     "brand": "Sin marca",
@@ -26693,7 +26693,7 @@
     },
     "shipping": {
       "free": true,
-      "days": 3
+      "days": "1-2"
     },
     "badge": "🐾 Rascadores",
     "brand": "Sin marca",
@@ -26745,7 +26745,7 @@
     },
     "shipping": {
       "free": true,
-      "days": 3
+      "days": "1-2"
     },
     "badge": "🐾 Rascadores",
     "brand": "Sin marca",
@@ -26789,7 +26789,7 @@
     },
     "shipping": {
       "free": true,
-      "days": 3
+      "days": "1-2"
     },
     "badge": "🐾 Juguetes",
     "brand": "Sin marca",
@@ -26833,7 +26833,7 @@
     },
     "shipping": {
       "free": true,
-      "days": 3
+      "days": "1-2"
     },
     "badge": "🐾 Juguetes",
     "brand": "Sin marca",
@@ -26879,7 +26879,7 @@
     },
     "shipping": {
       "free": true,
-      "days": 3
+      "days": "1-2"
     },
     "badge": "🐾 Juguetes",
     "brand": "Sin marca",
@@ -26972,7 +26972,7 @@
     },
     "shipping": {
       "free": true,
-      "days": 3
+      "days": "1-2"
     },
     "badge": "🐾 Juguetes",
     "brand": "Sin marca",
@@ -27068,8 +27068,8 @@
       "Niveles": "4 pisos"
     },
     "shipping": {
-      "free": true,
-      "days": 3
+      "free": false,
+      "days": "1-2"
     },
     "badge": "🐾 Juguetes",
     "brand": "Sin marca",
@@ -27119,8 +27119,8 @@
       "Plumas": "2 unidades"
     },
     "shipping": {
-      "free": true,
-      "days": 3
+      "free": false,
+      "days": "1-2"
     },
     "badge": "🐾 Juguetes",
     "brand": "Sin marca",
@@ -27361,7 +27361,7 @@
     },
     "shipping": {
       "free": true,
-      "days": 3
+      "days": "1-2"
     },
     "badge": "🐾 Juguetes",
     "brand": "Sin marca",

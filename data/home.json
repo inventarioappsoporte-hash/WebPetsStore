@@ -30,16 +30,16 @@
       "id": "top-discounts",
       "title": "🔥 TOP DESCUENTOS HOY",
       "type": "carousel",
-      "filter": "featured",
+      "filter": "topDiscount",
       "sortBy": "discount",
-      "limit": 8,
+      "limit": 12,
       "showVideo": true
     },
     {
       "id": "with-video",
       "title": "🎥 CON VIDEO",
       "type": "carousel",
-      "filter": "featured",
+      "filter": "hasVideo",
       "sortBy": "rating",
       "limit": 6
     },
