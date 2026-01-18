@@ -2,10 +2,8 @@
   "hero": {
     "productId": "prod_009",
     "title": "LO MÁS VENDIDO DE ESTA SEMANA",
-    "subtitle": "",
     "cta": "COMPRAR AHORA",
-    "ctaSecondary": "VER PRODUCTO",
-    "image": "assets/images/ui/hero-1768711441311.jpg"
+    "ctaSecondary": "VER PRODUCTO"
   },
   "promos": [
     {
@@ -30,7 +28,9 @@
       "id": "top-discounts",
       "title": "🔥 TOP DESCUENTOS HOY",
       "type": "carousel",
-      "filter": "featured",
+      "filter": {
+        "topDiscount": true
+      },
       "sortBy": "discount",
       "limit": 8,
       "showVideo": true
@@ -39,7 +39,9 @@
       "id": "with-video",
       "title": "🎥 CON VIDEO",
       "type": "carousel",
-      "filter": "featured",
+      "filter": {
+        "hasVideo": true
+      },
       "sortBy": "rating",
       "limit": 6
     },
@@ -47,7 +49,9 @@
       "id": "best-rated",
       "title": "⭐ MEJOR VALORADOS",
       "type": "grid",
-      "filter": "featured",
+      "filter": {
+        "rating": { "$gte": 4.5 }
+      },
       "sortBy": "rating",
       "limit": 12
     },
@@ -55,7 +59,9 @@
       "id": "featured",
       "title": "RECOMENDADO PARA TI",
       "type": "grid",
-      "filter": "featured",
+      "filter": {
+        "featured": true
+      },
       "limit": 6
     }
   ],
