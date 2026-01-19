@@ -93,7 +93,7 @@
       "colors": "Azul,Rosa,Marrón"
     },
     "shipping": {
-      "free": false,
+      "free": true,
       "days": "1-2"
     },
     "badge": "😎 Moda",
@@ -567,8 +567,8 @@
       "SKU": "COL005"
     },
     "shipping": {
-      "free": false,
-      "days": "1-2"
+      "free": true,
+      "days": 3
     },
     "badge": "🛏️ Colchonetas",
     "brand": "Sin marca",
@@ -701,8 +701,8 @@
       "SKU": "COL006"
     },
     "shipping": {
-      "free": false,
-      "days": "1-2"
+      "free": true,
+      "days": 2
     },
     "badge": "🛏️ Colchonetas",
     "brand": "Sin marca",
@@ -969,8 +969,8 @@
       "SKU": "MOI002"
     },
     "shipping": {
-      "free": false,
-      "days": "1-2"
+      "free": true,
+      "days": 4
     },
     "badge": "🛏️ Colchonetas",
     "brand": "Sin marca",
@@ -1085,8 +1085,8 @@
       "SKU": "COC002"
     },
     "shipping": {
-      "free": false,
-      "days": "1-2"
+      "free": true,
+      "days": 2
     },
     "badge": "🛏️ Colchonetas",
     "brand": "Sin marca",
@@ -1352,8 +1352,8 @@
       "SKU": "SOF001"
     },
     "shipping": {
-      "free": false,
-      "days": "1-2"
+      "free": true,
+      "days": 4
     },
     "badge": "🛏️ Colchonetas",
     "brand": "Sin marca",
@@ -1467,8 +1467,8 @@
       "SKU": "MOI005"
     },
     "shipping": {
-      "free": false,
-      "days": "1-2"
+      "free": true,
+      "days": 4
     },
     "badge": "🛏️ Colchonetas",
     "brand": "Sin marca",
@@ -1583,8 +1583,8 @@
       "SKU": "MOI007"
     },
     "shipping": {
-      "free": false,
-      "days": "1-2"
+      "free": true,
+      "days": 2
     },
     "badge": "🛏️ Colchonetas",
     "brand": "Sin marca",
@@ -1717,8 +1717,8 @@
       "SKU": "PUF001"
     },
     "shipping": {
-      "free": false,
-      "days": "1-2"
+      "free": true,
+      "days": 3
     },
     "badge": "🛏️ Colchonetas",
     "brand": "Sin marca",
@@ -1817,8 +1817,8 @@
       "SKU": "PUF002"
     },
     "shipping": {
-      "free": false,
-      "days": "1-2"
+      "free": true,
+      "days": 3
     },
     "badge": "🛏️ Colchonetas",
     "brand": "Sin marca",
@@ -1914,8 +1914,8 @@
       "SKU": "BOL001"
     },
     "shipping": {
-      "free": false,
-      "days": "1-2"
+      "free": true,
+      "days": 4
     },
     "badge": "🏠 Casitas",
     "brand": "Sin marca",
@@ -2014,7 +2014,7 @@
     },
     "shipping": {
       "free": true,
-      "days": "1-2"
+      "days": 4
     },
     "badge": "🏠 Casitas",
     "brand": "Sin marca",
@@ -2113,7 +2113,7 @@
     },
     "shipping": {
       "free": true,
-      "days": "1-2"
+      "days": 4
     },
     "badge": "🏠 Casitas",
     "brand": "Sin marca",
@@ -2163,7 +2163,7 @@
     },
     "shipping": {
       "free": true,
-      "days": "1-2"
+      "days": 2
     },
     "badge": "🏠 Casitas",
     "brand": "Sin marca",
@@ -2210,8 +2210,8 @@
       "SKU": "CAS001"
     },
     "shipping": {
-      "free": false,
-      "days": "1-2"
+      "free": true,
+      "days": 2
     },
     "badge": "🏠 Casitas",
     "brand": "Sin marca",
@@ -2327,8 +2327,8 @@
       "SKU": "MOI008"
     },
     "shipping": {
-      "free": false,
-      "days": "1-2"
+      "free": true,
+      "days": 3
     },
     "badge": "🛏️ Colchonetas",
     "brand": "Sin marca",
@@ -2442,8 +2442,8 @@
       "SKU": "ALM002"
     },
     "shipping": {
-      "free": false,
-      "days": "1-2"
+      "free": true,
+      "days": 2
     },
     "badge": "🛏️ Colchonetas",
     "brand": "Sin marca",
@@ -2560,8 +2560,8 @@
       "SKU": "COL012"
     },
     "shipping": {
-      "free": false,
-      "days": "1-2"
+      "free": true,
+      "days": 3
     },
     "badge": "🛏️ Colchonetas",
     "brand": "Sin marca",
@@ -2713,8 +2713,8 @@
       "SKU": "MOI009"
     },
     "shipping": {
-      "free": false,
-      "days": "1-2"
+      "free": true,
+      "days": 4
     },
     "badge": "🛏️ Colchonetas",
     "brand": "Sin marca",
@@ -2828,8 +2828,8 @@
       "SKU": "COL013"
     },
     "shipping": {
-      "free": false,
-      "days": "1-2"
+      "free": true,
+      "days": 4
     },
     "badge": "🛏️ Colchonetas",
     "brand": "Sin marca",
@@ -3094,8 +3094,8 @@
       "SKU": "COL015"
     },
     "shipping": {
-      "free": false,
-      "days": "1-2"
+      "free": true,
+      "days": 4
     },
     "badge": "🛏️ Colchonetas",
     "brand": "Sin marca",
@@ -3281,8 +3281,8 @@
       "material": "Material resistente"
     },
     "shipping": {
-      "free": false,
-      "days": "1-2"
+      "free": true,
+      "days": 2
     },
     "badge": "🛏️ Rascadores",
     "brand": "Sin marca",
@@ -3392,8 +3392,8 @@
       "material": "Material resistente"
     },
     "shipping": {
-      "free": false,
-      "days": "1-2"
+      "free": true,
+      "days": 3
     },
     "badge": "🛏️ Rascadores",
     "brand": "Sin marca",
@@ -3448,8 +3448,8 @@
       "material": "Material resistente"
     },
     "shipping": {
-      "free": false,
-      "days": "1-2"
+      "free": true,
+      "days": 2
     },
     "badge": "🛏️ Rascadores",
     "brand": "Sin marca",
@@ -3554,8 +3554,8 @@
       "material": "Material resistente"
     },
     "shipping": {
-      "free": false,
-      "days": "1-2"
+      "free": true,
+      "days": 4
     },
     "badge": "🛏️ Rascadores",
     "brand": "Sin marca",
@@ -3609,8 +3609,8 @@
       "material": "Material resistente"
     },
     "shipping": {
-      "free": false,
-      "days": "1-2"
+      "free": true,
+      "days": 2
     },
     "badge": "🛏️ Rascadores",
     "brand": "Sin marca",
@@ -3816,8 +3816,8 @@
       "material": "Material resistente"
     },
     "shipping": {
-      "free": false,
-      "days": "1-2"
+      "free": true,
+      "days": 4
     },
     "badge": "🛏️ Rascadores",
     "brand": "Sin marca",
@@ -3917,7 +3917,7 @@
     },
     "shipping": {
       "free": true,
-      "days": "1-2"
+      "days": 4
     },
     "badge": "🛏️ Rascadores",
     "brand": "Sin marca",
@@ -3966,8 +3966,8 @@
       "material": "Material resistente"
     },
     "shipping": {
-      "free": false,
-      "days": "1-2"
+      "free": true,
+      "days": 3
     },
     "badge": "🛏️ Rascadores",
     "brand": "Sin marca",
@@ -4018,8 +4018,8 @@
       "material": "Material resistente"
     },
     "shipping": {
-      "free": false,
-      "days": "1-2"
+      "free": true,
+      "days": 3
     },
     "badge": "🛏️ Rascadores",
     "brand": "Sin marca",
@@ -4125,8 +4125,8 @@
       "material": "Material resistente"
     },
     "shipping": {
-      "free": false,
-      "days": "1-2"
+      "free": true,
+      "days": 4
     },
     "badge": "🛏️ Rascadores",
     "brand": "Sin marca",
@@ -4181,8 +4181,8 @@
       "material": "Material resistente"
     },
     "shipping": {
-      "free": false,
-      "days": "1-2"
+      "free": true,
+      "days": 2
     },
     "badge": "🛏️ Rascadores",
     "brand": "Sin marca",
@@ -4340,8 +4340,8 @@
       "idealFor": "Perros de todos los tamaños"
     },
     "shipping": {
-      "free": false,
-      "days": "1-2"
+      "free": true,
+      "days": 2
     },
     "badge": "🎾 Juguetes",
     "brand": "Sin marca",
@@ -4390,8 +4390,8 @@
       "material": "Material resistente"
     },
     "shipping": {
-      "free": false,
-      "days": "1-2"
+      "free": true,
+      "days": 4
     },
     "badge": "🛏️ Rascadores",
     "brand": "Sin marca",
@@ -4593,8 +4593,8 @@
       "material": "Material resistente"
     },
     "shipping": {
-      "free": false,
-      "days": "1-2"
+      "free": true,
+      "days": 4
     },
     "badge": "🛏️ Rascadores",
     "brand": "Sin marca",
@@ -5388,8 +5388,8 @@
       "color": "Marrón natural (cartón), Base en tono madera clara"
     },
     "shipping": {
-      "free": false,
-      "days": "1-2"
+      "free": true,
+      "days": "2-3"
     },
     "badge": "🛏️ Rascador",
     "brand": null,
@@ -5399,7 +5399,7 @@
     "discount": 15,
     "promoText": "15% OFF",
     "marketing": {
-      "type": "image",
+      "type": "video",
       "url": "assets/videos/marketing/cama-victoria-demo.mp4",
       "poster": "assets/images/ui/cama-victoria.jpeg",
       "autoplay": true,
@@ -5443,8 +5443,8 @@
       "material": "Material resistente"
     },
     "shipping": {
-      "free": false,
-      "days": "1-2"
+      "free": true,
+      "days": 2
     },
     "badge": "🛏️ Rascadores",
     "brand": "AGATAR",
@@ -5493,8 +5493,8 @@
       "material": "Material resistente"
     },
     "shipping": {
-      "free": false,
-      "days": "1-2"
+      "free": true,
+      "days": 2
     },
     "badge": "🛏️ Rascadores",
     "brand": "Sin marca",
@@ -5543,8 +5543,8 @@
       "material": "Material resistente"
     },
     "shipping": {
-      "free": false,
-      "days": "1-2"
+      "free": true,
+      "days": 2
     },
     "badge": "🛏️ Rascadores",
     "brand": "Sin marca",
@@ -5595,7 +5595,7 @@
     },
     "shipping": {
       "free": true,
-      "days": "1-2"
+      "days": 2
     },
     "badge": "🛏️ Rascadores",
     "brand": "AGATAR",
@@ -5697,8 +5697,8 @@
       "material": "Material resistente"
     },
     "shipping": {
-      "free": false,
-      "days": "1-2"
+      "free": true,
+      "days": 4
     },
     "badge": "🛏️ Rascadores",
     "brand": "AGATAR",
@@ -5749,8 +5749,8 @@
       "material": "Material resistente"
     },
     "shipping": {
-      "free": false,
-      "days": "1-2"
+      "free": true,
+      "days": 3
     },
     "badge": "🛏️ Rascadores",
     "brand": "AGATAR",
@@ -5800,8 +5800,8 @@
       "material": "Material resistente"
     },
     "shipping": {
-      "free": false,
-      "days": "1-2"
+      "free": true,
+      "days": 3
     },
     "badge": "🛏️ Rascadores",
     "brand": "AGATAR",
@@ -5851,8 +5851,8 @@
       "material": "Material resistente"
     },
     "shipping": {
-      "free": false,
-      "days": "1-2"
+      "free": true,
+      "days": 4
     },
     "badge": "🛏️ Rascadores",
     "brand": "AGATAR",
@@ -5901,8 +5901,8 @@
       "material": "Material resistente"
     },
     "shipping": {
-      "free": false,
-      "days": "1-2"
+      "free": true,
+      "days": 3
     },
     "badge": "🛏️ Rascadores",
     "brand": "AGATAR",
@@ -6904,8 +6904,8 @@
       "idealFor": "Perros de todos los tamaños"
     },
     "shipping": {
-      "free": false,
-      "days": "1-2"
+      "free": true,
+      "days": 4
     },
     "badge": "🎾 Juguetes",
     "brand": "Sin marca",
@@ -6958,8 +6958,8 @@
       "idealFor": "Perros de todos los tamaños"
     },
     "shipping": {
-      "free": false,
-      "days": "1-2"
+      "free": true,
+      "days": 2
     },
     "badge": "🎾 Juguetes",
     "brand": "Sin marca",
@@ -7530,8 +7530,8 @@
       "idealFor": "Perros de todos los tamaños"
     },
     "shipping": {
-      "free": false,
-      "days": "1-2"
+      "free": true,
+      "days": 2
     },
     "badge": "🎾 Juguetes",
     "brand": "Sin marca",
@@ -7583,8 +7583,8 @@
       "idealFor": "Perros de todos los tamaños"
     },
     "shipping": {
-      "free": false,
-      "days": "1-2"
+      "free": true,
+      "days": 3
     },
     "badge": "🎾 Juguetes",
     "brand": "Sin marca",
@@ -13693,8 +13693,8 @@
       "idealFor": "Perros de todos los tamaños"
     },
     "shipping": {
-      "free": false,
-      "days": "1-2"
+      "free": true,
+      "days": 2
     },
     "badge": "🎾 Juguetes",
     "brand": "Sin marca",
@@ -15569,7 +15569,7 @@
     "name": "Polar Liso",
     "category": "ropa",
     "subcategory": "Ropa",
-    "price": 1921.85,
+    "price": 1950.68,
     "stock": 130,
     "rating": 4.2,
     "reviews": 306,
@@ -15614,7 +15614,7 @@
       "Liviano y confortable",
       "Fácil de lavar y de secado rápido"
     ],
-    "basePrice": 1921.85,
+    "basePrice": 1950.68,
     "variants": {
       "attributes": [
         {
@@ -15629,9 +15629,10 @@
           "attributes": {
             "Talle": "0"
           },
-          "price": 1921.85,
+          "price": 1950.68,
           "stock": 10,
           "available": true,
+          "originalPrice": 2786.68,
           "sku": "POL002-0",
           "images": {
             "cover": "assets/images/products/prod_468/cover.jpg",
@@ -15646,9 +15647,10 @@
           "attributes": {
             "Talle": "1"
           },
-          "price": 1921.85,
+          "price": 1950.68,
           "stock": 10,
           "available": true,
+          "originalPrice": 2786.68,
           "sku": "POL002-1",
           "images": {
             "cover": "assets/images/products/prod_469/cover.jpg",
@@ -15663,9 +15665,10 @@
           "attributes": {
             "Talle": "2"
           },
-          "price": 1921.85,
+          "price": 1950.68,
           "stock": 10,
           "available": true,
+          "originalPrice": 2786.68,
           "sku": "POL002-2",
           "images": {
             "cover": "assets/images/products/prod_470/cover.jpg",
@@ -15680,9 +15683,10 @@
           "attributes": {
             "Talle": "3"
           },
-          "price": 3165.4,
+          "price": 3212.88,
           "stock": 10,
           "available": true,
+          "originalPrice": 4589.83,
           "sku": "POL002-3",
           "images": {
             "cover": "assets/images/products/prod_471/cover.jpg",
@@ -15697,9 +15701,10 @@
           "attributes": {
             "Talle": "4"
           },
-          "price": 3165.4,
+          "price": 3212.88,
           "stock": 10,
           "available": true,
+          "originalPrice": 4589.83,
           "sku": "POL002-4",
           "images": {
             "cover": "assets/images/products/prod_472/cover.jpg",
@@ -15714,9 +15719,10 @@
           "attributes": {
             "Talle": "5"
           },
-          "price": 3165.4,
+          "price": 3212.88,
           "stock": 10,
           "available": true,
+          "originalPrice": 4589.83,
           "sku": "POL002-5",
           "images": {
             "cover": "assets/images/products/prod_473/cover.jpg",
@@ -15731,9 +15737,10 @@
           "attributes": {
             "Talle": "6"
           },
-          "price": 3956.75,
+          "price": 4016.1,
           "stock": 10,
           "available": true,
+          "originalPrice": 5737.29,
           "sku": "POL002-6",
           "images": {
             "cover": "assets/images/products/prod_474/cover.jpg",
@@ -15748,9 +15755,10 @@
           "attributes": {
             "Talle": "7"
           },
-          "price": 3956.75,
+          "price": 4016.1,
           "stock": 10,
           "available": true,
+          "originalPrice": 5737.29,
           "sku": "POL002-7",
           "images": {
             "cover": "assets/images/products/prod_475/cover.jpg",
@@ -15765,9 +15773,10 @@
           "attributes": {
             "Talle": "8"
           },
-          "price": 3956.75,
+          "price": 4016.1,
           "stock": 10,
           "available": true,
+          "originalPrice": 5737.29,
           "sku": "POL002-8",
           "images": {
             "cover": "assets/images/products/prod_476/cover.jpg",
@@ -15782,9 +15791,10 @@
           "attributes": {
             "Talle": "9"
           },
-          "price": 5087.25,
+          "price": 5163.56,
           "stock": 10,
           "available": true,
+          "originalPrice": 7376.51,
           "sku": "POL002-9",
           "images": {
             "cover": "assets/images/products/prod_477/cover.jpg",
@@ -15799,9 +15809,10 @@
           "attributes": {
             "Talle": "10"
           },
-          "price": 5087.25,
+          "price": 5163.56,
           "stock": 10,
           "available": true,
+          "originalPrice": 7376.51,
           "sku": "POL002-10",
           "images": {
             "cover": "assets/images/products/prod_478/cover.jpg",
@@ -15816,9 +15827,10 @@
           "attributes": {
             "Talle": "11"
           },
-          "price": 6217.75,
+          "price": 6311.02,
           "stock": 10,
           "available": true,
+          "originalPrice": 9015.74,
           "sku": "POL002-11",
           "images": {
             "cover": "assets/images/products/prod_479/cover.jpg",
@@ -15833,9 +15845,10 @@
           "attributes": {
             "Talle": "12"
           },
-          "price": 6217.75,
+          "price": 6311.02,
           "stock": 10,
           "available": true,
+          "originalPrice": 9015.74,
           "sku": "POL002-12",
           "images": {
             "cover": "assets/images/products/prod_480/cover.jpg",
@@ -15846,14 +15859,17 @@
           }
         }
       ]
-    }
+    },
+    "originalPrice": 2786.68,
+    "discount": 30,
+    "baseOriginalPrice": 2786.68
   },
   {
     "id": "prod_481",
     "name": "Polar Fantasía",
     "category": "ropa",
     "subcategory": "Ropa",
-    "price": 2826.25,
+    "price": 2868.64,
     "stock": 130,
     "rating": 4.3,
     "reviews": 324,
@@ -15896,7 +15912,7 @@
       "Diseños estampados únicos",
       "Perfecto para el frío"
     ],
-    "basePrice": 2826.25,
+    "basePrice": 2868.64,
     "variants": {
       "attributes": [
         {
@@ -15911,9 +15927,10 @@
           "attributes": {
             "Talle": "0"
           },
-          "price": 2826.25,
+          "price": 2868.64,
           "stock": 10,
           "available": true,
+          "originalPrice": 4098.06,
           "sku": "POL015-0",
           "images": {
             "cover": "assets/images/products/prod_481/cover.jpg",
@@ -15928,9 +15945,10 @@
           "attributes": {
             "Talle": "1"
           },
-          "price": 2826.25,
+          "price": 2868.64,
           "stock": 10,
           "available": true,
+          "originalPrice": 4098.06,
           "sku": "POL015-1",
           "images": {
             "cover": "assets/images/products/prod_482/cover.jpg",
@@ -15945,9 +15963,10 @@
           "attributes": {
             "Talle": "2"
           },
-          "price": 2826.25,
+          "price": 2868.64,
           "stock": 10,
           "available": true,
+          "originalPrice": 4098.06,
           "sku": "POL015-2",
           "images": {
             "cover": "assets/images/products/prod_483/cover.jpg",
@@ -15962,9 +15981,10 @@
           "attributes": {
             "Talle": "3"
           },
-          "price": 4295.9,
+          "price": 4360.34,
           "stock": 10,
           "available": true,
+          "originalPrice": 6229.05,
           "sku": "POL015-3",
           "images": {
             "cover": "assets/images/products/prod_484/cover.jpg",
@@ -15979,9 +15999,10 @@
           "attributes": {
             "Talle": "4"
           },
-          "price": 4295.9,
+          "price": 4360.34,
           "stock": 10,
           "available": true,
+          "originalPrice": 6229.05,
           "sku": "POL015-4",
           "images": {
             "cover": "assets/images/products/prod_485/cover.jpg",
@@ -15996,9 +16017,10 @@
           "attributes": {
             "Talle": "5"
           },
-          "price": 4295.9,
+          "price": 4360.34,
           "stock": 10,
           "available": true,
+          "originalPrice": 6229.05,
           "sku": "POL015-5",
           "images": {
             "cover": "assets/images/products/prod_486/cover.jpg",
@@ -16013,9 +16035,10 @@
           "attributes": {
             "Talle": "6"
           },
-          "price": 5426.4,
+          "price": 5507.8,
           "stock": 10,
           "available": true,
+          "originalPrice": 7868.28,
           "sku": "POL015-6",
           "images": {
             "cover": "assets/images/products/prod_487/cover.jpg",
@@ -16030,9 +16053,10 @@
           "attributes": {
             "Talle": "7"
           },
-          "price": 5426.4,
+          "price": 5507.8,
           "stock": 10,
           "available": true,
+          "originalPrice": 7868.28,
           "sku": "POL015-7",
           "images": {
             "cover": "assets/images/products/prod_488/cover.jpg",
@@ -16047,9 +16071,10 @@
           "attributes": {
             "Talle": "8"
           },
-          "price": 5426.4,
+          "price": 5507.8,
           "stock": 10,
           "available": true,
+          "originalPrice": 7868.28,
           "sku": "POL015-8",
           "images": {
             "cover": "assets/images/products/prod_489/cover.jpg",
@@ -16064,9 +16089,10 @@
           "attributes": {
             "Talle": "9"
           },
-          "price": 6783,
+          "price": 6884.75,
           "stock": 10,
           "available": true,
+          "originalPrice": 9835.35,
           "sku": "POL015-9",
           "images": {
             "cover": "assets/images/products/prod_490/cover.jpg",
@@ -16081,9 +16107,10 @@
           "attributes": {
             "Talle": "10"
           },
-          "price": 6783,
+          "price": 6884.75,
           "stock": 10,
           "available": true,
+          "originalPrice": 9835.35,
           "sku": "POL015-10",
           "images": {
             "cover": "assets/images/products/prod_491/cover.jpg",
@@ -16098,9 +16125,10 @@
           "attributes": {
             "Talle": "11"
           },
-          "price": 7913.5,
+          "price": 8032.21,
           "stock": 10,
           "available": true,
+          "originalPrice": 11474.58,
           "sku": "POL015-11",
           "images": {
             "cover": "assets/images/products/prod_492/cover.jpg",
@@ -16115,9 +16143,10 @@
           "attributes": {
             "Talle": "12"
           },
-          "price": 7913.5,
+          "price": 8032.21,
           "stock": 10,
           "available": true,
+          "originalPrice": 11474.58,
           "sku": "POL015-12",
           "images": {
             "cover": "assets/images/products/prod_493/cover.jpg",
@@ -16128,14 +16157,17 @@
           }
         }
       ]
-    }
+    },
+    "originalPrice": 4098.06,
+    "discount": 30,
+    "baseOriginalPrice": 4098.06
   },
   {
     "id": "prod_494",
     "name": "Polar Soff",
     "category": "ropa",
     "subcategory": "Ropa",
-    "price": 3278.45,
+    "price": 3327.63,
     "stock": 130,
     "rating": 4.3,
     "reviews": 372,
@@ -16179,7 +16211,7 @@
       "Resistente al agua",
       "Perfecto para el frío"
     ],
-    "basePrice": 3278.45,
+    "basePrice": 3327.63,
     "variants": {
       "attributes": [
         {
@@ -16194,9 +16226,10 @@
           "attributes": {
             "Talle": "0"
           },
-          "price": 3278.45,
+          "price": 3327.63,
           "stock": 10,
           "available": true,
+          "originalPrice": 4753.75,
           "sku": "POL028-0",
           "images": {
             "cover": "assets/images/products/prod_494/cover.jpg",
@@ -16211,9 +16244,10 @@
           "attributes": {
             "Talle": "1"
           },
-          "price": 3278.45,
+          "price": 3327.63,
           "stock": 10,
           "available": true,
+          "originalPrice": 4753.75,
           "sku": "POL028-1",
           "images": {
             "cover": "assets/images/products/prod_495/cover.jpg",
@@ -16228,9 +16262,10 @@
           "attributes": {
             "Talle": "2"
           },
-          "price": 3278.45,
+          "price": 3327.63,
           "stock": 10,
           "available": true,
+          "originalPrice": 4753.75,
           "sku": "POL028-2",
           "images": {
             "cover": "assets/images/products/prod_496/cover.jpg",
@@ -16245,9 +16280,10 @@
           "attributes": {
             "Talle": "3"
           },
-          "price": 4522,
+          "price": 4589.83,
           "stock": 10,
           "available": true,
+          "originalPrice": 6556.9,
           "sku": "POL028-3",
           "images": {
             "cover": "assets/images/products/prod_497/cover.jpg",
@@ -16262,9 +16298,10 @@
           "attributes": {
             "Talle": "4"
           },
-          "price": 4522,
+          "price": 4589.83,
           "stock": 10,
           "available": true,
+          "originalPrice": 6556.9,
           "sku": "POL028-4",
           "images": {
             "cover": "assets/images/products/prod_498/cover.jpg",
@@ -16279,9 +16316,10 @@
           "attributes": {
             "Talle": "5"
           },
-          "price": 4522,
+          "price": 4589.83,
           "stock": 10,
           "available": true,
+          "originalPrice": 6556.9,
           "sku": "POL028-5",
           "images": {
             "cover": "assets/images/products/prod_499/cover.jpg",
@@ -16296,9 +16334,10 @@
           "attributes": {
             "Talle": "6"
           },
-          "price": 5878.6,
+          "price": 5966.78,
           "stock": 10,
           "available": true,
+          "originalPrice": 8523.97,
           "sku": "POL028-6",
           "images": {
             "cover": "assets/images/products/prod_500/cover.jpg",
@@ -16313,9 +16352,10 @@
           "attributes": {
             "Talle": "7"
           },
-          "price": 5878.6,
+          "price": 5966.78,
           "stock": 10,
           "available": true,
+          "originalPrice": 8523.97,
           "sku": "POL028-7",
           "images": {
             "cover": "assets/images/products/prod_501/cover.jpg",
@@ -16330,9 +16370,10 @@
           "attributes": {
             "Talle": "8"
           },
-          "price": 5878.6,
+          "price": 5966.78,
           "stock": 10,
           "available": true,
+          "originalPrice": 8523.97,
           "sku": "POL028-8",
           "images": {
             "cover": "assets/images/products/prod_502/cover.jpg",
@@ -16347,9 +16388,10 @@
           "attributes": {
             "Talle": "9"
           },
-          "price": 7009.1,
+          "price": 7114.24,
           "stock": 10,
           "available": true,
+          "originalPrice": 10163.2,
           "sku": "POL028-9",
           "images": {
             "cover": "assets/images/products/prod_503/cover.jpg",
@@ -16364,9 +16406,10 @@
           "attributes": {
             "Talle": "10"
           },
-          "price": 7009.1,
+          "price": 7114.24,
           "stock": 10,
           "available": true,
+          "originalPrice": 10163.2,
           "sku": "POL028-10",
           "images": {
             "cover": "assets/images/products/prod_504/cover.jpg",
@@ -16381,9 +16424,10 @@
           "attributes": {
             "Talle": "11"
           },
-          "price": 8817.9,
+          "price": 8950.17,
           "stock": 10,
           "available": true,
+          "originalPrice": 12785.96,
           "sku": "POL028-11",
           "images": {
             "cover": "assets/images/products/prod_505/cover.jpg",
@@ -16398,9 +16442,10 @@
           "attributes": {
             "Talle": "12"
           },
-          "price": 8817.9,
+          "price": 8950.17,
           "stock": 10,
           "available": true,
+          "originalPrice": 12785.96,
           "sku": "POL028-12",
           "images": {
             "cover": "assets/images/products/prod_506/cover.jpg",
@@ -16411,14 +16456,17 @@
           }
         }
       ]
-    }
+    },
+    "originalPrice": 4753.75,
+    "discount": 30,
+    "baseOriginalPrice": 4753.75
   },
   {
     "id": "prod_507",
     "name": "Campera GAP",
     "category": "ropa",
     "subcategory": "Ropa",
-    "price": 7913.5,
+    "price": 8032.21,
     "stock": 80,
     "rating": 4.1,
     "reviews": 258,
@@ -16460,7 +16508,7 @@
       "Resistente al agua",
       "Perfecto para el frío"
     ],
-    "basePrice": 7913.5,
+    "basePrice": 8032.21,
     "variants": {
       "attributes": [
         {
@@ -16475,9 +16523,10 @@
           "attributes": {
             "Talle": "1"
           },
-          "price": 7913.5,
+          "price": 8032.21,
           "stock": 10,
           "available": true,
+          "originalPrice": 11474.58,
           "sku": "CAM039-1",
           "images": {
             "cover": "assets/images/products/prod_507/cover.jpg",
@@ -16492,9 +16541,10 @@
           "attributes": {
             "Talle": "2"
           },
-          "price": 7913.5,
+          "price": 8032.21,
           "stock": 10,
           "available": true,
+          "originalPrice": 11474.58,
           "sku": "CAM039-2",
           "images": {
             "cover": "assets/images/products/prod_508/cover.jpg",
@@ -16509,9 +16559,10 @@
           "attributes": {
             "Talle": "3"
           },
-          "price": 9044,
+          "price": 9179.66,
           "stock": 10,
           "available": true,
+          "originalPrice": 13113.8,
           "sku": "CAM039-3",
           "images": {
             "cover": "assets/images/products/prod_509/cover.jpg",
@@ -16526,9 +16577,10 @@
           "attributes": {
             "Talle": "4"
           },
-          "price": 9044,
+          "price": 9179.66,
           "stock": 10,
           "available": true,
+          "originalPrice": 13113.8,
           "sku": "CAM039-4",
           "images": {
             "cover": "assets/images/products/prod_510/cover.jpg",
@@ -16543,9 +16595,10 @@
           "attributes": {
             "Talle": "5"
           },
-          "price": 10174.5,
+          "price": 10327.12,
           "stock": 10,
           "available": true,
+          "originalPrice": 14753.03,
           "sku": "CAM039-5",
           "images": {
             "cover": "assets/images/products/prod_511/cover.jpg",
@@ -16560,9 +16613,10 @@
           "attributes": {
             "Talle": "6"
           },
-          "price": 10174.5,
+          "price": 10327.12,
           "stock": 10,
           "available": true,
+          "originalPrice": 14753.03,
           "sku": "CAM039-6",
           "images": {
             "cover": "assets/images/products/prod_512/cover.jpg",
@@ -16577,9 +16631,10 @@
           "attributes": {
             "Talle": "7"
           },
-          "price": 11305,
+          "price": 11474.58,
           "stock": 10,
           "available": true,
+          "originalPrice": 16392.25,
           "sku": "CAM039-7",
           "images": {
             "cover": "assets/images/products/prod_513/cover.jpg",
@@ -16594,9 +16649,10 @@
           "attributes": {
             "Talle": "8"
           },
-          "price": 11305,
+          "price": 11474.58,
           "stock": 10,
           "available": true,
+          "originalPrice": 16392.25,
           "sku": "CAM039-8",
           "images": {
             "cover": "assets/images/products/prod_514/cover.jpg",
@@ -16607,14 +16663,17 @@
           }
         }
       ]
-    }
+    },
+    "originalPrice": 11474.58,
+    "discount": 30,
+    "baseOriginalPrice": 11474.58
   },
   {
     "id": "prod_515",
     "name": "Campera Fútbol",
     "category": "ropa",
     "subcategory": "Ropa",
-    "price": 7913.5,
+    "price": 8032.21,
     "stock": 80,
     "rating": 3.9,
     "reviews": 264,
@@ -16657,7 +16716,7 @@
       "Resistente al agua",
       "Perfecto para el frío"
     ],
-    "basePrice": 7913.5,
+    "basePrice": 8032.21,
     "variants": {
       "attributes": [
         {
@@ -16672,9 +16731,10 @@
           "attributes": {
             "Talle": "1"
           },
-          "price": 7913.5,
+          "price": 8032.21,
           "stock": 10,
           "available": true,
+          "originalPrice": 11474.58,
           "sku": "CAM047-1",
           "images": {
             "cover": "assets/images/products/prod_515/cover.jpg",
@@ -16689,9 +16749,10 @@
           "attributes": {
             "Talle": "2"
           },
-          "price": 7913.5,
+          "price": 8032.21,
           "stock": 10,
           "available": true,
+          "originalPrice": 11474.58,
           "sku": "CAM047-2",
           "images": {
             "cover": "assets/images/products/prod_516/cover.jpg",
@@ -16706,9 +16767,10 @@
           "attributes": {
             "Talle": "3"
           },
-          "price": 9044,
+          "price": 9179.66,
           "stock": 10,
           "available": true,
+          "originalPrice": 13113.8,
           "sku": "CAM047-3",
           "images": {
             "cover": "assets/images/products/prod_517/cover.jpg",
@@ -16723,9 +16785,10 @@
           "attributes": {
             "Talle": "4"
           },
-          "price": 9044,
+          "price": 9179.66,
           "stock": 10,
           "available": true,
+          "originalPrice": 13113.8,
           "sku": "CAM047-4",
           "images": {
             "cover": "assets/images/products/prod_518/cover.jpg",
@@ -16740,9 +16803,10 @@
           "attributes": {
             "Talle": "5"
           },
-          "price": 10174.5,
+          "price": 10327.12,
           "stock": 10,
           "available": true,
+          "originalPrice": 14753.03,
           "sku": "CAM047-5",
           "images": {
             "cover": "assets/images/products/prod_519/cover.jpg",
@@ -16757,9 +16821,10 @@
           "attributes": {
             "Talle": "6"
           },
-          "price": 10174.5,
+          "price": 10327.12,
           "stock": 10,
           "available": true,
+          "originalPrice": 14753.03,
           "sku": "CAM047-6",
           "images": {
             "cover": "assets/images/products/prod_520/cover.jpg",
@@ -16774,9 +16839,10 @@
           "attributes": {
             "Talle": "7"
           },
-          "price": 11305,
+          "price": 11474.58,
           "stock": 10,
           "available": true,
+          "originalPrice": 16392.25,
           "sku": "CAM047-7",
           "images": {
             "cover": "assets/images/products/prod_521/cover.jpg",
@@ -16791,9 +16857,10 @@
           "attributes": {
             "Talle": "8"
           },
-          "price": 11305,
+          "price": 11474.58,
           "stock": 10,
           "available": true,
+          "originalPrice": 16392.25,
           "sku": "CAM047-8",
           "images": {
             "cover": "assets/images/products/prod_522/cover.jpg",
@@ -16804,14 +16871,17 @@
           }
         }
       ]
-    }
+    },
+    "originalPrice": 11474.58,
+    "discount": 30,
+    "baseOriginalPrice": 11474.58
   },
   {
     "id": "prod_523",
     "name": "Campera Abercrombie",
     "category": "ropa",
     "subcategory": "Ropa",
-    "price": 7913.5,
+    "price": 8032.21,
     "stock": 70,
     "rating": 4.5,
     "reviews": 179,
@@ -16853,7 +16923,7 @@
       "Resistente al agua",
       "Perfecto para el frío"
     ],
-    "basePrice": 7913.5,
+    "basePrice": 8032.21,
     "variants": {
       "attributes": [
         {
@@ -16868,9 +16938,10 @@
           "attributes": {
             "Talle": "1"
           },
-          "price": 7913.5,
+          "price": 8032.21,
           "stock": 10,
           "available": true,
+          "originalPrice": 11474.58,
           "sku": "CAM055-1",
           "images": {
             "cover": "assets/images/products/prod_523/cover.jpg",
@@ -16885,9 +16956,10 @@
           "attributes": {
             "Talle": "2"
           },
-          "price": 7913.5,
+          "price": 8032.21,
           "stock": 10,
           "available": true,
+          "originalPrice": 11474.58,
           "sku": "CAM055-2",
           "images": {
             "cover": "assets/images/products/prod_524/cover.jpg",
@@ -16902,9 +16974,10 @@
           "attributes": {
             "Talle": "3"
           },
-          "price": 7913.5,
+          "price": 8032.21,
           "stock": 10,
           "available": true,
+          "originalPrice": 11474.58,
           "sku": "CAM055-3",
           "images": {
             "cover": "assets/images/products/prod_525/cover.jpg",
@@ -16919,9 +16992,10 @@
           "attributes": {
             "Talle": "4"
           },
-          "price": 9044,
+          "price": 9179.66,
           "stock": 10,
           "available": true,
+          "originalPrice": 13113.8,
           "sku": "CAM055-4",
           "images": {
             "cover": "assets/images/products/prod_526/cover.jpg",
@@ -16936,9 +17010,10 @@
           "attributes": {
             "Talle": "5"
           },
-          "price": 9044,
+          "price": 9179.66,
           "stock": 10,
           "available": true,
+          "originalPrice": 13113.8,
           "sku": "CAM055-5",
           "images": {
             "cover": "assets/images/products/prod_527/cover.jpg",
@@ -16953,9 +17028,10 @@
           "attributes": {
             "Talle": "6"
           },
-          "price": 10174.5,
+          "price": 10327.12,
           "stock": 10,
           "available": true,
+          "originalPrice": 14753.03,
           "sku": "CAM055-6",
           "images": {
             "cover": "assets/images/products/prod_528/cover.jpg",
@@ -16970,9 +17046,10 @@
           "attributes": {
             "Talle": "7"
           },
-          "price": 10174.5,
+          "price": 10327.12,
           "stock": 10,
           "available": true,
+          "originalPrice": 14753.03,
           "sku": "CAM055-7",
           "images": {
             "cover": "assets/images/products/prod_529/cover.jpg",
@@ -16983,14 +17060,17 @@
           }
         }
       ]
-    }
+    },
+    "originalPrice": 11474.58,
+    "discount": 30,
+    "baseOriginalPrice": 11474.58
   },
   {
     "id": "prod_530",
     "name": "Campera Plush",
     "category": "ropa",
     "subcategory": "Ropa",
-    "price": 6783,
+    "price": 6884.75,
     "stock": 70,
     "rating": 4.3,
     "reviews": 243,
@@ -17033,7 +17113,7 @@
       "Resistente al agua",
       "Perfecto para el frío"
     ],
-    "basePrice": 6783,
+    "basePrice": 6884.75,
     "variants": {
       "attributes": [
         {
@@ -17048,9 +17128,10 @@
           "attributes": {
             "Talle": "1"
           },
-          "price": 6783,
+          "price": 6884.75,
           "stock": 10,
           "available": true,
+          "originalPrice": 9835.35,
           "sku": "CAM062-1",
           "images": {
             "cover": "assets/images/products/prod_530/cover.jpg",
@@ -17065,9 +17146,10 @@
           "attributes": {
             "Talle": "2"
           },
-          "price": 6783,
+          "price": 6884.75,
           "stock": 10,
           "available": true,
+          "originalPrice": 9835.35,
           "sku": "CAM062-2",
           "images": {
             "cover": "assets/images/products/prod_531/cover.jpg",
@@ -17082,9 +17164,10 @@
           "attributes": {
             "Talle": "3"
           },
-          "price": 7913.5,
+          "price": 8032.21,
           "stock": 10,
           "available": true,
+          "originalPrice": 11474.58,
           "sku": "CAM062-3",
           "images": {
             "cover": "assets/images/products/prod_532/cover.jpg",
@@ -17099,9 +17182,10 @@
           "attributes": {
             "Talle": "4"
           },
-          "price": 7913.5,
+          "price": 8032.21,
           "stock": 10,
           "available": true,
+          "originalPrice": 11474.58,
           "sku": "CAM062-4",
           "images": {
             "cover": "assets/images/products/prod_533/cover.jpg",
@@ -17116,9 +17200,10 @@
           "attributes": {
             "Talle": "5"
           },
-          "price": 9044,
+          "price": 9179.66,
           "stock": 10,
           "available": true,
+          "originalPrice": 13113.8,
           "sku": "CAM062-5",
           "images": {
             "cover": "assets/images/products/prod_534/cover.jpg",
@@ -17133,9 +17218,10 @@
           "attributes": {
             "Talle": "6"
           },
-          "price": 9044,
+          "price": 9179.66,
           "stock": 10,
           "available": true,
+          "originalPrice": 13113.8,
           "sku": "CAM062-6",
           "images": {
             "cover": "assets/images/products/prod_535/cover.jpg",
@@ -17150,9 +17236,10 @@
           "attributes": {
             "Talle": "7"
           },
-          "price": 9044,
+          "price": 9179.66,
           "stock": 10,
           "available": true,
+          "originalPrice": 13113.8,
           "sku": "CAM062-7",
           "images": {
             "cover": "assets/images/products/prod_536/cover.jpg",
@@ -17163,14 +17250,17 @@
           }
         }
       ]
-    }
+    },
+    "originalPrice": 9835.35,
+    "discount": 30,
+    "baseOriginalPrice": 9835.35
   },
   {
     "id": "prod_537",
     "name": "Campera Térmica",
     "category": "ropa",
     "subcategory": "Ropa",
-    "price": 9609.25,
+    "price": 9753.39,
     "stock": 70,
     "rating": 4.3,
     "reviews": 295,
@@ -17212,7 +17302,7 @@
       "Resistente al agua y viento",
       "Perfecto para el frío extremo"
     ],
-    "basePrice": 9609.25,
+    "basePrice": 9753.39,
     "variants": {
       "attributes": [
         {
@@ -17227,9 +17317,10 @@
           "attributes": {
             "Talle": "1"
           },
-          "price": 9609.25,
+          "price": 9753.39,
           "stock": 10,
           "available": true,
+          "originalPrice": 13933.41,
           "sku": "CAM069-1",
           "images": {
             "cover": "assets/images/products/prod_537/cover.jpg",
@@ -17244,9 +17335,10 @@
           "attributes": {
             "Talle": "2"
           },
-          "price": 9609.25,
+          "price": 9753.39,
           "stock": 10,
           "available": true,
+          "originalPrice": 13933.41,
           "sku": "CAM069-2",
           "images": {
             "cover": "assets/images/products/prod_538/cover.jpg",
@@ -17261,9 +17353,10 @@
           "attributes": {
             "Talle": "3"
           },
-          "price": 11305,
+          "price": 11474.58,
           "stock": 10,
           "available": true,
+          "originalPrice": 16392.25,
           "sku": "CAM069-3",
           "images": {
             "cover": "assets/images/products/prod_539/cover.jpg",
@@ -17278,9 +17371,10 @@
           "attributes": {
             "Talle": "4"
           },
-          "price": 11305,
+          "price": 11474.58,
           "stock": 10,
           "available": true,
+          "originalPrice": 16392.25,
           "sku": "CAM069-4",
           "images": {
             "cover": "assets/images/products/prod_540/cover.jpg",
@@ -17295,9 +17389,10 @@
           "attributes": {
             "Talle": "5"
           },
-          "price": 12435.5,
+          "price": 12622.03,
           "stock": 10,
           "available": true,
+          "originalPrice": 18031.47,
           "sku": "CAM069-5",
           "images": {
             "cover": "assets/images/products/prod_541/cover.jpg",
@@ -17312,9 +17407,10 @@
           "attributes": {
             "Talle": "6"
           },
-          "price": 12435.5,
+          "price": 12622.03,
           "stock": 10,
           "available": true,
+          "originalPrice": 18031.47,
           "sku": "CAM069-6",
           "images": {
             "cover": "assets/images/products/prod_542/cover.jpg",
@@ -17329,9 +17425,10 @@
           "attributes": {
             "Talle": "7"
           },
-          "price": 12435.5,
+          "price": 12622.03,
           "stock": 10,
           "available": true,
+          "originalPrice": 18031.47,
           "sku": "CAM069-7",
           "images": {
             "cover": "assets/images/products/prod_543/cover.jpg",
@@ -17342,14 +17439,17 @@
           }
         }
       ]
-    }
+    },
+    "originalPrice": 13933.41,
+    "discount": 30,
+    "baseOriginalPrice": 13933.41
   },
   {
     "id": "prod_544",
     "name": "Camperita Love",
     "category": "ropa",
     "subcategory": "Ropa",
-    "price": 7913.5,
+    "price": 8032.21,
     "stock": 80,
     "rating": 4.2,
     "reviews": 209,
@@ -17392,7 +17492,7 @@
       "Material suave y cómodo",
       "Resistente al agua"
     ],
-    "basePrice": 7913.5,
+    "basePrice": 8032.21,
     "variants": {
       "attributes": [
         {
@@ -17407,9 +17507,10 @@
           "attributes": {
             "Talle": "1"
           },
-          "price": 7913.5,
+          "price": 8032.21,
           "stock": 10,
           "available": true,
+          "originalPrice": 11474.58,
           "sku": "CAM076-1",
           "images": {
             "cover": "assets/images/products/prod_544/cover.jpg",
@@ -17424,9 +17525,10 @@
           "attributes": {
             "Talle": "2"
           },
-          "price": 7913.5,
+          "price": 8032.21,
           "stock": 10,
           "available": true,
+          "originalPrice": 11474.58,
           "sku": "CAM076-2",
           "images": {
             "cover": "assets/images/products/prod_545/cover.jpg",
@@ -17441,9 +17543,10 @@
           "attributes": {
             "Talle": "3"
           },
-          "price": 9044,
+          "price": 9179.66,
           "stock": 10,
           "available": true,
+          "originalPrice": 13113.8,
           "sku": "CAM076-3",
           "images": {
             "cover": "assets/images/products/prod_546/cover.jpg",
@@ -17458,9 +17561,10 @@
           "attributes": {
             "Talle": "4"
           },
-          "price": 9044,
+          "price": 9179.66,
           "stock": 10,
           "available": true,
+          "originalPrice": 13113.8,
           "sku": "CAM076-4",
           "images": {
             "cover": "assets/images/products/prod_547/cover.jpg",
@@ -17475,9 +17579,10 @@
           "attributes": {
             "Talle": "5"
           },
-          "price": 10174.5,
+          "price": 10327.12,
           "stock": 10,
           "available": true,
+          "originalPrice": 14753.03,
           "sku": "CAM076-5",
           "images": {
             "cover": "assets/images/products/prod_548/cover.jpg",
@@ -17492,9 +17597,10 @@
           "attributes": {
             "Talle": "6"
           },
-          "price": 10174.5,
+          "price": 10327.12,
           "stock": 10,
           "available": true,
+          "originalPrice": 14753.03,
           "sku": "CAM076-6",
           "images": {
             "cover": "assets/images/products/prod_549/cover.jpg",
@@ -17509,9 +17615,10 @@
           "attributes": {
             "Talle": "7"
           },
-          "price": 10174.5,
+          "price": 10327.12,
           "stock": 10,
           "available": true,
+          "originalPrice": 14753.03,
           "sku": "CAM076-7",
           "images": {
             "cover": "assets/images/products/prod_550/cover.jpg",
@@ -17526,9 +17633,10 @@
           "attributes": {
             "Talle": "8"
           },
-          "price": 10174.5,
+          "price": 10327.12,
           "stock": 10,
           "available": true,
+          "originalPrice": 14753.03,
           "sku": "CAM076-8",
           "images": {
             "cover": "assets/images/products/prod_551/cover.jpg",
@@ -17539,14 +17647,17 @@
           }
         }
       ]
-    }
+    },
+    "originalPrice": 11474.58,
+    "discount": 30,
+    "baseOriginalPrice": 11474.58
   },
   {
     "id": "prod_552",
     "name": "Campera Osito",
     "category": "ropa",
     "subcategory": "Ropa",
-    "price": 11305,
+    "price": 11474.58,
     "stock": 70,
     "rating": 4.1,
     "reviews": 197,
@@ -17589,7 +17700,7 @@
       "Material ultra suave",
       "Resistente al agua"
     ],
-    "basePrice": 11305,
+    "basePrice": 11474.58,
     "variants": {
       "attributes": [
         {
@@ -17604,9 +17715,10 @@
           "attributes": {
             "Talle": "1"
           },
-          "price": 11305,
+          "price": 11474.58,
           "stock": 10,
           "available": true,
+          "originalPrice": 16392.25,
           "sku": "CAM084-1",
           "images": {
             "cover": "assets/images/products/prod_552/cover.jpg",
@@ -17621,9 +17733,10 @@
           "attributes": {
             "Talle": "2"
           },
-          "price": 12435.5,
+          "price": 12622.03,
           "stock": 10,
           "available": true,
+          "originalPrice": 18031.47,
           "sku": "CAM084-2",
           "images": {
             "cover": "assets/images/products/prod_553/cover.jpg",
@@ -17638,9 +17751,10 @@
           "attributes": {
             "Talle": "3"
           },
-          "price": 12435.5,
+          "price": 12622.03,
           "stock": 10,
           "available": true,
+          "originalPrice": 18031.47,
           "sku": "CAM084-3",
           "images": {
             "cover": "assets/images/products/prod_554/cover.jpg",
@@ -17655,9 +17769,10 @@
           "attributes": {
             "Talle": "4"
           },
-          "price": 13566,
+          "price": 13769.49,
           "stock": 10,
           "available": true,
+          "originalPrice": 19670.7,
           "sku": "CAM084-4",
           "images": {
             "cover": "assets/images/products/prod_555/cover.jpg",
@@ -17672,9 +17787,10 @@
           "attributes": {
             "Talle": "5"
           },
-          "price": 13566,
+          "price": 13769.49,
           "stock": 10,
           "available": true,
+          "originalPrice": 19670.7,
           "sku": "CAM084-5",
           "images": {
             "cover": "assets/images/products/prod_556/cover.jpg",
@@ -17689,9 +17805,10 @@
           "attributes": {
             "Talle": "6"
           },
-          "price": 15827,
+          "price": 16064.41,
           "stock": 10,
           "available": true,
+          "originalPrice": 22949.15,
           "sku": "CAM084-6",
           "images": {
             "cover": "assets/images/products/prod_557/cover.jpg",
@@ -17706,9 +17823,10 @@
           "attributes": {
             "Talle": "7"
           },
-          "price": 15827,
+          "price": 16064.41,
           "stock": 10,
           "available": true,
+          "originalPrice": 22949.15,
           "sku": "CAM084-7",
           "images": {
             "cover": "assets/images/products/prod_558/cover.jpg",
@@ -17719,7 +17837,10 @@
           }
         }
       ]
-    }
+    },
+    "originalPrice": 16392.25,
+    "discount": 30,
+    "baseOriginalPrice": 16392.25
   },
   {
     "id": "prod_559",
@@ -18084,7 +18205,7 @@
     "name": "Entero Very Coold",
     "category": "ropa",
     "subcategory": "Ropa",
-    "price": 8478.75,
+    "price": 8605.93,
     "stock": 80,
     "rating": 4.1,
     "reviews": 210,
@@ -18127,7 +18248,7 @@
       "Resistente al agua",
       "Perfecto para el frío"
     ],
-    "basePrice": 8478.75,
+    "basePrice": 8605.93,
     "variants": {
       "attributes": [],
       "combinations": [
@@ -18136,9 +18257,10 @@
           "attributes": {
             "Talle": "1"
           },
-          "price": 8478.75,
+          "price": 8605.93,
           "stock": 10,
           "available": true,
+          "originalPrice": 12294.19,
           "sku": "ENT001",
           "images": {
             "cover": "assets/images/products/prod_573/cover.jpg",
@@ -18153,9 +18275,10 @@
           "attributes": {
             "Talle": "2"
           },
-          "price": 8478.75,
+          "price": 8605.93,
           "stock": 10,
           "available": true,
+          "originalPrice": 12294.19,
           "sku": "ENT002",
           "images": {
             "cover": "assets/images/products/prod_574/cover.jpg",
@@ -18170,9 +18293,10 @@
           "attributes": {
             "Talle": "3"
           },
-          "price": 9609.25,
+          "price": 9753.39,
           "stock": 10,
           "available": true,
+          "originalPrice": 13933.41,
           "sku": "ENT003",
           "images": {
             "cover": "assets/images/products/prod_575/cover.jpg",
@@ -18187,9 +18311,10 @@
           "attributes": {
             "Talle": "4"
           },
-          "price": 9609.25,
+          "price": 9753.39,
           "stock": 10,
           "available": true,
+          "originalPrice": 13933.41,
           "sku": "ENT004",
           "images": {
             "cover": "assets/images/products/prod_576/cover.jpg",
@@ -18204,9 +18329,10 @@
           "attributes": {
             "Talle": "5"
           },
-          "price": 10739.75,
+          "price": 10900.85,
           "stock": 10,
           "available": true,
+          "originalPrice": 15572.64,
           "sku": "ENT005",
           "images": {
             "cover": "assets/images/products/prod_577/cover.jpg",
@@ -18221,9 +18347,10 @@
           "attributes": {
             "Talle": "6"
           },
-          "price": 10739.75,
+          "price": 10900.85,
           "stock": 10,
           "available": true,
+          "originalPrice": 15572.64,
           "sku": "ENT006",
           "images": {
             "cover": "assets/images/products/prod_578/cover.jpg",
@@ -18238,9 +18365,10 @@
           "attributes": {
             "Talle": "7"
           },
-          "price": 11870.25,
+          "price": 12048.3,
           "stock": 10,
           "available": true,
+          "originalPrice": 17211.86,
           "sku": "ENT007",
           "images": {
             "cover": "assets/images/products/prod_579/cover.jpg",
@@ -18255,9 +18383,10 @@
           "attributes": {
             "Talle": "8"
           },
-          "price": 11870.25,
+          "price": 12048.3,
           "stock": 10,
           "available": true,
+          "originalPrice": 17211.86,
           "sku": "ENT008",
           "images": {
             "cover": "assets/images/products/prod_580/cover.jpg",
@@ -18268,14 +18397,17 @@
           }
         }
       ]
-    }
+    },
+    "originalPrice": 12294.19,
+    "discount": 30,
+    "baseOriginalPrice": 12294.19
   },
   {
     "id": "prod_581",
     "name": "Entero Brisa",
     "category": "ropa",
     "subcategory": "Ropa",
-    "price": 9609.25,
+    "price": 9753.39,
     "stock": 80,
     "rating": 4.4,
     "reviews": 290,
@@ -18317,7 +18449,7 @@
       "Resistente al agua",
       "Perfecto para el frío"
     ],
-    "basePrice": 9609.25,
+    "basePrice": 9753.39,
     "variants": {
       "attributes": [],
       "combinations": [
@@ -18326,9 +18458,10 @@
           "attributes": {
             "Talle": "1"
           },
-          "price": 9609.25,
+          "price": 9753.39,
           "stock": 10,
           "available": true,
+          "originalPrice": 13933.41,
           "sku": "ENT009",
           "images": {
             "cover": "assets/images/products/prod_581/cover.jpg",
@@ -18343,9 +18476,10 @@
           "attributes": {
             "Talle": "2"
           },
-          "price": 9609.25,
+          "price": 9753.39,
           "stock": 10,
           "available": true,
+          "originalPrice": 13933.41,
           "sku": "ENT010",
           "images": {
             "cover": "assets/images/products/prod_582/cover.jpg",
@@ -18360,9 +18494,10 @@
           "attributes": {
             "Talle": "3"
           },
-          "price": 10739.75,
+          "price": 10900.85,
           "stock": 10,
           "available": true,
+          "originalPrice": 15572.64,
           "sku": "ENT011",
           "images": {
             "cover": "assets/images/products/prod_583/cover.jpg",
@@ -18377,9 +18512,10 @@
           "attributes": {
             "Talle": "4"
           },
-          "price": 10739.75,
+          "price": 10900.85,
           "stock": 10,
           "available": true,
+          "originalPrice": 15572.64,
           "sku": "ENT012",
           "images": {
             "cover": "assets/images/products/prod_584/cover.jpg",
@@ -18394,9 +18530,10 @@
           "attributes": {
             "Talle": "5"
           },
-          "price": 13000.75,
+          "price": 13195.76,
           "stock": 10,
           "available": true,
+          "originalPrice": 18851.09,
           "sku": "ENT013",
           "images": {
             "cover": "assets/images/products/prod_585/cover.jpg",
@@ -18411,9 +18548,10 @@
           "attributes": {
             "Talle": "6"
           },
-          "price": 13000.75,
+          "price": 13195.76,
           "stock": 10,
           "available": true,
+          "originalPrice": 18851.09,
           "sku": "ENT014",
           "images": {
             "cover": "assets/images/products/prod_586/cover.jpg",
@@ -18428,9 +18566,10 @@
           "attributes": {
             "Talle": "7"
           },
-          "price": 13566,
+          "price": 13769.49,
           "stock": 10,
           "available": true,
+          "originalPrice": 19670.7,
           "sku": "ENT015",
           "images": {
             "cover": "assets/images/products/prod_587/cover.jpg",
@@ -18445,9 +18584,10 @@
           "attributes": {
             "Talle": "8"
           },
-          "price": 13566,
+          "price": 13769.49,
           "stock": 10,
           "available": true,
+          "originalPrice": 19670.7,
           "sku": "ENT016",
           "images": {
             "cover": "assets/images/products/prod_588/cover.jpg",
@@ -18458,14 +18598,17 @@
           }
         }
       ]
-    }
+    },
+    "originalPrice": 13933.41,
+    "discount": 30,
+    "baseOriginalPrice": 13933.41
   },
   {
     "id": "prod_589",
     "name": "Buzo Soft",
     "category": "ropa",
     "subcategory": "Ropa",
-    "price": 5652.5,
+    "price": 5737.29,
     "stock": 90,
     "rating": 4.3,
     "reviews": 285,
@@ -18508,7 +18651,7 @@
       "Resistente al agua",
       "Perfecto para el frío"
     ],
-    "basePrice": 5652.5,
+    "basePrice": 5737.29,
     "variants": {
       "attributes": [
         {
@@ -18523,9 +18666,10 @@
           "attributes": {
             "Talle": "1"
           },
-          "price": 5652.5,
+          "price": 5737.29,
           "stock": 10,
           "available": true,
+          "originalPrice": 8196.13,
           "sku": "BUZ001-1",
           "images": {
             "cover": "assets/images/products/prod_589/cover.jpg",
@@ -18540,9 +18684,10 @@
           "attributes": {
             "Talle": "2"
           },
-          "price": 5652.5,
+          "price": 5737.29,
           "stock": 10,
           "available": true,
+          "originalPrice": 8196.13,
           "sku": "BUZ001-2",
           "images": {
             "cover": "assets/images/products/prod_590/cover.jpg",
@@ -18557,9 +18702,10 @@
           "attributes": {
             "Talle": "3"
           },
-          "price": 5652.5,
+          "price": 5737.29,
           "stock": 10,
           "available": true,
+          "originalPrice": 8196.13,
           "sku": "BUZ001-3",
           "images": {
             "cover": "assets/images/products/prod_591/cover.jpg",
@@ -18574,9 +18720,10 @@
           "attributes": {
             "Talle": "4"
           },
-          "price": 6217.75,
+          "price": 6311.02,
           "stock": 10,
           "available": true,
+          "originalPrice": 9015.74,
           "sku": "BUZ001-4",
           "images": {
             "cover": "assets/images/products/prod_592/cover.jpg",
@@ -18591,9 +18738,10 @@
           "attributes": {
             "Talle": "5"
           },
-          "price": 6217.75,
+          "price": 6311.02,
           "stock": 10,
           "available": true,
+          "originalPrice": 9015.74,
           "sku": "BUZ001-5",
           "images": {
             "cover": "assets/images/products/prod_593/cover.jpg",
@@ -18608,9 +18756,10 @@
           "attributes": {
             "Talle": "6"
           },
-          "price": 6783,
+          "price": 6884.75,
           "stock": 10,
           "available": true,
+          "originalPrice": 9835.35,
           "sku": "BUZ001-6",
           "images": {
             "cover": "assets/images/products/prod_594/cover.jpg",
@@ -18625,9 +18774,10 @@
           "attributes": {
             "Talle": "7"
           },
-          "price": 6783,
+          "price": 6884.75,
           "stock": 10,
           "available": true,
+          "originalPrice": 9835.35,
           "sku": "BUZ001-7",
           "images": {
             "cover": "assets/images/products/prod_595/cover.jpg",
@@ -18642,9 +18792,10 @@
           "attributes": {
             "Talle": "8"
           },
-          "price": 7348.25,
+          "price": 7458.47,
           "stock": 10,
           "available": true,
+          "originalPrice": 10654.96,
           "sku": "BUZ001-8",
           "images": {
             "cover": "assets/images/products/prod_596/cover.jpg",
@@ -18659,9 +18810,10 @@
           "attributes": {
             "Talle": "9"
           },
-          "price": 7348.25,
+          "price": 7458.47,
           "stock": 10,
           "available": true,
+          "originalPrice": 10654.96,
           "sku": "BUZ001-9",
           "images": {
             "cover": "assets/images/products/prod_597/cover.jpg",
@@ -18672,14 +18824,17 @@
           }
         }
       ]
-    }
+    },
+    "originalPrice": 8196.13,
+    "discount": 30,
+    "baseOriginalPrice": 8196.13
   },
   {
     "id": "prod_598",
     "name": "Poleras",
     "category": "ropa",
     "subcategory": "Ropa",
-    "price": 4522,
+    "price": 4589.83,
     "stock": 80,
     "rating": 4.5,
     "reviews": 210,
@@ -18720,7 +18875,7 @@
       "Resistente al agua",
       "Perfecto para el frío"
     ],
-    "basePrice": 4522,
+    "basePrice": 4589.83,
     "variants": {
       "attributes": [],
       "combinations": [
@@ -18729,9 +18884,10 @@
           "attributes": {
             "Talle": "0"
           },
-          "price": 4522,
+          "price": 4589.83,
           "stock": 10,
           "available": true,
+          "originalPrice": 6556.9,
           "sku": "POL041",
           "images": {
             "cover": "assets/images/products/prod_598/cover.jpg",
@@ -18746,9 +18902,10 @@
           "attributes": {
             "Talle": "1"
           },
-          "price": 5652.5,
+          "price": 5737.29,
           "stock": 10,
           "available": true,
+          "originalPrice": 8196.13,
           "sku": "POL042",
           "images": {
             "cover": "assets/images/products/prod_599/cover.jpg",
@@ -18763,9 +18920,10 @@
           "attributes": {
             "Talle": "2"
           },
-          "price": 5652.5,
+          "price": 5737.29,
           "stock": 10,
           "available": true,
+          "originalPrice": 8196.13,
           "sku": "POL043",
           "images": {
             "cover": "assets/images/products/prod_600/cover.jpg",
@@ -18780,9 +18938,10 @@
           "attributes": {
             "Talle": "3"
           },
-          "price": 6783,
+          "price": 6884.75,
           "stock": 10,
           "available": true,
+          "originalPrice": 9835.35,
           "sku": "POL044",
           "images": {
             "cover": "assets/images/products/prod_601/cover.jpg",
@@ -18797,9 +18956,10 @@
           "attributes": {
             "Talle": "4"
           },
-          "price": 6783,
+          "price": 6884.75,
           "stock": 10,
           "available": true,
+          "originalPrice": 9835.35,
           "sku": "POL045",
           "images": {
             "cover": "assets/images/products/prod_602/cover.jpg",
@@ -18814,9 +18974,10 @@
           "attributes": {
             "Talle": "5"
           },
-          "price": 7348.25,
+          "price": 7458.47,
           "stock": 10,
           "available": true,
+          "originalPrice": 10654.96,
           "sku": "POL046",
           "images": {
             "cover": "assets/images/products/prod_603/cover.jpg",
@@ -18831,9 +18992,10 @@
           "attributes": {
             "Talle": "6"
           },
-          "price": 7348.25,
+          "price": 7458.47,
           "stock": 10,
           "available": true,
+          "originalPrice": 10654.96,
           "sku": "POL047",
           "images": {
             "cover": "assets/images/products/prod_604/cover.jpg",
@@ -18848,9 +19010,10 @@
           "attributes": {
             "Talle": "7"
           },
-          "price": 7913.5,
+          "price": 8032.21,
           "stock": 10,
           "available": true,
+          "originalPrice": 11474.58,
           "sku": "POL048",
           "images": {
             "cover": "assets/images/products/prod_605/cover.jpg",
@@ -18861,7 +19024,10 @@
           }
         }
       ]
-    }
+    },
+    "originalPrice": 6556.9,
+    "discount": 30,
+    "baseOriginalPrice": 6556.9
   },
   {
     "id": "prod_606",
@@ -19179,7 +19345,7 @@
     },
     "shipping": {
       "free": true,
-      "days": "1-2"
+      "days": 3
     },
     "badge": "🦴 Accesorios",
     "brand": "Sin marca",
@@ -19342,8 +19508,8 @@
       "material": "Metal cromado"
     },
     "shipping": {
-      "free": false,
-      "days": "1-2"
+      "free": true,
+      "days": 2
     },
     "badge": "🦴 Accesorios",
     "brand": "Sin marca",
@@ -19393,8 +19559,8 @@
       "SKU": "COL017"
     },
     "shipping": {
-      "free": false,
-      "days": "1-2"
+      "free": true,
+      "days": 2
     },
     "badge": "🦴 Accesorios",
     "brand": "Sin marca",
@@ -19485,8 +19651,8 @@
       "SKU": "COL021"
     },
     "shipping": {
-      "free": false,
-      "days": "1-2"
+      "free": true,
+      "days": 3
     },
     "badge": "🦴 Accesorios",
     "brand": "Sin marca",
@@ -19626,8 +19792,8 @@
       "material": "Material resistente"
     },
     "shipping": {
-      "free": false,
-      "days": "1-2"
+      "free": true,
+      "days": 2
     },
     "badge": "🦴 Accesorios",
     "brand": "Sin marca",
@@ -19679,8 +19845,8 @@
       "material": "Cuero"
     },
     "shipping": {
-      "free": false,
-      "days": "1-2"
+      "free": true,
+      "days": 3
     },
     "badge": "🦴 Accesorios",
     "brand": "Sin marca",
@@ -19887,7 +20053,7 @@
     },
     "shipping": {
       "free": true,
-      "days": "1-2"
+      "days": 3
     },
     "badge": "🦴 Accesorios",
     "brand": "Sin marca",
@@ -19941,7 +20107,7 @@
     },
     "shipping": {
       "free": true,
-      "days": "1-2"
+      "days": 3
     },
     "badge": "🦴 Accesorios",
     "brand": "Sin marca",
@@ -20426,8 +20592,8 @@
       "material": "Material resistente"
     },
     "shipping": {
-      "free": false,
-      "days": "1-2"
+      "free": true,
+      "days": 3
     },
     "badge": "🦴 Accesorios",
     "brand": "Sin marca",
@@ -20479,8 +20645,8 @@
       "material": "Material resistente"
     },
     "shipping": {
-      "free": false,
-      "days": "1-2"
+      "free": true,
+      "days": 3
     },
     "badge": "🦴 Accesorios",
     "brand": "Sin marca",
@@ -20529,8 +20695,8 @@
       "material": "Material resistente"
     },
     "shipping": {
-      "free": false,
-      "days": "1-2"
+      "free": true,
+      "days": 4
     },
     "badge": "🦴 Accesorios",
     "brand": "Sin marca",
@@ -20787,7 +20953,7 @@
     },
     "shipping": {
       "free": true,
-      "days": "1-2"
+      "days": 2
     },
     "badge": "🏠 Casitas",
     "brand": "Sin marca",
@@ -22152,8 +22318,8 @@
       "material": "Material resistente"
     },
     "shipping": {
-      "free": false,
-      "days": "1-2"
+      "free": true,
+      "days": 2
     },
     "badge": "🦴 Accesorios",
     "brand": "Sin marca",
@@ -23029,8 +23195,8 @@
       "material": "Material resistente"
     },
     "shipping": {
-      "free": false,
-      "days": "1-2"
+      "free": true,
+      "days": 4
     },
     "badge": "🦴 Accesorios",
     "brand": "Sin marca",
@@ -23082,8 +23248,8 @@
       "material": "Soga resistente"
     },
     "shipping": {
-      "free": false,
-      "days": "1-2"
+      "free": true,
+      "days": 2
     },
     "badge": "🦴 Accesorios",
     "brand": "Sin marca",
@@ -23136,8 +23302,8 @@
       "material": "Soga resistente"
     },
     "shipping": {
-      "free": false,
-      "days": "1-2"
+      "free": true,
+      "days": 2
     },
     "badge": "🦴 Accesorios",
     "brand": "Sin marca",
@@ -23185,8 +23351,8 @@
       "SKU": "ROY001"
     },
     "shipping": {
-      "free": false,
-      "days": "1-2"
+      "free": true,
+      "days": 3
     },
     "badge": "🧼 Higiene",
     "brand": "Sin marca",
@@ -24292,7 +24458,7 @@
     },
     "shipping": {
       "free": true,
-      "days": "1-2"
+      "days": 2
     },
     "badge": "🍽️ Comederos",
     "brand": "Sin marca",
@@ -24342,7 +24508,7 @@
     },
     "shipping": {
       "free": true,
-      "days": "1-2"
+      "days": 3
     },
     "badge": "🍽️ Comederos",
     "brand": "Sin marca",
@@ -24391,8 +24557,8 @@
       "material": "Material resistente"
     },
     "shipping": {
-      "free": false,
-      "days": "1-2"
+      "free": true,
+      "days": 4
     },
     "badge": "🍽️ Comederos",
     "brand": "Sin marca",
@@ -24654,8 +24820,8 @@
       "material": "Material resistente"
     },
     "shipping": {
-      "free": false,
-      "days": "1-2"
+      "free": true,
+      "days": 2
     },
     "badge": "🍽️ Comederos",
     "brand": "Sin marca",
@@ -24706,7 +24872,7 @@
     },
     "shipping": {
       "free": true,
-      "days": "1-2"
+      "days": 4
     },
     "badge": "🍽️ Comederos",
     "brand": "Sin marca",
@@ -26643,7 +26809,7 @@
     },
     "shipping": {
       "free": true,
-      "days": "1-2"
+      "days": 3
     },
     "badge": "🐾 Bolsos y Casitas",
     "brand": "Sin marca",
@@ -26693,7 +26859,7 @@
     },
     "shipping": {
       "free": true,
-      "days": "1-2"
+      "days": 3
     },
     "badge": "🐾 Rascadores",
     "brand": "Sin marca",
@@ -26745,7 +26911,7 @@
     },
     "shipping": {
       "free": true,
-      "days": "1-2"
+      "days": 3
     },
     "badge": "🐾 Rascadores",
     "brand": "Sin marca",
@@ -26789,7 +26955,7 @@
     },
     "shipping": {
       "free": true,
-      "days": "1-2"
+      "days": 3
     },
     "badge": "🐾 Juguetes",
     "brand": "Sin marca",
@@ -26833,7 +26999,7 @@
     },
     "shipping": {
       "free": true,
-      "days": "1-2"
+      "days": 3
     },
     "badge": "🐾 Juguetes",
     "brand": "Sin marca",
@@ -26879,7 +27045,7 @@
     },
     "shipping": {
       "free": true,
-      "days": "1-2"
+      "days": 3
     },
     "badge": "🐾 Juguetes",
     "brand": "Sin marca",
@@ -26972,7 +27138,7 @@
     },
     "shipping": {
       "free": true,
-      "days": "1-2"
+      "days": 3
     },
     "badge": "🐾 Juguetes",
     "brand": "Sin marca",
@@ -27068,8 +27234,8 @@
       "Niveles": "4 pisos"
     },
     "shipping": {
-      "free": false,
-      "days": "1-2"
+      "free": true,
+      "days": 3
     },
     "badge": "🐾 Juguetes",
     "brand": "Sin marca",
@@ -27119,8 +27285,8 @@
       "Plumas": "2 unidades"
     },
     "shipping": {
-      "free": false,
-      "days": "1-2"
+      "free": true,
+      "days": 3
     },
     "badge": "🐾 Juguetes",
     "brand": "Sin marca",
@@ -27361,7 +27527,7 @@
     },
     "shipping": {
       "free": true,
-      "days": "1-2"
+      "days": 3
     },
     "badge": "🐾 Juguetes",
     "brand": "Sin marca",
@@ -27520,7 +27686,7 @@
     "name": "BUZO ANIMADO",
     "category": "🐾 ROPA INVIERNO",
     "subcategory": "Ropa Invierno",
-    "price": 6000,
+    "price": 6090,
     "stock": 45,
     "rating": 4.6,
     "reviews": 28,
@@ -27565,9 +27731,9 @@
       "9 talles disponibles",
       "Ideal para días fríos"
     ],
-    "originalPrice": 6000,
-    "basePrice": 6000,
-    "baseOriginalPrice": 6000,
+    "originalPrice": 8700,
+    "basePrice": 6090,
+    "baseOriginalPrice": 8700,
     "variants": {
       "attributes": [
         {
@@ -27582,10 +27748,10 @@
           "attributes": {
             "Talle": "T1"
           },
-          "price": 6000,
+          "price": 6090,
           "stock": 5,
           "available": true,
-          "originalPrice": 6000,
+          "originalPrice": 8700,
           "sku": "BUZ010-T1",
           "images": {
             "cover": "assets/images/products/prod_887/cover.jpg",
@@ -27598,10 +27764,10 @@
           "attributes": {
             "Talle": "T2"
           },
-          "price": 6000,
+          "price": 6090,
           "stock": 5,
           "available": true,
-          "originalPrice": 6000,
+          "originalPrice": 8700,
           "sku": "BUZ010-T2",
           "images": {
             "cover": "assets/images/products/prod_887/cover.jpg",
@@ -27614,10 +27780,10 @@
           "attributes": {
             "Talle": "T3"
           },
-          "price": 7000,
+          "price": 7105,
           "stock": 5,
           "available": true,
-          "originalPrice": 7000,
+          "originalPrice": 10150,
           "sku": "BUZ010-T3",
           "images": {
             "cover": "assets/images/products/prod_887/cover.jpg",
@@ -27630,10 +27796,10 @@
           "attributes": {
             "Talle": "T4"
           },
-          "price": 7000,
+          "price": 7105,
           "stock": 5,
           "available": true,
-          "originalPrice": 7000,
+          "originalPrice": 10150,
           "sku": "BUZ010-T4",
           "images": {
             "cover": "assets/images/products/prod_887/cover.jpg",
@@ -27646,10 +27812,10 @@
           "attributes": {
             "Talle": "T5"
           },
-          "price": 8000,
+          "price": 8120,
           "stock": 5,
           "available": true,
-          "originalPrice": 8000,
+          "originalPrice": 11600,
           "sku": "BUZ010-T5",
           "images": {
             "cover": "assets/images/products/prod_887/cover.jpg",
@@ -27662,10 +27828,10 @@
           "attributes": {
             "Talle": "T6"
           },
-          "price": 8000,
+          "price": 8120,
           "stock": 5,
           "available": true,
-          "originalPrice": 8000,
+          "originalPrice": 11600,
           "sku": "BUZ010-T6",
           "images": {
             "cover": "assets/images/products/prod_887/cover.jpg",
@@ -27678,10 +27844,10 @@
           "attributes": {
             "Talle": "T7"
           },
-          "price": 9000,
+          "price": 9135,
           "stock": 5,
           "available": true,
-          "originalPrice": 9000,
+          "originalPrice": 13050,
           "sku": "BUZ010-T7",
           "images": {
             "cover": "assets/images/products/prod_887/cover.jpg",
@@ -27694,10 +27860,10 @@
           "attributes": {
             "Talle": "T8"
           },
-          "price": 9000,
+          "price": 9135,
           "stock": 5,
           "available": true,
-          "originalPrice": 9000,
+          "originalPrice": 13050,
           "sku": "BUZ010-T8",
           "images": {
             "cover": "assets/images/products/prod_887/cover.jpg",
@@ -27710,10 +27876,10 @@
           "attributes": {
             "Talle": "T9"
           },
-          "price": 9000,
+          "price": 9135,
           "stock": 5,
           "available": true,
-          "originalPrice": 9000,
+          "originalPrice": 13050,
           "sku": "BUZ010-T9",
           "images": {
             "cover": "assets/images/products/prod_887/cover.jpg",
@@ -27722,14 +27888,15 @@
           }
         }
       ]
-    }
+    },
+    "discount": 30
   },
   {
     "id": "prod_888",
     "name": "DISFRAZ MODELO",
     "category": "ropa",
     "subcategory": "Ropa Invierno",
-    "price": 9000,
+    "price": 9135,
     "stock": 35,
     "rating": 4.7,
     "reviews": 19,
@@ -27775,9 +27942,9 @@
       "7 talles disponibles",
       "Ideal para fotos y eventos"
     ],
-    "originalPrice": 9000,
-    "basePrice": 9000,
-    "baseOriginalPrice": 9000,
+    "originalPrice": 13050,
+    "basePrice": 9135,
+    "baseOriginalPrice": 13050,
     "variants": {
       "attributes": [
         {
@@ -27792,10 +27959,10 @@
           "attributes": {
             "Talle": "T1"
           },
-          "price": 9000,
+          "price": 9135,
           "stock": 5,
           "available": true,
-          "originalPrice": 9000,
+          "originalPrice": 13050,
           "sku": "DIS002-T1",
           "images": {
             "cover": "assets/images/products/prod_888/cover.jpg",
@@ -27811,10 +27978,10 @@
           "attributes": {
             "Talle": "T2"
           },
-          "price": 9000,
+          "price": 9135,
           "stock": 5,
           "available": true,
-          "originalPrice": 9000,
+          "originalPrice": 13050,
           "sku": "DIS002-T2",
           "images": {
             "cover": "assets/images/products/prod_888/cover.jpg",
@@ -27830,10 +27997,10 @@
           "attributes": {
             "Talle": "T3"
           },
-          "price": 10000,
+          "price": 10150,
           "stock": 5,
           "available": true,
-          "originalPrice": 10000,
+          "originalPrice": 14500,
           "sku": "DIS002-T3",
           "images": {
             "cover": "assets/images/products/prod_888/cover.jpg",
@@ -27849,10 +28016,10 @@
           "attributes": {
             "Talle": "T4"
           },
-          "price": 10000,
+          "price": 10150,
           "stock": 5,
           "available": true,
-          "originalPrice": 10000,
+          "originalPrice": 14500,
           "sku": "DIS002-T4",
           "images": {
             "cover": "assets/images/products/prod_888/cover.jpg",
@@ -27868,10 +28035,10 @@
           "attributes": {
             "Talle": "T5"
           },
-          "price": 10000,
+          "price": 10150,
           "stock": 5,
           "available": true,
-          "originalPrice": 10000,
+          "originalPrice": 14500,
           "sku": "DIS002-T5",
           "images": {
             "cover": "assets/images/products/prod_888/cover.jpg",
@@ -27887,10 +28054,10 @@
           "attributes": {
             "Talle": "T6"
           },
-          "price": 11000,
+          "price": 11165,
           "stock": 5,
           "available": true,
-          "originalPrice": 11000,
+          "originalPrice": 15950,
           "sku": "DIS002-T6",
           "images": {
             "cover": "assets/images/products/prod_888/cover.jpg",
@@ -27906,10 +28073,10 @@
           "attributes": {
             "Talle": "T7"
           },
-          "price": 11000,
+          "price": 11165,
           "stock": 5,
           "available": true,
-          "originalPrice": 11000,
+          "originalPrice": 15950,
           "sku": "DIS002-T7",
           "images": {
             "cover": "assets/images/products/prod_888/cover.jpg",
@@ -27921,14 +28088,15 @@
           }
         }
       ]
-    }
+    },
+    "discount": 30
   },
   {
     "id": "prod_889",
     "name": "BUZO HARVARD",
     "category": "ropa",
     "subcategory": "Ropa Invierno",
-    "price": 7000,
+    "price": 7105,
     "stock": 40,
     "rating": 4.8,
     "reviews": 32,
@@ -27972,9 +28140,9 @@
       "8 talles disponibles",
       "Ideal para días fríos"
     ],
-    "originalPrice": 7000,
-    "basePrice": 7000,
-    "baseOriginalPrice": 7000,
+    "originalPrice": 10150,
+    "basePrice": 7105,
+    "baseOriginalPrice": 10150,
     "variants": {
       "attributes": [
         {
@@ -27989,10 +28157,10 @@
           "attributes": {
             "Talle": "T1"
           },
-          "price": 7000,
+          "price": 7105,
           "stock": 5,
           "available": true,
-          "originalPrice": 7000,
+          "originalPrice": 10150,
           "sku": "BUZ011-T1",
           "images": {
             "cover": "assets/images/products/prod_889/cover.jpg",
@@ -28005,10 +28173,10 @@
           "attributes": {
             "Talle": "T2"
           },
-          "price": 7000,
+          "price": 7105,
           "stock": 5,
           "available": true,
-          "originalPrice": 7000,
+          "originalPrice": 10150,
           "sku": "BUZ011-T2",
           "images": {
             "cover": "assets/images/products/prod_889/cover.jpg",
@@ -28021,10 +28189,10 @@
           "attributes": {
             "Talle": "T3"
           },
-          "price": 7000,
+          "price": 7105,
           "stock": 5,
           "available": true,
-          "originalPrice": 7000,
+          "originalPrice": 10150,
           "sku": "BUZ011-T3",
           "images": {
             "cover": "assets/images/products/prod_889/cover.jpg",
@@ -28037,10 +28205,10 @@
           "attributes": {
             "Talle": "T4"
           },
-          "price": 8000,
+          "price": 8120,
           "stock": 5,
           "available": true,
-          "originalPrice": 8000,
+          "originalPrice": 11600,
           "sku": "BUZ011-T4",
           "images": {
             "cover": "assets/images/products/prod_889/cover.jpg",
@@ -28053,10 +28221,10 @@
           "attributes": {
             "Talle": "T5"
           },
-          "price": 8000,
+          "price": 8120,
           "stock": 5,
           "available": true,
-          "originalPrice": 8000,
+          "originalPrice": 11600,
           "sku": "BUZ011-T5",
           "images": {
             "cover": "assets/images/products/prod_889/cover.jpg",
@@ -28069,10 +28237,10 @@
           "attributes": {
             "Talle": "T6"
           },
-          "price": 8000,
+          "price": 8120,
           "stock": 5,
           "available": true,
-          "originalPrice": 8000,
+          "originalPrice": 11600,
           "sku": "BUZ011-T6",
           "images": {
             "cover": "assets/images/products/prod_889/cover.jpg",
@@ -28085,10 +28253,10 @@
           "attributes": {
             "Talle": "T7"
           },
-          "price": 9000,
+          "price": 9135,
           "stock": 5,
           "available": true,
-          "originalPrice": 9000,
+          "originalPrice": 13050,
           "sku": "BUZ011-T7",
           "images": {
             "cover": "assets/images/products/prod_889/cover.jpg",
@@ -28101,10 +28269,10 @@
           "attributes": {
             "Talle": "T8"
           },
-          "price": 9000,
+          "price": 9135,
           "stock": 5,
           "available": true,
-          "originalPrice": 9000,
+          "originalPrice": 13050,
           "sku": "BUZ011-T8",
           "images": {
             "cover": "assets/images/products/prod_889/cover.jpg",
@@ -28113,14 +28281,15 @@
           }
         }
       ]
-    }
+    },
+    "discount": 30
   },
   {
     "id": "prod_890",
     "name": "Campera Love",
     "category": "ropa",
     "subcategory": "Ropa Invierno",
-    "price": 7000,
+    "price": 7105,
     "stock": 40,
     "rating": 4.7,
     "reviews": 25,
@@ -28164,9 +28333,9 @@
       "8 talles disponibles",
       "Ideal para días fríos"
     ],
-    "originalPrice": 7000,
-    "basePrice": 7000,
-    "baseOriginalPrice": 7000,
+    "originalPrice": 10150,
+    "basePrice": 7105,
+    "baseOriginalPrice": 10150,
     "variants": {
       "attributes": [
         {
@@ -28181,10 +28350,10 @@
           "attributes": {
             "Talle": "T1"
           },
-          "price": 7000,
+          "price": 7105,
           "stock": 5,
           "available": true,
-          "originalPrice": 7000,
+          "originalPrice": 10150,
           "sku": "CAM091-T1",
           "images": {
             "cover": "assets/images/products/prod_890/cover.jpg",
@@ -28197,10 +28366,10 @@
           "attributes": {
             "Talle": "T2"
           },
-          "price": 7000,
+          "price": 7105,
           "stock": 5,
           "available": true,
-          "originalPrice": 7000,
+          "originalPrice": 10150,
           "sku": "CAM091-T2",
           "images": {
             "cover": "assets/images/products/prod_890/cover.jpg",
@@ -28213,10 +28382,10 @@
           "attributes": {
             "Talle": "T3"
           },
-          "price": 8000,
+          "price": 8120,
           "stock": 5,
           "available": true,
-          "originalPrice": 8000,
+          "originalPrice": 11600,
           "sku": "CAM091-T3",
           "images": {
             "cover": "assets/images/products/prod_890/cover.jpg",
@@ -28229,10 +28398,10 @@
           "attributes": {
             "Talle": "T4"
           },
-          "price": 8000,
+          "price": 8120,
           "stock": 5,
           "available": true,
-          "originalPrice": 8000,
+          "originalPrice": 11600,
           "sku": "CAM091-T4",
           "images": {
             "cover": "assets/images/products/prod_890/cover.jpg",
@@ -28245,10 +28414,10 @@
           "attributes": {
             "Talle": "T5"
           },
-          "price": 9000,
+          "price": 9135,
           "stock": 5,
           "available": true,
-          "originalPrice": 9000,
+          "originalPrice": 13050,
           "sku": "CAM091-T5",
           "images": {
             "cover": "assets/images/products/prod_890/cover.jpg",
@@ -28261,10 +28430,10 @@
           "attributes": {
             "Talle": "T6"
           },
-          "price": 9000,
+          "price": 9135,
           "stock": 5,
           "available": true,
-          "originalPrice": 9000,
+          "originalPrice": 13050,
           "sku": "CAM091-T6",
           "images": {
             "cover": "assets/images/products/prod_890/cover.jpg",
@@ -28277,10 +28446,10 @@
           "attributes": {
             "Talle": "T7"
           },
-          "price": 9000,
+          "price": 9135,
           "stock": 5,
           "available": true,
-          "originalPrice": 9000,
+          "originalPrice": 13050,
           "sku": "CAM091-T7",
           "images": {
             "cover": "assets/images/products/prod_890/cover.jpg",
@@ -28293,10 +28462,10 @@
           "attributes": {
             "Talle": "T8"
           },
-          "price": 9000,
+          "price": 9135,
           "stock": 5,
           "available": true,
-          "originalPrice": 9000,
+          "originalPrice": 13050,
           "sku": "CAM091-T8",
           "images": {
             "cover": "assets/images/products/prod_890/cover.jpg",
@@ -28305,7 +28474,8 @@
           }
         }
       ]
-    }
+    },
+    "discount": 30
   },
   {
     "id": "prod_891",
