@@ -204,17 +204,33 @@ class VariantSelector {
       }
     }
     
-    // Actualizar imagen principal
+    // Actualizar imagen principal - usar imagen de variante o fallback a producto base
     const mainImage = document.querySelector('.product__image-main');
-    if (mainImage && images && images.cover) {
-      mainImage.src = images.cover;
-      mainImage.alt = `${this.product.name} - ${Object.values(this.selectedAttributes).join(' ')}`;
+    if (mainImage) {
+      const getImgUrl = window.getImageUrl || ((path) => path);
+      // Usar imagen de la variante, o fallback a imagen del producto base
+      const coverImage = (images && images.cover) ? images.cover : 
+                         (this.product.images?.cover || this.product.images?.gallery?.[0]);
+      
+      if (coverImage) {
+        const imgUrl = getImgUrl(coverImage);
+        mainImage.src = imgUrl;
+        mainImage.alt = `${this.product.name} - ${Object.values(this.selectedAttributes).join(' ')}`;
+        
+        // Fallback si la imagen de variante falla - usar imagen del producto base
+        mainImage.onerror = () => {
+          const baseImage = this.product.images?.cover || this.product.images?.gallery?.[0];
+          if (baseImage && baseImage !== coverImage) {
+            mainImage.src = getImgUrl(baseImage);
+          } else {
+            mainImage.src = getImgUrl('assets/images/placeholder.svg');
+          }
+        };
+      }
     }
     
-    // Actualizar galería
-    if (images && images.gallery) {
-      this.updateGallery(images.gallery);
-    }
+    // Actualizar galería - pasar también las imágenes del producto base como fallback
+    this.updateGallery(images?.gallery || [], images?.cover);
     
     // Actualizar botón de compra
     this.updateBuyButton();
@@ -257,9 +273,12 @@ class VariantSelector {
       .trim();
   }
   
-  updateGallery(variantImages) {
+  updateGallery(variantImages, variantCover) {
     const thumbnailsContainer = document.querySelector('.product__thumbnails');
     if (!thumbnailsContainer) return;
+    
+    const getImgUrl = window.getImageUrl || ((path) => path);
+    const placeholderUrl = getImgUrl('assets/images/placeholder.svg');
     
     // Usar Set para evitar duplicados (comparando por nombre de archivo sin extensión)
     const addedImages = new Set();
@@ -288,9 +307,11 @@ class VariantSelector {
       }
     };
     
-    // 1. Cover de la variante seleccionada (primera imagen)
-    if (this.selectedVariant?.images?.cover) {
-      addImage(this.selectedVariant.images.cover);
+    // 1. Primero intentar con imagen del producto base (más confiable)
+    if (this.product.images?.cover) {
+      addImage(this.product.images.cover);
+    } else if (this.product.images?.gallery && this.product.images.gallery.length > 0) {
+      addImage(this.product.images.gallery[0]);
     }
     
     // 2. Galería del producto principal (las imágenes adicionales del producto)
@@ -303,15 +324,21 @@ class VariantSelector {
       variantImages.forEach(img => addImage(img));
     }
     
-    // Renderizar todas las miniaturas
-    thumbnailsContainer.innerHTML = allImages.map((img, index) => `
+    // Renderizar todas las miniaturas usando getImageUrl para resolver rutas
+    thumbnailsContainer.innerHTML = allImages.map((img, index) => {
+      const imgUrl = getImgUrl(img);
+      // Usar imagen del producto base como fallback en onerror
+      const fallbackImg = this.product.images?.cover || this.product.images?.gallery?.[0] || 'assets/images/placeholder.svg';
+      const fallbackUrl = getImgUrl(fallbackImg);
+      return `
       <img 
-        src="${img}" 
+        src="${imgUrl}" 
         alt="Imagen ${index + 1}"
         class="product__gallery-img ${index === 0 ? 'product__gallery-img--active' : ''}"
         onclick="document.querySelector('.product__main-image').src = this.src"
-        onerror="this.src='assets/images/placeholder.svg'">
-    `).join('');
+        onerror="this.onerror=null; this.src='${index === 0 ? fallbackUrl : placeholderUrl}'">
+    `;
+    }).join('');
   }
   
   updateBuyButton() {

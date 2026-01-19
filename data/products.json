@@ -27518,7 +27518,7 @@
   {
     "id": "prod_887",
     "name": "BUZO ANIMADO",
-    "category": "ropa",
+    "category": "🐾 ROPA INVIERNO",
     "subcategory": "Ropa Invierno",
     "price": 6000,
     "stock": 45,
@@ -27540,9 +27540,11 @@
     "description": "Buzo Animado para mascotas. Diseño divertido y abrigado ideal para los días fríos de invierno.",
     "longDescription": "Buzo Animado para mascotas. Prenda de abrigo con diseño divertido y colorido que mantendrá a tu mascota calentita durante el invierno. Confeccionado con tela suave y cómoda que permite libertad de movimiento. Fácil de poner y quitar gracias a su diseño práctico. Disponible en 9 talles para adaptarse a diferentes tamaños de mascotas.",
     "images": {
-      "cover": "assets/images/products/prod_887/cover.jpg",
-      "thumb": "assets/images/products/prod_887/thumb.jpg",
-      "gallery": []
+      "cover": "assets/images/products/prod_887/1.jpeg",
+      "thumb": "assets/images/products/prod_887/1.jpeg",
+      "gallery": [
+        "assets/images/products/prod_887/1.jpeg"
+      ]
     },
     "specs": {
       "SKU": "BUZ010",
@@ -27551,7 +27553,7 @@
     },
     "shipping": {
       "free": false,
-      "days": 3
+      "days": "3"
     },
     "badge": " Ropa Invierno",
     "brand": "Sin marca",
