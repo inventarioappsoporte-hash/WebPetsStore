@@ -28521,5 +28521,888 @@
     "badge": " 💧Bebedero",
     "brand": null,
     "sku": "BEB005"
+  },
+  {
+    "id": "prod_898",
+    "name": "CAMPERA ANIMADA",
+    "category": "🐾 ROPA INVIERNO",
+    "subcategory": "Ropa Invierno",
+    "price": 7105,
+    "originalPrice": 10150,
+    "discount": 30,
+    "stock": 80,
+    "rating": 4.5,
+    "reviews": 39,
+    "featured": true,
+    "topDiscount": true,
+    "hasVideo": false,
+    "hasVariants": true,
+    "basePrice": 7105,
+    "baseOriginalPrice": 10150,
+    "description": "CAMPERA ANIMADA para mascotas",
+    "longDescription": "CAMPERA ANIMADA PARA MASCOTAS\r\n\r\nCampera diseñada especialmente para perros y mascotas pequeñas, ideal para brindar abrigo y comodidad en días frescos. Confeccionada en material suave y liviano, permite libertad de movimiento y un calce cómodo para el uso diario.\r\n\r\nCuenta con diseños animados coloridos que aportan un estilo divertido y original. Es práctica, resistente y fácil de colocar, ideal para paseos, salidas o uso en el hogar.\r\n\r\nCaracterísticas:\r\n\r\nTela suave y abrigada\r\n\r\nDiseños animados llamativos\r\n\r\nCómoda y liviana\r\n\r\nIdeal para paseos y clima fresco\r\n\r\nFácil de lavar y mantener\r\n\r\nUna prenda funcional y atractiva para mantener a tu mascota abrigada y con estilo",
+    "badge": "🧥 Ropa",
+    "promoText": "OFERTA INVIERNO",
+    "brand": "Pets Store",
+    "sku": "CAM092",
+    "tags": [
+      "ropa",
+      "invierno",
+      "mascotas",
+      "abrigo"
+    ],
+    "images": {
+      "cover": "assets/images/products/prod_898/1.jpeg",
+      "thumb": "assets/images/products/prod_898/1.jpeg",
+      "gallery": [
+        "assets/images/products/prod_898/1.jpeg"
+      ]
+    },
+    "specs": {
+      "material": "Tela suave y abrigada",
+      "temporada": "Invierno",
+      "tallasDisponibles": "T1, T2, T3, T4, T5, T6, T7, T8"
+    },
+    "shipping": {
+      "free": false,
+      "days": "1-2"
+    },
+    "marketing": null,
+    "features": [
+      "Tela suave",
+      "Abrigado",
+      "Fácil de lavar",
+      "Cómodo"
+    ],
+    "variants": {
+      "attributes": [
+        {
+          "id": "talle",
+          "name": "Talle",
+          "type": "text"
+        }
+      ],
+      "combinations": [
+        {
+          "id": "prod_898_var_0",
+          "attributes": {
+            "Talle": "T1"
+          },
+          "price": 7105,
+          "originalPrice": 10150,
+          "stock": 10,
+          "sku": "CAM092-T1",
+          "available": true,
+          "images": {
+            "cover": "assets/images/products/prod_898/1.jpeg",
+            "thumb": "assets/images/products/prod_898/1.jpeg",
+            "gallery": []
+          },
+          "specs": {
+            "medidas": "Largo: 24cm - Contorno: 38cm"
+          }
+        },
+        {
+          "id": "prod_898_var_1",
+          "attributes": {
+            "Talle": "T2"
+          },
+          "price": 7105,
+          "originalPrice": 10150,
+          "stock": 10,
+          "sku": "CAM092-T2",
+          "available": true,
+          "images": {
+            "cover": "assets/images/products/prod_898/1.jpeg",
+            "thumb": "assets/images/products/prod_898/1.jpeg",
+            "gallery": []
+          },
+          "specs": {
+            "medidas": "Largo: 26cm - Contorno: 40cm"
+          }
+        },
+        {
+          "id": "prod_898_var_2",
+          "attributes": {
+            "Talle": "T3"
+          },
+          "price": 8120,
+          "originalPrice": 11600,
+          "stock": 10,
+          "sku": "CAM092-T3",
+          "available": true,
+          "images": {
+            "cover": "assets/images/products/prod_898/1.jpeg",
+            "thumb": "assets/images/products/prod_898/1.jpeg",
+            "gallery": []
+          },
+          "specs": {
+            "medidas": "Largo: 28cm - Contorno: 44cm"
+          }
+        },
+        {
+          "id": "prod_898_var_3",
+          "attributes": {
+            "Talle": "T4"
+          },
+          "price": 8120,
+          "originalPrice": 11600,
+          "stock": 10,
+          "sku": "CAM092-T4",
+          "available": true,
+          "images": {
+            "cover": "assets/images/products/prod_898/1.jpeg",
+            "thumb": "assets/images/products/prod_898/1.jpeg",
+            "gallery": []
+          },
+          "specs": {
+            "medidas": "Largo: 32cm - Contorno: 46cm"
+          }
+        },
+        {
+          "id": "prod_898_var_4",
+          "attributes": {
+            "Talle": "T5"
+          },
+          "price": 9135,
+          "originalPrice": 13050,
+          "stock": 10,
+          "sku": "CAM092-T5",
+          "available": true,
+          "images": {
+            "cover": "assets/images/products/prod_898/1.jpeg",
+            "thumb": "assets/images/products/prod_898/1.jpeg",
+            "gallery": []
+          },
+          "specs": {
+            "medidas": "Largo: 36cm - Contorno: 50cm"
+          }
+        },
+        {
+          "id": "prod_898_var_5",
+          "attributes": {
+            "Talle": "T6"
+          },
+          "price": 9135,
+          "originalPrice": 13050,
+          "stock": 10,
+          "sku": "CAM092-T6",
+          "available": true,
+          "images": {
+            "cover": "assets/images/products/prod_898/1.jpeg",
+            "thumb": "assets/images/products/prod_898/1.jpeg",
+            "gallery": []
+          },
+          "specs": {
+            "medidas": "Largo: 38cm - Contorno: 56cm"
+          }
+        },
+        {
+          "id": "prod_898_var_6",
+          "attributes": {
+            "Talle": "T7"
+          },
+          "price": 10150,
+          "originalPrice": 14500,
+          "stock": 10,
+          "sku": "CAM092-T7",
+          "available": true,
+          "images": {
+            "cover": "assets/images/products/prod_898/1.jpeg",
+            "thumb": "assets/images/products/prod_898/1.jpeg",
+            "gallery": []
+          },
+          "specs": {
+            "medidas": "Largo: 42cm - Contorno: 64cm"
+          }
+        },
+        {
+          "id": "prod_898_var_7",
+          "attributes": {
+            "Talle": "T8"
+          },
+          "price": 10150,
+          "originalPrice": 14500,
+          "stock": 10,
+          "sku": "CAM092-T8",
+          "available": true,
+          "images": {
+            "cover": "assets/images/products/prod_898/1.jpeg",
+            "thumb": "assets/images/products/prod_898/1.jpeg",
+            "gallery": []
+          },
+          "specs": {
+            "medidas": "Largo: 45cm - Contorno: 72cm"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "id": "prod_899",
+    "name": "BUZO DISNEY",
+    "category": "🐾 ROPA INVIERNO",
+    "subcategory": "Ropa Invierno",
+    "price": 6090,
+    "originalPrice": 8700,
+    "discount": 30,
+    "stock": 70,
+    "rating": 4.5,
+    "reviews": 39,
+    "featured": true,
+    "topDiscount": true,
+    "hasVideo": false,
+    "hasVariants": true,
+    "basePrice": 6090,
+    "baseOriginalPrice": 8700,
+    "description": "BUZO DISNEY para mascotas",
+    "longDescription": "BUZO DISNEY PARA MASCOTAS\r\n\r\nBuzo diseñado especialmente para perros y mascotas pequeñas, ideal para mantener el calor en días frescos. Confeccionado en material suave y confortable, ofrece un calce cómodo que no limita el movimiento de la mascota.\r\n\r\nCuenta con diseños inspirados en personajes clásicos de Disney, en colores llamativos y alegres que aportan un estilo divertido y moderno. Es una prenda práctica para el uso diario, paseos o momentos de descanso.\r\n\r\nCaracterísticas:\r\n\r\nTela suave y abrigada\r\n\r\nDiseño con personajes Disney\r\n\r\nCómodo y liviano\r\n\r\nIdeal para clima fresco\r\n\r\nFácil de colocar y lavar\r\n\r\nUna prenda funcional y atractiva para que tu mascota esté abrigada y con estilo.",
+    "badge": "🧥 Ropa",
+    "promoText": "OFERTA INVIERNO",
+    "brand": "Pets Store",
+    "sku": "BUZ012",
+    "tags": [
+      "ropa",
+      "invierno",
+      "mascotas",
+      "abrigo"
+    ],
+    "images": {
+      "cover": "assets/images/products/prod_899/1.jpeg",
+      "thumb": "assets/images/products/prod_899/1.jpeg",
+      "gallery": [
+        "assets/images/products/prod_899/1.jpeg"
+      ]
+    },
+    "specs": {
+      "material": "Tela suave y abrigada",
+      "temporada": "Invierno",
+      "tallasDisponibles": "T1, T2, T3, T4, T5, T6, T7"
+    },
+    "shipping": {
+      "free": false,
+      "days": "1-2"
+    },
+    "marketing": null,
+    "features": [
+      "Tela suave",
+      "Abrigado",
+      "Fácil de lavar",
+      "Cómodo"
+    ],
+    "variants": {
+      "attributes": [
+        {
+          "id": "talle",
+          "name": "Talle",
+          "type": "text"
+        }
+      ],
+      "combinations": [
+        {
+          "id": "prod_899_var_0",
+          "attributes": {
+            "Talle": "T1"
+          },
+          "price": 6090,
+          "originalPrice": 8700,
+          "stock": 10,
+          "sku": "BUZ012-T1",
+          "available": true,
+          "images": {
+            "cover": "assets/images/products/prod_899/1.jpeg",
+            "thumb": "assets/images/products/prod_899/1.jpeg",
+            "gallery": []
+          },
+          "specs": {
+            "medidas": "Largo: 26cm - Contorno: 34cm"
+          }
+        },
+        {
+          "id": "prod_899_var_1",
+          "attributes": {
+            "Talle": "T2"
+          },
+          "price": 6090,
+          "originalPrice": 8700,
+          "stock": 10,
+          "sku": "BUZ012-T2",
+          "available": true,
+          "images": {
+            "cover": "assets/images/products/prod_899/1.jpeg",
+            "thumb": "assets/images/products/prod_899/1.jpeg",
+            "gallery": []
+          },
+          "specs": {
+            "medidas": "Largo: 29cm - Contorno: 38cm"
+          }
+        },
+        {
+          "id": "prod_899_var_2",
+          "attributes": {
+            "Talle": "T3"
+          },
+          "price": 7105,
+          "originalPrice": 10150,
+          "stock": 10,
+          "sku": "BUZ012-T3",
+          "available": true,
+          "images": {
+            "cover": "assets/images/products/prod_899/1.jpeg",
+            "thumb": "assets/images/products/prod_899/1.jpeg",
+            "gallery": []
+          },
+          "specs": {
+            "medidas": "Largo: 31cm - Contorno: 40cm"
+          }
+        },
+        {
+          "id": "prod_899_var_3",
+          "attributes": {
+            "Talle": "T4"
+          },
+          "price": 7105,
+          "originalPrice": 10150,
+          "stock": 10,
+          "sku": "BUZ012-T4",
+          "available": true,
+          "images": {
+            "cover": "assets/images/products/prod_899/1.jpeg",
+            "thumb": "assets/images/products/prod_899/1.jpeg",
+            "gallery": []
+          },
+          "specs": {
+            "medidas": "Largo: 35cm - Contorno: 44cm"
+          }
+        },
+        {
+          "id": "prod_899_var_4",
+          "attributes": {
+            "Talle": "T5"
+          },
+          "price": 8120,
+          "originalPrice": 11600,
+          "stock": 10,
+          "sku": "BUZ012-T5",
+          "available": true,
+          "images": {
+            "cover": "assets/images/products/prod_899/1.jpeg",
+            "thumb": "assets/images/products/prod_899/1.jpeg",
+            "gallery": []
+          },
+          "specs": {
+            "medidas": "Largo: 38cm - Contorno: 50cm"
+          }
+        },
+        {
+          "id": "prod_899_var_5",
+          "attributes": {
+            "Talle": "T6"
+          },
+          "price": 8120,
+          "originalPrice": 11600,
+          "stock": 10,
+          "sku": "BUZ012-T6",
+          "available": true,
+          "images": {
+            "cover": "assets/images/products/prod_899/1.jpeg",
+            "thumb": "assets/images/products/prod_899/1.jpeg",
+            "gallery": []
+          },
+          "specs": {
+            "medidas": "Largo: 42cm - Contorno: 54cm"
+          }
+        },
+        {
+          "id": "prod_899_var_6",
+          "attributes": {
+            "Talle": "T7"
+          },
+          "price": 9135,
+          "originalPrice": 13050,
+          "stock": 10,
+          "sku": "BUZ012-T7",
+          "available": true,
+          "images": {
+            "cover": "assets/images/products/prod_899/1.jpeg",
+            "thumb": "assets/images/products/prod_899/1.jpeg",
+            "gallery": []
+          },
+          "specs": {
+            "medidas": "Largo: 45cm - Contorno: 56cm"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "id": "prod_900",
+    "name": "ENTERO SOFF 4 PATAS",
+    "category": "🐾 ROPA INVIERNO",
+    "subcategory": "Ropa Invierno",
+    "price": 7105,
+    "originalPrice": 10150,
+    "discount": 30,
+    "stock": 80,
+    "rating": 4.5,
+    "reviews": 34,
+    "featured": true,
+    "topDiscount": true,
+    "hasVideo": false,
+    "hasVariants": true,
+    "basePrice": 7105,
+    "baseOriginalPrice": 10150,
+    "description": "ENTERO SOFF 4 PATAS para mascotas",
+    "longDescription": "ENTERITO SOFT 4 PATAS PARA MASCOTAS\r\n\r\nEnterito soft diseñado para perros y mascotas pequeñas, ideal para brindar abrigo y protección total en días fríos. Su diseño de 4 patas cubre el cuerpo completo, ayudando a mantener el calor y evitando el contacto directo con superficies frías.\r\n\r\nConfeccionado en tela soft suave y liviana, ofrece un calce cómodo que permite libertad de movimiento. Presenta estampados variados y llamativos, perfectos para el uso diario en el hogar o para descanso.\r\n\r\nCaracterísticas:\r\n\r\nTela soft suave y abrigada\r\n\r\nDiseño entero de 4 patas\r\n\r\nCómodo y liviano\r\n\r\nIdeal para clima frío\r\n\r\nFácil de colocar y lavar\r\n\r\nUna prenda funcional y confortable para mantener a tu mascota abrigada y cómoda durante todo el día.",
+    "badge": "🧥 Ropa",
+    "promoText": "OFERTA INVIERNO",
+    "brand": "Pets Store",
+    "sku": "ENT017",
+    "tags": [
+      "ropa",
+      "invierno",
+      "mascotas",
+      "abrigo"
+    ],
+    "images": {
+      "cover": "assets/images/products/prod_900/1.jpeg",
+      "thumb": "assets/images/products/prod_900/1.jpeg",
+      "gallery": [
+        "assets/images/products/prod_900/1.jpeg"
+      ]
+    },
+    "specs": {
+      "material": "Tela suave y abrigada",
+      "temporada": "Invierno",
+      "tallasDisponibles": "T1, T2, T3, T4, T5, T6, T7, T8"
+    },
+    "shipping": {
+      "free": false,
+      "days": "1-2"
+    },
+    "marketing": null,
+    "features": [
+      "Tela suave",
+      "Abrigado",
+      "Fácil de lavar",
+      "Cómodo"
+    ],
+    "variants": {
+      "attributes": [
+        {
+          "id": "talle",
+          "name": "Talle",
+          "type": "text"
+        }
+      ],
+      "combinations": [
+        {
+          "id": "prod_900_var_0",
+          "attributes": {
+            "Talle": "T1"
+          },
+          "price": 7105,
+          "originalPrice": 10150,
+          "stock": 10,
+          "sku": "ENT017-T1",
+          "available": true,
+          "images": {
+            "cover": "assets/images/products/prod_900/1.jpeg",
+            "thumb": "assets/images/products/prod_900/1.jpeg",
+            "gallery": []
+          },
+          "specs": {
+            "medidas": "Largo: 27cm - Contorno: 38cm"
+          }
+        },
+        {
+          "id": "prod_900_var_1",
+          "attributes": {
+            "Talle": "T2"
+          },
+          "price": 7105,
+          "originalPrice": 10150,
+          "stock": 10,
+          "sku": "ENT017-T2",
+          "available": true,
+          "images": {
+            "cover": "assets/images/products/prod_900/1.jpeg",
+            "thumb": "assets/images/products/prod_900/1.jpeg",
+            "gallery": []
+          },
+          "specs": {
+            "medidas": "Largo: 29cm - Contorno: 40cm"
+          }
+        },
+        {
+          "id": "prod_900_var_2",
+          "attributes": {
+            "Talle": "T3"
+          },
+          "price": 8120,
+          "originalPrice": 11600,
+          "stock": 10,
+          "sku": "ENT017-T3",
+          "available": true,
+          "images": {
+            "cover": "assets/images/products/prod_900/1.jpeg",
+            "thumb": "assets/images/products/prod_900/1.jpeg",
+            "gallery": []
+          },
+          "specs": {
+            "medidas": "Largo: 32cm - Contorno: 44cm"
+          }
+        },
+        {
+          "id": "prod_900_var_3",
+          "attributes": {
+            "Talle": "T4"
+          },
+          "price": 8120,
+          "originalPrice": 11600,
+          "stock": 10,
+          "sku": "ENT017-T4",
+          "available": true,
+          "images": {
+            "cover": "assets/images/products/prod_900/1.jpeg",
+            "thumb": "assets/images/products/prod_900/1.jpeg",
+            "gallery": []
+          },
+          "specs": {
+            "medidas": "Largo: 35cm - Contorno: 48cm"
+          }
+        },
+        {
+          "id": "prod_900_var_4",
+          "attributes": {
+            "Talle": "T5"
+          },
+          "price": 9135,
+          "originalPrice": 13050,
+          "stock": 10,
+          "sku": "ENT017-T5",
+          "available": true,
+          "images": {
+            "cover": "assets/images/products/prod_900/1.jpeg",
+            "thumb": "assets/images/products/prod_900/1.jpeg",
+            "gallery": []
+          },
+          "specs": {
+            "medidas": "Largo: 39cm - Contorno: 52cm"
+          }
+        },
+        {
+          "id": "prod_900_var_5",
+          "attributes": {
+            "Talle": "T6"
+          },
+          "price": 9135,
+          "originalPrice": 13050,
+          "stock": 10,
+          "sku": "ENT017-T6",
+          "available": true,
+          "images": {
+            "cover": "assets/images/products/prod_900/1.jpeg",
+            "thumb": "assets/images/products/prod_900/1.jpeg",
+            "gallery": []
+          },
+          "specs": {
+            "medidas": "Largo: 42cm - Contorno: 64cm"
+          }
+        },
+        {
+          "id": "prod_900_var_6",
+          "attributes": {
+            "Talle": "T7"
+          },
+          "price": 10150,
+          "originalPrice": 14500,
+          "stock": 10,
+          "sku": "ENT017-T7",
+          "available": true,
+          "images": {
+            "cover": "assets/images/products/prod_900/1.jpeg",
+            "thumb": "assets/images/products/prod_900/1.jpeg",
+            "gallery": []
+          },
+          "specs": {
+            "medidas": "Largo: 48cm - Contorno: 66cm"
+          }
+        },
+        {
+          "id": "prod_900_var_7",
+          "attributes": {
+            "Talle": "T8"
+          },
+          "price": 10150,
+          "originalPrice": 14500,
+          "stock": 10,
+          "sku": "ENT017-T8",
+          "available": true,
+          "images": {
+            "cover": "assets/images/products/prod_900/1.jpeg",
+            "thumb": "assets/images/products/prod_900/1.jpeg",
+            "gallery": []
+          },
+          "specs": {
+            "medidas": "Largo: 50cm - Contorno: 68cm"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "id": "prod_901",
+    "name": "CHALECO PREMIUN",
+    "category": "🐾 ROPA INVIERNO",
+    "subcategory": "Ropa Invierno",
+    "price": 6090,
+    "originalPrice": 8700,
+    "discount": 30,
+    "stock": 100,
+    "rating": 4.5,
+    "reviews": 54,
+    "featured": true,
+    "topDiscount": true,
+    "hasVideo": false,
+    "hasVariants": true,
+    "basePrice": 6090,
+    "baseOriginalPrice": 8700,
+    "description": "CHALECO PREMIUN para mascotas",
+    "longDescription": "CHALECO PREMIUM PARA MASCOTAS\r\n\r\nChaleco premium diseñado para perros y mascotas pequeñas, ideal para brindar abrigo y comodidad en días fríos. Confeccionado en materiales de alta calidad, ofrece una textura suave y un calce cómodo que no limita el movimiento.\r\n\r\nSu diseño práctico cubre el pecho y la espalda, ayudando a conservar el calor corporal. Cuenta con terminaciones prolijas y detalles reforzados que aseguran mayor durabilidad para el uso diario.\r\n\r\nCaracterísticas:\r\n\r\nMaterial premium suave y abrigado\r\n\r\nCalce cómodo y liviano\r\n\r\nDiseño práctico y funcional\r\n\r\nIdeal para clima frío\r\n\r\nFácil de colocar y lavar\r\n\r\nUna prenda resistente y confortable, pensada para ofrecer abrigo y comodidad con una excelente presentación.",
+    "badge": "🧥 Ropa",
+    "promoText": "OFERTA INVIERNO",
+    "brand": "Pets Store",
+    "sku": "CHA002",
+    "tags": [
+      "ropa",
+      "invierno",
+      "mascotas",
+      "abrigo"
+    ],
+    "images": {
+      "cover": "assets/images/products/prod_901/1.jpeg",
+      "thumb": "assets/images/products/prod_901/1.jpeg",
+      "gallery": [
+        "assets/images/products/prod_901/1.jpeg"
+      ]
+    },
+    "specs": {
+      "material": "Tela suave y abrigada",
+      "temporada": "Invierno",
+      "tallasDisponibles": "T0, T1, T2, T3, T4, T5, T6, T7, T8, T9"
+    },
+    "shipping": {
+      "free": false,
+      "days": "1-2"
+    },
+    "marketing": null,
+    "features": [
+      "Tela suave",
+      "Abrigado",
+      "Fácil de lavar",
+      "Cómodo"
+    ],
+    "variants": {
+      "attributes": [
+        {
+          "id": "talle",
+          "name": "Talle",
+          "type": "text"
+        }
+      ],
+      "combinations": [
+        {
+          "id": "prod_901_var_0",
+          "attributes": {
+            "Talle": "T0"
+          },
+          "price": 6090,
+          "originalPrice": 8700,
+          "stock": 10,
+          "sku": "CHA002-T0",
+          "available": true,
+          "images": {
+            "cover": "assets/images/products/prod_901/1.jpeg",
+            "thumb": "assets/images/products/prod_901/1.jpeg",
+            "gallery": []
+          },
+          "specs": {
+            "medidas": "Largo: 21cm - Contorno: 26cm"
+          }
+        },
+        {
+          "id": "prod_901_var_1",
+          "attributes": {
+            "Talle": "T1"
+          },
+          "price": 6090,
+          "originalPrice": 8700,
+          "stock": 10,
+          "sku": "CHA002-T1",
+          "available": true,
+          "images": {
+            "cover": "assets/images/products/prod_901/1.jpeg",
+            "thumb": "assets/images/products/prod_901/1.jpeg",
+            "gallery": []
+          },
+          "specs": {
+            "medidas": "Largo: 24cm - Contorno: 34cm"
+          }
+        },
+        {
+          "id": "prod_901_var_2",
+          "attributes": {
+            "Talle": "T2"
+          },
+          "price": 7105,
+          "originalPrice": 10150,
+          "stock": 10,
+          "sku": "CHA002-T2",
+          "available": true,
+          "images": {
+            "cover": "assets/images/products/prod_901/1.jpeg",
+            "thumb": "assets/images/products/prod_901/1.jpeg",
+            "gallery": []
+          },
+          "specs": {
+            "medidas": "Largo: 28cm - Contorno: 38cm"
+          }
+        },
+        {
+          "id": "prod_901_var_3",
+          "attributes": {
+            "Talle": "T3"
+          },
+          "price": 7105,
+          "originalPrice": 10150,
+          "stock": 10,
+          "sku": "CHA002-T3",
+          "available": true,
+          "images": {
+            "cover": "assets/images/products/prod_901/1.jpeg",
+            "thumb": "assets/images/products/prod_901/1.jpeg",
+            "gallery": []
+          },
+          "specs": {
+            "medidas": "Largo: 31cm - Contorno: 46cm"
+          }
+        },
+        {
+          "id": "prod_901_var_4",
+          "attributes": {
+            "Talle": "T4"
+          },
+          "price": 7105,
+          "originalPrice": 10150,
+          "stock": 10,
+          "sku": "CHA002-T4",
+          "available": true,
+          "images": {
+            "cover": "assets/images/products/prod_901/1.jpeg",
+            "thumb": "assets/images/products/prod_901/1.jpeg",
+            "gallery": []
+          },
+          "specs": {
+            "medidas": "Largo: 35cm - Contorno: 48cm"
+          }
+        },
+        {
+          "id": "prod_901_var_5",
+          "attributes": {
+            "Talle": "T5"
+          },
+          "price": 8120,
+          "originalPrice": 11600,
+          "stock": 10,
+          "sku": "CHA002-T5",
+          "available": true,
+          "images": {
+            "cover": "assets/images/products/prod_901/1.jpeg",
+            "thumb": "assets/images/products/prod_901/1.jpeg",
+            "gallery": []
+          },
+          "specs": {
+            "medidas": "Largo: 40cm - Contorno: 52cm"
+          }
+        },
+        {
+          "id": "prod_901_var_6",
+          "attributes": {
+            "Talle": "T6"
+          },
+          "price": 8120,
+          "originalPrice": 11600,
+          "stock": 10,
+          "sku": "CHA002-T6",
+          "available": true,
+          "images": {
+            "cover": "assets/images/products/prod_901/1.jpeg",
+            "thumb": "assets/images/products/prod_901/1.jpeg",
+            "gallery": []
+          },
+          "specs": {
+            "medidas": "Largo: 44cm - Contorno: 56cm"
+          }
+        },
+        {
+          "id": "prod_901_var_7",
+          "attributes": {
+            "Talle": "T7"
+          },
+          "price": 8120,
+          "originalPrice": 11600,
+          "stock": 10,
+          "sku": "CHA002-T7",
+          "available": true,
+          "images": {
+            "cover": "assets/images/products/prod_901/1.jpeg",
+            "thumb": "assets/images/products/prod_901/1.jpeg",
+            "gallery": []
+          },
+          "specs": {
+            "medidas": "Largo: 49cm - Contorno: 62cm"
+          }
+        },
+        {
+          "id": "prod_901_var_8",
+          "attributes": {
+            "Talle": "T8"
+          },
+          "price": 9135,
+          "originalPrice": 13050,
+          "stock": 10,
+          "sku": "CHA002-T8",
+          "available": true,
+          "images": {
+            "cover": "assets/images/products/prod_901/1.jpeg",
+            "thumb": "assets/images/products/prod_901/1.jpeg",
+            "gallery": []
+          },
+          "specs": {
+            "medidas": "Largo: 53cm - Contorno: 66cm"
+          }
+        },
+        {
+          "id": "prod_901_var_9",
+          "attributes": {
+            "Talle": "T9"
+          },
+          "price": 9135,
+          "originalPrice": 13050,
+          "stock": 10,
+          "sku": "CHA002-T9",
+          "available": true,
+          "images": {
+            "cover": "assets/images/products/prod_901/1.jpeg",
+            "thumb": "assets/images/products/prod_901/1.jpeg",
+            "gallery": []
+          },
+          "specs": {
+            "medidas": "Largo: 60cm - Contorno: 72cm"
+          }
+        }
+      ]
+    }
   }
 ]
