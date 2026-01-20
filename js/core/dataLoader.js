@@ -160,3 +160,45 @@ class DataLoader {
 }
 
 const dataLoader = new DataLoader();
+
+/**
+ * Helper para obtener la ruta correcta de una imagen
+ * Considera si estamos en GitHub Pages, local o servido desde el admin
+ */
+function getImageUrl(imagePath) {
+  if (!imagePath) return 'assets/images/placeholder.svg';
+  
+  // Si ya es una URL absoluta, devolverla tal cual
+  if (imagePath.startsWith('http://') || imagePath.startsWith('https://')) {
+    return imagePath;
+  }
+  
+  // Detectar el contexto
+  const pathname = window.location.pathname;
+  const hostname = window.location.hostname;
+  const isFromAdmin = pathname.startsWith('/pets-store/');
+  const isGitHubPages = hostname.includes('github.io');
+  
+  // Si estamos siendo servidos desde /pets-store/ (admin), agregar el prefijo
+  if (isFromAdmin) {
+    // Asegurarse de que la ruta no tenga doble /pets-store/
+    if (imagePath.startsWith('/pets-store/')) {
+      return imagePath;
+    }
+    return `/pets-store/${imagePath}`;
+  }
+  
+  // Para GitHub Pages
+  if (isGitHubPages) {
+    const pathParts = pathname.split('/').filter(p => p);
+    if (pathParts.length > 0 && pathParts[0] !== 'index.html') {
+      return `/${pathParts[0]}/${imagePath}`;
+    }
+  }
+  
+  // Para otros casos, devolver la ruta tal cual
+  return imagePath;
+}
+
+// Exportar globalmente para uso en otros módulos
+window.getImageUrl = getImageUrl;

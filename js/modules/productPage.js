@@ -69,27 +69,34 @@ class ProductPage {
     // El VariantSelector se encargará de eso
     let thumbnailsHtml = '';
     
+    // Usar getImageUrl para obtener rutas correctas según el contexto
+    const coverUrl = window.getImageUrl ? window.getImageUrl(product.images.cover) : product.images.cover;
+    const placeholderUrl = window.getImageUrl ? window.getImageUrl('assets/images/placeholder.svg') : 'assets/images/placeholder.svg';
+    
     if (!hasVariants) {
       const galleryHtml = product.images.gallery
-        .map((img, idx) => `
+        .map((img, idx) => {
+          const imgUrl = window.getImageUrl ? window.getImageUrl(img) : img;
+          return `
           <img 
-            src="${img}" 
+            src="${imgUrl}" 
             alt="${product.name} - Imagen ${idx + 1}" 
             class="product__gallery-img"
             onclick="document.querySelector('.product__main-image').src = this.src"
-            onerror="this.src='assets/images/placeholder.svg'"
+            onerror="this.src='${placeholderUrl}'"
           >
-        `)
+        `;
+        })
         .join('');
 
       // Agregar imagen cover al inicio de la galería para que también sea clickeable
       const coverThumbHtml = `
         <img 
-          src="${product.images.cover}" 
+          src="${coverUrl}" 
           alt="${product.name} - Principal" 
           class="product__gallery-img product__gallery-img--active"
           onclick="document.querySelector('.product__main-image').src = this.src"
-          onerror="this.src='assets/images/placeholder.svg'"
+          onerror="this.src='${placeholderUrl}'"
         >
       `;
       
@@ -107,7 +114,7 @@ class ProductPage {
         <div class="product__gallery">
           <div class="product__main">
             ${discount}
-            <img src="${product.images.cover}" alt="${product.name}" class="product__main-image product__image-main" onerror="this.src='assets/images/placeholder.svg'">
+            <img src="${coverUrl}" alt="${product.name}" class="product__main-image product__image-main" onerror="this.src='${placeholderUrl}'">
           </div>
           <div class="product__thumbnails">
             ${thumbnailsHtml}
