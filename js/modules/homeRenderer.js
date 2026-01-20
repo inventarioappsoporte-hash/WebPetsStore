@@ -164,6 +164,12 @@ class HomeRenderer {
     if (section.sortBy) {
       filtered = this.dataLoader.sortProducts(filtered, section.sortBy);
     }
+    
+    // Ordenamiento especial para TOP DESCUENTOS: 
+    // Primero por descuento (mayor a menor), luego por tipo de marketing (video > imagen > sin marketing)
+    if (section.id === 'top-discounts') {
+      filtered = this.sortByDiscountAndMarketing(filtered);
+    }
 
     // Limitar
     const limited = filtered.slice(0, section.limit);
@@ -211,14 +217,12 @@ class HomeRenderer {
         mediaHtml = `
           <video 
             class="card__image card__marketing-video" 
-            ${product.marketing.autoplay ? 'autoplay' : ''} 
-            ${product.marketing.muted ? 'muted' : ''} 
-            ${product.marketing.loop ? 'loop' : ''}
+            autoplay
+            muted
+            loop
+            playsinline
             poster="${product.marketing.poster}"
-            preload="metadata"
-            onloadstart="console.log('🎬 Video marketing cargando:', '${product.name}')"
-            oncanplay="console.log('🎬 Video marketing listo:', '${product.name}')"
-            onerror="console.error('❌ Error video marketing:', '${product.name}'); this.style.display='none'; this.nextElementSibling.style.display='block';"
+            preload="auto"
           >
             <source src="${product.marketing.url}" type="video/mp4">
             Tu navegador no soporta videos.
@@ -272,6 +276,39 @@ class HomeRenderer {
     `;
   }
 
+  /**
+   * Ordenar productos por descuento y tipo de marketing
+   * Prioridad: 1) Mayor descuento, 2) Video marketing, 3) Imagen marketing, 4) Sin marketing
+   */
+  sortByDiscountAndMarketing(products) {
+    return [...products].sort((a, b) => {
+      // Primero ordenar por descuento (mayor a menor)
+      const discountA = a.discount || 0;
+      const discountB = b.discount || 0;
+      
+      if (discountB !== discountA) {
+        return discountB - discountA;
+      }
+      
+      // Si tienen el mismo descuento, ordenar por tipo de marketing
+      const marketingPriorityA = this.getMarketingPriority(a);
+      const marketingPriorityB = this.getMarketingPriority(b);
+      
+      return marketingPriorityB - marketingPriorityA;
+    });
+  }
+
+  /**
+   * Obtener prioridad de marketing de un producto
+   * 3 = video, 2 = imagen, 1 = sin marketing
+   */
+  getMarketingPriority(product) {
+    if (!product.marketing) return 1;
+    if (product.marketing.type === 'video') return 3;
+    if (product.marketing.type === 'image') return 2;
+    return 1;
+  }
+
   filterProducts(products, criteria) {
     console.log('🔍 filterProducts called with criteria:', criteria);
     console.log('🔍 filterProducts - products count:', products.length);
@@ -311,6 +348,31 @@ class HomeRenderer {
     return result;
   }
 
+  /**
+   * Ordenar productos por descuento y tipo de marketing
+   * Prioridad: 1) Mayor descuento, 2) Video marketing, 3) Imagen marketing, 4) Sin marketing
+   */
+  sortByDiscountAndMarketing(products) {
+    return [...products].sort((a, b) => {
+      // Primero ordenar por descuento (mayor a menor)
+      const discountDiff = (b.discount || 0) - (a.discount || 0);
+      if (discountDiff !== 0) return discountDiff;
+      
+      // Si tienen el mismo descuento, ordenar por tipo de marketing
+      const getMarketingPriority = (product) => {
+        if (product.marketing && product.marketing.type === 'video') return 3; // Mayor prioridad
+        if (product.marketing && product.marketing.type === 'image') return 2;
+        if (product.marketing) return 1; // Tiene marketing pero sin tipo definido
+        return 0; // Sin marketing
+      };
+      
+      const priorityA = getMarketingPriority(a);
+      const priorityB = getMarketingPriority(b);
+      
+      return priorityB - priorityA; // Mayor prioridad primero
+    });
+  }
+
   attachCardListeners(container) {
     const cards = container.querySelectorAll(CONSTANTS.SELECTORS.CARDS);
     cards.forEach(card => {
@@ -322,6 +384,15 @@ class HomeRenderer {
       card.addEventListener('mouseleave', () => {
         const video = card.querySelector('video');
         if (video) video.pause();
+      });
+    });
+
+    // Forzar reproducción de videos de marketing
+    const videos = container.querySelectorAll('.card__marketing-video');
+    videos.forEach(video => {
+      // Intentar reproducir el video
+      video.play().catch(err => {
+        console.log('Video autoplay bloqueado, esperando interacción del usuario');
       });
     });
 
