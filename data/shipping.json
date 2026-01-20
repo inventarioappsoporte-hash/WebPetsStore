@@ -94,7 +94,82 @@
       "pickupAddress": "Consultar dirección por WhatsApp",
       "active": true,
       "sortOrder": 6
+    },
+    {
+      "id": "montecastro",
+      "name": "MONTE CASTRO",
+      "description": "Barrio Monte castro CABA",
+      "type": "fixed",
+      "price": 3000,
+      "days": "1-2",
+      "active": true,
+      "freeShipping": {
+        "enabled": true,
+        "minAmount": 7000,
+        "message": ""
+      },
+      "sortOrder": 7
+    },
+    {
+      "id": "villadevoto",
+      "name": "VILLA DEVOTO",
+      "description": "Barrio Villa Devoto Caba",
+      "type": "fixed",
+      "price": 3000,
+      "days": "1-2",
+      "active": true,
+      "freeShipping": {
+        "enabled": true,
+        "minAmount": 7000,
+        "message": ""
+      },
+      "sortOrder": 8
+    },
+    {
+      "id": "villadelparquet",
+      "name": "VILLA DEL PARQUET",
+      "description": "Barrio Villa del Parquet",
+      "type": "fixed",
+      "price": 3000,
+      "days": "1-2",
+      "active": true,
+      "freeShipping": {
+        "enabled": true,
+        "minAmount": 7000,
+        "message": ""
+      },
+      "sortOrder": 9
+    },
+    {
+      "id": "monserrat",
+      "name": "MONSERRAT",
+      "description": "Barrio Monserrat CABA",
+      "type": "fixed",
+      "price": 3000,
+      "days": "1-2",
+      "active": true,
+      "freeShipping": {
+        "enabled": true,
+        "minAmount": 7000,
+        "message": ""
+      },
+      "sortOrder": 10
+    },
+    {
+      "id": "balvanera",
+      "name": "BALVANERA",
+      "description": "Barrio Balvanera",
+      "type": "fixed",
+      "price": 3000,
+      "days": "1-2",
+      "active": true,
+      "freeShipping": {
+        "enabled": true,
+        "minAmount": 7000,
+        "message": ""
+      },
+      "sortOrder": 11
     }
   ],
-  "updatedAt": "2026-01-20T01:05:44.358Z"
+  "updatedAt": "2026-01-20T15:06:48.193Z"
 }
