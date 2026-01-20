@@ -265,7 +265,7 @@ class HomeRenderer {
           </div>
           <div class="card__price">
             <span class="card__price-current">${Utils.formatPrice(product.hasVariants ? product.basePrice : product.price)}</span>
-            ${(product.hasVariants ? product.baseOriginalPrice : product.originalPrice) ? `<span class="card__price-original">${Utils.formatPrice(product.hasVariants ? product.baseOriginalPrice : product.originalPrice)}</span>` : ''}
+            ${product.discount && product.discount > 0 && (product.hasVariants ? product.baseOriginalPrice : product.originalPrice) ? `<span class="card__price-original">${Utils.formatPrice(product.hasVariants ? product.baseOriginalPrice : product.originalPrice)}</span>` : ''}
           </div>
           <div class="card__actions">
             <button class="btn btn--small btn--primary btn-view-product" data-product-id="${product.id}">VER PRODUCTO</button>

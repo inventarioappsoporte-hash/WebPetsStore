@@ -41,7 +41,7 @@
       "type": "carousel",
       "filter": "hasVideo",
       "sortBy": "rating",
-      "limit": 6
+      "limit": 9
     },
     {
       "id": "best-rated",

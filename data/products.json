@@ -29514,7 +29514,7 @@
     "reviews": 23,
     "featured": false,
     "topDiscount": false,
-    "hasVideo": false,
+    "hasVideo": true,
     "hasVariants": false,
     "description": "Porta bolsas con diseño de huesito incluye 1 rollo de bolsas higiénicas. Compacto y funcional.",
     "longDescription": "Práctico porta bolsas con forma de huesito que incluye 1 rollo de bolsas higiénicas para comenzar a usarlo de inmediato. Se engancha fácilmente a la correa de tu mascota, cinturón o bolso. El diseño compacto permite llevarlo cómodamente sin que estorbe durante el paseo. Fabricado en plástico resistente con gancho plástico resistente para un enganche seguro.",
@@ -29546,6 +29546,15 @@
     "shipping": {
       "free": false,
       "days": "1-2"
+    },
+    "marketing": {
+      "type": "video",
+      "url": "assets/videos/marketing/porta-bolsa-huesito-clic.mp4",
+      "poster": "assets/images/products/prod_904/cover.png",
+      "autoplay": true,
+      "muted": true,
+      "loop": true,
+      "duration": 10
     }
   },
   {
