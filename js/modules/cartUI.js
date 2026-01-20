@@ -24,6 +24,23 @@ class CartUI {
       }
     });
 
+    // Registrar listener para cambios de zona de envío
+    if (typeof ShippingSelector !== 'undefined') {
+      ShippingSelector.addListener((zone) => {
+        if (this.isOpen) {
+          this.updateTotals(Cart.getTotal());
+          this.toggleShippingFields(zone);
+        }
+      });
+    }
+
+    // Mostrar/ocultar campos de dirección según zona inicial
+    setTimeout(() => {
+      if (typeof ShippingSelector !== 'undefined' && ShippingSelector.isEnabled()) {
+        this.toggleShippingFields(ShippingSelector.getSelectedZone());
+      }
+    }, 100);
+
     // Actualizar badge inicial
     this.updateBadge(Cart.getItemCount());
     
@@ -50,9 +67,20 @@ class CartUI {
         </div>
         
         <div class="cart-modal__footer">
-          <div class="cart-modal__total">
-            <span>Total:</span>
-            <span id="cart-total">$0</span>
+          <div class="cart-modal__totals">
+            <div class="cart-modal__subtotal">
+              <span>Subtotal:</span>
+              <span id="cart-subtotal">$0</span>
+            </div>
+            <div id="cart-shipping-selector-container"></div>
+            <div class="cart-modal__shipping" id="cart-shipping-row">
+              <span>Envío:</span>
+              <span id="cart-shipping-cost">$0</span>
+            </div>
+            <div class="cart-modal__total-final">
+              <span>Total:</span>
+              <span id="cart-total">$0</span>
+            </div>
           </div>
           
           <button class="cart-modal__clear" onclick="CartUI.clearCart()">
@@ -70,13 +98,53 @@ class CartUI {
             <input 
               type="tel" 
               id="customer-phone" 
-              placeholder="Teléfono *" 
+              placeholder="Teléfono / WhatsApp *" 
               required
             />
+            
+            <!-- Datos de envío (se muestran según la zona seleccionada) -->
+            <div id="shipping-address-fields" class="shipping-address-fields" style="display: none;">
+              <h4>📍 Dirección de envío</h4>
+              <input 
+                type="text" 
+                id="customer-address" 
+                placeholder="Calle y número *"
+              />
+              <div class="address-row">
+                <input 
+                  type="text" 
+                  id="customer-floor" 
+                  placeholder="Piso/Depto (opcional)"
+                  class="address-field-small"
+                />
+                <input 
+                  type="text" 
+                  id="customer-zipcode" 
+                  placeholder="Código Postal *"
+                  class="address-field-small"
+                />
+              </div>
+              <input 
+                type="text" 
+                id="customer-city" 
+                placeholder="Localidad / Barrio *"
+              />
+              <input 
+                type="text" 
+                id="customer-between" 
+                placeholder="Entre calles (opcional)"
+              />
+              <input 
+                type="text" 
+                id="customer-province" 
+                placeholder="Provincia *"
+              />
+            </div>
+            
             <textarea 
               id="customer-notes" 
               placeholder="Observaciones (opcional)"
-              rows="3"
+              rows="2"
             ></textarea>
           </div>
           
@@ -95,7 +163,6 @@ class CartUI {
    * Crear badge del carrito en el header
    */
   static createCartBadge() {
-    // Buscar el badge que ya existe en el HTML
     this.badge = document.getElementById('cart-badge-count');
     
     if (!this.badge) {
@@ -126,7 +193,6 @@ class CartUI {
   static updateBadge(count) {
     if (this.badge) {
       this.badge.textContent = count;
-      // Mostrar/ocultar badge según la cantidad
       if (count > 0) {
         this.badge.style.display = 'inline-flex';
       } else {
@@ -150,7 +216,15 @@ class CartUI {
           <p>¡Agrega productos para comenzar!</p>
         </div>
       `;
-      document.getElementById('cart-total').textContent = '$0';
+      const subtotalEl = document.getElementById('cart-subtotal');
+      const shippingEl = document.getElementById('cart-shipping-cost');
+      const totalEl = document.getElementById('cart-total');
+      const selectorContainer = document.getElementById('cart-shipping-selector-container');
+      
+      if (subtotalEl) subtotalEl.textContent = '$0';
+      if (shippingEl) shippingEl.textContent = '$0';
+      if (totalEl) totalEl.textContent = '$0';
+      if (selectorContainer) selectorContainer.innerHTML = '';
       return;
     }
 
@@ -172,9 +246,9 @@ class CartUI {
           
           <div class="cart-item__price">
             ${item.originalPrice > item.price ? `
-              <span class="cart-item__original-price">$${this.formatPrice(item.originalPrice)}</span>
+              <span class="cart-item__original-price">${this.formatPrice(item.originalPrice)}</span>
             ` : ''}
-            <span class="cart-item__current-price">$${this.formatPrice(item.price)}</span>
+            <span class="cart-item__current-price">${this.formatPrice(item.price)}</span>
           </div>
         </div>
         
@@ -186,7 +260,7 @@ class CartUI {
           </div>
           
           <div class="cart-item__subtotal">
-            $${this.formatPrice(item.subtotal)}
+            ${this.formatPrice(item.subtotal)}
           </div>
           
           <button class="cart-item__remove" onclick="CartUI.removeItem('${item.id}')">
@@ -196,7 +270,71 @@ class CartUI {
       </div>
     `).join('');
 
-    document.getElementById('cart-total').textContent = `$${this.formatPrice(total)}`;
+    this.updateTotals(total);
+  }
+
+  /**
+   * Actualizar totales incluyendo envío
+   */
+  static updateTotals(subtotal) {
+    const subtotalEl = document.getElementById('cart-subtotal');
+    const shippingContainer = document.getElementById('cart-shipping-selector-container');
+    const shippingRow = document.getElementById('cart-shipping-row');
+    const shippingCostEl = document.getElementById('cart-shipping-cost');
+    const totalEl = document.getElementById('cart-total');
+    
+    if (subtotalEl) subtotalEl.textContent = `${this.formatPrice(subtotal)}`;
+    
+    if (typeof ShippingSelector !== 'undefined' && ShippingSelector.isEnabled()) {
+      if (shippingContainer) {
+        shippingContainer.innerHTML = ShippingSelector.renderCartSelector(subtotal);
+      }
+      
+      const shipping = ShippingSelector.calculateShipping(subtotal);
+      
+      if (shippingCostEl) {
+        if (shipping.isCargo) {
+          shippingCostEl.innerHTML = `<span class="shipping-cargo">Pago en destino</span>`;
+        } else if (shipping.isFree) {
+          shippingCostEl.innerHTML = `<span class="shipping-free">GRATIS</span>`;
+        } else {
+          shippingCostEl.textContent = this.formatPrice(shipping.cost);
+        }
+      }
+      
+      const totalFinal = subtotal + shipping.cost;
+      if (totalEl) totalEl.textContent = `${this.formatPrice(totalFinal)}`;
+      
+      if (shippingRow) shippingRow.style.display = 'flex';
+      
+      // Mostrar/ocultar campos de dirección según zona
+      this.toggleShippingFields(shipping.zone);
+    } else {
+      if (shippingContainer) shippingContainer.innerHTML = '';
+      if (shippingRow) shippingRow.style.display = 'none';
+      if (totalEl) totalEl.textContent = `${this.formatPrice(subtotal)}`;
+      this.toggleShippingFields(null);
+    }
+  }
+
+  /**
+   * Mostrar/ocultar campos de dirección según zona de envío
+   */
+  static toggleShippingFields(zone) {
+    const fieldsContainer = document.getElementById('shipping-address-fields');
+    if (!fieldsContainer) return;
+
+    // Mostrar campos solo si es envío a domicilio (fixed o cargo)
+    // Ocultar si es retiro en tienda (free) o no hay zona
+    const requiresAddress = zone && (zone.type === 'fixed' || zone.type === 'cargo');
+    
+    if (requiresAddress) {
+      fieldsContainer.style.display = 'block';
+      fieldsContainer.classList.add('shipping-fields-visible');
+    } else {
+      fieldsContainer.style.display = 'none';
+      fieldsContainer.classList.remove('shipping-fields-visible');
+    }
   }
 
   /**
@@ -217,12 +355,10 @@ class CartUI {
       this.modal.classList.add('cart-modal--open');
       this.isOpen = true;
       
-      // Renderizar items actuales
       const items = Cart.getItems();
       const total = Cart.getTotal();
       this.renderCartItems(items, total);
       
-      // Prevenir scroll del body
       document.body.style.overflow = 'hidden';
     }
   }
@@ -234,8 +370,6 @@ class CartUI {
     if (this.modal) {
       this.modal.classList.remove('cart-modal--open');
       this.isOpen = false;
-      
-      // Restaurar scroll del body
       document.body.style.overflow = '';
     }
   }
@@ -293,18 +427,15 @@ class CartUI {
    * Procesar checkout
    */
   static checkout() {
-    // Validar que el carrito no esté vacío
     if (Cart.isEmpty()) {
       alert('El carrito está vacío');
       return;
     }
 
-    // Obtener datos del formulario
     const name = document.getElementById('customer-name').value.trim();
     const phone = document.getElementById('customer-phone').value.trim();
     const notes = document.getElementById('customer-notes').value.trim();
 
-    // Validar datos
     if (!name || name.length < 3) {
       alert('Por favor ingresa tu nombre completo');
       document.getElementById('customer-name').focus();
@@ -317,14 +448,57 @@ class CartUI {
       return;
     }
 
-    // Preparar datos del cliente
+    // Obtener datos de envío si es necesario
     const customerData = {
       name: name,
       phone: phone,
       notes: notes
     };
 
-    // Enviar por WhatsApp
+    // Verificar si se requiere dirección de envío
+    if (typeof ShippingSelector !== 'undefined' && ShippingSelector.isEnabled()) {
+      const zone = ShippingSelector.getSelectedZone();
+      const requiresAddress = zone && (zone.type === 'fixed' || zone.type === 'cargo');
+      
+      if (requiresAddress) {
+        const address = document.getElementById('customer-address').value.trim();
+        const floor = document.getElementById('customer-floor').value.trim();
+        const zipcode = document.getElementById('customer-zipcode').value.trim();
+        const city = document.getElementById('customer-city').value.trim();
+        const between = document.getElementById('customer-between').value.trim();
+        const province = document.getElementById('customer-province').value.trim();
+
+        // Validar campos requeridos
+        if (!address) {
+          alert('Por favor ingresa la dirección de envío');
+          document.getElementById('customer-address').focus();
+          return;
+        }
+
+        if (!city) {
+          alert('Por favor ingresa la localidad o barrio');
+          document.getElementById('customer-city').focus();
+          return;
+        }
+
+        if (!province) {
+          alert('Por favor ingresa la provincia');
+          document.getElementById('customer-province').focus();
+          return;
+        }
+
+        // Agregar datos de envío
+        customerData.shipping = {
+          address: address,
+          floor: floor,
+          zipcode: zipcode,
+          city: city,
+          between: between,
+          province: province
+        };
+      }
+    }
+
     const success = WhatsAppSender.sendOrder(Cart.getItems(), customerData);
 
     if (success) {
@@ -332,14 +506,23 @@ class CartUI {
       document.getElementById('customer-name').value = '';
       document.getElementById('customer-phone').value = '';
       document.getElementById('customer-notes').value = '';
-
-      // Limpiar carrito
+      
+      // Limpiar campos de envío si existen
+      const addressField = document.getElementById('customer-address');
+      if (addressField) addressField.value = '';
+      const floorField = document.getElementById('customer-floor');
+      if (floorField) floorField.value = '';
+      const zipcodeField = document.getElementById('customer-zipcode');
+      if (zipcodeField) zipcodeField.value = '';
+      const cityField = document.getElementById('customer-city');
+      if (cityField) cityField.value = '';
+      const betweenField = document.getElementById('customer-between');
+      if (betweenField) betweenField.value = '';
+      const provinceField = document.getElementById('customer-province');
+      if (provinceField) provinceField.value = '';
+      
       Cart.clearCart();
-
-      // Cerrar modal
       this.close();
-
-      // Mostrar confirmación
       alert('¡Pedido enviado! Te contactaremos pronto por WhatsApp 🐾');
     }
   }
@@ -348,7 +531,6 @@ class CartUI {
    * Adjuntar event listeners
    */
   static attachEventListeners() {
-    // Cerrar modal con tecla ESC
     document.addEventListener('keydown', (e) => {
       if (e.key === 'Escape' && this.isOpen) {
         this.close();
@@ -368,12 +550,10 @@ class CartUI {
     
     document.body.appendChild(notification);
     
-    // Mostrar notificación
     setTimeout(() => {
       notification.classList.add('cart-notification--show');
     }, 10);
     
-    // Ocultar y eliminar después de 3 segundos
     setTimeout(() => {
       notification.classList.remove('cart-notification--show');
       setTimeout(() => {

@@ -759,3 +759,296 @@
 .btn--buy-now:hover {
   background: #F57C00;
 }
+
+
+/* ========================================
+   SELECTOR DE ENVÍO EN CARRITO
+   ======================================== */
+
+.cart-shipping-selector {
+  margin: 1rem 0;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+}
+
+.cart-shipping-selector label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: #ffffff;
+  font-size: 0.95rem;
+}
+
+.cart-shipping-selector select {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  color: #ffffff;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.cart-shipping-selector select:focus {
+  outline: none;
+  border-color: var(--primary-color, #4CAF50);
+  box-shadow: 0 0 0 3px rgba(76, 175, 80, 0.1);
+}
+
+.cart-shipping-selector select option {
+  background: #2a2a2a;
+  color: #ffffff;
+}
+
+.cart-shipping-cost {
+  margin-top: 0.75rem;
+  padding: 0.5rem 0;
+  font-size: 0.95rem;
+  color: #cccccc;
+}
+
+.cart-shipping-cost .shipping-free {
+  color: var(--primary-color, #4CAF50);
+  font-weight: 600;
+}
+
+.cart-shipping-cost .shipping-cargo {
+  color: #ff9800;
+  font-style: italic;
+}
+
+.cart-shipping-promo {
+  margin-top: 0.75rem;
+  padding: 0.75rem;
+  background: rgba(76, 175, 80, 0.1);
+  border: 1px solid rgba(76, 175, 80, 0.2);
+  border-radius: 8px;
+  color: var(--primary-color, #4CAF50);
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+/* ========================================
+   CAMPOS DE DIRECCIÓN DE ENVÍO
+   ======================================== */
+
+.shipping-address-fields {
+  margin-top: 1rem;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  animation: slideDown 0.3s ease;
+}
+
+.shipping-address-fields.shipping-fields-visible {
+  display: block;
+}
+
+.shipping-address-fields h4 {
+  margin: 0 0 1rem 0;
+  font-size: 1rem;
+  color: #ffffff;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* Fila de campos pequeños (piso/depto y CP) */
+.address-row {
+  display: flex;
+  gap: 0.75rem;
+  margin-bottom: 0.875rem;
+}
+
+.address-row input {
+  flex: 1;
+  margin-bottom: 0 !important;
+}
+
+.address-field-small {
+  max-width: 50%;
+}
+
+/* Animación de entrada */
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Totales con envío */
+.cart-modal__subtotal,
+.cart-modal__shipping,
+.cart-modal__total-final {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 0;
+  color: #cccccc;
+}
+
+.cart-modal__subtotal {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.cart-modal__shipping {
+  font-size: 0.95rem;
+}
+
+.cart-modal__shipping .shipping-free {
+  color: var(--primary-color, #4CAF50);
+  font-weight: 600;
+}
+
+.cart-modal__shipping .shipping-cargo {
+  color: #ff9800;
+  font-size: 0.85rem;
+}
+
+.cart-modal__total-final {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #ffffff;
+  padding-top: 0.75rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  margin-top: 0.5rem;
+}
+
+.cart-modal__total-final span:last-child {
+  color: var(--primary-color, #4CAF50);
+}
+
+
+/* ========================================
+   CAMPOS DE DIRECCIÓN DE ENVÍO
+   ======================================== */
+
+.shipping-address-fields {
+  margin-top: 1rem;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  animation: fadeInFields 0.3s ease;
+}
+
+@keyframes fadeInFields {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.shipping-address-fields h4 {
+  margin: 0 0 1rem 0;
+  font-size: 1rem;
+  color: #ffffff;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.shipping-address-fields input {
+  width: 100%;
+  padding: 0.875rem 1rem;
+  margin-bottom: 0.75rem;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  font-size: 1rem;
+  font-family: inherit;
+  color: #ffffff;
+  transition: all 0.3s ease;
+  box-sizing: border-box;
+}
+
+.shipping-address-fields input::placeholder {
+  color: #888;
+  opacity: 1;
+}
+
+.shipping-address-fields input:focus {
+  outline: none;
+  background: rgba(255, 255, 255, 0.08);
+  border-color: var(--primary-color, #4CAF50);
+  box-shadow: 0 0 0 3px rgba(76, 175, 80, 0.1);
+  transform: translateY(-1px);
+}
+
+/* Fila de campos pequeños (piso/depto y CP) */
+.address-row {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.address-row input {
+  flex: 1;
+  min-width: 0;
+}
+
+.address-row .address-field-small {
+  flex: 1;
+}
+
+/* Indicador de campo requerido */
+.shipping-address-fields input[placeholder*="*"]::placeholder {
+  color: #999;
+}
+
+/* Estado de error para campos */
+.shipping-address-fields input.error {
+  border-color: #ff5252;
+  background: rgba(255, 82, 82, 0.1);
+}
+
+.shipping-address-fields input.error:focus {
+  box-shadow: 0 0 0 3px rgba(255, 82, 82, 0.15);
+}
+
+/* Responsive para campos de dirección */
+@media (max-width: 480px) {
+  .shipping-address-fields {
+    padding: 0.875rem;
+    margin-top: 0.75rem;
+  }
+
+  .shipping-address-fields h4 {
+    font-size: 0.95rem;
+    margin-bottom: 0.875rem;
+  }
+
+  .shipping-address-fields input {
+    padding: 0.75rem 0.875rem;
+    font-size: 0.95rem;
+    margin-bottom: 0.625rem;
+  }
+
+  .address-row {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .address-row input {
+    width: 100%;
+  }
+}

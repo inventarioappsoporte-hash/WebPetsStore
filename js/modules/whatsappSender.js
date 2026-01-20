@@ -58,10 +58,10 @@ class WhatsAppSender {
     message += '\n---\n🛍️ *PRODUCTOS:*\n\n';
     
     // Lista de productos
-    let total = 0;
+    let subtotal = 0;
     items.forEach((item, index) => {
-      const subtotal = item.price * item.quantity;
-      total += subtotal;
+      const itemSubtotal = item.price * item.quantity;
+      subtotal += itemSubtotal;
       
       message += `${index + 1}. *${item.name}*`;
       
@@ -75,8 +75,8 @@ class WhatsAppSender {
       
       message += '\n';
       message += `   Cantidad: ${item.quantity}\n`;
-      message += `   Precio: $${this.formatPrice(item.price)} c/u\n`;
-      message += `   Subtotal: $${this.formatPrice(subtotal)}\n`;
+      message += `   Precio: ${this.formatPrice(item.price)} c/u\n`;
+      message += `   Subtotal: ${this.formatPrice(itemSubtotal)}\n`;
       
       // Mostrar descuento si aplica
       if (item.originalPrice && item.originalPrice > item.price) {
@@ -88,8 +88,65 @@ class WhatsAppSender {
     });
     
     message += '---\n';
-    message += `💰 *TOTAL: $${this.formatPrice(total)}*\n\n`;
-    message += '¡Gracias por tu compra! 🐾';
+    message += `📦 *Subtotal productos:* ${this.formatPrice(subtotal)}\n`;
+    
+    // Agregar información de envío si está disponible
+    if (typeof ShippingSelector !== 'undefined' && ShippingSelector.isEnabled()) {
+      const shipping = ShippingSelector.calculateShipping(subtotal);
+      const zone = shipping.zone;
+      
+      if (zone) {
+        message += `\n🚚 *Envío:*\n`;
+        message += `   Zona: ${zone.name}\n`;
+        
+        if (shipping.isCargo) {
+          message += `   Costo: Pago en destino\n`;
+          if (zone.cargoMessage) {
+            message += `   📌 ${zone.cargoMessage}\n`;
+          }
+        } else if (shipping.isFree && zone.type === 'free') {
+          message += `   Retiro en tienda: GRATIS\n`;
+          if (zone.pickupAddress) {
+            message += `   📍 ${zone.pickupAddress}\n`;
+          }
+        } else if (shipping.isFree) {
+          message += `   Costo: ¡GRATIS! 🎉\n`;
+        } else {
+          message += `   Costo: ${this.formatPrice(shipping.cost)}\n`;
+        }
+        
+        if (zone.days) {
+          message += `   Entrega: ${zone.days} días\n`;
+        }
+        
+        // Agregar dirección de envío si existe
+        if (customer.shipping) {
+          message += `\n📍 *Dirección de envío:*\n`;
+          message += `   ${customer.shipping.address}\n`;
+          if (customer.shipping.floor) {
+            message += `   Piso/Depto: ${customer.shipping.floor}\n`;
+          }
+          message += `   ${customer.shipping.city}`;
+          if (customer.shipping.zipcode) {
+            message += ` (CP: ${customer.shipping.zipcode})`;
+          }
+          message += `\n`;
+          if (customer.shipping.between) {
+            message += `   Entre: ${customer.shipping.between}\n`;
+          }
+          message += `   ${customer.shipping.province}\n`;
+        }
+        
+        const total = subtotal + shipping.cost;
+        message += `\n💰 *TOTAL: ${this.formatPrice(total)}*\n`;
+      } else {
+        message += `\n💰 *TOTAL: ${this.formatPrice(subtotal)}*\n`;
+      }
+    } else {
+      message += `\n💰 *TOTAL: ${this.formatPrice(subtotal)}*\n`;
+    }
+    
+    message += '\n¡Gracias por tu compra! 🐾';
     
     return message;
   }
@@ -143,11 +200,11 @@ class WhatsAppSender {
     
     // Precio
     const price = product.discountPrice || product.price;
-    message += `💰 Precio: $${this.formatPrice(price)}\n`;
+    message += `💰 Precio: ${this.formatPrice(price)}\n`;
     
     // Precio original y descuento
     if (product.discountPrice && product.price > product.discountPrice) {
-      message += `🏷️ Precio original: $${this.formatPrice(product.price)}\n`;
+      message += `🏷️ Precio original: ${this.formatPrice(product.price)}\n`;
       const discount = Math.round(((product.price - product.discountPrice) / product.price) * 100);
       message += `📉 Descuento: ${discount}%\n`;
     }
