@@ -248,7 +248,7 @@ class HomeRenderer {
     }
 
     return `
-      <div class="card" data-product-id="${product.id}" onclick="window.location.href='product.html?id=${product.id}'">
+      <div class="card" data-product-id="${product.id}">
         <div class="card__image-wrapper">
           ${mediaHtml}
           ${video}
@@ -268,8 +268,8 @@ class HomeRenderer {
             ${(product.hasVariants ? product.baseOriginalPrice : product.originalPrice) ? `<span class="card__price-original">${Utils.formatPrice(product.hasVariants ? product.baseOriginalPrice : product.originalPrice)}</span>` : ''}
           </div>
           <div class="card__actions">
-            <button class="btn btn--small btn--primary" onclick="event.stopPropagation(); window.location.href='product.html?id=${product.id}'">VER PRODUCTO</button>
-            <button class="btn btn--small btn--secondary add-to-cart-btn" data-product-id="${product.id}" onclick="event.stopPropagation()">🛒 AGREGAR</button>
+            <button class="btn btn--small btn--primary btn-view-product" data-product-id="${product.id}">VER PRODUCTO</button>
+            <button class="btn btn--small btn--secondary add-to-cart-btn" data-product-id="${product.id}">🛒 AGREGAR</button>
           </div>
         </div>
       </div>
@@ -374,8 +374,37 @@ class HomeRenderer {
   }
 
   attachCardListeners(container) {
+    // PRIMERO: Agregar listeners a los botones con capture para que se ejecuten antes
+    const addToCartButtons = container.querySelectorAll('.add-to-cart-btn');
+    addToCartButtons.forEach(button => {
+      button.addEventListener('click', (e) => {
+        e.stopPropagation();
+        e.stopImmediatePropagation();
+        e.preventDefault();
+        const productId = button.getAttribute('data-product-id');
+        console.log('🛒 AGREGAR clicked for:', productId);
+        HomeRenderer.handleAddToCartStatic(productId);
+        return false;
+      }, true); // capture: true
+    });
+
+    // Listeners para botones "VER PRODUCTO"
+    const viewButtons = container.querySelectorAll('.btn-view-product');
+    viewButtons.forEach(button => {
+      button.addEventListener('click', (e) => {
+        e.stopPropagation();
+        e.stopImmediatePropagation();
+        e.preventDefault();
+        const productId = button.getAttribute('data-product-id');
+        window.location.href = `product.html?id=${productId}`;
+        return false;
+      }, true); // capture: true
+    });
+
+    // DESPUÉS: Listeners para las tarjetas
     const cards = container.querySelectorAll(CONSTANTS.SELECTORS.CARDS);
     cards.forEach(card => {
+      // Hover para videos
       card.addEventListener('mouseenter', () => {
         const video = card.querySelector('video');
         if (video) video.play();
@@ -385,24 +414,29 @@ class HomeRenderer {
         const video = card.querySelector('video');
         if (video) video.pause();
       });
+
+      // Click en la tarjeta (excepto botones)
+      card.addEventListener('click', (e) => {
+        // Si el click fue en un botón, no hacer nada
+        if (e.target.closest('.add-to-cart-btn') || 
+            e.target.closest('.btn-view-product') ||
+            e.target.closest('.card__actions') ||
+            e.target.tagName === 'BUTTON') {
+          console.log('🚫 Card click ignored - button clicked');
+          return;
+        }
+        // Navegar a la página del producto
+        const productId = card.getAttribute('data-product-id');
+        console.log('📦 Card clicked, navigating to:', productId);
+        window.location.href = `product.html?id=${productId}`;
+      });
     });
 
     // Forzar reproducción de videos de marketing
     const videos = container.querySelectorAll('.card__marketing-video');
     videos.forEach(video => {
-      // Intentar reproducir el video
       video.play().catch(err => {
         console.log('Video autoplay bloqueado, esperando interacción del usuario');
-      });
-    });
-
-    // Agregar listeners a los botones de agregar al carrito
-    const addToCartButtons = container.querySelectorAll('.add-to-cart-btn');
-    addToCartButtons.forEach(button => {
-      button.addEventListener('click', async (e) => {
-        e.stopPropagation();
-        const productId = button.getAttribute('data-product-id');
-        await this.handleAddToCart(productId);
       });
     });
   }
@@ -413,6 +447,72 @@ class HomeRenderer {
   async handleAddToCart(productId) {
     try {
       console.log('🛒 handleAddToCart called with productId:', productId);
+      
+      // Obtener el producto del array estático
+      const product = HomeRenderer.allProducts.find(p => p.id === productId);
+      
+      if (!product) {
+        console.error('❌ Producto no encontrado:', productId);
+        alert('Producto no encontrado');
+        return;
+      }
+
+      console.log('✅ Producto encontrado:', product.name);
+
+      let success = false;
+      let itemName = product.name;
+
+      // Si tiene variantes, agregar la primera variante por defecto
+      if (product.hasVariants && product.variants && product.variants.length > 0) {
+        console.log('📦 Producto con variantes, agregando primera variante...');
+        const defaultVariant = product.variants[0];
+        success = Cart.addItem(product, 1, defaultVariant);
+        
+        // Construir nombre con variante para la notificación
+        if (defaultVariant.attributes) {
+          const variantDesc = Object.values(defaultVariant.attributes).join(' / ');
+          itemName = `${product.name} - ${variantDesc}`;
+        }
+      } else {
+        // Si no tiene variantes, agregar directamente
+        console.log('➕ Agregando producto al carrito...');
+        success = Cart.addItem(product, 1, null);
+      }
+      
+      if (success) {
+        console.log('✅ Producto agregado exitosamente');
+        // Mostrar notificación
+        if (typeof CartUI !== 'undefined' && CartUI.showAddedNotification) {
+          CartUI.showAddedNotification(itemName);
+        } else {
+          alert(`✅ ${itemName} agregado al carrito`);
+        }
+      } else {
+        console.error('❌ Error al agregar producto');
+        alert('Error al agregar el producto al carrito');
+      }
+    } catch (error) {
+      console.error('Error adding to cart:', error);
+      alert('Error al agregar el producto al carrito');
+    }
+  }
+
+  renderTestimonials(config) {
+    const container = document.querySelector('.testimonials');
+    if (!container) return;
+
+    container.innerHTML = `
+      <h2 class="testimonials__title">${config.title}</h2>
+      <p class="testimonials__subtitle">${config.subtitle}</p>
+    `;
+  }
+
+  /**
+   * Método estático para manejar agregar al carrito desde onclick inline
+   */
+  static handleAddToCartStatic(productId) {
+    try {
+      console.log('🛒 handleAddToCartStatic called with productId:', productId);
       
       // Obtener el producto del array estático
       const product = HomeRenderer.allProducts.find(p => p.id === productId);
@@ -452,15 +552,5 @@ class HomeRenderer {
       console.error('Error adding to cart:', error);
       alert('Error al agregar el producto al carrito');
     }
-  }
-
-  renderTestimonials(config) {
-    const container = document.querySelector('.testimonials');
-    if (!container) return;
-
-    container.innerHTML = `
-      <h2 class="testimonials__title">${config.title}</h2>
-      <p class="testimonials__subtitle">${config.subtitle}</p>
-    `;
   }
 }

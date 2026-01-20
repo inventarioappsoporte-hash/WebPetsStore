@@ -29412,5 +29412,235 @@
         }
       ]
     }
+  },
+  {
+    "id": "prod_902",
+    "sku": "BOL002",
+    "name": "Bolsista  higiénica x 5",
+    "category": "🐾 HIGIENE Y CUIDADO",
+    "subcategory": "Bolsas Higiénicas",
+    "price": 3000,
+    "originalPrice": 3000,
+    "discount": 0,
+    "stock": 10,
+    "rating": 4.5,
+    "reviews": 22,
+    "featured": false,
+    "topDiscount": false,
+    "hasVideo": false,
+    "hasVariants": false,
+    "description": "Pack de 5 rollos de bolsas higiénicas para recoger desechos de tu mascota. Prácticas y resistentes.",
+    "longDescription": "Pack económico de 5 rollos de bolsas higiénicas para mascotas. Ideales para mantener limpio el espacio público durante los paseos con tu perro. Las bolsas son resistentes, fáciles de abrir y lo suficientemente grandes para cualquier tamaño de mascota. Perfectas para llevar en el bolsillo, bolso o enganchadas al porta bolsas.",
+    "badge": "🧼 Higiene",
+    "tags": [
+      "higiene",
+      "paseo",
+      "mascota",
+      "perro",
+      "bolsas",
+      "pack",
+      "economico",
+      "rollos"
+    ],
+    "images": {
+      "cover": "assets/images/products/prod_902/cover.png",
+      "thumb": "assets/images/products/prod_902/cover.png",
+      "gallery": []
+    },
+    "specs": {
+      "Contenido": "5 rollos",
+      "Material": "Plástico resistente",
+      "Compatible": "Porta bolsas estándar"
+    },
+    "shipping": {
+      "free": false,
+      "days": "1-2"
+    }
+  },
+  {
+    "id": "prod_903",
+    "sku": "BOL004",
+    "name": "Bolsistas higiénicas por 2",
+    "category": "🐾 HIGIENE Y CUIDADO",
+    "subcategory": "Bolsas Higiénicas",
+    "price": 1600,
+    "originalPrice": 1600,
+    "discount": 0,
+    "stock": 10,
+    "rating": 4.5,
+    "reviews": 13,
+    "featured": false,
+    "topDiscount": false,
+    "hasVideo": false,
+    "hasVariants": false,
+    "description": "Pack de 2 rollos de bolsas higiénicas. Tamaño ideal para llevar de repuesto.",
+    "longDescription": "Pack de 2 rollos de bolsas higiénicas para mascotas, perfecto para llevar como repuesto en tu porta bolsas o bolsillo. Ideales para paseos cortos o como reserva para no quedarte sin bolsas. Las bolsas son resistentes y fáciles de usar para recoger los desechos de perros de cualquier tamaño.",
+    "badge": "🧼 Higiene",
+    "tags": [
+      "higiene",
+      "paseo",
+      "mascota",
+      "perro",
+      "bolsas",
+      "repuesto",
+      "rollos"
+    ],
+    "images": {
+      "cover": "assets/images/products/prod_903/cover.png",
+      "thumb": "assets/images/products/prod_903/cover.png",
+      "gallery": []
+    },
+    "specs": {
+      "Contenido": "2 rollos",
+      "Material": "Plástico resistente",
+      "Compatible": "Porta bolsas estándar"
+    },
+    "shipping": {
+      "free": false,
+      "days": "1-2"
+    }
+  },
+  {
+    "id": "prod_904",
+    "sku": "POR001",
+    "name": "Porta bolsa huesito + 1 bolsas higiénicas",
+    "category": "🐾 HIGIENE Y CUIDADO",
+    "subcategory": "Accesorios de Paseo",
+    "price": 2500,
+    "originalPrice": 2500,
+    "discount": 0,
+    "stock": 10,
+    "rating": 4.5,
+    "reviews": 23,
+    "featured": false,
+    "topDiscount": false,
+    "hasVideo": false,
+    "hasVariants": false,
+    "description": "Porta bolsas con diseño de huesito incluye 1 rollo de bolsas higiénicas. Compacto y funcional.",
+    "longDescription": "Práctico porta bolsas con forma de huesito que incluye 1 rollo de bolsas higiénicas para comenzar a usarlo de inmediato. Se engancha fácilmente a la correa de tu mascota, cinturón o bolso. El diseño compacto permite llevarlo cómodamente sin que estorbe durante el paseo. Fabricado en plástico resistente con gancho plástico resistente para un enganche seguro.",
+    "badge": "🧼 Higiene",
+    "tags": [
+      "higiene",
+      "paseo",
+      "mascota",
+      "perro",
+      "porta bolsas",
+      "huesito",
+      "accesorio",
+      "correa",
+      "incluye bolsas"
+    ],
+    "images": {
+      "cover": "assets/images/products/prod_904/cover.png",
+      "thumb": "assets/images/products/prod_904/cover.png",
+      "gallery": []
+    },
+    "specs": {
+      "Diseño": "Forma de huesito",
+      "Incluye": "1 rollo de bolsas",
+      "Material": "Plástico ABS resistente",
+      "Enganche": "Gancho plástico",
+      "Compatible": "Rollos estándar",
+      "Colores": "Variados"
+    },
+    "shipping": {
+      "free": false,
+      "days": "1-2"
+    }
+  },
+  {
+    "id": "prod_905",
+    "sku": "POR003",
+    "name": "Porta bolsa huesito + 2 bolsas higiénicas",
+    "category": "🐾 HIGIENE Y CUIDADO",
+    "subcategory": "Accesorios de Paseo",
+    "price": 2800,
+    "originalPrice": 2800,
+    "discount": 0,
+    "stock": 10,
+    "rating": 4.5,
+    "reviews": 10,
+    "featured": false,
+    "topDiscount": false,
+    "hasVideo": false,
+    "hasVariants": false,
+    "description": "Porta bolsas con diseño de huesito incluye 2 rollos de bolsas higiénicas. Práctico y divertido.",
+    "longDescription": "Adorable porta bolsas con forma de huesito que incluye 2 rollos de bolsas higiénicas. Se engancha fácilmente a la correa de tu mascota o a tu bolso para tener siempre las bolsas a mano durante los paseos. El diseño compacto y divertido lo hace un accesorio indispensable para cualquier dueño responsable. El mecanismo de apertura permite sacar las bolsas una a una de forma práctica y rápida.",
+    "badge": "🧼 Higiene",
+    "tags": [
+      "higiene",
+      "paseo",
+      "mascota",
+      "perro",
+      "porta bolsas",
+      "huesito",
+      "accesorio",
+      "correa",
+      "incluye bolsas"
+    ],
+    "images": {
+      "cover": "assets/images/products/prod_905/cover.png",
+      "thumb": "assets/images/products/prod_905/cover.png",
+      "gallery": []
+    },
+    "specs": {
+      "Diseño": "Forma de huesito",
+      "Incluye": "2 rollos de bolsas",
+      "Material": "Plástico ABS resistente",
+      "Enganche": "Gancho plástico",
+      "Compatible": "Rollos estándar",
+      "Colores": "Variados"
+    },
+    "shipping": {
+      "free": false,
+      "days": "1-2"
+    }
+  },
+  {
+    "id": "prod_906",
+    "sku": "POR002",
+    "name": "Porta bolsa huesito higiénicas",
+    "category": "🐾 HIGIENE Y CUIDADO",
+    "subcategory": "Accesorios de Paseo",
+    "price": 1500,
+    "originalPrice": 1500,
+    "discount": 0,
+    "stock": 10,
+    "rating": 4.5,
+    "reviews": 7,
+    "featured": false,
+    "topDiscount": false,
+    "hasVideo": false,
+    "hasVariants": false,
+    "description": "Porta bolsas con diseño de huesito. Práctico accesorio para enganchar a la correa.",
+    "longDescription": "Porta bolsas con adorable diseño de huesito, el accesorio perfecto para los paseos con tu mascota. Se engancha fácilmente a la correa del perro, tu cinturón o bolso gracias a su gancho plástico resistente. Compatible con rollos de bolsas higiénicas estándar. El diseño permite extraer las bolsas una a una de forma rápida y práctica. Un accesorio indispensable para todo dueño responsable que quiere mantener limpio el espacio público.",
+    "badge": "🧼 Higiene",
+    "tags": [
+      "higiene",
+      "paseo",
+      "mascota",
+      "perro",
+      "porta bolsas",
+      "huesito",
+      "accesorio",
+      "correa"
+    ],
+    "images": {
+      "cover": "assets/images/products/prod_906/cover.png",
+      "thumb": "assets/images/products/prod_906/cover.png",
+      "gallery": []
+    },
+    "specs": {
+      "Diseño": "Forma de huesito",
+      "Incluye": "Solo porta bolsas (sin bolsas)",
+      "Material": "Plástico ABS resistente",
+      "Enganche": "Gancho plástico",
+      "Compatible": "Rollos estándar",
+      "Colores": "Variados"
+    },
+    "shipping": {
+      "free": false,
+      "days": "1-2"
+    }
   }
 ]

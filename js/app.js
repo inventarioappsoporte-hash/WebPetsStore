@@ -1,5 +1,5 @@
 // Aplicación principal
-// Updated: 2026-01-13 - WhatsApp integration
+// Updated: 2026-01-20 - Fix add to cart button
 class App {
   constructor() {
     this.dataLoader = dataLoader;
@@ -8,6 +8,10 @@ class App {
 
   async init() {
     try {
+      // IMPORTANTE: Agregar listener global para botones de agregar al carrito
+      // Esto captura el click ANTES de que llegue a la tarjeta
+      this.initGlobalAddToCartListener();
+
       // Inicializar categorías
       await categoriesRenderer.init();
 
@@ -34,6 +38,32 @@ class App {
     } catch (error) {
       console.error('❌ Error inicializando la aplicación:', error);
     }
+  }
+
+  /**
+   * Listener global para botones de agregar al carrito
+   * Usa delegación de eventos en fase de captura para interceptar antes que otros listeners
+   */
+  initGlobalAddToCartListener() {
+    document.addEventListener('click', (e) => {
+      // Verificar si el click fue en un botón de agregar al carrito
+      const addToCartBtn = e.target.closest('.add-to-cart-btn');
+      if (addToCartBtn) {
+        e.stopPropagation();
+        e.stopImmediatePropagation();
+        e.preventDefault();
+        
+        const productId = addToCartBtn.getAttribute('data-product-id');
+        console.log('🛒 Global listener: Add to cart clicked for:', productId);
+        
+        if (productId && typeof HomeRenderer !== 'undefined') {
+          HomeRenderer.handleAddToCartStatic(productId);
+        }
+        return false;
+      }
+    }, true); // true = fase de captura
+    
+    console.log('🎯 Global add-to-cart listener initialized');
   }
 
   initHeroButtons() {

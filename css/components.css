@@ -497,6 +497,8 @@
   display: flex;
   gap: 4px;
   margin-top: var(--spacing-sm);
+  position: relative;
+  z-index: 10;
 }
 
 .card__actions .btn--small {
@@ -504,6 +506,16 @@
   text-align: center;
   padding: 8px 4px;
   font-size: 9px;
+  position: relative;
+  z-index: 11;
+  pointer-events: auto !important;
+}
+
+/* Asegurar que los botones de agregar al carrito capturen clicks */
+.card__actions .add-to-cart-btn,
+.card__actions .btn-view-product {
+  pointer-events: auto !important;
+  cursor: pointer !important;
 }
 
 /* Botones más pequeños en móviles */
