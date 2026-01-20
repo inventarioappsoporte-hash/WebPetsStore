@@ -168,7 +168,7 @@ class ProductPage {
             <button class="btn btn--primary btn--large btn--add-to-cart" onclick="ProductPage.addToCart()" ${!hasVariants && product.stock === 0 ? 'disabled' : ''}>
               ${!hasVariants && product.stock === 0 ? 'AGOTADO' : '🛒 AGREGAR AL CARRITO'}
             </button>
-            <button class="btn btn--secondary btn--large btn--buy-now" onclick="Utils.sendWhatsAppMessage(window.currentProduct, window.currentVariant)" ${!hasVariants && product.stock === 0 ? 'disabled' : ''}>
+            <button class="btn btn--secondary btn--large btn--buy-now" onclick="ProductPage.buyNow()" ${!hasVariants && product.stock === 0 ? 'disabled' : ''}>
               ${!hasVariants && product.stock === 0 ? 'AGOTADO' : '⚡ COMPRAR AHORA'}
             </button>
           </div>
@@ -251,6 +251,41 @@ class ProductPage {
     
     if (success) {
       CartUI.showAddedNotification(product.name);
+    } else {
+      alert('Error al agregar el producto al carrito');
+    }
+  }
+
+  /**
+   * Comprar ahora - Agrega al carrito y lo abre
+   */
+  static buyNow() {
+    const product = window.currentProduct;
+    const variant = window.currentVariant;
+
+    if (!product) {
+      alert('Error: Producto no encontrado');
+      return;
+    }
+
+    // Validar variante si el producto tiene variantes
+    if (product.hasVariants && !variant) {
+      alert('Por favor selecciona una variante');
+      return;
+    }
+
+    // Validar stock
+    if (!product.hasVariants && product.stock === 0) {
+      alert('Producto agotado');
+      return;
+    }
+
+    // Agregar al carrito
+    const success = Cart.addItem(product, 1, variant);
+    
+    if (success) {
+      // Abrir el carrito directamente
+      CartUI.open();
     } else {
       alert('Error al agregar el producto al carrito');
     }

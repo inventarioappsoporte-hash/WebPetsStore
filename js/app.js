@@ -62,14 +62,21 @@ class App {
       }
     };
 
-    // Handler para COMPRAR AHORA
+    // Handler para COMPRAR AHORA - Agrega al carrito y lo abre
     const handleBuyNow = async () => {
       console.log('🖱️ Click en COMPRAR AHORA');
       const productId = await this.dataLoader.getHeroProductId();
       const product = await this.dataLoader.getProductById(productId);
       console.log('Product:', product);
       if (product) {
-        Utils.sendWhatsAppMessage(product);
+        // Agregar al carrito
+        if (window.Cart) {
+          window.Cart.addItem(product);
+        }
+        // Abrir el carrito
+        if (window.CartUI) {
+          window.CartUI.open();
+        }
       }
     };
 
