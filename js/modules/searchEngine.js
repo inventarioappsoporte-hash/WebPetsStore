@@ -151,8 +151,26 @@ class SearchEngine {
       '501': { // ALIMENTOS Y SNACKS
         name: 'ALIMENTOS Y SNACKS',
         filter: (product) => {
-          return (product.subcategory && product.subcategory.toLowerCase().includes('alimentos y snacks')) ||
-                 (product.badge && product.badge.toLowerCase().includes('alimentos y snacks'));
+          // Excluir productos que NO son alimentos (juguetes, accesorios, etc.)
+          const categoryLower = product.category ? product.category.toLowerCase() : '';
+          const subcategoryLower = product.subcategory ? product.subcategory.toLowerCase() : '';
+          
+          // Si la categoría es claramente otra cosa, excluir
+          const categoriasExcluidas = ['juguete', 'accesorio', 'ropa', 'collar', 'correa', 'cama', 'casa', 'rascador', 'higiene'];
+          const esOtraCategoria = categoriasExcluidas.some(cat => 
+            categoryLower.includes(cat) || subcategoryLower.includes(cat)
+          );
+          
+          if (esOtraCategoria) return false;
+          
+          // Solo incluir si es explícitamente alimentos
+          return categoryLower === 'alimentos' ||
+                 subcategoryLower === 'alimentos' ||
+                 subcategoryLower === 'snacks' ||
+                 (product.badge && (
+                   product.badge.toLowerCase().includes('alimento') ||
+                   product.badge.toLowerCase().includes('snack')
+                 ));
         }
       }
     };

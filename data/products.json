@@ -29642,5 +29642,181 @@
       "free": false,
       "days": "1-2"
     }
+  },
+  {
+    "id": "prod_907",
+    "sku": "PED001",
+    "name": "Pedigree Biscrok",
+    "category": "alimentos",
+    "subcategory": "Snacks",
+    "price": 3000,
+    "originalPrice": 3000,
+    "discount": 0,
+    "stock": 20,
+    "rating": 4.7,
+    "reviews": 17,
+    "featured": false,
+    "topDiscount": false,
+    "hasVideo": false,
+    "hasVariants": true,
+    "basePrice": 3000,
+    "baseOriginalPrice": 3000,
+    "description": "Pedigree® BISCROK™ Multi son galletas crocantes en forma de hueso, perfectas para recompensar a tu perro, entrenarlo o simplemente para mostrarle tu afecto.\r",
+    "longDescription": "Pedigree® BISCROK™ Multi son galletas crocantes en forma de hueso, perfectas para recompensar a tu perro, entrenarlo o simplemente para mostrarle tu afecto.\r\n\r\nTodos los productos de Pedigree® y BISCROK™ cuentan con el respaldo del centro de investigación Waltham®, reconocido a nivel mundial por su liderazgo en nutrición, cuidado y bienestar animal.",
+    "badge": "🍖 Snacks",
+    "tags": [
+      "alimento",
+      "snack",
+      "perro",
+      "pedigree",
+      "premio"
+    ],
+    "images": {
+      "cover": "assets/images/products/prod_907/cover.png",
+      "thumb": "assets/images/products/prod_907/cover.png",
+      "gallery": []
+    },
+    "specs": {
+      "Marca": "Pedigree",
+      "Tipo": "Snack",
+      "Para": "Perros adultos"
+    },
+    "shipping": {
+      "free": false,
+      "days": "1-2"
+    },
+    "variants": {
+      "attributes": [
+        {
+          "id": "size",
+          "name": "Tamaño",
+          "type": "text",
+          "values": [
+            "100GR",
+            "500GR"
+          ]
+        }
+      ],
+      "combinations": [
+        {
+          "id": "prod_907_var_0",
+          "sku": "PED001-100",
+          "attributes": {
+            "Tamaño": "100GR"
+          },
+          "price": 3000,
+          "originalPrice": 3000,
+          "stock": 10,
+          "available": true,
+          "images": {
+            "cover": "assets/images/products/prod_907/variant_0.png",
+            "thumb": "assets/images/products/prod_907/variant_0.png"
+          }
+        },
+        {
+          "id": "prod_907_var_1",
+          "sku": "PED001-500",
+          "attributes": {
+            "Tamaño": "500GR"
+          },
+          "price": 9000,
+          "originalPrice": 9000,
+          "stock": 10,
+          "available": true,
+          "images": {
+            "cover": "assets/images/products/prod_907/variant_1.png",
+            "thumb": "assets/images/products/prod_907/variant_1.png"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "id": "prod_908",
+    "sku": "PED002",
+    "name": "Pedigree Rodeo Snack",
+    "category": "alimentos",
+    "subcategory": "Snacks",
+    "price": 3000,
+    "originalPrice": 3000,
+    "discount": 0,
+    "stock": 20,
+    "rating": 4.7,
+    "reviews": 38,
+    "featured": false,
+    "topDiscount": false,
+    "hasVideo": false,
+    "hasVariants": true,
+    "basePrice": 3000,
+    "baseOriginalPrice": 3000,
+    "description": "Deliciosos snacks para perros adultos vienen en dos sabores pollo o carne, diseñados para satisfacer el paladar de tu mascota. Su textura masticable no solo es irresistible, sino que también ayuda a m",
+    "longDescription": "Deliciosos snacks para perros adultos vienen en dos sabores pollo o carne, diseñados para satisfacer el paladar de tu mascota. Su textura masticable no solo es irresistible, sino que también ayuda a mantener la salud dental de tu perro, promoviendo una buena higiene bucal. Formulados con ingredientes de alta calidad, estos snacks son una opción nutritiva y sabrosa. Cada paquete contiene 4 unidades, lo que los hace ideales para compartir momentos especiales con tu fiel compañero. Perfectos como recompensa o para disfrutar en cualquier momento, estos snacks son una excelente manera de fortalecer el vínculo con tu perro. Con un peso neto de 700 g y un diseño práctico, cada paquete mide 22 cm de altura, 11 cm de largo y 21 cm de ancho, asegurando que siempre tengas un delicioso premio a mano. ¡Haz que cada día sea especial con Pedigree!",
+    "badge": "🍖 Snacks",
+    "tags": [
+      "alimento",
+      "snack",
+      "perro",
+      "pedigree",
+      "premio"
+    ],
+    "images": {
+      "cover": "assets/images/products/prod_908/cover.png",
+      "thumb": "assets/images/products/prod_908/cover.png",
+      "gallery": []
+    },
+    "specs": {
+      "Marca": "Pedigree",
+      "Tipo": "Snack",
+      "Para": "Perros adultos"
+    },
+    "shipping": {
+      "free": false,
+      "days": "1-2"
+    },
+    "variants": {
+      "attributes": [
+        {
+          "id": "flavor",
+          "name": "Sabor",
+          "type": "text",
+          "values": [
+            "pollo",
+            "carne"
+          ]
+        }
+      ],
+      "combinations": [
+        {
+          "id": "prod_908_var_0",
+          "sku": "PED002-POL",
+          "attributes": {
+            "Sabor": "pollo"
+          },
+          "price": 3000,
+          "originalPrice": 3000,
+          "stock": 10,
+          "available": true,
+          "images": {
+            "cover": "assets/images/products/prod_908/variant_0.png",
+            "thumb": "assets/images/products/prod_908/variant_0.png"
+          }
+        },
+        {
+          "id": "prod_908_var_1",
+          "sku": "PED002-CAR",
+          "attributes": {
+            "Sabor": "carne"
+          },
+          "price": 3000,
+          "originalPrice": 3000,
+          "stock": 10,
+          "available": true,
+          "images": {
+            "cover": "assets/images/products/prod_908/variant_1.png",
+            "thumb": "assets/images/products/prod_908/variant_1.png"
+          }
+        }
+      ]
+    }
   }
 ]
