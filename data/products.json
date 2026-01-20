@@ -28487,7 +28487,7 @@
     "reviews": 146,
     "featured": false,
     "topDiscount": true,
-    "hasVideo": false,
+    "hasVideo": true,
     "hasVariants": false,
     "tags": [
       "bebedero",
@@ -28517,6 +28517,14 @@
     "shipping": {
       "free": false,
       "days": "1-2"
+    },
+    "marketing": {
+      "type": "video",
+      "url": "assets/videos/marketing/bebedero-portatil-clic.mp4",
+      "poster": "assets/images/products/prod_897/cover.jpeg",
+      "autoplay": true,
+      "muted": true,
+      "loop": true
     },
     "badge": " 💧Bebedero",
     "brand": null,
