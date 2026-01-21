@@ -1,0 +1,67 @@
+{
+  "hero": {
+    "productId": "prod_009",
+    "title": "LO MÁS VENDIDO DE ESTA SEMANA",
+    "subtitle": "",
+    "cta": "COMPRAR AHORA",
+    "ctaSecondary": "VER PRODUCTO",
+    "image": "assets/images/ui/hero-1768711441311.jpg"
+  },
+  "promos": [
+    {
+      "icon": "⚡",
+      "text": "OFERTA FLASH"
+    },
+    {
+      "icon": "🎁",
+      "text": "2x1 IRRESISTIBLE"
+    },
+    {
+      "icon": "🚚",
+      "text": "ENVÍO GRATIS"
+    },
+    {
+      "icon": "💳",
+      "text": "6 CUOTAS SIN INTERÉS"
+    }
+  ],
+  "sections": [
+    {
+      "id": "top-discounts",
+      "title": "🔥 TOP DESCUENTOS HOY",
+      "type": "carousel",
+      "filter": "topDiscount",
+      "sortBy": "discount",
+      "limit": 12,
+      "showVideo": true
+    },
+    {
+      "id": "with-video",
+      "title": "🎥 CON VIDEO",
+      "type": "carousel",
+      "filter": "hasVideo",
+      "sortBy": "rating",
+      "limit": 6
+    },
+    {
+      "id": "best-rated",
+      "title": "⭐ MEJOR VALORADOS",
+      "type": "grid",
+      "filter": "featured",
+      "sortBy": "rating",
+      "limit": 12
+    },
+    {
+      "id": "featured",
+      "title": "RECOMENDADO PARA TI",
+      "type": "grid",
+      "filter": "featured",
+      "limit": 6
+    }
+  ],
+  "testimonials": {
+    "title": "MÁS DE 10.000 CLIENTES FELICES",
+    "subtitle": "Ver historias reales →",
+    "show": true
+  }
+}

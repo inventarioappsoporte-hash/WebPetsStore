@@ -1,0 +1,210 @@
+/**
+ * 🛒 Barra Sticky del Carrito - Solo Móvil
+ * Muestra resumen del carrito fijo en la parte inferior
+ */
+
+/* ========================================
+   BARRA STICKY - SOLO MÓVIL
+   ======================================== */
+
+.cart-sticky-bar {
+  display: none; /* Oculto por defecto (desktop) */
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 998; /* Debajo del modal del carrito (1000) pero encima del contenido */
+  
+  background: linear-gradient(135deg, #1a1a1a 0%, #252525 100%);
+  border-top: 1px solid var(--color-border, #333);
+  box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.5);
+  
+  padding: 0.75rem 1rem;
+  
+  transform: translateY(100%);
+  transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+  opacity: 0;
+}
+
+/* Mostrar cuando hay items */
+.cart-sticky-bar.cart-sticky-bar--visible {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* Solo visible en móvil */
+@media (max-width: 768px) {
+  .cart-sticky-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.75rem;
+  }
+  
+  /* Agregar padding al body para que el último producto no quede tapado */
+  body.has-cart-items {
+    padding-bottom: 70px;
+  }
+}
+
+/* ========================================
+   CONTENIDO DE LA BARRA
+   ======================================== */
+
+.cart-sticky-bar__info {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex: 1;
+  min-width: 0;
+}
+
+/* Icono del carrito */
+.cart-sticky-bar__icon {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  background: rgba(255, 107, 53, 0.15);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.cart-sticky-bar__icon svg {
+  width: 22px;
+  height: 22px;
+  color: var(--color-primary, #FF6B35);
+}
+
+/* Badge de cantidad */
+.cart-sticky-bar__badge {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  background: var(--color-primary, #FF6B35);
+  color: white;
+  font-size: 0.7rem;
+  font-weight: 700;
+  min-width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 4px;
+  box-shadow: 0 2px 6px rgba(255, 107, 53, 0.4);
+}
+
+/* Texto de resumen */
+.cart-sticky-bar__text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+  min-width: 0;
+}
+
+.cart-sticky-bar__count {
+  font-size: 0.8rem;
+  color: var(--color-text-secondary, #B0B0B0);
+  white-space: nowrap;
+}
+
+.cart-sticky-bar__total {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--color-text, #fff);
+  white-space: nowrap;
+}
+
+/* ========================================
+   BOTÓN VER CARRITO
+   ======================================== */
+
+.cart-sticky-bar__button {
+  background: linear-gradient(135deg, var(--color-primary, #FF6B35) 0%, #e55a2b 100%);
+  color: white;
+  border: none;
+  padding: 0.75rem 1.25rem;
+  border-radius: 10px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  transition: all 0.2s ease;
+  box-shadow: 0 4px 12px rgba(255, 107, 53, 0.3);
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+
+.cart-sticky-bar__button:hover {
+  background: linear-gradient(135deg, #e55a2b 0%, #d14a1f 100%);
+  transform: translateY(-1px);
+  box-shadow: 0 6px 16px rgba(255, 107, 53, 0.4);
+}
+
+.cart-sticky-bar__button:active {
+  transform: translateY(0);
+}
+
+.cart-sticky-bar__button svg {
+  width: 16px;
+  height: 16px;
+}
+
+/* ========================================
+   ANIMACIÓN DE ENTRADA AL AGREGAR PRODUCTO
+   ======================================== */
+
+.cart-sticky-bar--pulse {
+  animation: stickyPulse 0.4s ease;
+}
+
+@keyframes stickyPulse {
+  0% { transform: translateY(0) scale(1); }
+  50% { transform: translateY(-3px) scale(1.02); }
+  100% { transform: translateY(0) scale(1); }
+}
+
+/* ========================================
+   AJUSTE PARA BOTÓN WHATSAPP FLOTANTE
+   ======================================== */
+
+@media (max-width: 768px) {
+  /* Mover el botón de WhatsApp más arriba cuando hay items en el carrito */
+  body.has-cart-items .whatsapp-float {
+    bottom: 80px !important;
+  }
+}
+
+/* ========================================
+   RESPONSIVE EXTRA PEQUEÑO
+   ======================================== */
+
+@media (max-width: 380px) {
+  .cart-sticky-bar {
+    padding: 0.6rem 0.75rem;
+  }
+  
+  .cart-sticky-bar__icon {
+    width: 36px;
+    height: 36px;
+  }
+  
+  .cart-sticky-bar__icon svg {
+    width: 18px;
+    height: 18px;
+  }
+  
+  .cart-sticky-bar__total {
+    font-size: 1rem;
+  }
+  
+  .cart-sticky-bar__button {
+    padding: 0.65rem 1rem;
+    font-size: 0.85rem;
+  }
+}

@@ -7,6 +7,7 @@ class CartUI {
   static isOpen = false;
   static modal = null;
   static badge = null;
+  static stickyBar = null;
 
   /**
    * Inicializar la interfaz del carrito
@@ -14,11 +15,13 @@ class CartUI {
   static init() {
     this.createCartModal();
     this.createCartBadge();
+    this.createStickyBar();
     this.attachEventListeners();
     
     // Registrar listener para actualizaciones del carrito
     Cart.addListener((items, count, total) => {
       this.updateBadge(count);
+      this.updateStickyBar(count, total);
       if (this.isOpen) {
         this.renderCartItems(items, total);
       }
@@ -43,6 +46,7 @@ class CartUI {
 
     // Actualizar badge inicial
     this.updateBadge(Cart.getItemCount());
+    this.updateStickyBar(Cart.getItemCount(), Cart.getTotal());
     
     console.log('🎨 CartUI initialized');
   }
@@ -185,6 +189,69 @@ class CartUI {
     
     document.body.appendChild(badge);
     this.badge = badge.querySelector('.cart-badge__count');
+  }
+
+  /**
+   * Crear barra sticky del carrito (solo móvil)
+   */
+  static createStickyBar() {
+    const stickyBar = document.createElement('div');
+    stickyBar.id = 'cart-sticky-bar';
+    stickyBar.className = 'cart-sticky-bar';
+    stickyBar.innerHTML = `
+      <div class="cart-sticky-bar__info">
+        <div class="cart-sticky-bar__icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="9" cy="21" r="1"></circle>
+            <circle cx="20" cy="21" r="1"></circle>
+            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+          </svg>
+          <span class="cart-sticky-bar__badge" id="sticky-bar-badge">0</span>
+        </div>
+        <div class="cart-sticky-bar__text">
+          <span class="cart-sticky-bar__count" id="sticky-bar-count">0 productos</span>
+          <span class="cart-sticky-bar__total" id="sticky-bar-total">$0</span>
+        </div>
+      </div>
+      <button class="cart-sticky-bar__button" onclick="CartUI.open()">
+        Ver carrito
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="9 18 15 12 9 6"></polyline>
+        </svg>
+      </button>
+    `;
+    
+    document.body.appendChild(stickyBar);
+    this.stickyBar = stickyBar;
+  }
+
+  /**
+   * Actualizar barra sticky del carrito
+   */
+  static updateStickyBar(count, total) {
+    if (!this.stickyBar) return;
+    
+    const badgeEl = document.getElementById('sticky-bar-badge');
+    const countEl = document.getElementById('sticky-bar-count');
+    const totalEl = document.getElementById('sticky-bar-total');
+    
+    if (badgeEl) badgeEl.textContent = count;
+    if (countEl) countEl.textContent = count === 1 ? '1 producto' : `${count} productos`;
+    if (totalEl) totalEl.textContent = `$${this.formatPrice(total)}`;
+    
+    // Mostrar/ocultar barra según si hay items
+    if (count > 0) {
+      this.stickyBar.classList.add('cart-sticky-bar--visible');
+      document.body.classList.add('has-cart-items');
+      
+      // Animación de pulso al agregar producto
+      this.stickyBar.classList.remove('cart-sticky-bar--pulse');
+      void this.stickyBar.offsetWidth; // Trigger reflow
+      this.stickyBar.classList.add('cart-sticky-bar--pulse');
+    } else {
+      this.stickyBar.classList.remove('cart-sticky-bar--visible');
+      document.body.classList.remove('has-cart-items');
+    }
   }
 
   /**
