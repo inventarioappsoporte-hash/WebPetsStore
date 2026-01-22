@@ -36,7 +36,96 @@ class ProductPage {
       return;
     }
 
+    // Actualizar SEO dinámicamente
+    this.updateSEO(product);
+    
     this.render(product);
+  }
+
+  // Actualizar meta tags para SEO
+  updateSEO(product) {
+    const baseUrl = 'https://pets-store-arg.com';
+    const productUrl = `${baseUrl}/product.html?id=${product.id}`;
+    const imageUrl = product.images?.cover ? `${baseUrl}/${product.images.cover}` : `${baseUrl}/assets/images/ui/og-image.jpg`;
+    
+    // Título
+    document.title = `${product.name} | Pets Store Argentina`;
+    
+    // Meta description
+    const metaDesc = document.querySelector('meta[name="description"]');
+    if (metaDesc) {
+      metaDesc.content = product.description || `${product.name} - Producto de calidad para tu mascota. Envío gratis en CABA desde $30.000.`;
+    }
+    
+    // Canonical URL
+    const canonical = document.querySelector('link[rel="canonical"]');
+    if (canonical) {
+      canonical.href = productUrl;
+    }
+    
+    // Open Graph
+    this.updateMetaTag('og:title', `${product.name} | Pets Store Argentina`);
+    this.updateMetaTag('og:description', product.description || product.longDescription);
+    this.updateMetaTag('og:image', imageUrl);
+    this.updateMetaTag('og:url', productUrl);
+    this.updateMetaTag('og:price:amount', product.price);
+    this.updateMetaTag('og:price:currency', 'ARS');
+    
+    // Schema.org Product (JSON-LD)
+    this.addProductSchema(product, productUrl, imageUrl);
+  }
+  
+  updateMetaTag(property, content) {
+    let meta = document.querySelector(`meta[property="${property}"]`);
+    if (!meta) {
+      meta = document.createElement('meta');
+      meta.setAttribute('property', property);
+      document.head.appendChild(meta);
+    }
+    meta.content = content;
+  }
+  
+  addProductSchema(product, productUrl, imageUrl) {
+    // Remover schema anterior si existe
+    const existingSchema = document.getElementById('product-schema');
+    if (existingSchema) existingSchema.remove();
+    
+    const schema = {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "name": product.name,
+      "description": product.longDescription || product.description,
+      "image": imageUrl,
+      "url": productUrl,
+      "brand": {
+        "@type": "Brand",
+        "name": product.brand || "Pets Store"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": product.price,
+        "priceCurrency": "ARS",
+        "availability": product.stock > 0 ? "https://schema.org/InStock" : "https://schema.org/OutOfStock",
+        "seller": {
+          "@type": "Organization",
+          "name": "Pets Store Argentina"
+        }
+      }
+    };
+    
+    if (product.rating) {
+      schema.aggregateRating = {
+        "@type": "AggregateRating",
+        "ratingValue": product.rating,
+        "reviewCount": product.reviews || 1
+      };
+    }
+    
+    const script = document.createElement('script');
+    script.type = 'application/ld+json';
+    script.id = 'product-schema';
+    script.textContent = JSON.stringify(schema);
+    document.head.appendChild(script);
   }
 
   render(product) {
