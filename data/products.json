@@ -1206,7 +1206,7 @@
       "confort"
     ],
     "description": " Moisés acogedor para mascotas. Bordes elevados para mayor seguridad.",
-    "longDescription": "Moisés con diseño acogedor y bordes elevados que brindan sensación de seguridad. Interior suave y cómodo para el descanso de tu mascota. Perfecto para perros y gatos que buscan un lugar protegido.",
+    "longDescription": "Moisés con diseño acogedor y bordes elevados que brindan sensación de seguridad. Interior suave y cómodo para el descanso de tu mascota. Perfecto para perros y gatos que buscan un lugar protegido.\n\nLo tenemos en las medidas: N°1 (35 cm), N°2 (40 cm), N°3 (45 cm), N°4 (50 cm).",
     "images": {
       "cover": "assets/images/products/prod_152/cover.jpg",
       "thumb": "assets/images/products/prod_152/thumb.jpg",
@@ -1256,6 +1256,9 @@
           "available": true,
           "originalPrice": 11000,
           "sku": "MOI003-N1",
+          "specs": {
+            "medida": "35 cm"
+          },
           "images": {
             "cover": "assets/images/products/prod_152/cover_n°1.jpg",
             "thumb": "assets/images/products/prod_152/thumb_n°1.jpg",
@@ -1274,6 +1277,9 @@
           "available": true,
           "originalPrice": 12500,
           "sku": "MOI003-N2",
+          "specs": {
+            "medida": "40 cm"
+          },
           "images": {
             "cover": "assets/images/products/prod_152/cover_n°2.jpg",
             "thumb": "assets/images/products/prod_152/thumb_n°2.jpg",
@@ -1292,6 +1298,9 @@
           "available": true,
           "originalPrice": 14000,
           "sku": "MOI003-N3",
+          "specs": {
+            "medida": "45 cm"
+          },
           "images": {
             "cover": "assets/images/products/prod_152/cover_n°3.jpg",
             "thumb": "assets/images/products/prod_152/thumb_n°3.jpg",
@@ -1310,6 +1319,9 @@
           "available": true,
           "originalPrice": 15500,
           "sku": "MOI003-N4",
+          "specs": {
+            "medida": "50 cm"
+          },
           "images": {
             "cover": "assets/images/products/prod_152/cover_n°4.jpg",
             "thumb": "assets/images/products/prod_152/thumb_n°4.jpg",

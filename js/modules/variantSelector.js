@@ -245,9 +245,17 @@ class VariantSelector {
     const specsContainer = document.querySelector('.product__specs');
     if (!specsContainer) return;
     
-    // Combinar specs del producto base con specs de la variante
-    const baseSpecs = this.product.specs || {};
+    // Obtener specs del producto base
+    const baseSpecs = this.product.specs ? { ...this.product.specs } : {};
     const variantSpecs = this.selectedVariant.specs || {};
+    
+    // Si la variante tiene specs propias, eliminar las specs generales que se sobrescriben
+    // Por ejemplo, si la variante tiene "medida", eliminar "medidas" del producto base
+    if (variantSpecs.medida) {
+      delete baseSpecs.medidas;
+    }
+    
+    // Combinar specs: las de la variante sobrescriben las del producto base
     const combinedSpecs = { ...baseSpecs, ...variantSpecs };
     
     // Generar HTML de especificaciones
