@@ -1215,7 +1215,10 @@
       ]
     },
     "specs": {
-      "SKU": "MOI003"
+      "SKU": "MOI003",
+      "medidas": "N°1 (35 cm) | N°2 (40 cm) | N°3 (45 cm) | N°4 (50 cm)",
+      "material": "Tela suave y resistente",
+      "idealPara": "Perros y gatos pequeños/medianos"
     },
     "shipping": {
       "free": false,
