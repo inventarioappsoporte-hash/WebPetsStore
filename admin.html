@@ -1261,7 +1261,8 @@
         window.confirmOrder = async (orderId) => {
             if (!confirm('¿Confirmar este pedido?')) return;
             try {
-                await updateDoc(doc(db, 'orders', orderId), {
+                const STORE_ID = 'petsstore-b0516';
+                await updateDoc(doc(db, 'tiendas', STORE_ID, 'orders', orderId), {
                     status: 'confirmed',
                     confirmedAt: Timestamp.now()
                 });
@@ -1274,7 +1275,8 @@
         window.cancelOrder = async (orderId) => {
             if (!confirm('¿Cancelar este pedido?')) return;
             try {
-                await updateDoc(doc(db, 'orders', orderId), {
+                const STORE_ID = 'petsstore-b0516';
+                await updateDoc(doc(db, 'tiendas', STORE_ID, 'orders', orderId), {
                     status: 'cancelled',
                     cancelledAt: Timestamp.now()
                 });
