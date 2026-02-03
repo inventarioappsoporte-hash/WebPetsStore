@@ -120,16 +120,33 @@ class FirebaseOrders {
       
       // Calcular totales considerando precios mayoristas
       let subtotal = 0;
-      const items = cartItems.map(item => {
+      const items = cartItems.map((item, idx) => {
         const isWholesaleItem = item.priceDisplayMode === 'wholesale';
         const hasDiscount = item.originalPrice && item.originalPrice > item.price;
+        
+        // DEBUG: Log detallado de cada item
+        console.log(`🔥 Firebase Item ${idx}:`, {
+          name: item.name,
+          price: item.price,
+          originalPrice: item.originalPrice,
+          priceDisplayMode: item.priceDisplayMode,
+          isWholesaleItem,
+          hasDiscount,
+          wholesaleUnlocked
+        });
         
         // Calcular precio efectivo según modo
         let effectivePrice;
         if (isWholesaleItem && hasDiscount) {
           effectivePrice = wholesaleUnlocked ? item.price : item.originalPrice;
+          console.log(`🔥 Firebase Item ${idx} - Mayorista: effectivePrice = ${effectivePrice}`);
+        } else if (hasDiscount && wholesaleUnlocked) {
+          // Si tiene descuento y mayorista está desbloqueado, usar precio con descuento
+          effectivePrice = item.price;
+          console.log(`🔥 Firebase Item ${idx} - Descuento aplicado: effectivePrice = ${effectivePrice}`);
         } else {
           effectivePrice = item.price;
+          console.log(`🔥 Firebase Item ${idx} - Normal: effectivePrice = ${effectivePrice}`);
         }
         
         const itemTotal = effectivePrice * item.quantity;
