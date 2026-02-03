@@ -750,6 +750,27 @@
         .modal-btn-whatsapp:hover { background: #20bd5a; }
         .modal-btn-cancel { background: var(--bg-card); color: var(--text-muted); border: 1px solid var(--border); }
         .modal-btn-cancel:hover { color: var(--text); }
+        
+        /* Recent Orders Preview */
+        .recent-orders-list { display: flex; flex-direction: column; gap: 0.5rem; }
+        .recent-order-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0.75rem 1rem;
+            background: var(--bg-card);
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        .recent-order-item:hover { background: var(--border); }
+        .recent-order-info { display: flex; flex-direction: column; gap: 0.25rem; }
+        .recent-order-id { font-weight: 600; font-size: 0.875rem; }
+        .recent-order-customer { font-size: 0.8rem; color: var(--text-muted); }
+        .recent-order-meta { display: flex; flex-direction: column; align-items: flex-end; gap: 0.25rem; }
+        .recent-order-total { font-weight: 600; font-size: 0.875rem; }
+        .recent-order-status { font-size: 0.75rem; }
+        .empty-state-small { text-align: center; padding: 2rem; color: var(--text-muted); }
     </style>
 </head>
 <body>
@@ -1176,11 +1197,60 @@
                 });
                 updateStats();
                 renderOrders();
+                renderDashboardPreview();
             }, (error) => {
                 console.error('Error loading orders:', error);
                 document.getElementById('orders-container').innerHTML = 
                     '<div class="empty-state"><div class="empty-icon">⚠️</div><div class="empty-title">Error al cargar pedidos</div><div class="empty-text">' + error.message + '</div></div>';
+                document.getElementById('dashboard-orders-preview').innerHTML = 
+                    '<div class="empty-state"><div class="empty-icon">⚠️</div><div class="empty-text">Error al cargar</div></div>';
             });
+        }
+        
+        // Render Dashboard Preview (últimos 5 pedidos)
+        function renderDashboardPreview() {
+            const container = document.getElementById('dashboard-orders-preview');
+            const recentOrders = allOrders.slice(0, 5);
+            
+            if (recentOrders.length === 0) {
+                container.innerHTML = '<div class="empty-state"><div class="empty-icon">📭</div><div class="empty-text">No hay pedidos aún</div></div>';
+                return;
+            }
+            
+            let html = '<div class="recent-orders-list">';
+            recentOrders.forEach(order => {
+                const statusColors = {
+                    pending: '#f59e0b',
+                    confirmed: '#22c55e',
+                    cancelled: '#ef4444',
+                    delivered: '#3b82f6'
+                };
+                const statusLabels = {
+                    pending: '⏳ Pendiente',
+                    confirmed: '✅ Confirmado',
+                    cancelled: '❌ Cancelado',
+                    delivered: '🚚 Entregado'
+                };
+                const color = statusColors[order.status] || '#888';
+                const label = statusLabels[order.status] || order.status;
+                const date = order.createdAt?.toDate ? order.createdAt.toDate() : new Date(order.createdAt);
+                const dateStr = date.toLocaleDateString('es-CL', { day: '2-digit', month: '2-digit', hour: '2-digit', minute: '2-digit' });
+                
+                html += `
+                    <div class="recent-order-item" onclick="showPage('orders')">
+                        <div class="recent-order-info">
+                            <span class="recent-order-id">#${order.orderNumber || order.id.slice(-6)}</span>
+                            <span class="recent-order-customer">${order.customer?.name || 'Sin nombre'}</span>
+                        </div>
+                        <div class="recent-order-meta">
+                            <span class="recent-order-total">${formatPrice(order.total || 0)}</span>
+                            <span class="recent-order-status" style="color: ${color}">${label}</span>
+                        </div>
+                    </div>
+                `;
+            });
+            html += '</div>';
+            container.innerHTML = html;
         }
 
         // Update Stats
@@ -1216,6 +1286,57 @@
 
             // Notification dot
             document.getElementById('notification-dot').style.display = pending > 0 ? 'block' : 'none';
+            
+            // Update dashboard preview with recent orders
+            renderDashboardPreview();
+        }
+        
+        // Render Dashboard Orders Preview
+        function renderDashboardPreview() {
+            const container = document.getElementById('dashboard-orders-preview');
+            if (!container) return;
+            
+            const recentOrders = allOrders.slice(0, 5); // Show last 5 orders
+            
+            if (recentOrders.length === 0) {
+                container.innerHTML = '<div class="empty-state-small">No hay pedidos recientes</div>';
+                return;
+            }
+            
+            let html = '<div class="recent-orders-list">';
+            recentOrders.forEach(order => {
+                const statusColors = {
+                    pending: '#f59e0b',
+                    confirmed: '#22c55e',
+                    cancelled: '#ef4444',
+                    delivered: '#3b82f6'
+                };
+                const statusLabels = {
+                    pending: '⏳ Pendiente',
+                    confirmed: '✅ Confirmado',
+                    cancelled: '❌ Cancelado',
+                    delivered: '🚚 Entregado'
+                };
+                const color = statusColors[order.status] || '#888';
+                const label = statusLabels[order.status] || order.status;
+                const date = order.createdAt?.toDate ? order.createdAt.toDate() : new Date(order.createdAt);
+                const dateStr = date.toLocaleDateString('es-CL', { day: '2-digit', month: '2-digit', hour: '2-digit', minute: '2-digit' });
+                
+                html += \`
+                    <div class="recent-order-item" onclick="showPage('orders')">
+                        <div class="recent-order-info">
+                            <span class="recent-order-id">#\${order.orderNumber || order.id.slice(-6)}</span>
+                            <span class="recent-order-customer">\${order.customer?.name || 'Cliente'}</span>
+                        </div>
+                        <div class="recent-order-meta">
+                            <span class="recent-order-total">\${formatPrice(order.total || 0)}</span>
+                            <span class="recent-order-status" style="color: \${color}">\${label}</span>
+                        </div>
+                    </div>
+                \`;
+            });
+            html += '</div>';
+            container.innerHTML = html;
         }
 
         // Render Orders Table
