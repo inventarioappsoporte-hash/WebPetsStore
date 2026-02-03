@@ -1,15 +1,16 @@
 /**
  * 📱 Módulo WhatsAppSender - Generador de Mensajes para WhatsApp
  * Formatea y envía pedidos del carrito por WhatsApp
+ * Integrado con Firebase para registro de pedidos en admin online
  */
 
 class WhatsAppSender {
   /**
-   * Enviar pedido completo por WhatsApp
+   * Enviar pedido completo por WhatsApp + Firebase
    * @param {Array} cartItems - Items del carrito
    * @param {Object} customerData - Datos del cliente
    */
-  static sendOrder(cartItems, customerData) {
+  static async sendOrder(cartItems, customerData) {
     try {
       // Validar datos
       if (!cartItems || cartItems.length === 0) {
@@ -20,16 +21,38 @@ class WhatsAppSender {
         throw new Error('Faltan datos del cliente');
       }
 
-      // Obtener número de WhatsApp desde configuración
+      // 1. Primero guardar en Firebase (no bloquea si falla)
+      let orderNumber = null;
+      let firebaseResult = { success: false };
+      
+      if (typeof FirebaseOrders !== 'undefined') {
+        try {
+          firebaseResult = await FirebaseOrders.createOrder(cartItems, customerData);
+          orderNumber = firebaseResult.orderNumber;
+          
+          if (firebaseResult.success) {
+            console.log('✅ Pedido registrado en Firebase:', orderNumber);
+          } else {
+            console.warn('⚠️ Firebase no disponible, continuando con WhatsApp');
+          }
+        } catch (fbError) {
+          console.warn('⚠️ Error Firebase (no crítico):', fbError);
+        }
+      }
+
+      // 2. Obtener número de WhatsApp desde configuración
       const phone = CONSTANTS.WHATSAPP.PHONE;
       
-      // Generar mensaje formateado
-      const message = this.formatOrderMessage(cartItems, customerData);
+      // 3. Obtener estado mayorista antes de formatear
+      const wholesaleStatus = typeof Cart !== 'undefined' ? Cart.getWholesaleStatus() : null;
       
-      // Crear URL de WhatsApp
+      // 4. Generar mensaje formateado (incluir número de pedido y estado mayorista)
+      const message = this.formatOrderMessage(cartItems, customerData, orderNumber, wholesaleStatus);
+      
+      // 5. Crear URL de WhatsApp
       const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
       
-      // Abrir WhatsApp en nueva ventana
+      // 5. Abrir WhatsApp en nueva ventana
       window.open(url, '_blank');
       
       console.log('✅ Order sent to WhatsApp');
@@ -43,9 +66,19 @@ class WhatsAppSender {
 
   /**
    * Formatear mensaje del pedido
+   * @param {Array} items - Items del carrito
+   * @param {Object} customer - Datos del cliente
+   * @param {string} orderNumber - Número de pedido (opcional)
+   * @param {Object} wholesaleStatusParam - Estado mayorista (opcional, se obtiene de Cart si no se pasa)
    */
-  static formatOrderMessage(items, customer) {
-    let message = '🛒 *NUEVO PEDIDO*\n\n';
+  static formatOrderMessage(items, customer, orderNumber = null, wholesaleStatusParam = null) {
+    let message = '🛒 *NUEVO PEDIDO*';
+    
+    // Agregar número de pedido si existe
+    if (orderNumber) {
+      message += ` #${orderNumber}`;
+    }
+    message += '\n\n';
     
     // Datos del cliente
     message += `👤 *Cliente:* ${customer.name}\n`;
@@ -55,13 +88,42 @@ class WhatsAppSender {
       message += `📝 *Observaciones:* ${customer.notes}\n`;
     }
     
+    // Usar estado mayorista pasado como parámetro o obtenerlo de Cart
+    const wholesaleStatus = wholesaleStatusParam || (typeof Cart !== 'undefined' ? Cart.getWholesaleStatus() : null);
+    const wholesaleUnlocked = wholesaleStatus?.unlocked || false;
+    const hasWholesaleItems = items.some(item => item.priceDisplayMode === 'wholesale');
+    
+    // Indicar tipo de pedido
+    if (hasWholesaleItems && wholesaleUnlocked) {
+      message += `\n💰 *Tipo:* PEDIDO MAYORISTA\n`;
+    }
+    
     message += '\n---\n🛍️ *PRODUCTOS:*\n\n';
     
     // Lista de productos
     let subtotal = 0;
     items.forEach((item, index) => {
-      const itemSubtotal = item.price * item.quantity;
-      subtotal += itemSubtotal;
+      const isWholesaleItem = item.priceDisplayMode === 'wholesale';
+      const hasDiscount = item.originalPrice && item.originalPrice > item.price;
+      
+      // Calcular precio efectivo según modo
+      let effectivePrice, effectiveSubtotal;
+      
+      if (isWholesaleItem && hasDiscount) {
+        if (wholesaleUnlocked) {
+          // Mayorista desbloqueado: usar precio mayorista
+          effectivePrice = item.price;
+        } else {
+          // Mayorista NO desbloqueado: usar precio lista
+          effectivePrice = item.originalPrice;
+        }
+      } else {
+        // Modo normal o sin descuento
+        effectivePrice = item.price;
+      }
+      
+      effectiveSubtotal = effectivePrice * item.quantity;
+      subtotal += effectiveSubtotal;
       
       message += `${index + 1}. *${item.name}*`;
       
@@ -75,15 +137,29 @@ class WhatsAppSender {
       
       message += '\n';
       message += `   Cantidad: ${item.quantity}\n`;
-      message += `   Precio: ${this.formatPrice(item.price)} c/u\n`;
-      message += `   Subtotal: ${this.formatPrice(itemSubtotal)}\n`;
       
-      // Mostrar descuento si aplica
-      if (item.originalPrice && item.originalPrice > item.price) {
+      // Mostrar precios según el modo
+      if (isWholesaleItem && hasDiscount) {
+        if (wholesaleUnlocked) {
+          // Mayorista desbloqueado: mostrar precio lista tachado y precio mayorista
+          message += `   ~Precio Lista: ${this.formatPrice(item.originalPrice)}~\n`;
+          message += `   💰 Precio Mayorista: ${this.formatPrice(item.price)} c/u\n`;
+        } else {
+          // Mayorista NO desbloqueado: mostrar precio lista
+          message += `   Precio Lista: ${this.formatPrice(item.originalPrice)} c/u\n`;
+          message += `   (Mayorista: ${this.formatPrice(item.price)} c/u)\n`;
+        }
+      } else if (hasDiscount) {
+        // Descuento normal
+        message += `   Precio: ${this.formatPrice(item.price)} c/u\n`;
         const discount = Math.round(((item.originalPrice - item.price) / item.originalPrice) * 100);
         message += `   💚 Descuento: ${discount}%\n`;
+      } else {
+        // Sin descuento
+        message += `   Precio: ${this.formatPrice(effectivePrice)} c/u\n`;
       }
       
+      message += `   Subtotal: ${this.formatPrice(effectiveSubtotal)}\n`;
       message += '\n';
     });
     
