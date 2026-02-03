@@ -75,7 +75,13 @@ class FirebaseOrders {
       const { collection, addDoc, Timestamp } = await import('https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js');
 
       // Calcular totales del carrito para verificar condiciones mayoristas
-      const cartTotal = cartItems.reduce((sum, item) => sum + (item.price * item.quantity), 0);
+      // IMPORTANTE: Usar originalPrice (precio lista) para calcular si cumple condiciones
+      // porque el precio mayorista solo aplica DESPUÉS de cumplir las condiciones
+      const cartTotal = cartItems.reduce((sum, item) => {
+        // Usar originalPrice si existe, sino price
+        const priceForCalc = item.originalPrice || item.price;
+        return sum + (priceForCalc * item.quantity);
+      }, 0);
       const cartItemCount = cartItems.reduce((sum, item) => sum + item.quantity, 0);
       
       // Config mayorista por defecto (fallback si no se cargó desde JSON)
@@ -95,6 +101,9 @@ class FirebaseOrders {
         const meetsAmount = cartTotal >= wsConfig.min_amount;
         const meetsItems = cartItemCount >= wsConfig.min_items;
         
+        console.log('🔥 Firebase - meetsAmount:', meetsAmount, `(${cartTotal} >= ${wsConfig.min_amount})`);
+        console.log('🔥 Firebase - meetsItems:', meetsItems, `(${cartItemCount} >= ${wsConfig.min_items})`);
+        
         if (wsConfig.condition_mode === 'any') {
           wholesaleUnlocked = meetsAmount || meetsItems;
         } else {
@@ -107,7 +116,7 @@ class FirebaseOrders {
         wholesaleUnlocked = true;
       }
       
-      console.log('🔥 Firebase - wholesaleUnlocked:', wholesaleUnlocked, 'cartTotal:', cartTotal, 'cartItemCount:', cartItemCount);
+      console.log('🔥 Firebase - wholesaleUnlocked:', wholesaleUnlocked, 'cartTotal (lista):', cartTotal, 'cartItemCount:', cartItemCount);
       
       // Calcular totales considerando precios mayoristas
       let subtotal = 0;

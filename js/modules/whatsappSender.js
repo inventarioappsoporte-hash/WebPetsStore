@@ -92,7 +92,11 @@ class WhatsAppSender {
     const wholesaleStatus = wholesaleStatusParam || (typeof Cart !== 'undefined' ? Cart.getWholesaleStatus() : null);
     
     // Calcular totales para verificar condiciones mayoristas
-    const cartTotal = items.reduce((sum, item) => sum + (item.price * item.quantity), 0);
+    // IMPORTANTE: Usar originalPrice (precio lista) para calcular si cumple condiciones
+    const cartTotal = items.reduce((sum, item) => {
+      const priceForCalc = item.originalPrice || item.price;
+      return sum + (priceForCalc * item.quantity);
+    }, 0);
     const cartItemCount = items.reduce((sum, item) => sum + item.quantity, 0);
     
     // Config mayorista por defecto (fallback si no se cargó desde JSON)
