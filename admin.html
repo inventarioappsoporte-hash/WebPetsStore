@@ -3,7 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
     <title>🐾 Pets Store Admin</title>
+    <script>
+        // Validación de acceso con clave secreta
+        (function() {
+            // Permitir acceso desde localhost (vista previa local)
+            const isLocalhost = window.location.hostname === 'localhost' || 
+                               window.location.hostname === '127.0.0.1' ||
+                               window.location.protocol === 'file:';
+            
+            if (isLocalhost) return; // No validar en desarrollo local
+            
+            const ACCESS_KEY = 'pets2026admin';
+            const params = new URLSearchParams(window.location.search);
+            const key = params.get('key');
+            
+            // Si tiene la clave correcta, guardarla en sessionStorage
+            if (key === ACCESS_KEY) {
+                sessionStorage.setItem('admin_access', 'granted');
+            }
+            
+            // Verificar acceso
+            const hasAccess = sessionStorage.getItem('admin_access') === 'granted';
+            if (!hasAccess) {
+                // Redirigir a la tienda si no tiene acceso
+                window.location.href = '/';
+            }
+        })();
+    </script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
