@@ -88,14 +88,56 @@ class WhatsAppSender {
       message += `📝 *Observaciones:* ${customer.notes}\n`;
     }
     
-    // Usar estado mayorista pasado como parámetro o obtenerlo de Cart
+    // Obtener estado mayorista de múltiples fuentes para mayor confiabilidad
     const wholesaleStatus = wholesaleStatusParam || (typeof Cart !== 'undefined' ? Cart.getWholesaleStatus() : null);
-    const wholesaleUnlocked = wholesaleStatus?.unlocked || false;
+    
+    // Calcular totales para verificar condiciones mayoristas
+    const cartTotal = items.reduce((sum, item) => sum + (item.price * item.quantity), 0);
+    const cartItemCount = items.reduce((sum, item) => sum + item.quantity, 0);
+    
+    // Config mayorista por defecto (fallback si no se cargó desde JSON)
+    const defaultWholesaleConfig = {
+      enabled: true,
+      min_amount: 50000,
+      min_items: 10,
+      condition_mode: 'any'
+    };
+    
+    // Usar config de Cart si existe, sino usar default
+    const wsConfig = (typeof Cart !== 'undefined' && Cart.wholesaleConfig) || defaultWholesaleConfig;
+    
+    // Calcular si cumple condiciones mayoristas
+    let wholesaleUnlocked = false;
+    if (wsConfig && wsConfig.enabled) {
+      const meetsAmount = cartTotal >= wsConfig.min_amount;
+      const meetsItems = cartItemCount >= wsConfig.min_items;
+      
+      if (wsConfig.condition_mode === 'any') {
+        wholesaleUnlocked = meetsAmount || meetsItems;
+      } else {
+        wholesaleUnlocked = meetsAmount && meetsItems;
+      }
+    }
+    
+    // También verificar la propiedad estática de Cart como respaldo
+    if (!wholesaleUnlocked && typeof Cart !== 'undefined' && Cart.wholesaleUnlocked) {
+      wholesaleUnlocked = true;
+    }
+    
+    // Y verificar el status pasado como parámetro
+    if (!wholesaleUnlocked && wholesaleStatus?.unlocked) {
+      wholesaleUnlocked = true;
+    }
+    
     const hasWholesaleItems = items.some(item => item.priceDisplayMode === 'wholesale');
     
     // DEBUG: Log para verificar estado mayorista
     console.log('🔍 WhatsApp - wholesaleStatus:', wholesaleStatus);
-    console.log('🔍 WhatsApp - wholesaleUnlocked:', wholesaleUnlocked);
+    console.log('🔍 WhatsApp - Cart.wholesaleUnlocked (static):', typeof Cart !== 'undefined' ? Cart.wholesaleUnlocked : 'Cart not defined');
+    console.log('🔍 WhatsApp - Cart.wholesaleConfig:', typeof Cart !== 'undefined' ? Cart.wholesaleConfig : 'Cart not defined');
+    console.log('🔍 WhatsApp - wsConfig used:', wsConfig);
+    console.log('🔍 WhatsApp - cartTotal:', cartTotal, 'cartItemCount:', cartItemCount);
+    console.log('🔍 WhatsApp - wholesaleUnlocked (calculated):', wholesaleUnlocked);
     console.log('🔍 WhatsApp - hasWholesaleItems:', hasWholesaleItems);
     
     // Indicar tipo de pedido
