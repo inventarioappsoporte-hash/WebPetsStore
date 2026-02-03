@@ -93,6 +93,11 @@ class WhatsAppSender {
     const wholesaleUnlocked = wholesaleStatus?.unlocked || false;
     const hasWholesaleItems = items.some(item => item.priceDisplayMode === 'wholesale');
     
+    // DEBUG: Log para verificar estado mayorista
+    console.log('🔍 WhatsApp - wholesaleStatus:', wholesaleStatus);
+    console.log('🔍 WhatsApp - wholesaleUnlocked:', wholesaleUnlocked);
+    console.log('🔍 WhatsApp - hasWholesaleItems:', hasWholesaleItems);
+    
     // Indicar tipo de pedido
     if (hasWholesaleItems && wholesaleUnlocked) {
       message += `\n💰 *Tipo:* PEDIDO MAYORISTA\n`;
@@ -106,15 +111,25 @@ class WhatsAppSender {
       const isWholesaleItem = item.priceDisplayMode === 'wholesale';
       const hasDiscount = item.originalPrice && item.originalPrice > item.price;
       
+      // DEBUG: Log por item
+      console.log(`🔍 Item ${index}: ${item.name}`, {
+        priceDisplayMode: item.priceDisplayMode,
+        price: item.price,
+        originalPrice: item.originalPrice,
+        isWholesaleItem,
+        hasDiscount,
+        wholesaleUnlocked
+      });
+      
       // Calcular precio efectivo según modo
-      let effectivePrice, effectiveSubtotal;
+      let effectivePrice;
       
       if (isWholesaleItem && hasDiscount) {
         if (wholesaleUnlocked) {
-          // Mayorista desbloqueado: usar precio mayorista
+          // Mayorista desbloqueado: usar precio mayorista (item.price)
           effectivePrice = item.price;
         } else {
-          // Mayorista NO desbloqueado: usar precio lista
+          // Mayorista NO desbloqueado: usar precio lista (item.originalPrice)
           effectivePrice = item.originalPrice;
         }
       } else {
@@ -122,8 +137,10 @@ class WhatsAppSender {
         effectivePrice = item.price;
       }
       
-      effectiveSubtotal = effectivePrice * item.quantity;
+      const effectiveSubtotal = effectivePrice * item.quantity;
       subtotal += effectiveSubtotal;
+      
+      console.log(`🔍 Item ${index} - effectivePrice: ${effectivePrice}, effectiveSubtotal: ${effectiveSubtotal}`);
       
       message += `${index + 1}. *${item.name}*`;
       
@@ -141,9 +158,9 @@ class WhatsAppSender {
       // Mostrar precios según el modo
       if (isWholesaleItem && hasDiscount) {
         if (wholesaleUnlocked) {
-          // Mayorista desbloqueado: mostrar precio lista tachado y precio mayorista
-          message += `   ~Precio Lista: ${this.formatPrice(item.originalPrice)}~\n`;
+          // Mayorista desbloqueado: mostrar precio mayorista como principal
           message += `   💰 Precio Mayorista: ${this.formatPrice(item.price)} c/u\n`;
+          message += `   ~(Lista: ${this.formatPrice(item.originalPrice)})~\n`;
         } else {
           // Mayorista NO desbloqueado: mostrar precio lista
           message += `   Precio Lista: ${this.formatPrice(item.originalPrice)} c/u\n`;
@@ -162,6 +179,8 @@ class WhatsAppSender {
       message += `   Subtotal: ${this.formatPrice(effectiveSubtotal)}\n`;
       message += '\n';
     });
+    
+    console.log('🔍 WhatsApp - subtotal final:', subtotal);
     
     message += '---\n';
     message += `📦 *Subtotal productos:* ${this.formatPrice(subtotal)}\n`;
