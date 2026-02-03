@@ -621,7 +621,7 @@ class CartUI {
   /**
    * Procesar checkout
    */
-  static checkout() {
+  static async checkout() {
     if (Cart.isEmpty()) {
       alert('El carrito está vacío');
       return;
@@ -694,31 +694,50 @@ class CartUI {
       }
     }
 
-    const success = WhatsAppSender.sendOrder(Cart.getItems(), customerData);
+    // Deshabilitar botón mientras procesa
+    const checkoutBtn = document.querySelector('.cart-modal__checkout');
+    if (checkoutBtn) {
+      checkoutBtn.disabled = true;
+      checkoutBtn.innerHTML = '⏳ Procesando...';
+    }
 
-    if (success) {
-      // Limpiar formulario
-      document.getElementById('customer-name').value = '';
-      document.getElementById('customer-phone').value = '';
-      document.getElementById('customer-notes').value = '';
-      
-      // Limpiar campos de envío si existen
-      const addressField = document.getElementById('customer-address');
-      if (addressField) addressField.value = '';
-      const floorField = document.getElementById('customer-floor');
-      if (floorField) floorField.value = '';
-      const zipcodeField = document.getElementById('customer-zipcode');
-      if (zipcodeField) zipcodeField.value = '';
-      const cityField = document.getElementById('customer-city');
-      if (cityField) cityField.value = '';
-      const betweenField = document.getElementById('customer-between');
-      if (betweenField) betweenField.value = '';
-      const provinceField = document.getElementById('customer-province');
-      if (provinceField) provinceField.value = '';
-      
-      Cart.clearCart();
-      this.close();
-      alert('¡Pedido enviado! Te contactaremos pronto por WhatsApp 🐾');
+    try {
+      // Enviar por WhatsApp + Firebase (integrado en WhatsAppSender)
+      const success = await WhatsAppSender.sendOrder(Cart.getItems(), customerData);
+
+      if (success) {
+        // Limpiar formulario
+        document.getElementById('customer-name').value = '';
+        document.getElementById('customer-phone').value = '';
+        document.getElementById('customer-notes').value = '';
+        
+        // Limpiar campos de envío si existen
+        const addressField = document.getElementById('customer-address');
+        if (addressField) addressField.value = '';
+        const floorField = document.getElementById('customer-floor');
+        if (floorField) floorField.value = '';
+        const zipcodeField = document.getElementById('customer-zipcode');
+        if (zipcodeField) zipcodeField.value = '';
+        const cityField = document.getElementById('customer-city');
+        if (cityField) cityField.value = '';
+        const betweenField = document.getElementById('customer-between');
+        if (betweenField) betweenField.value = '';
+        const provinceField = document.getElementById('customer-province');
+        if (provinceField) provinceField.value = '';
+        
+        Cart.clearCart();
+        this.close();
+        alert('¡Pedido enviado! Te contactaremos pronto por WhatsApp 🐾');
+      }
+    } catch (error) {
+      console.error('Error en checkout:', error);
+      alert('Hubo un error al procesar el pedido. Por favor intenta nuevamente.');
+    } finally {
+      // Restaurar botón
+      if (checkoutBtn) {
+        checkoutBtn.disabled = false;
+        checkoutBtn.innerHTML = '📱 Enviar por WhatsApp';
+      }
     }
   }
 
