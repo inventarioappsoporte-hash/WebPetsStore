@@ -1,0 +1,11 @@
+{
+  "enabled": true,
+  "min_amount": 25000,
+  "min_items": 5,
+  "condition_mode": "any",
+  "messages": {
+    "unlocked": "🎉 ¡Precio mayorista desbloqueado!",
+    "progress_amount": "Te faltan ${remaining} para precio mayorista",
+    "progress_items": "Agrega ${remaining} productos más para precio mayorista"
+  }
+}

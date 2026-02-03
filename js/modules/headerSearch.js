@@ -135,20 +135,24 @@ class HeaderSearch {
   renderResultItem(product) {
     // Determinar el precio a mostrar con validación robusta
     let displayPrice = null;
+    let displayOriginalPrice = null;
     
     // 1. Intentar con basePrice si tiene variantes
     if (product.hasVariants && product.basePrice) {
       displayPrice = product.basePrice;
+      displayOriginalPrice = product.baseOriginalPrice;
     }
     
     // 2. Si no, intentar con price directo
     if (!displayPrice && product.price) {
       displayPrice = product.price;
+      displayOriginalPrice = product.originalPrice;
     }
     
     // 3. Si no, buscar en variants.combinations
     if (!displayPrice && product.variants?.combinations?.length > 0) {
       displayPrice = product.variants.combinations[0].price;
+      displayOriginalPrice = product.variants.combinations[0].originalPrice;
     }
     
     // 4. Si no, buscar en variants.options (para productos con variantes simples)
@@ -156,14 +160,37 @@ class HeaderSearch {
       const firstOption = product.variants.options[0];
       if (firstOption.price) {
         displayPrice = firstOption.price;
+        displayOriginalPrice = firstOption.originalPrice;
       }
     }
     
     // 5. Validación final: asegurar que displayPrice es un número válido
     displayPrice = parseFloat(displayPrice);
+    displayOriginalPrice = parseFloat(displayOriginalPrice) || null;
     if (isNaN(displayPrice) || displayPrice <= 0) {
-      console.warn('⚠️ HeaderSearch - Producto sin precio válido:', product.id, product.name);
       displayPrice = 0;
+    }
+    
+    // Determinar modo de visualización de precios
+    const priceDisplayMode = product.priceDisplayMode || 'discount';
+    
+    // Verificar si tiene descuento real (originalPrice > price)
+    const hasDiscount = displayOriginalPrice && displayOriginalPrice > displayPrice;
+    
+    // Generar HTML de precios según el modo
+    let priceHtml = '';
+    if (priceDisplayMode === 'wholesale' && hasDiscount) {
+      // Modo Mayorista CON descuento: compacto para el dropdown
+      priceHtml = `
+        <div class="header__search-item-price header__search-item-price--wholesale">
+          <span class="header__search-price-list">${Utils.formatPrice(displayOriginalPrice)}</span>
+          <span class="header__search-price-arrow">→</span>
+          <span class="header__search-price-wholesale">${Utils.formatPrice(displayPrice)}</span>
+        </div>
+      `;
+    } else {
+      // Modo normal o mayorista sin descuento: solo precio
+      priceHtml = `<p>${Utils.formatPrice(displayPrice)}</p>`;
     }
     
     return `
@@ -171,7 +198,7 @@ class HeaderSearch {
         <img src="${product.images.thumb}" alt="${product.name}" class="header__search-item-img">
         <div class="header__search-item-info">
           <h4>${product.name}</h4>
-          <p>${Utils.formatPrice(displayPrice)}</p>
+          ${priceHtml}
         </div>
       </div>
     `;

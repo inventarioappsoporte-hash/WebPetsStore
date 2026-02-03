@@ -200,7 +200,7 @@ class HomeRenderer {
   }
 
   renderProductCard(product, showVideo = false, useMarketingMedia = false) {
-    const discount = product.discount ? `<span class="card__discount">-${product.discount}%</span>` : '';
+    const discount = product.discount && product.priceDisplayMode !== 'wholesale' ? `<span class="card__discount">-${product.discount}%</span>` : '';
     const video = showVideo && product.hasVideo ? `
       <div class="card__video-overlay">
         <button class="card__play-btn" onclick="event.stopPropagation()">▶</button>
@@ -247,6 +247,51 @@ class HomeRenderer {
       mediaHtml = `<img src="${imageUrl}" alt="${product.name}" class="card__image" loading="lazy" onerror="this.src='assets/images/placeholder.svg'">`;
     }
 
+    // Determinar precios según modo de visualización
+    const displayPrice = product.hasVariants 
+      ? (product.basePrice || product.price) 
+      : product.price;
+    const displayOriginalPrice = product.hasVariants 
+      ? (product.baseOriginalPrice || product.originalPrice) 
+      : product.originalPrice;
+    const priceDisplayMode = product.priceDisplayMode || 'discount';
+    
+    // Generar HTML de precios según el modo
+    // Verificar si tiene descuento real (originalPrice > price)
+    const hasDiscount = displayOriginalPrice && displayOriginalPrice > displayPrice;
+    
+    let priceHtml = '';
+    if (priceDisplayMode === 'wholesale' && hasDiscount) {
+      // Modo Mayorista CON descuento: mostrar Precio Lista y Precio Mayorista
+      priceHtml = `
+        <div class="card__price card__price--wholesale">
+          <div class="card__price-list">
+            <span class="card__price-label">Lista:</span>
+            <span class="card__price-value">${Utils.formatPrice(displayOriginalPrice)}</span>
+          </div>
+          <div class="card__price-wholesale">
+            <span class="card__price-label">Mayorista:</span>
+            <span class="card__price-value card__price-highlight">${Utils.formatPrice(displayPrice)}</span>
+          </div>
+        </div>
+      `;
+    } else if (priceDisplayMode === 'wholesale' && !hasDiscount) {
+      // Modo Mayorista SIN descuento: solo mostrar precio lista
+      priceHtml = `
+        <div class="card__price">
+          <span class="card__price-current">${Utils.formatPrice(displayPrice)}</span>
+        </div>
+      `;
+    } else {
+      // Modo Descuento (default): mostrar precio actual y tachado
+      priceHtml = `
+        <div class="card__price">
+          <span class="card__price-current">${Utils.formatPrice(displayPrice)}</span>
+          ${product.discount && product.discount > 0 && displayOriginalPrice ? `<span class="card__price-original">${Utils.formatPrice(displayOriginalPrice)}</span>` : ''}
+        </div>
+      `;
+    }
+
     return `
       <div class="card" data-product-id="${product.id}">
         <div class="card__image-wrapper">
@@ -263,10 +308,7 @@ class HomeRenderer {
             <span class="card__stars">⭐ ${product.rating}</span>
             <span class="card__reviews">(${product.reviews})</span>
           </div>
-          <div class="card__price">
-            <span class="card__price-current">${Utils.formatPrice(product.hasVariants ? product.basePrice : product.price)}</span>
-            ${product.discount && product.discount > 0 && (product.hasVariants ? product.baseOriginalPrice : product.originalPrice) ? `<span class="card__price-original">${Utils.formatPrice(product.hasVariants ? product.baseOriginalPrice : product.originalPrice)}</span>` : ''}
-          </div>
+          ${priceHtml}
           <div class="card__actions">
             <button class="btn btn--small btn--primary btn-view-product" data-product-id="${product.id}">VER PRODUCTO</button>
             <button class="btn btn--small btn--secondary add-to-cart-btn" data-product-id="${product.id}">🛒 AGREGAR</button>

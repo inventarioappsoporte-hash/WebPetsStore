@@ -1,4 +1,4 @@
-// Carrusel de Ofertas de Verano - Versión simplificada
+// Carrusel de Ofertas de Verano - Version simplificada
 class SummerOffersCarousel {
   constructor() {
     this.container = null;
@@ -7,7 +7,7 @@ class SummerOffersCarousel {
     this.autoplayInterval = null;
     this.autoplayDelay = 3500;
     this.isHovered = false;
-    this.scrollAmount = 220; // Ancho de cada card + gap
+    this.scrollAmount = 220;
   }
 
   async init() {
@@ -23,7 +23,6 @@ class SummerOffersCarousel {
       const allProducts = await response.json();
       console.log('📦 Total products loaded:', allProducts.length);
       
-      // Filtrar productos de ropa de verano
       this.products = this.filterSummerProducts(allProducts);
       console.log('☀️ Summer products filtered:', this.products.length);
       
@@ -51,7 +50,6 @@ class SummerOffersCarousel {
       return isRopa && hasVeranoTag && hasDiscount && hasStock;
     });
     
-    // Ordenar por descuento y limitar
     return filtered
       .sort((a, b) => (b.discount || 0) - (a.discount || 0))
       .slice(0, 15);
@@ -61,7 +59,7 @@ class SummerOffersCarousel {
     const html = `
       <div class="summer-offers__header">
         <h2 class="summer-offers__title">OFERTAS DE VERANO ☀️ PARA TU MASCOTA</h2>
-        <p class="summer-offers__subtitle">Ropa fresca y cómoda con descuentos por tiempo limitado</p>
+        <p class="summer-offers__subtitle">Ropa fresca y comoda con descuentos por tiempo limitado</p>
       </div>
       <div class="summer-offers__video-container">
         <video 
@@ -97,18 +95,50 @@ class SummerOffersCarousel {
     const imageUrl = product.images?.cover || product.images?.thumb || 'assets/images/placeholder.svg';
     const shortName = product.name.length > 22 ? product.name.substring(0, 20) + '...' : product.name;
     
+    // Verificar modo de precio y si tiene descuento real
+    const priceDisplayMode = product.priceDisplayMode || 'discount';
+    const hasDiscount = originalPrice && originalPrice > price;
+    const isWholesaleMode = priceDisplayMode === 'wholesale' && hasDiscount;
+    
+    let pricesHtml = '';
+    let badgeHtml = '';
+    
+    if (isWholesaleMode) {
+      // Modo mayorista: Lista -> Mayorista con badge "OFERTA"
+      pricesHtml = `
+        <div class="summer-card__prices summer-card__prices--wholesale">
+          <div class="summer-card__price-item">
+            <span class="summer-card__price-value">$${originalPrice.toLocaleString('es-AR')}</span>
+            <span class="summer-card__price-label">Lista</span>
+          </div>
+          <span class="summer-card__price-arrow">→</span>
+          <div class="summer-card__price-item">
+            <span class="summer-card__price-value summer-card__price-value--wholesale">$${price.toLocaleString('es-AR')}</span>
+            <span class="summer-card__price-label">Mayorista</span>
+          </div>
+        </div>
+      `;
+      badgeHtml = `<span class="summer-card__badge summer-card__badge--oferta">☀️ OFERTA</span>`;
+    } else {
+      // Modo descuento: precio tachado + badge
+      pricesHtml = `
+        <div class="summer-card__prices">
+          <span class="summer-card__old">$${originalPrice.toLocaleString('es-AR')}</span>
+          <span class="summer-card__new">$${price.toLocaleString('es-AR')}</span>
+        </div>
+      `;
+      badgeHtml = `<span class="summer-card__badge">🔥 ${product.discount}% OFF</span>`;
+    }
+    
     return `
       <a href="product.html?id=${product.id}" class="summer-card">
         <div class="summer-card__img">
           <img src="${imageUrl}" alt="${product.name}" loading="lazy" onerror="this.src='assets/images/placeholder.svg'">
-          <span class="summer-card__badge">🔥 ${product.discount}% OFF</span>
+          ${badgeHtml}
         </div>
         <div class="summer-card__info">
           <p class="summer-card__name">${shortName}</p>
-          <div class="summer-card__prices">
-            <span class="summer-card__old">$${originalPrice.toLocaleString('es-AR')}</span>
-            <span class="summer-card__new">$${price.toLocaleString('es-AR')}</span>
-          </div>
+          ${pricesHtml}
         </div>
       </a>
     `;
@@ -122,7 +152,6 @@ class SummerOffersCarousel {
     prevBtn?.addEventListener('click', () => this.scroll(-1));
     nextBtn?.addEventListener('click', () => this.scroll(1));
     
-    // Pause on hover
     trackContainer?.addEventListener('mouseenter', () => {
       this.isHovered = true;
       this.stopAutoplay();
@@ -133,7 +162,6 @@ class SummerOffersCarousel {
       this.startAutoplay();
     });
 
-    // Touch swipe
     let startX = 0;
     trackContainer?.addEventListener('touchstart', e => {
       startX = e.touches[0].clientX;

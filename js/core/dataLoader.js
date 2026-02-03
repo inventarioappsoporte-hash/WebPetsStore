@@ -94,6 +94,10 @@ class DataLoader {
     return this.load('config.json');
   }
 
+  async getWholesaleConfig() {
+    return this.load('wholesale.json');
+  }
+
   // Obtener producto por ID
   async getProductById(id) {
     const products = await this.getProducts();

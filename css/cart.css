@@ -327,6 +327,16 @@
   font-size: 1.1rem;
 }
 
+.cart-item__wholesale-price {
+  color: var(--color-success, #4CAF50) !important;
+}
+
+.cart-item__wholesale-hint {
+  font-size: 0.75rem;
+  color: var(--color-success, #4CAF50);
+  opacity: 0.8;
+}
+
 .cart-item__controls {
   display: flex;
   flex-direction: column;
@@ -1051,4 +1061,120 @@
   .address-row input {
     width: 100%;
   }
+}
+
+
+/* ========================================
+   PROGRESO MAYORISTA
+   ======================================== */
+
+.wholesale-progress {
+  margin-bottom: 1rem;
+  padding: 1rem;
+  background: rgba(255, 193, 7, 0.08);
+  border: 1px solid rgba(255, 193, 7, 0.2);
+  border-radius: 12px;
+}
+
+.wholesale-progress--unlocked {
+  background: rgba(76, 175, 80, 0.1);
+  border-color: rgba(76, 175, 80, 0.3);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.wholesale-progress__icon {
+  font-size: 1.5rem;
+}
+
+.wholesale-progress__header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.wholesale-progress__title {
+  font-weight: 600;
+  color: #ffc107;
+  font-size: 0.95rem;
+}
+
+.wholesale-progress--unlocked .wholesale-progress__text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.wholesale-progress--unlocked .wholesale-progress__text strong {
+  color: var(--primary-color, #4CAF50);
+  font-size: 1rem;
+}
+
+.wholesale-progress--unlocked .wholesale-progress__text span {
+  color: #aaa;
+  font-size: 0.85rem;
+}
+
+.wholesale-progress__bar {
+  height: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 0.5rem;
+}
+
+.wholesale-progress__fill {
+  height: 100%;
+  background: linear-gradient(90deg, #ffc107, #ff9800);
+  border-radius: 4px;
+  transition: width 0.5s ease;
+}
+
+.wholesale-progress__hint {
+  font-size: 0.85rem;
+  color: #ccc;
+}
+
+.wholesale-progress__requirements {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.wholesale-progress__req {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  color: #999;
+}
+
+.wholesale-progress__req.met {
+  color: var(--primary-color, #4CAF50);
+}
+
+.wholesale-progress__check {
+  font-size: 1rem;
+}
+
+/* Sticky bar con mayorista */
+.cart-sticky-bar--wholesale {
+  border-color: var(--primary-color, #4CAF50) !important;
+  box-shadow: 0 -4px 20px rgba(76, 175, 80, 0.3) !important;
+}
+
+.cart-sticky-bar--wholesale::before {
+  content: '💰 Mayorista';
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--primary-color, #4CAF50);
+  color: white;
+  padding: 0.25rem 0.75rem;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: 600;
 }

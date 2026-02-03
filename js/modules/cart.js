@@ -1,19 +1,80 @@
 /**
  * 🛒 Módulo Cart - Gestión del Carrito de Compras
  * Maneja la lógica del carrito: agregar, eliminar, actualizar cantidades
+ * Incluye soporte para precios mayoristas
  */
 
 class Cart {
   static STORAGE_KEY = 'pets-store-cart';
   static items = [];
   static listeners = [];
+  static wholesaleConfig = null;
+  static wholesaleUnlocked = false;
 
   /**
    * Inicializar el carrito desde localStorage
    */
   static init() {
     this.loadFromStorage();
+    this.loadWholesaleConfig();
     console.log('🛒 Cart initialized with', this.items.length, 'items');
+  }
+
+  /**
+   * Cargar configuración mayorista
+   */
+  static async loadWholesaleConfig() {
+    try {
+      const response = await fetch(dataLoader.baseUrl + 'wholesale.json');
+      if (response.ok) {
+        this.wholesaleConfig = await response.json();
+        console.log('💰 Wholesale config loaded:', this.wholesaleConfig);
+        this.checkWholesaleStatus();
+      }
+    } catch (error) {
+      console.log('ℹ️ Wholesale config not available');
+      this.wholesaleConfig = null;
+    }
+  }
+
+  /**
+   * Verificar si se cumplen las condiciones mayoristas
+   */
+  static checkWholesaleStatus() {
+    if (!this.wholesaleConfig || !this.wholesaleConfig.enabled) {
+      this.wholesaleUnlocked = false;
+      return { unlocked: false };
+    }
+
+    const total = this.getTotal();
+    const itemCount = this.getItemCount();
+    const config = this.wholesaleConfig;
+
+    let meetsAmount = total >= config.min_amount;
+    let meetsItems = itemCount >= config.min_items;
+
+    // Determinar si está desbloqueado según el modo
+    if (config.condition_mode === 'any') {
+      this.wholesaleUnlocked = meetsAmount || meetsItems;
+    } else {
+      this.wholesaleUnlocked = meetsAmount && meetsItems;
+    }
+
+    return {
+      unlocked: this.wholesaleUnlocked,
+      meetsAmount,
+      meetsItems,
+      remainingAmount: Math.max(0, config.min_amount - total),
+      remainingItems: Math.max(0, config.min_items - itemCount),
+      config
+    };
+  }
+
+  /**
+   * Obtener estado mayorista actual
+   */
+  static getWholesaleStatus() {
+    return this.checkWholesaleStatus();
   }
 
   /**
@@ -63,7 +124,10 @@ class Cart {
    */
   static createCartItem(product, quantity, variant) {
     // Si tiene variante, usar precio de la variante
-    let price, originalPrice, image;
+    let price, originalPrice, image, priceDisplayMode;
+    
+    // Obtener el modo de visualización de precios del producto
+    priceDisplayMode = product.priceDisplayMode || 'discount';
     
     if (variant) {
       // Producto con variante seleccionada
@@ -106,8 +170,9 @@ class Cart {
       id: this.generateItemId(product.id, variant),
       productId: product.id,
       name: itemName,
-      price: price,
-      originalPrice: originalPrice,
+      price: price,                    // Precio mayorista/con descuento
+      originalPrice: originalPrice,    // Precio lista
+      priceDisplayMode: priceDisplayMode, // Modo de precio del producto
       quantity: quantity,
       variant: variant ? {
         id: variant.id,
@@ -207,9 +272,38 @@ class Cart {
 
   /**
    * Calcular total del carrito
+   * Para productos con priceDisplayMode='wholesale', usa originalPrice hasta que se cumplan las condiciones
    */
   static getTotal() {
-    return this.items.reduce((total, item) => total + item.subtotal, 0);
+    const wholesaleUnlocked = this.wholesaleUnlocked;
+    
+    return this.items.reduce((total, item) => {
+      let itemPrice = item.price;
+      
+      // Si el producto es mayorista y NO se cumplen las condiciones, usar precio lista
+      if (item.priceDisplayMode === 'wholesale' && !wholesaleUnlocked) {
+        itemPrice = item.originalPrice || item.price;
+      }
+      
+      return total + (itemPrice * item.quantity);
+    }, 0);
+  }
+
+  /**
+   * Obtener el precio efectivo de un item (considerando condiciones mayoristas)
+   */
+  static getItemEffectivePrice(item) {
+    if (item.priceDisplayMode === 'wholesale' && !this.wholesaleUnlocked) {
+      return item.originalPrice || item.price;
+    }
+    return item.price;
+  }
+
+  /**
+   * Obtener subtotal efectivo de un item
+   */
+  static getItemEffectiveSubtotal(item) {
+    return this.getItemEffectivePrice(item) * item.quantity;
   }
 
   /**
@@ -256,9 +350,10 @@ class Cart {
    * Notificar a todos los listeners
    */
   static notifyListeners() {
+    const wholesaleStatus = this.checkWholesaleStatus();
     this.listeners.forEach(callback => {
       try {
-        callback(this.getItems(), this.getItemCount(), this.getTotal());
+        callback(this.getItems(), this.getItemCount(), this.getTotal(), wholesaleStatus);
       } catch (error) {
         console.error('Error in cart listener:', error);
       }

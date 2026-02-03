@@ -2,33 +2,54 @@
 class ProductPage {
   constructor(dataLoader) {
     this.dataLoader = dataLoader;
+    this.isPreviewMode = false;
+    this.wholesaleConfig = null;
     this.init();
   }
 
   async init() {
     const productId = Utils.getUrlParam('id');
+    const previewMode = Utils.getUrlParam('preview');
+    
     console.log('🔍 ProductPage - Looking for product ID:', productId);
+    console.log('👁️ ProductPage - Preview mode:', previewMode);
     
     if (!productId) {
       this.showError('Producto no encontrado');
       return;
     }
 
-    // Limpiar cache para asegurar datos frescos
-    this.dataLoader.clearCache();
-    console.log('🔄 ProductPage - Cache cleared');
-
-    const products = await this.dataLoader.getProducts();
-    console.log('📦 ProductPage - Total products loaded:', products?.length);
+    // Detectar si estamos en modo preview (viene del admin)
+    this.isPreviewMode = previewMode === 'true' || previewMode === '1';
     
-    if (products) {
-      const productIds = products.map(p => p.id);
-      console.log('🆔 ProductPage - Available product IDs:', productIds);
-      console.log('🔍 ProductPage - Looking for:', productId);
-      console.log('✅ ProductPage - Product exists:', productIds.includes(productId));
-    }
+    // Cargar configuración mayorista
+    await this.loadWholesaleConfig();
+    
+    let product = null;
+    
+    if (this.isPreviewMode) {
+      // En modo preview, cargar desde la API del admin
+      console.log('📡 ProductPage - Loading from admin API (preview mode)');
+      product = await this.loadFromAdminAPI(productId);
+    } else {
+      // Modo normal: cargar desde JSON
+      // Limpiar cache para asegurar datos frescos
+      this.dataLoader.clearCache();
+      console.log('🔄 ProductPage - Cache cleared');
 
-    const product = await this.dataLoader.getProductById(productId);
+      const products = await this.dataLoader.getProducts();
+      console.log('📦 ProductPage - Total products loaded:', products?.length);
+      
+      if (products) {
+        const productIds = products.map(p => p.id);
+        console.log('🆔 ProductPage - Available product IDs:', productIds);
+        console.log('🔍 ProductPage - Looking for:', productId);
+        console.log('✅ ProductPage - Product exists:', productIds.includes(productId));
+      }
+
+      product = await this.dataLoader.getProductById(productId);
+    }
+    
     console.log('🎯 ProductPage - Found product:', product);
     
     if (!product) {
@@ -40,6 +61,89 @@ class ProductPage {
     this.updateSEO(product);
     
     this.render(product);
+  }
+
+  /**
+   * Carga la configuración mayorista
+   */
+  async loadWholesaleConfig() {
+    try {
+      const config = await this.dataLoader.getWholesaleConfig();
+      this.wholesaleConfig = config;
+      window.wholesaleConfig = config; // Para acceso global
+      console.log('💰 Wholesale config loaded:', config);
+    } catch (error) {
+      console.error('Error loading wholesale config:', error);
+      this.wholesaleConfig = { enabled: false, min_amount: 50000, min_items: 5 };
+    }
+  }
+
+  /**
+   * Genera el texto de condiciones mayoristas según la configuración
+   */
+  getWholesaleConditionText() {
+    const config = this.wholesaleConfig || { min_amount: 50000, min_items: 5, condition_mode: 'any' };
+    const minItems = config.min_items || 5;
+    const minAmount = config.min_amount || 50000;
+    const mode = config.condition_mode || 'any';
+    
+    const itemsText = `+${minItems} artículos`;
+    const amountText = `+${Utils.formatPrice(minAmount)}`;
+    
+    if (mode === 'items') {
+      return `Comprando ${itemsText}`;
+    } else if (mode === 'amount') {
+      return `Comprando ${amountText}`;
+    } else {
+      // mode === 'any' o 'both'
+      const connector = mode === 'both' ? 'y' : 'o';
+      return `Comprando ${itemsText} ${connector} ${amountText}`;
+    }
+  }
+
+  /**
+   * Carga el producto desde la API del admin (modo preview)
+   */
+  async loadFromAdminAPI(productId) {
+    try {
+      // Intentar cargar desde el admin server (puerto 3000)
+      const adminUrl = `/api/productos/${productId}/preview`;
+      console.log('📡 Fetching from:', adminUrl);
+      
+      const response = await fetch(adminUrl);
+      
+      if (!response.ok) {
+        console.error('❌ Error loading from admin API:', response.status);
+        return null;
+      }
+      
+      const product = await response.json();
+      console.log('✅ Product loaded from admin API:', product);
+      console.log('📊 priceDisplayMode:', product.priceDisplayMode);
+      console.log('💰 price:', product.price);
+      console.log('💰 originalPrice:', product.originalPrice);
+      return product;
+    } catch (error) {
+      console.error('❌ Error connecting to admin API:', error);
+      // Si falla la conexión al admin, mostrar mensaje
+      this.showPreviewError();
+      return null;
+    }
+  }
+
+  /**
+   * Muestra error específico de preview
+   */
+  showPreviewError() {
+    const container = document.getElementById('product-container');
+    container.innerHTML = `
+      <div class="product__error">
+        <h2>⚠️ Error de Vista Previa</h2>
+        <p>No se pudo conectar con el servidor del admin.</p>
+        <p>Asegúrate de que el servidor esté corriendo en el puerto 3000.</p>
+        <a href="index.html" class="btn btn--primary">Volver al inicio</a>
+      </div>
+    `;
   }
 
   // Actualizar meta tags para SEO
@@ -137,11 +241,28 @@ class ProductPage {
     // Determinar si el producto tiene variantes
     const hasVariants = product.hasVariants && product.variants;
     
-    // Si tiene variantes, usar el precio base
-    const displayPrice = hasVariants ? product.basePrice : product.price;
-    const displayOriginalPrice = hasVariants ? product.baseOriginalPrice : product.originalPrice;
+    // Si tiene variantes, usar el precio base (con fallback a price/originalPrice)
+    const displayPrice = hasVariants ? (product.basePrice || product.price) : product.price;
+    const displayOriginalPrice = hasVariants ? (product.baseOriginalPrice || product.originalPrice) : product.originalPrice;
     
-    const discount = product.discount ? `<span class="product__discount-badge">-${product.discount}%</span>` : '';
+    // Determinar modo de visualización de precios
+    const priceDisplayMode = product.priceDisplayMode || 'discount';
+    
+    // Verificar si tiene descuento real (originalPrice > price)
+    const hasDiscount = displayOriginalPrice && displayOriginalPrice > displayPrice;
+    
+    // DEBUG: Log de precios
+    console.log('🎨 RENDER - priceDisplayMode:', priceDisplayMode);
+    console.log('🎨 RENDER - displayPrice:', displayPrice);
+    console.log('🎨 RENDER - displayOriginalPrice:', displayOriginalPrice);
+    console.log('🎨 RENDER - hasDiscount:', hasDiscount);
+    console.log('🎨 RENDER - Condición wholesale:', priceDisplayMode === 'wholesale' && hasDiscount);
+    
+    // Banner de preview deshabilitado
+    const previewBanner = '';
+    
+    // Solo mostrar badge de descuento en modo 'discount' y si tiene descuento real
+    const discount = product.discount && priceDisplayMode !== 'wholesale' && hasDiscount ? `<span class="product__discount-badge">-${product.discount}%</span>` : '';
     
     // Video de marketing solo se muestra en la portada, no en la página de producto
 
@@ -193,6 +314,7 @@ class ProductPage {
     }
 
     container.innerHTML = `
+      ${previewBanner}
       <div class="product__breadcrumb">
         <a href="index.html">Home</a> / 
         ${product.category ? `<a href="search.html?q=${product.category}">${product.category}</a> / ` : ''}
@@ -219,13 +341,38 @@ class ProductPage {
           </div>
 
           <div class="product__price-section">
-            <div class="product__price">
-              <span class="product__price-current">${Utils.formatPrice(displayPrice)}</span>
-              ${displayOriginalPrice && displayOriginalPrice > displayPrice ? `
-                <span class="product__price-original">${Utils.formatPrice(displayOriginalPrice)}</span>
-                <span class="product__savings">Ahorras ${Utils.formatPrice(displayOriginalPrice - displayPrice)}</span>
-              ` : ''}
-            </div>
+            ${priceDisplayMode === 'wholesale' && hasDiscount ? `
+              <div class="product__price product__price--wholesale-compact">
+                <div class="product__price-comparison">
+                  <div class="product__price-item product__price-item--list">
+                    <span class="product__price-value product__price-list-value">${Utils.formatPrice(displayOriginalPrice)}</span>
+                    <span class="product__price-label">Lista</span>
+                  </div>
+                  <span class="product__price-arrow">→</span>
+                  <div class="product__price-item product__price-item--wholesale">
+                    <span class="product__price-value product__price-wholesale-value">${Utils.formatPrice(displayPrice)}</span>
+                    <span class="product__price-label">Mayorista</span>
+                  </div>
+                </div>
+                <div class="product__wholesale-footer">
+                  <span class="product__savings">✅ Ahorras ${Utils.formatPrice(displayOriginalPrice - displayPrice)}</span>
+                  <span class="product__wholesale-separator">|</span>
+                  <span class="product__wholesale-conditions">💡 ${this.getWholesaleConditionText()}</span>
+                </div>
+              </div>
+            ` : priceDisplayMode === 'wholesale' && !hasDiscount ? `
+              <div class="product__price">
+                <span class="product__price-current">${Utils.formatPrice(displayPrice)}</span>
+              </div>
+            ` : `
+              <div class="product__price">
+                <span class="product__price-current">${Utils.formatPrice(displayPrice)}</span>
+                ${hasDiscount ? `
+                  <span class="product__price-original">${Utils.formatPrice(displayOriginalPrice)}</span>
+                  <span class="product__savings">Ahorras ${Utils.formatPrice(displayOriginalPrice - displayPrice)}</span>
+                ` : ''}
+              </div>
+            `}
           </div>
 
           <p class="product__description">${product.longDescription}</p>

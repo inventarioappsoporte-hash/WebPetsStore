@@ -244,3 +244,37 @@
     margin-top: 0.5rem;
   }
 }
+
+
+/* Modo Mayorista en tarjetas de búsqueda */
+.search-card__price--wholesale {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-bottom: var(--spacing-sm);
+}
+
+.search-card__price-row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.search-card__price-label {
+  font-size: 0.75rem;
+  color: var(--color-text-secondary);
+}
+
+.search-card__price-value {
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.search-card__price-highlight {
+  color: var(--color-success) !important;
+  font-size: 1rem !important;
+}
+
+.search-card__price--wholesale .search-card__price-row:last-child .search-card__price-label {
+  color: var(--color-success);
+}

@@ -174,33 +174,66 @@ class VariantSelector {
     
     const { price, originalPrice, images } = this.selectedVariant;
     
-    // Actualizar precio
-    const priceElement = document.querySelector('.product__price-current');
-    if (priceElement) {
-      priceElement.textContent = Utils.formatPrice(price);
-    }
+    // Determinar el modo de visualización de precios del producto
+    const priceDisplayMode = this.product.priceDisplayMode || 'discount';
     
-    const originalPriceElement = document.querySelector('.product__price-original');
-    const savingsElement = document.querySelector('.product__savings');
+    // Verificar si tiene descuento real
+    const hasDiscount = originalPrice && originalPrice > price;
     
-    // Solo mostrar precio original y ahorro si hay descuento real
-    if (originalPrice && originalPrice > price) {
-      if (originalPriceElement) {
-        originalPriceElement.textContent = Utils.formatPrice(originalPrice);
-        originalPriceElement.style.display = '';
+    // Actualizar precios según el modo
+    if (priceDisplayMode === 'wholesale' && hasDiscount) {
+      // Modo mayorista CON descuento: actualizar Precio Lista y Precio Mayorista
+      const listPriceElement = document.querySelector('.product__price-list-value');
+      const wholesalePriceElement = document.querySelector('.product__price-wholesale-value');
+      const savingsElement = document.querySelector('.product__wholesale-footer .product__savings');
+      
+      if (listPriceElement) {
+        listPriceElement.textContent = Utils.formatPrice(originalPrice);
       }
+      
+      if (wholesalePriceElement) {
+        wholesalePriceElement.textContent = Utils.formatPrice(price);
+      }
+      
       if (savingsElement) {
         const savings = originalPrice - price;
-        savingsElement.textContent = `Ahorras ${Utils.formatPrice(savings)}`;
-        savingsElement.style.display = '';
+        savingsElement.textContent = `✅ Ahorras ${Utils.formatPrice(savings)}`;
+      }
+    } else if (priceDisplayMode === 'wholesale' && !hasDiscount) {
+      // Modo mayorista SIN descuento: solo actualizar precio actual
+      const priceElement = document.querySelector('.product__price-current');
+      if (priceElement) {
+        priceElement.textContent = Utils.formatPrice(price);
       }
     } else {
-      // Ocultar si no hay descuento
-      if (originalPriceElement) {
-        originalPriceElement.style.display = 'none';
+      // Modo descuento: actualizar precio actual y original
+      const priceElement = document.querySelector('.product__price-current');
+      if (priceElement) {
+        priceElement.textContent = Utils.formatPrice(price);
       }
-      if (savingsElement) {
-        savingsElement.style.display = 'none';
+      
+      const originalPriceElement = document.querySelector('.product__price-original');
+      const savingsElement = document.querySelector('.product__savings');
+      
+      // Solo mostrar precio original y ahorro si hay descuento real
+      if (hasDiscount) {
+        if (originalPriceElement) {
+          originalPriceElement.textContent = Utils.formatPrice(originalPrice);
+          originalPriceElement.style.display = '';
+        }
+        if (savingsElement) {
+          const savings = originalPrice - price;
+          savingsElement.textContent = `Ahorras ${Utils.formatPrice(savings)}`;
+          savingsElement.style.display = '';
+        }
+      } else {
+        // Ocultar si no hay descuento
+        if (originalPriceElement) {
+          originalPriceElement.style.display = 'none';
+        }
+        if (savingsElement) {
+          savingsElement.style.display = 'none';
+        }
       }
     }
     

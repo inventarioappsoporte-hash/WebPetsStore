@@ -349,3 +349,247 @@
     font-size: var(--font-size-xl);
   }
 }
+
+
+/* =====================================================
+   MODO MAYORISTA - Precios Lista/Mayorista (Diseño Compacto)
+   ===================================================== */
+
+/* Contenedor principal del precio mayorista compacto */
+.product__price--wholesale-compact {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+/* Comparación de precios en línea horizontal */
+.product__price-comparison {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-lg);
+}
+
+/* Cada item de precio (Lista y Mayorista) */
+.product__price-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.product__price-item .product__price-value {
+  font-size: var(--font-size-2xl);
+  font-weight: bold;
+}
+
+.product__price-item .product__price-label {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Precio Lista - más tenue */
+.product__price-item--list .product__price-value {
+  color: var(--color-text-secondary);
+  opacity: 0.7;
+}
+
+/* Precio Mayorista - destacado */
+.product__price-item--wholesale .product__price-value {
+  color: var(--color-success);
+  font-size: var(--font-size-3xl);
+}
+
+.product__price-item--wholesale .product__price-label {
+  color: var(--color-success);
+}
+
+/* Flecha entre precios */
+.product__price-arrow {
+  font-size: var(--font-size-xl);
+  color: var(--color-text-secondary);
+  opacity: 0.5;
+}
+
+/* Footer con ahorro y condiciones */
+.product__wholesale-footer {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  flex-wrap: wrap;
+  padding-top: var(--spacing-sm);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.product__wholesale-separator {
+  color: var(--color-text-secondary);
+  opacity: 0.5;
+}
+
+.product__wholesale-conditions {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+}
+
+/* Responsive para móviles */
+@media (max-width: 480px) {
+  .product__price-comparison {
+    gap: var(--spacing-md);
+  }
+  
+  .product__price-item .product__price-value {
+    font-size: var(--font-size-xl);
+  }
+  
+  .product__price-item--wholesale .product__price-value {
+    font-size: var(--font-size-2xl);
+  }
+  
+  .product__wholesale-footer {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--spacing-xs);
+  }
+  
+  .product__wholesale-separator {
+    display: none;
+  }
+}
+
+/* Precios en modo mayorista (diseño anterior - mantener compatibilidad) */
+.product__price--wholesale {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+.product__price-row {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+}
+
+.product__price-row .product__price-label {
+  font-size: var(--font-size-base);
+  color: var(--color-text-secondary);
+  min-width: 120px;
+}
+
+.product__price-list-value {
+  font-size: var(--font-size-lg);
+  color: var(--color-text);
+  opacity: 0.8;
+}
+
+.product__price-row--highlight {
+  background: rgba(76, 175, 80, 0.1);
+  padding: var(--spacing-sm) var(--spacing-md);
+  border-radius: var(--radius-md);
+  border-left: 3px solid var(--color-success);
+}
+
+.product__price-row--highlight .product__price-label {
+  color: var(--color-success);
+  font-weight: 600;
+}
+
+.product__price-wholesale-value {
+  font-size: var(--font-size-2xl);
+  font-weight: bold;
+  color: var(--color-success);
+}
+
+.product__price--wholesale .product__savings {
+  margin-top: var(--spacing-xs);
+}
+
+.product__wholesale-footer {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--spacing-sm);
+  margin-top: var(--spacing-md);
+  padding: var(--spacing-sm) var(--spacing-md);
+  background: rgba(76, 175, 80, 0.08);
+  border-radius: var(--radius-md);
+}
+
+.product__wholesale-footer .product__savings {
+  background: transparent;
+  color: var(--color-success);
+  padding: 0;
+  font-weight: 600;
+  font-size: var(--font-size-sm);
+}
+
+.product__wholesale-separator {
+  color: var(--color-text-secondary);
+  opacity: 0.5;
+}
+
+.product__wholesale-footer .product__wholesale-conditions {
+  background: transparent;
+  border: none;
+  padding: 0;
+  color: var(--color-text-secondary);
+  font-size: var(--font-size-sm);
+}
+
+.product__wholesale-info {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xs);
+  margin-top: var(--spacing-sm);
+}
+
+.product__wholesale-conditions {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+  padding: var(--spacing-xs) var(--spacing-sm);
+  background: rgba(255, 152, 0, 0.1);
+  border-radius: var(--radius-sm);
+  border-left: 3px solid #ff9800;
+}
+
+.product__wholesale-note {
+  margin-top: var(--spacing-sm);
+  padding: var(--spacing-sm) var(--spacing-md);
+  background: rgba(76, 175, 80, 0.1);
+  border-left: 3px solid var(--color-success);
+  border-radius: var(--radius-sm);
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+}
+
+/* Card en modo mayorista */
+.card__price--wholesale {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.card__price-list,
+.card__price-wholesale {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.card__price-label {
+  font-size: 0.75rem;
+  color: var(--color-text-secondary);
+}
+
+.card__price-value {
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.card__price-highlight {
+  color: var(--color-success) !important;
+  font-size: 1rem !important;
+}
+
+.card__price-wholesale .card__price-label {
+  color: var(--color-success);
+}

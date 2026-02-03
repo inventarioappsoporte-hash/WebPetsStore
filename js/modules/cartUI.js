@@ -19,11 +19,11 @@ class CartUI {
     this.attachEventListeners();
     
     // Registrar listener para actualizaciones del carrito
-    Cart.addListener((items, count, total) => {
+    Cart.addListener((items, count, total, wholesaleStatus) => {
       this.updateBadge(count);
-      this.updateStickyBar(count, total);
+      this.updateStickyBar(count, total, wholesaleStatus);
       if (this.isOpen) {
-        this.renderCartItems(items, total);
+        this.renderCartItems(items, total, wholesaleStatus);
       }
     });
 
@@ -46,7 +46,7 @@ class CartUI {
 
     // Actualizar badge inicial
     this.updateBadge(Cart.getItemCount());
-    this.updateStickyBar(Cart.getItemCount(), Cart.getTotal());
+    this.updateStickyBar(Cart.getItemCount(), Cart.getTotal(), Cart.getWholesaleStatus());
     
     console.log('🎨 CartUI initialized');
   }
@@ -71,6 +71,7 @@ class CartUI {
         </div>
         
         <div class="cart-modal__footer">
+          <div id="wholesale-progress-container"></div>
           <div class="cart-modal__totals">
             <div class="cart-modal__subtotal">
               <span>Subtotal:</span>
@@ -271,10 +272,16 @@ class CartUI {
   /**
    * Renderizar items del carrito
    */
-  static renderCartItems(items, total) {
+  static renderCartItems(items, total, wholesaleStatus = null) {
     const container = document.getElementById('cart-items-container');
+    const wholesaleContainer = document.getElementById('wholesale-progress-container');
     
     if (!container) return;
+
+    // Renderizar progreso mayorista
+    if (wholesaleContainer) {
+      wholesaleContainer.innerHTML = this.renderWholesaleProgress(wholesaleStatus);
+    }
 
     if (items.length === 0) {
       container.innerHTML = `
@@ -295,47 +302,85 @@ class CartUI {
       return;
     }
 
-    container.innerHTML = items.map(item => `
-      <div class="cart-item" data-item-id="${item.id}">
-        <div class="cart-item__image">
-          <img src="${item.image}" alt="${item.name}" onerror="this.src='assets/images/placeholder.svg'">
-        </div>
-        
-        <div class="cart-item__details">
-          <h4>${item.name}</h4>
-          ${item.variant ? `
-            <p class="cart-item__variant">
-              ${Object.entries(item.variant.attributes)
-                .map(([k, v]) => `${k}: ${v}`)
-                .join(', ')}
-            </p>
-          ` : ''}
+    container.innerHTML = items.map(item => {
+      // Obtener precio efectivo según condiciones mayoristas
+      const effectivePrice = Cart.getItemEffectivePrice(item);
+      const effectiveSubtotal = Cart.getItemEffectiveSubtotal(item);
+      const isWholesaleItem = item.priceDisplayMode === 'wholesale';
+      const wholesaleUnlocked = wholesaleStatus?.unlocked || false;
+      
+      // Determinar qué precios mostrar
+      // Verificar si tiene descuento real
+      const hasDiscount = item.originalPrice && item.originalPrice > item.price;
+      
+      let priceHtml = '';
+      if (isWholesaleItem && hasDiscount) {
+        if (wholesaleUnlocked) {
+          // Mayorista desbloqueado: mostrar precio lista tachado y precio mayorista
+          priceHtml = `
+            <span class="cart-item__original-price">${this.formatPrice(item.originalPrice)}</span>
+            <span class="cart-item__current-price cart-item__wholesale-price">${this.formatPrice(item.price)}</span>
+          `;
+        } else {
+          // Mayorista NO desbloqueado: mostrar precio lista (sin tachar) y precio mayorista como referencia
+          priceHtml = `
+            <span class="cart-item__current-price">${this.formatPrice(item.originalPrice)}</span>
+            <span class="cart-item__wholesale-hint">(Mayorista: ${this.formatPrice(item.price)})</span>
+          `;
+        }
+      } else if (isWholesaleItem && !hasDiscount) {
+        // Producto mayorista SIN descuento: solo mostrar precio actual
+        priceHtml = `<span class="cart-item__current-price">${this.formatPrice(effectivePrice)}</span>`;
+      } else if (hasDiscount) {
+        // Producto con descuento normal
+        priceHtml = `
+          <span class="cart-item__original-price">${this.formatPrice(item.originalPrice)}</span>
+          <span class="cart-item__current-price">${this.formatPrice(item.price)}</span>
+        `;
+      } else {
+        // Precio normal sin descuento
+        priceHtml = `<span class="cart-item__current-price">${this.formatPrice(effectivePrice)}</span>`;
+      }
+      
+      return `
+        <div class="cart-item" data-item-id="${item.id}">
+          <div class="cart-item__image">
+            <img src="${item.image}" alt="${item.name}" onerror="this.src='assets/images/placeholder.svg'">
+          </div>
           
-          <div class="cart-item__price">
-            ${item.originalPrice > item.price ? `
-              <span class="cart-item__original-price">${this.formatPrice(item.originalPrice)}</span>
+          <div class="cart-item__details">
+            <h4>${item.name}</h4>
+            ${item.variant ? `
+              <p class="cart-item__variant">
+                ${Object.entries(item.variant.attributes)
+                  .map(([k, v]) => `${k}: ${v}`)
+                  .join(', ')}
+              </p>
             ` : ''}
-            <span class="cart-item__current-price">${this.formatPrice(item.price)}</span>
-          </div>
-        </div>
-        
-        <div class="cart-item__controls">
-          <div class="cart-item__quantity">
-            <button onclick="CartUI.decrementQuantity('${item.id}')">−</button>
-            <span>${item.quantity}</span>
-            <button onclick="CartUI.incrementQuantity('${item.id}')">+</button>
+            
+            <div class="cart-item__price">
+              ${priceHtml}
+            </div>
           </div>
           
-          <div class="cart-item__subtotal">
-            ${this.formatPrice(item.subtotal)}
+          <div class="cart-item__controls">
+            <div class="cart-item__quantity">
+              <button onclick="CartUI.decrementQuantity('${item.id}')">−</button>
+              <span>${item.quantity}</span>
+              <button onclick="CartUI.incrementQuantity('${item.id}')">+</button>
+            </div>
+            
+            <div class="cart-item__subtotal">
+              ${this.formatPrice(effectiveSubtotal)}
+            </div>
+            
+            <button class="cart-item__remove" onclick="CartUI.removeItem('${item.id}')">
+              🗑️
+            </button>
           </div>
-          
-          <button class="cart-item__remove" onclick="CartUI.removeItem('${item.id}')">
-            🗑️
-          </button>
         </div>
-      </div>
-    `).join('');
+      `;
+    }).join('');
 
     this.updateTotals(total);
   }
@@ -424,10 +469,93 @@ class CartUI {
       
       const items = Cart.getItems();
       const total = Cart.getTotal();
-      this.renderCartItems(items, total);
+      const wholesaleStatus = Cart.getWholesaleStatus();
+      this.renderCartItems(items, total, wholesaleStatus);
       
       document.body.style.overflow = 'hidden';
     }
+  }
+
+  /**
+   * Renderizar progreso hacia precio mayorista
+   */
+  static renderWholesaleProgress(status) {
+    if (!status || !status.config || !status.config.enabled) {
+      return '';
+    }
+
+    const config = status.config;
+    
+    if (status.unlocked) {
+      return `
+        <div class="wholesale-progress wholesale-progress--unlocked">
+          <div class="wholesale-progress__icon">🎉</div>
+          <div class="wholesale-progress__text">
+            <strong>¡Precio mayorista desbloqueado!</strong>
+            <span>Estás comprando a precio especial</span>
+          </div>
+        </div>
+      `;
+    }
+
+    // Calcular progreso
+    const total = Cart.getTotal();
+    const itemCount = Cart.getItemCount();
+    
+    let progressHtml = '';
+    
+    if (config.condition_mode === 'any') {
+      // Mostrar la opción más cercana a cumplirse
+      const amountProgress = Math.min(100, (total / config.min_amount) * 100);
+      const itemsProgress = Math.min(100, (itemCount / config.min_items) * 100);
+      
+      if (amountProgress >= itemsProgress) {
+        progressHtml = `
+          <div class="wholesale-progress__bar">
+            <div class="wholesale-progress__fill" style="width: ${amountProgress}%"></div>
+          </div>
+          <span class="wholesale-progress__hint">
+            Te faltan $${this.formatPrice(status.remainingAmount)} para precio mayorista
+          </span>
+        `;
+      } else {
+        progressHtml = `
+          <div class="wholesale-progress__bar">
+            <div class="wholesale-progress__fill" style="width: ${itemsProgress}%"></div>
+          </div>
+          <span class="wholesale-progress__hint">
+            Agrega ${status.remainingItems} producto${status.remainingItems > 1 ? 's' : ''} más para precio mayorista
+          </span>
+        `;
+      }
+    } else {
+      // Modo AND: mostrar ambos requisitos
+      const amountProgress = Math.min(100, (total / config.min_amount) * 100);
+      const itemsProgress = Math.min(100, (itemCount / config.min_items) * 100);
+      
+      progressHtml = `
+        <div class="wholesale-progress__requirements">
+          <div class="wholesale-progress__req ${status.meetsAmount ? 'met' : ''}">
+            <span class="wholesale-progress__check">${status.meetsAmount ? '✓' : '○'}</span>
+            <span>Monto: $${this.formatPrice(total)} / $${this.formatPrice(config.min_amount)}</span>
+          </div>
+          <div class="wholesale-progress__req ${status.meetsItems ? 'met' : ''}">
+            <span class="wholesale-progress__check">${status.meetsItems ? '✓' : '○'}</span>
+            <span>Productos: ${itemCount} / ${config.min_items}</span>
+          </div>
+        </div>
+      `;
+    }
+
+    return `
+      <div class="wholesale-progress">
+        <div class="wholesale-progress__header">
+          <span class="wholesale-progress__icon">💰</span>
+          <span class="wholesale-progress__title">Precio Mayorista</span>
+        </div>
+        ${progressHtml}
+      </div>
+    `;
   }
 
   /**

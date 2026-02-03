@@ -295,6 +295,29 @@
   font-weight: 600;
 }
 
+/* Modo Mayorista en header search */
+.header__search-item-price--wholesale {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: var(--font-size-sm);
+}
+
+.header__search-price-list {
+  color: var(--color-text-secondary);
+  font-weight: 500;
+}
+
+.header__search-price-arrow {
+  color: var(--color-text-secondary);
+  font-size: 0.8rem;
+}
+
+.header__search-price-wholesale {
+  color: var(--color-success);
+  font-weight: 600;
+}
+
 .header__search-no-results {
   padding: var(--spacing-lg);
   text-align: center;
