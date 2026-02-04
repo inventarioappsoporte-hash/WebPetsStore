@@ -1610,8 +1610,24 @@
             }
         });
         
-        // Verificar si el usuario tiene rol de admin en Firestore
+        // Lista de emails admin hardcodeados (temporal mientras se configura Firestore)
+        const ADMIN_EMAILS = [
+            'admin@petsstore.com'
+            // SOLO admin@petsstore.com tiene acceso
+            // Cuando Firestore funcione, se verificará el campo role: "admin"
+        ];
+        
+        // Verificar si el usuario tiene rol de admin
         async function checkAdminRole(user) {
+            console.log('🔍 Verificando rol para:', user.email);
+            
+            // 1. Primero verificar lista hardcodeada (funciona sin Firestore)
+            if (ADMIN_EMAILS.includes(user.email)) {
+                console.log('✅ Usuario en lista de admins hardcodeada');
+                return true;
+            }
+            
+            // 2. Luego intentar verificar en Firestore
             try {
                 const STORE_ID = 'petsstore-b0516';
                 const userDocRef = doc(db, 'tiendas', STORE_ID, 'users', user.uid);
@@ -1619,18 +1635,20 @@
                 
                 if (userDoc.exists()) {
                     const userData = userDoc.data();
-                    console.log('📋 Datos del usuario:', userData);
+                    console.log('📋 Datos Firestore:', userData);
                     
                     if (userData.role === 'admin') {
-                        console.log('✅ Usuario es ADMIN');
+                        console.log('✅ Usuario es ADMIN en Firestore');
                         return true;
                     }
                 }
                 
-                console.log('❌ Usuario NO tiene rol admin en Firestore');
+                console.log('❌ Usuario NO es admin');
                 return false;
             } catch (error) {
-                console.error('Error verificando rol:', error);
+                // Si hay error de cuota, solo usar lista hardcodeada
+                console.warn('⚠️ Error Firestore (posible cuota):', error.message);
+                console.log('❌ Usuario no está en lista hardcodeada');
                 return false;
             }
         }
