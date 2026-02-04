@@ -381,7 +381,8 @@ class SearchEngine {
     // 1. Intentar con basePrice si tiene variantes
     if (product.hasVariants && product.basePrice) {
       displayPrice = product.basePrice;
-      displayOriginalPrice = product.baseOriginalPrice;
+      // Buscar originalPrice en baseOriginalPrice o en originalPrice directo
+      displayOriginalPrice = product.baseOriginalPrice || product.originalPrice;
     }
     
     // 2. Si no, intentar con price directo
