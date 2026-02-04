@@ -1391,8 +1391,34 @@
             .inventory-search { width: 100%; }
             .inventory-filters { width: 100%; overflow-x: auto; }
             .inventory-grid { grid-template-columns: 1fr; }
-            .inventory-card { padding: 0.75rem; }
-            .inventory-card-image { width: 50px; height: 50px; }
+            .inventory-card { 
+                padding: 0.75rem;
+                flex-wrap: nowrap;
+            }
+            .inventory-card-image { width: 50px; height: 50px; flex-shrink: 0; }
+            .inventory-card-info { 
+                flex: 1; 
+                min-width: 0;
+                margin-right: 0.5rem;
+            }
+            .inventory-card-name { 
+                font-size: 0.8125rem;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+            .inventory-card-variant { font-size: 0.6875rem; }
+            .inventory-card-category { font-size: 0.625rem; }
+            .inventory-card-stock {
+                flex-shrink: 0;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                min-width: 70px;
+            }
+            .stock-value { font-size: 1.25rem; margin-bottom: 0.25rem; }
+            .stock-controls { display: flex; gap: 0.25rem; }
+            .stock-btn { width: 28px; height: 28px; font-size: 1rem; }
         }
     </style>
 </head>
