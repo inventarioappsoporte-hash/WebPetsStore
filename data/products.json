@@ -18086,9 +18086,9 @@
   {
     "id": "prod_559",
     "name": "Vestido Fantasía",
-    "category": "ropa",
+    "category": null,
     "subcategory": "Ropa",
-    "price": 5652.5,
+    "price": 4918,
     "stock": 70,
     "rating": 4,
     "reviews": 195,
@@ -18119,18 +18119,15 @@
     },
     "shipping": {
       "free": false,
-      "days": 3
+      "days": "3"
     },
     "badge": "👗 Vestido",
     "brand": "Sin marca",
     "sku": "VES022",
-    "features": [
-      "Diseño de fantasía elegante",
-      "Material suave y cómodo",
-      "Fácil de poner",
-      "Ideal para ocasiones especiales"
-    ],
-    "basePrice": 5652.5,
+    "features": [],
+    "originalPrice": 8197,
+    "discount": 40,
+    "basePrice": 4918,
     "priceDisplayMode": "wholesale",
     "variants": {
       "attributes": [
@@ -18146,7 +18143,7 @@
           "attributes": {
             "Talle": "1"
           },
-          "price": 5652.5,
+          "price": 4918,
           "stock": 10,
           "available": true,
           "sku": "VES022-1",
@@ -18163,7 +18160,7 @@
           "attributes": {
             "Talle": "2"
           },
-          "price": 5652.5,
+          "price": 4918,
           "stock": 10,
           "available": true,
           "sku": "VES022-2",
@@ -18180,7 +18177,7 @@
           "attributes": {
             "Talle": "3"
           },
-          "price": 6217.75,
+          "price": 5410,
           "stock": 10,
           "available": true,
           "sku": "VES022-3",
@@ -18197,7 +18194,7 @@
           "attributes": {
             "Talle": "4"
           },
-          "price": 6217.75,
+          "price": 5410,
           "stock": 10,
           "available": true,
           "sku": "VES022-4",
@@ -18214,7 +18211,7 @@
           "attributes": {
             "Talle": "5"
           },
-          "price": 7348.25,
+          "price": 6393,
           "stock": 10,
           "available": true,
           "sku": "VES022-5",
@@ -18231,7 +18228,7 @@
           "attributes": {
             "Talle": "6"
           },
-          "price": 7348.25,
+          "price": 6393,
           "stock": 10,
           "available": true,
           "sku": "VES022-6",
@@ -18248,7 +18245,7 @@
           "attributes": {
             "Talle": "7"
           },
-          "price": 7348.25,
+          "price": 6393,
           "stock": 10,
           "available": true,
           "sku": "VES022-7",
