@@ -34,9 +34,36 @@ class App {
       // Inicializar botones del hero (DESPUÉS de renderizar con delay más largo)
       setTimeout(() => this.initHeroButtons(), 500);
 
+      // Inicializar stock desde Firebase (en segundo plano)
+      this.initFirebaseStock();
+
       console.log('✅ Pets Store cargado correctamente');
     } catch (error) {
       console.error('❌ Error inicializando la aplicación:', error);
+    }
+  }
+
+  /**
+   * Inicializar stock desde Firebase
+   */
+  async initFirebaseStock() {
+    try {
+      if (typeof FirebaseStock !== 'undefined') {
+        await FirebaseStock.init();
+        await FirebaseStock.loadAllStock();
+        
+        // Aplicar indicadores de stock a productos visibles
+        FirebaseStock.applyStockIndicators();
+        
+        // Escuchar cambios en tiempo real
+        FirebaseStock.listenToStockChanges(() => {
+          FirebaseStock.applyStockIndicators();
+        });
+        
+        console.log('📦 Stock de Firebase inicializado');
+      }
+    } catch (error) {
+      console.warn('⚠️ No se pudo cargar stock de Firebase:', error.message);
     }
   }
 

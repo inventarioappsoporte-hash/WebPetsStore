@@ -1229,6 +1229,171 @@
             color: var(--text-muted);
             font-size: 0.875rem;
         }
+        
+        /* ========== INVENTORY PAGE ========== */
+        .inventory-toolbar {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 1rem;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+        .inventory-search {
+            flex: 1;
+            min-width: 200px;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: var(--bg);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 0.5rem 1rem;
+        }
+        .inventory-search input {
+            flex: 1;
+            background: transparent;
+            border: none;
+            color: var(--text);
+            font-size: 0.875rem;
+            outline: none;
+        }
+        .inventory-filters {
+            display: flex;
+            gap: 0.5rem;
+        }
+        .inventory-filter-btn {
+            padding: 0.5rem 1rem;
+            background: var(--bg);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            color: var(--text-muted);
+            font-size: 0.8125rem;
+            cursor: pointer;
+            transition: all 0.15s;
+        }
+        .inventory-filter-btn:hover { border-color: var(--primary); }
+        .inventory-filter-btn.active { background: var(--primary); border-color: var(--primary); color: white; }
+        .inventory-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 1rem;
+        }
+        .inventory-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 1rem;
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+            transition: all 0.15s;
+        }
+        .inventory-card:hover { border-color: var(--primary); }
+        .inventory-card.out-of-stock { border-color: var(--danger); background: rgba(239, 68, 68, 0.1); }
+        .inventory-card.low-stock { border-color: var(--warning); background: rgba(245, 158, 11, 0.1); }
+        .inventory-card-image {
+            width: 60px;
+            height: 60px;
+            border-radius: 8px;
+            object-fit: cover;
+            background: var(--bg);
+            flex-shrink: 0;
+        }
+        .inventory-card-info {
+            flex: 1;
+            min-width: 0;
+        }
+        .inventory-card-name {
+            font-weight: 600;
+            font-size: 0.875rem;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            margin-bottom: 0.25rem;
+        }
+        .inventory-card-variant {
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            margin-bottom: 0.25rem;
+        }
+        .inventory-card-category {
+            font-size: 0.6875rem;
+            color: var(--text-muted);
+        }
+        .inventory-card-stock {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.25rem;
+        }
+        .stock-value {
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+        .stock-value.out { color: var(--danger); }
+        .stock-value.low { color: var(--warning); }
+        .stock-value.ok { color: var(--success); }
+        .stock-controls {
+            display: flex;
+            gap: 0.25rem;
+        }
+        .stock-btn {
+            width: 28px;
+            height: 28px;
+            border-radius: 6px;
+            border: 1px solid var(--border);
+            background: var(--bg);
+            color: var(--text);
+            font-size: 1rem;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.15s;
+        }
+        .stock-btn:hover { background: var(--primary); border-color: var(--primary); }
+        .stock-btn.minus:hover { background: var(--danger); border-color: var(--danger); }
+        .inventory-sync-btn {
+            padding: 0.5rem 1rem;
+            background: var(--primary);
+            border: none;
+            border-radius: 8px;
+            color: white;
+            font-size: 0.875rem;
+            font-weight: 500;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        .inventory-sync-btn:hover { opacity: 0.9; }
+        .inventory-sync-btn:disabled { opacity: 0.5; cursor: not-allowed; }
+        .inventory-stats {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 1rem;
+            flex-wrap: wrap;
+        }
+        .inventory-stat {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 0.75rem 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+        .inventory-stat-icon { font-size: 1.25rem; }
+        .inventory-stat-value { font-size: 1.25rem; font-weight: 700; }
+        .inventory-stat-label { font-size: 0.75rem; color: var(--text-muted); }
+        @media (max-width: 768px) {
+            .inventory-toolbar { flex-direction: column; }
+            .inventory-search { width: 100%; }
+            .inventory-filters { width: 100%; overflow-x: auto; }
+            .inventory-grid { grid-template-columns: 1fr; }
+            .inventory-card { padding: 0.75rem; }
+            .inventory-card-image { width: 50px; height: 50px; }
+        }
     </style>
 </head>
 <body>
@@ -1286,9 +1451,9 @@
                 </div>
                 <div class="nav-section">
                     <div class="nav-section-title">Gestión</div>
-                    <div class="nav-item disabled" title="Próximamente">
-                        <span class="icon">📊</span>
-                        <span>Stock</span>
+                    <div class="nav-item" data-page="inventory">
+                        <span class="icon">📦</span>
+                        <span>Inventario</span>
                     </div>
                     <div class="nav-item disabled" title="Próximamente">
                         <span class="icon">💰</span>
@@ -1456,6 +1621,73 @@
                     <div class="orders-mobile" id="orders-mobile-container"></div>
                 </div>
             </div>
+
+            <!-- ========== INVENTORY PAGE ========== -->
+            <div class="dashboard" id="page-inventory" style="display: none;">
+                <div class="page-header">
+                    <div>
+                        <h1 class="page-title">📦 Inventario</h1>
+                        <p class="page-subtitle">Gestiona el stock de tus productos</p>
+                    </div>
+                    <button class="inventory-sync-btn" id="sync-inventory-btn" onclick="syncInventory()">
+                        🔄 Sincronizar
+                    </button>
+                </div>
+
+                <!-- Inventory Stats -->
+                <div class="inventory-stats">
+                    <div class="inventory-stat">
+                        <span class="inventory-stat-icon">📦</span>
+                        <div>
+                            <div class="inventory-stat-value" id="inv-total">0</div>
+                            <div class="inventory-stat-label">Total Productos</div>
+                        </div>
+                    </div>
+                    <div class="inventory-stat">
+                        <span class="inventory-stat-icon">✅</span>
+                        <div>
+                            <div class="inventory-stat-value" id="inv-in-stock">0</div>
+                            <div class="inventory-stat-label">Con Stock</div>
+                        </div>
+                    </div>
+                    <div class="inventory-stat">
+                        <span class="inventory-stat-icon">⚠️</span>
+                        <div>
+                            <div class="inventory-stat-value" id="inv-low-stock">0</div>
+                            <div class="inventory-stat-label">Stock Bajo</div>
+                        </div>
+                    </div>
+                    <div class="inventory-stat">
+                        <span class="inventory-stat-icon">❌</span>
+                        <div>
+                            <div class="inventory-stat-value" id="inv-out-stock">0</div>
+                            <div class="inventory-stat-label">Sin Stock</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Inventory Toolbar -->
+                <div class="inventory-toolbar">
+                    <div class="inventory-search">
+                        <span>🔍</span>
+                        <input type="text" id="inventory-search" placeholder="Buscar producto...">
+                    </div>
+                    <div class="inventory-filters">
+                        <button class="inventory-filter-btn active" data-filter="all">Todos</button>
+                        <button class="inventory-filter-btn" data-filter="out">Sin Stock</button>
+                        <button class="inventory-filter-btn" data-filter="low">Stock Bajo</button>
+                        <button class="inventory-filter-btn" data-filter="ok">Con Stock</button>
+                    </div>
+                </div>
+
+                <!-- Inventory Grid -->
+                <div class="inventory-grid" id="inventory-grid">
+                    <div class="loading-spinner">
+                        <div class="spinner"></div>
+                        <span>Cargando inventario...</span>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -1593,6 +1825,7 @@
             // Hide all pages
             document.getElementById('page-dashboard').style.display = 'none';
             document.getElementById('page-orders').style.display = 'none';
+            document.getElementById('page-inventory').style.display = 'none';
             
             // Show selected page
             document.getElementById('page-' + page).style.display = 'block';
@@ -1604,6 +1837,11 @@
                     item.classList.add('active');
                 }
             });
+            
+            // Load inventory if needed
+            if (page === 'inventory' && inventoryItems.length === 0) {
+                loadInventory();
+            }
         };
 
         // Nav item click handlers
@@ -2110,6 +2348,151 @@
             allOrders = orders;
             renderOrders();
         }
+
+        // ========== INVENTORY MANAGEMENT ==========
+        let inventoryItems = [];
+        let inventoryFilter = 'all';
+        let inventoryUnsubscribe = null;
+
+        // Load inventory from Firebase
+        async function loadInventory() {
+            const grid = document.getElementById('inventory-grid');
+            grid.innerHTML = '<div class="loading-spinner"><div class="spinner"></div><span>Cargando inventario...</span></div>';
+            
+            try {
+                const STORE_ID = 'petsstore-b0516';
+                const inventoryRef = collection(db, 'tiendas', STORE_ID, 'inventory');
+                const q = query(inventoryRef, orderBy('name'));
+                
+                inventoryUnsubscribe = onSnapshot(q, (snapshot) => {
+                    inventoryItems = [];
+                    snapshot.forEach(doc => {
+                        inventoryItems.push({ id: doc.id, ...doc.data() });
+                    });
+                    renderInventory();
+                    updateInventoryStats();
+                }, (error) => {
+                    console.error('Error loading inventory:', error);
+                    grid.innerHTML = '<div style="text-align:center;padding:2rem;color:var(--text-muted);">Error al cargar inventario. Sincroniza primero desde el admin local.</div>';
+                });
+            } catch (error) {
+                console.error('Error:', error);
+                grid.innerHTML = '<div style="text-align:center;padding:2rem;color:var(--text-muted);">Error al cargar inventario</div>';
+            }
+        }
+
+        // Render inventory grid
+        function renderInventory() {
+            const grid = document.getElementById('inventory-grid');
+            const searchTerm = (document.getElementById('inventory-search')?.value || '').toLowerCase();
+            
+            let filtered = inventoryItems.filter(item => {
+                const matchesSearch = !searchTerm || 
+                    item.name.toLowerCase().includes(searchTerm) ||
+                    (item.variantName || '').toLowerCase().includes(searchTerm) ||
+                    (item.category || '').toLowerCase().includes(searchTerm);
+                
+                if (!matchesSearch) return false;
+                
+                if (inventoryFilter === 'out') return item.stock === 0;
+                if (inventoryFilter === 'low') return item.stock > 0 && item.stock <= 5;
+                if (inventoryFilter === 'ok') return item.stock > 5;
+                return true;
+            });
+            
+            if (filtered.length === 0) {
+                grid.innerHTML = '<div style="text-align:center;padding:2rem;color:var(--text-muted);grid-column:1/-1;">No hay productos que coincidan</div>';
+                return;
+            }
+            
+            grid.innerHTML = filtered.map(item => {
+                const stockClass = item.stock === 0 ? 'out-of-stock' : (item.stock <= 5 ? 'low-stock' : '');
+                const stockValueClass = item.stock === 0 ? 'out' : (item.stock <= 5 ? 'low' : 'ok');
+                const imgSrc = item.image || 'data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><rect fill="%23333" width="100" height="100"/><text x="50" y="55" text-anchor="middle" fill="%23666" font-size="40">📦</text></svg>';
+                
+                return \`
+                    <div class="inventory-card \${stockClass}" data-id="\${item.id}">
+                        <img class="inventory-card-image" src="\${imgSrc}" alt="\${item.name}" onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect fill=%22%23333%22 width=%22100%22 height=%22100%22/><text x=%2250%22 y=%2255%22 text-anchor=%22middle%22 fill=%22%23666%22 font-size=%2240%22>📦</text></svg>'">
+                        <div class="inventory-card-info">
+                            <div class="inventory-card-name">\${item.name}</div>
+                            \${item.variantName ? \`<div class="inventory-card-variant">\${item.variantName}</div>\` : ''}
+                            <div class="inventory-card-category">\${item.category || 'Sin categoría'}</div>
+                        </div>
+                        <div class="inventory-card-stock">
+                            <div class="stock-value \${stockValueClass}">\${item.stock}</div>
+                            <div class="stock-controls">
+                                <button class="stock-btn minus" onclick="updateStock('\${item.id}', -1)">−</button>
+                                <button class="stock-btn plus" onclick="updateStock('\${item.id}', 1)">+</button>
+                            </div>
+                        </div>
+                    </div>
+                \`;
+            }).join('');
+        }
+
+        // Update inventory stats
+        function updateInventoryStats() {
+            const total = inventoryItems.length;
+            const outOfStock = inventoryItems.filter(i => i.stock === 0).length;
+            const lowStock = inventoryItems.filter(i => i.stock > 0 && i.stock <= 5).length;
+            const inStock = inventoryItems.filter(i => i.stock > 5).length;
+            
+            document.getElementById('inv-total').textContent = total;
+            document.getElementById('inv-in-stock').textContent = inStock;
+            document.getElementById('inv-low-stock').textContent = lowStock;
+            document.getElementById('inv-out-stock').textContent = outOfStock;
+            
+            // Update dashboard stat
+            document.getElementById('stat-low-stock').textContent = outOfStock;
+        }
+
+        // Update stock for an item
+        window.updateStock = async (itemId, delta) => {
+            const item = inventoryItems.find(i => i.id === itemId);
+            if (!item) return;
+            
+            const newStock = Math.max(0, item.stock + delta);
+            
+            try {
+                const STORE_ID = 'petsstore-b0516';
+                await updateDoc(doc(db, 'tiendas', STORE_ID, 'inventory', itemId), {
+                    stock: newStock,
+                    updatedAt: Timestamp.now()
+                });
+            } catch (error) {
+                alert('Error al actualizar stock: ' + error.message);
+            }
+        };
+
+        // Sync inventory (placeholder - needs backend)
+        window.syncInventory = async () => {
+            const btn = document.getElementById('sync-inventory-btn');
+            btn.disabled = true;
+            btn.innerHTML = '⏳ Sincronizando...';
+            
+            try {
+                // This would call the backend to sync from SQLite to Firebase
+                alert('Para sincronizar el inventario, ejecuta en el servidor:\\n\\nnode sync-inventory-firebase.js');
+            } finally {
+                btn.disabled = false;
+                btn.innerHTML = '🔄 Sincronizar';
+            }
+        };
+
+        // Inventory filter buttons
+        document.querySelectorAll('.inventory-filter-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                document.querySelectorAll('.inventory-filter-btn').forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                inventoryFilter = btn.dataset.filter;
+                renderInventory();
+            });
+        });
+
+        // Inventory search
+        document.getElementById('inventory-search')?.addEventListener('input', () => {
+            renderInventory();
+        });
     </script>
 </body>
 </html>

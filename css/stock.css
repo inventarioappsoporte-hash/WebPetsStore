@@ -1,0 +1,119 @@
+/**
+ * Stock Indicators - Estilos para indicadores de stock
+ */
+
+/* Badge de Sin Stock */
+.stock-badge-out {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    background: rgba(239, 68, 68, 0.95);
+    color: white;
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-size: 0.6875rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    z-index: 10;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+/* Producto sin stock */
+.out-of-stock {
+    opacity: 0.7;
+    position: relative;
+}
+
+.out-of-stock .product-image,
+.out-of-stock .card-image,
+.out-of-stock img {
+    filter: grayscale(50%);
+}
+
+.out-of-stock .add-to-cart,
+.out-of-stock .btn-add,
+.out-of-stock [data-add-cart] {
+    background: #6b7280 !important;
+    cursor: not-allowed !important;
+    pointer-events: none;
+}
+
+.out-of-stock .add-to-cart:hover,
+.out-of-stock .btn-add:hover {
+    background: #6b7280 !important;
+    transform: none !important;
+}
+
+/* Badge de stock bajo */
+.stock-badge-low {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    background: rgba(245, 158, 11, 0.95);
+    color: white;
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-size: 0.6875rem;
+    font-weight: 600;
+    z-index: 10;
+}
+
+/* Indicador en página de producto */
+.product-stock-status {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin: 0.5rem 0;
+    font-size: 0.875rem;
+}
+
+.product-stock-status.in-stock {
+    color: #22c55e;
+}
+
+.product-stock-status.low-stock {
+    color: #f59e0b;
+}
+
+.product-stock-status.out-of-stock {
+    color: #ef4444;
+}
+
+.product-stock-status .stock-icon {
+    font-size: 1rem;
+}
+
+/* Mensaje de sin stock en página de producto */
+.out-of-stock-message {
+    background: rgba(239, 68, 68, 0.1);
+    border: 1px solid rgba(239, 68, 68, 0.3);
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.out-of-stock-message h4 {
+    color: #ef4444;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+}
+
+.out-of-stock-message p {
+    color: #94a3b8;
+    font-size: 0.875rem;
+}
+
+/* Variante sin stock */
+.variant-option.out-of-stock {
+    opacity: 0.5;
+    text-decoration: line-through;
+    cursor: not-allowed;
+}
+
+.variant-option.out-of-stock::after {
+    content: ' (Sin stock)';
+    font-size: 0.75rem;
+    color: #ef4444;
+}
