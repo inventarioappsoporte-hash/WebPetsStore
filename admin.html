@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="noindex, nofollow">
-    <!-- Cache busting -->
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
     <meta http-equiv="Pragma" content="no-cache">
     <meta http-equiv="Expires" content="0">
@@ -46,7 +45,7 @@
             to { transform: rotate(360deg); }
         }
     </style>
-    <title>🐾 Pets Store Admin</title>
+    <title>${storeName}</title>
     <script>
         // Validación de acceso con clave secreta
         (function() {
@@ -85,9 +84,9 @@
             --text: #ffffff;
             --text-muted: #a3a3a3;
             --border: #2a2a2a;
-            --primary: #FF6B00;
-            --secondary: #1E3A5F;
-            --accent: #22C55E;
+            --primary: #ff6b00;
+            --secondary: #1e3a5f;
+            --accent: #22c55e;
             --success: #22c55e;
             --warning: #f59e0b;
             --danger: #ef4444;
@@ -101,38 +100,14 @@
             overflow-x: hidden;
         }
         
-        /* ========== LOADING SCREEN ========== */
-        .loading-screen {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            min-height: 100vh;
-            background: var(--bg);
-            flex-direction: column;
-            gap: 1rem;
-        }
-        .loading-screen .spinner {
-            width: 40px;
-            height: 40px;
-            border: 4px solid var(--border);
-            border-top-color: var(--primary);
-            border-radius: 50%;
-            animation: spin 1s linear infinite;
-        }
-        .loading-screen .loading-text {
-            color: var(--text-muted);
-            font-size: 0.875rem;
-        }
-        
         /* ========== LOGIN SCREEN ========== */
         .login-screen {
-            display: none;
+            display: flex;
             align-items: center;
             justify-content: center;
             min-height: 100vh;
             background: linear-gradient(135deg, var(--bg-sidebar) 0%, var(--bg) 100%);
         }
-        .login-screen.active { display: flex; }
         .login-box {
             background: var(--bg-card);
             padding: 2.5rem;
@@ -340,6 +315,135 @@
             background: var(--danger);
             border-radius: 50%;
         }
+        
+        /* ========== NOTIFICATIONS DROPDOWN ========== */
+        .notifications-wrapper {
+            position: relative;
+        }
+        .notifications-dropdown {
+            position: absolute;
+            top: calc(100% + 8px);
+            right: 0;
+            width: 360px;
+            max-height: 480px;
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+            display: none;
+            z-index: 1000;
+            overflow: hidden;
+        }
+        .notifications-dropdown.active { display: block; }
+        .notifications-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 1rem 1.25rem;
+            border-bottom: 1px solid var(--border);
+            background: var(--bg);
+        }
+        .notifications-title {
+            font-weight: 600;
+            font-size: 0.9375rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        .notifications-count {
+            background: var(--danger);
+            color: white;
+            padding: 0.125rem 0.5rem;
+            border-radius: 10px;
+            font-size: 0.75rem;
+            font-weight: 600;
+        }
+        .notifications-clear {
+            background: transparent;
+            border: none;
+            color: var(--text-muted);
+            font-size: 0.75rem;
+            cursor: pointer;
+            padding: 0.25rem 0.5rem;
+            border-radius: 4px;
+        }
+        .notifications-clear:hover { color: var(--primary); background: rgba(255,255,255,0.05); }
+        .notifications-list {
+            max-height: 380px;
+            overflow-y: auto;
+        }
+        .notification-item {
+            display: flex;
+            gap: 0.875rem;
+            padding: 1rem 1.25rem;
+            border-bottom: 1px solid var(--border);
+            cursor: pointer;
+            transition: background 0.15s;
+        }
+        .notification-item:hover { background: rgba(255,255,255,0.03); }
+        .notification-item:last-child { border-bottom: none; }
+        .notification-item.unread { background: rgba(255,107,0,0.05); }
+        .notification-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.25rem;
+            flex-shrink: 0;
+        }
+        .notification-icon.order { background: rgba(245,158,11,0.15); }
+        .notification-icon.stock { background: rgba(239,68,68,0.15); }
+        .notification-icon.success { background: rgba(34,197,94,0.15); }
+        .notification-icon.info { background: rgba(59,130,246,0.15); }
+        .notification-content { flex: 1; min-width: 0; }
+        .notification-text {
+            font-size: 0.875rem;
+            line-height: 1.4;
+            margin-bottom: 0.25rem;
+        }
+        .notification-text strong { color: var(--primary); }
+        .notification-time {
+            font-size: 0.75rem;
+            color: var(--text-muted);
+        }
+        .notifications-empty {
+            padding: 2rem;
+            text-align: center;
+            color: var(--text-muted);
+        }
+        .notifications-empty-icon { font-size: 2.5rem; margin-bottom: 0.5rem; opacity: 0.5; }
+        .notifications-empty-text { font-size: 0.875rem; }
+        .notifications-footer {
+            padding: 0.75rem 1.25rem;
+            border-top: 1px solid var(--border);
+            background: var(--bg);
+            text-align: center;
+        }
+        .notifications-footer a {
+            color: var(--primary);
+            font-size: 0.8125rem;
+            font-weight: 500;
+            text-decoration: none;
+        }
+        .notifications-footer a:hover { text-decoration: underline; }
+        
+        @media (max-width: 768px) {
+            .notifications-dropdown {
+                position: fixed;
+                top: auto;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                width: 100%;
+                max-height: 70vh;
+                border-radius: 16px 16px 0 0;
+                animation: slideUpNotif 0.3s ease;
+            }
+            @keyframes slideUpNotif { from { transform: translateY(100%); } to { transform: translateY(0); } }
+        }
+        
         .user-menu {
             display: flex;
             align-items: center;
@@ -693,51 +797,28 @@
         
         /* ========== RESPONSIVE MOBILE ========== */
         @media (max-width: 768px) {
-            /* Sidebar - Hidden by default, shown with .open class */
-            .sidebar { 
-                transform: translateX(-100%); 
-                transition: transform 0.3s ease;
-            }
+            .sidebar { transform: translateX(-100%); transition: transform 0.3s ease; }
             .sidebar.open { transform: translateX(0); }
-            
-            /* Main content full width */
             .main-content { 
                 margin-left: 0; 
                 max-width: 100vw;
                 overflow-x: hidden;
             }
-            
-            /* Stats grid - 2 columns on tablet, 1 on phone */
             .stats-grid { grid-template-columns: repeat(2, 1fr); gap: 0.75rem; }
-            
-            /* Header adjustments */
             .header { padding: 0.75rem 1rem; }
             .header-search { display: none; }
             .user-menu { padding: 0.375rem 0.5rem; }
             .user-info { display: none; }
-            
-            /* Dashboard padding */
             .dashboard { padding: 1rem; }
             .page-header { flex-direction: column; align-items: flex-start; gap: 0.5rem; }
             .page-title { font-size: 1.25rem; }
-            
-            /* Stat cards smaller */
             .stat-card { padding: 1rem; }
             .stat-icon { width: 40px; height: 40px; font-size: 1.25rem; margin-bottom: 0.75rem; }
             .stat-value { font-size: 1.5rem; }
             .stat-label { font-size: 0.75rem; }
-            
-            /* Charts grid single column */
             .charts-grid { grid-template-columns: 1fr; gap: 1rem; }
             .chart-card { padding: 1rem; }
-            
-            /* Orders section */
-            .orders-header { 
-                flex-direction: column; 
-                align-items: flex-start; 
-                gap: 0.75rem; 
-                padding: 1rem;
-            }
+            .orders-header { flex-direction: column; align-items: flex-start; gap: 0.75rem; padding: 1rem; }
             .orders-toolbar {
                 padding: 0.75rem;
                 overflow: hidden;
@@ -756,96 +837,21 @@
                 padding: 0.375rem 0.5rem;
                 font-size: 0.6875rem;
             }
-            
-            /* Orders table - card view on mobile */
             .orders-table { display: none; }
             .orders-mobile { display: block; }
-            
-            /* Login box */
             .login-box { padding: 1.5rem; margin: 1rem; }
             .login-logo { font-size: 1.5rem; }
-
-            /* ========== INVENTORY MOBILE ========== */
-            .inventory-toolbar { flex-direction: column; gap: 0.75rem; }
-            .inventory-search { width: 100%; }
-            .inventory-filters { 
-                width: 100%; 
-                display: flex;
-                flex-wrap: wrap;
-                gap: 0.5rem;
-            }
-            .inventory-filter-btn {
-                flex: 0 0 auto;
-                padding: 0.5rem 0.75rem;
-                font-size: 0.75rem;
-            }
-            .inventory-grid { grid-template-columns: 1fr !important; }
-            .inventory-card { 
-                padding: 0.75rem !important;
-                display: flex !important;
-                align-items: center !important;
-                gap: 0.75rem !important;
-                flex-wrap: nowrap !important;
-            }
-            .inventory-card-image { 
-                width: 50px !important; 
-                height: 50px !important; 
-                flex-shrink: 0 !important;
-            }
-            .inventory-card-info { 
-                flex: 1 !important; 
-                min-width: 0 !important;
-            }
-            .inventory-card-name { 
-                font-size: 0.8125rem !important;
-                white-space: nowrap !important;
-                overflow: hidden !important;
-                text-overflow: ellipsis !important;
-            }
-            .inventory-card-stock {
-                flex-shrink: 0 !important;
-                display: flex !important;
-                align-items: center !important;
-                gap: 0.5rem !important;
-            }
-            .stock-value { 
-                font-size: 1.25rem !important; 
-                font-weight: 700 !important;
-                min-width: 35px !important;
-            }
-            .stock-controls { 
-                display: flex !important; 
-                flex-direction: column !important;
-                gap: 0.25rem !important; 
-            }
-            .stock-btn { 
-                width: 28px !important; 
-                height: 28px !important; 
-                font-size: 1rem !important;
-            }
         }
-        
         @media (max-width: 480px) {
-            /* Extra small screens */
             .stats-grid { grid-template-columns: 1fr; }
-            .stat-card { 
-                display: flex; 
-                align-items: center; 
-                gap: 1rem; 
-                padding: 0.875rem;
-            }
+            .stat-card { display: flex; align-items: center; gap: 1rem; padding: 0.875rem; }
             .stat-icon { margin-bottom: 0; }
             .stat-content { flex: 1; }
             .stat-value { font-size: 1.25rem; }
-            
-            /* Header compact */
             .header-actions { gap: 0.5rem; }
             .header-btn { width: 36px; height: 36px; }
-            
-            /* Dashboard ultra compact */
             .dashboard { padding: 0.75rem; }
             .page-title { font-size: 1.125rem; }
-            
             /* Filtros ultra compactos */
             .orders-toolbar { padding: 0.75rem; }
             .filter-btn { 
@@ -853,173 +859,43 @@
                 font-size: 0.6875rem;
                 border-radius: 6px;
             }
-
-            /* Inventory mobile - ensure stock is visible */
-            .inventory-card {
-                display: flex !important;
-                flex-wrap: nowrap !important;
-                align-items: center !important;
-                padding: 0.625rem !important;
-                gap: 0.5rem !important;
-            }
-            .inventory-card-image {
-                width: 45px !important;
-                height: 45px !important;
-            }
-            .inventory-card-info {
-                flex: 1 !important;
-                min-width: 0 !important;
-            }
-            .inventory-card-name {
-                font-size: 0.8125rem !important;
-            }
-            .inventory-card-stock {
-                display: flex !important;
-                flex-shrink: 0 !important;
-                align-items: center !important;
-                gap: 0.375rem !important;
-            }
-            .stock-value {
-                font-size: 1.25rem !important;
-                min-width: 35px !important;
-            }
-            .stock-controls {
-                display: flex !important;
-                flex-direction: column !important;
-                gap: 0.125rem !important;
-            }
-            .stock-btn {
-                width: 28px !important;
-                height: 28px !important;
-                font-size: 1rem !important;
-            }
         }
         
-        /* ========== MOBILE MENU BUTTON ========== */
+        /* Mobile Menu Button */
         .mobile-menu-btn {
-            display: none;
-            width: 40px;
-            height: 40px;
-            align-items: center;
-            justify-content: center;
-            background: var(--bg);
-            border: 1px solid var(--border);
-            border-radius: 10px;
-            color: var(--text);
-            cursor: pointer;
-            font-size: 1.25rem;
+            display: none; width: 40px; height: 40px;
+            align-items: center; justify-content: center;
+            background: var(--bg); border: 1px solid var(--border);
+            border-radius: 10px; color: var(--text); cursor: pointer; font-size: 1.25rem;
         }
-        @media (max-width: 768px) {
-            .mobile-menu-btn { display: flex; }
-        }
+        @media (max-width: 768px) { .mobile-menu-btn { display: flex; } }
         
-        /* ========== MOBILE ORDERS CARDS ========== */
-        .orders-mobile {
-            display: none;
-            padding: 0.5rem;
-            overflow-x: hidden;
-        }
-        @media (max-width: 768px) {
-            .orders-mobile { display: block; }
-        }
+        /* Mobile Orders Cards */
+        .orders-mobile { display: none; padding: 0.5rem; overflow-x: hidden; }
+        @media (max-width: 768px) { .orders-mobile { display: block; } }
         .order-card-mobile {
-            background: var(--bg);
-            border-radius: 12px;
-            padding: 0.75rem;
-            margin-bottom: 0.625rem;
-            border: 1px solid var(--border);
-            overflow: hidden;
+            background: var(--bg); border-radius: 12px; padding: 0.75rem;
+            margin-bottom: 0.625rem; border: 1px solid var(--border); overflow: hidden;
         }
-        .order-card-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 0.5rem;
-        }
-        .order-card-id {
-            font-weight: 700;
-            color: var(--primary);
-            font-size: 0.9375rem;
-        }
-        .order-card-date {
-            font-size: 0.6875rem;
-            color: var(--text-muted);
-        }
-        .order-card-customer {
-            display: flex;
-            align-items: center;
-            gap: 0.625rem;
-            margin-bottom: 0.5rem;
-            padding-bottom: 0.5rem;
-            border-bottom: 1px solid var(--border);
-        }
-        .order-card-avatar {
-            width: 36px;
-            height: 36px;
-            background: linear-gradient(135deg, var(--secondary), var(--primary));
-            border-radius: 8px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-weight: 600;
-            font-size: 0.875rem;
-            flex-shrink: 0;
-        }
+        .order-card-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem; }
+        .order-card-id { font-weight: 700; color: var(--primary); font-size: 0.9375rem; }
+        .order-card-date { font-size: 0.6875rem; color: var(--text-muted); }
+        .order-card-customer { display: flex; align-items: center; gap: 0.625rem; margin-bottom: 0.5rem; padding-bottom: 0.5rem; border-bottom: 1px solid var(--border); }
+        .order-card-avatar { width: 36px; height: 36px; background: linear-gradient(135deg, var(--secondary), var(--primary)); border-radius: 8px; display: flex; align-items: center; justify-content: center; font-weight: 600; font-size: 0.875rem; flex-shrink: 0; }
         .order-card-info { flex: 1; min-width: 0; overflow: hidden; }
-        .order-card-name { 
-            font-weight: 600; 
-            font-size: 0.875rem; 
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
-        }
+        .order-card-name { font-weight: 600; font-size: 0.875rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
         .order-card-phone { font-size: 0.75rem; color: var(--text-muted); }
-        .order-card-details {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 0.5rem;
-            gap: 0.5rem;
-        }
-        .order-card-total {
-            font-size: 1.125rem;
-            font-weight: 700;
-        }
-        .order-card-items {
-            font-size: 0.75rem;
-            color: var(--text-muted);
-            margin-bottom: 0.5rem;
-        }
-        .order-card-actions {
-            display: flex;
-            gap: 0.375rem;
-            flex-wrap: nowrap;
-            overflow: hidden;
-        }
-        .order-card-actions .action-btn {
-            flex: 0 0 38px;
-            width: 38px;
-            height: 38px;
-            font-size: 0.9375rem;
-            min-width: unset;
-        }
-        .order-card-actions .action-btn:last-child {
-            flex: 1;
-            width: auto;
-        }
+        .order-card-details { display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem; gap: 0.5rem; }
+        .order-card-total { font-size: 1.125rem; font-weight: 700; }
+        .order-card-items { font-size: 0.75rem; color: var(--text-muted); margin-bottom: 0.5rem; }
+        .order-card-actions { display: flex; gap: 0.375rem; flex-wrap: nowrap; overflow: hidden; }
+        .order-card-actions .action-btn { flex: 0 0 38px; width: 38px; height: 38px; font-size: 0.9375rem; min-width: unset; }
+        .order-card-actions .action-btn:last-child { flex: 1; width: auto; }
         
-        /* ========== SIDEBAR OVERLAY ========== */
-        .sidebar-overlay {
-            display: none;
-            position: fixed;
-            inset: 0;
-            background: rgba(0,0,0,0.5);
-            z-index: 99;
-        }
+        /* Sidebar Overlay */
+        .sidebar-overlay { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.5); z-index: 99; }
         .sidebar-overlay.active { display: block; }
-        @media (min-width: 769px) {
-            .sidebar-overlay { display: none !important; }
-        }
+        @media (min-width: 769px) { .sidebar-overlay { display: none !important; } }
 
         /* ========== ORDER EDIT MODAL - COMPACT ========== */
         .modal-overlay {
@@ -1144,160 +1020,47 @@
         .modal-btn-cancel { background: var(--bg-card); color: var(--text-muted); border: 1px solid var(--border); }
         .modal-btn-cancel:hover { color: var(--text); }
         
-        /* ========== MODAL RESPONSIVE ========== */
+        /* Modal Responsive */
         @media (max-width: 768px) {
-            .modal-overlay { 
-                padding: 0; 
-                align-items: flex-end; 
-            }
-            .modal-content {
-                max-width: 100%;
-                width: 100%;
-                max-height: 92vh;
-                border-radius: 16px 16px 0 0;
-                animation: slideUp 0.3s ease;
-                overflow: hidden;
-            }
-            @keyframes slideUp {
-                from { transform: translateY(100%); }
-                to { transform: translateY(0); }
-            }
+            .modal-overlay { padding: 0; align-items: flex-end; }
+            .modal-content { max-width: 100%; width: 100%; max-height: 92vh; border-radius: 16px 16px 0 0; animation: slideUp 0.3s ease; overflow: hidden; }
+            @keyframes slideUp { from { transform: translateY(100%); } to { transform: translateY(0); } }
             .modal-header { padding: 0.75rem 1rem; }
             .modal-title { font-size: 0.875rem; }
             .modal-close { width: 32px; height: 32px; font-size: 1.125rem; }
-            .modal-body { 
-                padding: 0.75rem; 
-                overflow-x: hidden;
-                overflow-y: auto;
-            }
-            /* Info del cliente - vertical y compacto */
-            .modal-info-row { 
-                flex-direction: column; 
-                gap: 0.25rem; 
-                margin-bottom: 0.5rem;
-            }
-            .modal-info-chip { 
-                width: 100%; 
-                justify-content: space-between;
-                padding: 0.5rem 0.625rem;
-                font-size: 0.8125rem;
-            }
-            .modal-info-chip .label { 
-                flex-shrink: 0;
-                margin-right: 0.5rem;
-            }
-            .modal-info-chip .value { 
-                text-align: right;
-                word-break: break-word;
-                overflow: hidden;
-                text-overflow: ellipsis;
-            }
-            /* Estado */
-            .modal-status-row { 
-                flex-direction: column; 
-                align-items: stretch;
-                gap: 0.25rem;
-                margin-bottom: 0.5rem;
-            }
-            .modal-status-select { 
-                padding: 0.625rem; 
-                font-size: 0.9375rem; 
-            }
-            /* Productos */
-            .modal-section-title { 
-                font-size: 0.6875rem; 
-                margin-top: 0.375rem;
-                margin-bottom: 0.375rem;
-            }
-            .order-items-compact { 
-                max-height: 30vh; 
-                overflow-x: hidden;
-            }
-            .order-item-compact {
-                display: flex;
-                flex-wrap: wrap;
-                gap: 0.375rem;
-                padding: 0.5rem;
-                align-items: center;
-            }
-            .order-item-compact img { 
-                width: 36px; 
-                height: 36px; 
-                flex-shrink: 0;
-                border-radius: 4px;
-            }
-            .order-item-compact .item-info { 
-                flex: 1;
-                min-width: 0;
-            }
-            .order-item-compact .item-name { 
-                font-size: 0.75rem; 
-                white-space: nowrap;
-                overflow: hidden;
-                text-overflow: ellipsis;
-            }
+            .modal-body { padding: 0.75rem; overflow-x: hidden; overflow-y: auto; }
+            .modal-info-row { flex-direction: column; gap: 0.25rem; margin-bottom: 0.5rem; }
+            .modal-info-chip { width: 100%; justify-content: space-between; padding: 0.5rem 0.625rem; font-size: 0.8125rem; }
+            .modal-info-chip .label { flex-shrink: 0; margin-right: 0.5rem; }
+            .modal-info-chip .value { text-align: right; word-break: break-word; overflow: hidden; text-overflow: ellipsis; }
+            .modal-status-row { flex-direction: column; align-items: stretch; gap: 0.25rem; margin-bottom: 0.5rem; }
+            .modal-status-select { padding: 0.625rem; font-size: 0.9375rem; }
+            .modal-section-title { font-size: 0.6875rem; margin-top: 0.375rem; margin-bottom: 0.375rem; }
+            .order-items-compact { max-height: 30vh; overflow-x: hidden; }
+            .order-item-compact { display: flex; flex-wrap: wrap; gap: 0.375rem; padding: 0.5rem; align-items: center; }
+            .order-item-compact img { width: 36px; height: 36px; flex-shrink: 0; border-radius: 4px; }
+            .order-item-compact .item-info { flex: 1; min-width: 0; }
+            .order-item-compact .item-name { font-size: 0.75rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
             .order-item-compact .item-variant { font-size: 0.625rem; }
-            .order-item-compact .item-remove { 
-                width: 24px; 
-                height: 24px;
-                flex-shrink: 0;
-            }
-            .order-item-compact .item-price { 
-                display: none;
-            }
-            .order-item-compact .item-qty { 
-                width: 32px; 
-                padding: 0.25rem;
-                font-size: 0.8125rem;
-            }
-            .order-item-compact .item-subtotal { 
-                font-size: 0.8125rem;
-                flex-shrink: 0;
-            }
-            /* Totales */
-            .modal-totals-compact {
-                flex-direction: column;
-                gap: 0.25rem;
-                align-items: stretch;
-                padding: 0.5rem 0;
-                margin-top: 0.25rem;
-            }
-            .modal-totals-compact .total-item {
-                justify-content: space-between;
-                font-size: 0.8125rem;
-            }
+            .order-item-compact .item-remove { width: 24px; height: 24px; flex-shrink: 0; }
+            .order-item-compact .item-price { display: none; }
+            .order-item-compact .item-qty { width: 32px; padding: 0.25rem; font-size: 0.8125rem; }
+            .order-item-compact .item-subtotal { font-size: 0.8125rem; flex-shrink: 0; }
+            .modal-totals-compact { flex-direction: column; gap: 0.25rem; align-items: stretch; padding: 0.5rem 0; margin-top: 0.25rem; }
+            .modal-totals-compact .total-item { justify-content: space-between; font-size: 0.8125rem; }
             .modal-totals-compact .total-final { font-size: 1rem; }
-            /* Notas */
             .modal-notes-compact { margin-top: 0.375rem; }
-            .modal-textarea { 
-                height: 40px; 
-                font-size: 0.8125rem;
-                padding: 0.5rem;
-            }
-            /* Footer con botones en fila */
-            .modal-footer { 
-                padding: 0.625rem; 
-                gap: 0.375rem;
-                flex-wrap: nowrap;
-            }
-            .modal-btn { 
-                padding: 0.625rem 0.5rem; 
-                font-size: 0.75rem;
-                min-height: 40px;
-                flex: 1;
-            }
+            .modal-textarea { height: 40px; font-size: 0.8125rem; padding: 0.5rem; }
+            .modal-footer { padding: 0.625rem; gap: 0.375rem; flex-wrap: nowrap; }
+            .modal-btn { padding: 0.625rem 0.5rem; font-size: 0.75rem; min-height: 40px; flex: 1; }
             .modal-btn-save { flex: 2; }
             .modal-btn-cancel { flex: 0 0 40px; padding: 0; }
             .modal-btn-whatsapp { flex: 0 0 40px; padding: 0; }
         }
-        
         @media (max-width: 380px) {
             .modal-content { max-height: 95vh; }
             .modal-body { padding: 0.5rem; }
-            .modal-info-chip { 
-                padding: 0.375rem 0.5rem;
-                font-size: 0.75rem;
-            }
+            .modal-info-chip { padding: 0.375rem 0.5rem; font-size: 0.75rem; }
             .order-items-compact { max-height: 25vh; }
             .order-item-compact { padding: 0.375rem; }
             .order-item-compact img { width: 32px; height: 32px; }
@@ -1306,460 +1069,145 @@
             .modal-btn { font-size: 0.6875rem; min-height: 36px; }
         }
         
-        /* ========== LOADING SCREEN ========== */
+        /* Loading Screen */
         .loading-screen {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            min-height: 100vh;
-            background: var(--bg);
-            flex-direction: column;
-            gap: 1rem;
+            display: flex; align-items: center; justify-content: center;
+            min-height: 100vh; background: var(--bg); flex-direction: column; gap: 1rem;
         }
-        .loading-screen .spinner-large {
-            width: 48px;
-            height: 48px;
-            border: 4px solid var(--border);
-            border-top-color: var(--primary);
-            border-radius: 50%;
-            animation: spin 1s linear infinite;
-        }
-        .loading-screen .loading-text {
-            color: var(--text-muted);
-            font-size: 0.875rem;
-        }
-        
-        /* ========== INVENTORY PAGE ========== */
-        .inventory-toolbar {
-            display: flex;
-            gap: 1rem;
-            margin-bottom: 1rem;
-            flex-wrap: wrap;
-            align-items: center;
-        }
-        .inventory-search {
-            flex: 1;
-            min-width: 200px;
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
+        .loading-screen .spinner-large { width: 48px; height: 48px; border: 4px solid var(--border); border-top-color: var(--primary); border-radius: 50%; animation: spin 1s linear infinite; }
+        .loading-screen .loading-text { color: var(--text-muted); font-size: 0.875rem; }
+
+        /* ========== INVENTORY STYLES ========== */
+        .inventory-search-input {
+            padding: 0.5rem 1rem;
             background: var(--bg);
             border: 1px solid var(--border);
             border-radius: 8px;
-            padding: 0.5rem 1rem;
-        }
-        .inventory-search input {
-            flex: 1;
-            background: transparent;
-            border: none;
             color: var(--text);
             font-size: 0.875rem;
-            outline: none;
+            width: 250px;
         }
-        .inventory-filters {
-            display: flex;
-            gap: 0.5rem;
-        }
+        .inventory-search-input:focus { outline: none; border-color: var(--primary); }
         .inventory-filter-btn {
             padding: 0.5rem 1rem;
-            background: var(--bg);
+            background: transparent;
             border: 1px solid var(--border);
             border-radius: 8px;
             color: var(--text-muted);
-            font-size: 0.8125rem;
+            font-size: 0.875rem;
             cursor: pointer;
             transition: all 0.15s;
         }
-        .inventory-filter-btn:hover { border-color: var(--primary); }
+        .inventory-filter-btn:hover { border-color: var(--primary); color: var(--text); }
         .inventory-filter-btn.active { background: var(--primary); border-color: var(--primary); color: white; }
         .inventory-grid {
-            display: flex;
-            flex-direction: column;
-            gap: 0.75rem;
-            overflow: visible;
-        }
-        @media (min-width: 769px) {
-            .inventory-grid {
-                display: grid;
-                grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-                gap: 1rem;
-            }
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 1rem;
+            margin-top: 1rem;
         }
         .inventory-card {
             background: var(--bg-card);
             border: 1px solid var(--border);
             border-radius: 12px;
-            padding: 0.75rem;
+            padding: 1rem;
             display: flex;
-            gap: 0.75rem;
             align-items: center;
+            gap: 1rem;
             transition: all 0.15s;
-            overflow: visible;
         }
-        .inventory-card:hover { border-color: var(--primary); }
-        .inventory-card.out-of-stock { border-color: var(--danger); background: rgba(239, 68, 68, 0.1); }
-        .inventory-card.low-stock { border-color: var(--warning); background: rgba(245, 158, 11, 0.1); }
+        .inventory-card:hover { border-color: var(--primary); transform: translateY(-2px); }
+        .inventory-card.out-of-stock { border-color: var(--danger); background: rgba(239,68,68,0.05); }
+        .inventory-card.low-stock { border-color: var(--warning); background: rgba(245,158,11,0.05); }
         .inventory-card-image {
-            width: 50px;
-            height: 50px;
+            width: 60px;
+            height: 60px;
             border-radius: 8px;
             object-fit: cover;
             background: var(--bg);
-            flex-shrink: 0;
         }
-        .inventory-card-info {
-            flex: 1;
-            min-width: 0;
-            overflow: hidden;
-        }
+        .inventory-card-info { flex: 1; min-width: 0; }
         .inventory-card-name {
             font-weight: 600;
-            font-size: 0.8125rem;
+            font-size: 0.9375rem;
             white-space: nowrap;
             overflow: hidden;
             text-overflow: ellipsis;
         }
         .inventory-card-variant {
-            font-size: 0.6875rem;
+            font-size: 0.75rem;
             color: var(--primary);
+            margin-top: 0.125rem;
         }
         .inventory-card-category {
-            font-size: 0.625rem;
+            font-size: 0.75rem;
             color: var(--text-muted);
+            margin-top: 0.25rem;
         }
-        .inventory-card-stock {
-            flex-shrink: 0;
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-            margin-left: auto;
-        }
+        .inventory-card-stock { text-align: center; }
         .stock-value {
-            font-size: 1.25rem;
+            font-size: 1.5rem;
             font-weight: 700;
-            min-width: 30px;
-            text-align: center;
+            margin-bottom: 0.5rem;
         }
-        .stock-value.out { color: var(--danger); }
-        .stock-value.low { color: var(--warning); }
         .stock-value.ok { color: var(--success); }
-        .stock-controls {
-            display: flex;
-            flex-direction: column;
-            gap: 0.125rem;
-        }
+        .stock-value.low { color: var(--warning); }
+        .stock-value.out { color: var(--danger); }
+        .stock-controls { display: flex; gap: 0.25rem; }
         .stock-btn {
-            width: 26px;
-            height: 26px;
-            border-radius: 4px;
+            width: 32px;
+            height: 32px;
             border: 1px solid var(--border);
+            border-radius: 6px;
             background: var(--bg);
             color: var(--text);
-            font-size: 0.875rem;
+            font-size: 1.25rem;
             cursor: pointer;
             display: flex;
             align-items: center;
             justify-content: center;
             transition: all 0.15s;
         }
-        .stock-btn:hover { background: var(--primary); border-color: var(--primary); }
+        .stock-btn:hover { border-color: var(--primary); background: var(--primary); color: white; }
         .stock-btn.minus:hover { background: var(--danger); border-color: var(--danger); }
-        .inventory-sync-btn {
-            padding: 0.5rem 1rem;
-            background: var(--primary);
-            border: none;
-            border-radius: 8px;
-            color: white;
-            font-size: 0.875rem;
-            font-weight: 500;
-            cursor: pointer;
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-        }
-        .inventory-sync-btn:hover { opacity: 0.9; }
-        .inventory-sync-btn:disabled { opacity: 0.5; cursor: not-allowed; }
-        .inventory-stats {
-            display: flex;
-            gap: 1rem;
-            margin-bottom: 1rem;
-            flex-wrap: wrap;
-        }
-        .inventory-stat {
-            background: var(--bg-card);
-            border: 1px solid var(--border);
-            border-radius: 8px;
-            padding: 0.75rem 1rem;
-            display: flex;
-            align-items: center;
-            gap: 0.75rem;
-        }
-        .inventory-stat-icon { font-size: 1.25rem; }
-        .inventory-stat-value { font-size: 1.25rem; font-weight: 700; }
-        .inventory-stat-label { font-size: 0.75rem; color: var(--text-muted); }
+        .stock-btn.plus:hover { background: var(--success); border-color: var(--success); }
         @media (max-width: 768px) {
-            .inventory-toolbar { flex-direction: column; gap: 0.75rem; }
-            .inventory-search { width: 100%; }
-            .inventory-filters { 
-                width: 100%; 
-                display: flex;
-                flex-wrap: wrap;
-                gap: 0.5rem;
-            }
-            .inventory-filter-btn {
-                flex: 0 0 auto;
-                padding: 0.5rem 0.75rem;
-                font-size: 0.75rem;
-            }
-            .inventory-grid { 
-                grid-template-columns: 1fr;
-                overflow: visible;
-            }
+            .inventory-search-input { width: 100%; margin-top: 0.5rem; }
+            .inventory-grid { grid-template-columns: 1fr; }
             .inventory-card { 
-                padding: 0.625rem;
-                display: flex !important;
-                align-items: center;
-                gap: 0.5rem;
-                overflow: visible;
+                padding: 0.75rem;
+                flex-wrap: nowrap;
             }
-            .inventory-card-image { 
-                width: 45px; 
-                height: 45px; 
-                flex-shrink: 0;
-                border-radius: 6px;
-            }
+            .inventory-card-image { width: 50px; height: 50px; flex-shrink: 0; }
             .inventory-card-info { 
                 flex: 1; 
                 min-width: 0;
-                overflow: hidden;
+                margin-right: 0.5rem;
             }
             .inventory-card-name { 
                 font-size: 0.8125rem;
-                font-weight: 600;
                 white-space: nowrap;
                 overflow: hidden;
                 text-overflow: ellipsis;
             }
-            .inventory-card-variant { 
-                font-size: 0.625rem;
-                color: var(--primary);
-            }
-            .inventory-card-category { 
-                font-size: 0.5625rem;
-                color: var(--text-muted);
-            }
+            .inventory-card-variant { font-size: 0.6875rem; }
+            .inventory-card-category { font-size: 0.625rem; }
             .inventory-card-stock {
                 flex-shrink: 0;
-                display: flex !important;
-                align-items: center;
-                gap: 0.375rem;
-                margin-left: auto;
-            }
-            .stock-value { 
-                font-size: 1.125rem; 
-                font-weight: 700;
-                min-width: 30px;
-                text-align: center;
-            }
-            .stock-controls { 
-                display: flex; 
+                display: flex;
                 flex-direction: column;
-                gap: 0.125rem; 
+                align-items: center;
+                min-width: 70px;
             }
-            .stock-btn { 
-                width: 26px; 
-                height: 26px; 
-                font-size: 0.875rem;
-                border-radius: 4px;
-            }
-        }
-
-        /* ========== NOTIFICATIONS DROPDOWN ========== */
-        .notifications-wrapper {
-            position: relative;
-        }
-        .notifications-dropdown {
-            position: absolute;
-            top: calc(100% + 8px);
-            right: 0;
-            width: 360px;
-            max-height: 450px;
-            background: var(--bg-card);
-            border: 1px solid var(--border);
-            border-radius: 12px;
-            box-shadow: 0 10px 40px rgba(0,0,0,0.4);
-            z-index: 1000;
-            display: none;
-            overflow: hidden;
-        }
-        .notifications-dropdown.active {
-            display: block;
-            animation: dropdownFadeIn 0.2s ease;
-        }
-        @keyframes dropdownFadeIn {
-            from { opacity: 0; transform: translateY(-10px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-        .notifications-header {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 1rem;
-            border-bottom: 1px solid var(--border);
-            background: var(--bg);
-        }
-        .notifications-title {
-            font-size: 0.9375rem;
-            font-weight: 600;
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-        }
-        .notifications-badge {
-            background: var(--danger);
-            color: white;
-            font-size: 0.75rem;
-            padding: 0.125rem 0.5rem;
-            border-radius: 10px;
-            font-weight: 600;
-        }
-        .notifications-clear {
-            background: none;
-            border: none;
-            color: var(--text-muted);
-            font-size: 0.8125rem;
-            cursor: pointer;
-            padding: 0.25rem 0.5rem;
-            border-radius: 6px;
-            transition: all 0.15s;
-        }
-        .notifications-clear:hover {
-            background: var(--bg-card);
-            color: var(--primary);
-        }
-        .notifications-list {
-            max-height: 350px;
-            overflow-y: auto;
-        }
-        .notification-item {
-            display: flex;
-            align-items: flex-start;
-            gap: 0.75rem;
-            padding: 0.875rem 1rem;
-            border-bottom: 1px solid var(--border);
-            cursor: pointer;
-            transition: background 0.15s;
-        }
-        .notification-item:hover {
-            background: var(--bg);
-        }
-        .notification-item:last-child {
-            border-bottom: none;
-        }
-        .notification-item.unread {
-            background: rgba(255, 107, 0, 0.05);
-        }
-        .notification-icon {
-            width: 40px;
-            height: 40px;
-            border-radius: 10px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.25rem;
-            flex-shrink: 0;
-        }
-        .notification-icon.pending {
-            background: rgba(245, 158, 11, 0.15);
-        }
-        .notification-icon.confirmed {
-            background: rgba(34, 197, 94, 0.15);
-        }
-        .notification-icon.cancelled {
-            background: rgba(239, 68, 68, 0.15);
-        }
-        .notification-icon.delivered {
-            background: rgba(59, 130, 246, 0.15);
-        }
-        .notification-content {
-            flex: 1;
-            min-width: 0;
-        }
-        .notification-text {
-            font-size: 0.875rem;
-            color: var(--text);
-            margin-bottom: 0.25rem;
-            line-height: 1.4;
-        }
-        .notification-text strong {
-            color: var(--primary);
-        }
-        .notification-meta {
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-            font-size: 0.75rem;
-            color: var(--text-muted);
-        }
-        .notification-time {
-            display: flex;
-            align-items: center;
-            gap: 0.25rem;
-        }
-        .notification-amount {
-            font-weight: 600;
-            color: var(--success);
-        }
-        .notifications-empty {
-            padding: 2rem;
-            text-align: center;
-            color: var(--text-muted);
-        }
-        .notifications-empty-icon {
-            font-size: 2.5rem;
-            margin-bottom: 0.5rem;
-            opacity: 0.5;
-        }
-        .notifications-empty-text {
-            font-size: 0.875rem;
-        }
-        .notifications-footer {
-            padding: 0.75rem 1rem;
-            border-top: 1px solid var(--border);
-            background: var(--bg);
-            text-align: center;
-        }
-        .notifications-view-all {
-            background: none;
-            border: none;
-            color: var(--primary);
-            font-size: 0.8125rem;
-            font-weight: 600;
-            cursor: pointer;
-            padding: 0.5rem 1rem;
-            border-radius: 6px;
-            transition: all 0.15s;
-        }
-        .notifications-view-all:hover {
-            background: rgba(255, 107, 0, 0.1);
-        }
-
-        /* Mobile responsive para dropdown */
-        @media (max-width: 480px) {
-            .notifications-dropdown {
-                position: fixed;
-                top: 60px;
-                left: 10px;
-                right: 10px;
-                width: auto;
-                max-height: calc(100vh - 80px);
-            }
+            .stock-value { font-size: 1.25rem; margin-bottom: 0.25rem; }
+            .stock-controls { display: flex; gap: 0.25rem; }
+            .stock-btn { width: 28px; height: 28px; font-size: 1rem; }
         }
     </style>
 </head>
 <body>
 
-    <!-- ========== LOADING SCREEN (inicial) ========== -->
+    <!-- ========== LOADING SCREEN ========== -->
     <div class="loading-screen" id="loading-screen">
         <div class="spinner-large"></div>
         <div class="loading-text">Verificando sesión...</div>
@@ -1813,7 +1261,7 @@
                 <div class="nav-section">
                     <div class="nav-section-title">Gestión</div>
                     <div class="nav-item" data-page="inventory">
-                        <span class="icon">📦</span>
+                        <span class="icon">📊</span>
                         <span>Inventario</span>
                     </div>
                     <div class="nav-item disabled" title="Próximamente">
@@ -1823,10 +1271,10 @@
                 </div>
             </nav>
         </aside>
-
+        
         <!-- Sidebar Overlay (mobile) -->
         <div class="sidebar-overlay" id="sidebar-overlay"></div>
-        
+
         <!-- Main Content -->
         <div class="main-content">
             <!-- Header -->
@@ -1845,24 +1293,22 @@
                             🔔
                             <span class="notification-dot" id="notification-dot" style="display:none;"></span>
                         </button>
-                        <!-- Notifications Dropdown -->
                         <div class="notifications-dropdown" id="notifications-dropdown">
                             <div class="notifications-header">
                                 <div class="notifications-title">
                                     🔔 Notificaciones
-                                    <span class="notifications-badge" id="notifications-count">0</span>
+                                    <span class="notifications-count" id="notifications-count">0</span>
                                 </div>
-                                <button class="notifications-clear" id="notifications-mark-read">
-                                    Marcar leídas
-                                </button>
+                                <button class="notifications-clear" onclick="clearNotifications()">Marcar leídas</button>
                             </div>
                             <div class="notifications-list" id="notifications-list">
-                                <!-- Las notificaciones se cargan dinámicamente -->
+                                <div class="notifications-empty">
+                                    <div class="notifications-empty-icon">🔕</div>
+                                    <div class="notifications-empty-text">No hay notificaciones</div>
+                                </div>
                             </div>
                             <div class="notifications-footer">
-                                <button class="notifications-view-all" id="notifications-view-all">
-                                    Ver todos los pedidos
-                                </button>
+                                <a href="#" onclick="showPage('orders'); toggleNotifications(); return false;">Ver todos los pedidos →</a>
                             </div>
                         </div>
                     </div>
@@ -2009,58 +1455,45 @@
             <div class="dashboard" id="page-inventory" style="display: none;">
                 <div class="page-header">
                     <div>
-                        <h1 class="page-title">📦 Inventario</h1>
-                        <p class="page-subtitle">Gestiona el stock de tus productos</p>
+                        <h1 class="page-title">📊 Inventario</h1>
+                        <p class="page-subtitle">Control de stock en tiempo real</p>
                     </div>
-                    <button class="inventory-sync-btn" id="sync-inventory-btn" onclick="syncInventory()">
-                        🔄 Sincronizar
-                    </button>
+                    <button class="btn btn-primary" id="sync-inventory-btn" onclick="syncInventory()">🔄 Sincronizar</button>
                 </div>
 
                 <!-- Inventory Stats -->
-                <div class="inventory-stats">
-                    <div class="inventory-stat">
-                        <span class="inventory-stat-icon">📦</span>
-                        <div>
-                            <div class="inventory-stat-value" id="inv-total">0</div>
-                            <div class="inventory-stat-label">Total Productos</div>
-                        </div>
+                <div class="stats-grid" style="grid-template-columns: repeat(4, 1fr);">
+                    <div class="stat-card primary">
+                        <div class="stat-icon">📦</div>
+                        <div class="stat-value" id="inv-total">0</div>
+                        <div class="stat-label">Total Productos</div>
                     </div>
-                    <div class="inventory-stat">
-                        <span class="inventory-stat-icon">✅</span>
-                        <div>
-                            <div class="inventory-stat-value" id="inv-in-stock">0</div>
-                            <div class="inventory-stat-label">Con Stock</div>
-                        </div>
+                    <div class="stat-card success">
+                        <div class="stat-icon">✅</div>
+                        <div class="stat-value" id="inv-in-stock">0</div>
+                        <div class="stat-label">En Stock</div>
                     </div>
-                    <div class="inventory-stat">
-                        <span class="inventory-stat-icon">⚠️</span>
-                        <div>
-                            <div class="inventory-stat-value" id="inv-low-stock">0</div>
-                            <div class="inventory-stat-label">Stock Bajo</div>
-                        </div>
+                    <div class="stat-card warning">
+                        <div class="stat-icon">⚠️</div>
+                        <div class="stat-value" id="inv-low-stock">0</div>
+                        <div class="stat-label">Stock Bajo</div>
                     </div>
-                    <div class="inventory-stat">
-                        <span class="inventory-stat-icon">❌</span>
-                        <div>
-                            <div class="inventory-stat-value" id="inv-out-stock">0</div>
-                            <div class="inventory-stat-label">Sin Stock</div>
-                        </div>
+                    <div class="stat-card danger">
+                        <div class="stat-icon">❌</div>
+                        <div class="stat-value" id="inv-out-stock">0</div>
+                        <div class="stat-label">Sin Stock</div>
                     </div>
                 </div>
 
-                <!-- Inventory Toolbar -->
-                <div class="inventory-toolbar">
-                    <div class="inventory-search">
-                        <span>🔍</span>
-                        <input type="text" id="inventory-search" placeholder="Buscar producto...">
-                    </div>
-                    <div class="inventory-filters">
+                <!-- Inventory Filters -->
+                <div class="orders-toolbar">
+                    <div class="orders-filters">
                         <button class="inventory-filter-btn active" data-filter="all">Todos</button>
-                        <button class="inventory-filter-btn" data-filter="out">Sin Stock</button>
-                        <button class="inventory-filter-btn" data-filter="low">Stock Bajo</button>
-                        <button class="inventory-filter-btn" data-filter="ok">Con Stock</button>
+                        <button class="inventory-filter-btn" data-filter="ok">✅ En Stock</button>
+                        <button class="inventory-filter-btn" data-filter="low">⚠️ Stock Bajo</button>
+                        <button class="inventory-filter-btn" data-filter="out">❌ Sin Stock</button>
                     </div>
+                    <input type="text" id="inventory-search" placeholder="🔍 Buscar producto..." class="inventory-search-input">
                 </div>
 
                 <!-- Inventory Grid -->
@@ -2156,74 +1589,18 @@
         const loginBtn = document.getElementById('login-btn');
 
         // Auth State Observer
-        onAuthStateChanged(auth, async (user) => {
+        onAuthStateChanged(auth, (user) => {
             console.log('Auth state changed:', user ? 'Usuario autenticado' : 'No autenticado');
             if (user) {
                 currentUser = user;
                 console.log('Usuario:', user.email);
-                
-                // Verificar si el usuario tiene rol de admin
-                const isAdmin = await checkAdminRole(user.uid, user.email);
-                if (isAdmin) {
-                    showAdmin();
-                    loadOrders();
-                } else {
-                    // No es admin, cerrar sesión y mostrar error
-                    console.warn('Usuario no autorizado:', user.email);
-                    await signOut(auth);
-                    showAccessDenied();
-                }
+                showAdmin();
+                loadOrders();
             } else {
                 currentUser = null;
                 showLogin();
             }
         });
-
-        // Verificar si el usuario tiene rol de admin
-        async function checkAdminRole(uid, email) {
-            try {
-                // Lista de emails de admin (fallback)
-                const ADMIN_EMAILS = ['keisiperez70@gmail.com', 'admin@petsstore.com'];
-                
-                // Primero verificar por email (más rápido)
-                if (ADMIN_EMAILS.includes(email.toLowerCase())) {
-                    console.log('✅ Admin verificado por email');
-                    return true;
-                }
-                
-                // Luego verificar en Firestore
-                const userDoc = await getDoc(doc(db, 'tiendas', STORE_ID, 'users', uid));
-                if (userDoc.exists()) {
-                    const userData = userDoc.data();
-                    if (userData.role === 'admin') {
-                        console.log('✅ Admin verificado por rol en Firestore');
-                        return true;
-                    }
-                }
-                
-                console.log('❌ Usuario no tiene permisos de admin');
-                return false;
-            } catch (error) {
-                console.error('Error verificando rol:', error);
-                // En caso de error, verificar solo por email
-                const ADMIN_EMAILS = ['keisiperez70@gmail.com', 'admin@petsstore.com'];
-                return ADMIN_EMAILS.includes(email.toLowerCase());
-            }
-        }
-
-        // Mostrar pantalla de acceso denegado
-        function showAccessDenied() {
-            removeCriticalStyles();
-            document.getElementById('loading-screen').style.display = 'none';
-            loginScreen.style.display = 'flex';
-            adminLayout.classList.remove('active');
-            
-            // Mostrar mensaje de error
-            if (loginError) {
-                loginError.textContent = '⛔ Acceso denegado. Solo administradores pueden acceder.';
-                loginError.style.display = 'block';
-            }
-        }
 
         // Función para remover estilos críticos (permite que CSS normal tome control)
         function removeCriticalStyles() {
@@ -2279,8 +1656,8 @@
                     item.classList.add('active');
                 }
             });
-            
-            // Load inventory if needed
+
+            // Load inventory when showing inventory page
             if (page === 'inventory' && inventoryItems.length === 0) {
                 loadInventory();
             }
@@ -2292,7 +1669,6 @@
                 const page = item.dataset.page;
                 if (page && !item.classList.contains('disabled')) {
                     showPage(page);
-                    // Close mobile menu after navigation
                     closeMobileMenu();
                 }
             });
@@ -2401,6 +1777,10 @@
                         allOrders.push({ id: doc.id, ...doc.data() });
                     });
                     console.log('Pedidos cargados:', allOrders.length);
+                    
+                    // Check for new orders and create notifications
+                    checkNewOrders(allOrders);
+                    
                     updateStats();
                     renderOrders();
                     renderDashboardPreview();
@@ -2452,203 +1832,12 @@
             // Notification dot
             document.getElementById('notification-dot').style.display = pending > 0 ? 'block' : 'none';
             
-            // Update notifications dropdown
-            updateNotificationsDropdown();
-            
             // Update dashboard preview
             renderDashboardPreview();
             
             // Update sales chart
             updateSalesChart(currentChartDays);
         }
-        
-        // ========== NOTIFICATIONS DROPDOWN ==========
-        let notificationsRead = new Set(); // IDs de notificaciones ya leídas
-        
-        // Cargar notificaciones leídas del localStorage
-        try {
-            const saved = localStorage.getItem('notifications_read');
-            if (saved) {
-                notificationsRead = new Set(JSON.parse(saved));
-            }
-        } catch (e) {
-            console.warn('Error loading notifications state:', e);
-        }
-        
-        function saveNotificationsRead() {
-            try {
-                localStorage.setItem('notifications_read', JSON.stringify([...notificationsRead]));
-            } catch (e) {
-                console.warn('Error saving notifications state:', e);
-            }
-        }
-        
-        function formatTimeAgo(date) {
-            const now = new Date();
-            const diff = now - date;
-            const minutes = Math.floor(diff / 60000);
-            const hours = Math.floor(diff / 3600000);
-            const days = Math.floor(diff / 86400000);
-            
-            if (minutes < 1) return 'Ahora';
-            if (minutes < 60) return `Hace ${minutes} min`;
-            if (hours < 24) return `Hace ${hours}h`;
-            if (days < 7) return `Hace ${days}d`;
-            return date.toLocaleDateString('es-AR', { day: 'numeric', month: 'short' });
-        }
-        
-        function getNotificationIcon(status) {
-            const icons = {
-                'pending': '⏳',
-                'confirmed': '✅',
-                'cancelled': '❌',
-                'delivered': '🚚'
-            };
-            return icons[status] || '📦';
-        }
-        
-        function getNotificationText(order) {
-            const name = order.customerName || 'Cliente';
-            const orderNum = order.orderNumber || order.id.slice(-6).toUpperCase();
-            
-            switch (order.status) {
-                case 'pending':
-                    return `<strong>Nuevo pedido</strong> de ${name} (#${orderNum})`;
-                case 'confirmed':
-                    return `Pedido <strong>#${orderNum}</strong> confirmado`;
-                case 'cancelled':
-                    return `Pedido <strong>#${orderNum}</strong> cancelado`;
-                case 'delivered':
-                    return `Pedido <strong>#${orderNum}</strong> entregado`;
-                default:
-                    return `Pedido <strong>#${orderNum}</strong> actualizado`;
-            }
-        }
-        
-        function updateNotificationsDropdown() {
-            const list = document.getElementById('notifications-list');
-            const countBadge = document.getElementById('notifications-count');
-            if (!list || !countBadge) return;
-            
-            // Obtener pedidos recientes (últimas 24 horas) o pendientes
-            const now = new Date();
-            const yesterday = new Date(now - 24 * 60 * 60 * 1000);
-            
-            const notifications = allOrders
-                .filter(o => {
-                    const orderDate = o.createdAt?.toDate ? o.createdAt.toDate() : new Date(o.createdAt);
-                    // Mostrar: pendientes siempre, o recientes (últimas 24h)
-                    return o.status === 'pending' || orderDate >= yesterday;
-                })
-                .slice(0, 10); // Máximo 10 notificaciones
-            
-            // Contar no leídas (pendientes que no han sido marcadas como leídas)
-            const unreadCount = notifications.filter(o => 
-                o.status === 'pending' && !notificationsRead.has(o.id)
-            ).length;
-            
-            countBadge.textContent = unreadCount;
-            countBadge.style.display = unreadCount > 0 ? 'inline-block' : 'none';
-            
-            if (notifications.length === 0) {
-                list.innerHTML = `
-                    <div class="notifications-empty">
-                        <div class="notifications-empty-icon">🔔</div>
-                        <div class="notifications-empty-text">No hay notificaciones</div>
-                    </div>
-                `;
-                return;
-            }
-            
-            list.innerHTML = notifications.map(order => {
-                const orderDate = order.createdAt?.toDate ? order.createdAt.toDate() : new Date(order.createdAt);
-                const isUnread = order.status === 'pending' && !notificationsRead.has(order.id);
-                
-                return `
-                    <div class="notification-item ${isUnread ? 'unread' : ''}" 
-                         data-order-id="${order.id}" 
-                         onclick="handleNotificationClick('${order.id}')">
-                        <div class="notification-icon ${order.status}">
-                            ${getNotificationIcon(order.status)}
-                        </div>
-                        <div class="notification-content">
-                            <div class="notification-text">${getNotificationText(order)}</div>
-                            <div class="notification-meta">
-                                <span class="notification-time">🕐 ${formatTimeAgo(orderDate)}</span>
-                                <span class="notification-amount">${formatPrice(order.total || 0)}</span>
-                            </div>
-                        </div>
-                    </div>
-                `;
-            }).join('');
-        }
-        
-        // Manejar clic en notificación
-        window.handleNotificationClick = function(orderId) {
-            // Marcar como leída
-            notificationsRead.add(orderId);
-            saveNotificationsRead();
-            
-            // Cerrar dropdown
-            document.getElementById('notifications-dropdown').classList.remove('active');
-            
-            // Navegar a pedidos pendientes
-            showPage('orders');
-            
-            // Filtrar por pendientes si el pedido es pendiente
-            const order = allOrders.find(o => o.id === orderId);
-            if (order && order.status === 'pending') {
-                filterOrders('pending');
-            }
-            
-            // Actualizar dropdown
-            updateNotificationsDropdown();
-            
-            // Scroll al pedido si es visible
-            setTimeout(() => {
-                const orderCard = document.querySelector(`[data-order-id="${orderId}"]`);
-                if (orderCard) {
-                    orderCard.scrollIntoView({ behavior: 'smooth', block: 'center' });
-                    orderCard.style.animation = 'pulse 0.5s ease';
-                }
-            }, 300);
-        };
-        
-        // Toggle dropdown de notificaciones
-        document.getElementById('notifications-btn').addEventListener('click', function(e) {
-            e.stopPropagation();
-            const dropdown = document.getElementById('notifications-dropdown');
-            dropdown.classList.toggle('active');
-        });
-        
-        // Cerrar dropdown al hacer clic fuera
-        document.addEventListener('click', function(e) {
-            const dropdown = document.getElementById('notifications-dropdown');
-            const wrapper = document.querySelector('.notifications-wrapper');
-            if (dropdown && wrapper && !wrapper.contains(e.target)) {
-                dropdown.classList.remove('active');
-            }
-        });
-        
-        // Marcar todas como leídas
-        document.getElementById('notifications-mark-read').addEventListener('click', function(e) {
-            e.stopPropagation();
-            allOrders.forEach(o => {
-                if (o.status === 'pending') {
-                    notificationsRead.add(o.id);
-                }
-            });
-            saveNotificationsRead();
-            updateNotificationsDropdown();
-        });
-        
-        // Ver todos los pedidos
-        document.getElementById('notifications-view-all').addEventListener('click', function(e) {
-            e.stopPropagation();
-            document.getElementById('notifications-dropdown').classList.remove('active');
-            showPage('orders');
-            filterOrders('all');
-        });
         
         // ========== SALES CHART ==========
         let salesChart = null;
@@ -2854,7 +2043,7 @@
             if (filtered.length === 0) {
                 const emptyHtml = '<div class="empty-state"><div class="empty-icon">📭</div><div class="empty-title">No hay pedidos</div><div class="empty-text">Los pedidos aparecerán aquí cuando lleguen</div></div>';
                 container.innerHTML = emptyHtml;
-                mobileContainer.innerHTML = emptyHtml;
+                if (mobileContainer) mobileContainer.innerHTML = emptyHtml;
                 return;
             }
 
@@ -2927,7 +2116,7 @@
 
             html += '</tbody></table>';
             container.innerHTML = html;
-            mobileContainer.innerHTML = mobileHtml;
+            if (mobileContainer) mobileContainer.innerHTML = mobileHtml;
         }
 
         // Format Price
@@ -3179,6 +2368,165 @@
             loadOrders();
         });
 
+        // ========== NOTIFICATIONS SYSTEM ==========
+        let notifications = [];
+        let seenOrderIds = new Set();
+        
+        // Toggle notifications dropdown
+        window.toggleNotifications = function() {
+            const dropdown = document.getElementById('notifications-dropdown');
+            dropdown.classList.toggle('active');
+        };
+        
+        // Close dropdown when clicking outside
+        document.addEventListener('click', (e) => {
+            const dropdown = document.getElementById('notifications-dropdown');
+            const btn = document.getElementById('notifications-btn');
+            if (dropdown && !dropdown.contains(e.target) && !btn.contains(e.target)) {
+                dropdown.classList.remove('active');
+            }
+        });
+        
+        // Notifications button click
+        document.getElementById('notifications-btn').addEventListener('click', (e) => {
+            e.stopPropagation();
+            toggleNotifications();
+        });
+        
+        // Add notification
+        function addNotification(type, title, message, orderId, orderData) {
+            const notif = {
+                id: Date.now() + '-' + Math.random().toString(36).substr(2, 9),
+                type: type,
+                title: title,
+                message: message,
+                orderId: orderId,
+                orderData: orderData,
+                time: new Date(),
+                read: false
+            };
+            notifications.unshift(notif);
+            // Keep only last 20 notifications
+            if (notifications.length > 20) {
+                notifications = notifications.slice(0, 20);
+            }
+            renderNotifications();
+        }
+        
+        // Render notifications list
+        function renderNotifications() {
+            const list = document.getElementById('notifications-list');
+            const countEl = document.getElementById('notifications-count');
+            const unreadCount = notifications.filter(n => !n.read).length;
+            
+            countEl.textContent = unreadCount;
+            countEl.style.display = unreadCount > 0 ? 'inline' : 'none';
+            
+            if (notifications.length === 0) {
+                list.innerHTML = '<div class="notifications-empty"><div class="notifications-empty-icon">🔕</div><div class="notifications-empty-text">No hay notificaciones</div></div>';
+                return;
+            }
+            
+            list.innerHTML = notifications.map(notif => {
+                const iconClass = notif.type === 'order' ? 'order' : (notif.type === 'stock' ? 'stock' : 'info');
+                const icon = notif.type === 'order' ? '📦' : (notif.type === 'stock' ? '⚠️' : 'ℹ️');
+                const timeAgo = getTimeAgo(notif.time);
+                const unreadClass = notif.read ? '' : 'unread';
+                
+                return '<div class="notification-item ' + unreadClass + '" onclick="handleNotificationClick(\'' + notif.id + '\')">' +
+                    '<div class="notification-icon ' + iconClass + '">' + icon + '</div>' +
+                    '<div class="notification-content">' +
+                        '<div class="notification-text">' + notif.message + '</div>' +
+                        '<div class="notification-time">' + timeAgo + '</div>' +
+                    '</div>' +
+                '</div>';
+            }).join('');
+        }
+        
+        // Handle notification click
+        window.handleNotificationClick = function(notifId) {
+            const notif = notifications.find(n => n.id === notifId);
+            if (!notif) return;
+            
+            // Mark as read
+            notif.read = true;
+            renderNotifications();
+            
+            // Navigate based on type
+            if (notif.type === 'order' && notif.orderId) {
+                showPage('orders');
+                toggleNotifications();
+                // Scroll to order or open modal
+                setTimeout(() => {
+                    if (notif.orderData) {
+                        viewOrder(notif.orderId);
+                    }
+                }, 300);
+            } else if (notif.type === 'stock') {
+                showPage('inventory');
+                toggleNotifications();
+            }
+        };
+        
+        // Clear all notifications (mark as read)
+        window.clearNotifications = function() {
+            notifications.forEach(n => n.read = true);
+            renderNotifications();
+        };
+        
+        // Check for new orders and create notifications
+        function checkNewOrders(orders) {
+            orders.forEach(order => {
+                // Only notify for pending orders we haven't seen
+                if (order.status === 'pending' && !seenOrderIds.has(order.id)) {
+                    seenOrderIds.add(order.id);
+                    
+                    // Don't notify on initial load (first 5 seconds)
+                    if (Date.now() - appStartTime > 5000) {
+                        const orderNum = order.orderNumber || order.id.slice(-6);
+                        const customerName = order.customerName || 'Cliente';
+                        const total = formatPrice(order.total || 0);
+                        
+                        addNotification(
+                            'order',
+                            'Nuevo Pedido',
+                            '<strong>#' + orderNum + '</strong> - ' + customerName + ' - ' + total,
+                            order.id,
+                            order
+                        );
+                        
+                        // Play notification sound (optional)
+                        playNotificationSound();
+                    }
+                }
+            });
+        }
+        
+        // Play notification sound
+        function playNotificationSound() {
+            try {
+                const audioContext = new (window.AudioContext || window.webkitAudioContext)();
+                const oscillator = audioContext.createOscillator();
+                const gainNode = audioContext.createGain();
+                
+                oscillator.connect(gainNode);
+                gainNode.connect(audioContext.destination);
+                
+                oscillator.frequency.value = 800;
+                oscillator.type = 'sine';
+                gainNode.gain.value = 0.1;
+                
+                oscillator.start();
+                gainNode.gain.exponentialRampToValueAtTime(0.01, audioContext.currentTime + 0.3);
+                oscillator.stop(audioContext.currentTime + 0.3);
+            } catch (e) {
+                // Audio not supported
+            }
+        }
+        
+        // Track app start time for initial load detection
+        const appStartTime = Date.now();
+
         // Search
         document.getElementById('search-input').addEventListener('input', (e) => {
             const term = e.target.value.toLowerCase();
@@ -3211,33 +2559,38 @@
             
             try {
                 const STORE_ID = 'petsstore-b0516';
-                const inventoryRef = collection(db, 'tiendas', STORE_ID, 'inventory');
-                const q = query(inventoryRef, orderBy('name'));
                 
-                inventoryUnsubscribe = onSnapshot(q, (snapshot) => {
-                    inventoryItems = [];
-                    snapshot.forEach(doc => {
-                        inventoryItems.push({ id: doc.id, ...doc.data() });
-                    });
+                // Unsubscribe from previous listener
+                if (inventoryUnsubscribe) {
+                    inventoryUnsubscribe();
+                }
+                
+                // Subscribe to inventory changes
+                const inventoryRef = collection(db, 'tiendas', STORE_ID, 'inventory');
+                inventoryUnsubscribe = onSnapshot(inventoryRef, (snapshot) => {
+                    inventoryItems = snapshot.docs.map(doc => ({
+                        id: doc.id,
+                        ...doc.data()
+                    }));
                     renderInventory();
                     updateInventoryStats();
                 }, (error) => {
                     console.error('Error loading inventory:', error);
-                    grid.innerHTML = '<div style="text-align:center;padding:2rem;color:var(--text-muted);">Error al cargar inventario. Sincroniza primero desde el admin local.</div>';
+                    grid.innerHTML = '<div style="text-align:center;padding:2rem;color:var(--text-muted);">Error al cargar inventario</div>';
                 });
             } catch (error) {
-                console.error('Error:', error);
+                console.error('Error loading inventory:', error);
                 grid.innerHTML = '<div style="text-align:center;padding:2rem;color:var(--text-muted);">Error al cargar inventario</div>';
             }
         }
 
         // Render inventory grid
         function renderInventory() {
-            const grid = document.getElementById('inventory-grid');
-            const searchTerm = (document.getElementById('inventory-search')?.value || '').toLowerCase();
+            var grid = document.getElementById('inventory-grid');
+            var searchTerm = (document.getElementById('inventory-search')?.value || '').toLowerCase();
             
-            let filtered = inventoryItems.filter(item => {
-                const matchesSearch = !searchTerm || 
+            var filtered = inventoryItems.filter(function(item) {
+                var matchesSearch = !searchTerm || 
                     item.name.toLowerCase().includes(searchTerm) ||
                     (item.variantName || '').toLowerCase().includes(searchTerm) ||
                     (item.category || '').toLowerCase().includes(searchTerm);
@@ -3258,23 +2611,22 @@
             grid.innerHTML = filtered.map(function(item) {
                 var stockClass = item.stock === 0 ? 'out-of-stock' : (item.stock <= 5 ? 'low-stock' : '');
                 var stockValueClass = item.stock === 0 ? 'out' : (item.stock <= 5 ? 'low' : 'ok');
-                var stockColor = item.stock === 0 ? '#ef4444' : (item.stock <= 5 ? '#f59e0b' : '#22c55e');
                 var defaultImg = 'data:image/svg+xml,' + encodeURIComponent('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><rect fill="#333" width="100" height="100"/><text x="50" y="55" text-anchor="middle" fill="#666" font-size="40">📦</text></svg>');
                 var imgSrc = item.image || defaultImg;
-                var variantHtml = item.variantName ? '<div style="font-size:0.6875rem;color:#f97316;">' + item.variantName + '</div>' : '';
+                var variantHtml = item.variantName ? '<div class="inventory-card-variant">' + item.variantName + '</div>' : '';
                 
-                return '<div class="inventory-card ' + stockClass + '" data-id="' + item.id + '" style="display:flex;align-items:center;gap:0.5rem;padding:0.75rem;">' +
-                    '<img style="width:50px;height:50px;border-radius:8px;object-fit:cover;flex-shrink:0;" src="' + imgSrc + '" alt="' + item.name + '" onerror="this.src=\'' + defaultImg + '\'">' +
-                    '<div style="flex:1;min-width:0;overflow:hidden;">' +
-                        '<div style="font-weight:600;font-size:0.8125rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">' + item.name + '</div>' +
+                return '<div class="inventory-card ' + stockClass + '" data-id="' + item.id + '">' +
+                    '<img class="inventory-card-image" src="' + imgSrc + '" alt="' + item.name + '" onerror="this.src=\'' + defaultImg + '\'">' +
+                    '<div class="inventory-card-info">' +
+                        '<div class="inventory-card-name">' + item.name + '</div>' +
                         variantHtml +
-                        '<div style="font-size:0.625rem;color:#a3a3a3;">' + (item.category || 'Sin categoría') + '</div>' +
+                        '<div class="inventory-card-category">' + (item.category || 'Sin categoría') + '</div>' +
                     '</div>' +
-                    '<div style="flex-shrink:0;display:flex;align-items:center;gap:0.5rem;">' +
-                        '<div style="font-size:1.25rem;font-weight:700;color:' + stockColor + ';min-width:30px;text-align:center;">' + item.stock + '</div>' +
-                        '<div style="display:flex;flex-direction:column;gap:0.125rem;">' +
-                            '<button class="stock-btn" style="width:28px;height:28px;border:1px solid #333;border-radius:4px;background:#1f1f1f;color:#fff;cursor:pointer;" onclick="updateStock(\'' + item.id + '\', 1)">+</button>' +
-                            '<button class="stock-btn" style="width:28px;height:28px;border:1px solid #333;border-radius:4px;background:#1f1f1f;color:#fff;cursor:pointer;" onclick="updateStock(\'' + item.id + '\', -1)">−</button>' +
+                    '<div class="inventory-card-stock">' +
+                        '<div class="stock-value ' + stockValueClass + '">' + item.stock + '</div>' +
+                        '<div class="stock-controls">' +
+                            '<button class="stock-btn minus" onclick="updateStock(\'' + item.id + '\', -1)">−</button>' +
+                            '<button class="stock-btn plus" onclick="updateStock(\'' + item.id + '\', 1)">+</button>' +
                         '</div>' +
                     '</div>' +
                 '</div>';
@@ -3283,10 +2635,10 @@
 
         // Update inventory stats
         function updateInventoryStats() {
-            const total = inventoryItems.length;
-            const outOfStock = inventoryItems.filter(i => i.stock === 0).length;
-            const lowStock = inventoryItems.filter(i => i.stock > 0 && i.stock <= 5).length;
-            const inStock = inventoryItems.filter(i => i.stock > 5).length;
+            var total = inventoryItems.length;
+            var outOfStock = inventoryItems.filter(function(i) { return i.stock === 0; }).length;
+            var lowStock = inventoryItems.filter(function(i) { return i.stock > 0 && i.stock <= 5; }).length;
+            var inStock = inventoryItems.filter(function(i) { return i.stock > 5; }).length;
             
             document.getElementById('inv-total').textContent = total;
             document.getElementById('inv-in-stock').textContent = inStock;
@@ -3298,14 +2650,14 @@
         }
 
         // Update stock for an item
-        window.updateStock = async (itemId, delta) => {
-            const item = inventoryItems.find(i => i.id === itemId);
+        window.updateStock = async function(itemId, delta) {
+            var item = inventoryItems.find(function(i) { return i.id === itemId; });
             if (!item) return;
             
-            const newStock = Math.max(0, item.stock + delta);
+            var newStock = Math.max(0, item.stock + delta);
             
             try {
-                const STORE_ID = 'petsstore-b0516';
+                var STORE_ID = 'petsstore-b0516';
                 await updateDoc(doc(db, 'tiendas', STORE_ID, 'inventory', itemId), {
                     stock: newStock,
                     updatedAt: Timestamp.now()
@@ -3316,14 +2668,13 @@
         };
 
         // Sync inventory (placeholder - needs backend)
-        window.syncInventory = async () => {
-            const btn = document.getElementById('sync-inventory-btn');
+        window.syncInventory = async function() {
+            var btn = document.getElementById('sync-inventory-btn');
             btn.disabled = true;
             btn.innerHTML = '⏳ Sincronizando...';
             
             try {
-                // This would call the backend to sync from SQLite to Firebase
-                alert('Para sincronizar el inventario, ejecuta en el servidor:\\n\\nnode sync-inventory-firebase.js');
+                alert('Para sincronizar el inventario desde SQLite, ejecuta en el servidor:\n\nnode sync-inventory-firebase.js');
             } finally {
                 btn.disabled = false;
                 btn.innerHTML = '🔄 Sincronizar';
@@ -3331,9 +2682,9 @@
         };
 
         // Inventory filter buttons
-        document.querySelectorAll('.inventory-filter-btn').forEach(btn => {
-            btn.addEventListener('click', () => {
-                document.querySelectorAll('.inventory-filter-btn').forEach(b => b.classList.remove('active'));
+        document.querySelectorAll('.inventory-filter-btn').forEach(function(btn) {
+            btn.addEventListener('click', function() {
+                document.querySelectorAll('.inventory-filter-btn').forEach(function(b) { b.classList.remove('active'); });
                 btn.classList.add('active');
                 inventoryFilter = btn.dataset.filter;
                 renderInventory();
@@ -3341,9 +2692,12 @@
         });
 
         // Inventory search
-        document.getElementById('inventory-search')?.addEventListener('input', () => {
-            renderInventory();
-        });
+        var invSearch = document.getElementById('inventory-search');
+        if (invSearch) {
+            invSearch.addEventListener('input', function() {
+                renderInventory();
+            });
+        }
     </script>
 </body>
 </html>
