@@ -73,21 +73,48 @@ class FirebaseStock {
   /**
    * Obtener stock de un producto o variante
    * @param {string} id - ID del producto o variante
+   * @param {boolean} isVariant - Si es una variante (opcional)
    * @returns {number|null} - Stock o null si no está en Firebase
    */
-  static getStock(id) {
+  static getStock(id, isVariant = null) {
     if (!this.initialized || this.stockCache.size === 0) return null;
-    return this.stockCache.has(id) ? this.stockCache.get(id) : null;
+    
+    const strId = String(id);
+    
+    // Si ya tiene prefijo, buscar directo
+    if (strId.startsWith('p_') || strId.startsWith('v_')) {
+      return this.stockCache.has(strId) ? this.stockCache.get(strId) : null;
+    }
+    
+    // Buscar con prefijo p_ (producto)
+    const productKey = `p_${strId}`;
+    if (this.stockCache.has(productKey)) {
+      return this.stockCache.get(productKey);
+    }
+    
+    // Buscar con prefijo v_ (variante)
+    const variantKey = `v_${strId}`;
+    if (this.stockCache.has(variantKey)) {
+      return this.stockCache.get(variantKey);
+    }
+    
+    // Buscar sin prefijo (compatibilidad)
+    if (this.stockCache.has(strId)) {
+      return this.stockCache.get(strId);
+    }
+    
+    return null;
   }
 
   /**
    * Verificar si un producto está disponible
    * @param {string} id - ID del producto o variante
    * @param {number} quantity - Cantidad requerida
+   * @param {boolean} isVariant - Si es una variante
    * @returns {boolean}
    */
-  static isAvailable(id, quantity = 1) {
-    const stock = this.getStock(id);
+  static isAvailable(id, quantity = 1, isVariant = false) {
+    const stock = this.getStock(id, isVariant);
     // Si no está en Firebase, asumir disponible
     if (stock === null) return true;
     return stock >= quantity;
@@ -96,10 +123,11 @@ class FirebaseStock {
   /**
    * Verificar si un producto está sin stock
    * @param {string} id - ID del producto o variante
+   * @param {boolean} isVariant - Si es una variante
    * @returns {boolean}
    */
-  static isOutOfStock(id) {
-    const stock = this.getStock(id);
+  static isOutOfStock(id, isVariant = false) {
+    const stock = this.getStock(id, isVariant);
     // Si no está en Firebase, asumir disponible
     if (stock === null) return false;
     return stock <= 0;
@@ -109,10 +137,11 @@ class FirebaseStock {
    * Verificar si tiene stock bajo
    * @param {string} id - ID del producto o variante
    * @param {number} threshold - Umbral (default 5)
+   * @param {boolean} isVariant - Si es una variante
    * @returns {boolean}
    */
-  static isLowStock(id, threshold = 5) {
-    const stock = this.getStock(id);
+  static isLowStock(id, threshold = 5, isVariant = false) {
+    const stock = this.getStock(id, isVariant);
     if (stock === null) return false;
     return stock > 0 && stock <= threshold;
   }
@@ -150,11 +179,23 @@ class FirebaseStock {
     // Buscar todas las tarjetas de producto
     document.querySelectorAll('.card[data-product-id]').forEach(card => {
       const productId = card.dataset.productId;
+      const isVariant = card.dataset.variantId ? true : false;
       
-      if (this.isOutOfStock(productId)) {
-        this.markAsOutOfStock(card);
-      } else if (this.isLowStock(productId)) {
-        this.markAsLowStock(card);
+      // Intentar con prefijo de producto primero
+      let outOfStock = false;
+      let lowStock = false;
+      
+      // Verificar stock con prefijo p_
+      const pStock = this.stockCache.get(`p_${productId}`);
+      if (pStock !== undefined) {
+        outOfStock = pStock <= 0;
+        lowStock = pStock > 0 && pStock <= 5;
+      }
+      
+      if (outOfStock) {
+        this.markAsOutOfStock(card, pStock);
+      } else if (lowStock) {
+        this.markAsLowStock(card, pStock);
       } else {
         this.markAsInStock(card);
       }
@@ -164,7 +205,7 @@ class FirebaseStock {
   /**
    * Marcar un elemento como sin stock
    */
-  static markAsOutOfStock(element) {
+  static markAsOutOfStock(element, stock = 0) {
     element.classList.add('card--out-of-stock');
     element.classList.remove('card--low-stock');
     
@@ -173,49 +214,50 @@ class FirebaseStock {
     if (!badge) {
       badge = document.createElement('div');
       badge.className = 'card__stock-badge';
-      const imageContainer = element.querySelector('.card__image-container');
+      badge.style.cssText = 'position:absolute;top:8px;left:8px;z-index:10;';
+      const imageContainer = element.querySelector('.card__image-wrapper') || element.querySelector('.card__image-container');
       if (imageContainer) {
+        imageContainer.style.position = 'relative';
         imageContainer.appendChild(badge);
       }
     }
-    badge.innerHTML = '<span class="stock-badge stock-badge--out">Sin Stock</span>';
+    badge.innerHTML = '<span style="background:#ef4444;color:white;padding:4px 8px;border-radius:4px;font-size:0.75rem;font-weight:600;">Sin Stock</span>';
     
     // Deshabilitar botón de agregar
-    const addBtn = element.querySelector('.card__add-btn');
+    const addBtn = element.querySelector('.add-to-cart-btn');
     if (addBtn) {
       addBtn.disabled = true;
-      addBtn.setAttribute('data-original-text', addBtn.textContent);
-      addBtn.textContent = 'Sin Stock';
+      addBtn.style.opacity = '0.5';
+      addBtn.style.cursor = 'not-allowed';
     }
   }
 
   /**
    * Marcar un elemento como stock bajo
    */
-  static markAsLowStock(element) {
+  static markAsLowStock(element, stock) {
     element.classList.remove('card--out-of-stock');
     element.classList.add('card--low-stock');
-    
-    const productId = element.dataset.productId;
-    const stock = this.getStock(productId);
     
     let badge = element.querySelector('.card__stock-badge');
     if (!badge) {
       badge = document.createElement('div');
       badge.className = 'card__stock-badge';
-      const imageContainer = element.querySelector('.card__image-container');
+      badge.style.cssText = 'position:absolute;top:8px;left:8px;z-index:10;';
+      const imageContainer = element.querySelector('.card__image-wrapper') || element.querySelector('.card__image-container');
       if (imageContainer) {
+        imageContainer.style.position = 'relative';
         imageContainer.appendChild(badge);
       }
     }
-    badge.innerHTML = `<span class="stock-badge stock-badge--low">¡Últimas ${stock}!</span>`;
+    badge.innerHTML = `<span style="background:#f59e0b;color:white;padding:4px 8px;border-radius:4px;font-size:0.75rem;font-weight:600;">¡Últimas ${stock}!</span>`;
     
     // Habilitar botón
-    const addBtn = element.querySelector('.card__add-btn');
-    if (addBtn && addBtn.disabled) {
+    const addBtn = element.querySelector('.add-to-cart-btn');
+    if (addBtn) {
       addBtn.disabled = false;
-      const originalText = addBtn.getAttribute('data-original-text');
-      if (originalText) addBtn.textContent = originalText;
+      addBtn.style.opacity = '';
+      addBtn.style.cursor = '';
     }
   }
 
@@ -230,11 +272,11 @@ class FirebaseStock {
     if (badge) badge.remove();
     
     // Habilitar botón
-    const addBtn = element.querySelector('.card__add-btn');
-    if (addBtn && addBtn.disabled) {
+    const addBtn = element.querySelector('.add-to-cart-btn');
+    if (addBtn) {
       addBtn.disabled = false;
-      const originalText = addBtn.getAttribute('data-original-text');
-      if (originalText) addBtn.textContent = originalText;
+      addBtn.style.opacity = '';
+      addBtn.style.cursor = '';
     }
   }
 
