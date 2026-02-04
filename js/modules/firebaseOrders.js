@@ -238,6 +238,9 @@ class FirebaseOrders {
 
       console.log('✅ Order created in Firebase:', docRef.id);
       
+      // Reservar stock (descontar de inventario)
+      await this.reserveStock(items);
+
       return {
         success: true,
         orderId: docRef.id,
@@ -261,3 +264,47 @@ class FirebaseOrders {
 if (typeof window !== 'undefined') {
   window.FirebaseOrders = FirebaseOrders;
 }
+
+/**
+ * Reservar stock (descontar del inventario cuando se crea un pedido)
+ * @param {Array} items - Items del pedido
+ */
+FirebaseOrders.reserveStock = async function(items) {
+  try {
+    const { doc, getDoc, updateDoc } = await import('https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js');
+    
+    for (const item of items) {
+      // Determinar el ID del inventario
+      let inventoryId;
+      if (item.variant && item.variant.id) {
+        inventoryId = `v_${item.variant.id}`;
+      } else {
+        inventoryId = `p_${item.productId}`;
+      }
+      
+      // Obtener documento de inventario
+      const inventoryRef = doc(this.db, 'tiendas', this.STORE_ID, 'inventory', inventoryId);
+      const inventoryDoc = await getDoc(inventoryRef);
+      
+      if (inventoryDoc.exists()) {
+        const currentStock = inventoryDoc.data().stock || 0;
+        const newStock = Math.max(0, currentStock - item.quantity);
+        
+        // Actualizar stock
+        await updateDoc(inventoryRef, {
+          stock: newStock,
+          updatedAt: new Date()
+        });
+        
+        console.log(`📦 Stock reservado: ${inventoryId} - ${currentStock} → ${newStock}`);
+      } else {
+        console.warn(`⚠️ Inventario no encontrado: ${inventoryId}`);
+      }
+    }
+    
+    console.log('✅ Stock reservado para todos los items del pedido');
+  } catch (error) {
+    console.error('❌ Error reservando stock:', error);
+    // No bloquear el pedido si falla la reserva de stock
+  }
+};

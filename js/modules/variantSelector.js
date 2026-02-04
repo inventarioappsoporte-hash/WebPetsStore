@@ -489,9 +489,10 @@ class VariantSelector {
     // Verificar stock desde Firebase primero
     let isAvailable = this.selectedVariant.available;
     
-    if (typeof FirebaseStock !== 'undefined' && FirebaseStock.initialized) {
+    if (typeof FirebaseStock !== 'undefined' && FirebaseStock.initialized && FirebaseStock.stockCache.size > 0) {
       const variantId = this.selectedVariant.id;
       const firebaseStock = FirebaseStock.getStock(`v_${variantId}`);
+      console.log(`📦 updateBuyButton - Variante ${variantId}, Stock Firebase: ${firebaseStock}`);
       if (firebaseStock !== null) {
         isAvailable = firebaseStock > 0;
       }

@@ -1918,7 +1918,7 @@
     <script type="module">
         import { initializeApp } from 'https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js';
         import { getAuth, signInWithEmailAndPassword, onAuthStateChanged, signOut } from 'https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js';
-        import { getFirestore, collection, query, where, orderBy, onSnapshot, doc, updateDoc, getDocs, Timestamp, limit } from 'https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js';
+        import { getFirestore, collection, query, where, orderBy, onSnapshot, doc, updateDoc, getDocs, getDoc, Timestamp, limit } from 'https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js';
 
         // Firebase Config
         const firebaseConfig = {
@@ -2349,10 +2349,48 @@
             if (!confirm('¿Cancelar este pedido?')) return;
             try {
                 const STORE_ID = 'petsstore-b0516';
+                
+                // Obtener el pedido para devolver el stock
+                const order = allOrders.find(o => o.id === orderId);
+                
+                // Devolver stock de cada item
+                if (order && order.items) {
+                    for (const item of order.items) {
+                        let inventoryId;
+                        if (item.variant && item.variant.id) {
+                            inventoryId = 'v_' + item.variant.id;
+                        } else {
+                            inventoryId = 'p_' + item.productId;
+                        }
+                        
+                        try {
+                            const inventoryRef = doc(db, 'tiendas', STORE_ID, 'inventory', inventoryId);
+                            const inventoryDoc = await getDoc(inventoryRef);
+                            
+                            if (inventoryDoc.exists()) {
+                                const currentStock = inventoryDoc.data().stock || 0;
+                                const newStock = currentStock + item.quantity;
+                                
+                                await updateDoc(inventoryRef, {
+                                    stock: newStock,
+                                    updatedAt: Timestamp.now()
+                                });
+                                
+                                console.log('📦 Stock devuelto: ' + inventoryId + ' - ' + currentStock + ' → ' + newStock);
+                            }
+                        } catch (stockError) {
+                            console.error('Error devolviendo stock:', stockError);
+                        }
+                    }
+                }
+                
+                // Actualizar estado del pedido
                 await updateDoc(doc(db, 'tiendas', STORE_ID, 'orders', orderId), {
                     status: 'cancelled',
                     cancelledAt: Timestamp.now()
                 });
+                
+                console.log('✅ Pedido cancelado y stock devuelto');
             } catch (error) {
                 alert('Error: ' + error.message);
             }
