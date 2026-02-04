@@ -2046,8 +2046,8 @@
                     itemsCount: editedItems.length,
                     subtotal: newSubtotal,
                     total: newTotal,
-                    adminNotes: adminNotes,
-                    wasAdjusted: wasAdjusted || currentEditingOrder.wasAdjusted,
+                    adminNotes: adminNotes || '',
+                    wasAdjusted: wasAdjusted || currentEditingOrder.wasAdjusted || false,
                     updatedAt: Timestamp.now()
                 });
                 alert('✅ Pedido actualizado');
