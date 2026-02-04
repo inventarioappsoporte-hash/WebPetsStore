@@ -18146,6 +18146,7 @@
           "price": 4918,
           "stock": 10,
           "available": true,
+          "originalPrice": 8197,
           "sku": "VES022-1",
           "images": {
             "cover": "assets/images/products/prod_559/cover.jpg",
@@ -18163,6 +18164,7 @@
           "price": 4918,
           "stock": 10,
           "available": true,
+          "originalPrice": 8197,
           "sku": "VES022-2",
           "images": {
             "cover": "assets/images/products/prod_560/cover.jpg",
@@ -18180,6 +18182,7 @@
           "price": 5410,
           "stock": 10,
           "available": true,
+          "originalPrice": 9016,
           "sku": "VES022-3",
           "images": {
             "cover": "assets/images/products/prod_561/cover.jpg",
@@ -18197,6 +18200,7 @@
           "price": 5410,
           "stock": 10,
           "available": true,
+          "originalPrice": 9016,
           "sku": "VES022-4",
           "images": {
             "cover": "assets/images/products/prod_562/cover.jpg",
@@ -18214,6 +18218,7 @@
           "price": 6393,
           "stock": 10,
           "available": true,
+          "originalPrice": 10655,
           "sku": "VES022-5",
           "images": {
             "cover": "assets/images/products/prod_563/cover.jpg",
@@ -18231,6 +18236,7 @@
           "price": 6393,
           "stock": 10,
           "available": true,
+          "originalPrice": 10655,
           "sku": "VES022-6",
           "images": {
             "cover": "assets/images/products/prod_564/cover.jpg",
@@ -18248,6 +18254,7 @@
           "price": 6393,
           "stock": 10,
           "available": true,
+          "originalPrice": 10655,
           "sku": "VES022-7",
           "images": {
             "cover": "assets/images/products/prod_565/cover.jpg",
