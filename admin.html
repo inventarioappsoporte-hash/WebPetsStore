@@ -42,9 +42,9 @@
             --text: #ffffff;
             --text-muted: #a3a3a3;
             --border: #2a2a2a;
-            --primary: #ff6b00;
-            --secondary: #1e3a5f;
-            --accent: #22c55e;
+            --primary: #FF6B00;
+            --secondary: #1E3A5F;
+            --accent: #22C55E;
             --success: #22c55e;
             --warning: #f59e0b;
             --danger: #ef4444;
@@ -621,11 +621,190 @@
         /* Page Content */
         .page-content { padding: 1.5rem; }
         
+        /* ========== RESPONSIVE MOBILE ========== */
         @media (max-width: 768px) {
-            .sidebar { transform: translateX(-100%); }
+            /* Sidebar - Hidden by default, shown with .open class */
+            .sidebar { 
+                transform: translateX(-100%); 
+                transition: transform 0.3s ease;
+            }
+            .sidebar.open { transform: translateX(0); }
+            
+            /* Main content full width */
             .main-content { margin-left: 0; }
-            .stats-grid { grid-template-columns: 1fr; }
+            
+            /* Stats grid - 2 columns on tablet, 1 on phone */
+            .stats-grid { grid-template-columns: repeat(2, 1fr); gap: 0.75rem; }
+            
+            /* Header adjustments */
+            .header { padding: 0.75rem 1rem; }
             .header-search { display: none; }
+            .user-menu { padding: 0.375rem 0.5rem; }
+            .user-info { display: none; }
+            
+            /* Dashboard padding */
+            .dashboard { padding: 1rem; }
+            .page-header { flex-direction: column; align-items: flex-start; gap: 0.5rem; }
+            .page-title { font-size: 1.25rem; }
+            
+            /* Stat cards smaller */
+            .stat-card { padding: 1rem; }
+            .stat-icon { width: 40px; height: 40px; font-size: 1.25rem; margin-bottom: 0.75rem; }
+            .stat-value { font-size: 1.5rem; }
+            .stat-label { font-size: 0.75rem; }
+            
+            /* Charts grid single column */
+            .charts-grid { grid-template-columns: 1fr; gap: 1rem; }
+            .chart-card { padding: 1rem; }
+            
+            /* Orders section */
+            .orders-header { 
+                flex-direction: column; 
+                align-items: flex-start; 
+                gap: 0.75rem; 
+                padding: 1rem;
+            }
+            .orders-filters { width: 100%; overflow-x: auto; flex-wrap: nowrap; padding-bottom: 0.5rem; }
+            .filter-btn { white-space: nowrap; flex-shrink: 0; }
+            
+            /* Orders table - card view on mobile */
+            .orders-table { display: none; }
+            .orders-mobile { display: block; }
+            
+            /* Login box */
+            .login-box { padding: 1.5rem; margin: 1rem; }
+            .login-logo { font-size: 1.5rem; }
+        }
+        
+        @media (max-width: 480px) {
+            /* Extra small screens */
+            .stats-grid { grid-template-columns: 1fr; }
+            .stat-card { 
+                display: flex; 
+                align-items: center; 
+                gap: 1rem; 
+                padding: 0.875rem;
+            }
+            .stat-icon { margin-bottom: 0; }
+            .stat-content { flex: 1; }
+            .stat-value { font-size: 1.25rem; }
+            
+            /* Header compact */
+            .header-actions { gap: 0.5rem; }
+            .header-btn { width: 36px; height: 36px; }
+            
+            /* Dashboard ultra compact */
+            .dashboard { padding: 0.75rem; }
+            .page-title { font-size: 1.125rem; }
+        }
+        
+        /* ========== MOBILE MENU BUTTON ========== */
+        .mobile-menu-btn {
+            display: none;
+            width: 40px;
+            height: 40px;
+            align-items: center;
+            justify-content: center;
+            background: var(--bg);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            color: var(--text);
+            cursor: pointer;
+            font-size: 1.25rem;
+        }
+        @media (max-width: 768px) {
+            .mobile-menu-btn { display: flex; }
+        }
+        
+        /* ========== MOBILE ORDERS CARDS ========== */
+        .orders-mobile {
+            display: none;
+            padding: 0.5rem;
+        }
+        @media (max-width: 768px) {
+            .orders-mobile { display: block; }
+        }
+        .order-card-mobile {
+            background: var(--bg);
+            border-radius: 12px;
+            padding: 1rem;
+            margin-bottom: 0.75rem;
+            border: 1px solid var(--border);
+        }
+        .order-card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 0.75rem;
+        }
+        .order-card-id {
+            font-weight: 700;
+            color: var(--primary);
+            font-size: 1rem;
+        }
+        .order-card-date {
+            font-size: 0.75rem;
+            color: var(--text-muted);
+        }
+        .order-card-customer {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            margin-bottom: 0.75rem;
+            padding-bottom: 0.75rem;
+            border-bottom: 1px solid var(--border);
+        }
+        .order-card-avatar {
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(135deg, var(--secondary), var(--primary));
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 600;
+            font-size: 1rem;
+            flex-shrink: 0;
+        }
+        .order-card-info { flex: 1; min-width: 0; }
+        .order-card-name { font-weight: 600; font-size: 0.9375rem; }
+        .order-card-phone { font-size: 0.8125rem; color: var(--text-muted); }
+        .order-card-details {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 0.75rem;
+        }
+        .order-card-total {
+            font-size: 1.25rem;
+            font-weight: 700;
+        }
+        .order-card-items {
+            font-size: 0.8125rem;
+            color: var(--text-muted);
+        }
+        .order-card-actions {
+            display: flex;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+        }
+        .order-card-actions .action-btn {
+            flex: 1;
+            min-width: 60px;
+            height: 40px;
+        }
+        
+        /* ========== SIDEBAR OVERLAY ========== */
+        .sidebar-overlay {
+            display: none;
+            position: fixed;
+            inset: 0;
+            background: rgba(0,0,0,0.5);
+            z-index: 99;
+        }
+        .sidebar-overlay.active { display: block; }
+        @media (min-width: 769px) {
+            .sidebar-overlay { display: none !important; }
         }
 
         /* ========== ORDER EDIT MODAL - COMPACT ========== */
@@ -751,26 +930,120 @@
         .modal-btn-cancel { background: var(--bg-card); color: var(--text-muted); border: 1px solid var(--border); }
         .modal-btn-cancel:hover { color: var(--text); }
         
-        /* Recent Orders Preview */
-        .recent-orders-list { display: flex; flex-direction: column; gap: 0.5rem; }
-        .recent-order-item {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 0.75rem 1rem;
-            background: var(--bg-card);
-            border-radius: 8px;
-            cursor: pointer;
-            transition: background 0.2s;
+        /* ========== MODAL RESPONSIVE ========== */
+        @media (max-width: 768px) {
+            .modal-overlay { 
+                padding: 0; 
+                align-items: flex-end; 
+            }
+            .modal-content {
+                max-width: 100%;
+                max-height: 90vh;
+                border-radius: 16px 16px 0 0;
+                animation: slideUp 0.3s ease;
+            }
+            @keyframes slideUp {
+                from { transform: translateY(100%); }
+                to { transform: translateY(0); }
+            }
+            .modal-header { padding: 1rem; }
+            .modal-title { font-size: 1rem; }
+            .modal-close { width: 32px; height: 32px; }
+            .modal-body { padding: 1rem; }
+            .modal-info-row { 
+                flex-direction: column; 
+                gap: 0.5rem; 
+            }
+            .modal-info-chip { 
+                width: 100%; 
+                justify-content: space-between;
+                padding: 0.5rem 0.75rem;
+            }
+            .modal-status-row { 
+                flex-direction: column; 
+                align-items: stretch;
+                gap: 0.375rem;
+            }
+            .modal-status-select { 
+                padding: 0.75rem; 
+                font-size: 1rem; 
+            }
+            .order-items-compact { max-height: 200px; }
+            .order-item-compact {
+                flex-wrap: wrap;
+                padding: 0.75rem;
+                gap: 0.5rem;
+            }
+            .order-item-compact img { width: 48px; height: 48px; }
+            .order-item-compact .item-info { 
+                flex: 1 1 calc(100% - 60px); 
+                min-width: 0;
+            }
+            .order-item-compact .item-name { 
+                font-size: 0.875rem; 
+                white-space: normal;
+            }
+            .order-item-compact .item-variant { font-size: 0.75rem; }
+            .order-item-compact .item-price { 
+                order: 3;
+                width: auto;
+                flex: 1;
+                text-align: left;
+                font-size: 0.8125rem;
+            }
+            .order-item-compact .item-qty { 
+                width: 50px; 
+                padding: 0.5rem;
+                font-size: 1rem;
+            }
+            .order-item-compact .item-subtotal { 
+                width: auto;
+                font-size: 0.9375rem;
+            }
+            .order-item-compact .item-remove { 
+                width: 32px; 
+                height: 32px;
+                font-size: 1rem;
+            }
+            .modal-totals-compact {
+                flex-direction: column;
+                gap: 0.5rem;
+                align-items: stretch;
+            }
+            .modal-totals-compact .total-item {
+                justify-content: space-between;
+                font-size: 0.875rem;
+            }
+            .modal-totals-compact .total-final { font-size: 1rem; }
+            .modal-textarea { 
+                height: 60px; 
+                font-size: 1rem;
+                padding: 0.75rem;
+            }
+            .modal-footer { 
+                padding: 1rem; 
+                flex-wrap: wrap;
+                gap: 0.5rem;
+            }
+            .modal-btn { 
+                padding: 0.75rem 1rem; 
+                font-size: 0.875rem;
+                min-height: 44px;
+            }
+            .modal-btn-cancel { flex: 1 1 100%; order: 3; }
         }
-        .recent-order-item:hover { background: var(--border); }
-        .recent-order-info { display: flex; flex-direction: column; gap: 0.25rem; }
-        .recent-order-id { font-weight: 600; font-size: 0.875rem; }
-        .recent-order-customer { font-size: 0.8rem; color: var(--text-muted); }
-        .recent-order-meta { display: flex; flex-direction: column; align-items: flex-end; gap: 0.25rem; }
-        .recent-order-total { font-weight: 600; font-size: 0.875rem; }
-        .recent-order-status { font-size: 0.75rem; }
-        .empty-state-small { text-align: center; padding: 2rem; color: var(--text-muted); }
+        
+        @media (max-width: 480px) {
+            .modal-content { max-height: 95vh; }
+            .modal-footer { 
+                flex-direction: column; 
+            }
+            .modal-btn { 
+                width: 100%; 
+                justify-content: center;
+            }
+            .modal-btn-cancel { order: 0; }
+        }
     </style>
 </head>
 <body>
@@ -834,10 +1107,14 @@
             </nav>
         </aside>
 
+        <!-- Sidebar Overlay (mobile) -->
+        <div class="sidebar-overlay" id="sidebar-overlay"></div>
+        
         <!-- Main Content -->
         <div class="main-content">
             <!-- Header -->
             <header class="header">
+                <button class="mobile-menu-btn" id="mobile-menu-btn" title="Menú">☰</button>
                 <div class="header-search">
                     <span>🔍</span>
                     <input type="text" placeholder="Buscar pedidos, clientes..." id="search-input">
@@ -984,6 +1261,8 @@
                             <span>Cargando pedidos...</span>
                         </div>
                     </div>
+                    <!-- Mobile Orders View -->
+                    <div class="orders-mobile" id="orders-mobile-container"></div>
                 </div>
             </div>
         </div>
@@ -1069,8 +1348,10 @@
 
         // Auth State Observer
         onAuthStateChanged(auth, (user) => {
+            console.log('Auth state changed:', user ? 'Usuario autenticado' : 'No autenticado');
             if (user) {
                 currentUser = user;
+                console.log('Usuario:', user.email);
                 showAdmin();
                 loadOrders();
             } else {
@@ -1128,9 +1409,31 @@
                 const page = item.dataset.page;
                 if (page && !item.classList.contains('disabled')) {
                     showPage(page);
+                    // Close mobile menu after navigation
+                    closeMobileMenu();
                 }
             });
         });
+        
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const sidebar = document.querySelector('.sidebar');
+        const sidebarOverlay = document.getElementById('sidebar-overlay');
+        
+        function openMobileMenu() {
+            sidebar.classList.add('open');
+            sidebarOverlay.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+        
+        function closeMobileMenu() {
+            sidebar.classList.remove('open');
+            sidebarOverlay.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+        
+        mobileMenuBtn.addEventListener('click', openMobileMenu);
+        sidebarOverlay.addEventListener('click', closeMobileMenu);
 
         // Login Form Submit
         loginForm.addEventListener('submit', async (e) => {
@@ -1187,70 +1490,49 @@
         // Load Orders from Firestore
         function loadOrders() {
             const STORE_ID = 'petsstore-b0516';
-            const ordersRef = collection(db, 'tiendas', STORE_ID, 'orders');
-            const q = query(ordersRef, orderBy('createdAt', 'desc'), limit(50));
-
-            ordersUnsubscribe = onSnapshot(q, (snapshot) => {
-                allOrders = [];
-                snapshot.forEach((doc) => {
-                    allOrders.push({ id: doc.id, ...doc.data() });
-                });
-                updateStats();
-                renderOrders();
-                renderDashboardPreview();
-            }, (error) => {
-                console.error('Error loading orders:', error);
-                document.getElementById('orders-container').innerHTML = 
-                    '<div class="empty-state"><div class="empty-icon">⚠️</div><div class="empty-title">Error al cargar pedidos</div><div class="empty-text">' + error.message + '</div></div>';
-                document.getElementById('dashboard-orders-preview').innerHTML = 
-                    '<div class="empty-state"><div class="empty-icon">⚠️</div><div class="empty-text">Error al cargar</div></div>';
-            });
-        }
-        
-        // Render Dashboard Preview (últimos 5 pedidos)
-        function renderDashboardPreview() {
-            const container = document.getElementById('dashboard-orders-preview');
-            const recentOrders = allOrders.slice(0, 5);
+            console.log('Iniciando carga de pedidos...');
             
-            if (recentOrders.length === 0) {
-                container.innerHTML = '<div class="empty-state"><div class="empty-icon">📭</div><div class="empty-text">No hay pedidos aún</div></div>';
-                return;
+            // Mostrar estado de carga
+            const dashboardPreview = document.getElementById('dashboard-orders-preview');
+            if (dashboardPreview) {
+                dashboardPreview.innerHTML = '<div class="loading-spinner"><div class="spinner"></div><span>Conectando con Firebase...</span></div>';
             }
             
-            let html = '<div class="recent-orders-list">';
-            recentOrders.forEach(order => {
-                const statusColors = {
-                    pending: '#f59e0b',
-                    confirmed: '#22c55e',
-                    cancelled: '#ef4444',
-                    delivered: '#3b82f6'
-                };
-                const statusLabels = {
-                    pending: '⏳ Pendiente',
-                    confirmed: '✅ Confirmado',
-                    cancelled: '❌ Cancelado',
-                    delivered: '🚚 Entregado'
-                };
-                const color = statusColors[order.status] || '#888';
-                const label = statusLabels[order.status] || order.status;
-                const date = order.createdAt?.toDate ? order.createdAt.toDate() : new Date(order.createdAt);
-                const dateStr = date.toLocaleDateString('es-CL', { day: '2-digit', month: '2-digit', hour: '2-digit', minute: '2-digit' });
-                
-                html += `
-                    <div class="recent-order-item" onclick="showPage('orders')">
-                        <div class="recent-order-info">
-                            <span class="recent-order-id">#${order.orderNumber || order.id.slice(-6)}</span>
-                            <span class="recent-order-customer">${order.customer?.name || 'Sin nombre'}</span>
-                        </div>
-                        <div class="recent-order-meta">
-                            <span class="recent-order-total">${formatPrice(order.total || 0)}</span>
-                            <span class="recent-order-status" style="color: ${color}">${label}</span>
-                        </div>
-                    </div>
-                `;
-            });
-            html += '</div>';
-            container.innerHTML = html;
+            // Timeout para detectar si la conexión tarda demasiado
+            const loadTimeout = setTimeout(() => {
+                console.warn('Timeout: La carga de pedidos está tardando demasiado');
+                if (dashboardPreview) {
+                    dashboardPreview.innerHTML = '<div style="text-align:center;padding:1rem;color:var(--warning);">⏳ Conectando... Si tarda mucho, verifica tu conexión a internet.</div>';
+                }
+            }, 10000);
+            
+            try {
+                const ordersRef = collection(db, 'tiendas', STORE_ID, 'orders');
+                const q = query(ordersRef, orderBy('createdAt', 'desc'), limit(50));
+
+                ordersUnsubscribe = onSnapshot(q, (snapshot) => {
+                    clearTimeout(loadTimeout);
+                    console.log('Snapshot recibido, documentos:', snapshot.size);
+                    allOrders = [];
+                    snapshot.forEach((doc) => {
+                        allOrders.push({ id: doc.id, ...doc.data() });
+                    });
+                    console.log('Pedidos cargados:', allOrders.length);
+                    updateStats();
+                    renderOrders();
+                    renderDashboardPreview();
+                }, (error) => {
+                    clearTimeout(loadTimeout);
+                    console.error('Error loading orders:', error);
+                    const errorHtml = '<div class="empty-state"><div class="empty-icon">⚠️</div><div class="empty-title">Error al cargar pedidos</div><div class="empty-text">' + error.message + '</div></div>';
+                    document.getElementById('orders-container').innerHTML = errorHtml;
+                    document.getElementById('dashboard-orders-preview').innerHTML = '<div style="text-align:center;padding:1rem;color:var(--danger);">⚠️ Error: ' + error.message + '</div>';
+                });
+            } catch (err) {
+                clearTimeout(loadTimeout);
+                console.error('Error inicializando listener:', err);
+                document.getElementById('dashboard-orders-preview').innerHTML = '<div style="text-align:center;padding:1rem;color:var(--danger);">⚠️ Error de conexión</div>';
+            }
         }
 
         // Update Stats
@@ -1287,7 +1569,7 @@
             // Notification dot
             document.getElementById('notification-dot').style.display = pending > 0 ? 'block' : 'none';
             
-            // Update dashboard preview with recent orders
+            // Update dashboard preview
             renderDashboardPreview();
         }
         
@@ -1296,44 +1578,29 @@
             const container = document.getElementById('dashboard-orders-preview');
             if (!container) return;
             
-            const recentOrders = allOrders.slice(0, 5); // Show last 5 orders
+            const recentOrders = allOrders.slice(0, 5);
             
             if (recentOrders.length === 0) {
-                container.innerHTML = '<div class="empty-state-small">No hay pedidos recientes</div>';
+                container.innerHTML = '<div style="text-align:center;padding:2rem;color:var(--text-muted);"><div style="font-size:2rem;margin-bottom:0.5rem;">📭</div><div>No hay pedidos recientes</div><div style="font-size:0.75rem;margin-top:0.25rem;">Los pedidos aparecerán aquí</div></div>';
                 return;
             }
             
-            let html = '<div class="recent-orders-list">';
-            recentOrders.forEach(order => {
-                const statusColors = {
-                    pending: '#f59e0b',
-                    confirmed: '#22c55e',
-                    cancelled: '#ef4444',
-                    delivered: '#3b82f6'
-                };
-                const statusLabels = {
-                    pending: '⏳ Pendiente',
-                    confirmed: '✅ Confirmado',
-                    cancelled: '❌ Cancelado',
-                    delivered: '🚚 Entregado'
-                };
+            let html = '<div style="display:flex;flex-direction:column;gap:0.5rem;padding:0.5rem;">';
+            recentOrders.forEach(function(order) {
+                const statusColors = { pending: '#f59e0b', confirmed: '#22c55e', cancelled: '#ef4444', delivered: '#3b82f6' };
+                const statusLabels = { pending: '⏳ Pendiente', confirmed: '✅ Confirmado', cancelled: '❌ Cancelado', delivered: '🚚 Entregado' };
                 const color = statusColors[order.status] || '#888';
                 const label = statusLabels[order.status] || order.status;
-                const date = order.createdAt?.toDate ? order.createdAt.toDate() : new Date(order.createdAt);
-                const dateStr = date.toLocaleDateString('es-CL', { day: '2-digit', month: '2-digit', hour: '2-digit', minute: '2-digit' });
                 
-                html += \`
-                    <div class="recent-order-item" onclick="showPage('orders')">
-                        <div class="recent-order-info">
-                            <span class="recent-order-id">#\${order.orderNumber || order.id.slice(-6)}</span>
-                            <span class="recent-order-customer">\${order.customer?.name || 'Cliente'}</span>
-                        </div>
-                        <div class="recent-order-meta">
-                            <span class="recent-order-total">\${formatPrice(order.total || 0)}</span>
-                            <span class="recent-order-status" style="color: \${color}">\${label}</span>
-                        </div>
-                    </div>
-                \`;
+                html += '<div style="display:flex;justify-content:space-between;align-items:center;padding:0.75rem 1rem;background:var(--bg-card);border-radius:8px;cursor:pointer;" onclick="showPage(\'orders\')">';
+                html += '<div style="display:flex;flex-direction:column;gap:0.25rem;">';
+                html += '<span style="font-weight:600;font-size:0.875rem;">#' + (order.orderNumber || order.id.slice(-6)) + '</span>';
+                html += '<span style="font-size:0.8rem;color:var(--text-muted);">' + (order.customer?.name || order.customerName || 'Cliente') + '</span>';
+                html += '</div>';
+                html += '<div style="display:flex;flex-direction:column;align-items:flex-end;gap:0.25rem;">';
+                html += '<span style="font-weight:600;font-size:0.875rem;">' + formatPrice(order.total || 0) + '</span>';
+                html += '<span style="font-size:0.75rem;color:' + color + ';">' + label + '</span>';
+                html += '</div></div>';
             });
             html += '</div>';
             container.innerHTML = html;
@@ -1342,6 +1609,7 @@
         // Render Orders Table
         function renderOrders() {
             const container = document.getElementById('orders-container');
+            const mobileContainer = document.getElementById('orders-mobile-container');
             let filtered = allOrders;
 
             if (currentFilter !== 'all') {
@@ -1349,22 +1617,30 @@
             }
 
             if (filtered.length === 0) {
-                container.innerHTML = '<div class="empty-state"><div class="empty-icon">📭</div><div class="empty-title">No hay pedidos</div><div class="empty-text">Los pedidos aparecerán aquí cuando lleguen</div></div>';
+                const emptyHtml = '<div class="empty-state"><div class="empty-icon">📭</div><div class="empty-title">No hay pedidos</div><div class="empty-text">Los pedidos aparecerán aquí cuando lleguen</div></div>';
+                container.innerHTML = emptyHtml;
+                mobileContainer.innerHTML = emptyHtml;
                 return;
             }
 
+            // Desktop Table View
             let html = '<table class="orders-table"><thead><tr>';
             html += '<th>Pedido</th><th>Cliente</th><th>Productos</th><th>Total</th><th>Estado</th><th>Fecha</th><th>Acciones</th>';
             html += '</tr></thead><tbody>';
+
+            // Mobile Cards View
+            let mobileHtml = '';
 
             filtered.forEach(order => {
                 const date = order.createdAt?.toDate ? order.createdAt.toDate() : new Date(order.createdAt);
                 const timeAgo = getTimeAgo(date);
                 const initials = (order.customerName || 'C').substring(0, 2).toUpperCase();
                 const itemsCount = order.items?.length || 0;
+                const orderNum = order.orderNumber || order.id.substring(0, 6);
 
+                // Desktop row
                 html += '<tr>';
-                html += '<td class="order-id-cell">#' + (order.orderNumber || order.id.substring(0, 6)) + '</td>';
+                html += '<td class="order-id-cell">#' + orderNum + '</td>';
                 html += '<td><div class="customer-cell"><div class="customer-avatar">' + initials + '</div><div><div class="customer-name">' + (order.customerName || 'Cliente') + '</div><div class="customer-phone">' + (order.customerPhone || '-') + '</div></div></div></td>';
                 html += '<td>' + itemsCount + ' producto' + (itemsCount !== 1 ? 's' : '') + '</td>';
                 html += '<td><strong>' + formatPrice(order.total || 0) + '</strong></td>';
@@ -1379,10 +1655,38 @@
                 html += '<button class="action-btn whatsapp" onclick="sendWhatsApp(\'' + order.id + '\')" title="WhatsApp">📱</button>';
                 html += '<button class="action-btn view" onclick="viewOrder(\'' + order.id + '\')" title="Editar pedido">✏️</button>';
                 html += '</td></tr>';
+
+                // Mobile card
+                mobileHtml += '<div class="order-card-mobile">';
+                mobileHtml += '<div class="order-card-header">';
+                mobileHtml += '<span class="order-card-id">#' + orderNum + '</span>';
+                mobileHtml += '<span class="order-card-date">' + timeAgo + '</span>';
+                mobileHtml += '</div>';
+                mobileHtml += '<div class="order-card-customer">';
+                mobileHtml += '<div class="order-card-avatar">' + initials + '</div>';
+                mobileHtml += '<div class="order-card-info">';
+                mobileHtml += '<div class="order-card-name">' + (order.customerName || 'Cliente') + '</div>';
+                mobileHtml += '<div class="order-card-phone">' + (order.customerPhone || '-') + '</div>';
+                mobileHtml += '</div>';
+                mobileHtml += '</div>';
+                mobileHtml += '<div class="order-card-details">';
+                mobileHtml += '<div><span class="order-card-total">' + formatPrice(order.total || 0) + '</span></div>';
+                mobileHtml += '<div><span class="status-badge ' + order.status + '"><span class="status-dot"></span>' + getStatusLabel(order.status) + '</span></div>';
+                mobileHtml += '</div>';
+                mobileHtml += '<div class="order-card-items">' + itemsCount + ' producto' + (itemsCount !== 1 ? 's' : '') + '</div>';
+                mobileHtml += '<div class="order-card-actions">';
+                if (order.status === 'pending') {
+                    mobileHtml += '<button class="action-btn confirm" onclick="confirmOrder(\'' + order.id + '\')">✓</button>';
+                    mobileHtml += '<button class="action-btn cancel" onclick="cancelOrder(\'' + order.id + '\')">✕</button>';
+                }
+                mobileHtml += '<button class="action-btn whatsapp" onclick="sendWhatsApp(\'' + order.id + '\')">📱</button>';
+                mobileHtml += '<button class="action-btn view" onclick="viewOrder(\'' + order.id + '\')">✏️</button>';
+                mobileHtml += '</div></div>';
             });
 
             html += '</tbody></table>';
             container.innerHTML = html;
+            mobileContainer.innerHTML = mobileHtml;
         }
 
         // Format Price
