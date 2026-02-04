@@ -23839,9 +23839,9 @@
   {
     "id": "prod_779",
     "name": "Cazuela Huella Chica",
-    "category": "accesorios",
+    "category": "🐾 COMEDEROS Y BEBEDEROS",
     "subcategory": "Comederos",
-    "price": 1445,
+    "price": 1850,
     "stock": 10,
     "rating": 4.2,
     "reviews": 10,
@@ -23873,7 +23873,7 @@
     },
     "shipping": {
       "free": false,
-      "days": 2
+      "days": "2"
     },
     "badge": "🍽️ Comederos",
     "brand": "Sin marca",
@@ -23884,16 +23884,16 @@
       "Capacidad adecuada",
       "Material duradero"
     ],
-    "originalPrice": 1700,
-    "discount": 15,
+    "originalPrice": 3700,
+    "discount": 50,
     "priceDisplayMode": "wholesale"
   },
   {
     "id": "prod_780",
     "name": "Cazuela Huella Mediana",
-    "category": "accesorios",
+    "category": "🐾 COMEDEROS Y BEBEDEROS",
     "subcategory": "Comederos",
-    "price": 2125,
+    "price": 3825,
     "stock": 10,
     "rating": 4.3,
     "reviews": 24,
@@ -23925,7 +23925,7 @@
     },
     "shipping": {
       "free": false,
-      "days": 2
+      "days": "2"
     },
     "badge": "🍽️ Comederos",
     "brand": "Sin marca",
@@ -23936,16 +23936,16 @@
       "Capacidad adecuada",
       "Material duradero"
     ],
-    "originalPrice": 2500,
+    "originalPrice": 4500,
     "discount": 15,
     "priceDisplayMode": "wholesale"
   },
   {
     "id": "prod_781",
     "name": "Cazuela Huella Grande",
-    "category": "accesorios",
+    "category": "🐾 COMEDEROS Y BEBEDEROS",
     "subcategory": "Comederos",
-    "price": 2975,
+    "price": 4675,
     "stock": 10,
     "rating": 4.1,
     "reviews": 24,
@@ -23977,7 +23977,7 @@
     },
     "shipping": {
       "free": false,
-      "days": 4
+      "days": "4"
     },
     "badge": "🍽️ Comederos",
     "brand": "Sin marca",
@@ -23988,7 +23988,7 @@
       "Capacidad adecuada",
       "Material duradero"
     ],
-    "originalPrice": 3500,
+    "originalPrice": 5500,
     "discount": 15,
     "priceDisplayMode": "wholesale"
   },
