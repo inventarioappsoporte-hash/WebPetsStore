@@ -94,6 +94,21 @@ class CartUI {
           
           <div class="cart-modal__form">
             <h3>📝 Datos para el pedido</h3>
+            
+            <!-- Sección de usuario logueado -->
+            <div id="cart-user-section" class="cart-user-section" style="display: none;">
+              <div class="cart-user-info">
+                <span class="cart-user-avatar" id="cart-user-avatar">👤</span>
+                <span class="cart-user-name" id="cart-user-name">Usuario</span>
+                <button type="button" class="cart-user-change" onclick="CartUI.clearUserData()">Cambiar</button>
+              </div>
+            </div>
+            
+            <!-- Botón para iniciar sesión (solo si no está logueado) -->
+            <div id="cart-login-prompt" class="cart-login-prompt">
+              <p>¿Ya tenés cuenta? <a href="#" onclick="UserAuth.showAuthModal(); return false;">Iniciá sesión</a> para autocompletar tus datos</p>
+            </div>
+            
             <input 
               type="text" 
               id="customer-name" 
@@ -106,6 +121,14 @@ class CartUI {
               placeholder="Teléfono / WhatsApp *" 
               required
             />
+            
+            <!-- Selector de direcciones guardadas -->
+            <div id="saved-addresses-selector" class="saved-addresses-selector" style="display: none;">
+              <label>📍 Usar dirección guardada:</label>
+              <select id="saved-address-select" onchange="CartUI.fillSavedAddress()">
+                <option value="">-- Seleccionar dirección --</option>
+              </select>
+            </div>
             
             <!-- Datos de envío (se muestran según la zona seleccionada) -->
             <div id="shipping-address-fields" class="shipping-address-fields" style="display: none;">
@@ -144,6 +167,14 @@ class CartUI {
                 id="customer-province" 
                 placeholder="Provincia *"
               />
+              
+              <!-- Opción para guardar dirección -->
+              <div id="save-address-option" class="save-address-option" style="display: none;">
+                <label>
+                  <input type="checkbox" id="save-new-address">
+                  Guardar esta dirección para futuras compras
+                </label>
+              </div>
             </div>
             
             <textarea 
@@ -472,8 +503,134 @@ class CartUI {
       const wholesaleStatus = Cart.getWholesaleStatus();
       this.renderCartItems(items, total, wholesaleStatus);
       
+      // Auto-completar datos si hay usuario logueado
+      this.autoFillUserData();
+      
       document.body.style.overflow = 'hidden';
     }
+  }
+
+  /**
+   * Auto-completar datos del usuario logueado
+   */
+  static autoFillUserData() {
+    const userSection = document.getElementById('cart-user-section');
+    const loginPrompt = document.getElementById('cart-login-prompt');
+    const addressSelector = document.getElementById('saved-addresses-selector');
+    const saveAddressOption = document.getElementById('save-address-option');
+    
+    if (typeof UserAuth !== 'undefined' && UserAuth.isLoggedIn()) {
+      const user = UserAuth.getCurrentUser();
+      
+      // Mostrar sección de usuario
+      if (userSection) {
+        userSection.style.display = 'flex';
+        const avatarEl = document.getElementById('cart-user-avatar');
+        const nameEl = document.getElementById('cart-user-name');
+        if (avatarEl) avatarEl.textContent = user.photoURL ? '' : '👤';
+        if (nameEl) nameEl.textContent = user.displayName || user.email.split('@')[0];
+      }
+      
+      // Ocultar prompt de login
+      if (loginPrompt) loginPrompt.style.display = 'none';
+      
+      // Auto-completar nombre y teléfono
+      const nameInput = document.getElementById('customer-name');
+      const phoneInput = document.getElementById('customer-phone');
+      
+      if (nameInput && !nameInput.value && user.displayName) {
+        nameInput.value = user.displayName;
+      }
+      if (phoneInput && !phoneInput.value && user.phone) {
+        phoneInput.value = user.phone;
+      }
+      
+      // Mostrar selector de direcciones si tiene direcciones guardadas
+      if (user.addresses && user.addresses.length > 0 && addressSelector) {
+        addressSelector.style.display = 'block';
+        const select = document.getElementById('saved-address-select');
+        if (select) {
+          select.innerHTML = '<option value="">-- Seleccionar dirección --</option>' +
+            user.addresses.map(addr => 
+              `<option value="${addr.id}" ${addr.isDefault ? 'selected' : ''}>
+                ${addr.label || 'Dirección'} - ${addr.address}, ${addr.city}
+              </option>`
+            ).join('');
+          
+          // Si hay dirección por defecto, llenarla
+          const defaultAddr = user.addresses.find(a => a.isDefault);
+          if (defaultAddr) {
+            this.fillAddressFields(defaultAddr);
+          }
+        }
+      }
+      
+      // Ocultar opción de guardar dirección (ya está logueado)
+      if (saveAddressOption) saveAddressOption.style.display = 'none';
+    } else {
+      // Usuario no logueado
+      if (userSection) userSection.style.display = 'none';
+      if (loginPrompt) loginPrompt.style.display = 'block';
+      if (addressSelector) addressSelector.style.display = 'none';
+      if (saveAddressOption) saveAddressOption.style.display = 'block';
+    }
+  }
+
+  /**
+   * Llenar campos con dirección guardada seleccionada
+   */
+  static fillSavedAddress() {
+    const select = document.getElementById('saved-address-select');
+    if (!select || !select.value) return;
+    
+    const user = UserAuth.getCurrentUser();
+    if (!user || !user.addresses) return;
+    
+    const address = user.addresses.find(a => a.id === select.value);
+    if (address) {
+      this.fillAddressFields(address);
+    }
+  }
+
+  /**
+   * Llenar campos de dirección
+   */
+  static fillAddressFields(address) {
+    const fields = {
+      'customer-address': address.address,
+      'customer-floor': address.floor,
+      'customer-zipcode': address.zipcode,
+      'customer-city': address.city,
+      'customer-between': address.between,
+      'customer-province': address.province
+    };
+    
+    Object.entries(fields).forEach(([id, value]) => {
+      const input = document.getElementById(id);
+      if (input && value) input.value = value;
+    });
+  }
+
+  /**
+   * Limpiar datos de usuario (para cambiar)
+   */
+  static clearUserData() {
+    document.getElementById('customer-name').value = '';
+    document.getElementById('customer-phone').value = '';
+    document.getElementById('customer-address').value = '';
+    document.getElementById('customer-floor').value = '';
+    document.getElementById('customer-zipcode').value = '';
+    document.getElementById('customer-city').value = '';
+    document.getElementById('customer-between').value = '';
+    document.getElementById('customer-province').value = '';
+    
+    const userSection = document.getElementById('cart-user-section');
+    const loginPrompt = document.getElementById('cart-login-prompt');
+    const addressSelector = document.getElementById('saved-addresses-selector');
+    
+    if (userSection) userSection.style.display = 'none';
+    if (loginPrompt) loginPrompt.style.display = 'block';
+    if (addressSelector) addressSelector.style.display = 'none';
   }
 
   /**

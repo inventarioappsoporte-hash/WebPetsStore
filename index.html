@@ -99,6 +99,7 @@
   <link rel="stylesheet" href="css/contact.css">
   <link rel="stylesheet" href="css/whatsapp-float.css">
   <link rel="stylesheet" href="css/stock.css?v=20260203">
+  <link rel="stylesheet" href="css/auth.css?v=20260204">
 </head>
 <body>
   <!-- Header -->
@@ -123,6 +124,10 @@
           <a href="mayorista.html" class="nav__link">Mayorista</a>
         </nav>
         <div class="header__actions">
+          <button class="user-account-btn" id="user-account-btn" onclick="UserAuth.isLoggedIn() ? window.location.href='cuenta.html' : UserAuth.showAuthModal()">
+            <span class="user-icon">👤</span>
+            <span class="user-account-text" id="user-account-text">Mi Cuenta</span>
+          </button>
           <div class="header__search">
             <button class="header__search-btn" id="header-search-toggle">🔍</button>
             <input type="text" class="header__search-input" placeholder="Buscar productos..." id="header-search-input">
@@ -311,6 +316,174 @@
   <script src="js/modules/whatsappFloat.js?v=20260203-wholesale"></script>
   <script src="js/modules/contactForm.js"></script>
   <script src="js/modules/summerOffersCarousel.js?v=20260114-verano-video"></script>
+  <script src="js/modules/userAuth.js?v=20260204"></script>
   <script src="js/app.js?v=20260120-fix-addcart"></script>
+
+  <!-- Modal de Autenticación -->
+  <div class="auth-modal" id="auth-modal">
+    <div class="auth-modal__overlay" onclick="UserAuth.hideAuthModal()"></div>
+    <div class="auth-modal__content">
+      <div class="auth-modal__header">
+        <h2>🐾 Mi Cuenta</h2>
+        <button class="auth-modal__close" onclick="UserAuth.hideAuthModal()">✕</button>
+      </div>
+      
+      <div class="auth-tabs">
+        <button class="auth-tab active" id="auth-tab-login" onclick="UserAuth.switchAuthTab('login')">
+          Iniciar Sesión
+        </button>
+        <button class="auth-tab" id="auth-tab-register" onclick="UserAuth.switchAuthTab('register')">
+          Crear Cuenta
+        </button>
+      </div>
+      
+      <!-- Formulario de Login -->
+      <form class="auth-form active" id="auth-form-login" onsubmit="handleLogin(event)">
+        <div id="login-message"></div>
+        
+        <button type="button" class="auth-btn auth-btn--google" onclick="handleGoogleLogin()">
+          <img src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg" alt="Google">
+          Continuar con Google
+        </button>
+        
+        <div class="auth-divider"><span>o</span></div>
+        
+        <div class="auth-form__group">
+          <label class="auth-form__label" for="login-email">Email</label>
+          <input type="email" class="auth-form__input" id="login-email" placeholder="tu@email.com" required>
+        </div>
+        
+        <div class="auth-form__group">
+          <label class="auth-form__label" for="login-password">Contraseña</label>
+          <input type="password" class="auth-form__input" id="login-password" placeholder="••••••••" required>
+          <a class="auth-link auth-forgot" onclick="handleForgotPassword()">¿Olvidaste tu contraseña?</a>
+        </div>
+        
+        <button type="submit" class="auth-btn auth-btn--primary" id="login-btn">
+          Iniciar Sesión
+        </button>
+      </form>
+      
+      <!-- Formulario de Registro -->
+      <form class="auth-form" id="auth-form-register" onsubmit="handleRegister(event)">
+        <div id="register-message"></div>
+        
+        <button type="button" class="auth-btn auth-btn--google" onclick="handleGoogleLogin()">
+          <img src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg" alt="Google">
+          Registrarse con Google
+        </button>
+        
+        <div class="auth-divider"><span>o</span></div>
+        
+        <div class="auth-form__group">
+          <label class="auth-form__label" for="register-name">Nombre completo</label>
+          <input type="text" class="auth-form__input" id="register-name" placeholder="Juan Pérez" required>
+        </div>
+        
+        <div class="auth-form__group">
+          <label class="auth-form__label" for="register-email">Email</label>
+          <input type="email" class="auth-form__input" id="register-email" placeholder="tu@email.com" required>
+        </div>
+        
+        <div class="auth-form__group">
+          <label class="auth-form__label" for="register-phone">Teléfono / WhatsApp</label>
+          <input type="tel" class="auth-form__input" id="register-phone" placeholder="11 5555-5555" required>
+        </div>
+        
+        <div class="auth-form__group">
+          <label class="auth-form__label" for="register-password">Contraseña</label>
+          <input type="password" class="auth-form__input" id="register-password" placeholder="Mínimo 6 caracteres" required minlength="6">
+        </div>
+        
+        <button type="submit" class="auth-btn auth-btn--primary" id="register-btn">
+          Crear Cuenta
+        </button>
+      </form>
+      
+      <div class="auth-footer">
+        Al continuar, aceptas nuestros <a href="politicas.html">Términos y Política de Privacidad</a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Handlers de autenticación
+    async function handleLogin(e) {
+      e.preventDefault();
+      const btn = document.getElementById('login-btn');
+      const msgEl = document.getElementById('login-message');
+      
+      btn.disabled = true;
+      btn.textContent = 'Ingresando...';
+      msgEl.innerHTML = '';
+      
+      const email = document.getElementById('login-email').value;
+      const password = document.getElementById('login-password').value;
+      
+      const result = await UserAuth.loginWithEmail(email, password);
+      
+      if (result.success) {
+        msgEl.innerHTML = '<div class="auth-message auth-message--success">¡Bienvenido de vuelta!</div>';
+        setTimeout(() => UserAuth.hideAuthModal(), 1000);
+      } else {
+        msgEl.innerHTML = `<div class="auth-message auth-message--error">${result.error}</div>`;
+      }
+      
+      btn.disabled = false;
+      btn.textContent = 'Iniciar Sesión';
+    }
+    
+    async function handleRegister(e) {
+      e.preventDefault();
+      const btn = document.getElementById('register-btn');
+      const msgEl = document.getElementById('register-message');
+      
+      btn.disabled = true;
+      btn.textContent = 'Creando cuenta...';
+      msgEl.innerHTML = '';
+      
+      const name = document.getElementById('register-name').value;
+      const email = document.getElementById('register-email').value;
+      const phone = document.getElementById('register-phone').value;
+      const password = document.getElementById('register-password').value;
+      
+      const result = await UserAuth.registerWithEmail(email, password, name, phone);
+      
+      if (result.success) {
+        msgEl.innerHTML = '<div class="auth-message auth-message--success">¡Cuenta creada! Bienvenido 🐾</div>';
+        setTimeout(() => UserAuth.hideAuthModal(), 1500);
+      } else {
+        msgEl.innerHTML = `<div class="auth-message auth-message--error">${result.error}</div>`;
+      }
+      
+      btn.disabled = false;
+      btn.textContent = 'Crear Cuenta';
+    }
+    
+    async function handleGoogleLogin() {
+      const result = await UserAuth.loginWithGoogle();
+      if (result.success) {
+        UserAuth.hideAuthModal();
+      } else if (result.error !== 'Se cerró la ventana de login') {
+        alert(result.error);
+      }
+    }
+    
+    async function handleForgotPassword() {
+      const email = document.getElementById('login-email').value;
+      if (!email) {
+        alert('Ingresa tu email primero');
+        document.getElementById('login-email').focus();
+        return;
+      }
+      
+      const result = await UserAuth.resetPassword(email);
+      if (result.success) {
+        alert('Te enviamos un email para restablecer tu contraseña');
+      } else {
+        alert(result.error);
+      }
+    }
+  </script>
 </body>
 </html>

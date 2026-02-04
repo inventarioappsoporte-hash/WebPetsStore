@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Cuenta - Pets Store Argentina</title>
+  
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/typography.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/auth.css?v=20260204">
+  
+  <style>
+    .account-page {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    
+    .account-header {
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+      margin-bottom: 2rem;
+      padding-bottom: 1.5rem;
+      border-bottom: 1px solid #e5e7eb;
+    }
+    
+    .account-avatar {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #FF6B00, #ff8533);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2.5rem;
+      color: white;
+    }
+    
+    .account-avatar img {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+    
+    .account-info h1 {
+      margin: 0 0 0.25rem 0;
+      font-size: 1.5rem;
+    }
+    
+    .account-info p {
+      margin: 0;
+      color: #6b7280;
+    }
+    
+    .account-section {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+      margin-bottom: 1.5rem;
+      overflow: hidden;
+    }
+    
+    .account-section__header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 1.5rem;
+      background: #f9fafb;
+      border-bottom: 1px solid #e5e7eb;
+    }
+    
+    .account-section__header h2 {
+      margin: 0;
+      font-size: 1.1rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    
+    .account-section__body {
+      padding: 1.5rem;
+    }
+    
+    .account-form__group {
+      margin-bottom: 1rem;
+    }
+    
+    .account-form__group label {
+      display: block;
+      margin-bottom: 0.5rem;
+      font-weight: 500;
+      color: #374151;
+    }
+    
+    .account-form__group input {
+      width: 100%;
+      padding: 0.75rem 1rem;
+      border: 1px solid #d1d5db;
+      border-radius: 8px;
+      font-size: 1rem;
+      box-sizing: border-box;
+    }
+    
+    .account-form__group input:focus {
+      outline: none;
+      border-color: #FF6B00;
+      box-shadow: 0 0 0 3px rgba(255, 107, 0, 0.1);
+    }
+    
+    .account-form__group input:disabled {
+      background: #f3f4f6;
+      color: #6b7280;
+    }
+    
+    .account-form__row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+    }
+    
+    @media (max-width: 600px) {
+      .account-form__row {
+        grid-template-columns: 1fr;
+      }
+    }
+    
+    .btn {
+      padding: 0.75rem 1.5rem;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    
+    .btn--primary {
+      background: #FF6B00;
+      color: white;
+    }
+    
+    .btn--primary:hover {
+      background: #e55f00;
+    }
+    
+    .btn--secondary {
+      background: #f3f4f6;
+      color: #374151;
+    }
+    
+    .btn--secondary:hover {
+      background: #e5e7eb;
+    }
+    
+    .btn--danger {
+      background: #fef2f2;
+      color: #dc2626;
+      border: 1px solid #fecaca;
+    }
+    
+    .btn--danger:hover {
+      background: #fee2e2;
+    }
+    
+    .btn--small {
+      padding: 0.5rem 1rem;
+      font-size: 0.9rem;
+    }
+    
+    /* Direcciones */
+    .address-list {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+    
+    .address-card {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      padding: 1rem;
+      background: #f9fafb;
+      border-radius: 8px;
+      border: 1px solid #e5e7eb;
+    }
+    
+    .address-card__content {
+      flex: 1;
+    }
+    
+    .address-card__label {
+      font-weight: 600;
+      color: #1f2937;
+      margin-bottom: 0.25rem;
+    }
+    
+    .address-card__text {
+      color: #6b7280;
+      font-size: 0.9rem;
+      line-height: 1.5;
+    }
+    
+    .address-card__actions {
+      display: flex;
+      gap: 0.5rem;
+    }
+    
+    .address-empty {
+      text-align: center;
+      padding: 2rem;
+      color: #6b7280;
+    }
+    
+    /* Modal de dirección */
+    .address-modal {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.5);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      z-index: 1000;
+    }
+    
+    .address-modal.open {
+      display: flex;
+    }
+    
+    .address-modal__content {
+      background: white;
+      border-radius: 12px;
+      width: 100%;
+      max-width: 500px;
+      max-height: 90vh;
+      overflow-y: auto;
+      margin: 1rem;
+    }
+    
+    .address-modal__header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 1.5rem;
+      border-bottom: 1px solid #e5e7eb;
+    }
+    
+    .address-modal__header h3 {
+      margin: 0;
+    }
+    
+    .address-modal__body {
+      padding: 1.5rem;
+    }
+    
+    .address-modal__close {
+      background: none;
+      border: none;
+      font-size: 1.5rem;
+      cursor: pointer;
+      color: #6b7280;
+    }
+    
+    /* Loading */
+    .account-loading {
+      text-align: center;
+      padding: 4rem 2rem;
+    }
+    
+    .account-not-logged {
+      text-align: center;
+      padding: 4rem 2rem;
+    }
+    
+    .account-not-logged h2 {
+      margin-bottom: 1rem;
+    }
+    
+    .account-not-logged p {
+      color: #6b7280;
+      margin-bottom: 1.5rem;
+    }
+    
+    .message {
+      padding: 0.75rem 1rem;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+    }
+    
+    .message--success {
+      background: #f0fdf4;
+      color: #16a34a;
+      border: 1px solid #bbf7d0;
+    }
+    
+    .message--error {
+      background: #fef2f2;
+      color: #dc2626;
+      border: 1px solid #fecaca;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header simplificado -->
+  <header class="header" style="background: white; border-bottom: 1px solid #e5e7eb;">
+    <div class="container">
+      <div class="header__content" style="display: flex; justify-content: space-between; align-items: center; padding: 1rem 0;">
+        <a href="index.html" class="header__logo">
+          <img src="assets/images/ui/logo-pets-store.png" alt="Pets Store" style="height: 40px;">
+        </a>
+        <a href="index.html" style="color: #FF6B00; text-decoration: none;">← Volver a la tienda</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="account-page">
+    <!-- Loading -->
+    <div id="account-loading" class="account-loading">
+      <p>Cargando...</p>
+    </div>
+    
+    <!-- No logueado -->
+    <div id="account-not-logged" class="account-not-logged" style="display: none;">
+      <h2>👤 Inicia sesión para ver tu cuenta</h2>
+      <p>Necesitas iniciar sesión para acceder a tu perfil y direcciones guardadas.</p>
+      <button class="btn btn--primary" onclick="window.location.href='index.html'">
+        Ir a la tienda
+      </button>
+    </div>
+    
+    <!-- Contenido de cuenta -->
+    <div id="account-content" style="display: none;">
+      <!-- Header de cuenta -->
+      <div class="account-header">
+        <div class="account-avatar" id="account-avatar">
+          👤
+        </div>
+        <div class="account-info">
+          <h1 id="account-name">Usuario</h1>
+          <p id="account-email">email@ejemplo.com</p>
+        </div>
+      </div>
+      
+      <!-- Datos personales -->
+      <section class="account-section">
+        <div class="account-section__header">
+          <h2>📝 Datos Personales</h2>
+        </div>
+        <div class="account-section__body">
+          <div id="profile-message"></div>
+          <form id="profile-form" onsubmit="saveProfile(event)">
+            <div class="account-form__row">
+              <div class="account-form__group">
+                <label for="profile-name">Nombre completo</label>
+                <input type="text" id="profile-name" required>
+              </div>
+              <div class="account-form__group">
+                <label for="profile-phone">Teléfono / WhatsApp</label>
+                <input type="tel" id="profile-phone">
+              </div>
+            </div>
+            <div class="account-form__group">
+              <label for="profile-email">Email</label>
+              <input type="email" id="profile-email" disabled>
+            </div>
+            <button type="submit" class="btn btn--primary" id="profile-save-btn">
+              Guardar Cambios
+            </button>
+          </form>
+        </div>
+      </section>
+      
+      <!-- Direcciones -->
+      <section class="account-section" id="direcciones">
+        <div class="account-section__header">
+          <h2>📍 Mis Direcciones</h2>
+          <button class="btn btn--secondary btn--small" onclick="openAddressModal()">
+            + Agregar
+          </button>
+        </div>
+        <div class="account-section__body">
+          <div id="addresses-list" class="address-list">
+            <div class="address-empty">
+              <p>No tienes direcciones guardadas</p>
+              <button class="btn btn--primary btn--small" onclick="openAddressModal()">
+                Agregar dirección
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <!-- Cerrar sesión -->
+      <section class="account-section">
+        <div class="account-section__body" style="text-align: center;">
+          <button class="btn btn--danger" onclick="handleLogout()">
+            🚪 Cerrar Sesión
+          </button>
+        </div>
+      </section>
+    </div>
+  </main>
+  
+  <!-- Modal de dirección -->
+  <div class="address-modal" id="address-modal">
+    <div class="address-modal__content">
+      <div class="address-modal__header">
+        <h3>📍 Nueva Dirección</h3>
+        <button class="address-modal__close" onclick="closeAddressModal()">✕</button>
+      </div>
+      <div class="address-modal__body">
+        <form id="address-form" onsubmit="saveAddress(event)">
+          <div class="account-form__group">
+            <label for="addr-label">Nombre (ej: Casa, Trabajo)</label>
+            <input type="text" id="addr-label" placeholder="Casa" required>
+          </div>
+          <div class="account-form__group">
+            <label for="addr-address">Calle y número</label>
+            <input type="text" id="addr-address" placeholder="Av. Corrientes 1234" required>
+          </div>
+          <div class="account-form__row">
+            <div class="account-form__group">
+              <label for="addr-floor">Piso/Depto (opcional)</label>
+              <input type="text" id="addr-floor" placeholder="3° B">
+            </div>
+            <div class="account-form__group">
+              <label for="addr-zipcode">Código Postal</label>
+              <input type="text" id="addr-zipcode" placeholder="1414">
+            </div>
+          </div>
+          <div class="account-form__group">
+            <label for="addr-city">Localidad / Barrio</label>
+            <input type="text" id="addr-city" placeholder="Palermo" required>
+          </div>
+          <div class="account-form__group">
+            <label for="addr-between">Entre calles (opcional)</label>
+            <input type="text" id="addr-between" placeholder="Entre Scalabrini Ortiz y Bulnes">
+          </div>
+          <div class="account-form__group">
+            <label for="addr-province">Provincia</label>
+            <input type="text" id="addr-province" placeholder="CABA" required>
+          </div>
+          <div style="display: flex; gap: 1rem; margin-top: 1.5rem;">
+            <button type="button" class="btn btn--secondary" onclick="closeAddressModal()" style="flex:1;">
+              Cancelar
+            </button>
+            <button type="submit" class="btn btn--primary" id="addr-save-btn" style="flex:1;">
+              Guardar
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/modules/userAuth.js?v=20260204"></script>
+  <script>
+    // Esperar a que UserAuth esté listo
+    document.addEventListener('DOMContentLoaded', async () => {
+      await UserAuth.init();
+      
+      // Escuchar cambios de auth
+      UserAuth.addListener(updateAccountPage);
+      
+      // Verificar estado inicial
+      setTimeout(() => {
+        updateAccountPage(UserAuth.getCurrentUser());
+      }, 500);
+    });
+    
+    function updateAccountPage(user) {
+      const loading = document.getElementById('account-loading');
+      const notLogged = document.getElementById('account-not-logged');
+      const content = document.getElementById('account-content');
+      
+      loading.style.display = 'none';
+      
+      if (user) {
+        notLogged.style.display = 'none';
+        content.style.display = 'block';
+        
+        // Actualizar datos
+        document.getElementById('account-name').textContent = user.displayName || 'Usuario';
+        document.getElementById('account-email').textContent = user.email;
+        document.getElementById('profile-name').value = user.displayName || '';
+        document.getElementById('profile-phone').value = user.phone || '';
+        document.getElementById('profile-email').value = user.email;
+        
+        // Avatar
+        const avatarEl = document.getElementById('account-avatar');
+        if (user.photoURL) {
+          avatarEl.innerHTML = `<img src="${user.photoURL}" alt="">`;
+        } else {
+          avatarEl.innerHTML = '👤';
+        }
+        
+        // Cargar direcciones
+        renderAddresses(user.addresses || []);
+      } else {
+        notLogged.style.display = 'block';
+        content.style.display = 'none';
+      }
+    }
+    
+    function renderAddresses(addresses) {
+      const container = document.getElementById('addresses-list');
+      
+      if (!addresses || addresses.length === 0) {
+        container.innerHTML = `
+          <div class="address-empty">
+            <p>No tienes direcciones guardadas</p>
+            <button class="btn btn--primary btn--small" onclick="openAddressModal()">
+              Agregar dirección
+            </button>
+          </div>
+        `;
+        return;
+      }
+      
+      container.innerHTML = addresses.map(addr => `
+        <div class="address-card">
+          <div class="address-card__content">
+            <div class="address-card__label">${addr.label || 'Dirección'}</div>
+            <div class="address-card__text">
+              ${addr.address}${addr.floor ? `, ${addr.floor}` : ''}<br>
+              ${addr.city}${addr.zipcode ? ` (${addr.zipcode})` : ''}<br>
+              ${addr.province}
+              ${addr.between ? `<br>Entre: ${addr.between}` : ''}
+            </div>
+          </div>
+          <div class="address-card__actions">
+            <button class="btn btn--danger btn--small" onclick="deleteAddress('${addr.id}')">
+              🗑️
+            </button>
+          </div>
+        </div>
+      `).join('');
+    }
+    
+    async function saveProfile(e) {
+      e.preventDefault();
+      const btn = document.getElementById('profile-save-btn');
+      const msgEl = document.getElementById('profile-message');
+      
+      btn.disabled = true;
+      btn.textContent = 'Guardando...';
+      
+      const result = await UserAuth.updateProfile({
+        displayName: document.getElementById('profile-name').value,
+        phone: document.getElementById('profile-phone').value
+      });
+      
+      if (result.success) {
+        msgEl.innerHTML = '<div class="message message--success">Datos guardados correctamente</div>';
+        document.getElementById('account-name').textContent = document.getElementById('profile-name').value;
+      } else {
+        msgEl.innerHTML = `<div class="message message--error">${result.error}</div>`;
+      }
+      
+      btn.disabled = false;
+      btn.textContent = 'Guardar Cambios';
+      
+      setTimeout(() => { msgEl.innerHTML = ''; }, 3000);
+    }
+    
+    function openAddressModal() {
+      document.getElementById('address-modal').classList.add('open');
+      document.getElementById('address-form').reset();
+    }
+    
+    function closeAddressModal() {
+      document.getElementById('address-modal').classList.remove('open');
+    }
+    
+    async function saveAddress(e) {
+      e.preventDefault();
+      const btn = document.getElementById('addr-save-btn');
+      
+      btn.disabled = true;
+      btn.textContent = 'Guardando...';
+      
+      const address = {
+        label: document.getElementById('addr-label').value,
+        address: document.getElementById('addr-address').value,
+        floor: document.getElementById('addr-floor').value,
+        zipcode: document.getElementById('addr-zipcode').value,
+        city: document.getElementById('addr-city').value,
+        between: document.getElementById('addr-between').value,
+        province: document.getElementById('addr-province').value
+      };
+      
+      const result = await UserAuth.addAddress(address);
+      
+      if (result.success) {
+        closeAddressModal();
+        const user = UserAuth.getCurrentUser();
+        renderAddresses(user.addresses);
+      } else {
+        alert('Error: ' + result.error);
+      }
+      
+      btn.disabled = false;
+      btn.textContent = 'Guardar';
+    }
+    
+    async function deleteAddress(addressId) {
+      if (!confirm('¿Eliminar esta dirección?')) return;
+      
+      const result = await UserAuth.removeAddress(addressId);
+      
+      if (result.success) {
+        const user = UserAuth.getCurrentUser();
+        renderAddresses(user.addresses);
+      } else {
+        alert('Error: ' + result.error);
+      }
+    }
+    
+    async function handleLogout() {
+      await UserAuth.logout();
+      window.location.href = 'index.html';
+    }
+  </script>
+</body>
+</html>
