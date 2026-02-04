@@ -23788,9 +23788,9 @@
   {
     "id": "prod_778",
     "name": "Comedero Come Lento",
-    "category": "accesorios",
+    "category": "🐾 COMEDEROS Y BEBEDEROS",
     "subcategory": "Comederos",
-    "price": 5525,
+    "price": 5950,
     "stock": 10,
     "rating": 4.9,
     "reviews": 19,
@@ -23821,7 +23821,7 @@
     },
     "shipping": {
       "free": false,
-      "days": 3
+      "days": "3"
     },
     "badge": "🍽️ Comederos",
     "brand": "Sin marca",
@@ -23832,7 +23832,7 @@
       "Capacidad adecuada",
       "Material duradero"
     ],
-    "originalPrice": 6500,
+    "originalPrice": 7000,
     "discount": 15,
     "priceDisplayMode": "wholesale"
   },
