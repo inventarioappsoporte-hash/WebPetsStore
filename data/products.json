@@ -15287,9 +15287,9 @@
   {
     "id": "prod_448",
     "name": "Chombas",
-    "category": "ropa",
+    "category": "🐾 ROPA VERANO",
     "subcategory": "Ropa",
-    "price": 6860,
+    "price": 5880,
     "stock": 100,
     "rating": 4.2,
     "reviews": 297,
@@ -15322,7 +15322,7 @@
     },
     "shipping": {
       "free": false,
-      "days": 3
+      "days": "3"
     },
     "badge": "👕 Ropa",
     "brand": "Sin marca",
@@ -15335,17 +15335,14 @@
       "Costuras reforzadas"
     ],
     "originalPrice": 9800,
-    "discount": 30,
-    "basePrice": 6860,
+    "discount": 40,
+    "basePrice": 5880,
     "baseOriginalPrice": 9800,
     "marketing": {
       "type": "video",
       "url": "assets/videos/marketing/chomba-clic.mp4",
       "poster": "assets/images/products/prod_448/cover.jpg",
-      "autoplay": true,
-      "muted": true,
-      "loop": true,
-      "duration": 10
+      "autoplay": true
     },
     "priceDisplayMode": "wholesale",
     "variants": {
@@ -15362,7 +15359,7 @@
           "attributes": {
             "Talle": "0"
           },
-          "price": 6860,
+          "price": 5880,
           "stock": 10,
           "available": true,
           "originalPrice": 9800,
@@ -15380,7 +15377,7 @@
           "attributes": {
             "Talle": "1"
           },
-          "price": 6860,
+          "price": 5880,
           "stock": 10,
           "available": true,
           "originalPrice": 9800,
@@ -15398,7 +15395,7 @@
           "attributes": {
             "Talle": "2"
           },
-          "price": 6860,
+          "price": 5880,
           "stock": 10,
           "available": true,
           "originalPrice": 9800,
@@ -15416,7 +15413,7 @@
           "attributes": {
             "Talle": "3"
           },
-          "price": 7840,
+          "price": 6720,
           "stock": 10,
           "available": true,
           "originalPrice": 11200,
@@ -15434,7 +15431,7 @@
           "attributes": {
             "Talle": "4"
           },
-          "price": 7840,
+          "price": 6720,
           "stock": 10,
           "available": true,
           "originalPrice": 11200,
@@ -15452,7 +15449,7 @@
           "attributes": {
             "Talle": "5"
           },
-          "price": 7840,
+          "price": 6720,
           "stock": 10,
           "available": true,
           "originalPrice": 11200,
@@ -15470,7 +15467,7 @@
           "attributes": {
             "Talle": "6"
           },
-          "price": 9800,
+          "price": 8400,
           "stock": 10,
           "available": true,
           "originalPrice": 14000,
@@ -15488,7 +15485,7 @@
           "attributes": {
             "Talle": "7"
           },
-          "price": 9800,
+          "price": 8400,
           "stock": 10,
           "available": true,
           "originalPrice": 14000,
@@ -15506,7 +15503,7 @@
           "attributes": {
             "Talle": "8"
           },
-          "price": 9800,
+          "price": 8400,
           "stock": 10,
           "available": true,
           "originalPrice": 14000,
@@ -15524,7 +15521,7 @@
           "attributes": {
             "Talle": "9"
           },
-          "price": 9800,
+          "price": 8400,
           "stock": 10,
           "available": true,
           "originalPrice": 14000,
@@ -23893,7 +23890,7 @@
     "name": "Cazuela Huella Mediana",
     "category": "🐾 COMEDEROS Y BEBEDEROS",
     "subcategory": "Comederos",
-    "price": 3825,
+    "price": 2700,
     "stock": 10,
     "rating": 4.3,
     "reviews": 24,
@@ -23937,7 +23934,7 @@
       "Material duradero"
     ],
     "originalPrice": 4500,
-    "discount": 15,
+    "discount": 40,
     "priceDisplayMode": "wholesale"
   },
   {
@@ -23945,7 +23942,7 @@
     "name": "Cazuela Huella Grande",
     "category": "🐾 COMEDEROS Y BEBEDEROS",
     "subcategory": "Comederos",
-    "price": 4675,
+    "price": 3300,
     "stock": 10,
     "rating": 4.1,
     "reviews": 24,
@@ -23989,7 +23986,7 @@
       "Material duradero"
     ],
     "originalPrice": 5500,
-    "discount": 15,
+    "discount": 40,
     "priceDisplayMode": "wholesale"
   },
   {
