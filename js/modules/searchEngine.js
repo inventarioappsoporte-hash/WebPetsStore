@@ -459,8 +459,10 @@ class SearchEngine {
     const categoryDisplay = product.category || product.subcategory || '';
     
     return `
-      <div class="search-card" onclick="window.location.href='product.html?id=${product.id}'">
-        <img src="${product.images.thumb}" alt="${product.name}" loading="lazy">
+      <div class="search-card card" data-product-id="${product.id}" onclick="window.location.href='product.html?id=${product.id}'">
+        <div class="card__image-wrapper">
+          <img src="${product.images.thumb}" alt="${product.name}" loading="lazy">
+        </div>
         <h3>${product.name}</h3>
         ${categoryDisplay ? `<p class="search-card__category">${categoryDisplay}</p>` : ''}
         ${priceHtml}
@@ -481,6 +483,11 @@ class SearchEngine {
         await this.handleAddToCart(productId);
       });
     });
+    
+    // Aplicar indicadores de stock desde Firebase
+    if (typeof FirebaseStock !== 'undefined' && FirebaseStock.initialized) {
+      FirebaseStock.applyStockIndicators();
+    }
   }
 
   /**

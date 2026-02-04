@@ -95,6 +95,23 @@ class Cart {
         throw new Error('Cantidad debe ser mayor a 0');
       }
 
+      // Validar stock desde Firebase
+      if (typeof FirebaseStock !== 'undefined' && FirebaseStock.initialized && FirebaseStock.stockCache.size > 0) {
+        let stockId;
+        if (variant) {
+          stockId = `v_${variant.id}`;
+        } else {
+          stockId = `p_${product.id}`;
+        }
+        
+        const firebaseStock = FirebaseStock.getStock(stockId);
+        if (firebaseStock !== null && firebaseStock <= 0) {
+          console.warn('❌ Producto sin stock:', product.name);
+          alert('Este producto está agotado');
+          return false;
+        }
+      }
+
       // Buscar si ya existe el mismo producto+variante
       const existingItem = this.findItem(product.id, variant);
 

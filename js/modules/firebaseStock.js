@@ -311,8 +311,52 @@ if (typeof window !== 'undefined') {
   
   // Auto-inicializar
   if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', () => FirebaseStock.init());
+    document.addEventListener('DOMContentLoaded', () => {
+      FirebaseStock.init();
+      FirebaseStock.observeDOM();
+    });
   } else {
     FirebaseStock.init();
+    FirebaseStock.observeDOM();
   }
 }
+
+/**
+ * Observar cambios en el DOM para aplicar indicadores a nuevas tarjetas
+ */
+FirebaseStock.observeDOM = function() {
+  // Observar cuando se agregan nuevas tarjetas al DOM
+  const observer = new MutationObserver((mutations) => {
+    let hasNewCards = false;
+    
+    mutations.forEach(mutation => {
+      mutation.addedNodes.forEach(node => {
+        if (node.nodeType === 1) { // Element node
+          // Verificar si es una tarjeta o contiene tarjetas
+          if (node.classList && node.classList.contains('card') && node.dataset.productId) {
+            hasNewCards = true;
+          } else if (node.querySelectorAll) {
+            const cards = node.querySelectorAll('.card[data-product-id]');
+            if (cards.length > 0) {
+              hasNewCards = true;
+            }
+          }
+        }
+      });
+    });
+    
+    // Si se agregaron nuevas tarjetas y tenemos datos de stock, aplicar indicadores
+    if (hasNewCards && FirebaseStock.initialized && FirebaseStock.stockCache.size > 0) {
+      // Pequeño delay para asegurar que el DOM esté completamente actualizado
+      setTimeout(() => FirebaseStock.applyStockIndicators(), 100);
+    }
+  });
+  
+  // Observar todo el body
+  observer.observe(document.body, {
+    childList: true,
+    subtree: true
+  });
+  
+  console.log('👁️ FirebaseStock DOM observer started');
+};

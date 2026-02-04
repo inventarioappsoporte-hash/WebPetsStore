@@ -197,6 +197,11 @@ class HomeRenderer {
 
     // Agregar event listeners a las tarjetas
     this.attachCardListeners(container);
+    
+    // Aplicar indicadores de stock desde Firebase
+    if (typeof FirebaseStock !== 'undefined' && FirebaseStock.initialized) {
+      FirebaseStock.applyStockIndicators();
+    }
   }
 
   renderProductCard(product, showVideo = false, useMarketingMedia = false) {
