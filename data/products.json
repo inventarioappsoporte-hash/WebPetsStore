@@ -24741,10 +24741,10 @@
   {
     "id": "prod_807",
     "name": "Comedero De Altura Regulable N2",
-    "category": "accesorios",
+    "category": "🐾 COMEDEROS Y BEBEDEROS",
     "subcategory": "Comederos",
     "price": 79050,
-    "stock": 10,
+    "stock": 0,
     "rating": 4,
     "reviews": 17,
     "featured": false,
@@ -24774,7 +24774,7 @@
     },
     "shipping": {
       "free": true,
-      "days": 2
+      "days": "2"
     },
     "badge": "🍽️ Comederos",
     "brand": "Sin marca",
