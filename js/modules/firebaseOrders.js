@@ -30,10 +30,17 @@ class FirebaseOrders {
       const { initializeApp } = await import('https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js');
       const { getFirestore } = await import('https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js');
 
-      this.app = initializeApp(this.firebaseConfig);
-      this.db = getFirestore(this.app);
-      this.initialized = true;
+      // Reusar app de FirebaseStock si existe
+      if (typeof FirebaseStock !== 'undefined' && FirebaseStock.app) {
+        this.app = FirebaseStock.app;
+        this.db = FirebaseStock.db;
+        console.log('🔥 FirebaseOrders reusing FirebaseStock instance');
+      } else {
+        this.app = initializeApp(this.firebaseConfig, 'orders-app');
+        this.db = getFirestore(this.app);
+      }
       
+      this.initialized = true;
       console.log('🔥 FirebaseOrders initialized');
       return true;
     } catch (error) {
@@ -270,6 +277,8 @@ if (typeof window !== 'undefined') {
  * @param {Array} items - Items del pedido
  */
 FirebaseOrders.reserveStock = async function(items) {
+  console.log('📦 Iniciando reserva de stock para', items.length, 'items');
+  
   try {
     const { doc, getDoc, updateDoc } = await import('https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js');
     
@@ -281,6 +290,8 @@ FirebaseOrders.reserveStock = async function(items) {
       } else {
         inventoryId = `p_${item.productId}`;
       }
+      
+      console.log(`📦 Procesando item: ${item.name}, inventoryId: ${inventoryId}, cantidad: ${item.quantity}`);
       
       // Obtener documento de inventario
       const inventoryRef = doc(this.db, 'tiendas', this.STORE_ID, 'inventory', inventoryId);
@@ -296,7 +307,7 @@ FirebaseOrders.reserveStock = async function(items) {
           updatedAt: new Date()
         });
         
-        console.log(`📦 Stock reservado: ${inventoryId} - ${currentStock} → ${newStock}`);
+        console.log(`✅ Stock reservado: ${inventoryId} - ${currentStock} → ${newStock}`);
       } else {
         console.warn(`⚠️ Inventario no encontrado: ${inventoryId}`);
       }
