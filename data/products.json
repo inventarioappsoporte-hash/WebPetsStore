@@ -14512,9 +14512,9 @@
   {
     "id": "prod_418",
     "name": "Camisetas de Fútbol Clubes Argentinos",
-    "category": "ropa",
+    "category": "🐾 ROPA VERANO",
     "subcategory": "Ropa",
-    "price": 4900,
+    "price": 4200,
     "stock": 90,
     "rating": 4.5,
     "reviews": 49,
@@ -14548,7 +14548,7 @@
     },
     "shipping": {
       "free": false,
-      "days": 3
+      "days": "3"
     },
     "badge": "⚽ Fútbol",
     "brand": "Sin marca",
@@ -14561,8 +14561,8 @@
       "Ideal para uso diario o eventos deportivos"
     ],
     "originalPrice": 7000,
-    "discount": 30,
-    "basePrice": 4900,
+    "discount": 40,
+    "basePrice": 4200,
     "baseOriginalPrice": 7000,
     "priceDisplayMode": "wholesale",
     "variants": {
@@ -14579,7 +14579,7 @@
           "attributes": {
             "Talle": "1"
           },
-          "price": 4900,
+          "price": 4200,
           "stock": 10,
           "available": true,
           "originalPrice": 7000,
@@ -14597,7 +14597,7 @@
           "attributes": {
             "Talle": "2"
           },
-          "price": 4900,
+          "price": 4200,
           "stock": 10,
           "available": true,
           "originalPrice": 7000,
@@ -14615,7 +14615,7 @@
           "attributes": {
             "Talle": "3"
           },
-          "price": 4900,
+          "price": 4200,
           "stock": 10,
           "available": true,
           "originalPrice": 7000,
@@ -14633,7 +14633,7 @@
           "attributes": {
             "Talle": "4"
           },
-          "price": 5880,
+          "price": 5040,
           "stock": 10,
           "available": true,
           "originalPrice": 8400,
@@ -14651,7 +14651,7 @@
           "attributes": {
             "Talle": "6"
           },
-          "price": 5880,
+          "price": 5040,
           "stock": 10,
           "available": true,
           "originalPrice": 8400,
@@ -14669,7 +14669,7 @@
           "attributes": {
             "Talle": "7"
           },
-          "price": 6860,
+          "price": 5880,
           "stock": 10,
           "available": true,
           "originalPrice": 9800,
@@ -14687,7 +14687,7 @@
           "attributes": {
             "Talle": "8"
           },
-          "price": 6860,
+          "price": 5880,
           "stock": 10,
           "available": true,
           "originalPrice": 9800,
@@ -14705,7 +14705,7 @@
           "attributes": {
             "Talle": "9"
           },
-          "price": 6860,
+          "price": 5880,
           "stock": 10,
           "available": true,
           "originalPrice": 9800,
