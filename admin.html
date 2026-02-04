@@ -2577,22 +2577,23 @@
             grid.innerHTML = filtered.map(function(item) {
                 var stockClass = item.stock === 0 ? 'out-of-stock' : (item.stock <= 5 ? 'low-stock' : '');
                 var stockValueClass = item.stock === 0 ? 'out' : (item.stock <= 5 ? 'low' : 'ok');
+                var stockColor = item.stock === 0 ? '#ef4444' : (item.stock <= 5 ? '#f59e0b' : '#22c55e');
                 var defaultImg = 'data:image/svg+xml,' + encodeURIComponent('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><rect fill="#333" width="100" height="100"/><text x="50" y="55" text-anchor="middle" fill="#666" font-size="40">📦</text></svg>');
                 var imgSrc = item.image || defaultImg;
-                var variantHtml = item.variantName ? '<div class="inventory-card-variant">' + item.variantName + '</div>' : '';
+                var variantHtml = item.variantName ? '<div style="font-size:0.6875rem;color:#f97316;">' + item.variantName + '</div>' : '';
                 
-                return '<div class="inventory-card ' + stockClass + '" data-id="' + item.id + '">' +
-                    '<img class="inventory-card-image" src="' + imgSrc + '" alt="' + item.name + '" onerror="this.src=\'' + defaultImg + '\'">' +
-                    '<div class="inventory-card-info">' +
-                        '<div class="inventory-card-name">' + item.name + '</div>' +
+                return '<div class="inventory-card ' + stockClass + '" data-id="' + item.id + '" style="display:flex;align-items:center;gap:0.5rem;padding:0.75rem;">' +
+                    '<img style="width:50px;height:50px;border-radius:8px;object-fit:cover;flex-shrink:0;" src="' + imgSrc + '" alt="' + item.name + '" onerror="this.src=\'' + defaultImg + '\'">' +
+                    '<div style="flex:1;min-width:0;overflow:hidden;">' +
+                        '<div style="font-weight:600;font-size:0.8125rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">' + item.name + '</div>' +
                         variantHtml +
-                        '<div class="inventory-card-category">' + (item.category || 'Sin categoría') + '</div>' +
+                        '<div style="font-size:0.625rem;color:#a3a3a3;">' + (item.category || 'Sin categoría') + '</div>' +
                     '</div>' +
-                    '<div class="inventory-card-stock">' +
-                        '<div class="stock-value ' + stockValueClass + '">' + item.stock + '</div>' +
-                        '<div class="stock-controls">' +
-                            '<button class="stock-btn minus" onclick="updateStock(\'' + item.id + '\', -1)">−</button>' +
-                            '<button class="stock-btn plus" onclick="updateStock(\'' + item.id + '\', 1)">+</button>' +
+                    '<div style="flex-shrink:0;display:flex;align-items:center;gap:0.5rem;">' +
+                        '<div style="font-size:1.25rem;font-weight:700;color:' + stockColor + ';min-width:30px;text-align:center;">' + item.stock + '</div>' +
+                        '<div style="display:flex;flex-direction:column;gap:0.125rem;">' +
+                            '<button class="stock-btn" style="width:28px;height:28px;border:1px solid #333;border-radius:4px;background:#1f1f1f;color:#fff;cursor:pointer;" onclick="updateStock(\'' + item.id + '\', 1)">+</button>' +
+                            '<button class="stock-btn" style="width:28px;height:28px;border:1px solid #333;border-radius:4px;background:#1f1f1f;color:#fff;cursor:pointer;" onclick="updateStock(\'' + item.id + '\', -1)">−</button>' +
                         '</div>' +
                     '</div>' +
                 '</div>';
