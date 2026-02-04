@@ -468,12 +468,21 @@ class VariantSelector {
   }
   
   updateBuyButton() {
-    const buyButton = document.querySelector('.btn--buy');
-    if (!buyButton) return;
+    // Buscar ambos botones de la página de producto
+    const addToCartBtn = document.querySelector('.btn--add-to-cart');
+    const buyNowBtn = document.querySelector('.btn--buy-now');
+    
+    if (!addToCartBtn && !buyNowBtn) return;
     
     if (!this.selectedVariant) {
-      buyButton.disabled = true;
-      buyButton.textContent = 'No Disponible';
+      if (addToCartBtn) {
+        addToCartBtn.disabled = true;
+        addToCartBtn.textContent = 'No Disponible';
+      }
+      if (buyNowBtn) {
+        buyNowBtn.disabled = true;
+        buyNowBtn.textContent = 'No Disponible';
+      }
       return;
     }
     
@@ -489,11 +498,23 @@ class VariantSelector {
     }
     
     if (isAvailable) {
-      buyButton.disabled = false;
-      buyButton.textContent = 'Agregar al Carrito';
+      if (addToCartBtn) {
+        addToCartBtn.disabled = false;
+        addToCartBtn.textContent = '🛒 AGREGAR AL CARRITO';
+      }
+      if (buyNowBtn) {
+        buyNowBtn.disabled = false;
+        buyNowBtn.textContent = '⚡ COMPRAR AHORA';
+      }
     } else {
-      buyButton.disabled = true;
-      buyButton.textContent = 'Sin Stock';
+      if (addToCartBtn) {
+        addToCartBtn.disabled = true;
+        addToCartBtn.textContent = 'AGOTADO';
+      }
+      if (buyNowBtn) {
+        buyNowBtn.disabled = true;
+        buyNowBtn.textContent = 'AGOTADO';
+      }
     }
   }
   

@@ -561,7 +561,24 @@ class ProductPage {
       return;
     }
 
-    // Validar stock
+    // Validar stock desde Firebase
+    if (typeof FirebaseStock !== 'undefined' && FirebaseStock.initialized && FirebaseStock.stockCache.size > 0) {
+      let stockId;
+      if (variant) {
+        stockId = `v_${variant.id}`;
+      } else {
+        stockId = `p_${product.id}`;
+      }
+      
+      const firebaseStock = FirebaseStock.getStock(stockId);
+      console.log(`📦 Validando stock Firebase - ID: ${stockId}, Stock: ${firebaseStock}`);
+      if (firebaseStock !== null && firebaseStock <= 0) {
+        alert('Este producto está agotado');
+        return;
+      }
+    }
+
+    // Validar stock del JSON (fallback)
     if (!product.hasVariants && product.stock === 0) {
       alert('Producto agotado');
       return;
@@ -572,8 +589,6 @@ class ProductPage {
     
     if (success) {
       CartUI.showAddedNotification(product.name);
-    } else {
-      alert('Error al agregar el producto al carrito');
     }
   }
 
@@ -595,7 +610,24 @@ class ProductPage {
       return;
     }
 
-    // Validar stock
+    // Validar stock desde Firebase
+    if (typeof FirebaseStock !== 'undefined' && FirebaseStock.initialized && FirebaseStock.stockCache.size > 0) {
+      let stockId;
+      if (variant) {
+        stockId = `v_${variant.id}`;
+      } else {
+        stockId = `p_${product.id}`;
+      }
+      
+      const firebaseStock = FirebaseStock.getStock(stockId);
+      console.log(`📦 Validando stock Firebase - ID: ${stockId}, Stock: ${firebaseStock}`);
+      if (firebaseStock !== null && firebaseStock <= 0) {
+        alert('Este producto está agotado');
+        return;
+      }
+    }
+
+    // Validar stock del JSON (fallback)
     if (!product.hasVariants && product.stock === 0) {
       alert('Producto agotado');
       return;
@@ -607,8 +639,6 @@ class ProductPage {
     if (success) {
       // Abrir el carrito directamente
       CartUI.open();
-    } else {
-      alert('Error al agregar el producto al carrito');
     }
   }
 }
