@@ -14039,9 +14039,9 @@
   {
     "id": "prod_400",
     "name": "Camiseta Argentina 3 Estrella",
-    "category": "ropa",
+    "category": "🐾 ROPA VERANO",
     "subcategory": "Ropa",
-    "price": 4900,
+    "price": 4200,
     "stock": 90,
     "rating": 4.3,
     "reviews": 46,
@@ -14075,7 +14075,7 @@
     },
     "shipping": {
       "free": false,
-      "days": 4
+      "days": "4"
     },
     "badge": "👕 Ropa",
     "brand": "Sin marca",
@@ -14087,17 +14087,14 @@
       "Cómodo para el verano"
     ],
     "originalPrice": 7000,
-    "discount": 30,
-    "basePrice": 4900,
+    "discount": 40,
+    "basePrice": 4200,
     "baseOriginalPrice": 7000,
     "marketing": {
       "type": "video",
       "url": "assets/videos/marketing/camiseta-messi-clic.mp4",
       "poster": "assets/images/products/prod_400/cover.jpg",
-      "autoplay": true,
-      "muted": true,
-      "loop": true,
-      "duration": 10
+      "autoplay": true
     },
     "priceDisplayMode": "wholesale",
     "variants": {
@@ -14114,7 +14111,7 @@
           "attributes": {
             "Talle": "1"
           },
-          "price": 4900,
+          "price": 4200,
           "stock": 10,
           "available": true,
           "originalPrice": 7000,
@@ -14132,7 +14129,7 @@
           "attributes": {
             "Talle": "2"
           },
-          "price": 4900,
+          "price": 4200,
           "stock": 10,
           "available": true,
           "originalPrice": 7000,
@@ -14150,7 +14147,7 @@
           "attributes": {
             "Talle": "3"
           },
-          "price": 4900,
+          "price": 4200,
           "stock": 10,
           "available": true,
           "originalPrice": 7000,
@@ -14168,7 +14165,7 @@
           "attributes": {
             "Talle": "4"
           },
-          "price": 5880,
+          "price": 5040,
           "stock": 10,
           "available": true,
           "originalPrice": 8400,
@@ -14186,7 +14183,7 @@
           "attributes": {
             "Talle": "5"
           },
-          "price": 5880,
+          "price": 5040,
           "stock": 10,
           "available": true,
           "originalPrice": 8400,
@@ -14204,7 +14201,7 @@
           "attributes": {
             "Talle": "6"
           },
-          "price": 5880,
+          "price": 5040,
           "stock": 10,
           "available": true,
           "originalPrice": 8400,
@@ -14222,7 +14219,7 @@
           "attributes": {
             "Talle": "7"
           },
-          "price": 6860,
+          "price": 5880,
           "stock": 10,
           "available": true,
           "originalPrice": 9800,
@@ -14240,7 +14237,7 @@
           "attributes": {
             "Talle": "8"
           },
-          "price": 6860,
+          "price": 5880,
           "stock": 10,
           "available": true,
           "originalPrice": 9800,
@@ -14258,7 +14255,7 @@
           "attributes": {
             "Talle": "9"
           },
-          "price": 6860,
+          "price": 5880,
           "stock": 10,
           "available": true,
           "originalPrice": 9800,
