@@ -1918,7 +1918,7 @@
     <script type="module">
         import { initializeApp } from 'https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js';
         import { getAuth, signInWithEmailAndPassword, onAuthStateChanged, signOut } from 'https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js';
-        import { getFirestore, collection, query, where, orderBy, onSnapshot, doc, updateDoc, getDocs, getDoc, Timestamp, limit } from 'https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js';
+        import { getFirestore, collection, query, where, orderBy, onSnapshot, doc, updateDoc, getDocs, getDoc, deleteDoc, Timestamp, limit } from 'https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js';
 
         // Firebase Config
         const firebaseConfig = {
@@ -2272,6 +2272,9 @@
                     html += '<button class="action-btn confirm" onclick="confirmOrder(\'' + order.id + '\')" title="Confirmar">✓</button>';
                     html += '<button class="action-btn cancel" onclick="cancelOrder(\'' + order.id + '\')" title="Cancelar">✕</button>';
                 }
+                if (order.status === 'cancelled') {
+                    html += '<button class="action-btn delete" onclick="deleteOrder(\'' + order.id + '\')" title="Eliminar" style="background:#dc2626;">🗑️</button>';
+                }
                 html += '<button class="action-btn whatsapp" onclick="sendWhatsApp(\'' + order.id + '\')" title="WhatsApp">📱</button>';
                 html += '<button class="action-btn view" onclick="viewOrder(\'' + order.id + '\')" title="Editar pedido">✏️</button>';
                 html += '</td></tr>';
@@ -2298,6 +2301,9 @@
                 if (order.status === 'pending') {
                     mobileHtml += '<button class="action-btn confirm" onclick="confirmOrder(\'' + order.id + '\')">✓</button>';
                     mobileHtml += '<button class="action-btn cancel" onclick="cancelOrder(\'' + order.id + '\')">✕</button>';
+                }
+                if (order.status === 'cancelled') {
+                    mobileHtml += '<button class="action-btn delete" onclick="deleteOrder(\'' + order.id + '\')" style="background:#dc2626;">🗑️</button>';
                 }
                 mobileHtml += '<button class="action-btn whatsapp" onclick="sendWhatsApp(\'' + order.id + '\')">📱</button>';
                 mobileHtml += '<button class="action-btn view" onclick="viewOrder(\'' + order.id + '\')">✏️</button>';
@@ -2393,6 +2399,18 @@
                 console.log('✅ Pedido cancelado y stock devuelto');
             } catch (error) {
                 alert('Error: ' + error.message);
+            }
+        };
+
+        // Delete Order (solo para pedidos cancelados)
+        window.deleteOrder = async (orderId) => {
+            if (!confirm('¿Eliminar este pedido permanentemente? Esta acción no se puede deshacer.')) return;
+            try {
+                const STORE_ID = 'petsstore-b0516';
+                await deleteDoc(doc(db, 'tiendas', STORE_ID, 'orders', orderId));
+                console.log('🗑️ Pedido eliminado: ' + orderId);
+            } catch (error) {
+                alert('Error al eliminar: ' + error.message);
             }
         };
 
