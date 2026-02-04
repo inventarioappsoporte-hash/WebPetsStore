@@ -25108,9 +25108,9 @@
   {
     "id": "prod_814",
     "name": "Comederos Doble (mdp) Gato / Perro",
-    "category": "accesorios",
+    "category": "🐾 COMEDEROS Y BEBEDEROS",
     "subcategory": "Comederos",
-    "price": 17000,
+    "price": 21250,
     "stock": 10,
     "rating": 3.7,
     "reviews": 21,
@@ -25144,7 +25144,7 @@
     },
     "shipping": {
       "free": true,
-      "days": 2
+      "days": "2"
     },
     "badge": "🍽️ Comederos",
     "brand": "Sin marca",
@@ -25155,7 +25155,7 @@
       "Capacidad adecuada",
       "Material duradero"
     ],
-    "originalPrice": 20000,
+    "originalPrice": 25000,
     "discount": 15,
     "priceDisplayMode": "wholesale"
   },
