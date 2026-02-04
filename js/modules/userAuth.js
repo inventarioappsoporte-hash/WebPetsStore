@@ -35,7 +35,17 @@ class UserAuth {
       onAuthStateChanged(this.auth, async (user) => {
         this.currentUser = user;
         if (user) {
-          await this.loadUserProfile(user.uid);
+          const profile = await this.loadUserProfile(user.uid);
+          // Si no hay perfil, crearlo automáticamente
+          if (!profile) {
+            console.log('📝 Creando perfil de usuario...');
+            await this.createUserProfile(user.uid, {
+              email: user.email,
+              displayName: user.displayName || '',
+              phone: '',
+              photoURL: user.photoURL || ''
+            });
+          }
         } else {
           this.userProfile = null;
         }
@@ -134,6 +144,12 @@ class UserAuth {
   }
 
   static async loadUserProfile(uid) {
+    // Si ya tenemos el perfil cacheado, no recargar
+    if (this.userProfile && this.userProfile.uid === uid) {
+      console.log('🔐 Using cached user profile');
+      return this.userProfile;
+    }
+    
     try {
       const { doc, getDoc } = await import('https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js');
       const userRef = doc(this.db, 'tiendas', this.STORE_ID, 'users', uid);
@@ -142,9 +158,32 @@ class UserAuth {
         this.userProfile = { uid, ...userDoc.data() };
         return this.userProfile;
       }
+      // Si no existe el perfil, crearlo con datos de Auth
+      if (this.currentUser) {
+        const newProfile = {
+          email: this.currentUser.email || '',
+          displayName: this.currentUser.displayName || '',
+          phone: '',
+          photoURL: this.currentUser.photoURL || ''
+        };
+        await this.createUserProfile(uid, newProfile);
+        return this.userProfile;
+      }
       return null;
     } catch (error) {
       console.error('Error cargando perfil:', error);
+      // Si hay error de permisos, usar datos de Auth directamente
+      if (this.currentUser) {
+        this.userProfile = {
+          uid,
+          email: this.currentUser.email || '',
+          displayName: this.currentUser.displayName || '',
+          phone: '',
+          photoURL: this.currentUser.photoURL || '',
+          addresses: []
+        };
+        return this.userProfile;
+      }
       return null;
     }
   }
@@ -213,14 +252,43 @@ class UserAuth {
   
   static getUser() {
     if (!this.currentUser) return null;
+    // Priorizar: userProfile.displayName > currentUser.displayName > email username
+    const profileName = this.userProfile?.displayName;
+    const authName = this.currentUser.displayName;
+    const emailName = this.currentUser.email?.split('@')[0] || '';
+    
+    const displayName = (profileName && profileName.trim()) 
+      ? profileName 
+      : (authName && authName.trim()) 
+        ? authName 
+        : emailName;
+    
+    console.log('🔍 getUser displayName sources:', { profileName, authName, emailName, final: displayName });
+    
     return {
       uid: this.currentUser.uid,
       email: this.currentUser.email,
-      displayName: this.userProfile?.displayName || this.currentUser.displayName || '',
+      displayName: displayName,
       phone: this.userProfile?.phone || '',
       photoURL: this.currentUser.photoURL || '',
       addresses: this.userProfile?.addresses || []
     };
+  }
+
+  // Crear perfil si no existe
+  static async ensureUserProfile() {
+    if (!this.currentUser) return false;
+    if (this.userProfile) return true;
+    
+    // Crear perfil con datos de Firebase Auth
+    const created = await this.createUserProfile(this.currentUser.uid, {
+      email: this.currentUser.email,
+      displayName: this.currentUser.displayName || '',
+      phone: '',
+      photoURL: this.currentUser.photoURL || ''
+    });
+    
+    return created;
   }
 
   static getDefaultAddress() {
@@ -240,7 +308,17 @@ class UserAuth {
     const txt = document.getElementById('user-account-text');
     if (!btn) return;
     if (this.currentUser) {
-      const name = this.userProfile?.displayName || this.currentUser.displayName || 'Cuenta';
+      // Usar la misma lógica que getUser para consistencia
+      const profileName = this.userProfile?.displayName;
+      const authName = this.currentUser.displayName;
+      const emailName = this.currentUser.email?.split('@')[0] || 'Cuenta';
+      
+      const name = (profileName && profileName.trim()) 
+        ? profileName 
+        : (authName && authName.trim()) 
+          ? authName 
+          : emailName;
+      
       if (txt) txt.textContent = name.split(' ')[0];
       btn.classList.add('logged-in');
     } else {

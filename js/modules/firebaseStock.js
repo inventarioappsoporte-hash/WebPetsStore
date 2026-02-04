@@ -1,9 +1,16 @@
 /**
  * 🔥 Módulo FirebaseStock - Gestión de Stock desde Firebase
- * Lee el stock en tiempo real desde Firestore (colección inventory)
+ * Lee el stock desde Firestore (colección inventory) con CACHE para reducir lecturas
+ * 
+ * ⚠️ DESACTIVADO TEMPORALMENTE para reducir lecturas de Firebase
+ * El stock ahora se maneja de forma estática via JSON publicado en GitHub Pages
+ * Para reactivar, cambiar ENABLED = true
  */
 
 class FirebaseStock {
+  // ⚠️ DESACTIVADO - Cambiar a true para reactivar lecturas de Firebase
+  static ENABLED = false;
+  
   static app = null;
   static db = null;
   static initialized = false;
@@ -11,6 +18,9 @@ class FirebaseStock {
   static stockCache = new Map(); // id -> stock
   static listeners = [];
   static unsubscribe = null;
+  static lastFetch = 0;
+  static CACHE_DURATION = 5 * 60 * 1000; // 5 minutos de cache
+  static isRealTimeEnabled = false; // Desactivar tiempo real por defecto
 
   // Configuración de Firebase (misma que FirebaseOrders)
   static firebaseConfig = {
@@ -23,51 +33,86 @@ class FirebaseStock {
   };
 
   /**
-   * Inicializar Firebase y escuchar cambios de inventario
+   * Inicializar Firebase y cargar inventario UNA SOLA VEZ
    */
   static async init() {
+    // ⚠️ Si está desactivado, no hacer nada
+    if (!this.ENABLED) {
+      console.log('📦 FirebaseStock DESACTIVADO - usando stock estático');
+      this.initialized = true;
+      return true;
+    }
+    
     if (this.initialized) return true;
 
     try {
-      const { initializeApp } = await import('https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js');
-      const { getFirestore, collection, onSnapshot } = await import('https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js');
+      const { initializeApp, getApps } = await import('https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js');
+      const { getFirestore } = await import('https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js');
 
-      // Reusar app si ya existe (de FirebaseOrders)
-      if (typeof FirebaseOrders !== 'undefined' && FirebaseOrders.app) {
+      // Reusar app si ya existe
+      const apps = getApps();
+      if (apps.length > 0) {
+        this.app = apps[0];
+      } else if (typeof FirebaseOrders !== 'undefined' && FirebaseOrders.app) {
         this.app = FirebaseOrders.app;
-        this.db = FirebaseOrders.db;
       } else {
-        this.app = initializeApp(this.firebaseConfig, 'stock-app');
-        this.db = getFirestore(this.app);
+        this.app = initializeApp(this.firebaseConfig);
       }
+      this.db = getFirestore(this.app);
       
-      // Escuchar cambios en inventario
-      const inventoryRef = collection(this.db, 'tiendas', this.STORE_ID, 'inventory');
-      
-      this.unsubscribe = onSnapshot(inventoryRef, (snapshot) => {
-        snapshot.docChanges().forEach(change => {
-          const data = change.doc.data();
-          if (change.type === 'added' || change.type === 'modified') {
-            this.stockCache.set(change.doc.id, data.stock || 0);
-          } else if (change.type === 'removed') {
-            this.stockCache.delete(change.doc.id);
-          }
-        });
-        
-        console.log(`📦 Stock updated: ${this.stockCache.size} items`);
-        this.notifyListeners();
-        this.applyStockIndicators();
-      }, (error) => {
-        console.warn('⚠️ Could not load inventory:', error.message);
-      });
+      // Cargar inventario UNA SOLA VEZ (no en tiempo real)
+      await this.loadInventoryOnce();
       
       this.initialized = true;
-      console.log('📦 FirebaseStock initialized');
+      console.log('📦 FirebaseStock initialized (single fetch mode)');
       return true;
     } catch (error) {
       console.error('❌ Error initializing FirebaseStock:', error);
       return false;
     }
+  }
+
+  /**
+   * Cargar inventario una sola vez (sin listener en tiempo real)
+   */
+  static async loadInventoryOnce() {
+    // ⚠️ Si está desactivado, no hacer nada
+    if (!this.ENABLED) return;
+    
+    // Si el cache es reciente, no recargar
+    if (Date.now() - this.lastFetch < this.CACHE_DURATION && this.stockCache.size > 0) {
+      console.log('📦 Using cached inventory');
+      return;
+    }
+
+    try {
+      const { collection, getDocs } = await import('https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js');
+      
+      const inventoryRef = collection(this.db, 'tiendas', this.STORE_ID, 'inventory');
+      const snapshot = await getDocs(inventoryRef);
+      
+      this.stockCache.clear();
+      snapshot.forEach(doc => {
+        const data = doc.data();
+        this.stockCache.set(doc.id, data.stock || 0);
+      });
+      
+      this.lastFetch = Date.now();
+      console.log(`📦 Inventory loaded: ${this.stockCache.size} items (cached for 5 min)`);
+      
+      this.notifyListeners();
+      this.applyStockIndicators();
+    } catch (error) {
+      console.warn('⚠️ Could not load inventory:', error.message);
+    }
+  }
+
+  /**
+   * Forzar recarga del inventario (usar con moderación)
+   */
+  static async refresh() {
+    this.lastFetch = 0; // Invalidar cache
+    await this.loadInventoryOnce();
   }
 
   /**
@@ -323,16 +368,17 @@ if (typeof window !== 'undefined') {
 
 /**
  * Observar cambios en el DOM para aplicar indicadores a nuevas tarjetas
+ * OPTIMIZADO: usa debounce para evitar múltiples llamadas
  */
 FirebaseStock.observeDOM = function() {
-  // Observar cuando se agregan nuevas tarjetas al DOM
+  let debounceTimer = null;
+  
   const observer = new MutationObserver((mutations) => {
     let hasNewCards = false;
     
     mutations.forEach(mutation => {
       mutation.addedNodes.forEach(node => {
-        if (node.nodeType === 1) { // Element node
-          // Verificar si es una tarjeta o contiene tarjetas
+        if (node.nodeType === 1) {
           if (node.classList && node.classList.contains('card') && node.dataset.productId) {
             hasNewCards = true;
           } else if (node.querySelectorAll) {
@@ -345,18 +391,17 @@ FirebaseStock.observeDOM = function() {
       });
     });
     
-    // Si se agregaron nuevas tarjetas y tenemos datos de stock, aplicar indicadores
+    // Usar debounce para evitar múltiples llamadas
     if (hasNewCards && FirebaseStock.initialized && FirebaseStock.stockCache.size > 0) {
-      // Pequeño delay para asegurar que el DOM esté completamente actualizado
-      setTimeout(() => FirebaseStock.applyStockIndicators(), 100);
+      if (debounceTimer) clearTimeout(debounceTimer);
+      debounceTimer = setTimeout(() => FirebaseStock.applyStockIndicators(), 300);
     }
   });
   
-  // Observar todo el body
   observer.observe(document.body, {
     childList: true,
     subtree: true
   });
   
-  console.log('👁️ FirebaseStock DOM observer started');
+  console.log('👁️ FirebaseStock DOM observer started (debounced)');
 };

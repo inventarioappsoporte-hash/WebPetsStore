@@ -37,6 +37,15 @@ class CartUI {
       });
     }
 
+    // Registrar listener para cambios de usuario (login/logout)
+    if (typeof UserAuth !== 'undefined') {
+      UserAuth.addListener((user) => {
+        if (this.isOpen) {
+          this.autoFillUserData();
+        }
+      });
+    }
+
     // Mostrar/ocultar campos de dirección según zona inicial
     setTimeout(() => {
       if (typeof ShippingSelector !== 'undefined' && ShippingSelector.isEnabled()) {
@@ -519,8 +528,16 @@ class CartUI {
     const addressSelector = document.getElementById('saved-addresses-selector');
     const saveAddressOption = document.getElementById('save-address-option');
     
+    // Verificar si UserAuth está disponible y el usuario está logueado
     if (typeof UserAuth !== 'undefined' && UserAuth.isLoggedIn()) {
-      const user = UserAuth.getCurrentUser();
+      const user = UserAuth.getUser();
+      
+      console.log('🛒 autoFillUserData - Usuario:', user);
+      
+      if (!user) {
+        console.log('🛒 autoFillUserData - No hay datos de usuario aún');
+        return;
+      }
       
       // Mostrar sección de usuario
       if (userSection) {
@@ -528,7 +545,7 @@ class CartUI {
         const avatarEl = document.getElementById('cart-user-avatar');
         const nameEl = document.getElementById('cart-user-name');
         if (avatarEl) avatarEl.textContent = user.photoURL ? '' : '👤';
-        if (nameEl) nameEl.textContent = user.displayName || user.email.split('@')[0];
+        if (nameEl) nameEl.textContent = user.displayName || user.email?.split('@')[0] || 'Usuario';
       }
       
       // Ocultar prompt de login
@@ -583,7 +600,7 @@ class CartUI {
     const select = document.getElementById('saved-address-select');
     if (!select || !select.value) return;
     
-    const user = UserAuth.getCurrentUser();
+    const user = UserAuth.getUser();
     if (!user || !user.addresses) return;
     
     const address = user.addresses.find(a => a.id === select.value);

@@ -11,345 +11,332 @@
   <link rel="stylesheet" href="css/typography.css">
   <link rel="stylesheet" href="css/layout.css">
   <link rel="stylesheet" href="css/components.css">
-  <link rel="stylesheet" href="css/auth.css?v=20260204">
   
   <style>
+    body { background: #0f0f1a; }
+    
+    .page-header {
+      background: #1a1a2e;
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+      padding: 0.75rem 0;
+    }
+    .page-header .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .page-header__logo img { height: 32px; }
+    .page-header__back {
+      color: #FF6B00;
+      text-decoration: none;
+      font-size: 0.85rem;
+    }
+    .page-header__back:hover { text-decoration: underline; }
+    
     .account-page {
-      max-width: 800px;
-      margin: 2rem auto;
-      padding: 0 1rem;
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 1.5rem 1rem;
     }
     
     .account-header {
       display: flex;
       align-items: center;
-      gap: 1.5rem;
-      margin-bottom: 2rem;
-      padding-bottom: 1.5rem;
-      border-bottom: 1px solid #e5e7eb;
+      gap: 1rem;
+      margin-bottom: 1.5rem;
+      padding-bottom: 1rem;
+      border-bottom: 1px solid rgba(255,255,255,0.1);
     }
-    
     .account-avatar {
-      width: 80px;
-      height: 80px;
+      width: 60px;
+      height: 60px;
       border-radius: 50%;
       background: linear-gradient(135deg, #FF6B00, #ff8533);
       display: flex;
       align-items: center;
       justify-content: center;
-      font-size: 2.5rem;
+      font-size: 1.75rem;
       color: white;
+      flex-shrink: 0;
     }
-    
     .account-avatar img {
       width: 100%;
       height: 100%;
       border-radius: 50%;
       object-fit: cover;
     }
-    
     .account-info h1 {
-      margin: 0 0 0.25rem 0;
-      font-size: 1.5rem;
-    }
-    
-    .account-info p {
       margin: 0;
-      color: #6b7280;
+      font-size: 1.25rem;
+      color: #fff;
+    }
+    .account-info p {
+      margin: 0.25rem 0 0;
+      color: #9ca3af;
+      font-size: 0.85rem;
     }
     
     .account-section {
-      background: white;
-      border-radius: 12px;
-      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
-      margin-bottom: 1.5rem;
+      background: #1a1a2e;
+      border-radius: 10px;
+      margin-bottom: 1rem;
+      border: 1px solid rgba(255,255,255,0.08);
       overflow: hidden;
     }
-    
     .account-section__header {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 1rem 1.5rem;
-      background: #f9fafb;
-      border-bottom: 1px solid #e5e7eb;
+      padding: 0.75rem 1rem;
+      background: rgba(255,255,255,0.03);
+      border-bottom: 1px solid rgba(255,255,255,0.08);
     }
-    
     .account-section__header h2 {
       margin: 0;
-      font-size: 1.1rem;
+      font-size: 0.9rem;
+      color: #FF6B00;
       display: flex;
       align-items: center;
       gap: 0.5rem;
     }
-    
-    .account-section__body {
-      padding: 1.5rem;
+    .account-section__header .btn {
+      flex-shrink: 0;
     }
+    .account-section__body { padding: 1rem; }
     
-    .account-form__group {
-      margin-bottom: 1rem;
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.75rem;
     }
-    
-    .account-form__group label {
+    @media (max-width: 500px) {
+      .form-row { grid-template-columns: 1fr; }
+    }
+    .form-group { margin-bottom: 0.75rem; }
+    .form-group label {
       display: block;
-      margin-bottom: 0.5rem;
-      font-weight: 500;
-      color: #374151;
+      margin-bottom: 0.25rem;
+      font-size: 0.75rem;
+      color: #9ca3af;
     }
-    
-    .account-form__group input {
+    .form-group input {
       width: 100%;
-      padding: 0.75rem 1rem;
-      border: 1px solid #d1d5db;
-      border-radius: 8px;
-      font-size: 1rem;
+      padding: 0.5rem 0.75rem;
+      border: 1px solid rgba(255,255,255,0.15);
+      border-radius: 6px;
+      font-size: 0.85rem;
+      background: #16162a;
+      color: #fff;
       box-sizing: border-box;
     }
-    
-    .account-form__group input:focus {
+    .form-group input:focus {
       outline: none;
       border-color: #FF6B00;
-      box-shadow: 0 0 0 3px rgba(255, 107, 0, 0.1);
+      box-shadow: 0 0 0 2px rgba(255,107,0,0.2);
     }
-    
-    .account-form__group input:disabled {
-      background: #f3f4f6;
+    .form-group input:disabled {
+      background: rgba(255,255,255,0.05);
       color: #6b7280;
     }
     
-    .account-form__row {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 1rem;
-    }
-    
-    @media (max-width: 600px) {
-      .account-form__row {
-        grid-template-columns: 1fr;
-      }
-    }
-    
     .btn {
-      padding: 0.75rem 1.5rem;
+      padding: 0.5rem 1rem;
       border: none;
-      border-radius: 8px;
-      font-size: 1rem;
+      border-radius: 6px;
+      font-size: 0.8rem;
       font-weight: 500;
       cursor: pointer;
       transition: all 0.2s;
     }
-    
     .btn--primary {
-      background: #FF6B00;
+      background: linear-gradient(135deg, #FF6B00, #ff8533);
       color: white;
     }
-    
-    .btn--primary:hover {
-      background: #e55f00;
+    .btn--primary:hover { transform: translateY(-1px); }
+    .btn--primary:disabled {
+      background: #374151;
+      cursor: not-allowed;
+      transform: none;
     }
-    
     .btn--secondary {
-      background: #f3f4f6;
-      color: #374151;
+      background: rgba(255,255,255,0.1);
+      color: #e5e7eb;
+      border: 1px solid rgba(255,255,255,0.15);
     }
-    
     .btn--secondary:hover {
-      background: #e5e7eb;
+      background: rgba(255,255,255,0.15);
     }
-    
     .btn--danger {
-      background: #fef2f2;
-      color: #dc2626;
-      border: 1px solid #fecaca;
+      background: rgba(220,38,38,0.15);
+      color: #f87171;
+      border: 1px solid rgba(220,38,38,0.3);
     }
-    
     .btn--danger:hover {
-      background: #fee2e2;
+      background: rgba(220,38,38,0.25);
     }
-    
     .btn--small {
-      padding: 0.5rem 1rem;
-      font-size: 0.9rem;
+      padding: 0.25rem 0.5rem;
+      font-size: 0.7rem;
+    }
+    .btn--xs {
+      padding: 0.15rem 0.4rem;
+      font-size: 0.65rem;
+    }
+    .btn--add {
+      padding: 0.2rem 0.5rem;
+      font-size: 0.7rem;
+      white-space: nowrap;
+    }
+    .btn--xs {
+      padding: 0.2rem 0.4rem;
+      font-size: 0.65rem;
     }
     
-    /* Direcciones */
-    .address-list {
-      display: flex;
-      flex-direction: column;
-      gap: 1rem;
-    }
-    
+    .address-list { display: flex; flex-direction: column; gap: 0.75rem; }
     .address-card {
       display: flex;
       justify-content: space-between;
       align-items: flex-start;
-      padding: 1rem;
-      background: #f9fafb;
-      border-radius: 8px;
-      border: 1px solid #e5e7eb;
+      padding: 0.75rem;
+      background: rgba(255,255,255,0.03);
+      border-radius: 6px;
+      border: 1px solid rgba(255,255,255,0.08);
     }
-    
-    .address-card__content {
-      flex: 1;
-    }
-    
     .address-card__label {
       font-weight: 600;
-      color: #1f2937;
+      color: #FF6B00;
+      font-size: 0.8rem;
       margin-bottom: 0.25rem;
     }
-    
     .address-card__text {
-      color: #6b7280;
-      font-size: 0.9rem;
-      line-height: 1.5;
+      color: #d1d5db;
+      font-size: 0.8rem;
+      line-height: 1.4;
     }
-    
-    .address-card__actions {
-      display: flex;
-      gap: 0.5rem;
-    }
-    
     .address-empty {
       text-align: center;
-      padding: 2rem;
+      padding: 1.5rem;
       color: #6b7280;
+      font-size: 0.85rem;
     }
     
-    /* Modal de dirección */
     .address-modal {
       position: fixed;
       top: 0;
       left: 0;
       width: 100%;
       height: 100%;
-      background: rgba(0,0,0,0.5);
+      background: rgba(0,0,0,0.7);
       display: none;
       align-items: center;
       justify-content: center;
       z-index: 1000;
+      backdrop-filter: blur(4px);
     }
-    
-    .address-modal.open {
-      display: flex;
-    }
-    
+    .address-modal.open { display: flex; }
     .address-modal__content {
-      background: white;
-      border-radius: 12px;
+      background: #1a1a2e;
+      border-radius: 10px;
       width: 100%;
-      max-width: 500px;
+      max-width: 400px;
       max-height: 90vh;
       overflow-y: auto;
       margin: 1rem;
+      border: 1px solid rgba(255,107,0,0.3);
     }
-    
     .address-modal__header {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 1rem 1.5rem;
-      border-bottom: 1px solid #e5e7eb;
+      padding: 0.75rem 1rem;
+      background: linear-gradient(135deg, #FF6B00, #ff8533);
+      color: white;
     }
-    
     .address-modal__header h3 {
       margin: 0;
+      font-size: 0.95rem;
     }
-    
-    .address-modal__body {
-      padding: 1.5rem;
-    }
-    
     .address-modal__close {
-      background: none;
+      background: rgba(255,255,255,0.2);
       border: none;
-      font-size: 1.5rem;
+      color: white;
+      width: 26px;
+      height: 26px;
+      border-radius: 50%;
+      font-size: 0.9rem;
       cursor: pointer;
-      color: #6b7280;
     }
-    
-    /* Loading */
-    .account-loading {
-      text-align: center;
-      padding: 4rem 2rem;
-    }
-    
-    .account-not-logged {
-      text-align: center;
-      padding: 4rem 2rem;
-    }
-    
-    .account-not-logged h2 {
-      margin-bottom: 1rem;
-    }
-    
-    .account-not-logged p {
-      color: #6b7280;
-      margin-bottom: 1.5rem;
-    }
+    .address-modal__body { padding: 1rem; }
     
     .message {
-      padding: 0.75rem 1rem;
-      border-radius: 8px;
-      margin-bottom: 1rem;
+      padding: 0.5rem 0.75rem;
+      border-radius: 6px;
+      margin-bottom: 0.75rem;
+      font-size: 0.8rem;
     }
-    
     .message--success {
-      background: #f0fdf4;
-      color: #16a34a;
-      border: 1px solid #bbf7d0;
+      background: rgba(34,197,94,0.15);
+      color: #4ade80;
+      border: 1px solid rgba(34,197,94,0.3);
+    }
+    .message--error {
+      background: rgba(220,38,38,0.15);
+      color: #f87171;
+      border: 1px solid rgba(220,38,38,0.3);
     }
     
-    .message--error {
-      background: #fef2f2;
-      color: #dc2626;
-      border: 1px solid #fecaca;
+    .account-loading,
+    .account-not-logged {
+      text-align: center;
+      padding: 3rem 1rem;
+      color: #9ca3af;
+    }
+    .account-not-logged h2 {
+      color: #fff;
+      margin-bottom: 0.5rem;
+      font-size: 1.1rem;
+    }
+    .account-not-logged p {
+      margin-bottom: 1rem;
+      font-size: 0.85rem;
     }
   </style>
 </head>
 <body>
-  <!-- Header simplificado -->
-  <header class="header" style="background: white; border-bottom: 1px solid #e5e7eb;">
+  <header class="page-header">
     <div class="container">
-      <div class="header__content" style="display: flex; justify-content: space-between; align-items: center; padding: 1rem 0;">
-        <a href="index.html" class="header__logo">
-          <img src="assets/images/ui/logo-pets-store.png" alt="Pets Store" style="height: 40px;">
-        </a>
-        <a href="index.html" style="color: #FF6B00; text-decoration: none;">← Volver a la tienda</a>
-      </div>
+      <a href="index.html" class="page-header__logo">
+        <img src="assets/images/ui/logo-pets-store.png" alt="Pets Store">
+      </a>
+      <a href="index.html" class="page-header__back">← Volver a la tienda</a>
     </div>
   </header>
 
   <main class="account-page">
-    <!-- Loading -->
     <div id="account-loading" class="account-loading">
       <p>Cargando...</p>
     </div>
     
-    <!-- No logueado -->
     <div id="account-not-logged" class="account-not-logged" style="display: none;">
-      <h2>👤 Inicia sesión para ver tu cuenta</h2>
-      <p>Necesitas iniciar sesión para acceder a tu perfil y direcciones guardadas.</p>
-      <button class="btn btn--primary" onclick="window.location.href='index.html'">
-        Ir a la tienda
+      <h2>👤 Iniciá sesión</h2>
+      <p>Necesitás iniciar sesión para ver tu cuenta.</p>
+      <button class="btn btn--primary" onclick="showLoginModal()">
+        Iniciar Sesión
       </button>
+      <p style="margin-top: 1rem; font-size: 0.8rem;">
+        <a href="index.html" style="color: #FF6B00;">← Volver a la tienda</a>
+      </p>
     </div>
     
-    <!-- Contenido de cuenta -->
     <div id="account-content" style="display: none;">
-      <!-- Header de cuenta -->
       <div class="account-header">
-        <div class="account-avatar" id="account-avatar">
-          👤
-        </div>
+        <div class="account-avatar" id="account-avatar">👤</div>
         <div class="account-info">
           <h1 id="account-name">Usuario</h1>
           <p id="account-email">email@ejemplo.com</p>
         </div>
       </div>
       
-      <!-- Datos personales -->
       <section class="account-section">
         <div class="account-section__header">
           <h2>📝 Datos Personales</h2>
@@ -357,17 +344,17 @@
         <div class="account-section__body">
           <div id="profile-message"></div>
           <form id="profile-form" onsubmit="saveProfile(event)">
-            <div class="account-form__row">
-              <div class="account-form__group">
+            <div class="form-row">
+              <div class="form-group">
                 <label for="profile-name">Nombre completo</label>
                 <input type="text" id="profile-name" required>
               </div>
-              <div class="account-form__group">
+              <div class="form-group">
                 <label for="profile-phone">Teléfono / WhatsApp</label>
                 <input type="tel" id="profile-phone">
               </div>
             </div>
-            <div class="account-form__group">
+            <div class="form-group">
               <label for="profile-email">Email</label>
               <input type="email" id="profile-email" disabled>
             </div>
@@ -378,38 +365,29 @@
         </div>
       </section>
       
-      <!-- Direcciones -->
-      <section class="account-section" id="direcciones">
+      <section class="account-section">
         <div class="account-section__header">
           <h2>📍 Mis Direcciones</h2>
-          <button class="btn btn--secondary btn--small" onclick="openAddressModal()">
-            + Agregar
-          </button>
+          <button class="btn btn--secondary btn--xs" onclick="openAddressModal()">+</button>
         </div>
         <div class="account-section__body">
           <div id="addresses-list" class="address-list">
             <div class="address-empty">
-              <p>No tienes direcciones guardadas</p>
-              <button class="btn btn--primary btn--small" onclick="openAddressModal()">
-                Agregar dirección
-              </button>
+              <p>No tenés direcciones guardadas</p>
+              <button class="btn btn--primary btn--small" onclick="openAddressModal()">Agregar dirección</button>
             </div>
           </div>
         </div>
       </section>
       
-      <!-- Cerrar sesión -->
       <section class="account-section">
         <div class="account-section__body" style="text-align: center;">
-          <button class="btn btn--danger" onclick="handleLogout()">
-            🚪 Cerrar Sesión
-          </button>
+          <button class="btn btn--danger" onclick="handleLogout()">🚪 Cerrar Sesión</button>
         </div>
       </section>
     </div>
   </main>
   
-  <!-- Modal de dirección -->
   <div class="address-modal" id="address-modal">
     <div class="address-modal__content">
       <div class="address-modal__header">
@@ -418,95 +396,185 @@
       </div>
       <div class="address-modal__body">
         <form id="address-form" onsubmit="saveAddress(event)">
-          <div class="account-form__group">
+          <div class="form-group">
             <label for="addr-label">Nombre (ej: Casa, Trabajo)</label>
             <input type="text" id="addr-label" placeholder="Casa" required>
           </div>
-          <div class="account-form__group">
+          <div class="form-group">
             <label for="addr-address">Calle y número</label>
             <input type="text" id="addr-address" placeholder="Av. Corrientes 1234" required>
           </div>
-          <div class="account-form__row">
-            <div class="account-form__group">
-              <label for="addr-floor">Piso/Depto (opcional)</label>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="addr-floor">Piso/Depto</label>
               <input type="text" id="addr-floor" placeholder="3° B">
             </div>
-            <div class="account-form__group">
+            <div class="form-group">
               <label for="addr-zipcode">Código Postal</label>
               <input type="text" id="addr-zipcode" placeholder="1414">
             </div>
           </div>
-          <div class="account-form__group">
+          <div class="form-group">
             <label for="addr-city">Localidad / Barrio</label>
             <input type="text" id="addr-city" placeholder="Palermo" required>
           </div>
-          <div class="account-form__group">
-            <label for="addr-between">Entre calles (opcional)</label>
-            <input type="text" id="addr-between" placeholder="Entre Scalabrini Ortiz y Bulnes">
-          </div>
-          <div class="account-form__group">
+          <div class="form-group">
             <label for="addr-province">Provincia</label>
             <input type="text" id="addr-province" placeholder="CABA" required>
           </div>
-          <div style="display: flex; gap: 1rem; margin-top: 1.5rem;">
-            <button type="button" class="btn btn--secondary" onclick="closeAddressModal()" style="flex:1;">
-              Cancelar
-            </button>
-            <button type="submit" class="btn btn--primary" id="addr-save-btn" style="flex:1;">
-              Guardar
-            </button>
+          <div style="display: flex; gap: 0.75rem; margin-top: 1rem;">
+            <button type="button" class="btn btn--secondary" onclick="closeAddressModal()" style="flex:1;">Cancelar</button>
+            <button type="submit" class="btn btn--primary" id="addr-save-btn" style="flex:1;">Guardar</button>
           </div>
         </form>
       </div>
     </div>
   </div>
 
-  <script src="js/modules/userAuth.js?v=20260204"></script>
+  <!-- Modal de Login -->
+  <div class="auth-modal" id="auth-modal">
+    <div class="auth-modal__overlay" onclick="hideLoginModal()"></div>
+    <div class="auth-modal__content">
+      <div class="auth-modal__header">
+        <h2>🐾 Iniciar Sesión</h2>
+        <button class="auth-modal__close" onclick="hideLoginModal()">✕</button>
+      </div>
+      <div class="auth-modal__body">
+        <div class="auth-tabs">
+          <button class="auth-tab active" id="auth-tab-login" onclick="switchTab('login')">Ingresar</button>
+          <button class="auth-tab" id="auth-tab-register" onclick="switchTab('register')">Registrarse</button>
+        </div>
+        
+        <form class="auth-form active" id="auth-form-login" onsubmit="handleLogin(event)">
+          <div class="form-group">
+            <label>Email</label>
+            <input type="email" id="login-email" required placeholder="tu@email.com">
+          </div>
+          <div class="form-group">
+            <label>Contraseña</label>
+            <input type="password" id="login-password" required placeholder="••••••">
+          </div>
+          <div id="login-error" class="auth-error"></div>
+          <button type="submit" class="btn btn--primary" style="width:100%;" id="login-btn">Ingresar</button>
+        </form>
+        
+        <form class="auth-form" id="auth-form-register" onsubmit="handleRegister(event)">
+          <div class="form-group">
+            <label>Nombre completo</label>
+            <input type="text" id="register-name" required placeholder="Tu nombre">
+          </div>
+          <div class="form-group">
+            <label>Email</label>
+            <input type="email" id="register-email" required placeholder="tu@email.com">
+          </div>
+          <div class="form-group">
+            <label>Teléfono (opcional)</label>
+            <input type="tel" id="register-phone" placeholder="11-1234-5678">
+          </div>
+          <div class="form-group">
+            <label>Contraseña</label>
+            <input type="password" id="register-password" required placeholder="Mínimo 6 caracteres">
+          </div>
+          <div id="register-error" class="auth-error"></div>
+          <button type="submit" class="btn btn--primary" style="width:100%;" id="register-btn">Crear Cuenta</button>
+        </form>
+        
+        <button class="auth-google-btn" onclick="handleGoogleLogin()">
+          <span>🔵</span> Continuar con Google
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <style>
+    .auth-modal { position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: 10000; display: none; align-items: center; justify-content: center; }
+    .auth-modal.open { display: flex; }
+    .auth-modal__overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.7); backdrop-filter: blur(4px); }
+    .auth-modal__content { position: relative; width: 100%; max-width: 340px; background: #1a1a2e; border-radius: 12px; overflow: hidden; margin: 1rem; }
+    .auth-modal__header { display: flex; justify-content: space-between; align-items: center; padding: 0.75rem 1rem; background: linear-gradient(135deg, #FF6B00, #ff8533); color: white; }
+    .auth-modal__header h2 { margin: 0; font-size: 1rem; }
+    .auth-modal__close { background: rgba(255,255,255,0.2); border: none; color: white; width: 28px; height: 28px; border-radius: 50%; cursor: pointer; font-size: 1rem; }
+    .auth-modal__body { padding: 1rem; }
+    .auth-tabs { display: flex; gap: 0.5rem; margin-bottom: 1rem; }
+    .auth-tab { flex: 1; padding: 0.5rem; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 6px; color: #9ca3af; cursor: pointer; font-size: 0.85rem; }
+    .auth-tab.active { background: rgba(255,107,0,0.15); border-color: #FF6B00; color: #FF6B00; }
+    .auth-form { display: none; }
+    .auth-form.active { display: block; }
+    .auth-form .form-group { margin-bottom: 0.75rem; }
+    .auth-form label { display: block; margin-bottom: 0.25rem; font-size: 0.75rem; color: #9ca3af; }
+    .auth-form input { width: 100%; padding: 0.5rem 0.75rem; background: #16162a; border: 1px solid rgba(255,255,255,0.15); border-radius: 6px; color: #fff; font-size: 0.85rem; box-sizing: border-box; }
+    .auth-form input:focus { outline: none; border-color: #FF6B00; }
+    .auth-error { color: #f87171; font-size: 0.8rem; margin-bottom: 0.5rem; min-height: 1rem; }
+    .auth-google-btn { width: 100%; padding: 0.5rem; margin-top: 0.75rem; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.15); border-radius: 6px; color: #e5e7eb; cursor: pointer; font-size: 0.85rem; display: flex; align-items: center; justify-content: center; gap: 0.5rem; }
+    .auth-google-btn:hover { background: rgba(255,255,255,0.1); }
+  </style>
+
+  <script src="js/modules/userAuth.js?v=20260204-fix4"></script>
   <script>
-    // Esperar a que UserAuth esté listo
     document.addEventListener('DOMContentLoaded', async () => {
+      console.log('🚀 cuenta.html cargando...');
       await UserAuth.init();
-      
-      // Escuchar cambios de auth
       UserAuth.addListener(updateAccountPage);
       
-      // Verificar estado inicial
-      setTimeout(() => {
-        updateAccountPage(UserAuth.getCurrentUser());
-      }, 500);
+      // Esperar a que cargue el usuario
+      let attempts = 0;
+      const checkUser = () => {
+        attempts++;
+        console.log(`🔄 Intento ${attempts} de cargar usuario...`);
+        console.log('  - currentUser:', UserAuth.currentUser?.email);
+        console.log('  - currentUser.displayName:', UserAuth.currentUser?.displayName);
+        console.log('  - userProfile:', UserAuth.userProfile);
+        
+        const user = UserAuth.getUser();
+        
+        if (user) {
+          console.log('✅ Usuario encontrado:', user);
+          updateAccountPage(user);
+        } else if (UserAuth.currentUser && attempts < 10) {
+          // Hay usuario de Auth pero getUser() devuelve null, esperar más
+          console.log('⏳ Esperando perfil...');
+          setTimeout(checkUser, 300);
+        } else if (UserAuth.currentUser) {
+          // Fallback: usar datos de currentUser directamente
+          console.log('⚠️ Usando fallback con currentUser');
+          const fallbackUser = {
+            uid: UserAuth.currentUser.uid,
+            email: UserAuth.currentUser.email,
+            displayName: UserAuth.currentUser.displayName || UserAuth.currentUser.email?.split('@')[0] || 'Usuario',
+            phone: '',
+            addresses: []
+          };
+          updateAccountPage(fallbackUser);
+        } else {
+          console.log('❌ No hay usuario logueado');
+          updateAccountPage(null);
+        }
+      };
+      
+      setTimeout(checkUser, 500);
     });
     
     function updateAccountPage(user) {
-      const loading = document.getElementById('account-loading');
-      const notLogged = document.getElementById('account-not-logged');
-      const content = document.getElementById('account-content');
-      
-      loading.style.display = 'none';
+      console.log('📝 updateAccountPage:', user);
+      document.getElementById('account-loading').style.display = 'none';
       
       if (user) {
-        notLogged.style.display = 'none';
-        content.style.display = 'block';
+        document.getElementById('account-not-logged').style.display = 'none';
+        document.getElementById('account-content').style.display = 'block';
         
-        // Actualizar datos
         document.getElementById('account-name').textContent = user.displayName || 'Usuario';
-        document.getElementById('account-email').textContent = user.email;
+        document.getElementById('account-email').textContent = user.email || '';
         document.getElementById('profile-name').value = user.displayName || '';
         document.getElementById('profile-phone').value = user.phone || '';
-        document.getElementById('profile-email').value = user.email;
+        document.getElementById('profile-email').value = user.email || '';
         
-        // Avatar
         const avatarEl = document.getElementById('account-avatar');
-        if (user.photoURL) {
-          avatarEl.innerHTML = `<img src="${user.photoURL}" alt="">`;
-        } else {
-          avatarEl.innerHTML = '👤';
-        }
+        avatarEl.innerHTML = user.photoURL ? `<img src="${user.photoURL}" alt="">` : '👤';
         
-        // Cargar direcciones
         renderAddresses(user.addresses || []);
       } else {
-        notLogged.style.display = 'block';
-        content.style.display = 'none';
+        document.getElementById('account-not-logged').style.display = 'block';
+        document.getElementById('account-content').style.display = 'none';
       }
     }
     
@@ -516,33 +584,23 @@
       if (!addresses || addresses.length === 0) {
         container.innerHTML = `
           <div class="address-empty">
-            <p>No tienes direcciones guardadas</p>
-            <button class="btn btn--primary btn--small" onclick="openAddressModal()">
-              Agregar dirección
-            </button>
-          </div>
-        `;
+            <p>No tenés direcciones guardadas</p>
+            <button class="btn btn--primary btn--small" onclick="openAddressModal()">Agregar dirección</button>
+          </div>`;
         return;
       }
       
       container.innerHTML = addresses.map(addr => `
         <div class="address-card">
-          <div class="address-card__content">
+          <div>
             <div class="address-card__label">${addr.label || 'Dirección'}</div>
             <div class="address-card__text">
               ${addr.address}${addr.floor ? `, ${addr.floor}` : ''}<br>
-              ${addr.city}${addr.zipcode ? ` (${addr.zipcode})` : ''}<br>
-              ${addr.province}
-              ${addr.between ? `<br>Entre: ${addr.between}` : ''}
+              ${addr.city}${addr.zipcode ? ` (${addr.zipcode})` : ''}, ${addr.province}
             </div>
           </div>
-          <div class="address-card__actions">
-            <button class="btn btn--danger btn--small" onclick="deleteAddress('${addr.id}')">
-              🗑️
-            </button>
-          </div>
-        </div>
-      `).join('');
+          <button class="btn btn--danger btn--small" onclick="deleteAddress('${addr.id}')">🗑️</button>
+        </div>`).join('');
     }
     
     async function saveProfile(e) {
@@ -558,16 +616,16 @@
         phone: document.getElementById('profile-phone').value
       });
       
+      msgEl.innerHTML = result.success 
+        ? '<div class="message message--success">✓ Datos guardados</div>'
+        : `<div class="message message--error">${result.error}</div>`;
+      
       if (result.success) {
-        msgEl.innerHTML = '<div class="message message--success">Datos guardados correctamente</div>';
         document.getElementById('account-name').textContent = document.getElementById('profile-name').value;
-      } else {
-        msgEl.innerHTML = `<div class="message message--error">${result.error}</div>`;
       }
       
       btn.disabled = false;
       btn.textContent = 'Guardar Cambios';
-      
       setTimeout(() => { msgEl.innerHTML = ''; }, 3000);
     }
     
@@ -587,22 +645,18 @@
       btn.disabled = true;
       btn.textContent = 'Guardando...';
       
-      const address = {
+      const result = await UserAuth.addAddress({
         label: document.getElementById('addr-label').value,
         address: document.getElementById('addr-address').value,
         floor: document.getElementById('addr-floor').value,
         zipcode: document.getElementById('addr-zipcode').value,
         city: document.getElementById('addr-city').value,
-        between: document.getElementById('addr-between').value,
         province: document.getElementById('addr-province').value
-      };
-      
-      const result = await UserAuth.addAddress(address);
+      });
       
       if (result.success) {
         closeAddressModal();
-        const user = UserAuth.getCurrentUser();
-        renderAddresses(user.addresses);
+        renderAddresses(UserAuth.getUser().addresses);
       } else {
         alert('Error: ' + result.error);
       }
@@ -613,20 +667,96 @@
     
     async function deleteAddress(addressId) {
       if (!confirm('¿Eliminar esta dirección?')) return;
-      
       const result = await UserAuth.removeAddress(addressId);
-      
-      if (result.success) {
-        const user = UserAuth.getCurrentUser();
-        renderAddresses(user.addresses);
-      } else {
-        alert('Error: ' + result.error);
-      }
+      if (result.success) renderAddresses(UserAuth.getUser().addresses);
+      else alert('Error: ' + result.error);
     }
     
     async function handleLogout() {
       await UserAuth.logout();
       window.location.href = 'index.html';
+    }
+    
+    // Funciones del modal de login
+    function showLoginModal() {
+      document.getElementById('auth-modal').classList.add('open');
+      document.body.style.overflow = 'hidden';
+    }
+    
+    function hideLoginModal() {
+      document.getElementById('auth-modal').classList.remove('open');
+      document.body.style.overflow = '';
+    }
+    
+    function switchTab(tab) {
+      document.querySelectorAll('.auth-tab').forEach(t => t.classList.remove('active'));
+      document.querySelectorAll('.auth-form').forEach(f => f.classList.remove('active'));
+      document.getElementById('auth-tab-' + tab).classList.add('active');
+      document.getElementById('auth-form-' + tab).classList.add('active');
+      document.getElementById('login-error').textContent = '';
+      document.getElementById('register-error').textContent = '';
+    }
+    
+    async function handleLogin(e) {
+      e.preventDefault();
+      const btn = document.getElementById('login-btn');
+      const errorEl = document.getElementById('login-error');
+      
+      btn.disabled = true;
+      btn.textContent = 'Ingresando...';
+      errorEl.textContent = '';
+      
+      const result = await UserAuth.loginWithEmail(
+        document.getElementById('login-email').value,
+        document.getElementById('login-password').value
+      );
+      
+      if (result.success) {
+        hideLoginModal();
+        location.reload();
+      } else {
+        errorEl.textContent = result.error;
+      }
+      
+      btn.disabled = false;
+      btn.textContent = 'Ingresar';
+    }
+    
+    async function handleRegister(e) {
+      e.preventDefault();
+      const btn = document.getElementById('register-btn');
+      const errorEl = document.getElementById('register-error');
+      
+      btn.disabled = true;
+      btn.textContent = 'Creando cuenta...';
+      errorEl.textContent = '';
+      
+      const result = await UserAuth.registerWithEmail(
+        document.getElementById('register-email').value,
+        document.getElementById('register-password').value,
+        document.getElementById('register-name').value,
+        document.getElementById('register-phone').value
+      );
+      
+      if (result.success) {
+        hideLoginModal();
+        location.reload();
+      } else {
+        errorEl.textContent = result.error;
+      }
+      
+      btn.disabled = false;
+      btn.textContent = 'Crear Cuenta';
+    }
+    
+    async function handleGoogleLogin() {
+      const result = await UserAuth.loginWithGoogle();
+      if (result.success) {
+        hideLoginModal();
+        location.reload();
+      } else {
+        document.getElementById('login-error').textContent = result.error;
+      }
     }
   </script>
 </body>
