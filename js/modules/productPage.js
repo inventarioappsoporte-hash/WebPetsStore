@@ -393,7 +393,7 @@ class ProductPage {
           </div>
 
           ${!hasVariants ? `
-          <div class="product__stock">
+          <div class="product__stock" id="product-stock-display" data-product-id="${product.id}" data-json-stock="${product.stock}">
             <p class="product__stock-status ${product.stock > 0 ? 'in-stock' : 'out-of-stock'}">
               ${product.stock > 0 ? `✅ ${product.stock} en stock` : '❌ Agotado'}
             </p>
@@ -417,6 +417,91 @@ class ProductPage {
     // Si el producto tiene variantes, inicializar el selector
     if (hasVariants) {
       this.initVariantSelector(product);
+    }
+    
+    // Actualizar stock desde Firebase (para productos sin variantes)
+    if (!hasVariants) {
+      this.updateStockFromFirebase(product);
+    }
+  }
+
+  /**
+   * Actualiza el stock mostrado desde Firebase
+   */
+  updateStockFromFirebase(product) {
+    const updateDisplay = () => {
+      if (typeof FirebaseStock === 'undefined' || !FirebaseStock.initialized) {
+        // Reintentar en 500ms si Firebase no está listo
+        setTimeout(updateDisplay, 500);
+        return;
+      }
+      
+      const firebaseStock = FirebaseStock.getStock(product.id, false);
+      if (firebaseStock !== null) {
+        const stockDisplay = document.getElementById('product-stock-display');
+        if (stockDisplay) {
+          const isInStock = firebaseStock > 0;
+          stockDisplay.innerHTML = `
+            <p class="product__stock-status ${isInStock ? 'in-stock' : 'out-of-stock'}">
+              ${isInStock ? `✅ ${firebaseStock} en stock` : '❌ Agotado'}
+            </p>
+          `;
+          
+          // Actualizar botones
+          const addToCartBtn = document.querySelector('.btn--add-to-cart');
+          const buyNowBtn = document.querySelector('.btn--buy-now');
+          
+          if (addToCartBtn) {
+            addToCartBtn.disabled = !isInStock;
+            addToCartBtn.textContent = isInStock ? '🛒 AGREGAR AL CARRITO' : 'AGOTADO';
+          }
+          if (buyNowBtn) {
+            buyNowBtn.disabled = !isInStock;
+            buyNowBtn.textContent = isInStock ? '⚡ COMPRAR AHORA' : 'AGOTADO';
+          }
+          
+          // Guardar stock actualizado en el producto
+          window.currentProduct.stock = firebaseStock;
+          
+          console.log(`📦 Stock actualizado desde Firebase: ${firebaseStock}`);
+        }
+      }
+    };
+    
+    // Intentar actualizar inmediatamente
+    updateDisplay();
+    
+    // También escuchar cambios futuros
+    if (typeof FirebaseStock !== 'undefined') {
+      FirebaseStock.addListener(() => {
+        const newStock = FirebaseStock.getStock(product.id, false);
+        if (newStock !== null) {
+          const stockDisplay = document.getElementById('product-stock-display');
+          if (stockDisplay) {
+            const isInStock = newStock > 0;
+            stockDisplay.innerHTML = `
+              <p class="product__stock-status ${isInStock ? 'in-stock' : 'out-of-stock'}">
+                ${isInStock ? `✅ ${newStock} en stock` : '❌ Agotado'}
+              </p>
+            `;
+            
+            // Actualizar botones
+            const addToCartBtn = document.querySelector('.btn--add-to-cart');
+            const buyNowBtn = document.querySelector('.btn--buy-now');
+            
+            if (addToCartBtn) {
+              addToCartBtn.disabled = !isInStock;
+              addToCartBtn.textContent = isInStock ? '🛒 AGREGAR AL CARRITO' : 'AGOTADO';
+            }
+            if (buyNowBtn) {
+              buyNowBtn.disabled = !isInStock;
+              buyNowBtn.textContent = isInStock ? '⚡ COMPRAR AHORA' : 'AGOTADO';
+            }
+            
+            window.currentProduct.stock = newStock;
+          }
+        }
+      });
     }
   }
 

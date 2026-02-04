@@ -110,11 +110,10 @@ class FirebaseStock {
    * Verificar si un producto está disponible
    * @param {string} id - ID del producto o variante
    * @param {number} quantity - Cantidad requerida
-   * @param {boolean} isVariant - Si es una variante
    * @returns {boolean}
    */
-  static isAvailable(id, quantity = 1, isVariant = false) {
-    const stock = this.getStock(id, isVariant);
+  static isAvailable(id, quantity = 1) {
+    const stock = this.getStock(id);
     // Si no está en Firebase, asumir disponible
     if (stock === null) return true;
     return stock >= quantity;
@@ -123,11 +122,10 @@ class FirebaseStock {
   /**
    * Verificar si un producto está sin stock
    * @param {string} id - ID del producto o variante
-   * @param {boolean} isVariant - Si es una variante
    * @returns {boolean}
    */
-  static isOutOfStock(id, isVariant = false) {
-    const stock = this.getStock(id, isVariant);
+  static isOutOfStock(id) {
+    const stock = this.getStock(id);
     // Si no está en Firebase, asumir disponible
     if (stock === null) return false;
     return stock <= 0;
@@ -137,11 +135,10 @@ class FirebaseStock {
    * Verificar si tiene stock bajo
    * @param {string} id - ID del producto o variante
    * @param {number} threshold - Umbral (default 5)
-   * @param {boolean} isVariant - Si es una variante
    * @returns {boolean}
    */
-  static isLowStock(id, threshold = 5, isVariant = false) {
-    const stock = this.getStock(id, isVariant);
+  static isLowStock(id, threshold = 5) {
+    const stock = this.getStock(id);
     if (stock === null) return false;
     return stock > 0 && stock <= threshold;
   }
@@ -179,23 +176,33 @@ class FirebaseStock {
     // Buscar todas las tarjetas de producto
     document.querySelectorAll('.card[data-product-id]').forEach(card => {
       const productId = card.dataset.productId;
-      const isVariant = card.dataset.variantId ? true : false;
       
-      // Intentar con prefijo de producto primero
-      let outOfStock = false;
-      let lowStock = false;
+      // Buscar stock con cualquier prefijo
+      let stock = null;
       
-      // Verificar stock con prefijo p_
-      const pStock = this.stockCache.get(`p_${productId}`);
-      if (pStock !== undefined) {
-        outOfStock = pStock <= 0;
-        lowStock = pStock > 0 && pStock <= 5;
+      // Intentar con prefijo p_ (producto)
+      if (this.stockCache.has(`p_${productId}`)) {
+        stock = this.stockCache.get(`p_${productId}`);
+      }
+      // Intentar con prefijo v_ (variante)
+      else if (this.stockCache.has(`v_${productId}`)) {
+        stock = this.stockCache.get(`v_${productId}`);
+      }
+      // Intentar sin prefijo
+      else if (this.stockCache.has(productId)) {
+        stock = this.stockCache.get(productId);
       }
       
-      if (outOfStock) {
-        this.markAsOutOfStock(card, pStock);
-      } else if (lowStock) {
-        this.markAsLowStock(card, pStock);
+      // Si no encontramos stock, no hacer nada
+      if (stock === null || stock === undefined) {
+        this.markAsInStock(card);
+        return;
+      }
+      
+      if (stock <= 0) {
+        this.markAsOutOfStock(card, stock);
+      } else if (stock <= 5) {
+        this.markAsLowStock(card, stock);
       } else {
         this.markAsInStock(card);
       }

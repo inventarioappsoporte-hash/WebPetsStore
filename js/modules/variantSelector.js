@@ -29,6 +29,74 @@ class VariantSelector {
     
     this.render();
     this.updateProductDisplay();
+    
+    // Escuchar cambios de stock en Firebase para actualizar en tiempo real
+    this.setupFirebaseStockListener();
+  }
+  
+  setupFirebaseStockListener() {
+    // Esperar a que FirebaseStock esté disponible e inicializado
+    const checkAndListen = () => {
+      if (typeof FirebaseStock !== 'undefined') {
+        // Si ya está inicializado, actualizar ahora
+        if (FirebaseStock.initialized && FirebaseStock.stockCache.size > 0) {
+          this.updateStockDisplay();
+        }
+        
+        // Agregar listener para cambios futuros
+        FirebaseStock.addListener(() => {
+          this.updateStockDisplay();
+        });
+      } else {
+        // Reintentar en 500ms
+        setTimeout(checkAndListen, 500);
+      }
+    };
+    
+    checkAndListen();
+  }
+  
+  updateStockDisplay() {
+    if (!this.selectedVariant) return;
+    
+    const variantId = this.selectedVariant.id;
+    const firebaseStock = FirebaseStock.getStock(`v_${variantId}`);
+    
+    if (firebaseStock !== null) {
+      // Actualizar el display de stock sin re-renderizar todo
+      const stockElement = this.container.querySelector('.variant-stock-display');
+      if (stockElement) {
+        const isOutOfStock = firebaseStock <= 0;
+        const isLowStock = firebaseStock > 0 && firebaseStock <= 5;
+        
+        stockElement.className = 'variant-info__value variant-stock-display';
+        if (isLowStock) stockElement.classList.add('variant-info__value--low');
+        if (isOutOfStock) stockElement.classList.add('variant-info__value--out');
+        
+        stockElement.textContent = isOutOfStock 
+          ? 'Sin stock' 
+          : `${firebaseStock} ${firebaseStock === 1 ? 'unidad' : 'unidades'}`;
+        
+        // Actualizar mensaje de sin stock
+        const unavailableMsg = this.container.querySelector('.variant-info__unavailable');
+        if (isOutOfStock && !unavailableMsg) {
+          const variantInfo = this.container.querySelector('.variant-info');
+          if (variantInfo) {
+            const msg = document.createElement('div');
+            msg.className = 'variant-info__unavailable';
+            msg.textContent = '⚠️ Producto sin stock';
+            variantInfo.appendChild(msg);
+          }
+        } else if (!isOutOfStock && unavailableMsg) {
+          unavailableMsg.remove();
+        }
+        
+        // Actualizar botón de compra
+        this.updateBuyButton();
+        
+        console.log(`📦 Stock actualizado para variante ${variantId}: ${firebaseStock}`);
+      }
+    }
   }
   
   render() {
@@ -110,20 +178,37 @@ class VariantSelector {
     if (!this.selectedVariant) return '';
     
     const { sku, stock, available } = this.selectedVariant;
+    const variantId = this.selectedVariant.id;
+    
+    // Intentar obtener stock de Firebase si está disponible
+    let displayStock = stock;
+    
+    if (typeof FirebaseStock !== 'undefined' && FirebaseStock.initialized && FirebaseStock.stockCache.size > 0) {
+      // Usar prefijo v_ para variantes
+      const firebaseStock = FirebaseStock.getStock(`v_${variantId}`);
+      if (firebaseStock !== null) {
+        displayStock = firebaseStock;
+        console.log(`📦 Stock variante ${variantId} desde Firebase: ${firebaseStock}`);
+      }
+    }
+    
+    const isOutOfStock = displayStock <= 0;
+    const isLowStock = displayStock > 0 && displayStock <= 5;
     
     return `
-      <div class="variant-info">
+      <div class="variant-info" data-variant-id="${variantId}">
         <div class="variant-info__item">
           <span class="variant-info__label">SKU:</span>
           <span class="variant-info__value">${sku}</span>
         </div>
         <div class="variant-info__item">
           <span class="variant-info__label">Stock:</span>
-          <span class="variant-info__value ${stock < 5 ? 'variant-info__value--low' : ''}">
-            ${stock} ${stock === 1 ? 'unidad' : 'unidades'}
+          <span class="variant-info__value variant-stock-display ${isLowStock ? 'variant-info__value--low' : ''} ${isOutOfStock ? 'variant-info__value--out' : ''}">
+            ${isOutOfStock ? 'Sin stock' : displayStock + ' ' + (displayStock === 1 ? 'unidad' : 'unidades')}
           </span>
         </div>
-        ${!available ? '<div class="variant-info__unavailable">⚠️ No disponible</div>' : ''}
+        ${isOutOfStock ? '<div class="variant-info__unavailable">⚠️ Producto sin stock</div>' : ''}
+        ${!available && !isOutOfStock ? '<div class="variant-info__unavailable">⚠️ No disponible</div>' : ''}
       </div>
     `;
   }
@@ -386,12 +471,29 @@ class VariantSelector {
     const buyButton = document.querySelector('.btn--buy');
     if (!buyButton) return;
     
-    if (this.selectedVariant && this.selectedVariant.available) {
+    if (!this.selectedVariant) {
+      buyButton.disabled = true;
+      buyButton.textContent = 'No Disponible';
+      return;
+    }
+    
+    // Verificar stock desde Firebase primero
+    let isAvailable = this.selectedVariant.available;
+    
+    if (typeof FirebaseStock !== 'undefined' && FirebaseStock.initialized) {
+      const variantId = this.selectedVariant.id;
+      const firebaseStock = FirebaseStock.getStock(`v_${variantId}`);
+      if (firebaseStock !== null) {
+        isAvailable = firebaseStock > 0;
+      }
+    }
+    
+    if (isAvailable) {
       buyButton.disabled = false;
       buyButton.textContent = 'Agregar al Carrito';
     } else {
       buyButton.disabled = true;
-      buyButton.textContent = 'No Disponible';
+      buyButton.textContent = 'Sin Stock';
     }
   }
   
