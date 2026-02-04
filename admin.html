@@ -2156,18 +2156,74 @@
         const loginBtn = document.getElementById('login-btn');
 
         // Auth State Observer
-        onAuthStateChanged(auth, (user) => {
+        onAuthStateChanged(auth, async (user) => {
             console.log('Auth state changed:', user ? 'Usuario autenticado' : 'No autenticado');
             if (user) {
                 currentUser = user;
                 console.log('Usuario:', user.email);
-                showAdmin();
-                loadOrders();
+                
+                // Verificar si el usuario tiene rol de admin
+                const isAdmin = await checkAdminRole(user.uid, user.email);
+                if (isAdmin) {
+                    showAdmin();
+                    loadOrders();
+                } else {
+                    // No es admin, cerrar sesión y mostrar error
+                    console.warn('Usuario no autorizado:', user.email);
+                    await signOut(auth);
+                    showAccessDenied();
+                }
             } else {
                 currentUser = null;
                 showLogin();
             }
         });
+
+        // Verificar si el usuario tiene rol de admin
+        async function checkAdminRole(uid, email) {
+            try {
+                // Lista de emails de admin (fallback)
+                const ADMIN_EMAILS = ['keisiperez70@gmail.com', 'admin@petsstore.com'];
+                
+                // Primero verificar por email (más rápido)
+                if (ADMIN_EMAILS.includes(email.toLowerCase())) {
+                    console.log('✅ Admin verificado por email');
+                    return true;
+                }
+                
+                // Luego verificar en Firestore
+                const userDoc = await getDoc(doc(db, 'tiendas', STORE_ID, 'users', uid));
+                if (userDoc.exists()) {
+                    const userData = userDoc.data();
+                    if (userData.role === 'admin') {
+                        console.log('✅ Admin verificado por rol en Firestore');
+                        return true;
+                    }
+                }
+                
+                console.log('❌ Usuario no tiene permisos de admin');
+                return false;
+            } catch (error) {
+                console.error('Error verificando rol:', error);
+                // En caso de error, verificar solo por email
+                const ADMIN_EMAILS = ['keisiperez70@gmail.com', 'admin@petsstore.com'];
+                return ADMIN_EMAILS.includes(email.toLowerCase());
+            }
+        }
+
+        // Mostrar pantalla de acceso denegado
+        function showAccessDenied() {
+            removeCriticalStyles();
+            document.getElementById('loading-screen').style.display = 'none';
+            loginScreen.style.display = 'flex';
+            adminLayout.classList.remove('active');
+            
+            // Mostrar mensaje de error
+            if (loginError) {
+                loginError.textContent = '⛔ Acceso denegado. Solo administradores pueden acceder.';
+                loginError.style.display = 'block';
+            }
+        }
 
         // Función para remover estilos críticos (permite que CSS normal tome control)
         function removeCriticalStyles() {
