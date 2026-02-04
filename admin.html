@@ -1589,18 +1589,97 @@
         const loginBtn = document.getElementById('login-btn');
 
         // Auth State Observer
-        onAuthStateChanged(auth, (user) => {
+        onAuthStateChanged(auth, async (user) => {
             console.log('Auth state changed:', user ? 'Usuario autenticado' : 'No autenticado');
             if (user) {
                 currentUser = user;
                 console.log('Usuario:', user.email);
-                showAdmin();
-                loadOrders();
+                
+                // Verificar rol de admin en Firestore
+                const isAdmin = await checkAdminRole(user);
+                if (isAdmin) {
+                    showAdmin();
+                    loadOrders();
+                } else {
+                    console.log('❌ Usuario sin permisos de admin:', user.email);
+                    showAccessDenied();
+                }
             } else {
                 currentUser = null;
                 showLogin();
             }
         });
+        
+        // Verificar si el usuario tiene rol de admin en Firestore
+        async function checkAdminRole(user) {
+            try {
+                const STORE_ID = 'petsstore-b0516';
+                const userDocRef = doc(db, 'tiendas', STORE_ID, 'users', user.uid);
+                const userDoc = await getDoc(userDocRef);
+                
+                if (userDoc.exists()) {
+                    const userData = userDoc.data();
+                    console.log('📋 Datos del usuario:', userData);
+                    
+                    if (userData.role === 'admin') {
+                        console.log('✅ Usuario es ADMIN');
+                        return true;
+                    }
+                }
+                
+                console.log('❌ Usuario NO tiene rol admin en Firestore');
+                return false;
+            } catch (error) {
+                console.error('Error verificando rol:', error);
+                return false;
+            }
+        }
+        
+        // Mostrar pantalla de acceso denegado
+        function showAccessDenied() {
+            removeCriticalStyles();
+            document.getElementById('loading-screen').style.display = 'none';
+            loginScreen.style.display = 'none';
+            adminLayout.classList.remove('active');
+            
+            // Crear pantalla de acceso denegado si no existe
+            let deniedScreen = document.getElementById('access-denied-screen');
+            if (!deniedScreen) {
+                deniedScreen = document.createElement('div');
+                deniedScreen.id = 'access-denied-screen';
+                deniedScreen.innerHTML = `
+                    <div style="min-height:100vh;display:flex;align-items:center;justify-content:center;background:var(--bg-dark);padding:2rem;">
+                        <div style="background:var(--bg-card);border-radius:1rem;padding:3rem;text-align:center;max-width:400px;border:1px solid var(--border-color);">
+                            <div style="font-size:4rem;margin-bottom:1rem;">🚫</div>
+                            <h2 style="color:var(--text-primary);margin-bottom:0.5rem;">Acceso Denegado</h2>
+                            <p style="color:var(--text-muted);margin-bottom:1.5rem;">
+                                Tu cuenta no tiene permisos de administrador.<br>
+                                Contacta al administrador si crees que esto es un error.
+                            </p>
+                            <p style="color:var(--text-muted);font-size:0.875rem;margin-bottom:1.5rem;">
+                                Usuario: ${currentUser?.email || 'Desconocido'}
+                            </p>
+                            <button onclick="logoutAndRedirect()" style="background:var(--primary);color:white;border:none;padding:0.75rem 2rem;border-radius:0.5rem;cursor:pointer;font-weight:600;">
+                                Cerrar Sesión
+                            </button>
+                        </div>
+                    </div>
+                `;
+                document.body.appendChild(deniedScreen);
+            }
+            deniedScreen.style.display = 'block';
+        }
+        
+        // Cerrar sesión y redirigir
+        window.logoutAndRedirect = async function() {
+            try {
+                await signOut(auth);
+                window.location.href = 'index.html';
+            } catch (error) {
+                console.error('Error al cerrar sesión:', error);
+                window.location.href = 'index.html';
+            }
+        };
 
         // Función para remover estilos críticos (permite que CSS normal tome control)
         function removeCriticalStyles() {
@@ -1616,6 +1695,11 @@
             document.getElementById('loading-screen').style.display = 'none';
             loginScreen.style.display = 'flex';
             adminLayout.classList.remove('active');
+            
+            // Ocultar pantalla de acceso denegado si existe
+            const deniedScreen = document.getElementById('access-denied-screen');
+            if (deniedScreen) deniedScreen.style.display = 'none';
+            
             if (ordersUnsubscribe) {
                 ordersUnsubscribe();
                 ordersUnsubscribe = null;
