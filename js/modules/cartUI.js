@@ -114,7 +114,8 @@ class CartUI {
             </div>
             
             <!-- Botón para iniciar sesión (solo si no está logueado) -->
-            <div id="cart-login-prompt" class="cart-login-prompt">
+            <!-- TEMPORALMENTE OCULTO: Pausamos registro de usuarios -->
+            <div id="cart-login-prompt" class="cart-login-prompt" style="display: none !important;">
               <p>¿Ya tenés cuenta? <a href="#" onclick="UserAuth.showAuthModal(); return false;">Iniciá sesión</a> para autocompletar tus datos</p>
             </div>
             
