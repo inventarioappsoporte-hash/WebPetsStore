@@ -14953,9 +14953,9 @@
   {
     "id": "prod_436",
     "name": "Vestido Tutu",
-    "category": "ropa",
+    "category": "🐾 ROPA VERANO",
     "subcategory": "Ropa",
-    "price": 4900,
+    "price": 3500,
     "stock": 40,
     "rating": 3.9,
     "reviews": 130,
@@ -14988,7 +14988,7 @@
     },
     "shipping": {
       "free": false,
-      "days": 3
+      "days": "3"
     },
     "badge": "👕 Ropa",
     "brand": "Sin marca",
@@ -15001,8 +15001,8 @@
       "Perfecto para eventos especiales"
     ],
     "originalPrice": 7000,
-    "discount": 30,
-    "basePrice": 4900,
+    "discount": 50,
+    "basePrice": 3500,
     "baseOriginalPrice": 7000,
     "priceDisplayMode": "wholesale",
     "variants": {
@@ -15019,7 +15019,7 @@
           "attributes": {
             "Talle": "1"
           },
-          "price": 4900,
+          "price": 3500,
           "stock": 10,
           "available": true,
           "originalPrice": 7000,
@@ -15037,7 +15037,7 @@
           "attributes": {
             "Talle": "2"
           },
-          "price": 4900,
+          "price": 3500,
           "stock": 10,
           "available": true,
           "originalPrice": 7000,
@@ -15055,7 +15055,7 @@
           "attributes": {
             "Talle": "3"
           },
-          "price": 5880,
+          "price": 4200,
           "stock": 10,
           "available": true,
           "originalPrice": 8400,
@@ -15073,7 +15073,7 @@
           "attributes": {
             "Talle": "4"
           },
-          "price": 5880,
+          "price": 4200,
           "stock": 10,
           "available": true,
           "originalPrice": 8400,
