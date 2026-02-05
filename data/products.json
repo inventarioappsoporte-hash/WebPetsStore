@@ -15534,9 +15534,9 @@
   {
     "id": "prod_458",
     "name": "Camisas Hawaianas",
-    "category": "ropa",
+    "category": "🐾 ROPA VERANO",
     "subcategory": "Ropa",
-    "price": 5880,
+    "price": 4200,
     "stock": 100,
     "rating": 4.2,
     "reviews": 242,
@@ -15568,7 +15568,7 @@
     },
     "shipping": {
       "free": false,
-      "days": 3
+      "days": "3"
     },
     "badge": "👕 Ropa",
     "brand": "Sin marca",
@@ -15581,17 +15581,14 @@
       "Estampados coloridos"
     ],
     "originalPrice": 8400,
-    "discount": 30,
-    "basePrice": 5880,
+    "discount": 50,
+    "basePrice": 4200,
     "baseOriginalPrice": 8400,
     "marketing": {
       "type": "video",
       "url": "assets/videos/marketing/hawaianas-clic.mp4",
       "poster": "assets/images/products/prod_458/cover.jpg",
-      "autoplay": true,
-      "muted": true,
-      "loop": true,
-      "duration": 10
+      "autoplay": true
     },
     "priceDisplayMode": "wholesale",
     "variants": {
@@ -15608,7 +15605,7 @@
           "attributes": {
             "Talle": "0"
           },
-          "price": 5880,
+          "price": 4200,
           "stock": 10,
           "available": true,
           "originalPrice": 8400,
@@ -15626,7 +15623,7 @@
           "attributes": {
             "Talle": "1"
           },
-          "price": 5880,
+          "price": 4200,
           "stock": 10,
           "available": true,
           "originalPrice": 8400,
@@ -15644,7 +15641,7 @@
           "attributes": {
             "Talle": "2"
           },
-          "price": 5880,
+          "price": 4200,
           "stock": 10,
           "available": true,
           "originalPrice": 8400,
@@ -15662,7 +15659,7 @@
           "attributes": {
             "Talle": "3"
           },
-          "price": 6860,
+          "price": 4900,
           "stock": 10,
           "available": true,
           "originalPrice": 9800,
@@ -15680,7 +15677,7 @@
           "attributes": {
             "Talle": "4"
           },
-          "price": 6860,
+          "price": 4900,
           "stock": 10,
           "available": true,
           "originalPrice": 9800,
@@ -15698,7 +15695,7 @@
           "attributes": {
             "Talle": "5"
           },
-          "price": 6860,
+          "price": 4900,
           "stock": 10,
           "available": true,
           "originalPrice": 9800,
@@ -15716,7 +15713,7 @@
           "attributes": {
             "Talle": "6"
           },
-          "price": 7840,
+          "price": 5600,
           "stock": 10,
           "available": true,
           "originalPrice": 11200,
@@ -15734,7 +15731,7 @@
           "attributes": {
             "Talle": "7"
           },
-          "price": 7840,
+          "price": 5600,
           "stock": 10,
           "available": true,
           "originalPrice": 11200,
@@ -15752,7 +15749,7 @@
           "attributes": {
             "Talle": "8"
           },
-          "price": 8820,
+          "price": 6300,
           "stock": 10,
           "available": true,
           "originalPrice": 12600,
@@ -15770,7 +15767,7 @@
           "attributes": {
             "Talle": "9"
           },
-          "price": 8820,
+          "price": 6300,
           "stock": 10,
           "available": true,
           "originalPrice": 12600,
