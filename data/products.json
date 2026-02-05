@@ -25758,9 +25758,9 @@
   {
     "id": "prod_840",
     "name": "COMEDERO CAZUELA",
-    "category": "accesorios",
+    "category": "🐾 COMEDEROS Y BEBEDEROS",
     "subcategory": "Comederos",
-    "price": 1530,
+    "price": 1500,
     "stock": 30,
     "rating": 4.6,
     "reviews": 102,
@@ -25794,7 +25794,7 @@
     },
     "shipping": {
       "free": false,
-      "days": 2
+      "days": "2"
     },
     "badge": "🍽️ Comederos",
     "brand": "Sin marca",
@@ -25806,9 +25806,9 @@
       "Capacidad adecuada",
       "Material duradero"
     ],
-    "originalPrice": 1800,
-    "discount": 15,
-    "basePrice": 1530,
+    "originalPrice": 2500,
+    "discount": 40,
+    "basePrice": 1500,
     "baseOriginalPrice": 1800,
     "priceDisplayMode": "wholesale",
     "variants": {
@@ -25825,10 +25825,10 @@
           "attributes": {
             "Tamaño": "Chica"
           },
-          "price": 1530,
+          "price": 1500,
           "stock": 10,
           "available": true,
-          "originalPrice": 1800,
+          "originalPrice": 2500,
           "sku": "COM053",
           "images": {
             "cover": "assets/images/products/prod_840/cover.jpg",
@@ -25843,10 +25843,10 @@
           "attributes": {
             "Tamaño": "Mediano"
           },
-          "price": 2380,
+          "price": 2100,
           "stock": 10,
           "available": true,
-          "originalPrice": 2800,
+          "originalPrice": 3500,
           "sku": "COM054",
           "images": {
             "cover": "assets/images/products/prod_841/cover.jpg",
@@ -25861,10 +25861,10 @@
           "attributes": {
             "Tamaño": "Grande"
           },
-          "price": 3230,
+          "price": 2700,
           "stock": 10,
           "available": true,
-          "originalPrice": 3800,
+          "originalPrice": 4500,
           "sku": "COM055",
           "images": {
             "cover": "assets/images/products/prod_842/cover.jpg",
