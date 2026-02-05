@@ -18382,9 +18382,9 @@
   {
     "id": "prod_573",
     "name": "Entero Very Coold",
-    "category": "ropa",
+    "category": "🐾 ROPA INVIERNO",
     "subcategory": "Ropa",
-    "price": 8478.75,
+    "price": 5532,
     "stock": 80,
     "rating": 4.1,
     "reviews": 210,
@@ -18416,7 +18416,7 @@
     },
     "shipping": {
       "free": false,
-      "days": 2
+      "days": "2"
     },
     "badge": "🧥 Ropa",
     "brand": "Sin marca",
@@ -18427,9 +18427,9 @@
       "Resistente al agua",
       "Perfecto para el frío"
     ],
-    "originalPrice": 8478.75,
-    "discount": 30,
-    "basePrice": 8478.75,
+    "originalPrice": 12294,
+    "discount": 55,
+    "basePrice": 5532,
     "baseOriginalPrice": 12294.19,
     "priceDisplayMode": "wholesale",
     "variants": {
@@ -18446,10 +18446,10 @@
           "attributes": {
             "Talle": "1"
           },
-          "price": 8478.75,
+          "price": 5532,
           "stock": 10,
           "available": true,
-          "originalPrice": 8478.75,
+          "originalPrice": 12294,
           "sku": "ENT001",
           "images": {
             "cover": "assets/images/products/prod_573/cover.jpg",
@@ -18464,10 +18464,10 @@
           "attributes": {
             "Talle": "2"
           },
-          "price": 8478.75,
+          "price": 5532,
           "stock": 10,
           "available": true,
-          "originalPrice": 8478.75,
+          "originalPrice": 12294,
           "sku": "ENT002",
           "images": {
             "cover": "assets/images/products/prod_574/cover.jpg",
@@ -18482,10 +18482,10 @@
           "attributes": {
             "Talle": "3"
           },
-          "price": 9609.25,
+          "price": 6269,
           "stock": 10,
           "available": true,
-          "originalPrice": 9609.25,
+          "originalPrice": 13932,
           "sku": "ENT003",
           "images": {
             "cover": "assets/images/products/prod_575/cover.jpg",
@@ -18500,10 +18500,10 @@
           "attributes": {
             "Talle": "4"
           },
-          "price": 9609.25,
+          "price": 6269,
           "stock": 10,
           "available": true,
-          "originalPrice": 9609.25,
+          "originalPrice": 13932,
           "sku": "ENT004",
           "images": {
             "cover": "assets/images/products/prod_576/cover.jpg",
@@ -18518,10 +18518,10 @@
           "attributes": {
             "Talle": "5"
           },
-          "price": 10739.75,
+          "price": 7007,
           "stock": 10,
           "available": true,
-          "originalPrice": 10739.75,
+          "originalPrice": 15572,
           "sku": "ENT005",
           "images": {
             "cover": "assets/images/products/prod_577/cover.jpg",
@@ -18536,10 +18536,10 @@
           "attributes": {
             "Talle": "6"
           },
-          "price": 10739.75,
+          "price": 7007,
           "stock": 10,
           "available": true,
-          "originalPrice": 10739.75,
+          "originalPrice": 15572,
           "sku": "ENT006",
           "images": {
             "cover": "assets/images/products/prod_578/cover.jpg",
@@ -18554,10 +18554,10 @@
           "attributes": {
             "Talle": "7"
           },
-          "price": 11870.25,
+          "price": 7745,
           "stock": 10,
           "available": true,
-          "originalPrice": 11870.25,
+          "originalPrice": 17211,
           "sku": "ENT007",
           "images": {
             "cover": "assets/images/products/prod_579/cover.jpg",
@@ -18572,10 +18572,10 @@
           "attributes": {
             "Talle": "8"
           },
-          "price": 11870.25,
+          "price": 7745,
           "stock": 10,
           "available": true,
-          "originalPrice": 11870.25,
+          "originalPrice": 17211,
           "sku": "ENT008",
           "images": {
             "cover": "assets/images/products/prod_580/cover.jpg",
