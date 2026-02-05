@@ -18433,7 +18433,13 @@
     "baseOriginalPrice": 12294.19,
     "priceDisplayMode": "wholesale",
     "variants": {
-      "attributes": [],
+      "attributes": [
+        {
+          "id": "talle",
+          "name": "Talle",
+          "type": "text"
+        }
+      ],
       "combinations": [
         {
           "id": "var_573_1",
@@ -18635,7 +18641,13 @@
     "baseOriginalPrice": 13933.41,
     "priceDisplayMode": "wholesale",
     "variants": {
-      "attributes": [],
+      "attributes": [
+        {
+          "id": "talle",
+          "name": "Talle",
+          "type": "text"
+        }
+      ],
       "combinations": [
         {
           "id": "var_581_1",
@@ -19063,7 +19075,13 @@
     "baseOriginalPrice": 6556.9,
     "priceDisplayMode": "wholesale",
     "variants": {
-      "attributes": [],
+      "attributes": [
+        {
+          "id": "talle",
+          "name": "Talle",
+          "type": "text"
+        }
+      ],
       "combinations": [
         {
           "id": "var_598_0",
@@ -19399,7 +19417,13 @@
     "basePrice": 9350,
     "priceDisplayMode": "wholesale",
     "variants": {
-      "attributes": [],
+      "attributes": [
+        {
+          "id": "largo",
+          "name": "Largo",
+          "type": "text"
+        }
+      ],
       "combinations": [
         {
           "id": "var_609_3m",
@@ -19766,7 +19790,13 @@
     "basePrice": 21845,
     "priceDisplayMode": "wholesale",
     "variants": {
-      "attributes": [],
+      "attributes": [
+        {
+          "id": "medida",
+          "name": "Medida",
+          "type": "text"
+        }
+      ],
       "combinations": [
         {
           "id": "var_631_70",
@@ -19859,7 +19889,13 @@
     "basePrice": 27115,
     "priceDisplayMode": "wholesale",
     "variants": {
-      "attributes": [],
+      "attributes": [
+        {
+          "id": "medida",
+          "name": "Medida",
+          "type": "text"
+        }
+      ],
       "combinations": [
         {
           "id": "var_635_60",
@@ -24210,7 +24246,7 @@
     "name": "COMEDERO ACERO INOXIDABLE",
     "category": "🐾 COMEDEROS Y BEBEDEROS",
     "subcategory": "Comederos",
-    "price": 3655,
+    "price": 3354,
     "stock": 60,
     "rating": 4.3,
     "reviews": 170,
@@ -24250,8 +24286,8 @@
     "brand": "Sin marca",
     "sku": "COM009",
     "features": [],
-    "originalPrice": 4300,
-    "discount": 15,
+    "originalPrice": 5160,
+    "discount": 35,
     "priceDisplayMode": "wholesale",
     "variants": {
       "attributes": [
@@ -24267,10 +24303,10 @@
           "attributes": {
             "Tamaño": "N°1 (15cm)"
           },
-          "price": 3655,
+          "price": 3354,
           "stock": 10,
           "available": true,
-          "originalPrice": 4300,
+          "originalPrice": 5160,
           "sku": "COM009",
           "images": {
             "cover": "assets/images/products/prod_789/cover.jpg",
@@ -24285,10 +24321,10 @@
           "attributes": {
             "Tamaño": "N°2 (18cm)"
           },
-          "price": 5525,
+          "price": 5070,
           "stock": 10,
           "available": true,
-          "originalPrice": 6500,
+          "originalPrice": 7800,
           "sku": "COM010",
           "images": {
             "cover": "assets/images/products/prod_790/cover.jpg",
@@ -24303,10 +24339,10 @@
           "attributes": {
             "Tamaño": "N°3 (22cm)"
           },
-          "price": 6800,
+          "price": 6240,
           "stock": 10,
           "available": true,
-          "originalPrice": 8000,
+          "originalPrice": 9600,
           "sku": "COM011",
           "images": {
             "cover": "assets/images/products/prod_791/cover.jpg",
@@ -24321,10 +24357,10 @@
           "attributes": {
             "Tamaño": "N°4 (26cm)"
           },
-          "price": 7650,
+          "price": 7020,
           "stock": 10,
           "available": true,
-          "originalPrice": 9000,
+          "originalPrice": 10800,
           "sku": "COM012",
           "images": {
             "cover": "assets/images/products/prod_792/cover.jpg",
@@ -24339,10 +24375,10 @@
           "attributes": {
             "Tamaño": "N°6 (34cm)"
           },
-          "price": 13430,
+          "price": 12324,
           "stock": 10,
           "available": true,
-          "originalPrice": 15800,
+          "originalPrice": 18960,
           "sku": "COM013",
           "images": {
             "cover": "assets/images/products/prod_793/cover.jpg",
@@ -24357,10 +24393,10 @@
           "attributes": {
             "Tamaño": "N°7 (38cm)"
           },
-          "price": 18360,
+          "price": 25920,
           "stock": 0,
           "available": true,
-          "originalPrice": 21600,
+          "originalPrice": 25920,
           "sku": "COM014",
           "images": {
             "cover": "assets/images/products/prod_794/cover.jpg",
@@ -24371,14 +24407,15 @@
           }
         }
       ]
-    }
+    },
+    "basePrice": 3354
   },
   {
     "id": "prod_795",
     "name": "Comedero Acero Inoxidable Estampado",
     "category": "🐾 COMEDEROS Y BEBEDEROS",
     "subcategory": "Comederos",
-    "price": 3400,
+    "price": 3360,
     "stock": 50,
     "rating": 4.3,
     "reviews": 185,
@@ -24416,21 +24453,27 @@
     "brand": "Sin marca",
     "sku": "COM015",
     "features": [],
-    "originalPrice": 4000,
-    "discount": 15,
+    "originalPrice": 4800,
+    "discount": 30,
     "priceDisplayMode": "wholesale",
     "variants": {
-      "attributes": [],
+      "attributes": [
+        {
+          "id": "medida",
+          "name": "Medida",
+          "type": "text"
+        }
+      ],
       "combinations": [
         {
           "id": "var_795_16",
           "attributes": {
             "Medida": "16 cm"
           },
-          "price": 3400,
+          "price": 3360,
           "stock": 10,
           "available": true,
-          "originalPrice": 4000,
+          "originalPrice": 4800,
           "sku": "COM015",
           "images": {
             "cover": "assets/images/products/prod_795/cover.jpg",
@@ -24445,10 +24488,10 @@
           "attributes": {
             "Medida": "18 cm"
           },
-          "price": 4760,
+          "price": 4704,
           "stock": 10,
           "available": true,
-          "originalPrice": 5600,
+          "originalPrice": 6720,
           "sku": "COM016",
           "images": {
             "cover": "assets/images/products/prod_796/cover.jpg",
@@ -24463,10 +24506,10 @@
           "attributes": {
             "Medida": "22 cm"
           },
-          "price": 5950,
+          "price": 5880,
           "stock": 10,
           "available": true,
-          "originalPrice": 7000,
+          "originalPrice": 8400,
           "sku": "COM017",
           "images": {
             "cover": "assets/images/products/prod_797/cover.jpg",
@@ -24481,10 +24524,10 @@
           "attributes": {
             "Medida": "26 cm"
           },
-          "price": 7310,
+          "price": 7224,
           "stock": 10,
           "available": true,
-          "originalPrice": 8600,
+          "originalPrice": 10320,
           "sku": "COM018",
           "images": {
             "cover": "assets/images/products/prod_798/cover.jpg",
@@ -24499,10 +24542,10 @@
           "attributes": {
             "Medida": "30 cm"
           },
-          "price": 9775,
+          "price": 9660,
           "stock": 10,
           "available": true,
-          "originalPrice": 11500,
+          "originalPrice": 13800,
           "sku": "COM019",
           "images": {
             "cover": "assets/images/products/prod_799/cover.jpg",
@@ -24513,7 +24556,8 @@
           }
         }
       ]
-    }
+    },
+    "basePrice": 3360
   },
   {
     "id": "prod_800",
