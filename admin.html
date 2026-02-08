@@ -2453,30 +2453,36 @@
             // Expandir productos con variantes para mostrar cada variante
             let results = [];
             matchingProducts.forEach(p => {
-                const hasVariants = p.variants && p.variants.length > 0;
+                // Verificar si tiene variantes (puede ser array directo o variants.combinations)
+                const variantsList = Array.isArray(p.variants) ? p.variants : 
+                                    (p.variants?.combinations ? p.variants.combinations : null);
+                const hasVariants = variantsList && variantsList.length > 0;
+                
                 if (hasVariants) {
                     // Agregar cada variante como item separado
-                    p.variants.forEach((v, vi) => {
+                    variantsList.forEach((v, vi) => {
                         const attrStr = Object.values(v.attributes || {}).join(' / ');
+                        const variantImage = v.images?.cover || v.images?.thumb || v.image || p.images?.cover || p.image;
                         results.push({
                             productId: p.id,
                             variantIndex: vi,
                             name: p.name,
                             variantName: attrStr || 'Variante ' + (vi + 1),
                             price: v.price,
-                            image: v.image || p.image,
+                            image: variantImage,
                             isVariant: true
                         });
                     });
                 } else {
                     // Producto simple
+                    const productImage = p.images?.cover || p.images?.thumb || p.image;
                     results.push({
                         productId: p.id,
                         variantIndex: -1,
                         name: p.name,
                         variantName: null,
                         price: p.price,
-                        image: p.image,
+                        image: productImage,
                         isVariant: false
                     });
                 }
@@ -2501,24 +2507,28 @@
             const product = allProducts.find(p => p.id === productId);
             if (!product) return;
             
-            const hasVariants = product.variants && product.variants.length > 0;
+            // Verificar si tiene variantes (puede ser array directo o variants.combinations)
+            const variantsList = Array.isArray(product.variants) ? product.variants : 
+                                (product.variants?.combinations ? product.variants.combinations : null);
+            const hasVariants = variantsList && variantsList.length > 0;
+            
             let variant = null;
             let price, image, variantName = '';
             
-            if (hasVariants && variantIndex >= 0 && variantIndex < product.variants.length) {
-                variant = product.variants[variantIndex];
+            if (hasVariants && variantIndex >= 0 && variantIndex < variantsList.length) {
+                variant = variantsList[variantIndex];
                 price = variant.price;
-                image = variant.image || product.image;
+                image = variant.images?.cover || variant.images?.thumb || variant.image || product.images?.cover || product.image;
                 variantName = Object.values(variant.attributes || {}).join(' / ');
             } else if (hasVariants) {
                 // Fallback a primera variante si no se especificó
-                variant = product.variants[0];
+                variant = variantsList[0];
                 price = variant.price;
-                image = variant.image || product.image;
+                image = variant.images?.cover || variant.images?.thumb || variant.image || product.images?.cover || product.image;
                 variantName = Object.values(variant.attributes || {}).join(' / ');
             } else {
                 price = product.price;
-                image = product.image;
+                image = product.images?.cover || product.images?.thumb || product.image;
             }
             
             const newItem = {
