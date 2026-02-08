@@ -1,11 +1,46 @@
 /* Header */
 .header {
-  background: var(--color-bg-secondary);
-  border-bottom: 1px solid var(--color-border);
-  position: sticky;
+  background: transparent;
+  border-bottom: 1px solid transparent;
+  position: fixed;
   top: 0;
+  left: 0;
+  right: 0;
   z-index: 100;
   padding: var(--spacing-md) 0;
+  transition: background 0.3s ease, border-color 0.3s ease, backdrop-filter 0.3s ease;
+}
+
+/* Header con scroll - fondo sólido */
+.header.scrolled {
+  background: rgba(18, 18, 18, 0.95);
+  border-bottom: 1px solid var(--color-border);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+
+/* Header siempre con fondo (para páginas sin hero) */
+.header.header--solid {
+  background: rgba(18, 18, 18, 0.95);
+  border-bottom: 1px solid var(--color-border);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+
+/* Compensar el espacio del header fixed en páginas sin hero */
+.main--with-header-space {
+  padding-top: 120px;
+}
+
+@media (max-width: 768px) {
+  .main--with-header-space {
+    padding-top: 140px;
+  }
+}
+
+/* Compensar el espacio del header fixed */
+body {
+  padding-top: 0; /* El hero ocupa toda la pantalla, no necesita padding */
 }
 
 .header__content {

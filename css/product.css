@@ -1,4 +1,14 @@
 /* Product Page */
+.main {
+  margin-top: 120px; /* Compensar header fijo */
+}
+
+@media (max-width: 768px) {
+  .main {
+    margin-top: 140px;
+  }
+}
+
 .product {
   padding: var(--spacing-2xl) 0;
   overflow-x: hidden;

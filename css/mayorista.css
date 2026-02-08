@@ -10,6 +10,13 @@
 .mayorista-page {
   min-height: calc(100vh - 200px);
   padding: var(--spacing-xl, 3rem) 0;
+  margin-top: 120px; /* Compensar header fijo */
+}
+
+@media (max-width: 768px) {
+  .mayorista-page {
+    margin-top: 140px;
+  }
 }
 
 /* ========================================

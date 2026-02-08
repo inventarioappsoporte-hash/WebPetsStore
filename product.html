@@ -22,7 +22,7 @@
   <link rel="stylesheet" href="css/variables.css">
   <link rel="stylesheet" href="css/typography.css">
   <link rel="stylesheet" href="css/layout.css">
-  <link rel="stylesheet" href="css/components.css?v=20260115-nav-mobile">
+  <link rel="stylesheet" href="css/components.css?v=20260208-header-scroll">
   <link rel="stylesheet" href="css/product.css?v=20260118-tags">
   <link rel="stylesheet" href="css/variants.css?v=20260114-variants">
   <link rel="stylesheet" href="css/animations.css">
@@ -32,7 +32,7 @@
 </head>
 <body>
   <!-- Header -->
-  <header class="header">
+  <header class="header header--solid">
     <div class="container">
       <div class="header__content">
         <div class="header__logo">
@@ -69,7 +69,7 @@
   </header>
 
   <!-- Product Section -->
-  <main class="main">
+  <main class="main main--with-header-space">
     <div class="container">
       <div class="product" id="product-container">
         <!-- Renderizado por JS -->
@@ -107,6 +107,7 @@
   </footer>
 
   <!-- Scripts -->
+  <script src="js/modules/headerScroll.js?v=20260208"></script>
   <script src="js/core/constants.js?v=20260115-gallery"></script>
   <script src="js/core/utils.js?v=20260115-gallery"></script>
   <script src="js/core/dataLoader.js?v=20260119-imagefix"></script>

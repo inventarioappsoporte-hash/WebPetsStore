@@ -15,7 +15,7 @@
   <link rel="stylesheet" href="css/variables.css">
   <link rel="stylesheet" href="css/typography.css">
   <link rel="stylesheet" href="css/layout.css">
-  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/components.css?v=20260208-header-scroll">
   <link rel="stylesheet" href="css/contact.css">
   <link rel="stylesheet" href="css/whatsapp-float.css">
   
@@ -140,11 +140,22 @@
       text-align: center;
       margin: 1.5rem 0 1rem;
     }
+    
+    /* Compensar header fijo */
+    .policies {
+      margin-top: 120px;
+    }
+    
+    @media (max-width: 768px) {
+      .policies {
+        margin-top: 140px;
+      }
+    }
   </style>
 </head>
 <body>
   <!-- Header -->
-  <header class="header">
+  <header class="header header--solid">
     <div class="container">
       <div class="header__content">
         <div class="header__logo">
@@ -163,7 +174,7 @@
   </header>
 
   <!-- Políticas -->
-  <main class="main policies">
+  <main class="main policies main--with-header-space">
     <div class="container">
       <h1 class="policies__title">📋 Políticas y Privacidad</h1>
       
@@ -378,6 +389,7 @@
     </div>
   </footer>
 
+  <script src="js/modules/headerScroll.js?v=20260208"></script>
   <script src="js/modules/whatsappFloat.js"></script>
 </body>
 </html>

@@ -1,5 +1,5 @@
 // Aplicación principal
-// Updated: 2026-01-20 - Fix add to cart button
+// Updated: 2026-02-08 - Header scroll effect moved to headerScroll.js
 class App {
   constructor() {
     this.dataLoader = dataLoader;

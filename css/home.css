@@ -1,10 +1,19 @@
 /* Hero Section */
 .hero {
   position: relative;
-  height: 500px;
+  height: 600px; /* Más alto para que el header transparente se vea bien */
   margin-bottom: 0; /* Sin margen porque los botones móviles van abajo */
-  border-radius: var(--radius-lg);
+  border-radius: 0; /* Sin bordes redondeados arriba para que llegue al top */
   overflow: hidden;
+  margin-top: 0; /* El hero empieza desde arriba */
+}
+
+/* En móvil el header es más alto */
+@media (max-width: 768px) {
+  .hero {
+    margin-top: 0;
+    height: 500px;
+  }
 }
 
 .hero__content {

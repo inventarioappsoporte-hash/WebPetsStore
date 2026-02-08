@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="css/variables.css">
   <link rel="stylesheet" href="css/typography.css">
   <link rel="stylesheet" href="css/layout.css">
-  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/components.css?v=20260208-header-scroll">
   
   <style>
     body { background: #0f0f1a; }
@@ -36,7 +36,14 @@
     .account-page {
       max-width: 600px;
       margin: 0 auto;
+      margin-top: 120px; /* Compensar header fijo */
       padding: 1.5rem 1rem;
+    }
+    
+    @media (max-width: 768px) {
+      .account-page {
+        margin-top: 140px;
+      }
     }
     
     .account-header {
@@ -509,6 +516,7 @@
     .auth-google-btn:hover { background: rgba(255,255,255,0.1); }
   </style>
 
+  <script src="js/modules/headerScroll.js?v=20260208"></script>
   <script src="js/modules/userAuth.js?v=20260204-fix4"></script>
   <script>
     document.addEventListener('DOMContentLoaded', async () => {
