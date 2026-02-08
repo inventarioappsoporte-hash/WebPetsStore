@@ -1,11 +1,11 @@
 {
   "hero": {
-    "productId": "",
-    "title": "",
+    "productId": "prod_009",
+    "title": "LO MÁS VENDIDO DE ESTA SEMANA",
     "subtitle": "",
     "cta": "COMPRAR AHORA",
     "ctaSecondary": "VER PRODUCTO",
-    "image": "assets/images/ui/hero-1770579180892.png"
+    "image": "assets/images/ui/hero-1768711441311.jpg"
   },
   "promos": [
     {

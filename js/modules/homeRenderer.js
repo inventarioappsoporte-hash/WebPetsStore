@@ -68,37 +68,52 @@ class HomeRenderer {
       heroTitle.textContent = heroConfig.title;
     }
     
-    // Configurar botones del hero
-    const productId = heroConfig.productId;
-    if (productId) {
-      const productUrl = `product.html?id=${productId}`;
+    // Ocultar/mostrar botones según configuración
+    const heroCta = document.querySelector('.hero__cta--desktop');
+    const heroCtaMobile = document.querySelector('.hero__cta-mobile');
+    
+    if (heroConfig.hideButtons) {
+      // Ocultar botones
+      if (heroCta) heroCta.style.display = 'none';
+      if (heroCtaMobile) heroCtaMobile.style.display = 'none';
+      console.log('🎬 renderHero - Botones ocultos por configuración');
+    } else {
+      // Mostrar botones
+      if (heroCta) heroCta.style.display = '';
+      if (heroCtaMobile) heroCtaMobile.style.display = '';
       
-      // Botones desktop
-      const viewBtn = document.getElementById('hero-view-btn');
-      const buyBtn = document.getElementById('hero-buy-btn');
-      // Botones mobile
-      const viewBtnMobile = document.getElementById('hero-view-btn-mobile');
-      const buyBtnMobile = document.getElementById('hero-buy-btn-mobile');
-      
-      if (viewBtn) {
-        viewBtn.textContent = heroConfig.ctaSecondary || 'VER PRODUCTO';
-        viewBtn.onclick = () => window.location.href = productUrl;
-      }
-      if (buyBtn) {
-        buyBtn.textContent = heroConfig.cta || 'COMPRAR AHORA';
-        buyBtn.onclick = () => window.location.href = productUrl;
-      }
-      if (viewBtnMobile) {
-        viewBtnMobile.textContent = heroConfig.ctaSecondary || 'VER PRODUCTO';
-        viewBtnMobile.onclick = () => window.location.href = productUrl;
-      }
-      if (buyBtnMobile) {
-        buyBtnMobile.textContent = heroConfig.cta || 'COMPRAR AHORA';
-        buyBtnMobile.onclick = () => window.location.href = productUrl;
+      // Configurar botones del hero
+      const productId = heroConfig.productId;
+      if (productId) {
+        const productUrl = `product.html?id=${productId}`;
+        
+        // Botones desktop
+        const viewBtn = document.getElementById('hero-view-btn');
+        const buyBtn = document.getElementById('hero-buy-btn');
+        // Botones mobile
+        const viewBtnMobile = document.getElementById('hero-view-btn-mobile');
+        const buyBtnMobile = document.getElementById('hero-buy-btn-mobile');
+        
+        if (viewBtn) {
+          viewBtn.textContent = heroConfig.ctaSecondary || 'VER PRODUCTO';
+          viewBtn.onclick = () => window.location.href = productUrl;
+        }
+        if (buyBtn) {
+          buyBtn.textContent = heroConfig.cta || 'COMPRAR AHORA';
+          buyBtn.onclick = () => window.location.href = productUrl;
+        }
+        if (viewBtnMobile) {
+          viewBtnMobile.textContent = heroConfig.ctaSecondary || 'VER PRODUCTO';
+          viewBtnMobile.onclick = () => window.location.href = productUrl;
+        }
+        if (buyBtnMobile) {
+          buyBtnMobile.textContent = heroConfig.cta || 'COMPRAR AHORA';
+          buyBtnMobile.onclick = () => window.location.href = productUrl;
+        }
       }
     }
     
-    console.log('🎬 renderHero - image:', heroConfig.image, 'productId:', heroConfig.productId);
+    console.log('🎬 renderHero - image:', heroConfig.image, 'productId:', heroConfig.productId, 'hideButtons:', heroConfig.hideButtons);
   }
 
   renderPromos(promos) {

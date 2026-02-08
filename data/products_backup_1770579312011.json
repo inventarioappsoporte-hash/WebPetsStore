@@ -18421,13 +18421,25 @@
     "badge": "🧥 Ropa",
     "brand": "Sin marca",
     "sku": "ENT001",
-    "features": [],
+    "features": [
+      "Mantiene el calor",
+      "Material suave",
+      "Resistente al agua",
+      "Perfecto para el frío"
+    ],
     "originalPrice": 12294,
     "discount": 55,
     "basePrice": 5532,
+    "baseOriginalPrice": 12294.19,
     "priceDisplayMode": "wholesale",
     "variants": {
-      "attributes": [],
+      "attributes": [
+        {
+          "id": "talle",
+          "name": "Talle",
+          "type": "text"
+        }
+      ],
       "combinations": [
         {
           "id": "var_573_1",
@@ -18629,7 +18641,13 @@
     "baseOriginalPrice": 13933.41,
     "priceDisplayMode": "wholesale",
     "variants": {
-      "attributes": [],
+      "attributes": [
+        {
+          "id": "talle",
+          "name": "Talle",
+          "type": "text"
+        }
+      ],
       "combinations": [
         {
           "id": "var_581_1",
@@ -19057,7 +19075,13 @@
     "baseOriginalPrice": 6556.9,
     "priceDisplayMode": "wholesale",
     "variants": {
-      "attributes": [],
+      "attributes": [
+        {
+          "id": "talle",
+          "name": "Talle",
+          "type": "text"
+        }
+      ],
       "combinations": [
         {
           "id": "var_598_0",
@@ -19393,7 +19417,13 @@
     "basePrice": 9350,
     "priceDisplayMode": "wholesale",
     "variants": {
-      "attributes": [],
+      "attributes": [
+        {
+          "id": "largo",
+          "name": "Largo",
+          "type": "text"
+        }
+      ],
       "combinations": [
         {
           "id": "var_609_3m",
@@ -19760,7 +19790,13 @@
     "basePrice": 21845,
     "priceDisplayMode": "wholesale",
     "variants": {
-      "attributes": [],
+      "attributes": [
+        {
+          "id": "medida",
+          "name": "Medida",
+          "type": "text"
+        }
+      ],
       "combinations": [
         {
           "id": "var_631_70",
@@ -19853,7 +19889,13 @@
     "basePrice": 27115,
     "priceDisplayMode": "wholesale",
     "variants": {
-      "attributes": [],
+      "attributes": [
+        {
+          "id": "medida",
+          "name": "Medida",
+          "type": "text"
+        }
+      ],
       "combinations": [
         {
           "id": "var_635_60",
@@ -24246,7 +24288,6 @@
     "features": [],
     "originalPrice": 5160,
     "discount": 35,
-    "basePrice": 3354,
     "priceDisplayMode": "wholesale",
     "variants": {
       "attributes": [
@@ -24366,7 +24407,8 @@
           }
         }
       ]
-    }
+    },
+    "basePrice": 3354
   },
   {
     "id": "prod_795",
@@ -24413,10 +24455,15 @@
     "features": [],
     "originalPrice": 4800,
     "discount": 30,
-    "basePrice": 3360,
     "priceDisplayMode": "wholesale",
     "variants": {
-      "attributes": [],
+      "attributes": [
+        {
+          "id": "medida",
+          "name": "Medida",
+          "type": "text"
+        }
+      ],
       "combinations": [
         {
           "id": "var_795_16",
@@ -24509,7 +24556,8 @@
           }
         }
       ]
-    }
+    },
+    "basePrice": 3360
   },
   {
     "id": "prod_800",
@@ -25795,10 +25843,17 @@
     "badge": "🍽️ Comederos",
     "brand": "Sin marca",
     "sku": "COM053",
-    "features": [],
+    "features": [
+      "Múltiples tamaños disponibles",
+      "Fácil de limpiar",
+      "Antideslizante",
+      "Capacidad adecuada",
+      "Material duradero"
+    ],
     "originalPrice": 2500,
     "discount": 40,
     "basePrice": 1500,
+    "baseOriginalPrice": 1800,
     "priceDisplayMode": "wholesale",
     "variants": {
       "attributes": [
