@@ -5,7 +5,8 @@
     "subtitle": "",
     "cta": "COMPRAR AHORA",
     "ctaSecondary": "VER PRODUCTO",
-    "image": "assets/images/ui/hero-1770579180892.png"
+    "image": "assets/images/ui/hero-1770579180892.png",
+    "hideButtons": true
   },
   "promos": [
     {
