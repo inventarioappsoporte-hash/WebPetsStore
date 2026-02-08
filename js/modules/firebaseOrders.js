@@ -249,16 +249,24 @@ class FirebaseOrders {
       await FirebaseOrders.reserveStock(items);
 
       // 📧 Enviar notificación por email al admin
+      console.log('📧 Intentando enviar notificación por email...');
+      console.log('📧 EmailNotification disponible:', typeof EmailNotification !== 'undefined');
+      
       if (typeof EmailNotification !== 'undefined') {
-        EmailNotification.sendOrderNotification({
-          orderNumber: orderNumber,
-          customerName: customerData.name,
-          customerPhone: customerData.phone,
-          items: items,
-          total: total
-        }).catch(err => {
-          console.warn('⚠️ Email notification failed:', err);
-        });
+        try {
+          const emailResult = await EmailNotification.sendOrderNotification({
+            orderNumber: orderNumber,
+            customerName: customerData.name,
+            customerPhone: customerData.phone,
+            items: items,
+            total: total
+          });
+          console.log('📧 Resultado del envío de email:', emailResult);
+        } catch (emailErr) {
+          console.warn('⚠️ Email notification failed:', emailErr);
+        }
+      } else {
+        console.warn('⚠️ EmailNotification no está disponible');
       }
 
       return {
