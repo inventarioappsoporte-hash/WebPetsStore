@@ -1038,7 +1038,7 @@
         .add-product-search input:focus { outline: none; border-color: var(--primary); }
         .add-product-results {
             background: var(--bg); border: 1px solid var(--border); border-radius: 6px;
-            max-height: 150px; overflow-y: auto;
+            max-height: 220px; overflow-y: auto;
         }
         .add-product-item {
             display: flex; align-items: center; gap: 0.5rem;
@@ -2440,42 +2440,90 @@
                 return;
             }
             const q = query.toLowerCase();
-            const results = allProducts.filter(p => 
+            const matchingProducts = allProducts.filter(p => 
                 p.name?.toLowerCase().includes(q) || 
                 p.category?.toLowerCase().includes(q)
-            ).slice(0, 10);
+            ).slice(0, 15);
             
-            if (!results.length) {
+            if (!matchingProducts.length) {
                 container.innerHTML = '<p style="padding:0.5rem;color:var(--text-muted);font-size:0.75rem;text-align:center;">Sin resultados</p>';
                 return;
             }
             
-            container.innerHTML = results.map(p => {
+            // Expandir productos con variantes para mostrar cada variante
+            let results = [];
+            matchingProducts.forEach(p => {
                 const hasVariants = p.variants && p.variants.length > 0;
-                const price = hasVariants ? p.variants[0].price : p.price;
-                const image = hasVariants ? (p.variants[0].image || p.image) : p.image;
-                return '<div class="add-product-item" onclick="addProductToOrder(' + p.id + ')">' +
-                    '<img src="' + (image || 'assets/images/placeholder.svg') + '" onerror="this.src=\'assets/images/placeholder.svg\'">' +
-                    '<div class="product-info"><div class="product-name">' + p.name + '</div>' +
-                    (hasVariants ? '<div style="font-size:0.625rem;color:var(--text-muted);">' + p.variants.length + ' variantes</div>' : '') +
+                if (hasVariants) {
+                    // Agregar cada variante como item separado
+                    p.variants.forEach((v, vi) => {
+                        const attrStr = Object.values(v.attributes || {}).join(' / ');
+                        results.push({
+                            productId: p.id,
+                            variantIndex: vi,
+                            name: p.name,
+                            variantName: attrStr || 'Variante ' + (vi + 1),
+                            price: v.price,
+                            image: v.image || p.image,
+                            isVariant: true
+                        });
+                    });
+                } else {
+                    // Producto simple
+                    results.push({
+                        productId: p.id,
+                        variantIndex: -1,
+                        name: p.name,
+                        variantName: null,
+                        price: p.price,
+                        image: p.image,
+                        isVariant: false
+                    });
+                }
+            });
+            
+            // Limitar resultados
+            results = results.slice(0, 20);
+            
+            container.innerHTML = results.map(r => {
+                return '<div class="add-product-item" onclick="addProductToOrder(' + r.productId + ',' + r.variantIndex + ')">' +
+                    '<img src="' + (r.image || 'assets/images/placeholder.svg') + '" onerror="this.src=\'assets/images/placeholder.svg\'">' +
+                    '<div class="product-info">' +
+                    '<div class="product-name">' + r.name + '</div>' +
+                    (r.variantName ? '<div style="font-size:0.625rem;color:var(--primary);font-weight:500;">' + r.variantName + '</div>' : '') +
                     '</div>' +
-                    '<div class="product-price">' + formatPrice(price) + '</div>' +
+                    '<div class="product-price">' + formatPrice(r.price) + '</div>' +
                     '</div>';
             }).join('');
         };
         
-        window.addProductToOrder = (productId) => {
+        window.addProductToOrder = (productId, variantIndex) => {
             const product = allProducts.find(p => p.id === productId);
             if (!product) return;
             
             const hasVariants = product.variants && product.variants.length > 0;
-            const variant = hasVariants ? product.variants[0] : null;
-            const price = hasVariants ? variant.price : product.price;
-            const image = hasVariants ? (variant.image || product.image) : product.image;
+            let variant = null;
+            let price, image, variantName = '';
+            
+            if (hasVariants && variantIndex >= 0 && variantIndex < product.variants.length) {
+                variant = product.variants[variantIndex];
+                price = variant.price;
+                image = variant.image || product.image;
+                variantName = Object.values(variant.attributes || {}).join(' / ');
+            } else if (hasVariants) {
+                // Fallback a primera variante si no se especificó
+                variant = product.variants[0];
+                price = variant.price;
+                image = variant.image || product.image;
+                variantName = Object.values(variant.attributes || {}).join(' / ');
+            } else {
+                price = product.price;
+                image = product.image;
+            }
             
             const newItem = {
                 productId: product.id,
-                name: product.name,
+                name: product.name + (variantName ? ' (' + variantName + ')' : ''),
                 price: price,
                 quantity: 1,
                 image: image,
