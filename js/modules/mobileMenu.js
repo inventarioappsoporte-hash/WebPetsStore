@@ -206,13 +206,8 @@ const MobileMenu = {
       
       if (this.elements.categoriesSubmenu && categories.length > 0) {
         const html = categories.map(cat => {
-          const slug = cat.slug || cat.name.toLowerCase()
-            .normalize('NFD').replace(/[\u0300-\u036f]/g, '')
-            .replace(/[^a-z0-9\s-]/g, '')
-            .replace(/\s+/g, '-')
-            .trim();
-          const icon = this.getCategoryIcon(cat.name);
-          return `<a href="search.html?category=${encodeURIComponent(cat.name)}" class="mobile-menu__sublink">${icon} ${cat.name}</a>`;
+          // Usar el ID de la categoría, igual que en desktop
+          return `<a href="search.html?category=${cat.id}" class="mobile-menu__sublink">${cat.name}</a>`;
         }).join('');
         
         this.elements.categoriesSubmenu.innerHTML = html;
