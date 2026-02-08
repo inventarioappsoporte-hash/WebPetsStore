@@ -1019,6 +1019,55 @@
         .modal-btn-whatsapp:hover { background: #20bd5a; }
         .modal-btn-cancel { background: var(--bg-card); color: var(--text-muted); border: 1px solid var(--border); }
         .modal-btn-cancel:hover { color: var(--text); }
+        .modal-btn-receipt { background: #3b82f6; color: white; }
+        .modal-btn-receipt:hover { background: #2563eb; }
+        .modal-btn-add { background: rgba(34,197,94,0.15); color: var(--success); border: 1px dashed var(--success); }
+        .modal-btn-add:hover { background: var(--success); color: white; }
+        
+        /* Add Product Search */
+        .add-product-section { margin-top: 0.5rem; display: none; }
+        .add-product-section.active { display: block; }
+        .add-product-search {
+            display: flex; gap: 0.5rem; margin-bottom: 0.5rem;
+        }
+        .add-product-search input {
+            flex: 1; padding: 0.5rem; background: var(--bg);
+            border: 1px solid var(--border); border-radius: 6px;
+            color: var(--text); font-size: 0.75rem;
+        }
+        .add-product-search input:focus { outline: none; border-color: var(--primary); }
+        .add-product-results {
+            background: var(--bg); border: 1px solid var(--border); border-radius: 6px;
+            max-height: 150px; overflow-y: auto;
+        }
+        .add-product-item {
+            display: flex; align-items: center; gap: 0.5rem;
+            padding: 0.5rem; border-bottom: 1px solid var(--border);
+            cursor: pointer; font-size: 0.75rem;
+        }
+        .add-product-item:last-child { border-bottom: none; }
+        .add-product-item:hover { background: rgba(255,107,0,0.1); }
+        .add-product-item img { width: 32px; height: 32px; object-fit: cover; border-radius: 4px; }
+        .add-product-item .product-info { flex: 1; }
+        .add-product-item .product-name { font-weight: 500; }
+        .add-product-item .product-price { color: var(--primary); font-weight: 600; }
+        
+        /* Item status badges */
+        .item-status-badge {
+            font-size: 0.5rem; padding: 0.125rem 0.25rem; border-radius: 3px;
+            font-weight: 600; margin-left: 0.25rem;
+        }
+        .item-status-badge.replaced { background: rgba(59,130,246,0.15); color: #3b82f6; }
+        .item-status-badge.added { background: rgba(34,197,94,0.15); color: #22c55e; }
+        .item-status-badge.removed { background: rgba(239,68,68,0.15); color: #ef4444; text-decoration: line-through; }
+        
+        /* Price edit */
+        .item-price-edit {
+            width: 55px; padding: 0.125rem 0.25rem; background: var(--bg-card);
+            border: 1px solid var(--border); border-radius: 3px;
+            color: var(--text); text-align: right; font-size: 0.6875rem;
+        }
+        .item-price-edit:focus { outline: none; border-color: var(--primary); }
         
         /* Modal Responsive */
         @media (max-width: 768px) {
@@ -1537,6 +1586,13 @@
                 </div>
                 <div class="modal-section-title">🛒 Productos</div>
                 <div class="order-items-compact" id="modal-order-items"></div>
+                <button class="modal-btn modal-btn-add" onclick="toggleAddProduct()" style="width:100%;margin-top:0.5rem;">➕ Agregar producto</button>
+                <div class="add-product-section" id="add-product-section">
+                    <div class="add-product-search">
+                        <input type="text" id="add-product-input" placeholder="Buscar producto..." oninput="searchProducts(this.value)">
+                    </div>
+                    <div class="add-product-results" id="add-product-results"></div>
+                </div>
                 <div class="modal-totals-compact">
                     <div class="total-item"><span class="total-label">Subtotal:</span><span class="total-value" id="modal-subtotal">$0</span></div>
                     <div class="total-item"><span class="total-label">Envío:</span><span class="total-value" id="modal-shipping-cost">$0</span></div>
@@ -1548,6 +1604,7 @@
             </div>
             <div class="modal-footer">
                 <button class="modal-btn modal-btn-cancel" onclick="closeOrderModal()">✕</button>
+                <button class="modal-btn modal-btn-receipt" onclick="generateReceipt()">🧾</button>
                 <button class="modal-btn modal-btn-whatsapp" onclick="sendOrderUpdateWhatsApp()">📱</button>
                 <button class="modal-btn modal-btn-save" onclick="saveOrderChanges()">💾 Guardar</button>
             </div>
@@ -2263,18 +2320,20 @@
                 updateModalTotals();
                 return;
             }
-            container.innerHTML = editedItems.map((item, i) => 
-                '<div class="order-item-compact">' +
+            container.innerHTML = editedItems.map((item, i) => {
+                const statusBadge = item.isAdded ? '<span class="item-status-badge added">NUEVO</span>' : 
+                                   (item.priceAdjusted ? '<span class="item-status-badge replaced">AJUSTADO</span>' : '');
+                return '<div class="order-item-compact">' +
                 '<img src="' + (item.image || 'assets/images/placeholder.svg') + '" onerror="this.src=\'assets/images/placeholder.svg\'">' +
-                '<div class="item-info"><div class="item-name">' + item.name + '</div>' +
+                '<div class="item-info"><div class="item-name">' + item.name + statusBadge + '</div>' +
                 (item.variant ? '<div class="item-variant">' + Object.values(item.variant.attributes||{}).join(' / ') + '</div>' : '') +
                 '</div>' +
-                '<div class="item-price">' + formatPrice(item.price) + '</div>' +
+                '<input type="number" class="item-price-edit" value="' + item.price + '" min="0" step="100" onchange="updateItemPrice(' + i + ', this.value)" title="Editar precio">' +
                 '<input type="number" class="item-qty" value="' + item.quantity + '" min="0" onchange="updateItemQty(' + i + ', this.value)">' +
                 '<div class="item-subtotal">' + formatPrice(item.price * item.quantity) + '</div>' +
                 '<button class="item-remove" onclick="removeOrderItem(' + i + ')">🗑️</button>' +
-                '</div>'
-            ).join('');
+                '</div>';
+            }).join('');
             updateModalTotals();
         }
 
@@ -2306,6 +2365,8 @@
 
         window.closeOrderModal = () => {
             document.getElementById('order-modal').classList.remove('active');
+            document.getElementById('add-product-section').classList.remove('active');
+            document.getElementById('add-product-input').value = '';
             currentEditingOrder = null;
             editedItems = [];
         };
@@ -2348,6 +2409,213 @@
             msg += '\nTotal: ' + formatPrice(total) + '\n\n¡Gracias! 🐾';
             window.open('https://wa.me/' + phone + '?text=' + encodeURIComponent(msg), '_blank');
         };
+
+        // ========== ADD PRODUCT FUNCTIONS ==========
+        let allProducts = [];
+        
+        window.toggleAddProduct = () => {
+            const section = document.getElementById('add-product-section');
+            section.classList.toggle('active');
+            if (section.classList.contains('active')) {
+                document.getElementById('add-product-input').focus();
+                loadAllProducts();
+            }
+        };
+        
+        async function loadAllProducts() {
+            if (allProducts.length > 0) return;
+            try {
+                const response = await fetch('data/products.json');
+                allProducts = await response.json();
+            } catch (e) {
+                console.error('Error cargando productos:', e);
+            }
+        }
+        
+        window.searchProducts = (query) => {
+            const container = document.getElementById('add-product-results');
+            if (!query || query.length < 2) {
+                container.innerHTML = '<p style="padding:0.5rem;color:var(--text-muted);font-size:0.75rem;text-align:center;">Escribí al menos 2 caracteres...</p>';
+                return;
+            }
+            const q = query.toLowerCase();
+            const results = allProducts.filter(p => 
+                p.name?.toLowerCase().includes(q) || 
+                p.category?.toLowerCase().includes(q)
+            ).slice(0, 10);
+            
+            if (!results.length) {
+                container.innerHTML = '<p style="padding:0.5rem;color:var(--text-muted);font-size:0.75rem;text-align:center;">Sin resultados</p>';
+                return;
+            }
+            
+            container.innerHTML = results.map(p => {
+                const hasVariants = p.variants && p.variants.length > 0;
+                const price = hasVariants ? p.variants[0].price : p.price;
+                const image = hasVariants ? (p.variants[0].image || p.image) : p.image;
+                return '<div class="add-product-item" onclick="addProductToOrder(' + p.id + ')">' +
+                    '<img src="' + (image || 'assets/images/placeholder.svg') + '" onerror="this.src=\'assets/images/placeholder.svg\'">' +
+                    '<div class="product-info"><div class="product-name">' + p.name + '</div>' +
+                    (hasVariants ? '<div style="font-size:0.625rem;color:var(--text-muted);">' + p.variants.length + ' variantes</div>' : '') +
+                    '</div>' +
+                    '<div class="product-price">' + formatPrice(price) + '</div>' +
+                    '</div>';
+            }).join('');
+        };
+        
+        window.addProductToOrder = (productId) => {
+            const product = allProducts.find(p => p.id === productId);
+            if (!product) return;
+            
+            const hasVariants = product.variants && product.variants.length > 0;
+            const variant = hasVariants ? product.variants[0] : null;
+            const price = hasVariants ? variant.price : product.price;
+            const image = hasVariants ? (variant.image || product.image) : product.image;
+            
+            const newItem = {
+                productId: product.id,
+                name: product.name,
+                price: price,
+                quantity: 1,
+                image: image,
+                isAdded: true
+            };
+            if (variant) {
+                newItem.variant = variant;
+                newItem.variantId = variant.id;
+            }
+            
+            editedItems.push(newItem);
+            renderModalItems();
+            document.getElementById('add-product-section').classList.remove('active');
+            document.getElementById('add-product-input').value = '';
+        };
+        
+        window.updateItemPrice = (index, val) => {
+            const price = parseFloat(val) || 0;
+            if (price >= 0) {
+                editedItems[index].price = price;
+                editedItems[index].priceAdjusted = true;
+                renderModalItems();
+            }
+        };
+
+        // ========== RECEIPT GENERATION ==========
+        window.generateReceipt = () => {
+            if (!currentEditingOrder) return;
+            
+            const subtotal = editedItems.reduce((sum, item) => sum + (item.price * item.quantity), 0);
+            const shipping = currentEditingOrder.shippingCost || 0;
+            const total = subtotal + shipping;
+            const date = currentEditingOrder.createdAt?.toDate?.() || new Date();
+            const dateStr = date.toLocaleDateString('es-AR', { day: '2-digit', month: '2-digit', year: 'numeric' });
+            
+            // Crear contenido del recibo
+            const receiptHTML = `
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Recibo - Pedido #${currentEditingOrder.orderNumber || ''}</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: Arial, sans-serif; padding: 20px; max-width: 400px; margin: 0 auto; }
+        .header { text-align: center; margin-bottom: 20px; border-bottom: 2px dashed #333; padding-bottom: 15px; }
+        .logo { font-size: 24px; font-weight: bold; color: #FF6B00; }
+        .subtitle { font-size: 12px; color: #666; margin-top: 5px; }
+        .order-info { margin-bottom: 15px; }
+        .order-info p { font-size: 12px; margin: 3px 0; }
+        .order-number { font-size: 16px; font-weight: bold; }
+        .items { border-top: 1px dashed #ccc; border-bottom: 1px dashed #ccc; padding: 10px 0; margin: 10px 0; }
+        .item { display: flex; justify-content: space-between; font-size: 12px; margin: 5px 0; }
+        .item-name { flex: 1; }
+        .item-qty { width: 30px; text-align: center; }
+        .item-price { width: 70px; text-align: right; }
+        .totals { margin-top: 10px; }
+        .total-row { display: flex; justify-content: space-between; font-size: 12px; margin: 3px 0; }
+        .total-row.final { font-size: 16px; font-weight: bold; border-top: 2px solid #333; padding-top: 8px; margin-top: 8px; }
+        .footer { text-align: center; margin-top: 20px; font-size: 11px; color: #666; }
+        .footer p { margin: 3px 0; }
+        .whatsapp-btn { display: inline-block; margin-top: 15px; padding: 10px 20px; background: #25d366; color: white; text-decoration: none; border-radius: 5px; font-weight: bold; }
+        @media print { .no-print { display: none; } }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">🐾 Pets Store</div>
+        <div class="subtitle">Tu tienda de mascotas</div>
+    </div>
+    
+    <div class="order-info">
+        <p class="order-number">Pedido #${currentEditingOrder.orderNumber || ''}</p>
+        <p>📅 Fecha: ${dateStr}</p>
+        <p>👤 Cliente: ${currentEditingOrder.customerName || 'Cliente'}</p>
+        <p>📞 Tel: ${currentEditingOrder.customerPhone || '-'}</p>
+        <p>🚚 Envío: ${currentEditingOrder.shippingInfo?.zone || 'No especificado'}</p>
+    </div>
+    
+    <div class="items">
+        <div class="item" style="font-weight:bold;border-bottom:1px solid #ccc;padding-bottom:5px;margin-bottom:5px;">
+            <span class="item-name">Producto</span>
+            <span class="item-qty">Cant</span>
+            <span class="item-price">Precio</span>
+        </div>
+        ${editedItems.map(item => `
+        <div class="item">
+            <span class="item-name">${item.name}${item.variant ? ' (' + Object.values(item.variant.attributes||{}).join('/') + ')' : ''}</span>
+            <span class="item-qty">${item.quantity}</span>
+            <span class="item-price">$${(item.price * item.quantity).toLocaleString('es-AR')}</span>
+        </div>
+        `).join('')}
+    </div>
+    
+    <div class="totals">
+        <div class="total-row"><span>Subtotal:</span><span>$${subtotal.toLocaleString('es-AR')}</span></div>
+        <div class="total-row"><span>Envío:</span><span>$${shipping.toLocaleString('es-AR')}</span></div>
+        <div class="total-row final"><span>TOTAL:</span><span>$${total.toLocaleString('es-AR')}</span></div>
+    </div>
+    
+    <div class="footer">
+        <p>¡Gracias por tu compra! 🐾</p>
+        <p>📧 pets.store.2026@gmail.com</p>
+        <p>📱 +54 9 11 5019 2474</p>
+        <p>📸 @petsstore2026</p>
+        
+        <div class="no-print">
+            <button onclick="window.print()" style="margin-top:15px;padding:10px 20px;background:#FF6B00;color:white;border:none;border-radius:5px;cursor:pointer;font-weight:bold;">🖨️ Imprimir</button>
+            <a href="https://wa.me/${(currentEditingOrder.customerPhone || '').replace(/\\D/g, '')}?text=${encodeURIComponent(generateReceiptText())}" target="_blank" class="whatsapp-btn">📱 Enviar por WhatsApp</a>
+        </div>
+    </div>
+</body>
+</html>`;
+            
+            // Abrir en nueva ventana
+            const receiptWindow = window.open('', '_blank', 'width=450,height=700');
+            receiptWindow.document.write(receiptHTML);
+            receiptWindow.document.close();
+        };
+        
+        function generateReceiptText() {
+            const subtotal = editedItems.reduce((sum, item) => sum + (item.price * item.quantity), 0);
+            const shipping = currentEditingOrder?.shippingCost || 0;
+            const total = subtotal + shipping;
+            
+            let text = '🧾 *RECIBO - PETS STORE*\n';
+            text += '━━━━━━━━━━━━━━━━━━\n';
+            text += '📦 Pedido #' + (currentEditingOrder?.orderNumber || '') + '\n\n';
+            text += '*PRODUCTOS:*\n';
+            editedItems.forEach(item => {
+                text += '• ' + item.name + ' x' + item.quantity + ' = $' + (item.price * item.quantity).toLocaleString('es-AR') + '\n';
+            });
+            text += '\n━━━━━━━━━━━━━━━━━━\n';
+            text += 'Subtotal: $' + subtotal.toLocaleString('es-AR') + '\n';
+            text += 'Envío: $' + shipping.toLocaleString('es-AR') + '\n';
+            text += '*TOTAL: $' + total.toLocaleString('es-AR') + '*\n';
+            text += '━━━━━━━━━━━━━━━━━━\n';
+            text += '¡Gracias por tu compra! 🐾\n';
+            text += 'Pets Store Argentina';
+            return text;
+        }
 
         document.getElementById('order-modal').addEventListener('click', (e) => {
             if (e.target.classList.contains('modal-overlay')) closeOrderModal();
