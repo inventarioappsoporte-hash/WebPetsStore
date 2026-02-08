@@ -1,6 +1,6 @@
 /**
  * Mobile Menu Module
- * Maneja el menú hamburguesa y la búsqueda móvil
+ * Maneja el menú hamburguesa y la búsqueda móvil con resultados en tiempo real
  */
 
 const MobileMenu = {
@@ -13,9 +13,12 @@ const MobileMenu = {
     mobileSearch: null,
     searchClose: null,
     searchInput: null,
+    searchResults: null,
     categoriesToggle: null,
     categoriesSubmenu: null
   },
+  
+  products: [],
 
   init() {
     // Obtener elementos
@@ -27,6 +30,7 @@ const MobileMenu = {
     this.elements.mobileSearch = document.getElementById('mobile-search');
     this.elements.searchClose = document.getElementById('mobile-search-close');
     this.elements.searchInput = document.getElementById('mobile-search-input');
+    this.elements.searchResults = document.getElementById('mobile-search-results');
     this.elements.categoriesToggle = document.getElementById('mobile-categories-toggle');
     this.elements.categoriesSubmenu = document.getElementById('mobile-categories-submenu');
 
@@ -38,7 +42,18 @@ const MobileMenu = {
 
     this.bindEvents();
     this.loadCategories();
+    this.loadProducts();
     console.log('📱 MobileMenu inicializado');
+  },
+
+  async loadProducts() {
+    try {
+      const response = await fetch('data/products.json');
+      this.products = await response.json();
+      console.log('📱 MobileMenu: Productos cargados:', this.products.length);
+    } catch (error) {
+      console.error('Error cargando productos:', error);
+    }
   },
 
   bindEvents() {
@@ -66,10 +81,20 @@ const MobileMenu = {
     // Cerrar búsqueda
     this.elements.searchClose?.addEventListener('click', () => this.closeSearch());
 
+    // Búsqueda en tiempo real al escribir
+    this.elements.searchInput?.addEventListener('input', (e) => {
+      const query = e.target.value.trim();
+      if (query.length >= 2) {
+        this.performLiveSearch(query);
+      } else {
+        this.hideSearchResults();
+      }
+    });
+
     // Buscar al presionar Enter
     this.elements.searchInput?.addEventListener('keypress', (e) => {
       if (e.key === 'Enter') {
-        this.performSearch();
+        this.goToSearchPage();
       }
     });
 
@@ -82,21 +107,113 @@ const MobileMenu = {
     });
   },
 
+  performLiveSearch(query) {
+    const normalizedQuery = this.normalizeText(query);
+    
+    const results = this.products.filter(product => {
+      const matchName = product.name ? this.normalizeText(product.name).includes(normalizedQuery) : false;
+      const matchCategory = product.category ? this.normalizeText(product.category).includes(normalizedQuery) : false;
+      const matchSubcategory = product.subcategory ? this.normalizeText(product.subcategory).includes(normalizedQuery) : false;
+      const matchDescription = product.description ? this.normalizeText(product.description).includes(normalizedQuery) : false;
+      
+      return matchName || matchCategory || matchSubcategory || matchDescription;
+    });
+
+    this.displaySearchResults(results, query);
+  },
+
+  normalizeText(text) {
+    return text.toLowerCase()
+      .normalize('NFD')
+      .replace(/[\u0300-\u036f]/g, '')
+      .trim();
+  },
+
+  displaySearchResults(results, query) {
+    if (!this.elements.searchResults) return;
+
+    if (results.length === 0) {
+      this.elements.searchResults.innerHTML = `
+        <div class="mobile-search__no-results">
+          <p>No encontramos productos para "<strong>${query}</strong>"</p>
+        </div>
+      `;
+    } else {
+      const itemsHtml = results.slice(0, 6).map(p => this.renderSearchItem(p)).join('');
+      const moreHtml = results.length > 6 
+        ? `<div class="mobile-search__more"><a href="search.html?q=${encodeURIComponent(query)}">Ver todos (${results.length})</a></div>` 
+        : '';
+      
+      this.elements.searchResults.innerHTML = `
+        <div class="mobile-search__count">
+          <p>Se encontraron <strong>${results.length}</strong> producto${results.length !== 1 ? 's' : ''}</p>
+        </div>
+        <div class="mobile-search__items">
+          ${itemsHtml}
+        </div>
+        ${moreHtml}
+      `;
+    }
+    
+    this.elements.searchResults.classList.add('active');
+  },
+
+  renderSearchItem(product) {
+    let price = product.price || product.basePrice || 0;
+    if (product.variants?.combinations?.length > 0) {
+      price = product.variants.combinations[0].price || price;
+    }
+    
+    const formattedPrice = new Intl.NumberFormat('es-AR', {
+      style: 'currency',
+      currency: 'ARS',
+      minimumFractionDigits: 0
+    }).format(price);
+
+    const thumb = product.images?.thumb || product.images?.main || 'assets/images/placeholder.jpg';
+
+    return `
+      <div class="mobile-search__item" onclick="window.location.href='product.html?id=${product.id}'">
+        <img src="${thumb}" alt="${product.name}" class="mobile-search__item-img">
+        <div class="mobile-search__item-info">
+          <h4>${product.name}</h4>
+          <p>${formattedPrice}</p>
+        </div>
+      </div>
+    `;
+  },
+
+  hideSearchResults() {
+    if (this.elements.searchResults) {
+      this.elements.searchResults.classList.remove('active');
+      this.elements.searchResults.innerHTML = '';
+    }
+  },
+
+  goToSearchPage() {
+    const query = this.elements.searchInput?.value.trim();
+    if (query) {
+      window.location.href = `search.html?q=${encodeURIComponent(query)}`;
+    }
+  },
+
   async loadCategories() {
     try {
       const response = await fetch('data/categories.json');
       const categories = await response.json();
       
       if (this.elements.categoriesSubmenu && categories.length > 0) {
-        this.elements.categoriesSubmenu.innerHTML = categories.map(cat => 
-          `<a href="search.html?category=${encodeURIComponent(cat.id)}" class="mobile-menu__submenu-link" data-category="${cat.id}">
-            ${cat.icon || '📦'} ${cat.name}
-          </a>`
-        ).join('');
-
+        const html = categories.map(cat => {
+          const slug = cat.slug || cat.name.toLowerCase().replace(/\s+/g, '-');
+          const icon = this.getCategoryIcon(cat.name);
+          return `<a href="search.html?category=${encodeURIComponent(slug)}" class="mobile-menu__sublink">${icon} ${cat.name}</a>`;
+        }).join('');
+        
+        this.elements.categoriesSubmenu.innerHTML = html;
+        
         // Agregar evento para cerrar menú al seleccionar categoría
-        const categoryLinks = this.elements.categoriesSubmenu.querySelectorAll('.mobile-menu__submenu-link');
-        categoryLinks.forEach(link => {
+        const sublinks = this.elements.categoriesSubmenu.querySelectorAll('.mobile-menu__sublink');
+        sublinks.forEach(link => {
           link.addEventListener('click', () => this.closeMenu());
         });
       }
@@ -105,11 +222,20 @@ const MobileMenu = {
     }
   },
 
-  toggleCategories() {
-    const dropdown = this.elements.categoriesToggle?.closest('.mobile-menu__item--dropdown');
-    if (dropdown) {
-      dropdown.classList.toggle('open');
-    }
+  getCategoryIcon(name) {
+    const icons = {
+      'ropa': '👕',
+      'juguetes': '🎾',
+      'comederos': '🍽️',
+      'colchonetas': '🛏️',
+      'accesorios': '🎀',
+      'higiene': '🧴',
+      'alimentos': '🦴',
+      'transportadoras': '🧳',
+      'correas': '🦮'
+    };
+    const key = name.toLowerCase();
+    return icons[key] || '📦';
   },
 
   toggleMenu() {
@@ -125,17 +251,26 @@ const MobileMenu = {
     this.elements.mobileMenu?.classList.add('active');
     this.elements.menuOverlay?.classList.add('active');
     this.elements.menuToggle?.classList.add('active');
-    document.body.style.overflow = 'hidden'; // Prevenir scroll
+    document.body.style.overflow = 'hidden';
   },
 
   closeMenu() {
     this.elements.mobileMenu?.classList.remove('active');
     this.elements.menuOverlay?.classList.remove('active');
     this.elements.menuToggle?.classList.remove('active');
-    document.body.style.overflow = ''; // Restaurar scroll
-    
-    // Cerrar submenú de categorías
-    const dropdown = document.querySelector('.mobile-menu__item--dropdown');
+    document.body.style.overflow = '';
+    this.closeCategories();
+  },
+
+  toggleCategories() {
+    const dropdown = this.elements.categoriesToggle?.closest('.mobile-menu__item--dropdown');
+    if (dropdown) {
+      dropdown.classList.toggle('open');
+    }
+  },
+
+  closeCategories() {
+    const dropdown = this.elements.categoriesToggle?.closest('.mobile-menu__item--dropdown');
     if (dropdown) {
       dropdown.classList.remove('open');
     }
@@ -153,7 +288,6 @@ const MobileMenu = {
   openSearch() {
     this.elements.mobileSearch?.classList.add('active');
     this.elements.searchInput?.focus();
-    // Cerrar menú si está abierto
     this.closeMenu();
   },
 
@@ -162,13 +296,7 @@ const MobileMenu = {
     if (this.elements.searchInput) {
       this.elements.searchInput.value = '';
     }
-  },
-
-  performSearch() {
-    const query = this.elements.searchInput?.value.trim();
-    if (query) {
-      window.location.href = `search.html?q=${encodeURIComponent(query)}`;
-    }
+    this.hideSearchResults();
   }
 };
 
