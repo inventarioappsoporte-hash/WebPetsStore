@@ -2486,7 +2486,7 @@
             results = results.slice(0, 20);
             
             container.innerHTML = results.map(r => {
-                return '<div class="add-product-item" onclick="addProductToOrder(' + r.productId + ',' + r.variantIndex + ')">' +
+                return '<div class="add-product-item" onclick="addProductToOrder(\'' + r.productId + '\',' + r.variantIndex + ')">' +
                     '<img src="' + (r.image || 'assets/images/placeholder.svg') + '" onerror="this.src=\'assets/images/placeholder.svg\'">' +
                     '<div class="product-info">' +
                     '<div class="product-name">' + r.name + '</div>' +
