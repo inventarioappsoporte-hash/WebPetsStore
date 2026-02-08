@@ -39,7 +39,9 @@ class SearchEngine {
   }
 
   filterByCategory(categoryId) {
-    console.log('🔍 SearchEngine.filterByCategory() - Category ID:', categoryId);
+    // Asegurar que categoryId sea string para comparar con las keys del objeto
+    const categoryIdStr = String(categoryId);
+    console.log('🔍 SearchEngine.filterByCategory() - Category ID:', categoryIdStr, 'tipo:', typeof categoryIdStr);
     
     // Mapear IDs de categorías a filtros específicos
     const categoryFilters = {
@@ -175,11 +177,11 @@ class SearchEngine {
       }
     };
 
-    const categoryConfig = categoryFilters[categoryId];
+    const categoryConfig = categoryFilters[categoryIdStr];
     
     if (!categoryConfig) {
-      console.warn('🔍 SearchEngine.filterByCategory() - Category ID not found:', categoryId);
-      this.displayCategoryResults([], categoryId, 'Categoría no encontrada');
+      console.warn('🔍 SearchEngine.filterByCategory() - Category ID not found:', categoryIdStr);
+      this.displayCategoryResults([], categoryIdStr, 'Categoría no encontrada');
       return;
     }
     
@@ -190,7 +192,7 @@ class SearchEngine {
     console.log('🔍 SearchEngine.filterByCategory() - Resultados encontrados:', results.length);
     console.log('🔍 SearchEngine.filterByCategory() - Productos:', results.map(p => `${p.name} (${p.subcategory})`));
 
-    this.displayCategoryResults(results, categoryId, categoryConfig.name);
+    this.displayCategoryResults(results, categoryIdStr, categoryConfig.name);
     
     // Mostrar botón de limpiar cuando hay filtro activo
     this.showClearButton();
