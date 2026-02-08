@@ -119,10 +119,13 @@ class HomeRenderer {
   renderPromos(promos, promosConfig) {
     const container = document.querySelector(CONSTANTS.SELECTORS.PROMOS);
     if (!container) return;
+    
+    // Obtener la sección padre (.promos)
+    const promosSection = container.closest('section.promos');
 
     // Verificar si la sección debe mostrarse
     if (promosConfig && promosConfig.show === false) {
-      container.parentElement.style.display = 'none';
+      if (promosSection) promosSection.style.display = 'none';
       console.log('🏷️ Sección de promos oculta por configuración');
       return;
     }
@@ -131,10 +134,13 @@ class HomeRenderer {
     const visiblePromos = promos.filter(promo => promo.visible !== false);
     
     if (visiblePromos.length === 0) {
-      container.parentElement.style.display = 'none';
+      if (promosSection) promosSection.style.display = 'none';
       console.log('🏷️ Sección de promos oculta (ninguna promo visible)');
       return;
     }
+    
+    // Asegurar que la sección esté visible
+    if (promosSection) promosSection.style.display = '';
 
     container.innerHTML = visiblePromos
       .map(promo => `

@@ -11,21 +11,28 @@
   "promos": [
     {
       "icon": "⚡",
-      "text": "OFERTA FLASH"
+      "text": "OFERTA FLASH",
+      "visible": true
     },
     {
       "icon": "🎁",
-      "text": "2x1 IRRESISTIBLE"
+      "text": "2x1 IRRESISTIBLE",
+      "visible": true
     },
     {
       "icon": "🚚",
-      "text": "ENVÍO GRATIS"
+      "text": "ENVÍO GRATIS",
+      "visible": true
     },
     {
       "icon": "💳",
-      "text": "6 CUOTAS SIN INTERÉS"
+      "text": "6 CUOTAS SIN INTERÉS",
+      "visible": true
     }
   ],
+  "promosConfig": {
+    "show": false
+  },
   "sections": [
     {
       "id": "top-discounts",
