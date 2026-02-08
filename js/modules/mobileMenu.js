@@ -200,13 +200,19 @@ const MobileMenu = {
   async loadCategories() {
     try {
       const response = await fetch('data/categories.json');
-      const categories = await response.json();
+      const data = await response.json();
+      // El JSON tiene estructura { categories: [...] }
+      const categories = data.categories || data;
       
       if (this.elements.categoriesSubmenu && categories.length > 0) {
         const html = categories.map(cat => {
-          const slug = cat.slug || cat.name.toLowerCase().replace(/\s+/g, '-');
+          const slug = cat.slug || cat.name.toLowerCase()
+            .normalize('NFD').replace(/[\u0300-\u036f]/g, '')
+            .replace(/[^a-z0-9\s-]/g, '')
+            .replace(/\s+/g, '-')
+            .trim();
           const icon = this.getCategoryIcon(cat.name);
-          return `<a href="search.html?category=${encodeURIComponent(slug)}" class="mobile-menu__sublink">${icon} ${cat.name}</a>`;
+          return `<a href="search.html?category=${encodeURIComponent(cat.name)}" class="mobile-menu__sublink">${icon} ${cat.name}</a>`;
         }).join('');
         
         this.elements.categoriesSubmenu.innerHTML = html;
@@ -216,6 +222,8 @@ const MobileMenu = {
         sublinks.forEach(link => {
           link.addEventListener('click', () => this.closeMenu());
         });
+        
+        console.log('📱 MobileMenu: Categorías cargadas:', categories.length);
       }
     } catch (error) {
       console.error('Error cargando categorías:', error);
