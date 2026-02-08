@@ -61,23 +61,33 @@ class HomeRenderer {
     // Determinar qué imagen usar según el tamaño de pantalla
     const isMobile = window.innerWidth <= 768;
     const imageToUse = (isMobile && heroConfig.imageMobile) ? heroConfig.imageMobile : heroConfig.image;
+    const fallbackImage = heroConfig.image; // Siempre usar desktop como fallback
+    
+    console.log('🎬 renderHero - isMobile:', isMobile, 'imageToUse:', imageToUse, 'fallback:', fallbackImage);
     
     // Actualizar imagen del hero si está configurada
     if (heroImage && imageToUse) {
       // Precargar la imagen antes de mostrarla para evitar flash
       const newImage = new Image();
       newImage.onload = () => {
+        console.log('✅ Hero image loaded:', imageToUse);
         heroImage.src = imageToUse;
         heroImage.alt = heroConfig.title || 'Producto destacado';
         // Mostrar el hero una vez cargada la imagen
         if (heroSection) heroSection.style.opacity = '1';
       };
       newImage.onerror = () => {
-        // Si falla, mostrar de todos modos
+        console.log('❌ Hero image failed:', imageToUse, '- trying fallback:', fallbackImage);
+        // Si falla la imagen móvil, intentar con la desktop
+        if (imageToUse !== fallbackImage && fallbackImage) {
+          heroImage.src = fallbackImage;
+        }
+        // Mostrar el hero de todos modos
         if (heroSection) heroSection.style.opacity = '1';
       };
       newImage.src = imageToUse;
     } else {
+      console.log('⚠️ No hero image configured');
       // Si no hay imagen configurada, mostrar el hero con la imagen por defecto
       if (heroSection) heroSection.style.opacity = '1';
     }
@@ -90,6 +100,7 @@ class HomeRenderer {
         if (nowMobile !== currentIsMobile && heroImage) {
           currentIsMobile = nowMobile;
           const newSrc = nowMobile ? heroConfig.imageMobile : heroConfig.image;
+          console.log('📱 Resize detected - switching to:', newSrc);
           if (newSrc) heroImage.src = newSrc;
         }
       });
