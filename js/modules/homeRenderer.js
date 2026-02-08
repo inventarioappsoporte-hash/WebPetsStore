@@ -34,7 +34,7 @@ class HomeRenderer {
       this.renderHero(homeConfig.hero, products);
 
       // Renderizar promos
-      this.renderPromos(homeConfig.promos);
+      this.renderPromos(homeConfig.promos, homeConfig.promosConfig);
 
       // Renderizar secciones
       console.log('🔄 Starting to render sections...');
@@ -116,11 +116,27 @@ class HomeRenderer {
     console.log('🎬 renderHero - image:', heroConfig.image, 'productId:', heroConfig.productId, 'hideButtons:', heroConfig.hideButtons);
   }
 
-  renderPromos(promos) {
+  renderPromos(promos, promosConfig) {
     const container = document.querySelector(CONSTANTS.SELECTORS.PROMOS);
     if (!container) return;
 
-    container.innerHTML = promos
+    // Verificar si la sección debe mostrarse
+    if (promosConfig && promosConfig.show === false) {
+      container.parentElement.style.display = 'none';
+      console.log('🏷️ Sección de promos oculta por configuración');
+      return;
+    }
+    
+    // Filtrar solo promos visibles
+    const visiblePromos = promos.filter(promo => promo.visible !== false);
+    
+    if (visiblePromos.length === 0) {
+      container.parentElement.style.display = 'none';
+      console.log('🏷️ Sección de promos oculta (ninguna promo visible)');
+      return;
+    }
+
+    container.innerHTML = visiblePromos
       .map(promo => `
         <div class="promo-badge">
           <span class="promo-badge__icon">${promo.icon}</span>
