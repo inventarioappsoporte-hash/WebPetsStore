@@ -58,12 +58,16 @@ class HomeRenderer {
     const heroSection = document.querySelector('.hero');
     const heroImage = document.querySelector('.hero__image');
     
+    // Determinar qué imagen usar según el tamaño de pantalla
+    const isMobile = window.innerWidth <= 768;
+    const imageToUse = (isMobile && heroConfig.imageMobile) ? heroConfig.imageMobile : heroConfig.image;
+    
     // Actualizar imagen del hero si está configurada
-    if (heroImage && heroConfig.image) {
+    if (heroImage && imageToUse) {
       // Precargar la imagen antes de mostrarla para evitar flash
       const newImage = new Image();
       newImage.onload = () => {
-        heroImage.src = heroConfig.image;
+        heroImage.src = imageToUse;
         heroImage.alt = heroConfig.title || 'Producto destacado';
         // Mostrar el hero una vez cargada la imagen
         if (heroSection) heroSection.style.opacity = '1';
@@ -72,10 +76,23 @@ class HomeRenderer {
         // Si falla, mostrar de todos modos
         if (heroSection) heroSection.style.opacity = '1';
       };
-      newImage.src = heroConfig.image;
+      newImage.src = imageToUse;
     } else {
       // Si no hay imagen configurada, mostrar el hero con la imagen por defecto
       if (heroSection) heroSection.style.opacity = '1';
+    }
+    
+    // Escuchar cambios de tamaño de ventana para cambiar imagen
+    if (heroConfig.imageMobile && heroConfig.image) {
+      let currentIsMobile = isMobile;
+      window.addEventListener('resize', () => {
+        const nowMobile = window.innerWidth <= 768;
+        if (nowMobile !== currentIsMobile && heroImage) {
+          currentIsMobile = nowMobile;
+          const newSrc = nowMobile ? heroConfig.imageMobile : heroConfig.image;
+          if (newSrc) heroImage.src = newSrc;
+        }
+      });
     }
     
     // Actualizar título si existe el elemento
@@ -129,7 +146,7 @@ class HomeRenderer {
       }
     }
     
-    console.log('🎬 renderHero - image:', heroConfig.image, 'productId:', heroConfig.productId, 'hideButtons:', heroConfig.hideButtons);
+    console.log('🎬 renderHero - image:', heroConfig.image, 'imageMobile:', heroConfig.imageMobile, 'using:', imageToUse, 'productId:', heroConfig.productId, 'hideButtons:', heroConfig.hideButtons);
   }
 
   renderPromos(promos, promosConfig) {
