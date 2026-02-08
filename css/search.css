@@ -1,22 +1,22 @@
 /* Search Page */
 .main {
-  margin-top: 120px; /* Compensar header fijo */
+  margin-top: 80px; /* Compensar header fijo */
 }
 
 @media (max-width: 768px) {
   .main {
-    margin-top: 140px;
+    margin-top: 0; /* En móvil el padding-top de main--with-header-space ya compensa */
   }
 }
 
 .search {
-  padding: var(--spacing-2xl) 0;
+  padding: var(--spacing-lg) 0;
 }
 
 .search__title {
   text-align: center;
-  margin-bottom: var(--spacing-lg);
-  font-size: var(--font-size-3xl);
+  margin-bottom: var(--spacing-md);
+  font-size: var(--font-size-2xl);
 }
 
 .search__box {
