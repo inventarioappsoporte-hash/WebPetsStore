@@ -248,6 +248,19 @@ class FirebaseOrders {
       // Reservar stock (descontar de inventario)
       await FirebaseOrders.reserveStock(items);
 
+      // 📧 Enviar notificación por email al admin
+      if (typeof EmailNotification !== 'undefined') {
+        EmailNotification.sendOrderNotification({
+          orderNumber: orderNumber,
+          customerName: customerData.name,
+          customerPhone: customerData.phone,
+          items: items,
+          total: total
+        }).catch(err => {
+          console.warn('⚠️ Email notification failed:', err);
+        });
+      }
+
       return {
         success: true,
         orderId: docRef.id,
