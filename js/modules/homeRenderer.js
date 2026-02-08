@@ -55,11 +55,27 @@ class HomeRenderer {
   }
 
   renderHero(heroConfig, products) {
-    // Actualizar imagen del hero si está configurada
+    const heroSection = document.querySelector('.hero');
     const heroImage = document.querySelector('.hero__image');
+    
+    // Actualizar imagen del hero si está configurada
     if (heroImage && heroConfig.image) {
-      heroImage.src = heroConfig.image;
-      heroImage.alt = heroConfig.title || 'Producto destacado';
+      // Precargar la imagen antes de mostrarla para evitar flash
+      const newImage = new Image();
+      newImage.onload = () => {
+        heroImage.src = heroConfig.image;
+        heroImage.alt = heroConfig.title || 'Producto destacado';
+        // Mostrar el hero una vez cargada la imagen
+        if (heroSection) heroSection.style.opacity = '1';
+      };
+      newImage.onerror = () => {
+        // Si falla, mostrar de todos modos
+        if (heroSection) heroSection.style.opacity = '1';
+      };
+      newImage.src = heroConfig.image;
+    } else {
+      // Si no hay imagen configurada, mostrar el hero con la imagen por defecto
+      if (heroSection) heroSection.style.opacity = '1';
     }
     
     // Actualizar título si existe el elemento

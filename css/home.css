@@ -6,6 +6,8 @@
   border-radius: 0; /* Sin bordes redondeados arriba para que llegue al top */
   overflow: hidden;
   margin-top: 0; /* El hero empieza desde arriba */
+  opacity: 0; /* Oculto hasta que JS cargue la imagen correcta */
+  transition: opacity 0.3s ease;
 }
 
 /* En móvil el header es más alto */
