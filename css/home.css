@@ -759,7 +759,14 @@
 
 @media (max-width: 768px) {
   .hero {
-    height: 350px;
+    height: 70vh; /* Más alto en móvil para imagen vertical */
+    min-height: 450px;
+    max-height: 650px;
+  }
+
+  .hero__image {
+    object-fit: cover;
+    object-position: center top; /* Mostrar la parte superior de la imagen */
   }
 
   .hero__cta--mobile {
@@ -788,7 +795,9 @@
 
 @media (max-width: 480px) {
   .hero {
-    height: 300px;
+    height: 80vh; /* Aún más alto en pantallas pequeñas para imagen vertical */
+    min-height: 450px;
+    max-height: 700px;
   }
 
   .hero__cta-mobile {
@@ -815,7 +824,9 @@
 
 @media (max-width: 375px) {
   .hero {
-    height: 280px;
+    height: 75vh;
+    min-height: 400px;
+    max-height: 600px;
   }
 
   .hero__cta--mobile {
