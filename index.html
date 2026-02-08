@@ -172,11 +172,15 @@
     <div class="mobile-menu__links">
       <a href="index.html" class="mobile-menu__link mobile-menu__link--active">🏠 Home</a>
       <a href="search.html" class="mobile-menu__link">🔍 Buscar</a>
-      <a href="search.html?category=ropa" class="mobile-menu__link">👕 Ropa</a>
-      <a href="search.html?category=juguetes" class="mobile-menu__link">🎾 Juguetes</a>
-      <a href="search.html?category=comederos" class="mobile-menu__link">🍽️ Comederos</a>
-      <a href="search.html?category=colchonetas" class="mobile-menu__link">🛏️ Colchonetas</a>
-      <a href="search.html?category=accesorios" class="mobile-menu__link">🎀 Accesorios</a>
+      <div class="mobile-menu__item mobile-menu__item--dropdown">
+        <button class="mobile-menu__link mobile-menu__link--toggle" id="mobile-categories-toggle">
+          📂 Categorías
+          <span class="mobile-menu__arrow">▼</span>
+        </button>
+        <div class="mobile-menu__submenu" id="mobile-categories-submenu">
+          <!-- Se llena dinámicamente con JS -->
+        </div>
+      </div>
       <a href="contact.html" class="mobile-menu__link">📞 Contacto</a>
       <a href="mayorista.html" class="mobile-menu__link">💼 Mayorista</a>
     </div>

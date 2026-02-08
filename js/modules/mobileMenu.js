@@ -12,7 +12,9 @@ const MobileMenu = {
     searchToggle: null,
     mobileSearch: null,
     searchClose: null,
-    searchInput: null
+    searchInput: null,
+    categoriesToggle: null,
+    categoriesSubmenu: null
   },
 
   init() {
@@ -25,6 +27,8 @@ const MobileMenu = {
     this.elements.mobileSearch = document.getElementById('mobile-search');
     this.elements.searchClose = document.getElementById('mobile-search-close');
     this.elements.searchInput = document.getElementById('mobile-search-input');
+    this.elements.categoriesToggle = document.getElementById('mobile-categories-toggle');
+    this.elements.categoriesSubmenu = document.getElementById('mobile-categories-submenu');
 
     // Verificar que existan los elementos principales
     if (!this.elements.menuToggle || !this.elements.mobileMenu) {
@@ -33,6 +37,7 @@ const MobileMenu = {
     }
 
     this.bindEvents();
+    this.loadCategories();
     console.log('📱 MobileMenu inicializado');
   },
 
@@ -46,11 +51,14 @@ const MobileMenu = {
     // Cerrar menú al hacer click en overlay
     this.elements.menuOverlay?.addEventListener('click', () => this.closeMenu());
     
-    // Cerrar menú al seleccionar una opción
-    const menuLinks = this.elements.mobileMenu?.querySelectorAll('.mobile-menu__link');
+    // Cerrar menú al seleccionar una opción (excepto el toggle de categorías)
+    const menuLinks = this.elements.mobileMenu?.querySelectorAll('.mobile-menu__link:not(.mobile-menu__link--toggle)');
     menuLinks?.forEach(link => {
       link.addEventListener('click', () => this.closeMenu());
     });
+
+    // Toggle de categorías
+    this.elements.categoriesToggle?.addEventListener('click', () => this.toggleCategories());
 
     // Toggle de búsqueda móvil
     this.elements.searchToggle?.addEventListener('click', () => this.toggleSearch());
@@ -74,6 +82,36 @@ const MobileMenu = {
     });
   },
 
+  async loadCategories() {
+    try {
+      const response = await fetch('data/categories.json');
+      const categories = await response.json();
+      
+      if (this.elements.categoriesSubmenu && categories.length > 0) {
+        this.elements.categoriesSubmenu.innerHTML = categories.map(cat => 
+          `<a href="search.html?category=${encodeURIComponent(cat.id)}" class="mobile-menu__submenu-link" data-category="${cat.id}">
+            ${cat.icon || '📦'} ${cat.name}
+          </a>`
+        ).join('');
+
+        // Agregar evento para cerrar menú al seleccionar categoría
+        const categoryLinks = this.elements.categoriesSubmenu.querySelectorAll('.mobile-menu__submenu-link');
+        categoryLinks.forEach(link => {
+          link.addEventListener('click', () => this.closeMenu());
+        });
+      }
+    } catch (error) {
+      console.error('Error cargando categorías:', error);
+    }
+  },
+
+  toggleCategories() {
+    const dropdown = this.elements.categoriesToggle?.closest('.mobile-menu__item--dropdown');
+    if (dropdown) {
+      dropdown.classList.toggle('open');
+    }
+  },
+
   toggleMenu() {
     const isOpen = this.elements.mobileMenu?.classList.contains('active');
     if (isOpen) {
@@ -95,6 +133,12 @@ const MobileMenu = {
     this.elements.menuOverlay?.classList.remove('active');
     this.elements.menuToggle?.classList.remove('active');
     document.body.style.overflow = ''; // Restaurar scroll
+    
+    // Cerrar submenú de categorías
+    const dropdown = document.querySelector('.mobile-menu__item--dropdown');
+    if (dropdown) {
+      dropdown.classList.remove('open');
+    }
   },
 
   toggleSearch() {
