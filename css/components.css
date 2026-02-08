@@ -29,12 +29,12 @@
 
 /* Compensar el espacio del header fixed en páginas sin hero */
 .main--with-header-space {
-  padding-top: 120px;
+  padding-top: 100px; /* Ajustado para que no se meta debajo del header */
 }
 
 @media (max-width: 768px) {
   .main--with-header-space {
-    padding-top: 140px;
+    padding-top: 110px;
   }
 }
 

@@ -1,13 +1,13 @@
 /* Selector de Variantes */
 .variant-selector {
-  margin: var(--spacing-xl) 0;
-  padding: var(--spacing-lg);
+  margin: var(--spacing-sm) 0; /* Reducido de xl */
+  padding: var(--spacing-sm); /* Reducido de lg */
   background: var(--color-bg-secondary);
   border-radius: var(--radius-md);
 }
 
 .variant-attribute {
-  margin-bottom: var(--spacing-lg);
+  margin-bottom: var(--spacing-sm); /* Reducido de lg */
 }
 
 .variant-attribute:last-child {
@@ -17,28 +17,28 @@
 .variant-attribute__label {
   display: block;
   font-weight: 600;
-  font-size: var(--font-size-md);
-  margin-bottom: var(--spacing-sm);
+  font-size: var(--font-size-sm); /* Reducido de md */
+  margin-bottom: var(--spacing-xs); /* Reducido de sm */
   color: var(--color-text-primary);
 }
 
 .variant-attribute__options {
   display: flex;
   flex-wrap: wrap;
-  gap: var(--spacing-sm);
+  gap: var(--spacing-xs); /* Reducido de sm */
 }
 
 /* Botones de Variante */
 .variant-option {
-  padding: var(--spacing-sm) var(--spacing-md);
+  padding: var(--spacing-xs) var(--spacing-sm); /* Reducido */
   border: 2px solid var(--color-border);
   background: white;
   border-radius: var(--radius-sm);
-  font-size: var(--font-size-sm);
+  font-size: var(--font-size-xs); /* Reducido de sm */
   font-weight: 500;
   cursor: pointer;
   transition: all 0.2s ease;
-  min-width: 60px;
+  min-width: 50px; /* Reducido de 60px */
   text-align: center;
 }
 
@@ -87,14 +87,14 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: var(--spacing-xs);
-  padding: var(--spacing-sm);
-  min-width: 80px;
+  gap: 2px; /* Reducido */
+  padding: var(--spacing-xs);
+  min-width: 60px; /* Reducido de 80px */
 }
 
 .variant-option__color {
-  width: 32px;
-  height: 32px;
+  width: 24px; /* Reducido de 32px */
+  height: 24px;
   border-radius: 50%;
   border: 2px solid var(--color-border);
   display: block;
@@ -118,12 +118,12 @@
 
 /* Información de Variante */
 .variant-info {
-  margin-top: var(--spacing-md);
-  padding-top: var(--spacing-md);
+  margin-top: var(--spacing-xs); /* Reducido de md */
+  padding-top: var(--spacing-xs); /* Reducido de md */
   border-top: 1px solid var(--color-border);
   display: flex;
   flex-wrap: wrap;
-  gap: var(--spacing-md);
+  gap: var(--spacing-sm); /* Reducido de md */
   align-items: center;
 }
 
