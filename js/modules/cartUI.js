@@ -529,6 +529,13 @@ class CartUI {
     const addressSelector = document.getElementById('saved-addresses-selector');
     const saveAddressOption = document.getElementById('save-address-option');
     
+    // TEMPORALMENTE DESHABILITADO: Ocultar toda la funcionalidad de usuarios
+    if (userSection) userSection.style.display = 'none';
+    if (loginPrompt) loginPrompt.style.display = 'none';
+    if (addressSelector) addressSelector.style.display = 'none';
+    if (saveAddressOption) saveAddressOption.style.display = 'none';
+    return; // Salir sin procesar usuarios
+    
     // Verificar si UserAuth está disponible y el usuario está logueado
     if (typeof UserAuth !== 'undefined' && UserAuth.isLoggedIn()) {
       const user = UserAuth.getUser();
@@ -540,9 +547,11 @@ class CartUI {
         return;
       }
       
+      // TEMPORALMENTE OCULTO: Pausamos registro de usuarios
       // Mostrar sección de usuario
       if (userSection) {
-        userSection.style.display = 'flex';
+        userSection.style.display = 'none'; // TEMPORALMENTE OCULTO
+        // userSection.style.display = 'flex';
         const avatarEl = document.getElementById('cart-user-avatar');
         const nameEl = document.getElementById('cart-user-name');
         if (avatarEl) avatarEl.textContent = user.photoURL ? '' : '👤';
