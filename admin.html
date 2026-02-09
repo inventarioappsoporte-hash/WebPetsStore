@@ -976,6 +976,44 @@
             border: 1px solid var(--border); border-radius: 6px;
             color: var(--text); font-size: 0.75rem; resize: none; height: 50px; font-family: inherit;
         }
+        /* Shipping Edit Section */
+        .shipping-edit-section {
+            background: var(--bg); border-radius: 8px; border: 1px solid var(--border);
+            padding: 0.75rem; margin-top: 0.5rem;
+        }
+        .shipping-edit-section.collapsed .shipping-edit-content { display: none; }
+        .shipping-edit-header {
+            display: flex; justify-content: space-between; align-items: center;
+            cursor: pointer; user-select: none;
+        }
+        .shipping-edit-header:hover { opacity: 0.8; }
+        .shipping-edit-toggle {
+            background: none; border: none; color: var(--text-muted);
+            font-size: 0.75rem; cursor: pointer; padding: 0.25rem;
+        }
+        .shipping-edit-content { margin-top: 0.75rem; }
+        .shipping-edit-row {
+            display: grid; grid-template-columns: 1fr 1fr; gap: 0.5rem; margin-bottom: 0.5rem;
+        }
+        .shipping-edit-row.full { grid-template-columns: 1fr; }
+        .shipping-edit-group { display: flex; flex-direction: column; gap: 0.25rem; }
+        .shipping-edit-group label {
+            font-size: 0.625rem; color: var(--text-muted); text-transform: uppercase;
+            letter-spacing: 0.03em;
+        }
+        .shipping-edit-group input, .shipping-edit-group select {
+            padding: 0.5rem; background: var(--bg-card); border: 1px solid var(--border);
+            border-radius: 6px; color: var(--text); font-size: 0.75rem;
+        }
+        .shipping-edit-group input:focus, .shipping-edit-group select:focus {
+            outline: none; border-color: var(--primary);
+        }
+        .shipping-edit-group input::placeholder { color: var(--text-muted); }
+        .shipping-tracking-badge {
+            display: inline-flex; align-items: center; gap: 0.25rem;
+            background: rgba(59,130,246,0.15); color: var(--info);
+            padding: 0.25rem 0.5rem; border-radius: 4px; font-size: 0.6875rem; font-weight: 600;
+        }
         .modal-textarea:focus { outline: none; border-color: var(--primary); }
         .modal-textarea::placeholder { color: var(--text-muted); }
         .modal-footer {
@@ -1042,6 +1080,110 @@
             color: var(--text); text-align: right; font-size: 0.6875rem;
         }
         .item-price-edit:focus { outline: none; border-color: var(--primary); }
+        
+        /* ========== SHIPPING SECTION ========== */
+        .shipping-section {
+            margin-top: 0.75rem;
+            padding: 0.75rem;
+            background: var(--bg);
+            border-radius: 8px;
+            border: 1px solid var(--border);
+        }
+        .shipping-section-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 0.5rem;
+            cursor: pointer;
+        }
+        .shipping-section-title {
+            font-size: 0.75rem;
+            font-weight: 600;
+            color: var(--text);
+            display: flex;
+            align-items: center;
+            gap: 0.375rem;
+        }
+        .shipping-toggle {
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            transition: transform 0.2s;
+        }
+        .shipping-section.collapsed .shipping-toggle { transform: rotate(-90deg); }
+        .shipping-section.collapsed .shipping-fields { display: none; }
+        .shipping-fields {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0.5rem;
+        }
+        .shipping-field {
+            display: flex;
+            flex-direction: column;
+            gap: 0.25rem;
+        }
+        .shipping-field.full-width {
+            grid-column: 1 / -1;
+        }
+        .shipping-field label {
+            font-size: 0.625rem;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.03em;
+        }
+        .shipping-field input,
+        .shipping-field select,
+        .shipping-field textarea {
+            padding: 0.5rem;
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            color: var(--text);
+            font-size: 0.75rem;
+            font-family: inherit;
+        }
+        .shipping-field input:focus,
+        .shipping-field select:focus,
+        .shipping-field textarea:focus {
+            outline: none;
+            border-color: var(--primary);
+        }
+        .shipping-field textarea {
+            resize: none;
+            height: 50px;
+        }
+        .shipping-field input::placeholder,
+        .shipping-field textarea::placeholder {
+            color: var(--text-muted);
+        }
+        .shipping-cost-row {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        .shipping-cost-input {
+            width: 100px;
+        }
+        .tracking-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.25rem;
+            padding: 0.25rem 0.5rem;
+            background: rgba(59,130,246,0.15);
+            color: #3b82f6;
+            border-radius: 4px;
+            font-size: 0.625rem;
+            font-weight: 600;
+        }
+        @media (max-width: 768px) {
+            .shipping-fields {
+                grid-template-columns: 1fr;
+            }
+            .shipping-field input,
+            .shipping-field select {
+                font-size: 0.8125rem;
+                padding: 0.625rem;
+            }
+        }
         
         /* Modal Responsive */
         @media (max-width: 768px) {
@@ -1572,6 +1714,62 @@
                     <div class="total-item"><span class="total-label">Envío:</span><span class="total-value" id="modal-shipping-cost">$0</span></div>
                     <div class="total-item"><span class="total-label">Total:</span><span class="total-value total-final" id="modal-total">$0</span></div>
                 </div>
+                
+                <!-- Shipping Section -->
+                <div class="shipping-section" id="shipping-section">
+                    <div class="shipping-section-header" onclick="toggleShippingSection()">
+                        <span class="shipping-section-title">🚚 Datos de Envío</span>
+                        <span class="shipping-toggle">▼</span>
+                    </div>
+                    <div class="shipping-fields">
+                        <div class="shipping-field full-width">
+                            <label>Dirección de entrega</label>
+                            <input type="text" id="modal-shipping-address" placeholder="Calle, número, piso, depto...">
+                        </div>
+                        <div class="shipping-field">
+                            <label>Localidad</label>
+                            <input type="text" id="modal-shipping-city" placeholder="Barrio / Localidad">
+                        </div>
+                        <div class="shipping-field">
+                            <label>Código Postal</label>
+                            <input type="text" id="modal-shipping-zipcode" placeholder="CP">
+                        </div>
+                        <div class="shipping-field">
+                            <label>Método de envío</label>
+                            <select id="modal-shipping-method">
+                                <option value="">-- Seleccionar --</option>
+                                <option value="retiro">🏪 Retiro en tienda</option>
+                                <option value="moto">🏍️ Moto / Remis</option>
+                                <option value="correo">📦 Correo Argentino</option>
+                                <option value="andreani">📦 Andreani</option>
+                                <option value="oca">📦 OCA</option>
+                                <option value="flex">📦 Mercado Envíos Flex</option>
+                                <option value="otro">📦 Otro</option>
+                            </select>
+                        </div>
+                        <div class="shipping-field">
+                            <label>Costo de envío ($)</label>
+                            <input type="number" id="modal-shipping-cost-input" placeholder="0" min="0" step="100" onchange="updateShippingCost(this.value)">
+                        </div>
+                        <div class="shipping-field full-width" id="carrier-info-field">
+                            <label>Empresa / Remisero</label>
+                            <input type="text" id="modal-carrier-name" placeholder="Nombre de la empresa o remisero">
+                        </div>
+                        <div class="shipping-field" id="carrier-phone-field">
+                            <label>Teléfono del remisero</label>
+                            <input type="tel" id="modal-carrier-phone" placeholder="11-1234-5678">
+                        </div>
+                        <div class="shipping-field" id="tracking-field">
+                            <label>Nº de Tracking / Seguimiento</label>
+                            <input type="text" id="modal-tracking-number" placeholder="Código de seguimiento">
+                        </div>
+                        <div class="shipping-field full-width">
+                            <label>Notas de envío</label>
+                            <textarea id="modal-shipping-notes" placeholder="Instrucciones especiales, horarios, etc..."></textarea>
+                        </div>
+                    </div>
+                </div>
+                
                 <div class="modal-notes-compact">
                     <textarea class="modal-textarea" id="modal-admin-notes" placeholder="Notas internas..."></textarea>
                 </div>
@@ -2210,6 +2408,75 @@
             return date.toLocaleDateString('es-AR');
         }
 
+        // Get Shipping Method Label
+        function getShippingMethodLabel(method) {
+            const labels = {
+                'retiro': '🏪 Retiro en tienda',
+                'moto': '🏍️ Moto / Remis',
+                'correo': '📦 Correo Argentino',
+                'andreani': '📦 Andreani',
+                'oca': '📦 OCA',
+                'flex': '📦 Mercado Envíos Flex',
+                'otro': '📦 Otro'
+            };
+            return labels[method] || method || 'No especificado';
+        }
+
+        // Get Shipping Info HTML for Receipt - Lee valores actuales del modal
+        function getShippingInfoHTML() {
+            // Leer valores actuales del modal (no los guardados)
+            const address = document.getElementById('modal-shipping-address')?.value || '';
+            const city = document.getElementById('modal-shipping-city')?.value || '';
+            const zipcode = document.getElementById('modal-shipping-zipcode')?.value || '';
+            const method = document.getElementById('modal-shipping-method')?.value || '';
+            const carrierName = document.getElementById('modal-carrier-name')?.value || '';
+            const carrierPhone = document.getElementById('modal-carrier-phone')?.value || '';
+            const trackingNumber = document.getElementById('modal-tracking-number')?.value || '';
+            const notes = document.getElementById('modal-shipping-notes')?.value || '';
+            const zone = currentEditingOrder?.shippingInfo?.zone;
+            
+            let html = '';
+            
+            // Método de envío
+            if (method) {
+                html += '<p>🚚 ' + getShippingMethodLabel(method) + '</p>';
+            } else if (zone) {
+                html += '<p>🚚 ' + zone + '</p>';
+            }
+            
+            // Dirección
+            if (address) {
+                html += '<p>📍 ' + address;
+                if (city) html += ', ' + city;
+                if (zipcode) html += ' (CP: ' + zipcode + ')';
+                html += '</p>';
+            }
+            
+            // Empresa / Remisero
+            if (carrierName) {
+                html += '<p>🚗 ' + carrierName;
+                if (carrierPhone) html += ' - Tel: ' + carrierPhone;
+                html += '</p>';
+            }
+            
+            // Tracking
+            if (trackingNumber) {
+                html += '<p style="background:#e3f2fd;padding:5px 10px;border-radius:4px;margin-top:5px;">🔍 <strong>Tracking:</strong> ' + trackingNumber + '</p>';
+            }
+            
+            // Notas de envío
+            if (notes) {
+                html += '<p style="font-size:10px;color:#666;">📝 ' + notes + '</p>';
+            }
+            
+            // Si no hay nada, mostrar zona o "No especificado"
+            if (!html) {
+                html = '<p>🚚 ' + (zone || 'No especificado') + '</p>';
+            }
+            
+            return html;
+        }
+
         // Confirm Order
         window.confirmOrder = async (orderId) => {
             if (!confirm('¿Confirmar este pedido?')) return;
@@ -2319,6 +2586,18 @@
             document.getElementById('modal-shipping-zone').textContent = order.shippingInfo?.zone || 'No especificado';
             document.getElementById('modal-adjusted-badge').style.display = order.wasAdjusted ? 'inline-flex' : 'none';
             
+            // Cargar datos de envío
+            const shipping = order.shippingDetails || order.shippingInfo || {};
+            document.getElementById('modal-shipping-address').value = shipping.address || order.customerAddress || '';
+            document.getElementById('modal-shipping-city').value = shipping.city || '';
+            document.getElementById('modal-shipping-zipcode').value = shipping.zipcode || '';
+            document.getElementById('modal-shipping-method').value = shipping.method || '';
+            document.getElementById('modal-shipping-cost-input').value = order.shippingCost || 0;
+            document.getElementById('modal-carrier-name').value = shipping.carrierName || '';
+            document.getElementById('modal-carrier-phone').value = shipping.carrierPhone || '';
+            document.getElementById('modal-tracking-number').value = shipping.trackingNumber || '';
+            document.getElementById('modal-shipping-notes').value = shipping.notes || '';
+            
             renderModalItems();
             document.getElementById('order-modal').classList.add('active');
         };
@@ -2367,11 +2646,20 @@
 
         function updateModalTotals() {
             const subtotal = editedItems.reduce((sum, item) => sum + (item.price * item.quantity), 0);
-            const shipping = currentEditingOrder?.shippingCost || 0;
+            const shipping = parseFloat(document.getElementById('modal-shipping-cost-input')?.value) || currentEditingOrder?.shippingCost || 0;
             document.getElementById('modal-subtotal').textContent = formatPrice(subtotal);
             document.getElementById('modal-shipping-cost').textContent = formatPrice(shipping);
             document.getElementById('modal-total').textContent = formatPrice(subtotal + shipping);
         }
+        
+        window.toggleShippingSection = () => {
+            const section = document.getElementById('shipping-section');
+            section.classList.toggle('collapsed');
+        };
+        
+        window.updateShippingCost = (value) => {
+            updateModalTotals();
+        };
 
         window.closeOrderModal = () => {
             document.getElementById('order-modal').classList.remove('active');
@@ -2387,8 +2675,21 @@
             const newStatus = document.getElementById('modal-order-status').value;
             const adminNotes = document.getElementById('modal-admin-notes').value;
             const newSubtotal = editedItems.reduce((sum, item) => sum + (item.price * item.quantity), 0);
-            const newTotal = newSubtotal + (currentEditingOrder.shippingCost || 0);
+            const newShippingCost = parseFloat(document.getElementById('modal-shipping-cost-input').value) || 0;
+            const newTotal = newSubtotal + newShippingCost;
             const wasAdjusted = Math.abs(newTotal - (currentEditingOrder.total || 0)) > 0.01;
+            
+            // Recopilar datos de envío
+            const shippingDetails = {
+                address: document.getElementById('modal-shipping-address').value.trim(),
+                city: document.getElementById('modal-shipping-city').value.trim(),
+                zipcode: document.getElementById('modal-shipping-zipcode').value.trim(),
+                method: document.getElementById('modal-shipping-method').value,
+                carrierName: document.getElementById('modal-carrier-name').value.trim(),
+                carrierPhone: document.getElementById('modal-carrier-phone').value.trim(),
+                trackingNumber: document.getElementById('modal-tracking-number').value.trim(),
+                notes: document.getElementById('modal-shipping-notes').value.trim()
+            };
             
             try {
                 const STORE_ID = 'petsstore-b0516';
@@ -2397,6 +2698,8 @@
                     items: editedItems,
                     itemsCount: editedItems.length,
                     subtotal: newSubtotal,
+                    shippingCost: newShippingCost,
+                    shippingDetails: shippingDetails,
                     total: newTotal,
                     adminNotes: adminNotes || '',
                     wasAdjusted: wasAdjusted || currentEditingOrder.wasAdjusted || false,
@@ -2620,7 +2923,7 @@
         <p>📅 Fecha: ${dateStr}</p>
         <p>👤 Cliente: ${currentEditingOrder.customerName || 'Cliente'}</p>
         <p>📞 Tel: ${currentEditingOrder.customerPhone || '-'}</p>
-        <p>🚚 Envío: ${currentEditingOrder.shippingInfo?.zone || 'No especificado'}</p>
+        ${getShippingInfoHTML()}
     </div>
     
     <div class="items">
@@ -2666,8 +2969,17 @@
         
         function generateReceiptText() {
             const subtotal = editedItems.reduce((sum, item) => sum + (item.price * item.quantity), 0);
-            const shipping = currentEditingOrder?.shippingCost || 0;
+            const shipping = parseFloat(document.getElementById('modal-shipping-cost-input')?.value) || currentEditingOrder?.shippingCost || 0;
             const total = subtotal + shipping;
+            
+            // Obtener datos de envío del modal
+            const shippingAddress = document.getElementById('modal-shipping-address')?.value || '';
+            const shippingCity = document.getElementById('modal-shipping-city')?.value || '';
+            const shippingMethod = document.getElementById('modal-shipping-method')?.value || '';
+            const carrierName = document.getElementById('modal-carrier-name')?.value || '';
+            const carrierPhone = document.getElementById('modal-carrier-phone')?.value || '';
+            const trackingNumber = document.getElementById('modal-tracking-number')?.value || '';
+            const shippingNotes = document.getElementById('modal-shipping-notes')?.value || '';
             
             let text = '🧾 *RECIBO - PETS STORE*\n';
             text += '━━━━━━━━━━━━━━━━━━\n';
@@ -2680,6 +2992,21 @@
             text += 'Subtotal: $' + subtotal.toLocaleString('es-AR') + '\n';
             text += 'Envío: $' + shipping.toLocaleString('es-AR') + '\n';
             text += '*TOTAL: $' + total.toLocaleString('es-AR') + '*\n';
+            
+            // Agregar info de envío si existe
+            if (shippingAddress || carrierName || trackingNumber) {
+                text += '\n━━━━━━━━━━━━━━━━━━\n';
+                text += '*🚚 DATOS DE ENVÍO:*\n';
+                if (shippingAddress) text += '📍 ' + shippingAddress + (shippingCity ? ', ' + shippingCity : '') + '\n';
+                if (shippingMethod) {
+                    const methodNames = {retiro:'Retiro en tienda',moto:'Moto/Remis',correo:'Correo Argentino',andreani:'Andreani',oca:'OCA',flex:'Mercado Envíos Flex',otro:'Otro'};
+                    text += '📦 Método: ' + (methodNames[shippingMethod] || shippingMethod) + '\n';
+                }
+                if (carrierName) text += '🚗 Transportista: ' + carrierName + (carrierPhone ? ' (' + carrierPhone + ')' : '') + '\n';
+                if (trackingNumber) text += '🔍 Tracking: ' + trackingNumber + '\n';
+                if (shippingNotes) text += '📝 Notas: ' + shippingNotes + '\n';
+            }
+            
             text += '━━━━━━━━━━━━━━━━━━\n';
             text += '¡Gracias por tu compra! 🐾\n';
             text += 'Pets Store Argentina';
