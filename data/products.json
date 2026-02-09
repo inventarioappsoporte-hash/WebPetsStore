@@ -14922,7 +14922,7 @@
     "category": "🐾 ROPA VERANO",
     "subcategory": "Ropa",
     "price": 3500,
-    "stock": 40,
+    "stock": 0,
     "rating": 3.9,
     "reviews": 130,
     "featured": false,
@@ -14962,7 +14962,6 @@
     "features": [],
     "originalPrice": 7000,
     "discount": 50,
-    "basePrice": 3500,
     "priceDisplayMode": "wholesale",
     "variants": {
       "attributes": [
@@ -14979,7 +14978,7 @@
             "Talle": "1"
           },
           "price": 3500,
-          "stock": 10,
+          "stock": 0,
           "available": true,
           "originalPrice": 7000,
           "sku": "VES010-1",
@@ -14997,7 +14996,7 @@
             "Talle": "2"
           },
           "price": 3500,
-          "stock": 10,
+          "stock": 0,
           "available": true,
           "originalPrice": 7000,
           "sku": "VES010-2",
@@ -15015,7 +15014,7 @@
             "Talle": "3"
           },
           "price": 4200,
-          "stock": 10,
+          "stock": 0,
           "available": true,
           "originalPrice": 8400,
           "sku": "VES010-3",
@@ -15033,7 +15032,7 @@
             "Talle": "4"
           },
           "price": 4200,
-          "stock": 10,
+          "stock": 0,
           "available": true,
           "originalPrice": 8400,
           "sku": "VES010-4",
@@ -19211,7 +19210,7 @@
     "name": "Collar Gato Surtidos X 12 Unidades",
     "category": "accesorios",
     "subcategory": "Collares,",
-    "price": 13600,
+    "price": 15640,
     "stock": 40,
     "rating": 5,
     "reviews": 88,
@@ -19253,7 +19252,7 @@
       "Fácil de usar",
       "Resistente y duradero"
     ],
-    "originalPrice": 16000,
+    "originalPrice": 18400,
     "discount": 15,
     "basePrice": 13600,
     "baseOriginalPrice": 16000,
@@ -19272,10 +19271,10 @@
           "attributes": {
             "Modelo": "1"
           },
-          "price": 13600,
+          "price": 18400,
           "stock": 0,
           "available": true,
-          "originalPrice": 16000,
+          "originalPrice": 18400,
           "sku": "COL016-1X",
           "images": {
             "cover": "assets/images/products/prod_606/cover_1.jpg",
@@ -19290,10 +19289,10 @@
           "attributes": {
             "Modelo": "2"
           },
-          "price": 13600,
+          "price": 18400,
           "stock": 0,
           "available": true,
-          "originalPrice": 16000,
+          "originalPrice": 18400,
           "sku": "COL016-2X",
           "images": {
             "cover": "assets/images/products/prod_606/cover_2.jpg",
@@ -19308,10 +19307,10 @@
           "attributes": {
             "Modelo": "3"
           },
-          "price": 13600,
+          "price": 18400,
           "stock": 0,
           "available": true,
-          "originalPrice": 16000,
+          "originalPrice": 18400,
           "sku": "COL016-3X",
           "images": {
             "cover": "assets/images/products/prod_606/cover_3.jpg",
@@ -19326,10 +19325,10 @@
           "attributes": {
             "Modelo": "9"
           },
-          "price": 13600,
+          "price": 18400,
           "stock": 0,
           "available": true,
-          "originalPrice": 16000,
+          "originalPrice": 18400,
           "sku": "COL016-9X",
           "images": {
             "cover": "assets/images/products/prod_606/cover_9.jpg",
@@ -21180,7 +21179,7 @@
     "name": "TIRA DE LONA",
     "category": "accesorios",
     "subcategory": "Collares,",
-    "price": 3400,
+    "price": 3910,
     "stock": 60,
     "rating": 3.9,
     "reviews": 76,
@@ -21219,7 +21218,7 @@
       "Fácil de usar",
       "Resistente y duradero"
     ],
-    "originalPrice": 4000,
+    "originalPrice": 4600,
     "discount": 15,
     "basePrice": 3400,
     "baseOriginalPrice": 4000,
@@ -21238,10 +21237,10 @@
           "attributes": {
             "Tamaño": "N°1"
           },
-          "price": 3400,
+          "price": 4600,
           "stock": 10,
           "available": true,
-          "originalPrice": 4000,
+          "originalPrice": 4600,
           "sku": "TIR001-N1",
           "images": {
             "cover": "assets/images/products/prod_722/cover_n°1.jpg",
@@ -21256,10 +21255,10 @@
           "attributes": {
             "Tamaño": "N°2"
           },
-          "price": 4080,
+          "price": 5520,
           "stock": 10,
           "available": true,
-          "originalPrice": 4800,
+          "originalPrice": 5520,
           "sku": "TIR001-N2",
           "images": {
             "cover": "assets/images/products/prod_722/cover_n°2.jpg",
@@ -21274,10 +21273,10 @@
           "attributes": {
             "Tamaño": "N°3"
           },
-          "price": 4675,
+          "price": 6325,
           "stock": 10,
           "available": true,
-          "originalPrice": 5500,
+          "originalPrice": 6325,
           "sku": "TIR001-N3",
           "images": {
             "cover": "assets/images/products/prod_722/cover_n°3.jpg",
@@ -21292,10 +21291,10 @@
           "attributes": {
             "Tamaño": "N°4"
           },
-          "price": 5100,
+          "price": 6900,
           "stock": 10,
           "available": true,
-          "originalPrice": 6000,
+          "originalPrice": 6900,
           "sku": "TIR001-N4",
           "images": {
             "cover": "assets/images/products/prod_722/cover_n°4.jpg",
@@ -21310,10 +21309,10 @@
           "attributes": {
             "Tamaño": "N°5"
           },
-          "price": 5950,
+          "price": 8050,
           "stock": 10,
           "available": true,
-          "originalPrice": 7000,
+          "originalPrice": 8050,
           "sku": "TIR001-N5",
           "images": {
             "cover": "assets/images/products/prod_722/cover_n°5.jpg",
@@ -21328,10 +21327,10 @@
           "attributes": {
             "Tamaño": "N°6"
           },
-          "price": 7225,
+          "price": 9775,
           "stock": 10,
           "available": true,
-          "originalPrice": 8500,
+          "originalPrice": 9775,
           "sku": "TIR001-N6",
           "images": {
             "cover": "assets/images/products/prod_722/cover_n°6.jpg",
@@ -21349,7 +21348,7 @@
     "name": "TIRA LARGA",
     "category": "🐾 COLLARES, CORREAS Y PECHERAS",
     "subcategory": "Collares,",
-    "price": 7820,
+    "price": 8993,
     "stock": 60,
     "rating": 4,
     "reviews": 83,
@@ -21383,7 +21382,7 @@
     "brand": "Sin marca",
     "sku": "TIR002",
     "features": [],
-    "originalPrice": 9200,
+    "originalPrice": 10580,
     "discount": 15,
     "priceDisplayMode": "wholesale",
     "variants": {
@@ -21400,10 +21399,10 @@
           "attributes": {
             "Tamaño": "N°5"
           },
-          "price": 7820,
+          "price": 10580,
           "stock": 10,
           "available": true,
-          "originalPrice": 9200,
+          "originalPrice": 10580,
           "sku": "TIR002-N5",
           "images": {
             "cover": "assets/images/products/prod_723/cover_n°5.jpg",
@@ -21418,10 +21417,10 @@
           "attributes": {
             "Tamaño": "N°6"
           },
-          "price": 11730,
+          "price": 15870,
           "stock": 10,
           "available": true,
-          "originalPrice": 13800,
+          "originalPrice": 15870,
           "sku": "TIR002-N6",
           "images": {
             "cover": "assets/images/products/prod_723/cover_n°6.jpg",
@@ -21436,10 +21435,10 @@
           "attributes": {
             "Tamaño": "N°7"
           },
-          "price": 12325,
+          "price": 16675,
           "stock": 10,
           "available": true,
-          "originalPrice": 14500,
+          "originalPrice": 16675,
           "sku": "TIR002-N7",
           "images": {
             "cover": "assets/images/products/prod_723/cover_n°7.jpg",
@@ -21454,10 +21453,10 @@
           "attributes": {
             "Tamaño": "N°8"
           },
-          "price": 13175,
+          "price": 17825,
           "stock": 10,
           "available": true,
-          "originalPrice": 15500,
+          "originalPrice": 17825,
           "sku": "TIR002-N8",
           "images": {
             "cover": "assets/images/products/prod_723/cover_n°8.jpg",
@@ -21472,10 +21471,10 @@
           "attributes": {
             "Tamaño": "N°9"
           },
-          "price": 13175,
+          "price": 17825,
           "stock": 10,
           "available": true,
-          "originalPrice": 15500,
+          "originalPrice": 17825,
           "sku": "TIR002-N9",
           "images": {
             "cover": "assets/images/products/prod_723/cover_n°9.jpg",
@@ -21490,10 +21489,10 @@
           "attributes": {
             "Tamaño": "N°10"
           },
-          "price": 15215,
+          "price": 20585,
           "stock": 10,
           "available": true,
-          "originalPrice": 17900,
+          "originalPrice": 20585,
           "sku": "TIR002-N10",
           "images": {
             "cover": "assets/images/products/prod_723/cover_n°10.jpg",
@@ -21511,7 +21510,7 @@
     "name": "Cadena Comun 1,2m",
     "category": "accesorios",
     "subcategory": "Collares,",
-    "price": 2720,
+    "price": 3128,
     "stock": 30,
     "rating": 3.7,
     "reviews": 86,
@@ -21552,7 +21551,7 @@
       "Fácil de usar",
       "Resistente y duradero"
     ],
-    "originalPrice": 3200,
+    "originalPrice": 3680,
     "discount": 15,
     "basePrice": 2720,
     "baseOriginalPrice": 3200,
@@ -21571,10 +21570,10 @@
           "attributes": {
             "Tamaño": "T1"
           },
-          "price": 2720,
+          "price": 3680,
           "stock": 10,
           "available": true,
-          "originalPrice": 3200,
+          "originalPrice": 3680,
           "sku": "CADENA-T1",
           "images": {
             "cover": "assets/images/products/prod_724/cover_t1.jpg",
@@ -21589,10 +21588,10 @@
           "attributes": {
             "Tamaño": "T3"
           },
-          "price": 3230,
+          "price": 4370,
           "stock": 10,
           "available": true,
-          "originalPrice": 3800,
+          "originalPrice": 4370,
           "sku": "CADENA-T3",
           "images": {
             "cover": "assets/images/products/prod_724/cover_t3.jpg",
@@ -21607,10 +21606,10 @@
           "attributes": {
             "Tamaño": "T5"
           },
-          "price": 8075,
+          "price": 10925,
           "stock": 10,
           "available": true,
-          "originalPrice": 9500,
+          "originalPrice": 10925,
           "sku": "CADENA-T5",
           "images": {
             "cover": "assets/images/products/prod_724/cover_t5.jpg",
@@ -21628,7 +21627,7 @@
     "name": "Cadena Comun 1,7m",
     "category": "accesorios",
     "subcategory": "Collares,",
-    "price": 3230,
+    "price": 3714.5,
     "stock": 30,
     "rating": 4.5,
     "reviews": 47,
@@ -21669,7 +21668,7 @@
       "Fácil de usar",
       "Resistente y duradero"
     ],
-    "originalPrice": 3800,
+    "originalPrice": 4370,
     "discount": 15,
     "basePrice": 3230,
     "baseOriginalPrice": 3800,
@@ -21688,10 +21687,10 @@
           "attributes": {
             "Tamaño": "T1"
           },
-          "price": 3230,
+          "price": 4370,
           "stock": 10,
           "available": true,
-          "originalPrice": 3800,
+          "originalPrice": 4370,
           "sku": "CAD001-T1",
           "images": {
             "cover": "assets/images/products/prod_725/cover_t1.jpg",
@@ -21706,10 +21705,10 @@
           "attributes": {
             "Tamaño": "T3"
           },
-          "price": 3825,
+          "price": 5175,
           "stock": 10,
           "available": true,
-          "originalPrice": 4500,
+          "originalPrice": 5175,
           "sku": "CAD001-T3",
           "images": {
             "cover": "assets/images/products/prod_725/cover_t3.jpg",
@@ -21724,10 +21723,10 @@
           "attributes": {
             "Tamaño": "T5"
           },
-          "price": 7225,
+          "price": 9775,
           "stock": 10,
           "available": true,
-          "originalPrice": 8500,
+          "originalPrice": 9775,
           "sku": "CAD001-T5",
           "images": {
             "cover": "assets/images/products/prod_725/cover_t5.jpg",
@@ -21745,7 +21744,7 @@
     "name": "COLLAR PAÑUELO",
     "category": "accesorios",
     "subcategory": "Collares,",
-    "price": 3145,
+    "price": 3616.75,
     "stock": 50,
     "rating": 3.8,
     "reviews": 22,
@@ -21784,7 +21783,7 @@
       "Fácil de usar",
       "Resistente y duradero"
     ],
-    "originalPrice": 3700,
+    "originalPrice": 4255,
     "discount": 15,
     "basePrice": 3145,
     "baseOriginalPrice": 3700,
@@ -21803,10 +21802,10 @@
           "attributes": {
             "Tamaño": "T1"
           },
-          "price": 3145,
+          "price": 4255,
           "stock": 10,
           "available": true,
-          "originalPrice": 3700,
+          "originalPrice": 4255,
           "sku": "COL032-T1",
           "images": {
             "cover": "assets/images/products/prod_732/cover_t1.jpg",
@@ -21821,10 +21820,10 @@
           "attributes": {
             "Tamaño": "T2"
           },
-          "price": 3315,
+          "price": 4485,
           "stock": 10,
           "available": true,
-          "originalPrice": 3900,
+          "originalPrice": 4485,
           "sku": "COL032-T2",
           "images": {
             "cover": "assets/images/products/prod_732/cover_t2.jpg",
@@ -21839,10 +21838,10 @@
           "attributes": {
             "Tamaño": "T3"
           },
-          "price": 3570,
+          "price": 4830,
           "stock": 10,
           "available": true,
-          "originalPrice": 4200,
+          "originalPrice": 4830,
           "sku": "COL032-T3",
           "images": {
             "cover": "assets/images/products/prod_732/cover_t3.jpg",
@@ -21857,10 +21856,10 @@
           "attributes": {
             "Tamaño": "T4"
           },
-          "price": 3825,
+          "price": 5175,
           "stock": 10,
           "available": true,
-          "originalPrice": 4500,
+          "originalPrice": 5175,
           "sku": "COL032-T4",
           "images": {
             "cover": "assets/images/products/prod_732/cover_t4.jpg",
@@ -21875,10 +21874,10 @@
           "attributes": {
             "Tamaño": "T5"
           },
-          "price": 3995,
+          "price": 5405,
           "stock": 10,
           "available": true,
-          "originalPrice": 4700,
+          "originalPrice": 5405,
           "sku": "COL032-T5",
           "images": {
             "cover": "assets/images/products/prod_732/cover_t5.jpg",
@@ -21896,7 +21895,7 @@
     "name": "Pechera Sola P15",
     "category": "accesorios",
     "subcategory": "Collares,",
-    "price": 2423,
+    "price": 2785.88,
     "stock": 90,
     "rating": 3.9,
     "reviews": 101,
@@ -21937,7 +21936,7 @@
       "Fácil de usar",
       "Resistente y duradero"
     ],
-    "originalPrice": 2850,
+    "originalPrice": 3277.5,
     "discount": 15,
     "basePrice": 2423,
     "baseOriginalPrice": 2850,
@@ -21956,10 +21955,10 @@
           "attributes": {
             "Tamaño": "T2"
           },
-          "price": 3655,
+          "price": 4945,
           "stock": 10,
           "available": true,
-          "originalPrice": 4300,
+          "originalPrice": 4945,
           "sku": "PEC001-T2",
           "images": {
             "cover": "assets/images/products/prod_733/cover_t2.jpg",
@@ -21974,10 +21973,10 @@
           "attributes": {
             "Tamaño": "T3"
           },
-          "price": 4080,
+          "price": 5520,
           "stock": 10,
           "available": true,
-          "originalPrice": 4800,
+          "originalPrice": 5520,
           "sku": "PEC001-T3",
           "images": {
             "cover": "assets/images/products/prod_733/cover_t3.jpg",
@@ -21992,10 +21991,10 @@
           "attributes": {
             "Tamaño": "T4"
           },
-          "price": 4930,
+          "price": 6670,
           "stock": 10,
           "available": true,
-          "originalPrice": 5800,
+          "originalPrice": 6670,
           "sku": "PEC001-T4",
           "images": {
             "cover": "assets/images/products/prod_733/cover_t4.jpg",
@@ -22010,10 +22009,10 @@
           "attributes": {
             "Tamaño": "T5"
           },
-          "price": 5780,
+          "price": 7820,
           "stock": 10,
           "available": true,
-          "originalPrice": 6800,
+          "originalPrice": 7820,
           "sku": "PEC001-T5",
           "images": {
             "cover": "assets/images/products/prod_733/cover_t5.jpg",
@@ -22028,10 +22027,10 @@
           "attributes": {
             "Tamaño": "T6"
           },
-          "price": 6375,
+          "price": 8625,
           "stock": 10,
           "available": true,
-          "originalPrice": 7500,
+          "originalPrice": 8625,
           "sku": "PEC001-T6",
           "images": {
             "cover": "assets/images/products/prod_733/cover_t6.jpg",
@@ -22046,10 +22045,10 @@
           "attributes": {
             "Tamaño": "T7"
           },
-          "price": 8245,
+          "price": 11155,
           "stock": 10,
           "available": true,
-          "originalPrice": 9700,
+          "originalPrice": 11155,
           "sku": "PEC001-T7",
           "images": {
             "cover": "assets/images/products/prod_733/cover_t7.jpg",
@@ -22064,10 +22063,10 @@
           "attributes": {
             "Tamaño": "T1"
           },
-          "price": 2933,
+          "price": 3967.5,
           "stock": 10,
           "available": true,
-          "originalPrice": 3450,
+          "originalPrice": 3967.5,
           "sku": "PEC001-T1",
           "images": {
             "cover": "assets/images/products/prod_733/cover_t1.jpg",
@@ -22082,10 +22081,10 @@
           "attributes": {
             "Tamaño": "T0"
           },
-          "price": 2423,
+          "price": 3277.5,
           "stock": 10,
           "available": true,
-          "originalPrice": 2850,
+          "originalPrice": 3277.5,
           "sku": "PEC001-T0",
           "images": {
             "cover": "assets/images/products/prod_733/cover_t0.jpg",
@@ -22100,10 +22099,10 @@
           "attributes": {
             "Tamaño": "T8"
           },
-          "price": 9435,
+          "price": 12765,
           "stock": 10,
           "available": true,
-          "originalPrice": 11100,
+          "originalPrice": 12765,
           "sku": "PEC001-T8",
           "images": {
             "cover": "assets/images/products/prod_733/cover_t8.jpg",
@@ -22121,7 +22120,7 @@
     "name": "Pechera Alcochonada Police K9",
     "category": "accesorios",
     "subcategory": "Collares,",
-    "price": 10200,
+    "price": 11730,
     "stock": 60,
     "rating": 4.1,
     "reviews": 81,
@@ -22162,7 +22161,7 @@
       "Fácil de usar",
       "Resistente y duradero"
     ],
-    "originalPrice": 12000,
+    "originalPrice": 13800,
     "discount": 15,
     "basePrice": 10200,
     "baseOriginalPrice": 12000,
@@ -22181,10 +22180,10 @@
           "attributes": {
             "Talla": "XS"
           },
-          "price": 10200,
+          "price": 13800,
           "stock": 10,
           "available": true,
-          "originalPrice": 12000,
+          "originalPrice": 13800,
           "sku": "PEC002-XS",
           "images": {
             "cover": "assets/images/products/prod_734/cover_xs.jpg",
@@ -22199,10 +22198,10 @@
           "attributes": {
             "Talla": "S"
           },
-          "price": 12750,
+          "price": 17250,
           "stock": 10,
           "available": true,
-          "originalPrice": 15000,
+          "originalPrice": 17250,
           "sku": "PEC002-S",
           "images": {
             "cover": "assets/images/products/prod_734/cover_s.jpg",
@@ -22217,10 +22216,10 @@
           "attributes": {
             "Talla": "M"
           },
-          "price": 15300,
+          "price": 20700,
           "stock": 10,
           "available": true,
-          "originalPrice": 18000,
+          "originalPrice": 20700,
           "sku": "PEC002-M",
           "images": {
             "cover": "assets/images/products/prod_734/cover_m.jpg",
@@ -22235,10 +22234,10 @@
           "attributes": {
             "Talla": "L"
           },
-          "price": 17000,
+          "price": 23000,
           "stock": 10,
           "available": true,
-          "originalPrice": 20000,
+          "originalPrice": 23000,
           "sku": "PEC002-L",
           "images": {
             "cover": "assets/images/products/prod_734/cover_l.jpg",
@@ -22253,10 +22252,10 @@
           "attributes": {
             "Talla": "XL"
           },
-          "price": 18700,
+          "price": 25300,
           "stock": 10,
           "available": true,
-          "originalPrice": 22000,
+          "originalPrice": 25300,
           "sku": "PEC002-XL",
           "images": {
             "cover": "assets/images/products/prod_734/cover_xl.jpg",
@@ -22271,10 +22270,10 @@
           "attributes": {
             "Talla": "XXL"
           },
-          "price": 21250,
+          "price": 28750,
           "stock": 10,
           "available": true,
-          "originalPrice": 25000,
+          "originalPrice": 28750,
           "sku": "PEC002-XXL",
           "images": {
             "cover": "assets/images/products/prod_734/cover_xxl.jpg",
@@ -22345,7 +22344,7 @@
     "name": "Pechera Alcochonada T",
     "category": "accesorios",
     "subcategory": "Collares,",
-    "price": 9350,
+    "price": 10752.5,
     "stock": 50,
     "rating": 4.9,
     "reviews": 81,
@@ -22385,7 +22384,7 @@
       "Fácil de usar",
       "Resistente y duradero"
     ],
-    "originalPrice": 11000,
+    "originalPrice": 12650,
     "discount": 15,
     "basePrice": 9350,
     "baseOriginalPrice": 11000,
@@ -22404,10 +22403,10 @@
           "attributes": {
             "Talla": "XS"
           },
-          "price": 9350,
+          "price": 12650,
           "stock": 10,
           "available": true,
-          "originalPrice": 11000,
+          "originalPrice": 12650,
           "sku": "PEC003-XS",
           "images": {
             "cover": "assets/images/products/prod_737/cover_xs.jpg",
@@ -22422,10 +22421,10 @@
           "attributes": {
             "Talla": "S"
           },
-          "price": 10200,
+          "price": 13800,
           "stock": 10,
           "available": true,
-          "originalPrice": 12000,
+          "originalPrice": 13800,
           "sku": "PEC003-S",
           "images": {
             "cover": "assets/images/products/prod_737/cover_s.jpg",
@@ -22440,10 +22439,10 @@
           "attributes": {
             "Talla": "M"
           },
-          "price": 11050,
+          "price": 14950,
           "stock": 10,
           "available": true,
-          "originalPrice": 13000,
+          "originalPrice": 14950,
           "sku": "PEC003-M",
           "images": {
             "cover": "assets/images/products/prod_737/cover_m.jpg",
@@ -22458,10 +22457,10 @@
           "attributes": {
             "Talla": "L"
           },
-          "price": 11900,
+          "price": 16100,
           "stock": 10,
           "available": true,
-          "originalPrice": 14000,
+          "originalPrice": 16100,
           "sku": "PEC003-L",
           "images": {
             "cover": "assets/images/products/prod_737/cover_l.jpg",
@@ -22476,10 +22475,10 @@
           "attributes": {
             "Talla": "XL"
           },
-          "price": 12750,
+          "price": 17250,
           "stock": 10,
           "available": true,
-          "originalPrice": 15000,
+          "originalPrice": 17250,
           "sku": "PEC003-XL",
           "images": {
             "cover": "assets/images/products/prod_737/cover_xl.jpg",
@@ -22497,7 +22496,7 @@
     "name": "Pechera Arnes Ajustable Con Correa",
     "category": "accesorios",
     "subcategory": "Collares,",
-    "price": 17000,
+    "price": 19550,
     "stock": 40,
     "rating": 4.2,
     "reviews": 66,
@@ -22540,7 +22539,7 @@
       "Fácil de usar",
       "Resistente y duradero"
     ],
-    "originalPrice": 20000,
+    "originalPrice": 23000,
     "discount": 15,
     "basePrice": 17000,
     "baseOriginalPrice": 20000,
@@ -22559,10 +22558,10 @@
           "attributes": {
             "Talla": "S"
           },
-          "price": 17000,
+          "price": 23000,
           "stock": 10,
           "available": true,
-          "originalPrice": 20000,
+          "originalPrice": 23000,
           "sku": "PEC004-S",
           "images": {
             "cover": "assets/images/products/prod_738/cover_s.jpg",
@@ -22577,10 +22576,10 @@
           "attributes": {
             "Talla": "M"
           },
-          "price": 17000,
+          "price": 23000,
           "stock": 10,
           "available": true,
-          "originalPrice": 20000,
+          "originalPrice": 23000,
           "sku": "PEC004-M",
           "images": {
             "cover": "assets/images/products/prod_738/cover_m.jpg",
@@ -22595,10 +22594,10 @@
           "attributes": {
             "Talla": "L"
           },
-          "price": 17000,
+          "price": 23000,
           "stock": 10,
           "available": true,
-          "originalPrice": 20000,
+          "originalPrice": 23000,
           "sku": "PEC004-L",
           "images": {
             "cover": "assets/images/products/prod_738/cover_l.jpg",
@@ -22613,10 +22612,10 @@
           "attributes": {
             "Talla": "XL"
           },
-          "price": 17000,
+          "price": 23000,
           "stock": 10,
           "available": true,
-          "originalPrice": 20000,
+          "originalPrice": 23000,
           "sku": "PEC004-XL",
           "images": {
             "cover": "assets/images/products/prod_738/cover_xl.jpg",
@@ -22792,7 +22791,7 @@
     "name": "Conjunto Regulable Liso",
     "category": "accesorios",
     "subcategory": "Collares,",
-    "price": 7650,
+    "price": 8797.5,
     "stock": 0,
     "rating": 4.8,
     "reviews": 39,
@@ -22833,7 +22832,7 @@
       "Fácil de usar",
       "Resistente y duradero"
     ],
-    "originalPrice": 9000,
+    "originalPrice": 10350,
     "discount": 15,
     "basePrice": 7650,
     "baseOriginalPrice": 9000,
@@ -22852,10 +22851,10 @@
           "attributes": {
             "Tamaño": "N°1"
           },
-          "price": 8160,
+          "price": 11040,
           "stock": 10,
           "available": false,
-          "originalPrice": 9600,
+          "originalPrice": 11040,
           "sku": "CON002-N1",
           "images": {
             "cover": "assets/images/products/prod_744/cover_n°1.jpg",
@@ -22870,10 +22869,10 @@
           "attributes": {
             "Tamaño": "N°2"
           },
-          "price": 8925,
+          "price": 12075,
           "stock": 10,
           "available": false,
-          "originalPrice": 10500,
+          "originalPrice": 12075,
           "sku": "CON002-N2",
           "images": {
             "cover": "assets/images/products/prod_744/cover_n°2.jpg",
@@ -22888,10 +22887,10 @@
           "attributes": {
             "Tamaño": "N°3"
           },
-          "price": 13770,
+          "price": 18630,
           "stock": 6,
           "available": false,
-          "originalPrice": 16200,
+          "originalPrice": 18630,
           "sku": "CON002-N3",
           "images": {
             "cover": "assets/images/products/prod_744/cover_n°3.jpg",
@@ -22906,10 +22905,10 @@
           "attributes": {
             "Tamaño": "N°4"
           },
-          "price": 14620,
+          "price": 19780,
           "stock": 6,
           "available": false,
-          "originalPrice": 17200,
+          "originalPrice": 19780,
           "sku": "CON002-N4",
           "images": {
             "cover": "assets/images/products/prod_744/cover_n°4.jpg",
@@ -22924,10 +22923,10 @@
           "attributes": {
             "Tamaño": "N°5"
           },
-          "price": 15470,
+          "price": 20930,
           "stock": 6,
           "available": false,
-          "originalPrice": 18200,
+          "originalPrice": 20930,
           "sku": "CON002-N5",
           "images": {
             "cover": "assets/images/products/prod_744/cover_n°5.jpg",
@@ -22942,10 +22941,10 @@
           "attributes": {
             "Tamaño": "N°6"
           },
-          "price": 34425,
+          "price": 46575,
           "stock": 10,
           "available": false,
-          "originalPrice": 40500,
+          "originalPrice": 46575,
           "sku": "CON002-N6",
           "images": {
             "cover": "assets/images/products/prod_744/cover_n°6.jpg",
@@ -22960,10 +22959,10 @@
           "attributes": {
             "Tamaño": "N°0"
           },
-          "price": 7650,
+          "price": 10350,
           "stock": 0,
           "available": false,
-          "originalPrice": 9000,
+          "originalPrice": 10350,
           "sku": "CON002-N0",
           "images": {
             "cover": "assets/images/products/prod_744/cover_n°0.jpg",
@@ -23210,7 +23209,7 @@
     "name": "Conjunto Economico",
     "category": "accesorios",
     "subcategory": "Collares,",
-    "price": 2040,
+    "price": 2346,
     "stock": 0,
     "rating": 4.3,
     "reviews": 96,
@@ -23250,7 +23249,7 @@
       "Fácil de usar",
       "Resistente y duradero"
     ],
-    "originalPrice": 2400,
+    "originalPrice": 2760,
     "discount": 15,
     "basePrice": 2040,
     "baseOriginalPrice": 2400,
@@ -23269,10 +23268,10 @@
           "attributes": {
             "Tamaño": "Pequeño"
           },
-          "price": 2040,
+          "price": 2760,
           "stock": 0,
           "available": false,
-          "originalPrice": 2400,
+          "originalPrice": 2760,
           "sku": "CON027-PEQ",
           "images": {
             "cover": "assets/images/products/prod_754/cover_pequeño.jpg",
@@ -23287,10 +23286,10 @@
           "attributes": {
             "Tamaño": "Mediano"
           },
-          "price": 2380,
+          "price": 3220,
           "stock": 0,
           "available": false,
-          "originalPrice": 2800,
+          "originalPrice": 3220,
           "sku": "CON027-MED",
           "images": {
             "cover": "assets/images/products/prod_754/cover_mediano.jpg",
@@ -23305,10 +23304,10 @@
           "attributes": {
             "Tamaño": "Grande"
           },
-          "price": 3060,
+          "price": 4140,
           "stock": 0,
           "available": false,
-          "originalPrice": 3600,
+          "originalPrice": 4140,
           "sku": "CON027-GRA",
           "images": {
             "cover": "assets/images/products/prod_754/cover_grande.jpg",
