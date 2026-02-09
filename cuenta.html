@@ -426,6 +426,10 @@
             <input type="text" id="addr-city" placeholder="Palermo" required>
           </div>
           <div class="form-group">
+            <label for="addr-between">Entre calles (opcional)</label>
+            <input type="text" id="addr-between" placeholder="Entre Av. Santa Fe y Güemes">
+          </div>
+          <div class="form-group">
             <label for="addr-province">Provincia</label>
             <input type="text" id="addr-province" placeholder="CABA" required>
           </div>
@@ -605,6 +609,7 @@
             <div class="address-card__text">
               ${addr.address}${addr.floor ? `, ${addr.floor}` : ''}<br>
               ${addr.city}${addr.zipcode ? ` (${addr.zipcode})` : ''}, ${addr.province}
+              ${addr.between ? `<br><small>Entre: ${addr.between}</small>` : ''}
             </div>
           </div>
           <button class="btn btn--danger btn--small" onclick="deleteAddress('${addr.id}')">🗑️</button>
@@ -659,6 +664,7 @@
         floor: document.getElementById('addr-floor').value,
         zipcode: document.getElementById('addr-zipcode').value,
         city: document.getElementById('addr-city').value,
+        between: document.getElementById('addr-between').value,
         province: document.getElementById('addr-province').value
       });
       

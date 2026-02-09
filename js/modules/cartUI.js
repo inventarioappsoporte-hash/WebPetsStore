@@ -598,15 +598,21 @@ class CartUI {
           const select = document.getElementById('saved-address-select');
           if (select) {
             select.innerHTML = '<option value="">-- Seleccionar dirección --</option>' +
-              user.addresses.map(addr => 
-                `<option value="${addr.id}" ${addr.isDefault ? 'selected' : ''}>
-                  ${addr.label || 'Dirección'} - ${addr.address}, ${addr.city}
-                </option>`
-              ).join('');
+              user.addresses.map(addr => {
+                // Construir texto descriptivo de la dirección
+                const label = addr.label || 'Dirección';
+                const addressText = addr.address || '';
+                const cityText = addr.city || '';
+                const displayText = addressText 
+                  ? `${label}: ${addressText}${cityText ? ', ' + cityText : ''}`
+                  : `${label}${cityText ? ' - ' + cityText : ''}`;
+                return `<option value="${addr.id}" ${addr.isDefault ? 'selected' : ''}>${displayText}</option>`;
+              }).join('');
             
-            // Si hay dirección por defecto, llenarla
+            // Si hay dirección por defecto, llenarla automáticamente
             const defaultAddr = user.addresses.find(a => a.isDefault);
             if (defaultAddr) {
+              select.value = defaultAddr.id;
               this.fillAddressFields(defaultAddr);
             }
           }
@@ -663,20 +669,29 @@ class CartUI {
 
   /**
    * Llenar campos de dirección
+   * Mapeo de campos guardados en cuenta.html a campos del carrito
    */
   static fillAddressFields(address) {
+    console.log('🏠 fillAddressFields - Dirección recibida:', address);
+    
+    // Mapeo robusto: soporta tanto el formato nuevo como posibles variaciones
     const fields = {
-      'customer-address': address.address,
-      'customer-floor': address.floor,
-      'customer-zipcode': address.zipcode,
-      'customer-city': address.city,
-      'customer-between': address.between,
-      'customer-province': address.province
+      'customer-address': address.address || address.street || '',
+      'customer-floor': address.floor || address.apartment || '',
+      'customer-zipcode': address.zipcode || address.postalCode || address.cp || '',
+      'customer-city': address.city || address.locality || address.barrio || '',
+      'customer-between': address.between || address.betweenStreets || '',
+      'customer-province': address.province || address.state || ''
     };
+    
+    console.log('🏠 fillAddressFields - Campos a llenar:', fields);
     
     Object.entries(fields).forEach(([id, value]) => {
       const input = document.getElementById(id);
-      if (input && value) input.value = value;
+      if (input) {
+        input.value = value || '';
+        console.log(`  → ${id}: "${value}"`);
+      }
     });
   }
 
