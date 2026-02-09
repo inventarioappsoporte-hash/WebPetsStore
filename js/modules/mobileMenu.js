@@ -49,8 +49,15 @@ const MobileMenu = {
   async loadProducts() {
     try {
       const response = await fetch('data/products.json');
-      this.products = await response.json();
-      console.log('📱 MobileMenu: Productos cargados:', this.products.length);
+      const allProducts = await response.json();
+      
+      // Filtrar productos sin stock
+      this.products = allProducts.filter(p => {
+        if (p.stock === undefined || p.stock === null) return true;
+        return p.stock > 0;
+      });
+      
+      console.log('📱 MobileMenu: Productos cargados:', this.products.length, '(filtrados de', allProducts.length, ')');
     } catch (error) {
       console.error('Error cargando productos:', error);
     }

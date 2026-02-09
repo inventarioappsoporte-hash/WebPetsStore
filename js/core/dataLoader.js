@@ -79,7 +79,21 @@ class DataLoader {
     // Forzar recarga sin cache para debug
     const timestamp = Date.now();
     console.log('🔄 Loading products with timestamp:', timestamp);
-    return this.load(`products.json?v=${timestamp}`);
+    const products = await this.load(`products.json?v=${timestamp}`);
+    
+    // Filtrar productos sin stock (stock <= 0)
+    if (products && Array.isArray(products)) {
+      const inStockProducts = products.filter(p => {
+        // Si no tiene campo stock, asumir que tiene stock
+        if (p.stock === undefined || p.stock === null) return true;
+        // Solo mostrar productos con stock > 0
+        return p.stock > 0;
+      });
+      console.log(`📦 Productos filtrados: ${products.length} total, ${inStockProducts.length} con stock`);
+      return inStockProducts;
+    }
+    
+    return products;
   }
 
   async getHomeConfig() {
