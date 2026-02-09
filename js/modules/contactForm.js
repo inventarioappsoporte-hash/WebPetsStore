@@ -1,6 +1,7 @@
 /**
  * 📬 Módulo ContactForm - Formulario de Contacto con WhatsApp
  * Reutiliza la integración existente de WhatsApp
+ * Incluye autocompletado para usuarios logueados
  */
 
 class ContactForm {
@@ -9,7 +10,40 @@ class ContactForm {
     if (!form) return;
 
     form.addEventListener('submit', (e) => this.handleSubmit(e));
+    
+    // Autocompletar si el usuario está logueado
+    this.autoFillUserData();
+    
+    // Escuchar cambios de autenticación
+    if (typeof UserAuth !== 'undefined') {
+      UserAuth.addListener(() => this.autoFillUserData());
+    }
+    
     console.log('✅ ContactForm initialized');
+  }
+
+  /**
+   * Autocompletar datos del usuario logueado
+   */
+  static autoFillUserData() {
+    if (typeof UserAuth === 'undefined' || !UserAuth.isLoggedIn()) return;
+    
+    const user = UserAuth.getUser();
+    if (!user) return;
+    
+    const nameField = document.getElementById('contact-name');
+    const phoneField = document.getElementById('contact-phone');
+    
+    // Solo autocompletar si los campos están vacíos
+    if (nameField && !nameField.value && user.displayName) {
+      nameField.value = user.displayName;
+    }
+    
+    if (phoneField && !phoneField.value && user.phone) {
+      phoneField.value = user.phone;
+    }
+    
+    console.log('📝 ContactForm: datos autocompletados');
   }
 
   /**

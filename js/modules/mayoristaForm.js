@@ -1,6 +1,7 @@
 /**
  * 🏪 Módulo de Formulario Mayorista
  * Maneja la validación y envío a WhatsApp
+ * Incluye autocompletado para usuarios logueados
  */
 
 const MayoristaForm = {
@@ -29,6 +30,46 @@ const MayoristaForm = {
         field.addEventListener('input', () => this.clearError(field));
       }
     });
+    
+    // Autocompletar si el usuario está logueado
+    this.autoFillUserData();
+    
+    // Escuchar cambios de autenticación
+    if (typeof UserAuth !== 'undefined') {
+      UserAuth.addListener(() => this.autoFillUserData());
+    }
+  },
+
+  /**
+   * Autocompletar datos del usuario logueado
+   */
+  autoFillUserData() {
+    if (typeof UserAuth === 'undefined' || !UserAuth.isLoggedIn()) return;
+    
+    const user = UserAuth.getUser();
+    if (!user) return;
+    
+    // Solo autocompletar si los campos están vacíos
+    if (this.fields.nombre && !this.fields.nombre.value && user.displayName) {
+      this.fields.nombre.value = user.displayName;
+    }
+    
+    if (this.fields.telefono && !this.fields.telefono.value && user.phone) {
+      this.fields.telefono.value = user.phone;
+    }
+    
+    if (this.fields.email && !this.fields.email.value && user.email) {
+      this.fields.email.value = user.email;
+    }
+    
+    // Si tiene dirección guardada, autocompletar ciudad
+    const defaultAddr = UserAuth.getDefaultAddress();
+    if (defaultAddr && this.fields.ciudad && !this.fields.ciudad.value) {
+      const city = defaultAddr.city || defaultAddr.localidad || '';
+      if (city) this.fields.ciudad.value = city;
+    }
+    
+    console.log('📝 MayoristaForm: datos autocompletados');
   },
 
   validate() {

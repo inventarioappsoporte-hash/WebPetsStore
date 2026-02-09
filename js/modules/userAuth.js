@@ -1,6 +1,7 @@
 /**
  * 🔐 Módulo UserAuth - Sistema de Autenticación de Usuarios
  * Maneja registro, login y gestión de sesión con Firebase
+ * Incluye caché local para optimizar lecturas
  */
 
 class UserAuth {
@@ -12,6 +13,8 @@ class UserAuth {
   static initialized = false;
   static listeners = [];
   static STORE_ID = 'petsstore-b0516';
+  static CACHE_KEY = 'petsstore_user_profile';
+  static CACHE_EXPIRY = 30 * 60 * 1000; // 30 minutos
 
   static firebaseConfig = {
     apiKey: "AIzaSyDHWTTs1J108hiBeib4d6E5i-HLoDRoDCA",
@@ -19,6 +22,60 @@ class UserAuth {
     projectId: "petsstore-b0516",
     storageBucket: "petsstore-b0516.appspot.com"
   };
+
+  /**
+   * Guardar perfil en caché local
+   */
+  static saveToCache(profile) {
+    if (!profile) return;
+    try {
+      const cacheData = {
+        profile,
+        timestamp: Date.now()
+      };
+      localStorage.setItem(this.CACHE_KEY, JSON.stringify(cacheData));
+      console.log('💾 Perfil guardado en caché local');
+    } catch (e) {
+      console.warn('⚠️ No se pudo guardar en caché:', e);
+    }
+  }
+
+  /**
+   * Cargar perfil desde caché local
+   */
+  static loadFromCache(uid) {
+    try {
+      const cached = localStorage.getItem(this.CACHE_KEY);
+      if (!cached) return null;
+      
+      const { profile, timestamp } = JSON.parse(cached);
+      
+      // Verificar que sea el mismo usuario y no haya expirado
+      if (profile.uid !== uid) {
+        this.clearCache();
+        return null;
+      }
+      
+      if (Date.now() - timestamp > this.CACHE_EXPIRY) {
+        console.log('⏰ Caché expirado, recargando desde Firebase');
+        return null;
+      }
+      
+      console.log('📦 Perfil cargado desde caché local');
+      return profile;
+    } catch (e) {
+      return null;
+    }
+  }
+
+  /**
+   * Limpiar caché local
+   */
+  static clearCache() {
+    try {
+      localStorage.removeItem(this.CACHE_KEY);
+    } catch (e) {}
+  }
 
   static async init() {
     if (this.initialized) return true;
@@ -130,6 +187,8 @@ class UserAuth {
     try {
       const { signOut } = await import('https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js');
       await signOut(this.auth);
+      this.clearCache(); // Limpiar caché al cerrar sesión
+      this.userProfile = null;
       return { success: true };
     } catch (error) {
       return { success: false, error: error.message };
@@ -159,6 +218,7 @@ class UserAuth {
       };
       await setDoc(userRef, profileData);
       this.userProfile = { uid, ...profileData };
+      this.saveToCache(this.userProfile); // Guardar en caché
       console.log('✅ Perfil de usuario creado con rol:', profileData.role);
       return true;
     } catch (error) {
@@ -174,20 +234,32 @@ class UserAuth {
       return null;
     }
     
-    // Si ya tenemos el perfil cacheado, no recargar
+    // Si ya tenemos el perfil cacheado en memoria, no recargar
     if (this.userProfile && this.userProfile.uid === uid) {
-      console.log('🔐 Using cached user profile');
+      console.log('🔐 Using cached user profile (memory)');
       return this.userProfile;
     }
     
+    // Intentar cargar desde caché local (localStorage)
+    const cachedProfile = this.loadFromCache(uid);
+    if (cachedProfile) {
+      this.userProfile = cachedProfile;
+      return this.userProfile;
+    }
+    
+    // Cargar desde Firebase
     try {
       const { doc, getDoc } = await import('https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js');
       const userRef = doc(this.db, 'tiendas', this.STORE_ID, 'users', uid);
       const userDoc = await getDoc(userRef);
+      
       if (userDoc.exists()) {
         this.userProfile = { uid, ...userDoc.data() };
+        this.saveToCache(this.userProfile); // Guardar en caché
+        console.log('🔥 Perfil cargado desde Firebase');
         return this.userProfile;
       }
+      
       // Si no existe el perfil, crearlo con datos de Auth
       if (this.currentUser && this.currentUser.uid === uid) {
         const newProfile = {
@@ -233,6 +305,7 @@ class UserAuth {
       const userRef = doc(this.db, 'tiendas', this.STORE_ID, 'users', this.currentUser.uid);
       await updateDoc(userRef, data);
       this.userProfile = { ...this.userProfile, ...data };
+      this.saveToCache(this.userProfile); // Actualizar caché
       this.notifyListeners();
       return { success: true };
     } catch (error) {
@@ -249,6 +322,7 @@ class UserAuth {
       await updateDoc(userRef, { addresses: arrayUnion(addressWithId) });
       if (!this.userProfile.addresses) this.userProfile.addresses = [];
       this.userProfile.addresses.push(addressWithId);
+      this.saveToCache(this.userProfile); // Actualizar caché
       this.notifyListeners();
       return { success: true, address: addressWithId };
     } catch (error) {
@@ -264,6 +338,7 @@ class UserAuth {
       const userRef = doc(this.db, 'tiendas', this.STORE_ID, 'users', this.currentUser.uid);
       await updateDoc(userRef, { addresses: updated });
       this.userProfile.addresses = updated;
+      this.saveToCache(this.userProfile); // Actualizar caché
       this.notifyListeners();
       return { success: true };
     } catch (error) {
@@ -279,6 +354,7 @@ class UserAuth {
       const userRef = doc(this.db, 'tiendas', this.STORE_ID, 'users', this.currentUser.uid);
       await updateDoc(userRef, { addresses: updated });
       this.userProfile.addresses = updated;
+      this.saveToCache(this.userProfile); // Actualizar caché
       this.notifyListeners();
       return { success: true };
     } catch (error) {
