@@ -8126,6 +8126,8 @@
     "features": [],
     "originalPrice": 3120,
     "discount": 15,
+    "basePrice": 2652,
+    "baseOriginalPrice": 3120,
     "priceDisplayMode": "wholesale",
     "variants": {
       "attributes": [
@@ -8406,6 +8408,7 @@
     "originalPrice": 3900,
     "discount": 15,
     "basePrice": 3315,
+    "baseOriginalPrice": 3900,
     "priceDisplayMode": "wholesale"
   },
   {
@@ -14076,6 +14079,7 @@
     "originalPrice": 7000,
     "discount": 40,
     "basePrice": 4200,
+    "baseOriginalPrice": 7000,
     "marketing": {
       "type": "video",
       "url": "assets/videos/marketing/camiseta-messi-clic.mp4",
@@ -14308,6 +14312,7 @@
     "originalPrice": 7000,
     "discount": 40,
     "basePrice": 4200,
+    "baseOriginalPrice": 7000,
     "marketing": {
       "type": "video",
       "url": "assets/videos/marketing/nba-clic.mp4",
@@ -14537,6 +14542,7 @@
     "originalPrice": 7000,
     "discount": 40,
     "basePrice": 4200,
+    "baseOriginalPrice": 7000,
     "priceDisplayMode": "wholesale",
     "variants": {
       "attributes": [
@@ -14741,6 +14747,7 @@
     "originalPrice": 8400,
     "discount": 55,
     "basePrice": 3780,
+    "baseOriginalPrice": 8400,
     "priceDisplayMode": "wholesale",
     "variants": {
       "attributes": [
@@ -14962,6 +14969,8 @@
     "features": [],
     "originalPrice": 7000,
     "discount": 50,
+    "basePrice": 3500,
+    "baseOriginalPrice": 7000,
     "priceDisplayMode": "wholesale",
     "variants": {
       "attributes": [
@@ -15283,6 +15292,7 @@
     "originalPrice": 9800,
     "discount": 40,
     "basePrice": 5880,
+    "baseOriginalPrice": 9800,
     "marketing": {
       "type": "video",
       "url": "assets/videos/marketing/chomba-clic.mp4",
@@ -15528,6 +15538,7 @@
     "originalPrice": 8400,
     "discount": 50,
     "basePrice": 4200,
+    "baseOriginalPrice": 8400,
     "marketing": {
       "type": "video",
       "url": "assets/videos/marketing/hawaianas-clic.mp4",
@@ -15780,7 +15791,7 @@
     "originalPrice": 1921.85,
     "discount": 30,
     "basePrice": 1921.85,
-    "baseOriginalPrice": 2786.68,
+    "baseOriginalPrice": 1921.85,
     "priceDisplayMode": "wholesale",
     "variants": {
       "attributes": [
@@ -16079,7 +16090,7 @@
     "originalPrice": 2826.25,
     "discount": 30,
     "basePrice": 2826.25,
-    "baseOriginalPrice": 4098.06,
+    "baseOriginalPrice": 2826.25,
     "priceDisplayMode": "wholesale",
     "variants": {
       "attributes": [
@@ -16379,7 +16390,7 @@
     "originalPrice": 3278.45,
     "discount": 30,
     "basePrice": 3278.45,
-    "baseOriginalPrice": 4753.75,
+    "baseOriginalPrice": 3278.45,
     "priceDisplayMode": "wholesale",
     "variants": {
       "attributes": [
@@ -16677,7 +16688,7 @@
     "originalPrice": 7913.5,
     "discount": 30,
     "basePrice": 7913.5,
-    "baseOriginalPrice": 11474.58,
+    "baseOriginalPrice": 7913.5,
     "priceDisplayMode": "wholesale",
     "variants": {
       "attributes": [
@@ -16886,7 +16897,7 @@
     "originalPrice": 7913.5,
     "discount": 30,
     "basePrice": 7913.5,
-    "baseOriginalPrice": 11474.58,
+    "baseOriginalPrice": 7913.5,
     "priceDisplayMode": "wholesale",
     "variants": {
       "attributes": [
@@ -17094,7 +17105,7 @@
     "originalPrice": 7913.5,
     "discount": 30,
     "basePrice": 7913.5,
-    "baseOriginalPrice": 11474.58,
+    "baseOriginalPrice": 7913.5,
     "priceDisplayMode": "wholesale",
     "variants": {
       "attributes": [
@@ -17285,7 +17296,7 @@
     "originalPrice": 6783,
     "discount": 30,
     "basePrice": 6783,
-    "baseOriginalPrice": 9835.35,
+    "baseOriginalPrice": 6783,
     "priceDisplayMode": "wholesale",
     "variants": {
       "attributes": [
@@ -17475,7 +17486,7 @@
     "originalPrice": 9609.25,
     "discount": 30,
     "basePrice": 9609.25,
-    "baseOriginalPrice": 13933.41,
+    "baseOriginalPrice": 9609.25,
     "priceDisplayMode": "wholesale",
     "variants": {
       "attributes": [
@@ -17666,7 +17677,7 @@
     "originalPrice": 7913.5,
     "discount": 30,
     "basePrice": 7913.5,
-    "baseOriginalPrice": 11474.58,
+    "baseOriginalPrice": 7913.5,
     "priceDisplayMode": "wholesale",
     "variants": {
       "attributes": [
@@ -17875,7 +17886,7 @@
     "originalPrice": 11305,
     "discount": 30,
     "basePrice": 11305,
-    "baseOriginalPrice": 16392.25,
+    "baseOriginalPrice": 11305,
     "priceDisplayMode": "wholesale",
     "variants": {
       "attributes": [
@@ -18059,6 +18070,8 @@
     "features": [],
     "originalPrice": 8197,
     "discount": 40,
+    "basePrice": 4918,
+    "baseOriginalPrice": 8197,
     "priceDisplayMode": "wholesale",
     "variants": {
       "attributes": [
@@ -18424,6 +18437,7 @@
     "originalPrice": 12294,
     "discount": 55,
     "basePrice": 5532,
+    "baseOriginalPrice": 12294,
     "priceDisplayMode": "wholesale",
     "variants": {
       "attributes": [],
@@ -18625,7 +18639,7 @@
     "originalPrice": 9609.25,
     "discount": 30,
     "basePrice": 9609.25,
-    "baseOriginalPrice": 13933.41,
+    "baseOriginalPrice": 9609.25,
     "priceDisplayMode": "wholesale",
     "variants": {
       "attributes": [],
@@ -18828,7 +18842,7 @@
     "originalPrice": 5652.5,
     "discount": 30,
     "basePrice": 5652.5,
-    "baseOriginalPrice": 8196.13,
+    "baseOriginalPrice": 5652.5,
     "priceDisplayMode": "wholesale",
     "variants": {
       "attributes": [
@@ -19053,7 +19067,7 @@
     "originalPrice": 4522,
     "discount": 30,
     "basePrice": 4522,
-    "baseOriginalPrice": 6556.9,
+    "baseOriginalPrice": 4522,
     "priceDisplayMode": "wholesale",
     "variants": {
       "attributes": [],
@@ -19254,8 +19268,8 @@
     ],
     "originalPrice": 18400,
     "discount": 15,
-    "basePrice": 13600,
-    "baseOriginalPrice": 16000,
+    "basePrice": 15640,
+    "baseOriginalPrice": 18400,
     "priceDisplayMode": "wholesale",
     "variants": {
       "attributes": [
@@ -19390,6 +19404,7 @@
     "originalPrice": 11000,
     "discount": 15,
     "basePrice": 9350,
+    "baseOriginalPrice": 11000,
     "priceDisplayMode": "wholesale",
     "variants": {
       "attributes": [],
@@ -19757,6 +19772,7 @@
     "originalPrice": 25700,
     "discount": 15,
     "basePrice": 21845,
+    "baseOriginalPrice": 25700,
     "priceDisplayMode": "wholesale",
     "variants": {
       "attributes": [],
@@ -19850,6 +19866,7 @@
     "originalPrice": 31900,
     "discount": 15,
     "basePrice": 27115,
+    "baseOriginalPrice": 31900,
     "priceDisplayMode": "wholesale",
     "variants": {
       "attributes": [],
@@ -21220,8 +21237,8 @@
     ],
     "originalPrice": 4600,
     "discount": 15,
-    "basePrice": 3400,
-    "baseOriginalPrice": 4000,
+    "basePrice": 3910,
+    "baseOriginalPrice": 4600,
     "priceDisplayMode": "wholesale",
     "variants": {
       "attributes": [
@@ -21384,6 +21401,8 @@
     "features": [],
     "originalPrice": 10580,
     "discount": 15,
+    "basePrice": 8993,
+    "baseOriginalPrice": 10580,
     "priceDisplayMode": "wholesale",
     "variants": {
       "attributes": [
@@ -21553,8 +21572,8 @@
     ],
     "originalPrice": 3680,
     "discount": 15,
-    "basePrice": 2720,
-    "baseOriginalPrice": 3200,
+    "basePrice": 3128,
+    "baseOriginalPrice": 3680,
     "priceDisplayMode": "wholesale",
     "variants": {
       "attributes": [
@@ -21670,8 +21689,8 @@
     ],
     "originalPrice": 4370,
     "discount": 15,
-    "basePrice": 3230,
-    "baseOriginalPrice": 3800,
+    "basePrice": 3714.5,
+    "baseOriginalPrice": 4370,
     "priceDisplayMode": "wholesale",
     "variants": {
       "attributes": [
@@ -21785,8 +21804,8 @@
     ],
     "originalPrice": 4255,
     "discount": 15,
-    "basePrice": 3145,
-    "baseOriginalPrice": 3700,
+    "basePrice": 3616.75,
+    "baseOriginalPrice": 4255,
     "priceDisplayMode": "wholesale",
     "variants": {
       "attributes": [
@@ -21938,8 +21957,8 @@
     ],
     "originalPrice": 3277.5,
     "discount": 15,
-    "basePrice": 2423,
-    "baseOriginalPrice": 2850,
+    "basePrice": 2785.88,
+    "baseOriginalPrice": 3277.5,
     "priceDisplayMode": "wholesale",
     "variants": {
       "attributes": [
@@ -22163,8 +22182,8 @@
     ],
     "originalPrice": 13800,
     "discount": 15,
-    "basePrice": 10200,
-    "baseOriginalPrice": 12000,
+    "basePrice": 11730,
+    "baseOriginalPrice": 13800,
     "priceDisplayMode": "wholesale",
     "variants": {
       "attributes": [
@@ -22386,8 +22405,8 @@
     ],
     "originalPrice": 12650,
     "discount": 15,
-    "basePrice": 9350,
-    "baseOriginalPrice": 11000,
+    "basePrice": 10752.5,
+    "baseOriginalPrice": 12650,
     "priceDisplayMode": "wholesale",
     "variants": {
       "attributes": [
@@ -22541,8 +22560,8 @@
     ],
     "originalPrice": 23000,
     "discount": 15,
-    "basePrice": 17000,
-    "baseOriginalPrice": 20000,
+    "basePrice": 19550,
+    "baseOriginalPrice": 23000,
     "priceDisplayMode": "wholesale",
     "variants": {
       "attributes": [
@@ -22834,8 +22853,8 @@
     ],
     "originalPrice": 10350,
     "discount": 15,
-    "basePrice": 7650,
-    "baseOriginalPrice": 9000,
+    "basePrice": 8797.5,
+    "baseOriginalPrice": 10350,
     "priceDisplayMode": "wholesale",
     "variants": {
       "attributes": [
@@ -23251,8 +23270,8 @@
     ],
     "originalPrice": 2760,
     "discount": 15,
-    "basePrice": 2040,
-    "baseOriginalPrice": 2400,
+    "basePrice": 2346,
+    "baseOriginalPrice": 2760,
     "priceDisplayMode": "wholesale",
     "variants": {
       "attributes": [
@@ -24246,6 +24265,7 @@
     "originalPrice": 5160,
     "discount": 35,
     "basePrice": 3354,
+    "baseOriginalPrice": 5160,
     "priceDisplayMode": "wholesale",
     "variants": {
       "attributes": [
@@ -24413,6 +24433,7 @@
     "originalPrice": 4800,
     "discount": 30,
     "basePrice": 3360,
+    "baseOriginalPrice": 4800,
     "priceDisplayMode": "wholesale",
     "variants": {
       "attributes": [],
@@ -25183,6 +25204,8 @@
     "features": [],
     "originalPrice": 1800,
     "discount": 15,
+    "basePrice": 1530,
+    "baseOriginalPrice": 1800,
     "priceDisplayMode": "wholesale",
     "variants": {
       "attributes": [
@@ -25298,6 +25321,8 @@
     "features": [],
     "originalPrice": 1600,
     "discount": 15,
+    "basePrice": 1360,
+    "baseOriginalPrice": 1600,
     "priceDisplayMode": "wholesale",
     "variants": {
       "attributes": [
@@ -25409,6 +25434,8 @@
     "features": [],
     "originalPrice": 1800,
     "discount": 15,
+    "basePrice": 1530,
+    "baseOriginalPrice": 1800,
     "priceDisplayMode": "wholesale",
     "variants": {
       "attributes": [
@@ -25798,6 +25825,7 @@
     "originalPrice": 2500,
     "discount": 40,
     "basePrice": 1500,
+    "baseOriginalPrice": 2500,
     "priceDisplayMode": "wholesale",
     "variants": {
       "attributes": [
@@ -27529,7 +27557,7 @@
     "originalPrice": 6000,
     "discount": 30,
     "basePrice": 6000,
-    "baseOriginalPrice": 8700,
+    "baseOriginalPrice": 6000,
     "priceDisplayMode": "wholesale",
     "variants": {
       "attributes": [
@@ -27741,7 +27769,7 @@
     "originalPrice": 9000,
     "discount": 30,
     "basePrice": 9000,
-    "baseOriginalPrice": 13050,
+    "baseOriginalPrice": 9000,
     "priceDisplayMode": "wholesale",
     "variants": {
       "attributes": [
@@ -27940,7 +27968,7 @@
     "originalPrice": 7000,
     "discount": 30,
     "basePrice": 7000,
-    "baseOriginalPrice": 10150,
+    "baseOriginalPrice": 7000,
     "priceDisplayMode": "wholesale",
     "variants": {
       "attributes": [
@@ -28134,7 +28162,7 @@
     "originalPrice": 7000,
     "discount": 30,
     "basePrice": 7000,
-    "baseOriginalPrice": 10150,
+    "baseOriginalPrice": 7000,
     "priceDisplayMode": "wholesale",
     "variants": {
       "attributes": [
@@ -28987,6 +29015,7 @@
     "originalPrice": 8700,
     "discount": 30,
     "basePrice": 6090,
+    "baseOriginalPrice": 8700,
     "promoText": "OFERTA INVIERNO",
     "priceDisplayMode": "wholesale",
     "variants": {
