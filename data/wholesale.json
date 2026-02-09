@@ -1,11 +1,11 @@
 {
   "enabled": true,
-  "min_amount": 150000,
-  "min_items_per_product": 2,
+  "min_amount": 50000,
+  "min_items": 1,
   "condition_mode": "amount_and_quantity",
   "messages": {
     "unlocked": "🎉 ¡Precio mayorista desbloqueado!",
     "progress_amount": "Te faltan ${remaining} para precio mayorista",
-    "progress_items": "Compra ${min} unidades del mismo producto para precio mayorista"
+    "progress_items": "Agrega ${remaining} productos más para precio mayorista"
   }
 }
