@@ -720,7 +720,7 @@ class CartUI {
           </div>
         </div>
         <p class="wholesale-progress__policy">
-          💡 Agregá más unidades de un mismo producto (ej: 2 del mismo artículo, pueden ser tallas diferentes)
+          💡 Agregá más unidades de un mismo producto (ej: ${minItemsPerProduct} del mismo artículo, pueden ser tallas diferentes)
         </p>
       `;
     }
