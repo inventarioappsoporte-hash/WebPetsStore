@@ -23,6 +23,7 @@ class SocialFloat {
   init() {
     this.render();
     this.renderUserMenu();
+    this.renderAuthModal(); // Crear modal de auth si no existe
     this.attachEvents();
     
     // Escuchar cambios de autenticación
@@ -36,6 +37,147 @@ class SocialFloat {
     }
     
     console.log('📱 SocialFloat initialized');
+  }
+
+  /**
+   * Renderizar modal de autenticación si no existe
+   */
+  renderAuthModal() {
+    if (document.getElementById('auth-modal')) return;
+    
+    const modal = document.createElement('div');
+    modal.className = 'auth-modal';
+    modal.id = 'auth-modal';
+    modal.innerHTML = `
+      <div class="auth-modal__overlay" onclick="UserAuth.hideAuthModal()"></div>
+      <div class="auth-modal__content">
+        <div class="auth-modal__header">
+          <h2>🐾 Mi Cuenta</h2>
+          <button class="auth-modal__close" onclick="UserAuth.hideAuthModal()">✕</button>
+        </div>
+        
+        <div class="auth-tabs">
+          <button class="auth-tab active" id="auth-tab-login" onclick="UserAuth.switchAuthTab('login')">
+            Iniciar Sesión
+          </button>
+          <button class="auth-tab" id="auth-tab-register" onclick="UserAuth.switchAuthTab('register')">
+            Crear Cuenta
+          </button>
+        </div>
+        
+        <!-- Login Form -->
+        <form class="auth-form active" id="auth-form-login" onsubmit="socialFloat.handleLogin(event)">
+          <button type="button" class="auth-google-btn" onclick="socialFloat.handleGoogleLogin()">
+            <img src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg" alt="Google" width="18" height="18">
+            Continuar con Google
+          </button>
+          
+          <div class="auth-divider"><span>o</span></div>
+          
+          <div class="auth-form__group">
+            <label class="auth-form__label">Email</label>
+            <input type="email" id="login-email" class="auth-form__input" placeholder="tu@email.com" required>
+          </div>
+          
+          <div class="auth-form__group">
+            <label class="auth-form__label">Contraseña</label>
+            <input type="password" id="login-password" class="auth-form__input" placeholder="••••••••" required>
+          </div>
+          
+          <a href="#" class="auth-form__forgot" onclick="event.preventDefault(); UserAuth.resetPassword(document.getElementById('login-email').value).then(r => r.success ? alert('Te enviamos un email para restablecer tu contraseña') : alert(r.error || 'Ingresa tu email primero'))">
+            ¿Olvidaste tu contraseña?
+          </a>
+          
+          <button type="submit" class="auth-form__submit">Iniciar Sesión</button>
+          
+          <p class="auth-form__terms">
+            Al continuar, aceptas nuestros <a href="politicas.html">Términos y Política de Privacidad</a>.
+          </p>
+        </form>
+        
+        <!-- Register Form -->
+        <form class="auth-form" id="auth-form-register" onsubmit="socialFloat.handleRegister(event)">
+          <button type="button" class="auth-google-btn" onclick="socialFloat.handleGoogleLogin()">
+            <img src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg" alt="Google" width="18" height="18">
+            Continuar con Google
+          </button>
+          
+          <div class="auth-divider"><span>o</span></div>
+          
+          <div class="auth-form__group">
+            <label class="auth-form__label">Nombre completo</label>
+            <input type="text" id="register-name" class="auth-form__input" placeholder="Juan Pérez" required>
+          </div>
+          
+          <div class="auth-form__group">
+            <label class="auth-form__label">Email</label>
+            <input type="email" id="register-email" class="auth-form__input" placeholder="tu@email.com" required>
+          </div>
+          
+          <div class="auth-form__group">
+            <label class="auth-form__label">Teléfono (opcional)</label>
+            <input type="tel" id="register-phone" class="auth-form__input" placeholder="11 5555-5555">
+          </div>
+          
+          <div class="auth-form__group">
+            <label class="auth-form__label">Contraseña</label>
+            <input type="password" id="register-password" class="auth-form__input" placeholder="Mínimo 6 caracteres" required minlength="6">
+          </div>
+          
+          <button type="submit" class="auth-form__submit">Crear Cuenta</button>
+          
+          <p class="auth-form__terms">
+            Al registrarte, aceptas nuestros <a href="politicas.html">Términos y Política de Privacidad</a>.
+          </p>
+        </form>
+      </div>
+    `;
+    
+    document.body.appendChild(modal);
+  }
+
+  /**
+   * Manejar login con email
+   */
+  async handleLogin(e) {
+    e.preventDefault();
+    const email = document.getElementById('login-email').value;
+    const password = document.getElementById('login-password').value;
+    const result = await UserAuth.loginWithEmail(email, password);
+    if (result.success) {
+      UserAuth.hideAuthModal();
+    } else {
+      alert(result.error);
+    }
+  }
+
+  /**
+   * Manejar registro
+   */
+  async handleRegister(e) {
+    e.preventDefault();
+    const name = document.getElementById('register-name').value;
+    const email = document.getElementById('register-email').value;
+    const phone = document.getElementById('register-phone').value;
+    const password = document.getElementById('register-password').value;
+    const result = await UserAuth.registerWithEmail(email, password, name, phone);
+    if (result.success) {
+      UserAuth.hideAuthModal();
+    } else {
+      alert(result.error);
+    }
+  }
+
+  /**
+   * Manejar login con Google
+   */
+  async handleGoogleLogin() {
+    const result = await UserAuth.loginWithGoogle();
+    if (result.success) {
+      UserAuth.hideAuthModal();
+    } else if (result.error !== 'Se cerró la ventana de login') {
+      alert(result.error);
+    }
   }
 
   /**
