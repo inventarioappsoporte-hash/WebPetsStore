@@ -664,8 +664,9 @@ class CartUI {
     if (addressSelector) addressSelector.style.display = 'none';
   }
 
-  /**
+    /**
    * Renderizar progreso hacia precio mayorista
+   * Nueva lógica: monto mínimo + cantidad mínima POR PRODUCTO
    */
   static renderWholesaleProgress(status) {
     if (!status || !status.config || !status.config.enabled) {
@@ -673,65 +674,54 @@ class CartUI {
     }
 
     const config = status.config;
+    const minItemsPerProduct = config.min_items_per_product || config.min_items || 2;
+    const productsWithWholesale = status.productsWithWholesale || [];
+    const totalAtListPrice = status.totalAtListPrice || Cart.getTotal();
     
-    if (status.unlocked) {
+    if (status.unlocked && productsWithWholesale.length > 0) {
       return `
         <div class="wholesale-progress wholesale-progress--unlocked">
           <div class="wholesale-progress__icon">🎉</div>
           <div class="wholesale-progress__text">
-            <strong>¡Precio mayorista desbloqueado!</strong>
-            <span>Estás comprando a precio especial</span>
+            <strong>¡Precio mayorista activo!</strong>
+            <span>${productsWithWholesale.length} producto${productsWithWholesale.length > 1 ? 's aplican' : ' aplica'} precio mayorista</span>
           </div>
         </div>
       `;
     }
 
-    // Calcular progreso
-    const total = Cart.getTotal();
-    const itemCount = Cart.getItemCount();
-    
     let progressHtml = '';
     
-    if (config.condition_mode === 'any') {
-      // Mostrar la opción más cercana a cumplirse
-      const amountProgress = Math.min(100, (total / config.min_amount) * 100);
-      const itemsProgress = Math.min(100, (itemCount / config.min_items) * 100);
-      
-      if (amountProgress >= itemsProgress) {
-        progressHtml = `
-          <div class="wholesale-progress__bar">
-            <div class="wholesale-progress__fill" style="width: ${amountProgress}%"></div>
-          </div>
-          <span class="wholesale-progress__hint">
-            Te faltan $${this.formatPrice(status.remainingAmount)} para precio mayorista
-          </span>
-        `;
-      } else {
-        progressHtml = `
-          <div class="wholesale-progress__bar">
-            <div class="wholesale-progress__fill" style="width: ${itemsProgress}%"></div>
-          </div>
-          <span class="wholesale-progress__hint">
-            Agrega ${status.remainingItems} producto${status.remainingItems > 1 ? 's' : ''} más para precio mayorista
-          </span>
-        `;
-      }
+    if (!status.meetsAmount) {
+      const amountProgress = Math.min(100, (totalAtListPrice / config.min_amount) * 100);
+      progressHtml = `
+        <div class="wholesale-progress__bar">
+          <div class="wholesale-progress__fill" style="width: ${amountProgress}%"></div>
+        </div>
+        <div class="wholesale-progress__info">
+          <p class="wholesale-progress__hint">
+            Te faltan <strong>${this.formatPrice(status.remainingAmount)}</strong> para activar precios mayoristas
+          </p>
+          <p class="wholesale-progress__policy">
+            📋 <strong>Política:</strong> Monto mínimo ${this.formatPrice(config.min_amount)} + mínimo ${minItemsPerProduct} unidades del mismo producto
+          </p>
+        </div>
+      `;
     } else {
-      // Modo AND: mostrar ambos requisitos
-      const amountProgress = Math.min(100, (total / config.min_amount) * 100);
-      const itemsProgress = Math.min(100, (itemCount / config.min_items) * 100);
-      
       progressHtml = `
         <div class="wholesale-progress__requirements">
-          <div class="wholesale-progress__req ${status.meetsAmount ? 'met' : ''}">
-            <span class="wholesale-progress__check">${status.meetsAmount ? '✓' : '○'}</span>
-            <span>Monto: $${this.formatPrice(total)} / $${this.formatPrice(config.min_amount)}</span>
+          <div class="wholesale-progress__req met">
+            <span class="wholesale-progress__check">✓</span>
+            <span>Monto mínimo alcanzado: ${this.formatPrice(totalAtListPrice)}</span>
           </div>
-          <div class="wholesale-progress__req ${status.meetsItems ? 'met' : ''}">
-            <span class="wholesale-progress__check">${status.meetsItems ? '✓' : '○'}</span>
-            <span>Productos: ${itemCount} / ${config.min_items}</span>
+          <div class="wholesale-progress__req pending">
+            <span class="wholesale-progress__check">○</span>
+            <span>Necesitás ${minItemsPerProduct}+ unidades del mismo producto</span>
           </div>
         </div>
+        <p class="wholesale-progress__policy">
+          💡 Agregá más unidades de un mismo producto (ej: 2 del mismo artículo, pueden ser tallas diferentes)
+        </p>
       `;
     }
 
@@ -747,6 +737,7 @@ class CartUI {
   }
 
   /**
+   * Cerrar modal del carrito/**
    * Cerrar modal del carrito
    */
   static close() {
