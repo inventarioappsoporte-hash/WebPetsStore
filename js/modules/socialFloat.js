@@ -92,9 +92,12 @@ class SocialFloat {
   }
 }
 
+// Detectar si es móvil para usar deep links
+const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+
 // Instancia global
 const socialFloat = new SocialFloat({
-  instagram: 'https://www.instagram.com/petsstore2026/',
+  instagram: isMobile ? 'instagram://user?username=petsstore2026' : 'https://www.instagram.com/petsstore2026/',
   tiktok: 'https://www.tiktok.com/@pets.store795'
 });
 
