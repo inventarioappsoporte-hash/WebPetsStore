@@ -46,33 +46,7 @@
         }
     </style>
     <title>${storeName}</title>
-    <script>
-        // Validación de acceso con clave secreta
-        (function() {
-            // Permitir acceso desde localhost (vista previa local)
-            const isLocalhost = window.location.hostname === 'localhost' || 
-                               window.location.hostname === '127.0.0.1' ||
-                               window.location.protocol === 'file:';
-            
-            if (isLocalhost) return; // No validar en desarrollo local
-            
-            const ACCESS_KEY = 'pets2026admin';
-            const params = new URLSearchParams(window.location.search);
-            const key = params.get('key');
-            
-            // Si tiene la clave correcta, guardarla en sessionStorage
-            if (key === ACCESS_KEY) {
-                sessionStorage.setItem('admin_access', 'granted');
-            }
-            
-            // Verificar acceso
-            const hasAccess = sessionStorage.getItem('admin_access') === 'granted';
-            if (!hasAccess) {
-                // Redirigir a la tienda si no tiene acceso
-                window.location.href = '/';
-            }
-        })();
-    </script>
+    <!-- Validación de acceso ahora se hace con Firebase Auth + rol admin en Firestore -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -1649,18 +1623,54 @@
         const loginBtn = document.getElementById('login-btn');
 
         // Auth State Observer
-        onAuthStateChanged(auth, (user) => {
+        onAuthStateChanged(auth, async (user) => {
             console.log('Auth state changed:', user ? 'Usuario autenticado' : 'No autenticado');
             if (user) {
-                currentUser = user;
-                console.log('Usuario:', user.email);
-                showAdmin();
-                loadOrders();
+                // Verificar rol del usuario en Firestore
+                try {
+                    const STORE_ID = 'petsstore-b0516';
+                    const userDocRef = doc(db, 'tiendas', STORE_ID, 'users', user.uid);
+                    const userDoc = await getDoc(userDocRef);
+                    
+                    if (userDoc.exists()) {
+                        const userData = userDoc.data();
+                        console.log('Datos del usuario:', userData);
+                        
+                        if (userData.role === 'admin') {
+                            currentUser = user;
+                            console.log('Usuario admin verificado:', user.email);
+                            showAdmin();
+                            loadOrders();
+                        } else {
+                            console.warn('Usuario sin permisos de admin:', user.email);
+                            await signOut(auth);
+                            showLoginError('No tienes permisos de administrador');
+                        }
+                    } else {
+                        console.warn('Usuario no encontrado en Firestore:', user.uid);
+                        await signOut(auth);
+                        showLoginError('Usuario no registrado en el sistema');
+                    }
+                } catch (error) {
+                    console.error('Error verificando rol:', error);
+                    await signOut(auth);
+                    showLoginError('Error al verificar permisos');
+                }
             } else {
                 currentUser = null;
                 showLogin();
             }
         });
+        
+        // Mostrar error en login
+        function showLoginError(message) {
+            removeCriticalStyles();
+            document.getElementById('loading-screen').style.display = 'none';
+            loginScreen.style.display = 'flex';
+            adminLayout.classList.remove('active');
+            loginError.textContent = message;
+            loginError.style.display = 'block';
+        }
 
         // Función para remover estilos críticos (permite que CSS normal tome control)
         function removeCriticalStyles() {
