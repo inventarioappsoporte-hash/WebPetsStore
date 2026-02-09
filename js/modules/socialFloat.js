@@ -94,8 +94,8 @@ class SocialFloat {
 
 // Instancia global
 const socialFloat = new SocialFloat({
-  instagram: 'https://www.instagram.com/petsstore2026',
-  tiktok: 'https://www.tiktok.com/@petsstore2026'
+  instagram: 'https://www.instagram.com/petsstore2026?igsh=bDR0eHl3NmNyMHJz',
+  tiktok: 'https://www.tiktok.com/@pets.store795'
 });
 
 // Auto-inicializar cuando el DOM esté listo
