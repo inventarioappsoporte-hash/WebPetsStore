@@ -90,30 +90,26 @@
 /* Responsive: Mobile */
 @media (max-width: 768px) {
   .social-float-container {
-    bottom: 20px;
-    right: 20px;
+    bottom: 85px; /* Arriba de la barra sticky del carrito */
+    right: 16px;
     gap: 10px;
   }
 
   .social-float {
-    width: 44px;
-    height: 44px;
+    width: 42px;
+    height: 42px;
   }
 
   .social-float__icon {
-    width: 22px;
-    height: 22px;
+    width: 20px;
+    height: 20px;
   }
 }
 
-/* Ajuste cuando hay carrito sticky visible */
-body.has-cart-items .social-float-container {
-  bottom: 90px;
-}
-
-@media (min-width: 769px) {
+/* Ajuste cuando hay carrito sticky visible en móvil */
+@media (max-width: 768px) {
   body.has-cart-items .social-float-container {
-    bottom: 24px;
+    bottom: 85px;
   }
 }
 
