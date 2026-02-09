@@ -1,6 +1,6 @@
 /**
  * 📱 Social Float Buttons - Estilos
- * Botones flotantes para redes sociales (Instagram, TikTok)
+ * Botones flotantes para redes sociales (Instagram, TikTok) y Usuario
  */
 
 /* Contenedor de botones sociales */
@@ -27,6 +27,7 @@
   text-decoration: none;
   transition: all 0.3s ease;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  border: none;
 }
 
 .social-float:hover {
@@ -42,6 +43,106 @@
   width: 26px;
   height: 26px;
   fill: #fff;
+}
+
+/* ========================================
+   BOTÓN DE USUARIO - Diseño Premium
+   ======================================== */
+.social-float--user {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  position: relative;
+  overflow: hidden;
+  font-family: 'Segoe UI', system-ui, sans-serif;
+}
+
+.social-float--user::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    45deg,
+    transparent,
+    rgba(255, 255, 255, 0.1),
+    transparent
+  );
+  transform: rotate(45deg);
+  animation: user-shimmer 3s infinite;
+}
+
+@keyframes user-shimmer {
+  0% { transform: translateX(-100%) rotate(45deg); }
+  100% { transform: translateX(100%) rotate(45deg); }
+}
+
+.social-float--user:hover {
+  box-shadow: 0 6px 25px rgba(102, 126, 234, 0.5);
+  transform: scale(1.1);
+}
+
+/* Iniciales del usuario */
+.social-float__user-initials {
+  position: relative;
+  z-index: 1;
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: -0.5px;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* Estado logueado - Diseño dorado premium */
+.social-float--user.logged-in {
+  background: linear-gradient(135deg, #FFD700 0%, #FFA500 50%, #FFD700 100%);
+  background-size: 200% 200%;
+  animation: gold-shimmer 3s ease infinite;
+  border: 2px solid #fff;
+  box-shadow: 
+    0 4px 20px rgba(255, 215, 0, 0.5),
+    0 0 0 3px rgba(255, 165, 0, 0.2);
+}
+
+@keyframes gold-shimmer {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.social-float--user.logged-in:hover {
+  box-shadow: 
+    0 6px 30px rgba(255, 215, 0, 0.7),
+    0 0 0 4px rgba(255, 165, 0, 0.3);
+  transform: scale(1.15);
+}
+
+.social-float--user.logged-in .social-float__user-initials {
+  font-size: 16px;
+  font-weight: 800;
+  color: #1a1a1a;
+  text-shadow: 0 1px 2px rgba(255, 255, 255, 0.5);
+}
+
+/* Indicador de usuario logueado (punto verde) */
+.social-float--user.logged-in::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 14px;
+  height: 14px;
+  background: linear-gradient(135deg, #22c55e 0%, #16a34a 100%);
+  border-radius: 50%;
+  border: 2px solid #fff;
+  z-index: 2;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Tooltip mejorado para usuario */
+.social-float--user[title]:hover::before {
+  animation: none;
 }
 
 /* Instagram */
@@ -104,6 +205,21 @@
     width: 20px;
     height: 20px;
   }
+
+  .social-float__user-initials {
+    font-size: 14px;
+  }
+
+  .social-float--user.logged-in .social-float__user-initials {
+    font-size: 13px;
+  }
+
+  .social-float--user.logged-in::after {
+    width: 10px;
+    height: 10px;
+    bottom: 1px;
+    right: 1px;
+  }
 }
 
 /* Ajuste cuando hay carrito sticky visible en móvil */
@@ -129,6 +245,304 @@
   animation: social-float-in 0.5s ease-out;
 }
 
+.social-float:nth-child(1) {
+  animation-delay: 0s;
+}
+
 .social-float:nth-child(2) {
   animation-delay: 0.1s;
+}
+
+.social-float:nth-child(3) {
+  animation-delay: 0.2s;
+}
+
+
+/* ========================================
+   MENÚ DE USUARIO FLOTANTE
+   ======================================== */
+.user-float-menu {
+  position: fixed;
+  bottom: 90px;
+  right: 24px;
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px) scale(0.95);
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  pointer-events: none;
+}
+
+.user-float-menu.open {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0) scale(1);
+  pointer-events: auto;
+}
+
+.user-float-menu__content {
+  background: linear-gradient(145deg, #ffffff 0%, #f8f9fa 100%);
+  border-radius: 16px;
+  box-shadow: 
+    0 10px 40px rgba(0, 0, 0, 0.15),
+    0 0 0 1px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  min-width: 180px;
+  backdrop-filter: blur(10px);
+}
+
+/* Header del menú */
+.user-float-menu__header {
+  padding: 14px 16px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-bottom: none;
+}
+
+.user-float-menu__greeting {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* Items del menú */
+.user-float-menu__items {
+  padding: 8px;
+}
+
+.user-float-menu__item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  padding: 10px 12px;
+  border: none;
+  background: transparent;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  color: #374151;
+  transition: all 0.2s ease;
+  text-align: left;
+}
+
+.user-float-menu__item:hover {
+  background: linear-gradient(135deg, #f3f4f6 0%, #e5e7eb 100%);
+  transform: translateX(4px);
+}
+
+.user-float-menu__item:active {
+  transform: translateX(2px) scale(0.98);
+}
+
+.user-float-menu__icon {
+  font-size: 16px;
+  width: 24px;
+  text-align: center;
+}
+
+/* Item de logout */
+.user-float-menu__item--logout {
+  color: #dc2626;
+}
+
+.user-float-menu__item--logout:hover {
+  background: linear-gradient(135deg, #fef2f2 0%, #fee2e2 100%);
+}
+
+/* Divisor */
+.user-float-menu__divider {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #e5e7eb, transparent);
+  margin: 6px 12px;
+}
+
+/* Flecha indicadora (triángulo) */
+.user-float-menu__content::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  right: 18px;
+  width: 16px;
+  height: 16px;
+  background: #f8f9fa;
+  transform: rotate(45deg);
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.05);
+  border-radius: 2px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .user-float-menu {
+    bottom: 150px;
+    right: 16px;
+  }
+
+  .user-float-menu__content {
+    min-width: 160px;
+  }
+
+  .user-float-menu__header {
+    padding: 12px 14px;
+  }
+
+  .user-float-menu__greeting {
+    font-size: 13px;
+  }
+
+  .user-float-menu__item {
+    padding: 9px 10px;
+    font-size: 13px;
+  }
+}
+
+/* Ajuste cuando hay carrito sticky */
+@media (max-width: 768px) {
+  body.has-cart-items .user-float-menu {
+    bottom: 150px;
+  }
+}
+
+
+/* ========================================
+   MENÚ FLOTANTE DE USUARIO - Diseño Elegante
+   ======================================== */
+.user-float-menu {
+  position: fixed;
+  bottom: 90px;
+  right: 80px;
+  width: 200px;
+  background: rgba(255, 255, 255, 0.98);
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+  box-shadow: 
+    0 10px 40px rgba(0, 0, 0, 0.15),
+    0 0 0 1px rgba(0, 0, 0, 0.05);
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px) scale(0.95);
+  transform-origin: bottom right;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  overflow: hidden;
+}
+
+.user-float-menu.open {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0) scale(1);
+}
+
+/* Header del menú */
+.user-float-menu__header {
+  padding: 16px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: #fff;
+  text-align: center;
+}
+
+.user-float-menu__header.logged-in {
+  background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%);
+}
+
+.user-float-menu__greeting {
+  display: block;
+  font-size: 12px;
+  opacity: 0.9;
+  margin-bottom: 2px;
+}
+
+.user-float-menu__name {
+  display: block;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.user-float-menu__header.logged-in .user-float-menu__greeting,
+.user-float-menu__header.logged-in .user-float-menu__name {
+  color: #1a1a1a;
+}
+
+/* Items del menú */
+.user-float-menu__items {
+  padding: 8px;
+}
+
+.user-float-menu__item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  padding: 12px 14px;
+  border: none;
+  background: transparent;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  color: #374151;
+  transition: all 0.2s ease;
+  text-align: left;
+}
+
+.user-float-menu__item:hover {
+  background: #f3f4f6;
+  transform: translateX(4px);
+}
+
+.user-float-menu__item:active {
+  transform: scale(0.98);
+}
+
+.ufm-icon {
+  font-size: 16px;
+  width: 24px;
+  text-align: center;
+}
+
+/* Item de peligro (cerrar sesión) */
+.user-float-menu__item--danger {
+  color: #dc2626;
+}
+
+.user-float-menu__item--danger:hover {
+  background: #fef2f2;
+}
+
+/* Divisor */
+.user-float-menu__divider {
+  height: 1px;
+  background: #e5e7eb;
+  margin: 8px 14px;
+}
+
+/* Botón de usuario cuando el menú está abierto */
+.social-float--user.menu-open {
+  transform: scale(1.1) rotate(10deg);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .user-float-menu {
+    bottom: 150px;
+    right: 16px;
+    width: 180px;
+  }
+  
+  .user-float-menu__header {
+    padding: 12px;
+  }
+  
+  .user-float-menu__item {
+    padding: 10px 12px;
+    font-size: 13px;
+  }
+}
+
+/* Ajuste cuando hay carrito sticky */
+@media (max-width: 768px) {
+  body.has-cart-items .user-float-menu {
+    bottom: 150px;
+  }
 }

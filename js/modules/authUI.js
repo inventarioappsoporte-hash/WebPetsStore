@@ -165,109 +165,76 @@ class AuthUI {
 
 
   /**
-   * Crear botón de cuenta en el header
+   * Crear botón de cuenta en el header (DESHABILITADO - ahora usa botón flotante)
+   * Se mantiene el dropdown para funcionalidad desde el botón flotante
    */
   static createAccountButton() {
-    // Buscar el contenedor de acciones del header
-    const headerActions = document.querySelector('.header__actions');
-    if (!headerActions) {
-      console.warn('Header actions not found');
-      return;
-    }
-
-    // Crear contenedor dropdown
-    const dropdown = document.createElement('div');
-    dropdown.className = 'user-dropdown';
-    dropdown.innerHTML = `
-      <button class="header__account-btn" onclick="AuthUI.toggleDropdown()">
-        <span class="account-icon">👤</span>
-        <span class="account-name">Mi Cuenta</span>
-      </button>
-      <div class="user-dropdown__menu">
-        <div class="user-dropdown__header">
-          <div class="user-dropdown__name">Usuario</div>
-          <div class="user-dropdown__email">email@ejemplo.com</div>
-        </div>
-        <a href="cuenta.html" class="user-dropdown__item">
-          <span>👤</span> Mi Perfil
-        </a>
-        <a href="cuenta.html#direcciones" class="user-dropdown__item">
-          <span>📍</span> Mis Direcciones
-        </a>
-        <button class="user-dropdown__item user-dropdown__item--danger" onclick="AuthUI.handleLogout()">
-          <span>🚪</span> Cerrar Sesión
-        </button>
-      </div>
-    `;
-
-    // Insertar antes del botón del carrito
-    const cartBtn = headerActions.querySelector('.header__cart-btn, [onclick*="CartUI"]');
-    if (cartBtn) {
-      headerActions.insertBefore(dropdown, cartBtn);
-    } else {
-      headerActions.appendChild(dropdown);
-    }
-
-    this.dropdown = dropdown;
-    this.accountBtn = dropdown.querySelector('.header__account-btn');
-
-    // Cerrar dropdown al hacer clic fuera
-    document.addEventListener('click', (e) => {
-      if (!dropdown.contains(e.target)) {
-        dropdown.classList.remove('open');
+    // El botón de usuario ahora está en los botones flotantes (socialFloat.js)
+    // Solo creamos el dropdown oculto para cuando se necesite
+    
+    // Buscar si existe el botón en el header y ocultarlo
+    const existingBtn = document.querySelector('.header__account-btn');
+    if (existingBtn) {
+      const parent = existingBtn.closest('.user-dropdown');
+      if (parent) {
+        parent.style.display = 'none';
+      } else {
+        existingBtn.style.display = 'none';
       }
-    });
+    }
+    
+    // Crear dropdown oculto para uso desde el botón flotante
+    const dropdown = document.createElement('div');
+    dropdown.id = 'user-dropdown-float';
+    dropdown.className = 'user-dropdown-float';
+    dropdown.style.display = 'none';
+    dropdown.innerHTML = `
+      <div class="user-dropdown__header">
+        <div class="user-dropdown__name">Usuario</div>
+        <div class="user-dropdown__email">email@ejemplo.com</div>
+      </div>
+      <a href="cuenta.html" class="user-dropdown__item">
+        <span>👤</span> Mi Perfil
+      </a>
+      <a href="cuenta.html#direcciones" class="user-dropdown__item">
+        <span>📍</span> Mis Direcciones
+      </a>
+      <button class="user-dropdown__item user-dropdown__item--danger" onclick="AuthUI.handleLogout()">
+        <span>🚪</span> Cerrar Sesión
+      </button>
+    `;
+    document.body.appendChild(dropdown);
+    this.dropdown = dropdown;
   }
 
   /**
    * Actualizar UI según estado de autenticación
    */
   static updateUI(user) {
-    if (!this.accountBtn || !this.dropdown) return;
-
-    if (user) {
-      // Usuario logueado
-      this.accountBtn.classList.add('logged-in');
-      
-      const firstName = user.displayName ? user.displayName.split(' ')[0] : 'Usuario';
-      
-      if (user.photoURL) {
-        this.accountBtn.innerHTML = `
-          <img src="${user.photoURL}" alt="" class="account-avatar">
-          <span class="account-name">${firstName}</span>
-        `;
-      } else {
-        this.accountBtn.innerHTML = `
-          <span class="account-icon">👤</span>
-          <span class="account-name">${firstName}</span>
-        `;
-      }
-
-      // Actualizar dropdown
+    // Actualizar el botón flotante de usuario (en socialFloat)
+    if (typeof socialFloat !== 'undefined') {
+      socialFloat.updateUserButton(user);
+    }
+    
+    // Actualizar dropdown oculto si existe
+    if (this.dropdown && user) {
       const nameEl = this.dropdown.querySelector('.user-dropdown__name');
       const emailEl = this.dropdown.querySelector('.user-dropdown__email');
       if (nameEl) nameEl.textContent = user.displayName || 'Usuario';
       if (emailEl) emailEl.textContent = user.email;
-
-    } else {
-      // Usuario no logueado
-      this.accountBtn.classList.remove('logged-in');
-      this.accountBtn.innerHTML = `
-        <span class="account-icon">👤</span>
-        <span class="account-name">Mi Cuenta</span>
-      `;
     }
   }
 
   /**
-   * Toggle dropdown de usuario
+   * Toggle dropdown de usuario (ya no se usa desde header)
    */
   static toggleDropdown() {
     if (!UserAuth.isLoggedIn()) {
       this.openModal();
       return;
     }
-    this.dropdown.classList.toggle('open');
+    // El botón flotante ahora redirige directamente a cuenta.html
+    window.location.href = 'cuenta.html';
   }
 
   /**

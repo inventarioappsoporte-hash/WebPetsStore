@@ -91,8 +91,11 @@ class UserAuth {
       await this.init();
       const { signInWithPopup, GoogleAuthProvider } = await import('https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js');
       const provider = new GoogleAuthProvider();
+      
+      console.log('🔐 Iniciando login con Google...');
       const userCredential = await signInWithPopup(this.auth, provider);
       const user = userCredential.user;
+      console.log('✅ Login con Google exitoso:', user.email);
       
       const profile = await this.loadUserProfile(user.uid);
       if (!profile) {
@@ -105,7 +108,21 @@ class UserAuth {
       }
       return { success: true, user };
     } catch (error) {
-      return { success: false, error: this.getErrorMessage(error.code) };
+      console.error('❌ Error en loginWithGoogle:', error);
+      console.error('Código de error:', error.code);
+      console.error('Mensaje:', error.message);
+      
+      // Mensajes más específicos para errores de Google
+      let errorMsg = this.getErrorMessage(error.code);
+      if (error.code === 'auth/unauthorized-domain') {
+        errorMsg = 'Este dominio no está autorizado. Agrega localhost a los dominios autorizados en Firebase Console.';
+      } else if (error.code === 'auth/operation-not-allowed') {
+        errorMsg = 'El inicio de sesión con Google no está habilitado. Habilítalo en Firebase Console > Authentication > Sign-in method.';
+      } else if (error.code === 'auth/popup-blocked') {
+        errorMsg = 'El navegador bloqueó la ventana emergente. Permite las ventanas emergentes para este sitio.';
+      }
+      
+      return { success: false, error: errorMsg };
     }
   }
 
@@ -134,8 +151,15 @@ class UserAuth {
     try {
       const { doc, setDoc, Timestamp } = await import('https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js');
       const userRef = doc(this.db, 'tiendas', this.STORE_ID, 'users', uid);
-      await setDoc(userRef, { ...data, createdAt: Timestamp.now(), addresses: [] });
-      this.userProfile = { uid, ...data, addresses: [] };
+      const profileData = {
+        ...data,
+        role: 'user', // Siempre crear con rol 'user'
+        createdAt: Timestamp.now(),
+        addresses: []
+      };
+      await setDoc(userRef, profileData);
+      this.userProfile = { uid, ...profileData };
+      console.log('✅ Perfil de usuario creado con rol:', profileData.role);
       return true;
     } catch (error) {
       console.error('Error creando perfil:', error);
@@ -144,6 +168,12 @@ class UserAuth {
   }
 
   static async loadUserProfile(uid) {
+    // Validación de seguridad: solo cargar el perfil del usuario actual
+    if (this.currentUser && this.currentUser.uid !== uid) {
+      console.error('🚫 Intento de acceder a perfil de otro usuario bloqueado');
+      return null;
+    }
+    
     // Si ya tenemos el perfil cacheado, no recargar
     if (this.userProfile && this.userProfile.uid === uid) {
       console.log('🔐 Using cached user profile');
@@ -159,7 +189,7 @@ class UserAuth {
         return this.userProfile;
       }
       // Si no existe el perfil, crearlo con datos de Auth
-      if (this.currentUser) {
+      if (this.currentUser && this.currentUser.uid === uid) {
         const newProfile = {
           email: this.currentUser.email || '',
           displayName: this.currentUser.displayName || '',
@@ -173,13 +203,14 @@ class UserAuth {
     } catch (error) {
       console.error('Error cargando perfil:', error);
       // Si hay error de permisos, usar datos de Auth directamente
-      if (this.currentUser) {
+      if (this.currentUser && this.currentUser.uid === uid) {
         this.userProfile = {
           uid,
           email: this.currentUser.email || '',
           displayName: this.currentUser.displayName || '',
           phone: '',
           photoURL: this.currentUser.photoURL || '',
+          role: 'user',
           addresses: []
         };
         return this.userProfile;
@@ -190,6 +221,13 @@ class UserAuth {
 
   static async updateProfile(data) {
     if (!this.currentUser) return { success: false, error: 'No hay sesión' };
+    
+    // Validación: no permitir cambiar el rol desde el cliente
+    if (data.role) {
+      console.warn('🚫 Intento de cambiar rol bloqueado');
+      delete data.role;
+    }
+    
     try {
       const { doc, updateDoc } = await import('https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js');
       const userRef = doc(this.db, 'tiendas', this.STORE_ID, 'users', this.currentUser.uid);

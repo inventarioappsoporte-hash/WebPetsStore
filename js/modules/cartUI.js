@@ -114,8 +114,7 @@ class CartUI {
             </div>
             
             <!-- Botón para iniciar sesión (solo si no está logueado) -->
-            <!-- TEMPORALMENTE OCULTO: Pausamos registro de usuarios -->
-            <div id="cart-login-prompt" class="cart-login-prompt" style="display: none !important;">
+            <div id="cart-login-prompt" class="cart-login-prompt" style="display: none;">
               <p>¿Ya tenés cuenta? <a href="#" onclick="UserAuth.showAuthModal(); return false;">Iniciá sesión</a> para autocompletar tus datos</p>
             </div>
             
@@ -479,18 +478,35 @@ class CartUI {
    */
   static toggleShippingFields(zone) {
     const fieldsContainer = document.getElementById('shipping-address-fields');
-    if (!fieldsContainer) return;
+    const addressSelector = document.getElementById('saved-addresses-selector');
 
     // Mostrar campos solo si es envío a domicilio (fixed o cargo)
     // Ocultar si es retiro en tienda (free) o no hay zona
     const requiresAddress = zone && (zone.type === 'fixed' || zone.type === 'cargo');
     
-    if (requiresAddress) {
-      fieldsContainer.style.display = 'block';
-      fieldsContainer.classList.add('shipping-fields-visible');
-    } else {
-      fieldsContainer.style.display = 'none';
-      fieldsContainer.classList.remove('shipping-fields-visible');
+    if (fieldsContainer) {
+      if (requiresAddress) {
+        fieldsContainer.style.display = 'block';
+        fieldsContainer.classList.add('shipping-fields-visible');
+      } else {
+        fieldsContainer.style.display = 'none';
+        fieldsContainer.classList.remove('shipping-fields-visible');
+      }
+    }
+    
+    // También ocultar/mostrar selector de direcciones guardadas según si se requiere dirección
+    if (addressSelector) {
+      // Solo mostrar si requiere dirección Y el usuario está logueado con direcciones
+      if (requiresAddress && typeof UserAuth !== 'undefined' && UserAuth.isLoggedIn()) {
+        const user = UserAuth.getUser();
+        if (user && user.addresses && user.addresses.length > 0) {
+          addressSelector.style.display = 'block';
+        } else {
+          addressSelector.style.display = 'none';
+        }
+      } else {
+        addressSelector.style.display = 'none';
+      }
     }
   }
 
@@ -532,30 +548,26 @@ class CartUI {
     const loginPrompt = document.getElementById('cart-login-prompt');
     const addressSelector = document.getElementById('saved-addresses-selector');
     const saveAddressOption = document.getElementById('save-address-option');
+    const nameInput = document.getElementById('customer-name');
+    const phoneInput = document.getElementById('customer-phone');
     
-    // TEMPORALMENTE DESHABILITADO: Ocultar toda la funcionalidad de usuarios
-    if (userSection) userSection.style.display = 'none';
-    if (loginPrompt) loginPrompt.style.display = 'none';
-    if (addressSelector) addressSelector.style.display = 'none';
-    if (saveAddressOption) saveAddressOption.style.display = 'none';
-    return; // Salir sin procesar usuarios
+    // Verificar si la zona de envío requiere dirección
+    const requiresAddress = this.shippingRequiresAddress();
     
     // Verificar si UserAuth está disponible y el usuario está logueado
     if (typeof UserAuth !== 'undefined' && UserAuth.isLoggedIn()) {
       const user = UserAuth.getUser();
       
-      console.log('🛒 autoFillUserData - Usuario:', user);
+      console.log('🛒 autoFillUserData - Usuario:', user, 'Requiere dirección:', requiresAddress);
       
       if (!user) {
         console.log('🛒 autoFillUserData - No hay datos de usuario aún');
         return;
       }
       
-      // TEMPORALMENTE OCULTO: Pausamos registro de usuarios
-      // Mostrar sección de usuario
+      // Mostrar sección de usuario logueado
       if (userSection) {
-        userSection.style.display = 'none'; // TEMPORALMENTE OCULTO
-        // userSection.style.display = 'flex';
+        userSection.style.display = 'flex';
         const avatarEl = document.getElementById('cart-user-avatar');
         const nameEl = document.getElementById('cart-user-name');
         if (avatarEl) avatarEl.textContent = user.photoURL ? '' : '👤';
@@ -565,46 +577,72 @@ class CartUI {
       // Ocultar prompt de login
       if (loginPrompt) loginPrompt.style.display = 'none';
       
-      // Auto-completar nombre y teléfono
-      const nameInput = document.getElementById('customer-name');
-      const phoneInput = document.getElementById('customer-phone');
+      // Ocultar campos de nombre y teléfono (ya tenemos los datos del usuario)
+      if (nameInput) nameInput.style.display = 'none';
+      if (phoneInput) phoneInput.style.display = 'none';
       
-      if (nameInput && !nameInput.value && user.displayName) {
+      // Auto-completar nombre y teléfono (aunque estén ocultos, los necesitamos para el pedido)
+      if (nameInput && user.displayName) {
         nameInput.value = user.displayName;
       }
-      if (phoneInput && !phoneInput.value && user.phone) {
+      if (phoneInput && user.phone) {
         phoneInput.value = user.phone;
       }
       
-      // Mostrar selector de direcciones si tiene direcciones guardadas
+      // Mostrar selector de direcciones SOLO si:
+      // 1. Tiene direcciones guardadas
+      // 2. La zona de envío requiere dirección (no es retiro en tienda)
       if (user.addresses && user.addresses.length > 0 && addressSelector) {
-        addressSelector.style.display = 'block';
-        const select = document.getElementById('saved-address-select');
-        if (select) {
-          select.innerHTML = '<option value="">-- Seleccionar dirección --</option>' +
-            user.addresses.map(addr => 
-              `<option value="${addr.id}" ${addr.isDefault ? 'selected' : ''}>
-                ${addr.label || 'Dirección'} - ${addr.address}, ${addr.city}
-              </option>`
-            ).join('');
-          
-          // Si hay dirección por defecto, llenarla
-          const defaultAddr = user.addresses.find(a => a.isDefault);
-          if (defaultAddr) {
-            this.fillAddressFields(defaultAddr);
+        if (requiresAddress) {
+          addressSelector.style.display = 'block';
+          const select = document.getElementById('saved-address-select');
+          if (select) {
+            select.innerHTML = '<option value="">-- Seleccionar dirección --</option>' +
+              user.addresses.map(addr => 
+                `<option value="${addr.id}" ${addr.isDefault ? 'selected' : ''}>
+                  ${addr.label || 'Dirección'} - ${addr.address}, ${addr.city}
+                </option>`
+              ).join('');
+            
+            // Si hay dirección por defecto, llenarla
+            const defaultAddr = user.addresses.find(a => a.isDefault);
+            if (defaultAddr) {
+              this.fillAddressFields(defaultAddr);
+            }
           }
+        } else {
+          // Retiro en tienda - ocultar selector de direcciones
+          addressSelector.style.display = 'none';
         }
+      } else if (addressSelector) {
+        addressSelector.style.display = 'none';
       }
       
       // Ocultar opción de guardar dirección (ya está logueado)
       if (saveAddressOption) saveAddressOption.style.display = 'none';
     } else {
-      // Usuario no logueado
+      // Usuario no logueado - mostrar campos de nombre y teléfono
       if (userSection) userSection.style.display = 'none';
       if (loginPrompt) loginPrompt.style.display = 'block';
       if (addressSelector) addressSelector.style.display = 'none';
-      if (saveAddressOption) saveAddressOption.style.display = 'block';
+      // Mostrar opción de guardar dirección solo si requiere dirección
+      if (saveAddressOption) saveAddressOption.style.display = requiresAddress ? 'block' : 'none';
+      if (nameInput) nameInput.style.display = 'block';
+      if (phoneInput) phoneInput.style.display = 'block';
     }
+  }
+
+  /**
+   * Verificar si la zona de envío actual requiere dirección
+   * Retorna false para "Retiro en Tienda" (type: 'free')
+   */
+  static shippingRequiresAddress() {
+    if (typeof ShippingSelector === 'undefined' || !ShippingSelector.isEnabled()) {
+      return false;
+    }
+    const zone = ShippingSelector.getSelectedZone();
+    // Requiere dirección solo si es envío a domicilio (fixed o cargo)
+    return zone && (zone.type === 'fixed' || zone.type === 'cargo');
   }
 
   /**
