@@ -1,0 +1,138 @@
+/**
+ * 📱 Social Float Buttons - Estilos
+ * Botones flotantes para redes sociales (Instagram, TikTok)
+ */
+
+/* Contenedor de botones sociales */
+.social-float-container {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: flex-end;
+}
+
+/* Botón flotante base */
+.social-float {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.social-float:hover {
+  transform: scale(1.1);
+}
+
+.social-float:active {
+  transform: scale(0.95);
+}
+
+/* Ícono */
+.social-float__icon {
+  width: 26px;
+  height: 26px;
+  fill: #fff;
+}
+
+/* Instagram */
+.social-float--instagram {
+  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  border: none;
+}
+
+.social-float--instagram:hover {
+  box-shadow: 0 6px 20px rgba(225, 48, 108, 0.5);
+}
+
+/* TikTok */
+.social-float--tiktok {
+  background: #000;
+  border: 2px solid #25F4EE;
+  position: relative;
+  overflow: hidden;
+}
+
+.social-float--tiktok::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, #25F4EE 0%, #FE2C55 100%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.social-float--tiktok:hover {
+  box-shadow: 0 6px 20px rgba(37, 244, 238, 0.4);
+}
+
+.social-float--tiktok:hover::before {
+  opacity: 0.2;
+}
+
+.social-float--tiktok .social-float__icon {
+  position: relative;
+  z-index: 1;
+}
+
+/* Responsive: Mobile */
+@media (max-width: 768px) {
+  .social-float-container {
+    bottom: 20px;
+    right: 20px;
+    gap: 10px;
+  }
+
+  .social-float {
+    width: 44px;
+    height: 44px;
+  }
+
+  .social-float__icon {
+    width: 22px;
+    height: 22px;
+  }
+}
+
+/* Ajuste cuando hay carrito sticky visible */
+body.has-cart-items .social-float-container {
+  bottom: 90px;
+}
+
+@media (min-width: 769px) {
+  body.has-cart-items .social-float-container {
+    bottom: 24px;
+  }
+}
+
+/* Animación de entrada */
+@keyframes social-float-in {
+  from {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.social-float {
+  animation: social-float-in 0.5s ease-out;
+}
+
+.social-float:nth-child(2) {
+  animation-delay: 0.1s;
+}
