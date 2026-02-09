@@ -19,7 +19,7 @@
   <link rel="stylesheet" href="css/variables.css">
   <link rel="stylesheet" href="css/typography.css">
   <link rel="stylesheet" href="css/layout.css">
-  <link rel="stylesheet" href="css/components.css?v=20260208-header-scroll">
+  <link rel="stylesheet" href="css/components.css?v=20260208-mobile-menu">
   <link rel="stylesheet" href="css/mayorista.css">
   <link rel="stylesheet" href="css/cart.css?v=20260121-sticky">
   <link rel="stylesheet" href="css/cart-sticky.css?v=20260121">
@@ -30,12 +30,19 @@
   <header class="header header--solid">
     <div class="container">
       <div class="header__content">
+        <!-- Botón hamburguesa (solo móvil) -->
+        <button class="header__menu-toggle" id="menu-toggle" aria-label="Abrir menú">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+        
         <div class="header__logo">
           <a href="index.html">
             <img src="assets/images/ui/logo-pets-store.png" alt="Pets Store" class="header__logo-img">
           </a>
         </div>
-        <nav class="header__nav">
+        <nav class="header__nav" id="main-nav">
           <a href="index.html" class="nav__link">Home</a>
           <a href="search.html" class="nav__link">Buscar</a>
           <div class="nav__item nav__item--dropdown">
@@ -48,6 +55,10 @@
           <a href="mayorista.html" class="nav__link nav__link--active">Mayorista</a>
         </nav>
         <div class="header__actions">
+          <!-- Botón de búsqueda (solo móvil) -->
+          <button class="header__search-btn-mobile" id="header-search-toggle-mobile" aria-label="Buscar">
+            🔍
+          </button>
           <div class="header__search">
             <button class="header__search-btn" id="header-search-toggle">🔍</button>
             <input type="text" class="header__search-input" placeholder="Buscar productos..." id="header-search-input">
@@ -66,6 +77,36 @@
       </div>
     </div>
   </header>
+
+  <!-- Overlay del menú móvil -->
+  <div class="mobile-menu-overlay" id="mobile-menu-overlay"></div>
+  
+  <!-- Menú lateral móvil -->
+  <nav class="mobile-menu" id="mobile-menu">
+    <div class="mobile-menu__header">
+      <img src="assets/images/ui/logo-pets-store.png" alt="Pets Store" class="mobile-menu__logo">
+      <button class="mobile-menu__close" id="mobile-menu-close" aria-label="Cerrar menú">✕</button>
+    </div>
+    <div class="mobile-menu__links">
+      <a href="index.html" class="mobile-menu__link">🏠 Home</a>
+      <a href="search.html" class="mobile-menu__link">🔍 Buscar</a>
+      <a href="search.html?category=ropa" class="mobile-menu__link">👕 Ropa</a>
+      <a href="search.html?category=juguetes" class="mobile-menu__link">🎾 Juguetes</a>
+      <a href="search.html?category=comederos" class="mobile-menu__link">🍽️ Comederos</a>
+      <a href="search.html?category=colchonetas" class="mobile-menu__link">🛏️ Colchonetas</a>
+      <a href="search.html?category=accesorios" class="mobile-menu__link">🎀 Accesorios</a>
+      <a href="contact.html" class="mobile-menu__link">📞 Contacto</a>
+      <a href="mayorista.html" class="mobile-menu__link mobile-menu__link--active">💼 Mayorista</a>
+    </div>
+  </nav>
+
+  <!-- Barra de búsqueda móvil (oculta por defecto) -->
+  <div class="mobile-search" id="mobile-search">
+    <div class="mobile-search__container">
+      <input type="text" class="mobile-search__input" id="mobile-search-input" placeholder="Buscar productos...">
+      <button class="mobile-search__close" id="mobile-search-close">✕</button>
+    </div>
+  </div>
 
   <!-- Main Content -->
   <main class="main mayorista-page main--with-header-space">
@@ -224,6 +265,7 @@
 
   <!-- Scripts -->
   <script src="js/modules/headerScroll.js?v=20260208"></script>
+  <script src="js/modules/mobileMenu.js?v=20260208"></script>
   <script src="js/core/constants.js"></script>
   <script src="js/core/utils.js"></script>
   <script src="js/core/dataLoader.js"></script>

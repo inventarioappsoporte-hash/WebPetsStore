@@ -81,55 +81,52 @@ class FirebaseOrders {
       // Importar funciones de Firestore
       const { collection, addDoc, Timestamp } = await import('https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js');
 
-      // Calcular totales del carrito para verificar condiciones mayoristas
-      // IMPORTANTE: Usar originalPrice (precio lista) para calcular si cumple condiciones
-      // porque el precio mayorista solo aplica DESPUÉS de cumplir las condiciones
+      // Nueva lógica mayorista: monto mínimo + cantidad por producto
+      // Calcular total usando precios lista
       const cartTotal = cartItems.reduce((sum, item) => {
-        // Usar originalPrice si existe, sino price
         const priceForCalc = item.originalPrice || item.price;
         return sum + (priceForCalc * item.quantity);
       }, 0);
-      const cartItemCount = cartItems.reduce((sum, item) => sum + item.quantity, 0);
       
-      // Config mayorista por defecto (fallback si no se cargó desde JSON)
-      const defaultWholesaleConfig = {
+      // Config mayorista
+      const wsConfig = (typeof Cart !== 'undefined' && Cart.wholesaleConfig) || {
         enabled: true,
-        min_amount: 50000,
-        min_items: 10,
-        condition_mode: 'any'
+        min_amount: 150000,
+        min_items_per_product: 2
       };
       
-      // Usar config de Cart si existe, sino usar default
-      const wsConfig = (typeof Cart !== 'undefined' && Cart.wholesaleConfig) || defaultWholesaleConfig;
+      // Verificar si cumple monto mínimo
+      const meetsAmount = wsConfig.enabled && cartTotal >= wsConfig.min_amount;
       
-      // Calcular si cumple condiciones mayoristas
-      let wholesaleUnlocked = false;
-      if (wsConfig && wsConfig.enabled) {
-        const meetsAmount = cartTotal >= wsConfig.min_amount;
-        const meetsItems = cartItemCount >= wsConfig.min_items;
-        
-        console.log('🔥 Firebase - meetsAmount:', meetsAmount, `(${cartTotal} >= ${wsConfig.min_amount})`);
-        console.log('🔥 Firebase - meetsItems:', meetsItems, `(${cartItemCount} >= ${wsConfig.min_items})`);
-        
-        if (wsConfig.condition_mode === 'any') {
-          wholesaleUnlocked = meetsAmount || meetsItems;
-        } else {
-          wholesaleUnlocked = meetsAmount && meetsItems;
-        }
-      }
+      // Calcular cantidad por producto (sumando variantes)
+      const productQuantities = {};
+      cartItems.forEach(item => {
+        const productId = item.productId || item.id;
+        productQuantities[productId] = (productQuantities[productId] || 0) + item.quantity;
+      });
       
-      // También verificar la propiedad estática de Cart como respaldo
-      if (!wholesaleUnlocked && typeof Cart !== 'undefined' && Cart.wholesaleUnlocked) {
-        wholesaleUnlocked = true;
-      }
+      // Determinar qué productos califican para mayorista
+      const minItemsPerProduct = wsConfig.min_items_per_product || wsConfig.min_items || 2;
+      const productsWithWholesale = meetsAmount 
+        ? Object.keys(productQuantities).filter(pid => productQuantities[pid] >= minItemsPerProduct)
+        : [];
       
-      console.log('🔥 Firebase - wholesaleUnlocked:', wholesaleUnlocked, 'cartTotal (lista):', cartTotal, 'cartItemCount:', cartItemCount);
+      // Función para verificar si un producto específico califica
+      const productQualifiesForWholesale = (productId) => {
+        return meetsAmount && productsWithWholesale.includes(productId);
+      };
       
-      // Calcular totales considerando precios mayoristas
+      console.log('🔥 Firebase - meetsAmount:', meetsAmount, 'productsWithWholesale:', productsWithWholesale);
+      
+      // Calcular totales considerando precios mayoristas por producto
       let subtotal = 0;
       const items = cartItems.map((item, idx) => {
         const isWholesaleItem = item.priceDisplayMode === 'wholesale';
         const hasDiscount = item.originalPrice && item.originalPrice > item.price;
+        const productId = item.productId || item.id;
+        
+        // Verificar si ESTE producto específico califica para mayorista
+        const thisProductQualifies = productQualifiesForWholesale(productId);
         
         // DEBUG: Log detallado de cada item
         console.log(`🔥 Firebase Item ${idx}:`, {
@@ -139,18 +136,14 @@ class FirebaseOrders {
           priceDisplayMode: item.priceDisplayMode,
           isWholesaleItem,
           hasDiscount,
-          wholesaleUnlocked
+          thisProductQualifies
         });
         
         // Calcular precio efectivo según modo
         let effectivePrice;
         if (isWholesaleItem && hasDiscount) {
-          effectivePrice = wholesaleUnlocked ? item.price : item.originalPrice;
-          console.log(`🔥 Firebase Item ${idx} - Mayorista: effectivePrice = ${effectivePrice}`);
-        } else if (hasDiscount && wholesaleUnlocked) {
-          // Si tiene descuento y mayorista está desbloqueado, usar precio con descuento
-          effectivePrice = item.price;
-          console.log(`🔥 Firebase Item ${idx} - Descuento aplicado: effectivePrice = ${effectivePrice}`);
+          effectivePrice = thisProductQualifies ? item.price : item.originalPrice;
+          console.log(`🔥 Firebase Item ${idx} - Mayorista: effectivePrice = ${effectivePrice} (califica: ${thisProductQualifies})`);
         } else {
           effectivePrice = item.price;
           console.log(`🔥 Firebase Item ${idx} - Normal: effectivePrice = ${effectivePrice}`);
@@ -166,7 +159,7 @@ class FirebaseOrders {
           originalPrice: item.originalPrice || item.price,
           wholesalePrice: isWholesaleItem && hasDiscount ? item.price : null,
           priceDisplayMode: item.priceDisplayMode || 'discount',
-          wholesaleApplied: isWholesaleItem && hasDiscount && wholesaleUnlocked,
+          wholesaleApplied: isWholesaleItem && hasDiscount && thisProductQualifies,
           quantity: item.quantity,
           subtotal: itemTotal,
           image: item.image || '',
@@ -201,9 +194,10 @@ class FirebaseOrders {
         orderNumber: orderNumber,
         status: 'pending',
         
-        // Tipo de pedido
-        isWholesaleOrder: hasWholesaleItems && wholesaleUnlocked,
-        wholesaleUnlocked: wholesaleUnlocked,
+        // Tipo de pedido - nueva lógica por producto
+        isWholesaleOrder: hasWholesaleItems && productsWithWholesale.length > 0,
+        wholesaleUnlocked: meetsAmount,
+        productsWithWholesale: productsWithWholesale,
         
         // Cliente
         customerName: customerData.name,

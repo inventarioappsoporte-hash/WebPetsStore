@@ -91,62 +91,52 @@ class WhatsAppSender {
     // Obtener estado mayorista de múltiples fuentes para mayor confiabilidad
     const wholesaleStatus = wholesaleStatusParam || (typeof Cart !== 'undefined' ? Cart.getWholesaleStatus() : null);
     
-    // Calcular totales para verificar condiciones mayoristas
-    // IMPORTANTE: Usar originalPrice (precio lista) para calcular si cumple condiciones
+    // Nueva lógica mayorista: monto mínimo + cantidad por producto
+    // Calcular total usando precios lista
     const cartTotal = items.reduce((sum, item) => {
       const priceForCalc = item.originalPrice || item.price;
       return sum + (priceForCalc * item.quantity);
     }, 0);
-    const cartItemCount = items.reduce((sum, item) => sum + item.quantity, 0);
     
-    // Config mayorista por defecto (fallback si no se cargó desde JSON)
-    const defaultWholesaleConfig = {
+    // Config mayorista
+    const wsConfig = (typeof Cart !== 'undefined' && Cart.wholesaleConfig) || {
       enabled: true,
-      min_amount: 50000,
-      min_items: 10,
-      condition_mode: 'any'
+      min_amount: 150000,
+      min_items_per_product: 2
     };
     
-    // Usar config de Cart si existe, sino usar default
-    const wsConfig = (typeof Cart !== 'undefined' && Cart.wholesaleConfig) || defaultWholesaleConfig;
+    // Verificar si cumple monto mínimo
+    const meetsAmount = wsConfig.enabled && cartTotal >= wsConfig.min_amount;
     
-    // Calcular si cumple condiciones mayoristas
-    let wholesaleUnlocked = false;
-    if (wsConfig && wsConfig.enabled) {
-      const meetsAmount = cartTotal >= wsConfig.min_amount;
-      const meetsItems = cartItemCount >= wsConfig.min_items;
-      
-      if (wsConfig.condition_mode === 'any') {
-        wholesaleUnlocked = meetsAmount || meetsItems;
-      } else {
-        wholesaleUnlocked = meetsAmount && meetsItems;
-      }
-    }
+    // Calcular cantidad por producto (sumando variantes)
+    const productQuantities = {};
+    items.forEach(item => {
+      const productId = item.productId || item.id;
+      productQuantities[productId] = (productQuantities[productId] || 0) + item.quantity;
+    });
     
-    // También verificar la propiedad estática de Cart como respaldo
-    if (!wholesaleUnlocked && typeof Cart !== 'undefined' && Cart.wholesaleUnlocked) {
-      wholesaleUnlocked = true;
-    }
+    // Determinar qué productos califican para mayorista
+    const minItemsPerProduct = wsConfig.min_items_per_product || wsConfig.min_items || 2;
+    const productsWithWholesale = meetsAmount 
+      ? Object.keys(productQuantities).filter(pid => productQuantities[pid] >= minItemsPerProduct)
+      : [];
     
-    // Y verificar el status pasado como parámetro
-    if (!wholesaleUnlocked && wholesaleStatus?.unlocked) {
-      wholesaleUnlocked = true;
-    }
+    // Función para verificar si un producto específico califica
+    const productQualifiesForWholesale = (productId) => {
+      return meetsAmount && productsWithWholesale.includes(productId);
+    };
     
     const hasWholesaleItems = items.some(item => item.priceDisplayMode === 'wholesale');
     
     // DEBUG: Log para verificar estado mayorista
-    console.log('🔍 WhatsApp - wholesaleStatus:', wholesaleStatus);
-    console.log('🔍 WhatsApp - Cart.wholesaleUnlocked (static):', typeof Cart !== 'undefined' ? Cart.wholesaleUnlocked : 'Cart not defined');
-    console.log('🔍 WhatsApp - Cart.wholesaleConfig:', typeof Cart !== 'undefined' ? Cart.wholesaleConfig : 'Cart not defined');
-    console.log('🔍 WhatsApp - wsConfig used:', wsConfig);
-    console.log('🔍 WhatsApp - cartTotal:', cartTotal, 'cartItemCount:', cartItemCount);
-    console.log('🔍 WhatsApp - wholesaleUnlocked (calculated):', wholesaleUnlocked);
+    console.log('🔍 WhatsApp - meetsAmount:', meetsAmount);
+    console.log('🔍 WhatsApp - productsWithWholesale:', productsWithWholesale);
+    console.log('🔍 WhatsApp - cartTotal:', cartTotal);
     console.log('🔍 WhatsApp - hasWholesaleItems:', hasWholesaleItems);
     
     // Indicar tipo de pedido
-    if (hasWholesaleItems && wholesaleUnlocked) {
-      message += `\n💰 *Tipo:* PEDIDO MAYORISTA\n`;
+    if (hasWholesaleItems && productsWithWholesale.length > 0) {
+      message += `\n💰 *Tipo:* PEDIDO MAYORISTA (${productsWithWholesale.length} producto${productsWithWholesale.length > 1 ? 's' : ''} con precio mayorista)\n`;
     }
     
     message += '\n---\n🛍️ *PRODUCTOS:*\n\n';
@@ -156,6 +146,10 @@ class WhatsAppSender {
     items.forEach((item, index) => {
       const isWholesaleItem = item.priceDisplayMode === 'wholesale';
       const hasDiscount = item.originalPrice && item.originalPrice > item.price;
+      const productId = item.productId || item.id;
+      
+      // Verificar si ESTE producto específico califica para mayorista
+      const thisProductQualifies = productQualifiesForWholesale(productId);
       
       // DEBUG: Log por item
       console.log(`🔍 Item ${index}: ${item.name}`, {
@@ -164,18 +158,18 @@ class WhatsAppSender {
         originalPrice: item.originalPrice,
         isWholesaleItem,
         hasDiscount,
-        wholesaleUnlocked
+        thisProductQualifies
       });
       
       // Calcular precio efectivo según modo
       let effectivePrice;
       
       if (isWholesaleItem && hasDiscount) {
-        if (wholesaleUnlocked) {
-          // Mayorista desbloqueado: usar precio mayorista (item.price)
+        if (thisProductQualifies) {
+          // Este producto califica: usar precio mayorista (item.price)
           effectivePrice = item.price;
         } else {
-          // Mayorista NO desbloqueado: usar precio lista (item.originalPrice)
+          // Este producto NO califica: usar precio lista (item.originalPrice)
           effectivePrice = item.originalPrice;
         }
       } else {
@@ -203,14 +197,14 @@ class WhatsAppSender {
       
       // Mostrar precios según el modo
       if (isWholesaleItem && hasDiscount) {
-        if (wholesaleUnlocked) {
-          // Mayorista desbloqueado: mostrar precio mayorista como principal
+        if (thisProductQualifies) {
+          // Este producto califica: mostrar precio mayorista como principal
           message += `   💰 Precio Mayorista: ${this.formatPrice(item.price)} c/u\n`;
           message += `   ~(Lista: ${this.formatPrice(item.originalPrice)})~\n`;
         } else {
-          // Mayorista NO desbloqueado: mostrar precio lista
+          // Este producto NO califica: mostrar precio lista
           message += `   Precio Lista: ${this.formatPrice(item.originalPrice)} c/u\n`;
-          message += `   (Mayorista: ${this.formatPrice(item.price)} c/u)\n`;
+          message += `   (Mayorista: ${this.formatPrice(item.price)} c/u - necesita ${minItemsPerProduct}+ unidades)\n`;
         }
       } else if (hasDiscount) {
         // Descuento normal

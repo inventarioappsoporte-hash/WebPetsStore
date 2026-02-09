@@ -348,7 +348,10 @@ class CartUI {
       const effectivePrice = Cart.getItemEffectivePrice(item);
       const effectiveSubtotal = Cart.getItemEffectiveSubtotal(item);
       const isWholesaleItem = item.priceDisplayMode === 'wholesale';
-      const wholesaleUnlocked = wholesaleStatus?.unlocked || false;
+      
+      // Verificar si ESTE producto específico califica para mayorista
+      // (cumple monto mínimo del carrito Y tiene cantidad mínima del mismo producto)
+      const productQualifies = Cart.productQualifiesForWholesale(item.productId);
       
       // Determinar qué precios mostrar
       // Verificar si tiene descuento real
@@ -356,14 +359,15 @@ class CartUI {
       
       let priceHtml = '';
       if (isWholesaleItem && hasDiscount) {
-        if (wholesaleUnlocked) {
-          // Mayorista desbloqueado: mostrar precio lista tachado y precio mayorista
+        if (productQualifies) {
+          // Este producto califica para mayorista: mostrar precio lista tachado y precio mayorista
           priceHtml = `
             <span class="cart-item__original-price">${this.formatPrice(item.originalPrice)}</span>
             <span class="cart-item__current-price cart-item__wholesale-price">${this.formatPrice(item.price)}</span>
+            <span class="cart-item__wholesale-badge">💰 Mayorista</span>
           `;
         } else {
-          // Mayorista NO desbloqueado: mostrar precio lista (sin tachar) y precio mayorista como referencia
+          // Este producto NO califica: mostrar precio lista y precio mayorista como referencia
           priceHtml = `
             <span class="cart-item__current-price">${this.formatPrice(item.originalPrice)}</span>
             <span class="cart-item__wholesale-hint">(Mayorista: ${this.formatPrice(item.price)})</span>

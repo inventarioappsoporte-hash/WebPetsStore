@@ -1,0 +1,175 @@
+{
+  "enabled": true,
+  "defaultZone": "caba",
+  "highlightedZone": "caba",
+  "zones": [
+    {
+      "id": "caba",
+      "name": "CABA",
+      "description": "Ciudad Autónoma de Buenos Aires",
+      "type": "fixed",
+      "price": 7000,
+      "days": "1-2",
+      "freeShipping": {
+        "enabled": true,
+        "minAmount": 30000,
+        "message": "¡Envío GRATIS a CABA por compras desde $30.000!"
+      },
+      "active": true,
+      "sortOrder": 1
+    },
+    {
+      "id": "gba_norte",
+      "name": "GBA Norte",
+      "description": "Zona Norte del Gran Buenos Aires",
+      "type": "fixed",
+      "price": 15000,
+      "days": "1-2",
+      "freeShipping": {
+        "enabled": true,
+        "minAmount": 80000,
+        "message": "¡Envío GRATIS a GBA Norte por compras desde $80.000!"
+      },
+      "active": true,
+      "sortOrder": 2
+    },
+    {
+      "id": "gba_sur",
+      "name": "GBA Sur",
+      "description": "Zona Sur del Gran Buenos Aires",
+      "type": "fixed",
+      "price": 15000,
+      "days": "1-2",
+      "freeShipping": {
+        "enabled": true,
+        "minAmount": 80000,
+        "message": "¡Envío GRATIS a GBA Sur por compras desde $80.000!"
+      },
+      "active": true,
+      "sortOrder": 3
+    },
+    {
+      "id": "gba_oeste",
+      "name": "GBA Oeste",
+      "description": "Zona Oeste del Gran Buenos Aires",
+      "type": "fixed",
+      "price": 15000,
+      "days": "1-2",
+      "freeShipping": {
+        "enabled": true,
+        "minAmount": 80000,
+        "message": "¡Envío GRATIS a GBA Oeste por compras desde $80.000!"
+      },
+      "active": true,
+      "sortOrder": 4
+    },
+    {
+      "id": "interior",
+      "name": "Interior del País",
+      "description": "Envío a todo el país vía correo",
+      "type": "cargo",
+      "price": 0,
+      "days": "5-10",
+      "freeShipping": {
+        "enabled": false,
+        "minAmount": 0,
+        "message": ""
+      },
+      "cargoMessage": "El costo de envío se abona en destino al recibir el paquete",
+      "active": true,
+      "sortOrder": 5
+    },
+    {
+      "id": "retiro",
+      "name": "Retiro en Tienda",
+      "description": "Retirá tu pedido sin costo en nuestra tienda",
+      "type": "free",
+      "price": 0,
+      "days": "1",
+      "freeShipping": {
+        "enabled": false,
+        "minAmount": 0,
+        "message": ""
+      },
+      "pickupAddress": "Consultar dirección por WhatsApp",
+      "active": true,
+      "sortOrder": 6
+    },
+    {
+      "id": "montecastro",
+      "name": "MONTE CASTRO",
+      "description": "Barrio Monte castro CABA",
+      "type": "fixed",
+      "price": 3000,
+      "days": "1-2",
+      "active": true,
+      "freeShipping": {
+        "enabled": true,
+        "minAmount": 7000,
+        "message": ""
+      },
+      "sortOrder": 7
+    },
+    {
+      "id": "villadevoto",
+      "name": "VILLA DEVOTO",
+      "description": "Barrio Villa Devoto Caba",
+      "type": "fixed",
+      "price": 3000,
+      "days": "1-2",
+      "active": true,
+      "freeShipping": {
+        "enabled": true,
+        "minAmount": 7000,
+        "message": ""
+      },
+      "sortOrder": 8
+    },
+    {
+      "id": "villadelparquet",
+      "name": "VILLA DEL PARQUET",
+      "description": "Barrio Villa del Parquet",
+      "type": "fixed",
+      "price": 3000,
+      "days": "1-2",
+      "active": true,
+      "freeShipping": {
+        "enabled": true,
+        "minAmount": 7000,
+        "message": ""
+      },
+      "sortOrder": 9
+    },
+    {
+      "id": "monserrat",
+      "name": "MONSERRAT",
+      "description": "Barrio Monserrat CABA",
+      "type": "fixed",
+      "price": 3000,
+      "days": "1-2",
+      "active": true,
+      "freeShipping": {
+        "enabled": true,
+        "minAmount": 7000,
+        "message": ""
+      },
+      "sortOrder": 10
+    },
+    {
+      "id": "balvanera",
+      "name": "BALVANERA",
+      "description": "Barrio Balvanera",
+      "type": "fixed",
+      "price": 3000,
+      "days": "1-2",
+      "active": true,
+      "freeShipping": {
+        "enabled": true,
+        "minAmount": 7000,
+        "message": ""
+      },
+      "sortOrder": 11
+    }
+  ],
+  "updatedAt": "2026-02-08T19:39:47.782Z"
+}
