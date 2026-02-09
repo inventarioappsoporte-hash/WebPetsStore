@@ -1,0 +1,76 @@
+{
+  "hero": {
+    "productId": "",
+    "title": "",
+    "subtitle": "",
+    "cta": "COMPRAR AHORA",
+    "ctaSecondary": "VER PRODUCTO",
+    "image": "assets/images/ui/hero-1770579180892.png",
+    "hideButtons": true,
+    "imageMobile": "assets/images/ui/hero-1770585546599.png"
+  },
+  "promos": [
+    {
+      "icon": "⚡",
+      "text": "OFERTA FLASH",
+      "visible": true
+    },
+    {
+      "icon": "🎁",
+      "text": "2x1 IRRESISTIBLE",
+      "visible": true
+    },
+    {
+      "icon": "🚚",
+      "text": "ENVÍO GRATIS",
+      "visible": true
+    },
+    {
+      "icon": "💳",
+      "text": "6 CUOTAS SIN INTERÉS",
+      "visible": true
+    }
+  ],
+  "promosConfig": {
+    "show": false
+  },
+  "sections": [
+    {
+      "id": "top-discounts",
+      "title": "🔥 TOP DESCUENTOS HOY",
+      "type": "carousel",
+      "filter": "topDiscount",
+      "sortBy": "discount",
+      "limit": 12,
+      "showVideo": true
+    },
+    {
+      "id": "with-video",
+      "title": "🎥 CON VIDEO",
+      "type": "carousel",
+      "filter": "hasVideo",
+      "sortBy": "rating",
+      "limit": 9
+    },
+    {
+      "id": "best-rated",
+      "title": "⭐ MEJOR VALORADOS",
+      "type": "grid",
+      "filter": "bestRated",
+      "sortBy": "rating",
+      "limit": 12
+    },
+    {
+      "id": "featured",
+      "title": "RECOMENDADO PARA TI",
+      "type": "grid",
+      "filter": "featured",
+      "limit": 6
+    }
+  ],
+  "testimonials": {
+    "title": "MÁS DE 10.000 CLIENTES FELICES",
+    "subtitle": "Ver historias reales →",
+    "show": true
+  }
+}

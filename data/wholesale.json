@@ -1,7 +1,7 @@
 {
   "enabled": true,
   "min_amount": 50000,
-  "min_items": 1,
+  "min_items": 2,
   "condition_mode": "amount_and_quantity",
   "messages": {
     "unlocked": "🎉 ¡Precio mayorista desbloqueado!",

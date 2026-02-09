@@ -73,8 +73,8 @@ class Cart {
       }
     }
 
-    // El modo mayorista está desbloqueado si se cumple el monto mínimo
-    this.wholesaleUnlocked = meetsAmount;
+    // El modo mayorista está desbloqueado si se cumple el monto mínimo Y hay productos que califican
+    this.wholesaleUnlocked = meetsAmount && productsWithWholesale.length > 0;
     
     // Guardar qué productos califican para precio mayorista
     this.productsWithWholesalePrice = meetsAmount ? productsWithWholesale : [];
