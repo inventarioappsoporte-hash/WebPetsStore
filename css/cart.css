@@ -1209,3 +1209,220 @@
   font-size: 0.75rem;
   font-weight: 600;
 }
+
+
+/* ========================================
+   SECCIÓN DE CUPONES
+   ======================================== */
+
+.cart-coupon-section {
+  margin: 1rem 0;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+}
+
+.cart-coupon-input-wrapper {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.cart-coupon-input-wrapper input {
+  flex: 1;
+  padding: 0.75rem 1rem;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  color: #ffffff;
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+
+.cart-coupon-input-wrapper input::placeholder {
+  color: #888;
+  text-transform: none;
+}
+
+.cart-coupon-input-wrapper input:focus {
+  outline: none;
+  border-color: var(--primary-color, #4CAF50);
+  box-shadow: 0 0 0 3px rgba(76, 175, 80, 0.1);
+}
+
+.cart-coupon-input-wrapper button {
+  padding: 0.75rem 1.25rem;
+  background: rgba(76, 175, 80, 0.2);
+  border: 1px solid rgba(76, 175, 80, 0.3);
+  border-radius: 8px;
+  color: var(--primary-color, #4CAF50);
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.cart-coupon-input-wrapper button:hover:not(:disabled) {
+  background: rgba(76, 175, 80, 0.3);
+  border-color: rgba(76, 175, 80, 0.5);
+}
+
+.cart-coupon-input-wrapper button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Mensaje de cupón */
+.cart-coupon-message {
+  margin-top: 0.5rem;
+  font-size: 0.85rem;
+  min-height: 1.2em;
+}
+
+.cart-coupon-message--success {
+  color: var(--primary-color, #4CAF50);
+}
+
+.cart-coupon-message--error {
+  color: #ff5252;
+}
+
+/* Cupón aplicado */
+.cart-coupon-applied {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem;
+  background: rgba(76, 175, 80, 0.1);
+  border: 1px solid rgba(76, 175, 80, 0.3);
+  border-radius: 8px;
+  margin-top: 0.5rem;
+}
+
+.coupon-tag {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.coupon-tag #coupon-applied-code {
+  font-weight: 700;
+  color: var(--primary-color, #4CAF50);
+  font-size: 1rem;
+}
+
+.coupon-tag #coupon-applied-desc {
+  font-size: 0.85rem;
+  color: #aaa;
+}
+
+.coupon-remove {
+  background: rgba(255, 82, 82, 0.1);
+  border: 1px solid rgba(255, 82, 82, 0.2);
+  color: #ff5252;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+}
+
+.coupon-remove:hover {
+  background: rgba(255, 82, 82, 0.2);
+  border-color: rgba(255, 82, 82, 0.4);
+}
+
+/* Fila de descuento de cupón en totales */
+.cart-modal__coupon-discount {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 0;
+  color: var(--primary-color, #4CAF50);
+  font-weight: 500;
+}
+
+.cart-modal__coupon-discount span:last-child {
+  color: var(--primary-color, #4CAF50);
+  font-weight: 600;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .cart-coupon-section {
+    padding: 0.875rem;
+  }
+  
+  .cart-coupon-input-wrapper {
+    flex-direction: column;
+  }
+  
+  .cart-coupon-input-wrapper button {
+    width: 100%;
+  }
+}
+
+
+/* ========================================
+   CUPÓN - LOGIN REQUERIDO
+   ======================================== */
+
+.cart-coupon-message--login {
+  margin-top: 0.75rem;
+}
+
+.coupon-login-required {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1rem;
+  background: rgba(255, 193, 7, 0.1);
+  border: 1px solid rgba(255, 193, 7, 0.3);
+  border-radius: 10px;
+  text-align: center;
+}
+
+.coupon-login-icon {
+  font-size: 1.5rem;
+}
+
+.coupon-login-text {
+  color: #ffc107;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+.coupon-login-btn {
+  padding: 0.6rem 1.5rem;
+  background: linear-gradient(135deg, var(--primary-color, #4CAF50) 0%, #45a049 100%);
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.coupon-login-btn:hover {
+  background: linear-gradient(135deg, #45a049 0%, #3d8b40 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(76, 175, 80, 0.3);
+}
+
+@media (max-width: 480px) {
+  .coupon-login-required {
+    padding: 0.875rem;
+  }
+  
+  .coupon-login-text {
+    font-size: 0.85rem;
+  }
+}

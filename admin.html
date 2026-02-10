@@ -970,6 +970,9 @@
         .modal-totals-compact .total-label { color: var(--text-muted); }
         .modal-totals-compact .total-value { font-weight: 600; }
         .modal-totals-compact .total-final { font-size: 0.875rem; color: var(--primary); }
+        .modal-totals-compact .coupon-row { color: #22c55e; }
+        .modal-totals-compact .coupon-row .total-label { color: #22c55e; }
+        .modal-totals-compact .coupon-discount { color: #22c55e; }
         .modal-notes-compact { margin-top: 0.75rem; }
         .modal-textarea {
             width: 100%; padding: 0.5rem; background: var(--bg);
@@ -1711,6 +1714,10 @@
                 </div>
                 <div class="modal-totals-compact">
                     <div class="total-item"><span class="total-label">Subtotal:</span><span class="total-value" id="modal-subtotal">$0</span></div>
+                    <div class="total-item coupon-row" id="modal-coupon-row" style="display: none;">
+                        <span class="total-label">🎟️ Cupón <span id="modal-coupon-code"></span>:</span>
+                        <span class="total-value coupon-discount" id="modal-coupon-discount">-$0</span>
+                    </div>
                     <div class="total-item"><span class="total-label">Envío:</span><span class="total-value" id="modal-shipping-cost">$0</span></div>
                     <div class="total-item"><span class="total-label">Total:</span><span class="total-value total-final" id="modal-total">$0</span></div>
                 </div>
@@ -2647,9 +2654,27 @@
         function updateModalTotals() {
             const subtotal = editedItems.reduce((sum, item) => sum + (item.price * item.quantity), 0);
             const shipping = parseFloat(document.getElementById('modal-shipping-cost-input')?.value) || currentEditingOrder?.shippingCost || 0;
+            
+            // Mostrar cupón si existe
+            const couponRow = document.getElementById('modal-coupon-row');
+            const couponCodeEl = document.getElementById('modal-coupon-code');
+            const couponDiscountEl = document.getElementById('modal-coupon-discount');
+            let couponDiscount = 0;
+            
+            if (currentEditingOrder?.coupon) {
+                couponRow.style.display = 'flex';
+                couponCodeEl.textContent = '(' + currentEditingOrder.coupon.code + ')';
+                couponDiscount = currentEditingOrder.couponDiscount || currentEditingOrder.coupon.discount || 0;
+                couponDiscountEl.textContent = '-' + formatPrice(couponDiscount);
+            } else {
+                couponRow.style.display = 'none';
+            }
+            
+            const subtotalAfterCoupon = Math.max(0, subtotal - couponDiscount);
+            
             document.getElementById('modal-subtotal').textContent = formatPrice(subtotal);
             document.getElementById('modal-shipping-cost').textContent = formatPrice(shipping);
-            document.getElementById('modal-total').textContent = formatPrice(subtotal + shipping);
+            document.getElementById('modal-total').textContent = formatPrice(subtotalAfterCoupon + shipping);
         }
         
         window.toggleShippingSection = () => {
@@ -2878,7 +2903,15 @@
             
             const subtotal = editedItems.reduce((sum, item) => sum + (item.price * item.quantity), 0);
             const shipping = currentEditingOrder.shippingCost || 0;
-            const total = subtotal + shipping;
+            
+            // Considerar cupón en el total
+            let couponDiscount = 0;
+            if (currentEditingOrder?.coupon) {
+                couponDiscount = currentEditingOrder.couponDiscount || currentEditingOrder.coupon.discount || 0;
+            }
+            const subtotalAfterCoupon = Math.max(0, subtotal - couponDiscount);
+            const total = subtotalAfterCoupon + shipping;
+            
             const date = currentEditingOrder.createdAt?.toDate?.() || new Date();
             const dateStr = date.toLocaleDateString('es-AR', { day: '2-digit', month: '2-digit', year: 'numeric' });
             
@@ -2943,6 +2976,7 @@
     
     <div class="totals">
         <div class="total-row"><span>Subtotal:</span><span>$${subtotal.toLocaleString('es-AR')}</span></div>
+        ${currentEditingOrder?.coupon ? '<div class="total-row" style="color:#22C55E;"><span>🎟️ Cupón (' + currentEditingOrder.coupon.code + '):</span><span>-$' + (currentEditingOrder.couponDiscount || currentEditingOrder.coupon.discount || 0).toLocaleString('es-AR') + '</span></div>' : ''}
         <div class="total-row"><span>Envío:</span><span>$${shipping.toLocaleString('es-AR')}</span></div>
         <div class="total-row final"><span>TOTAL:</span><span>$${total.toLocaleString('es-AR')}</span></div>
     </div>
@@ -2990,8 +3024,17 @@
             });
             text += '\n━━━━━━━━━━━━━━━━━━\n';
             text += 'Subtotal: $' + subtotal.toLocaleString('es-AR') + '\n';
+            
+            // Agregar cupón si existe
+            let couponDiscount = 0;
+            if (currentEditingOrder?.coupon) {
+                couponDiscount = currentEditingOrder.couponDiscount || currentEditingOrder.coupon.discount || 0;
+                text += '🎟️ Cupón (' + currentEditingOrder.coupon.code + '): -$' + couponDiscount.toLocaleString('es-AR') + '\n';
+            }
+            
+            const subtotalAfterCoupon = Math.max(0, subtotal - couponDiscount);
             text += 'Envío: $' + shipping.toLocaleString('es-AR') + '\n';
-            text += '*TOTAL: $' + total.toLocaleString('es-AR') + '*\n';
+            text += '*TOTAL: $' + (subtotalAfterCoupon + shipping).toLocaleString('es-AR') + '*\n';
             
             // Agregar info de envío si existe
             if (shippingAddress || carrierName || trackingNumber) {

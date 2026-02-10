@@ -225,10 +225,33 @@ class WhatsAppSender {
     message += '---\n';
     message += `📦 *Subtotal productos:* ${this.formatPrice(subtotal)}\n`;
     
+    // Agregar información de cupón si existe
+    if (customer.coupon) {
+      const coupon = customer.coupon;
+      message += `\n🎟️ *Cupón aplicado:* ${coupon.code}\n`;
+      
+      if (coupon.type === 'percentage') {
+        message += `   Descuento: ${coupon.value}%\n`;
+      } else if (coupon.type === 'fixed') {
+        message += `   Descuento fijo\n`;
+      } else if (coupon.type === 'freeShipping') {
+        message += `   Envío gratis\n`;
+      }
+      
+      if (coupon.discount > 0) {
+        message += `   Ahorro: -${this.formatPrice(coupon.discount)}\n`;
+        subtotal = subtotal - coupon.discount;
+        message += `   *Subtotal con descuento:* ${this.formatPrice(subtotal)}\n`;
+      }
+    }
+    
     // Agregar información de envío si está disponible
     if (typeof ShippingSelector !== 'undefined' && ShippingSelector.isEnabled()) {
       const shipping = ShippingSelector.calculateShipping(subtotal);
       const zone = shipping.zone;
+      
+      // Verificar si el cupón da envío gratis
+      const couponFreeShipping = customer.coupon?.freeShipping || false;
       
       if (zone) {
         message += `\n🚚 *Envío:*\n`;
@@ -239,8 +262,12 @@ class WhatsAppSender {
           if (zone.cargoMessage) {
             message += `   📌 ${zone.cargoMessage}\n`;
           }
-        } else if (shipping.isFree && zone.type === 'free') {
-          message += `   Retiro en tienda: GRATIS\n`;
+        } else if ((shipping.isFree && zone.type === 'free') || couponFreeShipping) {
+          if (zone.type === 'free') {
+            message += `   Retiro en tienda: GRATIS\n`;
+          } else {
+            message += `   Costo: ¡GRATIS! 🎉 (cupón)\n`;
+          }
           if (zone.pickupAddress) {
             message += `   📍 ${zone.pickupAddress}\n`;
           }
@@ -272,7 +299,13 @@ class WhatsAppSender {
           message += `   ${customer.shipping.province}\n`;
         }
         
-        const total = subtotal + shipping.cost;
+        // Calcular total considerando envío gratis del cupón
+        let shippingCost = shipping.cost;
+        if (couponFreeShipping && !shipping.isCargo) {
+          shippingCost = 0;
+        }
+        
+        const total = subtotal + shippingCost;
         message += `\n💰 *TOTAL: ${this.formatPrice(total)}*\n`;
       } else {
         message += `\n💰 *TOTAL: ${this.formatPrice(subtotal)}*\n`;

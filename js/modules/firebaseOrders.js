@@ -184,7 +184,30 @@ class FirebaseOrders {
         } : null;
       }
 
-      const total = subtotal + shippingCost;
+      // Aplicar cupón si existe
+      let couponDiscount = 0;
+      let couponData = null;
+      
+      if (customerData.coupon) {
+        couponData = {
+          code: customerData.coupon.code,
+          type: customerData.coupon.type,
+          value: customerData.coupon.value,
+          discount: customerData.coupon.discount || 0,
+          freeShipping: customerData.coupon.freeShipping || false
+        };
+        couponDiscount = couponData.discount;
+        
+        // Si el cupón da envío gratis, anular costo de envío (excepto cargo)
+        if (couponData.freeShipping && shippingZone && shippingZone.type !== 'cargo') {
+          shippingCost = 0;
+        }
+        
+        console.log('🎟️ Firebase - Cupón aplicado:', couponData);
+      }
+
+      const subtotalAfterCoupon = Math.max(0, subtotal - couponDiscount);
+      const total = subtotalAfterCoupon + shippingCost;
       const orderNumber = this.generateOrderNumber();
 
       // Crear documento del pedido
@@ -203,6 +226,7 @@ class FirebaseOrders {
         customerName: customerData.name,
         customerPhone: customerData.phone,
         customerNotes: customerData.notes || '',
+        userId: customerData.userId || null,
         
         // Dirección de envío
         shippingAddress: customerData.shipping ? {
@@ -220,6 +244,9 @@ class FirebaseOrders {
         
         // Totales
         subtotal: subtotal,
+        coupon: couponData,
+        couponDiscount: couponDiscount,
+        subtotalAfterCoupon: subtotalAfterCoupon,
         shippingCost: shippingCost,
         shippingZone: shippingZone,
         total: total,

@@ -46,6 +46,17 @@ class CartUI {
       });
     }
 
+    // Registrar listener para cambios de cupón (aplicar/remover)
+    if (typeof CouponValidator !== 'undefined') {
+      CouponValidator.addListener((coupon, discount, freeShipping) => {
+        if (this.isOpen) {
+          this.updateCouponDisplay(coupon, discount, freeShipping);
+          // Solo actualizar totales si hay un cambio real de cupón
+          // El recálculo ya se hace en updateTotals, no necesitamos llamarlo de nuevo
+        }
+      });
+    }
+
     // Mostrar/ocultar campos de dirección según zona inicial
     setTimeout(() => {
       if (typeof ShippingSelector !== 'undefined' && ShippingSelector.isEnabled()) {
@@ -91,9 +102,36 @@ class CartUI {
               <span>Envío:</span>
               <span id="cart-shipping-cost">$0</span>
             </div>
+            <div id="cart-coupon-row" class="cart-modal__coupon-discount" style="display: none;">
+              <span>🎟️ Cupón:</span>
+              <span id="cart-coupon-discount">-$0</span>
+            </div>
             <div class="cart-modal__total-final">
               <span>Total:</span>
               <span id="cart-total">$0</span>
+            </div>
+          </div>
+          
+          <!-- Sección de Cupón -->
+          <div class="cart-coupon-section">
+            <div class="cart-coupon-input-wrapper">
+              <input 
+                type="text" 
+                id="coupon-code" 
+                placeholder="Código de cupón"
+                maxlength="20"
+              />
+              <button type="button" id="apply-coupon-btn" onclick="CartUI.applyCoupon()">
+                Aplicar
+              </button>
+            </div>
+            <div id="coupon-message" class="cart-coupon-message"></div>
+            <div id="coupon-applied" class="cart-coupon-applied" style="display: none;">
+              <span class="coupon-tag">
+                <span id="coupon-applied-code"></span>
+                <span id="coupon-applied-desc"></span>
+              </span>
+              <button type="button" class="coupon-remove" onclick="CartUI.removeCoupon()">✕</button>
             </div>
           </div>
           
@@ -430,7 +468,7 @@ class CartUI {
   }
 
   /**
-   * Actualizar totales incluyendo envío
+   * Actualizar totales incluyendo envío y cupón
    */
   static updateTotals(subtotal) {
     const subtotalEl = document.getElementById('cart-subtotal');
@@ -438,27 +476,64 @@ class CartUI {
     const shippingRow = document.getElementById('cart-shipping-row');
     const shippingCostEl = document.getElementById('cart-shipping-cost');
     const totalEl = document.getElementById('cart-total');
+    const couponRow = document.getElementById('cart-coupon-row');
+    const couponDiscountEl = document.getElementById('cart-coupon-discount');
     
     if (subtotalEl) subtotalEl.textContent = `${this.formatPrice(subtotal)}`;
     
+    // Obtener descuento de cupón
+    let couponDiscount = 0;
+    let couponFreeShipping = false;
+    if (typeof CouponValidator !== 'undefined') {
+      CouponValidator.recalculate(subtotal);
+      couponDiscount = CouponValidator.getDiscount();
+      couponFreeShipping = CouponValidator.hasFreeShipping();
+      
+      // Actualizar fila de cupón
+      if (couponRow) {
+        const coupon = CouponValidator.getAppliedCoupon();
+        if (coupon && (couponDiscount > 0 || couponFreeShipping)) {
+          couponRow.style.display = 'flex';
+          if (couponDiscountEl) {
+            if (couponFreeShipping && couponDiscount === 0) {
+              couponDiscountEl.innerHTML = '<span class="shipping-free">Envío GRATIS</span>';
+            } else {
+              couponDiscountEl.textContent = `-$${this.formatPrice(couponDiscount)}`;
+            }
+          }
+        } else {
+          couponRow.style.display = 'none';
+        }
+      }
+    }
+    
+    // Subtotal después de cupón
+    const subtotalAfterCoupon = Math.max(0, subtotal - couponDiscount);
+    
     if (typeof ShippingSelector !== 'undefined' && ShippingSelector.isEnabled()) {
       if (shippingContainer) {
-        shippingContainer.innerHTML = ShippingSelector.renderCartSelector(subtotal);
+        shippingContainer.innerHTML = ShippingSelector.renderCartSelector(subtotalAfterCoupon);
       }
       
-      const shipping = ShippingSelector.calculateShipping(subtotal);
+      const shipping = ShippingSelector.calculateShipping(subtotalAfterCoupon);
+      
+      // Aplicar envío gratis del cupón
+      let shippingCost = shipping.cost;
+      if (couponFreeShipping && !shipping.isCargo) {
+        shippingCost = 0;
+      }
       
       if (shippingCostEl) {
         if (shipping.isCargo) {
           shippingCostEl.innerHTML = `<span class="shipping-cargo">Pago en destino</span>`;
-        } else if (shipping.isFree) {
+        } else if (shipping.isFree || couponFreeShipping) {
           shippingCostEl.innerHTML = `<span class="shipping-free">GRATIS</span>`;
         } else {
-          shippingCostEl.textContent = this.formatPrice(shipping.cost);
+          shippingCostEl.textContent = this.formatPrice(shippingCost);
         }
       }
       
-      const totalFinal = subtotal + shipping.cost;
+      const totalFinal = subtotalAfterCoupon + shippingCost;
       if (totalEl) totalEl.textContent = `${this.formatPrice(totalFinal)}`;
       
       if (shippingRow) shippingRow.style.display = 'flex';
@@ -468,7 +543,7 @@ class CartUI {
     } else {
       if (shippingContainer) shippingContainer.innerHTML = '';
       if (shippingRow) shippingRow.style.display = 'none';
-      if (totalEl) totalEl.textContent = `${this.formatPrice(subtotal)}`;
+      if (totalEl) totalEl.textContent = `${this.formatPrice(subtotalAfterCoupon)}`;
       this.toggleShippingFields(null);
     }
   }
@@ -790,7 +865,142 @@ class CartUI {
   }
 
   /**
-   * Cerrar modal del carrito/**
+   * Aplicar cupón de descuento
+   */
+  static async applyCoupon() {
+    const input = document.getElementById('coupon-code');
+    const btn = document.getElementById('apply-coupon-btn');
+    const messageEl = document.getElementById('coupon-message');
+    
+    if (!input || !btn) return;
+    
+    const code = input.value.trim();
+    if (!code) {
+      this.showCouponMessage('Ingresa un código de cupón', 'error');
+      return;
+    }
+
+    // Deshabilitar mientras valida
+    btn.disabled = true;
+    btn.textContent = '...';
+    
+    try {
+      const cartTotal = Cart.getTotal();
+      const wholesaleStatus = Cart.getWholesaleStatus();
+      const priceType = wholesaleStatus?.unlocked ? 'wholesale' : 'retail';
+      
+      const result = await CouponValidator.validate(code, cartTotal, priceType);
+      
+      if (result.valid) {
+        this.showCouponMessage('¡Cupón aplicado!', 'success');
+        input.value = '';
+        this.updateCouponDisplay(result.coupon, result.discount, result.freeShipping);
+        this.updateTotals(cartTotal);
+      } else {
+        // Si requiere login, mostrar mensaje especial con botón
+        if (result.requiresLogin) {
+          this.showCouponLoginRequired(result.error);
+        } else {
+          this.showCouponMessage(result.error, 'error');
+        }
+      }
+    } catch (error) {
+      this.showCouponMessage('Error al validar cupón', 'error');
+    } finally {
+      btn.disabled = false;
+      btn.textContent = 'Aplicar';
+    }
+  }
+
+  /**
+   * Mostrar mensaje de login requerido para cupones
+   */
+  static showCouponLoginRequired(message) {
+    const el = document.getElementById('coupon-message');
+    if (!el) return;
+    
+    el.innerHTML = `
+      <div class="coupon-login-required">
+        <span class="coupon-login-icon">🔐</span>
+        <span class="coupon-login-text">${message}</span>
+        <button type="button" class="coupon-login-btn" onclick="UserAuth.showAuthModal(); return false;">
+          Iniciar sesión
+        </button>
+      </div>
+    `;
+    el.className = 'cart-coupon-message cart-coupon-message--login';
+  }
+
+  /**
+   * Remover cupón aplicado
+   */
+  static removeCoupon() {
+    CouponValidator.remove();
+    this.updateCouponDisplay(null, 0, false);
+    this.updateTotals(Cart.getTotal());
+    this.showCouponMessage('', '');
+  }
+
+  /**
+   * Mostrar mensaje de cupón
+   */
+  static showCouponMessage(message, type) {
+    const el = document.getElementById('coupon-message');
+    if (!el) return;
+    
+    el.textContent = message;
+    el.className = 'cart-coupon-message';
+    if (type) el.classList.add(`cart-coupon-message--${type}`);
+    
+    // Auto-ocultar después de 3 segundos
+    if (message) {
+      setTimeout(() => {
+        if (el.textContent === message) {
+          el.textContent = '';
+          el.className = 'cart-coupon-message';
+        }
+      }, 3000);
+    }
+  }
+
+  /**
+   * Actualizar visualización del cupón aplicado
+   */
+  static updateCouponDisplay(coupon, discount, freeShipping) {
+    const inputWrapper = document.querySelector('.cart-coupon-input-wrapper');
+    const appliedEl = document.getElementById('coupon-applied');
+    const codeEl = document.getElementById('coupon-applied-code');
+    const descEl = document.getElementById('coupon-applied-desc');
+    const discountRow = document.getElementById('cart-coupon-row');
+    const discountEl = document.getElementById('cart-coupon-discount');
+    
+    if (coupon) {
+      // Ocultar input, mostrar cupón aplicado
+      if (inputWrapper) inputWrapper.style.display = 'none';
+      if (appliedEl) {
+        appliedEl.style.display = 'flex';
+        if (codeEl) codeEl.textContent = coupon.code;
+        if (descEl) descEl.textContent = CouponValidator.formatDescription(coupon);
+      }
+      
+      // Mostrar fila de descuento
+      if (discountRow && discount > 0) {
+        discountRow.style.display = 'flex';
+        if (discountEl) discountEl.textContent = `-$${this.formatPrice(discount)}`;
+      }
+      if (freeShipping && discountRow) {
+        discountRow.style.display = 'flex';
+        if (discountEl) discountEl.innerHTML = '<span class="shipping-free">Envío GRATIS</span>';
+      }
+    } else {
+      // Mostrar input, ocultar cupón aplicado
+      if (inputWrapper) inputWrapper.style.display = 'flex';
+      if (appliedEl) appliedEl.style.display = 'none';
+      if (discountRow) discountRow.style.display = 'none';
+    }
+  }
+
+  /**
    * Cerrar modal del carrito
    */
   static close() {
@@ -882,6 +1092,28 @@ class CartUI {
       notes: notes
     };
 
+    // Agregar userId si está logueado
+    if (typeof UserAuth !== 'undefined' && UserAuth.isLoggedIn()) {
+      const user = UserAuth.getUser();
+      if (user?.uid) {
+        customerData.userId = user.uid;
+      }
+    }
+
+    // Agregar datos de cupón si hay uno aplicado
+    if (typeof CouponValidator !== 'undefined') {
+      const coupon = CouponValidator.getAppliedCoupon();
+      if (coupon) {
+        customerData.coupon = {
+          code: coupon.code,
+          type: coupon.type,
+          value: coupon.value,
+          discount: CouponValidator.getDiscount(),
+          freeShipping: CouponValidator.hasFreeShipping()
+        };
+      }
+    }
+
     // Verificar si se requiere dirección de envío
     if (typeof ShippingSelector !== 'undefined' && ShippingSelector.isEnabled()) {
       const zone = ShippingSelector.getSelectedZone();
@@ -938,10 +1170,20 @@ class CartUI {
       const success = await WhatsAppSender.sendOrder(Cart.getItems(), customerData);
 
       if (success) {
+        // Registrar uso del cupón si hay uno aplicado
+        if (typeof CouponValidator !== 'undefined' && CouponValidator.getAppliedCoupon()) {
+          await CouponValidator.registerUse();
+          CouponValidator.remove();
+        }
+        
         // Limpiar formulario
         document.getElementById('customer-name').value = '';
         document.getElementById('customer-phone').value = '';
         document.getElementById('customer-notes').value = '';
+        
+        // Limpiar campo de cupón
+        const couponInput = document.getElementById('coupon-code');
+        if (couponInput) couponInput.value = '';
         
         // Limpiar campos de envío si existen
         const addressField = document.getElementById('customer-address');
