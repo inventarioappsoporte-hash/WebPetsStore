@@ -1,9 +1,9 @@
-/**
+﻿/**
  * CouponBanner - Banner inteligente de cupón
  * Detecta usuarios nuevos y muestra cupón de primera compra
  */
 
-console.log('CouponBanner module loaded');
+console.log('CouponBanner module loaded v3');
 
 class CouponBanner {
   static config = null;
@@ -15,15 +15,17 @@ class CouponBanner {
    * Inicializar el banner
    */
   static async init() {
-    console.log('CouponBanner.init()');
+    console.log('CouponBanner.init() starting...');
     
     // Cargar configuración desde home.json
     await this.loadConfig();
     
     if (!this.config || !this.config.enabled) {
-      console.log('CouponBanner: deshabilitado en config');
+      console.log('CouponBanner: deshabilitado en config', this.config);
       return;
     }
+
+    console.log('CouponBanner: config cargada, verificando elegibilidad...');
 
     // Verificar si debe mostrarse
     const shouldShow = await this.shouldShowBanner();
@@ -40,12 +42,27 @@ class CouponBanner {
    */
   static async loadConfig() {
     try {
-      const response = await fetch(DataLoader.getBaseUrl() + 'home.json');
+      // Determinar la URL base según la ubicación
+      const pathname = window.location.pathname;
+      let baseUrl = 'data/';
+      
+      // Si estamos en /pets-store/ (local o GitHub Pages)
+      if (pathname.includes('/pets-store/')) {
+        baseUrl = '/pets-store/data/';
+      }
+      
+      console.log('CouponBanner: cargando config desde', baseUrl + 'home.json');
+      
+      const response = await fetch(baseUrl + 'home.json');
+      if (!response.ok) {
+        throw new Error(`HTTP ${response.status}`);
+      }
       const data = await response.json();
       this.config = data.couponBanner || null;
-      console.log('CouponBanner config:', this.config);
+      console.log('CouponBanner config loaded:', this.config);
     } catch (error) {
-      console.error('Error cargando config de CouponBanner:', error);
+      console.error('CouponBanner: Error cargando config:', error);
+      this.config = null;
     }
   }
 
@@ -97,7 +114,7 @@ class CouponBanner {
 
     try {
       // Verificar pedidos en Firebase
-      const { initializeApp, getApps } = await import('https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js');
+      const { getApps } = await import('https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js');
       const { getFirestore, collection, query, where, limit, getDocs } = await import('https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js');
 
       let db;
@@ -120,7 +137,7 @@ class CouponBanner {
         return false;
       }
     } catch (error) {
-      console.error('Error verificando elegibilidad:', error);
+      console.error('CouponBanner: Error verificando elegibilidad:', error);
       return true; // En caso de error, mostrar
     }
   }
@@ -130,6 +147,8 @@ class CouponBanner {
    */
   static render() {
     const config = this.config;
+    
+    console.log('CouponBanner: renderizando...');
     
     // Buscar el contenedor donde insertar (después del hero)
     const heroSection = document.querySelector('.hero') || document.querySelector('[class*="hero"]');
@@ -155,16 +174,16 @@ class CouponBanner {
           </div>
           
           <!-- Patita decorativa -->
-          <div class="coupon-banner__paw">🐾</div>
+          <div class="coupon-banner__paw"></div>
           
           <!-- Botón cerrar -->
-          <button class="coupon-banner__close" onclick="CouponBanner.dismiss()" title="Cerrar">✕</button>
+          <button class="coupon-banner__close" onclick="CouponBanner.dismiss()" title="Cerrar"></button>
           
           <div class="coupon-banner__content">
             <!-- Texto -->
             <div class="coupon-banner__text">
               <div class="coupon-banner__badge">
-                <span class="coupon-banner__badge-icon">${config.badgeIcon || '🎁'}</span>
+                <span class="coupon-banner__badge-icon">${config.badgeIcon || ''}</span>
                 <span>${config.badgeText || 'OFERTA ESPECIAL'}</span>
               </div>
               <h2 class="coupon-banner__title">
@@ -187,7 +206,7 @@ class CouponBanner {
             <!-- CTA -->
             <div class="coupon-banner__cta">
               <button class="coupon-banner__button" onclick="CouponBanner.handleCTA()">
-                <span class="coupon-banner__button-icon">${config.ctaIcon || '🛒'}</span>
+                <span class="coupon-banner__button-icon">${config.ctaIcon || ''}</span>
                 <span>${config.ctaText || 'REGISTRATE AHORA'}</span>
               </button>
             </div>
@@ -205,7 +224,7 @@ class CouponBanner {
     insertPoint.insertAdjacentHTML('beforebegin', bannerHTML);
     this.container = document.getElementById('coupon-banner');
     
-    console.log('CouponBanner: renderizado');
+    console.log('CouponBanner: renderizado correctamente');
   }
 
   /**
@@ -223,21 +242,32 @@ class CouponBanner {
   }
 
   /**
-   * Manejar click en CTA
+   * Manejar click en CTA - Abrir modal de registro
    */
   static handleCTA() {
+    console.log('CouponBanner: handleCTA clicked');
+    
     // Si no está logueado, abrir modal de registro
     if (typeof UserAuth === 'undefined' || !UserAuth.isLoggedIn()) {
-      // Buscar y abrir el modal de auth
-      const authModal = document.getElementById('auth-modal');
-      if (authModal) {
-        authModal.classList.add('active');
-        // Cambiar a tab de registro
-        const registerTab = document.querySelector('[data-tab="register"]');
-        if (registerTab) registerTab.click();
+      // Usar AuthUI para abrir el modal en tab de registro
+      if (typeof AuthUI !== 'undefined' && typeof AuthUI.show === 'function') {
+        console.log('CouponBanner: abriendo AuthUI.show(register)');
+        AuthUI.show('register');
       } else {
-        // Si no hay modal, ir a página de cuenta
-        window.location.href = 'cuenta.html';
+        // Fallback: buscar el modal manualmente
+        const authModal = document.getElementById('auth-modal');
+        if (authModal) {
+          console.log('CouponBanner: abriendo modal manualmente');
+          authModal.classList.add('open');
+          // Cambiar a tab de registro usando AuthUI.switchTab si existe
+          if (typeof AuthUI !== 'undefined' && typeof AuthUI.switchTab === 'function') {
+            AuthUI.switchTab('register');
+          }
+        } else {
+          // Último recurso: ir a página de cuenta
+          console.log('CouponBanner: redirigiendo a cuenta.html');
+          window.location.href = 'cuenta.html';
+        }
       }
     } else {
       // Si ya está logueado, scroll a productos
