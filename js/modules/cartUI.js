@@ -57,6 +57,15 @@ class CartUI {
       });
     }
 
+    // Registrar listener para cambios de forma de pago
+    if (typeof PaymentSelector !== 'undefined') {
+      PaymentSelector.addListener((method) => {
+        if (this.isOpen) {
+          this.updateTotals(Cart.getTotal());
+        }
+      });
+    }
+
     // Mostrar/ocultar campos de dirección según zona inicial
     setTimeout(() => {
       if (typeof ShippingSelector !== 'undefined' && ShippingSelector.isEnabled()) {
@@ -101,6 +110,11 @@ class CartUI {
             <div class="cart-modal__shipping" id="cart-shipping-row">
               <span>Envío:</span>
               <span id="cart-shipping-cost">$0</span>
+            </div>
+            <div id="cart-payment-selector-container"></div>
+            <div id="cart-payment-commission-row" class="cart-modal__payment-commission" style="display: none;">
+              <span>💳 Recargo:</span>
+              <span id="cart-payment-commission">+$0</span>
             </div>
             <div id="cart-coupon-row" class="cart-modal__coupon-discount" style="display: none;">
               <span>🎟️ Cupón:</span>
@@ -510,6 +524,36 @@ class CartUI {
     // Subtotal después de cupón
     const subtotalAfterCoupon = Math.max(0, subtotal - couponDiscount);
     
+    // Calcular comisión de forma de pago
+    let paymentFee = 0;
+    const paymentContainer = document.getElementById('cart-payment-selector-container');
+    const paymentCommissionRow = document.getElementById('cart-payment-commission-row');
+    const paymentCommissionEl = document.getElementById('cart-payment-commission');
+    
+    if (typeof PaymentSelector !== 'undefined' && PaymentSelector.getMethods().length > 0) {
+      paymentFee = PaymentSelector.calculateCommission(subtotalAfterCoupon);
+      
+      // Renderizar selector de pagos si existe el contenedor
+      if (paymentContainer) {
+        PaymentSelector.render('cart-payment-selector-container');
+      }
+      
+      // Mostrar fila de comisión
+      if (paymentCommissionRow) {
+        if (paymentFee > 0) {
+          paymentCommissionRow.style.display = 'flex';
+          if (paymentCommissionEl) {
+            paymentCommissionEl.textContent = `+${this.formatPrice(paymentFee)}`;
+          }
+        } else {
+          paymentCommissionRow.style.display = 'none';
+        }
+      }
+    } else {
+      if (paymentContainer) paymentContainer.innerHTML = '';
+      if (paymentCommissionRow) paymentCommissionRow.style.display = 'none';
+    }
+    
     if (typeof ShippingSelector !== 'undefined' && ShippingSelector.isEnabled()) {
       if (shippingContainer) {
         shippingContainer.innerHTML = ShippingSelector.renderCartSelector(subtotalAfterCoupon);
@@ -533,7 +577,7 @@ class CartUI {
         }
       }
       
-      const totalFinal = subtotalAfterCoupon + shippingCost;
+      const totalFinal = subtotalAfterCoupon + shippingCost + paymentFee;
       if (totalEl) totalEl.textContent = `${this.formatPrice(totalFinal)}`;
       
       if (shippingRow) shippingRow.style.display = 'flex';
@@ -543,7 +587,7 @@ class CartUI {
     } else {
       if (shippingContainer) shippingContainer.innerHTML = '';
       if (shippingRow) shippingRow.style.display = 'none';
-      if (totalEl) totalEl.textContent = `${this.formatPrice(subtotalAfterCoupon)}`;
+      if (totalEl) totalEl.textContent = `${this.formatPrice(subtotalAfterCoupon + paymentFee)}`;
       this.toggleShippingFields(null);
     }
   }

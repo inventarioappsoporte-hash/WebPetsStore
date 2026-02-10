@@ -207,7 +207,18 @@ class FirebaseOrders {
       }
 
       const subtotalAfterCoupon = Math.max(0, subtotal - couponDiscount);
-      const total = subtotalAfterCoupon + shippingCost;
+      
+      // Calcular comisión de forma de pago
+      let paymentFee = 0;
+      let paymentData = null;
+      if (typeof PaymentSelector !== 'undefined' && PaymentSelector.getMethods().length > 0) {
+        paymentData = PaymentSelector.getOrderData();
+        if (paymentData && paymentData.commission > 0) {
+          paymentFee = PaymentSelector.calculateCommission(subtotalAfterCoupon);
+        }
+      }
+      
+      const total = subtotalAfterCoupon + shippingCost + paymentFee;
       const orderNumber = this.generateOrderNumber();
 
       // Crear documento del pedido
@@ -249,6 +260,16 @@ class FirebaseOrders {
         subtotalAfterCoupon: subtotalAfterCoupon,
         shippingCost: shippingCost,
         shippingZone: shippingZone,
+        
+        // Forma de pago
+        paymentMethod: paymentData ? {
+          methodId: paymentData.methodId,
+          methodName: paymentData.methodName,
+          methodIcon: paymentData.methodIcon,
+          commission: paymentData.commission
+        } : null,
+        paymentFee: paymentFee,
+        
         total: total,
         
         // Timestamps

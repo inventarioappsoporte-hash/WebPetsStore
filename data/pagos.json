@@ -1,0 +1,29 @@
+{
+  "methods": [
+    {
+      "id": "efectivo",
+      "name": "Efectivo",
+      "icon": "💵",
+      "commission": 0,
+      "enabled": true,
+      "order": 0
+    },
+    {
+      "id": "transferencia",
+      "name": "Transferencia",
+      "icon": "🏦",
+      "commission": 0,
+      "enabled": true,
+      "order": 1
+    },
+    {
+      "id": "tarjeta",
+      "name": "Tarjeta de Crédito/Débito",
+      "icon": "💳",
+      "commission": 10,
+      "enabled": true,
+      "order": 2
+    }
+  ],
+  "publishedAt": "2026-02-10T13:46:14.237Z"
+}

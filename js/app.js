@@ -23,6 +23,11 @@ class App {
       if (typeof CouponBanner !== 'undefined') {
         CouponBanner.init();
       }
+      
+      // Inicializar selector de formas de pago
+      if (typeof PaymentSelector !== 'undefined') {
+        PaymentSelector.init();
+      }
 
       // Inicializar búsqueda del header
       new HeaderSearch(this.dataLoader);

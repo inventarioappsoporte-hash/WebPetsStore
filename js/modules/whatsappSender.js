@@ -305,13 +305,50 @@ class WhatsAppSender {
           shippingCost = 0;
         }
         
-        const total = subtotal + shippingCost;
+        // Agregar forma de pago si está configurada
+        let paymentFee = 0;
+        if (typeof PaymentSelector !== 'undefined' && PaymentSelector.getMethods().length > 0) {
+          const paymentData = PaymentSelector.getOrderData();
+          if (paymentData) {
+            message += `\n💳 *Forma de Pago:* ${paymentData.methodIcon} ${paymentData.methodName}\n`;
+            if (paymentData.commission > 0) {
+              paymentFee = PaymentSelector.calculateCommission(subtotal);
+              message += `   Recargo (${paymentData.commission}%): +${this.formatPrice(paymentFee)}\n`;
+            }
+          }
+        }
+        
+        const total = subtotal + shippingCost + paymentFee;
         message += `\n💰 *TOTAL: ${this.formatPrice(total)}*\n`;
       } else {
-        message += `\n💰 *TOTAL: ${this.formatPrice(subtotal)}*\n`;
+        // Sin envío pero con posible forma de pago
+        let paymentFee = 0;
+        if (typeof PaymentSelector !== 'undefined' && PaymentSelector.getMethods().length > 0) {
+          const paymentData = PaymentSelector.getOrderData();
+          if (paymentData) {
+            message += `\n💳 *Forma de Pago:* ${paymentData.methodIcon} ${paymentData.methodName}\n`;
+            if (paymentData.commission > 0) {
+              paymentFee = PaymentSelector.calculateCommission(subtotal);
+              message += `   Recargo (${paymentData.commission}%): +${this.formatPrice(paymentFee)}\n`;
+            }
+          }
+        }
+        message += `\n💰 *TOTAL: ${this.formatPrice(subtotal + paymentFee)}*\n`;
       }
     } else {
-      message += `\n💰 *TOTAL: ${this.formatPrice(subtotal)}*\n`;
+      // Sin selector de envío pero con posible forma de pago
+      let paymentFee = 0;
+      if (typeof PaymentSelector !== 'undefined' && PaymentSelector.getMethods().length > 0) {
+        const paymentData = PaymentSelector.getOrderData();
+        if (paymentData) {
+          message += `\n💳 *Forma de Pago:* ${paymentData.methodIcon} ${paymentData.methodName}\n`;
+          if (paymentData.commission > 0) {
+            paymentFee = PaymentSelector.calculateCommission(subtotal);
+            message += `   Recargo (${paymentData.commission}%): +${this.formatPrice(paymentFee)}\n`;
+          }
+        }
+      }
+      message += `\n💰 *TOTAL: ${this.formatPrice(subtotal + paymentFee)}*\n`;
     }
     
     message += '\n¡Gracias por tu compra! 🐾';

@@ -1,0 +1,145 @@
+/* Payment Selector - Selector de Forma de Pago */
+
+.payment-selector {
+  background: #1a1a2e;
+  border-radius: 8px;
+  padding: 1rem;
+  margin: 1rem 0;
+}
+
+.payment-selector__header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.payment-selector__icon {
+  font-size: 1.1rem;
+}
+
+.payment-selector__title {
+  color: #fff;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.payment-selector__options {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.payment-option {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem;
+  background: #252538;
+  border-radius: 6px;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: all 0.2s;
+}
+
+.payment-option:hover {
+  border-color: #3a3a4a;
+}
+
+.payment-option.selected {
+  border-color: #FF6B00;
+  background: rgba(255, 107, 0, 0.1);
+}
+
+.payment-option input[type="radio"] {
+  display: none;
+}
+
+.payment-option__radio {
+  width: 18px;
+  height: 18px;
+  border: 2px solid #6b6b7a;
+  border-radius: 50%;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.payment-option.selected .payment-option__radio {
+  border-color: #FF6B00;
+}
+
+.payment-option.selected .payment-option__radio::after {
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: #FF6B00;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.payment-option__icon {
+  font-size: 1.25rem;
+  flex-shrink: 0;
+}
+
+.payment-option__info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.125rem;
+  flex: 1;
+}
+
+.payment-option__name {
+  color: #fff;
+  font-size: 0.9rem;
+}
+
+.payment-option__commission {
+  color: #8b8b9a;
+  font-size: 0.75rem;
+}
+
+.payment-option__commission.has-fee {
+  color: #ffaa00;
+}
+
+.payment-option__check {
+  color: #FF6B00;
+  font-size: 1rem;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.payment-option.selected .payment-option__check {
+  opacity: 1;
+}
+
+/* Resumen de comisión en totales */
+.cart-modal__payment-commission {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 0;
+  color: #ffaa00;
+  font-size: 0.875rem;
+}
+
+.cart-payment-fee {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 0;
+  color: #ffaa00;
+  font-size: 0.875rem;
+}
+
+.cart-payment-fee__label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.cart-payment-fee__amount {
+  font-weight: 600;
+}
