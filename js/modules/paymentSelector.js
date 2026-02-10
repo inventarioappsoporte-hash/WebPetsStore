@@ -1,6 +1,7 @@
 /**
  * 💳 PaymentSelector - Selector de Forma de Pago
  * Permite al cliente elegir forma de pago y calcula comisiones
+ * Los datos se cargan desde pagos.json (generado por admin local)
  */
 
 class PaymentSelector {
@@ -8,47 +9,97 @@ class PaymentSelector {
   static selectedMethod = null;
   static listeners = [];
   static initialized = false;
+  static loading = false;
 
   /**
-   * Inicializar el selector
+   * Inicializar el selector (no bloquea)
    */
   static async init() {
-    if (this.initialized) return;
+    if (this.initialized || this.loading) return;
+    this.loading = true;
     
-    await this.loadMethods();
-    this.initialized = true;
-    console.log('💳 PaymentSelector initialized');
+    try {
+      await this.loadMethods();
+      this.initialized = true;
+      console.log('💳 PaymentSelector initialized with', this.methods.length, 'methods');
+    } catch (e) {
+      console.warn('💳 PaymentSelector: Error loading config', e);
+    } finally {
+      this.loading = false;
+    }
   }
 
   /**
-   * Cargar métodos de pago desde config
+   * Cargar métodos de pago desde pagos.json (estático)
    */
   static async loadMethods() {
     try {
+      // Determinar URL base
       const pathname = window.location.pathname;
       let baseUrl = 'data/';
       if (pathname.includes('/pets-store/')) {
         baseUrl = '/pets-store/data/';
       }
 
-      const response = await fetch(baseUrl + 'pagos.json');
+      const response = await fetch(baseUrl + 'pagos.json', {
+        cache: 'default' // Usar cache del navegador
+      });
+      
       if (response.ok) {
         const data = await response.json();
-        this.methods = data.methods || [];
+        this.methods = (data.methods || []).filter(m => m.enabled !== false);
         
-        // Seleccionar el primero por defecto
-        if (this.methods.length > 0 && !this.selectedMethod) {
-          this.selectedMethod = this.methods[0];
-        }
+        // Cargar selección guardada o usar el primero por defecto
+        this.loadSelectedMethod();
+      } else {
+        this.setDefaultMethods();
       }
     } catch (error) {
-      console.log('💳 PaymentSelector: No hay config de pagos, usando default');
-      // Métodos por defecto si no hay config
-      this.methods = [
-        { id: 'efectivo', name: 'Efectivo', icon: '💵', commission: 0 },
-        { id: 'transferencia', name: 'Transferencia', icon: '🏦', commission: 0 }
-      ];
-      this.selectedMethod = this.methods[0];
+      console.log('💳 PaymentSelector: Using default methods');
+      this.setDefaultMethods();
+    }
+  }
+
+  /**
+   * Métodos por defecto si no hay config
+   */
+  static setDefaultMethods() {
+    this.methods = [
+      { id: 'efectivo', name: 'Efectivo', icon: '💵', commission: 0 },
+      { id: 'transferencia', name: 'Transferencia', icon: '🏦', commission: 0 }
+    ];
+    this.loadSelectedMethod();
+  }
+
+  /**
+   * Cargar método seleccionado desde localStorage
+   */
+  static loadSelectedMethod() {
+    if (this.methods.length === 0) return;
+    
+    const savedMethodId = localStorage.getItem('pets-store-payment-method');
+    console.log('💳 loadSelectedMethod - savedMethodId:', savedMethodId);
+    
+    if (savedMethodId) {
+      const savedMethod = this.methods.find(m => m.id === savedMethodId);
+      if (savedMethod) {
+        this.selectedMethod = savedMethod;
+        console.log('💳 loadSelectedMethod - restored:', savedMethod.name);
+        return;
+      }
+    }
+    // Si no hay guardado o no existe, usar el primero
+    this.selectedMethod = this.methods[0];
+    console.log('💳 loadSelectedMethod - using default:', this.selectedMethod?.name);
+  }
+
+  /**
+   * Guardar método seleccionado en localStorage
+   */
+  static saveSelectedMethod() {
+    if (this.selectedMethod) {
+      localStorage.setItem('pets-store-payment-method', this.selectedMethod.id);
+      console.log('💳 saveSelectedMethod - saved:', this.selectedMethod.id);
     }
   }
 
@@ -73,8 +124,8 @@ class PaymentSelector {
     const method = this.methods.find(m => m.id === methodId);
     if (method) {
       this.selectedMethod = method;
+      this.saveSelectedMethod();
       this.notifyListeners();
-      console.log('💳 Método seleccionado:', method.name, method.commission + '%');
     }
   }
 
@@ -82,7 +133,7 @@ class PaymentSelector {
    * Calcular comisión sobre un monto
    */
   static calculateCommission(subtotal) {
-    if (!this.selectedMethod || this.selectedMethod.commission === 0) {
+    if (!this.selectedMethod || !this.selectedMethod.commission) {
       return 0;
     }
     return Math.round(subtotal * (this.selectedMethod.commission / 100));
@@ -108,7 +159,7 @@ class PaymentSelector {
     }
 
     container.innerHTML = `
-      <div class="payment-selector">
+      <div class="payment-selector" data-payment-selector>
         <div class="payment-selector__header">
           <span class="payment-selector__icon">💳</span>
           <span class="payment-selector__title">Forma de Pago</span>
@@ -118,8 +169,7 @@ class PaymentSelector {
             <label class="payment-option ${this.selectedMethod?.id === method.id ? 'selected' : ''}" 
                    data-method-id="${method.id}">
               <input type="radio" name="payment-method" value="${method.id}" 
-                     ${this.selectedMethod?.id === method.id ? 'checked' : ''}
-                     onchange="PaymentSelector.select('${method.id}')">
+                     ${this.selectedMethod?.id === method.id ? 'checked' : ''}>
               <span class="payment-option__icon">${method.icon}</span>
               <span class="payment-option__info">
                 <span class="payment-option__name">${method.name}</span>
@@ -134,13 +184,22 @@ class PaymentSelector {
       </div>
     `;
 
-    // Agregar event listeners para actualizar visual
-    container.querySelectorAll('.payment-option').forEach(option => {
-      option.addEventListener('click', () => {
-        container.querySelectorAll('.payment-option').forEach(o => o.classList.remove('selected'));
-        option.classList.add('selected');
-      });
-    });
+    // Un solo event listener con delegation (más eficiente)
+    const optionsContainer = container.querySelector('.payment-selector__options');
+    if (optionsContainer) {
+      optionsContainer.onclick = (e) => {
+        const option = e.target.closest('.payment-option');
+        if (option) {
+          const methodId = option.dataset.methodId;
+          // Actualizar visual
+          optionsContainer.querySelectorAll('.payment-option').forEach(o => o.classList.remove('selected'));
+          option.classList.add('selected');
+          option.querySelector('input').checked = true;
+          // Actualizar estado
+          this.select(methodId);
+        }
+      };
+    }
   }
 
   /**
@@ -168,36 +227,28 @@ class PaymentSelector {
       methodId: this.selectedMethod.id,
       methodName: this.selectedMethod.name,
       methodIcon: this.selectedMethod.icon,
-      commission: this.selectedMethod.commission,
-      commissionPercent: this.selectedMethod.commission
+      commission: this.selectedMethod.commission || 0
     };
   }
 
   /**
-   * Verificar si el selector está habilitado (tiene métodos)
+   * Verificar si el selector está habilitado
    */
   static isEnabled() {
     return this.methods.length > 0;
-  }
-
-  /**
-   * Formatear para mensaje de WhatsApp
-   */
-  static formatForWhatsApp(subtotal) {
-    if (!this.selectedMethod) return '';
-    
-    const commission = this.calculateCommission(subtotal);
-    let text = `💳 *Forma de Pago:* ${this.selectedMethod.icon} ${this.selectedMethod.name}`;
-    
-    if (commission > 0) {
-      text += `\n   Recargo (${this.selectedMethod.commission}%): $${commission.toLocaleString('es-AR')}`;
-    }
-    
-    return text;
   }
 }
 
 // Exportar
 if (typeof window !== 'undefined') {
   window.PaymentSelector = PaymentSelector;
+}
+
+// Auto-inicializar cuando el DOM esté listo
+if (typeof window !== 'undefined') {
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', () => PaymentSelector.init());
+  } else {
+    PaymentSelector.init();
+  }
 }

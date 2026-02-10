@@ -218,6 +218,9 @@
   padding: 1rem;
   background: #1a1a1a;
   min-height: 0; /* Importante para que flex funcione correctamente */
+  -webkit-overflow-scrolling: touch; /* Scroll suave en iOS */
+  will-change: scroll-position; /* Optimización de rendimiento */
+  transform: translateZ(0); /* Forzar aceleración GPU */
 }
 
 /* Scrollbar personalizado */
@@ -412,6 +415,9 @@
   max-height: 50vh; /* Máximo 50% de la altura de la ventana */
   overflow-y: auto; /* Scroll si el contenido es muy largo */
   overflow-x: hidden;
+  -webkit-overflow-scrolling: touch; /* Scroll suave en iOS */
+  will-change: scroll-position; /* Optimización de rendimiento */
+  transform: translateZ(0); /* Forzar aceleración GPU */
 }
 
 /* Scrollbar para el footer */

@@ -5,6 +5,7 @@
   border-radius: 8px;
   padding: 1rem;
   margin: 1rem 0;
+  contain: layout style; /* Optimización: aislar repintados */
 }
 
 .payment-selector__header {
@@ -39,7 +40,8 @@
   border-radius: 6px;
   cursor: pointer;
   border: 2px solid transparent;
-  transition: all 0.2s;
+  transition: border-color 0.2s ease, background-color 0.2s ease;
+  will-change: border-color, background-color;
 }
 
 .payment-option:hover {
@@ -110,7 +112,6 @@
   color: #FF6B00;
   font-size: 1rem;
   opacity: 0;
-  transition: opacity 0.2s;
 }
 
 .payment-option.selected .payment-option__check {

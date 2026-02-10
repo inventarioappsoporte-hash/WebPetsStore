@@ -31,7 +31,8 @@ class CartUI {
     if (typeof ShippingSelector !== 'undefined') {
       ShippingSelector.addListener((zone) => {
         if (this.isOpen) {
-          this.updateTotals(Cart.getTotal());
+          // Solo actualizar costos de envío y total, NO re-renderizar el selector
+          this.updateShippingCost(Cart.getTotal());
           this.toggleShippingFields(zone);
         }
       });
@@ -61,7 +62,8 @@ class CartUI {
     if (typeof PaymentSelector !== 'undefined') {
       PaymentSelector.addListener((method) => {
         if (this.isOpen) {
-          this.updateTotals(Cart.getTotal());
+          // Solo actualizar la comisión y total, NO re-renderizar todo
+          this.updatePaymentCommission(Cart.getTotal());
         }
       });
     }
@@ -524,19 +526,13 @@ class CartUI {
     // Subtotal después de cupón
     const subtotalAfterCoupon = Math.max(0, subtotal - couponDiscount);
     
-    // Calcular comisión de forma de pago
+    // Calcular comisión de forma de pago (NO re-renderizar el selector aquí)
     let paymentFee = 0;
-    const paymentContainer = document.getElementById('cart-payment-selector-container');
     const paymentCommissionRow = document.getElementById('cart-payment-commission-row');
     const paymentCommissionEl = document.getElementById('cart-payment-commission');
     
     if (typeof PaymentSelector !== 'undefined' && PaymentSelector.getMethods().length > 0) {
       paymentFee = PaymentSelector.calculateCommission(subtotalAfterCoupon);
-      
-      // Renderizar selector de pagos si existe el contenedor
-      if (paymentContainer) {
-        PaymentSelector.render('cart-payment-selector-container');
-      }
       
       // Mostrar fila de comisión
       if (paymentCommissionRow) {
@@ -550,12 +546,12 @@ class CartUI {
         }
       }
     } else {
-      if (paymentContainer) paymentContainer.innerHTML = '';
       if (paymentCommissionRow) paymentCommissionRow.style.display = 'none';
     }
     
     if (typeof ShippingSelector !== 'undefined' && ShippingSelector.isEnabled()) {
-      if (shippingContainer) {
+      // Solo renderizar el selector si está vacío (evitar re-renders costosos)
+      if (shippingContainer && shippingContainer.innerHTML === '') {
         shippingContainer.innerHTML = ShippingSelector.renderCartSelector(subtotalAfterCoupon);
       }
       
@@ -590,6 +586,104 @@ class CartUI {
       if (totalEl) totalEl.textContent = `${this.formatPrice(subtotalAfterCoupon + paymentFee)}`;
       this.toggleShippingFields(null);
     }
+  }
+
+  /**
+   * Actualizar solo la comisión de pago y total (sin re-renderizar selectores)
+   */
+  static updatePaymentCommission(subtotal) {
+    const totalEl = document.getElementById('cart-total');
+    const paymentCommissionRow = document.getElementById('cart-payment-commission-row');
+    const paymentCommissionEl = document.getElementById('cart-payment-commission');
+    
+    // Obtener descuento de cupón
+    let couponDiscount = 0;
+    let couponFreeShipping = false;
+    if (typeof CouponValidator !== 'undefined') {
+      couponDiscount = CouponValidator.getDiscount();
+      couponFreeShipping = CouponValidator.hasFreeShipping();
+    }
+    
+    const subtotalAfterCoupon = Math.max(0, subtotal - couponDiscount);
+    
+    // Calcular comisión de pago
+    let paymentFee = 0;
+    if (typeof PaymentSelector !== 'undefined') {
+      paymentFee = PaymentSelector.calculateCommission(subtotalAfterCoupon);
+    }
+    
+    // Actualizar fila de comisión
+    if (paymentCommissionRow) {
+      if (paymentFee > 0) {
+        paymentCommissionRow.style.display = 'flex';
+        if (paymentCommissionEl) {
+          paymentCommissionEl.textContent = `+${this.formatPrice(paymentFee)}`;
+        }
+      } else {
+        paymentCommissionRow.style.display = 'none';
+      }
+    }
+    
+    // Calcular envío actual (sin re-renderizar)
+    let shippingCost = 0;
+    if (typeof ShippingSelector !== 'undefined' && ShippingSelector.isEnabled()) {
+      const shipping = ShippingSelector.calculateShipping(subtotalAfterCoupon);
+      shippingCost = (shipping.isFree || couponFreeShipping) ? 0 : (shipping.cost || 0);
+    }
+    
+    // Actualizar total
+    const totalFinal = subtotalAfterCoupon + shippingCost + paymentFee;
+    if (totalEl) totalEl.textContent = `${this.formatPrice(totalFinal)}`;
+  }
+
+  /**
+   * Actualizar solo el costo de envío y total (sin re-renderizar selectores)
+   */
+  static updateShippingCost(subtotal) {
+    const shippingCostEl = document.getElementById('cart-shipping-cost');
+    const totalEl = document.getElementById('cart-total');
+    
+    // Obtener descuento de cupón
+    let couponDiscount = 0;
+    let couponFreeShipping = false;
+    if (typeof CouponValidator !== 'undefined') {
+      couponDiscount = CouponValidator.getDiscount();
+      couponFreeShipping = CouponValidator.hasFreeShipping();
+    }
+    
+    const subtotalAfterCoupon = Math.max(0, subtotal - couponDiscount);
+    
+    // Calcular comisión de pago
+    let paymentFee = 0;
+    if (typeof PaymentSelector !== 'undefined') {
+      paymentFee = PaymentSelector.calculateCommission(subtotalAfterCoupon);
+    }
+    
+    // Calcular envío
+    let shippingCost = 0;
+    if (typeof ShippingSelector !== 'undefined' && ShippingSelector.isEnabled()) {
+      const shipping = ShippingSelector.calculateShipping(subtotalAfterCoupon);
+      
+      // Aplicar envío gratis del cupón
+      shippingCost = shipping.cost;
+      if (couponFreeShipping && !shipping.isCargo) {
+        shippingCost = 0;
+      }
+      
+      if (shippingCostEl) {
+        if (shipping.isCargo) {
+          shippingCostEl.innerHTML = `<span class="shipping-cargo">Pago en destino</span>`;
+        } else if (shipping.isFree || couponFreeShipping) {
+          shippingCostEl.innerHTML = `<span class="shipping-free">GRATIS</span>`;
+        } else {
+          shippingCostEl.textContent = this.formatPrice(shippingCost);
+        }
+      }
+    }
+    
+    // Actualizar total
+    const totalFinal = subtotalAfterCoupon + shippingCost + paymentFee;
+    if (totalEl) totalEl.textContent = `${this.formatPrice(totalFinal)}`;
   }
 
   /**
@@ -651,6 +745,14 @@ class CartUI {
       const total = Cart.getTotal();
       const wholesaleStatus = Cart.getWholesaleStatus();
       this.renderCartItems(items, total, wholesaleStatus);
+      
+      // Renderizar selector de pagos UNA SOLA VEZ al abrir
+      const paymentContainer = document.getElementById('cart-payment-selector-container');
+      if (typeof PaymentSelector !== 'undefined' && PaymentSelector.getMethods().length > 0) {
+        if (paymentContainer && paymentContainer.innerHTML === '') {
+          PaymentSelector.render('cart-payment-selector-container');
+        }
+      }
       
       // Auto-completar datos si hay usuario logueado
       this.autoFillUserData();
@@ -1052,6 +1154,13 @@ class CartUI {
       this.modal.classList.remove('cart-modal--open');
       this.isOpen = false;
       document.body.style.overflow = '';
+      
+      // Limpiar contenedores para que se re-rendericen al abrir
+      const paymentContainer = document.getElementById('cart-payment-selector-container');
+      if (paymentContainer) paymentContainer.innerHTML = '';
+      
+      const shippingContainer = document.getElementById('cart-shipping-selector-container');
+      if (shippingContainer) shippingContainer.innerHTML = '';
     }
   }
 
