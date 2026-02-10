@@ -31,7 +31,7 @@ class WhatsAppSender {
           orderNumber = firebaseResult.orderNumber;
           
           if (firebaseResult.success) {
-            console.log('✅ Pedido registrado en Firebase:', orderNumber);
+            // Pedido registrado en Firebase
           } else {
             console.warn('⚠️ Firebase no disponible, continuando con WhatsApp');
           }
@@ -55,7 +55,6 @@ class WhatsAppSender {
       // 5. Abrir WhatsApp en nueva ventana
       window.open(url, '_blank');
       
-      console.log('✅ Order sent to WhatsApp');
       return true;
     } catch (error) {
       console.error('❌ Error sending order:', error);
@@ -128,12 +127,6 @@ class WhatsAppSender {
     
     const hasWholesaleItems = items.some(item => item.priceDisplayMode === 'wholesale');
     
-    // DEBUG: Log para verificar estado mayorista
-    console.log('🔍 WhatsApp - meetsAmount:', meetsAmount);
-    console.log('🔍 WhatsApp - productsWithWholesale:', productsWithWholesale);
-    console.log('🔍 WhatsApp - cartTotal:', cartTotal);
-    console.log('🔍 WhatsApp - hasWholesaleItems:', hasWholesaleItems);
-    
     // Indicar tipo de pedido
     if (hasWholesaleItems && productsWithWholesale.length > 0) {
       message += `\n💰 *Tipo:* PEDIDO MAYORISTA (${productsWithWholesale.length} producto${productsWithWholesale.length > 1 ? 's' : ''} con precio mayorista)\n`;
@@ -150,16 +143,6 @@ class WhatsAppSender {
       
       // Verificar si ESTE producto específico califica para mayorista
       const thisProductQualifies = productQualifiesForWholesale(productId);
-      
-      // DEBUG: Log por item
-      console.log(`🔍 Item ${index}: ${item.name}`, {
-        priceDisplayMode: item.priceDisplayMode,
-        price: item.price,
-        originalPrice: item.originalPrice,
-        isWholesaleItem,
-        hasDiscount,
-        thisProductQualifies
-      });
       
       // Calcular precio efectivo según modo
       let effectivePrice;
@@ -179,8 +162,6 @@ class WhatsAppSender {
       
       const effectiveSubtotal = effectivePrice * item.quantity;
       subtotal += effectiveSubtotal;
-      
-      console.log(`🔍 Item ${index} - effectivePrice: ${effectivePrice}, effectiveSubtotal: ${effectiveSubtotal}`);
       
       message += `${index + 1}. *${item.name}*`;
       
@@ -219,8 +200,6 @@ class WhatsAppSender {
       message += `   Subtotal: ${this.formatPrice(effectiveSubtotal)}\n`;
       message += '\n';
     });
-    
-    console.log('🔍 WhatsApp - subtotal final:', subtotal);
     
     message += '---\n';
     message += `📦 *Subtotal productos:* ${this.formatPrice(subtotal)}\n`;
@@ -378,7 +357,6 @@ class WhatsAppSender {
       const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
       
       window.open(url, '_blank');
-      console.log('✅ Direct purchase sent to WhatsApp');
       return true;
     } catch (error) {
       console.error('❌ Error sending direct purchase:', error);

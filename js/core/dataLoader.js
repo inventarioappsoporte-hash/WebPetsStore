@@ -6,19 +6,11 @@ class DataLoader {
     const pathname = window.location.pathname;
     const hostname = window.location.hostname;
     
-    console.log('🔍 DataLoader - hostname:', hostname);
-    console.log('🔍 DataLoader - pathname:', pathname);
-    console.log('🔍 DataLoader - protocol:', window.location.protocol);
-    
     // Si estamos en GitHub Pages (github.io), la ruta incluye el repo name
     const isGitHubPages = hostname.includes('github.io');
     const isLocalFile = window.location.protocol === 'file:';
     // Detectar si estamos siendo servidos desde /pets-store/ (admin server)
     const isFromAdmin = pathname.startsWith('/pets-store/');
-    
-    console.log('🔍 DataLoader - isGitHubPages:', isGitHubPages);
-    console.log('🔍 DataLoader - isLocalFile:', isLocalFile);
-    console.log('🔍 DataLoader - isFromAdmin:', isFromAdmin);
     
     // Para archivos locales, usar ruta relativa
     let baseUrl;
@@ -40,45 +32,33 @@ class DataLoader {
     }
     
     this.baseUrl = baseUrl;
-    console.log('🔍 DataLoader - Final baseUrl:', this.baseUrl);
   }
 
   async load(filename) {
-    console.log(`🔍 DataLoader.load() - Loading: ${filename}`);
-    console.log(`🔍 DataLoader.load() - Full URL: ${this.baseUrl}${filename}`);
-    
     if (this.cache[filename]) {
-      console.log(`📋 DataLoader.load() - Using cached data for: ${filename}`);
       return this.cache[filename];
     }
 
     try {
       const fullUrl = `${this.baseUrl}${filename}`;
-      console.log(`📡 DataLoader.load() - Fetching: ${fullUrl}`);
-      
       const response = await fetch(fullUrl);
-      console.log(`📡 DataLoader.load() - Response status: ${response.status} for ${filename}`);
       
       if (!response.ok) {
         throw new Error(`HTTP ${response.status} - ${response.statusText}`);
       }
       
       const data = await response.json();
-      console.log(`✅ DataLoader.load() - Data loaded successfully for ${filename}:`, data?.length || 'object');
-      
       this.cache[filename] = data;
       return data;
     } catch (error) {
-      console.error(`❌ DataLoader.load() - Failed to load ${filename}:`, error);
-      console.error(`❌ DataLoader.load() - URL attempted: ${this.baseUrl}${filename}`);
+      console.error(`❌ DataLoader - Failed to load ${filename}:`, error);
       return null;
     }
   }
 
   async getProducts() {
-    // Forzar recarga sin cache para debug
+    // Forzar recarga sin cache
     const timestamp = Date.now();
-    console.log('🔄 Loading products with timestamp:', timestamp);
     const products = await this.load(`products.json?v=${timestamp}`);
     
     // Filtrar productos sin stock (stock <= 0)
@@ -89,7 +69,6 @@ class DataLoader {
         // Solo mostrar productos con stock > 0
         return p.stock > 0;
       });
-      console.log(`📦 Productos filtrados: ${products.length} total, ${inStockProducts.length} con stock`);
       return inStockProducts;
     }
     

@@ -36,7 +36,6 @@ class SocialFloat {
       }, 500);
     }
     
-    console.log('📱 SocialFloat initialized');
   }
 
   /**

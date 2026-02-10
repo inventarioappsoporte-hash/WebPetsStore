@@ -18,7 +18,6 @@ const WhatsAppFloat = {
   init() {
     this.render();
     this.attachEvents();
-    console.log('💬 WhatsApp Float Button initialized');
   },
 
   /**

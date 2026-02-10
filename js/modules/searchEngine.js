@@ -7,24 +7,15 @@ class SearchEngine {
   }
 
   async init() {
-    console.log('🔍 SearchEngine.init() - Cargando productos...');
     this.products = await this.dataLoader.getProducts();
-    console.log('🔍 SearchEngine.init() - Productos cargados:', this.products?.length || 0);
-    console.log('🔍 SearchEngine.init() - Llamando setupSearchListeners...');
     this.setupSearchListeners();
-    
-    // Verificar si hay parámetros de URL para filtrar
     this.checkUrlParams();
-    
-    console.log('🔍 SearchEngine.init() - setupSearchListeners completado');
   }
 
   checkUrlParams() {
     const urlParams = new URLSearchParams(window.location.search);
     const category = urlParams.get('category');
     const query = urlParams.get('q');
-
-    console.log('🔍 SearchEngine - URL params - category:', category, 'query:', query);
 
     if (category) {
       this.filterByCategory(category);
@@ -39,9 +30,7 @@ class SearchEngine {
   }
 
   filterByCategory(categoryId) {
-    // Asegurar que categoryId sea string para comparar con las keys del objeto
     const categoryIdStr = String(categoryId);
-    console.log('🔍 SearchEngine.filterByCategory() - Category ID:', categoryIdStr, 'tipo:', typeof categoryIdStr);
     
     // Mapear IDs de categorías a filtros específicos
     const categoryFilters = {
@@ -180,17 +169,11 @@ class SearchEngine {
     const categoryConfig = categoryFilters[categoryIdStr];
     
     if (!categoryConfig) {
-      console.warn('🔍 SearchEngine.filterByCategory() - Category ID not found:', categoryIdStr);
       this.displayCategoryResults([], categoryIdStr, 'Categoría no encontrada');
       return;
     }
-    
-    console.log('🔍 SearchEngine.filterByCategory() - Filtering by:', categoryConfig.name);
 
     const results = this.products.filter(categoryConfig.filter);
-
-    console.log('🔍 SearchEngine.filterByCategory() - Resultados encontrados:', results.length);
-    console.log('🔍 SearchEngine.filterByCategory() - Productos:', results.map(p => `${p.name} (${p.subcategory})`));
 
     this.displayCategoryResults(results, categoryIdStr, categoryConfig.name);
     
@@ -227,28 +210,16 @@ class SearchEngine {
   }
 
   setupSearchListeners() {
-    console.log('🔍 SearchEngine.setupSearchListeners() - Buscando inputs...');
-    console.log('🔍 Todos los inputs en la página:', document.querySelectorAll('input').length);
-    document.querySelectorAll('input').forEach((input, idx) => {
-      console.log(`  Input ${idx}:`, input.className, input.type, input.placeholder);
-    });
-    
-    // Intentar encontrar el input en la página de búsqueda primero
     let searchInput = document.querySelector('.search__input');
-    console.log('🔍 Buscando .search__input:', !!searchInput);
     
-    // Si no lo encuentra, intentar con el selector del header
     if (!searchInput) {
       searchInput = document.querySelector(CONSTANTS.SELECTORS.SEARCH_INPUT);
-      console.log('🔍 Buscando', CONSTANTS.SELECTORS.SEARCH_INPUT, ':', !!searchInput);
     }
     
-    console.log('🔍 SearchEngine.setupSearchListeners() - searchInput encontrado:', !!searchInput);
     if (!searchInput) return;
 
     const debouncedSearch = Utils.debounce((e) => {
       const query = e.target.value.toLowerCase().trim();
-      console.log('🔍 SearchEngine - Input event, query:', query, 'length:', query.length);
       if (query.length < 2) {
         this.clearResults();
         this.hideClearButton();
@@ -259,9 +230,6 @@ class SearchEngine {
     }, CONSTANTS.DEBOUNCE_DELAY);
 
     searchInput.addEventListener('input', debouncedSearch);
-    console.log('🔍 SearchEngine - Event listener agregado');
-    
-    // Configurar botón de limpiar filtro
     this.setupClearButton();
   }
 
@@ -269,7 +237,6 @@ class SearchEngine {
     const clearBtn = document.getElementById('clear-filter-btn');
     if (clearBtn) {
       clearBtn.addEventListener('click', () => {
-        console.log('🔍 SearchEngine - Limpiando filtros...');
         this.clearFilters();
       });
     }
@@ -310,8 +277,6 @@ class SearchEngine {
   }
 
   async showAllProducts() {
-    console.log('🔍 SearchEngine.showAllProducts() - Mostrando todos los productos...');
-    
     const container = document.querySelector(CONSTANTS.SELECTORS.SEARCH_RESULTS);
     if (!container) return;
 
@@ -330,7 +295,6 @@ class SearchEngine {
   }
 
   search(query) {
-    console.log('🔍 SearchEngine.search() - Query:', query, 'Productos disponibles:', this.products?.length || 0);
     const normalizedQuery = Utils.normalizeText(query);
     
     const results = this.products.filter(product => {
@@ -344,7 +308,6 @@ class SearchEngine {
       return matchName || matchCategory || matchSubcategory || matchTags || matchDescription;
     });
 
-    console.log('🔍 SearchEngine.search() - Resultados encontrados:', results.length);
     this.displayResults(results, query);
   }
 

@@ -78,8 +78,6 @@ class CartUI {
     // Actualizar badge inicial
     this.updateBadge(Cart.getItemCount());
     this.updateStickyBar(Cart.getItemCount(), Cart.getTotal(), Cart.getWholesaleStatus());
-    
-    console.log('🎨 CartUI initialized');
   }
 
   /**
@@ -779,10 +777,7 @@ class CartUI {
     if (typeof UserAuth !== 'undefined' && UserAuth.isLoggedIn()) {
       const user = UserAuth.getUser();
       
-      console.log('🛒 autoFillUserData - Usuario:', user, 'Requiere dirección:', requiresAddress);
-      
       if (!user) {
-        console.log('🛒 autoFillUserData - No hay datos de usuario aún');
         return;
       }
       
@@ -893,8 +888,6 @@ class CartUI {
    * Mapeo de campos guardados en cuenta.html a campos del carrito
    */
   static fillAddressFields(address) {
-    console.log('🏠 fillAddressFields - Dirección recibida:', address);
-    
     // Mapeo robusto: soporta tanto el formato nuevo como posibles variaciones
     const fields = {
       'customer-address': address.address || address.street || '',
@@ -905,13 +898,10 @@ class CartUI {
       'customer-province': address.province || address.state || ''
     };
     
-    console.log('🏠 fillAddressFields - Campos a llenar:', fields);
-    
     Object.entries(fields).forEach(([id, value]) => {
       const input = document.getElementById(id);
       if (input) {
         input.value = value || '';
-        console.log(`  → ${id}: "${value}"`);
       }
     });
   }

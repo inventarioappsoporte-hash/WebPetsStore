@@ -34,9 +34,8 @@ class UserAuth {
         timestamp: Date.now()
       };
       localStorage.setItem(this.CACHE_KEY, JSON.stringify(cacheData));
-      console.log('💾 Perfil guardado en caché local');
     } catch (e) {
-      console.warn('⚠️ No se pudo guardar en caché:', e);
+      // Silently fail
     }
   }
 
@@ -57,11 +56,9 @@ class UserAuth {
       }
       
       if (Date.now() - timestamp > this.CACHE_EXPIRY) {
-        console.log('⏰ Caché expirado, recargando desde Firebase');
         return null;
       }
       
-      console.log('📦 Perfil cargado desde caché local');
       return profile;
     } catch (e) {
       return null;
@@ -95,7 +92,6 @@ class UserAuth {
           const profile = await this.loadUserProfile(user.uid);
           // Si no hay perfil, crearlo automáticamente
           if (!profile) {
-            console.log('📝 Creando perfil de usuario...');
             await this.createUserProfile(user.uid, {
               email: user.email,
               displayName: user.displayName || '',
@@ -111,7 +107,6 @@ class UserAuth {
       });
 
       this.initialized = true;
-      console.log('🔐 UserAuth initialized');
       return true;
     } catch (error) {
       console.error('❌ Error initializing UserAuth:', error);
@@ -149,10 +144,8 @@ class UserAuth {
       const { signInWithPopup, GoogleAuthProvider } = await import('https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js');
       const provider = new GoogleAuthProvider();
       
-      console.log('🔐 Iniciando login con Google...');
       const userCredential = await signInWithPopup(this.auth, provider);
       const user = userCredential.user;
-      console.log('✅ Login con Google exitoso:', user.email);
       
       const profile = await this.loadUserProfile(user.uid);
       if (!profile) {
@@ -165,10 +158,6 @@ class UserAuth {
       }
       return { success: true, user };
     } catch (error) {
-      console.error('❌ Error en loginWithGoogle:', error);
-      console.error('Código de error:', error.code);
-      console.error('Mensaje:', error.message);
-      
       // Mensajes más específicos para errores de Google
       let errorMsg = this.getErrorMessage(error.code);
       if (error.code === 'auth/unauthorized-domain') {
@@ -218,8 +207,7 @@ class UserAuth {
       };
       await setDoc(userRef, profileData);
       this.userProfile = { uid, ...profileData };
-      this.saveToCache(this.userProfile); // Guardar en caché
-      console.log('✅ Perfil de usuario creado con rol:', profileData.role);
+      this.saveToCache(this.userProfile);
       return true;
     } catch (error) {
       console.error('Error creando perfil:', error);
@@ -236,7 +224,6 @@ class UserAuth {
     
     // Si ya tenemos el perfil cacheado en memoria, no recargar
     if (this.userProfile && this.userProfile.uid === uid) {
-      console.log('🔐 Using cached user profile (memory)');
       return this.userProfile;
     }
     
@@ -255,8 +242,7 @@ class UserAuth {
       
       if (userDoc.exists()) {
         this.userProfile = { uid, ...userDoc.data() };
-        this.saveToCache(this.userProfile); // Guardar en caché
-        console.log('🔥 Perfil cargado desde Firebase');
+        this.saveToCache(this.userProfile);
         return this.userProfile;
       }
       
@@ -376,8 +362,6 @@ class UserAuth {
       : (authName && authName.trim()) 
         ? authName 
         : emailName;
-    
-    console.log('🔍 getUser displayName sources:', { profileName, authName, emailName, final: displayName });
     
     return {
       uid: this.currentUser.uid,

@@ -21,7 +21,6 @@ class PaymentSelector {
     try {
       await this.loadMethods();
       this.initialized = true;
-      console.log('💳 PaymentSelector initialized with', this.methods.length, 'methods');
     } catch (e) {
       console.warn('💳 PaymentSelector: Error loading config', e);
     } finally {
@@ -78,19 +77,16 @@ class PaymentSelector {
     if (this.methods.length === 0) return;
     
     const savedMethodId = localStorage.getItem('pets-store-payment-method');
-    console.log('💳 loadSelectedMethod - savedMethodId:', savedMethodId);
     
     if (savedMethodId) {
       const savedMethod = this.methods.find(m => m.id === savedMethodId);
       if (savedMethod) {
         this.selectedMethod = savedMethod;
-        console.log('💳 loadSelectedMethod - restored:', savedMethod.name);
         return;
       }
     }
     // Si no hay guardado o no existe, usar el primero
     this.selectedMethod = this.methods[0];
-    console.log('💳 loadSelectedMethod - using default:', this.selectedMethod?.name);
   }
 
   /**
@@ -99,7 +95,6 @@ class PaymentSelector {
   static saveSelectedMethod() {
     if (this.selectedMethod) {
       localStorage.setItem('pets-store-payment-method', this.selectedMethod.id);
-      console.log('💳 saveSelectedMethod - saved:', this.selectedMethod.id);
     }
   }
 

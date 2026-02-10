@@ -14,7 +14,6 @@ class ShippingSelector {
     static async init() {
         await this.loadConfig();
         this.loadSelectedZone();
-        console.log('🚚 ShippingSelector initialized');
     }
 
     /**

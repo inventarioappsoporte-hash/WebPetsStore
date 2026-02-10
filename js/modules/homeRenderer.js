@@ -8,25 +8,14 @@ class HomeRenderer {
 
   async render() {
     try {
-      console.log('🏠 HomeRenderer.render() - Starting...');
-      
-      // NO limpiar cache por ahora para debug
-      // this.dataLoader.clearCache();
-      console.log('🔄 Skipping cache clear for debug');
-      
       const homeConfig = await this.dataLoader.getHomeConfig();
       const products = await this.dataLoader.getProducts();
 
-      console.log('📋 Home config loaded:', !!homeConfig);
-      console.log('📦 Products loaded:', !!products, products?.length);
-
       if (!homeConfig || !products) {
-        console.error('❌ Error loading home data - homeConfig:', !!homeConfig, 'products:', !!products);
+        console.error('❌ Error loading home data');
         return;
       }
 
-      console.log('📦 Total products loaded:', products.length);
-      
       // Guardar productos para acceso desde métodos estáticos
       HomeRenderer.allProducts = products;
 
@@ -37,9 +26,7 @@ class HomeRenderer {
       this.renderPromos(homeConfig.promos, homeConfig.promosConfig);
 
       // Renderizar secciones
-      console.log('🔄 Starting to render sections...');
       for (const section of homeConfig.sections) {
-        console.log(`🔄 Rendering section: ${section.id}`);
         await this.renderSection(section, products);
       }
 
@@ -47,8 +34,6 @@ class HomeRenderer {
       if (homeConfig.testimonials.show) {
         this.renderTestimonials(homeConfig.testimonials);
       }
-      
-      console.log('✅ HomeRenderer.render() - Completed');
     } catch (error) {
       console.error('❌ Error rendering home:', error);
     }
