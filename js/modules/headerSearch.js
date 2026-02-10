@@ -11,12 +11,9 @@ class HeaderSearch {
   }
 
   async init() {
-    console.log('🔍 HeaderSearch.init() - Inicializando...');
     this.products = await this.dataLoader.getProducts();
-    console.log('🔍 HeaderSearch.init() - Productos cargados:', this.products?.length || 0);
     
     if (!this.searchInput || !this.searchBtn) {
-      console.log('🔍 HeaderSearch - Elementos no encontrados');
       return;
     }
 
@@ -38,7 +35,6 @@ class HeaderSearch {
     // Input en el campo de búsqueda
     const debouncedSearch = Utils.debounce((e) => {
       const query = e.target.value.toLowerCase().trim();
-      console.log('🔍 HeaderSearch - Query:', query);
       if (query.length >= 2) {
         this.performSearch(query);
       } else {
@@ -80,7 +76,6 @@ class HeaderSearch {
     this.isOpen = true;
     this.searchInput.classList.remove('collapsed');
     this.searchInput.focus();
-    console.log('🔍 HeaderSearch - Abierto');
   }
 
   closeSearch() {
@@ -88,7 +83,6 @@ class HeaderSearch {
     this.searchInput.classList.add('collapsed');
     this.searchInput.value = '';
     this.hideResults();
-    console.log('🔍 HeaderSearch - Cerrado');
   }
 
   performSearch(query) {
@@ -105,7 +99,6 @@ class HeaderSearch {
       return matchName || matchCategory || matchSubcategory || matchTags || matchDescription;
     });
 
-    console.log('🔍 HeaderSearch - Resultados encontrados:', results.length);
     this.displayResults(results, query);
   }
 

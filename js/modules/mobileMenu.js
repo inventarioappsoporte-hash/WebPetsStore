@@ -36,14 +36,12 @@ const MobileMenu = {
 
     // Verificar que existan los elementos principales
     if (!this.elements.menuToggle || !this.elements.mobileMenu) {
-      console.log('📱 MobileMenu: Elementos no encontrados, saltando inicialización');
       return;
     }
 
     this.bindEvents();
     this.loadCategories();
     this.loadProducts();
-    console.log('📱 MobileMenu inicializado');
   },
 
   async loadProducts() {
@@ -56,8 +54,6 @@ const MobileMenu = {
         if (p.stock === undefined || p.stock === null) return true;
         return p.stock > 0;
       });
-      
-      console.log('📱 MobileMenu: Productos cargados:', this.products.length, '(filtrados de', allProducts.length, ')');
     } catch (error) {
       console.error('Error cargando productos:', error);
     }
@@ -224,8 +220,6 @@ const MobileMenu = {
         sublinks.forEach(link => {
           link.addEventListener('click', () => this.closeMenu());
         });
-        
-        console.log('📱 MobileMenu: Categorías cargadas:', categories.length);
       }
     } catch (error) {
       console.error('Error cargando categorías:', error);

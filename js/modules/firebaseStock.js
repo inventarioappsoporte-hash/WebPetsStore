@@ -38,7 +38,6 @@ class FirebaseStock {
   static async init() {
     // ⚠️ Si está desactivado, no hacer nada
     if (!this.ENABLED) {
-      console.log('📦 FirebaseStock DESACTIVADO - usando stock estático');
       this.initialized = true;
       return true;
     }
@@ -64,7 +63,6 @@ class FirebaseStock {
       await this.loadInventoryOnce();
       
       this.initialized = true;
-      console.log('📦 FirebaseStock initialized (single fetch mode)');
       return true;
     } catch (error) {
       console.error('❌ Error initializing FirebaseStock:', error);
@@ -81,7 +79,6 @@ class FirebaseStock {
     
     // Si el cache es reciente, no recargar
     if (Date.now() - this.lastFetch < this.CACHE_DURATION && this.stockCache.size > 0) {
-      console.log('📦 Using cached inventory');
       return;
     }
 
@@ -98,7 +95,6 @@ class FirebaseStock {
       });
       
       this.lastFetch = Date.now();
-      console.log(`📦 Inventory loaded: ${this.stockCache.size} items (cached for 5 min)`);
       
       this.notifyListeners();
       this.applyStockIndicators();
@@ -402,6 +398,4 @@ FirebaseStock.observeDOM = function() {
     childList: true,
     subtree: true
   });
-  
-  console.log('👁️ FirebaseStock DOM observer started (debounced)');
 };

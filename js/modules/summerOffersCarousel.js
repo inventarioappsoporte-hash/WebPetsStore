@@ -11,23 +11,18 @@ class SummerOffersCarousel {
   }
 
   async init() {
-    console.log('☀️ SummerOffersCarousel.init() starting...');
     this.container = document.querySelector('.summer-offers');
     if (!this.container) {
-      console.error('❌ Container .summer-offers not found');
       return;
     }
 
     try {
       const response = await fetch('data/products.json');
       const allProducts = await response.json();
-      console.log('📦 Total products loaded:', allProducts.length);
       
       this.products = this.filterSummerProducts(allProducts);
-      console.log('☀️ Summer products filtered:', this.products.length);
       
       if (this.products.length === 0) {
-        console.warn('⚠️ No summer products found');
         this.container.style.display = 'none';
         return;
       }
@@ -86,7 +81,6 @@ class SummerOffersCarousel {
     
     this.container.innerHTML = html;
     this.track = this.container.querySelector('.summer-offers__track');
-    console.log('✅ Carousel rendered with', this.products.length, 'cards');
   }
 
   renderCard(product) {

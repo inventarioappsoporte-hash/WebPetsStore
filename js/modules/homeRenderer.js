@@ -46,34 +46,24 @@ class HomeRenderer {
     // Determinar qué imagen usar según el tamaño de pantalla
     const isMobile = window.innerWidth <= 768;
     const imageToUse = (isMobile && heroConfig.imageMobile) ? heroConfig.imageMobile : heroConfig.image;
-    const fallbackImage = heroConfig.image; // Siempre usar desktop como fallback
-    
-    console.log('🎬 renderHero - isMobile:', isMobile, 'imageToUse:', imageToUse, 'fallback:', fallbackImage);
+    const fallbackImage = heroConfig.image;
     
     // Actualizar imagen del hero si está configurada
     if (heroImage && imageToUse) {
-      // Precargar la imagen antes de mostrarla para evitar flash
       const newImage = new Image();
       newImage.onload = () => {
-        console.log('✅ Hero image loaded:', imageToUse);
         heroImage.src = imageToUse;
         heroImage.alt = heroConfig.title || 'Producto destacado';
-        // Mostrar el hero una vez cargada la imagen
         if (heroSection) heroSection.style.opacity = '1';
       };
       newImage.onerror = () => {
-        console.log('❌ Hero image failed:', imageToUse, '- trying fallback:', fallbackImage);
-        // Si falla la imagen móvil, intentar con la desktop
         if (imageToUse !== fallbackImage && fallbackImage) {
           heroImage.src = fallbackImage;
         }
-        // Mostrar el hero de todos modos
         if (heroSection) heroSection.style.opacity = '1';
       };
       newImage.src = imageToUse;
     } else {
-      console.log('⚠️ No hero image configured');
-      // Si no hay imagen configurada, mostrar el hero con la imagen por defecto
       if (heroSection) heroSection.style.opacity = '1';
     }
     
@@ -85,7 +75,6 @@ class HomeRenderer {
         if (nowMobile !== currentIsMobile && heroImage) {
           currentIsMobile = nowMobile;
           const newSrc = nowMobile ? heroConfig.imageMobile : heroConfig.image;
-          console.log('📱 Resize detected - switching to:', newSrc);
           if (newSrc) heroImage.src = newSrc;
         }
       });
@@ -102,24 +91,18 @@ class HomeRenderer {
     const heroCtaMobile = document.querySelector('.hero__cta-mobile');
     
     if (heroConfig.hideButtons) {
-      // Ocultar botones
       if (heroCta) heroCta.style.display = 'none';
       if (heroCtaMobile) heroCtaMobile.style.display = 'none';
-      console.log('🎬 renderHero - Botones ocultos por configuración');
     } else {
-      // Mostrar botones
       if (heroCta) heroCta.style.display = '';
       if (heroCtaMobile) heroCtaMobile.style.display = '';
       
-      // Configurar botones del hero
       const productId = heroConfig.productId;
       if (productId) {
         const productUrl = `product.html?id=${productId}`;
         
-        // Botones desktop
         const viewBtn = document.getElementById('hero-view-btn');
         const buyBtn = document.getElementById('hero-buy-btn');
-        // Botones mobile
         const viewBtnMobile = document.getElementById('hero-view-btn-mobile');
         const buyBtnMobile = document.getElementById('hero-buy-btn-mobile');
         
@@ -141,8 +124,6 @@ class HomeRenderer {
         }
       }
     }
-    
-    console.log('🎬 renderHero - image:', heroConfig.image, 'imageMobile:', heroConfig.imageMobile, 'using:', imageToUse, 'productId:', heroConfig.productId, 'hideButtons:', heroConfig.hideButtons);
   }
 
   renderPromos(promos, promosConfig) {
@@ -155,7 +136,6 @@ class HomeRenderer {
     // Verificar si la sección debe mostrarse
     if (promosConfig && promosConfig.show === false) {
       if (promosSection) promosSection.style.display = 'none';
-      console.log('🏷️ Sección de promos oculta por configuración');
       return;
     }
     
@@ -164,7 +144,6 @@ class HomeRenderer {
     
     if (visiblePromos.length === 0) {
       if (promosSection) promosSection.style.display = 'none';
-      console.log('🏷️ Sección de promos oculta (ninguna promo visible)');
       return;
     }
     
@@ -188,43 +167,8 @@ class HomeRenderer {
       return;
     }
 
-    // Debug: Log para TOP DESCUENTOS
-    if (section.id === 'top-discounts') {
-      console.log('🔥 TOP DESCUENTOS - Total products:', products.length);
-      console.log('🔥 TOP DESCUENTOS - Filter criteria:', section.filter);
-      
-      // Buscar específicamente nuestro producto
-      const camaVictoria = products.find(p => p.id === 'prod_222');
-      console.log('🔥 CAMA VICTORIA found:', camaVictoria);
-      if (camaVictoria) {
-        console.log('🔥 CAMA VICTORIA topDiscount:', camaVictoria.topDiscount);
-        console.log('🔥 CAMA VICTORIA marketing image:', camaVictoria.images.marketing);
-      }
-      
-      // Debug: Mostrar todos los productos con topDiscount
-      const allTopDiscount = products.filter(p => p.topDiscount === true);
-      console.log('🔥 ALL products with topDiscount:', allTopDiscount.length);
-      console.log('🔥 ALL topDiscount names:', allTopDiscount.map(p => p.name));
-    }
-
     // Filtrar productos
     let filtered = this.filterProducts(products, section.filter);
-
-    // Debug: Log productos filtrados
-    if (section.id === 'top-discounts') {
-      console.log('🔥 TOP DESCUENTOS - Filtered products:', filtered.length);
-      console.log('🔥 TOP DESCUENTOS - Filtered list:', filtered.map(p => p.name));
-      
-      if (filtered.length === 0) {
-        console.error('❌ NO PRODUCTS FILTERED FOR TOP DESCUENTOS!');
-        console.log('🔍 Debug filter function with CAMA VICTORIA...');
-        const camaVictoria = products.find(p => p.id === 'prod_222');
-        if (camaVictoria) {
-          const testFilter = this.filterProducts([camaVictoria], section.filter);
-          console.log('🧪 CAMA VICTORIA filter test result:', testFilter);
-        }
-      }
-    }
 
     // Ordenar
     if (section.sortBy) {
@@ -423,9 +367,6 @@ class HomeRenderer {
   }
 
   filterProducts(products, criteria) {
-    console.log('🔍 filterProducts called with criteria:', criteria);
-    console.log('🔍 filterProducts - products count:', products.length);
-    
     // Si criteria es un string, convertirlo a objeto de filtro
     if (typeof criteria === 'string') {
       const filterMap = {
@@ -436,14 +377,13 @@ class HomeRenderer {
         'recent': {} // Sin filtro específico, solo ordenar por fecha
       };
       criteria = filterMap[criteria] || { featured: true };
-      console.log('🔍 Converted string filter to:', criteria);
     }
     
-    const result = products.filter(p => {
+    return products.filter(p => {
       // Si no hay criterios (ej: "recent"), incluir todos
       if (Object.keys(criteria).length === 0) return true;
       
-      const matches = Object.keys(criteria).every(key => {
+      return Object.keys(criteria).every(key => {
         const value = criteria[key];
         const productValue = p[key];
         
@@ -453,12 +393,7 @@ class HomeRenderer {
         
         return productValue === value;
       });
-      
-      return matches;
     });
-    
-    console.log('🔍 filterProducts result count:', result.length);
-    return result;
   }
 
   /**
@@ -495,7 +430,6 @@ class HomeRenderer {
         e.stopImmediatePropagation();
         e.preventDefault();
         const productId = button.getAttribute('data-product-id');
-        console.log('🛒 AGREGAR clicked for:', productId);
         HomeRenderer.handleAddToCartStatic(productId);
         return false;
       }, true); // capture: true
@@ -535,12 +469,10 @@ class HomeRenderer {
             e.target.closest('.btn-view-product') ||
             e.target.closest('.card__actions') ||
             e.target.tagName === 'BUTTON') {
-          console.log('🚫 Card click ignored - button clicked');
           return;
         }
         // Navegar a la página del producto
         const productId = card.getAttribute('data-product-id');
-        console.log('📦 Card clicked, navigating to:', productId);
         window.location.href = `product.html?id=${productId}`;
       });
     });
@@ -548,9 +480,7 @@ class HomeRenderer {
     // Forzar reproducción de videos de marketing
     const videos = container.querySelectorAll('.card__marketing-video');
     videos.forEach(video => {
-      video.play().catch(err => {
-        console.log('Video autoplay bloqueado, esperando interacción del usuario');
-      });
+      video.play().catch(() => {});
     });
   }
 
@@ -559,9 +489,6 @@ class HomeRenderer {
    */
   async handleAddToCart(productId) {
     try {
-      console.log('🛒 handleAddToCart called with productId:', productId);
-      
-      // Obtener el producto del array estático
       const product = HomeRenderer.allProducts.find(p => p.id === productId);
       
       if (!product) {
@@ -570,14 +497,11 @@ class HomeRenderer {
         return;
       }
 
-      console.log('✅ Producto encontrado:', product.name);
-
       let success = false;
       let itemName = product.name;
 
       // Si tiene variantes, agregar la primera variante por defecto
       if (product.hasVariants && product.variants && product.variants.length > 0) {
-        console.log('📦 Producto con variantes, agregando primera variante...');
         const defaultVariant = product.variants[0];
         success = Cart.addItem(product, 1, defaultVariant);
         
@@ -587,14 +511,10 @@ class HomeRenderer {
           itemName = `${product.name} - ${variantDesc}`;
         }
       } else {
-        // Si no tiene variantes, agregar directamente
-        console.log('➕ Agregando producto al carrito...');
         success = Cart.addItem(product, 1, null);
       }
       
       if (success) {
-        console.log('✅ Producto agregado exitosamente');
-        // Mostrar notificación
         if (typeof CartUI !== 'undefined' && CartUI.showAddedNotification) {
           CartUI.showAddedNotification(itemName);
         } else {
@@ -625,9 +545,6 @@ class HomeRenderer {
    */
   static handleAddToCartStatic(productId) {
     try {
-      console.log('🛒 handleAddToCartStatic called with productId:', productId);
-      
-      // Obtener el producto del array estático
       const product = HomeRenderer.allProducts.find(p => p.id === productId);
       
       if (!product) {
@@ -636,22 +553,16 @@ class HomeRenderer {
         return;
       }
 
-      console.log('✅ Producto encontrado:', product.name);
-
       // Si tiene variantes, redirigir a página de producto
       if (product.hasVariants) {
-        console.log('📦 Producto con variantes, redirigiendo...');
         window.location.href = `product.html?id=${product.id}`;
         return;
       }
 
       // Si no tiene variantes, agregar directamente
-      console.log('➕ Agregando producto al carrito...');
       const success = Cart.addItem(product, 1, null);
       
       if (success) {
-        console.log('✅ Producto agregado exitosamente');
-        // Mostrar notificación
         if (typeof CartUI !== 'undefined' && CartUI.showAddedNotification) {
           CartUI.showAddedNotification(product.name);
         } else {

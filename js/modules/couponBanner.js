@@ -3,8 +3,6 @@
  * Detecta usuarios nuevos y muestra cupón de primera compra
  */
 
-console.log('CouponBanner module loaded v4');
-
 class CouponBanner {
   static config = null;
   static container = null;
@@ -12,19 +10,15 @@ class CouponBanner {
   static STORE_ID = 'petsstore-b0516';
 
   static async init() {
-    console.log('CouponBanner.init() starting...');
     await this.loadConfig();
     
     if (!this.config || !this.config.enabled) {
-      console.log('CouponBanner: deshabilitado en config', this.config);
       return;
     }
 
     const shouldShow = await this.shouldShowBanner();
     if (shouldShow) {
       this.render();
-    } else {
-      console.log('CouponBanner: no se muestra (usuario no elegible)');
     }
   }
 
@@ -40,7 +34,6 @@ class CouponBanner {
       if (!response.ok) throw new Error(`HTTP ${response.status}`);
       const data = await response.json();
       this.config = data.couponBanner || null;
-      console.log('CouponBanner config loaded:', this.config);
     } catch (error) {
       console.error('CouponBanner: Error cargando config:', error);
       this.config = null;
@@ -95,7 +88,6 @@ class CouponBanner {
     const insertPoint = heroSection ? heroSection.nextElementSibling : document.querySelector('main');
     
     if (!insertPoint) {
-      console.error('CouponBanner: no se encontró punto de inserción');
       return;
     }
 
@@ -148,7 +140,6 @@ class CouponBanner {
 
     insertPoint.insertAdjacentHTML('beforebegin', bannerHTML);
     this.container = document.getElementById('coupon-banner');
-    console.log('CouponBanner: renderizado correctamente');
   }
 
   static copyCode() {
@@ -163,13 +154,10 @@ class CouponBanner {
   }
 
   static handleCTA() {
-    console.log('CouponBanner: handleCTA clicked');
-    
     if (typeof UserAuth === 'undefined' || !UserAuth.isLoggedIn()) {
       const authModal = document.getElementById('auth-modal');
       
       if (authModal) {
-        console.log('CouponBanner: abriendo modal con clase auth-modal--open');
         authModal.classList.add('auth-modal--open');
         
         // Cambiar al tab de registro

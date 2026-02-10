@@ -1,10 +1,7 @@
 ﻿/**
  * CouponValidator v4 - Validacion de Cupones contra Firebase
  * Conexion DIRECTA a Firebase (sin depender de UserAuth.db)
- * 2026-02-09 23:50
  */
-
-console.log('CouponValidator v4 cargado - conexion directa Firebase');
 
 class CouponValidator {
   static appliedCoupon = null;
@@ -26,21 +23,17 @@ class CouponValidator {
   static async init() {
     if (this.initialized && this.db) return true;
     try {
-      console.log('CouponValidator - Iniciando conexion a Firebase...');
       const { initializeApp, getApps } = await import('https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js');
       const { getFirestore } = await import('https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js');
       const apps = getApps();
       if (apps.length > 0) {
         this.app = apps[0];
         this.db = getFirestore(this.app);
-        console.log('CouponValidator - Reusando app Firebase existente');
       } else {
         this.app = initializeApp(this.firebaseConfig, 'coupon-validator');
         this.db = getFirestore(this.app);
-        console.log('CouponValidator - Nueva app Firebase inicializada');
       }
       this.initialized = true;
-      console.log('CouponValidator listo');
       return true;
     } catch (error) {
       console.error('Error inicializando CouponValidator:', error);
@@ -67,14 +60,12 @@ class CouponValidator {
     try {
       const { doc, getDoc, collection, query, where, getDocs } = await import('https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js');
       const couponCode = code.toUpperCase().trim();
-      console.log('Validando cupon:', couponCode, 'userId:', userId);
       const couponRef = doc(this.db, 'coupons', couponCode);
       const couponSnap = await getDoc(couponRef);
       if (!couponSnap.exists()) {
         return { valid: false, error: 'Cupon no encontrado' };
       }
       const coupon = couponSnap.data();
-      console.log('Cupon encontrado:', coupon);
       const now = new Date();
       if (!coupon.active) return { valid: false, error: 'Cupon inactivo' };
       if (coupon.validFrom && now < new Date(coupon.validFrom)) return { valid: false, error: 'Cupon aun no valido' };
@@ -87,19 +78,14 @@ class CouponValidator {
         return { valid: false, error: 'Compra minima: $' + coupon.minPurchase.toLocaleString('es-AR') };
       }
       if (coupon.firstPurchaseOnly) {
-        console.log('Verificando si es primera compra del usuario...');
         const ordersRef = collection(this.db, 'tiendas', this.STORE_ID, 'orders');
         const q = query(ordersRef, where('userId', '==', userId));
         const ordersSnap = await getDocs(q);
-        console.log('Pedidos encontrados del usuario:', ordersSnap.size);
         if (!ordersSnap.empty) {
-          console.log('Usuario ya tiene pedidos - cupon rechazado');
           return { valid: false, error: 'Este cupon es solo para tu primera compra' };
         }
-        console.log('Usuario sin pedidos - cupon valido para primera compra');
       }
       if (coupon.perUserLimit && coupon.perUserLimit > 0) {
-        console.log('Verificando limite de uso por usuario...');
         const ordersRef = collection(this.db, 'tiendas', this.STORE_ID, 'orders');
         const q = query(ordersRef, where('userId', '==', userId));
         const userOrdersSnap = await getDocs(q);
@@ -108,10 +94,8 @@ class CouponValidator {
           const order = docSnap.data();
           if (order.coupon && order.coupon.code === couponCode) {
             usageCount++;
-            console.log('Pedido con este cupon:', docSnap.id);
           }
         });
-        console.log('Usos del cupon por este usuario:', usageCount, '/', coupon.perUserLimit);
         if (usageCount >= coupon.perUserLimit) {
           return { valid: false, error: 'Ya usaste este cupon' };
         }
@@ -129,7 +113,6 @@ class CouponValidator {
       this.discount = discount;
       this.freeShipping = coupon.type === 'freeShipping';
       this.notifyListeners();
-      console.log('Cupon valido! Descuento:', discount);
       return { valid: true, coupon: this.appliedCoupon, discount, freeShipping: this.freeShipping };
     } catch (error) {
       console.error('Error validando cupon:', error);
@@ -143,9 +126,11 @@ class CouponValidator {
       const { doc, updateDoc, increment, serverTimestamp } = await import('https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js');
       const couponRef = doc(this.db, 'coupons', this.appliedCoupon.code);
       await updateDoc(couponRef, { usageCount: increment(1), lastUsedAt: serverTimestamp() });
-      console.log('Uso registrado:', this.appliedCoupon.code);
       return true;
-    } catch (e) { console.error(e); return false; }
+    } catch (e) { 
+      console.error('Error registrando uso de cupon:', e); 
+      return false; 
+    }
   }
 
   static remove() {

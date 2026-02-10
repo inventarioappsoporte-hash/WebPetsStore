@@ -46,8 +46,6 @@ class App {
 
       // Inicializar stock desde Firebase (en segundo plano)
       this.initFirebaseStock();
-
-      console.log('✅ Pets Store cargado correctamente');
     } catch (error) {
       console.error('❌ Error inicializando la aplicación:', error);
     }
@@ -63,7 +61,6 @@ class App {
         // Solo aplicar indicadores si está habilitado y tiene datos
         if (FirebaseStock.ENABLED && FirebaseStock.stockCache.size > 0) {
           FirebaseStock.applyStockIndicators();
-          console.log('📦 Stock de Firebase inicializado');
         }
       }
     } catch (error) {
@@ -85,7 +82,6 @@ class App {
         e.preventDefault();
         
         const productId = addToCartBtn.getAttribute('data-product-id');
-        console.log('🛒 Global listener: Add to cart clicked for:', productId);
         
         if (productId && typeof HomeRenderer !== 'undefined') {
           HomeRenderer.handleAddToCartStatic(productId);
@@ -93,13 +89,9 @@ class App {
         return false;
       }
     }, true); // true = fase de captura
-    
-    console.log('🎯 Global add-to-cart listener initialized');
   }
 
   initHeroButtons() {
-    console.log('🔍 Buscando botones del hero...');
-    
     // Botones desktop
     const viewBtn = document.getElementById('hero-view-btn');
     const buyBtn = document.getElementById('hero-buy-btn');
@@ -108,16 +100,9 @@ class App {
     const viewBtnMobile = document.getElementById('hero-view-btn-mobile');
     const buyBtnMobile = document.getElementById('hero-buy-btn-mobile');
 
-    console.log('✅ hero-view-btn found:', !!viewBtn);
-    console.log('✅ hero-buy-btn found:', !!buyBtn);
-    console.log('✅ hero-view-btn-mobile found:', !!viewBtnMobile);
-    console.log('✅ hero-buy-btn-mobile found:', !!buyBtnMobile);
-
     // Handler para VER PRODUCTO
     const handleViewProduct = async () => {
-      console.log('🖱️ Click en VER PRODUCTO');
       const productId = await this.dataLoader.getHeroProductId();
-      console.log('Product ID:', productId);
       if (productId) {
         window.location.href = `product.html?id=${productId}`;
       }
@@ -125,10 +110,8 @@ class App {
 
     // Handler para COMPRAR AHORA - Agrega al carrito y lo abre
     const handleBuyNow = async () => {
-      console.log('🖱️ Click en COMPRAR AHORA');
       const productId = await this.dataLoader.getHeroProductId();
       const product = await this.dataLoader.getProductById(productId);
-      console.log('Product:', product);
       if (product) {
         // Agregar al carrito
         if (window.Cart) {

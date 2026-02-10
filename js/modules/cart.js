@@ -19,7 +19,6 @@ class Cart {
   static init() {
     this.loadFromStorage();
     this.loadWholesaleConfig();
-    console.log('🛒 Cart initialized with', this.items.length, 'items');
   }
 
   /**
@@ -30,11 +29,9 @@ class Cart {
       const response = await fetch(dataLoader.baseUrl + 'wholesale.json');
       if (response.ok) {
         this.wholesaleConfig = await response.json();
-        console.log('💰 Wholesale config loaded:', this.wholesaleConfig);
         this.checkWholesaleStatus();
       }
     } catch (error) {
-      console.log('ℹ️ Wholesale config not available');
       this.wholesaleConfig = null;
     }
   }
@@ -305,7 +302,6 @@ class Cart {
     this.saveToStorage();
     this.notifyListeners();
     
-    console.log('🗑️ Item removed from cart');
     return true;
   }
 
@@ -316,7 +312,6 @@ class Cart {
     this.items = [];
     this.saveToStorage();
     this.notifyListeners();
-    console.log('🗑️ Cart cleared');
   }
 
   /**

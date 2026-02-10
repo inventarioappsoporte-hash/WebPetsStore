@@ -30,8 +30,6 @@
         ticking = true;
       }
     });
-
-    console.log('📜 Header scroll effect initialized');
   }
 
   // Inicializar cuando el DOM esté listo
