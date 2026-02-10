@@ -289,7 +289,7 @@ class WhatsAppSender {
         if (typeof PaymentSelector !== 'undefined' && PaymentSelector.getMethods().length > 0) {
           const paymentData = PaymentSelector.getOrderData();
           if (paymentData) {
-            message += `\n💳 *Forma de Pago:* ${paymentData.methodIcon} ${paymentData.methodName}\n`;
+            message += `\n*Forma de Pago:* ${paymentData.methodIcon} ${paymentData.methodName}\n`;
             if (paymentData.commission > 0) {
               paymentFee = PaymentSelector.calculateCommission(subtotal);
               message += `   Recargo (${paymentData.commission}%): +${this.formatPrice(paymentFee)}\n`;
@@ -305,7 +305,7 @@ class WhatsAppSender {
         if (typeof PaymentSelector !== 'undefined' && PaymentSelector.getMethods().length > 0) {
           const paymentData = PaymentSelector.getOrderData();
           if (paymentData) {
-            message += `\n💳 *Forma de Pago:* ${paymentData.methodIcon} ${paymentData.methodName}\n`;
+            message += `\n*Forma de Pago:* ${paymentData.methodIcon} ${paymentData.methodName}\n`;
             if (paymentData.commission > 0) {
               paymentFee = PaymentSelector.calculateCommission(subtotal);
               message += `   Recargo (${paymentData.commission}%): +${this.formatPrice(paymentFee)}\n`;
@@ -320,7 +320,7 @@ class WhatsAppSender {
       if (typeof PaymentSelector !== 'undefined' && PaymentSelector.getMethods().length > 0) {
         const paymentData = PaymentSelector.getOrderData();
         if (paymentData) {
-          message += `\n💳 *Forma de Pago:* ${paymentData.methodIcon} ${paymentData.methodName}\n`;
+          message += `\n*Forma de Pago:* ${paymentData.methodIcon} ${paymentData.methodName}\n`;
           if (paymentData.commission > 0) {
             paymentFee = PaymentSelector.calculateCommission(subtotal);
             message += `   Recargo (${paymentData.commission}%): +${this.formatPrice(paymentFee)}\n`;
