@@ -9,43 +9,26 @@ class CouponValidator {
   static freeShipping = false;
   static listeners = [];
   static db = null;
-  static initialized = false;
   static STORE_ID = 'petstorepk';
 
-  static firebaseConfig = {
-    apiKey: "AIzaSyDHWTTs1J108hiBeib4d6E5i-HLoDRoDCA",
-    authDomain: "petsstore-b0516.firebaseapp.com",
-    projectId: "petsstore-b0516",
-    storageBucket: "petsstore-b0516.appspot.com"
-  };
-
-  static async initDb() {
+  static async getDb() {
     if (this.db) return this.db;
     
-    // Intentar obtener db de otros modulos
-    if (typeof FirebaseOrders !== 'undefined' && FirebaseOrders.db) {
-      this.db = FirebaseOrders.db;
-      return this.db;
+    // Esperar a que UserAuth inicialice su db
+    for (let i = 0; i < 20; i++) {
+      if (typeof UserAuth !== 'undefined' && UserAuth.db) {
+        this.db = UserAuth.db;
+        console.log('CouponValidator: usando UserAuth.db');
+        return this.db;
+      }
+      if (typeof FirebaseOrders !== 'undefined' && FirebaseOrders.db) {
+        this.db = FirebaseOrders.db;
+        console.log('CouponValidator: usando FirebaseOrders.db');
+        return this.db;
+      }
+      await new Promise(r => setTimeout(r, 200));
     }
-    if (typeof UserAuth !== 'undefined' && UserAuth.db) {
-      this.db = UserAuth.db;
-      return this.db;
-    }
-    
-    // Inicializar Firebase nosotros mismos
-    try {
-      const { initializeApp, getApps } = await import('https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js');
-      const { getFirestore } = await import('https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js');
-      
-      const apps = getApps();
-      const app = apps.length > 0 ? apps[0] : initializeApp(this.firebaseConfig);
-      this.db = getFirestore(app);
-      console.log('CouponValidator: Firebase inicializado');
-      return this.db;
-    } catch (e) {
-      console.error('CouponValidator: Error inicializando Firebase:', e);
-      return null;
-    }
+    return null;
   }
 
   static async validate(code, cartTotal, priceType = 'retail') {
@@ -63,8 +46,9 @@ class CouponValidator {
       return { valid: false, error: 'Error de usuario. Cierra sesion y vuelve a entrar.', requiresLogin: true };
     }
 
-    const db = await this.initDb();
+    const db = await this.getDb();
     if (!db) {
+      console.error('CouponValidator: Firebase DB no disponible despues de esperar');
       return { valid: false, error: 'Error de conexion. Recarga la pagina.' };
     }
 
@@ -126,7 +110,7 @@ class CouponValidator {
 
   static async registerUse() {
     if (!this.appliedCoupon) return false;
-    const db = await this.initDb();
+    const db = await this.getDb();
     if (!db) return false;
     try {
       const { doc, updateDoc, increment, serverTimestamp } = await import('https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js');
