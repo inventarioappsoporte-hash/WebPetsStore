@@ -59,18 +59,12 @@ class App {
   async initFirebaseStock() {
     try {
       if (typeof FirebaseStock !== 'undefined') {
-        await FirebaseStock.init();
-        await FirebaseStock.loadAllStock();
-        
-        // Aplicar indicadores de stock a productos visibles
-        FirebaseStock.applyStockIndicators();
-        
-        // Escuchar cambios en tiempo real
-        FirebaseStock.listenToStockChanges(() => {
+        // FirebaseStock.init() ya se auto-ejecuta al cargar el módulo
+        // Solo aplicar indicadores si está habilitado y tiene datos
+        if (FirebaseStock.ENABLED && FirebaseStock.stockCache.size > 0) {
           FirebaseStock.applyStockIndicators();
-        });
-        
-        console.log('📦 Stock de Firebase inicializado');
+          console.log('📦 Stock de Firebase inicializado');
+        }
       }
     } catch (error) {
       console.warn('⚠️ No se pudo cargar stock de Firebase:', error.message);
