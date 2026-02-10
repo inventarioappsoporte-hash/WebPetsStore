@@ -1,106 +1,135 @@
 ﻿/**
- * CouponValidator - Validacion de Cupones contra Firebase
- * Usa el SDK modular de Firebase v9+
+ * CouponValidator v4 - Validacion de Cupones contra Firebase
+ * Conexion DIRECTA a Firebase (sin depender de UserAuth.db)
+ * 2026-02-09 23:50
  */
+
+console.log('CouponValidator v4 cargado - conexion directa Firebase');
 
 class CouponValidator {
   static appliedCoupon = null;
   static discount = 0;
   static freeShipping = false;
   static listeners = [];
+  static app = null;
   static db = null;
-  static STORE_ID = 'petstorepk';
+  static initialized = false;
+  static STORE_ID = 'petsstore-b0516';
 
-  static async getDb() {
-    if (this.db) return this.db;
-    
-    // Esperar a que UserAuth inicialice su db
-    for (let i = 0; i < 20; i++) {
-      if (typeof UserAuth !== 'undefined' && UserAuth.db) {
-        this.db = UserAuth.db;
-        console.log('CouponValidator: usando UserAuth.db');
-        return this.db;
+  static firebaseConfig = {
+    apiKey: "AIzaSyDHWTTs1J108hiBeib4d6E5i-HLoDRoDCA",
+    authDomain: "petsstore-b0516.firebaseapp.com",
+    projectId: "petsstore-b0516",
+    storageBucket: "petsstore-b0516.appspot.com"
+  };
+
+  static async init() {
+    if (this.initialized && this.db) return true;
+    try {
+      console.log('CouponValidator - Iniciando conexion a Firebase...');
+      const { initializeApp, getApps } = await import('https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js');
+      const { getFirestore } = await import('https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js');
+      const apps = getApps();
+      if (apps.length > 0) {
+        this.app = apps[0];
+        this.db = getFirestore(this.app);
+        console.log('CouponValidator - Reusando app Firebase existente');
+      } else {
+        this.app = initializeApp(this.firebaseConfig, 'coupon-validator');
+        this.db = getFirestore(this.app);
+        console.log('CouponValidator - Nueva app Firebase inicializada');
       }
-      if (typeof FirebaseOrders !== 'undefined' && FirebaseOrders.db) {
-        this.db = FirebaseOrders.db;
-        console.log('CouponValidator: usando FirebaseOrders.db');
-        return this.db;
-      }
-      await new Promise(r => setTimeout(r, 200));
+      this.initialized = true;
+      console.log('CouponValidator listo');
+      return true;
+    } catch (error) {
+      console.error('Error inicializando CouponValidator:', error);
+      return false;
     }
-    return null;
   }
 
   static async validate(code, cartTotal, priceType = 'retail') {
     if (!code || code.trim() === '') {
       return { valid: false, error: 'Ingresa un codigo de cupon' };
     }
-
     if (typeof UserAuth === 'undefined' || !UserAuth.isLoggedIn()) {
       return { valid: false, error: 'Inicia sesion para usar cupones', requiresLogin: true };
     }
-
     const user = UserAuth.getUser();
     const userId = user?.uid || null;
     if (!userId) {
       return { valid: false, error: 'Error de usuario. Cierra sesion y vuelve a entrar.', requiresLogin: true };
     }
-
-    const db = await this.getDb();
-    if (!db) {
-      console.error('CouponValidator: Firebase DB no disponible despues de esperar');
+    const initOk = await this.init();
+    if (!initOk || !this.db) {
       return { valid: false, error: 'Error de conexion. Recarga la pagina.' };
     }
-
     try {
-      const { doc, getDoc, collection, query, where, limit, getDocs } = await import('https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js');
-      
+      const { doc, getDoc, collection, query, where, getDocs } = await import('https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js');
       const couponCode = code.toUpperCase().trim();
-      const couponRef = doc(db, 'coupons', couponCode);
+      console.log('Validando cupon:', couponCode, 'userId:', userId);
+      const couponRef = doc(this.db, 'coupons', couponCode);
       const couponSnap = await getDoc(couponRef);
-      
       if (!couponSnap.exists()) {
         return { valid: false, error: 'Cupon no encontrado' };
       }
-
       const coupon = couponSnap.data();
+      console.log('Cupon encontrado:', coupon);
       const now = new Date();
-
       if (!coupon.active) return { valid: false, error: 'Cupon inactivo' };
       if (coupon.validFrom && now < new Date(coupon.validFrom)) return { valid: false, error: 'Cupon aun no valido' };
       if (coupon.validUntil && now > new Date(coupon.validUntil)) return { valid: false, error: 'Cupon vencido' };
       if (coupon.usageLimit > 0 && (coupon.usageCount || 0) >= coupon.usageLimit) return { valid: false, error: 'Cupon agotado' };
-      
       if (coupon.priceType !== 'both' && coupon.priceType !== priceType) {
-        return { valid: false, error: coupon.priceType === 'retail' ? 'Solo minoristas' : 'Solo mayoristas' };
+        return { valid: false, error: coupon.priceType === 'retail' ? 'Solo para minoristas' : 'Solo para mayoristas' };
       }
-      
       if (coupon.minPurchase > 0 && cartTotal < coupon.minPurchase) {
         return { valid: false, error: 'Compra minima: $' + coupon.minPurchase.toLocaleString('es-AR') };
       }
-
       if (coupon.firstPurchaseOnly) {
-        const ordersRef = collection(db, 'tiendas', this.STORE_ID, 'orders');
-        const q = query(ordersRef, where('userId', '==', userId), limit(1));
+        console.log('Verificando si es primera compra del usuario...');
+        const ordersRef = collection(this.db, 'tiendas', this.STORE_ID, 'orders');
+        const q = query(ordersRef, where('userId', '==', userId));
         const ordersSnap = await getDocs(q);
+        console.log('Pedidos encontrados del usuario:', ordersSnap.size);
         if (!ordersSnap.empty) {
-          return { valid: false, error: 'Solo para primera compra' };
+          console.log('Usuario ya tiene pedidos - cupon rechazado');
+          return { valid: false, error: 'Este cupon es solo para tu primera compra' };
+        }
+        console.log('Usuario sin pedidos - cupon valido para primera compra');
+      }
+      if (coupon.perUserLimit && coupon.perUserLimit > 0) {
+        console.log('Verificando limite de uso por usuario...');
+        const ordersRef = collection(this.db, 'tiendas', this.STORE_ID, 'orders');
+        const q = query(ordersRef, where('userId', '==', userId));
+        const userOrdersSnap = await getDocs(q);
+        let usageCount = 0;
+        userOrdersSnap.forEach(docSnap => {
+          const order = docSnap.data();
+          if (order.coupon && order.coupon.code === couponCode) {
+            usageCount++;
+            console.log('Pedido con este cupon:', docSnap.id);
+          }
+        });
+        console.log('Usos del cupon por este usuario:', usageCount, '/', coupon.perUserLimit);
+        if (usageCount >= coupon.perUserLimit) {
+          return { valid: false, error: 'Ya usaste este cupon' };
         }
       }
-
       let discount = 0;
       if (coupon.type === 'percentage') {
         discount = Math.round(cartTotal * coupon.value / 100);
-        if (coupon.maxDiscount > 0 && discount > coupon.maxDiscount) discount = coupon.maxDiscount;
+        if (coupon.maxDiscount > 0 && discount > coupon.maxDiscount) {
+          discount = coupon.maxDiscount;
+        }
       } else if (coupon.type === 'fixed') {
         discount = coupon.value;
       }
-
       this.appliedCoupon = { code: couponCode, type: coupon.type, value: coupon.value, maxDiscount: coupon.maxDiscount || 0 };
       this.discount = discount;
       this.freeShipping = coupon.type === 'freeShipping';
       this.notifyListeners();
-      
+      console.log('Cupon valido! Descuento:', discount);
       return { valid: true, coupon: this.appliedCoupon, discount, freeShipping: this.freeShipping };
     } catch (error) {
       console.error('Error validando cupon:', error);
@@ -109,13 +138,12 @@ class CouponValidator {
   }
 
   static async registerUse() {
-    if (!this.appliedCoupon) return false;
-    const db = await this.getDb();
-    if (!db) return false;
+    if (!this.appliedCoupon || !this.db) return false;
     try {
       const { doc, updateDoc, increment, serverTimestamp } = await import('https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js');
-      const couponRef = doc(db, 'coupons', this.appliedCoupon.code);
+      const couponRef = doc(this.db, 'coupons', this.appliedCoupon.code);
       await updateDoc(couponRef, { usageCount: increment(1), lastUsedAt: serverTimestamp() });
+      console.log('Uso registrado:', this.appliedCoupon.code);
       return true;
     } catch (e) { console.error(e); return false; }
   }
@@ -152,3 +180,5 @@ class CouponValidator {
     return 'Descuento aplicado';
   }
 }
+
+if (typeof window !== 'undefined') window.CouponValidator = CouponValidator;
