@@ -1,6 +1,6 @@
-/**
- * 🎟️ Módulo CouponValidator - Validación de Cupones de Descuento
- * Valida cupones directamente contra Firebase (sin servidor local)
+﻿/**
+ * CouponValidator - Validacion de Cupones contra Firebase
+ * Usa el SDK modular de Firebase v9+
  */
 
 class CouponValidator {
@@ -8,173 +8,111 @@ class CouponValidator {
   static discount = 0;
   static freeShipping = false;
   static listeners = [];
-  
-  // Firebase config - se obtiene de firebaseConfig global
+  static db = null;
+  static STORE_ID = 'petstorepk';
+
   static getDb() {
-    if (typeof firebase !== 'undefined' && firebase.firestore) {
-      return firebase.firestore();
+    if (this.db) return this.db;
+    if (typeof FirebaseOrders !== 'undefined' && FirebaseOrders.db) {
+      this.db = FirebaseOrders.db;
+      return this.db;
+    }
+    if (typeof UserAuth !== 'undefined' && UserAuth.db) {
+      this.db = UserAuth.db;
+      return this.db;
     }
     return null;
   }
 
-  static getStoreId() {
-    // Usar el projectId de Firebase como storeId
-    if (typeof firebaseConfig !== 'undefined' && firebaseConfig.projectId) {
-      return firebaseConfig.projectId;
-    }
-    return 'petstoreprueba';
-  }
-
-  /**
-   * Validar un cupón directamente contra Firebase
-   */
   static async validate(code, cartTotal, priceType = 'retail') {
     if (!code || code.trim() === '') {
-      return { valid: false, error: 'Ingresa un código de cupón' };
+      return { valid: false, error: 'Ingresa un codigo de cupon' };
     }
 
-    // VALIDACIÓN: Requerir login para usar cupones
     if (typeof UserAuth === 'undefined' || !UserAuth.isLoggedIn()) {
-      return { 
-        valid: false, 
-        error: 'Iniciá sesión para usar cupones de descuento',
-        requiresLogin: true
-      };
+      return { valid: false, error: 'Inicia sesion para usar cupones', requiresLogin: true };
     }
 
     const user = UserAuth.getUser();
     const userId = user?.uid || null;
-    
     if (!userId) {
-      return { 
-        valid: false, 
-        error: 'Error al obtener datos de usuario. Intentá cerrar sesión y volver a entrar.',
-        requiresLogin: true
-      };
+      return { valid: false, error: 'Error de usuario. Cierra sesion y vuelve a entrar.', requiresLogin: true };
     }
 
     const db = this.getDb();
     if (!db) {
-      return { valid: false, error: 'Error de conexión con Firebase' };
+      console.error('CouponValidator: Firebase DB no disponible');
+      return { valid: false, error: 'Error de conexion. Recarga la pagina.' };
     }
 
     try {
+      const { doc, getDoc, collection, query, where, limit, getDocs } = await import('https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js');
+      
       const couponCode = code.toUpperCase().trim();
+      const couponRef = doc(db, 'coupons', couponCode);
+      const couponSnap = await getDoc(couponRef);
       
-      // 1. Buscar el cupón en Firebase
-      const couponDoc = await db.collection('coupons').doc(couponCode).get();
-      
-      if (!couponDoc.exists) {
-        return { valid: false, error: 'Cupón no encontrado' };
+      if (!couponSnap.exists()) {
+        return { valid: false, error: 'Cupon no encontrado' };
       }
 
-      const coupon = couponDoc.data();
+      const coupon = couponSnap.data();
       const now = new Date();
 
-      // 2. Validaciones básicas
-      if (!coupon.active) {
-        return { valid: false, error: 'Este cupón está inactivo' };
-      }
-
-      if (coupon.validFrom && now < new Date(coupon.validFrom)) {
-        return { valid: false, error: 'Este cupón aún no es válido' };
-      }
-
-      if (coupon.validUntil && now > new Date(coupon.validUntil)) {
-        return { valid: false, error: 'Este cupón ha vencido' };
-      }
-
-      if (coupon.usageLimit > 0 && (coupon.usageCount || 0) >= coupon.usageLimit) {
-        return { valid: false, error: 'Este cupón ha alcanzado su límite de uso' };
-      }
-
-      // 3. Validar tipo de precio (minorista/mayorista)
+      if (!coupon.active) return { valid: false, error: 'Cupon inactivo' };
+      if (coupon.validFrom && now < new Date(coupon.validFrom)) return { valid: false, error: 'Cupon aun no valido' };
+      if (coupon.validUntil && now > new Date(coupon.validUntil)) return { valid: false, error: 'Cupon vencido' };
+      if (coupon.usageLimit > 0 && (coupon.usageCount || 0) >= coupon.usageLimit) return { valid: false, error: 'Cupon agotado' };
+      
       if (coupon.priceType !== 'both' && coupon.priceType !== priceType) {
-        const msg = coupon.priceType === 'retail' ? 'Solo para compras minoristas' : 'Solo para compras mayoristas';
-        return { valid: false, error: msg };
+        return { valid: false, error: coupon.priceType === 'retail' ? 'Solo minoristas' : 'Solo mayoristas' };
       }
-
-      // 4. Validar compra mínima
+      
       if (coupon.minPurchase > 0 && cartTotal < coupon.minPurchase) {
-        return { valid: false, error: `Compra mínima: $${coupon.minPurchase.toLocaleString('es-AR')}` };
+        return { valid: false, error: 'Compra minima: $' + coupon.minPurchase.toLocaleString('es-AR') };
       }
 
-      // 5. Validar primera compra si aplica
       if (coupon.firstPurchaseOnly) {
-        const storeId = this.getStoreId();
-        const ordersSnapshot = await db.collection('tiendas').doc(storeId).collection('orders')
-          .where('userId', '==', userId)
-          .limit(1)
-          .get();
-        
-        if (!ordersSnapshot.empty) {
-          return { valid: false, error: 'Este cupón es solo para tu primera compra' };
+        const ordersRef = collection(db, 'tiendas', this.STORE_ID, 'orders');
+        const q = query(ordersRef, where('userId', '==', userId), limit(1));
+        const ordersSnap = await getDocs(q);
+        if (!ordersSnap.empty) {
+          return { valid: false, error: 'Solo para primera compra' };
         }
       }
 
-      // 6. Calcular descuento
       let discount = 0;
       if (coupon.type === 'percentage') {
         discount = Math.round(cartTotal * coupon.value / 100);
-        if (coupon.maxDiscount > 0 && discount > coupon.maxDiscount) {
-          discount = coupon.maxDiscount;
-        }
+        if (coupon.maxDiscount > 0 && discount > coupon.maxDiscount) discount = coupon.maxDiscount;
       } else if (coupon.type === 'fixed') {
         discount = coupon.value;
       }
 
-      // Cupón válido - guardar datos
-      this.appliedCoupon = {
-        code: couponCode,
-        type: coupon.type,
-        value: coupon.value,
-        priceType: coupon.priceType,
-        maxDiscount: coupon.maxDiscount || 0,
-        firstPurchaseOnly: coupon.firstPurchaseOnly || false
-      };
+      this.appliedCoupon = { code: couponCode, type: coupon.type, value: coupon.value, maxDiscount: coupon.maxDiscount || 0 };
       this.discount = discount;
       this.freeShipping = coupon.type === 'freeShipping';
-      
       this.notifyListeners();
       
-      return {
-        valid: true,
-        coupon: this.appliedCoupon,
-        discount: discount,
-        freeShipping: this.freeShipping
-      };
-
+      return { valid: true, coupon: this.appliedCoupon, discount, freeShipping: this.freeShipping };
     } catch (error) {
-      console.error('Error validando cupón:', error);
-      return { valid: false, error: 'Error al validar cupón. Intentá de nuevo.' };
+      console.error('Error validando cupon:', error);
+      return { valid: false, error: 'Error al validar. Intenta de nuevo.' };
     }
   }
 
-  /**
-   * Registrar uso del cupón (incrementar contador en Firebase)
-   */
   static async registerUse() {
     if (!this.appliedCoupon) return false;
-
     const db = this.getDb();
     if (!db) return false;
-
     try {
-      const couponRef = db.collection('coupons').doc(this.appliedCoupon.code);
-      await couponRef.update({
-        usageCount: firebase.firestore.FieldValue.increment(1),
-        lastUsedAt: firebase.firestore.FieldValue.serverTimestamp()
-      });
+      const { doc, updateDoc, increment, serverTimestamp } = await import('https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js');
+      const couponRef = doc(db, 'coupons', this.appliedCoupon.code);
+      await updateDoc(couponRef, { usageCount: increment(1), lastUsedAt: serverTimestamp() });
       return true;
-    } catch (error) {
-      console.error('Error registrando uso de cupón:', error);
-      return false;
-    }
+    } catch (e) { console.error(e); return false; }
   }
 
-  /**
-   * Remover cupón aplicado
-   */
   static remove() {
     this.appliedCoupon = null;
     this.discount = 0;
@@ -182,33 +120,12 @@ class CouponValidator {
     this.notifyListeners();
   }
 
-  /**
-   * Obtener cupón aplicado
-   */
-  static getAppliedCoupon() {
-    return this.appliedCoupon;
-  }
+  static getAppliedCoupon() { return this.appliedCoupon; }
+  static getDiscount() { return this.discount; }
+  static hasFreeShipping() { return this.freeShipping; }
 
-  /**
-   * Obtener descuento actual
-   */
-  static getDiscount() {
-    return this.discount;
-  }
-
-  /**
-   * Verificar si tiene envío gratis
-   */
-  static hasFreeShipping() {
-    return this.freeShipping;
-  }
-
-  /**
-   * Recalcular descuento con nuevo total
-   */
   static recalculate(newTotal) {
     if (!this.appliedCoupon) return;
-
     if (this.appliedCoupon.type === 'percentage') {
       this.discount = Math.round(newTotal * this.appliedCoupon.value / 100);
       if (this.appliedCoupon.maxDiscount && this.discount > this.appliedCoupon.maxDiscount) {
@@ -217,35 +134,14 @@ class CouponValidator {
     }
   }
 
-  /**
-   * Agregar listener para cambios
-   */
-  static addListener(callback) {
-    this.listeners.push(callback);
-  }
+  static addListener(cb) { this.listeners.push(cb); }
+  static notifyListeners() { this.listeners.forEach(cb => cb(this.appliedCoupon, this.discount, this.freeShipping)); }
 
-  /**
-   * Notificar a listeners
-   */
-  static notifyListeners() {
-    this.listeners.forEach(cb => cb(this.appliedCoupon, this.discount, this.freeShipping));
-  }
-
-  /**
-   * Formatear descripción del cupón
-   */
   static formatDescription(coupon) {
     if (!coupon) return '';
-    
-    switch (coupon.type) {
-      case 'percentage':
-        return `${coupon.value}% de descuento`;
-      case 'fixed':
-        return `$${coupon.value.toLocaleString('es-AR')} de descuento`;
-      case 'freeShipping':
-        return 'Envío gratis';
-      default:
-        return 'Descuento aplicado';
-    }
+    if (coupon.type === 'percentage') return coupon.value + '% de descuento';
+    if (coupon.type === 'fixed') return '$' + coupon.value.toLocaleString('es-AR') + ' de descuento';
+    if (coupon.type === 'freeShipping') return 'Envio gratis';
+    return 'Descuento aplicado';
   }
 }
