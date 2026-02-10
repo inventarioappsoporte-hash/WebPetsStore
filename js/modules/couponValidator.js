@@ -9,10 +9,20 @@ class CouponValidator {
   static freeShipping = false;
   static listeners = [];
   static db = null;
+  static initialized = false;
   static STORE_ID = 'petstorepk';
 
-  static getDb() {
+  static firebaseConfig = {
+    apiKey: "AIzaSyDHWTTs1J108hiBeib4d6E5i-HLoDRoDCA",
+    authDomain: "petsstore-b0516.firebaseapp.com",
+    projectId: "petsstore-b0516",
+    storageBucket: "petsstore-b0516.appspot.com"
+  };
+
+  static async initDb() {
     if (this.db) return this.db;
+    
+    // Intentar obtener db de otros modulos
     if (typeof FirebaseOrders !== 'undefined' && FirebaseOrders.db) {
       this.db = FirebaseOrders.db;
       return this.db;
@@ -21,7 +31,21 @@ class CouponValidator {
       this.db = UserAuth.db;
       return this.db;
     }
-    return null;
+    
+    // Inicializar Firebase nosotros mismos
+    try {
+      const { initializeApp, getApps } = await import('https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js');
+      const { getFirestore } = await import('https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js');
+      
+      const apps = getApps();
+      const app = apps.length > 0 ? apps[0] : initializeApp(this.firebaseConfig);
+      this.db = getFirestore(app);
+      console.log('CouponValidator: Firebase inicializado');
+      return this.db;
+    } catch (e) {
+      console.error('CouponValidator: Error inicializando Firebase:', e);
+      return null;
+    }
   }
 
   static async validate(code, cartTotal, priceType = 'retail') {
@@ -39,9 +63,8 @@ class CouponValidator {
       return { valid: false, error: 'Error de usuario. Cierra sesion y vuelve a entrar.', requiresLogin: true };
     }
 
-    const db = this.getDb();
+    const db = await this.initDb();
     if (!db) {
-      console.error('CouponValidator: Firebase DB no disponible');
       return { valid: false, error: 'Error de conexion. Recarga la pagina.' };
     }
 
@@ -103,7 +126,7 @@ class CouponValidator {
 
   static async registerUse() {
     if (!this.appliedCoupon) return false;
-    const db = this.getDb();
+    const db = await this.initDb();
     if (!db) return false;
     try {
       const { doc, updateDoc, increment, serverTimestamp } = await import('https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js');
