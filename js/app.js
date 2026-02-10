@@ -19,6 +19,11 @@ class App {
       const homeRenderer = new HomeRenderer(this.dataLoader);
       await homeRenderer.render();
 
+      // Inicializar banner de cupón inteligente
+      if (typeof CouponBanner !== 'undefined') {
+        CouponBanner.init();
+      }
+
       // Inicializar búsqueda del header
       new HeaderSearch(this.dataLoader);
 
