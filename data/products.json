@@ -28307,9 +28307,9 @@
   {
     "id": "prod_891",
     "name": "Huesos Comestibles Naturales para Perros",
-    "category": "alimentos",
+    "category": "🐾 ALIMENTOS Y SNACKS",
     "subcategory": "Alimentos y Snacks",
-    "price": 1020,
+    "price": 924,
     "stock": 25,
     "rating": 4.9,
     "reviews": 87,
@@ -28341,7 +28341,7 @@
     },
     "shipping": {
       "free": false,
-      "days": 3
+      "days": "3"
     },
     "badge": " Alimentos y Snacks",
     "brand": "Sin marca",
@@ -28354,10 +28354,10 @@
       "Reduce estrés y ansiedad",
       "6 tamaños disponibles"
     ],
-    "originalPrice": 1200,
-    "discount": 15,
-    "basePrice": 1020,
-    "baseOriginalPrice": 1200,
+    "originalPrice": 1680,
+    "discount": 45,
+    "basePrice": 924,
+    "baseOriginalPrice": 1680,
     "priceDisplayMode": "wholesale",
     "variants": {
       "attributes": [
@@ -28373,10 +28373,10 @@
           "attributes": {
             "Tamaño": "T1"
           },
-          "price": 1020,
+          "price": 924,
           "stock": 5,
           "available": true,
-          "originalPrice": 1200,
+          "originalPrice": 1680,
           "sku": "HUE015-T1",
           "images": {
             "cover": "assets/images/products/prod_891/t1.jpg",
@@ -28389,10 +28389,10 @@
           "attributes": {
             "Tamaño": "T2"
           },
-          "price": 1190,
+          "price": 1078,
           "stock": 5,
           "available": true,
-          "originalPrice": 1400,
+          "originalPrice": 1960,
           "sku": "HUE015-T2",
           "images": {
             "cover": "assets/images/products/prod_891/t2.jpg",
@@ -28405,10 +28405,10 @@
           "attributes": {
             "Tamaño": "T3"
           },
-          "price": 1530,
+          "price": 1386,
           "stock": 5,
           "available": true,
-          "originalPrice": 1800,
+          "originalPrice": 2520,
           "sku": "HUE015-T3",
           "images": {
             "cover": "assets/images/products/prod_891/t3.jpg",
@@ -28421,10 +28421,10 @@
           "attributes": {
             "Tamaño": "T4"
           },
-          "price": 5525,
+          "price": 5005,
           "stock": 5,
           "available": true,
-          "originalPrice": 6500,
+          "originalPrice": 9100,
           "sku": "HUE015-T4",
           "images": {
             "cover": "assets/images/products/prod_891/t4.jpg",
@@ -28437,10 +28437,10 @@
           "attributes": {
             "Tamaño": "T5"
           },
-          "price": 12750,
+          "price": 11550,
           "stock": 5,
           "available": true,
-          "originalPrice": 15000,
+          "originalPrice": 21000,
           "sku": "HUE015-T5",
           "images": {
             "cover": "assets/images/products/prod_891/t5.jpg",
@@ -28453,10 +28453,10 @@
           "attributes": {
             "Tamaño": "T6"
           },
-          "price": 17000,
+          "price": 15400,
           "stock": 5,
           "available": true,
-          "originalPrice": 20000,
+          "originalPrice": 28000,
           "sku": "HUE015-T6",
           "images": {
             "cover": "assets/images/products/prod_891/t6.jpg",

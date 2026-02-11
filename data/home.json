@@ -1,16 +1,4 @@
 {
-  "couponBanner": {
-    "enabled": true,
-    "audience": "first_purchase",
-    "badgeIcon": "🎁",
-    "badgeText": "OFERTA EXCLUSIVA",
-    "title": "¡Registrate y obtené un <span>5%</span> de descuento!",
-    "subtitle": "En tu primera compra",
-    "code": "PK0NE3QO",
-    "ctaIcon": "🐾",
-    "ctaText": "REGISTRATE AHORA",
-    "terms": "Válido para tu primera compra registrándote en www.pets-store-arg.com • Ver términos y condiciones"
-  },
   "hero": {
     "productId": "",
     "title": "",
