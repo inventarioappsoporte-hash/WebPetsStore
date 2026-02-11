@@ -95,8 +95,9 @@ class ProductPage {
     } else if (mode === 'amount') {
       return `Comprando ${amountText}`;
     } else {
-      // mode === 'any' o 'both'
-      const connector = mode === 'both' ? 'y' : 'o';
+      // mode === 'both' o 'amount_and_quantity' requieren ambas condiciones
+      const requiresBoth = mode === 'both' || mode === 'amount_and_quantity';
+      const connector = requiresBoth ? 'y' : 'o';
       return `Comprando ${itemsText} ${connector} ${amountText}`;
     }
   }
